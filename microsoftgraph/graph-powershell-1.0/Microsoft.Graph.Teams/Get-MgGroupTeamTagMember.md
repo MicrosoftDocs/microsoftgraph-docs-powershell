@@ -40,6 +40,8 @@ Get-MgGroupTeamTagMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Users assigned to the tag.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -49,6 +49,8 @@ Add-MgGroupDriveListContentTypeCopy -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Add a copy of a content type from a site to a list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

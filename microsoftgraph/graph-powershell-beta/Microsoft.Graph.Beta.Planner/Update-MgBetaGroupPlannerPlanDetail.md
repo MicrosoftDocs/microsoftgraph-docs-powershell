@@ -50,6 +50,8 @@ Update-MgBetaGroupPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <St
 ## DESCRIPTION
 Update the navigation property details in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Remove-MgBetaRoleManagementDirectoryRoleAssignmentApprovalStep -InputObject <IId
 ## DESCRIPTION
 Delete navigation property steps for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApprovalId

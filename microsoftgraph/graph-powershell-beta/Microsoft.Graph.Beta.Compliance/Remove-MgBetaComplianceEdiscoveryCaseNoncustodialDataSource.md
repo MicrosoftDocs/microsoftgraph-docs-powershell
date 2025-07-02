@@ -29,6 +29,8 @@ Remove-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <ICompl
 ## DESCRIPTION
 Delete navigation property noncustodialDataSources for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

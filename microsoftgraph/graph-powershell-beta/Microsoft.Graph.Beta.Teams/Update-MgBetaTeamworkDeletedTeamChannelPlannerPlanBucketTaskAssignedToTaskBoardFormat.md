@@ -50,6 +50,8 @@ Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskAssignedToTaskBoardF
 ## DESCRIPTION
 Update the navigation property assignedToTaskBoardFormat in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

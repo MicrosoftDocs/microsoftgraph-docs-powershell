@@ -46,6 +46,8 @@ New-MgBetaShareListContentTypeColumnLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to columnLinks for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

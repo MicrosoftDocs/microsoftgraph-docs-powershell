@@ -51,6 +51,8 @@ Update-MgBetaServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IAp
 ## DESCRIPTION
 Update the navigation property directories in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

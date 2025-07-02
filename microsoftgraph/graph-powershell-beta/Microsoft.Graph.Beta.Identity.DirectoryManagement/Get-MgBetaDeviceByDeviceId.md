@@ -43,6 +43,8 @@ Since the device resource supports extensions, you can also use the GET operatio
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Device.Read.All, Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

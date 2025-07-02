@@ -65,6 +65,8 @@ Update-MgBetaFinancialCompanySaleOrder -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Update the navigation property salesOrders in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,6 +48,8 @@ Update-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment -InputObject <IDevi
 ## DESCRIPTION
 Update the navigation property assignments in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

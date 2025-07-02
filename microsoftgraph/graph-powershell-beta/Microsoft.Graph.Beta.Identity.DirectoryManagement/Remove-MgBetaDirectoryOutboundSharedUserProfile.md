@@ -29,6 +29,8 @@ Remove-MgBetaDirectoryOutboundSharedUserProfile -InputObject <IIdentityDirectory
 ## DESCRIPTION
 Delete navigation property outboundSharedUserProfiles for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

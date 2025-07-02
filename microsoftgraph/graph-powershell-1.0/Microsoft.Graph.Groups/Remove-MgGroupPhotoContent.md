@@ -54,6 +54,8 @@ The group's profile photo
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ProfilePhoto.ReadWrite.All, Group.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

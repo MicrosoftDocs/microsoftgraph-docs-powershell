@@ -32,6 +32,8 @@ Get-MgBetaSiteGetByPathAnalytic -InputObject <ISitesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Analytics about the view activities that took place on this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -32,6 +32,8 @@ Update-MgReportPartnerBillingReconciliation -BodyParameter <IMicrosoftGraphPartn
 ## DESCRIPTION
 Update the navigation property reconciliation in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

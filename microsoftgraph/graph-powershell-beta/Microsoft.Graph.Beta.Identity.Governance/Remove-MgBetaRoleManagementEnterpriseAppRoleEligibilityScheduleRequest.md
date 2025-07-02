@@ -31,6 +31,8 @@ Remove-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest
 ## DESCRIPTION
 Delete navigation property roleEligibilityScheduleRequests for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

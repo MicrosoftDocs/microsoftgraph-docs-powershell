@@ -29,6 +29,8 @@ Remove-MgBetaOrganizationPartnerInformation -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Delete navigation property partnerInformation for organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

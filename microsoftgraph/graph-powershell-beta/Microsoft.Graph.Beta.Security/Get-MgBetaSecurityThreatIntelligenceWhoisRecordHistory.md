@@ -40,6 +40,8 @@ Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistory -InputObject <ISecurityId
 ## DESCRIPTION
 The collection of historical records associated to this WHOIS object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

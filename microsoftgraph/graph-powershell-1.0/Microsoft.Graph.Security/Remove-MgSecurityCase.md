@@ -23,6 +23,8 @@ Remove-MgSecurityCase [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-
 ## DESCRIPTION
 Delete navigation property cases for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -49,6 +49,8 @@ New-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -InputObject <IIde
 ## DESCRIPTION
 Create new navigation property to stages for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

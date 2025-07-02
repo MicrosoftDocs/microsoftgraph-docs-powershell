@@ -55,6 +55,8 @@ Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession -InputObject <IB
 ## DESCRIPTION
 Update the properties of a oneDriveForBusinessRestoreSession object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

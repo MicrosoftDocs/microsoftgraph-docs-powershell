@@ -32,6 +32,8 @@ Get-MgBetaGroupTeamSchedule -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 The schedule of shifts for this team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

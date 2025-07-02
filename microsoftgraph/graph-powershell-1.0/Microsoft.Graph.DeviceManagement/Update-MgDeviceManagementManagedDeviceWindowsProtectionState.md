@@ -60,6 +60,8 @@ Update-MgDeviceManagementManagedDeviceWindowsProtectionState -InputObject <IDevi
 ## DESCRIPTION
 Update the navigation property windowsProtectionState in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

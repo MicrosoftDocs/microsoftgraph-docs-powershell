@@ -44,6 +44,8 @@ In Microsoft Entra Entitlement Management, retrieve a list of accessPackageAssig
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

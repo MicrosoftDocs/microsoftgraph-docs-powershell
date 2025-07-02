@@ -42,6 +42,8 @@ Create new navigation property to emailThreatSubmissionPolicies for security
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ThreatSubmissionPolicy.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

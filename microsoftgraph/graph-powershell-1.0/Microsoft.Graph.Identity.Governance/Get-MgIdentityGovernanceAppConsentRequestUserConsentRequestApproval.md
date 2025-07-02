@@ -33,6 +33,8 @@ Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval -InputObject
 ## DESCRIPTION
 Approval decisions associated with a request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppConsentRequestId

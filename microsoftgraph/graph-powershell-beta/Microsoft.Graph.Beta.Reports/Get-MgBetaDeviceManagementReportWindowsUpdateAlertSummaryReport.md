@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportWindowsUpdateAlertSummaryReport -OutFile <String
 ## DESCRIPTION
 Invoke action getWindowsUpdateAlertSummaryReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

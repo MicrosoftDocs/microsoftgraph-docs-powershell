@@ -29,6 +29,8 @@ Remove-MgBetaEntitlementManagementAccessPackageAssignment -InputObject <IIdentit
 ## DESCRIPTION
 Delete navigation property accessPackageAssignments for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentId

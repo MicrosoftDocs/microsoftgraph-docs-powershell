@@ -33,6 +33,8 @@ Remove-MgRiskyServicePrincipalHistory -InputObject <IIdentitySignInsIdentity> [-
 ## DESCRIPTION
 Delete navigation property history for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

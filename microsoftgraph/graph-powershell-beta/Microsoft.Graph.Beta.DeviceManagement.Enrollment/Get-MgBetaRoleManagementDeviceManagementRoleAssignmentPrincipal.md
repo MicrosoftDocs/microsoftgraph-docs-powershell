@@ -45,6 +45,8 @@ Provided so that callers can get the principals using $expand at the same time a
 Read-only.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

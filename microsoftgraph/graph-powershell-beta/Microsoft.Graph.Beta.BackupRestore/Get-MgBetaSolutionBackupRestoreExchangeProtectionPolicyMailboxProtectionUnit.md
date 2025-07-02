@@ -43,6 +43,8 @@ Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit
 ## DESCRIPTION
 The protection units (mailboxes) that are  protected under the Exchange protection policy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

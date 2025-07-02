@@ -37,6 +37,8 @@ Get-MgBetaPrivilegedAccess -InputObject <IIdentityGovernanceIdentity> [-ExpandPr
 ## DESCRIPTION
 Get entity from privilegedAccess by key
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

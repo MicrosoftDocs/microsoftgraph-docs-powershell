@@ -53,6 +53,8 @@ New-MgBetaUserDriveRootListItemPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to permissions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

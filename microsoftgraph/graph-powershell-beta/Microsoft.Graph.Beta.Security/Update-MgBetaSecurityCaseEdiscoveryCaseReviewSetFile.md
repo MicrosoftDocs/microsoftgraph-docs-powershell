@@ -53,6 +53,8 @@ Update-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -InputObject <ISecurityIden
 ## DESCRIPTION
 Update the navigation property files in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

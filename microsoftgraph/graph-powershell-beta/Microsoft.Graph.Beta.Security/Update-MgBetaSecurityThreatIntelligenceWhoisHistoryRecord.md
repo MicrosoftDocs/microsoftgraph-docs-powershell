@@ -64,6 +64,8 @@ Update-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord -InputObject <ISecurit
 ## DESCRIPTION
 Update the navigation property whoisHistoryRecords in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Abuse

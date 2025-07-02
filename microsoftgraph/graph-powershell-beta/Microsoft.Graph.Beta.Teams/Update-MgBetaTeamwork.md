@@ -34,6 +34,8 @@ Update-MgBetaTeamwork -BodyParameter <IMicrosoftGraphTeamwork> [-ResponseHeaders
 ## DESCRIPTION
 Update teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

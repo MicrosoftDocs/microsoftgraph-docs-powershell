@@ -49,6 +49,8 @@ Update-MgBetaEducationClassAssignmentResourceDependentResource -InputObject <IEd
 ## DESCRIPTION
 Update the navigation property dependentResources in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

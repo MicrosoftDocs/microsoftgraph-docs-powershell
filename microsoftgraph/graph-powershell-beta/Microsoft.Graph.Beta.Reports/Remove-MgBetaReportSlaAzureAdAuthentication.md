@@ -21,6 +21,8 @@ Remove-MgBetaReportSlaAzureAdAuthentication [-IfMatch <String>] [-ResponseHeader
 ## DESCRIPTION
 Delete navigation property azureADAuthentication for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

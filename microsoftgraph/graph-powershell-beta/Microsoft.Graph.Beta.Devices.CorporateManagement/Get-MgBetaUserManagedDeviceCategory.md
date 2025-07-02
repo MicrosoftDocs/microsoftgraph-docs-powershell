@@ -32,6 +32,8 @@ Get-MgBetaUserManagedDeviceCategory -InputObject <IDevicesCorporateManagementIde
 ## DESCRIPTION
 Device category
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

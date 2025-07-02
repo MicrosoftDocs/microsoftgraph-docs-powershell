@@ -39,6 +39,8 @@ Get-MgBetaSecurityThreatIntelligenceArticleIndicatorCount -InputObject <ISecurit
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ArticleId

@@ -47,6 +47,8 @@ Enable-MgBetaUserManagedDeviceLostMode -InputObject <IDevicesCorporateManagement
 ## DESCRIPTION
 Enable lost mode
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

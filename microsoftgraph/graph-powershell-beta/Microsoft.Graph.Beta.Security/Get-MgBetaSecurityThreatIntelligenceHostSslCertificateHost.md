@@ -32,6 +32,8 @@ Get-MgBetaSecurityThreatIntelligenceHostSslCertificateHost -InputObject <ISecuri
 ## DESCRIPTION
 The host for this hostSslCertificate.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

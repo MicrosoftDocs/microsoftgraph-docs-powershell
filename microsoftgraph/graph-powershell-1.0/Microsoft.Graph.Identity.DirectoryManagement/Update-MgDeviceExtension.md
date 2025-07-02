@@ -46,6 +46,8 @@ Update-MgDeviceExtension -InputObject <IIdentityDirectoryManagementIdentity> -Bo
 ## DESCRIPTION
 Update the navigation property extensions in devices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

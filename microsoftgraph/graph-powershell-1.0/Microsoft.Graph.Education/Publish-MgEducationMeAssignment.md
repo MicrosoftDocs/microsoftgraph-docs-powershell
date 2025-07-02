@@ -45,6 +45,8 @@ Calling this API creates educationSubmission objects and displays the assignment
 The status of the assignment goes back to draft if there is any backend failure during publish process.
 To update the properties of a published assignment, see update an assignment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

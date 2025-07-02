@@ -40,6 +40,8 @@ Get-MgVirtualEventSession -InputObject <IBookingsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The sessions for the virtual event.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

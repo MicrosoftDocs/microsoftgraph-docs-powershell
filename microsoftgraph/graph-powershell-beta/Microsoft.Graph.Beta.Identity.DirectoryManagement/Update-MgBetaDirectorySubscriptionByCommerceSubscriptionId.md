@@ -54,6 +54,8 @@ Update-MgBetaDirectorySubscriptionByCommerceSubscriptionId -InputObject <IIdenti
 ## DESCRIPTION
 Update the navigation property subscriptions in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

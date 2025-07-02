@@ -29,6 +29,8 @@ Remove-MgBetaInformationProtectionDataLossPreventionPolicy -InputObject <IIdenti
 ## DESCRIPTION
 Delete navigation property dataLossPreventionPolicies for informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DataLossPreventionPolicyId

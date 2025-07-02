@@ -46,6 +46,8 @@ Set-MgBetaUserManagedDeviceName -InputObject <IDevicesCorporateManagementIdentit
 ## DESCRIPTION
 Set device name of the device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

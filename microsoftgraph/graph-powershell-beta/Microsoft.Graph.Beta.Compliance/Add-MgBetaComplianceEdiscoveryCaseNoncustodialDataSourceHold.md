@@ -63,6 +63,8 @@ Add-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceHold -InputObject <IComp
 ## DESCRIPTION
 Invoke action applyHold
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

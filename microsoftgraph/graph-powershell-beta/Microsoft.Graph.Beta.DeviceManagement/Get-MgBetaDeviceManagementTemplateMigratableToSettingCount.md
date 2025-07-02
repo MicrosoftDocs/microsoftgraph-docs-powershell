@@ -30,6 +30,8 @@ Get-MgBetaDeviceManagementTemplateMigratableToSettingCount -InputObject <IDevice
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementTemplateId

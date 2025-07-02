@@ -33,6 +33,8 @@ Invoke-MgUnfollowGroupDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersV
 ## DESCRIPTION
 Unfollow a driveItem.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

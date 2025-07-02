@@ -50,6 +50,8 @@ Invoke-MgBetaCleanUserManagedDeviceWindowsDevice -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Clean Windows device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

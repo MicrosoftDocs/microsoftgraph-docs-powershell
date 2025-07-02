@@ -31,6 +31,8 @@ New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
 ## DESCRIPTION
 Create new navigation property to certificateBasedApplicationConfigurations for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -54,6 +54,8 @@ Update-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact
 ## DESCRIPTION
 Update the navigation property mailboxRestoreArtifacts in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

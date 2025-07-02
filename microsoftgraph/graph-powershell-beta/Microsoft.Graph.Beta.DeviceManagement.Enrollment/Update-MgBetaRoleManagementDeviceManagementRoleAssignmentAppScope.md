@@ -47,6 +47,8 @@ Update-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope
 ## DESCRIPTION
 Update the navigation property appScopes in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

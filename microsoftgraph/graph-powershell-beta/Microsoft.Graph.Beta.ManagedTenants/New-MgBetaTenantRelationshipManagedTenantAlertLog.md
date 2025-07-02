@@ -31,6 +31,8 @@ New-MgBetaTenantRelationshipManagedTenantAlertLog
 ## DESCRIPTION
 Create new navigation property to managedTenantAlertLogs for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

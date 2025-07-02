@@ -32,6 +32,8 @@ Remove-MgSecurityLabelRetentionLabelDescriptor -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete navigation property descriptors for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

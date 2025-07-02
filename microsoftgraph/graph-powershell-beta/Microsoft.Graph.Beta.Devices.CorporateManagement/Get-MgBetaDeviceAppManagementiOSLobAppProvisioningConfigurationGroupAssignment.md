@@ -48,6 +48,8 @@ The associated group assignments.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

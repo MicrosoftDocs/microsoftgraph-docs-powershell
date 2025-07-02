@@ -42,6 +42,8 @@ Delete navigation property windowsInformationProtectionNetworkLearningSummaries 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

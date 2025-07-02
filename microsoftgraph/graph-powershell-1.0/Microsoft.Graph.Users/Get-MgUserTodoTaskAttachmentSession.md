@@ -40,6 +40,8 @@ Get-MgUserTodoTaskAttachmentSession -InputObject <IUsersIdentity> [-ExpandProper
 ## DESCRIPTION
 Get attachmentSessions from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

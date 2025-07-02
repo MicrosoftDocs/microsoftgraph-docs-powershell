@@ -33,6 +33,8 @@ Remove-MgUserMailFolderChildFolderMessageExtension -InputObject <IMailIdentity> 
 ## DESCRIPTION
 Delete navigation property extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExtensionId

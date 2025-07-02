@@ -38,6 +38,8 @@ Delete navigation property androidForWorkAppConfigurationSchemas for deviceManag
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AndroidForWorkAppConfigurationSchemaId

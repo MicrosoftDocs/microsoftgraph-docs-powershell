@@ -49,6 +49,8 @@ Update-MgBetaSecurityThreatIntelligenceHostPair -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property hostPairs in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

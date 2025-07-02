@@ -37,6 +37,8 @@ Get-MgEntitlementManagementResource -InputObject <IIdentityGovernanceIdentity> [
 ## DESCRIPTION
 The resources associated with the catalogs.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

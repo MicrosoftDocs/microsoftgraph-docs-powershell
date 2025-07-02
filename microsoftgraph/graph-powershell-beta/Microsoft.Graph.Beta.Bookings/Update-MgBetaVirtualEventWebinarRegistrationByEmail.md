@@ -57,6 +57,8 @@ Update-MgBetaVirtualEventWebinarRegistrationByEmail -InputObject <IBookingsIdent
 ## DESCRIPTION
 Update the navigation property registrations in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

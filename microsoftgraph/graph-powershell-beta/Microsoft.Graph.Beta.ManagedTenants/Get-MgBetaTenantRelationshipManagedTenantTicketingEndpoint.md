@@ -37,6 +37,8 @@ Get-MgBetaTenantRelationshipManagedTenantTicketingEndpoint -InputObject <IManage
 ## DESCRIPTION
 Get managedTenantTicketingEndpoints from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

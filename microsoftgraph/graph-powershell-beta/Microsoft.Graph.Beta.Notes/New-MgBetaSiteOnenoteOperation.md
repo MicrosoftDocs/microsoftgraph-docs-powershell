@@ -50,6 +50,8 @@ New-MgBetaSiteOnenoteOperation -InputObject <INotesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to operations for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -36,6 +36,8 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstancePrinc
 References the principal that's in the scope of the membership or ownership assignment request through the group that's governed by PIM.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

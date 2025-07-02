@@ -48,6 +48,8 @@ Invoke-MgBetaBufferUserInformationProtectionDecrypt -InputObject <IIdentitySignI
 ## DESCRIPTION
 Invoke action decryptBuffer
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

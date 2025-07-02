@@ -32,6 +32,8 @@ Stop-MgBetaIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGover
 ## DESCRIPTION
 Invoke action stop
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewScheduleDefinitionId

@@ -34,6 +34,8 @@ Get-MgCommunicationCallRecordOrganizerV2 -InputObject <ICloudCommunicationsIdent
 Identity of the organizer of the call.
 This relationship is expanded by default in callRecord methods.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallRecordId

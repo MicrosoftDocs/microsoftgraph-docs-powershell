@@ -56,6 +56,8 @@ New-MgSiteGetByPathPermission -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to permissions for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

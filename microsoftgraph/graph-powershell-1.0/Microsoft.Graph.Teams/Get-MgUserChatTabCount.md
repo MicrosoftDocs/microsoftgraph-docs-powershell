@@ -32,6 +32,8 @@ Get-MgUserChatTabCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Search
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

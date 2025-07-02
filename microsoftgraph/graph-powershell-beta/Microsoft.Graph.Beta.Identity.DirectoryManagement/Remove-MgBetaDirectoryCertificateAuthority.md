@@ -21,6 +21,8 @@ Remove-MgBetaDirectoryCertificateAuthority [-IfMatch <String>] [-ResponseHeaders
 ## DESCRIPTION
 Delete navigation property certificateAuthorities for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

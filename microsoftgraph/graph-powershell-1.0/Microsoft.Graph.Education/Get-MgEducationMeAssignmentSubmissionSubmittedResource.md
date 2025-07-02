@@ -42,6 +42,8 @@ Get-MgEducationMeAssignmentSubmissionSubmittedResource -InputObject <IEducationI
 ## DESCRIPTION
 Get submittedResources from education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

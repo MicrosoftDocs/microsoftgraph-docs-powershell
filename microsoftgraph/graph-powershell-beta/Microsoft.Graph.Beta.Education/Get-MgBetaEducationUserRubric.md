@@ -40,6 +40,8 @@ Get-MgBetaEducationUserRubric -InputObject <IEducationIdentity> [-ExpandProperty
 ## DESCRIPTION
 When set, the grading rubric attached to the assignment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

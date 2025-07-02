@@ -59,6 +59,8 @@ Update-MgEducationUserAssignmentSubmission -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property submissions in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

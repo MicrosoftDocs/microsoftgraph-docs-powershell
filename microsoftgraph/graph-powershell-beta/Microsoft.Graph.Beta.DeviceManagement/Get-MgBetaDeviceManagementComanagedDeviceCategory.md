@@ -29,6 +29,8 @@ Get-MgBetaDeviceManagementComanagedDeviceCategory -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Device category
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -30,6 +30,8 @@ Remove-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
 ## DESCRIPTION
 Delete navigation property frontLineServicePlans for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcFrontLineServicePlanId

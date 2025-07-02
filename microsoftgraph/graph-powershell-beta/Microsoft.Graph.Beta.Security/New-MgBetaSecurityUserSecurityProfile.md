@@ -32,6 +32,8 @@ New-MgBetaSecurityUserSecurityProfile -BodyParameter <IMicrosoftGraphUserSecurit
 ## DESCRIPTION
 Create new navigation property to userSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Accounts

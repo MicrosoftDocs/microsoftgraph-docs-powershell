@@ -33,6 +33,8 @@ Remove-MgBetaPolicyRoleManagementPolicyEffectiveRule -InputObject <IIdentitySign
 ## DESCRIPTION
 Delete navigation property effectiveRules for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

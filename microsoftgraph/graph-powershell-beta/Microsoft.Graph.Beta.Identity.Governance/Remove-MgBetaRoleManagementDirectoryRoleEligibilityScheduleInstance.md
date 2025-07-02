@@ -33,6 +33,8 @@ Remove-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance -InputObject
 ## DESCRIPTION
 Delete navigation property roleEligibilityScheduleInstances for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

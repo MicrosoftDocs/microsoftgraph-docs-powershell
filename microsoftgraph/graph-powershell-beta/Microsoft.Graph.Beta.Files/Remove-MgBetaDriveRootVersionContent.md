@@ -32,6 +32,8 @@ Remove-MgBetaDriveRootVersionContent -InputObject <IFilesIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete content for the navigation property versions in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

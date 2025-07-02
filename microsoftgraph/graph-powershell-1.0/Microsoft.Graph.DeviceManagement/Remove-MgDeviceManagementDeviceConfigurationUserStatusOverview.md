@@ -32,6 +32,8 @@ Remove-MgDeviceManagementDeviceConfigurationUserStatusOverview -InputObject <IDe
 ## DESCRIPTION
 Delete navigation property userStatusOverview for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceConfigurationId

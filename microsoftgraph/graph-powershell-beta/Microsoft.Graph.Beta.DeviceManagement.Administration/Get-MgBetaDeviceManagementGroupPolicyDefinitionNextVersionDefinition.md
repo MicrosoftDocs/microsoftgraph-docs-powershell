@@ -30,6 +30,8 @@ Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinition
 ## DESCRIPTION
 Definition of the next version of this definition
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

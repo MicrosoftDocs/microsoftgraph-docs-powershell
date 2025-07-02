@@ -80,6 +80,8 @@ Update-MgBetaIdentityGovernanceRoleManagementAlert [-ResponseHeadersVariable <St
 ## DESCRIPTION
 Invoke action refresh
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

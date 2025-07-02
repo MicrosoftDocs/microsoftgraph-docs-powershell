@@ -59,6 +59,8 @@ Publish the specified browserSiteList for devices to download.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BrowserSiteLists.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

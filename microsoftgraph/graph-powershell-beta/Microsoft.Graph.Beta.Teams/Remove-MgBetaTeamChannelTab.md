@@ -40,6 +40,8 @@ Delete navigation property tabs for teams
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsTab.Delete.Group, TeamsTab.ReadWriteSelfForTeam.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.Group, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

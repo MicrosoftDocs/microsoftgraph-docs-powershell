@@ -22,6 +22,8 @@ Get-MgBetaUserDriveRootListItemActivity -DriveId <String> -UserId <String> [-Exp
 ## DESCRIPTION
 The list of recent activities that took place on this item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

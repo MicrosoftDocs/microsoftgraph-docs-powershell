@@ -37,6 +37,8 @@ Get-MgBetaPrintPrinterShareJobDocument -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Get documents from print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -29,6 +29,8 @@ Get-MgBetaEntitlementManagementSubjectByObjectId -InputObject <IIdentityGovernan
 ## DESCRIPTION
 Represents the subjects within entitlement management.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

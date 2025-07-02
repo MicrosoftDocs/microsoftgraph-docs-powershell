@@ -34,6 +34,8 @@ Get-MgBetaReportOffice365GroupActivityFileCount -InputObject <IReportsIdentity> 
 ## DESCRIPTION
 Invoke function getOffice365GroupsActivityFileCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

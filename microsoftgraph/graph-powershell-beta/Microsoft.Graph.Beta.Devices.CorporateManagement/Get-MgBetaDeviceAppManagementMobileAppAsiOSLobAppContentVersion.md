@@ -43,6 +43,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion
 The list of content versions for this app.
 This property is read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

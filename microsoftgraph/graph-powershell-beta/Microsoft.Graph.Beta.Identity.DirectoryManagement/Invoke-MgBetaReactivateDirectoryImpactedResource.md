@@ -34,6 +34,8 @@ Reactivate an accidentally dismissed, completed, or postponed impactedResource o
 This action updates the status of the resource to active.
 This method is relevant only if the status of the impactedResource object is dismissed, postponed, or completedByUser.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

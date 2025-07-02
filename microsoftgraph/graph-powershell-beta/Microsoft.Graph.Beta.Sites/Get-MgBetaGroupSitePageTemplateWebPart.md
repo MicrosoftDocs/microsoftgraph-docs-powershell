@@ -37,6 +37,8 @@ Get-MgBetaGroupSitePageTemplateWebPart -InputObject <ISitesIdentity> [-ExpandPro
 ## DESCRIPTION
 The collection of web parts on the SharePoint page.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -60,6 +60,8 @@ Update the navigation property retentionEventTypes in security
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RecordsManagement.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

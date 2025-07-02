@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportRelatedAppStatusReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getRelatedAppsStatusReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

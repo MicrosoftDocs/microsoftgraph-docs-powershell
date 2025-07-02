@@ -32,6 +32,8 @@ Set-MgGroupOnenoteSectionPageContent -InputObject <INotesIdentity> [-Data <Strea
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

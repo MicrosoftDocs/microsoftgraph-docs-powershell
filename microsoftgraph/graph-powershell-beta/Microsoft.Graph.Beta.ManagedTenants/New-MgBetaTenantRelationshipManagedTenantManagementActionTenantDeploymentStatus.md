@@ -32,6 +32,8 @@ New-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
 ## DESCRIPTION
 Create new navigation property to managementActionTenantDeploymentStatuses for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

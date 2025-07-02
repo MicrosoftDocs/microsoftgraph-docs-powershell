@@ -32,6 +32,8 @@ Get-MgSecurityLabelRetentionLabelDescriptorDepartmentTemplate -InputObject <ISec
 ## DESCRIPTION
 Specifies the  department or business unit of an organization to which a label belongs.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

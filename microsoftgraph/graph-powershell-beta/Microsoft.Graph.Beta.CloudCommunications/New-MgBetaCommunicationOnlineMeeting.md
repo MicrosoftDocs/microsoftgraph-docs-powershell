@@ -50,6 +50,8 @@ New-MgBetaCommunicationOnlineMeeting -BodyParameter <IMicrosoftGraphOnlineMeetin
 ## DESCRIPTION
 Create new navigation property to onlineMeetings for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

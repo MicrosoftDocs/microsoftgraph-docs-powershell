@@ -32,6 +32,8 @@ Reset-MgBetaUserManagedDevicePasscode -InputObject <IDevicesCorporateManagementI
 ## DESCRIPTION
 Reset passcode
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

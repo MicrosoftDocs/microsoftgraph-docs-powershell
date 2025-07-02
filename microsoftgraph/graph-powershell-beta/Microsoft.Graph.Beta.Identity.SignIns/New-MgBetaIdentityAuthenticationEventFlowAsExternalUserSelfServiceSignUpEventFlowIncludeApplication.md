@@ -50,6 +50,8 @@ New-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlo
 ## DESCRIPTION
 Create new navigation property to includeApplications for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -51,6 +51,8 @@ New-MgBetaUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorpora
 ## DESCRIPTION
 Create new navigation property to deviceManagementTroubleshootingEvents for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

@@ -21,6 +21,8 @@ Remove-MgBetaDeviceManagementAndroidForWorkSetting [-IfMatch <String>] [-Respons
 ## DESCRIPTION
 Delete navigation property androidForWorkSettings for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

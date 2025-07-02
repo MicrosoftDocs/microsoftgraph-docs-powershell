@@ -48,6 +48,8 @@ New-MgBetaUserDeviceEnrollmentConfigurationAssignment -InputObject <IDevicesCorp
 ## DESCRIPTION
 Create new navigation property to assignments for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

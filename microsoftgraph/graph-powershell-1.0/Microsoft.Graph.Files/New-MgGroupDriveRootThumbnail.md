@@ -48,6 +48,8 @@ New-MgGroupDriveRootThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to thumbnails for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

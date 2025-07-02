@@ -47,6 +47,8 @@ Update-MgBetaComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity
 ## DESCRIPTION
 Update the navigation property operations in compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Action

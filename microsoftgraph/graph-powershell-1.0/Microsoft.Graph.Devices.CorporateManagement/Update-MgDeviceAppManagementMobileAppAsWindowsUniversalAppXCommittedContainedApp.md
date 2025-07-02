@@ -49,6 +49,8 @@ Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp
 ## DESCRIPTION
 Update the navigation property committedContainedApps in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -40,6 +40,8 @@ The team associated with this group.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -53,6 +53,8 @@ Read-only.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ProfilePhoto.Read.All, User.ReadBasic.All, User.Read.All, ProfilePhoto.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

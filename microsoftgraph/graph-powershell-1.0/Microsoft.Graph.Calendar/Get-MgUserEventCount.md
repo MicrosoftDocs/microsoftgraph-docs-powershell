@@ -39,6 +39,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
 | Application | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

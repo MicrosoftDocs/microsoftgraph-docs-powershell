@@ -32,6 +32,8 @@ Remove-MgUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementIdenti
 ## DESCRIPTION
 Delete navigation property scopedRoleMemberOf for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

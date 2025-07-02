@@ -23,6 +23,8 @@ Remove-MgAdminReportSetting [-IfMatch <String>] [-ResponseHeadersVariable <Strin
 ## DESCRIPTION
 Delete navigation property reportSettings for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

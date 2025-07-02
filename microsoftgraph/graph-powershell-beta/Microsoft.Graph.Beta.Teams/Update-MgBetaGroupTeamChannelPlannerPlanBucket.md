@@ -49,6 +49,8 @@ Update-MgBetaGroupTeamChannelPlannerPlanBucket -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property buckets in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

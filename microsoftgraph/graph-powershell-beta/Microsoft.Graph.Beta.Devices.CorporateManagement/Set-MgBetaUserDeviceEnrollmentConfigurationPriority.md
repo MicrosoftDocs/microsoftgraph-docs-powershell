@@ -47,6 +47,8 @@ Set-MgBetaUserDeviceEnrollmentConfigurationPriority -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Invoke action setPriority
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

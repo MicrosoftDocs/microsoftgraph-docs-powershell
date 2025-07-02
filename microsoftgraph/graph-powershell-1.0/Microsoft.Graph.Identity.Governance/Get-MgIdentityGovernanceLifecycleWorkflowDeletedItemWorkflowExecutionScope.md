@@ -41,6 +41,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope
 ## DESCRIPTION
 The unique identifier of the Microsoft Entra identity that last modified the workflow object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

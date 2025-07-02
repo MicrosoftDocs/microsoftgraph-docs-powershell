@@ -47,6 +47,8 @@ Update-MgBetaDeviceManagementVirtualEndpointSupportedRegion
 ## DESCRIPTION
 Update the navigation property supportedRegions in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

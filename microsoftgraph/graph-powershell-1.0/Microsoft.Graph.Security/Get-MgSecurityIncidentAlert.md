@@ -42,6 +42,8 @@ Get-MgSecurityIncidentAlert -InputObject <ISecurityIdentity> [-ExpandProperty <S
 The list of related alerts.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertId

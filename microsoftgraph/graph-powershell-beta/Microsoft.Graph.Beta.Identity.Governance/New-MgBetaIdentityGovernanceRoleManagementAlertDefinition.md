@@ -31,6 +31,8 @@ New-MgBetaIdentityGovernanceRoleManagementAlertDefinition
 ## DESCRIPTION
 Create new navigation property to alertDefinitions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

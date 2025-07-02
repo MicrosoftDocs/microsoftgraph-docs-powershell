@@ -37,6 +37,8 @@ Get-MgBetaIdentityGovernancePermissionAnalyticGcpFinding -InputObject <IIdentity
 ## DESCRIPTION
 The output of the permissions usage data analysis performed by Permissions Management to assess risk with identities and resources.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

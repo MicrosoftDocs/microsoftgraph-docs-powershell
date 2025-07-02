@@ -29,6 +29,8 @@ Invoke-MgBetaReportNetworkAccessReportDestination -InputObject <INetworkAccessId
 ## DESCRIPTION
 Invoke function destinationReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

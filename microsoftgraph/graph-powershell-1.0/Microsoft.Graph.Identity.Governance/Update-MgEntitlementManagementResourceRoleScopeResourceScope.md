@@ -48,6 +48,8 @@ Update-MgEntitlementManagementResourceRoleScopeResourceScope -InputObject <IIden
 ## DESCRIPTION
 Update the navigation property scopes in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRoleScopeId

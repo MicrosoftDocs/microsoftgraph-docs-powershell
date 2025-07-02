@@ -40,6 +40,8 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun -InputObject
 ## DESCRIPTION
 Workflow runs.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

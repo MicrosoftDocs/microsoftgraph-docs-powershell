@@ -53,6 +53,8 @@ New-MgBetaUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Create new navigation property to logCollectionRequests for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

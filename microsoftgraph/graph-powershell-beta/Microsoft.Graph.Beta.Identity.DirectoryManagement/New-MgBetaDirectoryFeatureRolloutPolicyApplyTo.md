@@ -45,6 +45,8 @@ New-MgBetaDirectoryFeatureRolloutPolicyApplyTo -InputObject <IIdentityDirectoryM
 ## DESCRIPTION
 Create new navigation property to appliesTo for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

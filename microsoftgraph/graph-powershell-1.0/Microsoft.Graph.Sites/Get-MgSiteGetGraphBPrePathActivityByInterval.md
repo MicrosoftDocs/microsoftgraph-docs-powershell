@@ -51,6 +51,8 @@ Get-MgSiteGetGraphBPrePathActivityByInterval -InputObject <ISitesIdentity> [-Cou
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

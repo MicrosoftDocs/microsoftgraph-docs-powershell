@@ -30,6 +30,8 @@ Remove-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration
 ## DESCRIPTION
 Delete navigation property connectivityConfiguration for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

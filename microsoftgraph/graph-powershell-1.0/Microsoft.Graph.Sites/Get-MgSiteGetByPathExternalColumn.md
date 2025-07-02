@@ -25,6 +25,8 @@ Get-MgSiteGetByPathExternalColumn -Path <String> -SiteId <String> [-ExpandProper
 ## DESCRIPTION
 Get externalColumns from sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

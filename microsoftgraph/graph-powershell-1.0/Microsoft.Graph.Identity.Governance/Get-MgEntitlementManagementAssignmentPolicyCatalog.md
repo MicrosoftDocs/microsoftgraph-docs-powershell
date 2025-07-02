@@ -31,6 +31,8 @@ Get-MgEntitlementManagementAssignmentPolicyCatalog -InputObject <IIdentityGovern
 Catalog of the access package containing this policy.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

@@ -40,6 +40,8 @@ Get-MgGroupCalendarPermission -InputObject <ICalendarIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The permissions of the users with whom the calendar is shared.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

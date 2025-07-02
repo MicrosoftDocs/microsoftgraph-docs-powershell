@@ -47,6 +47,8 @@ New-MgEntitlementManagementAssignmentPolicyQuestion -InputObject <IIdentityGover
 ## DESCRIPTION
 Create new navigation property to questions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

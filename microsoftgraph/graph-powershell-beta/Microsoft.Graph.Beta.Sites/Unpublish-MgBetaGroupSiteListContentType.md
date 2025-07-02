@@ -33,6 +33,8 @@ Unpublish-MgBetaGroupSiteListContentType -InputObject <ISitesIdentity> [-Respons
 ## DESCRIPTION
 Invoke action unpublish
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

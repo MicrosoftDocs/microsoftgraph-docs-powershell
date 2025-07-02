@@ -47,6 +47,8 @@ Update-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskBoardFormat -InputObjec
 ## DESCRIPTION
 Update the navigation property bucketTaskBoardFormat in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

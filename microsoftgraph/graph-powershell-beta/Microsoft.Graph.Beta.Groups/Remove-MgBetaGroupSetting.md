@@ -40,6 +40,8 @@ Delete navigation property settings for groups
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.Authorization, Directory.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectorySettingId

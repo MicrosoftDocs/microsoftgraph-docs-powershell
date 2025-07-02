@@ -59,6 +59,8 @@ Update-MgBetaGroupSiteContentType -InputObject <ISitesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property contentTypes in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,6 +48,8 @@ New-MgUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphT
 ## DESCRIPTION
 Create new navigation property to tabs for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

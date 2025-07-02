@@ -54,6 +54,8 @@ New-MgBetaSiteTermStoreSetTerm -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to terms for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

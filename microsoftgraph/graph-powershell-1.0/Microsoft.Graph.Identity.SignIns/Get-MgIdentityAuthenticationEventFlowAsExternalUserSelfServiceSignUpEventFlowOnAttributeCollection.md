@@ -34,6 +34,8 @@ Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnA
 ## DESCRIPTION
 The configuration for what to invoke when attributes are ready to be collected from the user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId

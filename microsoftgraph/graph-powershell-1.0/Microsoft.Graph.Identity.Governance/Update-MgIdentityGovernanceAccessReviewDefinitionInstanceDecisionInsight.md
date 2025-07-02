@@ -52,6 +52,8 @@ Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight
 ## DESCRIPTION
 Update the navigation property insights in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

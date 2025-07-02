@@ -29,6 +29,8 @@ Get-MgBetaDeviceManagementGroupPolicyCategoryParent -InputObject <IDeviceManagem
 ## DESCRIPTION
 The parent category
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

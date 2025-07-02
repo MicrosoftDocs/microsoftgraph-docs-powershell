@@ -31,6 +31,8 @@ Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionAcceptedFo
 ## DESCRIPTION
 Get acceptedFor from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

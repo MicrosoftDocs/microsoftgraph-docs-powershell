@@ -42,6 +42,8 @@ Get-MgBetaSecurityIncidentAlert -InputObject <ISecurityIdentity> [-ExpandPropert
 The list of related alerts.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertId

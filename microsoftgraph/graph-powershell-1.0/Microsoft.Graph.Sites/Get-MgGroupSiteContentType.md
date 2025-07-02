@@ -40,6 +40,8 @@ Get-MgGroupSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 The collection of content types defined for this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

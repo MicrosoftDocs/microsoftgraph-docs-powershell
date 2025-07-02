@@ -68,6 +68,8 @@ Update-MgSecuritySubjectRightsRequest -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property subjectRightsRequests in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

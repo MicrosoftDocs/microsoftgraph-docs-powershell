@@ -32,6 +32,8 @@ Update-MgBetaNetworkAccessSetting -BodyParameter <IMicrosoftGraphNetworkaccessSe
 ## DESCRIPTION
 Update the navigation property settings in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

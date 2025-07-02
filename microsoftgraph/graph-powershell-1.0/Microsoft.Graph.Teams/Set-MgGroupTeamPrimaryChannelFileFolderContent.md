@@ -32,6 +32,8 @@ Set-MgGroupTeamPrimaryChannelFileFolderContent -InputObject <ITeamsIdentity> [-D
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantCloudPcOverview -InputObject <IManag
 ## DESCRIPTION
 Delete navigation property cloudPcsOverview for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcOverviewTenantId

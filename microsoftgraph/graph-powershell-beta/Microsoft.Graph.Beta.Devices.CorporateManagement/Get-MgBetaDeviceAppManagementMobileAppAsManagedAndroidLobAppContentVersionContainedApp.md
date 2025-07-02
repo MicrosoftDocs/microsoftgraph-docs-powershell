@@ -43,6 +43,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContai
 ## DESCRIPTION
 The collection of contained apps in a MobileLobApp acting as a package.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

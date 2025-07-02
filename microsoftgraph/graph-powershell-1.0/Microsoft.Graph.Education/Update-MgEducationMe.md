@@ -44,6 +44,8 @@ Update-MgEducationMe -BodyParameter <IMicrosoftGraphEducationUser> [-ResponseHea
 ## DESCRIPTION
 Update the navigation property me in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountEnabled

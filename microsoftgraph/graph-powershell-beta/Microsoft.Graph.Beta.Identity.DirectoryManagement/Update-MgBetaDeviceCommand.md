@@ -48,6 +48,8 @@ Update-MgBetaDeviceCommand -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Update the navigation property commands in devices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

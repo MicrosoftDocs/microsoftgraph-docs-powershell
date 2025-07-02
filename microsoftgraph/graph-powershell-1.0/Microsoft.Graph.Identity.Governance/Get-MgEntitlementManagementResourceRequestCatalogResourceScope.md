@@ -86,6 +86,8 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceScope -InputObject <IId
 ## DESCRIPTION
 Get resourceScopes from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

@@ -35,6 +35,8 @@ Remove-MgBetaIdentityB2XUserFlowLanguageOverridePageContent -InputObject <IIdent
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

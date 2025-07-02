@@ -30,6 +30,8 @@ Remove-MgBetaNetworkAccessConnectivityBranchConnectivityConfigurationLink -Input
 ## DESCRIPTION
 Delete navigation property links for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BranchSiteId

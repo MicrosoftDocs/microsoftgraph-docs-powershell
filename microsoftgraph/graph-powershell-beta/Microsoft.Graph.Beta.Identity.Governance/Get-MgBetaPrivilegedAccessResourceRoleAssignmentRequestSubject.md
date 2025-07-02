@@ -32,6 +32,8 @@ Get-MgBetaPrivilegedAccessResourceRoleAssignmentRequestSubject -InputObject <IId
 Read-only.
 The user/group principal.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

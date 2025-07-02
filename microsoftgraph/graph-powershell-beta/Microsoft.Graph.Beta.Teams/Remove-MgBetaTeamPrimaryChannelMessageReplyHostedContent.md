@@ -48,6 +48,8 @@ Remove-MgBetaTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIde
 ## DESCRIPTION
 Delete navigation property hostedContents for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatMessageHostedContentId

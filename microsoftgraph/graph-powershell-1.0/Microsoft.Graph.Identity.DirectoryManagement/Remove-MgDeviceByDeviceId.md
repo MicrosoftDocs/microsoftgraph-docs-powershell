@@ -33,6 +33,8 @@ Remove-MgDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity> [-
 ## DESCRIPTION
 Delete a registered device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

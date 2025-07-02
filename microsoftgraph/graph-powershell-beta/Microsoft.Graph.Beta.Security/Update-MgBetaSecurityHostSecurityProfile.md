@@ -53,6 +53,8 @@ Update-MgBetaSecurityHostSecurityProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property hostSecurityProfiles in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

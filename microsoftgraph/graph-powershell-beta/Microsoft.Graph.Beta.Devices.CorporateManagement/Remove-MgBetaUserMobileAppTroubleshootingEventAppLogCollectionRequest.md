@@ -31,6 +31,8 @@ Remove-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 ## DESCRIPTION
 Delete navigation property appLogCollectionRequests for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppLogCollectionRequestId

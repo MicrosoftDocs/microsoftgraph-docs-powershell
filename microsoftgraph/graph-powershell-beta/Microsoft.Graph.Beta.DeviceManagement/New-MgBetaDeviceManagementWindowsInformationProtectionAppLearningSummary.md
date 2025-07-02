@@ -42,6 +42,8 @@ Create new navigation property to windowsInformationProtectionAppLearningSummari
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

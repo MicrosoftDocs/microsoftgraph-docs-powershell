@@ -32,6 +32,8 @@ Remove-MgSecurityThreatIntelligenceIntelProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Delete navigation property intelProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

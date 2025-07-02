@@ -56,6 +56,8 @@ Update-MgBetaSecurityAttackSimulationTraining -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property trainings in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

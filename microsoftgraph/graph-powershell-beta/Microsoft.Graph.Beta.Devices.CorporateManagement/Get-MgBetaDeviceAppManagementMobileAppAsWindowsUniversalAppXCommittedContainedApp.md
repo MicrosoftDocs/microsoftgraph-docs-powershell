@@ -44,6 +44,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAp
 The collection of contained apps in the committed mobileAppContent of a windowsUniversalAppX app.
 This property is read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

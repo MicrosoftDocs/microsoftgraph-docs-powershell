@@ -50,6 +50,8 @@ Update-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Update the navigation property hostComponents in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

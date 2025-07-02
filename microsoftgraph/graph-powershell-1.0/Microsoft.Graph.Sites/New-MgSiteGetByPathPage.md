@@ -56,6 +56,8 @@ New-MgSiteGetByPathPage -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to pages for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

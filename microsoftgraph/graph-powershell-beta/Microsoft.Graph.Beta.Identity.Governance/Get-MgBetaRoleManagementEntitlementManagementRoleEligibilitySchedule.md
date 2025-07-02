@@ -40,6 +40,8 @@ Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule -InputObjec
 ## DESCRIPTION
 Get roleEligibilitySchedules from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

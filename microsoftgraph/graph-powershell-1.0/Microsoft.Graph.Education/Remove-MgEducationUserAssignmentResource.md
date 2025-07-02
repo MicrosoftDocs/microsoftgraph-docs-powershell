@@ -33,6 +33,8 @@ Remove-MgEducationUserAssignmentResource -InputObject <IEducationIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property resources for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

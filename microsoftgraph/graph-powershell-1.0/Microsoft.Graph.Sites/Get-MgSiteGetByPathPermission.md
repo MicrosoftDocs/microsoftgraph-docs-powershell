@@ -27,6 +27,8 @@ Get-MgSiteGetByPathPermission -Path <String> -SiteId <String> [-ExpandProperty <
 The permissions associated with the site.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

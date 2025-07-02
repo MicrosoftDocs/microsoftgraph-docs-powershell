@@ -31,6 +31,8 @@ Get-MgBetaNetworkAccessConnectivityBranchForwardingProfileServicePrincipal
 ## DESCRIPTION
 Get servicePrincipal from networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BranchSiteId

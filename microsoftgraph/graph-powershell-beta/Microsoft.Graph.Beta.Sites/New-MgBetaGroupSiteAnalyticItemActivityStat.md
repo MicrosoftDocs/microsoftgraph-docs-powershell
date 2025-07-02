@@ -55,6 +55,8 @@ New-MgBetaGroupSiteAnalyticItemActivityStat -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Access

@@ -63,6 +63,8 @@ Update-MgGroupTeamPrimaryChannelMessage -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property messages in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

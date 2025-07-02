@@ -22,6 +22,8 @@ Get-MgBetaGroupSiteGetByPathContentModel -GroupId <String> -Path <String> -SiteI
 ## DESCRIPTION
 The collection of content models applied to this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

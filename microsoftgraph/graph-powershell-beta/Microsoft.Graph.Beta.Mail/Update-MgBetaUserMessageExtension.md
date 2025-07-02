@@ -46,6 +46,8 @@ Update-MgBetaUserMessageExtension -InputObject <IMailIdentity> -BodyParameter <H
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

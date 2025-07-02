@@ -32,6 +32,8 @@ Remove-MgUserOnenoteSectionPageContent -InputObject <INotesIdentity> [-IfMatch <
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

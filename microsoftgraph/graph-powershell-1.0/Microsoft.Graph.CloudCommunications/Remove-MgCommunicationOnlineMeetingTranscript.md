@@ -32,6 +32,8 @@ Remove-MgCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunications
 ## DESCRIPTION
 Delete navigation property transcripts for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallTranscriptId

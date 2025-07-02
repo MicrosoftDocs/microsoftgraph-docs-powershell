@@ -45,6 +45,8 @@ New-MgBetaDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Create new navigation property to usageRights for devices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

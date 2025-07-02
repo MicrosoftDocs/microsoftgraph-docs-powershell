@@ -60,6 +60,8 @@ Update-MgShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update entity in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

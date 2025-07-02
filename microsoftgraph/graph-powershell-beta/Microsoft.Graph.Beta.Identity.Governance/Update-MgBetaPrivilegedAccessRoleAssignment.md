@@ -57,6 +57,8 @@ Update-MgBetaPrivilegedAccessRoleAssignment -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Update the navigation property roleAssignments in privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

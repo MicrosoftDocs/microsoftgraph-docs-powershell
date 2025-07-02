@@ -40,6 +40,8 @@ Get-MgGroupSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 The collection of pages in the baseSitePages list in this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

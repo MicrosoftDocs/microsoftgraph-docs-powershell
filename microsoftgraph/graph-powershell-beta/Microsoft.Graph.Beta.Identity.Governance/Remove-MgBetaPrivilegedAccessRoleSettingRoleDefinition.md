@@ -29,6 +29,8 @@ Remove-MgBetaPrivilegedAccessRoleSettingRoleDefinition -InputObject <IIdentityGo
 ## DESCRIPTION
 Delete navigation property roleDefinition for privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GovernanceRoleSettingId

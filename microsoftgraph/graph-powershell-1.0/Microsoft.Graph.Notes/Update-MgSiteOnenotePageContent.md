@@ -50,6 +50,8 @@ Update-MgSiteOnenotePageContent -InputObject <INotesIdentity>
 ## DESCRIPTION
 Invoke action onenotePatchContent
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -30,6 +30,8 @@ Get-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachmentCount -InputObject <IUsers
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

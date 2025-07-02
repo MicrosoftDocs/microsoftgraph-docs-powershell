@@ -29,6 +29,8 @@ Get-MgBetaDeviceManagementManagedDeviceNonCompliantSetting -InputObject <IDevice
 ## DESCRIPTION
 Invoke function getNonCompliantSettings
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

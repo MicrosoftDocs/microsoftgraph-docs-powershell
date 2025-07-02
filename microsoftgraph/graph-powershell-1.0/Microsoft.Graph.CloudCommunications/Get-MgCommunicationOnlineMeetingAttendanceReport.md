@@ -42,6 +42,8 @@ Get-MgCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicati
 The attendance reports of an online meeting.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

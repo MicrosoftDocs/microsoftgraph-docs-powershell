@@ -32,6 +32,8 @@ Remove-MgPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> [-If
 ## DESCRIPTION
 Delete navigation property progressTaskBoardFormat for planner
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -29,6 +29,8 @@ Remove-MgBetaFinancialCompanyInformationPicture -InputObject <IFinancialsIdentit
 ## DESCRIPTION
 Delete picture for the navigation property companyInformation in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

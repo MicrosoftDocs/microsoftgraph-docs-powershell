@@ -29,6 +29,8 @@ Remove-MgBetaCommunicationOnlineMeetingAiInsight -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Delete navigation property aiInsights for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallAiInsightId

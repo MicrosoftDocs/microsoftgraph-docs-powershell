@@ -49,6 +49,8 @@ Copy-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity>
 ## DESCRIPTION
 Copy a mail folder and its contents to another mail folder.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

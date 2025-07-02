@@ -41,6 +41,8 @@ Get-MgDeviceManagementManagedDeviceCompliancePolicyState -InputObject <IDeviceMa
 ## DESCRIPTION
 Device compliance policy states for this device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

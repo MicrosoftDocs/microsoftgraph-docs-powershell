@@ -54,6 +54,8 @@ New-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPayment -InputObject <IF
 ## DESCRIPTION
 Create new navigation property to customerPayments for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

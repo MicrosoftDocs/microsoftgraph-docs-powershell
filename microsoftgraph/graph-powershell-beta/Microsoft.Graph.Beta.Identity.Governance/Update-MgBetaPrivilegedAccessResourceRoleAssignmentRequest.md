@@ -57,6 +57,8 @@ Update-MgBetaPrivilegedAccessResourceRoleAssignmentRequest -InputObject <IIdenti
 ## DESCRIPTION
 Update the navigation property roleAssignmentRequests in privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

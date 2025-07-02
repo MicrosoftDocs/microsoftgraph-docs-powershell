@@ -41,6 +41,8 @@ Get a list of recentNotebook instances that have been accessed by the signed-in 
 | Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
 | Application | Notes.Read.All, Notes.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

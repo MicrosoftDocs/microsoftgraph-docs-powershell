@@ -48,6 +48,8 @@ Update-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplicat
 ## DESCRIPTION
 Update the navigation property publishedResources in onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

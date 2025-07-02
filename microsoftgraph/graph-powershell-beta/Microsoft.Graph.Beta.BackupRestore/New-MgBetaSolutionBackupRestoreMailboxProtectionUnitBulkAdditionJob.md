@@ -32,6 +32,8 @@ New-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob
 ## DESCRIPTION
 Create new navigation property to mailboxProtectionUnitsBulkAdditionJobs for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -31,6 +31,8 @@ Remove-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationCon
 ## DESCRIPTION
 Delete navigation property combinationConfigurations for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationCombinationConfigurationId

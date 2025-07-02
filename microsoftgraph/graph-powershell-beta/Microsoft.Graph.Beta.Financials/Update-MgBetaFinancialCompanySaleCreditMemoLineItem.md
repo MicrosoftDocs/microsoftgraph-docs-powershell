@@ -53,6 +53,8 @@ Update-MgBetaFinancialCompanySaleCreditMemoLineItem -InputObject <IFinancialsIde
 ## DESCRIPTION
 Update the navigation property item in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

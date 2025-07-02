@@ -31,6 +31,8 @@ Update-MgBetaRoleManagementCloudPc -BodyParameter <IMicrosoftGraphRbacApplicatio
 ## DESCRIPTION
 Update the navigation property cloudPC in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

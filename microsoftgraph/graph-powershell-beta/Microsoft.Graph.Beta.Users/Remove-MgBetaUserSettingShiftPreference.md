@@ -32,6 +32,8 @@ Remove-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property shiftPreferences for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

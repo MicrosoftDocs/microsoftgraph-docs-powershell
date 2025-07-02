@@ -40,6 +40,8 @@ Get-MgSiteExternalColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Get externalColumns from sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

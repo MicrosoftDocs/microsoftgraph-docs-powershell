@@ -50,6 +50,8 @@ New-MgBetaUserInsightUsed -InputObject <IUsersIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to used for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -50,6 +50,8 @@ New-MgUserInsightUsed -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create new navigation property to used for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

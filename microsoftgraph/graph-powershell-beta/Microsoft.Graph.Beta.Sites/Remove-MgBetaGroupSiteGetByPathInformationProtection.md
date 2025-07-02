@@ -29,6 +29,8 @@ Remove-MgBetaGroupSiteGetByPathInformationProtection -InputObject <ISitesIdentit
 ## DESCRIPTION
 Delete navigation property informationProtection for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

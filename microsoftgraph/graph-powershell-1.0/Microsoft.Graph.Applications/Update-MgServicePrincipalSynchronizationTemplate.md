@@ -52,6 +52,8 @@ Update-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIden
 ## DESCRIPTION
 Update the navigation property templates in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

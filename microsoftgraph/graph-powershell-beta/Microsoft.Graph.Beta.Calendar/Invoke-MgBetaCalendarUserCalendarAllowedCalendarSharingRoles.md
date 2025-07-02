@@ -47,6 +47,8 @@ Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <ICale
 ## DESCRIPTION
 Invoke function allowedCalendarSharingRoles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CalendarId

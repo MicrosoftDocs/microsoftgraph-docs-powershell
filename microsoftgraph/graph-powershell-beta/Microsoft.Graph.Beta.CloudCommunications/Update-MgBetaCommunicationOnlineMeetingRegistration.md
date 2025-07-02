@@ -51,6 +51,8 @@ Update-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunic
 ## DESCRIPTION
 Update the navigation property registration in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

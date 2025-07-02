@@ -38,6 +38,8 @@ Get-MgBetaUserInformationProtectionSensitivityLabelSublabel -InputObject <IIdent
 ## DESCRIPTION
 Get sublabels from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

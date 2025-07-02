@@ -82,6 +82,8 @@ New-MgGroupDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to items for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

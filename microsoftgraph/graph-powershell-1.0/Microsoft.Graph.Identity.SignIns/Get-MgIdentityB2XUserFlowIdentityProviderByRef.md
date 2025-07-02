@@ -33,6 +33,8 @@ Get ref of userFlowIdentityProviders from identity
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

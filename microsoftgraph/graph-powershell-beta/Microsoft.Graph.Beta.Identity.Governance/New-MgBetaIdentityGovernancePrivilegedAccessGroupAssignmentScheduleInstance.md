@@ -37,6 +37,8 @@ New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
 ## DESCRIPTION
 Create new navigation property to assignmentScheduleInstances for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessId

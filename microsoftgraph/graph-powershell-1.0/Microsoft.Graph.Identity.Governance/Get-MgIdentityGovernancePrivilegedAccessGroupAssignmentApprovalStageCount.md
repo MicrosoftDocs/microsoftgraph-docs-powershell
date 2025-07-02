@@ -30,6 +30,8 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStageCount
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApprovalId

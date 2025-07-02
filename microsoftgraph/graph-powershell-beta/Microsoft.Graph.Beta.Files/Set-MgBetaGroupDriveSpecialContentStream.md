@@ -30,6 +30,8 @@ Set-MgBetaGroupDriveSpecialContentStream -InputObject <IFilesIdentity> [-Data <S
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

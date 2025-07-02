@@ -31,6 +31,8 @@ New-MgBetaTenantRelationshipManagedTenantGroup -BodyParameter <IMicrosoftGraphMa
 ## DESCRIPTION
 Create new navigation property to tenantGroups for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

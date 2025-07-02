@@ -21,6 +21,8 @@ Remove-MgBetaNetworkAccessSetting [-IfMatch <String>] [-ResponseHeadersVariable 
 ## DESCRIPTION
 Delete navigation property settings for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

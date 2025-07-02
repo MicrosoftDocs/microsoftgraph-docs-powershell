@@ -47,6 +47,8 @@ Update-MgBetaTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat -InputObjec
 ## DESCRIPTION
 Update the navigation property progressTaskBoardFormat in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

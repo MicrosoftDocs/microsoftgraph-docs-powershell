@@ -52,6 +52,8 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsight
 ## DESCRIPTION
 Create new navigation property to insights for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

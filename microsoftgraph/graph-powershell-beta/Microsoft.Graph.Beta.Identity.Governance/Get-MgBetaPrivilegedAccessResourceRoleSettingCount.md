@@ -29,6 +29,8 @@ Get-MgBetaPrivilegedAccessResourceRoleSettingCount -InputObject <IIdentityGovern
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

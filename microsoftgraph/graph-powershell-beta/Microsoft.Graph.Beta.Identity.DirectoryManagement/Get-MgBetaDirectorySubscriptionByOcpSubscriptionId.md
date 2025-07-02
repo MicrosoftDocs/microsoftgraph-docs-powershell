@@ -30,6 +30,8 @@ Get-MgBetaDirectorySubscriptionByOcpSubscriptionId -InputObject <IIdentityDirect
 ## DESCRIPTION
 Get a specific commercial subscription that an organization has acquired.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

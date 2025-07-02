@@ -68,6 +68,8 @@ Update-MgUserDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property columns in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

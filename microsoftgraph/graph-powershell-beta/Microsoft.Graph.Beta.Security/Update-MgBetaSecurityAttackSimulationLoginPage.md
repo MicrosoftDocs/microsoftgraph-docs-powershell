@@ -52,6 +52,8 @@ Update-MgBetaSecurityAttackSimulationLoginPage -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property loginPages in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -30,6 +30,8 @@ Remove-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumn -InputObjec
 ## DESCRIPTION
 Delete navigation property columns for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

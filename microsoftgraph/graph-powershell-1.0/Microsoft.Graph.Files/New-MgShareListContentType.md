@@ -58,6 +58,8 @@ New-MgShareListContentType -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to contentTypes for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

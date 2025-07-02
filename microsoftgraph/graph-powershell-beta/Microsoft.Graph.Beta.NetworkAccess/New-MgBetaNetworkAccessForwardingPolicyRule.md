@@ -51,6 +51,8 @@ Create new navigation property to policyRules for networkAccess
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

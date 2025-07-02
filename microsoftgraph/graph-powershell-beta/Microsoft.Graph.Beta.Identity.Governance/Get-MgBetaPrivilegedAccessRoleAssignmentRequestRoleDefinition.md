@@ -32,6 +32,8 @@ Get-MgBetaPrivilegedAccessRoleAssignmentRequestRoleDefinition -InputObject <IIde
 Read-only.
 The role definition that the request aims to.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

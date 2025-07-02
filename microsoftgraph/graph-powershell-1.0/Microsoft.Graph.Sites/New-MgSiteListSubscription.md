@@ -54,6 +54,8 @@ New-MgSiteListSubscription -InputObject <ISitesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to subscriptions for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

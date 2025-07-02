@@ -48,6 +48,8 @@ Update-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObje
 ## DESCRIPTION
 Update the navigation property additionalSources in compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

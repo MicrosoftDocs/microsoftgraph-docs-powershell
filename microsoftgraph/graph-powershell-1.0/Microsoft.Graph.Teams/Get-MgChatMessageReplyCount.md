@@ -32,6 +32,8 @@ Get-MgChatMessageReplyCount -InputObject <ITeamsIdentity> [-Filter <String>] [-S
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

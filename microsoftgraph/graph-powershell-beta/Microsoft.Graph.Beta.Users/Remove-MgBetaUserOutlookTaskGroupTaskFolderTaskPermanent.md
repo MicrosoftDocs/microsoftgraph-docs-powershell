@@ -45,6 +45,8 @@ For more information about item retention, see Configure Deleted Item retention 
 | Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

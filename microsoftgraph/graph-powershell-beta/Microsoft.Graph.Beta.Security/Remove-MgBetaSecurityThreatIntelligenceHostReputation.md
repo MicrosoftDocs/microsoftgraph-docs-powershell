@@ -32,6 +32,8 @@ Remove-MgBetaSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIde
 ## DESCRIPTION
 Delete navigation property reputation for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

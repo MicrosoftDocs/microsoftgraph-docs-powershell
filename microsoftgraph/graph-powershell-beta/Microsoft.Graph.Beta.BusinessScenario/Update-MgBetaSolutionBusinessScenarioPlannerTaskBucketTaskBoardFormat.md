@@ -47,6 +47,8 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat -InputObje
 ## DESCRIPTION
 Update the navigation property bucketTaskBoardFormat in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

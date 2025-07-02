@@ -32,6 +32,8 @@ Get-MgBetaUserDriveListContentTypeColumnCount -InputObject <IFilesIdentity> [-Fi
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

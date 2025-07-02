@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantCloudPcDevice -InputObject <IManaged
 ## DESCRIPTION
 Delete navigation property cloudPcDevices for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcDeviceId

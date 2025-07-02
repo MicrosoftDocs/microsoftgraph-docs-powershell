@@ -32,6 +32,8 @@ Update-MgPlanner -BodyParameter <IMicrosoftGraphPlanner> [-ResponseHeadersVariab
 ## DESCRIPTION
 Update planner
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

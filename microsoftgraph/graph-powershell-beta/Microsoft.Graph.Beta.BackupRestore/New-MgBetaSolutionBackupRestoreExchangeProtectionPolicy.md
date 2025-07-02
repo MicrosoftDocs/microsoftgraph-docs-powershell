@@ -42,6 +42,8 @@ Create a protection policy for the Exchange service in a Microsoft 365 tenant.
 The policy is set to inactive when it is created.
 Users can also provide a list of protection units under the policy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

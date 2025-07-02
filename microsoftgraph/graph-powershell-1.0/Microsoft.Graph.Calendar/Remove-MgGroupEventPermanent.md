@@ -32,6 +32,8 @@ Remove-MgGroupEventPermanent -InputObject <ICalendarIdentity> [-ResponseHeadersV
 ## DESCRIPTION
 Invoke action permanentDelete
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId

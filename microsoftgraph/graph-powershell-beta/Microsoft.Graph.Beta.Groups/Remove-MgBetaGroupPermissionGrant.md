@@ -32,6 +32,8 @@ Remove-MgBetaGroupPermissionGrant -InputObject <IGroupsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property permissionGrants for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

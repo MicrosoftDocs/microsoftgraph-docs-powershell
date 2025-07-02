@@ -54,6 +54,8 @@ Update-MgAgreement -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update entity in agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Acceptances

@@ -32,6 +32,8 @@ Remove-MgSolutionBackupRestoreDriveProtectionUnit -InputObject <IBackupRestoreId
 ## DESCRIPTION
 Delete navigation property driveProtectionUnits for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveProtectionUnitId

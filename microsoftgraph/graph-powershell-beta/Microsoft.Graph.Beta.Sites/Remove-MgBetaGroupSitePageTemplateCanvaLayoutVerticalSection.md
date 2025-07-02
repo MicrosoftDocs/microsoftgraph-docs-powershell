@@ -29,6 +29,8 @@ Remove-MgBetaGroupSitePageTemplateCanvaLayoutVerticalSection -InputObject <ISite
 ## DESCRIPTION
 Delete navigation property verticalSection for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

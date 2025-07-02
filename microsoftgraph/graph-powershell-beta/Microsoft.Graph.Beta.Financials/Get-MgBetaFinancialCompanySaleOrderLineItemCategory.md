@@ -43,6 +43,8 @@ Get-MgBetaFinancialCompanySaleOrderLineItemCategory -InputObject <IFinancialsIde
 ## DESCRIPTION
 Get itemCategory from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

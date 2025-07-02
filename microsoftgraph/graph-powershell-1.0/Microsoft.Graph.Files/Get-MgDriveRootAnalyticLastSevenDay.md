@@ -32,6 +32,8 @@ Get-MgDriveRootAnalyticLastSevenDay -InputObject <IFilesIdentity> [-ExpandProper
 ## DESCRIPTION
 Get lastSevenDays from drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

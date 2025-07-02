@@ -34,6 +34,8 @@ Get-MgUserDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 The root folder of the drive.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

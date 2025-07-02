@@ -29,6 +29,8 @@ New-MgBetaPrivilegedRole -BodyParameter <IMicrosoftGraphPrivilegedRole> [-Respon
 ## DESCRIPTION
 Add new entity to privilegedRoles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

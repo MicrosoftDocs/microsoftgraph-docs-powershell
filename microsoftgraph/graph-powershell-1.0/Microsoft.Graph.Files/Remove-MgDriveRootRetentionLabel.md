@@ -32,6 +32,8 @@ Remove-MgDriveRootRetentionLabel -InputObject <IFilesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property retentionLabel for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

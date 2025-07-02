@@ -50,6 +50,8 @@ Update-MgBetaCommunicationCallRecordOrganizerV2 -InputObject <ICloudCommunicatio
 ## DESCRIPTION
 Update the navigation property organizer_v2 in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

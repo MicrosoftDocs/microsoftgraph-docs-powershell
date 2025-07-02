@@ -40,6 +40,8 @@ Get-MgBetaRoleManagementEntitlementManagementResourceNamespace -InputObject <IId
 ## DESCRIPTION
 Get resourceNamespaces from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

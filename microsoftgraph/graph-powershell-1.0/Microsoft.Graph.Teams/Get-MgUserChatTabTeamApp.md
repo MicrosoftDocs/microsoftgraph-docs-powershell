@@ -34,6 +34,8 @@ Get-MgUserChatTabTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 The application that is linked to the tab.
 This can't be changed after tab creation.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

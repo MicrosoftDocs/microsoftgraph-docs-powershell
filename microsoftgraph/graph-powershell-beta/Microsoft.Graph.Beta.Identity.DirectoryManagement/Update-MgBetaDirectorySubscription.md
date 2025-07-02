@@ -54,6 +54,8 @@ Update-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Update the navigation property subscriptions in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

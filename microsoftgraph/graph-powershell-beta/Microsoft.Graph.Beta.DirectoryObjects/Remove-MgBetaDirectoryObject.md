@@ -33,6 +33,8 @@ Remove-MgBetaDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete a directory object, for example, a group, user, application, or service principal.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectoryObjectId

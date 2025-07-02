@@ -29,6 +29,8 @@ Remove-MgBetaSecurityUserSecurityProfile -InputObject <ISecurityIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property userSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

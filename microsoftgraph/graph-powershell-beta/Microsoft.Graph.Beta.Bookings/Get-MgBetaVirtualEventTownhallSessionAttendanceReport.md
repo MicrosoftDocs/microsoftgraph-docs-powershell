@@ -44,6 +44,8 @@ Get-MgBetaVirtualEventTownhallSessionAttendanceReport -InputObject <IBookingsIde
 The attendance reports of an online meeting.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

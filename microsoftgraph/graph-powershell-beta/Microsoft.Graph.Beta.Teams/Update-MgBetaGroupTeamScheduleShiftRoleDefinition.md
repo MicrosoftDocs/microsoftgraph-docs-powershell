@@ -45,6 +45,8 @@ Update-MgBetaGroupTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property shiftsRoleDefinitions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

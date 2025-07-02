@@ -29,6 +29,8 @@ Remove-MgBetaPrintPrinterShare -InputObject <IDevicesCloudPrintIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property printerShares for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

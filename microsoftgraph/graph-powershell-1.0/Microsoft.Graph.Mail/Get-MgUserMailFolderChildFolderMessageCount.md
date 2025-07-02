@@ -32,6 +32,8 @@ Get-MgUserMailFolderChildFolderMessageCount -InputObject <IMailIdentity> [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

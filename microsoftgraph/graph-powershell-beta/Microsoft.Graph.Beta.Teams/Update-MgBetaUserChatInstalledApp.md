@@ -51,6 +51,8 @@ Update-MgBetaUserChatInstalledApp -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Upgrade an app installation within a chat.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

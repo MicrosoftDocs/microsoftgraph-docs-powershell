@@ -29,6 +29,8 @@ Remove-MgBetaDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Delete navigation property usageRights for devices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

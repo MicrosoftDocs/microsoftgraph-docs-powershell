@@ -40,6 +40,8 @@ Get-MgBetaUserDriveListItem -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 All items contained in the list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

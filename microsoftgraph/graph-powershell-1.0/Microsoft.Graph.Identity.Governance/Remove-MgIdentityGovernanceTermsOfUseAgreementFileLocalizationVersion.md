@@ -34,6 +34,8 @@ Remove-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion
 ## DESCRIPTION
 Delete navigation property versions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId

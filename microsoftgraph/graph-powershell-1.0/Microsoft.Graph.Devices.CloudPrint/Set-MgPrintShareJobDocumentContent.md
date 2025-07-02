@@ -35,6 +35,8 @@ Set-MgPrintShareJobDocumentContent -InputObject <IDevicesCloudPrintIdentity> [-D
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

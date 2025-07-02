@@ -56,6 +56,8 @@ Update-MgBetaSiteOnenoteNotebookSectionContent -InputObject <INotesIdentity>
 ## DESCRIPTION
 Update the navigation property sections in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -60,6 +60,8 @@ New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAd
 Create a new siteRestoreArtifactsBulkAdditionRequest object associated with a sharePointRestoreSession.
 The following steps describe how to create and manage a sharePointRestoreSession with bulk artifact additions:
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

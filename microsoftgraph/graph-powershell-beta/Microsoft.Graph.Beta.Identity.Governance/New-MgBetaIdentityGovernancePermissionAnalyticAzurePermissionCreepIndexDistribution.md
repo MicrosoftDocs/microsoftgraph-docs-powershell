@@ -32,6 +32,8 @@ New-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribut
 ## DESCRIPTION
 Create new navigation property to permissionsCreepIndexDistributions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

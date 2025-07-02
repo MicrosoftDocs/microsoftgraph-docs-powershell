@@ -47,6 +47,8 @@ A list of zero or more accessReviewInstanceDecisionItem objects are returned, in
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceId

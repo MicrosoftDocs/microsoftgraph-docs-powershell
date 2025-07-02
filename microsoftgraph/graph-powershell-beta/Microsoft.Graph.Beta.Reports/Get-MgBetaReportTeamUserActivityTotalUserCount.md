@@ -29,6 +29,8 @@ Get-MgBetaReportTeamUserActivityTotalUserCount -InputObject <IReportsIdentity> -
 ## DESCRIPTION
 Invoke function getTeamsUserActivityTotalUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

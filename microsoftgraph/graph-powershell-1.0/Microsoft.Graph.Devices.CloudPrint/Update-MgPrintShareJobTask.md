@@ -49,6 +49,8 @@ Update-MgPrintShareJobTask -InputObject <IDevicesCloudPrintIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property tasks in print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

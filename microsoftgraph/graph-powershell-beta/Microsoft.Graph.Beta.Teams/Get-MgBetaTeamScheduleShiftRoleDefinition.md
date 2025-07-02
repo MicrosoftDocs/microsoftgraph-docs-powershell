@@ -45,6 +45,8 @@ The definitions of the roles in the schedule.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.Read.All, SchedulePermissions.ReadWrite.All, Schedule.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -39,6 +39,8 @@ Delete navigation property dependentResources for education
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

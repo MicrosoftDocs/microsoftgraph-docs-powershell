@@ -48,6 +48,8 @@ New-MgBetaUserChatPermissionGrant -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to permissionGrants for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

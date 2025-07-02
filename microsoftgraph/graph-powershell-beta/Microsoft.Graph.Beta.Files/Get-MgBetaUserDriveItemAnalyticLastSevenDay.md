@@ -32,6 +32,8 @@ Get-MgBetaUserDriveItemAnalyticLastSevenDay -InputObject <IFilesIdentity> [-Expa
 ## DESCRIPTION
 Get lastSevenDays from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

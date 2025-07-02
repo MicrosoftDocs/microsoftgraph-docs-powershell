@@ -51,6 +51,8 @@ New-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink -InputObject <INetwor
 ## DESCRIPTION
 Create new navigation property to deviceLinks for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

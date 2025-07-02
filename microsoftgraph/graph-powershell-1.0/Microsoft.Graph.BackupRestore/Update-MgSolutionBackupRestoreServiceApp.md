@@ -51,6 +51,8 @@ Update-MgSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentity>
 ## DESCRIPTION
 Update the navigation property serviceApps in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

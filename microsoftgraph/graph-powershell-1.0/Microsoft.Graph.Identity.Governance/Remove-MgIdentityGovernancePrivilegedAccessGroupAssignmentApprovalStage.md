@@ -30,6 +30,8 @@ Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage
 ## DESCRIPTION
 Delete navigation property stages for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApprovalId

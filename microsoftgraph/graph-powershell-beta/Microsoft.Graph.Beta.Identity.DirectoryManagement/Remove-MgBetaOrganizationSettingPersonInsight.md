@@ -29,6 +29,8 @@ Remove-MgBetaOrganizationSettingPersonInsight -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Delete navigation property peopleInsights for organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

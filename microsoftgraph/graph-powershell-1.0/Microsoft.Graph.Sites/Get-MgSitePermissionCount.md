@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.FullControl.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

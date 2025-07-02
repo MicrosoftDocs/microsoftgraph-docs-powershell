@@ -47,6 +47,8 @@ Update-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity
 ## DESCRIPTION
 Update the navigation property reviewSets in compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

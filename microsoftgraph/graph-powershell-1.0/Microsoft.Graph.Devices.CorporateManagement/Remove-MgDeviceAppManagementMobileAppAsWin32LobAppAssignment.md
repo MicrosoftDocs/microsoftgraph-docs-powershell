@@ -32,6 +32,8 @@ Remove-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment -InputObject <IDevi
 ## DESCRIPTION
 Delete navigation property assignments for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -48,6 +48,8 @@ Update-MgGroupSiteAnalytic -InputObject <ISitesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property analytics in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

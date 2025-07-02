@@ -38,6 +38,8 @@ Get-MgBetaRoleManagementEnterpriseAppResourceNamespace -InputObject <IIdentityGo
 ## DESCRIPTION
 Get resourceNamespaces from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

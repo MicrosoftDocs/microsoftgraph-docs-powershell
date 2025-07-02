@@ -29,6 +29,8 @@ Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileContent -InputObject <ISecurity
 ## DESCRIPTION
 Get content for the navigation property files from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

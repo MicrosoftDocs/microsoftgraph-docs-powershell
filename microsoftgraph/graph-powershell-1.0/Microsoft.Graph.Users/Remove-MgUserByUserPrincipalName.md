@@ -33,6 +33,8 @@ Remove-MgUserByUserPrincipalName -InputObject <IUsersIdentity> [-IfMatch <String
 ## DESCRIPTION
 Deletes a user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

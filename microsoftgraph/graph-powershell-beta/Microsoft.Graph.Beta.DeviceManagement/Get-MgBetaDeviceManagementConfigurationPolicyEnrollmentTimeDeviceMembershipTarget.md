@@ -29,6 +29,8 @@ Get-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarge
 ## DESCRIPTION
 Invoke action retrieveEnrollmentTimeDeviceMembershipTarget
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementConfigurationPolicyId

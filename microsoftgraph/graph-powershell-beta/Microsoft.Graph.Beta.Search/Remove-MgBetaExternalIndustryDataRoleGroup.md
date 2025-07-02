@@ -29,6 +29,8 @@ Remove-MgBetaExternalIndustryDataRoleGroup -InputObject <ISearchIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property roleGroups for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

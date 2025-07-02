@@ -32,6 +32,8 @@ Remove-MgGroupDriveItemPermanent -InputObject <IFilesIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Invoke action permanentDelete
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

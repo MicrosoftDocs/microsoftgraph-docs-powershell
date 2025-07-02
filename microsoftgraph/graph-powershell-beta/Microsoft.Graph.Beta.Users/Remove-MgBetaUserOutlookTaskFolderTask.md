@@ -29,6 +29,8 @@ Remove-MgBetaUserOutlookTaskFolderTask -InputObject <IUsersIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property tasks for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

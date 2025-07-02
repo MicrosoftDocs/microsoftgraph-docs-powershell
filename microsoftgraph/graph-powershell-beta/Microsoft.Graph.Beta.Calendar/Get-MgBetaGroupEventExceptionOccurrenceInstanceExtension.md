@@ -41,6 +41,8 @@ Get-MgBetaGroupEventExceptionOccurrenceInstanceExtension -InputObject <ICalendar
 The collection of open extensions defined for the event.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

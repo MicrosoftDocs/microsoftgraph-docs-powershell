@@ -52,6 +52,8 @@ Update-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdent
 ## DESCRIPTION
 Update an existing accessPackageSubject object to change the subject lifecycle.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageSubjectId

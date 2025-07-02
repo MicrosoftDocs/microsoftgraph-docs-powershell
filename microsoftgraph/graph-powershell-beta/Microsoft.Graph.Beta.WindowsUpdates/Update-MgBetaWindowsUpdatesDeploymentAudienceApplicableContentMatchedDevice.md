@@ -49,6 +49,8 @@ Update-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice
 ## DESCRIPTION
 Update the navigation property matchedDevices in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -34,6 +34,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubject
 ## DESCRIPTION
 The unique identifier of the Microsoft Entra user targeted for the task execution.Supports $filter(eq, ne) and $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -48,6 +48,8 @@ New-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISitesIde
 ## DESCRIPTION
 Create new navigation property to horizontalSections for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

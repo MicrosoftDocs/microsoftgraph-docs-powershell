@@ -24,6 +24,8 @@ Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItem [-IfMatch <String>] [-Re
 ## DESCRIPTION
 Delete navigation property deletedItems for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

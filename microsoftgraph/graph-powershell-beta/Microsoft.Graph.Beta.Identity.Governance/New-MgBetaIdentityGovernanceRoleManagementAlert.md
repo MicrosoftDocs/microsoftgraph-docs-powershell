@@ -34,6 +34,8 @@ New-MgBetaIdentityGovernanceRoleManagementAlert -BodyParameter <IMicrosoftGraphU
 ## DESCRIPTION
 Create new navigation property to alerts for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

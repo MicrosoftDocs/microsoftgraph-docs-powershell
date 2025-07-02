@@ -50,6 +50,8 @@ New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <I
 ## DESCRIPTION
 Create new navigation property to attendanceRecords for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -52,6 +52,8 @@ Update-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdenti
 ## DESCRIPTION
 Update the navigation property sessions in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

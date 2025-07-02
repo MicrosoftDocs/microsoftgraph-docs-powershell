@@ -41,6 +41,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BackupRestore-Configuration.Read.All, BackupRestore-Configuration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExchangeProtectionPolicyId

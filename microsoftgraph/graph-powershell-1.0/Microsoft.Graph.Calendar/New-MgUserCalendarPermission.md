@@ -78,6 +78,8 @@ New-MgUserCalendarPermission -InputObject <ICalendarIdentity>
 ## DESCRIPTION
 Create new navigation property to calendarPermissions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

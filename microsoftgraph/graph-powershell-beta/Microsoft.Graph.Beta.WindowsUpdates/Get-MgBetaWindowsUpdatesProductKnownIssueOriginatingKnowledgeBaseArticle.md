@@ -29,6 +29,8 @@ Get-MgBetaWindowsUpdatesProductKnownIssueOriginatingKnowledgeBaseArticle -InputO
 ## DESCRIPTION
 Knowledge base article associated with the release when the known issue was first reported.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

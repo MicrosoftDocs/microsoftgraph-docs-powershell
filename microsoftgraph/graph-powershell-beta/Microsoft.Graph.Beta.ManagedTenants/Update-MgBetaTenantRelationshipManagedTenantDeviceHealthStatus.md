@@ -51,6 +51,8 @@ Update-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus -InputObject <IMa
 ## DESCRIPTION
 Update the navigation property deviceHealthStatuses in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

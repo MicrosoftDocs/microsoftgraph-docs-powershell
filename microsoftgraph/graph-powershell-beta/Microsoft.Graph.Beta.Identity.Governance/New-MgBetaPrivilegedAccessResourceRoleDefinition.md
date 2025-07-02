@@ -47,6 +47,8 @@ New-MgBetaPrivilegedAccessResourceRoleDefinition -InputObject <IIdentityGovernan
 ## DESCRIPTION
 Create new navigation property to roleDefinitions for privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

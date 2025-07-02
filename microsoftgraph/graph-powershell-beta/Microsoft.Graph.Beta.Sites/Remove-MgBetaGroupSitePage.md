@@ -32,6 +32,8 @@ Remove-MgBetaGroupSitePage -InputObject <ISitesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property pages for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

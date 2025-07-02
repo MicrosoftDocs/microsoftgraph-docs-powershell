@@ -32,6 +32,8 @@ New-MgBetaTenantRelationshipManagedTenantTicketingEndpoint
 ## DESCRIPTION
 Create new navigation property to managedTenantTicketingEndpoints for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -31,6 +31,8 @@ Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDeviceAssignTo
 ## DESCRIPTION
 Assign the hardware OATH token to a user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

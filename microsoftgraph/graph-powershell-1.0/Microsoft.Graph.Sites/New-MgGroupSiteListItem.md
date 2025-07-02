@@ -60,6 +60,8 @@ New-MgGroupSiteListItem -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to items for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

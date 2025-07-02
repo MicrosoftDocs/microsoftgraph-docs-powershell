@@ -31,6 +31,8 @@ Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship
 ## DESCRIPTION
 Delete navigation property relationships for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -55,6 +55,8 @@ Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtif
 ## DESCRIPTION
 Update the navigation property driveRestoreArtifacts in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -46,6 +46,8 @@ Update-MgTeamworkDeletedTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property deletedTeams in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

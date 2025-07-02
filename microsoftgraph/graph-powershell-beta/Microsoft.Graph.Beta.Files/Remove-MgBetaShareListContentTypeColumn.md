@@ -32,6 +32,8 @@ Remove-MgBetaShareListContentTypeColumn -InputObject <IFilesIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property columns for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId

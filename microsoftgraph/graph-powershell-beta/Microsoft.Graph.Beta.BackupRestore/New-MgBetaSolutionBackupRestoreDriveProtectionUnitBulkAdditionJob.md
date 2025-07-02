@@ -32,6 +32,8 @@ New-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob
 ## DESCRIPTION
 Create new navigation property to driveProtectionUnitsBulkAdditionJobs for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

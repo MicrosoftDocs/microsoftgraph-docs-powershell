@@ -50,6 +50,8 @@ New-MgUserDriveRootVersion -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to versions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

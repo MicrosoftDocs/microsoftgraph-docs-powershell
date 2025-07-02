@@ -38,6 +38,8 @@ Get-MgEntitlementManagementAssignmentPolicyQuestion -InputObject <IIdentityGover
 ## DESCRIPTION
 Questions that are posed to the  requestor.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

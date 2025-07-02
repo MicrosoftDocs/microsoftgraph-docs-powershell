@@ -33,6 +33,8 @@ New-MgBetaPrintPrinterShare -BodyParameter <IMicrosoftGraphPrinterShare> [-Respo
 ## DESCRIPTION
 Create new navigation property to printerShares for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

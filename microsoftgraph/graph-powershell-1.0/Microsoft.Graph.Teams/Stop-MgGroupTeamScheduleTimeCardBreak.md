@@ -49,6 +49,8 @@ Stop-MgGroupTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action endBreak
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

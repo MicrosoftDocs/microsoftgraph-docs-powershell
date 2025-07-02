@@ -32,6 +32,8 @@ Get-MgBetaReportOneDriveActivityUserCount -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Invoke function getOneDriveActivityUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

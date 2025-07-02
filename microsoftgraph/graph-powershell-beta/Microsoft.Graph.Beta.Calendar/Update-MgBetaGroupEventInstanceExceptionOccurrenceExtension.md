@@ -45,6 +45,8 @@ Update-MgBetaGroupEventInstanceExceptionOccurrenceExtension -InputObject <ICalen
 ## DESCRIPTION
 Update the navigation property extensions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

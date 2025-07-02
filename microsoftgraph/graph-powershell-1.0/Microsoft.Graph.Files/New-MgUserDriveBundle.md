@@ -82,6 +82,8 @@ New-MgUserDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create new navigation property to bundles for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -35,6 +35,8 @@ New-MgSecurityAttackSimulationLandingPage -BodyParameter <IMicrosoftGraphLanding
 ## DESCRIPTION
 Create new navigation property to landingPages for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -71,6 +71,8 @@ Create a new bookingService for the specified bookingBusiness.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

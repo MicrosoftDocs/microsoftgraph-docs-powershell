@@ -49,6 +49,8 @@ New-MgTeamworkDeletedTeamChannelMessageReplyHostedContent -InputObject <ITeamsId
 ## DESCRIPTION
 Create new navigation property to hostedContents for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

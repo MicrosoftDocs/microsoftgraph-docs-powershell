@@ -52,6 +52,8 @@ Update-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property offerShiftRequests in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

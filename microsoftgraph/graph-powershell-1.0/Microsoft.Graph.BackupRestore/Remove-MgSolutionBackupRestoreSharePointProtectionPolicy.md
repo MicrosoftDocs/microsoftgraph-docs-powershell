@@ -32,6 +32,8 @@ Remove-MgSolutionBackupRestoreSharePointProtectionPolicy -InputObject <IBackupRe
 ## DESCRIPTION
 Delete navigation property sharePointProtectionPolicies for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

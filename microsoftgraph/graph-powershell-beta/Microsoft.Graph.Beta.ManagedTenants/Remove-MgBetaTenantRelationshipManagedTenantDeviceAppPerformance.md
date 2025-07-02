@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance -InputObject <I
 ## DESCRIPTION
 Delete navigation property deviceAppPerformances for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceAppPerformanceId

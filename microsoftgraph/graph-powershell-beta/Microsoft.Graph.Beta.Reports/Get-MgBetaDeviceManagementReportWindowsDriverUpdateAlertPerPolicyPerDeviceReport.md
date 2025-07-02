@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportWindowsDriverUpdateAlertPerPolicyPerDeviceReport
 ## DESCRIPTION
 Invoke action getWindowsDriverUpdateAlertsPerPolicyPerDeviceReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

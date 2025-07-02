@@ -32,6 +32,8 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowInsight -BodyParameter <Hashtabl
 ## DESCRIPTION
 Update the navigation property insights in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

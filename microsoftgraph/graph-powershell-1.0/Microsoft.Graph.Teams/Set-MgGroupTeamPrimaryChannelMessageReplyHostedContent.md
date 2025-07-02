@@ -35,6 +35,8 @@ Set-MgGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdent
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatMessageHostedContentId

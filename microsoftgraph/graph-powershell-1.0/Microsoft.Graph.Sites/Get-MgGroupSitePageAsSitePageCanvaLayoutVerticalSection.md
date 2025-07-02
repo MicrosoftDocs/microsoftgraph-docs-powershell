@@ -32,6 +32,8 @@ Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection -InputObject <ISitesIden
 ## DESCRIPTION
 Vertical section on the SharePoint page.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

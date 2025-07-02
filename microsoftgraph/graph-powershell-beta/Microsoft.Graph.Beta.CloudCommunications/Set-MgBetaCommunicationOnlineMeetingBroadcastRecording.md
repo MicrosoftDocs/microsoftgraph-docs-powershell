@@ -30,6 +30,8 @@ Set-MgBetaCommunicationOnlineMeetingBroadcastRecording -InputObject <ICloudCommu
 ## DESCRIPTION
 Update broadcastRecording for the navigation property onlineMeetings in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

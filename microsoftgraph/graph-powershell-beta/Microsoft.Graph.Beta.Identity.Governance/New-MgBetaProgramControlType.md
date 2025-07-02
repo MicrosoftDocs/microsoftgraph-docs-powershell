@@ -29,6 +29,8 @@ New-MgBetaProgramControlType -BodyParameter <IMicrosoftGraphProgramControlType>
 ## DESCRIPTION
 Add new entity to programControlTypes
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

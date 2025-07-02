@@ -40,6 +40,8 @@ Get-MgBetaUserMailFolderMessageAttachment -InputObject <IMailIdentity> [-ExpandP
 ## DESCRIPTION
 The fileAttachment and itemAttachment attachments for the message.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

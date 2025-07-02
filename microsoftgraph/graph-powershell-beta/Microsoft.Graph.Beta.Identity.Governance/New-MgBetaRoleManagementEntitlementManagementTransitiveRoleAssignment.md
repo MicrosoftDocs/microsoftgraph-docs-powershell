@@ -33,6 +33,8 @@ New-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment
 ## DESCRIPTION
 Create new navigation property to transitiveRoleAssignments for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -42,6 +42,8 @@ With Teams Premium, you can configure a custom lobby room experience for attende
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

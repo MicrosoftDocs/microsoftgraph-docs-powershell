@@ -39,6 +39,8 @@ Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
 ## DESCRIPTION
 Get managementTemplateStepTenantSummaries from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

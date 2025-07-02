@@ -33,6 +33,8 @@ Remove-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord -InputObject <I
 ## DESCRIPTION
 Delete navigation property attendanceRecords for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttendanceRecordId

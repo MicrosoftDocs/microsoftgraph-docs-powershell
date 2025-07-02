@@ -56,6 +56,8 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreA
 ## DESCRIPTION
 Update the navigation property driveRestoreArtifactsBulkAdditionRequests in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

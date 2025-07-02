@@ -33,6 +33,8 @@ Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion
 ## DESCRIPTION
 Delete navigation property contentVersions for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

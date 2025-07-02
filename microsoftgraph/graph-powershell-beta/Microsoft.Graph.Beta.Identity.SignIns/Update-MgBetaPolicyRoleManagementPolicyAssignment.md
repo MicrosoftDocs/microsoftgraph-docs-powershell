@@ -50,6 +50,8 @@ Update-MgBetaPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Update the navigation property roleManagementPolicyAssignments in policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

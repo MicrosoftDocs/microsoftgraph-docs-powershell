@@ -46,6 +46,8 @@ Update-MgBetaRoleManagementDefenderRoleAssignmentAppScope -InputObject <IDeviceM
 ## DESCRIPTION
 Update the navigation property appScopes in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

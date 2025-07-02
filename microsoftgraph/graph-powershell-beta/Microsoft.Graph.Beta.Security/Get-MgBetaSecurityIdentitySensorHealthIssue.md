@@ -40,6 +40,8 @@ Get-MgBetaSecurityIdentitySensorHealthIssue -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified related to the sensor.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

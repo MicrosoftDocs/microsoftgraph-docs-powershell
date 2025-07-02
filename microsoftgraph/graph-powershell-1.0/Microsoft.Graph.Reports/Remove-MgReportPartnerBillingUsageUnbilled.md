@@ -24,6 +24,8 @@ Remove-MgReportPartnerBillingUsageUnbilled [-IfMatch <String>] [-ResponseHeaders
 ## DESCRIPTION
 Delete navigation property unbilled for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -41,6 +41,8 @@ New-MgBetaSecurityThreatIntelligenceWhoisRecord -BodyParameter <IMicrosoftGraphS
 ## DESCRIPTION
 Create new navigation property to whoisRecords for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Abuse

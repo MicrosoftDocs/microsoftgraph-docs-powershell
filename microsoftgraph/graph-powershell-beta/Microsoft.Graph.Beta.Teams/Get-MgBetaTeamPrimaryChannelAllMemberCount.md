@@ -32,6 +32,8 @@ Get-MgBetaTeamPrimaryChannelAllMemberCount -InputObject <ITeamsIdentity> [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

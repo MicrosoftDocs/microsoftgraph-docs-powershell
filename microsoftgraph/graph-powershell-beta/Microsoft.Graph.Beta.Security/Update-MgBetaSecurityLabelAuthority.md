@@ -48,6 +48,8 @@ Update-MgBetaSecurityLabelAuthority -InputObject <ISecurityIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property authorities in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

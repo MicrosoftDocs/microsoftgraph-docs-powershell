@@ -21,6 +21,8 @@ Remove-MgBetaRoleManagementDefender [-IfMatch <String>] [-ResponseHeadersVariabl
 ## DESCRIPTION
 Delete navigation property defender for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

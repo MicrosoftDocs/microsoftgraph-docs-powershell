@@ -32,6 +32,8 @@ Remove-MgUserDriveRootAnalytic -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property analytics for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

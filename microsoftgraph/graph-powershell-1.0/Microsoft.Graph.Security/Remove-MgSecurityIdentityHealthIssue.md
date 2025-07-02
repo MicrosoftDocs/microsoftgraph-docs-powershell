@@ -32,6 +32,8 @@ Remove-MgSecurityIdentityHealthIssue -InputObject <ISecurityIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property healthIssues for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

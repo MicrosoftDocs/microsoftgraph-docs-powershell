@@ -73,6 +73,8 @@ Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTask -InputObject <ITeam
 ## DESCRIPTION
 Update the navigation property tasks in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActiveChecklistItemCount

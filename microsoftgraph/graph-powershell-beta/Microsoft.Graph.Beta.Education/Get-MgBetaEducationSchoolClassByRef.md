@@ -33,6 +33,8 @@ Retrieve a list of classes owned by a school.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

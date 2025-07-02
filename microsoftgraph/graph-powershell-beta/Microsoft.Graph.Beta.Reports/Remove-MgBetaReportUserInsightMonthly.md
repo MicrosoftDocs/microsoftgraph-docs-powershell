@@ -21,6 +21,8 @@ Remove-MgBetaReportUserInsightMonthly [-IfMatch <String>] [-ResponseHeadersVaria
 ## DESCRIPTION
 Delete navigation property monthly for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

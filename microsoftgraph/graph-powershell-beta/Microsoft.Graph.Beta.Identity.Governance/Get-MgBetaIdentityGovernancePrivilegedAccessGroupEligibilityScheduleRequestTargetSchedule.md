@@ -34,6 +34,8 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestTarge
 ## DESCRIPTION
 Schedule created by this request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -43,6 +43,8 @@ Get-MgBetaFinancialCompanySaleQuoteLineItem -InputObject <IFinancialsIdentity> [
 ## DESCRIPTION
 Get item from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

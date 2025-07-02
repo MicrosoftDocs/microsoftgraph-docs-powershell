@@ -33,6 +33,8 @@ Remove-MgBetaUserOnenoteNotebookSectionGroupSectionPageContent -InputObject <INo
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

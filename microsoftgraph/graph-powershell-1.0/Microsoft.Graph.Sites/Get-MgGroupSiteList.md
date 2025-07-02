@@ -40,6 +40,8 @@ Get-MgGroupSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 The collection of lists under this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

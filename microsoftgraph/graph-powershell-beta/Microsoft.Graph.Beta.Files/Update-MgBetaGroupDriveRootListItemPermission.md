@@ -53,6 +53,8 @@ Update-MgBetaGroupDriveRootListItemPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property permissions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -31,6 +31,8 @@ New-MgBetaTenantRelationshipManagedTenantManagementAction
 ## DESCRIPTION
 Create new navigation property to managementActions for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

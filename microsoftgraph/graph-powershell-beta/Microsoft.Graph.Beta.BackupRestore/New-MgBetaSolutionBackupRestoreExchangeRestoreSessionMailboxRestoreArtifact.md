@@ -53,6 +53,8 @@ New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact
 ## DESCRIPTION
 Create new navigation property to mailboxRestoreArtifacts for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

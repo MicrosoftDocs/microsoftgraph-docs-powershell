@@ -33,6 +33,8 @@ Clear-MgBetaCommunicationPresenceUserPreferredPresence -InputObject <ICloudCommu
 ## DESCRIPTION
 Clear the preferred availability and activity status for a user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

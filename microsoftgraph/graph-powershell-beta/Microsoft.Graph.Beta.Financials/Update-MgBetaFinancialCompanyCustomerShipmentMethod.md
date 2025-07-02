@@ -45,6 +45,8 @@ Update-MgBetaFinancialCompanyCustomerShipmentMethod -InputObject <IFinancialsIde
 ## DESCRIPTION
 Update the navigation property shipmentMethod in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

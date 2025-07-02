@@ -30,6 +30,8 @@ Remove-MgBetaWindowsUpdatesProductKnownIssueOriginatingKnowledgeBaseArticle
 ## DESCRIPTION
 Delete navigation property originatingKnowledgeBaseArticle for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -35,6 +35,8 @@ Get-MgBetaDeviceManagementReportDeviceAppInstallationStatusReport -OutFile <Stri
 ## DESCRIPTION
 Invoke action retrieveDeviceAppInstallationStatusReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

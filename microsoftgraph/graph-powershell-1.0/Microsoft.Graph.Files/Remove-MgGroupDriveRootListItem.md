@@ -32,6 +32,8 @@ Remove-MgGroupDriveRootListItem -InputObject <IFilesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property listItem for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

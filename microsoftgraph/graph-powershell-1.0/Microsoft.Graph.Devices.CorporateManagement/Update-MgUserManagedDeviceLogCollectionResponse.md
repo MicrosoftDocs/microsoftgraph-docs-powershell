@@ -54,6 +54,8 @@ Update-MgUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Update the navigation property logCollectionRequests in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -58,6 +58,8 @@ Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

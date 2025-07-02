@@ -45,6 +45,8 @@ Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink -InputObject <IDevi
 ## DESCRIPTION
 Invoke action hasPayloadLinks
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

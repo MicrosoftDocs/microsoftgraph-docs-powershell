@@ -32,6 +32,8 @@ Get-MgBetaCommunicationOnlineMeetingTranscriptCount -InputObject <ICloudCommunic
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

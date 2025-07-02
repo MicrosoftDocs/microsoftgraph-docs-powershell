@@ -29,6 +29,8 @@ Remove-MgBetaPrivilegedRoleAssignmentRequest -InputObject <IIdentityGovernanceId
 ## DESCRIPTION
 Delete entity from privilegedRoleAssignmentRequests
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -24,6 +24,8 @@ Get-MgRoleManagementDirectory [-ExpandProperty <String[]>] [-Property <String[]>
 ## DESCRIPTION
 Get directory from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -32,6 +32,8 @@ Remove-MgApplicationSynchronizationJobBulkUploadContent -InputObject <IApplicati
 ## DESCRIPTION
 The bulk upload operation for the job.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

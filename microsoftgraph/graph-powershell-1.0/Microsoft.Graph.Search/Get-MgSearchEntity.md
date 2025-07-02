@@ -23,6 +23,8 @@ Get-MgSearchEntity [-ExpandProperty <String[]>] [-Property <String[]>] [-Respons
 ## DESCRIPTION
 Get search
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

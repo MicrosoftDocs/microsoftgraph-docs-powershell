@@ -32,6 +32,8 @@ Get-MgBetaGroupSiteGetGraphBPrePathLastModifiedByUser -InputObject <ISitesIdenti
 ## DESCRIPTION
 Get lastModifiedByUser from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

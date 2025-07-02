@@ -49,6 +49,8 @@ Import-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
 ## DESCRIPTION
 Invoke action importResourceActions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

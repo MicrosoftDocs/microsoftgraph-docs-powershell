@@ -49,6 +49,8 @@ Test-MgBetaUserInformationProtectionSensitivityLabelSublabel -InputObject <IIden
 ## DESCRIPTION
 Invoke action evaluate
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

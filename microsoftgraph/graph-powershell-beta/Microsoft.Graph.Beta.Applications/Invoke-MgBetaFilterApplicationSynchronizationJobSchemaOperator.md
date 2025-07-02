@@ -35,6 +35,8 @@ Invoke-MgBetaFilterApplicationSynchronizationJobSchemaOperator -InputObject <IAp
 ## DESCRIPTION
 List all operators supported in the scoping filters.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

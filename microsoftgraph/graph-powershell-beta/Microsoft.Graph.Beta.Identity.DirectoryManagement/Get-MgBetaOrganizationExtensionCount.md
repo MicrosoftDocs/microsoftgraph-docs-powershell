@@ -32,6 +32,8 @@ Get-MgBetaOrganizationExtensionCount -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

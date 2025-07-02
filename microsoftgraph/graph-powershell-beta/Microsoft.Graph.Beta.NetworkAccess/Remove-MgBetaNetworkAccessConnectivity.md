@@ -21,6 +21,8 @@ Remove-MgBetaNetworkAccessConnectivity [-IfMatch <String>] [-ResponseHeadersVari
 ## DESCRIPTION
 Delete navigation property connectivity for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -63,6 +63,8 @@ Update-MgBetaTenantRelationshipManagedTenantAlert -InputObject <IManagedTenantsI
 ## DESCRIPTION
 Update the navigation property managedTenantAlerts in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

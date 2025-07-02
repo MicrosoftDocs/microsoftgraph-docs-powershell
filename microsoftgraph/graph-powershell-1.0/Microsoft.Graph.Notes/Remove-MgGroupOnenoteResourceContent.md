@@ -32,6 +32,8 @@ Remove-MgGroupOnenoteResourceContent -InputObject <INotesIdentity> [-IfMatch <St
 ## DESCRIPTION
 The content stream
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

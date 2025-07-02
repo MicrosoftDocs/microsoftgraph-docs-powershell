@@ -32,6 +32,8 @@ Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceCount -InputObject <IS
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

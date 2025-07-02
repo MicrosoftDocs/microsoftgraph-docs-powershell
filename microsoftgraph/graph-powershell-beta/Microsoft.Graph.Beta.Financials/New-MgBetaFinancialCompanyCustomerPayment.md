@@ -53,6 +53,8 @@ New-MgBetaFinancialCompanyCustomerPayment -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Create new navigation property to customerPayments for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

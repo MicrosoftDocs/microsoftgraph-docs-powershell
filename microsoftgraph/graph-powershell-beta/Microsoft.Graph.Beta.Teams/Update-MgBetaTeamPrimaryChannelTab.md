@@ -50,6 +50,8 @@ Update-MgBetaTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property tabs in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -63,6 +63,8 @@ Update-MgTeamChannelMessageReply -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property replies in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

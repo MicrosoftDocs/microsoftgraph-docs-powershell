@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsAppInstallation.Read.Group, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ManageSelectedForTeam.All, TeamsApp.Read.Group, ResourceSpecificPermissionGrant.ReadForTeam.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

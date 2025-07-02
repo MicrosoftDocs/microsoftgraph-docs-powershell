@@ -30,6 +30,8 @@ Invoke-MgBetaHasDeviceAppManagementMobileAppPayloadLink
 ## DESCRIPTION
 Invoke action hasPayloadLinks
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

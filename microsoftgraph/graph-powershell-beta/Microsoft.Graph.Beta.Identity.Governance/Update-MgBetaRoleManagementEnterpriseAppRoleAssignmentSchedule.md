@@ -57,6 +57,8 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule -InputObject <IId
 ## DESCRIPTION
 Update the navigation property roleAssignmentSchedules in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivatedUsing

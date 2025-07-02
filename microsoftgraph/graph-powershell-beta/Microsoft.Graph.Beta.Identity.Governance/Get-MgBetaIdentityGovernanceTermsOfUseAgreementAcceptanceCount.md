@@ -39,6 +39,8 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptanceCount -InputObject <IId
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementId

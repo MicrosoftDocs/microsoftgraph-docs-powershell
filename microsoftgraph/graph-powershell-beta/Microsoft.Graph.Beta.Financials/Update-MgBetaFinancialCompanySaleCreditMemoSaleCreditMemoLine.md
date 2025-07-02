@@ -58,6 +58,8 @@ Update-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLine -InputObject <IFin
 ## DESCRIPTION
 Update the navigation property salesCreditMemoLines in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Account

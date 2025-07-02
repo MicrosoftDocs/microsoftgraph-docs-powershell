@@ -45,6 +45,8 @@ Invoke-MgBetaSignGroupSiteInformationProtectionDigest -InputObject <ISitesIdenti
 ## DESCRIPTION
 Invoke action signDigest
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -23,6 +23,8 @@ Get-MgSecurityIdentity [-ExpandProperty <String[]>] [-Property <String[]>] [-Res
 ## DESCRIPTION
 A container for security identities APIs.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

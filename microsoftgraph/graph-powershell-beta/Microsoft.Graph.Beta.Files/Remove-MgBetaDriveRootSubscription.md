@@ -32,6 +32,8 @@ Remove-MgBetaDriveRootSubscription -InputObject <IFilesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property subscriptions for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

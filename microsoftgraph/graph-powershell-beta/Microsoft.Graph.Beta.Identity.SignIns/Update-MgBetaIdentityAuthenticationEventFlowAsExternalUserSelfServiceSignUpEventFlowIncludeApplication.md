@@ -50,6 +50,8 @@ Update-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEvent
 ## DESCRIPTION
 Update the navigation property includeApplications in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

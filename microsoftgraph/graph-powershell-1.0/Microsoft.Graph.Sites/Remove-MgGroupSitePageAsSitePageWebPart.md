@@ -32,6 +32,8 @@ Remove-MgGroupSitePageAsSitePageWebPart -InputObject <ISitesIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property webParts for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

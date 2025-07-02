@@ -24,6 +24,8 @@ Get-MgDirectoryObjectCount [-Filter <String>] [-Search <String>] -ConsistencyLev
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

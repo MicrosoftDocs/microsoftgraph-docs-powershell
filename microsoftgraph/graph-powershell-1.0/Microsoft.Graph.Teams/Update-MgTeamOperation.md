@@ -50,6 +50,8 @@ Update-MgTeamOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property operations in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

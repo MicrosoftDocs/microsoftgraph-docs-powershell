@@ -46,6 +46,8 @@ Update-MgGroupPlanner -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property planner in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

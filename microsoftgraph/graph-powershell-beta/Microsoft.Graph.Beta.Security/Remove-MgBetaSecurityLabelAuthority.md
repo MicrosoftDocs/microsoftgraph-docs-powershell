@@ -32,6 +32,8 @@ Remove-MgBetaSecurityLabelAuthority -InputObject <ISecurityIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property authorities for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthorityTemplateId

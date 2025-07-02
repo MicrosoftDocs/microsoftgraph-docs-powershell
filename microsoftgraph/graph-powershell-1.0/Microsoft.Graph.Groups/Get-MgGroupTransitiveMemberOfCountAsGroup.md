@@ -32,6 +32,8 @@ Get-MgGroupTransitiveMemberOfCountAsGroup -InputObject <IGroupsIdentity> [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

@@ -54,6 +54,8 @@ Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurit
 ## DESCRIPTION
 Update the navigation property noncustodialDataSources in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,6 +48,8 @@ Update-MgBetaGroupSiteAnalytic -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property analytics in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

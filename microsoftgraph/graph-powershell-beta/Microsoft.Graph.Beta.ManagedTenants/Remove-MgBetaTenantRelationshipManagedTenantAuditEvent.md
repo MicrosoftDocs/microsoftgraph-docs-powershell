@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantAuditEvent -InputObject <IManagedTen
 ## DESCRIPTION
 Delete navigation property auditEvents for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuditEventId

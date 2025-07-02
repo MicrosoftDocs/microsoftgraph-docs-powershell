@@ -54,6 +54,8 @@ Update-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionReq
 ## DESCRIPTION
 Update the navigation property managedAppLogCollectionRequests in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

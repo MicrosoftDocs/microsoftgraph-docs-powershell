@@ -37,6 +37,8 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval -InputObject <IIdent
 ## DESCRIPTION
 Get roleAssignmentApprovals from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

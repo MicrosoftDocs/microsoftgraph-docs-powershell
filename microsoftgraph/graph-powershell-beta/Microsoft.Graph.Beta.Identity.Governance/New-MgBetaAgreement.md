@@ -34,6 +34,8 @@ New-MgBetaAgreement -BodyParameter <IMicrosoftGraphAgreement> [-ResponseHeadersV
 ## DESCRIPTION
 Add new entity to agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Acceptances

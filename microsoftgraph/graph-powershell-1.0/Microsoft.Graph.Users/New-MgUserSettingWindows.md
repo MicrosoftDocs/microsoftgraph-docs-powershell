@@ -48,6 +48,8 @@ New-MgUserSettingWindows -InputObject <IUsersIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to windows for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

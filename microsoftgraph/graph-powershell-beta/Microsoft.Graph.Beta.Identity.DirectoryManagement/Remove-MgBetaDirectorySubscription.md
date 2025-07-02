@@ -32,6 +32,8 @@ Remove-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Delete navigation property subscriptions for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanySubscriptionId

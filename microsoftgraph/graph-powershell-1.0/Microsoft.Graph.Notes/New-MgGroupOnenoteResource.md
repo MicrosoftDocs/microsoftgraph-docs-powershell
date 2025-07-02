@@ -48,6 +48,8 @@ New-MgGroupOnenoteResource -InputObject <INotesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to resources for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

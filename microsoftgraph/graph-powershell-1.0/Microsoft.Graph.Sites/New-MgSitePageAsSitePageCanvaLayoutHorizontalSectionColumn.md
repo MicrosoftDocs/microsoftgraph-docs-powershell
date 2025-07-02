@@ -49,6 +49,8 @@ New-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn -InputObject <ISitesI
 ## DESCRIPTION
 Create new navigation property to columns for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

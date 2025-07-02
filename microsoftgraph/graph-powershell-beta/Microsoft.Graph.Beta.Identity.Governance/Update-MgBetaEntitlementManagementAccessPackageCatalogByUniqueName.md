@@ -62,6 +62,8 @@ Update-MgBetaEntitlementManagementAccessPackageCatalogByUniqueName -InputObject 
 ## DESCRIPTION
 Update an existing accessPackageCatalog object to change one or more of its properties, such as the display name or description.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCustomWorkflowExtensions

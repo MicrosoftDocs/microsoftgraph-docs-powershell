@@ -29,6 +29,8 @@ Remove-MgBetaUserInformationProtectionPolicy -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Delete navigation property policy for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

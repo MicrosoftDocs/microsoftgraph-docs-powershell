@@ -33,6 +33,8 @@ Get-MgBetaPrivacySubjectRightsRequestApproverByUserPrincipalName -InputObject <I
 ## DESCRIPTION
 Get approvers from privacy
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

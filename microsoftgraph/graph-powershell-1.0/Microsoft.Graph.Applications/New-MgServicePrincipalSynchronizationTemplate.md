@@ -50,6 +50,8 @@ New-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 Create new navigation property to templates for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

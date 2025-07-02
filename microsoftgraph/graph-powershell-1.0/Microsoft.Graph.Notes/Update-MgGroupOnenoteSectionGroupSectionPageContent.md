@@ -52,6 +52,8 @@ Update-MgGroupOnenoteSectionGroupSectionPageContent -InputObject <INotesIdentity
 ## DESCRIPTION
 Invoke action onenotePatchContent
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

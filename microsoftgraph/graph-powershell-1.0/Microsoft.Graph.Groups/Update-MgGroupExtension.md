@@ -46,6 +46,8 @@ Update-MgGroupExtension -InputObject <IGroupsIdentity> -BodyParameter <Hashtable
 ## DESCRIPTION
 Update the navigation property extensions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

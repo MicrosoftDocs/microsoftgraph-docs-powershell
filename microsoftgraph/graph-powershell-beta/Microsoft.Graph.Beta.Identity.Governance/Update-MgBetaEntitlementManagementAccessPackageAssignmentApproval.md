@@ -48,6 +48,8 @@ Update-MgBetaEntitlementManagementAccessPackageAssignmentApproval -InputObject <
 ## DESCRIPTION
 Update the navigation property accessPackageAssignmentApprovals in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

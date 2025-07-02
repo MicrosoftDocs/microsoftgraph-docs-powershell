@@ -41,6 +41,8 @@ Invoke action executeAction
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.PrivilegedOperations.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionName

@@ -44,6 +44,8 @@ Remove-MgBetaFinancialCompanySaleOrderLineItemPicture -InputObject <IFinancialsI
 ## DESCRIPTION
 Delete navigation property picture for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

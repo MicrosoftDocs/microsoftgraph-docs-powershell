@@ -50,6 +50,8 @@ Update-MgBetaGroupTeamScheduleDayNote -InputObject <ITeamsIdentity> -BodyParamet
 ## DESCRIPTION
 Update the navigation property dayNotes in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

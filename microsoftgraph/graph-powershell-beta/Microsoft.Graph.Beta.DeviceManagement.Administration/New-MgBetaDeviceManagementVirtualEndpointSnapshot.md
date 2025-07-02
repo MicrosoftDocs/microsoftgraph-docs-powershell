@@ -31,6 +31,8 @@ New-MgBetaDeviceManagementVirtualEndpointSnapshot -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create new navigation property to snapshots for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

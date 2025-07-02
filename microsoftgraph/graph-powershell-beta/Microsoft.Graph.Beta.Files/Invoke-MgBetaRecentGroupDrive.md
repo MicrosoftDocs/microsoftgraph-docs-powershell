@@ -35,6 +35,8 @@ Invoke-MgBetaRecentGroupDrive -InputObject <IFilesIdentity> [-Count] [-ExpandPro
 ## DESCRIPTION
 List a set of items recently used by the signed-in user.This collection includes items that are in the user's drive and items they have access to from other drives.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

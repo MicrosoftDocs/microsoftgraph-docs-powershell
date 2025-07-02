@@ -42,6 +42,8 @@ Create new navigation property to importedWindowsAutopilotDeviceIdentities for d
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

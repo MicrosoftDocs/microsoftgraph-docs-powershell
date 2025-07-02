@@ -28,6 +28,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AuditLogsQuery-Entra.Read.All, AuditLogsQuery.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-CRM.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

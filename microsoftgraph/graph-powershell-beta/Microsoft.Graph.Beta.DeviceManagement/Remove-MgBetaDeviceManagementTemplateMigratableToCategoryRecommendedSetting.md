@@ -32,6 +32,8 @@ Remove-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting
 ## DESCRIPTION
 Delete navigation property recommendedSettings for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementSettingInstanceId

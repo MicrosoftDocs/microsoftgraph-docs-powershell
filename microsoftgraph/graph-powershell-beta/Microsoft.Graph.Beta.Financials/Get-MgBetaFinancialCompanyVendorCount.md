@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanyVendorCount -InputObject <IFinancialsIdentity> [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

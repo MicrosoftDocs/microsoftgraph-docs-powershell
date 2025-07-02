@@ -31,6 +31,8 @@ New-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
 ## DESCRIPTION
 Create new navigation property to permissionsRequestChanges for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActiveOccurrenceStatus

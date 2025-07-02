@@ -42,6 +42,8 @@ Get-MgBetaDirectoryAdministrativeUnitMemberAsDevice -InputObject <IIdentityDirec
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdministrativeUnitId

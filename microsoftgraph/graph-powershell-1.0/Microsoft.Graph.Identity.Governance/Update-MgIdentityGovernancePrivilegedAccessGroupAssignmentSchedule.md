@@ -57,6 +57,8 @@ Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule -InputObject 
 ## DESCRIPTION
 Update the navigation property assignmentSchedules in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessId

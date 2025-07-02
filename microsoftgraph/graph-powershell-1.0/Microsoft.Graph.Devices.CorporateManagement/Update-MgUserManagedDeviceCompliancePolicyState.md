@@ -52,6 +52,8 @@ Update-MgUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Update the navigation property deviceCompliancePolicyStates in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

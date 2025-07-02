@@ -24,6 +24,8 @@ Get-MgBetaAdminEdgeInternetExplorerMode [-ExpandProperty <String[]>] [-Property 
 ## DESCRIPTION
 A container for Internet Explorer mode resources.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

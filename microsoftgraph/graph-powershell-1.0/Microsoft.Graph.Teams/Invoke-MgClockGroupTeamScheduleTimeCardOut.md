@@ -49,6 +49,8 @@ Invoke-MgClockGroupTeamScheduleTimeCardOut -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action clockOut
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

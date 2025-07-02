@@ -21,6 +21,8 @@ Get-MgBetaInformationProtectionDataLossPreventionPolicyCount [-Filter <String>] 
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

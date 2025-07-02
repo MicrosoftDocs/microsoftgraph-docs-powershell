@@ -36,6 +36,8 @@ New-MgSecurityIncident -BodyParameter <IMicrosoftGraphSecurityIncident> [-Respon
 ## DESCRIPTION
 Create new navigation property to incidents for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

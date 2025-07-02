@@ -41,6 +41,8 @@ Update-MgRoleManagementEntitlementManagement -BodyParameter <IMicrosoftGraphRbac
 ## DESCRIPTION
 Update the navigation property entitlementManagement in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

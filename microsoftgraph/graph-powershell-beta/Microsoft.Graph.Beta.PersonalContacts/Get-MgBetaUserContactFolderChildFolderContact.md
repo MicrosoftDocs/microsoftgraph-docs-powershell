@@ -55,6 +55,8 @@ Nullable.
 | Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite,  |
 | Application | Contacts.Read, Contacts.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

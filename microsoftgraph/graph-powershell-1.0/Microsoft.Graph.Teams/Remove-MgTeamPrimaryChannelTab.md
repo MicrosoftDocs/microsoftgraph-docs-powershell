@@ -32,6 +32,8 @@ Remove-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property tabs for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

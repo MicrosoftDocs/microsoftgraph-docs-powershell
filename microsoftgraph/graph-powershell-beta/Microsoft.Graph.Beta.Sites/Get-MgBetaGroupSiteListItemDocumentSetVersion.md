@@ -41,6 +41,8 @@ Get-MgBetaGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-Ex
 ## DESCRIPTION
 Version information for a document set version created by a user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

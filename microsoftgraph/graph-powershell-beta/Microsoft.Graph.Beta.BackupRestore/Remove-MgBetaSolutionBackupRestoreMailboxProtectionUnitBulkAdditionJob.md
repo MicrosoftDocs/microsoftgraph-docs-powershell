@@ -30,6 +30,8 @@ Remove-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob -InputObj
 ## DESCRIPTION
 Delete navigation property mailboxProtectionUnitsBulkAdditionJobs for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

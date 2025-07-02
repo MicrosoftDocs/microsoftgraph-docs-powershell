@@ -50,6 +50,8 @@ New-MgUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateManagem
 ## DESCRIPTION
 Create new navigation property to deviceConfigurationStates for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

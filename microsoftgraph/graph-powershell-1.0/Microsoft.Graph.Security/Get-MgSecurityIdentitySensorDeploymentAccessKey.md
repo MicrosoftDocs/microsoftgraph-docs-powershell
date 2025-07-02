@@ -31,6 +31,8 @@ Get the deployment access key for Microsoft Defender for Identity that is requir
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesSensors.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

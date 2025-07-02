@@ -46,6 +46,8 @@ Getting a resources collection isn't supported, but you can get the binary conte
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

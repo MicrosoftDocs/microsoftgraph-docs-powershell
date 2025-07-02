@@ -30,6 +30,8 @@ Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroup -InputObject 
 ## DESCRIPTION
 The group associated with the unifiedGroupSource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

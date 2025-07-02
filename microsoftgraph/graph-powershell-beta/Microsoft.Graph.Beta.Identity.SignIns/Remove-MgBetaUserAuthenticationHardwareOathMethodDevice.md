@@ -29,6 +29,8 @@ Remove-MgBetaUserAuthenticationHardwareOathMethodDevice -InputObject <IIdentityS
 ## DESCRIPTION
 Delete navigation property device for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -HardwareOathAuthenticationMethodId

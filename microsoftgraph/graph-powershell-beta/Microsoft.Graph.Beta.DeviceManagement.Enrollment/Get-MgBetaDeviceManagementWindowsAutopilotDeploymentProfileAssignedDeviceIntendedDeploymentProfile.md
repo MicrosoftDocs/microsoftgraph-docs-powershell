@@ -31,6 +31,8 @@ Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceIntende
 ## DESCRIPTION
 Deployment profile intended to be assigned to the Windows autopilot device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

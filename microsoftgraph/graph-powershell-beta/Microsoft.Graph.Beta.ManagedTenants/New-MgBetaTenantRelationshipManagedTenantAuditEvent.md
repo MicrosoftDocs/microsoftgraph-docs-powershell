@@ -32,6 +32,8 @@ New-MgBetaTenantRelationshipManagedTenantAuditEvent -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create new navigation property to auditEvents for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

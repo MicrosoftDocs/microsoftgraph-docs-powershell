@@ -48,6 +48,8 @@ New-MgGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create new navigation property to tags for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

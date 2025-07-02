@@ -33,6 +33,8 @@ Remove-MgApplicationSynchronizationTemplateSchemaDirectory -InputObject <IApplic
 ## DESCRIPTION
 Delete navigation property directories for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

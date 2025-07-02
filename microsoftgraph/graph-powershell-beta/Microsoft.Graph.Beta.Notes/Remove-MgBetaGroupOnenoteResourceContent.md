@@ -32,6 +32,8 @@ Remove-MgBetaGroupOnenoteResourceContent -InputObject <INotesIdentity> [-IfMatch
 ## DESCRIPTION
 The content of the resource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

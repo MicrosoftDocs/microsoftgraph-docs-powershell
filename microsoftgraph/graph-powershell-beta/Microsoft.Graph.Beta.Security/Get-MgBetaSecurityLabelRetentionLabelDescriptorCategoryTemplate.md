@@ -32,6 +32,8 @@ Get-MgBetaSecurityLabelRetentionLabelDescriptorCategoryTemplate -InputObject <IS
 ## DESCRIPTION
 Specifies a group of similar types of content in a particular department.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

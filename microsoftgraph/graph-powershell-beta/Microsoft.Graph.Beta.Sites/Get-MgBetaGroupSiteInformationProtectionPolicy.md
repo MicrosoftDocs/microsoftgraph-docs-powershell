@@ -29,6 +29,8 @@ Get-MgBetaGroupSiteInformationProtectionPolicy -InputObject <ISitesIdentity> [-E
 ## DESCRIPTION
 Get policy from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

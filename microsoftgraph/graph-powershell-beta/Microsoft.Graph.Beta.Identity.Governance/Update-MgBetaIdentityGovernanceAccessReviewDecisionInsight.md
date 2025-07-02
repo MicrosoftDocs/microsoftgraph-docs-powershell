@@ -46,6 +46,8 @@ Update-MgBetaIdentityGovernanceAccessReviewDecisionInsight -InputObject <IIdenti
 ## DESCRIPTION
 Update the navigation property insights in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

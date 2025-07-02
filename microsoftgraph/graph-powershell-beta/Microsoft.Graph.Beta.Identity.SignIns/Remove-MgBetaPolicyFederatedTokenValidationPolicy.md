@@ -21,6 +21,8 @@ Remove-MgBetaPolicyFederatedTokenValidationPolicy [-IfMatch <String>] [-Response
 ## DESCRIPTION
 Delete navigation property federatedTokenValidationPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

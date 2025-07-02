@@ -49,6 +49,8 @@ Add-MgBetaDriveListContentTypeCopy -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action addCopy
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

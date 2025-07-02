@@ -33,6 +33,8 @@ Get-MgGroupTeamChannelSharedWithTeamAllowedMemberCount -InputObject <ITeamsIdent
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

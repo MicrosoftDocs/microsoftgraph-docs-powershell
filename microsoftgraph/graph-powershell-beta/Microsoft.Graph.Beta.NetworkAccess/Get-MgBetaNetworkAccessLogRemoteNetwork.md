@@ -38,6 +38,8 @@ Get-MgBetaNetworkAccessLogRemoteNetwork -InputObject <INetworkAccessIdentity> [-
 ## DESCRIPTION
 A collection of remote network health events.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

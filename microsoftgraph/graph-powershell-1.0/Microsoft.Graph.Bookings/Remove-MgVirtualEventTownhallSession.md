@@ -32,6 +32,8 @@ Remove-MgVirtualEventTownhallSession -InputObject <IBookingsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property sessions for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

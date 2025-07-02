@@ -62,6 +62,8 @@ Create new navigation property to pages for sites
 | Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
 | Application | Notes.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

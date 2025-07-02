@@ -64,6 +64,8 @@ Update-MgBetaUserDriveRootListItem -InputObject <IFilesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property listItem in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

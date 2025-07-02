@@ -33,6 +33,8 @@ Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 ## DESCRIPTION
 Delete navigation property deploymentSummary for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

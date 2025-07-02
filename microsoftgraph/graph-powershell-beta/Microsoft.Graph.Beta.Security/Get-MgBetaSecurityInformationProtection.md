@@ -21,6 +21,8 @@ Get-MgBetaSecurityInformationProtection [-ExpandProperty <String[]>] [-Property 
 ## DESCRIPTION
 Get informationProtection from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

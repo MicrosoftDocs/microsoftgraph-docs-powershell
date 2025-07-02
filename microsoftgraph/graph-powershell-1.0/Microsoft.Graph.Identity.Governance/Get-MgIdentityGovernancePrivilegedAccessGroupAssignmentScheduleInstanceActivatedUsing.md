@@ -36,6 +36,8 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceActivated
 When the request activates a membership or ownership in PIM for groups, this object represents the eligibility request for the group.
 Otherwise, it is null.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -28,6 +28,8 @@ Invoke function getRemediationSummary
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementScripts.ReadWrite.All, DeviceManagementScripts.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

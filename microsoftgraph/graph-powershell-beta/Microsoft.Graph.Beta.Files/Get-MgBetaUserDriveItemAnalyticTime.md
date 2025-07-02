@@ -32,6 +32,8 @@ Get-MgBetaUserDriveItemAnalyticTime -InputObject <IFilesIdentity> [-ExpandProper
 ## DESCRIPTION
 Get allTime from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

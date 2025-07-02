@@ -32,6 +32,8 @@ Remove-MgBetaSolutionBackupRestoreMailboxProtectionUnit -InputObject <IBackupRes
 ## DESCRIPTION
 Delete navigation property mailboxProtectionUnits for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

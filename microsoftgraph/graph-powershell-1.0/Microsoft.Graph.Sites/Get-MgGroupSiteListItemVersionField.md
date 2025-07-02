@@ -33,6 +33,8 @@ Get-MgGroupSiteListItemVersionField -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 A collection of the fields and values for this version of the list item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

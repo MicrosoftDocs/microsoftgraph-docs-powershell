@@ -34,6 +34,8 @@ Get-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -InputObject <IDev
 The device protection status.
 This property is read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

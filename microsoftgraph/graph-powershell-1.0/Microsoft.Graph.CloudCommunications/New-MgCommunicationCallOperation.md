@@ -48,6 +48,8 @@ New-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

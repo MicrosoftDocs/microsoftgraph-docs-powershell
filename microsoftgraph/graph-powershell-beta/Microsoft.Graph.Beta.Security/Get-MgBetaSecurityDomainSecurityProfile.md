@@ -37,6 +37,8 @@ Get-MgBetaSecurityDomainSecurityProfile -InputObject <ISecurityIdentity> [-Expan
 ## DESCRIPTION
 Get domainSecurityProfiles from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

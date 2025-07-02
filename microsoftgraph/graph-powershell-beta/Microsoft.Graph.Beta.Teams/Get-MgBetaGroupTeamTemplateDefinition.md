@@ -29,6 +29,8 @@ Get-MgBetaGroupTeamTemplateDefinition -InputObject <ITeamsIdentity> [-ExpandProp
 ## DESCRIPTION
 Generic representation of a team template definition for a team with a specific structure and configuration.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

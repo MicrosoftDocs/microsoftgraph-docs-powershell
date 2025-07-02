@@ -40,6 +40,8 @@ Default synchronization schema for the jobs based on this template.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

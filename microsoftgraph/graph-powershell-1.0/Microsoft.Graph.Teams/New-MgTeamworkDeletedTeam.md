@@ -31,6 +31,8 @@ New-MgTeamworkDeletedTeam -BodyParameter <IMicrosoftGraphDeletedTeam> [-Response
 ## DESCRIPTION
 Create new navigation property to deletedTeams for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

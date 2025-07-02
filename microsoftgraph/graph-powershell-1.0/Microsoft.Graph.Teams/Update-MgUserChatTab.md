@@ -48,6 +48,8 @@ Update-MgUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Update the navigation property tabs in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

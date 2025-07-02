@@ -38,6 +38,8 @@ Get-MgBetaAgreement -InputObject <IIdentityGovernanceIdentity> [-Property <Strin
 ## DESCRIPTION
 Get entity from agreements by key
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementId

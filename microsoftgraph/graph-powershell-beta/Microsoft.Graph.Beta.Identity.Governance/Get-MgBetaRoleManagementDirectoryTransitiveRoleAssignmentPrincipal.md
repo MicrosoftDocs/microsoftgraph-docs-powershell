@@ -33,6 +33,8 @@ Referencing the assigned principal.
 Read-only.
 Supports $expand except for the Exchange provider.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

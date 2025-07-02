@@ -33,6 +33,8 @@ Invoke-MgPreviewGroupSiteOnenoteNotebookSectionGroupSectionPage -InputObject <IS
 ## DESCRIPTION
 Invoke function preview
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

@@ -38,6 +38,8 @@ Get-MgAgreement -InputObject <IIdentityGovernanceIdentity> [-Property <String[]>
 ## DESCRIPTION
 Get entity from agreements by key
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementId

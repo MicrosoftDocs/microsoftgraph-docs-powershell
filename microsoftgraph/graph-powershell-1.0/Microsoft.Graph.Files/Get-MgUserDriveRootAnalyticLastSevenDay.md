@@ -32,6 +32,8 @@ Get-MgUserDriveRootAnalyticLastSevenDay -InputObject <IFilesIdentity> [-ExpandPr
 ## DESCRIPTION
 Get lastSevenDays from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

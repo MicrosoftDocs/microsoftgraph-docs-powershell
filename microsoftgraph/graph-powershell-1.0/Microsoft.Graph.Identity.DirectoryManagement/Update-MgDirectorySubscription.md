@@ -53,6 +53,8 @@ Update-MgDirectorySubscription -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Update the navigation property subscriptions in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

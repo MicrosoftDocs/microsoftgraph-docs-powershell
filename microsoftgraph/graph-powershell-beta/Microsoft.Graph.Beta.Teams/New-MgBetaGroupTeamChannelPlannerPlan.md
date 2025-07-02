@@ -55,6 +55,8 @@ New-MgBetaGroupTeamChannelPlannerPlan -InputObject <ITeamsIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to plans for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

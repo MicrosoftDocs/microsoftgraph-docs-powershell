@@ -54,6 +54,8 @@ Get-MgBetaShareListItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Used to access the underlying listItem
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

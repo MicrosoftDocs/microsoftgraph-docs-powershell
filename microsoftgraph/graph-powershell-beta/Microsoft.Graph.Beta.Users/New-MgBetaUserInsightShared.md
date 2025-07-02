@@ -54,6 +54,8 @@ New-MgBetaUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to shared for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

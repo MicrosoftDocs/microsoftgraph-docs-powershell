@@ -32,6 +32,8 @@ Get-MgEducationMeAssignmentGradingCategory -InputObject <IEducationIdentity> [-E
 ## DESCRIPTION
 When set, enables users to weight assignments differently when computing a class average grade.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

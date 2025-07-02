@@ -52,6 +52,8 @@ New-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Create new navigation property to history for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

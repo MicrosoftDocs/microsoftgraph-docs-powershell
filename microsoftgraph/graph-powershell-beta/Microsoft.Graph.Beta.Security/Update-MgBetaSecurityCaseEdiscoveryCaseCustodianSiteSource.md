@@ -51,6 +51,8 @@ Update-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource -InputObject <ISecuri
 ## DESCRIPTION
 Update the navigation property siteSources in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

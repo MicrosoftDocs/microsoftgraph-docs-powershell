@@ -52,6 +52,8 @@ New-MgBetaEducationUserRubric -InputObject <IEducationIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to rubrics for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

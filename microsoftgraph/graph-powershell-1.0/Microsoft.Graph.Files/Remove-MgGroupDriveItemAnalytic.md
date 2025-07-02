@@ -32,6 +32,8 @@ Remove-MgGroupDriveItemAnalytic -InputObject <IFilesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property analytics for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -55,6 +55,8 @@ Create a new customClaimsPolicy object if it doesn't exist, or replace an existi
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

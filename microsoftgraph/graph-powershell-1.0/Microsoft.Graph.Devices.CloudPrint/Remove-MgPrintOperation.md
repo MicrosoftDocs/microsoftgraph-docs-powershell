@@ -32,6 +32,8 @@ Remove-MgPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property operations for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

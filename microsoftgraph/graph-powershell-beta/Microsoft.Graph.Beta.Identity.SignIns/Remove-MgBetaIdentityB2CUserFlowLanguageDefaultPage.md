@@ -30,6 +30,8 @@ Remove-MgBetaIdentityB2CUserFlowLanguageDefaultPage -InputObject <IIdentitySignI
 ## DESCRIPTION
 Delete navigation property defaultPages for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2CIdentityUserFlowId

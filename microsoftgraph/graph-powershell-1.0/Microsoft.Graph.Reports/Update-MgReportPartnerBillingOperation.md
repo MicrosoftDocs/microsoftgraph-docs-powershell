@@ -48,6 +48,8 @@ Update-MgReportPartnerBillingOperation -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Update the navigation property operations in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

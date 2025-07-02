@@ -24,6 +24,8 @@ Remove-MgBetaRoleManagementEntitlementManagement [-IfMatch <String>] [-ResponseH
 ## DESCRIPTION
 Delete navigation property entitlementManagement for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

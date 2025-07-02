@@ -32,6 +32,8 @@ Get-MgBetaUserDriveItemListItemField -InputObject <IFilesIdentity> [-ExpandPrope
 ## DESCRIPTION
 The values of the columns set on this list item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -31,6 +31,8 @@ Get-MgBetaPrivilegedAccessRoleSettingResource -InputObject <IIdentityGovernanceI
 Read-only.
 The associated resource for this role setting.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

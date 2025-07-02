@@ -30,6 +30,8 @@ Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumnWebpartPosition
 ## DESCRIPTION
 Invoke action getPositionOfWebPart
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

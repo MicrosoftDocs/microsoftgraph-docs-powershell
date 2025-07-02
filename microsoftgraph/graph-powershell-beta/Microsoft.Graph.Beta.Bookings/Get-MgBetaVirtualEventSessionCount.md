@@ -32,6 +32,8 @@ Get-MgBetaVirtualEventSessionCount -InputObject <IBookingsIdentity> [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

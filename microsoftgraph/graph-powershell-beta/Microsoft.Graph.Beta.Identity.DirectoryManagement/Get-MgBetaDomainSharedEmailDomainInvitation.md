@@ -37,6 +37,8 @@ Get-MgBetaDomainSharedEmailDomainInvitation -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Get sharedEmailDomainInvitations from domains
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

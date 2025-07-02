@@ -33,6 +33,8 @@ Add-MgBetaSite -BodyParameter <IPathsV2U0Z1SitesMicrosoftGraphAddPostRequestbody
 ## DESCRIPTION
 Follow a user's site or multiple sites.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

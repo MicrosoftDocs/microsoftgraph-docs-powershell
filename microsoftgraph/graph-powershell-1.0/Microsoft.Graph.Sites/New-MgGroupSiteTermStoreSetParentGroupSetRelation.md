@@ -83,6 +83,8 @@ New-MgGroupSiteTermStoreSetParentGroupSetRelation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to relations for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

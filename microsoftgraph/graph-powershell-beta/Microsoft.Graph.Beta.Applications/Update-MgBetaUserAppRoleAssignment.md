@@ -50,6 +50,8 @@ Update-MgBetaUserAppRoleAssignment -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property appRoleAssignments in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

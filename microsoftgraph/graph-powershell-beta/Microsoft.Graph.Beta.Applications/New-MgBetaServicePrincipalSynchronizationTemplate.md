@@ -50,6 +50,8 @@ New-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIde
 ## DESCRIPTION
 Create new navigation property to templates for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

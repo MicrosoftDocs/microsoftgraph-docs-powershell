@@ -32,6 +32,8 @@ Remove-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property history for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

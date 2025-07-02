@@ -33,6 +33,8 @@ Get-MgVirtualEventWebinarRegistrationByEmail -InputObject <IBookingsIdentity> [-
 ## DESCRIPTION
 Get the properties and relationships of a virtualEventRegistration object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Email

@@ -32,6 +32,8 @@ Remove-MgBetaDeviceManagementManagedDeviceLogCollectionRequest -InputObject <IDe
 ## DESCRIPTION
 Delete navigation property logCollectionRequests for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceLogCollectionResponseId

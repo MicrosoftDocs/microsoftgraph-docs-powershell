@@ -32,6 +32,8 @@ Remove-MgAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity> [-
 ## DESCRIPTION
 Delete navigation property localizations for agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId

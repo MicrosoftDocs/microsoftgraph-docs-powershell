@@ -50,6 +50,8 @@ Nullable.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChatMember.Read.Chat, ChatMember.ReadWrite.All, ChatMember.Read.All, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

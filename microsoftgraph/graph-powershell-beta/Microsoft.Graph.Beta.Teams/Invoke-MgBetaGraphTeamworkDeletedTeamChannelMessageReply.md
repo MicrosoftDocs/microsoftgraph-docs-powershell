@@ -49,6 +49,8 @@ Invoke-MgBetaGraphTeamworkDeletedTeamChannelMessageReply -InputObject <ITeamsIde
 ## DESCRIPTION
 Reply with quote to a single chat message or multiple chat messages in a chat.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

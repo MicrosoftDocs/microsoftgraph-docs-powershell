@@ -29,6 +29,8 @@ Remove-MgBetaNetworkAccessFilteringProfilePolicy -InputObject <INetworkAccessIde
 ## DESCRIPTION
 Delete navigation property policies for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -FilteringProfileId

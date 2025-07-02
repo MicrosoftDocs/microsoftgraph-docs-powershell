@@ -31,6 +31,8 @@ Update-MgSecurityCase -BodyParameter <IMicrosoftGraphSecurityCasesRoot> [-Respon
 ## DESCRIPTION
 Update the navigation property cases in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

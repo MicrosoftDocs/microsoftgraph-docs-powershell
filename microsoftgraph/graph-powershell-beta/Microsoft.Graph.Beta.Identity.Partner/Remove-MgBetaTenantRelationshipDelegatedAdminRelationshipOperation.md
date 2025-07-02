@@ -33,6 +33,8 @@ Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation -InputObject 
 ## DESCRIPTION
 Delete navigation property operations for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DelegatedAdminRelationshipId

@@ -29,6 +29,8 @@ Invoke-MgBetaEnrollUserManagedDeviceNowAction -InputObject <IDevicesCorporateMan
 ## DESCRIPTION
 Trigger comanagement enrollment action on ConfigurationManager client
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

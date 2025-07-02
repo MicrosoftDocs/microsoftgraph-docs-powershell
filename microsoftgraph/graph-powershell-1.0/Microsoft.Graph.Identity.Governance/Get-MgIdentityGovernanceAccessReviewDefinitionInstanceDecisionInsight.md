@@ -47,6 +47,8 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight
 Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

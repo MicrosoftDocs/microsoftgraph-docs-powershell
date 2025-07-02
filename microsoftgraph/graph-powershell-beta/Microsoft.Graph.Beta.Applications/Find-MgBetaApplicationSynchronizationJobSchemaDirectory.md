@@ -33,6 +33,8 @@ Find-MgBetaApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicati
 ## DESCRIPTION
 Discover the latest schema definition for provisioning to an application.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

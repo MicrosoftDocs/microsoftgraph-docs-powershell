@@ -34,6 +34,8 @@ Update-MgBetaPrint -BodyParameter <IMicrosoftGraphPrint> [-ResponseHeadersVariab
 ## DESCRIPTION
 Update print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

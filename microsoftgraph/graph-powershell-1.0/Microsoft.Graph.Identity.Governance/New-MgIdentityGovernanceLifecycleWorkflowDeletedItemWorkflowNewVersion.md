@@ -52,6 +52,8 @@ New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion
 ## DESCRIPTION
 Create a new version of the workflow object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

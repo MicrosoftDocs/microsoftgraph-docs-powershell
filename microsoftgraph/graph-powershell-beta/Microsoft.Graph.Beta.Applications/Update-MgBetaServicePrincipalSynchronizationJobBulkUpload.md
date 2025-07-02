@@ -47,6 +47,8 @@ Update-MgBetaServicePrincipalSynchronizationJobBulkUpload -InputObject <IApplica
 ## DESCRIPTION
 Update the navigation property bulkUpload in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

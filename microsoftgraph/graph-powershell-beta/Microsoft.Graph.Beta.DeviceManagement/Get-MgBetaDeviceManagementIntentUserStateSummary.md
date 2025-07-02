@@ -37,6 +37,8 @@ A summary of user states and counts of users that belong to corresponding state 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementIntentId

@@ -29,6 +29,8 @@ Get-MgBetaDeviceManagementComanagedDeviceNonCompliantSetting -InputObject <IDevi
 ## DESCRIPTION
 Invoke function getNonCompliantSettings
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

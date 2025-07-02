@@ -43,6 +43,8 @@ Update-MgBetaWindowsUpdatesProductRevisionKnowledgeBaseArticle -InputObject <IWi
 ## DESCRIPTION
 Update the navigation property knowledgeBaseArticle in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

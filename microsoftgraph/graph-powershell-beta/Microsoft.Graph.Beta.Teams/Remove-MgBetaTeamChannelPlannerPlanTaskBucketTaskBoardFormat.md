@@ -30,6 +30,8 @@ Remove-MgBetaTeamChannelPlannerPlanTaskBucketTaskBoardFormat -InputObject <ITeam
 ## DESCRIPTION
 Delete navigation property bucketTaskBoardFormat for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

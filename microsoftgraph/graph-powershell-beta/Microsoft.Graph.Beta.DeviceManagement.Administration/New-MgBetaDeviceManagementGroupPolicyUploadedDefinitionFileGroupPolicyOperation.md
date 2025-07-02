@@ -51,6 +51,8 @@ New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
 ## DESCRIPTION
 Create new navigation property to groupPolicyOperations for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

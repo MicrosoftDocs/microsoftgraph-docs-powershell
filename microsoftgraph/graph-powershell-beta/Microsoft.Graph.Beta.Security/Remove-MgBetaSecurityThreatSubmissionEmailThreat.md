@@ -29,6 +29,8 @@ Remove-MgBetaSecurityThreatSubmissionEmailThreat -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Delete navigation property emailThreats for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EmailThreatSubmissionId

@@ -48,6 +48,8 @@ New-MgBetaUserSettingStorageQuotaService -InputObject <IUsersIdentity> -BodyPara
 ## DESCRIPTION
 Create new navigation property to services for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

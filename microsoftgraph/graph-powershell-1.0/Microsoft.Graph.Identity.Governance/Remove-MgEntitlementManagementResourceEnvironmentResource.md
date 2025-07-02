@@ -30,6 +30,8 @@ Remove-MgEntitlementManagementResourceEnvironmentResource -InputObject <IIdentit
 ## DESCRIPTION
 Delete navigation property resources for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceEnvironmentId

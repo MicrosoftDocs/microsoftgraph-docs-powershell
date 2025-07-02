@@ -68,6 +68,8 @@ New-MgBetaSiteGetByPathColumn -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to columns for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

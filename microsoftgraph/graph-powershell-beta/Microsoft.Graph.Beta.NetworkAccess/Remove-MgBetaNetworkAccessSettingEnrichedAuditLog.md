@@ -21,6 +21,8 @@ Remove-MgBetaNetworkAccessSettingEnrichedAuditLog [-IfMatch <String>] [-Response
 ## DESCRIPTION
 Delete navigation property enrichedAuditLogs for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

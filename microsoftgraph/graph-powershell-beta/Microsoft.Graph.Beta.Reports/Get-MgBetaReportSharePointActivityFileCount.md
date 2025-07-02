@@ -32,6 +32,8 @@ Get-MgBetaReportSharePointActivityFileCount -InputObject <IReportsIdentity> -Out
 ## DESCRIPTION
 Invoke function getSharePointActivityFileCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

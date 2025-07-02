@@ -49,6 +49,8 @@ New-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment
 ## DESCRIPTION
 Create new navigation property to assignments for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

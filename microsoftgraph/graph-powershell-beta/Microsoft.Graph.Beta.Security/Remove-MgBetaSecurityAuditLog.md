@@ -20,6 +20,8 @@ Remove-MgBetaSecurityAuditLog [-IfMatch <String>] [-ResponseHeadersVariable <Str
 ## DESCRIPTION
 Delete navigation property auditLog for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

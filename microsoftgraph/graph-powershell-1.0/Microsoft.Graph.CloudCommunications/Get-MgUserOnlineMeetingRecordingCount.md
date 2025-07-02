@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

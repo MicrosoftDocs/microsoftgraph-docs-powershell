@@ -29,6 +29,8 @@ Remove-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObje
 ## DESCRIPTION
 Delete navigation property additionalSources for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

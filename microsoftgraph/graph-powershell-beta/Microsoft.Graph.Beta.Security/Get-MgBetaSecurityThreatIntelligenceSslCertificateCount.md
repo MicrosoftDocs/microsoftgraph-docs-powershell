@@ -24,6 +24,8 @@ Get-MgBetaSecurityThreatIntelligenceSslCertificateCount [-Filter <String>] [-Sea
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

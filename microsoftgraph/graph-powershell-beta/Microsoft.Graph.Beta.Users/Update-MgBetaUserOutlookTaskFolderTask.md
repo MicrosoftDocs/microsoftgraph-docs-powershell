@@ -61,6 +61,8 @@ Update-MgBetaUserOutlookTaskFolderTask -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the navigation property tasks in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

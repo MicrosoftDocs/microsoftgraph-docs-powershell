@@ -32,6 +32,8 @@ Get-MgBetaGroupSiteGetByPathOnenote -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 Get onenote from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

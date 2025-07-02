@@ -33,6 +33,8 @@ New-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance
 ## DESCRIPTION
 Create new navigation property to managedDeviceCompliances for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

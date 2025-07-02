@@ -21,6 +21,8 @@ Get-MgBetaNetworkAccessConnectivity [-ExpandProperty <String[]>] [-Property <Str
 ## DESCRIPTION
 Connectivity represents all the connectivity components in Global Secure Access.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -45,6 +45,8 @@ Update-MgBetaUserSecurity -InputObject <ISecurityIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property security in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

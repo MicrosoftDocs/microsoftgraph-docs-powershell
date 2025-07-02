@@ -52,6 +52,8 @@ New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState -InputObject <IDevi
 ## DESCRIPTION
 Create new navigation property to deviceCompliancePolicyStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

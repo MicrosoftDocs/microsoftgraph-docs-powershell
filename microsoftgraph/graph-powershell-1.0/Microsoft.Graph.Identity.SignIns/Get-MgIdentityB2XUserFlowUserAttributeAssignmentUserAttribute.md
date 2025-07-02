@@ -33,6 +33,8 @@ Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute -InputObject <IIde
 ## DESCRIPTION
 The user attribute that you want to add to your user flow.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

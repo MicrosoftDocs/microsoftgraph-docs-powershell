@@ -32,6 +32,8 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Delete navigation property reviewSets for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

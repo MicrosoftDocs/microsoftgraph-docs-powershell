@@ -32,6 +32,8 @@ Get-MgUserTeamworkInstalledAppTeamApp -InputObject <ITeamsIdentity> [-ExpandProp
 ## DESCRIPTION
 The app that is installed.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

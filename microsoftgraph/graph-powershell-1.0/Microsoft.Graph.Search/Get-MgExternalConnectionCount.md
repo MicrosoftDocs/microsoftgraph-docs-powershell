@@ -31,6 +31,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All, ExternalConnection.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

@@ -43,6 +43,8 @@ New-MgBetaUserInformationProtectionDataLossPreventionPolicy -InputObject <IIdent
 ## DESCRIPTION
 Create new navigation property to dataLossPreventionPolicies for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

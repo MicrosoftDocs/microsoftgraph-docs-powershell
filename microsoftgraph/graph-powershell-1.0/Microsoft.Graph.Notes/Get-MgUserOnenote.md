@@ -32,6 +32,8 @@ Get-MgUserOnenote -InputObject <INotesIdentity> [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 Get onenote from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

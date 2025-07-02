@@ -32,6 +32,8 @@ Remove-MgDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryManage
 ## DESCRIPTION
 Delete navigation property serviceConfigurationRecords for domains
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DomainDnsRecordId

@@ -56,6 +56,8 @@ New-MgBetaPrivilegedAccessResourceRoleAssignmentRequest -InputObject <IIdentityG
 ## DESCRIPTION
 Create new navigation property to roleAssignmentRequests for privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

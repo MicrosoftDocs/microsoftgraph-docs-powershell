@@ -33,6 +33,8 @@ Get-MgEducationUserAssignmentSubmissionOutcomeCount -InputObject <IEducationIden
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

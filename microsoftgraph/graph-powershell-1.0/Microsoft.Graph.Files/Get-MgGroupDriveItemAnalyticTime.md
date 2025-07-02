@@ -32,6 +32,8 @@ Get-MgGroupDriveItemAnalyticTime -InputObject <IFilesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Get allTime from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

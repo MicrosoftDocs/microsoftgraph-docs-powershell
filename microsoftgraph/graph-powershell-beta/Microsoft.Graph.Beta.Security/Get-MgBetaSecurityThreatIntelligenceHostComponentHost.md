@@ -36,6 +36,8 @@ The host related to this component.
 This is a reverse navigation property.
 When you navigate to components from a host, this should be assumed to be a return reference.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

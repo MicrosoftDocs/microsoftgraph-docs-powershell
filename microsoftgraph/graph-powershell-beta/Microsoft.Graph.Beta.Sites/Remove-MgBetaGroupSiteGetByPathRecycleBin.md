@@ -29,6 +29,8 @@ Remove-MgBetaGroupSiteGetByPathRecycleBin -InputObject <ISitesIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property recycleBin for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

@@ -48,6 +48,8 @@ New-MgBetaIdentityB2XUserFlowIdentityProviderByRef -InputObject <IIdentitySignIn
 ## DESCRIPTION
 Create new navigation property ref to userFlowIdentityProviders for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

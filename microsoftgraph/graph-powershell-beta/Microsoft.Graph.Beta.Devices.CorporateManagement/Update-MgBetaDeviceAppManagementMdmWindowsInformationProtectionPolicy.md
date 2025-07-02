@@ -100,6 +100,8 @@ Update the navigation property mdmWindowsInformationProtectionPolicies in device
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

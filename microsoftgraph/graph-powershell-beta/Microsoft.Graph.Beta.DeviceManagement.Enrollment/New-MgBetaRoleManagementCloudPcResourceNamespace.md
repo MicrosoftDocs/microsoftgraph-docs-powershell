@@ -30,6 +30,8 @@ New-MgBetaRoleManagementCloudPcResourceNamespace -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create new navigation property to resourceNamespaces for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

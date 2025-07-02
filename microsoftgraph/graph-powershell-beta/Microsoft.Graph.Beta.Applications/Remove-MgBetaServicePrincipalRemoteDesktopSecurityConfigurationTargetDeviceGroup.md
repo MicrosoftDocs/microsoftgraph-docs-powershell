@@ -44,6 +44,8 @@ Any user authenticating using the Microsoft Entra ID Remote Desktop Services (RD
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

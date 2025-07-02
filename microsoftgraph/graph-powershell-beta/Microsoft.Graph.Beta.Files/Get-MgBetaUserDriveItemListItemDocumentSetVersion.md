@@ -41,6 +41,8 @@ Get-MgBetaUserDriveItemListItemDocumentSetVersion -InputObject <IFilesIdentity> 
 ## DESCRIPTION
 Version information for a document set version created by a user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

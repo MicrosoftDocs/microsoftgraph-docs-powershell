@@ -45,6 +45,8 @@ New-MgBetaUserInformationProtectionThreatAssessmentRequestResult -InputObject <I
 ## DESCRIPTION
 Create new navigation property to results for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

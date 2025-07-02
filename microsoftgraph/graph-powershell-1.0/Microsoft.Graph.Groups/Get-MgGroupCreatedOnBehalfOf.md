@@ -36,6 +36,8 @@ The user (or application) that created the group.
 NOTE: This property isn't set if the user is an administrator.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

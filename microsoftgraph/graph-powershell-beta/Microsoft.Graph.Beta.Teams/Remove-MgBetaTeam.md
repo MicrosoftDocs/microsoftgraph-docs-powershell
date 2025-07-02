@@ -32,6 +32,8 @@ Remove-MgBetaTeam -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseHe
 ## DESCRIPTION
 Delete entity from teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

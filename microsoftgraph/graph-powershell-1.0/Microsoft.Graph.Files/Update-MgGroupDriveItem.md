@@ -82,6 +82,8 @@ Update-MgGroupDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the navigation property items in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

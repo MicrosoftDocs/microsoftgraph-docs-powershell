@@ -58,6 +58,8 @@ Get-MgBetaGroupSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

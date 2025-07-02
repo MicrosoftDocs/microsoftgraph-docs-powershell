@@ -41,6 +41,8 @@ Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart -InputObject <ISi
 ## DESCRIPTION
 The set of web parts in this section.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

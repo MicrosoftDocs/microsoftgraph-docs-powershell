@@ -77,6 +77,8 @@ Update-MgBetaSecurityCollaborationAnalyzedEmail -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property analyzedEmails in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

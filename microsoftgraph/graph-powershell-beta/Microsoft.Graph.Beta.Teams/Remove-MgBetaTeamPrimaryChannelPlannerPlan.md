@@ -29,6 +29,8 @@ Remove-MgBetaTeamPrimaryChannelPlannerPlan -InputObject <ITeamsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property plans for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

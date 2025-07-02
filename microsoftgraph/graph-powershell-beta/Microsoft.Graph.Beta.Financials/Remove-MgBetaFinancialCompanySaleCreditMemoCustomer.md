@@ -29,6 +29,8 @@ Remove-MgBetaFinancialCompanySaleCreditMemoCustomer -InputObject <IFinancialsIde
 ## DESCRIPTION
 Delete navigation property customer for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

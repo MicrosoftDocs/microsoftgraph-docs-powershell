@@ -68,6 +68,8 @@ New-MgShareListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create new navigation property to columns for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

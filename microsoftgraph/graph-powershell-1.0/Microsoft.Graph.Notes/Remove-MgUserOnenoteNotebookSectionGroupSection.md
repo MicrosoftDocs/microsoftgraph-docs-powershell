@@ -33,6 +33,8 @@ Remove-MgUserOnenoteNotebookSectionGroupSection -InputObject <INotesIdentity> [-
 ## DESCRIPTION
 Delete navigation property sections for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

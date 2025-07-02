@@ -29,6 +29,8 @@ New-MgBetaFinancialCompanySaleQuoteInvoice -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Invoke action makeInvoice
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

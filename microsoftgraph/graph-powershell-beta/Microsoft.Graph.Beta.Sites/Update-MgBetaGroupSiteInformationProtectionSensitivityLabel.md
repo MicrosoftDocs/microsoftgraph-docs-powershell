@@ -51,6 +51,8 @@ Update-MgBetaGroupSiteInformationProtectionSensitivityLabel -InputObject <ISites
 ## DESCRIPTION
 Update the navigation property sensitivityLabels in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -92,6 +92,8 @@ New-MgSiteTermStoreSetTermChild -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to children for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

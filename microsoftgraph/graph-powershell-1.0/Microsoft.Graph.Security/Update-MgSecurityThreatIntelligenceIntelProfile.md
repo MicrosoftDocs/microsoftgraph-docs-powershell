@@ -56,6 +56,8 @@ Update-MgSecurityThreatIntelligenceIntelProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property intelProfiles in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -33,6 +33,8 @@ Restart-MgUserManagedDeviceNow -InputObject <IDevicesCorporateManagementIdentity
 ## DESCRIPTION
 Reboot device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

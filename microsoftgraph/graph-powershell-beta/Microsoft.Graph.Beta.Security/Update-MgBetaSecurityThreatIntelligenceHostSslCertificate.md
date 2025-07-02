@@ -52,6 +52,8 @@ Update-MgBetaSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurit
 ## DESCRIPTION
 Update the navigation property hostSslCertificates in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

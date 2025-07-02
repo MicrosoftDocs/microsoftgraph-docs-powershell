@@ -43,6 +43,8 @@ Update-MgBetaProgramControlType -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update entity in programControlTypes
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -58,6 +58,8 @@ Delete user from shared Apple device
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

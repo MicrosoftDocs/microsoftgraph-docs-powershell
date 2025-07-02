@@ -32,6 +32,8 @@ Get-MgBetaGroupDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <S
 ## DESCRIPTION
 Get content for the navigation property versions from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

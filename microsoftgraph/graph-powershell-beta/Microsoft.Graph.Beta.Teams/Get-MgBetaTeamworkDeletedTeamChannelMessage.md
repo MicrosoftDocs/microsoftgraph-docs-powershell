@@ -58,6 +58,8 @@ Get-MgBetaTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity> [-Expa
 A collection of all the messages in the channel.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

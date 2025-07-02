@@ -46,6 +46,8 @@ New-MgBetaUserEventInstanceExtension -InputObject <ICalendarIdentity> -BodyParam
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

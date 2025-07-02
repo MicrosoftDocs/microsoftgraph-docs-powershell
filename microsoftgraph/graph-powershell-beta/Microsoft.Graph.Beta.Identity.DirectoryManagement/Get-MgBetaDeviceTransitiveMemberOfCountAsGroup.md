@@ -32,6 +32,8 @@ Get-MgBetaDeviceTransitiveMemberOfCountAsGroup -InputObject <IIdentityDirectoryM
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

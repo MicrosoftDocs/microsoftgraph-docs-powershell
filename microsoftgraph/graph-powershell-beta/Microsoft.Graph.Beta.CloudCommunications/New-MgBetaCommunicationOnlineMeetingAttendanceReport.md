@@ -52,6 +52,8 @@ New-MgBetaCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommuni
 ## DESCRIPTION
 Create new navigation property to attendanceReports for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

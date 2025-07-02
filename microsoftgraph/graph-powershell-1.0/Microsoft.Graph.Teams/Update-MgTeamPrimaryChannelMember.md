@@ -78,6 +78,8 @@ Update-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property allMembers in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

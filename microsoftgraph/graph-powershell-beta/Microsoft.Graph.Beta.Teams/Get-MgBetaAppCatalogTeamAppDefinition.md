@@ -40,6 +40,8 @@ Get-MgBetaAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity> [-ExpandProp
 ## DESCRIPTION
 The details for each version of the app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

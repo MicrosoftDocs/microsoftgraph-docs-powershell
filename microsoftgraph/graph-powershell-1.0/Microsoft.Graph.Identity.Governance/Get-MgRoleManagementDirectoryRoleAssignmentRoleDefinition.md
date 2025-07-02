@@ -34,6 +34,8 @@ Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition -InputObject <IIdentit
 The roleDefinition the assignment is for.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -48,6 +48,8 @@ Update-MgBetaChatLastMessagePreview -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property lastMessagePreview in chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

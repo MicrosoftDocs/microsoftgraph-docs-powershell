@@ -42,6 +42,8 @@ Delete navigation property importedWindowsAutopilotDeviceIdentities for deviceMa
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -90,6 +90,8 @@ Update-MgShareListItemCreatedByUserMailboxSetting -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

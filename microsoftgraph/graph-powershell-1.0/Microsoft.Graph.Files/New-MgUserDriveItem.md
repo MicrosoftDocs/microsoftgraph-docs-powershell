@@ -82,6 +82,8 @@ New-MgUserDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create new navigation property to items for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -42,6 +42,8 @@ Get-MgSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit -InputOb
 ## DESCRIPTION
 The protection units (sites) that are protected under the site protection policy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

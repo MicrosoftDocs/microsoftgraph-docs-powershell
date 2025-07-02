@@ -46,6 +46,8 @@ Update-MgDriveListContentTypeColumnLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property columnLinks in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

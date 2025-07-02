@@ -58,6 +58,8 @@ Resume a task processing result that's inProgress.
 In the default case an Azure Logic Apps system-assigned managed identity calls this API.
 For more information, see: Lifecycle Workflows extensibility approach.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,6 +48,8 @@ Confirm-MgApplicationMemberObject -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

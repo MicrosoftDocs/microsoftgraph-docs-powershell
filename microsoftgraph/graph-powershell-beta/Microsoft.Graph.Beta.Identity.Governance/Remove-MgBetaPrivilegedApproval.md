@@ -29,6 +29,8 @@ Remove-MgBetaPrivilegedApproval -InputObject <IIdentityGovernanceIdentity> [-IfM
 ## DESCRIPTION
 Delete entity from privilegedApproval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

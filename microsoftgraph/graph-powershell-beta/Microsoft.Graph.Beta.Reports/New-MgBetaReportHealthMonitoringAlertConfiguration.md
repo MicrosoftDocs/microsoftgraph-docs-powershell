@@ -31,6 +31,8 @@ New-MgBetaReportHealthMonitoringAlertConfiguration
 ## DESCRIPTION
 Create new navigation property to alertConfigurations for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

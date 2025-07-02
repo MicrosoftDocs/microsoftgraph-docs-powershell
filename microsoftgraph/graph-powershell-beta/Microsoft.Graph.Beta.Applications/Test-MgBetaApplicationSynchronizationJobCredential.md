@@ -53,6 +53,8 @@ Test-MgBetaApplicationSynchronizationJobCredential -InputObject <IApplicationsId
 ## DESCRIPTION
 Validate that the credentials are valid in the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

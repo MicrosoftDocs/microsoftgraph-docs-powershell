@@ -29,6 +29,8 @@ Get-MgBetaPrintPrinterShareAllowedUserCount -InputObject <IDevicesCloudPrintIden
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

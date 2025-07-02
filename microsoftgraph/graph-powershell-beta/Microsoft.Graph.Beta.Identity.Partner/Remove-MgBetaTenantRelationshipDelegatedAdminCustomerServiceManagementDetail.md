@@ -34,6 +34,8 @@ Remove-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
 ## DESCRIPTION
 Delete navigation property serviceManagementDetails for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DelegatedAdminCustomerId

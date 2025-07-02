@@ -56,6 +56,8 @@ Invoke action removeGroup
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

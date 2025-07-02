@@ -30,6 +30,8 @@ Get-MgBetaDeviceManagementGroupPolicyCategoryDefinitionFile
 ## DESCRIPTION
 The id of the definition file the category came from
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

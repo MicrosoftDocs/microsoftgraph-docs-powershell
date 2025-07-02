@@ -46,6 +46,8 @@ Get-MgBetaReportSharePointSiteUsageDetail -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Invoke function getSharePointSiteUsageDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

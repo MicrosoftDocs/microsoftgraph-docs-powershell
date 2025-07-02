@@ -29,6 +29,8 @@ Remove-MgBetaDirectoryFeatureRolloutPolicy -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Delete navigation property featureRolloutPolicies for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -FeatureRolloutPolicyId

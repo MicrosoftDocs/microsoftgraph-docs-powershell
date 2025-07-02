@@ -29,6 +29,8 @@ Remove-MgBetaUserEventExceptionOccurrenceAttachment -InputObject <ICalendarIdent
 ## DESCRIPTION
 Delete navigation property attachments for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttachmentId

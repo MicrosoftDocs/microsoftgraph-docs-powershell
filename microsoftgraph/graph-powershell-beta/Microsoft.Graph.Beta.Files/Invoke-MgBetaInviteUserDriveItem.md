@@ -53,6 +53,8 @@ Invoke-MgBetaInviteUserDriveItem -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

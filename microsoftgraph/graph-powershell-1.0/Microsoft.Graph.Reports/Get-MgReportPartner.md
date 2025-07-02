@@ -23,6 +23,8 @@ Get-MgReportPartner [-ExpandProperty <String[]>] [-Property <String[]>] [-Respon
 ## DESCRIPTION
 Represents billing details for a Microsoft direct partner.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

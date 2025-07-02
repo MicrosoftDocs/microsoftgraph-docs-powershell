@@ -37,6 +37,8 @@ Get-MgBetaTenantRelationshipManagedTenantAppPerformance -InputObject <IManagedTe
 ## DESCRIPTION
 Get appPerformances from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -44,6 +44,8 @@ Learning objects that are associated with this assignment.
 Only teachers can modify this list.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

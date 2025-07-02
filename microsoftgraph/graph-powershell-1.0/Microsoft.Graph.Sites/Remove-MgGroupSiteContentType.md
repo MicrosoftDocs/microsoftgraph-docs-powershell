@@ -32,6 +32,8 @@ Remove-MgGroupSiteContentType -InputObject <ISitesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property contentTypes for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

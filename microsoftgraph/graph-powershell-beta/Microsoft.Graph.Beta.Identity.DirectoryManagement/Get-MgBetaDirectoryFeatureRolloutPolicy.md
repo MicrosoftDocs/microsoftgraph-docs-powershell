@@ -37,6 +37,8 @@ Get-MgBetaDirectoryFeatureRolloutPolicy -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Get featureRolloutPolicies from directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

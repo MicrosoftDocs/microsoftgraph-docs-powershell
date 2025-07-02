@@ -33,6 +33,8 @@ Publish-MgSiteListContentType -InputObject <ISitesIdentity> [-ResponseHeadersVar
 ## DESCRIPTION
 Publishes a contentType present in the content type hub site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

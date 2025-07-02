@@ -44,6 +44,8 @@ Get-MgBetaReportEmailActivityUserDetail -InputObject <IReportsIdentity> -OutFile
 ## DESCRIPTION
 Invoke function getEmailActivityUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

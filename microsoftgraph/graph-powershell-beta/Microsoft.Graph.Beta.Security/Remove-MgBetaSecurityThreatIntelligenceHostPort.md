@@ -32,6 +32,8 @@ Remove-MgBetaSecurityThreatIntelligenceHostPort -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Delete navigation property hostPorts for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

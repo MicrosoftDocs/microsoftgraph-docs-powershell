@@ -45,6 +45,8 @@ Get platformCredentialMethods from users
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

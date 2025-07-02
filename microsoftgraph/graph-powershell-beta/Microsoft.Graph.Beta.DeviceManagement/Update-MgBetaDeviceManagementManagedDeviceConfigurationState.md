@@ -53,6 +53,8 @@ Update-MgBetaDeviceManagementManagedDeviceConfigurationState -InputObject <IDevi
 ## DESCRIPTION
 Update the navigation property deviceConfigurationStates in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -60,6 +60,8 @@ Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection -InputObje
 ## DESCRIPTION
 Get managementTemplateCollections from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

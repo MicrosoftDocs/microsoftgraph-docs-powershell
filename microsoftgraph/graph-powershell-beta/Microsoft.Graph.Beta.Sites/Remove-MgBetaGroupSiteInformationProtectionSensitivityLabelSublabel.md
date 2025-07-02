@@ -30,6 +30,8 @@ Remove-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel -InputObject
 ## DESCRIPTION
 Delete navigation property sublabels for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

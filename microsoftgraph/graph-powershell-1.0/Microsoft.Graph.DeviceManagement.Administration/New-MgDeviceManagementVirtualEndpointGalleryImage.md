@@ -34,6 +34,8 @@ New-MgDeviceManagementVirtualEndpointGalleryImage -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create new navigation property to galleryImages for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

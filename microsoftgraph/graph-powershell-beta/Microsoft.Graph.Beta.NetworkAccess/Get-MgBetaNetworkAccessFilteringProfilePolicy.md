@@ -51,6 +51,8 @@ Get-MgBetaNetworkAccessFilteringProfilePolicy -InputObject <INetworkAccessIdenti
 ## DESCRIPTION
 The traffic forwarding policies associated with this profile.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

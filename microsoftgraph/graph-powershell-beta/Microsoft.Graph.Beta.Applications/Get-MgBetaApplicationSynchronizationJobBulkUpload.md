@@ -32,6 +32,8 @@ Get-MgBetaApplicationSynchronizationJobBulkUpload -InputObject <IApplicationsIde
 ## DESCRIPTION
 The bulk upload operation for the job.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

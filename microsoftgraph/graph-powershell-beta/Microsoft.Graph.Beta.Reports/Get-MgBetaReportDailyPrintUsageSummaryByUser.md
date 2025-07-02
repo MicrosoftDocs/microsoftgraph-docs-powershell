@@ -37,6 +37,8 @@ Get-MgBetaReportDailyPrintUsageSummaryByUser -InputObject <IReportsIdentity> [-E
 ## DESCRIPTION
 Get dailyPrintUsageSummariesByUser from reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

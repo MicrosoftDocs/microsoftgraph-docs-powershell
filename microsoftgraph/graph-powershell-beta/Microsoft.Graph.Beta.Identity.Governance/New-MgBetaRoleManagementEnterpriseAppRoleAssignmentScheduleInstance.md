@@ -55,6 +55,8 @@ New-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -InputObject
 ## DESCRIPTION
 Create new navigation property to roleAssignmentScheduleInstances for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivatedUsing

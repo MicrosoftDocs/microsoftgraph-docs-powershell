@@ -36,6 +36,8 @@ Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleInstanc
 ## DESCRIPTION
 Get the instances of eligible roles for the calling principal.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

@@ -48,6 +48,8 @@ Update-MgDriveRootAnalytic -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property analytics in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

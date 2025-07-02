@@ -31,6 +31,8 @@ Generate a new deployment access key that can be used to install a sensor associ
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesSensors.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -58,6 +58,8 @@ New-MgBetaDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to contentTypes for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

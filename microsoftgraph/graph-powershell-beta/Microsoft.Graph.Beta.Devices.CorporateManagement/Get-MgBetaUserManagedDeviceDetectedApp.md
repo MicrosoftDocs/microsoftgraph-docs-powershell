@@ -37,6 +37,8 @@ Get-MgBetaUserManagedDeviceDetectedApp -InputObject <IDevicesCorporateManagement
 ## DESCRIPTION
 All applications currently installed on the device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

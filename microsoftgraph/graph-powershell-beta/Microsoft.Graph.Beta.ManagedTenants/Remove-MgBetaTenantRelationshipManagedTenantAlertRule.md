@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantAlertRule -InputObject <IManagedTena
 ## DESCRIPTION
 Delete navigation property managedTenantAlertRules for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

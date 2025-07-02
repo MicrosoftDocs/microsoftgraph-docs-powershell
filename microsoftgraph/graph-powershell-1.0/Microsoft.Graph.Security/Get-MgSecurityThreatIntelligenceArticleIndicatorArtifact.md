@@ -32,6 +32,8 @@ Get-MgSecurityThreatIntelligenceArticleIndicatorArtifact -InputObject <ISecurity
 ## DESCRIPTION
 The artifact related to this indicator.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ArticleIndicatorId

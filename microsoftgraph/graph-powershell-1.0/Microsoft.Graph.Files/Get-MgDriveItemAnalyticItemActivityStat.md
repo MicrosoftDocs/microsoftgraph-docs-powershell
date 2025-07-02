@@ -40,6 +40,8 @@ Get-MgDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity> [-ExpandPr
 ## DESCRIPTION
 Get itemActivityStats from drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -51,6 +51,8 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink -InputObject <INet
 ## DESCRIPTION
 Update the navigation property deviceLinks in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

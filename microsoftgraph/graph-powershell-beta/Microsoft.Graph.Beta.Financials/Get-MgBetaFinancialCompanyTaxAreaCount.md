@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanyTaxAreaCount -InputObject <IFinancialsIdentity> [-Filt
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

@@ -30,6 +30,8 @@ New-MgBetaInformationProtectionPolicyLabel -BodyParameter <IMicrosoftGraphInform
 ## DESCRIPTION
 Create new navigation property to labels for informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

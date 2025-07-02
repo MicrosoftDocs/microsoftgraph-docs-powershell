@@ -32,6 +32,8 @@ Remove-MgGroupDriveRoot -InputObject <IFilesIdentity> [-IfMatch <String>] [-Resp
 ## DESCRIPTION
 Delete navigation property root for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

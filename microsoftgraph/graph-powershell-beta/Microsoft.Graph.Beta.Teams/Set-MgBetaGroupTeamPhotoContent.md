@@ -32,6 +32,8 @@ Set-MgBetaGroupTeamPhotoContent -InputObject <ITeamsIdentity> [-Data <Stream>]
 ## DESCRIPTION
 The team photo.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

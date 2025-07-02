@@ -64,6 +64,8 @@ Update-MgBetaSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the navigation property lists in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

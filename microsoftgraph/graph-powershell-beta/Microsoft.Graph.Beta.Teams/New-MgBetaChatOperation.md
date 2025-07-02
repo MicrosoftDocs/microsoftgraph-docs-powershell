@@ -47,6 +47,8 @@ New-MgBetaChatOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to operations for chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

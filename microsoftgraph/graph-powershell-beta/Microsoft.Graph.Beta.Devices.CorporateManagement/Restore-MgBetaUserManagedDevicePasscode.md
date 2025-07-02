@@ -32,6 +32,8 @@ Restore-MgBetaUserManagedDevicePasscode -InputObject <IDevicesCorporateManagemen
 ## DESCRIPTION
 Recover passcode
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

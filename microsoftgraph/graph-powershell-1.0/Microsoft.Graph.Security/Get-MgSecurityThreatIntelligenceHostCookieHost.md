@@ -32,6 +32,8 @@ Get-MgSecurityThreatIntelligenceHostCookieHost -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Indicates that a cookie of this name and domain was found related to this host.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

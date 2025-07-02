@@ -35,6 +35,8 @@ Set-MgIdentityB2XUserFlowLanguageDefaultPageContent -InputObject <IIdentitySignI
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

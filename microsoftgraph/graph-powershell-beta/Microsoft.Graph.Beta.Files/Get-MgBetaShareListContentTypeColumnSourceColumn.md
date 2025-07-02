@@ -33,6 +33,8 @@ Get-MgBetaShareListContentTypeColumnSourceColumn -InputObject <IFilesIdentity> [
 ## DESCRIPTION
 The source column for content type column.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId

@@ -32,6 +32,8 @@ Get-MgUserMailFolderMessageExtensionCount -InputObject <IMailIdentity> [-Filter 
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

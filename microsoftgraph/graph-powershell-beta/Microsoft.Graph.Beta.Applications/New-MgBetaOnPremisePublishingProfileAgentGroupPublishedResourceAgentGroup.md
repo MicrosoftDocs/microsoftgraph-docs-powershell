@@ -49,6 +49,8 @@ New-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup -Input
 ## DESCRIPTION
 Create new navigation property to agentGroups for onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

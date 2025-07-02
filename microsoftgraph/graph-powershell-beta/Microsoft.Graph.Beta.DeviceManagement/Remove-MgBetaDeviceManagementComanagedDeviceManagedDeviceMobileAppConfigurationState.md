@@ -31,6 +31,8 @@ Remove-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationS
 ## DESCRIPTION
 Delete navigation property managedDeviceMobileAppConfigurationStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

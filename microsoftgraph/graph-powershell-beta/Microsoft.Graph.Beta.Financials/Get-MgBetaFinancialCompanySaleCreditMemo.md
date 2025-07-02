@@ -37,6 +37,8 @@ Get-MgBetaFinancialCompanySaleCreditMemo -InputObject <IFinancialsIdentity> [-Ex
 ## DESCRIPTION
 Get salesCreditMemos from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

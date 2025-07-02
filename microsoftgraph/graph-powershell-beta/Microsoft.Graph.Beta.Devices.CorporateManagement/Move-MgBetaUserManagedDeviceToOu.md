@@ -47,6 +47,8 @@ Move-MgBetaUserManagedDeviceToOu -InputObject <IDevicesCorporateManagementIdenti
 ## DESCRIPTION
 Invoke action moveDevicesToOU
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

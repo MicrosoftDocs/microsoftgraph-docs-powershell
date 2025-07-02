@@ -32,6 +32,8 @@ Remove-MgUserChatMessageReply -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property replies for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

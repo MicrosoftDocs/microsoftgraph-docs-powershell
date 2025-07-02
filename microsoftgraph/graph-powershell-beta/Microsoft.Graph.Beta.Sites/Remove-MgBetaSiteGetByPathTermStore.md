@@ -32,6 +32,8 @@ Remove-MgBetaSiteGetByPathTermStore -InputObject <ISitesIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property termStore for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

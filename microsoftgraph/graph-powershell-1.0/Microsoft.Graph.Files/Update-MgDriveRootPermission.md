@@ -56,6 +56,8 @@ Update-MgDriveRootPermission -InputObject <IFilesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property permissions in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaUserSettingStorage -InputObject <IUsersIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property storage for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

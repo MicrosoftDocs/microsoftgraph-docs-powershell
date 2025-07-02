@@ -48,6 +48,8 @@ Update-MgGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property members in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

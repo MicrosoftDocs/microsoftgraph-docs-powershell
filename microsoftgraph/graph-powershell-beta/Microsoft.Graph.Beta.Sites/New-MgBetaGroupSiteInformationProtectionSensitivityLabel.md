@@ -51,6 +51,8 @@ New-MgBetaGroupSiteInformationProtectionSensitivityLabel -InputObject <ISitesIde
 ## DESCRIPTION
 Create new navigation property to sensitivityLabels for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

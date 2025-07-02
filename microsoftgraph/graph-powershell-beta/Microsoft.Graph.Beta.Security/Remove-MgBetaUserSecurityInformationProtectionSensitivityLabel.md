@@ -29,6 +29,8 @@ Remove-MgBetaUserSecurityInformationProtectionSensitivityLabel -InputObject <ISe
 ## DESCRIPTION
 Delete navigation property sensitivityLabels for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

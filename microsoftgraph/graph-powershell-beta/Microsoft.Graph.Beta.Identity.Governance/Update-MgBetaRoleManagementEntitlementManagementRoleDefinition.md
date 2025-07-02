@@ -54,6 +54,8 @@ Update-MgBetaRoleManagementEntitlementManagementRoleDefinition -InputObject <IId
 ## DESCRIPTION
 Update the navigation property roleDefinitions in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

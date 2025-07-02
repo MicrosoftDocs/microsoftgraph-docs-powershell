@@ -30,6 +30,8 @@ Remove-MgBetaDeviceManagementVirtualEndpointSupportedRegion
 ## DESCRIPTION
 Delete navigation property supportedRegions for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcSupportedRegionId

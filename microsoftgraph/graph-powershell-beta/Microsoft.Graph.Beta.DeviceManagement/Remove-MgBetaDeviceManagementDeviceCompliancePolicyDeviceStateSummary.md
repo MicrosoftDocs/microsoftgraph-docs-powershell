@@ -24,6 +24,8 @@ Remove-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-IfMatch 
 ## DESCRIPTION
 Delete navigation property deviceCompliancePolicyDeviceStateSummary for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

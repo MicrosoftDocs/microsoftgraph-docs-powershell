@@ -32,6 +32,8 @@ Remove-MgBetaSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity> [-I
 ## DESCRIPTION
 Delete navigation property hosts for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

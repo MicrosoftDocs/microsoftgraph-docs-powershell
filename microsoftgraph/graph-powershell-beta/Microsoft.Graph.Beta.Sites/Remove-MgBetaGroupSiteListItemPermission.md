@@ -30,6 +30,8 @@ Remove-MgBetaGroupSiteListItemPermission -InputObject <ISitesIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property permissions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

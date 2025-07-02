@@ -21,6 +21,8 @@ Remove-MgBetaComplianceEdiscovery [-IfMatch <String>] [-ResponseHeadersVariable 
 ## DESCRIPTION
 Delete navigation property ediscovery for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

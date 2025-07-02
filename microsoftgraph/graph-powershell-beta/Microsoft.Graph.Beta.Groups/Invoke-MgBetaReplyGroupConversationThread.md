@@ -63,6 +63,8 @@ The table in the Permissions section lists the resources that support open exten
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

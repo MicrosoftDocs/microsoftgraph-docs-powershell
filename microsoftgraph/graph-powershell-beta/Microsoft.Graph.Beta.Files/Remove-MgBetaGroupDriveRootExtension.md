@@ -29,6 +29,8 @@ Remove-MgBetaGroupDriveRootExtension -InputObject <IFilesIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property extensions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

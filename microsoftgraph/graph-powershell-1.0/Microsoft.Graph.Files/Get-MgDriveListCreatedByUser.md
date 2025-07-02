@@ -34,6 +34,8 @@ Get-MgDriveListCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty <Str
 Identity of the user who created the item.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

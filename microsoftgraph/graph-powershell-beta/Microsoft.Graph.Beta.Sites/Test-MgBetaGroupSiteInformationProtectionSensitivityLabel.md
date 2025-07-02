@@ -49,6 +49,8 @@ Test-MgBetaGroupSiteInformationProtectionSensitivityLabel -InputObject <ISitesId
 ## DESCRIPTION
 Invoke action evaluate
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

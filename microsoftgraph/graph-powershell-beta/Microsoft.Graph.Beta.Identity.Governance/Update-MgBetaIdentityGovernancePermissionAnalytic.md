@@ -30,6 +30,8 @@ Update-MgBetaIdentityGovernancePermissionAnalytic
 ## DESCRIPTION
 Update the navigation property permissionsAnalytics in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

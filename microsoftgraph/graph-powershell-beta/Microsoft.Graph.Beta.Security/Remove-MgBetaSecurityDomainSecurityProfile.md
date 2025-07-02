@@ -29,6 +29,8 @@ Remove-MgBetaSecurityDomainSecurityProfile -InputObject <ISecurityIdentity> [-If
 ## DESCRIPTION
 Delete navigation property domainSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DomainSecurityProfileId

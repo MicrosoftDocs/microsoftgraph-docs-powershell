@@ -52,6 +52,8 @@ New-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 ## DESCRIPTION
 Create new navigation property to messageRules for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Actions

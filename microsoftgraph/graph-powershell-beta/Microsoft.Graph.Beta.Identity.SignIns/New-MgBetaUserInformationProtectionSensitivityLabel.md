@@ -51,6 +51,8 @@ New-MgBetaUserInformationProtectionSensitivityLabel -InputObject <IIdentitySignI
 ## DESCRIPTION
 Create new navigation property to sensitivityLabels for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

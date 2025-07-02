@@ -32,6 +32,8 @@ Remove-MgBetaSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity> [
 ## DESCRIPTION
 Delete entity from subscribedSkus
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

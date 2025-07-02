@@ -32,6 +32,8 @@ Remove-MgBetaGroupDriveListColumn -InputObject <IFilesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property columns for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId

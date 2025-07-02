@@ -48,6 +48,8 @@ Supports $expand.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

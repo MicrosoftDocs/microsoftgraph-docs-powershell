@@ -33,6 +33,8 @@ Remove-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete a directory object, for example, a group, user, application, or service principal.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectoryObjectId

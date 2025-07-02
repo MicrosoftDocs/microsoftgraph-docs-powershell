@@ -40,6 +40,8 @@ Get-MgVirtualEventWebinarPresenter -InputObject <IBookingsIdentity> [-ExpandProp
 ## DESCRIPTION
 The virtual event presenters.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

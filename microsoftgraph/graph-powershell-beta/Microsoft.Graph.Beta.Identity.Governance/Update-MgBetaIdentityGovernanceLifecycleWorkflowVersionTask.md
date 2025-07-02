@@ -53,6 +53,8 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask -InputObject <IIdent
 ## DESCRIPTION
 Update the navigation property tasks in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

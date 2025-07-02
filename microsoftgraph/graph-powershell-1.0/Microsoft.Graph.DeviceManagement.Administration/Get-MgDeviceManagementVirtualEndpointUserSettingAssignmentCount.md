@@ -33,6 +33,8 @@ Get-MgDeviceManagementVirtualEndpointUserSettingAssignmentCount
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcUserSettingId

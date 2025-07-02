@@ -24,6 +24,8 @@ Get-MgApplicationAppManagementPolicyByRef -ApplicationId <String> [-Filter <Stri
 ## DESCRIPTION
 The appManagementPolicy applied to this application.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

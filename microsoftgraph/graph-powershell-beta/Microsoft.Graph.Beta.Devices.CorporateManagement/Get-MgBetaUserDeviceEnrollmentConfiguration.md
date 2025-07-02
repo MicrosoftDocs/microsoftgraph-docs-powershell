@@ -37,6 +37,8 @@ Get-MgBetaUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateManag
 ## DESCRIPTION
 Get enrollment configurations targeted to the user
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

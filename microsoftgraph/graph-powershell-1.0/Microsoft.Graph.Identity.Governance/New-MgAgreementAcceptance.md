@@ -52,6 +52,8 @@ New-MgAgreementAcceptance -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Create new navigation property to acceptances for agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

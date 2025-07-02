@@ -31,6 +31,8 @@ Invoke-MgBetaUnassignDeviceManagementWindowsAutopilotDeploymentProfileAssignedDe
 ## DESCRIPTION
 Unassigns the user from an Autopilot device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

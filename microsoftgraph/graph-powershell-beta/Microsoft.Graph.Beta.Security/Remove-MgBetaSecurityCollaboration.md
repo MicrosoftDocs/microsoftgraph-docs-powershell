@@ -21,6 +21,8 @@ Remove-MgBetaSecurityCollaboration [-IfMatch <String>] [-ResponseHeadersVariable
 ## DESCRIPTION
 Delete navigation property collaboration for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

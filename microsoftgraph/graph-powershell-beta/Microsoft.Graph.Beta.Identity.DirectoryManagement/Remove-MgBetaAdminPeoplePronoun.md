@@ -21,6 +21,8 @@ Remove-MgBetaAdminPeoplePronoun [-IfMatch <String>] [-ResponseHeadersVariable <S
 ## DESCRIPTION
 Delete navigation property pronouns for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

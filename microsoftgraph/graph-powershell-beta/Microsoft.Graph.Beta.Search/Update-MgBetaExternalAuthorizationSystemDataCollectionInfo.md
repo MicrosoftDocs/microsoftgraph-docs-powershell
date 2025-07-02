@@ -45,6 +45,8 @@ Update-MgBetaExternalAuthorizationSystemDataCollectionInfo -InputObject <ISearch
 ## DESCRIPTION
 Update the navigation property dataCollectionInfo in external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

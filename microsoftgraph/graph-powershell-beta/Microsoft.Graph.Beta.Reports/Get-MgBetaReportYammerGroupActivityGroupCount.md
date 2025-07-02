@@ -32,6 +32,8 @@ Get-MgBetaReportYammerGroupActivityGroupCount -InputObject <IReportsIdentity> -O
 ## DESCRIPTION
 Invoke function getYammerGroupsActivityGroupCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

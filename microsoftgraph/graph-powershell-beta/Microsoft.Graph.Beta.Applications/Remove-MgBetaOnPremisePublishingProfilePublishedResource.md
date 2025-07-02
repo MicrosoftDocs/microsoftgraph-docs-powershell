@@ -29,6 +29,8 @@ Remove-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplicat
 ## DESCRIPTION
 Delete navigation property publishedResources for onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

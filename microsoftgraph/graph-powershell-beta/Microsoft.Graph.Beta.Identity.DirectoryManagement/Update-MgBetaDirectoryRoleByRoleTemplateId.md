@@ -51,6 +51,8 @@ Update-MgBetaDirectoryRoleByRoleTemplateId -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Update entity in directoryRoles by roleTemplateId
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,6 +48,8 @@ New-MgUserSettingWindowsInstance -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Create new navigation property to instances for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

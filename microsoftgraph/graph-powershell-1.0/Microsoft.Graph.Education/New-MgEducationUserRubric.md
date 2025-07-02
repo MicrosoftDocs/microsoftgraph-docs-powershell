@@ -52,6 +52,8 @@ New-MgEducationUserRubric -InputObject <IEducationIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to rubrics for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

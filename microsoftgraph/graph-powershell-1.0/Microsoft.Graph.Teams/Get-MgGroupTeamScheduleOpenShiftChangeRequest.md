@@ -40,6 +40,8 @@ Get-MgGroupTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity> [-Ex
 ## DESCRIPTION
 The open shift requests in the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

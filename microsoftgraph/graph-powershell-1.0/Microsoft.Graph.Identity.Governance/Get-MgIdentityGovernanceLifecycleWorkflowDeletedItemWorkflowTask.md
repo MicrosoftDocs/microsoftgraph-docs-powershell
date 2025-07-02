@@ -40,6 +40,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask -InputObject <I
 ## DESCRIPTION
 The tasks in the workflow.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

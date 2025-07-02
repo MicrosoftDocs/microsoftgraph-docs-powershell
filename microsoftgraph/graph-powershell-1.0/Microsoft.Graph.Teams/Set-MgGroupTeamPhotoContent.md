@@ -32,6 +32,8 @@ Set-MgGroupTeamPhotoContent -InputObject <ITeamsIdentity> [-Data <Stream>] [-Res
 ## DESCRIPTION
 The profile photo for the team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

@@ -32,6 +32,8 @@ Remove-MgBetaEducationClassAssignmentDefault -InputObject <IEducationIdentity> [
 ## DESCRIPTION
 Delete navigation property assignmentDefaults for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationClassId

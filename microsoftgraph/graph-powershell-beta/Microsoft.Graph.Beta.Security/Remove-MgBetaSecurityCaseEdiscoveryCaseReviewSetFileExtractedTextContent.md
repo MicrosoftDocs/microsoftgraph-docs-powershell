@@ -30,6 +30,8 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent -InputO
 ## DESCRIPTION
 Delete extractedTextContent for the navigation property files in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

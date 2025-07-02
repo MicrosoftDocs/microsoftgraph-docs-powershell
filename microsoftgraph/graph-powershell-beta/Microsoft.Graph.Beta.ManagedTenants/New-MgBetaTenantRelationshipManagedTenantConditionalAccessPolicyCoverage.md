@@ -31,6 +31,8 @@ New-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
 ## DESCRIPTION
 Create new navigation property to conditionalAccessPolicyCoverages for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

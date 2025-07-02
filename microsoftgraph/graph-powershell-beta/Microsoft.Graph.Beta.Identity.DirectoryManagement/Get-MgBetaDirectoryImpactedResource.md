@@ -37,6 +37,8 @@ Get-MgBetaDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Get impactedResources from directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

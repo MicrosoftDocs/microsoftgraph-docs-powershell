@@ -30,6 +30,8 @@ Get-MgBetaGroupConversationThreadPostInReplyToMentionCount -InputObject <IGroups
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConversationId

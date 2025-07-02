@@ -45,6 +45,8 @@ Update-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumnWebpart -Inp
 ## DESCRIPTION
 Update the navigation property webparts in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -33,6 +33,8 @@ Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage -InputObject 
 ## DESCRIPTION
 Delete navigation property stages for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceId

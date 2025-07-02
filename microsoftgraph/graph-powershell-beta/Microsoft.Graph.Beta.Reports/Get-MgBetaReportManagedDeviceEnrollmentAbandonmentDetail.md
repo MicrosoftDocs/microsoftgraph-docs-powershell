@@ -29,6 +29,8 @@ Get-MgBetaReportManagedDeviceEnrollmentAbandonmentDetail -InputObject <IReportsI
 ## DESCRIPTION
 Metadata for Enrollment abandonment details report
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

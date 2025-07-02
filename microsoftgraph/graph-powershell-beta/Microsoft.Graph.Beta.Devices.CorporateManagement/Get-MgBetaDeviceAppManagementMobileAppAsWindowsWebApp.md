@@ -40,6 +40,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebApp -InputObject <IDevicesCorp
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsWebApp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

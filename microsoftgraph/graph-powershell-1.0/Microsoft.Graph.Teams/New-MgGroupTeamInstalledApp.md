@@ -48,6 +48,8 @@ New-MgGroupTeamInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to installedApps for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

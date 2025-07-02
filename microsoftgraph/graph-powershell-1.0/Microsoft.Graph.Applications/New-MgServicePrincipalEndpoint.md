@@ -48,6 +48,8 @@ New-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to endpoints for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Remove-MgBetaRoleManagementDefenderResourceNamespace -InputObject <IDeviceManage
 ## DESCRIPTION
 Delete navigation property resourceNamespaces for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -47,6 +47,8 @@ Set-MgDeviceManagementManagedDeviceCategoryByRef -InputObject <IDeviceManagement
 ## DESCRIPTION
 Update the ref of navigation property deviceCategory in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

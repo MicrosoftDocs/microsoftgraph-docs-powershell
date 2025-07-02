@@ -32,6 +32,8 @@ Get-MgBetaReportSharePointSiteUsageFileCount -InputObject <IReportsIdentity> -Ou
 ## DESCRIPTION
 Invoke function getSharePointSiteUsageFileCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

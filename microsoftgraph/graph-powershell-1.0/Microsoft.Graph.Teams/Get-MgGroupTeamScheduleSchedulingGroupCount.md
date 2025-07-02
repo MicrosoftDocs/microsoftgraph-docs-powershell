@@ -32,6 +32,8 @@ Get-MgGroupTeamScheduleSchedulingGroupCount -InputObject <ITeamsIdentity> [-Filt
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

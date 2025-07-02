@@ -41,6 +41,8 @@ Get-MgBetaUserOwnedDeviceAsAppRoleAssignment -InputObject <IUsersIdentity> [-Exp
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

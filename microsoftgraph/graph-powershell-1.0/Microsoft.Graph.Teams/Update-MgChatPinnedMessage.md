@@ -47,6 +47,8 @@ Update-MgChatPinnedMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property pinnedMessages in chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

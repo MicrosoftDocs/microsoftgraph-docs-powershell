@@ -44,6 +44,8 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileVersion -InputObject <IIdenti
 Read-only.
 Customized versions of the terms of use agreement in the Microsoft Entra tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId

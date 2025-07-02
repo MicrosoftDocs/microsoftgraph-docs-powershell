@@ -29,6 +29,8 @@ New-MgBetaDeviceAppManagementMobileAppCatalogPackage -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to mobileAppCatalogPackages for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

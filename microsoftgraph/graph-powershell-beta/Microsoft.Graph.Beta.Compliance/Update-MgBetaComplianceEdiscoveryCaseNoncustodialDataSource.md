@@ -49,6 +49,8 @@ Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <ICompl
 ## DESCRIPTION
 Update the navigation property noncustodialDataSources in compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

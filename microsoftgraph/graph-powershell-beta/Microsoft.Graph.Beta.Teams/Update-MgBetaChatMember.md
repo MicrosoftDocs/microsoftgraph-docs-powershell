@@ -48,6 +48,8 @@ Update-MgBetaChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the navigation property members in chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

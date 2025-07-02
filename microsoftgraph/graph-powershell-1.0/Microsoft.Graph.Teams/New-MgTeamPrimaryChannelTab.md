@@ -48,6 +48,8 @@ New-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to tabs for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

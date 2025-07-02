@@ -29,6 +29,8 @@ Remove-MgBetaPrivilegedOperationEvent -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Delete entity from privilegedOperationEvents
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

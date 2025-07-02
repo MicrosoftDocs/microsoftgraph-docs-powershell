@@ -29,6 +29,8 @@ New-MgBetaRoleManagementDirectoryRoleAssignmentApproval -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to roleAssignmentApprovals for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

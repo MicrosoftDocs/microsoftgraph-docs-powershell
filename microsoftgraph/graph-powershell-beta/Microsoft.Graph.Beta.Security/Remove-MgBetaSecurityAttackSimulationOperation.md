@@ -32,6 +32,8 @@ Remove-MgBetaSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete navigation property operations for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttackSimulationOperationId

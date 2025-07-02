@@ -32,6 +32,8 @@ Remove-MgPlaceAsRoomListRoom -InputObject <ICalendarIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property rooms for places
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

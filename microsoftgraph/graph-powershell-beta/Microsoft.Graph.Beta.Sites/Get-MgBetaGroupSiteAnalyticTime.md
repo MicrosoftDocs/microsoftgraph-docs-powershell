@@ -32,6 +32,8 @@ Get-MgBetaGroupSiteAnalyticTime -InputObject <ISitesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Get allTime from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

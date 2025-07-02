@@ -34,6 +34,8 @@ Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleAppScope -InputObject <I
 Read-only property with details of the app-specific scope when the role eligibility or assignment is scoped to an app.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

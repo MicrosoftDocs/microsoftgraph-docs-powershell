@@ -51,6 +51,8 @@ Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
 ## DESCRIPTION
 Invoke action changeSettings
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

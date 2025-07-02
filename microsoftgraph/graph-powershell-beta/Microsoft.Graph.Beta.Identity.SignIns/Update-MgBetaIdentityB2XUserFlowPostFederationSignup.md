@@ -48,6 +48,8 @@ Update-MgBetaIdentityB2XUserFlowPostFederationSignup -InputObject <IIdentitySign
 ## DESCRIPTION
 Update the navigation property postFederationSignup in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

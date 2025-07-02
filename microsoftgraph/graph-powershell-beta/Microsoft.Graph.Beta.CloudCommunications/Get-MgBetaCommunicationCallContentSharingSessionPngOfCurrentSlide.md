@@ -29,6 +29,8 @@ Get-MgBetaCommunicationCallContentSharingSessionPngOfCurrentSlide -InputObject <
 ## DESCRIPTION
 Get pngOfCurrentSlide for the navigation property contentSharingSessions from communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallId

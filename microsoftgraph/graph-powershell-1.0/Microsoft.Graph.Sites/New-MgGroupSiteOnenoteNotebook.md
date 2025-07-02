@@ -54,6 +54,8 @@ New-MgGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to notebooks for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

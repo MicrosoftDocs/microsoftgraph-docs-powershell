@@ -33,6 +33,8 @@ Invoke-MgViewUserReminder -InputObject <IUsersFunctionsIdentity> [-Count] [-Filt
 ## DESCRIPTION
 Invoke function reminderView
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

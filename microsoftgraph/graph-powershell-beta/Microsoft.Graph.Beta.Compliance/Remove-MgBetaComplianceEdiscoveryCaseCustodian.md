@@ -29,6 +29,8 @@ Remove-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity
 ## DESCRIPTION
 Delete navigation property custodians for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

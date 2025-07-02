@@ -48,6 +48,8 @@ Update-MgSecurityThreatIntelligenceSubdomain -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property subdomains in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

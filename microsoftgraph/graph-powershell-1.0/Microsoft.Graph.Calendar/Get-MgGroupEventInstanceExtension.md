@@ -42,6 +42,8 @@ Get-MgGroupEventInstanceExtension -InputObject <ICalendarIdentity> [-ExpandPrope
 The collection of open extensions defined for the event.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

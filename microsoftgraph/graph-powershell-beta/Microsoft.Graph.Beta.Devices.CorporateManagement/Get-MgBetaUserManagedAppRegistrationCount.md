@@ -32,6 +32,8 @@ Get-MgBetaUserManagedAppRegistrationCount -InputObject <IDevicesCorporateManagem
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

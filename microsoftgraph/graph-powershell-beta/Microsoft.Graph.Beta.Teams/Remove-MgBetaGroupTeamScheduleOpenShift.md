@@ -32,6 +32,8 @@ Remove-MgBetaGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property openShifts for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

@@ -29,6 +29,8 @@ Get-MgBetaUserDeviceTransitiveMemberOfCountAsAdministrativeUnit -InputObject <IC
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

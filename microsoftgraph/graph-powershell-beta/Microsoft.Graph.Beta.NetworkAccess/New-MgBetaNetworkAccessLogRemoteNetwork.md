@@ -31,6 +31,8 @@ New-MgBetaNetworkAccessLogRemoteNetwork -BodyParameter <IMicrosoftGraphNetworkac
 ## DESCRIPTION
 Create new navigation property to remoteNetworks for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

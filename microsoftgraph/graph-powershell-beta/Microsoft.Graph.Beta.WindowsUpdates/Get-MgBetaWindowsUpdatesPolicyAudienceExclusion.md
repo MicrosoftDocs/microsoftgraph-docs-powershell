@@ -37,6 +37,8 @@ Get-MgBetaWindowsUpdatesPolicyAudienceExclusion -InputObject <IWindowsUpdatesIde
 ## DESCRIPTION
 Specifies the assets to exclude from the audience.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

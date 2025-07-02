@@ -32,6 +32,8 @@ Remove-MgCommunicationOnlineMeetingRecording -InputObject <ICloudCommunicationsI
 ## DESCRIPTION
 Delete navigation property recordings for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallRecordingId

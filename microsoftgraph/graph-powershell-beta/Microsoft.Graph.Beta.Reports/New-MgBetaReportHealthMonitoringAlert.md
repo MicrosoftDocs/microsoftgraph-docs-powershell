@@ -31,6 +31,8 @@ New-MgBetaReportHealthMonitoringAlert -BodyParameter <IMicrosoftGraphHealthMonit
 ## DESCRIPTION
 Create new navigation property to alerts for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

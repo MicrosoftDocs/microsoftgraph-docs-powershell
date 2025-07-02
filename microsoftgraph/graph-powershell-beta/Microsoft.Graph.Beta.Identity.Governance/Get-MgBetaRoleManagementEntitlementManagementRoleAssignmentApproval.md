@@ -37,6 +37,8 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentApproval -InputObject
 ## DESCRIPTION
 Get roleAssignmentApprovals from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

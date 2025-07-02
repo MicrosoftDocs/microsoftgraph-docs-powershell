@@ -45,6 +45,8 @@ Confirm-MgGroupSettingTemplateMemberObject -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

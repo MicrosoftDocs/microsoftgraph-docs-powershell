@@ -46,6 +46,8 @@ Update-MgBetaUserDriveRootListItemVersionField -InputObject <IFilesIdentity> -Bo
 ## DESCRIPTION
 Update the navigation property fields in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Get-MgBetaChatTabTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 The application that is linked to the tab.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

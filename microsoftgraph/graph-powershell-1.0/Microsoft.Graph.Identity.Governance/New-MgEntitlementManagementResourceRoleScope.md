@@ -30,6 +30,8 @@ New-MgEntitlementManagementResourceRoleScope -BodyParameter <IMicrosoftGraphAcce
 ## DESCRIPTION
 Create new navigation property to resourceRoleScopes for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

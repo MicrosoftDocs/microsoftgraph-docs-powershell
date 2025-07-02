@@ -52,6 +52,8 @@ Update-MgBetaSolutionBackupRestoreDriveProtectionUnit -InputObject <IBackupResto
 ## DESCRIPTION
 Update the navigation property driveProtectionUnits in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

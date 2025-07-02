@@ -33,6 +33,8 @@ Update-MgSecurityIdentity -BodyParameter <IMicrosoftGraphSecurityIdentityContain
 ## DESCRIPTION
 Update the navigation property identities in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

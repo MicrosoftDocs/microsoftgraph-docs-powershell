@@ -32,6 +32,8 @@ Get-MgSecurityCaseEdiscoveryCaseTagParent -InputObject <ISecurityIdentity> [-Exp
 ## DESCRIPTION
 Returns the parent tag of the specified tag.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

@@ -46,6 +46,8 @@ Read-only collection of role definitions that the given role definition inherits
 Only Microsoft Entra built-in roles (isBuiltIn is true) support this attribute.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

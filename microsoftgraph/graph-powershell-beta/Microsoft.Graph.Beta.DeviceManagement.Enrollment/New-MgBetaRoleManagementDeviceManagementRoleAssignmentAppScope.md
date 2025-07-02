@@ -46,6 +46,8 @@ New-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope
 ## DESCRIPTION
 Create new navigation property to appScopes for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

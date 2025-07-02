@@ -50,6 +50,8 @@ New-MgApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Create new navigation property to templates for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

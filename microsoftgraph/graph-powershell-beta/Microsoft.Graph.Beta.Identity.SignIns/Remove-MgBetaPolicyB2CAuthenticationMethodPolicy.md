@@ -21,6 +21,8 @@ Remove-MgBetaPolicyB2CAuthenticationMethodPolicy [-IfMatch <String>] [-ResponseH
 ## DESCRIPTION
 Delete navigation property b2cAuthenticationMethodsPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -21,6 +21,8 @@ Remove-MgBetaNetworkAccessSettingConditionalAccess [-IfMatch <String>] [-Respons
 ## DESCRIPTION
 Delete navigation property conditionalAccess for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

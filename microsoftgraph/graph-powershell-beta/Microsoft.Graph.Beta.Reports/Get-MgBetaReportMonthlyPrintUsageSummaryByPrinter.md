@@ -37,6 +37,8 @@ Get-MgBetaReportMonthlyPrintUsageSummaryByPrinter -InputObject <IReportsIdentity
 ## DESCRIPTION
 Get monthlyPrintUsageSummariesByPrinter from reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

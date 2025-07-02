@@ -58,6 +58,8 @@ Invoke action assignSensitivityLabel
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

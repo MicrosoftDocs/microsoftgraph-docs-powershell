@@ -45,6 +45,8 @@ Update-MgBetaAppCatalogTeamAppDefinitionColorIcon -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property colorIcon in appCatalogs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property riskyServicePrincipals for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

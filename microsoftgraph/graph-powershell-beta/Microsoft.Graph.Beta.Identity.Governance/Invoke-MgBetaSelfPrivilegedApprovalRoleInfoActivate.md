@@ -47,6 +47,8 @@ Invoke-MgBetaSelfPrivilegedApprovalRoleInfoActivate -InputObject <IIdentityGover
 ## DESCRIPTION
 Invoke action selfActivate
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

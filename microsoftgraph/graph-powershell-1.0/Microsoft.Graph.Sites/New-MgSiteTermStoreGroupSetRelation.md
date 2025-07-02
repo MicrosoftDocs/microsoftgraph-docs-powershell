@@ -80,6 +80,8 @@ New-MgSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to relations for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

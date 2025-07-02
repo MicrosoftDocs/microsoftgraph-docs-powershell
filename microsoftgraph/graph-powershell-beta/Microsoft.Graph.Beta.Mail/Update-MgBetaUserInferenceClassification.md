@@ -48,6 +48,8 @@ Update-MgBetaUserInferenceClassification -InputObject <IMailIdentity>
 ## DESCRIPTION
 Update the navigation property inferenceClassification in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

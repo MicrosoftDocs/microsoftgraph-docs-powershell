@@ -45,6 +45,8 @@ Update-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property endpoints in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

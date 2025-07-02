@@ -37,6 +37,8 @@ Get-MgBetaPlaceAsRoomListWorkspace -InputObject <ICalendarIdentity> [-ExpandProp
 ## DESCRIPTION
 Get workspaces from places
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

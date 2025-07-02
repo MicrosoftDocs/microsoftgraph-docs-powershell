@@ -41,6 +41,8 @@ Get-MgSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecurityI
 ## DESCRIPTION
 Get details from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -30,6 +30,8 @@ New-MgBetaIdentityGovernanceRoleManagementAlertOperation -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to operations for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

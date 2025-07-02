@@ -38,6 +38,8 @@ Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
 ## DESCRIPTION
 The IOS Lob App Provisioning Configurations.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Confirm-MgBetaGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-Response
 ## DESCRIPTION
 Confirm a specific timeCard.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

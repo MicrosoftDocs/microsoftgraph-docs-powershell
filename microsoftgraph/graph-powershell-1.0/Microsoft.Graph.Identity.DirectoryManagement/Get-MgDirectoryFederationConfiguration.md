@@ -48,6 +48,8 @@ Configure domain federation with organizations whose identity provider (IdP) sup
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

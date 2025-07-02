@@ -33,6 +33,8 @@ Remove-MgOrganizationBrandingLocalizationFavicon -InputObject <IIdentityDirector
 ## DESCRIPTION
 A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -37,6 +37,8 @@ Activate a protectionPolicyBase.
 Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users).
 You can add or remove artifacts (sites or user accounts) to or from each active policy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

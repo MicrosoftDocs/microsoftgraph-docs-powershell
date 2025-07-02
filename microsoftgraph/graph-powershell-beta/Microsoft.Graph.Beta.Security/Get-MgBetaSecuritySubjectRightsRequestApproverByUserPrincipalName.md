@@ -33,6 +33,8 @@ Get-MgBetaSecuritySubjectRightsRequestApproverByUserPrincipalName -InputObject <
 ## DESCRIPTION
 Get approvers from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

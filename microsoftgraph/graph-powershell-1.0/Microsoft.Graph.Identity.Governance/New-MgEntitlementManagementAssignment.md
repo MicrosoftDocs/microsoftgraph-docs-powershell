@@ -33,6 +33,8 @@ New-MgEntitlementManagementAssignment -BodyParameter <IMicrosoftGraphAccessPacka
 ## DESCRIPTION
 Create new navigation property to assignments for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackage

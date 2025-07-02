@@ -47,6 +47,8 @@ Update-MgBetaIdentityGovernanceRoleManagementAlertOperation -InputObject <IIdent
 ## DESCRIPTION
 Update the navigation property operations in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

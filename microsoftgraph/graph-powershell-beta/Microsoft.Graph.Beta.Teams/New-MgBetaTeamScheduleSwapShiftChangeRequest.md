@@ -61,6 +61,8 @@ Create an instance of a swapShiftsChangeRequest object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -68,6 +68,8 @@ New-MgBetaShareListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to columns for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

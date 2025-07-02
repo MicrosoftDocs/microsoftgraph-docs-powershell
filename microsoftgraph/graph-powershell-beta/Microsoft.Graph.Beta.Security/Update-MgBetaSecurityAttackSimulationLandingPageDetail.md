@@ -48,6 +48,8 @@ Update-MgBetaSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityId
 ## DESCRIPTION
 Update the navigation property details in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

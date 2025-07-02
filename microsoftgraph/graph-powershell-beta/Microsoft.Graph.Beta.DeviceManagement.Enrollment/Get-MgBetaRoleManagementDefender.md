@@ -21,6 +21,8 @@ Get-MgBetaRoleManagementDefender [-ExpandProperty <String[]>] [-Property <String
 ## DESCRIPTION
 Get defender from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

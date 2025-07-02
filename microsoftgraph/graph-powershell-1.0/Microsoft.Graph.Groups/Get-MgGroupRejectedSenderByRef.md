@@ -35,6 +35,8 @@ Make sure you don't specify the same user or group in the rejected senders and a
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

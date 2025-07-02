@@ -48,6 +48,8 @@ Update-MgBetaUserManagedDeviceSecurityBaselineState -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Update the navigation property securityBaselineStates in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

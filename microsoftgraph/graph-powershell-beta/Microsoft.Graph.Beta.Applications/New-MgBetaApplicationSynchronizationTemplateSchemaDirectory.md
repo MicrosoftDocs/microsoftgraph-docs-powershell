@@ -51,6 +51,8 @@ New-MgBetaApplicationSynchronizationTemplateSchemaDirectory -InputObject <IAppli
 ## DESCRIPTION
 Create new navigation property to directories for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

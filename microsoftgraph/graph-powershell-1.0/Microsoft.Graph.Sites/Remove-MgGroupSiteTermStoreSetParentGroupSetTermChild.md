@@ -48,6 +48,8 @@ Remove-MgGroupSiteTermStoreSetParentGroupSetTermChild -InputObject <ISitesIdenti
 ## DESCRIPTION
 Delete navigation property children for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

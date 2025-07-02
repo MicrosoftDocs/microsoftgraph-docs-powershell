@@ -29,6 +29,8 @@ Remove-MgBetaRoleManagementDeviceManagementResourceNamespace -InputObject <IDevi
 ## DESCRIPTION
 Delete navigation property resourceNamespaces for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

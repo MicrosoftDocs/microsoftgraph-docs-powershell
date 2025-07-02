@@ -44,6 +44,8 @@ The collection of open extensions defined for the group.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

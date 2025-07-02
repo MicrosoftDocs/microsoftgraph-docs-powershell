@@ -42,6 +42,8 @@ Get-MgBetaGroupTeamChannelMessageReply -InputObject <ITeamsIdentity> [-ExpandPro
 Replies for a specified message.
 Supports $expand for channel messages.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

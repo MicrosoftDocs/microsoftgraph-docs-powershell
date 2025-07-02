@@ -34,6 +34,8 @@ Remove-MgBetaPrintShareJobDocumentContent -InputObject <IDevicesCloudPrintIdenti
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -72,6 +72,8 @@ Create new navigation property to calendarView for solutions
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

@@ -50,6 +50,8 @@ Update-MgBetaTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeams
 ## DESCRIPTION
 Update the navigation property hostedContents in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

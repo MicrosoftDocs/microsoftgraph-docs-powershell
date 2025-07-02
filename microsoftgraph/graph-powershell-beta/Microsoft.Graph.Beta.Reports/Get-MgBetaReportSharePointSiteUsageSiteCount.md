@@ -32,6 +32,8 @@ Get-MgBetaReportSharePointSiteUsageSiteCount -InputObject <IReportsIdentity> -Ou
 ## DESCRIPTION
 Invoke function getSharePointSiteUsageSiteCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

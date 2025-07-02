@@ -31,6 +31,8 @@ Remove-MgBetaEducationMeAssignmentSubmissionResourceDependentResource -InputObje
 ## DESCRIPTION
 Delete navigation property dependentResources for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

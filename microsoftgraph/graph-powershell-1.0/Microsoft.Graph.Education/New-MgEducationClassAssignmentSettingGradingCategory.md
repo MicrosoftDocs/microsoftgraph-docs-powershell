@@ -48,6 +48,8 @@ New-MgEducationClassAssignmentSettingGradingCategory -InputObject <IEducationIde
 ## DESCRIPTION
 Create new navigation property to gradingCategories for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

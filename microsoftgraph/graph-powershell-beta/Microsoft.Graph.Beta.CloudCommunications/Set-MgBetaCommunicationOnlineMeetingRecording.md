@@ -31,6 +31,8 @@ Set-MgBetaCommunicationOnlineMeetingRecording -InputObject <ICloudCommunications
 The content stream of the recording of a Teams live event.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

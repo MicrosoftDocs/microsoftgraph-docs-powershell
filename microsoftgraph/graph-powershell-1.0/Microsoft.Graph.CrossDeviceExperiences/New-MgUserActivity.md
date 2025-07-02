@@ -54,6 +54,8 @@ New-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> -BodyParameter
 ## DESCRIPTION
 Create new navigation property to activities for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivationUrl

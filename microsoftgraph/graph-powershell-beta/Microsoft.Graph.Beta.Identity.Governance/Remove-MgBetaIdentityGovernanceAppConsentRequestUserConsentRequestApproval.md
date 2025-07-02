@@ -34,6 +34,8 @@ Remove-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval
 ## DESCRIPTION
 Delete navigation property approval for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppConsentRequestId

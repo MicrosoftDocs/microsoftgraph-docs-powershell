@@ -50,6 +50,8 @@ Update-MgBetaSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIden
 ## DESCRIPTION
 Update the navigation property hostComponents in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

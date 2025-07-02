@@ -33,6 +33,8 @@ Remove-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity> [
 ## DESCRIPTION
 Delete navigation property messageRules for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

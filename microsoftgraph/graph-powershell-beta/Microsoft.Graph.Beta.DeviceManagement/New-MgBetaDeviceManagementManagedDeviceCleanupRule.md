@@ -31,6 +31,8 @@ New-MgBetaDeviceManagementManagedDeviceCleanupRule -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to managedDeviceCleanupRules for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

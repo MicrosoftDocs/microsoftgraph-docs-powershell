@@ -29,6 +29,8 @@ Remove-MgBetaFinancialCompanySaleCreditMemoLineItem -InputObject <IFinancialsIde
 ## DESCRIPTION
 Delete navigation property item for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

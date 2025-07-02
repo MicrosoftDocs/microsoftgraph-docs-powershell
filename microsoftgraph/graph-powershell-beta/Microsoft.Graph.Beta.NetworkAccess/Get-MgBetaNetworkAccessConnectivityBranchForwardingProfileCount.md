@@ -29,6 +29,8 @@ Get-MgBetaNetworkAccessConnectivityBranchForwardingProfileCount -InputObject <IN
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BranchSiteId

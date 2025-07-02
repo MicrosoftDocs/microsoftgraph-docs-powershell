@@ -34,6 +34,8 @@ New-MgIdentityGovernanceAppConsentRequest -BodyParameter <IMicrosoftGraphAppCons
 ## DESCRIPTION
 Create new navigation property to appConsentRequests for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

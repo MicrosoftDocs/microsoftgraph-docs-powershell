@@ -29,6 +29,8 @@ Remove-MgBetaExternalAuthorizationSystemDataCollectionInfo -InputObject <ISearch
 ## DESCRIPTION
 Delete navigation property dataCollectionInfo for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthorizationSystemId

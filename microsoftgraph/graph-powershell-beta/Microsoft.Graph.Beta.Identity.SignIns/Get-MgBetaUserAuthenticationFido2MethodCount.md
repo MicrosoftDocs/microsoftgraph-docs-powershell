@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthenticationMethod.Read.All, UserAuthMethod-Passkey.ReadWrite.All, UserAuthMethod-Passkey.Read.All, UserAuthenticationMethod.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

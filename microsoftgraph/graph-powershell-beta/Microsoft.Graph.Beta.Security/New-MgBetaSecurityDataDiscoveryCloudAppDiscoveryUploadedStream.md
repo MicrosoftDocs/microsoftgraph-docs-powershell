@@ -33,6 +33,8 @@ New-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream
 ## DESCRIPTION
 Create new navigation property to uploadedStreams for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

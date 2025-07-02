@@ -40,6 +40,8 @@ Get-MgBetaUserInsightUsed -InputObject <IUsersIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Access this property from the derived type itemInsights.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

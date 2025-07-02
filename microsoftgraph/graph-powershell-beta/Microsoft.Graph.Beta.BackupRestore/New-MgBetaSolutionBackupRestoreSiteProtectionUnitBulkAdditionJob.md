@@ -32,6 +32,8 @@ New-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob
 ## DESCRIPTION
 Create new navigation property to siteProtectionUnitsBulkAdditionJobs for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

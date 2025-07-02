@@ -40,6 +40,8 @@ Get-MgBetaGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-ExpandPrope
 ## DESCRIPTION
 The set of open shifts in a scheduling group in the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

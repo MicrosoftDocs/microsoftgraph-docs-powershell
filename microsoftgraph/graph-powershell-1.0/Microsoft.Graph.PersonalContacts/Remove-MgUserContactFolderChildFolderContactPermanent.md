@@ -32,6 +32,8 @@ Remove-MgUserContactFolderChildFolderContactPermanent -InputObject <IPersonalCon
 ## DESCRIPTION
 Invoke action permanentDelete
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContactFolderId

@@ -32,6 +32,8 @@ Remove-MgSecurityThreatIntelligenceWhoisHistoryRecord -InputObject <ISecurityIde
 ## DESCRIPTION
 Delete navigation property whoisHistoryRecords for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -50,6 +50,8 @@ Update-MgBetaDriveRootListItemVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property versions in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

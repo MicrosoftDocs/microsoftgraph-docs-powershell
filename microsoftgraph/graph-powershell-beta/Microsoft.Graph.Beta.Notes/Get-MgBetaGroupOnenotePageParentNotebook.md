@@ -34,6 +34,8 @@ Get-MgBetaGroupOnenotePageParentNotebook -InputObject <INotesIdentity> [-ExpandP
 The notebook that contains the page.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

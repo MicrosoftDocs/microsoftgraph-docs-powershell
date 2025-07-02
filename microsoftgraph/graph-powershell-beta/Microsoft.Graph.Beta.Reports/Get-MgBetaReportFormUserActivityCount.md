@@ -28,6 +28,8 @@ Get-MgBetaReportFormUserActivityCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Invoke function getFormsUserActivityCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

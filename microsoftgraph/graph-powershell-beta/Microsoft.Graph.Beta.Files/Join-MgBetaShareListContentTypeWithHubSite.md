@@ -51,6 +51,8 @@ Join-MgBetaShareListContentTypeWithHubSite -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action associateWithHubSites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

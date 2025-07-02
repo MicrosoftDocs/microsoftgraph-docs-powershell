@@ -50,6 +50,8 @@ Update-MgBetaGroupAppRoleAssignment -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property appRoleAssignments in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

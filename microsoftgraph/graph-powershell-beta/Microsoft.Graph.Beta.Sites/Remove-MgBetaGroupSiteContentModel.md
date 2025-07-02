@@ -29,6 +29,8 @@ Remove-MgBetaGroupSiteContentModel -InputObject <ISitesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property contentModels for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentModelId

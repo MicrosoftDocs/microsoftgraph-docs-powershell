@@ -40,6 +40,8 @@ Get-MgGroupSiteExternalColumn -InputObject <ISitesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Get externalColumns from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

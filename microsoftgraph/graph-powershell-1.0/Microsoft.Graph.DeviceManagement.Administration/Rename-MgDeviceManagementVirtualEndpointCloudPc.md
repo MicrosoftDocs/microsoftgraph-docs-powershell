@@ -57,6 +57,8 @@ Use this API to update the displayName of a Cloud PC entity.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CloudPC.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

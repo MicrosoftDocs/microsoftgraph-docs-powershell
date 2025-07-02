@@ -24,6 +24,8 @@ Get-MgBetaDirectoryFeatureRolloutPolicyApplyTo -FeatureRolloutPolicyId <String> 
 Nullable.
 Specifies a list of directoryObject resources that feature is enabled for.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

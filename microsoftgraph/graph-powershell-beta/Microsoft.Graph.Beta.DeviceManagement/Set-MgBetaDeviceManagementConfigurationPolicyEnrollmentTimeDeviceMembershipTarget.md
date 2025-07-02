@@ -51,6 +51,8 @@ Set-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarge
 ## DESCRIPTION
 Invoke action setEnrollmentTimeDeviceMembershipTarget
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

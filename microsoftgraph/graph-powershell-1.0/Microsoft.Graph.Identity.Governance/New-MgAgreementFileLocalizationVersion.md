@@ -50,6 +50,8 @@ New-MgAgreementFileLocalizationVersion -InputObject <IIdentityGovernanceIdentity
 ## DESCRIPTION
 Create new navigation property to versions for agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

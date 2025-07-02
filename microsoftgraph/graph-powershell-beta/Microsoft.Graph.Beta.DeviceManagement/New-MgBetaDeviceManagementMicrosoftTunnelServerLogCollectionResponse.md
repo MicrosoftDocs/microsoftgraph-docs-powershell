@@ -39,6 +39,8 @@ Create new navigation property to microsoftTunnelServerLogCollectionResponses fo
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

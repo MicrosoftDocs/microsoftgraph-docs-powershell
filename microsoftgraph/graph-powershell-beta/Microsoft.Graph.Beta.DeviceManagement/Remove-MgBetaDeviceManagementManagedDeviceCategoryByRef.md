@@ -32,6 +32,8 @@ Remove-MgBetaDeviceManagementManagedDeviceCategoryByRef -InputObject <IDeviceMan
 ## DESCRIPTION
 Delete ref of navigation property deviceCategory for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

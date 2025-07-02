@@ -31,6 +31,8 @@ Get-MgBetaSecurityInformationProtectionSensitivityLabelParent -InputObject <ISec
 The parent label associated with a child label.
 Null if the label has no parent.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

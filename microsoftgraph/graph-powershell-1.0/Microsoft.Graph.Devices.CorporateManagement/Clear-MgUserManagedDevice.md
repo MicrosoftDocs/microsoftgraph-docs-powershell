@@ -51,6 +51,8 @@ Clear-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity>
 ## DESCRIPTION
 Wipe a device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

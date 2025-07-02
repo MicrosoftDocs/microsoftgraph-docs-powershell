@@ -32,6 +32,8 @@ Get-MgBetaReportTeamActivityDistributionCount -InputObject <IReportsIdentity> -O
 ## DESCRIPTION
 Invoke function getTeamsTeamActivityDistributionCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

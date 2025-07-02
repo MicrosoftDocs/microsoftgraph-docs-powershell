@@ -45,6 +45,8 @@ Once published, there is a submission object for each student representing their
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

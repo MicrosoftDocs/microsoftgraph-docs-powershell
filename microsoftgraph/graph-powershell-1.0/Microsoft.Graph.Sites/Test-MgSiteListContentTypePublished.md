@@ -32,6 +32,8 @@ Test-MgSiteListContentTypePublished -InputObject <ISitesIdentity> [-ResponseHead
 ## DESCRIPTION
 Check the publishing status of a contentType in a content type hub site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

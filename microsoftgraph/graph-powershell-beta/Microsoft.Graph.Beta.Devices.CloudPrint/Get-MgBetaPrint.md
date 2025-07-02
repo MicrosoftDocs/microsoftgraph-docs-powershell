@@ -23,6 +23,8 @@ Get-MgBetaPrint [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHe
 ## DESCRIPTION
 Get print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -34,6 +34,8 @@ New-MgBetaEducationReportReadingAssignmentSubmission
 ## DESCRIPTION
 Create new navigation property to readingAssignmentSubmissions for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccuracyScore

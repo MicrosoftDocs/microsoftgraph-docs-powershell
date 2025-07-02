@@ -37,6 +37,8 @@ Invoke action remediate
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagementAlert.ReadWrite.Directory,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

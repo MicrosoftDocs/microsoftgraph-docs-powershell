@@ -33,6 +33,8 @@ New-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance
 ## DESCRIPTION
 Create new navigation property to deviceAppPerformances for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -37,6 +37,8 @@ Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy -InputObject <II
 ## DESCRIPTION
 A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

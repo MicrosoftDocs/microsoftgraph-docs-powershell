@@ -33,6 +33,8 @@ Remove-MgInformationProtectionThreatAssessmentRequestResult -InputObject <IIdent
 ## DESCRIPTION
 Delete navigation property results for informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

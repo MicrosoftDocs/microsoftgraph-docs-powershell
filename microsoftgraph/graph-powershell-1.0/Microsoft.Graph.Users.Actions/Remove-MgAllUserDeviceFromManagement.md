@@ -33,6 +33,8 @@ Remove-MgAllUserDeviceFromManagement -InputObject <IUsersActionsIdentity> [-Resp
 ## DESCRIPTION
 Retire all devices from management for this user
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

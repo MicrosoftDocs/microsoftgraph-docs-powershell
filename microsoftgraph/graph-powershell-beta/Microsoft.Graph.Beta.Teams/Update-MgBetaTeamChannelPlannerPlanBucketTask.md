@@ -73,6 +73,8 @@ Update-MgBetaTeamChannelPlannerPlanBucketTask -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property tasks in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActiveChecklistItemCount

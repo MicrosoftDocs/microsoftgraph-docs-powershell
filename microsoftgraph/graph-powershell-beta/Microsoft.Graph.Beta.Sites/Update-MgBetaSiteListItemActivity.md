@@ -48,6 +48,8 @@ Update-MgBetaSiteListItemActivity -InputObject <ISitesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property activities in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Action

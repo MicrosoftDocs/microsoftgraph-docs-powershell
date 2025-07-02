@@ -51,6 +51,8 @@ Delete navigation property itemCategories for financials
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Financials.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

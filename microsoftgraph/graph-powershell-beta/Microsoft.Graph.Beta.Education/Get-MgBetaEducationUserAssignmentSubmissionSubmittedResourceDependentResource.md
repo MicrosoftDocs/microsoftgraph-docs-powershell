@@ -40,6 +40,8 @@ Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource -I
 ## DESCRIPTION
 Get dependentResources from education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

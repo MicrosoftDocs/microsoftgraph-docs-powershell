@@ -32,6 +32,8 @@ Remove-MgBetaGroupSitePageAsSitePageWebPart -InputObject <ISitesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property webParts for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

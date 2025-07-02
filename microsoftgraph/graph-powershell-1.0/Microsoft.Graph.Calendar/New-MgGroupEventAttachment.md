@@ -56,6 +56,8 @@ Create new navigation property to attachments for groups
 | Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
 | Application | Calendars.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

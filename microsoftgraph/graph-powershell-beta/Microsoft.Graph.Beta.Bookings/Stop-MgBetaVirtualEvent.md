@@ -31,6 +31,8 @@ Stop-MgBetaVirtualEvent -InputObject <IBookingsIdentity> [-ResponseHeadersVariab
 ## DESCRIPTION
 Invoke action cancel
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

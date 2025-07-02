@@ -40,6 +40,8 @@ Get-MgUserInsightUsed -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Calculated relationship that identifies the latest documents viewed or modified by a user, including OneDrive for work or school and SharePoint documents, ranked by recency of use.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

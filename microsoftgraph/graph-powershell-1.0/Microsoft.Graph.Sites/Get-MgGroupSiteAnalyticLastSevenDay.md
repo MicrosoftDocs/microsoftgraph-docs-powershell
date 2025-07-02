@@ -32,6 +32,8 @@ Get-MgGroupSiteAnalyticLastSevenDay -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 Get lastSevenDays from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

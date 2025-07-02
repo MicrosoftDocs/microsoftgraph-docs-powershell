@@ -41,6 +41,8 @@ Get-MgBetaGroupDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity> [
 ## DESCRIPTION
 Get itemActivityStats from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

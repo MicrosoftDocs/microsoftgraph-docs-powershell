@@ -29,6 +29,8 @@ Remove-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Delete navigation property regionalAndLanguageSettings for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

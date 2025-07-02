@@ -51,6 +51,8 @@ New-MgBetaTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> -BodyParam
 ## DESCRIPTION
 Create new navigation property to tabs for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

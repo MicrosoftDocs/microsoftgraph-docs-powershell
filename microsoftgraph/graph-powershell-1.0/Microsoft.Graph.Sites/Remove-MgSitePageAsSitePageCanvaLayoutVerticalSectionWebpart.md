@@ -32,6 +32,8 @@ Remove-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart -InputObject <ISite
 ## DESCRIPTION
 Delete navigation property webparts for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

@@ -48,6 +48,8 @@ Update-MgBetaGroupSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property termStore in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

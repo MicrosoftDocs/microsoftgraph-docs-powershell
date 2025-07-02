@@ -52,6 +52,8 @@ Invoke-MgBetaBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision
 ## DESCRIPTION
 Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using principalId, resourceId, or neither.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

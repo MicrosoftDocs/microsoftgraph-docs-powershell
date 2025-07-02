@@ -29,6 +29,8 @@ Invoke-MgBetaSelfPrivilegedApprovalRoleInfoDeactivate -InputObject <IIdentityGov
 ## DESCRIPTION
 Invoke action selfDeactivate
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

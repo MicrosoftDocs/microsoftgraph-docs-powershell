@@ -49,6 +49,8 @@ Update-MgBetaUserOnlineMeetingAiInsight -InputObject <ICloudCommunicationsIdenti
 ## DESCRIPTION
 Update the navigation property aiInsights in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionItems

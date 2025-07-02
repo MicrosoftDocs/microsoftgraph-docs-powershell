@@ -48,6 +48,8 @@ Import-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction
 ## DESCRIPTION
 Invoke action importResourceActions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

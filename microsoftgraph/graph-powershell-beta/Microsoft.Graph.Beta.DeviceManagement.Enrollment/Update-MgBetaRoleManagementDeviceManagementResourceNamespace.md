@@ -45,6 +45,8 @@ Update-MgBetaRoleManagementDeviceManagementResourceNamespace -InputObject <IDevi
 ## DESCRIPTION
 Update the navigation property resourceNamespaces in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

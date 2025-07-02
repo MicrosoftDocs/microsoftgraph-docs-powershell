@@ -32,6 +32,8 @@ Get-MgUserInsightSharedLastSharedMethod -InputObject <IUsersIdentity> [-ExpandPr
 ## DESCRIPTION
 Get lastSharedMethod from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

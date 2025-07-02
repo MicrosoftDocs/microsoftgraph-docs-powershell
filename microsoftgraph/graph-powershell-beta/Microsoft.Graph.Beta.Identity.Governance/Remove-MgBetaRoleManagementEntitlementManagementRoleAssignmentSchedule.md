@@ -34,6 +34,8 @@ Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule
 ## DESCRIPTION
 Delete navigation property roleAssignmentSchedules for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

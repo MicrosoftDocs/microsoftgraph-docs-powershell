@@ -68,6 +68,8 @@ Update-MgBetaDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property columns in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

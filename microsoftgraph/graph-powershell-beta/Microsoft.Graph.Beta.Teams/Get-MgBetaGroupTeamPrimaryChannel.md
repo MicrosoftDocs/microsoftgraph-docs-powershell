@@ -32,6 +32,8 @@ Get-MgBetaGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ExpandProperty
 ## DESCRIPTION
 The general channel for the team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

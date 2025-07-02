@@ -51,6 +51,8 @@ Update-MgBetaIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property languages in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

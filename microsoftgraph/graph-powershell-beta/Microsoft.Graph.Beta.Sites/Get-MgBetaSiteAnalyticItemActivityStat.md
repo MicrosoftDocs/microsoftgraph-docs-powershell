@@ -40,6 +40,8 @@ Get-MgBetaSiteAnalyticItemActivityStat -InputObject <ISitesIdentity> [-ExpandPro
 ## DESCRIPTION
 Get itemActivityStats from sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

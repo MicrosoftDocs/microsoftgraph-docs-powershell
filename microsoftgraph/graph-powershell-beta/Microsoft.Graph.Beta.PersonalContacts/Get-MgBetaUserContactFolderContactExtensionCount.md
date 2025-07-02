@@ -32,6 +32,8 @@ Get-MgBetaUserContactFolderContactExtensionCount -InputObject <IPersonalContacts
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContactFolderId

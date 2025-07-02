@@ -82,6 +82,8 @@ Update-MgGroupDriveRoot -InputObject <IFilesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the navigation property root in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

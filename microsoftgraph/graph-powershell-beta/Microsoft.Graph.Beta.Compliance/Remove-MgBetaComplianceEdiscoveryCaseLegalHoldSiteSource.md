@@ -29,6 +29,8 @@ Remove-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource -InputObject <IComplian
 ## DESCRIPTION
 Delete navigation property siteSources for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

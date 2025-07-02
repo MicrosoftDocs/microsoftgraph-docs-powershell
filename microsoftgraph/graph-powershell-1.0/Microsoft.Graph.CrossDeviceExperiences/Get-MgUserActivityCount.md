@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp,  |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

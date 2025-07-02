@@ -40,6 +40,8 @@ Get-MgBetaDirectoryDeletedItemAsApplication -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

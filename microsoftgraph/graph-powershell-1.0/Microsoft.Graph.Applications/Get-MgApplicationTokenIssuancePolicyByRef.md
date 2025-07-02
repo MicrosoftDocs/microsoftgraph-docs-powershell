@@ -33,6 +33,8 @@ List the tokenIssuancePolicy objects that are assigned to an application.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

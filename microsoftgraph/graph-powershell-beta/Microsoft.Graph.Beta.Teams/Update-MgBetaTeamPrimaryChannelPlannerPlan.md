@@ -56,6 +56,8 @@ Update-MgBetaTeamPrimaryChannelPlannerPlan -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property plans in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

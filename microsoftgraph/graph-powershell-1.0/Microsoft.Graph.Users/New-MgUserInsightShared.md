@@ -54,6 +54,8 @@ New-MgUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to shared for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

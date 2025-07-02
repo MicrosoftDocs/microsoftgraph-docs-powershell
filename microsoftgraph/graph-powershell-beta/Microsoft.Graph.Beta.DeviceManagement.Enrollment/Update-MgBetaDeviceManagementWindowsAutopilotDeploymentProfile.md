@@ -72,6 +72,8 @@ Update the navigation property windowsAutopilotDeploymentProfiles in deviceManag
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

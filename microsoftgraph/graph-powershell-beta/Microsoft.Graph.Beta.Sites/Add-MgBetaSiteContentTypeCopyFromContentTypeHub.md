@@ -63,6 +63,8 @@ For more information, see getCompatibleHubContentTypes and the blog post Syntex 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

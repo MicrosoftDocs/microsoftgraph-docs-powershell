@@ -50,6 +50,8 @@ Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucket -InputObject <ITeamsIde
 ## DESCRIPTION
 Update the navigation property buckets in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

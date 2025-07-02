@@ -46,6 +46,8 @@ Get-MgBetaReportOneDriveUsageAccountDetail -InputObject <IReportsIdentity> -OutF
 ## DESCRIPTION
 Invoke function getOneDriveUsageAccountDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

@@ -46,6 +46,8 @@ Update-MgUserMessageExtension -InputObject <IMailIdentity> -BodyParameter <Hasht
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

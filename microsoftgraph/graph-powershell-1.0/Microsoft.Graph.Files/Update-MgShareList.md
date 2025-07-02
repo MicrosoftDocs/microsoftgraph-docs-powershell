@@ -62,6 +62,8 @@ Update-MgShareList -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property list in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -53,6 +53,8 @@ Update-MgBetaSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecur
 ## DESCRIPTION
 Update the navigation property languageDetails in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

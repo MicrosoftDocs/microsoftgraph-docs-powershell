@@ -21,6 +21,8 @@ Remove-MgBetaSecurityPartnerSecurityScore [-IfMatch <String>] [-ResponseHeadersV
 ## DESCRIPTION
 Delete navigation property securityScore for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

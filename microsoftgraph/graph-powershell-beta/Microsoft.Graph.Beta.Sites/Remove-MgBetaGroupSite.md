@@ -49,6 +49,8 @@ Remove-MgBetaGroupSite -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Unfollow a user's site or multiple sites.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

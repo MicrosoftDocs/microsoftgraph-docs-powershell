@@ -32,6 +32,8 @@ Remove-MgBetaGroupDriveRootAnalytic -InputObject <IFilesIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property analytics for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

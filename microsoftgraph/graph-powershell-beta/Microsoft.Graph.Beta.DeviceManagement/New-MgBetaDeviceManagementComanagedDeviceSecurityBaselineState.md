@@ -47,6 +47,8 @@ New-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState -InputObject <IDe
 ## DESCRIPTION
 Create new navigation property to securityBaselineStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

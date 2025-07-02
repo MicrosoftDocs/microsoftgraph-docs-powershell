@@ -32,6 +32,8 @@ Remove-MgContract -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete entity from contracts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContractId

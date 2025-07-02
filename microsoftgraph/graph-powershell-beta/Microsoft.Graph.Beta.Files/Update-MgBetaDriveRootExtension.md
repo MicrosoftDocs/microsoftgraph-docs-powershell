@@ -43,6 +43,8 @@ Update-MgBetaDriveRootExtension -InputObject <IFilesIdentity> -BodyParameter <Ha
 ## DESCRIPTION
 Update the navigation property extensions in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

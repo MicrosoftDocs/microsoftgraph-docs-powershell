@@ -30,6 +30,8 @@ Remove-MgBetaUserMailFolderChildFolderMessageMention -InputObject <IMailIdentity
 ## DESCRIPTION
 Delete navigation property mentions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

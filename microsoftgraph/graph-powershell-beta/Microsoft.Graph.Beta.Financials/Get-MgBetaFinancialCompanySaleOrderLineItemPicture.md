@@ -62,6 +62,8 @@ Get-MgBetaFinancialCompanySaleOrderLineItemPicture -InputObject <IFinancialsIden
 ## DESCRIPTION
 Get picture from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

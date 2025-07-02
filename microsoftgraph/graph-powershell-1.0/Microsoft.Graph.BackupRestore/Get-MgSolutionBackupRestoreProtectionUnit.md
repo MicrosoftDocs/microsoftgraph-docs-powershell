@@ -41,6 +41,8 @@ Get-MgSolutionBackupRestoreProtectionUnit -InputObject <IBackupRestoreIdentity> 
 ## DESCRIPTION
 Read the properties and relationships of a protectionUnitBase object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

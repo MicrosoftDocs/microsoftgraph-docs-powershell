@@ -48,6 +48,8 @@ Update-MgSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdent
 ## DESCRIPTION
 Update the navigation property intelligenceProfileIndicators in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

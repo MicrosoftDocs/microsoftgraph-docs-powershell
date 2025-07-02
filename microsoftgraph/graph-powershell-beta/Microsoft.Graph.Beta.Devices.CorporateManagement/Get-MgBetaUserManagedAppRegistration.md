@@ -40,6 +40,8 @@ Get-MgBetaUserManagedAppRegistration -InputObject <IDevicesCorporateManagementId
 ## DESCRIPTION
 Zero or more managed app registrations that belong to the user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

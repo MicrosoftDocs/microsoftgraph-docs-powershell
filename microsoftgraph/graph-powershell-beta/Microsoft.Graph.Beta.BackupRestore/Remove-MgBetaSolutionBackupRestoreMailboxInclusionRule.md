@@ -32,6 +32,8 @@ Remove-MgBetaSolutionBackupRestoreMailboxInclusionRule -InputObject <IBackupRest
 ## DESCRIPTION
 Delete navigation property mailboxInclusionRules for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

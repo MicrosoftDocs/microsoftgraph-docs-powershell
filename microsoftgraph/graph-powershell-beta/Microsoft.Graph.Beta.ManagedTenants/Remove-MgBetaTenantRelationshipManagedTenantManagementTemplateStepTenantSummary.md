@@ -31,6 +31,8 @@ Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
 ## DESCRIPTION
 Delete navigation property managementTemplateStepTenantSummaries for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

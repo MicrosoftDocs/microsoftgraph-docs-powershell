@@ -86,6 +86,8 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceRole -InputObject <IIde
 ## DESCRIPTION
 Get resourceRoles from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

@@ -59,6 +59,8 @@ Get-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorpora
 ## DESCRIPTION
 List mobileAppRelationship objects for mobile applications.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

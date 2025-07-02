@@ -46,6 +46,8 @@ Update-MgApplicationSynchronizationJobBulkUpload -InputObject <IApplicationsIden
 ## DESCRIPTION
 Update the navigation property bulkUpload in applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

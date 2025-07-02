@@ -53,6 +53,8 @@ Update-MgBetaGroupSiteListPermission -InputObject <ISitesIdentity> -BodyParamete
 ## DESCRIPTION
 Update the navigation property permissions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

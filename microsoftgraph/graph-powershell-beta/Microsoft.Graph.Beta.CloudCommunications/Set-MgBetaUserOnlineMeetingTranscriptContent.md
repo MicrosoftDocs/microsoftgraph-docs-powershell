@@ -34,6 +34,8 @@ Set-MgBetaUserOnlineMeetingTranscriptContent -InputObject <ICloudCommunicationsI
 The content of the transcript.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallTranscriptId

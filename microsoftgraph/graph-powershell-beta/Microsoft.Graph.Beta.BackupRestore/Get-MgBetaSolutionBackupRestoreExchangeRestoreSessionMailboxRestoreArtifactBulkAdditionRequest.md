@@ -42,6 +42,8 @@ Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkA
 ## DESCRIPTION
 Get a mailboxRestoreArtifactsBulkAdditionRequest object by its id, associated with an exchangeRestoreSession.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

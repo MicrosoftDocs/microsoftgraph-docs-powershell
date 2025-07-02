@@ -32,6 +32,8 @@ Remove-MgGroupDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity> [-
 ## DESCRIPTION
 Delete navigation property itemActivityStats for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

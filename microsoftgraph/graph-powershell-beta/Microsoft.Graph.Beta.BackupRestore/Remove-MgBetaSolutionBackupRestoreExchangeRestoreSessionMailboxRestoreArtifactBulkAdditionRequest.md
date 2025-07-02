@@ -32,6 +32,8 @@ Remove-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBu
 ## DESCRIPTION
 Delete a mailboxRestoreArtifactsBulkAdditionRequest object associated with an exchangeRestoreSession.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExchangeRestoreSessionId

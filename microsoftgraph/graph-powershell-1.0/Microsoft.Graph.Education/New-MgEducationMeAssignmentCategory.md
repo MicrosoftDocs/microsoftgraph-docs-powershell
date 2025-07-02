@@ -46,6 +46,8 @@ New-MgEducationMeAssignmentCategory -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create new navigation property to categories for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

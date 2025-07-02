@@ -31,6 +31,8 @@ Remove-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionSt
 ## DESCRIPTION
 Delete navigation property customExtensionStageSettings for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

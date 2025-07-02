@@ -42,6 +42,8 @@ Update the navigation property deviceConfigurationDeviceStateSummaries in device
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Remove-MgBetaUserInformationProtection -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Delete navigation property informationProtection for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

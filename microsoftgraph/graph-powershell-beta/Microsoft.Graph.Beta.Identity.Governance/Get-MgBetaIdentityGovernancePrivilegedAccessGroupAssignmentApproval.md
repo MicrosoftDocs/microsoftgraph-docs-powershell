@@ -40,6 +40,8 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval -InputObject
 ## DESCRIPTION
 Get assignmentApprovals from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

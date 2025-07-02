@@ -32,6 +32,8 @@ Remove-MgBetaDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Delete navigation property serviceConfigurationRecords for domains
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DomainDnsRecordId

@@ -33,6 +33,8 @@ Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudC
 ## DESCRIPTION
 Delete navigation property attendanceRecords for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttendanceRecordId

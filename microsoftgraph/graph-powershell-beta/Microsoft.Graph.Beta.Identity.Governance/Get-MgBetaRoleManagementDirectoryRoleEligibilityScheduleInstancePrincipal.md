@@ -34,6 +34,8 @@ Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal
 ## DESCRIPTION
 The principal that's getting a role assignment or role eligibility through the request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

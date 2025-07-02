@@ -37,6 +37,8 @@ Get-MgBetaGroupSiteInformationProtectionSensitivityLabel -InputObject <ISitesIde
 ## DESCRIPTION
 Get sensitivityLabels from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

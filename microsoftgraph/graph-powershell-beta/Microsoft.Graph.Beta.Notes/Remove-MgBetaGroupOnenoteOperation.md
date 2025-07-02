@@ -32,6 +32,8 @@ Remove-MgBetaGroupOnenoteOperation -InputObject <INotesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property operations for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

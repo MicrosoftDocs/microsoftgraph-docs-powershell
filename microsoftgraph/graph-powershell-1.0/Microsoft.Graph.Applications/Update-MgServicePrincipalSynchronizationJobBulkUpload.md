@@ -47,6 +47,8 @@ Update-MgServicePrincipalSynchronizationJobBulkUpload -InputObject <IApplication
 ## DESCRIPTION
 Update the navigation property bulkUpload in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Remove-MgBetaTeamChannelPlannerPlan -InputObject <ITeamsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property plans for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

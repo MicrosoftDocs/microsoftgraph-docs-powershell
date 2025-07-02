@@ -43,6 +43,8 @@ Update-MgBetaWindowsUpdatesPolicyAudienceMember -InputObject <IWindowsUpdatesIde
 ## DESCRIPTION
 Update the navigation property members in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

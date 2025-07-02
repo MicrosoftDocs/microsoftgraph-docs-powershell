@@ -45,6 +45,8 @@ Get customerPaymentJournals from financials
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Financials.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -53,6 +53,8 @@ Update-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion
 ## DESCRIPTION
 Update the navigation property versions in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

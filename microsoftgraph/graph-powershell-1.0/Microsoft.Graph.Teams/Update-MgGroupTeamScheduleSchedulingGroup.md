@@ -49,6 +49,8 @@ Update-MgGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property schedulingGroups in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

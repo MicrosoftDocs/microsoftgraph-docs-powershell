@@ -29,6 +29,8 @@ Get-MgBetaExternalIndustryDataConnectorSourceSystem -InputObject <ISearchIdentit
 ## DESCRIPTION
 The sourceSystemDefinition this connector is connected to.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

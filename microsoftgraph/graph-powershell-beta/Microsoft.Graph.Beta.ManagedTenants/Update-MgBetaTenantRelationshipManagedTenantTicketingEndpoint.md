@@ -49,6 +49,8 @@ Update-MgBetaTenantRelationshipManagedTenantTicketingEndpoint -InputObject <IMan
 ## DESCRIPTION
 Update the navigation property managedTenantTicketingEndpoints in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

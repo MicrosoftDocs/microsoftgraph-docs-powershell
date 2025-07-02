@@ -48,6 +48,8 @@ Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense
 ## DESCRIPTION
 Update the navigation property assignedLicenses in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

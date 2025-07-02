@@ -29,6 +29,8 @@ Remove-MgBetaSecurityIPSecurityProfile -InputObject <ISecurityIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property ipSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

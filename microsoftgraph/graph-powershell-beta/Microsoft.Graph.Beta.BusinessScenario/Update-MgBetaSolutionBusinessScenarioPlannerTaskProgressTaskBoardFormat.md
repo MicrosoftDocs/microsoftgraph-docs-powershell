@@ -47,6 +47,8 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat
 ## DESCRIPTION
 Update the navigation property progressTaskBoardFormat in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

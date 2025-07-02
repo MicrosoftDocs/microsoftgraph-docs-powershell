@@ -29,6 +29,8 @@ Remove-MgBetaDeviceManagementVirtualEndpointServicePlan -InputObject <IDeviceMan
 ## DESCRIPTION
 Delete navigation property servicePlans for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcServicePlanId

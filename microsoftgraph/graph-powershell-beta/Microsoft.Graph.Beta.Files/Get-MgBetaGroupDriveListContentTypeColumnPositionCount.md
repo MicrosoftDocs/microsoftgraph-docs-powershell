@@ -32,6 +32,8 @@ Get-MgBetaGroupDriveListContentTypeColumnPositionCount -InputObject <IFilesIdent
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

@@ -32,6 +32,8 @@ Remove-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property timesOff for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

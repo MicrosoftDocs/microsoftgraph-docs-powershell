@@ -32,6 +32,8 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Delete navigation property custodians for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

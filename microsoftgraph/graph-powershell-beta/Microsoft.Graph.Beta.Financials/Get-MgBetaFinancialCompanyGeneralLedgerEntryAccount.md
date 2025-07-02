@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanyGeneralLedgerEntryAccount -InputObject <IFinancialsIde
 ## DESCRIPTION
 Get account from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

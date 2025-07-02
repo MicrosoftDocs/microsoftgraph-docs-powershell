@@ -37,6 +37,8 @@ Deletes an application.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppId

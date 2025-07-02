@@ -48,6 +48,8 @@ New-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsI
 ## DESCRIPTION
 Create new navigation property to hostedContents for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

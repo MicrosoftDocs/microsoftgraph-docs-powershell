@@ -42,6 +42,8 @@ Get-MgBetaGroupDriveBundle -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

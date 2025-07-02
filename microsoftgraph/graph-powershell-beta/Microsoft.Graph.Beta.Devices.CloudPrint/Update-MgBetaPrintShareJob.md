@@ -54,6 +54,8 @@ Update-MgBetaPrintShareJob -InputObject <IDevicesCloudPrintIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property jobs in print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AcknowledgedDateTime

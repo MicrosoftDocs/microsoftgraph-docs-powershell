@@ -32,6 +32,8 @@ Remove-MgUserTeamwork -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Respon
 ## DESCRIPTION
 Delete navigation property teamwork for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

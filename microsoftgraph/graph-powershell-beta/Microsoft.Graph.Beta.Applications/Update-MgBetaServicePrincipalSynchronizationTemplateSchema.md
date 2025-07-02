@@ -51,6 +51,8 @@ Update-MgBetaServicePrincipalSynchronizationTemplateSchema -InputObject <IApplic
 ## DESCRIPTION
 Update the navigation property schema in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

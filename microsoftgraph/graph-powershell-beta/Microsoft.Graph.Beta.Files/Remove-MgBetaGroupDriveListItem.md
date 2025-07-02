@@ -32,6 +32,8 @@ Remove-MgBetaGroupDriveListItem -InputObject <IFilesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property items for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

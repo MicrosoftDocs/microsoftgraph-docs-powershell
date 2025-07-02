@@ -29,6 +29,8 @@ Get-MgEntitlementManagementCatalogCustomWorkflowExtensionCount -InputObject <IId
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId

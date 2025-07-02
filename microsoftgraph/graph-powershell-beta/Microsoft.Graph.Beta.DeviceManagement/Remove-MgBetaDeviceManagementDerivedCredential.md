@@ -29,6 +29,8 @@ Remove-MgBetaDeviceManagementDerivedCredential -InputObject <IDeviceManagementId
 ## DESCRIPTION
 Delete navigation property derivedCredentials for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementDerivedCredentialSettingsId

@@ -29,6 +29,8 @@ Remove-MgBetaNetworkAccessConnectivityBranchForwardingProfile -InputObject <INet
 ## DESCRIPTION
 Delete navigation property forwardingProfiles for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BranchSiteId

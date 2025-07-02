@@ -33,6 +33,8 @@ Remove-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance -InputObject <I
 ## DESCRIPTION
 Delete navigation property instances for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewHistoryDefinitionId

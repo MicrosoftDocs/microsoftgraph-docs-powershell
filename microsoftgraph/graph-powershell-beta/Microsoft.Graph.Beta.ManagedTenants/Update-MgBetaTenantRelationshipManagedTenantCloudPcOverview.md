@@ -61,6 +61,8 @@ Update-MgBetaTenantRelationshipManagedTenantCloudPcOverview -InputObject <IManag
 ## DESCRIPTION
 Update the navigation property cloudPcsOverview in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

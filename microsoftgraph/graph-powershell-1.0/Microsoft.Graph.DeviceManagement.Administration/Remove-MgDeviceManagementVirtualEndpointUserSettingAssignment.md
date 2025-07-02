@@ -34,6 +34,8 @@ Remove-MgDeviceManagementVirtualEndpointUserSettingAssignment
 ## DESCRIPTION
 Delete navigation property assignments for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcUserSettingAssignmentId

@@ -48,6 +48,8 @@ Update-MgBetaAppCatalogTeamApp -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property teamsApps in appCatalogs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

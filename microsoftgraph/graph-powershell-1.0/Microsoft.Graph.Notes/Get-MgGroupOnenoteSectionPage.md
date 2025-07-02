@@ -44,6 +44,8 @@ The collection of pages in the section.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -30,6 +30,8 @@ Remove-MgBetaUserInformationProtectionSensitivityLabelSublabel -InputObject <IId
 ## DESCRIPTION
 Delete navigation property sublabels for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

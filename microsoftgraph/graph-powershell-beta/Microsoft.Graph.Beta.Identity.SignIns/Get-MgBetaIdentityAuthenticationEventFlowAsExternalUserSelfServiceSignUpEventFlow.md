@@ -42,6 +42,8 @@ Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlo
 ## DESCRIPTION
 Get the item of type microsoft.graph.authenticationEventsFlow as microsoft.graph.externalUsersSelfServiceSignUpEventsFlow
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

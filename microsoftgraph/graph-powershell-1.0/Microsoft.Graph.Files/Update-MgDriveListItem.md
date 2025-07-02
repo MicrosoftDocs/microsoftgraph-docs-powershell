@@ -60,6 +60,8 @@ Update-MgDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property items in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

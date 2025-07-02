@@ -24,6 +24,8 @@ Remove-MgDeviceManagementConditionalAccessSetting [-IfMatch <String>] [-Response
 ## DESCRIPTION
 Delete navigation property conditionalAccessSettings for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

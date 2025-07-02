@@ -40,6 +40,8 @@ Delete navigation property threads for groups
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConversationId

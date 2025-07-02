@@ -33,6 +33,8 @@ Remove-MgApplicationFederatedIdentityCredentialByName -InputObject <IApplication
 ## DESCRIPTION
 Delete a federatedIdentityCredential object from an application.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

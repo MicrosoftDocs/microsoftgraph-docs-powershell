@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsAppInstallation.Read.Chat, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ManageSelectedForChat.All, ResourceSpecificPermissionGrant.ReadForChat.All, Chat.Manage.Chat,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

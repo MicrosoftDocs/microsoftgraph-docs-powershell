@@ -32,6 +32,8 @@ Remove-MgBetaUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity
 ## DESCRIPTION
 Delete navigation property managedDevices for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

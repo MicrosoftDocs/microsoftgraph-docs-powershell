@@ -37,6 +37,8 @@ Update-MgBetaInformationProtection -BodyParameter <IMicrosoftGraphInformationPro
 ## DESCRIPTION
 Update informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

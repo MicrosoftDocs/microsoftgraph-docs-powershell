@@ -52,6 +52,8 @@ Update-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStat
 ## DESCRIPTION
 Update the navigation property managementActionTenantDeploymentStatuses in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

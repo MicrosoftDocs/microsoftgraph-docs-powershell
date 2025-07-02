@@ -32,6 +32,8 @@ Get-MgBetaDeviceRegisteredUserCountAsEndpoint -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

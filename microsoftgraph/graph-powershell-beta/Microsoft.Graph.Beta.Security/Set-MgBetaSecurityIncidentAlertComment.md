@@ -32,6 +32,8 @@ Set-MgBetaSecurityIncidentAlertComment -AlertId <String> -IncidentId <String> [-
 ## DESCRIPTION
 Sets a new value for the collection of alertComment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertId

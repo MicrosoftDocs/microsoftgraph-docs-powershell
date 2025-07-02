@@ -32,6 +32,8 @@ Set-MgUserDriveSpecialContent -InputObject <IFilesIdentity> [-Data <Stream>]
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

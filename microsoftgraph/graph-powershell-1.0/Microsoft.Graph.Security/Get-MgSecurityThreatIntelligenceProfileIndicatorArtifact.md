@@ -32,6 +32,8 @@ Get-MgSecurityThreatIntelligenceProfileIndicatorArtifact -InputObject <ISecurity
 ## DESCRIPTION
 The artifact related to this indicator.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

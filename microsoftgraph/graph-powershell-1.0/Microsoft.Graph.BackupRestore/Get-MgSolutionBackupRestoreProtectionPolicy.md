@@ -40,6 +40,8 @@ Get-MgSolutionBackupRestoreProtectionPolicy -InputObject <IBackupRestoreIdentity
 ## DESCRIPTION
 List of protection policies in the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

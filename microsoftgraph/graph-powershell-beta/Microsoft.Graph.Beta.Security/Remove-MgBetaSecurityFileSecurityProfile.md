@@ -29,6 +29,8 @@ Remove-MgBetaSecurityFileSecurityProfile -InputObject <ISecurityIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property fileSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -FileSecurityProfileId

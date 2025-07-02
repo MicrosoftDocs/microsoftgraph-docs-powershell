@@ -40,6 +40,8 @@ Get-MgServicePrincipalTokenIssuancePolicy -InputObject <IApplicationsIdentity> [
 ## DESCRIPTION
 The tokenIssuancePolicies assigned to this service principal.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

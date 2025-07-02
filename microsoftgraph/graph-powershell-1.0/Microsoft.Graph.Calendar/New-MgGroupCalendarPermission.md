@@ -48,6 +48,8 @@ New-MgGroupCalendarPermission -InputObject <ICalendarIdentity>
 ## DESCRIPTION
 Create new navigation property to calendarPermissions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

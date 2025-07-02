@@ -54,6 +54,8 @@ New-MgBetaDriveRootSubscription -InputObject <IFilesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to subscriptions for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

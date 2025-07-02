@@ -54,6 +54,8 @@ Update-MgGroupDriveRootListItemLastModifiedByUserMailboxSetting -InputObject <IF
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

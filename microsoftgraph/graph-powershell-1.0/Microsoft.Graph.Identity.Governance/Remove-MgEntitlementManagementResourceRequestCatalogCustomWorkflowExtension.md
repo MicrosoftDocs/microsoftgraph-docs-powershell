@@ -31,6 +31,8 @@ Remove-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
 ## DESCRIPTION
 Delete navigation property customWorkflowExtensions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

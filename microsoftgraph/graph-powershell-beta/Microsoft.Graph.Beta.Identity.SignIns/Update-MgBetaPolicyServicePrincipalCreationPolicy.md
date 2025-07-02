@@ -49,6 +49,8 @@ Update-MgBetaPolicyServicePrincipalCreationPolicy -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Update the navigation property servicePrincipalCreationPolicies in policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

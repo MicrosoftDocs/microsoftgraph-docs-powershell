@@ -40,6 +40,8 @@ Get-MgBetaDriveContentTypeBaseType -InputObject <IFilesIdentity> [-ExpandPropert
 ## DESCRIPTION
 The collection of content types that are ancestors of this content type.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

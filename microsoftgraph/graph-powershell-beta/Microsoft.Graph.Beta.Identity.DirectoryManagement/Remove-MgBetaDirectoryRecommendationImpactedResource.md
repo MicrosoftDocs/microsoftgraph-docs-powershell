@@ -29,6 +29,8 @@ Remove-MgBetaDirectoryRecommendationImpactedResource -InputObject <IIdentityDire
 ## DESCRIPTION
 Delete navigation property impactedResources for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

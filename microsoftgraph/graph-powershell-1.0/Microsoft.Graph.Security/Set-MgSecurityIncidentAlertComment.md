@@ -32,6 +32,8 @@ Set-MgSecurityIncidentAlertComment -AlertId <String> -IncidentId <String> [-IfMa
 ## DESCRIPTION
 Sets a new value for the collection of alertComment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertId

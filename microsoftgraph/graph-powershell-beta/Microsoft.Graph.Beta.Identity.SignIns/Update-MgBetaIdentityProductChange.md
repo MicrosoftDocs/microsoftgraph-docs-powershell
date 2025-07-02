@@ -47,6 +47,8 @@ Update-MgBetaIdentityProductChange -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property productChanges in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

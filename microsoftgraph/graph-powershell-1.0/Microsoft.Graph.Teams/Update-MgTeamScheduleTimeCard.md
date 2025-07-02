@@ -54,6 +54,8 @@ Update-MgTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property timeCards in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

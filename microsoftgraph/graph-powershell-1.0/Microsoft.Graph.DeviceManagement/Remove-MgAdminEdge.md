@@ -23,6 +23,8 @@ Remove-MgAdminEdge [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Hea
 ## DESCRIPTION
 Delete navigation property edge for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

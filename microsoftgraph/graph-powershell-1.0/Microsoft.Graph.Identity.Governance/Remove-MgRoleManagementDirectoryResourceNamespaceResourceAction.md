@@ -33,6 +33,8 @@ Remove-MgRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <II
 ## DESCRIPTION
 Delete navigation property resourceActions for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

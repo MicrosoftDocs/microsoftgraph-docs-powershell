@@ -52,6 +52,8 @@ Update-MgInformationProtectionThreatAssessmentRequest -InputObject <IIdentitySig
 ## DESCRIPTION
 Update the navigation property threatAssessmentRequests in informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

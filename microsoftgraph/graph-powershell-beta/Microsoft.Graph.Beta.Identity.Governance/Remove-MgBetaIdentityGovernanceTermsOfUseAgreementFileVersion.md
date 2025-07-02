@@ -33,6 +33,8 @@ Remove-MgBetaIdentityGovernanceTermsOfUseAgreementFileVersion -InputObject <IIde
 ## DESCRIPTION
 Delete navigation property versions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId

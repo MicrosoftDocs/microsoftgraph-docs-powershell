@@ -52,6 +52,8 @@ Update-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
 ## DESCRIPTION
 Update the navigation property customWorkflowExtensions in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

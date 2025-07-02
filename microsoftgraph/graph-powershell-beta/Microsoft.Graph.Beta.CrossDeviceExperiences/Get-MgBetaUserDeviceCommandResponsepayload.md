@@ -29,6 +29,8 @@ Get-MgBetaUserDeviceCommandResponsepayload -InputObject <ICrossDeviceExperiences
 ## DESCRIPTION
 Get responsepayload from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CommandId

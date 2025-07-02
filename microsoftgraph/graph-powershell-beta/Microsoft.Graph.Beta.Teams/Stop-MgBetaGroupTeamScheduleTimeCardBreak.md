@@ -51,6 +51,8 @@ Stop-MgBetaGroupTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 End the open break in a specific timeCard.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

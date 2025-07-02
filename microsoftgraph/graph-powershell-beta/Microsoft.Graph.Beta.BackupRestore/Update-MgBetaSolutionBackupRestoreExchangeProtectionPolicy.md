@@ -61,6 +61,8 @@ Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy -InputObject <IBackup
 Update an Exchange protection policy.
 This method adds a mailboxprotectionunit to or removes it from the protection policy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

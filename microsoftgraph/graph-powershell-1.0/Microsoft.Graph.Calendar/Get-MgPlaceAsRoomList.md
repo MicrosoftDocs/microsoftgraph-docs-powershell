@@ -39,6 +39,8 @@ Get-MgPlaceAsRoomList -InputObject <ICalendarIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Get the item of type microsoft.graph.place as microsoft.graph.roomList
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

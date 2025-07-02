@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.Read.All, OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All, Organization.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

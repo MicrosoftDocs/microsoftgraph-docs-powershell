@@ -56,6 +56,8 @@ New-MgDriveItemPermission -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to permissions for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -52,6 +52,8 @@ New-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer
 ## DESCRIPTION
 Create new navigation property to contactedReviewers for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceId

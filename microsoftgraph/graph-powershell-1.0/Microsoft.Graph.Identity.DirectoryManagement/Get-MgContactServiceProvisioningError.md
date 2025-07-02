@@ -27,6 +27,8 @@ Get-MgContactServiceProvisioningError -OrgContactId <String> [-ExpandProperty <S
 Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an organizational contact object .
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

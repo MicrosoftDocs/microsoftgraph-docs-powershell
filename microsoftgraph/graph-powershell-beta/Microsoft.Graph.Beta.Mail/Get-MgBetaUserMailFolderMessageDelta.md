@@ -47,6 +47,8 @@ Using deltas allows you toincrementally maintain and synchronize a local store o
 | Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
 | Application | Mail.ReadBasic.All, Mail.ReadWrite, Mail.Read,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -50,6 +50,8 @@ Nullable.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

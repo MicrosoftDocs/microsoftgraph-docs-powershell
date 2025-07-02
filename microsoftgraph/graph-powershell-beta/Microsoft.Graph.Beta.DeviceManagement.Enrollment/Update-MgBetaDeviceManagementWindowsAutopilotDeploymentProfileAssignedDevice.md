@@ -74,6 +74,8 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
 ## DESCRIPTION
 Update the navigation property assignedDevices in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

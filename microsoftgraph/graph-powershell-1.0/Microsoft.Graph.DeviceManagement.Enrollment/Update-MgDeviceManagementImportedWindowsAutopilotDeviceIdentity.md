@@ -54,6 +54,8 @@ Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
 ## DESCRIPTION
 Update the navigation property importedWindowsAutopilotDeviceIdentities in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

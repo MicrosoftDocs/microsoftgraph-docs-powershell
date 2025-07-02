@@ -47,6 +47,8 @@ The hasMembersWithLicenseErrors and isArchived properties are an exception and a
 | Delegated (personal Microsoft account) | Not supported |
 | Application | GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

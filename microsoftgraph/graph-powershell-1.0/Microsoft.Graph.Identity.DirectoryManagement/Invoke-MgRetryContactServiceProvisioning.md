@@ -32,6 +32,8 @@ Invoke-MgRetryContactServiceProvisioning -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Invoke action retryServiceProvisioning
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

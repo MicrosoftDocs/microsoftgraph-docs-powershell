@@ -29,6 +29,8 @@ Get-MgBetaDeviceTemplateCount -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

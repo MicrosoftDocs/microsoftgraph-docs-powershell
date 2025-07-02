@@ -48,6 +48,8 @@ Set-MgChatMessageReaction -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action setReaction
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

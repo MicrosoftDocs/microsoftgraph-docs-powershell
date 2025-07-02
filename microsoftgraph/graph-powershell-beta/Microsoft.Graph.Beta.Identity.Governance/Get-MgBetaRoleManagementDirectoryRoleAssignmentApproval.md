@@ -37,6 +37,8 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentApproval -InputObject <IIdentityG
 ## DESCRIPTION
 Get roleAssignmentApprovals from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

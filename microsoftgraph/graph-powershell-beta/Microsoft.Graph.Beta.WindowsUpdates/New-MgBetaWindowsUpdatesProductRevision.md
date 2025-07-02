@@ -51,6 +51,8 @@ New-MgBetaWindowsUpdatesProductRevision -InputObject <IWindowsUpdatesIdentity>
 ## DESCRIPTION
 Create new navigation property to revisions for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

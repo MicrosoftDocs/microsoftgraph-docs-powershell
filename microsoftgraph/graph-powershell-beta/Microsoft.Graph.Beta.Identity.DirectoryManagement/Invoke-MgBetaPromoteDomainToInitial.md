@@ -29,6 +29,8 @@ Invoke-MgBetaPromoteDomainToInitial -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Invoke action promoteToInitial
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DomainId

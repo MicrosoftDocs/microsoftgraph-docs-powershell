@@ -33,6 +33,8 @@ Get-MgSiteListContentTypeColumnSourceColumn -InputObject <ISitesIdentity> [-Expa
 ## DESCRIPTION
 The source column for the content type column.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId

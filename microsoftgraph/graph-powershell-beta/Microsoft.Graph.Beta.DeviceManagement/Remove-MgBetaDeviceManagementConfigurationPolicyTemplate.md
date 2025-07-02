@@ -38,6 +38,8 @@ Delete navigation property configurationPolicyTemplates for deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementConfigurationPolicyTemplateId

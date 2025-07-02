@@ -29,6 +29,8 @@ Remove-MgBetaDeviceManagementManagedDeviceWindowsOSImage -InputObject <IDeviceMa
 ## DESCRIPTION
 Delete navigation property managedDeviceWindowsOSImages for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

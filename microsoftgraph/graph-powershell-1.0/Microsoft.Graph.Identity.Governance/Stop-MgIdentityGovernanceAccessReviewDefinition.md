@@ -32,6 +32,8 @@ Stop-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Invoke action stop
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewScheduleDefinitionId

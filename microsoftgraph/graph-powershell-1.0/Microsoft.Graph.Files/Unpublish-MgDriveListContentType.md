@@ -33,6 +33,8 @@ Unpublish-MgDriveListContentType -InputObject <IFilesIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Unpublish a contentType from a content type hub site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

@@ -34,6 +34,8 @@ New-MgSecurityThreatIntelligencePassiveDnsRecord -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create new navigation property to passiveDnsRecords for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

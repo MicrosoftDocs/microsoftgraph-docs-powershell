@@ -21,6 +21,8 @@ Get-MgBetaRoleManagementCloudPc [-ExpandProperty <String[]>] [-Property <String[
 ## DESCRIPTION
 Get cloudPC from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

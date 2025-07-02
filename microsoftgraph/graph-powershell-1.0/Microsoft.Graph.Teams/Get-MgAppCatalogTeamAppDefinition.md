@@ -40,6 +40,8 @@ Get-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity> [-ExpandProperty
 ## DESCRIPTION
 The details for each version of the app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

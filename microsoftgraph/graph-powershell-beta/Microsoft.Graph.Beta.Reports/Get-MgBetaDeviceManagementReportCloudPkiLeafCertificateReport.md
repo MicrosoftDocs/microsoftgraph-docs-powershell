@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportCloudPkiLeafCertificateReport -OutFile <String>
 ## DESCRIPTION
 Invoke action retrieveCloudPkiLeafCertificateReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

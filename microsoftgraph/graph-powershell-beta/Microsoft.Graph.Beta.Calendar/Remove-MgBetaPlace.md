@@ -32,6 +32,8 @@ Remove-MgBetaPlace -InputObject <ICalendarIdentity> [-IfMatch <String>] [-Respon
 ## DESCRIPTION
 Delete entity from places
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -56,6 +56,8 @@ Update-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord -InputO
 ## DESCRIPTION
 Update the navigation property attendanceRecords in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

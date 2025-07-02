@@ -48,6 +48,8 @@ Get-MgGroupSiteLastModifiedByUser -InputObject <ISitesIdentity> [-ExpandProperty
 Identity of the user who last modified the item.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

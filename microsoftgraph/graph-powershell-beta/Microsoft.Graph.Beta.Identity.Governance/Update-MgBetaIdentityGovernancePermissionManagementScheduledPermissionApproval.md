@@ -46,6 +46,8 @@ Update-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval
 ## DESCRIPTION
 Update the navigation property scheduledPermissionsApprovals in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

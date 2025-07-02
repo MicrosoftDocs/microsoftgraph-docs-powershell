@@ -56,6 +56,8 @@ The ediscoveryCaseMember can be one of two types: a user or a role group.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -46,6 +46,8 @@ Invoke-MgBetaDismissDirectoryImpactedResource -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Dismiss an impactedResources object and update its status to dismissed.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

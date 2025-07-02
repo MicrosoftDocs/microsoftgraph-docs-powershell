@@ -34,6 +34,8 @@ Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval
 ## DESCRIPTION
 Approval decisions associated with a request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppConsentRequestId

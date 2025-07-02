@@ -32,6 +32,8 @@ Get-MgBetaSecurityLabelRetentionLabelDescriptorAuthorityTemplate -InputObject <I
 ## DESCRIPTION
 Specifies the underlying authority that describes the type of content to be retained and its retention schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

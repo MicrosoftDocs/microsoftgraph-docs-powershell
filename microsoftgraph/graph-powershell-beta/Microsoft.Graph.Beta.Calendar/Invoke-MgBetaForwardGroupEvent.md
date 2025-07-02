@@ -63,6 +63,8 @@ This convenience is not available when forwarding from an Outlook.com account.
 | Delegated (personal Microsoft account) | Calendars.Read,  |
 | Application | Calendars.Read,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property alerts_v2 for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertId

@@ -30,6 +30,8 @@ New-MgBetaExternalAuthorizationSystem -BodyParameter <IMicrosoftGraphAuthorizati
 ## DESCRIPTION
 Create new navigation property to authorizationSystems for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

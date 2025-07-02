@@ -49,6 +49,8 @@ Get resourceActions from roleManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

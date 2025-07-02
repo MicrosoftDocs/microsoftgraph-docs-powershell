@@ -51,6 +51,8 @@ New-MgBetaNetworkAccessConnectivityBranchForwardingProfile -InputObject <INetwor
 ## DESCRIPTION
 Create new navigation property to forwardingProfiles for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -54,6 +54,8 @@ Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile
 ## DESCRIPTION
 Update the navigation property files in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

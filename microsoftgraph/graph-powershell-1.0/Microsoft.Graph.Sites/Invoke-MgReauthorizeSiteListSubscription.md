@@ -33,6 +33,8 @@ Invoke-MgReauthorizeSiteListSubscription -InputObject <ISitesIdentity> [-Respons
 ## DESCRIPTION
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

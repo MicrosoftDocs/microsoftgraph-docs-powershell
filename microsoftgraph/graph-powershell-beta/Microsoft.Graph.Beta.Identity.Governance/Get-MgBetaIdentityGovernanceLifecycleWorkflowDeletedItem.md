@@ -24,6 +24,8 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem [-ExpandProperty <Strin
 ## DESCRIPTION
 Deleted workflows in your lifecycle workflows instance.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

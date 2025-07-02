@@ -29,6 +29,8 @@ Remove-MgBetaNetworkAccessForwardingPolicy -InputObject <INetworkAccessIdentity>
 ## DESCRIPTION
 Delete navigation property forwardingPolicies for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ForwardingPolicyId

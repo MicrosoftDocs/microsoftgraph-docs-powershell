@@ -30,6 +30,8 @@ Remove-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob -InputObject
 ## DESCRIPTION
 Delete navigation property siteProtectionUnitsBulkAdditionJobs for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -35,6 +35,8 @@ Search-MgUserDriveItem -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <
 ## DESCRIPTION
 Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

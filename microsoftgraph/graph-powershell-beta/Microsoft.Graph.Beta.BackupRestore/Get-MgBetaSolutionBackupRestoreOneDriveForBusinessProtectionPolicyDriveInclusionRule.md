@@ -61,6 +61,8 @@ After the rule is applied, the state is either completed or completedWithErrors.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BackupRestore-Configuration.Read.All, BackupRestore-Configuration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

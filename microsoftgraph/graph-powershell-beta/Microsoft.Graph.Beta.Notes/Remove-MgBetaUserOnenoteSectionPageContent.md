@@ -32,6 +32,8 @@ Remove-MgBetaUserOnenoteSectionPageContent -InputObject <INotesIdentity> [-IfMat
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

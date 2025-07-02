@@ -45,6 +45,8 @@ New-MgBetaServicePrincipalLicenseDetail -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Create new navigation property to licenseDetails for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

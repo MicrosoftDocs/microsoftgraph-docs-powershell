@@ -32,6 +32,8 @@ Remove-MgBetaUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorp
 ## DESCRIPTION
 Delete navigation property deviceManagementTroubleshootingEvents for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementTroubleshootingEventId

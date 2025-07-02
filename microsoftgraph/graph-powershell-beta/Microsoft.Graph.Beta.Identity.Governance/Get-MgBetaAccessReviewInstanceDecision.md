@@ -38,6 +38,8 @@ Get-MgBetaAccessReviewInstanceDecision -InputObject <IIdentityGovernanceIdentity
 ## DESCRIPTION
 The collection of decisions for this access review.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewDecisionId

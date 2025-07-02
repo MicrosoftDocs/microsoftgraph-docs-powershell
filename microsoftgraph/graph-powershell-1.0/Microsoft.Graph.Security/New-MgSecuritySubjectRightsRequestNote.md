@@ -48,6 +48,8 @@ New-MgSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Create new navigation property to notes for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

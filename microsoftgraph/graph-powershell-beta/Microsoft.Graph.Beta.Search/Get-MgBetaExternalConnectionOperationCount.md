@@ -32,6 +32,8 @@ Get-MgBetaExternalConnectionOperationCount -InputObject <ISearchIdentity> [-Filt
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExternalConnectionId

@@ -50,6 +50,8 @@ Update-MgBetaGroupSiteTermStoreSetParentGroup -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property parentGroup in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

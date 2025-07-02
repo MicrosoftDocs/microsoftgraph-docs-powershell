@@ -59,6 +59,8 @@ Update the navigation property tabs in teams
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsTab.ReadWrite.Group, TeamsTab.ReadWriteSelfForTeam.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

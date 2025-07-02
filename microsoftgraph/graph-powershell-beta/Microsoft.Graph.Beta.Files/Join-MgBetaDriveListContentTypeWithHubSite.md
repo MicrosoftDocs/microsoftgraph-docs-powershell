@@ -51,6 +51,8 @@ Join-MgBetaDriveListContentTypeWithHubSite -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action associateWithHubSites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

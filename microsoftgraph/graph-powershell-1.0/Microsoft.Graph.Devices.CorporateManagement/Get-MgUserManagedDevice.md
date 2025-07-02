@@ -40,6 +40,8 @@ Get-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity> [-Exp
 ## DESCRIPTION
 The managed devices associated with the user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

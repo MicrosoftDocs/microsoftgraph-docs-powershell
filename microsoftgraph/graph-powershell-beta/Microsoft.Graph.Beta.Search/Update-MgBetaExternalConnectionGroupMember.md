@@ -48,6 +48,8 @@ Update-MgBetaExternalConnectionGroupMember -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the navigation property members in external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

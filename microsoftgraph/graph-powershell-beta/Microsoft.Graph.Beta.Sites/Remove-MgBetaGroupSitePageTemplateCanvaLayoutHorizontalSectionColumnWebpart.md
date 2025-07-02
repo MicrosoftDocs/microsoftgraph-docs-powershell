@@ -30,6 +30,8 @@ Remove-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumnWebpart -Inp
 ## DESCRIPTION
 Delete navigation property webparts for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

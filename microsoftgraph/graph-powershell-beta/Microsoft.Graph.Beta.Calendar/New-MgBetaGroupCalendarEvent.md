@@ -80,6 +80,8 @@ New-MgBetaGroupCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to events for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

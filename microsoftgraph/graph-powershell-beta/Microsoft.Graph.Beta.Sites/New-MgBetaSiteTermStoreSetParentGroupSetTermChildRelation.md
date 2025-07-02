@@ -51,6 +51,8 @@ New-MgBetaSiteTermStoreSetParentGroupSetTermChildRelation -InputObject <ISitesId
 ## DESCRIPTION
 Create new navigation property to relations for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

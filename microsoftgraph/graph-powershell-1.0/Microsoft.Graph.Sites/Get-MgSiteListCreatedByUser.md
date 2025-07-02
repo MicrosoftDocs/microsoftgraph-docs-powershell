@@ -34,6 +34,8 @@ Get-MgSiteListCreatedByUser -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 Identity of the user who created the item.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

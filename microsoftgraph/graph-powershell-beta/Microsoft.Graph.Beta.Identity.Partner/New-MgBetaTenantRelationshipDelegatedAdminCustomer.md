@@ -33,6 +33,8 @@ New-MgBetaTenantRelationshipDelegatedAdminCustomer -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to delegatedAdminCustomers for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

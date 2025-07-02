@@ -21,6 +21,8 @@ Get-MgBetaTrustFramework [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Get trustFramework
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

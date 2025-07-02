@@ -64,6 +64,8 @@ Update-MgBetaUserDriveList -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property list in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

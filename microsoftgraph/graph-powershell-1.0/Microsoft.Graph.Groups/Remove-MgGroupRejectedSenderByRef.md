@@ -33,6 +33,8 @@ Remove-MgGroupRejectedSenderByRef -InputObject <IGroupsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Remove rejectedSender
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectoryObjectId

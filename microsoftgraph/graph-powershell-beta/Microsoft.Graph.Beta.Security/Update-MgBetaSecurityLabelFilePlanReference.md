@@ -48,6 +48,8 @@ Update-MgBetaSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> -Bo
 ## DESCRIPTION
 Update the navigation property filePlanReferences in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

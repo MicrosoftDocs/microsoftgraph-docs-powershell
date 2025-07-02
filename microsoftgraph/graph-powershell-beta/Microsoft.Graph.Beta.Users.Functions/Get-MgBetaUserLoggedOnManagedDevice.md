@@ -31,6 +31,8 @@ Get-MgBetaUserLoggedOnManagedDevice -InputObject <IUsersFunctionsIdentity> [-Cou
 ## DESCRIPTION
 Invoke function getLoggedOnManagedDevices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

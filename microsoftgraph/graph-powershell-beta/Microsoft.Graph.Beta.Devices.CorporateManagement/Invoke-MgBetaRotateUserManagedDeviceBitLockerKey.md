@@ -29,6 +29,8 @@ Invoke-MgBetaRotateUserManagedDeviceBitLockerKey -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Rotate BitLockerKeys
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

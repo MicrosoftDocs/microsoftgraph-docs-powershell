@@ -77,6 +77,8 @@ New-MgBetaOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicationsI
 ## DESCRIPTION
 Create new navigation property ref to agentGroups for onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

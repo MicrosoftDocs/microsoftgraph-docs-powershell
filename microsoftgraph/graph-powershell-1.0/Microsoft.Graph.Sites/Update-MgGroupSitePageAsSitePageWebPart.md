@@ -46,6 +46,8 @@ Update-MgGroupSitePageAsSitePageWebPart -InputObject <ISitesIdentity> -BodyParam
 ## DESCRIPTION
 Update the navigation property webParts in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

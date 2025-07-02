@@ -21,6 +21,8 @@ Get-MgBetaDirectoryCertificateAuthority [-ExpandProperty <String[]>] [-Property 
 ## DESCRIPTION
 Container for certificate authorities-related configurations for applications in the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -62,6 +62,8 @@ Get-MgGroupSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Collection of all groups available in the term store.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

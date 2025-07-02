@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | User.Read,  |
 | Application | User.ReadWrite.All, User.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

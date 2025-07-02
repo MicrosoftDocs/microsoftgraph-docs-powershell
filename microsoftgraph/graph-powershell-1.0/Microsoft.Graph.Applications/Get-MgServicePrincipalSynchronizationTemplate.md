@@ -49,6 +49,8 @@ Preconfigured synchronization settings for a particular application.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

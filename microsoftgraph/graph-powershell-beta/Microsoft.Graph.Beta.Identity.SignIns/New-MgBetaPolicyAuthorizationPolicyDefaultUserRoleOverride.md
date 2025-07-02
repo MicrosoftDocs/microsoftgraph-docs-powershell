@@ -45,6 +45,8 @@ New-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -InputObject <IIdenti
 ## DESCRIPTION
 Create new navigation property to defaultUserRoleOverrides for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

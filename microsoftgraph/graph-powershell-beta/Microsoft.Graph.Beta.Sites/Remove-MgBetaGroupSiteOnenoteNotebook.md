@@ -32,6 +32,8 @@ Remove-MgBetaGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property notebooks for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

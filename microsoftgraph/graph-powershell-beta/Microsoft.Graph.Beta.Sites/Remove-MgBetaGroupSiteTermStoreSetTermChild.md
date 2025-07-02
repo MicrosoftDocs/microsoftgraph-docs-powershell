@@ -32,6 +32,8 @@ Remove-MgBetaGroupSiteTermStoreSetTermChild -InputObject <ISitesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property children for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

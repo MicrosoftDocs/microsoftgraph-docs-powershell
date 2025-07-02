@@ -40,6 +40,8 @@ Get-MgBetaGroupSiteExternalColumn -InputObject <ISitesIdentity> [-ExpandProperty
 ## DESCRIPTION
 The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

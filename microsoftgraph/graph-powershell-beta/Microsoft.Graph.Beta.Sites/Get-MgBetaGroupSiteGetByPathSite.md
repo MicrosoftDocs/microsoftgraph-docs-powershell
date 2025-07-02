@@ -25,6 +25,8 @@ Get-MgBetaGroupSiteGetByPathSite -GroupId <String> -Path <String> -SiteId <Strin
 ## DESCRIPTION
 The collection of the sub-sites under this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

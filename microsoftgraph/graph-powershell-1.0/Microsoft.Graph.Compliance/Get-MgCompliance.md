@@ -23,6 +23,8 @@ Get-MgCompliance [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseH
 ## DESCRIPTION
 Get compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

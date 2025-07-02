@@ -32,6 +32,8 @@ Remove-MgUserSettingStorageQuota -InputObject <IUsersIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property quota for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

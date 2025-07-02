@@ -74,6 +74,8 @@ Update the properties of a bookingAppointment object in the specified bookingBus
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Read.All, Bookings.Manage.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

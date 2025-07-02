@@ -48,6 +48,8 @@ Update-MgBetaGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property members in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

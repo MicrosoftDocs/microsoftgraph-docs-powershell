@@ -50,6 +50,8 @@ Update-MgBetaSiteOnenoteOperationContent -InputObject <INotesIdentity>
 ## DESCRIPTION
 Update the navigation property operations in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

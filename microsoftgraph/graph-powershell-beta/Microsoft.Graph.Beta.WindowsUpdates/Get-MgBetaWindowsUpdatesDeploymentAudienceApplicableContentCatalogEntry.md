@@ -30,6 +30,8 @@ Get-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentCatalogEntry -InputOb
 ## DESCRIPTION
 Catalog entry for the update or content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicableContentCatalogEntryId

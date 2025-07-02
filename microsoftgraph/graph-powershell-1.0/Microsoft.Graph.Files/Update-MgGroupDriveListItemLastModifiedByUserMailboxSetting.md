@@ -54,6 +54,8 @@ Update-MgGroupDriveListItemLastModifiedByUserMailboxSetting -InputObject <IFiles
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

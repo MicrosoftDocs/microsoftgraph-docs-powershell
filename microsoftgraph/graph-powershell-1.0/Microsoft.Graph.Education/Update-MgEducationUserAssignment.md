@@ -62,6 +62,8 @@ Update-MgEducationUserAssignment -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property assignments in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AddedStudentAction

@@ -92,6 +92,8 @@ New-MgSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to terms for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

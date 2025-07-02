@@ -39,6 +39,8 @@ Get-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDevice -InputObjec
 ## DESCRIPTION
 Collection of devices and recommendations for applicable catalog content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -29,6 +29,8 @@ Get-MgBetaSiteListItemActivityDriveItem -InputObject <ISitesIdentity> [-ExpandPr
 ## DESCRIPTION
 Get driveItem from sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

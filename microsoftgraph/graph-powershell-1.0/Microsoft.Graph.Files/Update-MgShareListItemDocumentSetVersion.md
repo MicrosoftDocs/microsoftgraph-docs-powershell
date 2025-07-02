@@ -91,6 +91,8 @@ Update-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property documentSetVersions in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

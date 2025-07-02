@@ -46,6 +46,8 @@ Update-MgGroupDriveRootListItemVersionField -InputObject <IFilesIdentity> -BodyP
 ## DESCRIPTION
 Update the navigation property fields in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

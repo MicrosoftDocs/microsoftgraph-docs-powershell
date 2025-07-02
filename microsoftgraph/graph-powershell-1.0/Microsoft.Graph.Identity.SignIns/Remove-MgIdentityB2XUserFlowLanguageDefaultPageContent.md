@@ -35,6 +35,8 @@ Remove-MgIdentityB2XUserFlowLanguageDefaultPageContent -InputObject <IIdentitySi
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

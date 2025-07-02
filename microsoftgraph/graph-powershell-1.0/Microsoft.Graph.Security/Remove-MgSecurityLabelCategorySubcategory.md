@@ -32,6 +32,8 @@ Remove-MgSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property subcategories for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CategoryTemplateId

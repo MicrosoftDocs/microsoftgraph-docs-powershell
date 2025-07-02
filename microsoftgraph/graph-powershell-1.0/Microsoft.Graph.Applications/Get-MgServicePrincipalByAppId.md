@@ -41,6 +41,8 @@ Retrieve the properties and relationships of a servicePrincipal object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppId

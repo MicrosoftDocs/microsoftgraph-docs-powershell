@@ -29,6 +29,8 @@ Remove-MgBetaSecurityHostSecurityProfile -InputObject <ISecurityIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property hostSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

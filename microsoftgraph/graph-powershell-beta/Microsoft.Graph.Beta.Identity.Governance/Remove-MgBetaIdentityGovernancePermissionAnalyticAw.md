@@ -21,6 +21,8 @@ Remove-MgBetaIdentityGovernancePermissionAnalyticAw [-IfMatch <String>] [-Respon
 ## DESCRIPTION
 Delete navigation property aws for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

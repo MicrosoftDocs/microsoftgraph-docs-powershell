@@ -30,6 +30,8 @@ New-MgBetaSecurityProviderTenantSetting -BodyParameter <IMicrosoftGraphProviderT
 ## DESCRIPTION
 Create new navigation property to providerTenantSettings for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

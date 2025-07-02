@@ -48,6 +48,8 @@ Confirm-MgOrganizationMemberObject -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

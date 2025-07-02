@@ -30,6 +30,8 @@ Send-MgBetaIdentityGovernanceAccessReviewDecisionInstanceReminder -InputObject <
 ## DESCRIPTION
 Send a reminder to the reviewers of a currently active accessReviewInstance.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

@@ -40,6 +40,8 @@ Create new navigation property to roleDefinitions for roleManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagement.ReadWrite.Exchange,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

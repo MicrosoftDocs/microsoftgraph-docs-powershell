@@ -54,6 +54,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.Read.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BookingBusinessId

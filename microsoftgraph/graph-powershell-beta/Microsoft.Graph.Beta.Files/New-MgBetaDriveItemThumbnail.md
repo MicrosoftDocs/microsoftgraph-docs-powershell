@@ -48,6 +48,8 @@ New-MgBetaDriveItemThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to thumbnails for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Get-MgBetaUserInformationProtectionPolicy -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Get policy from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

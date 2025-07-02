@@ -47,6 +47,8 @@ Update-MgBetaUserDriveItemListItemDocumentSetVersionField -InputObject <IFilesId
 ## DESCRIPTION
 Update the navigation property fields in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

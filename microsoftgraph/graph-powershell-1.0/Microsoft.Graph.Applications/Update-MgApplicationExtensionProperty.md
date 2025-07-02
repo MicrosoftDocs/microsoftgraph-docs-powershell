@@ -50,6 +50,8 @@ Update-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property extensionProperties in applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

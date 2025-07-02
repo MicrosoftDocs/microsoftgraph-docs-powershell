@@ -58,6 +58,8 @@ Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBul
 ## DESCRIPTION
 Update the navigation property siteRestoreArtifactsBulkAdditionRequests in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

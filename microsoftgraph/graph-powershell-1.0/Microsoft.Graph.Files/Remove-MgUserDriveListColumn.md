@@ -32,6 +32,8 @@ Remove-MgUserDriveListColumn -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property columns for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId

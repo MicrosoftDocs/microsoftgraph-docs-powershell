@@ -32,6 +32,8 @@ Get-MgBetaSiteLastModifiedByUser -InputObject <ISitesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Get lastModifiedByUser from sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -32,6 +32,8 @@ Remove-MgDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-ResponseHeade
 ## DESCRIPTION
 Delete entity from drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -46,6 +46,8 @@ Update-MgDriveRootListItemField -InputObject <IFilesIdentity> -BodyParameter <Ha
 ## DESCRIPTION
 Update the navigation property fields in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

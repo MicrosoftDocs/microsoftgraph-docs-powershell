@@ -38,6 +38,8 @@ Custodians associated with the file.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

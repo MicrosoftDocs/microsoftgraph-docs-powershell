@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance -InputObject
 ## DESCRIPTION
 Delete navigation property managedDeviceCompliances for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

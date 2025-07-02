@@ -29,6 +29,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IndustryData-Run.Read.All, IndustryData-Run.Start,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

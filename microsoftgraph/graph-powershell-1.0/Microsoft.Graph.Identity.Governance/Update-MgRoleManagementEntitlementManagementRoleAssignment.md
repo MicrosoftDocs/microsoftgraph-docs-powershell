@@ -52,6 +52,8 @@ Update-MgRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdenti
 ## DESCRIPTION
 Update the navigation property roleAssignments in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -22,6 +22,8 @@ Get-MgBetaGroupSiteGetByPathPageTemplate -GroupId <String> -Path <String> -SiteI
 ## DESCRIPTION
 The collection of page templates on this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

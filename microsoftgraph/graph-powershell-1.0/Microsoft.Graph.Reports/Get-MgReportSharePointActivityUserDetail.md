@@ -45,6 +45,8 @@ Get-MgReportSharePointActivityUserDetail -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Get details about SharePoint activity by user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

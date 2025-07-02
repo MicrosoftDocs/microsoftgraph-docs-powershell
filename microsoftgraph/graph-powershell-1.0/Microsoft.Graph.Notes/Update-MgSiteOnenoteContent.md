@@ -52,6 +52,8 @@ Update-MgSiteOnenoteContent -InputObject <INotesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property onenote in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

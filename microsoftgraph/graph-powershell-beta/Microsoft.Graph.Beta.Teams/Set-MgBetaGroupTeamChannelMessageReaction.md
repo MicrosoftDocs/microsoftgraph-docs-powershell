@@ -49,6 +49,8 @@ Set-MgBetaGroupTeamChannelMessageReaction -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action setReaction
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

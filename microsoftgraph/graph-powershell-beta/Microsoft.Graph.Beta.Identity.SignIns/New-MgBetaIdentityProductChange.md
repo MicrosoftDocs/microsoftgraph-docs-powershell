@@ -30,6 +30,8 @@ New-MgBetaIdentityProductChange -BodyParameter <IMicrosoftGraphChangeItemBase>
 ## DESCRIPTION
 Create new navigation property to productChanges for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

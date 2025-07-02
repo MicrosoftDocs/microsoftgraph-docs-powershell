@@ -50,6 +50,8 @@ Set-MgServicePrincipalSynchronization -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property synchronization in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

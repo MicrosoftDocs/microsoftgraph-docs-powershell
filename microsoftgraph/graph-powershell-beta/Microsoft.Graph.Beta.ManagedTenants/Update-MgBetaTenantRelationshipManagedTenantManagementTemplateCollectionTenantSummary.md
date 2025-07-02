@@ -62,6 +62,8 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSu
 ## DESCRIPTION
 Update the navigation property managementTemplateCollectionTenantSummaries in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

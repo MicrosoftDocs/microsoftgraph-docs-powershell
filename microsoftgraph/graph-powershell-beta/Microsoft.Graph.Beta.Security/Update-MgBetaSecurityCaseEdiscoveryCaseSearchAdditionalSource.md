@@ -51,6 +51,8 @@ Update-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISec
 ## DESCRIPTION
 Update the navigation property additionalSources in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

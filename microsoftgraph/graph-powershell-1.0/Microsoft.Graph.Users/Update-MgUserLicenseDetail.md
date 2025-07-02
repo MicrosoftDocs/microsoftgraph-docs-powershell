@@ -48,6 +48,8 @@ Update-MgUserLicenseDetail -InputObject <IUsersIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property licenseDetails in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

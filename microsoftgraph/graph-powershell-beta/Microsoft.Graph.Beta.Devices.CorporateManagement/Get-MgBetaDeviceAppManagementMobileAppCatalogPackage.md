@@ -37,6 +37,8 @@ Get-MgBetaDeviceAppManagementMobileAppCatalogPackage -InputObject <IDevicesCorpo
 ## DESCRIPTION
 MobileAppCatalogPackage entities.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

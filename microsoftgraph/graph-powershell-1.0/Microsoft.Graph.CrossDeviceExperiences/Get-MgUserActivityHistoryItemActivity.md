@@ -34,6 +34,8 @@ Get-MgUserActivityHistoryItemActivity -InputObject <ICrossDeviceExperiencesIdent
 Optional.
 NavigationProperty/Containment; navigation property to the associated activity.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityHistoryItemId

@@ -51,6 +51,8 @@ Update-MgBetaUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property tabs in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

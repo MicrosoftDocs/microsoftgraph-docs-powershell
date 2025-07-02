@@ -50,6 +50,8 @@ New-MgBetaTeamOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to operations for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

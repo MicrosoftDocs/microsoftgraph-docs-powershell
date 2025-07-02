@@ -48,6 +48,8 @@ New-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> -BodyParameter <H
 ## DESCRIPTION
 Create new navigation property to associatedTeams for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

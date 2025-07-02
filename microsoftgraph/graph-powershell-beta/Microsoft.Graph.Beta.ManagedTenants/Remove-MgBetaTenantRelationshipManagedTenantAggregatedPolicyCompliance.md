@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance -InputObj
 ## DESCRIPTION
 Delete navigation property aggregatedPolicyCompliances for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AggregatedPolicyComplianceId

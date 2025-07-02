@@ -54,6 +54,8 @@ Update-MgBetaUserOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property notebooks in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

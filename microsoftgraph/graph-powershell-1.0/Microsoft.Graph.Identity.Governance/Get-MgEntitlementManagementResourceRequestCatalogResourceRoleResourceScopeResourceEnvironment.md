@@ -51,6 +51,8 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResour
 Contains the environment information for the resource.
 This can be set using either the @odata.bind annotation or the environment's originId.Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

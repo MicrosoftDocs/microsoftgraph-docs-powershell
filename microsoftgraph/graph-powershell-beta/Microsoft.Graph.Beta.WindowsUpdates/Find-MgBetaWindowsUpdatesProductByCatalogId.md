@@ -39,6 +39,8 @@ Invoke function findByCatalogId
 | Delegated (personal Microsoft account) | Not supported |
 | Application | WindowsUpdates.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CatalogId

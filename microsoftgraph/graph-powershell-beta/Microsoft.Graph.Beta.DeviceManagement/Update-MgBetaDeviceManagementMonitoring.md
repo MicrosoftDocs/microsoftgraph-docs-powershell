@@ -30,6 +30,8 @@ Update-MgBetaDeviceManagementMonitoring -BodyParameter <IMicrosoftGraphDeviceMan
 ## DESCRIPTION
 Update the navigation property monitoring in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

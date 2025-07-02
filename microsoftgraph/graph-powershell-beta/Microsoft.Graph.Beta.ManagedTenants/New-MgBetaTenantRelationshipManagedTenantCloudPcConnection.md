@@ -30,6 +30,8 @@ New-MgBetaTenantRelationshipManagedTenantCloudPcConnection
 ## DESCRIPTION
 Create new navigation property to cloudPcConnections for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

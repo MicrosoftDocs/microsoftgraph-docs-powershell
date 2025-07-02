@@ -50,6 +50,8 @@ New-MgBetaAgreementFile -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Create new navigation property to files for agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

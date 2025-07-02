@@ -21,6 +21,8 @@ Remove-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary [-If
 ## DESCRIPTION
 Delete navigation property advancedThreatProtectionOnboardingStateSummary for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

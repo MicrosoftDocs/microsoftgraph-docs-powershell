@@ -66,6 +66,8 @@ New-MgBetaUserChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to replies for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

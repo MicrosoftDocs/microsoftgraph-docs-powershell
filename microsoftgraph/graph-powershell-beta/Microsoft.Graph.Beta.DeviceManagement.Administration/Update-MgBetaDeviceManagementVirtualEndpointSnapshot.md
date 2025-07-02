@@ -47,6 +47,8 @@ Update-MgBetaDeviceManagementVirtualEndpointSnapshot -InputObject <IDeviceManage
 ## DESCRIPTION
 Update the navigation property snapshots in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

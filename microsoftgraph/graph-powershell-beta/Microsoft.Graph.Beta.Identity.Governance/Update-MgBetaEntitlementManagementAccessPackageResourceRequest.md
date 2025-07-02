@@ -51,6 +51,8 @@ Update-MgBetaEntitlementManagementAccessPackageResourceRequest -InputObject <IId
 ## DESCRIPTION
 Update the navigation property accessPackageResourceRequests in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResource

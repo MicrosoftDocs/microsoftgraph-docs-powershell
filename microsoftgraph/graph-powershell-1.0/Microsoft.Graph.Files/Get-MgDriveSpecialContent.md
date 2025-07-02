@@ -32,6 +32,8 @@ Get-MgDriveSpecialContent -InputObject <IFilesIdentity> [-Format <String>] -OutF
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

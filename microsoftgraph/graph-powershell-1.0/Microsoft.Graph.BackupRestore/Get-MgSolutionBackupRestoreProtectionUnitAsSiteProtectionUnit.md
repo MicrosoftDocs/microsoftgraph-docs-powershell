@@ -42,6 +42,8 @@ Get-MgSolutionBackupRestoreProtectionUnitAsSiteProtectionUnit -InputObject <IBac
 ## DESCRIPTION
 Get a list of the siteProtectionUnit objects that are associated with a sharePointProtectionPolicy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -33,6 +33,8 @@ Get-MgApplicationLogo -InputObject <IApplicationsIdentity> -OutFile <String>
 The main logo for the application.
 Not nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

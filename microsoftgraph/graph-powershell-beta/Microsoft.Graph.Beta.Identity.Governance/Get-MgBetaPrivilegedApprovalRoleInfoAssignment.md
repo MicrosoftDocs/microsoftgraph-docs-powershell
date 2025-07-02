@@ -38,6 +38,8 @@ Get-MgBetaPrivilegedApprovalRoleInfoAssignment -InputObject <IIdentityGovernance
 ## DESCRIPTION
 Get assignments from privilegedApproval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

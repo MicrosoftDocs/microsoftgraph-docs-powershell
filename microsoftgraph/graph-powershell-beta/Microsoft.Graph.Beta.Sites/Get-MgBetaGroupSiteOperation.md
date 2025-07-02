@@ -40,6 +40,8 @@ Get-MgBetaGroupSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The collection of long running operations for the site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

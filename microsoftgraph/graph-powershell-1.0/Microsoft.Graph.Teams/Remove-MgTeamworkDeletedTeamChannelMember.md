@@ -76,6 +76,8 @@ Remove-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property allMembers for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

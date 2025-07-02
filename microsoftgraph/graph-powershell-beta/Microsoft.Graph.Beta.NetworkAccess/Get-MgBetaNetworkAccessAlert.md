@@ -37,6 +37,8 @@ Get-MgBetaNetworkAccessAlert -InputObject <INetworkAccessIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get alerts from networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertId

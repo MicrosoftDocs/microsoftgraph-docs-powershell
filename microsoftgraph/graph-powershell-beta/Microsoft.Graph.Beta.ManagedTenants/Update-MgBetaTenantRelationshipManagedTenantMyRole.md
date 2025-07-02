@@ -45,6 +45,8 @@ Update-MgBetaTenantRelationshipManagedTenantMyRole -InputObject <IManagedTenants
 ## DESCRIPTION
 Update the navigation property myRoles in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

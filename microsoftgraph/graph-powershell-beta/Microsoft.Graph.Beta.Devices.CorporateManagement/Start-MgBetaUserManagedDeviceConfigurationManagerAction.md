@@ -47,6 +47,8 @@ Start-MgBetaUserManagedDeviceConfigurationManagerAction -InputObject <IDevicesCo
 ## DESCRIPTION
 Trigger action on ConfigurationManager client
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

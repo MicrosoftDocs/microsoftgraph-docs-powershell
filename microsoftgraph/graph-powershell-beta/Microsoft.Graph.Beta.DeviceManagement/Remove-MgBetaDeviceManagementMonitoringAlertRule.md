@@ -29,6 +29,8 @@ Remove-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagement
 ## DESCRIPTION
 Delete navigation property alertRules for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertRuleId

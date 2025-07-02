@@ -30,6 +30,8 @@ Invoke-MgBetaHasDeviceManagementWindowsAutopilotDeploymentProfilePayloadLink
 ## DESCRIPTION
 Invoke action hasPayloadLinks
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -51,6 +51,8 @@ Update-MgBetaNetworkAccessLogTrafficUserMailboxSetting -InputObject <INetworkAcc
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -51,6 +51,8 @@ Get-MgBetaTenantRelationshipManagedTenantAlertRule -InputObject <IManagedTenants
 ## DESCRIPTION
 Get managedTenantAlertRules from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -49,6 +49,8 @@ Update-MgBetaUserSecurityInformationProtectionSensitivityLabelParent -InputObjec
 ## DESCRIPTION
 Update the navigation property parent in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

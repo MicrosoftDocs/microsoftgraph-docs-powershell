@@ -32,6 +32,8 @@ Stop-MgBetaVirtualEventWebinarRegistration -InputObject <IBookingsIdentity> [-Re
 ## DESCRIPTION
 Cancel a registrant's registration record for a webinar.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

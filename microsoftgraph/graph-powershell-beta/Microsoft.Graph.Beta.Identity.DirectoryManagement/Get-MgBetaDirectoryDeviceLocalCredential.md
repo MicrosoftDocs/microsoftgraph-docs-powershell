@@ -42,6 +42,8 @@ Get-MgBetaDirectoryDeviceLocalCredential -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Retrieve the properties of a deviceLocalCredentialInfo for a specified device object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

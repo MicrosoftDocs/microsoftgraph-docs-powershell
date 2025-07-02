@@ -23,6 +23,8 @@ Remove-MgBetaEducationMe [-IfMatch <String>] [-ResponseHeadersVariable <String>]
 ## DESCRIPTION
 Delete navigation property me for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -32,6 +32,8 @@ Restore-MgBetaUserDriveItemListItemVersion -InputObject <IFilesIdentity> [-Respo
 ## DESCRIPTION
 Invoke action restoreVersion
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

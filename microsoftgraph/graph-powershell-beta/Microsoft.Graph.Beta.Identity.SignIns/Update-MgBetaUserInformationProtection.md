@@ -54,6 +54,8 @@ Update-MgBetaUserInformationProtection -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property informationProtection in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

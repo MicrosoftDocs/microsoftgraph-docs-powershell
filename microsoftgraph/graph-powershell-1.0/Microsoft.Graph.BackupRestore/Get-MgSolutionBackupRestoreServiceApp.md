@@ -42,6 +42,8 @@ Get-MgSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of a serviceApp object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

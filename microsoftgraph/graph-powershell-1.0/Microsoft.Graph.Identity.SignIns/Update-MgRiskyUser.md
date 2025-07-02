@@ -50,6 +50,8 @@ Update-MgRiskyUser -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property riskyUsers in identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

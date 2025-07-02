@@ -43,6 +43,8 @@ Update-MgBetaAdministrativeUnitExtension -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Update the navigation property extensions in administrativeUnits
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

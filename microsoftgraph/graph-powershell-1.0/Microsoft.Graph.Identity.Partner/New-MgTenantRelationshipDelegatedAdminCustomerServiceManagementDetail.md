@@ -48,6 +48,8 @@ New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail -InputObje
 ## DESCRIPTION
 Create new navigation property to serviceManagementDetails for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

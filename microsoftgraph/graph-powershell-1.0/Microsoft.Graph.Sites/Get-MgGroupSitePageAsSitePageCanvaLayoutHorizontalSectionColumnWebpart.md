@@ -42,6 +42,8 @@ Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart -InputObj
 ## DESCRIPTION
 The collection of WebParts in this column.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

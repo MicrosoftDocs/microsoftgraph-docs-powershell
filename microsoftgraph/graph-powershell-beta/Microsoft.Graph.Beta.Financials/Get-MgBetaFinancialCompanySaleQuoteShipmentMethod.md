@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanySaleQuoteShipmentMethod -InputObject <IFinancialsIdent
 ## DESCRIPTION
 Get shipmentMethod from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

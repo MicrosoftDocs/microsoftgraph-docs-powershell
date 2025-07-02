@@ -21,6 +21,8 @@ Remove-MgBetaPolicyExternalIdentityPolicy [-IfMatch <String>] [-ResponseHeadersV
 ## DESCRIPTION
 Delete navigation property externalIdentitiesPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

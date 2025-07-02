@@ -32,6 +32,8 @@ Get-MgBetaReportEmailAppUsageVersionUserCount -InputObject <IReportsIdentity> -O
 ## DESCRIPTION
 Invoke function getEmailAppUsageVersionsUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

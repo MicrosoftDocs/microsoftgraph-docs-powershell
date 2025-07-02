@@ -32,6 +32,8 @@ Remove-MgBetaDeviceExtension -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Delete navigation property extensions for devices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

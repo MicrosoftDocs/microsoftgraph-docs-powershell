@@ -32,6 +32,8 @@ Set-MgGroupSiteOnenotePageContent -InputObject <ISitesIdentity> [-Data <Stream>]
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

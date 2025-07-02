@@ -50,6 +50,8 @@ New-MgBetaUserInsightTrending -InputObject <IUsersIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to trending for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Get-MgBetaTeamworkDeletedTeamChannelCount -InputObject <ITeamsIdentity> [-Filter
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeletedTeamId

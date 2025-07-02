@@ -40,6 +40,8 @@ Get-MgSolutionBackupRestoreExchangeProtectionPolicy -InputObject <IBackupRestore
 ## DESCRIPTION
 The list of Exchange protection policies in the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

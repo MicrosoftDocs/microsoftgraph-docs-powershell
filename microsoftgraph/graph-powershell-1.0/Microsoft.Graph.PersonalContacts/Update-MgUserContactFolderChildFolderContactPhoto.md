@@ -49,6 +49,8 @@ Update-MgUserContactFolderChildFolderContactPhoto -InputObject <IPersonalContact
 ## DESCRIPTION
 Update the navigation property photo in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

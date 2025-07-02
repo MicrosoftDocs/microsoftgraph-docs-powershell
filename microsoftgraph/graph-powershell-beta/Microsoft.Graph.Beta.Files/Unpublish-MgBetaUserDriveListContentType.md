@@ -33,6 +33,8 @@ Unpublish-MgBetaUserDriveListContentType -InputObject <IFilesIdentity> [-Respons
 ## DESCRIPTION
 Invoke action unpublish
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

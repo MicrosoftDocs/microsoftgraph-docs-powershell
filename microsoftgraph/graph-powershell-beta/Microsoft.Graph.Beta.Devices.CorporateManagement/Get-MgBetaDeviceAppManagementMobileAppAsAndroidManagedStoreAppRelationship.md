@@ -39,6 +39,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship
 ## DESCRIPTION
 List of relationships for this mobile app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

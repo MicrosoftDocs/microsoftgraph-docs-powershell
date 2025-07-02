@@ -46,6 +46,8 @@ New-MgBetaGroupDriveListContentTypeColumnLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to columnLinks for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

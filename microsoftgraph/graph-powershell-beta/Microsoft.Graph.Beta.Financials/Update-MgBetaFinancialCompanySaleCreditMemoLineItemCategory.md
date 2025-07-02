@@ -45,6 +45,8 @@ Update-MgBetaFinancialCompanySaleCreditMemoLineItemCategory -InputObject <IFinan
 ## DESCRIPTION
 Update the navigation property itemCategory in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

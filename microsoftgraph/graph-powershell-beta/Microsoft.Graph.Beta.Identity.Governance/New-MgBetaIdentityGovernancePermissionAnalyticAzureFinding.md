@@ -29,6 +29,8 @@ New-MgBetaIdentityGovernancePermissionAnalyticAzureFinding -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to findings for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

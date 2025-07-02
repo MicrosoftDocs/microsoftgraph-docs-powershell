@@ -21,6 +21,8 @@ Remove-MgBetaDeviceManagementVirtualEndpointReport [-IfMatch <String>] [-Respons
 ## DESCRIPTION
 Delete navigation property reports for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -46,6 +46,8 @@ Update-MgBetaGroupDriveItemListItemField -InputObject <IFilesIdentity> -BodyPara
 ## DESCRIPTION
 Update the navigation property fields in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgShareListSubscription -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property subscriptions for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

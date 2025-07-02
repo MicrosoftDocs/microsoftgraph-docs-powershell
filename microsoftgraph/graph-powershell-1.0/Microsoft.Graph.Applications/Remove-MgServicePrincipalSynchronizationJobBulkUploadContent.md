@@ -33,6 +33,8 @@ Remove-MgServicePrincipalSynchronizationJobBulkUploadContent -InputObject <IAppl
 ## DESCRIPTION
 The bulk upload operation for the job.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -34,6 +34,8 @@ New-MgBetaSecurityHostSecurityProfile -BodyParameter <IMicrosoftGraphHostSecurit
 ## DESCRIPTION
 Create new navigation property to hostSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaAgreement -InputObject <IIdentityGovernanceIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete entity from agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementId

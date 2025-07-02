@@ -54,6 +54,8 @@ Update-MgBetaCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunicat
 ## DESCRIPTION
 Update the navigation property transcripts in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -21,6 +21,8 @@ Get-MgBetaIdentityGovernancePermissionAnalyticGcp [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 GCP permissions analytics findings.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

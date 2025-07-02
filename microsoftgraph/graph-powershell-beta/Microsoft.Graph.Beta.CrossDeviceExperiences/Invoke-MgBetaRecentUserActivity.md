@@ -42,6 +42,8 @@ Invoke function recent
 | Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp,  |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

@@ -51,6 +51,8 @@ Update-MgBetaSolutionBusinessScenarioByUniqueName -InputObject <IBusinessScenari
 ## DESCRIPTION
 Update the properties of a businessScenario object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

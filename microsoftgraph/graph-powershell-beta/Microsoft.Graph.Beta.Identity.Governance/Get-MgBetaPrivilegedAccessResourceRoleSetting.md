@@ -38,6 +38,8 @@ Get-MgBetaPrivilegedAccessResourceRoleSetting -InputObject <IIdentityGovernanceI
 ## DESCRIPTION
 The collection of role settings for the resource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

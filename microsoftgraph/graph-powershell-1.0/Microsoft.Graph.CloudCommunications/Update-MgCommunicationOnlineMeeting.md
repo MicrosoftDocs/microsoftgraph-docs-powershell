@@ -74,6 +74,8 @@ Update-MgCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Update the navigation property onlineMeetings in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

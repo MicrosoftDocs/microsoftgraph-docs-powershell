@@ -58,6 +58,8 @@ Update-MgBetaServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Update the navigation property servicePrincipalRiskDetections in identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

@@ -36,6 +36,8 @@ New-MgRoleManagementDirectoryRoleEligibilityScheduleInstance
 ## DESCRIPTION
 Create new navigation property to roleEligibilityScheduleInstances for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

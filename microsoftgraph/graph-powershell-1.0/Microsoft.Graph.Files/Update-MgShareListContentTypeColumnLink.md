@@ -47,6 +47,8 @@ Update-MgShareListContentTypeColumnLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property columnLinks in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity> [
 ## DESCRIPTION
 Delete entity from shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

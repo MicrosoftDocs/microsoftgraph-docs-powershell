@@ -32,6 +32,8 @@ Get-MgBetaReportSkypeForBusinessParticipantActivityMinuteCount -InputObject <IRe
 ## DESCRIPTION
 Invoke function getSkypeForBusinessParticipantActivityMinuteCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

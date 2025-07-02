@@ -29,6 +29,8 @@ Get-MgBetaGroupSitePageTemplateWebPartPositionOfWebPart -InputObject <ISitesIden
 ## DESCRIPTION
 Invoke action getPositionOfWebPart
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

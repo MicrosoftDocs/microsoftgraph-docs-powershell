@@ -51,6 +51,8 @@ Invoke-MgBetaMarkUserChatReadForUser -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Mark a chat as read for a user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

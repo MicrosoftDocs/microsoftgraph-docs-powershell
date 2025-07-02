@@ -47,6 +47,8 @@ Update-MgEntitlementManagementResourceRoleScopeRole -InputObject <IIdentityGover
 ## DESCRIPTION
 Update the navigation property role in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRoleScopeId

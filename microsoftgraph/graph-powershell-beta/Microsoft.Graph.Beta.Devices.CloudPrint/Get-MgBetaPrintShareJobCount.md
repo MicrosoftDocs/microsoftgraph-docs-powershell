@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PrintJob.ReadBasic.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

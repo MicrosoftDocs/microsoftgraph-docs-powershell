@@ -35,6 +35,8 @@ Invoke-MgFilterApplicationSynchronizationJobSchemaOperator -InputObject <IApplic
 ## DESCRIPTION
 List all operators supported in the scoping filters.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

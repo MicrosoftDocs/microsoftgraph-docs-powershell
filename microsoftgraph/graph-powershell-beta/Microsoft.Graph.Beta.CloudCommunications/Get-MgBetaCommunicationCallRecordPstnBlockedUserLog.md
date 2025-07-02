@@ -31,6 +31,8 @@ Get-MgBetaCommunicationCallRecordPstnBlockedUserLog -InputObject <ICloudCommunic
 Get the log of users who are blocked/unblocked from making public switched telephone network (PSTN) calls in Microsoft Teams as a collection of pstnBlockedUsersLogRow entries.
 The log includes information about each blocked user such as their assigned phone number and the reason they were blocked/unblocked from making calls.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

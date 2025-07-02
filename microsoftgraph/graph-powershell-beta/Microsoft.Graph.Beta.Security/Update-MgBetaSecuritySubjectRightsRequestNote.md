@@ -48,6 +48,8 @@ Update-MgBetaSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property notes in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

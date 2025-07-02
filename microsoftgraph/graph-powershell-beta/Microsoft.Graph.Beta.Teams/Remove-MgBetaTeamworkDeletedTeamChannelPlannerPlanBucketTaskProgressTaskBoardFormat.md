@@ -30,6 +30,8 @@ Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskProgressTaskBoardFor
 ## DESCRIPTION
 Delete navigation property progressTaskBoardFormat for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

@@ -51,6 +51,8 @@ Update-MgBetaPrintPrinterShareAllowedUserMailboxSetting -InputObject <IDevicesCl
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

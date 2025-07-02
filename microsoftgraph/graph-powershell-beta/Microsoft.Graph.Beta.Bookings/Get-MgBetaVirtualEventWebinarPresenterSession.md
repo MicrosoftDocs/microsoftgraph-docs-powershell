@@ -38,6 +38,8 @@ Get-MgBetaVirtualEventWebinarPresenterSession -InputObject <IBookingsIdentity> [
 ## DESCRIPTION
 Get sessions from solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

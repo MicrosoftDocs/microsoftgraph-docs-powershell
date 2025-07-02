@@ -34,6 +34,8 @@ Get-MgBetaReportOffice365GroupActivityStorage -InputObject <IReportsIdentity> [-
 ## DESCRIPTION
 Invoke function getOffice365GroupsActivityStorage
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

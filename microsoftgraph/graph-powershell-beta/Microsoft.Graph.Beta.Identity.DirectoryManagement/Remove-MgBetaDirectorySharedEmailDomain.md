@@ -29,6 +29,8 @@ Remove-MgBetaDirectorySharedEmailDomain -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Delete navigation property sharedEmailDomains for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

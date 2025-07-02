@@ -32,6 +32,8 @@ Remove-MgInformationProtectionThreatAssessmentRequest -InputObject <IIdentitySig
 ## DESCRIPTION
 Delete navigation property threatAssessmentRequests for informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

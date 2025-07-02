@@ -50,6 +50,8 @@ Update-MgUserInsightUsed -InputObject <IUsersIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property used in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

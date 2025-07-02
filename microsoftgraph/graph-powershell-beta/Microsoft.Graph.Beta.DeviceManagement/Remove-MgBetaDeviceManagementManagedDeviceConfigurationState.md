@@ -32,6 +32,8 @@ Remove-MgBetaDeviceManagementManagedDeviceConfigurationState -InputObject <IDevi
 ## DESCRIPTION
 Delete navigation property deviceConfigurationStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceConfigurationStateId

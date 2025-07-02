@@ -32,6 +32,8 @@ Get-MgBetaReportSharePointActivityUserCount -InputObject <IReportsIdentity> -Out
 ## DESCRIPTION
 Invoke function getSharePointActivityUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -41,6 +41,8 @@ Create new navigation property to roleAssignments for roleManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagement.ReadWrite.Defender,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

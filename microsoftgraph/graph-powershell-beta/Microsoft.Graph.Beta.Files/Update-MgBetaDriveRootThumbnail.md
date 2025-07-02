@@ -48,6 +48,8 @@ Update-MgBetaDriveRootThumbnail -InputObject <IFilesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property thumbnails in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

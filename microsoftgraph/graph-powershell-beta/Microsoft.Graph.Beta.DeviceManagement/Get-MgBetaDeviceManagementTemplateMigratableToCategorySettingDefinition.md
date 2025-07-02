@@ -41,6 +41,8 @@ Get-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition
 ## DESCRIPTION
 The setting definitions this category contains
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

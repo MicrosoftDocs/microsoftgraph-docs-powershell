@@ -51,6 +51,8 @@ Update-MgServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IApplic
 ## DESCRIPTION
 Update the navigation property directories in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

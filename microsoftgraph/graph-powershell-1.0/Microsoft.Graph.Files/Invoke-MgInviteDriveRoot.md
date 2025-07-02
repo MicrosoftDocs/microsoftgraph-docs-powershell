@@ -53,6 +53,8 @@ Invoke-MgInviteDriveRoot -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

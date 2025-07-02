@@ -33,6 +33,8 @@ Publish-MgDriveListContentType -InputObject <IFilesIdentity> [-ResponseHeadersVa
 ## DESCRIPTION
 Publishes a contentType present in the content type hub site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

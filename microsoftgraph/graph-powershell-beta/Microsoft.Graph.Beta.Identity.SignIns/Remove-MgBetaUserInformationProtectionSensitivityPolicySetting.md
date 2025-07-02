@@ -29,6 +29,8 @@ Remove-MgBetaUserInformationProtectionSensitivityPolicySetting -InputObject <IId
 ## DESCRIPTION
 Delete navigation property sensitivityPolicySettings for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

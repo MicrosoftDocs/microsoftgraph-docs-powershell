@@ -32,6 +32,8 @@ Remove-MgSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> [-If
 ## DESCRIPTION
 Delete navigation property secureScoreControlProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -34,6 +34,8 @@ Get-MgBetaGroupCalendar -InputObject <ICalendarIdentity> [-ExpandProperty <Strin
 The group's calendar.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

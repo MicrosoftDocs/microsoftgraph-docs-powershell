@@ -37,6 +37,8 @@ Get-MgBetaDeviceManagementManagedDeviceWindowsOSImage -InputObject <IDeviceManag
 ## DESCRIPTION
 A list of ManagedDeviceWindowsOperatingSystemImages
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

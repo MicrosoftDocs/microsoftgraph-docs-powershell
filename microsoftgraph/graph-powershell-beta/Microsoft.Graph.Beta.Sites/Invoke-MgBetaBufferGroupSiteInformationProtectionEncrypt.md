@@ -47,6 +47,8 @@ Invoke-MgBetaBufferGroupSiteInformationProtectionEncrypt -InputObject <ISitesIde
 ## DESCRIPTION
 Invoke action encryptBuffer
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

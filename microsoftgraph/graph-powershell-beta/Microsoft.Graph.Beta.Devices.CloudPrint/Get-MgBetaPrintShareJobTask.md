@@ -40,6 +40,8 @@ Get-MgBetaPrintShareJobTask -InputObject <IDevicesCloudPrintIdentity> [-ExpandPr
 ## DESCRIPTION
 A list of printTasks that were triggered by this print job.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -46,6 +46,8 @@ If the unsubscribeEnabled property of a message is true, you can use the unsubsc
 A successful unsubscribe action moves the message to the Deleted Items folder.
 The actual exclusion of the user from future mail distribution is managed by the sender.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

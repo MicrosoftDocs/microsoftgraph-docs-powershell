@@ -29,6 +29,8 @@ Remove-MgBetaGroupSiteInformationProtectionSensitivityLabel -InputObject <ISites
 ## DESCRIPTION
 Delete navigation property sensitivityLabels for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

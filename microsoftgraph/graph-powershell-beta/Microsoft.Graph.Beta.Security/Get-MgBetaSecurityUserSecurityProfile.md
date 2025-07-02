@@ -37,6 +37,8 @@ Get-MgBetaSecurityUserSecurityProfile -InputObject <ISecurityIdentity> [-ExpandP
 ## DESCRIPTION
 Get userSecurityProfiles from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

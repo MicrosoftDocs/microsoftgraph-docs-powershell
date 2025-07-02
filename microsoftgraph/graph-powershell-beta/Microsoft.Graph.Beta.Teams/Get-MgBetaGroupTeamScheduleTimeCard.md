@@ -40,6 +40,8 @@ Get-MgBetaGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-ExpandProper
 ## DESCRIPTION
 The time cards in the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

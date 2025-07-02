@@ -30,6 +30,8 @@ Remove-MgBetaDeviceManagementTemplateMigratableToSetting -InputObject <IDeviceMa
 ## DESCRIPTION
 Delete navigation property settings for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementSettingInstanceId

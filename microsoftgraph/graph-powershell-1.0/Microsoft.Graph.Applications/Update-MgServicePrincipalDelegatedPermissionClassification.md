@@ -49,6 +49,8 @@ Update-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplic
 ## DESCRIPTION
 Update the navigation property delegatedPermissionClassifications in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

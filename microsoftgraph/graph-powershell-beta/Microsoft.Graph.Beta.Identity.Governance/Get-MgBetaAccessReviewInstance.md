@@ -37,6 +37,8 @@ Get-MgBetaAccessReviewInstance -InputObject <IIdentityGovernanceIdentity> [-Expa
 ## DESCRIPTION
 The collection of access reviews instances past, present, and future, if this object is a recurring access review.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewId

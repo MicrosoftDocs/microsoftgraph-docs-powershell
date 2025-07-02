@@ -36,6 +36,8 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedulePrincipal
 References the principal that's in the scope of this membership or ownership eligibility request to the group that's governed by PIM.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

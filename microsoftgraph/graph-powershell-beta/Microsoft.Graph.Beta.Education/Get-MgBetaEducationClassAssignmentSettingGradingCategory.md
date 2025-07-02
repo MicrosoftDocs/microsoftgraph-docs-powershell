@@ -41,6 +41,8 @@ Get-MgBetaEducationClassAssignmentSettingGradingCategory -InputObject <IEducatio
 ## DESCRIPTION
 When set, enables users to weight assignments differently when computing a class average grade.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

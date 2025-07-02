@@ -67,6 +67,8 @@ The section groups in the notebook.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -46,6 +46,8 @@ Update-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow -In
 ## DESCRIPTION
 Update the navigation property provisioningFlows in external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

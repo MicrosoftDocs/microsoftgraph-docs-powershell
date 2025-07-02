@@ -32,6 +32,8 @@ Remove-MgPlace -InputObject <ICalendarIdentity> [-IfMatch <String>] [-ResponseHe
 ## DESCRIPTION
 Delete entity from places
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

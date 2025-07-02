@@ -51,6 +51,8 @@ New-MgBetaServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IAppli
 ## DESCRIPTION
 Create new navigation property to directories for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

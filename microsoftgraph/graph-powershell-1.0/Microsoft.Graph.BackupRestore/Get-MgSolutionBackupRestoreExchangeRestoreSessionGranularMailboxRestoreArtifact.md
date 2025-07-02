@@ -43,6 +43,8 @@ Get-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact
 ## DESCRIPTION
 Get granularMailboxRestoreArtifacts from solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

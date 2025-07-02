@@ -25,6 +25,8 @@ Get-MgBetaSiteGetByPathPage -Path <String> -SiteId <String> [-ExpandProperty <St
 ## DESCRIPTION
 The collection of pages in the baseSitePages list on this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

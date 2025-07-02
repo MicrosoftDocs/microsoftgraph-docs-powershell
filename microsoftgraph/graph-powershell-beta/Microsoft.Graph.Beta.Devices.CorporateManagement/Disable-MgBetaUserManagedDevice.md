@@ -29,6 +29,8 @@ Disable-MgBetaUserManagedDevice -InputObject <IDevicesCorporateManagementIdentit
 ## DESCRIPTION
 Invoke action disable
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

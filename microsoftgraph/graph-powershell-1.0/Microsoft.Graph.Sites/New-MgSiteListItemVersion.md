@@ -50,6 +50,8 @@ New-MgSiteListItemVersion -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to versions for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

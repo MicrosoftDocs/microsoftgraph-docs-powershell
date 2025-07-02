@@ -72,6 +72,8 @@ Update the navigation property items in sites
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

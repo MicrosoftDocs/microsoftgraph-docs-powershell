@@ -24,6 +24,8 @@ Remove-MgAdminPeopleItemInsight [-IfMatch <String>] [-ResponseHeadersVariable <S
 ## DESCRIPTION
 Delete navigation property itemInsights for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

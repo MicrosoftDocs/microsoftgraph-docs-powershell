@@ -53,6 +53,8 @@ Update the navigation property shiftsRoleDefinitions in teams
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All, SchedulePermissions.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

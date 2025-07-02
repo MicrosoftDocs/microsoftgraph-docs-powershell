@@ -46,6 +46,8 @@ New-MgBetaUserOutlookTaskFolderTaskAttachment -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Create new navigation property to attachments for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

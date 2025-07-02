@@ -74,6 +74,8 @@ Update-MgBetaBookingCurrency -InputObject <IBookingsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update entity in bookingCurrencies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

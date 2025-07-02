@@ -48,6 +48,8 @@ Update-MgBetaUserAuthenticationMethod -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property methods in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -31,6 +31,8 @@ Remove-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResource
 ## DESCRIPTION
 Delete navigation property resource for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRoleScopeId

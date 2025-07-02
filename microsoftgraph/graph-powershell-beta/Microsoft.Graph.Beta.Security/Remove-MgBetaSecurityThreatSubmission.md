@@ -21,6 +21,8 @@ Remove-MgBetaSecurityThreatSubmission [-IfMatch <String>] [-ResponseHeadersVaria
 ## DESCRIPTION
 Delete navigation property threatSubmission for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -33,6 +33,8 @@ Set-MgBetaIdentityB2CUserFlowLanguageDefaultPageContent -InputObject <IIdentityS
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2CIdentityUserFlowId

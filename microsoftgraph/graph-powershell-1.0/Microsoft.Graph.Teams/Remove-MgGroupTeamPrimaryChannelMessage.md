@@ -32,6 +32,8 @@ Remove-MgGroupTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property messages for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatMessageId

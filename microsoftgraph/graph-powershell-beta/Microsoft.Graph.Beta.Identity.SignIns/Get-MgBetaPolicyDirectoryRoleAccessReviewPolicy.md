@@ -21,6 +21,8 @@ Get-MgBetaPolicyDirectoryRoleAccessReviewPolicy [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 Get directoryRoleAccessReviewPolicy from policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -35,6 +35,8 @@ New-MgSecurityThreatIntelligenceArticle -BodyParameter <IMicrosoftGraphSecurityA
 ## DESCRIPTION
 Create new navigation property to articles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

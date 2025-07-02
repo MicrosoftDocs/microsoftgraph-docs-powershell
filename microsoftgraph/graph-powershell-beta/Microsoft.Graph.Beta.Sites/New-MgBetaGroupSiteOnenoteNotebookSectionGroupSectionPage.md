@@ -56,6 +56,8 @@ New-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage -InputObject <ISitesId
 ## DESCRIPTION
 Create new navigation property to pages for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

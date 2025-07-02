@@ -40,6 +40,8 @@ Get-MgServicePrincipalAppManagementPolicy -InputObject <IApplicationsIdentity> [
 ## DESCRIPTION
 The appManagementPolicy applied to this application.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

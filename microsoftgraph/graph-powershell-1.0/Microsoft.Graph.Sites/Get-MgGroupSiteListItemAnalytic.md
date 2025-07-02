@@ -32,6 +32,8 @@ Get-MgGroupSiteListItemAnalytic -InputObject <ISitesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Analytics about the view activities that took place on this item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

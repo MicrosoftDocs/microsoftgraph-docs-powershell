@@ -30,6 +30,8 @@ Get-MgBetaDeviceManagementDeviceConfigurationTargetedUserAndDevice
 ## DESCRIPTION
 Invoke action getTargetedUsersAndDevices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

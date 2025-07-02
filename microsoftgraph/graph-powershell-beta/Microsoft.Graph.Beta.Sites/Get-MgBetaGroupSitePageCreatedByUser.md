@@ -32,6 +32,8 @@ Get-MgBetaGroupSitePageCreatedByUser -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get createdByUser from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

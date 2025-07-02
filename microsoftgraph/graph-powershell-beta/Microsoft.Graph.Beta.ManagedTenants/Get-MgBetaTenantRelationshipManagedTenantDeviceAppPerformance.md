@@ -37,6 +37,8 @@ Get-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance -InputObject <IMan
 ## DESCRIPTION
 Get deviceAppPerformances from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

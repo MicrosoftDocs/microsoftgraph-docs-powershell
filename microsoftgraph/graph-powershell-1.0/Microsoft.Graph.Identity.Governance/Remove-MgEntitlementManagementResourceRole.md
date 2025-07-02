@@ -30,6 +30,8 @@ Remove-MgEntitlementManagementResourceRole -InputObject <IIdentityGovernanceIden
 ## DESCRIPTION
 Delete navigation property roles for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

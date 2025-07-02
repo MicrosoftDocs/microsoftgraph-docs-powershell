@@ -48,6 +48,8 @@ Invoke-MgBetaEnrollWindowsUpdatesDeploymentAudienceMemberAssetById -InputObject 
 ## DESCRIPTION
 Invoke action enrollAssetsById
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

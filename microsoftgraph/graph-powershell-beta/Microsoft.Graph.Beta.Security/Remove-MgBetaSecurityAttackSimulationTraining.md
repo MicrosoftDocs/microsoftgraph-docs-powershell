@@ -32,6 +32,8 @@ Remove-MgBetaSecurityAttackSimulationTraining -InputObject <ISecurityIdentity> [
 ## DESCRIPTION
 Delete navigation property trainings for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

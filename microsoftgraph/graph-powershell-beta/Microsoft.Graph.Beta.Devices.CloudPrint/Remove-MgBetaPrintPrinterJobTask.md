@@ -32,6 +32,8 @@ Remove-MgBetaPrintPrinterJobTask -InputObject <IDevicesCloudPrintIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property tasks for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

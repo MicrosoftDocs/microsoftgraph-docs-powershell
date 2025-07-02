@@ -33,6 +33,8 @@ Remove-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart -InputObject <
 ## DESCRIPTION
 Delete navigation property webparts for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

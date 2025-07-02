@@ -55,6 +55,8 @@ Update-MgBetaSiteAnalyticItemActivityStat -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property itemActivityStats in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Access

@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantMyRole -InputObject <IManagedTenants
 ## DESCRIPTION
 Delete navigation property myRoles for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

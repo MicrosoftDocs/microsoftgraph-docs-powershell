@@ -21,6 +21,8 @@ Get-MgBetaSecurityAuditLog [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Get auditLog from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -31,6 +31,8 @@ New-MgBetaPolicyMobileDeviceManagementPolicy -BodyParameter <IMicrosoftGraphMobi
 ## DESCRIPTION
 Create new navigation property to mobileDeviceManagementPolicies for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

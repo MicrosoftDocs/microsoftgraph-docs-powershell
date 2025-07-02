@@ -55,6 +55,8 @@ Update-MgUserDriveListSubscription -InputObject <IFilesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property subscriptions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

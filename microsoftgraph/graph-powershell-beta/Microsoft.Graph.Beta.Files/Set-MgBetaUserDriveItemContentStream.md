@@ -29,6 +29,8 @@ Set-MgBetaUserDriveItemContentStream -InputObject <IFilesIdentity> [-Data <Strea
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

@@ -30,6 +30,8 @@ Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeviceIdentityNextEnrollment
 ## DESCRIPTION
 Unblocks next autopilot enrollment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

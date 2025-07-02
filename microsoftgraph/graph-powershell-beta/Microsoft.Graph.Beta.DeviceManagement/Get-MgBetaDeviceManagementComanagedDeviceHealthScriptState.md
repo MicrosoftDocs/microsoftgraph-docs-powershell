@@ -42,6 +42,8 @@ Results of device health scripts that ran for this device.
 Default is empty list.
 This property is read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

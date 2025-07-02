@@ -32,6 +32,8 @@ Remove-MgEducationMeAssignment -InputObject <IEducationIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property assignments for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

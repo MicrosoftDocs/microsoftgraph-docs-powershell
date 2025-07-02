@@ -40,6 +40,8 @@ Get-MgBetaShareListContentType -InputObject <IFilesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The collection of content types present in this list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

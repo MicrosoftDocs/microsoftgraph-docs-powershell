@@ -32,6 +32,8 @@ Get-MgGroupSiteDefaultDrive -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 The default drive (document library) for this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

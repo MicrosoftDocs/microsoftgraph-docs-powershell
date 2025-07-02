@@ -54,6 +54,8 @@ New-MgBetaSiteListSubscription -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to subscriptions for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

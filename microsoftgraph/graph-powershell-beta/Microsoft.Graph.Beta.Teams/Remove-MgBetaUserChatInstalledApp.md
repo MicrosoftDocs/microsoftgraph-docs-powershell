@@ -32,6 +32,8 @@ Remove-MgBetaUserChatInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property installedApps for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

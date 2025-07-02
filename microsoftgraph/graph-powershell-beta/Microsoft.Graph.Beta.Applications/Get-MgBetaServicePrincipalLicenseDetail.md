@@ -37,6 +37,8 @@ Get-MgBetaServicePrincipalLicenseDetail -InputObject <IApplicationsIdentity> [-E
 ## DESCRIPTION
 Get licenseDetails from servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

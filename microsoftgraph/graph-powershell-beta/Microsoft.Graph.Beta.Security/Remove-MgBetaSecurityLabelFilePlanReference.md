@@ -32,6 +32,8 @@ Remove-MgBetaSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> [-I
 ## DESCRIPTION
 Delete navigation property filePlanReferences for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -FilePlanReferenceTemplateId

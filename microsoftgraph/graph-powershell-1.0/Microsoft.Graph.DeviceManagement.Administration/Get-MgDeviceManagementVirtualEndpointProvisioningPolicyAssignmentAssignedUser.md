@@ -49,6 +49,8 @@ This list of users is computed based on assignments, licenses, group memberships
 Read-only.
 Supports$expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

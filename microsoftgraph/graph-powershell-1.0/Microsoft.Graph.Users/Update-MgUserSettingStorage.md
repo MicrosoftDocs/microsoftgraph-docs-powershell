@@ -46,6 +46,8 @@ Update-MgUserSettingStorage -InputObject <IUsersIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property storage in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

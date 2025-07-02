@@ -24,6 +24,8 @@ Remove-MgBetaPolicyCrossTenantAccessPolicyTemplate [-IfMatch <String>] [-Respons
 ## DESCRIPTION
 Delete navigation property templates for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

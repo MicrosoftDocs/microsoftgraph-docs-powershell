@@ -52,6 +52,8 @@ Update-MgBetaGroupSiteOnenote -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property onenote in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

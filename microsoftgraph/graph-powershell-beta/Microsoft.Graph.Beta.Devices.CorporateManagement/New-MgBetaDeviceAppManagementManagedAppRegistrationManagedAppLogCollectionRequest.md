@@ -53,6 +53,8 @@ New-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionReques
 ## DESCRIPTION
 Create new navigation property to managedAppLogCollectionRequests for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -25,6 +25,8 @@ Get-MgDriveRootAnalyticItemActivityStatActivity -DriveId <String> -ItemActivityS
 ## DESCRIPTION
 Exposes the itemActivities represented in this itemActivityStat resource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -62,6 +62,8 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy -InputObje
 Update the protection policy for the OneDrive service in Microsoft 365.
 This method adds a driveProtectionUnit to or removes it from a oneDriveForBusinessProtectionPolicy object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

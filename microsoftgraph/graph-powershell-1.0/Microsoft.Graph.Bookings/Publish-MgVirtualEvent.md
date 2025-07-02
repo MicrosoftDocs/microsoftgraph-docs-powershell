@@ -31,6 +31,8 @@ Publish-MgVirtualEvent -InputObject <IBookingsIdentity> [-ResponseHeadersVariabl
 ## DESCRIPTION
 Invoke action publish
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

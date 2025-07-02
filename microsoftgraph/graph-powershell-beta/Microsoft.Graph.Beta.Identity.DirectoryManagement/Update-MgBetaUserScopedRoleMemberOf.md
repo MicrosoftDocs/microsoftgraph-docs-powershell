@@ -48,6 +48,8 @@ Update-MgBetaUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Update the navigation property scopedRoleMemberOf in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

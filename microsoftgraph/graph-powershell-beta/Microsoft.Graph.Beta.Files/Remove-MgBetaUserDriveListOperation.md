@@ -32,6 +32,8 @@ Remove-MgBetaUserDriveListOperation -InputObject <IFilesIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property operations for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

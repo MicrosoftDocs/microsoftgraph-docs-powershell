@@ -25,6 +25,8 @@ Get-MgSiteGetByPathContentType -Path <String> -SiteId <String> [-ExpandProperty 
 ## DESCRIPTION
 The collection of content types defined for this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

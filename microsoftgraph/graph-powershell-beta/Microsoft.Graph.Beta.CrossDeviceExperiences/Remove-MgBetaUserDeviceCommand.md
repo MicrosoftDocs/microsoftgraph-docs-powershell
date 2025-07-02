@@ -29,6 +29,8 @@ Remove-MgBetaUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity> [-
 ## DESCRIPTION
 Delete navigation property commands for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CommandId

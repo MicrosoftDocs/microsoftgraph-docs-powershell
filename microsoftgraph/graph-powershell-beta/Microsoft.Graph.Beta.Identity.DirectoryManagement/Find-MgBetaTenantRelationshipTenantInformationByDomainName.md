@@ -35,6 +35,8 @@ Find-MgBetaTenantRelationshipTenantInformationByDomainName -InputObject <IIdenti
 Given a domain name, search for a tenant and read its tenantInformation.
 You can use this API to validate tenant information and use their tenantId to configure cross-tenant access settings between you and the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DomainName

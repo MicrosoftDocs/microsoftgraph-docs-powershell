@@ -32,6 +32,8 @@ Remove-MgSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecurityI
 ## DESCRIPTION
 Delete navigation property languageDetails for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -50,6 +50,8 @@ Update-MgUserDriveItemListItemVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property versions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

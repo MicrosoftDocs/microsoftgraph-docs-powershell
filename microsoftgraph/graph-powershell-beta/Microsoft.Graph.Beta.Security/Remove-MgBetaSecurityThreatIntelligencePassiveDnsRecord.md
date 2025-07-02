@@ -32,6 +32,8 @@ Remove-MgBetaSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityI
 ## DESCRIPTION
 Delete navigation property passiveDnsRecords for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

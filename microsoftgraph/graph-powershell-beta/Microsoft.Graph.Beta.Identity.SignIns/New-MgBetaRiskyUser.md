@@ -33,6 +33,8 @@ New-MgBetaRiskyUser -BodyParameter <IMicrosoftGraphRiskyUser> [-ResponseHeadersV
 ## DESCRIPTION
 Create new navigation property to riskyUsers for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Remove-MgBetaWindowsUpdatesProductRevisionCatalogEntry -InputObject <IWindowsUpd
 ## DESCRIPTION
 Delete navigation property catalogEntry for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

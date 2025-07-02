@@ -54,6 +54,8 @@ Update-MgBetaUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property shared in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

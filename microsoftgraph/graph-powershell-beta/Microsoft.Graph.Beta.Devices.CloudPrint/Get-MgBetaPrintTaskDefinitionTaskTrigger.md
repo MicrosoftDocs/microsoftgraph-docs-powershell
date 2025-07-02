@@ -34,6 +34,8 @@ Get-MgBetaPrintTaskDefinitionTaskTrigger -InputObject <IDevicesCloudPrintIdentit
 The printTaskTrigger that triggered this task's execution.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -44,6 +44,8 @@ New-MgBetaBookingCurrency [-ResponseHeadersVariable <String>] [-AdditionalProper
 ## DESCRIPTION
 Add new entity to bookingCurrencies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

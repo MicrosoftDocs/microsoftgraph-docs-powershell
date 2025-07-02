@@ -43,6 +43,8 @@ New-MgBetaNetworkAccessLogTraffic -BodyParameter <IMicrosoftGraphNetworkaccessNe
 ## DESCRIPTION
 Create new navigation property to traffic for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessHeaders

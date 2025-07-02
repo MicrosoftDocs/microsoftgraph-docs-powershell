@@ -32,6 +32,8 @@ Get-MgBetaTeamPhoto -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 The team photo.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

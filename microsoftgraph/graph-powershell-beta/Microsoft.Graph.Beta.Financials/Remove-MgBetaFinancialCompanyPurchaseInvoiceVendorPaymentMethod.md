@@ -29,6 +29,8 @@ Remove-MgBetaFinancialCompanyPurchaseInvoiceVendorPaymentMethod -InputObject <IF
 ## DESCRIPTION
 Delete navigation property paymentMethod for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

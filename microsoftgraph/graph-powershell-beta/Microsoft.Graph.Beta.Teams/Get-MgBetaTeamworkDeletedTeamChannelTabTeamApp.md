@@ -32,6 +32,8 @@ Get-MgBetaTeamworkDeletedTeamChannelTabTeamApp -InputObject <ITeamsIdentity> [-E
 ## DESCRIPTION
 The application that is linked to the tab.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

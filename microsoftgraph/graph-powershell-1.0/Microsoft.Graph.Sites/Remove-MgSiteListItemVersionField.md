@@ -32,6 +32,8 @@ Remove-MgSiteListItemVersionField -InputObject <ISitesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property fields for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

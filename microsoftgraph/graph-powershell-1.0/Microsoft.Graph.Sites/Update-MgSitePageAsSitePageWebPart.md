@@ -46,6 +46,8 @@ Update-MgSitePageAsSitePageWebPart -InputObject <ISitesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property webParts in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

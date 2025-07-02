@@ -33,6 +33,8 @@ Update-MgTeamwork -BodyParameter <IMicrosoftGraphTeamwork> [-ResponseHeadersVari
 ## DESCRIPTION
 Update teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaGroupDriveRootVersion -InputObject <IFilesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property versions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

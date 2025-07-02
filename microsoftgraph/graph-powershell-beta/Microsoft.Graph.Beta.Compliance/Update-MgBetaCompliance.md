@@ -31,6 +31,8 @@ Update-MgBetaCompliance -BodyParameter <IMicrosoftGraphCompliance> [-ResponseHea
 ## DESCRIPTION
 Update compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

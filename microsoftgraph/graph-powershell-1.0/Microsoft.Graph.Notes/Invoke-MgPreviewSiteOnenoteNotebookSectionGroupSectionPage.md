@@ -32,6 +32,8 @@ Invoke-MgPreviewSiteOnenoteNotebookSectionGroupSectionPage -InputObject <INotesI
 ## DESCRIPTION
 Invoke function preview
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

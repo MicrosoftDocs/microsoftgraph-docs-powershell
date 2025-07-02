@@ -48,6 +48,8 @@ Remove-MgBetaChatMessageReplyHostedContent -InputObject <ITeamsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property hostedContents for chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

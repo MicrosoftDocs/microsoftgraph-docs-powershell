@@ -32,6 +32,8 @@ Rename-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent
 Set the isPortalNotificationSent property of all portal notification resources associated with the specified alertRecord to true, marking them as sent.
 A maximum of 100 alertRecord IDs can be received at one time, and a maximum of 100 portal notification resources can be changed in the isPortalNotificationSent property status.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

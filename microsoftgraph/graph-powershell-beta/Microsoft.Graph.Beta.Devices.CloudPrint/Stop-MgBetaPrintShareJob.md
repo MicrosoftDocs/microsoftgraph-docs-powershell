@@ -35,6 +35,8 @@ Stop-MgBetaPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseHea
 Cancel a print job.
 Print jobs can be canceled only on behalf of a user, using delegated permissions.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

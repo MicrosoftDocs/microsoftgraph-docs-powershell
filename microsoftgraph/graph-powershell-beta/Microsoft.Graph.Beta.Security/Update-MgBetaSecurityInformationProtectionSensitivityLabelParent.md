@@ -49,6 +49,8 @@ Update-MgBetaSecurityInformationProtectionSensitivityLabelParent -InputObject <I
 ## DESCRIPTION
 Update the navigation property parent in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

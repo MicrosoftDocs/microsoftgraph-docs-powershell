@@ -51,6 +51,8 @@ Update-MgBetaSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentit
 ## DESCRIPTION
 Update the navigation property serviceApps in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

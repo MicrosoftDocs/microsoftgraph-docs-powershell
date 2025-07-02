@@ -33,6 +33,8 @@ Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy -InputObject <IBack
 ## DESCRIPTION
 Deactivate a protectionPolicyBase.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

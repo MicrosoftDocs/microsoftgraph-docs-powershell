@@ -50,6 +50,8 @@ Update-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property runs in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

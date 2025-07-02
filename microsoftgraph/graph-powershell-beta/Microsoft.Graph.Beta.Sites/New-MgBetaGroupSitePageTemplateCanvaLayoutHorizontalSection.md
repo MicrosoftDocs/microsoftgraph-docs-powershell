@@ -45,6 +45,8 @@ New-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSection -InputObject <ISites
 ## DESCRIPTION
 Create new navigation property to horizontalSections for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

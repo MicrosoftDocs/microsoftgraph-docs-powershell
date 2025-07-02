@@ -22,6 +22,8 @@ Get-MgBetaGroupSiteListActivity -GroupId <String> -ListId <String> -SiteId <Stri
 ## DESCRIPTION
 The recent activities that took place within this list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

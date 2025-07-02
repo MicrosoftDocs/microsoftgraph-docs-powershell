@@ -32,6 +32,8 @@ Remove-MgDirectoryDeviceLocalCredential -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Delete navigation property deviceLocalCredentials for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceLocalCredentialInfoId

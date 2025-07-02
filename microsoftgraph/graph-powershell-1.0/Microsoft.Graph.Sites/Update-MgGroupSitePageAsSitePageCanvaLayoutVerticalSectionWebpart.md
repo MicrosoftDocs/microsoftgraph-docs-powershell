@@ -47,6 +47,8 @@ Update-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart -InputObject <
 ## DESCRIPTION
 Update the navigation property webparts in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

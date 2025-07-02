@@ -40,6 +40,8 @@ Get-MgBetaUserChatPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty
 ## DESCRIPTION
 A collection of permissions granted to apps for the chat.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

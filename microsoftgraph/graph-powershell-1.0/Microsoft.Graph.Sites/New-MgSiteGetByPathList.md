@@ -62,6 +62,8 @@ New-MgSiteGetByPathList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to lists for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

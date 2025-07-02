@@ -30,6 +30,8 @@ Remove-MgBetaFinancialCompanySaleCreditMemoLineItemPicture -InputObject <IFinanc
 ## DESCRIPTION
 Delete navigation property picture for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

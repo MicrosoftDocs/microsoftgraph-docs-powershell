@@ -55,6 +55,8 @@ Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction
 ## DESCRIPTION
 Update the navigation property resourceActions in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionVerb

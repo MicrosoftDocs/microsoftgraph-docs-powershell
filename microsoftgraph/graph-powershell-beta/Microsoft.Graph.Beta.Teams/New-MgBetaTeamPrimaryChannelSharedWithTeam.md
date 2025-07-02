@@ -48,6 +48,8 @@ New-MgBetaTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to sharedWithTeams for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

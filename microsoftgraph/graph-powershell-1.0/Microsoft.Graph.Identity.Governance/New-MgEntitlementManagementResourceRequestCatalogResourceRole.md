@@ -113,6 +113,8 @@ New-MgEntitlementManagementResourceRequestCatalogResourceRole -InputObject <IIde
 ## DESCRIPTION
 Create new navigation property to resourceRoles for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

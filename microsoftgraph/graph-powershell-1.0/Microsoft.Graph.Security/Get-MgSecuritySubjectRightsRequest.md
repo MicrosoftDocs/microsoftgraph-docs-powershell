@@ -48,6 +48,8 @@ Get subjectRightsRequests from security
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

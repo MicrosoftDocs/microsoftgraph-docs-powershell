@@ -52,6 +52,8 @@ New-MgSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecurityIden
 ## DESCRIPTION
 Create new navigation property to languageDetails for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

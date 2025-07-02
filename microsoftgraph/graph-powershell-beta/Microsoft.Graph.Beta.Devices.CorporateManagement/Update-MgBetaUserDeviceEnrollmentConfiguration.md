@@ -51,6 +51,8 @@ Update-MgBetaUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateMa
 ## DESCRIPTION
 Update the navigation property deviceEnrollmentConfigurations in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

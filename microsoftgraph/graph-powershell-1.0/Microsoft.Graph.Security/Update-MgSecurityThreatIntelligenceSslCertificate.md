@@ -54,6 +54,8 @@ Update-MgSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Update the navigation property sslCertificates in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

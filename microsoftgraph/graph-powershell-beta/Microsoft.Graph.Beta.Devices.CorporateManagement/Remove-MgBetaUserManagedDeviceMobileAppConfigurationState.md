@@ -30,6 +30,8 @@ Remove-MgBetaUserManagedDeviceMobileAppConfigurationState -InputObject <IDevices
 ## DESCRIPTION
 Delete navigation property managedDeviceMobileAppConfigurationStates for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

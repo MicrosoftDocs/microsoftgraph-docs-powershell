@@ -48,6 +48,8 @@ Update-MgIdentityB2XUserFlowPostAttributeCollection -InputObject <IIdentitySignI
 ## DESCRIPTION
 Update the navigation property postAttributeCollection in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Get-MgBetaDeviceCommandResponsepayload -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Get responsepayload from devices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CommandId

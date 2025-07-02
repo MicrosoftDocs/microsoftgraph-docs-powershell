@@ -38,6 +38,8 @@ New-MgBetaTenantRelationshipManagedTenantAlert -BodyParameter <IMicrosoftGraphMa
 ## DESCRIPTION
 Create new navigation property to managedTenantAlerts for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

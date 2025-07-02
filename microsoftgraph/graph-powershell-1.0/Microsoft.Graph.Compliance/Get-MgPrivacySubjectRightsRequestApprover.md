@@ -42,6 +42,8 @@ Get-MgPrivacySubjectRightsRequestApprover -InputObject <IComplianceIdentity> [-E
 Collection of users who can approve the request.
 Currently only supported for requests of type delete.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISec
 ## DESCRIPTION
 Delete navigation property additionalSources for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DataSourceId

@@ -54,6 +54,8 @@ New-MgBetaShareListSubscription -InputObject <IFilesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to subscriptions for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

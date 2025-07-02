@@ -37,6 +37,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Sites.Manage.All, Sites.FullControl.All, Files.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

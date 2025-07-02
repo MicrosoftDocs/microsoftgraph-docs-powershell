@@ -40,6 +40,8 @@ Restore multiple Cloud PC devices with a single request that includes the IDs of
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CloudPC.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -43,6 +43,8 @@ Update-MgBetaBusinessFlowTemplate -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update entity in businessFlowTemplates
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

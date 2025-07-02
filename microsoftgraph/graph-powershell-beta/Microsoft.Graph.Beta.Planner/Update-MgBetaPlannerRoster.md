@@ -45,6 +45,8 @@ Update-MgBetaPlannerRoster -InputObject <IPlannerIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property rosters in planner
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

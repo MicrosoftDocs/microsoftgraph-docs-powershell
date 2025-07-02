@@ -50,6 +50,8 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreementFileVersion -InputObject <IIdenti
 ## DESCRIPTION
 Create new navigation property to versions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

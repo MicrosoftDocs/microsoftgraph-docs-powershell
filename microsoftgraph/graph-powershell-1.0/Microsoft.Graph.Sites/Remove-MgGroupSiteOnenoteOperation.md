@@ -32,6 +32,8 @@ Remove-MgGroupSiteOnenoteOperation -InputObject <ISitesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property operations for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

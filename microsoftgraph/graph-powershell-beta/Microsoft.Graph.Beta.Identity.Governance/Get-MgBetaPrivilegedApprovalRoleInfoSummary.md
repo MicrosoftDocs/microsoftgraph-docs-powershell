@@ -29,6 +29,8 @@ Get-MgBetaPrivilegedApprovalRoleInfoSummary -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Get summary from privilegedApproval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

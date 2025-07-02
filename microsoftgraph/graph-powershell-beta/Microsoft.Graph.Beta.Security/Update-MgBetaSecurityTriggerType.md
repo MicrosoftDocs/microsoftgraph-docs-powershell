@@ -32,6 +32,8 @@ Update-MgBetaSecurityTriggerType -BodyParameter <IMicrosoftGraphSecurityTriggerT
 ## DESCRIPTION
 Update the navigation property triggerTypes in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

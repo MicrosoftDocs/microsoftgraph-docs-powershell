@@ -39,6 +39,8 @@ Get-MgBetaVirtualEventTownhallSessionRegistration -InputObject <IBookingsIdentit
 ## DESCRIPTION
 Get registrations from solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

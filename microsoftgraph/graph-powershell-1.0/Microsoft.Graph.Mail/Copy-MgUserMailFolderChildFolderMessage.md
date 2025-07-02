@@ -51,6 +51,8 @@ Copy-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity>
 ## DESCRIPTION
 Copy a message to a folder within the user's mailbox.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

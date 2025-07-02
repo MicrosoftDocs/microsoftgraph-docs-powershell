@@ -117,6 +117,8 @@ Update-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update entity in programControls
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

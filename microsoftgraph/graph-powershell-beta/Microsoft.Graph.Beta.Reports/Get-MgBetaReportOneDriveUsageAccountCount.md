@@ -32,6 +32,8 @@ Get-MgBetaReportOneDriveUsageAccountCount -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Invoke function getOneDriveUsageAccountCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -32,6 +32,8 @@ Get-MgBetaTeamInstalledAppTeamAppDefinition -InputObject <ITeamsIdentity> [-Expa
 ## DESCRIPTION
 The details of this version of the app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

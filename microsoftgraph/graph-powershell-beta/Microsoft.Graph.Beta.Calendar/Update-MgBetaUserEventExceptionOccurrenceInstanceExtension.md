@@ -45,6 +45,8 @@ Update-MgBetaUserEventExceptionOccurrenceInstanceExtension -InputObject <ICalend
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

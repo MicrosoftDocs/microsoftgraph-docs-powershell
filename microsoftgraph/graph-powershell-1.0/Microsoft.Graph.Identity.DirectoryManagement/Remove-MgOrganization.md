@@ -32,6 +32,8 @@ Remove-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-IfMa
 ## DESCRIPTION
 Delete entity from organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

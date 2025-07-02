@@ -40,6 +40,8 @@ Invoke action bulkSetCloudPcReviewStatus
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CloudPC.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Get-MgBetaPrivilegedAccessResourceRoleSettingRoleDefinition -InputObject <IIdent
 Read-only.
 The role definition that is enforced with this role setting.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

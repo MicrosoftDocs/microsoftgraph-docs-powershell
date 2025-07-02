@@ -32,6 +32,8 @@ Remove-MgUserInsightShared -InputObject <IUsersIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property shared for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

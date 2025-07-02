@@ -29,6 +29,8 @@ New-MgBetaIdentityGovernancePermissionAnalyticGcpFinding -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to findings for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

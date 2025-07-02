@@ -37,6 +37,8 @@ Revoke all Apple Vpp licenses for a device
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

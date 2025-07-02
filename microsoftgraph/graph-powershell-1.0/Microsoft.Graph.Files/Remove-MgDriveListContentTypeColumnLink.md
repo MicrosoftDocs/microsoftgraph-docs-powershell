@@ -32,6 +32,8 @@ Remove-MgDriveListContentTypeColumnLink -InputObject <IFilesIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property columnLinks for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnLinkId

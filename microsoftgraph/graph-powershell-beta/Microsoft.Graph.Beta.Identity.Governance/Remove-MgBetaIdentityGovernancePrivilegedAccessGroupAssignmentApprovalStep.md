@@ -30,6 +30,8 @@ Remove-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep
 ## DESCRIPTION
 Delete navigation property steps for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApprovalId

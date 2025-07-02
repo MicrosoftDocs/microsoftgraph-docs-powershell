@@ -45,6 +45,8 @@ Update-MgBetaPrivilegedApprovalRoleInfoSummary -InputObject <IIdentityGovernance
 ## DESCRIPTION
 Update the navigation property summary in privilegedApproval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

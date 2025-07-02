@@ -30,6 +30,8 @@ Get-MgBetaVirtualEventWebinarSessionRegistrationByEmail -InputObject <IBookingsI
 ## DESCRIPTION
 Get registrations from solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Email

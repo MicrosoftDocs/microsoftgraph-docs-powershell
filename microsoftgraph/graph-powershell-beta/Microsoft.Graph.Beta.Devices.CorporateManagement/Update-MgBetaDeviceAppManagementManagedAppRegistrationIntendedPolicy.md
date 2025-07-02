@@ -53,6 +53,8 @@ Update-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy
 ## DESCRIPTION
 Update the navigation property intendedPolicies in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

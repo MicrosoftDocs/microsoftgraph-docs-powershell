@@ -37,6 +37,8 @@ Get-MgBetaUserManagedDeviceSecurityBaselineState -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Security baseline states for this device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

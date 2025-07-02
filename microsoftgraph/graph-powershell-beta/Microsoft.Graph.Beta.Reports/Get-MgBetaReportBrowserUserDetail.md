@@ -28,6 +28,8 @@ Get-MgBetaReportBrowserUserDetail -InputObject <IReportsIdentity> -OutFile <Stri
 ## DESCRIPTION
 Invoke function getBrowserUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

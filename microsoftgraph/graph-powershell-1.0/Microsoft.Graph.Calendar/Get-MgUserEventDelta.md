@@ -49,6 +49,8 @@ This allows you to maintain and synchronize a local store of events in the speci
 | Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
 | Application | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

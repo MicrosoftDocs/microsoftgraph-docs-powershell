@@ -41,6 +41,8 @@ Get-MgServicePrincipalOwnerAsEndpoint -InputObject <IApplicationsIdentity> [-Exp
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

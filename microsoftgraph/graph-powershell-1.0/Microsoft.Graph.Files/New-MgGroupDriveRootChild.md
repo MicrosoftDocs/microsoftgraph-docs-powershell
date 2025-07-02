@@ -82,6 +82,8 @@ New-MgGroupDriveRootChild -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to children for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -34,6 +34,8 @@ Get-MgBetaCommunicationOnlineMeetingTranscriptContent -InputObject <ICloudCommun
 The content of the transcript.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallTranscriptId

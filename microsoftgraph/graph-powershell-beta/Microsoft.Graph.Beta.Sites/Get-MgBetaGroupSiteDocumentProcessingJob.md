@@ -37,6 +37,8 @@ Get-MgBetaGroupSiteDocumentProcessingJob -InputObject <ISitesIdentity> [-ExpandP
 ## DESCRIPTION
 The document processing jobs running on this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

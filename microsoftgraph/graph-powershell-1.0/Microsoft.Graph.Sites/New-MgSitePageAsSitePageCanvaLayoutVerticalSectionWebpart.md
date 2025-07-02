@@ -46,6 +46,8 @@ New-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart -InputObject <ISitesId
 ## DESCRIPTION
 Create new navigation property to webparts for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

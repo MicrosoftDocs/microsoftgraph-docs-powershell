@@ -40,6 +40,8 @@ Get-MgBetaPlaceAsRoomListRoom -InputObject <ICalendarIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Get rooms from places
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

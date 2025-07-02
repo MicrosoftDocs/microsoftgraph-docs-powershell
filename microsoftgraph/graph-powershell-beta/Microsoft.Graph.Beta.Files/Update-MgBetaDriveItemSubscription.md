@@ -55,6 +55,8 @@ Update-MgBetaDriveItemSubscription -InputObject <IFilesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property subscriptions in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgUserDriveItemSubscription -InputObject <IFilesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property subscriptions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

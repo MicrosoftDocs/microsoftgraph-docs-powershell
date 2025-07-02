@@ -32,6 +32,8 @@ Remove-MgSolutionBackupRestoreSharePointRestoreSession -InputObject <IBackupRest
 ## DESCRIPTION
 Delete navigation property sharePointRestoreSessions for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

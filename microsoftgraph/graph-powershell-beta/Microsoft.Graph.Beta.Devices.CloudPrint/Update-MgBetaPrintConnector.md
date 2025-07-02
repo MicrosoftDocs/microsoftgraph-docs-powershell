@@ -53,6 +53,8 @@ Update-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update the properties of a printConnector object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

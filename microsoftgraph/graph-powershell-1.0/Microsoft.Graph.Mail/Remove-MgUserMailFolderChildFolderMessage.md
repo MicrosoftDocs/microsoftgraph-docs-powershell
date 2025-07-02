@@ -32,6 +32,8 @@ Remove-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property messages for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

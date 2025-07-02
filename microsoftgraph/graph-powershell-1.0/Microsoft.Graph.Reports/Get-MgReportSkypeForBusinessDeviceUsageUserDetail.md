@@ -47,6 +47,8 @@ Get-MgReportSkypeForBusinessDeviceUsageUserDetail -InputObject <IReportsIdentity
 ## DESCRIPTION
 Get details about Skype for Business device usage by user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

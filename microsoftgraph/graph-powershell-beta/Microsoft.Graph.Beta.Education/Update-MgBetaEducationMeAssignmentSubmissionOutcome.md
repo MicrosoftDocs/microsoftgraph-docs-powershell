@@ -50,6 +50,8 @@ Update-MgBetaEducationMeAssignmentSubmissionOutcome -InputObject <IEducationIden
 ## DESCRIPTION
 Update the navigation property outcomes in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

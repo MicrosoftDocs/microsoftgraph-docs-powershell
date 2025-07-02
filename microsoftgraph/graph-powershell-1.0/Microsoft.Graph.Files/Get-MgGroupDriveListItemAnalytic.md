@@ -32,6 +32,8 @@ Get-MgGroupDriveListItemAnalytic -InputObject <IFilesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Analytics about the view activities that took place on this item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -46,6 +46,8 @@ Update-MgPrintService -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property services in print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -34,6 +34,8 @@ Remove-MgUserContactPhotoContent -InputObject <IPersonalContactsIdentity> [-IfMa
 Optional contact picture.
 You can get or set a photo for a contact.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContactId

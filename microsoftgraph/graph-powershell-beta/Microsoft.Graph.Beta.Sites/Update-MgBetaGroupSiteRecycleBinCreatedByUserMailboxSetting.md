@@ -51,6 +51,8 @@ Update-MgBetaGroupSiteRecycleBinCreatedByUserMailboxSetting -InputObject <ISites
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

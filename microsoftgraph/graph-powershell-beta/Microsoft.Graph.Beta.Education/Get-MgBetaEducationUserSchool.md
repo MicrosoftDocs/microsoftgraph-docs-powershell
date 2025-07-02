@@ -42,6 +42,8 @@ Get-MgBetaEducationUserSchool -InputObject <IEducationIdentity> [-ExpandProperty
 Schools to which the user belongs.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

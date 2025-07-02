@@ -47,6 +47,8 @@ Create new navigation property to autopilotEvents for deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountSetupDuration

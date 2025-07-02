@@ -65,6 +65,8 @@ Update-MgBetaGroupTeamChannelMessageReply -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property replies in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

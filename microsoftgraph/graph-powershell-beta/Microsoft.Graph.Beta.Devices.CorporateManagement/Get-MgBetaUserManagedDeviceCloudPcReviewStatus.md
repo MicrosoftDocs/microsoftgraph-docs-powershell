@@ -30,6 +30,8 @@ Get-MgBetaUserManagedDeviceCloudPcReviewStatus -InputObject <IDevicesCorporateMa
 ## DESCRIPTION
 Get the review status of a specific Cloud PC device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

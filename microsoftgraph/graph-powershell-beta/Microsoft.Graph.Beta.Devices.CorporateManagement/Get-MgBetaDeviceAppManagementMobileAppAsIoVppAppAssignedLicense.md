@@ -38,6 +38,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense
 ## DESCRIPTION
 The licenses assigned to this app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

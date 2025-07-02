@@ -30,6 +30,8 @@ Set-MgBetaGroupSiteListItemActivityDriveItemContentStream -InputObject <ISitesId
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

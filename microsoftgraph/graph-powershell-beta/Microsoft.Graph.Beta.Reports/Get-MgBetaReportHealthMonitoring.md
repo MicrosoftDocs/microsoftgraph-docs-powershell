@@ -21,6 +21,8 @@ Get-MgBetaReportHealthMonitoring [-ExpandProperty <String[]>] [-Property <String
 ## DESCRIPTION
 Reports for Microsoft Entra Health Monitoring.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

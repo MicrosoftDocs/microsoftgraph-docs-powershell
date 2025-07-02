@@ -48,6 +48,8 @@ Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship
 ## DESCRIPTION
 Update the navigation property relationships in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

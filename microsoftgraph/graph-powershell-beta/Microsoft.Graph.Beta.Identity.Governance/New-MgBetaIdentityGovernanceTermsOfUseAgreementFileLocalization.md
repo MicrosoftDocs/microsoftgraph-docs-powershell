@@ -50,6 +50,8 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject <II
 ## DESCRIPTION
 Create new navigation property to localizations for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

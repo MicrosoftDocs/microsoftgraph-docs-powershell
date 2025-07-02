@@ -48,6 +48,8 @@ Update-MgUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the navigation property members in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

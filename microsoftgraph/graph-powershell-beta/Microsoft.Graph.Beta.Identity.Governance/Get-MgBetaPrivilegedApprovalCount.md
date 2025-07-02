@@ -20,6 +20,8 @@ Get-MgBetaPrivilegedApprovalCount [-Filter <String>] [-Search <String>] [-Respon
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

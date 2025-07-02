@@ -32,6 +32,8 @@ Get-MgBetaGroupSiteListItemAnalytic -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 Analytics about the view activities that took place on this item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -33,6 +33,8 @@ New-MgBetaSecurityThreatIntelligenceHostTracker -BodyParameter <IMicrosoftGraphS
 ## DESCRIPTION
 Create new navigation property to hostTrackers for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

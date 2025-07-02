@@ -38,6 +38,8 @@ Get-MgBetaUserDriveItemActivityByInterval -InputObject <IFilesIdentity> [-Count]
 Get itemActivityStats for the activities that took place under this resource within the specified time interval.
 Analytics aggregates might not be available for all action types.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

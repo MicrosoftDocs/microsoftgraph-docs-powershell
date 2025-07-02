@@ -53,6 +53,8 @@ Set-MgBetaDeviceAppManagementIosLobAppProvisioningConfiguration
 ## DESCRIPTION
 Invoke action assign
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

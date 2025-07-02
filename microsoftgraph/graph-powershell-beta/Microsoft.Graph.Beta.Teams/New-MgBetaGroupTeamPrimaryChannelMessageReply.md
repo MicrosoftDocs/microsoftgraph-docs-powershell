@@ -65,6 +65,8 @@ New-MgBetaGroupTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to replies for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

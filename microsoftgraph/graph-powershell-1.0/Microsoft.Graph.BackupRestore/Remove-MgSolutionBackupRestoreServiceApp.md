@@ -33,6 +33,8 @@ Remove-MgSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentity> [
 ## DESCRIPTION
 Delete a serviceApp.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

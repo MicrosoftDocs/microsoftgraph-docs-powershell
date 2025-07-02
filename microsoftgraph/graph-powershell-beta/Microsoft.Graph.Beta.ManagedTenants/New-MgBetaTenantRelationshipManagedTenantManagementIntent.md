@@ -30,6 +30,8 @@ New-MgBetaTenantRelationshipManagedTenantManagementIntent
 ## DESCRIPTION
 Create new navigation property to managementIntents for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

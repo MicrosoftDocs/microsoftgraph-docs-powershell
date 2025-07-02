@@ -21,6 +21,8 @@ Get-MgBetaDeviceManagementMonitoring [-ExpandProperty <String[]>] [-Property <St
 ## DESCRIPTION
 Get monitoring from deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

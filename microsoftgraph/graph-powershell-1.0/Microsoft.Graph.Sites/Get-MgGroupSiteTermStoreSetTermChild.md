@@ -63,6 +63,8 @@ Get-MgGroupSiteTermStoreSetTermChild -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 Children of current term.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

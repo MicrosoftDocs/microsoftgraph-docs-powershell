@@ -33,6 +33,8 @@ Remove-MgBetaVirtualEventTownhallSessionAttendanceReport -InputObject <IBookings
 ## DESCRIPTION
 Delete navigation property attendanceReports for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

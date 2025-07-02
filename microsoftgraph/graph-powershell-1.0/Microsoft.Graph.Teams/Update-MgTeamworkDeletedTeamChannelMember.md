@@ -78,6 +78,8 @@ Update-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property allMembers in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

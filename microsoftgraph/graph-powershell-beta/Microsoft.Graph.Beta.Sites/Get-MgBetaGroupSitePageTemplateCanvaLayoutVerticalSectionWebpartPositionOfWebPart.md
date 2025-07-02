@@ -29,6 +29,8 @@ Get-MgBetaGroupSitePageTemplateCanvaLayoutVerticalSectionWebpartPositionOfWebPar
 ## DESCRIPTION
 Invoke action getPositionOfWebPart
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

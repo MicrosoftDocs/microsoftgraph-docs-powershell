@@ -32,6 +32,8 @@ Remove-MgSharePermission -InputObject <IFilesIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property permission for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

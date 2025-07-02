@@ -46,6 +46,8 @@ Get-MgShareListItemDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 For document libraries, the driveItem relationship exposes the listItem as a driveItem
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

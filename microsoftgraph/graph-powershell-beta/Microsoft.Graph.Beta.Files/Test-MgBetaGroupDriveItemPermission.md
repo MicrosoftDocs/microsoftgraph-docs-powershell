@@ -49,6 +49,8 @@ Test-MgBetaGroupDriveItemPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action validatePermission
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

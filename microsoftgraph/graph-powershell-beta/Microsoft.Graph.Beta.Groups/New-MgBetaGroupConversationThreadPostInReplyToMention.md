@@ -49,6 +49,8 @@ New-MgBetaGroupConversationThreadPostInReplyToMention -InputObject <IGroupsIdent
 ## DESCRIPTION
 Create new navigation property to mentions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

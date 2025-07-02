@@ -35,6 +35,8 @@ New-MgBetaSecurityFileSecurityProfile -BodyParameter <IMicrosoftGraphFileSecurit
 ## DESCRIPTION
 Create new navigation property to fileSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityGroupNames

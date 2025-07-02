@@ -51,6 +51,8 @@ Update-MgBetaSecurityAction -InputObject <ISecurityIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property securityActions in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionReason

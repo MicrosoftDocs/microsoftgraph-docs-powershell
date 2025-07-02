@@ -29,6 +29,8 @@ Get-MgBetaUserManagedDeviceWithAppInstallationIssue -InputObject <IUsersFunction
 ## DESCRIPTION
 Retrieves the list of devices with failed or pending apps
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

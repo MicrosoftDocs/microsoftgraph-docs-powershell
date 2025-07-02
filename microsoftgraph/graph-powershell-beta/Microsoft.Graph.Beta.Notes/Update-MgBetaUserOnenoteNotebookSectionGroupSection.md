@@ -57,6 +57,8 @@ Update-MgBetaUserOnenoteNotebookSectionGroupSection -InputObject <INotesIdentity
 ## DESCRIPTION
 Update the navigation property sections in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

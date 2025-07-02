@@ -47,6 +47,8 @@ New-MgBetaWindowsUpdatesProductEdition -InputObject <IWindowsUpdatesIdentity>
 ## DESCRIPTION
 Create new navigation property to editions for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

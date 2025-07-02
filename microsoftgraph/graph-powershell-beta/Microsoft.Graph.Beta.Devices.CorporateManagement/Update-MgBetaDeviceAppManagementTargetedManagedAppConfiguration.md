@@ -70,6 +70,8 @@ Update the navigation property targetedManagedAppConfigurations in deviceAppMana
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -47,6 +47,8 @@ Update-MgBetaSiteListContentTypeColumnLink -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property columnLinks in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

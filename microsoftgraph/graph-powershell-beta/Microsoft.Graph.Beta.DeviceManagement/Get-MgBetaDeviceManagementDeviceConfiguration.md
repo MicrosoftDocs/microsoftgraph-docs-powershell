@@ -74,6 +74,8 @@ Get-MgBetaDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIde
 ## DESCRIPTION
 Invoke action windowsPrivacyAccessControls
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

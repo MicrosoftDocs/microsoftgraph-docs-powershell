@@ -56,6 +56,8 @@ Update-MgBetaUserDriveRootPermission -InputObject <IFilesIdentity> -BodyParamete
 ## DESCRIPTION
 Update the navigation property permissions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

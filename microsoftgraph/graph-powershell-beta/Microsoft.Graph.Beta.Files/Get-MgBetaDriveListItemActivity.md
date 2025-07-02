@@ -22,6 +22,8 @@ Get-MgBetaDriveListItemActivity -DriveId <String> -ListItemId <String> [-ExpandP
 ## DESCRIPTION
 The list of recent activities that took place on this item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -21,6 +21,8 @@ Get-MgBetaNetworkAccessLog [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Represents network connections that are routed through Global Secure Access.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

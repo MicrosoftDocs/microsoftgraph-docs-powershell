@@ -56,6 +56,8 @@ Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBu
 ## DESCRIPTION
 Update the navigation property mailboxRestoreArtifactsBulkAdditionRequests in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

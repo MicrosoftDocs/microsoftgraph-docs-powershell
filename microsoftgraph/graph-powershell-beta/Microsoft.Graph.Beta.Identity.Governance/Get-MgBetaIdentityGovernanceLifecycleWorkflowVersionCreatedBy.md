@@ -33,6 +33,8 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedBy -InputObject <IIde
 ## DESCRIPTION
 The user who created the workflow.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

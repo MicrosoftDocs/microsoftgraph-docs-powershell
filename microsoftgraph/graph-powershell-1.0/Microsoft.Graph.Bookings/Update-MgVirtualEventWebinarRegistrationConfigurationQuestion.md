@@ -49,6 +49,8 @@ Update-MgVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBoo
 ## DESCRIPTION
 Update the navigation property questions in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

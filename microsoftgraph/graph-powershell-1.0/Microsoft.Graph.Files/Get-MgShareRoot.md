@@ -34,6 +34,8 @@ Get-MgShareRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 Used to access the underlying driveItem.
 Deprecated -- use driveItem instead.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -43,6 +43,8 @@ Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlo
 ## DESCRIPTION
 Get includeApplications from identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -24,6 +24,8 @@ Remove-MgBetaPolicyAuthenticationMethodPolicy [-IfMatch <String>] [-ResponseHead
 ## DESCRIPTION
 Delete navigation property authenticationMethodsPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

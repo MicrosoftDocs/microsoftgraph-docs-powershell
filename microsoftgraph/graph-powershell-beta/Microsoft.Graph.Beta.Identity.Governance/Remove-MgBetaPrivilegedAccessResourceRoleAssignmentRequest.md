@@ -30,6 +30,8 @@ Remove-MgBetaPrivilegedAccessResourceRoleAssignmentRequest -InputObject <IIdenti
 ## DESCRIPTION
 Delete navigation property roleAssignmentRequests for privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GovernanceResourceId

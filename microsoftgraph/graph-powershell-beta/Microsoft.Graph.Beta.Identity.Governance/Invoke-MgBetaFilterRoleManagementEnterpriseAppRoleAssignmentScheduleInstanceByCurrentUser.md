@@ -33,6 +33,8 @@ Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceByCu
 ## DESCRIPTION
 Get the instances of active role assignments for the calling principal.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

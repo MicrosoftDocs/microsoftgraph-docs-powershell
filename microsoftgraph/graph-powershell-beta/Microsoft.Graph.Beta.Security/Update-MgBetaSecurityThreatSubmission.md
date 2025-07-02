@@ -32,6 +32,8 @@ Update-MgBetaSecurityThreatSubmission -BodyParameter <IMicrosoftGraphSecurityThr
 ## DESCRIPTION
 Update the navigation property threatSubmission in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -24,6 +24,8 @@ Remove-MgBetaAdminSharepointSetting [-IfMatch <String>] [-ResponseHeadersVariabl
 ## DESCRIPTION
 Delete navigation property settings for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

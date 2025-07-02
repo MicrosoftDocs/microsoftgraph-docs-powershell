@@ -51,6 +51,8 @@ Update-MgBetaSecurityIPSecurityProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property ipSecurityProfiles in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityGroupNames

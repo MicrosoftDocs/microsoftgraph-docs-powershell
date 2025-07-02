@@ -49,6 +49,8 @@ Update-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManageme
 ## DESCRIPTION
 Update the navigation property alertRecords in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

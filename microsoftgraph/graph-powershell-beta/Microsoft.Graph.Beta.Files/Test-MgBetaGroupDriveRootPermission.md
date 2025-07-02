@@ -48,6 +48,8 @@ Test-MgBetaGroupDriveRootPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action validatePermission
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

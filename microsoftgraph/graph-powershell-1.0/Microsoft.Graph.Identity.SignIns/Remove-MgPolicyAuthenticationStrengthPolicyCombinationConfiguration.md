@@ -33,6 +33,8 @@ Remove-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject
 ## DESCRIPTION
 Delete navigation property combinationConfigurations for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationCombinationConfigurationId

@@ -52,6 +52,8 @@ Update-MgBetaUserManagedDeviceWindowsDeviceAccount -InputObject <IDevicesCorpora
 ## DESCRIPTION
 Invoke action updateWindowsDeviceAccount
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

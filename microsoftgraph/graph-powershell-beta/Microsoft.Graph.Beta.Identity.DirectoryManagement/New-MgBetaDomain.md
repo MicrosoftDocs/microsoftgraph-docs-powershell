@@ -60,6 +60,8 @@ For example, subdomain.contoso.com is automatically be verified if contoso.com h
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Domain.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

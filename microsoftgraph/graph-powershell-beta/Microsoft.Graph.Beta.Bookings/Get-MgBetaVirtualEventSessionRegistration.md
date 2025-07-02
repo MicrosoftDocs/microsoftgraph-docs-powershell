@@ -38,6 +38,8 @@ Get-MgBetaVirtualEventSessionRegistration -InputObject <IBookingsIdentity> [-Exp
 ## DESCRIPTION
 Get registrations from solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

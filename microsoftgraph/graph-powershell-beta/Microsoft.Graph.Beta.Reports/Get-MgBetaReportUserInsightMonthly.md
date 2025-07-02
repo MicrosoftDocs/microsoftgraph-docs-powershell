@@ -21,6 +21,8 @@ Get-MgBetaReportUserInsightMonthly [-ExpandProperty <String[]>] [-Property <Stri
 ## DESCRIPTION
 Summaries of monthly user activities on apps registered in your tenant that is configured for Microsoft Entra External ID for customers.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -30,6 +30,8 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity> [
 ## DESCRIPTION
 Remove an ediscoveryCaseMember from an ediscoveryCase.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

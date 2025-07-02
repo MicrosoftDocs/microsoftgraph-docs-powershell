@@ -57,6 +57,8 @@ Create new navigation property to agents for onPremisesPublishingProfiles
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -49,6 +49,8 @@ New-MgBetaSecurityAuditLogQueryRecord -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Create new navigation property to records for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

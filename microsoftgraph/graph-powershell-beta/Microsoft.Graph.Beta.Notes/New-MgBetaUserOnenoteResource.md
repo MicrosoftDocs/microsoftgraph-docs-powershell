@@ -48,6 +48,8 @@ New-MgBetaUserOnenoteResource -InputObject <INotesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to resources for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

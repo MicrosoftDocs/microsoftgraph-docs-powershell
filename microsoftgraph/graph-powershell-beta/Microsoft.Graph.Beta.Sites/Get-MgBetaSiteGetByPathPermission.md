@@ -27,6 +27,8 @@ Get-MgBetaSiteGetByPathPermission -Path <String> -SiteId <String> [-ExpandProper
 The permissions associated with the site.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

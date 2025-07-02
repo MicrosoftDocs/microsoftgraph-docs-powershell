@@ -35,6 +35,8 @@ Get-MgBetaGroupDriveRootListItemActivityByInterval -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

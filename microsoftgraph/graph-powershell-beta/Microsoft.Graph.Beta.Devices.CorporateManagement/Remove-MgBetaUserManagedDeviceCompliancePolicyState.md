@@ -33,6 +33,8 @@ Remove-MgBetaUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Delete navigation property deviceCompliancePolicyStates for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceCompliancePolicyStateId

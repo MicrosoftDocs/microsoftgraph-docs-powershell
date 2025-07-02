@@ -51,6 +51,8 @@ Update-MgBetaDirectoryImpactedResource -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Update the navigation property impactedResources in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AddedDateTime

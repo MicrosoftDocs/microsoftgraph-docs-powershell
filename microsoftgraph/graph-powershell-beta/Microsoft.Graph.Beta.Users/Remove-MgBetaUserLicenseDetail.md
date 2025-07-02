@@ -32,6 +32,8 @@ Remove-MgBetaUserLicenseDetail -InputObject <IUsersIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property licenseDetails for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

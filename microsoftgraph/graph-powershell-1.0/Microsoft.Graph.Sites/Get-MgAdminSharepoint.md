@@ -23,6 +23,8 @@ Get-MgAdminSharepoint [-ExpandProperty <String[]>] [-Property <String[]>] [-Resp
 ## DESCRIPTION
 Get sharepoint from admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

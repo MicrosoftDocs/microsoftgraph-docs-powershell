@@ -50,6 +50,8 @@ New-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to timeOffReasons for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

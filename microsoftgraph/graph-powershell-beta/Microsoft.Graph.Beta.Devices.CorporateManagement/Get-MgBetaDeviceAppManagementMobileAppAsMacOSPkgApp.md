@@ -37,6 +37,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgApp -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.macOSPkgApp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

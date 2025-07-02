@@ -33,6 +33,8 @@ Update-MgBetaSecurityPartnerSecurityScore -BodyParameter <IMicrosoftGraphPartner
 ## DESCRIPTION
 Update the navigation property securityScore in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

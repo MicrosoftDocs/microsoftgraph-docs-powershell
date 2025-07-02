@@ -51,6 +51,8 @@ Update-MgBetaPrivilegedAccessResourceRoleAssignmentRequestRoleDefinition
 ## DESCRIPTION
 Update the navigation property roleDefinition in privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

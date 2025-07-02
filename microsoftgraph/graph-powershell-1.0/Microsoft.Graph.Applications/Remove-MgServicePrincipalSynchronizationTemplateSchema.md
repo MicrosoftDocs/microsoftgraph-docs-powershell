@@ -33,6 +33,8 @@ Remove-MgServicePrincipalSynchronizationTemplateSchema -InputObject <IApplicatio
 ## DESCRIPTION
 Delete navigation property schema for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

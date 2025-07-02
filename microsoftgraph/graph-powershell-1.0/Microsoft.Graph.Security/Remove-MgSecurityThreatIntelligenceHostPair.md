@@ -32,6 +32,8 @@ Remove-MgSecurityThreatIntelligenceHostPair -InputObject <ISecurityIdentity> [-I
 ## DESCRIPTION
 Delete navigation property hostPairs for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

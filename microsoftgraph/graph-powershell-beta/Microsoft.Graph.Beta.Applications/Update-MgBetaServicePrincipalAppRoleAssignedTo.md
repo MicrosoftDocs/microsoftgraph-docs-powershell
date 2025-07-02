@@ -50,6 +50,8 @@ Update-MgBetaServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdenti
 ## DESCRIPTION
 Update the navigation property appRoleAssignedTo in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

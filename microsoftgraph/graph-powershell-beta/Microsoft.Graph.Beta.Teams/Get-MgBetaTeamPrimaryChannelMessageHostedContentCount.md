@@ -32,6 +32,8 @@ Get-MgBetaTeamPrimaryChannelMessageHostedContentCount -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatMessageId

@@ -49,6 +49,8 @@ Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicatio
 ## DESCRIPTION
 Update the navigation property agents in onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

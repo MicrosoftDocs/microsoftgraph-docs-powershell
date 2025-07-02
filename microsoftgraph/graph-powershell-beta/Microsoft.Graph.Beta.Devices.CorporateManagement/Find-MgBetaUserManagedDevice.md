@@ -32,6 +32,8 @@ Find-MgBetaUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity>
 ## DESCRIPTION
 Locate a device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -170,6 +170,8 @@ Update the navigation property androidManagedAppProtections in deviceAppManageme
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

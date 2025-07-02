@@ -35,6 +35,8 @@ Get-MgBetaEducationMeAssignmentCategoryDelta -InputObject <IEducationIdentity> [
 ## DESCRIPTION
 Get a list of newly created or updated educationCategory objects without performing a full read of the collection.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Remove-MgBetaDeviceAppManagementManagedAppRegistration -InputObject <IDevicesCor
 ## DESCRIPTION
 Delete navigation property managedAppRegistrations for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

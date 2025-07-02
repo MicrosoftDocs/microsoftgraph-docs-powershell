@@ -23,6 +23,8 @@ Get-MgBetaSecurityCase [-ExpandProperty <String[]>] [-Property <String[]>] [-Res
 ## DESCRIPTION
 Get cases from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

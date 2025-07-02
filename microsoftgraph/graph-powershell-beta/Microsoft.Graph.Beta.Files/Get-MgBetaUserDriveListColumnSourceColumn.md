@@ -32,6 +32,8 @@ Get-MgBetaUserDriveListColumnSourceColumn -InputObject <IFilesIdentity> [-Expand
 ## DESCRIPTION
 The source column for content type column.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId

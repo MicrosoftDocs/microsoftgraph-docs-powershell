@@ -49,6 +49,8 @@ Update-MgBetaTenantRelationshipManagedTenantAuditEvent -InputObject <IManagedTen
 ## DESCRIPTION
 Update the navigation property auditEvents in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

@@ -30,6 +30,8 @@ Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineAccount -InputObject <
 ## DESCRIPTION
 Get account from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

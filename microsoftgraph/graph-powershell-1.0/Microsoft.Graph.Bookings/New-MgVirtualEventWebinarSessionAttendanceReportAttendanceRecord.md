@@ -52,6 +52,8 @@ New-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord -InputObject <I
 ## DESCRIPTION
 Create new navigation property to attendanceRecords for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

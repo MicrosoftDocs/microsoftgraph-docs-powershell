@@ -32,6 +32,8 @@ Send-MgBetaAccessReviewInstanceReminder -InputObject <IIdentityGovernanceIdentit
 In the Microsoft Entra access reviews feature, send a reminder to the reviewers of a currently active accessReview.
 The target object can be either a one-time access review, or an instance of a recurring access review.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewId

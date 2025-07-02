@@ -40,6 +40,8 @@ Get-MgBetaDriveListContentTypeColumn -InputObject <IFilesIdentity> [-ExpandPrope
 ## DESCRIPTION
 The collection of column definitions for this content type.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

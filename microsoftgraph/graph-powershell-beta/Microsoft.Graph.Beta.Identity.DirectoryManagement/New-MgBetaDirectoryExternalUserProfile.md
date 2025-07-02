@@ -39,6 +39,8 @@ Create new navigation property to externalUserProfiles for directory
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ExternalUserProfile.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

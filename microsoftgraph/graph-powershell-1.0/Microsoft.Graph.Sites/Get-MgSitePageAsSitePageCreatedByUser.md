@@ -34,6 +34,8 @@ Get-MgSitePageAsSitePageCreatedByUser -InputObject <ISitesIdentity> [-ExpandProp
 Identity of the user who created the item.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

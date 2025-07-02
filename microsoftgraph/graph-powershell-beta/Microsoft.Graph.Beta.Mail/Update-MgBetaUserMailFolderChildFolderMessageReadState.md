@@ -48,6 +48,8 @@ Update-MgBetaUserMailFolderChildFolderMessageReadState -InputObject <IMailIdenti
 ## DESCRIPTION
 Invoke action updateAllMessagesReadState
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

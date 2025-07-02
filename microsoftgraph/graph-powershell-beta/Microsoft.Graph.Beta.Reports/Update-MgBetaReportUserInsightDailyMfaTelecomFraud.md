@@ -47,6 +47,8 @@ Update-MgBetaReportUserInsightDailyMfaTelecomFraud -InputObject <IReportsIdentit
 ## DESCRIPTION
 Update the navigation property mfaTelecomFraud in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

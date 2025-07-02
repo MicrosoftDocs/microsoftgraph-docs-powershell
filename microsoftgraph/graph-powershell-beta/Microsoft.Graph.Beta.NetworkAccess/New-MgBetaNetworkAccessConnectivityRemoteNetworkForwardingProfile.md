@@ -51,6 +51,8 @@ New-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile -InputObject <
 ## DESCRIPTION
 Create new navigation property to forwardingProfiles for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

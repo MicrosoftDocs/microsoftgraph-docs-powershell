@@ -39,6 +39,8 @@ Delete navigation property microsoftTunnelServerLogCollectionResponses for devic
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

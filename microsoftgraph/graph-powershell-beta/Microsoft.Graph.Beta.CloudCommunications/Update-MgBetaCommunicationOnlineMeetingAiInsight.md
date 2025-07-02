@@ -49,6 +49,8 @@ Update-MgBetaCommunicationOnlineMeetingAiInsight -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Update the navigation property aiInsights in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionItems

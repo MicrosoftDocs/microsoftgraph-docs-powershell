@@ -31,6 +31,8 @@ Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVersi
 ## DESCRIPTION
 The group policy category associated with the definition.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

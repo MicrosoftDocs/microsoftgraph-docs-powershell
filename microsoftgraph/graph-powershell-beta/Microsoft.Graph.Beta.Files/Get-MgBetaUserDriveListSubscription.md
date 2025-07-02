@@ -40,6 +40,8 @@ Get-MgBetaUserDriveListSubscription -InputObject <IFilesIdentity> [-ExpandProper
 ## DESCRIPTION
 The set of subscriptions on the list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

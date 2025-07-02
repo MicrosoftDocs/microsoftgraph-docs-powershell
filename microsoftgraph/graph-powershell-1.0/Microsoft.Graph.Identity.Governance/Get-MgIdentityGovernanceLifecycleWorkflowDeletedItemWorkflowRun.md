@@ -40,6 +40,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun -InputObject <II
 ## DESCRIPTION
 Workflow runs.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -68,6 +68,8 @@ New-MgVirtualEventSession -InputObject <IBookingsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to sessions for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

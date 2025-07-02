@@ -54,6 +54,8 @@ Update-MgBetaPrivacySubjectRightsRequestApproverMailboxSetting -InputObject <ICo
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

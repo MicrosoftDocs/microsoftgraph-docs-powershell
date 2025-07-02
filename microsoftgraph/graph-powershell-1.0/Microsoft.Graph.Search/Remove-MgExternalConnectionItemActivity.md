@@ -32,6 +32,8 @@ Remove-MgExternalConnectionItemActivity -InputObject <ISearchIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property activities for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExternalActivityId

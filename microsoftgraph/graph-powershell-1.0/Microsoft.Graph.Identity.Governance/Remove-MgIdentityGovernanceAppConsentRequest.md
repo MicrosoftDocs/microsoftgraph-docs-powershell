@@ -32,6 +32,8 @@ Remove-MgIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceId
 ## DESCRIPTION
 Delete navigation property appConsentRequests for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppConsentRequestId

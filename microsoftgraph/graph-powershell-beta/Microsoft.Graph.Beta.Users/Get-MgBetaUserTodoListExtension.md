@@ -42,6 +42,8 @@ Get-MgBetaUserTodoListExtension -InputObject <IUsersIdentity> [-ExpandProperty <
 The collection of open extensions defined for the task list.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

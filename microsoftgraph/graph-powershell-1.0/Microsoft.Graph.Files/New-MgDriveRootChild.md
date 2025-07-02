@@ -81,6 +81,8 @@ New-MgDriveRootChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to children for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

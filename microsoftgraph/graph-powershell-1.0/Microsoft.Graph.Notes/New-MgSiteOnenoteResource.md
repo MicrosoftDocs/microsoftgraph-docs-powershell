@@ -48,6 +48,8 @@ New-MgSiteOnenoteResource -InputObject <INotesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to resources for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

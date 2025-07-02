@@ -44,6 +44,8 @@ Get-MgReportEmailActivityUserDetail -InputObject <IReportsIdentity> -OutFile <St
 ## DESCRIPTION
 Get details about email activity users have performed.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

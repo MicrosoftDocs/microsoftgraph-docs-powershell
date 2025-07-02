@@ -41,6 +41,8 @@ Get-MgDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Read the properties and relationships of an onPremisesDirectorySynchronization object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

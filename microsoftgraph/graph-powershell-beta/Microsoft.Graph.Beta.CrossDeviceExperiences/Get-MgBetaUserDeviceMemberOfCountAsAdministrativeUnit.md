@@ -29,6 +29,8 @@ Get-MgBetaUserDeviceMemberOfCountAsAdministrativeUnit -InputObject <ICrossDevice
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

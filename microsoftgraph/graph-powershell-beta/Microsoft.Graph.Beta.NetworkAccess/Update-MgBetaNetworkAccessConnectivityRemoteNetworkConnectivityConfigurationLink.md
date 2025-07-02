@@ -51,6 +51,8 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
 ## DESCRIPTION
 Update the navigation property links in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

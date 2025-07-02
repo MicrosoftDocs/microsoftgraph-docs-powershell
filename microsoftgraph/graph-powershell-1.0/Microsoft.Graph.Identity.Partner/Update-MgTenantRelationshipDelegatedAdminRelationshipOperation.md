@@ -51,6 +51,8 @@ Update-MgTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <IId
 ## DESCRIPTION
 Update the navigation property operations in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

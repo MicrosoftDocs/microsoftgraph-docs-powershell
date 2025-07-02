@@ -78,6 +78,8 @@ New-MgBetaTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to allMembers for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

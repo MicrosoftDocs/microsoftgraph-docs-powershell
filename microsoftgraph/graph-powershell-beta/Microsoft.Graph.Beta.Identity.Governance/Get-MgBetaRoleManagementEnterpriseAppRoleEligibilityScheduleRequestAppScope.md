@@ -35,6 +35,8 @@ Read-only property with details of the app-specific scope when the role eligibil
 Nullable.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

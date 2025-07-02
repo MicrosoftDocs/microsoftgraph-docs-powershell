@@ -46,6 +46,8 @@ New-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow -Input
 ## DESCRIPTION
 Create new navigation property to provisioningFlows for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

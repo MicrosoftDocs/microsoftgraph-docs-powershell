@@ -40,6 +40,8 @@ Get-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
 ## DESCRIPTION
 Get customWorkflowExtensions from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

@@ -34,6 +34,8 @@ Find-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyByMethodMode
 ## DESCRIPTION
 Get a list of the authenticationStrengthPolicy objects and their properties filtered to only include policies that include the authentication method mode specified in the request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationMethodModes

@@ -62,6 +62,8 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance -InputObject <IIdentit
 ## DESCRIPTION
 Represents the current status of a user's response to a company's customizable terms of use agreement.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementAcceptanceId

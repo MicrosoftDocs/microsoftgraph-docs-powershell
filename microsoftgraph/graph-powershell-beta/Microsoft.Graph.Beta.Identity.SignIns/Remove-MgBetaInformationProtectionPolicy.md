@@ -21,6 +21,8 @@ Remove-MgBetaInformationProtectionPolicy [-IfMatch <String>] [-ResponseHeadersVa
 ## DESCRIPTION
 Delete navigation property policy for informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

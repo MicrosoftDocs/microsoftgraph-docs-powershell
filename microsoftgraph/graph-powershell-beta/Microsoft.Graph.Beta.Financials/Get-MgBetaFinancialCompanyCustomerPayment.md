@@ -37,6 +37,8 @@ Get-MgBetaFinancialCompanyCustomerPayment -InputObject <IFinancialsIdentity> [-E
 ## DESCRIPTION
 Get customerPayments from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

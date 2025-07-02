@@ -61,6 +61,8 @@ Create new navigation property to mdmWindowsInformationProtectionPolicies for de
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

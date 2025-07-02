@@ -32,6 +32,8 @@ Remove-MgDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Delete navigation property scopedMembers for directoryRoles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectoryRoleId

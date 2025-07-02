@@ -44,6 +44,8 @@ Get-MgReportEmailAppUsageUserDetail -InputObject <IReportsIdentity> -OutFile <St
 ## DESCRIPTION
 Get details about which activities users performed on the various email apps.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

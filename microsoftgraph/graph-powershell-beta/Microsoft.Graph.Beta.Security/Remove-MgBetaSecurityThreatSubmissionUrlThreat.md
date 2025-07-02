@@ -29,6 +29,8 @@ Remove-MgBetaSecurityThreatSubmissionUrlThreat -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete navigation property urlThreats for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

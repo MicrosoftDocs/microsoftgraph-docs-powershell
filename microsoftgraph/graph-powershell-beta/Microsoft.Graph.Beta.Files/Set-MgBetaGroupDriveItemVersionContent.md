@@ -33,6 +33,8 @@ Set-MgBetaGroupDriveItemVersionContent -InputObject <IFilesIdentity> [-Data <Str
 ## DESCRIPTION
 Update content for the navigation property versions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

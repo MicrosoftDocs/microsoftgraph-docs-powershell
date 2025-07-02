@@ -52,6 +52,8 @@ Remove-MgTeamworkDeletedTeamChannelAllMember -InputObject <ITeamsIdentity>
 Remove multiple members from a team in a single request.
 The response provides details about which memberships could and couldn't be removed.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

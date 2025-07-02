@@ -24,6 +24,8 @@ Get-MgBetaInvitation [-ExpandProperty <String[]>] [-Filter <String>] [-Property 
 ## DESCRIPTION
 Get entities from invitations
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

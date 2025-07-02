@@ -25,6 +25,8 @@ Get-MgGroupSiteGetByPathExternalColumn -GroupId <String> -Path <String> -SiteId 
 ## DESCRIPTION
 Get externalColumns from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

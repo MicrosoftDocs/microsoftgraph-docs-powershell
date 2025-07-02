@@ -55,6 +55,8 @@ Update-MgEntitlementManagementResourceRequestCatalog -InputObject <IIdentityGove
 ## DESCRIPTION
 Update the navigation property catalog in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

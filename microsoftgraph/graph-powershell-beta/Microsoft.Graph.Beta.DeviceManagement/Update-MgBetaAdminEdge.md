@@ -31,6 +31,8 @@ Update-MgBetaAdminEdge -BodyParameter <IMicrosoftGraphEdge> [-ResponseHeadersVar
 ## DESCRIPTION
 Update the navigation property edge in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

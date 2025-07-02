@@ -30,6 +30,8 @@ Get-MgBetaOnPremisePublishingProfileConnectorMemberOfCount -InputObject <IApplic
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConnectorId

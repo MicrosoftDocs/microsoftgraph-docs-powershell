@@ -52,6 +52,8 @@ Update-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject 
 ## DESCRIPTION
 Update the navigation property localizations in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

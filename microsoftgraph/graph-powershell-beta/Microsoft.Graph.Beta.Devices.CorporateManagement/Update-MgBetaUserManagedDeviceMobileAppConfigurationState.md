@@ -52,6 +52,8 @@ Update-MgBetaUserManagedDeviceMobileAppConfigurationState -InputObject <IDevices
 ## DESCRIPTION
 Update the navigation property managedDeviceMobileAppConfigurationStates in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

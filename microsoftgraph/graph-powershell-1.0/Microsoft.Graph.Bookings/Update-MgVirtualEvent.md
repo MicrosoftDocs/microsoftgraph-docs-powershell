@@ -56,6 +56,8 @@ Update-MgVirtualEvent -InputObject <IBookingsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property events in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

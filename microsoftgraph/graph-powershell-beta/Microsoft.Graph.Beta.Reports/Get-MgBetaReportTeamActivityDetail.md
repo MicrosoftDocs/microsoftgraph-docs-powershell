@@ -44,6 +44,8 @@ Get-MgBetaReportTeamActivityDetail -InputObject <IReportsIdentity> -OutFile <Str
 ## DESCRIPTION
 Invoke function getTeamsTeamActivityDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

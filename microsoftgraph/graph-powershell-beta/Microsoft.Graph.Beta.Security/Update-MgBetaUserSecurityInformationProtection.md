@@ -47,6 +47,8 @@ Update-MgBetaUserSecurityInformationProtection -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property informationProtection in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

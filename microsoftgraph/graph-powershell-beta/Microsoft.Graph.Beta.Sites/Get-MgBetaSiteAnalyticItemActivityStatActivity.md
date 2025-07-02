@@ -40,6 +40,8 @@ Get-MgBetaSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity> [-E
 ## DESCRIPTION
 Exposes the itemActivities represented in this itemActivityStat resource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

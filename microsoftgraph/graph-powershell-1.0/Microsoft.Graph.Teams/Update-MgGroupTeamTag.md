@@ -48,6 +48,8 @@ Update-MgGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the navigation property tags in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

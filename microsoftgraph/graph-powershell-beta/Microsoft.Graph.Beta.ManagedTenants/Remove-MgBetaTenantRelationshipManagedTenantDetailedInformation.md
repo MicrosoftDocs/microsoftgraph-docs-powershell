@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantDetailedInformation -InputObject <IM
 ## DESCRIPTION
 Delete navigation property tenantsDetailedInformation for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

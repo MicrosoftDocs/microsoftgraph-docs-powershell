@@ -50,6 +50,8 @@ Add-MgBetaWindowsUpdatesDeploymentAudienceMemberById -InputObject <IWindowsUpdat
 Add members of the same type to an updatableAssetGroup.
 You can also use the method addMembers to add members.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

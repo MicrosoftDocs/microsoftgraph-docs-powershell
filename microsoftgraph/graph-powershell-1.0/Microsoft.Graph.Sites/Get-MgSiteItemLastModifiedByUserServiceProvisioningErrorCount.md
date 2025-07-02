@@ -32,6 +32,8 @@ Get-MgSiteItemLastModifiedByUserServiceProvisioningErrorCount -InputObject <ISit
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

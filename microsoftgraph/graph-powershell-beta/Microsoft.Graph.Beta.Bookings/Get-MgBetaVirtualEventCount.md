@@ -23,6 +23,8 @@ Get-MgBetaVirtualEventCount [-Filter <String>] [-Search <String>] [-ResponseHead
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

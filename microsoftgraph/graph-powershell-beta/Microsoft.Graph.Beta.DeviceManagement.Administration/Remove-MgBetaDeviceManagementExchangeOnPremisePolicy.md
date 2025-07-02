@@ -36,6 +36,8 @@ Remove-MgBetaDeviceManagementExchangeOnPremisePolicy -InputObject <IDeviceManage
 ## DESCRIPTION
 Delete navigation property exchangeOnPremisesPolicies for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementExchangeOnPremisesPolicyId

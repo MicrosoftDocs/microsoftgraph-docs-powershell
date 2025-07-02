@@ -32,6 +32,8 @@ Remove-MgGroupDriveListContentTypeColumnLink -InputObject <IFilesIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property columnLinks for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnLinkId

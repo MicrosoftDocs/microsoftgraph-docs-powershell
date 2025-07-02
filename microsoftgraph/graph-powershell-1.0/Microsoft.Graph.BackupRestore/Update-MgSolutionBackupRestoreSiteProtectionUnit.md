@@ -52,6 +52,8 @@ Update-MgSolutionBackupRestoreSiteProtectionUnit -InputObject <IBackupRestoreIde
 ## DESCRIPTION
 Update the navigation property siteProtectionUnits in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

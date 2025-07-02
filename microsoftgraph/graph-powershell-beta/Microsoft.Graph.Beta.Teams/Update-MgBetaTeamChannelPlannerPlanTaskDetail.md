@@ -52,6 +52,8 @@ Update-MgBetaTeamChannelPlannerPlanTaskDetail -InputObject <ITeamsIdentity> -IfM
 ## DESCRIPTION
 Update the navigation property details in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

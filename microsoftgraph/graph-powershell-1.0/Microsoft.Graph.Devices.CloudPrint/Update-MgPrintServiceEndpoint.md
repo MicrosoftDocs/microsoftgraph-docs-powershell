@@ -47,6 +47,8 @@ Update-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update the navigation property endpoints in print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

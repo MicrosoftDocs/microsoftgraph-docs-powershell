@@ -57,6 +57,8 @@ Update-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance
 ## DESCRIPTION
 Update the navigation property eligibilityScheduleInstances in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessId

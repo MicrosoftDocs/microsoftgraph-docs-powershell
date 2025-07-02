@@ -35,6 +35,8 @@ New-MgBetaDeviceManagementScript -BodyParameter <IMicrosoftGraphDeviceManagement
 ## DESCRIPTION
 Create new navigation property to deviceManagementScripts for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

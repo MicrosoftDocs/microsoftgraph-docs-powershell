@@ -55,6 +55,8 @@ Trigger action on ConfigurationManager client
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

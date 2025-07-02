@@ -40,6 +40,8 @@ Get-MgBetaSecuritySubjectRightsRequestApprover -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Get approvers from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

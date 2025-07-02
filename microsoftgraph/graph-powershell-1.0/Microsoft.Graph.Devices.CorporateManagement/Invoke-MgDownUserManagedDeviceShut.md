@@ -33,6 +33,8 @@ Invoke-MgDownUserManagedDeviceShut -InputObject <IDevicesCorporateManagementIden
 ## DESCRIPTION
 Shut down device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

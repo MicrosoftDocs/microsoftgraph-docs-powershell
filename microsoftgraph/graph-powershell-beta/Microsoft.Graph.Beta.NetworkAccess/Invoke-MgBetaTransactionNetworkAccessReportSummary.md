@@ -38,6 +38,8 @@ Get the total number of transactions and the number of blocked transactions, gro
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess-Reports.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

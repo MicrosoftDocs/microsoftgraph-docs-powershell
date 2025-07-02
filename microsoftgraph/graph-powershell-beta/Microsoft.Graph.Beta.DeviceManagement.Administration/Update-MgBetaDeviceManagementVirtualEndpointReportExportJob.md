@@ -49,6 +49,8 @@ Update-MgBetaDeviceManagementVirtualEndpointReportExportJob
 ## DESCRIPTION
 Update the navigation property exportJobs in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

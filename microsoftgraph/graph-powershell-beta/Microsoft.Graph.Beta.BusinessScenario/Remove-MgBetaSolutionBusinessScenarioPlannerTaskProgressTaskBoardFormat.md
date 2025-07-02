@@ -31,6 +31,8 @@ Remove-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat
 ## DESCRIPTION
 Delete navigation property progressTaskBoardFormat for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BusinessScenarioId

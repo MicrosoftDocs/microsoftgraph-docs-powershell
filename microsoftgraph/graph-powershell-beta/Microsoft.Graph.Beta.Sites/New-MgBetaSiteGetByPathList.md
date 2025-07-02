@@ -64,6 +64,8 @@ New-MgBetaSiteGetByPathList -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to lists for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

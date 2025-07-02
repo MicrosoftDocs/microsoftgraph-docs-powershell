@@ -45,6 +45,8 @@ Create new navigation property to mobileAppTroubleshootingEvents for deviceManag
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

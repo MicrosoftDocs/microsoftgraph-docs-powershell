@@ -32,6 +32,8 @@ Remove-MgGroupSiteOnenoteSectionGroup -InputObject <ISitesIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property sectionGroups for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

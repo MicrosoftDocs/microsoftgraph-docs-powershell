@@ -47,6 +47,8 @@ New-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship
 ## DESCRIPTION
 Create new navigation property to relationships for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

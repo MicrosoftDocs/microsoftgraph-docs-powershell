@@ -55,6 +55,8 @@ Update-MgBetaSecurityFileSecurityProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property fileSecurityProfiles in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityGroupNames

@@ -35,6 +35,8 @@ Suspend-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 Temporarily stop a running synchronization job.
 All the progress, including job state, is persisted, and the job continues from where it left off when a start call is made.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

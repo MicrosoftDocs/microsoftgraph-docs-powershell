@@ -57,6 +57,8 @@ Send-MgBetaUserChatActivityNotification -InputObject <ITeamsIdentity>
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityType

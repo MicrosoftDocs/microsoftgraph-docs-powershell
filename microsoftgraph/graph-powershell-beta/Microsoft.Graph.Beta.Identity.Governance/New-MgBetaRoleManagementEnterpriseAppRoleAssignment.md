@@ -51,6 +51,8 @@ New-MgBetaRoleManagementEnterpriseAppRoleAssignment -InputObject <IIdentityGover
 ## DESCRIPTION
 Create new navigation property to roleAssignments for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

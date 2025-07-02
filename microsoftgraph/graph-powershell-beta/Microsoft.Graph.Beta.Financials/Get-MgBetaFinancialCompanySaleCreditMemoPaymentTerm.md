@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanySaleCreditMemoPaymentTerm -InputObject <IFinancialsIde
 ## DESCRIPTION
 Get paymentTerm from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

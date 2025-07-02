@@ -36,6 +36,8 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGrou
 References the group that is the scope of the membership or ownership eligibility through PIM for groups.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

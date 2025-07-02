@@ -45,6 +45,8 @@ Update-MgBetaDomainSharedEmailDomainInvitation -InputObject <IIdentityDirectoryM
 ## DESCRIPTION
 Update the navigation property sharedEmailDomainInvitations in domains
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

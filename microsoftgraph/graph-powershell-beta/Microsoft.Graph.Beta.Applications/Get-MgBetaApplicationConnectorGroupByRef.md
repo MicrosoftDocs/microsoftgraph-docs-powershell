@@ -30,6 +30,8 @@ Get-MgBetaApplicationConnectorGroupByRef -InputObject <IApplicationsIdentity>
 The connectorGroup the application is using with Microsoft Entra application proxy.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

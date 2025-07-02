@@ -46,6 +46,8 @@ The collection of open extensions defined for the contact.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

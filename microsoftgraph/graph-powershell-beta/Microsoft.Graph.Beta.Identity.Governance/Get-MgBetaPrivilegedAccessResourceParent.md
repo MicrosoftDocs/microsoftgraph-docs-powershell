@@ -33,6 +33,8 @@ Read-only.
 The parent resource.
 for pimforazurerbac scenario, it can represent the subscription the resource belongs to.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

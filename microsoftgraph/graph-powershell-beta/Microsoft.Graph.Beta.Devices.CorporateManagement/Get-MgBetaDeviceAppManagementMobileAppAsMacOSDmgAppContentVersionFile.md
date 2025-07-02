@@ -43,6 +43,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile
 ## DESCRIPTION
 The list of files for this app content version.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

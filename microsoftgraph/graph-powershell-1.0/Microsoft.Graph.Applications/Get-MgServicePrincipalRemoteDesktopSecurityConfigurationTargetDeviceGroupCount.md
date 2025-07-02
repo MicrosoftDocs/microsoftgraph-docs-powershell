@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.Read.All, Directory.ReadWrite.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Application-RemoteDesktopConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

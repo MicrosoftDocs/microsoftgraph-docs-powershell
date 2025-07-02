@@ -76,6 +76,8 @@ Update the navigation property columns in sites
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -21,6 +21,8 @@ Get-MgBetaEducationReport [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Get reports from education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

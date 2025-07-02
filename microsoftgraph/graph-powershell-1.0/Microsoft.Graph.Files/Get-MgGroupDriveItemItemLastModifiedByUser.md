@@ -34,6 +34,8 @@ Get-MgGroupDriveItemItemLastModifiedByUser -InputObject <IFilesIdentity> [-Expan
 Identity of the user who last modified the item.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

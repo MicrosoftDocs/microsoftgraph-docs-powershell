@@ -29,6 +29,8 @@ Get-MgBetaGroupSiteRecycleBinItemLastModifiedByUser -InputObject <ISitesIdentity
 ## DESCRIPTION
 Get lastModifiedByUser from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -50,6 +50,8 @@ Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Update the navigation property dashboardCards in appCatalogs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

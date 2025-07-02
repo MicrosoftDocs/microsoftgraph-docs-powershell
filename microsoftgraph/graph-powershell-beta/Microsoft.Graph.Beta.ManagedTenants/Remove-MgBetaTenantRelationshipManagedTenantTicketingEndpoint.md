@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantTicketingEndpoint -InputObject <IMan
 ## DESCRIPTION
 Delete navigation property managedTenantTicketingEndpoints for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -29,6 +29,8 @@ Get-MgBetaVirtualEventSessionByJoinWebUrl -InputObject <IBookingsIdentity> [-Exp
 ## DESCRIPTION
 The sessions for the virtual event.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

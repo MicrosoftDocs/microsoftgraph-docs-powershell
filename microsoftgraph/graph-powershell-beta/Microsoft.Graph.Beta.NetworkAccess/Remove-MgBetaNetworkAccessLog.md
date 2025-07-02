@@ -20,6 +20,8 @@ Remove-MgBetaNetworkAccessLog [-IfMatch <String>] [-ResponseHeadersVariable <Str
 ## DESCRIPTION
 Delete navigation property logs for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -50,6 +50,8 @@ Update-MgIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceId
 ## DESCRIPTION
 Update the navigation property appConsentRequests in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

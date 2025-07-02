@@ -26,6 +26,8 @@ List of onPremisesAgentGroups that a publishedResource is assigned to.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

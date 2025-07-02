@@ -29,6 +29,8 @@ Remove-MgBetaNetworkAccessLogTraffic -InputObject <INetworkAccessIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property traffic for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

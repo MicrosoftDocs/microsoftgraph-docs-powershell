@@ -45,6 +45,8 @@ New-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommun
 ## DESCRIPTION
 Create new navigation property to customQuestions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

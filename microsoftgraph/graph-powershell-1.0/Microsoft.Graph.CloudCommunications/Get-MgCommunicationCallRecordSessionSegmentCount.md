@@ -32,6 +32,8 @@ Get-MgCommunicationCallRecordSessionSegmentCount -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallRecordId

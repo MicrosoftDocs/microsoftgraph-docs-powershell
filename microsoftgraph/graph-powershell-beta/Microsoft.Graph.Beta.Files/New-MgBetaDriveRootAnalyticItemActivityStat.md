@@ -54,6 +54,8 @@ New-MgBetaDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Access

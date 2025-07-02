@@ -44,6 +44,8 @@ The collection of open extensions defined for the user.
 Supports $expand.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

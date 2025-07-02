@@ -37,6 +37,8 @@ Get a summary of the cross-tenant access patterns.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess-Reports.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DiscoveryPivotDateTime

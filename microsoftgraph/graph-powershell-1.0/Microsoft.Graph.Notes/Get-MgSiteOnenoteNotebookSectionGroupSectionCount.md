@@ -32,6 +32,8 @@ Get-MgSiteOnenoteNotebookSectionGroupSectionCount -InputObject <INotesIdentity> 
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

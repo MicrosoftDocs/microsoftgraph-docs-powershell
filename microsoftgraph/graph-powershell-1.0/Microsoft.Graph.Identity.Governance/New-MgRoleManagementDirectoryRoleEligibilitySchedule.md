@@ -37,6 +37,8 @@ New-MgRoleManagementDirectoryRoleEligibilitySchedule
 ## DESCRIPTION
 Create new navigation property to roleEligibilitySchedules for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

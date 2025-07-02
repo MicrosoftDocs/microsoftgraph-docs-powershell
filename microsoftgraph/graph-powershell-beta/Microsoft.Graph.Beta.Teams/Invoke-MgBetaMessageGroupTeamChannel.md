@@ -39,6 +39,8 @@ Invoke function allMessages
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

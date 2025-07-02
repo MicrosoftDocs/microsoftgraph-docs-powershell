@@ -60,6 +60,8 @@ Get-MgBetaTenantRelationshipManagedTenantAlertLog -InputObject <IManagedTenantsI
 ## DESCRIPTION
 Get managedTenantAlertLogs from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

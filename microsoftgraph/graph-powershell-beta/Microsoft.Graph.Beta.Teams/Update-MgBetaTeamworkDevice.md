@@ -55,6 +55,8 @@ Update-MgBetaTeamworkDevice -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property devices in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

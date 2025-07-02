@@ -48,6 +48,8 @@ New-MgExternalConnectionItemActivity -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create new navigation property to activities for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

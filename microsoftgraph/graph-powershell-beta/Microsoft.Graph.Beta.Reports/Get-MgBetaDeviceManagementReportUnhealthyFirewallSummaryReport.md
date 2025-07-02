@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportUnhealthyFirewallSummaryReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getUnhealthyFirewallSummaryReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -47,6 +47,8 @@ Update-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy -InputObject
 ## DESCRIPTION
 Update the navigation property policies in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

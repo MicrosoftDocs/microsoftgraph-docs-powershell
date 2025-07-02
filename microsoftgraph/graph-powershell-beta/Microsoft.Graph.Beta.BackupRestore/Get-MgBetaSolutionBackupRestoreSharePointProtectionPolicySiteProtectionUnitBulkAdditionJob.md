@@ -42,6 +42,8 @@ Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnitBulkA
 ## DESCRIPTION
 Get a siteProtectionUnitsBulkAdditionJob object by the ID associated with a sharePointProtectionPolicy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

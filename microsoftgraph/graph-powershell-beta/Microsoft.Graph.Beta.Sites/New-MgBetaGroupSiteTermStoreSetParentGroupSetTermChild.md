@@ -57,6 +57,8 @@ New-MgBetaGroupSiteTermStoreSetParentGroupSetTermChild -InputObject <ISitesIdent
 ## DESCRIPTION
 Create new navigation property to children for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

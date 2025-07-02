@@ -44,6 +44,8 @@ Update-MgBetaSecurityThreatIntelligence -BodyParameter <IMicrosoftGraphSecurityT
 ## DESCRIPTION
 Update the navigation property threatIntelligence in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

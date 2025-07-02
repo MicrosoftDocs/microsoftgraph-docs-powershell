@@ -29,6 +29,8 @@ Remove-MgBetaWindowsUpdatesPolicyAudienceExclusion -InputObject <IWindowsUpdates
 ## DESCRIPTION
 Delete navigation property exclusions for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

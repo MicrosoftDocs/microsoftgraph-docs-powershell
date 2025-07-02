@@ -45,6 +45,8 @@ Remove-MgEntitlementManagementCatalogResourceScopeResourceRole -InputObject <IId
 ## DESCRIPTION
 Delete navigation property roles for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId

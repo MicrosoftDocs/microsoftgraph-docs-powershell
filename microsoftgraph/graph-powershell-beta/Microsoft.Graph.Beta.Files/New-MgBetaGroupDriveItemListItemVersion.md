@@ -50,6 +50,8 @@ New-MgBetaGroupDriveItemListItemVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to versions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -45,6 +45,8 @@ Get-MgReportOneDriveUsageAccountDetail -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Get details about OneDrive usage by account.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

@@ -32,6 +32,8 @@ Remove-MgBetaIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIden
 ## DESCRIPTION
 Delete navigation property historyDefinitions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewHistoryDefinitionId

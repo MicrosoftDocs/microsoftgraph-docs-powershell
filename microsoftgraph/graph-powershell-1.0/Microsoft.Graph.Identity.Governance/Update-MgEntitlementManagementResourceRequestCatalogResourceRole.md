@@ -115,6 +115,8 @@ Update-MgEntitlementManagementResourceRequestCatalogResourceRole -InputObject <I
 ## DESCRIPTION
 Update the navigation property resourceRoles in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

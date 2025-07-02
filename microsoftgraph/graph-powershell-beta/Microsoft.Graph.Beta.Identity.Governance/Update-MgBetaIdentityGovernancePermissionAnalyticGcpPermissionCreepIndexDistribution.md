@@ -51,6 +51,8 @@ Update-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribu
 ## DESCRIPTION
 Update the navigation property permissionsCreepIndexDistributions in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

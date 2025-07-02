@@ -30,6 +30,8 @@ New-MgBetaDirectorySettingTemplate -BodyParameter <IMicrosoftGraphDirectorySetti
 ## DESCRIPTION
 Add new entity to directorySettingTemplates
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -49,6 +49,8 @@ Update-MgBetaUserChatMessageReplyHostedContent -InputObject <ITeamsIdentity> -Bo
 ## DESCRIPTION
 Update the navigation property hostedContents in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

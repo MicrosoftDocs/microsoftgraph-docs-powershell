@@ -47,6 +47,8 @@ Update-MgBetaWindowsUpdatesProductKnownIssueResolvingKnowledgeBaseArticle
 ## DESCRIPTION
 Update the navigation property resolvingKnowledgeBaseArticle in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

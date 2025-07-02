@@ -33,6 +33,8 @@ New-MgSecurityThreatIntelligenceProfileIndicator
 ## DESCRIPTION
 Create new navigation property to intelligenceProfileIndicators for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

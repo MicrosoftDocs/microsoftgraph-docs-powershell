@@ -32,6 +32,8 @@ Remove-MgGroupDriveItemListItemVersion -InputObject <IFilesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property versions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

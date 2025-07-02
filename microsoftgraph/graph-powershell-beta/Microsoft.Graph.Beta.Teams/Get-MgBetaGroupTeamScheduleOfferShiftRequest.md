@@ -40,6 +40,8 @@ Get-MgBetaGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-Exp
 ## DESCRIPTION
 The offer requests for shifts in the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

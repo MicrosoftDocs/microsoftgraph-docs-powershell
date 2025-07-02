@@ -34,6 +34,8 @@ New-MgBetaSolutionBackupRestoreProtectionPolicy -BodyParameter <IMicrosoftGraphP
 ## DESCRIPTION
 Create new navigation property to protectionPolicies for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

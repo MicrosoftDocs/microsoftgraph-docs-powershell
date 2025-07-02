@@ -35,6 +35,8 @@ Get-MgGroupSiteOnenoteSectionGroupSectionPageParentNotebook -InputObject <ISites
 The notebook that contains the page.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

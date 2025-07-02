@@ -32,6 +32,8 @@ Remove-MgBetaGroupTeamTagMember -InputObject <ITeamsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property members for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

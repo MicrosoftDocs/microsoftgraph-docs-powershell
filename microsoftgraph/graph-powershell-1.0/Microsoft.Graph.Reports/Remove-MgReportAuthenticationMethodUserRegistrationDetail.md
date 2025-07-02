@@ -32,6 +32,8 @@ Remove-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReports
 ## DESCRIPTION
 Delete navigation property userRegistrationDetails for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -42,6 +42,8 @@ Get-MgBetaGroupTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> [-ExpandP
 A collection of all the messages in the channel.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

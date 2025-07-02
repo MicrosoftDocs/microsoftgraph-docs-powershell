@@ -40,6 +40,8 @@ Delete navigation property appDefinitions for appCatalogs
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

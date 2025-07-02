@@ -40,6 +40,8 @@ Invoke action permanentDelete
 | Delegated (personal Microsoft account) | Contacts.ReadWrite,  |
 | Application | Contacts.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContactFolderId

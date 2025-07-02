@@ -32,6 +32,8 @@ Get-MgUserDriveRootChildContent -InputObject <IFilesIdentity> [-Format <String>]
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

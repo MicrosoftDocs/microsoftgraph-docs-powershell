@@ -33,6 +33,8 @@ Remove-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildRelation -InputObject <
 ## DESCRIPTION
 Delete navigation property relations for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

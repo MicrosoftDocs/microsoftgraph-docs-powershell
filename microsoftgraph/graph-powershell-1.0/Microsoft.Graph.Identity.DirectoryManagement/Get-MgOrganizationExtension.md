@@ -44,6 +44,8 @@ The collection of open extensions defined for the organization.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

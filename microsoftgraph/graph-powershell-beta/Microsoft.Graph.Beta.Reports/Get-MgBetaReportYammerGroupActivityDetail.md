@@ -46,6 +46,8 @@ Get-MgBetaReportYammerGroupActivityDetail -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Invoke function getYammerGroupsActivityDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

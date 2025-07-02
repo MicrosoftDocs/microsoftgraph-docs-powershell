@@ -32,6 +32,8 @@ Remove-MgUserManagedDeviceCategory -InputObject <IDevicesCorporateManagementIden
 ## DESCRIPTION
 Delete navigation property deviceCategory for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

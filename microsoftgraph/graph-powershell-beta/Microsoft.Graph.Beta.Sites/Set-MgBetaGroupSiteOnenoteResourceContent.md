@@ -32,6 +32,8 @@ Set-MgBetaGroupSiteOnenoteResourceContent -InputObject <ISitesIdentity> [-Data <
 ## DESCRIPTION
 The content of the resource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

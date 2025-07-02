@@ -24,6 +24,8 @@ Get-MgSecurityThreatIntelligence [-ExpandProperty <String[]>] [-Property <String
 ## DESCRIPTION
 Get threatIntelligence from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

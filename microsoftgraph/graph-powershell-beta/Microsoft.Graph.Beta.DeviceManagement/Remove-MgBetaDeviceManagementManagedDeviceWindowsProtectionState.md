@@ -32,6 +32,8 @@ Remove-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -InputObject <I
 ## DESCRIPTION
 Delete navigation property windowsProtectionState for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

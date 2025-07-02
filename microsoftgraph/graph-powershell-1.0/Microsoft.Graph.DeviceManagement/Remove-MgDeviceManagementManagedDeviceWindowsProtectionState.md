@@ -32,6 +32,8 @@ Remove-MgDeviceManagementManagedDeviceWindowsProtectionState -InputObject <IDevi
 ## DESCRIPTION
 Delete navigation property windowsProtectionState for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

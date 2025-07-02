@@ -30,6 +30,8 @@ New-MgBetaDeviceManagementVirtualEndpointSupportedRegion -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to supportedRegions for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

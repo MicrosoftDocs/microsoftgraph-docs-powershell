@@ -32,6 +32,8 @@ Remove-MgBetaSiteListContentTypeColumnLink -InputObject <ISitesIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property columnLinks for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnLinkId

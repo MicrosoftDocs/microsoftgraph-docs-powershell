@@ -80,6 +80,8 @@ Create new navigation property to iosManagedAppProtections for deviceAppManageme
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

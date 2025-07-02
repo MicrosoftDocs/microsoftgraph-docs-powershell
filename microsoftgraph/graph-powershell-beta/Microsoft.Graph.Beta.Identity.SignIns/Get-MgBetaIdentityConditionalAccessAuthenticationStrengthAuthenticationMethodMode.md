@@ -39,6 +39,8 @@ Get-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMod
 ## DESCRIPTION
 Names and descriptions of all valid authentication method modes in the system.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

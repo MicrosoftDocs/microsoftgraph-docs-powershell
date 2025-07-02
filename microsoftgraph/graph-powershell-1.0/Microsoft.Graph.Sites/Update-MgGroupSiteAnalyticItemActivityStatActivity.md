@@ -51,6 +51,8 @@ Update-MgGroupSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property activities in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Access

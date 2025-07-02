@@ -29,6 +29,8 @@ Remove-MgBetaSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Delete navigation property fileThreats for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -FileThreatSubmissionId

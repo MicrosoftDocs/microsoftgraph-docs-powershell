@@ -34,6 +34,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTask
 ## DESCRIPTION
 The related workflow task
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

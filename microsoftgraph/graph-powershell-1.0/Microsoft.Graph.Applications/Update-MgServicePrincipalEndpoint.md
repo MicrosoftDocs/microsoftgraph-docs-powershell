@@ -49,6 +49,8 @@ Update-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> -BodyPara
 ## DESCRIPTION
 Update the navigation property endpoints in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

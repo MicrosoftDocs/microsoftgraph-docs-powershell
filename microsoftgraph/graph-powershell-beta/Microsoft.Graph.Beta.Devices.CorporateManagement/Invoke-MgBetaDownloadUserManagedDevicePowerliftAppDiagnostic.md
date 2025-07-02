@@ -48,6 +48,8 @@ Invoke-MgBetaDownloadUserManagedDevicePowerliftAppDiagnostic -InputObject <IDevi
 ## DESCRIPTION
 Invoke action downloadPowerliftAppDiagnostic
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

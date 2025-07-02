@@ -37,6 +37,8 @@ Get-MgBetaPolicyServicePrincipalCreationPolicy -InputObject <IIdentitySignInsIde
 ## DESCRIPTION
 Get servicePrincipalCreationPolicies from policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

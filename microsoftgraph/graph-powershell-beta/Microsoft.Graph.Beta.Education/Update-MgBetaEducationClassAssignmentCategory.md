@@ -46,6 +46,8 @@ Update-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property assignmentCategories in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

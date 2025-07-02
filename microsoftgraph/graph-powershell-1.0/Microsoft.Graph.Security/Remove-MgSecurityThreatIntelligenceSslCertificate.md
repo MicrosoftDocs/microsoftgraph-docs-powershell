@@ -32,6 +32,8 @@ Remove-MgSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Delete navigation property sslCertificates for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

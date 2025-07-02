@@ -68,6 +68,8 @@ Update-MgDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property columns in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

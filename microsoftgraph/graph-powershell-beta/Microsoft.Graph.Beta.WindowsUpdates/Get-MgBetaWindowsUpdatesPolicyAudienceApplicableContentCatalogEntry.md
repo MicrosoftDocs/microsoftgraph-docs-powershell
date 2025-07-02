@@ -30,6 +30,8 @@ Get-MgBetaWindowsUpdatesPolicyAudienceApplicableContentCatalogEntry -InputObject
 ## DESCRIPTION
 Catalog entry for the update or content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicableContentCatalogEntryId

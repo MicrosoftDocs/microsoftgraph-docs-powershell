@@ -29,6 +29,8 @@ Get-MgBetaIdentityB2XUserFlowPreTokenIssuance -InputObject <IIdentitySignInsIden
 ## DESCRIPTION
 Get preTokenIssuance from identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

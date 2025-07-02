@@ -49,6 +49,8 @@ Add-MgBetaExternalConnectionItemActivity -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Invoke action addActivities
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

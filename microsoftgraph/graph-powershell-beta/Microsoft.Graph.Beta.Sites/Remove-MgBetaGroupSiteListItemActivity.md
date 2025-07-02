@@ -30,6 +30,8 @@ Remove-MgBetaGroupSiteListItemActivity -InputObject <ISitesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property activities for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

@@ -31,6 +31,8 @@ Confirm-MgGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-ResponseHead
 ## DESCRIPTION
 Confirm a timeCard.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

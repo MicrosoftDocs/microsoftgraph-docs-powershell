@@ -32,6 +32,8 @@ Remove-MgApplicationSynchronizationJobSchema -InputObject <IApplicationsIdentity
 ## DESCRIPTION
 Delete navigation property schema for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

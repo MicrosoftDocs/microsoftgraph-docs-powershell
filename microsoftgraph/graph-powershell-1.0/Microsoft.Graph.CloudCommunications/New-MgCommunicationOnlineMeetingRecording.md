@@ -51,6 +51,8 @@ New-MgCommunicationOnlineMeetingRecording -InputObject <ICloudCommunicationsIden
 ## DESCRIPTION
 Create new navigation property to recordings for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -46,6 +46,8 @@ Remove-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property documentSetVersions for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

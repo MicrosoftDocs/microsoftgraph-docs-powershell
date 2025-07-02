@@ -52,6 +52,8 @@ Update-MgSiteGetByPathOnenote -InputObject <INotesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property onenote in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

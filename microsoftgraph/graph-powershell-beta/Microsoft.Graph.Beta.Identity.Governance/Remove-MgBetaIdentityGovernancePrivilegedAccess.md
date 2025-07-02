@@ -24,6 +24,8 @@ Remove-MgBetaIdentityGovernancePrivilegedAccess [-IfMatch <String>] [-ResponseHe
 ## DESCRIPTION
 Delete navigation property privilegedAccess for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

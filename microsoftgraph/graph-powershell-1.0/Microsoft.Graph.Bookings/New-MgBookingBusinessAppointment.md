@@ -73,6 +73,8 @@ Create a new bookingAppointment for the specified bookingBusiness.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Read.All, Bookings.Manage.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

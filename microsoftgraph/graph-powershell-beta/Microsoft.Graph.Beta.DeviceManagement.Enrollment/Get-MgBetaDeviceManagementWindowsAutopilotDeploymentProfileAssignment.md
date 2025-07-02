@@ -40,6 +40,8 @@ Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment
 ## DESCRIPTION
 The list of group assignments for the profile.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

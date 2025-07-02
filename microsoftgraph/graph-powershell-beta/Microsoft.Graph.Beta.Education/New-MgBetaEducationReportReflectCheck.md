@@ -31,6 +31,8 @@ New-MgBetaEducationReportReflectCheck -BodyParameter <IMicrosoftGraphReflectChec
 ## DESCRIPTION
 Create new navigation property to reflectCheckInResponses for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

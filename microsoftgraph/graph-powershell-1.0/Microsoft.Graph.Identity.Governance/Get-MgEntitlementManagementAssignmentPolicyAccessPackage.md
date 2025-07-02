@@ -33,6 +33,8 @@ Access package containing this policy.
 Read-only.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

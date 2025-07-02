@@ -32,6 +32,8 @@ Remove-MgGroupDriveRootRetentionLabel -InputObject <IFilesIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property retentionLabel for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

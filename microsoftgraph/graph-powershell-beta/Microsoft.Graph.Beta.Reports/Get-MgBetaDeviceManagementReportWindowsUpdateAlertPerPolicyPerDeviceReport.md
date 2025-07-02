@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportWindowsUpdateAlertPerPolicyPerDeviceReport -OutF
 ## DESCRIPTION
 Invoke action getWindowsUpdateAlertsPerPolicyPerDeviceReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

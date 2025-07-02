@@ -21,6 +21,8 @@ Remove-MgBetaNetworkAccessSettingCrossTenantAccess [-IfMatch <String>] [-Respons
 ## DESCRIPTION
 Delete navigation property crossTenantAccess for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

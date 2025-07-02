@@ -47,6 +47,8 @@ Get-MgShareListItemDocumentSetVersionField -InputObject <IFilesIdentity> [-Expan
 ## DESCRIPTION
 A collection of the fields and values for this version of the list item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

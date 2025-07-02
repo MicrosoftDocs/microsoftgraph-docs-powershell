@@ -30,6 +30,8 @@ Get-MgBetaSiteByPath -InputObject <ISitesIdentity> [-ResponseHeadersVariable <St
 ## DESCRIPTION
 Invoke function getByPath
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

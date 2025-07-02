@@ -37,6 +37,8 @@ Get-MgBetaUserEventExceptionOccurrence -InputObject <ICalendarIdentity> [-Expand
 ## DESCRIPTION
 Get exceptionOccurrences from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

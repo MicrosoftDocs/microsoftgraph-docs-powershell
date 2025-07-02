@@ -35,6 +35,8 @@ The directory object that is the scope of the role eligibility.
 Read-only.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

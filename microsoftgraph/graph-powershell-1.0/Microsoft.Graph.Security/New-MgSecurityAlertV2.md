@@ -40,6 +40,8 @@ New-MgSecurityAlertV2 -BodyParameter <IMicrosoftGraphSecurityAlert> [-ResponseHe
 ## DESCRIPTION
 Create new navigation property to alerts_v2 for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActorDisplayName

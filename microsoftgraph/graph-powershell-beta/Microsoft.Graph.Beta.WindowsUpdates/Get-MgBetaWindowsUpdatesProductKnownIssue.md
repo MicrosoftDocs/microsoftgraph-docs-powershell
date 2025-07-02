@@ -37,6 +37,8 @@ Get-MgBetaWindowsUpdatesProductKnownIssue -InputObject <IWindowsUpdatesIdentity>
 ## DESCRIPTION
 Represents a known issue related to a Windows product.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

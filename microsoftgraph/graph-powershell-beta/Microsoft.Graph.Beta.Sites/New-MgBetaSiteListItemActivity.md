@@ -48,6 +48,8 @@ New-MgBetaSiteListItemActivity -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to activities for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Action

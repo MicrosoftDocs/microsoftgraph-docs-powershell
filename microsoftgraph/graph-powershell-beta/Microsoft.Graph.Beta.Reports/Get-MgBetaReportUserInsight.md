@@ -21,6 +21,8 @@ Get-MgBetaReportUserInsight [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Represents a collection of user activities on applications in a tenant that is configured for Microsoft Entra External ID for customers.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

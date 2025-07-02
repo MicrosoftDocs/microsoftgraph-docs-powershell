@@ -58,6 +58,8 @@ New-MgBetaSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to contentTypes for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property offerShiftRequests for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

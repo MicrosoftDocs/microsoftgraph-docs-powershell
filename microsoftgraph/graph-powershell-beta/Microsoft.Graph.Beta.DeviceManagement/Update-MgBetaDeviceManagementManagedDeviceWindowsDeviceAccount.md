@@ -60,6 +60,8 @@ Invoke action updateWindowsDeviceAccount
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

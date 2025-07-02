@@ -41,6 +41,8 @@ New-MgVirtualEventWebinar -BodyParameter <IMicrosoftGraphVirtualEventWebinar>
 ## DESCRIPTION
 Create a new virtualEventWebinar object in draft mode.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

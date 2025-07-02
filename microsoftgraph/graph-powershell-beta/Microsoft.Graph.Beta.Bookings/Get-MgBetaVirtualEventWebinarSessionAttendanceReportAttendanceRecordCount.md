@@ -33,6 +33,8 @@ Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecordCount -Input
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

@@ -32,6 +32,8 @@ Get-MgBetaGroupDriveItemCreatedByUser -InputObject <IFilesIdentity> [-ExpandProp
 ## DESCRIPTION
 Get createdByUser from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

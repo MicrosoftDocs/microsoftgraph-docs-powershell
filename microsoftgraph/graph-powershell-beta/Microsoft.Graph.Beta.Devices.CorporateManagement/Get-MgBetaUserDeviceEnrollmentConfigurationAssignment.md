@@ -38,6 +38,8 @@ Get-MgBetaUserDeviceEnrollmentConfigurationAssignment -InputObject <IDevicesCorp
 ## DESCRIPTION
 The list of group assignments for the device configuration profile
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

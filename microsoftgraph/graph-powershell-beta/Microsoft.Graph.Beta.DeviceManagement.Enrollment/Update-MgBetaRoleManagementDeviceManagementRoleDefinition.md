@@ -59,6 +59,8 @@ Update the navigation property roleDefinitions in roleManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementRBAC.ReadWrite.All, RoleManagement.ReadWrite.Directory, RoleManagement.ReadWrite.CloudPC, Directory.ReadWrite.All, CloudPC.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

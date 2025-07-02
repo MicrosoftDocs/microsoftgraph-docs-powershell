@@ -32,6 +32,8 @@ Get-MgGroupDriveRootSubscriptionCount -InputObject <IFilesIdentity> [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

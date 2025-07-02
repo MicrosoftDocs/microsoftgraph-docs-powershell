@@ -41,6 +41,8 @@ Get-MgBetaDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity> [-Expa
 ## DESCRIPTION
 Get itemActivityStats from drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

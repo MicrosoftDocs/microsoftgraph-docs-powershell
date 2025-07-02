@@ -50,6 +50,8 @@ New-MgUserDriveListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to versions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

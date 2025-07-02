@@ -39,6 +39,8 @@ Read-only.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.TrustFramework,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

@@ -24,6 +24,8 @@ Remove-MgDeviceManagementApplePushNotificationCertificate [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property applePushNotificationCertificate for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -28,6 +28,8 @@ Update-MgBetaFinancial -BodyParameter <IMicrosoftGraphFinancials> [-ResponseHead
 ## DESCRIPTION
 Update financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

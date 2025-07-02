@@ -47,6 +47,8 @@ Update-MgBetaDeviceManagementManagedDeviceCleanupRule -InputObject <IDeviceManag
 ## DESCRIPTION
 Update the navigation property managedDeviceCleanupRules in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

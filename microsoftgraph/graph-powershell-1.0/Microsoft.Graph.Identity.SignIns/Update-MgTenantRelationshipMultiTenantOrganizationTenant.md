@@ -60,6 +60,8 @@ Update the navigation property tenants in tenantRelationships
 | Delegated (personal Microsoft account) | Not supported |
 | Application | MultiTenantOrganization.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AddedByTenantId

@@ -54,6 +54,8 @@ Update-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property shifts in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

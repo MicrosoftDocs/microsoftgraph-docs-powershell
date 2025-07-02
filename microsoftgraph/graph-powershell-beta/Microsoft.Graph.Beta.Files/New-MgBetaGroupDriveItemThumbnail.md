@@ -49,6 +49,8 @@ New-MgBetaGroupDriveItemThumbnail -InputObject <IFilesIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to thumbnails for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

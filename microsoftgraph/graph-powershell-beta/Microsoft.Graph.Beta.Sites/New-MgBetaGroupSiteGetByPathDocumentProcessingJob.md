@@ -45,6 +45,8 @@ New-MgBetaGroupSiteGetByPathDocumentProcessingJob -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to documentProcessingJobs for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

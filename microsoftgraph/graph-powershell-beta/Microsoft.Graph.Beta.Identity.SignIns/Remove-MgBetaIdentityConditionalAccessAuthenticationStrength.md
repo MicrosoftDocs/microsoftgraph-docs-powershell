@@ -21,6 +21,8 @@ Remove-MgBetaIdentityConditionalAccessAuthenticationStrength [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property authenticationStrengths for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

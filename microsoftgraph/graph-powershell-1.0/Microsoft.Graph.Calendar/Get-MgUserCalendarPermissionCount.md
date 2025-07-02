@@ -46,6 +46,8 @@ Get-MgUserCalendarPermissionCount -InputObject <ICalendarIdentity> [-Filter <Str
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CalendarId

@@ -45,6 +45,8 @@ Confirm-MgBetaDirectorySettingTemplateMemberObject -InputObject <IIdentityDirect
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -34,6 +34,8 @@ Set-MgBetaUserOnlineMeetingRecordingContent -InputObject <ICloudCommunicationsId
 The content of the recording.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallRecordingId

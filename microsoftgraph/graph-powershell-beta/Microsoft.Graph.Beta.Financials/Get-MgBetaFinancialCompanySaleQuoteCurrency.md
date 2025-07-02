@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanySaleQuoteCurrency -InputObject <IFinancialsIdentity> [
 ## DESCRIPTION
 Get currency from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

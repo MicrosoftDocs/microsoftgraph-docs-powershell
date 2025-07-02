@@ -34,6 +34,8 @@ New-MgSolutionBackupRestoreDriveInclusionRule -BodyParameter <IMicrosoftGraphDri
 ## DESCRIPTION
 Create new navigation property to driveInclusionRules for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

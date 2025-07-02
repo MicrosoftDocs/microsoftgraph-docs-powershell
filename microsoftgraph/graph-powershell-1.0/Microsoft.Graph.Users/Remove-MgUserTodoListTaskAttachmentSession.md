@@ -33,6 +33,8 @@ Remove-MgUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property attachmentSessions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttachmentSessionId

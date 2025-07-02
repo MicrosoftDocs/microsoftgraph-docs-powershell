@@ -56,6 +56,8 @@ New-MgBetaGroupDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Access

@@ -67,6 +67,8 @@ Update-MgBetaFinancialCompanySaleQuote -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Update the navigation property salesQuotes in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AcceptedDate

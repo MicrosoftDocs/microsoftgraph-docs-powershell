@@ -32,6 +32,8 @@ Remove-MgAgreement -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete entity from agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementId

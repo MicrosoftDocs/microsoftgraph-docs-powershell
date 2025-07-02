@@ -49,6 +49,8 @@ Hide-MgUserChatForUser -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Hide a chat for a user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

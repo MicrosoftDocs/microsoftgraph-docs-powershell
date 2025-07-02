@@ -51,6 +51,8 @@ New-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel -InputObject <I
 ## DESCRIPTION
 Create new navigation property to sublabels for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

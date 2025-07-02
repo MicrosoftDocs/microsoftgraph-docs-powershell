@@ -32,6 +32,8 @@ Get-MgSecurityLabelRetentionLabelDescriptorCategoryTemplate -InputObject <ISecur
 ## DESCRIPTION
 Specifies a group of similar types of content in a particular department.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

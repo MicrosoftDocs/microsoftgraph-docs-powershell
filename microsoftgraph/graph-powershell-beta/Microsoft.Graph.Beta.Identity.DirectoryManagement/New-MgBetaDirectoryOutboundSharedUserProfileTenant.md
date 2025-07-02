@@ -43,6 +43,8 @@ New-MgBetaDirectoryOutboundSharedUserProfileTenant -InputObject <IIdentityDirect
 ## DESCRIPTION
 Create new navigation property to tenants for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

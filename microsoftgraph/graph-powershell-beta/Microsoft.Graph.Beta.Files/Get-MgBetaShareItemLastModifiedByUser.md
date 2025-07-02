@@ -46,6 +46,8 @@ Get-MgBetaShareItemLastModifiedByUser -InputObject <IFilesIdentity> [-ExpandProp
 ## DESCRIPTION
 Get lastModifiedByUser from shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

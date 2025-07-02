@@ -48,6 +48,8 @@ Invoke-MgBetaBulkUserManagedDeviceSetCloudPcReviewStatus -InputObject <IDevicesC
 ## DESCRIPTION
 Invoke action bulkSetCloudPcReviewStatus
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

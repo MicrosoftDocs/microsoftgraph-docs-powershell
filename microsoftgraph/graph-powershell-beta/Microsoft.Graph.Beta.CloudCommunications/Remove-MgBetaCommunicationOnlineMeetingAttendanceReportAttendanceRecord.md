@@ -49,6 +49,8 @@ Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord
 ## DESCRIPTION
 Delete navigation property attendanceRecords for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttendanceRecordId

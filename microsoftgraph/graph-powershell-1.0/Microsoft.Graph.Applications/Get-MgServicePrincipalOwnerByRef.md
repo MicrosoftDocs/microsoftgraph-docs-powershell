@@ -37,6 +37,8 @@ Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

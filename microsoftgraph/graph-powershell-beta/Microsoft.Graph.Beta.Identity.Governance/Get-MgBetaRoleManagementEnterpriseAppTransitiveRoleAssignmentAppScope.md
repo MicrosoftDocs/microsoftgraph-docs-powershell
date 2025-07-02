@@ -35,6 +35,8 @@ Read-only property with details of the app specific scope when the assignment sc
 Containment entity.
 Supports $expand for the entitlement provider only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

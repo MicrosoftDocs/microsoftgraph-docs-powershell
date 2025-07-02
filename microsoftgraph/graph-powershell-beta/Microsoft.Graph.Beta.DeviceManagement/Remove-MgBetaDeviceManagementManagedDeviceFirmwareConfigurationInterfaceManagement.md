@@ -37,6 +37,8 @@ Remove device from Device Firmware Configuration Interface management
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

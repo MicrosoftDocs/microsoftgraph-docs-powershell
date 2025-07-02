@@ -30,6 +30,8 @@ Remove-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob -InputObjec
 ## DESCRIPTION
 Delete navigation property driveProtectionUnitsBulkAdditionJobs for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveProtectionUnitsBulkAdditionJobId

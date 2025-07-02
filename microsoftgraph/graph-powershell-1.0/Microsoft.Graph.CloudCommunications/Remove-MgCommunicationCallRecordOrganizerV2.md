@@ -32,6 +32,8 @@ Remove-MgCommunicationCallRecordOrganizerV2 -InputObject <ICloudCommunicationsId
 ## DESCRIPTION
 Delete navigation property organizer_v2 for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallRecordId

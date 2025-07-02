@@ -51,6 +51,8 @@ Update-MgBetaTeamworkDeletedTeamChannelSharedWithTeam -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Update the navigation property sharedWithTeams in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

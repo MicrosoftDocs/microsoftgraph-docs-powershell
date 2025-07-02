@@ -31,6 +31,8 @@ Get-MgBetaRoleManagementDefenderResourceNamespaceResourceActionResourceScope
 ## DESCRIPTION
 Get resourceScope from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

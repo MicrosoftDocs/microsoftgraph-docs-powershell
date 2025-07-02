@@ -30,6 +30,8 @@ Remove-MgEntitlementManagementAssignmentPolicyQuestion -InputObject <IIdentityGo
 ## DESCRIPTION
 Delete navigation property questions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

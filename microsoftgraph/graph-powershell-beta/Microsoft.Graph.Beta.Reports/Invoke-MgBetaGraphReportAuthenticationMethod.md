@@ -53,6 +53,8 @@ Invoke-MgBetaGraphReportAuthenticationMethod -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

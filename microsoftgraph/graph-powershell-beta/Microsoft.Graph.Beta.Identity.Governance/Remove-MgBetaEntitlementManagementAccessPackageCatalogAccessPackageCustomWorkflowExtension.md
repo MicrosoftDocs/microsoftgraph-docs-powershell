@@ -31,6 +31,8 @@ Remove-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflo
 ## DESCRIPTION
 Delete navigation property accessPackageCustomWorkflowExtensions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId

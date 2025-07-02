@@ -24,6 +24,8 @@ Remove-MgBetaPolicyAdminConsentRequestPolicy [-IfMatch <String>] [-ResponseHeade
 ## DESCRIPTION
 Delete navigation property adminConsentRequestPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

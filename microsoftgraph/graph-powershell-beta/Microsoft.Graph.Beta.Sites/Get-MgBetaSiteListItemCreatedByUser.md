@@ -32,6 +32,8 @@ Get-MgBetaSiteListItemCreatedByUser -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 Get createdByUser from sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

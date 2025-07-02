@@ -75,6 +75,8 @@ Update-MgShareListItemDocumentSetVersionField -InputObject <IFilesIdentity> -Bod
 ## DESCRIPTION
 Update the navigation property fields in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

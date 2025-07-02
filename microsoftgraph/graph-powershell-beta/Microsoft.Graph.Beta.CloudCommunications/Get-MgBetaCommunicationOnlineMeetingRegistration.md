@@ -31,6 +31,8 @@ Get-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunicati
 The registration that is enabled for an online meeting.
 One online meeting can only have one registration enabled.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -37,6 +37,8 @@ Get-MgBetaUserInformationProtectionSensitivityLabel -InputObject <IIdentitySignI
 ## DESCRIPTION
 Get sensitivityLabels from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

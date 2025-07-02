@@ -33,6 +33,8 @@ Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignmentCount
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

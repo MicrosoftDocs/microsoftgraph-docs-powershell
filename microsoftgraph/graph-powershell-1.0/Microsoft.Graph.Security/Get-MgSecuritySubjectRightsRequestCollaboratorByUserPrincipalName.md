@@ -33,6 +33,8 @@ Get-MgSecuritySubjectRightsRequestCollaboratorByUserPrincipalName -InputObject <
 ## DESCRIPTION
 Collection of users who can collaborate on the request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

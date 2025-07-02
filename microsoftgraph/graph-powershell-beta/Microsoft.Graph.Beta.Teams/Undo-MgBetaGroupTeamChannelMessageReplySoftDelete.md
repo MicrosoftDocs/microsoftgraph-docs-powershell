@@ -33,6 +33,8 @@ Undo-MgBetaGroupTeamChannelMessageReplySoftDelete -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

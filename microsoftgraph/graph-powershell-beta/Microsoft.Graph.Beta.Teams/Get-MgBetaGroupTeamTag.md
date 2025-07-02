@@ -40,6 +40,8 @@ Get-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 The tags associated with the team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

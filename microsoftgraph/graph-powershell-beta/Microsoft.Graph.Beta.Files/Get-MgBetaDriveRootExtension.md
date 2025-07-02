@@ -39,6 +39,8 @@ Get-MgBetaDriveRootExtension -InputObject <IFilesIdentity> [-ExpandProperty <Str
 The collection of open extensions defined for this item.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

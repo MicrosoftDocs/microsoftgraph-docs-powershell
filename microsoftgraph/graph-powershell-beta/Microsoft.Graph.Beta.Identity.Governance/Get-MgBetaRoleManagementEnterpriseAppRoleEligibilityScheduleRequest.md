@@ -38,6 +38,8 @@ Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest -InputObject
 ## DESCRIPTION
 Get roleEligibilityScheduleRequests from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

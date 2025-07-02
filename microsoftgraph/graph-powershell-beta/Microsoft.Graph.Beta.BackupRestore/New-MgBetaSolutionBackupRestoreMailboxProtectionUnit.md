@@ -35,6 +35,8 @@ New-MgBetaSolutionBackupRestoreMailboxProtectionUnit -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to mailboxProtectionUnits for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

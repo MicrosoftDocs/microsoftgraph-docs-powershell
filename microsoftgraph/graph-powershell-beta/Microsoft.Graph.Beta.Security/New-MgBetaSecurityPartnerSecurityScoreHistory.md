@@ -30,6 +30,8 @@ New-MgBetaSecurityPartnerSecurityScoreHistory -BodyParameter <IMicrosoftGraphPar
 ## DESCRIPTION
 Create new navigation property to history for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

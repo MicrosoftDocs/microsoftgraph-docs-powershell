@@ -46,6 +46,8 @@ Update-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart -InputObject <ISite
 ## DESCRIPTION
 Update the navigation property webparts in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

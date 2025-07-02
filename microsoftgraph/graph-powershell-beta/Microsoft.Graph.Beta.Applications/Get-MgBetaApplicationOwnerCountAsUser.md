@@ -32,6 +32,8 @@ Get-MgBetaApplicationOwnerCountAsUser -InputObject <IApplicationsIdentity> [-Fil
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

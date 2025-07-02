@@ -45,6 +45,8 @@ Update-MgBetaRoleManagementExchangeResourceNamespace -InputObject <IDeviceManage
 ## DESCRIPTION
 Update the navigation property resourceNamespaces in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

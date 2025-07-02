@@ -41,6 +41,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All, EduAssignments.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

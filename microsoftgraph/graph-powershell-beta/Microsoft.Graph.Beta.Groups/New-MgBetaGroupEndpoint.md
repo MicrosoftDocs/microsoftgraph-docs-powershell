@@ -45,6 +45,8 @@ New-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to endpoints for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

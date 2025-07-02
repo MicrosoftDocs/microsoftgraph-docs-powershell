@@ -32,6 +32,8 @@ Remove-MgUserExtension -InputObject <IUsersIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExtensionId

@@ -47,6 +47,8 @@ New-MgBetaUserContactFolderChildFolderContactExtension -InputObject <IPersonalCo
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

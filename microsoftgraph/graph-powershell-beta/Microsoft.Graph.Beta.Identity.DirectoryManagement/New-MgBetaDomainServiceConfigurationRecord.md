@@ -48,6 +48,8 @@ New-MgBetaDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Create new navigation property to serviceConfigurationRecords for domains
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -55,6 +55,8 @@ Update-MgSiteOnenoteSectionContent -InputObject <INotesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property sections in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

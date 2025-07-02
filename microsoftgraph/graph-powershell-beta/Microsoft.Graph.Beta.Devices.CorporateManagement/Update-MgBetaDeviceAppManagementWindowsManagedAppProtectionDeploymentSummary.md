@@ -51,6 +51,8 @@ Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary
 ## DESCRIPTION
 Update the navigation property deploymentSummary in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -31,6 +31,8 @@ Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent -InputObje
 ## DESCRIPTION
 Update extractedTextContent for the navigation property files in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

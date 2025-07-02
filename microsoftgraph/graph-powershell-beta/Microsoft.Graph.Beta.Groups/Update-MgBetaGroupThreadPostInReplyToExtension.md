@@ -47,6 +47,8 @@ Update-MgBetaGroupThreadPostInReplyToExtension -InputObject <IGroupsIdentity> -B
 ## DESCRIPTION
 Update the navigation property extensions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -30,6 +30,8 @@ Get-MgBetaVirtualEventTownhallPresenterSessionByJoinWebUrl -InputObject <IBookin
 ## DESCRIPTION
 Get sessions from solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

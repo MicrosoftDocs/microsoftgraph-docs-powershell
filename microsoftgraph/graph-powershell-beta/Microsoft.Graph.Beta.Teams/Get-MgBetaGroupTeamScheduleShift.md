@@ -40,6 +40,8 @@ Get-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The shifts in the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

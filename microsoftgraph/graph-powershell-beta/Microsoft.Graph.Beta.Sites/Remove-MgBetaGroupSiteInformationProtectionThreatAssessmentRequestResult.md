@@ -30,6 +30,8 @@ Remove-MgBetaGroupSiteInformationProtectionThreatAssessmentRequestResult -InputO
 ## DESCRIPTION
 Delete navigation property results for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

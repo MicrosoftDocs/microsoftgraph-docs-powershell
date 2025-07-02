@@ -30,6 +30,8 @@ Remove-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
 ## DESCRIPTION
 Delete navigation property permissionsRequestChanges for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

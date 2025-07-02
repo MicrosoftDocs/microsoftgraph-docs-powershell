@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Calendars.Read,  |
 | Application | Calendars.Read,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId

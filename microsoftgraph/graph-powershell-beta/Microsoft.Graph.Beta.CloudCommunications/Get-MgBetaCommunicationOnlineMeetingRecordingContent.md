@@ -34,6 +34,8 @@ Get-MgBetaCommunicationOnlineMeetingRecordingContent -InputObject <ICloudCommuni
 The content of the recording.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallRecordingId

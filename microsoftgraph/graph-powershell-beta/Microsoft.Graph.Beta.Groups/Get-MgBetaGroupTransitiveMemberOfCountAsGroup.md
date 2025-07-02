@@ -32,6 +32,8 @@ Get-MgBetaGroupTransitiveMemberOfCountAsGroup -InputObject <IGroupsIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

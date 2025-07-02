@@ -33,6 +33,8 @@ Get all identity providers supported in a directory.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

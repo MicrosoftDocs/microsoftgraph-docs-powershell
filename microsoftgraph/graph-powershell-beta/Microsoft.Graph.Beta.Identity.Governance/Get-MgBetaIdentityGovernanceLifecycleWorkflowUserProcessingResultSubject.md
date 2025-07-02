@@ -33,6 +33,8 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject
 ## DESCRIPTION
 The unique identifier of the AAD user targeted for the taskProcessingResult.Supports $filter(eq, ne) and $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

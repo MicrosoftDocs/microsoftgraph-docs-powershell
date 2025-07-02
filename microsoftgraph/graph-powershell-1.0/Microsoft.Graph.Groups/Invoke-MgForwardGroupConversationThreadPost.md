@@ -62,6 +62,8 @@ You can specify both the parent conversation and thread in the request, or, you 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

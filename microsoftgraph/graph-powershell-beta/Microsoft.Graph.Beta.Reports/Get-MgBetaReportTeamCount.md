@@ -30,6 +30,8 @@ Get-MgBetaReportTeamCount -InputObject <IReportsIdentity> -OutFile <String> [-Re
 ## DESCRIPTION
 Invoke function getTeamsTeamCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -45,6 +45,8 @@ If the Prefer: include-unknown-enum-members request header is provided, the excu
 Otherwise, the submission status changes to returned.
 For more information about how to use this header, see the Examples section.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

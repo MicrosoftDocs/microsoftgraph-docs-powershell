@@ -32,6 +32,8 @@ Get-MgBetaGroupDriveRootAnalyticTime -InputObject <IFilesIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get allTime from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

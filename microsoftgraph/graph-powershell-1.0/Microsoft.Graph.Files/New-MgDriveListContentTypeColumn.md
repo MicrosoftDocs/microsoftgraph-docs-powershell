@@ -68,6 +68,8 @@ New-MgDriveListContentTypeColumn -InputObject <IFilesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to columns for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

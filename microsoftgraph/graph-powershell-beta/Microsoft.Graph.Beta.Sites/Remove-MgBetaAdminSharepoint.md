@@ -23,6 +23,8 @@ Remove-MgBetaAdminSharepoint [-IfMatch <String>] [-ResponseHeadersVariable <Stri
 ## DESCRIPTION
 Delete navigation property sharepoint for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

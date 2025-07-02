@@ -46,6 +46,8 @@ To proactively opt in to the new behavior ahead of time, use the contentStream p
 | Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

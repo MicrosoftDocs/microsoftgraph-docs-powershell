@@ -48,6 +48,8 @@ Update-MgBetaWindowsUpdatesDeploymentAudienceApplicableContent -InputObject <IWi
 ## DESCRIPTION
 Update the navigation property applicableContent in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

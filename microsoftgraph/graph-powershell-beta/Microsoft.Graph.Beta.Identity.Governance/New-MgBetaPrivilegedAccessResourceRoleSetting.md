@@ -55,6 +55,8 @@ New-MgBetaPrivilegedAccessResourceRoleSetting -InputObject <IIdentityGovernanceI
 ## DESCRIPTION
 Create new navigation property to roleSettings for privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

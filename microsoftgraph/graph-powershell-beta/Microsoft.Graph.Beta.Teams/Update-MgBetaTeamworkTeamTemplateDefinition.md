@@ -50,6 +50,8 @@ Update-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property definitions in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

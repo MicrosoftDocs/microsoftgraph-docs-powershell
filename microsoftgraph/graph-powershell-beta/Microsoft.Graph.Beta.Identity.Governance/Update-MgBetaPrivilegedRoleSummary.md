@@ -45,6 +45,8 @@ Update-MgBetaPrivilegedRoleSummary -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update the navigation property summary in privilegedRoles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

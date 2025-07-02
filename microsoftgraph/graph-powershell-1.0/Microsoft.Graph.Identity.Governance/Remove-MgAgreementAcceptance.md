@@ -32,6 +32,8 @@ Remove-MgAgreementAcceptance -InputObject <IIdentityGovernanceIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property acceptances for agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementAcceptanceId

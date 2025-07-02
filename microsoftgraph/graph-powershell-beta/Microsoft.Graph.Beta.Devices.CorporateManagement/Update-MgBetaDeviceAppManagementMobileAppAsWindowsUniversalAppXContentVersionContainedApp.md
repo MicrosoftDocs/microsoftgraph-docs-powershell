@@ -50,6 +50,8 @@ Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionCon
 ## DESCRIPTION
 Update the navigation property containedApps in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

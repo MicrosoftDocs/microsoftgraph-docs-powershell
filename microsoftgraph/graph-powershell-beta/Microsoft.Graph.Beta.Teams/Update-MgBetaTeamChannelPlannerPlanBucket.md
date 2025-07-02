@@ -48,6 +48,8 @@ Update-MgBetaTeamChannelPlannerPlanBucket -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property buckets in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

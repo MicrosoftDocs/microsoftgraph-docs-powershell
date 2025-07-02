@@ -32,6 +32,8 @@ Get-MgBetaGroupSiteTermStore -InputObject <ISitesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The termStore under this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

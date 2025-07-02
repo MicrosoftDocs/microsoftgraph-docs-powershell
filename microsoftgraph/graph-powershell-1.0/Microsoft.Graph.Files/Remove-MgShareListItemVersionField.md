@@ -46,6 +46,8 @@ Remove-MgShareListItemVersionField -InputObject <IFilesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property fields for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

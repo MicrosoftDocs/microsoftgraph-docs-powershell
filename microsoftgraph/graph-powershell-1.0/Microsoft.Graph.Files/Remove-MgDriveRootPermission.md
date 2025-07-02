@@ -32,6 +32,8 @@ Remove-MgDriveRootPermission -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property permissions for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

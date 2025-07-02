@@ -30,6 +30,8 @@ Remove-MgBetaUserEventExceptionOccurrenceInstanceExtension -InputObject <ICalend
 ## DESCRIPTION
 Delete navigation property extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId

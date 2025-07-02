@@ -56,6 +56,8 @@ Update-MgRiskDetection -InputObject <IIdentitySignInsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property riskDetections in identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

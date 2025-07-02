@@ -41,6 +41,8 @@ Get the properties and relationships of a device object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Device.Read.All, Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

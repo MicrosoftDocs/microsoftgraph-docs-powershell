@@ -51,6 +51,8 @@ Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep
 ## DESCRIPTION
 Update the navigation property steps in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

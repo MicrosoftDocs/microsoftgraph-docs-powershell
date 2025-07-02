@@ -32,6 +32,8 @@ Remove-MgBetaGroupEventInstanceExtension -InputObject <ICalendarIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property extensions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId

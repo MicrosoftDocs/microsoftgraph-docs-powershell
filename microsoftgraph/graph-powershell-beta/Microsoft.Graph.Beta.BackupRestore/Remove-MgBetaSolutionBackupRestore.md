@@ -24,6 +24,8 @@ Remove-MgBetaSolutionBackupRestore [-IfMatch <String>] [-ResponseHeadersVariable
 ## DESCRIPTION
 Delete navigation property backupRestore for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

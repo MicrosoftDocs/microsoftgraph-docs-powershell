@@ -29,6 +29,8 @@ Remove-MgBetaNetworkAccessLogRemoteNetwork -InputObject <INetworkAccessIdentity>
 ## DESCRIPTION
 Delete navigation property remoteNetworks for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

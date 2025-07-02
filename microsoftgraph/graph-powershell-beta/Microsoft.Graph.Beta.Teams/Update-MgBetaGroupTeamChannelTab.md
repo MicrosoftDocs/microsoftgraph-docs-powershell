@@ -51,6 +51,8 @@ Update-MgBetaGroupTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property tabs in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

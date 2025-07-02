@@ -32,6 +32,8 @@ New-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to assignmentApprovals for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

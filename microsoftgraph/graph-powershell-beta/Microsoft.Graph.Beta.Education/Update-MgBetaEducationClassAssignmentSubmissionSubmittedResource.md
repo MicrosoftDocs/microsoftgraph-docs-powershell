@@ -52,6 +52,8 @@ Update-MgBetaEducationClassAssignmentSubmissionSubmittedResource -InputObject <I
 ## DESCRIPTION
 Update the navigation property submittedResources in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

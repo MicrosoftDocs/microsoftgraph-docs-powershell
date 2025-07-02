@@ -45,6 +45,8 @@ Get-MgEntitlementManagementCatalogResourceRoleResource -InputObject <IIdentityGo
 ## DESCRIPTION
 Get resource from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId

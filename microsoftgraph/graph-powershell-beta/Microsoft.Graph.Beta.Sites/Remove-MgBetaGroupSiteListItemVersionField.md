@@ -33,6 +33,8 @@ Remove-MgBetaGroupSiteListItemVersionField -InputObject <ISitesIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property fields for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

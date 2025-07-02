@@ -29,6 +29,8 @@ Remove-MgBetaRoleManagementEnterpriseApp -InputObject <IIdentityGovernanceIdenti
 ## DESCRIPTION
 Delete navigation property enterpriseApps for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

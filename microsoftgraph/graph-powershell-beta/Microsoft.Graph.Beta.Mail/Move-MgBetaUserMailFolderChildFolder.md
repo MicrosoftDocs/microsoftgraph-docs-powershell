@@ -49,6 +49,8 @@ Move-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity>
 ## DESCRIPTION
 Move a mail folder and its contents to another mail folder.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

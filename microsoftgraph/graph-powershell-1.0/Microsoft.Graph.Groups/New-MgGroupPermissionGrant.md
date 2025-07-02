@@ -48,6 +48,8 @@ New-MgGroupPermissionGrant -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Create new navigation property to permissionGrants for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

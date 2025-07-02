@@ -52,6 +52,8 @@ Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject
 ## DESCRIPTION
 Update the navigation property attendanceRecords in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -50,6 +50,8 @@ Update-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISites
 ## DESCRIPTION
 Update the navigation property horizontalSections in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

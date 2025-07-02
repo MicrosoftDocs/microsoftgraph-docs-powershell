@@ -33,6 +33,8 @@ Remove-MgBetaGroupSiteTermStoreSetTermRelation -InputObject <ISitesIdentity> [-I
 ## DESCRIPTION
 Delete navigation property relations for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

@@ -39,6 +39,8 @@ Get-MgBetaGroupConversationThreadPostInReplyToMention -InputObject <IGroupsIdent
 ## DESCRIPTION
 Get mentions from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

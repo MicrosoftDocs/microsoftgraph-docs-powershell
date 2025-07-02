@@ -46,6 +46,8 @@ New-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumn -InputObject <
 ## DESCRIPTION
 Create new navigation property to columns for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

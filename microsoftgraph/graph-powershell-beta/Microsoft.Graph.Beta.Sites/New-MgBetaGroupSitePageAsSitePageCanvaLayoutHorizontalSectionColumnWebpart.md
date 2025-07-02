@@ -48,6 +48,8 @@ New-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart -Inpu
 ## DESCRIPTION
 Create new navigation property to webparts for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

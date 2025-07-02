@@ -41,6 +41,8 @@ Read-only.
 Nullable.
 Returns the plannerTasks to be shown in the My Day view of the user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

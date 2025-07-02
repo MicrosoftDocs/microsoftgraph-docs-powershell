@@ -30,6 +30,8 @@ Set-MgBetaTeamworkDeletedTeamChannelFileFolderContentStream -InputObject <ITeams
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

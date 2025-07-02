@@ -32,6 +32,8 @@ Remove-MgIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject <IId
 ## DESCRIPTION
 Delete navigation property localizations for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId

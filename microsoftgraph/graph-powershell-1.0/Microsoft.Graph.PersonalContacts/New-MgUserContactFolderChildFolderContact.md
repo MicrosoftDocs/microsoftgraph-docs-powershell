@@ -74,6 +74,8 @@ New-MgUserContactFolderChildFolderContact -InputObject <IPersonalContactsIdentit
 ## DESCRIPTION
 Create new navigation property to contacts for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

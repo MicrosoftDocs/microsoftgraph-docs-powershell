@@ -32,6 +32,8 @@ Remove-MgSolutionBackupRestoreSiteInclusionRule -InputObject <IBackupRestoreIden
 ## DESCRIPTION
 Delete navigation property siteInclusionRules for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -45,6 +45,8 @@ Get-MgReportOffice365GroupActivityDetail -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Get details about Microsoft 365 groups activity by group.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

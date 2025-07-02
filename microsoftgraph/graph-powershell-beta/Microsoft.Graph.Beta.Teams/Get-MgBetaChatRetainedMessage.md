@@ -35,6 +35,8 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Chat.ReadBasic.All, ChatSettings.ReadWrite.Chat, ChatSettings.Read.Chat, Chat.Read.All, Chat.Manage.Chat,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

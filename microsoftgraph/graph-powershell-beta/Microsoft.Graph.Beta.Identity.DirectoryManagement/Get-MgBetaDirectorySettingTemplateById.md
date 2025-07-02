@@ -33,6 +33,8 @@ Get-MgBetaDirectorySettingTemplateById
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

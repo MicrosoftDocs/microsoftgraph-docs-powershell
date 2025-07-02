@@ -34,6 +34,8 @@ Get-MgBetaReportOffice365ServiceUserCount -InputObject <IReportsIdentity> [-Coun
 ## DESCRIPTION
 Invoke function getOffice365ServicesUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

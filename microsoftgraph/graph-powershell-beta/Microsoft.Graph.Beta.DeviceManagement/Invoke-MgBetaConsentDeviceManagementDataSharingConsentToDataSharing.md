@@ -37,6 +37,8 @@ Invoke action consentToDataSharing
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DataSharingConsentId

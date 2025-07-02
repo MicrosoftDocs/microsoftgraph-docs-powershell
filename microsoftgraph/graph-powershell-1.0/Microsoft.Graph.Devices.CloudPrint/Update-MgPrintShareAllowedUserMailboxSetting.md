@@ -54,6 +54,8 @@ Update-MgPrintShareAllowedUserMailboxSetting -InputObject <IDevicesCloudPrintIde
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -24,6 +24,8 @@ Remove-MgRoleManagementDirectory [-IfMatch <String>] [-ResponseHeadersVariable <
 ## DESCRIPTION
 Delete navigation property directory for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

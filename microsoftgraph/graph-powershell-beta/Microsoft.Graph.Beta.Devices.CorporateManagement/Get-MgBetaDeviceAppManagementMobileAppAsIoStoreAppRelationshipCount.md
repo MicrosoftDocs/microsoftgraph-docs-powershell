@@ -30,6 +30,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationshipCount
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

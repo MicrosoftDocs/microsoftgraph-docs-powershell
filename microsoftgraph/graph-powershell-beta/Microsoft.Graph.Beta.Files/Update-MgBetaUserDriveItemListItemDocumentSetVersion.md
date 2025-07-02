@@ -55,6 +55,8 @@ Update-MgBetaUserDriveItemListItemDocumentSetVersion -InputObject <IFilesIdentit
 ## DESCRIPTION
 Update the navigation property documentSetVersions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

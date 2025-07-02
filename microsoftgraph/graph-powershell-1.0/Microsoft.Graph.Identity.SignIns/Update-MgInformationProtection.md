@@ -32,6 +32,8 @@ Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtect
 ## DESCRIPTION
 Update informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -46,6 +46,8 @@ New-MgGroupSitePageAsSitePageWebPart -InputObject <ISitesIdentity> -BodyParamete
 ## DESCRIPTION
 Create new navigation property to webParts for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

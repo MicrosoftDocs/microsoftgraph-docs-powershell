@@ -31,6 +31,8 @@ Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary
 ## DESCRIPTION
 Navigation property to deployment summary of the configuration.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

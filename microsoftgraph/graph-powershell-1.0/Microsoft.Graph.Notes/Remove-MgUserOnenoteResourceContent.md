@@ -32,6 +32,8 @@ Remove-MgUserOnenoteResourceContent -InputObject <INotesIdentity> [-IfMatch <Str
 ## DESCRIPTION
 The content stream
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

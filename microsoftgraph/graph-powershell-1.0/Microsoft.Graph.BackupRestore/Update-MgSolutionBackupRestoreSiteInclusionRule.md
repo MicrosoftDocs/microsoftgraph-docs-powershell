@@ -52,6 +52,8 @@ Update-MgSolutionBackupRestoreSiteInclusionRule -InputObject <IBackupRestoreIden
 ## DESCRIPTION
 Update the navigation property siteInclusionRules in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -37,6 +37,8 @@ Information about a meeting, including the URL used to join a meeting, the atten
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

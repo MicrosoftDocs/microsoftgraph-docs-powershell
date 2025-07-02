@@ -25,6 +25,8 @@ Get-MgBetaGroupSiteGetByPathContentType -GroupId <String> -Path <String> -SiteId
 ## DESCRIPTION
 The collection of content types defined for this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

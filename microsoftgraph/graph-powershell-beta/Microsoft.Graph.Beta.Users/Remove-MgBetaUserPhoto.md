@@ -40,6 +40,8 @@ Delete navigation property photo for users
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ProfilePhoto.ReadWrite.All, User.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

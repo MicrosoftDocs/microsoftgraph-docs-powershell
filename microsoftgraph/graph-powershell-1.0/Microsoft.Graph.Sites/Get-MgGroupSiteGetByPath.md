@@ -25,6 +25,8 @@ Get-MgGroupSiteGetByPath -GroupId <String> -Path <String> -SiteId <String> [-Exp
 ## DESCRIPTION
 The collection of lists under this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

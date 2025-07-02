@@ -40,6 +40,8 @@ Get-MgBetaSolutionBackupRestoreDriveInclusionRule -InputObject <IBackupRestoreId
 ## DESCRIPTION
 The list of drive inclusion rules applied to the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

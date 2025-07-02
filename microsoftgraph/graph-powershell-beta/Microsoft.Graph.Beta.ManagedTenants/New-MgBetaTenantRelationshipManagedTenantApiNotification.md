@@ -32,6 +32,8 @@ New-MgBetaTenantRelationshipManagedTenantApiNotification
 ## DESCRIPTION
 Create new navigation property to managedTenantApiNotifications for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

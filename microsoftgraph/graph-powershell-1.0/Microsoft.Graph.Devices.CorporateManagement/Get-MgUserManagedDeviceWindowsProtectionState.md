@@ -34,6 +34,8 @@ Get-MgUserManagedDeviceWindowsProtectionState -InputObject <IDevicesCorporateMan
 The device protection status.
 This property is read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

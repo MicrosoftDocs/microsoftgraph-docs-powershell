@@ -94,6 +94,8 @@ Update-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICl
 ## DESCRIPTION
 Update the navigation property attendanceRecords in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

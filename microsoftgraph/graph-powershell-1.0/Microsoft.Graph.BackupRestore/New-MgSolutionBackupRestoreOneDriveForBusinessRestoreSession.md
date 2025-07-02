@@ -35,6 +35,8 @@ New-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession
 ## DESCRIPTION
 Create new navigation property to oneDriveForBusinessRestoreSessions for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

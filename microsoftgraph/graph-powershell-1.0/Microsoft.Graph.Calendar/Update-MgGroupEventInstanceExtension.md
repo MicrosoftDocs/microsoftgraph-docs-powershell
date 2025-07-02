@@ -46,6 +46,8 @@ Update-MgGroupEventInstanceExtension -InputObject <ICalendarIdentity> -BodyParam
 ## DESCRIPTION
 Update the navigation property extensions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

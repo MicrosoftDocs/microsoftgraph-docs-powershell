@@ -48,6 +48,8 @@ New-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment -InputObject <IDevices
 ## DESCRIPTION
 Create new navigation property to assignments for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

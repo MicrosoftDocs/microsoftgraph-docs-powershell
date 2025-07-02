@@ -44,6 +44,8 @@ The sections in the notebook.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

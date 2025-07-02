@@ -47,6 +47,8 @@ Update-MgBetaTenantRelationshipManagedTenantManagementAction -InputObject <IMana
 ## DESCRIPTION
 Update the navigation property managementActions in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

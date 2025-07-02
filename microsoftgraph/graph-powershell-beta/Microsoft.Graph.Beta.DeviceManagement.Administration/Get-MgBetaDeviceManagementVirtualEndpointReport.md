@@ -21,6 +21,8 @@ Get-MgBetaDeviceManagementVirtualEndpointReport [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 Cloud PC related reports.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

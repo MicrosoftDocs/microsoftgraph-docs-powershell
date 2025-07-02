@@ -32,6 +32,8 @@ Remove-MgGroupDriveListItemField -InputObject <IFilesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property fields for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

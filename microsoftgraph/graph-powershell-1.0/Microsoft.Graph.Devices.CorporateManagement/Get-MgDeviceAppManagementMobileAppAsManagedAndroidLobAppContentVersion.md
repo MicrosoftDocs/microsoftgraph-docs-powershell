@@ -41,6 +41,8 @@ Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion
 ## DESCRIPTION
 The list of content versions for this app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

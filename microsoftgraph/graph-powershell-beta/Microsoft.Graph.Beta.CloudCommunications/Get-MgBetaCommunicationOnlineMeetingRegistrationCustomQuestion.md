@@ -38,6 +38,8 @@ Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <ICl
 ## DESCRIPTION
 Custom registration questions.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

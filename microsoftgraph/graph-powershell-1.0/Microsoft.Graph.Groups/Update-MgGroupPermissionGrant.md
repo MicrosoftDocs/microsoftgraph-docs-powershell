@@ -49,6 +49,8 @@ Update-MgGroupPermissionGrant -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Update the navigation property permissionGrants in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

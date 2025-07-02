@@ -49,6 +49,8 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResour
 ## DESCRIPTION
 Get resource from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

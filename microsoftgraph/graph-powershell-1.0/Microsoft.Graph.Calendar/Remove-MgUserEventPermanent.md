@@ -40,6 +40,8 @@ Invoke action permanentDelete
 | Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
 | Application | Calendars.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId

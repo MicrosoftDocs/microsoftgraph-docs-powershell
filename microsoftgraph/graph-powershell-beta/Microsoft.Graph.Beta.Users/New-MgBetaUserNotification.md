@@ -55,6 +55,8 @@ Create new navigation property to notifications for users
 | Delegated (personal Microsoft account) | Notifications.ReadWrite.CreatedByApp,  |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

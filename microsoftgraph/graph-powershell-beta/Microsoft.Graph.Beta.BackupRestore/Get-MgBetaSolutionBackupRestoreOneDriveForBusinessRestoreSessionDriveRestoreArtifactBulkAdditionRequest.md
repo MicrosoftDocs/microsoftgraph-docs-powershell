@@ -42,6 +42,8 @@ Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArti
 ## DESCRIPTION
 Get a driveRestoreArtifactsBulkAdditionRequest object by its id, associated with a oneDriveForBusinessRestoreSession.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

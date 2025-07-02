@@ -32,6 +32,8 @@ Remove-MgUserEventInstancePermanent -InputObject <ICalendarIdentity> [-ResponseH
 ## DESCRIPTION
 Invoke action permanentDelete
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId

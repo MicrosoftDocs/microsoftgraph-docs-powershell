@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanyCustomerPaymentCustomerCurrency -InputObject <IFinanci
 ## DESCRIPTION
 Get currency from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

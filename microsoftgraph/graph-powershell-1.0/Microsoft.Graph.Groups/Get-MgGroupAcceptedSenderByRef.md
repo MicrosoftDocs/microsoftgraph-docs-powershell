@@ -33,6 +33,8 @@ Users in the accepted senders list can post to conversations of the group (ident
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

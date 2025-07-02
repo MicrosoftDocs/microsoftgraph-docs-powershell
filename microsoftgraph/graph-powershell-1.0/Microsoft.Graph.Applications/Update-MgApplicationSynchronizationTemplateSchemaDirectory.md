@@ -51,6 +51,8 @@ Update-MgApplicationSynchronizationTemplateSchemaDirectory -InputObject <IApplic
 ## DESCRIPTION
 Update the navigation property directories in applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

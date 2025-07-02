@@ -33,6 +33,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResultTask -InputObject <
 ## DESCRIPTION
 The related workflow task
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -27,6 +27,8 @@ Get-MgBetaGroupSiteGetByPathItem -GroupId <String> -Path <String> -SiteId <Strin
 Used to address any item contained in this site.
 This collection can't be enumerated.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

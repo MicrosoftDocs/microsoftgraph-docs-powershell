@@ -38,6 +38,8 @@ Get-MgBetaTenantRelationshipManagedTenantAlertEmailNotification -InputObject <IM
 ## DESCRIPTION
 Get emailNotifications from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

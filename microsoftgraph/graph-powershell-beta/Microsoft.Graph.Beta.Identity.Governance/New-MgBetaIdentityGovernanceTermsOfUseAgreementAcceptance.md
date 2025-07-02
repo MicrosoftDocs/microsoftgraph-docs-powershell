@@ -71,6 +71,8 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to agreementAcceptances for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

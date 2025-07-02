@@ -40,6 +40,8 @@ Get-MgVirtualEventTownhallSession -InputObject <IBookingsIdentity> [-ExpandPrope
 ## DESCRIPTION
 The sessions for the virtual event.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

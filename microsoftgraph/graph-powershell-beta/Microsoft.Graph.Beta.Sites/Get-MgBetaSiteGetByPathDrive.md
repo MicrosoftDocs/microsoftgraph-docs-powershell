@@ -40,6 +40,8 @@ Get-MgBetaSiteGetByPathDrive -InputObject <ISitesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The default drive (document library) for this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

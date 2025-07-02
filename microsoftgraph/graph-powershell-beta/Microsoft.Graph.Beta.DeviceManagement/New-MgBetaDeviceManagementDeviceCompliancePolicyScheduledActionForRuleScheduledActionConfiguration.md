@@ -61,6 +61,8 @@ Create new navigation property to scheduledActionConfigurations for deviceManage
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionType

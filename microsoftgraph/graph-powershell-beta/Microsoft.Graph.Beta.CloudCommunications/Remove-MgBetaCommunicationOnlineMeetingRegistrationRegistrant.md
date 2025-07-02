@@ -29,6 +29,8 @@ Remove-MgBetaCommunicationOnlineMeetingRegistrationRegistrant -InputObject <IClo
 ## DESCRIPTION
 Delete navigation property registrants for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

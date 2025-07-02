@@ -50,6 +50,8 @@ New-MgBetaUserDriveItemListItemVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to versions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

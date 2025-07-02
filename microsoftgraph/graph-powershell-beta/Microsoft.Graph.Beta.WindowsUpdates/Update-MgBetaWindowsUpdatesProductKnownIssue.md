@@ -57,6 +57,8 @@ Update-MgBetaWindowsUpdatesProductKnownIssue -InputObject <IWindowsUpdatesIdenti
 ## DESCRIPTION
 Update the navigation property knownIssues in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

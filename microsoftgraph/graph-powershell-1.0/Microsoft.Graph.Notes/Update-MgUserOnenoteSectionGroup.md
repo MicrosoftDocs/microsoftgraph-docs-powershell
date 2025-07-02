@@ -56,6 +56,8 @@ Update-MgUserOnenoteSectionGroup -InputObject <INotesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property sectionGroups in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -68,6 +68,8 @@ New-MgBetaDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to columns for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

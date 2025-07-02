@@ -29,6 +29,8 @@ Remove-MgBetaPrivilegedRole -InputObject <IIdentityGovernanceIdentity> [-IfMatch
 ## DESCRIPTION
 Delete entity from privilegedRoles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

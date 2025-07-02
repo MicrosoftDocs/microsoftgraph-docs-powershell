@@ -56,6 +56,8 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

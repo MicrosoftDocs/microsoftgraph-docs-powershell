@@ -47,6 +47,8 @@ New-MgBetaSiteListActivity -InputObject <ISitesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to activities for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Action

@@ -101,6 +101,8 @@ Update-MgBetaApplicationByAppId -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

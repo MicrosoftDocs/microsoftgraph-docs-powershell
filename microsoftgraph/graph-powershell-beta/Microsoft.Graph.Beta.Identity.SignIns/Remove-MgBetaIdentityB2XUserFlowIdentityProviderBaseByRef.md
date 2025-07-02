@@ -33,6 +33,8 @@ Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef -InputObject <IIdentit
 ## DESCRIPTION
 Delete ref of navigation property userFlowIdentityProviders for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

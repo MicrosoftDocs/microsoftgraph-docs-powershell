@@ -46,6 +46,8 @@ New-MgSitePageAsSitePageWebPart -InputObject <ISitesIdentity> -BodyParameter <Ha
 ## DESCRIPTION
 Create new navigation property to webParts for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

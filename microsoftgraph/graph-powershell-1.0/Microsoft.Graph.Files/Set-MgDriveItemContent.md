@@ -40,6 +40,8 @@ The content stream, if the item represents a file.
 | Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

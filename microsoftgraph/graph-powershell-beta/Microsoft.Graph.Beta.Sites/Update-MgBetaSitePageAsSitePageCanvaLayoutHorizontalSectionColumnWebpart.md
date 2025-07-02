@@ -48,6 +48,8 @@ Update-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart -InputO
 ## DESCRIPTION
 Update the navigation property webparts in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,6 +48,8 @@ Update-MgSecurityLabelCitation -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property citations in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

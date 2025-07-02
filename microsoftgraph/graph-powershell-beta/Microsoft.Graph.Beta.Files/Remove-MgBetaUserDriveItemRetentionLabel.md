@@ -32,6 +32,8 @@ Remove-MgBetaUserDriveItemRetentionLabel -InputObject <IFilesIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property retentionLabel for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -32,6 +32,8 @@ Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecurit
 ## DESCRIPTION
 Delete navigation property additionalSources for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DataSourceId

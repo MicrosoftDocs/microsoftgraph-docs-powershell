@@ -58,6 +58,8 @@ New-MgGroupTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to channels for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

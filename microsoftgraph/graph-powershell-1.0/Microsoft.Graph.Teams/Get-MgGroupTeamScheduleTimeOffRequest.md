@@ -40,6 +40,8 @@ Get-MgGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-ExpandProp
 ## DESCRIPTION
 The time off requests in the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

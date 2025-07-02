@@ -49,6 +49,8 @@ Update-MgInformationProtectionThreatAssessmentRequestResult -InputObject <IIdent
 ## DESCRIPTION
 Update the navigation property results in informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -65,6 +65,8 @@ Update-MgBetaGroupTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParamete
 ## DESCRIPTION
 Update the navigation property messages in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

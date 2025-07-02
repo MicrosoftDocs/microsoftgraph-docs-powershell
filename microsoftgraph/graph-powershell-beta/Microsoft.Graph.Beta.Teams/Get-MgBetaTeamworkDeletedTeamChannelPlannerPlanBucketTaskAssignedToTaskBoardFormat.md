@@ -35,6 +35,8 @@ Read-only.
 Nullable.
 Used to render the task correctly in the task board view when grouped by assignedTo.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

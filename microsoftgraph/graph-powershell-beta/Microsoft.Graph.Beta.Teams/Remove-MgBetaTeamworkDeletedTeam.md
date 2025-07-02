@@ -32,6 +32,8 @@ Remove-MgBetaTeamworkDeletedTeam -InputObject <ITeamsIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property deletedTeams for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeletedTeamId

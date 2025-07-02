@@ -42,6 +42,8 @@ Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectio
 ## DESCRIPTION
 Get a driveProtectionUnitsBulkAdditionJob object by the ID associated with a oneDriveForBusinessProtectionPolicy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -48,6 +48,8 @@ Update-MgEntitlementManagementResourceRequestResourceRole -InputObject <IIdentit
 ## DESCRIPTION
 Update the navigation property roles in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

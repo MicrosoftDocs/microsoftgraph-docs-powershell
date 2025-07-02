@@ -21,6 +21,8 @@ Get-MgBetaDeviceManagementGroupPolicyDefinitionFileCount [-Filter <String>] [-Se
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

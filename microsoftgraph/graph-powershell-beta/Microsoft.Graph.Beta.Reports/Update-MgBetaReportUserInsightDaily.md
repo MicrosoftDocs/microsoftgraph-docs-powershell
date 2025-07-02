@@ -35,6 +35,8 @@ Update-MgBetaReportUserInsightDaily -BodyParameter <IMicrosoftGraphDailyUserInsi
 ## DESCRIPTION
 Update the navigation property daily in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActiveUsers

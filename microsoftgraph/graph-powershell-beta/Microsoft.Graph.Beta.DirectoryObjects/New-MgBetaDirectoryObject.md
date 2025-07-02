@@ -31,6 +31,8 @@ New-MgBetaDirectoryObject -BodyParameter <IMicrosoftGraphDirectoryObject> [-Resp
 ## DESCRIPTION
 Add new entity to directoryObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

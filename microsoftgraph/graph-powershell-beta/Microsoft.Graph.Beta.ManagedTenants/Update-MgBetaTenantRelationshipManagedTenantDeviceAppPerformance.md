@@ -53,6 +53,8 @@ Update-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance -InputObject <I
 ## DESCRIPTION
 Update the navigation property deviceAppPerformances in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

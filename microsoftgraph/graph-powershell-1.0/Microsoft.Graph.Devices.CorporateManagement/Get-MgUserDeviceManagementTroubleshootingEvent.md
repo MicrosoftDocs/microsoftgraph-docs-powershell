@@ -40,6 +40,8 @@ Get-MgUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorporateMa
 ## DESCRIPTION
 The list of troubleshooting events for this user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -40,6 +40,8 @@ Get-MgBetaDirectoryDeletedItemAsUser -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

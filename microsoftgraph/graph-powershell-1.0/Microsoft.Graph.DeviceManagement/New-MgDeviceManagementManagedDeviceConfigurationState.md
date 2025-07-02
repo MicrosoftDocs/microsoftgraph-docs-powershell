@@ -50,6 +50,8 @@ New-MgDeviceManagementManagedDeviceConfigurationState -InputObject <IDeviceManag
 ## DESCRIPTION
 Create new navigation property to deviceConfigurationStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Remove-MgBetaIdentityGovernancePermissionAnalyticAzureFinding -InputObject <IIde
 ## DESCRIPTION
 Delete navigation property findings for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -FindingId

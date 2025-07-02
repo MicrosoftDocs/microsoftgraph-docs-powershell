@@ -29,6 +29,8 @@ Remove-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile -InputObjec
 ## DESCRIPTION
 Delete navigation property forwardingProfiles for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ForwardingProfileId

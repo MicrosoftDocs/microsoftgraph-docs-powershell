@@ -52,6 +52,8 @@ New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask -InputObject <I
 ## DESCRIPTION
 Create new navigation property to tasks for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

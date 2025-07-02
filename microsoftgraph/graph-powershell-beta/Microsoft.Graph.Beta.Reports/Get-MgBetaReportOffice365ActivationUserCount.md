@@ -31,6 +31,8 @@ Invoke function getOffice365ActivationsUserCounts
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Reports.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

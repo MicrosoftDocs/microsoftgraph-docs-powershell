@@ -32,6 +32,8 @@ Get-MgEducationUserAssignmentRubric -InputObject <IEducationIdentity> [-ExpandPr
 ## DESCRIPTION
 When set, the grading rubric attached to this assignment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

@@ -60,6 +60,8 @@ Update-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition
 ## DESCRIPTION
 Update the navigation property previousVersionDefinition in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceApplyDecision
 ## DESCRIPTION
 Invoke action stopApplyDecisions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceId

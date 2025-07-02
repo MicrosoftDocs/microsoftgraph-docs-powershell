@@ -58,6 +58,8 @@ Update-MgSecurityLabelRetentionLabelDescriptor -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property descriptors in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ New-MgBetaIdentityGovernancePermissionAnalyticAwFinding -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to findings for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

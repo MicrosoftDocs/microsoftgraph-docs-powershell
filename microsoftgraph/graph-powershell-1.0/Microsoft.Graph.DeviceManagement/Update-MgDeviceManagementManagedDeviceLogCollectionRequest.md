@@ -53,6 +53,8 @@ Update-MgDeviceManagementManagedDeviceLogCollectionRequest -InputObject <IDevice
 ## DESCRIPTION
 Update the navigation property logCollectionRequests in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

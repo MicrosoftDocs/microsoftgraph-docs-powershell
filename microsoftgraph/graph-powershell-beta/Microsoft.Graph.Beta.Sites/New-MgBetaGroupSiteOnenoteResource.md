@@ -48,6 +48,8 @@ New-MgBetaGroupSiteOnenoteResource -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to resources for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

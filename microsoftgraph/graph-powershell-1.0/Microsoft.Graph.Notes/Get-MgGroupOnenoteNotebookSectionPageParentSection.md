@@ -35,6 +35,8 @@ Get-MgGroupOnenoteNotebookSectionPageParentSection -InputObject <INotesIdentity>
 The section that contains the page.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

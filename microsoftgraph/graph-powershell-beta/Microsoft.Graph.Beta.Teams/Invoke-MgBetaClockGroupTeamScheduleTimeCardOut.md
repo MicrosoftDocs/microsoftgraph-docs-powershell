@@ -51,6 +51,8 @@ Invoke-MgBetaClockGroupTeamScheduleTimeCardOut -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Clock out to end an open timeCard.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

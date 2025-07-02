@@ -32,6 +32,8 @@ Remove-MgGroupSiteOnenotePageContent -InputObject <ISitesIdentity> [-IfMatch <St
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

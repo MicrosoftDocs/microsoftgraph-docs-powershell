@@ -40,6 +40,8 @@ Get-MgBetaSolutionBackupRestoreDriveProtectionUnit -InputObject <IBackupRestoreI
 ## DESCRIPTION
 The list of drive protection units in the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Remove-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property calendarView for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BookingAppointmentId

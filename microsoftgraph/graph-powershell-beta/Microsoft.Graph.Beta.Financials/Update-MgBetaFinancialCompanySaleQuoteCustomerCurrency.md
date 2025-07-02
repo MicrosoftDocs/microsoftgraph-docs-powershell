@@ -47,6 +47,8 @@ Update-MgBetaFinancialCompanySaleQuoteCustomerCurrency -InputObject <IFinancials
 ## DESCRIPTION
 Update the navigation property currency in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

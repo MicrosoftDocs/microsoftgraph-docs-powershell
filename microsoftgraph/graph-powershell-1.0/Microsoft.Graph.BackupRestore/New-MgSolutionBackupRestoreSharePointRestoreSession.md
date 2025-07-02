@@ -36,6 +36,8 @@ New-MgSolutionBackupRestoreSharePointRestoreSession -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create a new sharePointRestoreSession object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

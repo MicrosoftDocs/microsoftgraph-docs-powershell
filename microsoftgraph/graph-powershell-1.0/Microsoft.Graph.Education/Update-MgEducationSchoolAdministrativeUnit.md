@@ -54,6 +54,8 @@ Update-MgEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property administrativeUnit in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

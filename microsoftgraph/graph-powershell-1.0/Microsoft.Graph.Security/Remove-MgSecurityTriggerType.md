@@ -23,6 +23,8 @@ Remove-MgSecurityTriggerType [-IfMatch <String>] [-ResponseHeadersVariable <Stri
 ## DESCRIPTION
 Delete navigation property triggerTypes for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -54,6 +54,8 @@ New-MgUserDriveListItemDocumentSetVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to documentSetVersions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

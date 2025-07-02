@@ -29,6 +29,8 @@ Remove-MgBetaNetworkAccessAlert -InputObject <INetworkAccessIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property alerts for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertId

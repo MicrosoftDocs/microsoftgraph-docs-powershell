@@ -28,6 +28,8 @@ Get-MgBetaDeviceManagementUserRoleDetail -InputObject <IDeviceManagementFunction
 ## DESCRIPTION
 Invoke function retrieveUserRoleDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -30,6 +30,8 @@ Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentApproval
 ## DESCRIPTION
 Delete navigation property roleAssignmentApprovals for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApprovalId

@@ -38,6 +38,8 @@ Get-MgBetaOnPremisePublishingProfileApplicationSegment -InputObject <IApplicatio
 ## DESCRIPTION
 Represents the segment configurations that are allowed for an on-premises non-web application published through Microsoft Entra application proxy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -41,6 +41,8 @@ Get-MgBetaUserSettingWindowsInstance -InputObject <IUsersIdentity> [-ExpandPrope
 ## DESCRIPTION
 A collection of setting values for a given windowsSetting.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

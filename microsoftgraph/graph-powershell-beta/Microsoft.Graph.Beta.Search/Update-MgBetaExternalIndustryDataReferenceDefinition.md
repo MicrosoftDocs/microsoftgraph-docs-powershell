@@ -53,6 +53,8 @@ Update the navigation property referenceDefinitions in external
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IndustryData-ReferenceDefinition.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

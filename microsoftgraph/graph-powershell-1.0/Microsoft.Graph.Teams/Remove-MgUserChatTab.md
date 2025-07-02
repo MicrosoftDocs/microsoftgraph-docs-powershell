@@ -32,6 +32,8 @@ Remove-MgUserChatTab -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Respons
 ## DESCRIPTION
 Delete navigation property tabs for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

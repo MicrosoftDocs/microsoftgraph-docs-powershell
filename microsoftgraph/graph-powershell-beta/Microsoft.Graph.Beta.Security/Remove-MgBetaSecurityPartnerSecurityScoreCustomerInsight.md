@@ -29,6 +29,8 @@ Remove-MgBetaSecurityPartnerSecurityScoreCustomerInsight -InputObject <ISecurity
 ## DESCRIPTION
 Delete navigation property customerInsights for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CustomerInsightTenantId

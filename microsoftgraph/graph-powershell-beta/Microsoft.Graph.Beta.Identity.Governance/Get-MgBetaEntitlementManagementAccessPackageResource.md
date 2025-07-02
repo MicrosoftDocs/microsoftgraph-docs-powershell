@@ -37,6 +37,8 @@ Get-MgBetaEntitlementManagementAccessPackageResource -InputObject <IIdentityGove
 ## DESCRIPTION
 A reference to a resource associated with an access package catalog.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

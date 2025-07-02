@@ -32,6 +32,8 @@ Get-MgBetaGroupDriveRootAnalyticLastSevenDay -InputObject <IFilesIdentity> [-Exp
 ## DESCRIPTION
 Get lastSevenDays from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

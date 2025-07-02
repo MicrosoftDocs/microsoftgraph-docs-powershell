@@ -29,6 +29,8 @@ New-MgBetaExternalIndustryDataRoleGroup -BodyParameter <IMicrosoftGraphIndustryD
 ## DESCRIPTION
 Create new navigation property to roleGroups for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

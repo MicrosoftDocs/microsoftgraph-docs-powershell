@@ -56,6 +56,8 @@ Update-MgBetaGroupDriveRootPermission -InputObject <IFilesIdentity> -BodyParamet
 ## DESCRIPTION
 Update the navigation property permissions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

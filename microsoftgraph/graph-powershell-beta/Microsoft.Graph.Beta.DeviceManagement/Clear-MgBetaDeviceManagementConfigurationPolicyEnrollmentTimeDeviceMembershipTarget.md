@@ -29,6 +29,8 @@ Clear-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTar
 ## DESCRIPTION
 Invoke action clearEnrollmentTimeDeviceMembershipTarget
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementConfigurationPolicyId

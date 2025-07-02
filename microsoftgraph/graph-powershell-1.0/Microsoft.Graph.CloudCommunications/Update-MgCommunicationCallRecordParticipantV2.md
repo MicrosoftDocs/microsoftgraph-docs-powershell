@@ -50,6 +50,8 @@ Update-MgCommunicationCallRecordParticipantV2 -InputObject <ICloudCommunications
 ## DESCRIPTION
 Update the navigation property participants_v2 in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

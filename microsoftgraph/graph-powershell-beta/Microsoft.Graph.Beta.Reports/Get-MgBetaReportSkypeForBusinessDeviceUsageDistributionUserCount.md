@@ -32,6 +32,8 @@ Get-MgBetaReportSkypeForBusinessDeviceUsageDistributionUserCount -InputObject <I
 ## DESCRIPTION
 Invoke function getSkypeForBusinessDeviceUsageDistributionUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -52,6 +52,8 @@ New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Create new navigation property to sessions for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

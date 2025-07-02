@@ -46,6 +46,8 @@ Get-MgShareListItemDriveItemContent -InputObject <IFilesIdentity> [-Format <Stri
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Format

@@ -74,6 +74,8 @@ Remove-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property allMembers for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

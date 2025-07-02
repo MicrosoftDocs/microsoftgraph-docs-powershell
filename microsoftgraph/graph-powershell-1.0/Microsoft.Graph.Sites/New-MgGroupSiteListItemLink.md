@@ -52,6 +52,8 @@ New-MgGroupSiteListItemLink -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Invoke action createLink
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

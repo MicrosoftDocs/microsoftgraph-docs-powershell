@@ -82,6 +82,8 @@ Update-MgSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property groups in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

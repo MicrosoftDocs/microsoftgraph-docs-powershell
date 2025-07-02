@@ -33,6 +33,8 @@ New-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance
 ## DESCRIPTION
 Create new navigation property to aggregatedPolicyCompliances for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

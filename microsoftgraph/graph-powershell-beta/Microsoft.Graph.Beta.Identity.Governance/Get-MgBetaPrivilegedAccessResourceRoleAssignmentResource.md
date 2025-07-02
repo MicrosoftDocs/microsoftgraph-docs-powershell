@@ -32,6 +32,8 @@ Get-MgBetaPrivilegedAccessResourceRoleAssignmentResource -InputObject <IIdentity
 Read-only.
 The resource associated with the role assignment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

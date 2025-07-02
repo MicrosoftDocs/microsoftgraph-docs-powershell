@@ -37,6 +37,8 @@ Update-MgBetaSecurityLabel -BodyParameter <IMicrosoftGraphSecurityLabelsRoot>
 ## DESCRIPTION
 Update the navigation property labels in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

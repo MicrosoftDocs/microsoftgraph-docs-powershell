@@ -35,6 +35,8 @@ The directory object that is the scope of the assignment.
 Read-only.
 Supports $expand for the directory provider.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

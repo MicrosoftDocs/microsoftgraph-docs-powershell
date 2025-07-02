@@ -51,6 +51,8 @@ New-MgApplicationSynchronizationTemplateSchemaDirectory -InputObject <IApplicati
 ## DESCRIPTION
 Create new navigation property to directories for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

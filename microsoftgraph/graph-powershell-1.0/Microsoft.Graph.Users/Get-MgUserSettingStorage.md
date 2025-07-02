@@ -32,6 +32,8 @@ Get-MgUserSettingStorage -InputObject <IUsersIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Get storage from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

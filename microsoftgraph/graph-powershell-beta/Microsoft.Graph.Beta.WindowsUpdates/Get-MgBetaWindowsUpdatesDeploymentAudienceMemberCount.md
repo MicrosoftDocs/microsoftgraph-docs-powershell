@@ -29,6 +29,8 @@ Get-MgBetaWindowsUpdatesDeploymentAudienceMemberCount -InputObject <IWindowsUpda
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeploymentId

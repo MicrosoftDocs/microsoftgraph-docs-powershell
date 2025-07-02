@@ -44,6 +44,8 @@ Update-MgBetaUserInformationProtectionDataLossPreventionPolicy -InputObject <IId
 ## DESCRIPTION
 Update the navigation property dataLossPreventionPolicies in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

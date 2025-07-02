@@ -40,6 +40,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobApp -InputObject <IDevicesCorp
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.androidLobApp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

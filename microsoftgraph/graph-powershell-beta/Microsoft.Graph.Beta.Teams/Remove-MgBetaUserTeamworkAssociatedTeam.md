@@ -32,6 +32,8 @@ Remove-MgBetaUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property associatedTeams for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AssociatedTeamInfoId

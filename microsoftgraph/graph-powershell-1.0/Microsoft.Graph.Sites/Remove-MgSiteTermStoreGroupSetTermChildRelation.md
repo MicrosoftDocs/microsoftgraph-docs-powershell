@@ -48,6 +48,8 @@ Remove-MgSiteTermStoreGroupSetTermChildRelation -InputObject <ISitesIdentity> [-
 ## DESCRIPTION
 Delete navigation property relations for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

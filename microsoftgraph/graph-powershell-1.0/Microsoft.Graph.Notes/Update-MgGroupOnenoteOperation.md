@@ -50,6 +50,8 @@ Update-MgGroupOnenoteOperation -InputObject <INotesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property operations in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

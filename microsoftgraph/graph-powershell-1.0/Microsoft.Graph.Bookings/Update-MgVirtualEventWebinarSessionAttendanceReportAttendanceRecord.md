@@ -52,6 +52,8 @@ Update-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord -InputObject
 ## DESCRIPTION
 Update the navigation property attendanceRecords in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -58,6 +58,8 @@ Update-MgGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property primaryChannel in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

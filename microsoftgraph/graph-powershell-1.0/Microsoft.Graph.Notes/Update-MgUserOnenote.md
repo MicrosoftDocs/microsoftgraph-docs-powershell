@@ -51,6 +51,8 @@ Update-MgUserOnenote -InputObject <INotesIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Update the navigation property onenote in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

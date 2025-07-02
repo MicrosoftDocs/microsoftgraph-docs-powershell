@@ -45,6 +45,8 @@ Update-MgBetaSecurityProviderTenantSetting -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property providerTenantSettings in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

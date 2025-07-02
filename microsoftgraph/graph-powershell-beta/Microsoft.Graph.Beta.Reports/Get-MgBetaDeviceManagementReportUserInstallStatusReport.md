@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportUserInstallStatusReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getUserInstallStatusReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

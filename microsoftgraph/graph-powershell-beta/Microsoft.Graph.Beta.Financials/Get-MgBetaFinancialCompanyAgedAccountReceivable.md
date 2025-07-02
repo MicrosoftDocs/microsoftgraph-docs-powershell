@@ -37,6 +37,8 @@ Get-MgBetaFinancialCompanyAgedAccountReceivable -InputObject <IFinancialsIdentit
 ## DESCRIPTION
 Get agedAccountsReceivable from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgedAccountsReceivableId

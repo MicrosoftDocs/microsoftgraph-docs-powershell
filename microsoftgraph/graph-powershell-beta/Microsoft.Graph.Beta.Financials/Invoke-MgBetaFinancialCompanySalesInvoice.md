@@ -29,6 +29,8 @@ Invoke-MgBetaFinancialCompanySalesInvoice -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Invoke action post
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

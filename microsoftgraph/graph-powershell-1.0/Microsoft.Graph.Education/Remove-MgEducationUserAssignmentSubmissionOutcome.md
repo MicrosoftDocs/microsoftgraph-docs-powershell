@@ -33,6 +33,8 @@ Remove-MgEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdenti
 ## DESCRIPTION
 Delete navigation property outcomes for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

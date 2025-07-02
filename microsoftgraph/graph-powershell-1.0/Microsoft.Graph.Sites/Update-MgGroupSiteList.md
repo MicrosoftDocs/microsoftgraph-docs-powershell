@@ -62,6 +62,8 @@ Update-MgGroupSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property lists in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

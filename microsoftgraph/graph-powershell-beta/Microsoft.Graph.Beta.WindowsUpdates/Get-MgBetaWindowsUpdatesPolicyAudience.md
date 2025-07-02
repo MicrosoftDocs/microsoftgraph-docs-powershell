@@ -29,6 +29,8 @@ Get-MgBetaWindowsUpdatesPolicyAudience -InputObject <IWindowsUpdatesIdentity> [-
 ## DESCRIPTION
 Specifies the audience to target.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

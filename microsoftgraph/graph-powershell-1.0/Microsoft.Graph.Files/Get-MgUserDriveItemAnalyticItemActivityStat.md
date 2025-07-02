@@ -41,6 +41,8 @@ Get-MgUserDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity> [-Expa
 ## DESCRIPTION
 Get itemActivityStats from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

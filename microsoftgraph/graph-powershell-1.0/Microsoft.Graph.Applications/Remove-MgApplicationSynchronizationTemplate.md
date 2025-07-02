@@ -32,6 +32,8 @@ Remove-MgApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Delete navigation property templates for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

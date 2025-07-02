@@ -39,6 +39,8 @@ Get-MgVirtualEvent -InputObject <IBookingsIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Get events from solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

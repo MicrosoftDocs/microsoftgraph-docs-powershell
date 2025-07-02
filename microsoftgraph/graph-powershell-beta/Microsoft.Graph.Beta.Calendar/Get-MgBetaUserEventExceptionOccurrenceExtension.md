@@ -39,6 +39,8 @@ Get-MgBetaUserEventExceptionOccurrenceExtension -InputObject <ICalendarIdentity>
 The collection of open extensions defined for the event.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

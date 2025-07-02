@@ -32,6 +32,8 @@ Get-MgBetaDriveRootVersionContent -InputObject <IFilesIdentity> -OutFile <String
 ## DESCRIPTION
 Get content for the navigation property versions from drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

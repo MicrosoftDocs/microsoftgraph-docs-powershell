@@ -24,6 +24,8 @@ Remove-MgDeviceManagementReport [-IfMatch <String>] [-ResponseHeadersVariable <S
 ## DESCRIPTION
 Delete navigation property reports for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

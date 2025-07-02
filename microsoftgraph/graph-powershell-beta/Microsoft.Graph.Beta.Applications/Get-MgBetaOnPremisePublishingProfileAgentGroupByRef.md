@@ -35,6 +35,8 @@ List of onPremisesAgentGroups that an onPremisesAgent is assigned to.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

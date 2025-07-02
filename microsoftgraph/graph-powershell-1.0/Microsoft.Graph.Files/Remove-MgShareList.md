@@ -32,6 +32,8 @@ Remove-MgShareList -InputObject <IFilesIdentity> [-IfMatch <String>] [-ResponseH
 ## DESCRIPTION
 Delete navigation property list for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

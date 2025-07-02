@@ -33,6 +33,8 @@ Remove-MgEducationMeAssignmentSubmissionSubmittedResource -InputObject <IEducati
 ## DESCRIPTION
 Delete navigation property submittedResources for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

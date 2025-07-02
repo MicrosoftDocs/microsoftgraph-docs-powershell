@@ -32,6 +32,8 @@ Get-MgApplicationSynchronizationJobBulkUpload -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 The bulk upload operation for the job.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

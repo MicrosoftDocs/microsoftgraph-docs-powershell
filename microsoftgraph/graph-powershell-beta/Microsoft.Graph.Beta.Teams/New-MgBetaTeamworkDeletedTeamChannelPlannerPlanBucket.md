@@ -49,6 +49,8 @@ New-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucket -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Create new navigation property to buckets for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

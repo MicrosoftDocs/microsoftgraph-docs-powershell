@@ -29,6 +29,8 @@ Invoke-MgBetaRotateUserManagedDeviceLocalAdminPassword -InputObject <IDevicesCor
 ## DESCRIPTION
 Initiates a manual rotation for the local admin password on the device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

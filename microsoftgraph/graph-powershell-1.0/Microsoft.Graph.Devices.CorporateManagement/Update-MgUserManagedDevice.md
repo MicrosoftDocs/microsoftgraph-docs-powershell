@@ -86,6 +86,8 @@ Update-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity>
 ## DESCRIPTION
 Update the navigation property managedDevices in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

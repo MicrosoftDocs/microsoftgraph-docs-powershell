@@ -29,6 +29,8 @@ Remove-MgBetaFinancialCompanySaleQuoteCustomerPaymentTerm -InputObject <IFinanci
 ## DESCRIPTION
 Delete navigation property paymentTerm for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

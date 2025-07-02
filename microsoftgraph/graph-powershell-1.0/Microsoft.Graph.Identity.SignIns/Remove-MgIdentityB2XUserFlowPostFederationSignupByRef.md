@@ -32,6 +32,8 @@ Remove-MgIdentityB2XUserFlowPostFederationSignupByRef -InputObject <IIdentitySig
 ## DESCRIPTION
 Delete ref of navigation property postFederationSignup for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

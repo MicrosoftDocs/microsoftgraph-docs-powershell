@@ -54,6 +54,8 @@ Update-MgBetaUserDriveListLastModifiedByUserMailboxSetting -InputObject <IFilesI
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

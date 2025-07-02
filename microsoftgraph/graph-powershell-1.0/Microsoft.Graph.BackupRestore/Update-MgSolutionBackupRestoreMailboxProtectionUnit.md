@@ -52,6 +52,8 @@ Update-MgSolutionBackupRestoreMailboxProtectionUnit -InputObject <IBackupRestore
 ## DESCRIPTION
 Update the navigation property mailboxProtectionUnits in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

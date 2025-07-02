@@ -47,6 +47,8 @@ New-MgBetaDeviceCommand -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Create new navigation property to commands for devices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

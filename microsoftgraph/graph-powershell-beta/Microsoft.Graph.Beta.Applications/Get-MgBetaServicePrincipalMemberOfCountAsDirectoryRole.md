@@ -32,6 +32,8 @@ Get-MgBetaServicePrincipalMemberOfCountAsDirectoryRole -InputObject <IApplicatio
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

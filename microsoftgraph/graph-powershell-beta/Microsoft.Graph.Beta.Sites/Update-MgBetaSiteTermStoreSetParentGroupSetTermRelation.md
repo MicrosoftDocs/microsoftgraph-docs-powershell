@@ -51,6 +51,8 @@ Update-MgBetaSiteTermStoreSetParentGroupSetTermRelation -InputObject <ISitesIden
 ## DESCRIPTION
 Update the navigation property relations in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -37,6 +37,8 @@ Get-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus -InputObject <IManag
 ## DESCRIPTION
 Get deviceHealthStatuses from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

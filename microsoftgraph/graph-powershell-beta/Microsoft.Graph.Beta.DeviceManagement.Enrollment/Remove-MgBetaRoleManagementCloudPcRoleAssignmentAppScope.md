@@ -30,6 +30,8 @@ Remove-MgBetaRoleManagementCloudPcRoleAssignmentAppScope -InputObject <IDeviceMa
 ## DESCRIPTION
 Delete navigation property appScopes for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppScopeId

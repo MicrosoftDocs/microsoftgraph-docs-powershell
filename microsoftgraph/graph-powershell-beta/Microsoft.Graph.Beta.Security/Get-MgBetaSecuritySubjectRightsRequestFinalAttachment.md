@@ -43,6 +43,8 @@ The attachment is a zip file that contains all the files that were included by t
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

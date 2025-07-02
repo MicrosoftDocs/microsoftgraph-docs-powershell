@@ -42,6 +42,8 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion
 ## DESCRIPTION
 The workflow versions that are available.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

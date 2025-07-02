@@ -49,6 +49,8 @@ Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceContactedReviewer
 ## DESCRIPTION
 Update the navigation property contactedReviewers in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

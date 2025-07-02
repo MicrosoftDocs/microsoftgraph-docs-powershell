@@ -47,6 +47,8 @@ Update-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
 ## DESCRIPTION
 Update the navigation property frontLineServicePlans in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

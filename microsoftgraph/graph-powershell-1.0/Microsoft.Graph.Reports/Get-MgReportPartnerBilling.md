@@ -24,6 +24,8 @@ Get-MgReportPartnerBilling [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Represents billing details for billed and unbilled data.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

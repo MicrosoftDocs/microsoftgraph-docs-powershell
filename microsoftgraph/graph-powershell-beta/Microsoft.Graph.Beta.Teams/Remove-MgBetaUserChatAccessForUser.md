@@ -46,6 +46,8 @@ Remove-MgBetaUserChatAccessForUser -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Remove access to a chat for a user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

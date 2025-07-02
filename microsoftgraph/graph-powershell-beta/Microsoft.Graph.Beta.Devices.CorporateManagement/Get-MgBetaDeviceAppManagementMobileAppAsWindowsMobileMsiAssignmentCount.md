@@ -33,6 +33,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignmentCount
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

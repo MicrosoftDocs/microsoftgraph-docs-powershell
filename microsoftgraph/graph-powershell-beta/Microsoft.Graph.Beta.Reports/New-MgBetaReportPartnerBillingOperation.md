@@ -32,6 +32,8 @@ New-MgBetaReportPartnerBillingOperation -BodyParameter <IMicrosoftGraphPartnersB
 ## DESCRIPTION
 Create new navigation property to operations for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

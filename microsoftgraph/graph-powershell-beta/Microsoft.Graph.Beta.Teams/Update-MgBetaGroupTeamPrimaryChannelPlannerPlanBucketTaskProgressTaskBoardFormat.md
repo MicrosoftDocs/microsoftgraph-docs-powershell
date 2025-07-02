@@ -47,6 +47,8 @@ Update-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskProgressTaskBoardFormat
 ## DESCRIPTION
 Update the navigation property progressTaskBoardFormat in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

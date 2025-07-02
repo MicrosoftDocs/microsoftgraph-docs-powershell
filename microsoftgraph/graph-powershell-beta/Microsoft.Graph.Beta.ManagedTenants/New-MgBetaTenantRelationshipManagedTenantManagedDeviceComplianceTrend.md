@@ -32,6 +32,8 @@ New-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend
 ## DESCRIPTION
 Create new navigation property to managedDeviceComplianceTrends for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

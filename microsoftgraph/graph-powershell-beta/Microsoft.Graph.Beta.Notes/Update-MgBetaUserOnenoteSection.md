@@ -54,6 +54,8 @@ Update-MgBetaUserOnenoteSection -InputObject <INotesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property sections in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

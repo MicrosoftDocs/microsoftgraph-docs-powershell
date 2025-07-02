@@ -40,6 +40,8 @@ Create new navigation property to androidForWorkEnrollmentProfiles for deviceMan
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountId

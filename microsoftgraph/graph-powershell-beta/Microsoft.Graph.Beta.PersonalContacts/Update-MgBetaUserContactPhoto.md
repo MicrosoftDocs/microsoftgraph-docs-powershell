@@ -54,6 +54,8 @@ Update the navigation property photo in users
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Contacts.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -51,6 +51,8 @@ Invoke function findRooms
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.Read.All, User.ReadBasic.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

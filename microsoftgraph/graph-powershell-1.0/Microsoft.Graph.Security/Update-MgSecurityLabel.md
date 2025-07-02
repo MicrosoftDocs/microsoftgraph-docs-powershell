@@ -36,6 +36,8 @@ Update-MgSecurityLabel -BodyParameter <IMicrosoftGraphSecurityLabelsRoot> [-Resp
 ## DESCRIPTION
 Update the navigation property labels in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

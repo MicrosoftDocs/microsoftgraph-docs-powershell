@@ -29,6 +29,8 @@ Update-MgBetaComplianceEdiscoveryCaseCustodianIndex -InputObject <IComplianceIde
 ## DESCRIPTION
 Invoke action updateIndex
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

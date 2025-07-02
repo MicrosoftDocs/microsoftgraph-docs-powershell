@@ -64,6 +64,8 @@ Update-MgBetaDriveRootListItem -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property listItem in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

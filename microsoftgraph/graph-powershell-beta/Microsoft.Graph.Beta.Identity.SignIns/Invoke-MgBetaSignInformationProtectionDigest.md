@@ -30,6 +30,8 @@ Invoke-MgBetaSignInformationProtectionDigest
 ## DESCRIPTION
 Invoke action signDigest
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

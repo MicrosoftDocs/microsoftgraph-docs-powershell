@@ -49,6 +49,8 @@ Update-MgBetaTenantRelationshipManagedTenantApiNotification -InputObject <IManag
 ## DESCRIPTION
 Update the navigation property managedTenantApiNotifications in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

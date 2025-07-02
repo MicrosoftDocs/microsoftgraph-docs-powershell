@@ -48,6 +48,8 @@ New-MgBetaUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to members for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

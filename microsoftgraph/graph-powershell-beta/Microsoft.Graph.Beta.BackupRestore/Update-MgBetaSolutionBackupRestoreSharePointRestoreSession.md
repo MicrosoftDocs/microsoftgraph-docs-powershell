@@ -58,6 +58,8 @@ Update-MgBetaSolutionBackupRestoreSharePointRestoreSession -InputObject <IBackup
 ## DESCRIPTION
 Update the navigation property sharePointRestoreSessions in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

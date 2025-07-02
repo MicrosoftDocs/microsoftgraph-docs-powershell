@@ -40,6 +40,8 @@ Invoke function usageProfiling
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess-Reports.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AggregatedBy

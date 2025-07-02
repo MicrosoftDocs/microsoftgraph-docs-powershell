@@ -37,6 +37,8 @@ Get-MgBetaReportUserInsightMonthlySummary -InputObject <IReportsIdentity> [-Expa
 ## DESCRIPTION
 Summary of all usage insights on apps registered in the tenant for a specified period.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -36,6 +36,8 @@ New-MgBetaSecurityAttackSimulationAutomation -BodyParameter <IMicrosoftGraphSimu
 ## DESCRIPTION
 Create new navigation property to simulationAutomations for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

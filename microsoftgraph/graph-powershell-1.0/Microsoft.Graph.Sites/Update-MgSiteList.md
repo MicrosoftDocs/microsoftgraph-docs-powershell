@@ -62,6 +62,8 @@ Update-MgSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphL
 ## DESCRIPTION
 Update the navigation property lists in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

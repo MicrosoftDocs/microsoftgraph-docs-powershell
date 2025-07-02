@@ -50,6 +50,8 @@ Update-MgServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property appRoleAssignedTo in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

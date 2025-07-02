@@ -56,6 +56,8 @@ New-MgBetaUserOnenoteNotebookSectionGroupSectionPage -InputObject <INotesIdentit
 ## DESCRIPTION
 Create new navigation property to pages for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -56,6 +56,8 @@ Update-MgBetaPlaceAsRoomListRoom -InputObject <ICalendarIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property rooms in places
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

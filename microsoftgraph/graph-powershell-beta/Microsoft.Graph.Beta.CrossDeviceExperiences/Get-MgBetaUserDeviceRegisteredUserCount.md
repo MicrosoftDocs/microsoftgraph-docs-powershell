@@ -29,6 +29,8 @@ Get-MgBetaUserDeviceRegisteredUserCount -InputObject <ICrossDeviceExperiencesIde
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

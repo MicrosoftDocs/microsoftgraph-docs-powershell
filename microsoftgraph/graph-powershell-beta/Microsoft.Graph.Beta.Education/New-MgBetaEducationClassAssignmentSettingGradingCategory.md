@@ -48,6 +48,8 @@ New-MgBetaEducationClassAssignmentSettingGradingCategory -InputObject <IEducatio
 ## DESCRIPTION
 Create new navigation property to gradingCategories for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

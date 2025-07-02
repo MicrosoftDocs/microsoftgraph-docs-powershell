@@ -49,6 +49,8 @@ New-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
 ## DESCRIPTION
 Create new navigation property to links for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -21,6 +21,8 @@ Remove-MgBetaPolicyAccessReviewPolicy [-IfMatch <String>] [-ResponseHeadersVaria
 ## DESCRIPTION
 Delete navigation property accessReviewPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

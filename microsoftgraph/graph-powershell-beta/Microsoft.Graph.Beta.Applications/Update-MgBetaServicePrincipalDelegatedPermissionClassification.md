@@ -49,6 +49,8 @@ Update-MgBetaServicePrincipalDelegatedPermissionClassification -InputObject <IAp
 ## DESCRIPTION
 Update the navigation property delegatedPermissionClassifications in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -30,6 +30,8 @@ Set-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITea
 ## DESCRIPTION
 The contents of the app icon if the icon is hosted within the Teams infrastructure.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

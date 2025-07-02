@@ -49,6 +49,8 @@ Update-MgSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property canvasLayout in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

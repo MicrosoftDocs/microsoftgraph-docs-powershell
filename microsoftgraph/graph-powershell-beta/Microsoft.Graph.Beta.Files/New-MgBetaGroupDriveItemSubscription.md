@@ -55,6 +55,8 @@ New-MgBetaGroupDriveItemSubscription -InputObject <IFilesIdentity> -BodyParamete
 ## DESCRIPTION
 Create new navigation property to subscriptions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

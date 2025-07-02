@@ -58,6 +58,8 @@ Update-MgBetaDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property contentTypes in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

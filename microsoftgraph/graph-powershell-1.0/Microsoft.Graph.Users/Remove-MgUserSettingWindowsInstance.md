@@ -33,6 +33,8 @@ Remove-MgUserSettingWindowsInstance -InputObject <IUsersIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property instances for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

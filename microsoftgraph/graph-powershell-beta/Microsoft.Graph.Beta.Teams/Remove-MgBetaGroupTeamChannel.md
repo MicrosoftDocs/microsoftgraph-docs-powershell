@@ -32,6 +32,8 @@ Remove-MgBetaGroupTeamChannel -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property channels for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

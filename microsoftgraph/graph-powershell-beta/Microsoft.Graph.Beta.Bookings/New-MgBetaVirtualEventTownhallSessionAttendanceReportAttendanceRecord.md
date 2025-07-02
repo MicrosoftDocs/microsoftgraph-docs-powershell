@@ -56,6 +56,8 @@ New-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord -InputObje
 ## DESCRIPTION
 Create new navigation property to attendanceRecords for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

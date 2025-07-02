@@ -39,6 +39,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsTab.Read.All, TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

@@ -42,6 +42,8 @@ Get-MgBetaOrganizationExtension -InputObject <IIdentityDirectoryManagementIdenti
 The collection of open extensions defined for the organization resource.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

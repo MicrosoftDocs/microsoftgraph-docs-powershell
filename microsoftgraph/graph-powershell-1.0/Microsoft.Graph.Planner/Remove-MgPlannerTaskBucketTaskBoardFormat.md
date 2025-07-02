@@ -32,6 +32,8 @@ Remove-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property bucketTaskBoardFormat for planner
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

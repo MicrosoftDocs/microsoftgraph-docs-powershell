@@ -38,6 +38,8 @@ Get-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob -InputObject
 ## DESCRIPTION
 Get mailboxProtectionUnitsBulkAdditionJobs from solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -31,6 +31,8 @@ Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeploym
 ## DESCRIPTION
 Delete navigation property deployments for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -25,6 +25,8 @@ Get-MgBetaSiteGetByPathContentType -Path <String> -SiteId <String> [-ExpandPrope
 ## DESCRIPTION
 The collection of content types defined for this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

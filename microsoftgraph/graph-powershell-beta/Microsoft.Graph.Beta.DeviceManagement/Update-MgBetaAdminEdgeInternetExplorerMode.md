@@ -32,6 +32,8 @@ Update-MgBetaAdminEdgeInternetExplorerMode -BodyParameter <IMicrosoftGraphIntern
 ## DESCRIPTION
 Update the navigation property internetExplorerMode in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -47,6 +47,8 @@ Update-MgBetaPrivilegedRoleAssignmentRoleInfo -InputObject <IIdentityGovernanceI
 ## DESCRIPTION
 Update the navigation property roleInfo in privilegedRoleAssignments
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

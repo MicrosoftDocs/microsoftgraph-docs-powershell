@@ -33,6 +33,8 @@ Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask
 ## DESCRIPTION
 Delete navigation property tasks for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

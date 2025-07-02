@@ -32,6 +32,8 @@ Get-MgEducationClassGroupServiceProvisioningErrorCount -InputObject <IEducationI
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationClassId

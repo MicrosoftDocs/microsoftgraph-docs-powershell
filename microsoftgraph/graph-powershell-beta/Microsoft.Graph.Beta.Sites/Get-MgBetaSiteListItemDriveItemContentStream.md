@@ -29,6 +29,8 @@ Get-MgBetaSiteListItemDriveItemContentStream -InputObject <ISitesIdentity> -OutF
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

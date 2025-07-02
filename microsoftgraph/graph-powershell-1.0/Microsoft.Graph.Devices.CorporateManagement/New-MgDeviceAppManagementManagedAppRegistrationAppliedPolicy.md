@@ -50,6 +50,8 @@ New-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy -InputObject <IDevi
 ## DESCRIPTION
 Create new navigation property to appliedPolicies for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

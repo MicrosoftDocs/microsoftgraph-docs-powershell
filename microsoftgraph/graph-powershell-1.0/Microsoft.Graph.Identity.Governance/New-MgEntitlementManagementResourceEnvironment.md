@@ -32,6 +32,8 @@ New-MgEntitlementManagementResourceEnvironment -BodyParameter <IMicrosoftGraphAc
 ## DESCRIPTION
 Create new navigation property to resourceEnvironments for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Get-MgChatInstalledAppTeamAppDefinition -InputObject <ITeamsIdentity> [-ExpandPr
 ## DESCRIPTION
 The details of this version of the app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

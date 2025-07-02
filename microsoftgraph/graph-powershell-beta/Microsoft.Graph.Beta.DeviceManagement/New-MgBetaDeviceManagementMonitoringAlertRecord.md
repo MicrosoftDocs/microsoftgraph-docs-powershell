@@ -32,6 +32,8 @@ New-MgBetaDeviceManagementMonitoringAlertRecord -BodyParameter <IMicrosoftGraphD
 ## DESCRIPTION
 Create new navigation property to alertRecords for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

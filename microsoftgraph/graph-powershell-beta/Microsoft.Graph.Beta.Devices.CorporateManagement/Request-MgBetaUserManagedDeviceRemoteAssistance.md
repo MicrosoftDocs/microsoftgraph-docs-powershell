@@ -32,6 +32,8 @@ Request-MgBetaUserManagedDeviceRemoteAssistance -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Request remote assistance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -49,6 +49,8 @@ New-MgBetaAppCatalogTeamAppDefinitionDashboardCard -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to dashboardCards for appCatalogs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -45,6 +45,8 @@ New-MgBetaTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to shiftsRoleDefinitions for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

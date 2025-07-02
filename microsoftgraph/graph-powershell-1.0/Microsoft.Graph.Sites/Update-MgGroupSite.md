@@ -72,6 +72,8 @@ Update-MgGroupSite -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property sites in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

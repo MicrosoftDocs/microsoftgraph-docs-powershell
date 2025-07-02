@@ -29,6 +29,8 @@ Remove-MgGroupSettingTemplateGroupSettingTemplate -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Delete entity from groupSettingTemplates
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupSettingTemplateId

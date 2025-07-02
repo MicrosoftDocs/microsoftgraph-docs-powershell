@@ -32,6 +32,8 @@ Remove-MgRiskDetection -InputObject <IIdentitySignInsIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property riskDetections for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

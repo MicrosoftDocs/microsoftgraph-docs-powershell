@@ -25,6 +25,8 @@ Get-MgBetaOnPremisePublishingProfileConnectorMemberOf -ConnectorId <String>
 The connectorGroup that the connector is a member of.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

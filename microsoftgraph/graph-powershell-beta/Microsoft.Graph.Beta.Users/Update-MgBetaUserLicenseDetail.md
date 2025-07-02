@@ -48,6 +48,8 @@ Update-MgBetaUserLicenseDetail -InputObject <IUsersIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property licenseDetails in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,6 +48,8 @@ New-MgBetaCommunicationOnlineMeetingAiInsight -InputObject <ICloudCommunications
 ## DESCRIPTION
 Create new navigation property to aiInsights for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionItems

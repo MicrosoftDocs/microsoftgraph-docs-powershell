@@ -45,6 +45,8 @@ Remove-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -InputObject <IFina
 ## DESCRIPTION
 Delete navigation property itemCategory for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

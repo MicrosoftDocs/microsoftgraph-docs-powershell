@@ -29,6 +29,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Reports.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

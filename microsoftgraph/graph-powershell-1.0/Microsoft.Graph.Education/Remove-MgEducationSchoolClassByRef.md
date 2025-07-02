@@ -33,6 +33,8 @@ Remove-MgEducationSchoolClassByRef -InputObject <IEducationIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete a class from a school.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationClassId

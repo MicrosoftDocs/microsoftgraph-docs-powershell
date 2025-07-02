@@ -32,6 +32,8 @@ Remove-MgBetaSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Delete navigation property simulationAutomations for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

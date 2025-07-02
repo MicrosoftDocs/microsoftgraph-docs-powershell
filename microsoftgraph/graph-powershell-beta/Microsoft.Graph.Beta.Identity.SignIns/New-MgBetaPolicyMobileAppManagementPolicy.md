@@ -31,6 +31,8 @@ New-MgBetaPolicyMobileAppManagementPolicy -BodyParameter <IMicrosoftGraphMobilit
 ## DESCRIPTION
 Create new navigation property to mobileAppManagementPolicies for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -30,6 +30,8 @@ Get-MgBetaVirtualEventPresenterSessionByJoinWebUrl -InputObject <IBookingsIdenti
 ## DESCRIPTION
 Get sessions from solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

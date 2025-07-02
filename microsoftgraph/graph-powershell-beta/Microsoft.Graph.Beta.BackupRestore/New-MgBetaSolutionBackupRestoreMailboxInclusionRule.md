@@ -35,6 +35,8 @@ New-MgBetaSolutionBackupRestoreMailboxInclusionRule -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create new navigation property to mailboxInclusionRules for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

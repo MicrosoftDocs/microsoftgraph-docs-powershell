@@ -46,6 +46,8 @@ Update-MgUserEventExtension -InputObject <ICalendarIdentity> -BodyParameter <Has
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

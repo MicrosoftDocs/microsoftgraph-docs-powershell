@@ -58,6 +58,8 @@ Update-MgBetaSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property retentionEvents in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -46,6 +46,8 @@ A smaller image reduces bandwidth requirements and make the page load faster.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

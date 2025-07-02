@@ -86,6 +86,8 @@ Update the navigation property events in groups
 | Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
 | Application | Calendars.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

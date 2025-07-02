@@ -37,6 +37,8 @@ Get-MgBetaSecurityFileSecurityProfile -InputObject <ISecurityIdentity> [-ExpandP
 ## DESCRIPTION
 Get fileSecurityProfiles from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

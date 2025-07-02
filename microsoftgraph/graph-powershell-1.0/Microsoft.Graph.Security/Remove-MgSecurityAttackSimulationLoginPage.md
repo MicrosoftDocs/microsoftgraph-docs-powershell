@@ -32,6 +32,8 @@ Remove-MgSecurityAttackSimulationLoginPage -InputObject <ISecurityIdentity> [-If
 ## DESCRIPTION
 Delete navigation property loginPages for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

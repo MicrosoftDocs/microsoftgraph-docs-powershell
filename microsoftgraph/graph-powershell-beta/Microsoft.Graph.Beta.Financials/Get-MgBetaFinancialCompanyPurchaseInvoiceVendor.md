@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanyPurchaseInvoiceVendor -InputObject <IFinancialsIdentit
 ## DESCRIPTION
 Get vendor from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

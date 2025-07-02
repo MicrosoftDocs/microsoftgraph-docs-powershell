@@ -51,6 +51,8 @@ Update-MgDeviceManagementManagedDeviceCompliancePolicyState -InputObject <IDevic
 ## DESCRIPTION
 Update the navigation property deviceCompliancePolicyStates in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

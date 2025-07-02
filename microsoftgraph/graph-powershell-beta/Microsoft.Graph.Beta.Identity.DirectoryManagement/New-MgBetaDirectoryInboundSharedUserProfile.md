@@ -30,6 +30,8 @@ New-MgBetaDirectoryInboundSharedUserProfile -BodyParameter <IMicrosoftGraphInbou
 ## DESCRIPTION
 Create new navigation property to inboundSharedUserProfiles for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

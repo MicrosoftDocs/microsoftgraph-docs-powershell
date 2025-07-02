@@ -29,6 +29,8 @@ New-MgBetaReportUserInsightMonthlyMfaRegisteredUser -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create new navigation property to mfaRegisteredUsers for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

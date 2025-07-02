@@ -68,6 +68,8 @@ Update-MgBetaShareListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property columns in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

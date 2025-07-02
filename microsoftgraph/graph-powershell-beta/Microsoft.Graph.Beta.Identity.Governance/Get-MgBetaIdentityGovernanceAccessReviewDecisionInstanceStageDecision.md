@@ -41,6 +41,8 @@ Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecision
 ## DESCRIPTION
 Each user reviewed in an accessReviewStage has a decision item representing if they were approved, denied, or not yet reviewed.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

@@ -33,6 +33,8 @@ Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser -InputObject <IDevic
 ## DESCRIPTION
 Logout shared Apple device active user
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

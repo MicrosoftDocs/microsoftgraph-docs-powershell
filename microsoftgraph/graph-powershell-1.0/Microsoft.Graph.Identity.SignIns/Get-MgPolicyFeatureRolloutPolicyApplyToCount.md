@@ -32,6 +32,8 @@ Get-MgPolicyFeatureRolloutPolicyApplyToCount -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -FeatureRolloutPolicyId

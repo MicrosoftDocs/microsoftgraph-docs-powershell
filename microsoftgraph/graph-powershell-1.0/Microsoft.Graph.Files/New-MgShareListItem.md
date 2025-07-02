@@ -60,6 +60,8 @@ New-MgShareListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create new navigation property to items for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

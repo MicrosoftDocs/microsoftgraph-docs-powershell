@@ -32,6 +32,8 @@ Get-MgBetaUserDriveRootCreatedByUser -InputObject <IFilesIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get createdByUser from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

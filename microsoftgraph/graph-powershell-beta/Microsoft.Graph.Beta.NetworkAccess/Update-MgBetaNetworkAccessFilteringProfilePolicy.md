@@ -45,6 +45,8 @@ Update-MgBetaNetworkAccessFilteringProfilePolicy -InputObject <INetworkAccessIde
 ## DESCRIPTION
 Update the navigation property policies in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

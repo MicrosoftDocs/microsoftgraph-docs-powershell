@@ -51,6 +51,8 @@ Update-MgGroupTeamInstalledApp -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Upgrade an app installation within a chat.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

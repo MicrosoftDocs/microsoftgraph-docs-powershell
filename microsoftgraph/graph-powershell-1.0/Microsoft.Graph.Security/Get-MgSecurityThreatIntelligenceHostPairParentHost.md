@@ -32,6 +32,8 @@ Get-MgSecurityThreatIntelligenceHostPairParentHost -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Host used to reach the childHost.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

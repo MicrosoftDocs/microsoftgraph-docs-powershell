@@ -40,6 +40,8 @@ Get a list of the authenticationStrengthPolicy objects and their properties filt
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationMethodModes

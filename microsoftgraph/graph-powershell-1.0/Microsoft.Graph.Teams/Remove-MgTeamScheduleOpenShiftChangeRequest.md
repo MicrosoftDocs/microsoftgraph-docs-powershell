@@ -32,6 +32,8 @@ Remove-MgTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property openShiftChangeRequests for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

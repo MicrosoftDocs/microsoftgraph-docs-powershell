@@ -38,6 +38,8 @@ Remove-MgBetaDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting
 ## DESCRIPTION
 Delete navigation property conditionalAccessSettings for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementExchangeOnPremisesPolicyId

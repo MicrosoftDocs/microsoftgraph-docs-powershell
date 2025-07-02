@@ -40,6 +40,8 @@ Get-MgGroupSitePageAsSitePage -InputObject <ISitesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Get the item of type microsoft.graph.baseSitePage as microsoft.graph.sitePage
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

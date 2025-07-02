@@ -32,6 +32,8 @@ Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview -InputObject
 ## DESCRIPTION
 Delete navigation property deviceStatusOverview for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceCompliancePolicyId

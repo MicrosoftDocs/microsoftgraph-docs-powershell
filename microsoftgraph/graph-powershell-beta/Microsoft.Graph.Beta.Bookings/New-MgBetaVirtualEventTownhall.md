@@ -40,6 +40,8 @@ New-MgBetaVirtualEventTownhall -BodyParameter <IMicrosoftGraphVirtualEventTownha
 ## DESCRIPTION
 Create a new virtualEventTownhall object in draft mode.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

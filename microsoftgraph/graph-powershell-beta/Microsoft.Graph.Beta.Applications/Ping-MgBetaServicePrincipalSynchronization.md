@@ -28,6 +28,8 @@ Ping-MgBetaServicePrincipalSynchronization -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Invoke function Ping
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -52,6 +52,8 @@ Update-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property jobs in applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

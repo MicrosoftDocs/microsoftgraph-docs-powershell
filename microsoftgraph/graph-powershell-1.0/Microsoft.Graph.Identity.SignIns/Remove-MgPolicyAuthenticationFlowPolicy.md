@@ -24,6 +24,8 @@ Remove-MgPolicyAuthenticationFlowPolicy [-IfMatch <String>] [-ResponseHeadersVar
 ## DESCRIPTION
 Delete navigation property authenticationFlowsPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

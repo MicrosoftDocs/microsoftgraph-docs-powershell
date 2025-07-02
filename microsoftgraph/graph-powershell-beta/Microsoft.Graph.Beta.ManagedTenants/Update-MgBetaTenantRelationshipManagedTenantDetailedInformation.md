@@ -49,6 +49,8 @@ Update-MgBetaTenantRelationshipManagedTenantDetailedInformation -InputObject <IM
 ## DESCRIPTION
 Update the navigation property tenantsDetailedInformation in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -50,6 +50,8 @@ New-MgBetaSiteListOperation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

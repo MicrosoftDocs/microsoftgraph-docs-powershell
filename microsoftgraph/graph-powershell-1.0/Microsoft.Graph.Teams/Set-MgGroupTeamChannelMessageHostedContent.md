@@ -35,6 +35,8 @@ Set-MgGroupTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> [-Data 
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

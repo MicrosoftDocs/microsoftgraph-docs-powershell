@@ -91,6 +91,8 @@ Update-MgBetaFinancialCompanySaleOrderLineItem -InputObject <IFinancialsIdentity
 ## DESCRIPTION
 Update the navigation property item in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

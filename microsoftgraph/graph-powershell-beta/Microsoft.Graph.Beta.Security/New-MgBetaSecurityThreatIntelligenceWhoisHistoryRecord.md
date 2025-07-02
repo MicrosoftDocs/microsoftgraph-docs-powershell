@@ -40,6 +40,8 @@ New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord -BodyParameter <Hashtable
 ## DESCRIPTION
 Create new navigation property to whoisHistoryRecords for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Abuse

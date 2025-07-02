@@ -50,6 +50,8 @@ Update-MgBetaGroupOnenoteOperation -InputObject <INotesIdentity>
 ## DESCRIPTION
 Update the navigation property operations in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

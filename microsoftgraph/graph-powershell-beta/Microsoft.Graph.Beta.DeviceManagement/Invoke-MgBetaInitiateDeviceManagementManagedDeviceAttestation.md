@@ -29,6 +29,8 @@ Invoke-MgBetaInitiateDeviceManagementManagedDeviceAttestation -InputObject <IDev
 ## DESCRIPTION
 Perform Device Attestation
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

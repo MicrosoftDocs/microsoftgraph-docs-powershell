@@ -64,6 +64,8 @@ New-MgBetaChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to replies for chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

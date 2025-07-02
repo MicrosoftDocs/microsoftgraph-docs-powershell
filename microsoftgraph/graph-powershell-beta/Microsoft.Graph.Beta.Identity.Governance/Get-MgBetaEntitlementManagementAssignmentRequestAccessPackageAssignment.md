@@ -35,6 +35,8 @@ For a requestType of UserAdd or AdminAdd, an access package assignment requested
 For a requestType of UserRemove, AdminRemove, or SystemRemove, this property has the id property of an existing assignment to be removed.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentRequestId

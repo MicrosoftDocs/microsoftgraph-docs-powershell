@@ -46,6 +46,8 @@ Update-MgBetaGroupSiteDocumentProcessingJob -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property documentProcessingJobs in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

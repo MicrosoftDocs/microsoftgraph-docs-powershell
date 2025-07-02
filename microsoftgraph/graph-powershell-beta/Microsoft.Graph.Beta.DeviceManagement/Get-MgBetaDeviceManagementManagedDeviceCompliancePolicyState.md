@@ -41,6 +41,8 @@ Get-MgBetaDeviceManagementManagedDeviceCompliancePolicyState -InputObject <IDevi
 ## DESCRIPTION
 Device compliance policy states for this device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

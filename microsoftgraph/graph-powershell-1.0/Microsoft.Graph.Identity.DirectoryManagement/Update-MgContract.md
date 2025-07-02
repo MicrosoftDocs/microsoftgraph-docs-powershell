@@ -48,6 +48,8 @@ Update-MgContract -InputObject <IIdentityDirectoryManagementIdentity> -BodyParam
 ## DESCRIPTION
 Update entity in contracts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

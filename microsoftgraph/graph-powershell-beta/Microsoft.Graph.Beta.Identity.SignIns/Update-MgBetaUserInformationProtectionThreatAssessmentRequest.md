@@ -49,6 +49,8 @@ Update-MgBetaUserInformationProtectionThreatAssessmentRequest -InputObject <IIde
 ## DESCRIPTION
 Update the navigation property threatAssessmentRequests in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

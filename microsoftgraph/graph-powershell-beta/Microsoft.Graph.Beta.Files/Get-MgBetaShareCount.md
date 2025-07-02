@@ -23,6 +23,8 @@ Get-MgBetaShareCount [-Filter <String>] [-Search <String>] [-ResponseHeadersVari
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

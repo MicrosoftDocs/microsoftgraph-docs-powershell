@@ -32,6 +32,8 @@ Remove-MgBetaEntitlementManagementAccessPackageAssignmentApproval -InputObject <
 ## DESCRIPTION
 Delete navigation property accessPackageAssignmentApprovals for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApprovalId

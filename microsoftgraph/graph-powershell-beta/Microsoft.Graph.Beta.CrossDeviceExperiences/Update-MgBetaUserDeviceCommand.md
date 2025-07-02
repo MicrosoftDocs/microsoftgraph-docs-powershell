@@ -49,6 +49,8 @@ Update-MgBetaUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity>
 ## DESCRIPTION
 Update the navigation property commands in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

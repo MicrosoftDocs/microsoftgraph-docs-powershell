@@ -53,6 +53,8 @@ Update-MgBetaGroupSiteTermStoreGroupSet -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property sets in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -41,6 +41,8 @@ Get-MgBetaGroupDriveListContentTypeColumnPosition -InputObject <IFilesIdentity> 
 ## DESCRIPTION
 Column order information in a content type.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

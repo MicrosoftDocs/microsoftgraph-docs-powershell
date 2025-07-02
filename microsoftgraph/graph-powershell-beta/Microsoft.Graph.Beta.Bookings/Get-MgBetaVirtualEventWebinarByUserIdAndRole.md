@@ -35,6 +35,8 @@ Get-MgBetaVirtualEventWebinarByUserIdAndRole -InputObject <IBookingsIdentity> [-
 ## DESCRIPTION
 Get a list of virtualEventWebinar objects where the specified user is either the organizer or a coorganizer.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

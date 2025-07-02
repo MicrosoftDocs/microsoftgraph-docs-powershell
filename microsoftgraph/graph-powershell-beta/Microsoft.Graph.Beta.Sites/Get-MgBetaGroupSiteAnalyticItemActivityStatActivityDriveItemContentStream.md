@@ -30,6 +30,8 @@ Get-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContentStream -Input
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

@@ -41,6 +41,8 @@ Retrieves the effective permissions of the currently authenticated user
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

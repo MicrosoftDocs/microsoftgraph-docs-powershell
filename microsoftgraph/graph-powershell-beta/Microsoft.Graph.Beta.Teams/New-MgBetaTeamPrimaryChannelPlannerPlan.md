@@ -55,6 +55,8 @@ New-MgBetaTeamPrimaryChannelPlannerPlan -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to plans for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

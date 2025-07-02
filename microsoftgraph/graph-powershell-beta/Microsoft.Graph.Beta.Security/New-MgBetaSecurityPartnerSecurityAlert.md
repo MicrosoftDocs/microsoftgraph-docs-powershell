@@ -35,6 +35,8 @@ New-MgBetaSecurityPartnerSecurityAlert -BodyParameter <IMicrosoftGraphPartnerSec
 ## DESCRIPTION
 Create new navigation property to securityAlerts for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityLogs

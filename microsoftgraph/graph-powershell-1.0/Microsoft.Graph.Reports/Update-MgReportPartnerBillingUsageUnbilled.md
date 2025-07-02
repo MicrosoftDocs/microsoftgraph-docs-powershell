@@ -31,6 +31,8 @@ Update-MgReportPartnerBillingUsageUnbilled -BodyParameter <Hashtable> [-Response
 ## DESCRIPTION
 Update the navigation property unbilled in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

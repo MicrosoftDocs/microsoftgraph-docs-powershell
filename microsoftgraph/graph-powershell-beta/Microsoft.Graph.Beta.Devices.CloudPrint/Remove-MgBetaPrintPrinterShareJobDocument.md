@@ -29,6 +29,8 @@ Remove-MgBetaPrintPrinterShareJobDocument -InputObject <IDevicesCloudPrintIdenti
 ## DESCRIPTION
 Delete navigation property documents for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

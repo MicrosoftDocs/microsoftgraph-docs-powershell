@@ -30,6 +30,8 @@ Remove-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment
 ## DESCRIPTION
 Delete navigation property transitiveRoleAssignments for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -49,6 +49,8 @@ For more information, see contentType: addCopyFromContentTypeHub and the blog po
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

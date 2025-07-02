@@ -33,6 +33,8 @@ Remove-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISite
 ## DESCRIPTION
 Delete navigation property horizontalSections for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

@@ -32,6 +32,8 @@ Get-MgDeviceRegisteredUserCountAsServicePrincipal -InputObject <IIdentityDirecto
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

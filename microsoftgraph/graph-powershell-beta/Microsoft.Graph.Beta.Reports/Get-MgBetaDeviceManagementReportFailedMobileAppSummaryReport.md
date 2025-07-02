@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportFailedMobileAppSummaryReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getFailedMobileAppsSummaryReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

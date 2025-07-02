@@ -40,6 +40,8 @@ Delete navigation property resourceOperations for deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

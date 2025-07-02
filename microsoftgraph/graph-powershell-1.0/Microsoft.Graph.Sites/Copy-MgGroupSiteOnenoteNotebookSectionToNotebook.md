@@ -53,6 +53,8 @@ Copy-MgGroupSiteOnenoteNotebookSectionToNotebook -InputObject <ISitesIdentity>
 ## DESCRIPTION
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -50,6 +50,8 @@ Update-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <
 ## DESCRIPTION
 Update the navigation property questions in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

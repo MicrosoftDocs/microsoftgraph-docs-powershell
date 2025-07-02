@@ -60,6 +60,8 @@ Update-MgBetaGroupConversationThreadPost -InputObject <IGroupsIdentity> -BodyPar
 ## DESCRIPTION
 Update the navigation property posts in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -92,6 +92,8 @@ New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloud
 ## DESCRIPTION
 Create new navigation property to attendanceRecords for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

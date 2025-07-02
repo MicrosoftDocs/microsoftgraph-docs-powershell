@@ -24,6 +24,8 @@ Remove-MgTeamworkTeamAppSetting [-IfMatch <String>] [-ResponseHeadersVariable <S
 ## DESCRIPTION
 Delete navigation property teamsAppSettings for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

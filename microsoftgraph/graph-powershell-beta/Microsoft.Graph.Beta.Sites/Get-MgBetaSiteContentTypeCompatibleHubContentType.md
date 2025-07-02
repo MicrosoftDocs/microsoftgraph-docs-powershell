@@ -49,6 +49,8 @@ For more information, see addCopyFromContentTypeHub and the blog post Syntex Pro
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

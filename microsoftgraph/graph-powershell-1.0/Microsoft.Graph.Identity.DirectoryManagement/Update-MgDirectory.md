@@ -37,6 +37,8 @@ Update-MgDirectory -BodyParameter <IMicrosoftGraphDirectory> [-ResponseHeadersVa
 ## DESCRIPTION
 Update directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

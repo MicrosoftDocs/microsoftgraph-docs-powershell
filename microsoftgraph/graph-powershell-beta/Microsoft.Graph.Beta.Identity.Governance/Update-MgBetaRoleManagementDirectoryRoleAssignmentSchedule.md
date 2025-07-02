@@ -58,6 +58,8 @@ Update-MgBetaRoleManagementDirectoryRoleAssignmentSchedule -InputObject <IIdenti
 ## DESCRIPTION
 Update the navigation property roleAssignmentSchedules in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivatedUsing

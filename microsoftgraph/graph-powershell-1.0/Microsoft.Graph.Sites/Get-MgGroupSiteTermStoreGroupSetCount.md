@@ -46,6 +46,8 @@ Get-MgGroupSiteTermStoreGroupSetCount -InputObject <ISitesIdentity> [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

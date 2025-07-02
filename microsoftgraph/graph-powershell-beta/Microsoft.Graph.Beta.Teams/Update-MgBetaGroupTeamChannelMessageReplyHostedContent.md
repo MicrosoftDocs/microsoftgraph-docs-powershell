@@ -49,6 +49,8 @@ Update-MgBetaGroupTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdent
 ## DESCRIPTION
 Update the navigation property hostedContents in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

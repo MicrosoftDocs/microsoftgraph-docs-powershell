@@ -29,6 +29,8 @@ Remove-MgBetaDeviceManagementScript -InputObject <IDeviceManagementIdentity> [-I
 ## DESCRIPTION
 Delete navigation property deviceManagementScripts for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementScriptId

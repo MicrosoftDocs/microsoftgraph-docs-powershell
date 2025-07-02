@@ -32,6 +32,8 @@ Remove-MgGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property timeCards for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

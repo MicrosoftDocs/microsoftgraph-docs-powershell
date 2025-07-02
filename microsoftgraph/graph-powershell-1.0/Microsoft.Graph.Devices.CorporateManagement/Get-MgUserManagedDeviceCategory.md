@@ -32,6 +32,8 @@ Get-MgUserManagedDeviceCategory -InputObject <IDevicesCorporateManagementIdentit
 ## DESCRIPTION
 Device category
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

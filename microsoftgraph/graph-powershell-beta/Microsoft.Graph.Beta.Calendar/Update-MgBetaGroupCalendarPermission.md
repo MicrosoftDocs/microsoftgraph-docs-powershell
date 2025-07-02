@@ -49,6 +49,8 @@ Update-MgBetaGroupCalendarPermission -InputObject <ICalendarIdentity>
 ## DESCRIPTION
 Update the navigation property calendarPermissions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

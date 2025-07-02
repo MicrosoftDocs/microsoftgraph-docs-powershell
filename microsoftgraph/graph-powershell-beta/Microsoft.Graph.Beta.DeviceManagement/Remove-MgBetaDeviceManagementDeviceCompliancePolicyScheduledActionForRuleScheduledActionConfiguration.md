@@ -43,6 +43,8 @@ Delete navigation property scheduledActionConfigurations for deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceComplianceActionItemId

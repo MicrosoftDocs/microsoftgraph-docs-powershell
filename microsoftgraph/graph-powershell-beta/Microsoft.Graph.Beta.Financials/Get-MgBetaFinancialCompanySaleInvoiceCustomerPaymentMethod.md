@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanySaleInvoiceCustomerPaymentMethod -InputObject <IFinanc
 ## DESCRIPTION
 Get paymentMethod from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

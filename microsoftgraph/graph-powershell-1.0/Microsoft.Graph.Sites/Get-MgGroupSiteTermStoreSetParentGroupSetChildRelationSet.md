@@ -78,6 +78,8 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChildRelationSet -InputObject <ISitesId
 ## DESCRIPTION
 The \[set\] in which the relation is relevant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

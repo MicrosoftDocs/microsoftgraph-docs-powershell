@@ -61,6 +61,8 @@ Update-MgUserDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property items in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

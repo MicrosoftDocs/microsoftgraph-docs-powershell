@@ -34,6 +34,8 @@ Get-MgGroupSiteCreatedByUser -InputObject <ISitesIdentity> [-ExpandProperty <Str
 Identity of the user who created the item.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

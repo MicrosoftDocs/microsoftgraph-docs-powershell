@@ -29,6 +29,8 @@ Get-MgBetaDeviceManagementConfigurationPolicyLatestUpgradeDefaultBaselinePolicy
 ## DESCRIPTION
 Invoke function retrieveLatestUpgradeDefaultBaselinePolicy
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementConfigurationPolicyId

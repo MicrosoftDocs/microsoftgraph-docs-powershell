@@ -49,6 +49,8 @@ Update-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting
 ## DESCRIPTION
 Update the navigation property customExtensionStageSettings in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

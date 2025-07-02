@@ -41,6 +41,8 @@ Get-MgDeviceManagementManagedDeviceConfigurationState -InputObject <IDeviceManag
 ## DESCRIPTION
 Device configuration states for this device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

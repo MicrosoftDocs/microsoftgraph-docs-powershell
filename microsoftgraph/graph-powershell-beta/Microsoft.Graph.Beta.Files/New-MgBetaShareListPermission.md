@@ -53,6 +53,8 @@ New-MgBetaShareListPermission -InputObject <IFilesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to permissions for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

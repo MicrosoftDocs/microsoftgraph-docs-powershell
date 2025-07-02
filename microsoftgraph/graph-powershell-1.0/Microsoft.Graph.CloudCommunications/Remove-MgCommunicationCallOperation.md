@@ -32,6 +32,8 @@ Remove-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity> 
 ## DESCRIPTION
 Delete navigation property operations for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallId

@@ -53,6 +53,8 @@ New-MgBetaUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Create new navigation property to deviceCompliancePolicyStates for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

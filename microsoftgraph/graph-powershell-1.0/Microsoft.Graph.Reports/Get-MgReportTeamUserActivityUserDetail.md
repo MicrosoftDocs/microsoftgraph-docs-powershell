@@ -44,6 +44,8 @@ Get-MgReportTeamUserActivityUserDetail -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Get details about Microsoft Teams user activity by user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

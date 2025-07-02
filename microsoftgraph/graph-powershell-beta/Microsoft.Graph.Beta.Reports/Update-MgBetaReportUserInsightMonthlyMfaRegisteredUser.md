@@ -45,6 +45,8 @@ Update-MgBetaReportUserInsightMonthlyMfaRegisteredUser -InputObject <IReportsIde
 ## DESCRIPTION
 Update the navigation property mfaRegisteredUsers in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,6 +48,8 @@ Update-MgBetaSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIde
 ## DESCRIPTION
 Update the navigation property reputation in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

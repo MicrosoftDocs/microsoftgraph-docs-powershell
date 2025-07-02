@@ -32,6 +32,8 @@ Get-MgBetaDriveItemSubscriptionCount -InputObject <IFilesIdentity> [-Filter <Str
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

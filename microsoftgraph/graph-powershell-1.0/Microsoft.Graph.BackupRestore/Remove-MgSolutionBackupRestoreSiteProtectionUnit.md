@@ -32,6 +32,8 @@ Remove-MgSolutionBackupRestoreSiteProtectionUnit -InputObject <IBackupRestoreIde
 ## DESCRIPTION
 Delete navigation property siteProtectionUnits for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

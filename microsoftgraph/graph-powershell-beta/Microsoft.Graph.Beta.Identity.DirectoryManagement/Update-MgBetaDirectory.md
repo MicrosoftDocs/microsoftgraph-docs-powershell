@@ -48,6 +48,8 @@ Update-MgBetaDirectory -BodyParameter <IMicrosoftGraphDirectory> [-ResponseHeade
 ## DESCRIPTION
 Update directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Get-MgBetaShareList -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Used to access the underlying list
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

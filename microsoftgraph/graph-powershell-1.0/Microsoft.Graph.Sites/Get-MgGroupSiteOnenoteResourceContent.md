@@ -32,6 +32,8 @@ Get-MgGroupSiteOnenoteResourceContent -InputObject <ISitesIdentity> -OutFile <St
 ## DESCRIPTION
 The content stream
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

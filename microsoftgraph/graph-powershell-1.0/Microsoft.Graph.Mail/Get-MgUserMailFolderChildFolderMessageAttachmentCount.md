@@ -32,6 +32,8 @@ Get-MgUserMailFolderChildFolderMessageAttachmentCount -InputObject <IMailIdentit
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

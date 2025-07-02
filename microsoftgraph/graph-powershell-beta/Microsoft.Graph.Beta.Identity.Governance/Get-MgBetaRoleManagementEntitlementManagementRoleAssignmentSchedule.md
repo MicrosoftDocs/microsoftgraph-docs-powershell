@@ -40,6 +40,8 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule -InputObject
 ## DESCRIPTION
 Get roleAssignmentSchedules from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

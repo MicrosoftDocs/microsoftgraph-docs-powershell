@@ -32,6 +32,8 @@ Invoke-MgCalendarGroupCalendar -InputObject <ICalendarIdentity> [-Count] [-Filte
 ## DESCRIPTION
 Invoke function allowedCalendarSharingRoles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

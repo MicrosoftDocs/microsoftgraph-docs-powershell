@@ -21,6 +21,8 @@ Remove-MgBetaDeviceManagementMonitoring [-IfMatch <String>] [-ResponseHeadersVar
 ## DESCRIPTION
 Delete navigation property monitoring for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

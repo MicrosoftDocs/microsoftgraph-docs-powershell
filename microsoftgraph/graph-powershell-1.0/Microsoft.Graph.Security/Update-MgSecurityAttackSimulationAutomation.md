@@ -54,6 +54,8 @@ Update-MgSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property simulationAutomations in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

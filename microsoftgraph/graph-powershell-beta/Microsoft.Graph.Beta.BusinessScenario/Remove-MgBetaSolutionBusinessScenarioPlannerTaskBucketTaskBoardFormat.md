@@ -30,6 +30,8 @@ Remove-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat -InputObje
 ## DESCRIPTION
 Delete navigation property bucketTaskBoardFormat for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BusinessScenarioId

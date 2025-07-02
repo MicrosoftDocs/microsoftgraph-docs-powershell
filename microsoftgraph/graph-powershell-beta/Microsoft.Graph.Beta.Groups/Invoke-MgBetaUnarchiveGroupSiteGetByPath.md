@@ -30,6 +30,8 @@ Invoke-MgBetaUnarchiveGroupSiteGetByPath -InputObject <IGroupsIdentity> [-Respon
 ## DESCRIPTION
 Unarchive an archived SharePoint site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

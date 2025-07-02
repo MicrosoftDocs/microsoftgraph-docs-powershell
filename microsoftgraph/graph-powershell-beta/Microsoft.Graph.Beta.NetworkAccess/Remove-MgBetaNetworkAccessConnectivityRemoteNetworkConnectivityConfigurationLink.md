@@ -31,6 +31,8 @@ Remove-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
 ## DESCRIPTION
 Delete navigation property links for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConnectivityConfigurationLinkId

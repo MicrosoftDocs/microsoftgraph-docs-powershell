@@ -30,6 +30,8 @@ Invoke-MgBetaBufferInformationProtectionEncrypt
 ## DESCRIPTION
 Invoke action encryptBuffer
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

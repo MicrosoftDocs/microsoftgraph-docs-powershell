@@ -32,6 +32,8 @@ Remove-MgServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Delete navigation property servicePrincipalRiskDetections for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -53,6 +53,8 @@ Update-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment -InputObject <I
 ## DESCRIPTION
 Update the navigation property transitiveRoleAssignments in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

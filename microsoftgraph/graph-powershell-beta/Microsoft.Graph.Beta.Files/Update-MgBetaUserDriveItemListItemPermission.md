@@ -54,6 +54,8 @@ Update-MgBetaUserDriveItemListItemPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property permissions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

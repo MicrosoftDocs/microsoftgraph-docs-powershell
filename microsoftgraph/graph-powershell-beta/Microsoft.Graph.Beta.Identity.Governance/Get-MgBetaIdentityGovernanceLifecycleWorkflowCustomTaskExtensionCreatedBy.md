@@ -33,6 +33,8 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedBy
 ## DESCRIPTION
 The unique identifier of the Microsoft Entra user that created the custom task extension.Supports $filter(eq, ne) and $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CustomTaskExtensionId

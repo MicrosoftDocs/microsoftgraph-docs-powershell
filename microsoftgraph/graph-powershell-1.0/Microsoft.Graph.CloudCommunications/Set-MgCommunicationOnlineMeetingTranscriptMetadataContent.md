@@ -36,6 +36,8 @@ Set-MgCommunicationOnlineMeetingTranscriptMetadataContent -InputObject <ICloudCo
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallTranscriptId

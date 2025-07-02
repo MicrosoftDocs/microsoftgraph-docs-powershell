@@ -39,6 +39,8 @@ Get-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceMana
 ## DESCRIPTION
 Collection of setting categories within the template
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

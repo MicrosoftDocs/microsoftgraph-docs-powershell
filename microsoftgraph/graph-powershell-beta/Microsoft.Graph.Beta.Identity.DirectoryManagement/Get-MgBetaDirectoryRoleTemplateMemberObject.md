@@ -48,6 +48,8 @@ Get-MgBetaDirectoryRoleTemplateMemberObject -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Invoke action getMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

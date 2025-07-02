@@ -32,6 +32,8 @@ Remove-MgGroupDriveRootVersionContent -InputObject <IFilesIdentity> [-IfMatch <S
 ## DESCRIPTION
 The content stream for this version of the item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

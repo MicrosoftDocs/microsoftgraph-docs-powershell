@@ -31,6 +31,8 @@ Remove-MgBetaUserOnlineMeetingAlternativeRecording -InputObject <ICloudCommunica
 The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

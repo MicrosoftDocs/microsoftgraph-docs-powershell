@@ -39,6 +39,8 @@ New-MgBetaRoleManagementEnterpriseApp -BodyParameter <IMicrosoftGraphRbacApplica
 ## DESCRIPTION
 Create new navigation property to enterpriseApps for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

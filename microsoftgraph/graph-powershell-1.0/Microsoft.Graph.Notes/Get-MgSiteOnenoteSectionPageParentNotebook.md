@@ -34,6 +34,8 @@ Get-MgSiteOnenoteSectionPageParentNotebook -InputObject <INotesIdentity> [-Expan
 The notebook that contains the page.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

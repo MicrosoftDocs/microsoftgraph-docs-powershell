@@ -47,6 +47,8 @@ Update-MgBetaSecurityPartnerSecurityScoreRequirement -InputObject <ISecurityIden
 ## DESCRIPTION
 Update the navigation property requirements in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionUrl

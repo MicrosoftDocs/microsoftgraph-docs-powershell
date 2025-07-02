@@ -40,6 +40,8 @@ Get-MgGroupSubSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 The collection of the sub-sites under this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -37,6 +37,8 @@ Get-MgBetaRoleManagementExchangeResourceNamespace -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Resource that represents a collection of related actions.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

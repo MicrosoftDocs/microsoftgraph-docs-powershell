@@ -34,6 +34,8 @@ Get-MgPrintPrinterJobTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-Exp
 The printTaskTrigger that triggered this task's execution.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

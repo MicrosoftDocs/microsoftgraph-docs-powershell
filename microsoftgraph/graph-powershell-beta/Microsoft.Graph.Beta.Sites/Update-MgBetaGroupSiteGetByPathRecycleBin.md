@@ -53,6 +53,8 @@ Update-MgBetaGroupSiteGetByPathRecycleBin -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property recycleBin in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

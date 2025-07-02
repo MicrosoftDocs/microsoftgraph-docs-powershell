@@ -32,6 +32,8 @@ Remove-MgBetaSolutionBackupRestoreExchangeRestoreSession -InputObject <IBackupRe
 ## DESCRIPTION
 Delete navigation property exchangeRestoreSessions for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExchangeRestoreSessionId

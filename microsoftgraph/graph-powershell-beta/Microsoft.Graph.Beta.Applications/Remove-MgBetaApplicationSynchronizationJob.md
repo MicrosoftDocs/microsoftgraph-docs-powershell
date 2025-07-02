@@ -32,6 +32,8 @@ Remove-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity> 
 ## DESCRIPTION
 Delete navigation property jobs for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

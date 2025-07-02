@@ -70,6 +70,8 @@ New-MgIdentityGovernanceTermsOfUseAgreementAcceptance -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to agreementAcceptances for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

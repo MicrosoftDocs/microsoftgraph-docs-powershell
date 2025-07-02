@@ -27,6 +27,8 @@ Get-MgGroupSiteGetByPathPermission -GroupId <String> -Path <String> -SiteId <Str
 The permissions associated with the site.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

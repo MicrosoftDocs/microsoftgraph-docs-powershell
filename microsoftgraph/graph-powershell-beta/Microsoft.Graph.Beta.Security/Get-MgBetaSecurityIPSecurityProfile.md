@@ -37,6 +37,8 @@ Get-MgBetaSecurityIPSecurityProfile -InputObject <ISecurityIdentity> [-ExpandPro
 ## DESCRIPTION
 Get ipSecurityProfiles from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

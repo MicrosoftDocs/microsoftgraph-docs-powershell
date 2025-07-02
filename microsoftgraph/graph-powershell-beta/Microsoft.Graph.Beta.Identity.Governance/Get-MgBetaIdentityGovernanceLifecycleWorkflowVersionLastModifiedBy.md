@@ -33,6 +33,8 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy -InputObject 
 ## DESCRIPTION
 The user who last modified the workflow.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

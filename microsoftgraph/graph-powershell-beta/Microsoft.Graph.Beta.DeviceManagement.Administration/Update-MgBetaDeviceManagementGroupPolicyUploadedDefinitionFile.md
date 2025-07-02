@@ -66,6 +66,8 @@ Update the navigation property groupPolicyUploadedDefinitionFiles in deviceManag
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

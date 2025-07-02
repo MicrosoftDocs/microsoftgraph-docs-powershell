@@ -64,6 +64,8 @@ Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 ## DESCRIPTION
 Update the navigation property eligibilityScheduleRequests in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessId

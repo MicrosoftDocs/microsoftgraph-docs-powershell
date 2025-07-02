@@ -38,6 +38,8 @@ Get counts of the visits to the top destination aggregations.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess-Reports.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AggregatedBy

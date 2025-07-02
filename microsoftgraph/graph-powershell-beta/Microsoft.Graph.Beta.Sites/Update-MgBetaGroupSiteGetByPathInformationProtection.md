@@ -55,6 +55,8 @@ Update-MgBetaGroupSiteGetByPathInformationProtection -InputObject <ISitesIdentit
 ## DESCRIPTION
 Update the navigation property informationProtection in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

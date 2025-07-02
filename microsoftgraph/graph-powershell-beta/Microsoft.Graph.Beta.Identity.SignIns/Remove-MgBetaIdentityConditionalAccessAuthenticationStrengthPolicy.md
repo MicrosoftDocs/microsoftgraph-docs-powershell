@@ -29,6 +29,8 @@ Remove-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy -InputObject 
 ## DESCRIPTION
 Delete navigation property policies for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationStrengthPolicyId

@@ -30,6 +30,8 @@ Remove-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource -InputObject <I
 ## DESCRIPTION
 Delete navigation property unifiedGroupSources for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

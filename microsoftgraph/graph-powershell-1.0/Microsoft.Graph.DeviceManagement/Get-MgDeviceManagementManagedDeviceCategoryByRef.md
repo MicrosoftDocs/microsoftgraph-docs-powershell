@@ -31,6 +31,8 @@ Get-MgDeviceManagementManagedDeviceCategoryByRef -InputObject <IDeviceManagement
 ## DESCRIPTION
 Device category
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

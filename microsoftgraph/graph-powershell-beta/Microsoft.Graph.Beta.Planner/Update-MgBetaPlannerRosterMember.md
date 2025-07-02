@@ -44,6 +44,8 @@ Update-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity>
 ## DESCRIPTION
 Update the navigation property members in planner
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

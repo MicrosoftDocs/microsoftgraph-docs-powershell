@@ -32,6 +32,8 @@ Remove-MgEntitlementManagementAccessPackageAssignmentApproval -InputObject <IIde
 ## DESCRIPTION
 Delete navigation property accessPackageAssignmentApprovals for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApprovalId

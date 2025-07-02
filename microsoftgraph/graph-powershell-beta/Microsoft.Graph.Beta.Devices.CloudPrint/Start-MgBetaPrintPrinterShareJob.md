@@ -28,6 +28,8 @@ Start-MgBetaPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity> [-Res
 ## DESCRIPTION
 Invoke action start
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

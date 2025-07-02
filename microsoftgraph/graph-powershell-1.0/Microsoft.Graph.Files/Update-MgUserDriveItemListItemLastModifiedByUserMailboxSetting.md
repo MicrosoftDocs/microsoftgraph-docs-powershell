@@ -54,6 +54,8 @@ Update-MgUserDriveItemListItemLastModifiedByUserMailboxSetting -InputObject <IFi
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

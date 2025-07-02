@@ -37,6 +37,8 @@ Get-MgBetaTenantRelationshipManagedTenantApiNotification -InputObject <IManagedT
 ## DESCRIPTION
 Get managedTenantApiNotifications from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

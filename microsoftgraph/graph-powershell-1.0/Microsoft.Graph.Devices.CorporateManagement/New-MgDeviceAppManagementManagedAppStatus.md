@@ -32,6 +32,8 @@ New-MgDeviceAppManagementManagedAppStatus -BodyParameter <IMicrosoftGraphManaged
 ## DESCRIPTION
 Create new navigation property to managedAppStatuses for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

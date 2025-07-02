@@ -49,6 +49,8 @@ Restore-MgBetaUserDriveRoot -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

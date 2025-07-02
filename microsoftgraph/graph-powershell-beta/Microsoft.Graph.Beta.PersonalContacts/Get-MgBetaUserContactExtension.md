@@ -42,6 +42,8 @@ Get-MgBetaUserContactExtension -InputObject <IPersonalContactsIdentity> [-Expand
 The collection of open extensions defined for the contact.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

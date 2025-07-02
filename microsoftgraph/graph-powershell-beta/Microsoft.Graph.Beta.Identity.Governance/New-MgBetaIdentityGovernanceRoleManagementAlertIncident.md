@@ -43,6 +43,8 @@ New-MgBetaIdentityGovernanceRoleManagementAlertIncident -InputObject <IIdentityG
 ## DESCRIPTION
 Create new navigation property to alertIncidents for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

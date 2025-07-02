@@ -32,6 +32,8 @@ Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal>
 ## DESCRIPTION
 Update external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

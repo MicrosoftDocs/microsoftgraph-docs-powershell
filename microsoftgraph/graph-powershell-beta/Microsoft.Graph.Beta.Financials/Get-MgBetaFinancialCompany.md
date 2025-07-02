@@ -37,6 +37,8 @@ Get-MgBetaFinancialCompany -InputObject <IFinancialsIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Get companies from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

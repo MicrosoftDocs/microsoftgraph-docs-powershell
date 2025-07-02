@@ -37,6 +37,8 @@ Get-MgBetaDeviceCommand -InputObject <IIdentityDirectoryManagementIdentity> [-Ex
 ## DESCRIPTION
 Set of commands sent to this device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

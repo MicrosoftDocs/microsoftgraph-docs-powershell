@@ -29,6 +29,8 @@ Remove-MgBetaDeviceManagementVirtualEndpointBulkAction -InputObject <IDeviceMana
 ## DESCRIPTION
 Delete navigation property bulkActions for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcBulkActionId

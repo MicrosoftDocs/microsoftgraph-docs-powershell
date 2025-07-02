@@ -32,6 +32,8 @@ Remove-MgDriveListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property documentSetVersions for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

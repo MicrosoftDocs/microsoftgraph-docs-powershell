@@ -21,6 +21,8 @@ Remove-MgBetaDirectoryPublicKeyInfrastructure [-IfMatch <String>] [-ResponseHead
 ## DESCRIPTION
 Delete navigation property publicKeyInfrastructure for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

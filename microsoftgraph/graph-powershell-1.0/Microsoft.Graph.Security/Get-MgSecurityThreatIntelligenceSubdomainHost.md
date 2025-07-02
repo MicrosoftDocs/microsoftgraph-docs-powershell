@@ -32,6 +32,8 @@ Get-MgSecurityThreatIntelligenceSubdomainHost -InputObject <ISecurityIdentity> [
 ## DESCRIPTION
 The host of the subdomain.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

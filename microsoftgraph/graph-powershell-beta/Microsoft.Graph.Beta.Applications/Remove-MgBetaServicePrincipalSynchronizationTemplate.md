@@ -33,6 +33,8 @@ Remove-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplications
 ## DESCRIPTION
 Delete navigation property templates for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

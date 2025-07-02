@@ -42,6 +42,8 @@ New-MgBetaDriveRootExtension -InputObject <IFilesIdentity> -BodyParameter <Hasht
 ## DESCRIPTION
 Create new navigation property to extensions for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

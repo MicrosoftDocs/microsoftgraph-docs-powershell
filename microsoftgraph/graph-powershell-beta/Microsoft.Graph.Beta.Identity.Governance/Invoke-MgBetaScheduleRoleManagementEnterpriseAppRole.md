@@ -34,6 +34,8 @@ Invoke-MgBetaScheduleRoleManagementEnterpriseAppRole -InputObject <IIdentityGove
 ## DESCRIPTION
 Retrieve both roleAssignmentSchedules and roleEligibilitySchedules.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppScopeId

@@ -32,6 +32,8 @@ Get-MgSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate -InputObjec
 ## DESCRIPTION
 Specifies a unique alpha-numeric identifier for an organization's retention schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

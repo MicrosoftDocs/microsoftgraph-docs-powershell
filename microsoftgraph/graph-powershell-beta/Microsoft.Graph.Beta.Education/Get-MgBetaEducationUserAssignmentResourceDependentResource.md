@@ -39,6 +39,8 @@ Get-MgBetaEducationUserAssignmentResourceDependentResource -InputObject <IEducat
 ## DESCRIPTION
 Get dependentResources from education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

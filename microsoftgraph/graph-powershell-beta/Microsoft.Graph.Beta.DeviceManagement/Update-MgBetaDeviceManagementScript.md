@@ -56,6 +56,8 @@ Update-MgBetaDeviceManagementScript -InputObject <IDeviceManagementIdentity>
 ## DESCRIPTION
 Update the navigation property deviceManagementScripts in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

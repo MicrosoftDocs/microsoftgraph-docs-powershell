@@ -40,6 +40,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgApp -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.macOSDmgApp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Remove-MgDeviceExtension -InputObject <IIdentityDirectoryManagementIdentity> [-I
 ## DESCRIPTION
 Delete navigation property extensions for devices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

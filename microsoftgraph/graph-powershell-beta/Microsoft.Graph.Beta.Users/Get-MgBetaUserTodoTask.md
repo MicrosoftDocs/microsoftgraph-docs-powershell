@@ -52,6 +52,8 @@ Nullable.
 | Delegated (personal Microsoft account) | Tasks.Read, Tasks.ReadWrite,  |
 | Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

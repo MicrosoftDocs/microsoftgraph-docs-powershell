@@ -63,6 +63,8 @@ Update-MgChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property replies in chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

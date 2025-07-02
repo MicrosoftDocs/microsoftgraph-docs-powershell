@@ -41,6 +41,8 @@ Get-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity> [-Ex
 ## DESCRIPTION
 The collection of rules that apply to the user's Inbox folder.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

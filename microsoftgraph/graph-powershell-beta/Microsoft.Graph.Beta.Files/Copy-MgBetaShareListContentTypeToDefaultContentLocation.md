@@ -51,6 +51,8 @@ Copy-MgBetaShareListContentTypeToDefaultContentLocation -InputObject <IFilesIden
 ## DESCRIPTION
 Invoke action copyToDefaultContentLocation
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

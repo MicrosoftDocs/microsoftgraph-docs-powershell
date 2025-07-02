@@ -42,6 +42,8 @@ Get-MgUserEventExtension -InputObject <ICalendarIdentity> [-ExpandProperty <Stri
 The collection of open extensions defined for the event.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

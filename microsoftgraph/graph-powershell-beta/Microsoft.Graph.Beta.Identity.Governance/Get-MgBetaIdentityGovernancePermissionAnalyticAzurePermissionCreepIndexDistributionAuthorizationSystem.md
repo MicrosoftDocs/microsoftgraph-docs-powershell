@@ -31,6 +31,8 @@ Get-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribut
 ## DESCRIPTION
 Represents an authorization system onboarded to Permissions Management.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

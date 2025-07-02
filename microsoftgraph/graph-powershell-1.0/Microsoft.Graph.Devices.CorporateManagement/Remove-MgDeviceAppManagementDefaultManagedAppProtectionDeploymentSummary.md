@@ -34,6 +34,8 @@ Remove-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary
 ## DESCRIPTION
 Delete navigation property deploymentSummary for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DefaultManagedAppProtectionId

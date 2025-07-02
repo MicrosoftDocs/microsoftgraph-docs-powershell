@@ -40,6 +40,8 @@ Get-MgGroupSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 The collection of long-running operations on the site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

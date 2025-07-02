@@ -49,6 +49,8 @@ Update-MgBetaGroupDriveItemThumbnail -InputObject <IFilesIdentity> -BodyParamete
 ## DESCRIPTION
 Update the navigation property thumbnails in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

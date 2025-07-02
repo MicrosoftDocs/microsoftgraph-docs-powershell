@@ -29,6 +29,8 @@ Get-MgBetaDeviceManagementGroupPolicyDefinitionCategory -InputObject <IDeviceMan
 ## DESCRIPTION
 The group policy category associated with the definition.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

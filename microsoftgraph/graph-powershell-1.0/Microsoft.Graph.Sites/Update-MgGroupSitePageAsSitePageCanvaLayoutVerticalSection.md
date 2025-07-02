@@ -48,6 +48,8 @@ Update-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection -InputObject <ISitesI
 ## DESCRIPTION
 Update the navigation property verticalSection in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

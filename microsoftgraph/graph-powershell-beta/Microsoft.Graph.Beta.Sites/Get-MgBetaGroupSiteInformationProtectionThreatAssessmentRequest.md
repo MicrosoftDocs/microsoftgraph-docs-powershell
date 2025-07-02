@@ -38,6 +38,8 @@ Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest -InputObject <IS
 ## DESCRIPTION
 Get threatAssessmentRequests from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -55,6 +55,8 @@ Update-MgBetaUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Update the navigation property deviceCompliancePolicyStates in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -40,6 +40,8 @@ Get-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-ExpandProp
 ## DESCRIPTION
 Get endpoints from servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Remove-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISe
 ## DESCRIPTION
 Delete navigation property dispositionReviewStages for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DispositionReviewStageNumber

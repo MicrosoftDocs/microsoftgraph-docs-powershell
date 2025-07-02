@@ -32,6 +32,8 @@ Remove-MgPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity> [-If
 ## DESCRIPTION
 Delete navigation property roleManagementPolicies for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

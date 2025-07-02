@@ -40,6 +40,8 @@ Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule -InputObject <I
 ## DESCRIPTION
 Schedules for role eligibility operations.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

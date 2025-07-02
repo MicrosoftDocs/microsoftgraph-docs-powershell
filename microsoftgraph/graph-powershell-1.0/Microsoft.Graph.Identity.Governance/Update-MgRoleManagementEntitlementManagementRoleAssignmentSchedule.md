@@ -58,6 +58,8 @@ Update-MgRoleManagementEntitlementManagementRoleAssignmentSchedule -InputObject 
 ## DESCRIPTION
 Update the navigation property roleAssignmentSchedules in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivatedUsing

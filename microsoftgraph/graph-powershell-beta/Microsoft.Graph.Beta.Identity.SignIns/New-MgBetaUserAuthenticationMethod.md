@@ -46,6 +46,8 @@ New-MgBetaUserAuthenticationMethod -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Create new navigation property to methods for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

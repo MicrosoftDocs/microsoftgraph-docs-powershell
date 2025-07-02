@@ -31,6 +31,8 @@ New-MgPrintOperation -BodyParameter <IMicrosoftGraphPrintOperation> [-ResponseHe
 ## DESCRIPTION
 Create new navigation property to operations for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

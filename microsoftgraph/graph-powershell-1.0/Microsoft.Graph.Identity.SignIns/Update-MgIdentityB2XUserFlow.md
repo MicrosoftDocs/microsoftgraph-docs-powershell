@@ -58,6 +58,8 @@ Update-MgIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property b2xUserFlows in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

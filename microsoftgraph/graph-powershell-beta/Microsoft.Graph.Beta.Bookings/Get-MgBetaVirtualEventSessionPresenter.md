@@ -38,6 +38,8 @@ Get-MgBetaVirtualEventSessionPresenter -InputObject <IBookingsIdentity> [-Expand
 ## DESCRIPTION
 Get presenters from solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

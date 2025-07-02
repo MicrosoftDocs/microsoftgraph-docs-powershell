@@ -82,6 +82,8 @@ New-MgUserDriveItemChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to children for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete navigation property secureScoreControlProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

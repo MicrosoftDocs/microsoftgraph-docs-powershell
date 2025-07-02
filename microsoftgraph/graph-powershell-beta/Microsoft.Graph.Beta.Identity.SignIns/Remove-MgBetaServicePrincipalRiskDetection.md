@@ -32,6 +32,8 @@ Remove-MgBetaServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Delete navigation property servicePrincipalRiskDetections for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

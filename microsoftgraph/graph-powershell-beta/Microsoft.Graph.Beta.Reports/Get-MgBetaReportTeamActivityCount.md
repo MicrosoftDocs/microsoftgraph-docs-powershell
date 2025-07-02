@@ -31,6 +31,8 @@ Get-MgBetaReportTeamActivityCount -InputObject <IReportsIdentity> -OutFile <Stri
 ## DESCRIPTION
 Invoke function getTeamsTeamActivityCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

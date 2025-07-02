@@ -24,6 +24,8 @@ Get-MgInvitationInvitedUserSponsorCount [-Filter <String>] [-Search <String>]
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

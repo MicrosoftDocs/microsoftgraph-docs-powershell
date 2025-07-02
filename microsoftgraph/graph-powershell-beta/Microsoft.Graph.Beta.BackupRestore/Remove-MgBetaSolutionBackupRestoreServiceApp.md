@@ -33,6 +33,8 @@ Remove-MgBetaSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentit
 ## DESCRIPTION
 Delete a serviceApp.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

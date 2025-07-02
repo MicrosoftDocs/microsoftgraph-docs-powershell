@@ -23,6 +23,8 @@ Get-MgBetaPlanner [-ExpandProperty <String[]>] [-Property <String[]>] [-Response
 ## DESCRIPTION
 Get planner
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

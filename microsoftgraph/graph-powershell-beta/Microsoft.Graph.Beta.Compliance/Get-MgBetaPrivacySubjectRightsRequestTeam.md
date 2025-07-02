@@ -32,6 +32,8 @@ Get-MgBetaPrivacySubjectRightsRequestTeam -InputObject <IComplianceIdentity> [-E
 ## DESCRIPTION
 Information about the Microsoft Teams team that was created for the request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

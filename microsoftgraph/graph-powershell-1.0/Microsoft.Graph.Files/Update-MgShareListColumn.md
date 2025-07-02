@@ -68,6 +68,8 @@ Update-MgShareListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property columns in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

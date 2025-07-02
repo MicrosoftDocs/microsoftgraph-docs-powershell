@@ -54,6 +54,8 @@ Update-MgBetaSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIde
 ## DESCRIPTION
 Update the navigation property sslCertificates in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

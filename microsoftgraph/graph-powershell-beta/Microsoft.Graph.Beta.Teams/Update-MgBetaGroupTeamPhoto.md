@@ -46,6 +46,8 @@ Update-MgBetaGroupTeamPhoto -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property photo in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

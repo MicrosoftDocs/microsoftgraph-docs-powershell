@@ -42,6 +42,8 @@ Get-MgUserTodoListExtension -InputObject <IUsersIdentity> [-ExpandProperty <Stri
 The collection of open extensions defined for the task list.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

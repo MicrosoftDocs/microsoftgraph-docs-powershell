@@ -32,6 +32,8 @@ Get-MgBetaPrivilegedAccessRoleAssignmentSubject -InputObject <IIdentityGovernanc
 Read-only.
 The subject associated with the role assignment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

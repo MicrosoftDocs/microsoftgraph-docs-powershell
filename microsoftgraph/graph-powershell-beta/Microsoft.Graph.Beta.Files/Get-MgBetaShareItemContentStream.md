@@ -29,6 +29,8 @@ Get-MgBetaShareItemContentStream -InputObject <IFilesIdentity> -OutFile <String>
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveItemId

@@ -21,6 +21,8 @@ Remove-MgBetaRoleManagementDeviceManagement [-IfMatch <String>] [-ResponseHeader
 ## DESCRIPTION
 Delete navigation property deviceManagement for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

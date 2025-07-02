@@ -49,6 +49,8 @@ Update-MgBetaSecurityThreatIntelligenceHostCookie -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Update the navigation property hostCookies in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

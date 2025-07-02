@@ -35,6 +35,8 @@ Initialize-MgBetaSolutionBackupRestoreSession -InputObject <IBackupRestoreIdenti
 Activate a draft restoreSessionBase object to restore a protection unit.
 The following points apply to restoring a protection unit:
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

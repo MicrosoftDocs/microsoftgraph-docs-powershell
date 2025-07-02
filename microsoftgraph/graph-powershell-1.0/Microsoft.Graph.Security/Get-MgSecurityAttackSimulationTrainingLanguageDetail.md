@@ -40,6 +40,8 @@ Get-MgSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecurityIden
 ## DESCRIPTION
 Language specific details on a training.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

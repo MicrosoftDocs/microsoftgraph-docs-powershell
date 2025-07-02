@@ -29,6 +29,8 @@ Get-MgBetaComplianceEdiscoveryCaseCustodianLastIndexOperation -InputObject <ICom
 ## DESCRIPTION
 Get lastIndexOperation from compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

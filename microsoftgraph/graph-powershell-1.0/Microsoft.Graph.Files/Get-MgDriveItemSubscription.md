@@ -42,6 +42,8 @@ Get-MgDriveItemSubscription -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 The set of subscriptions on the item.
 Only supported on the root of a drive.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -45,6 +45,8 @@ New-MgSiteGetByPathTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to termStores for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

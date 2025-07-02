@@ -68,6 +68,8 @@ Update-MgGroupSiteContentTypeColumn -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property columns in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

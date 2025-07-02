@@ -49,6 +49,8 @@ Update-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalSt
 ## DESCRIPTION
 Update the navigation property steps in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

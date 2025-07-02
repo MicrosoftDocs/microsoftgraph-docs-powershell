@@ -32,6 +32,8 @@ Remove-MgBetaAgreementFile -InputObject <IIdentityGovernanceIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property file for agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementId

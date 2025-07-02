@@ -32,6 +32,8 @@ Get-MgBetaGroupSiteDefaultDrive -InputObject <ISitesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 The default drive (document library) for this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

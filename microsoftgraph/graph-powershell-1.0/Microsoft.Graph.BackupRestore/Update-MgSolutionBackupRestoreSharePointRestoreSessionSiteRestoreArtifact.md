@@ -53,6 +53,8 @@ Update-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact -Input
 ## DESCRIPTION
 Update the navigation property siteRestoreArtifacts in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

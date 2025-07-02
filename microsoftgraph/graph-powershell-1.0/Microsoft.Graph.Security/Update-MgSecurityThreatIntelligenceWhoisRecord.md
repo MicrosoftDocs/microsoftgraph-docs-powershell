@@ -64,6 +64,8 @@ Update-MgSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property whoisRecords in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Abuse

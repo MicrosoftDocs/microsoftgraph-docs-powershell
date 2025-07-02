@@ -23,6 +23,8 @@ Get-MgBetaSearchEntity [-ExpandProperty <String[]>] [-Property <String[]>] [-Res
 ## DESCRIPTION
 Get search
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -32,6 +32,8 @@ Remove-MgDriveItemVersion -InputObject <IFilesIdentity> [-IfMatch <String>] [-Re
 ## DESCRIPTION
 Delete navigation property versions for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

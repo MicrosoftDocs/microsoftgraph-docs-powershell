@@ -37,6 +37,8 @@ The year associated to the data that this flow brings in.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IndustryData-TimePeriod.Read.All, IndustryData-TimePeriod.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

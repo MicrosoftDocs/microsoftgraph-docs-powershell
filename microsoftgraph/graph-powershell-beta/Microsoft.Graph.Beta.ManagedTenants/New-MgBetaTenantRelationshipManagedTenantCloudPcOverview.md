@@ -38,6 +38,8 @@ New-MgBetaTenantRelationshipManagedTenantCloudPcOverview
 ## DESCRIPTION
 Create new navigation property to cloudPcsOverview for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

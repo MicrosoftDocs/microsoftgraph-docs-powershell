@@ -34,6 +34,8 @@ New-MgSolutionBackupRestoreSiteProtectionUnit -BodyParameter <IMicrosoftGraphSit
 ## DESCRIPTION
 Create new navigation property to siteProtectionUnits for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -31,6 +31,8 @@ Get-MgBetaPrivilegedAccessResourceRoleAssignmentRequestRoleDefinitionRoleSetting
 ## DESCRIPTION
 The associated role setting for the role definition.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

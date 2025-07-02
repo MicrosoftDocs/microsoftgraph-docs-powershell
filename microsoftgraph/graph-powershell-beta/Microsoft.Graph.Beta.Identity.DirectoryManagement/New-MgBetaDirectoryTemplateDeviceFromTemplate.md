@@ -50,6 +50,8 @@ New-MgBetaDirectoryTemplateDeviceFromTemplate -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Create a new device from a deviceTemplate.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountEnabled

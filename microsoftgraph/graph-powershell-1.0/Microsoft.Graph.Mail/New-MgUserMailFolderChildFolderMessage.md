@@ -73,6 +73,8 @@ New-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to messages for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

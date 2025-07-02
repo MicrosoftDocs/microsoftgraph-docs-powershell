@@ -52,6 +52,8 @@ Update-MgBetaSolutionBackupRestoreMailboxInclusionRule -InputObject <IBackupRest
 ## DESCRIPTION
 Update the navigation property mailboxInclusionRules in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

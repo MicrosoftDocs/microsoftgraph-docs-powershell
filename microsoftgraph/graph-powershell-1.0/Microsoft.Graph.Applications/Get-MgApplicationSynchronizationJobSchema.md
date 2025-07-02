@@ -32,6 +32,8 @@ Get-MgApplicationSynchronizationJobSchema -InputObject <IApplicationsIdentity> [
 ## DESCRIPTION
 The synchronization schema configured for the job.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

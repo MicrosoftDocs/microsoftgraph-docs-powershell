@@ -32,6 +32,8 @@ Remove-MgUserSetting -InputObject <IUsersIdentity> [-IfMatch <String>] [-Respons
 ## DESCRIPTION
 Delete navigation property settings for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

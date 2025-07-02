@@ -29,6 +29,8 @@ Remove-MgBetaSecurityAuditLogQueryRecord -InputObject <ISecurityIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property records for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuditLogQueryId

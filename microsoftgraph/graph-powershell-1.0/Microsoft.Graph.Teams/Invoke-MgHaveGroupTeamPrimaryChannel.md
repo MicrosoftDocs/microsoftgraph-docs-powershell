@@ -33,6 +33,8 @@ Invoke-MgHaveGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> [-TenantId <S
 ## DESCRIPTION
 Determine whether a user has access to a shared channel.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

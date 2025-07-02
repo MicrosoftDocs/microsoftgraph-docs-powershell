@@ -35,6 +35,8 @@ New-MgBetaSecurityIdentitySensor -BodyParameter <IMicrosoftGraphSecuritySensor>
 ## DESCRIPTION
 Create new navigation property to sensors for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

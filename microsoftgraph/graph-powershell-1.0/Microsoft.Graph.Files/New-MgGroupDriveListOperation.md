@@ -50,6 +50,8 @@ New-MgGroupDriveListOperation -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

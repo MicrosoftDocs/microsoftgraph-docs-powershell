@@ -30,6 +30,8 @@ Reset-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision -InputObject 
 ## DESCRIPTION
 Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

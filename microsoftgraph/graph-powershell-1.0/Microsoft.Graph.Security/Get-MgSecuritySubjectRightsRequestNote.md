@@ -40,6 +40,8 @@ Get-MgSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity> [-Expand
 ## DESCRIPTION
 List of notes associated with the request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

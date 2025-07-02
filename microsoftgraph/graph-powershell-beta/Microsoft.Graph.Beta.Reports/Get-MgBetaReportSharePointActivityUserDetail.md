@@ -46,6 +46,8 @@ Get-MgBetaReportSharePointActivityUserDetail -InputObject <IReportsIdentity> -Ou
 ## DESCRIPTION
 Invoke function getSharePointActivityUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

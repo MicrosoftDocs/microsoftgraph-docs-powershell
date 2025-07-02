@@ -32,6 +32,8 @@ Remove-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-If
 ## DESCRIPTION
 Delete navigation property jobs for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

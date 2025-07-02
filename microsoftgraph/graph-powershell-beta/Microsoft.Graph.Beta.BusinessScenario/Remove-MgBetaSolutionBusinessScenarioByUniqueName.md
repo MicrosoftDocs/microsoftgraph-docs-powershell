@@ -32,6 +32,8 @@ Remove-MgBetaSolutionBusinessScenarioByUniqueName -InputObject <IBusinessScenari
 Delete a businessScenario object.
 The deletion of a scenario causes all data associated with the scenario to be deleted.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

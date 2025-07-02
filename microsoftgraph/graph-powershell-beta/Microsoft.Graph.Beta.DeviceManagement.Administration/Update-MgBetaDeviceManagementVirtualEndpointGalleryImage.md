@@ -54,6 +54,8 @@ Update-MgBetaDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceMa
 ## DESCRIPTION
 Update the navigation property galleryImages in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

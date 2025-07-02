@@ -42,6 +42,8 @@ Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn -InputObject <ISitesI
 ## DESCRIPTION
 The set of vertical columns in this section.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

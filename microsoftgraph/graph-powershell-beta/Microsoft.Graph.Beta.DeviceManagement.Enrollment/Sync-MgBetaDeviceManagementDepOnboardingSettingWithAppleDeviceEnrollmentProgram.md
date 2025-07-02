@@ -38,6 +38,8 @@ Synchronizes between Apple Device Enrollment Program and Intune
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DepOnboardingSettingId

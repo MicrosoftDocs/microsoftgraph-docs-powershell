@@ -37,6 +37,8 @@ Get-MgBetaRoleManagementDeviceManagementResourceNamespace -InputObject <IDeviceM
 ## DESCRIPTION
 Get resourceNamespaces from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

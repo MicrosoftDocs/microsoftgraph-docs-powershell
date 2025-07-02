@@ -50,6 +50,8 @@ New-MgBetaUserManagedDeviceMobileAppConfigurationState -InputObject <IDevicesCor
 ## DESCRIPTION
 Create new navigation property to managedDeviceMobileAppConfigurationStates for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

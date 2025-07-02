@@ -50,6 +50,8 @@ New-MgIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <IIdent
 ## DESCRIPTION
 Create new navigation property to userConsentRequests for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

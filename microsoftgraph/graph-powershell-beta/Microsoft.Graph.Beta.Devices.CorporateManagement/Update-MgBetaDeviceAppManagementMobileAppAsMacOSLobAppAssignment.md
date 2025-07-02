@@ -52,6 +52,8 @@ Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment
 ## DESCRIPTION
 Update the navigation property assignments in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

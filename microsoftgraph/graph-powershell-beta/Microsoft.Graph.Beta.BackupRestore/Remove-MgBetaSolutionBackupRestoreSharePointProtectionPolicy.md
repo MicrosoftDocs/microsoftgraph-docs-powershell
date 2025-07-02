@@ -32,6 +32,8 @@ Remove-MgBetaSolutionBackupRestoreSharePointProtectionPolicy -InputObject <IBack
 ## DESCRIPTION
 Delete navigation property sharePointProtectionPolicies for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

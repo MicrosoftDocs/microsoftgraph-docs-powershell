@@ -24,6 +24,8 @@ Remove-MgBetaReportPartnerBillingReconciliationBilled [-IfMatch <String>] [-Resp
 ## DESCRIPTION
 Delete navigation property billed for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

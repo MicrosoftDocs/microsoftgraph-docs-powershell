@@ -33,6 +33,8 @@ Retrieve a list of users who have been granted access to submit print jobs to th
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

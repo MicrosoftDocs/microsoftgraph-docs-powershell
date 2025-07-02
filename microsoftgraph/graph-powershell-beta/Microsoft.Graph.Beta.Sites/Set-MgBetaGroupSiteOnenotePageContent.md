@@ -32,6 +32,8 @@ Set-MgBetaGroupSiteOnenotePageContent -InputObject <ISitesIdentity> [-Data <Stre
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

@@ -34,6 +34,8 @@ An on-demand run causes the next system-scheduled run to be skipped if it is set
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IndustryData-Run.Start,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

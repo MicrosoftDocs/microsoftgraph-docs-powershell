@@ -32,6 +32,8 @@ Remove-MgUserDriveListItemVersion -InputObject <IFilesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property versions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -35,6 +35,8 @@ Get-MgDeviceManagementReportDeviceAppInstallationStatusReport -OutFile <String>
 ## DESCRIPTION
 Invoke action retrieveDeviceAppInstallationStatusReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

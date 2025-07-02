@@ -32,6 +32,8 @@ Get-MgEducationClassAssignmentSettingGradingCategoryCount -InputObject <IEducati
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationClassId

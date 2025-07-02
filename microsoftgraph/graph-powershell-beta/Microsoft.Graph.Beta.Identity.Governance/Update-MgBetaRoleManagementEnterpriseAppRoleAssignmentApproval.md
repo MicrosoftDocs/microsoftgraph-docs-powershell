@@ -45,6 +45,8 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval -InputObject <IId
 ## DESCRIPTION
 Update the navigation property roleAssignmentApprovals in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

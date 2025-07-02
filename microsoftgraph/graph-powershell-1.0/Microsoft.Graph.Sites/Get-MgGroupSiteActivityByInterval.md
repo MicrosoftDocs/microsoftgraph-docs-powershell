@@ -50,6 +50,8 @@ Get-MgGroupSiteActivityByInterval -InputObject <ISitesIdentity> [-Count] [-Expan
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

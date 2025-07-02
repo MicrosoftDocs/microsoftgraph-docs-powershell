@@ -46,6 +46,8 @@ New-MgBetaUserInformationProtectionPolicyLabel -InputObject <IIdentitySignInsIde
 ## DESCRIPTION
 Create new navigation property to labels for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

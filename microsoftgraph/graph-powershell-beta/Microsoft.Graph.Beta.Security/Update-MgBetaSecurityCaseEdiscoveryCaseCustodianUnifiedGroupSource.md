@@ -52,6 +52,8 @@ Update-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject 
 ## DESCRIPTION
 Update the navigation property unifiedGroupSources in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

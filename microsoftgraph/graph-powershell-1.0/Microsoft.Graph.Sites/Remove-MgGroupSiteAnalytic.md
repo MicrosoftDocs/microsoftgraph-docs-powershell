@@ -32,6 +32,8 @@ Remove-MgGroupSiteAnalytic -InputObject <ISitesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property analytics for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

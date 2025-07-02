@@ -55,6 +55,8 @@ Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState
 ## DESCRIPTION
 Update the navigation property settingStates in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

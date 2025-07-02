@@ -50,6 +50,8 @@ Update-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting
 ## DESCRIPTION
 Update the navigation property recommendedSettings in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

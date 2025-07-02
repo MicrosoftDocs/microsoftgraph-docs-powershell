@@ -34,6 +34,8 @@ Restore-MgBetaGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Restore a document set version.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

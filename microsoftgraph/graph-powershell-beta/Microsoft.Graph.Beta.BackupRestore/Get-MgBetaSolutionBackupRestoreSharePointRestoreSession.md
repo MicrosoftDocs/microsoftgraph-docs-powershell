@@ -40,6 +40,8 @@ Get-MgBetaSolutionBackupRestoreSharePointRestoreSession -InputObject <IBackupRes
 ## DESCRIPTION
 The list of SharePoint restore sessions available in the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

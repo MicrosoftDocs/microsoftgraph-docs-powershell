@@ -47,6 +47,8 @@ New-MgUserChatMessageReplyHostedContent -InputObject <ITeamsIdentity> -BodyParam
 ## DESCRIPTION
 Create new navigation property to hostedContents for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -30,6 +30,8 @@ Remove-MgBetaUserDeviceEnrollmentConfigurationAssignment -InputObject <IDevicesC
 ## DESCRIPTION
 Delete navigation property assignments for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceEnrollmentConfigurationId

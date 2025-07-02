@@ -32,6 +32,8 @@ Remove-MgGroupTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property replies for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatMessageId

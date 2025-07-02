@@ -52,6 +52,8 @@ New-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact -InputObj
 ## DESCRIPTION
 Create new navigation property to siteRestoreArtifacts for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

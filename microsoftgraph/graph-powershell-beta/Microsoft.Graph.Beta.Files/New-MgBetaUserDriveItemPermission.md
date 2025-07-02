@@ -56,6 +56,8 @@ New-MgBetaUserDriveItemPermission -InputObject <IFilesIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to permissions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

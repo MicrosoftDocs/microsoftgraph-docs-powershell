@@ -59,6 +59,8 @@ Get-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-Expan
 ## DESCRIPTION
 Get journalLines from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

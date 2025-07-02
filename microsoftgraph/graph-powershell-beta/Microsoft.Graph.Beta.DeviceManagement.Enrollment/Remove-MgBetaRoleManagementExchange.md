@@ -21,6 +21,8 @@ Remove-MgBetaRoleManagementExchange [-IfMatch <String>] [-ResponseHeadersVariabl
 ## DESCRIPTION
 Delete navigation property exchange for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

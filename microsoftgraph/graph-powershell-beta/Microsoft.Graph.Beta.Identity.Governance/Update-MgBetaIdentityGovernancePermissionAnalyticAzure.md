@@ -30,6 +30,8 @@ Update-MgBetaIdentityGovernancePermissionAnalyticAzure -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property azure in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

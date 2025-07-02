@@ -30,6 +30,8 @@ New-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
 ## DESCRIPTION
 Create new navigation property to frontLineServicePlans for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

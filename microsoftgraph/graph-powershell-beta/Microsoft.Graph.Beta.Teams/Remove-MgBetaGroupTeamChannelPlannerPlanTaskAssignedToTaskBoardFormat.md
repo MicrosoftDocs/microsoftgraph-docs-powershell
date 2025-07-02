@@ -30,6 +30,8 @@ Remove-MgBetaGroupTeamChannelPlannerPlanTaskAssignedToTaskBoardFormat -InputObje
 ## DESCRIPTION
 Delete navigation property assignedToTaskBoardFormat for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

@@ -58,6 +58,8 @@ Update-MgSecurityAttackSimulationPayload -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property payloads in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

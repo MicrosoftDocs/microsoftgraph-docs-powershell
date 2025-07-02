@@ -44,6 +44,8 @@ Get-MgBetaFinancialCompanyPurchaseInvoiceLineItem -InputObject <IFinancialsIdent
 ## DESCRIPTION
 Get item from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

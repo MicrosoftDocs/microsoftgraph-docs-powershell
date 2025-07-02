@@ -54,6 +54,8 @@ Update-MgGroupOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property notebooks in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

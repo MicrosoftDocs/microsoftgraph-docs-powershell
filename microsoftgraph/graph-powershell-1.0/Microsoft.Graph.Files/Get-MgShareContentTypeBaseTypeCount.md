@@ -32,6 +32,8 @@ Get-MgShareContentTypeBaseTypeCount -InputObject <IFilesIdentity> [-Filter <Stri
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

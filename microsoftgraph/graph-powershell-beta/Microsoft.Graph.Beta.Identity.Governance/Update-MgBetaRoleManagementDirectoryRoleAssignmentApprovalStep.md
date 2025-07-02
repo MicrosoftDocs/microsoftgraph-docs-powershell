@@ -47,6 +47,8 @@ Update-MgBetaRoleManagementDirectoryRoleAssignmentApprovalStep -InputObject <IId
 ## DESCRIPTION
 Update the navigation property steps in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

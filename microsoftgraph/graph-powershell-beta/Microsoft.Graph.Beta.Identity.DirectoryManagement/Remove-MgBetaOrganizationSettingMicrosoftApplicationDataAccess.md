@@ -30,6 +30,8 @@ Remove-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
 ## DESCRIPTION
 Delete navigation property microsoftApplicationDataAccess for organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

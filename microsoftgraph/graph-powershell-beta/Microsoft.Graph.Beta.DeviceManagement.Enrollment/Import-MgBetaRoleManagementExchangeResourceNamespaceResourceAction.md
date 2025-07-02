@@ -48,6 +48,8 @@ Import-MgBetaRoleManagementExchangeResourceNamespaceResourceAction
 ## DESCRIPTION
 Invoke action importResourceActions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

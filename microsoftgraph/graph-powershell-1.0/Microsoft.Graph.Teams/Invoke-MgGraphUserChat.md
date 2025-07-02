@@ -49,6 +49,8 @@ Invoke-MgGraphUserChat -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <
 ## DESCRIPTION
 Unhide a chat for a user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

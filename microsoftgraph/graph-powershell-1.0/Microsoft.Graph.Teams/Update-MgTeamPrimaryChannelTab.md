@@ -48,6 +48,8 @@ Update-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property tabs in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

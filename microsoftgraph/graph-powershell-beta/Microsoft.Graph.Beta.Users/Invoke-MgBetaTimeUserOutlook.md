@@ -54,6 +54,8 @@ Invoke function supportedTimeZones
 | Delegated (personal Microsoft account) | User.Read,  |
 | Application | User.Read.All, User.ReadBasic.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

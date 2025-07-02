@@ -51,6 +51,8 @@ Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceUserToD
 ## DESCRIPTION
 Assigns user to Autopilot devices.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgGroupOnenoteResource -InputObject <INotesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property resources for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

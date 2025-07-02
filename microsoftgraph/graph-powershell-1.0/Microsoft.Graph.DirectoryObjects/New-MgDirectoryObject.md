@@ -31,6 +31,8 @@ New-MgDirectoryObject -BodyParameter <IMicrosoftGraphDirectoryObject> [-Response
 ## DESCRIPTION
 Add new entity to directoryObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

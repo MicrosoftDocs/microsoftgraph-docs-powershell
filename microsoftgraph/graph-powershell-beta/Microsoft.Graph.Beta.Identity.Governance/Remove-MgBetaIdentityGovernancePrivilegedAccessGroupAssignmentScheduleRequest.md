@@ -34,6 +34,8 @@ Remove-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
 ## DESCRIPTION
 Delete navigation property assignmentScheduleRequests for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

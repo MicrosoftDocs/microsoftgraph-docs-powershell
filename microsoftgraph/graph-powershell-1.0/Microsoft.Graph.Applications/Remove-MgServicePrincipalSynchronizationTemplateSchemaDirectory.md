@@ -33,6 +33,8 @@ Remove-MgServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject <IA
 ## DESCRIPTION
 Delete navigation property directories for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectoryDefinitionId

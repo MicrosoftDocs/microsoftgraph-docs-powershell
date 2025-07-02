@@ -35,6 +35,8 @@ Get-MgBetaGroupSiteGetByPathApplicableContentTypeForList -InputObject <IGroupsId
 ## DESCRIPTION
 Get site contentTypes that can be added to a list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

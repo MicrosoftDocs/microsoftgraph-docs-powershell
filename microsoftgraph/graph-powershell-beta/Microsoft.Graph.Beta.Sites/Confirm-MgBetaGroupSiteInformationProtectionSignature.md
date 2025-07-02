@@ -47,6 +47,8 @@ Confirm-MgBetaGroupSiteInformationProtectionSignature -InputObject <ISitesIdenti
 ## DESCRIPTION
 Invoke action verifySignature
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

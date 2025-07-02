@@ -30,6 +30,8 @@ Get-MgBetaDeviceManagementDepOnboardingSettingDefaultVisionOSEnrollmentProfile
 ## DESCRIPTION
 Default VisionOS Enrollment Profile
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DepOnboardingSettingId

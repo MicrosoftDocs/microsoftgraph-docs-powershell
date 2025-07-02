@@ -35,6 +35,8 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleDirectoryScope
 The directory object that is the scope of the role eligibility or assignment.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

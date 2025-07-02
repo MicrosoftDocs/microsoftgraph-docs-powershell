@@ -48,6 +48,8 @@ New-MgBetaGroupThreadPostAttachment -InputObject <IGroupsIdentity> -BodyParamete
 ## DESCRIPTION
 Create new navigation property to attachments for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

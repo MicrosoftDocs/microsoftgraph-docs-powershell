@@ -51,6 +51,8 @@ New-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject <I
 ## DESCRIPTION
 Create new navigation property to directories for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

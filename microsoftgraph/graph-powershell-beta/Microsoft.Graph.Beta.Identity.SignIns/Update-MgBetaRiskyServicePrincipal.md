@@ -52,6 +52,8 @@ Update-MgBetaRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property riskyServicePrincipals in identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountEnabled

@@ -42,6 +42,8 @@ Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitBulk
 ## DESCRIPTION
 Get a mailboxProtectionUnitsBulkAdditionJob object by the ID associated with an exchangeProtectionPolicy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

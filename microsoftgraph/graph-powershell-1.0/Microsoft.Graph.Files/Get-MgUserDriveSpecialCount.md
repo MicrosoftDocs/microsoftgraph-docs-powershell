@@ -32,6 +32,8 @@ Get-MgUserDriveSpecialCount -InputObject <IFilesIdentity> [-Filter <String>] [-S
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

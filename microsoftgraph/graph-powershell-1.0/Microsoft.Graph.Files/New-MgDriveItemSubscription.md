@@ -54,6 +54,8 @@ New-MgDriveItemSubscription -InputObject <IFilesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to subscriptions for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

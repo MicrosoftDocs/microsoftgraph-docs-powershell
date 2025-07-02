@@ -32,6 +32,8 @@ Remove-MgDeviceManagementManagedDeviceLogCollectionRequest -InputObject <IDevice
 ## DESCRIPTION
 Delete navigation property logCollectionRequests for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceLogCollectionResponseId

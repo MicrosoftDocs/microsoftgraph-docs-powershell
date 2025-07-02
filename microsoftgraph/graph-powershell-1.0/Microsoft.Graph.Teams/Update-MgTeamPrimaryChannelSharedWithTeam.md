@@ -49,6 +49,8 @@ Update-MgTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property sharedWithTeams in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

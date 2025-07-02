@@ -37,6 +37,8 @@ Get-MgBetaUserInformationProtectionThreatAssessmentRequest -InputObject <IIdenti
 ## DESCRIPTION
 Get threatAssessmentRequests from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

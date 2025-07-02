@@ -23,6 +23,8 @@ Get-MgDirectoryDeletedItemCountAsUser [-Filter <String>] [-Search <String>] [-Re
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

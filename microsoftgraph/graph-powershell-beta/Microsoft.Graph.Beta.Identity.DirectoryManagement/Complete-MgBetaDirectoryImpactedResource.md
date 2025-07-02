@@ -29,6 +29,8 @@ Complete-MgBetaDirectoryImpactedResource -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Complete an impactedResource object and update its status to completedByUser.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

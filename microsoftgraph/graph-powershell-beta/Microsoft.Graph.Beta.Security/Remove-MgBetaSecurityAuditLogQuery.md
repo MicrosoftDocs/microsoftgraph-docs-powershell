@@ -29,6 +29,8 @@ Remove-MgBetaSecurityAuditLogQuery -InputObject <ISecurityIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property queries for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuditLogQueryId

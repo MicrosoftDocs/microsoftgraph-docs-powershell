@@ -22,6 +22,8 @@ Get-MgBetaPrintPrinterShareAllowedGroup -PrinterShareId <String> [-ExpandPropert
 ## DESCRIPTION
 The groups whose users have access to print using the printer.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

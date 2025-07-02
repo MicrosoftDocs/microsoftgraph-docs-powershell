@@ -42,6 +42,8 @@ Get-MgBetaEducationUserAssignmentSubmissionResource -InputObject <IEducationIden
 ## DESCRIPTION
 Get resources from education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

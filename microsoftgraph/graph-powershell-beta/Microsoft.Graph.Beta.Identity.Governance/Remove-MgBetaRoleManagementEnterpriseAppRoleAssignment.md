@@ -30,6 +30,8 @@ Remove-MgBetaRoleManagementEnterpriseAppRoleAssignment -InputObject <IIdentityGo
 ## DESCRIPTION
 Delete navigation property roleAssignments for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

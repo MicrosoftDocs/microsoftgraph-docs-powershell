@@ -29,6 +29,8 @@ Remove-MgBetaInformationProtectionPolicyLabel -InputObject <IIdentitySignInsIden
 ## DESCRIPTION
 Delete navigation property labels for informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

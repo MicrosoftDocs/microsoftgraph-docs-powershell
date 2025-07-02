@@ -52,6 +52,8 @@ Update-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property shifts in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

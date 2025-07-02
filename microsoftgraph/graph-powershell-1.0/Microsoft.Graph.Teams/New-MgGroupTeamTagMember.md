@@ -48,6 +48,8 @@ New-MgGroupTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to members for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

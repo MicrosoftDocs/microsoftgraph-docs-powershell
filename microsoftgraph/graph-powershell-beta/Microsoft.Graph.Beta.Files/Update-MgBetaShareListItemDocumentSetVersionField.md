@@ -75,6 +75,8 @@ Update-MgBetaShareListItemDocumentSetVersionField -InputObject <IFilesIdentity> 
 ## DESCRIPTION
 Update the navigation property fields in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

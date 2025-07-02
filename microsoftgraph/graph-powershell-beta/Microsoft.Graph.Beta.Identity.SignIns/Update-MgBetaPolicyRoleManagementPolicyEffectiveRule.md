@@ -50,6 +50,8 @@ Update-MgBetaPolicyRoleManagementPolicyEffectiveRule -InputObject <IIdentitySign
 ## DESCRIPTION
 Update the navigation property effectiveRules in policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

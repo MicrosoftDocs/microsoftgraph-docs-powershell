@@ -40,6 +40,8 @@ Get-MgBetaPrivacySubjectRightsRequestApprover -InputObject <IComplianceIdentity>
 ## DESCRIPTION
 Get approvers from privacy
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -34,6 +34,8 @@ Get-MgBetaUserOnenoteNotebookSectionParentSectionGroup -InputObject <INotesIdent
 The section group that contains the section.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -32,6 +32,8 @@ Remove-MgUserChat -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseHe
 ## DESCRIPTION
 Delete navigation property chats for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

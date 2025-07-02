@@ -39,6 +39,8 @@ Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CloudPC.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

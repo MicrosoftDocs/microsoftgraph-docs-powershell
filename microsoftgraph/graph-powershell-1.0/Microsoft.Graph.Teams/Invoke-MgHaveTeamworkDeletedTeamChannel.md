@@ -33,6 +33,8 @@ Invoke-MgHaveTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-TenantId
 ## DESCRIPTION
 Determine whether a user has access to a shared channel.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

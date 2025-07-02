@@ -46,6 +46,8 @@ Update-MgBetaUserSettingStorage -InputObject <IUsersIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property storage in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -31,6 +31,8 @@ Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment
 ## DESCRIPTION
 Get templateStepVersion from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

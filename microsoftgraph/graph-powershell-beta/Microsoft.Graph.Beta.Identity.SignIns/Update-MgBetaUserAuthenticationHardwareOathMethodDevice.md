@@ -53,6 +53,8 @@ Update-MgBetaUserAuthenticationHardwareOathMethodDevice -InputObject <IIdentityS
 ## DESCRIPTION
 Update the navigation property device in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

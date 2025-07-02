@@ -60,6 +60,8 @@ Update-MgUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 ## DESCRIPTION
 Update the navigation property chats in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

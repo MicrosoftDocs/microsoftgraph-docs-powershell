@@ -37,6 +37,8 @@ Get-MgBetaGroupSitePageTemplate -InputObject <ISitesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 The collection of page templates on this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

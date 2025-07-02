@@ -42,6 +42,8 @@ Get-MgGroupSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <String
 The permissions associated with the site.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

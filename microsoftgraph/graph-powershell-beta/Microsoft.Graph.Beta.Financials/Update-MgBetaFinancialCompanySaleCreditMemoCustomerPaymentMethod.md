@@ -45,6 +45,8 @@ Update-MgBetaFinancialCompanySaleCreditMemoCustomerPaymentMethod -InputObject <I
 ## DESCRIPTION
 Update the navigation property paymentMethod in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

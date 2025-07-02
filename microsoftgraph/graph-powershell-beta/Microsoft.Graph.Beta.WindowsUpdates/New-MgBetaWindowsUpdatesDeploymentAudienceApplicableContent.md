@@ -47,6 +47,8 @@ New-MgBetaWindowsUpdatesDeploymentAudienceApplicableContent -InputObject <IWindo
 ## DESCRIPTION
 Create new navigation property to applicableContent for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Get-MgIdentityAuthenticationEventFlowOnAttributeCollectionAsOnAttributeCollectio
 ## DESCRIPTION
 Get the item of type microsoft.graph.onAttributeCollectionHandler as microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId

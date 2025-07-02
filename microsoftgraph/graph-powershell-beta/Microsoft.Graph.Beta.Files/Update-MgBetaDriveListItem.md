@@ -64,6 +64,8 @@ Update-MgBetaDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property items in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

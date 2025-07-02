@@ -51,6 +51,8 @@ Remove-MgUserManagedDeviceUserFromSharedAppleDevice -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Delete user from shared Apple device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

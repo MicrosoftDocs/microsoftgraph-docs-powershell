@@ -25,6 +25,8 @@ Get-MgBetaAdminEdge [-ExpandProperty <String[]>] [-Property <String[]>] [-Respon
 A container for Microsoft Edge resources.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

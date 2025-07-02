@@ -65,6 +65,8 @@ Update-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the navigation property calendarView in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

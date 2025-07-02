@@ -33,6 +33,8 @@ Remove-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIden
 ## DESCRIPTION
 Delete navigation property templates for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

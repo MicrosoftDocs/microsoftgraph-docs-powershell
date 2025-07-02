@@ -32,6 +32,8 @@ Remove-MgSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property hosts for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

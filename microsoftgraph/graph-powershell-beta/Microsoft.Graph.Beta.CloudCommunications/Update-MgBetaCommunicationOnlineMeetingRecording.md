@@ -52,6 +52,8 @@ Update-MgBetaCommunicationOnlineMeetingRecording -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Update the navigation property recordings in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

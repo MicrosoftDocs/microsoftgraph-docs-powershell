@@ -35,6 +35,8 @@ For more information, see Use delta query to track changes in Microsoft Graph da
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.Read.All, Directory.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

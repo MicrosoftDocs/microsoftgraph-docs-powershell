@@ -35,6 +35,8 @@ Get-MgVirtualEventTownhallByUserRole -InputObject <IBookingsIdentity> [-Count] [
 ## DESCRIPTION
 Get a list of virtualEventTownhall objects where the signed-in user is either the organizer or a coorganizer.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

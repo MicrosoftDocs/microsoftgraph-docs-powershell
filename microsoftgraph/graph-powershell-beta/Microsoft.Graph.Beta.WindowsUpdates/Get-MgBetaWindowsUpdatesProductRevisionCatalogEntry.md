@@ -29,6 +29,8 @@ Get-MgBetaWindowsUpdatesProductRevisionCatalogEntry -InputObject <IWindowsUpdate
 ## DESCRIPTION
 Get catalogEntry from admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -31,6 +31,8 @@ Invoke-MgBetaPreviewSiteOnenoteSectionPage -InputObject <INotesIdentity> [-Respo
 ## DESCRIPTION
 Invoke function preview
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

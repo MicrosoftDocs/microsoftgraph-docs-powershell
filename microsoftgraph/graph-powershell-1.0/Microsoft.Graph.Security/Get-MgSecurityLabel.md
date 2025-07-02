@@ -23,6 +23,8 @@ Get-MgSecurityLabel [-ExpandProperty <String[]>] [-Property <String[]>] [-Respon
 ## DESCRIPTION
 Get labels from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

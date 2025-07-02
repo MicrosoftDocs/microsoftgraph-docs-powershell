@@ -63,6 +63,8 @@ A team is archived once the async operation completes successfully, which might 
 To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

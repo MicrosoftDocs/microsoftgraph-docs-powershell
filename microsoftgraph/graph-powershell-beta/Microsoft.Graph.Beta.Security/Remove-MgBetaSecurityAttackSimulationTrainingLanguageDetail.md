@@ -33,6 +33,8 @@ Remove-MgBetaSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecur
 ## DESCRIPTION
 Delete navigation property languageDetails for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

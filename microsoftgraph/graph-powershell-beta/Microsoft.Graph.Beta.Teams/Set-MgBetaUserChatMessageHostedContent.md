@@ -35,6 +35,8 @@ Set-MgBetaUserChatMessageHostedContent -InputObject <ITeamsIdentity> [-Data <Str
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

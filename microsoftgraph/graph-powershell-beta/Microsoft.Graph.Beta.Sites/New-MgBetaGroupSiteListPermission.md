@@ -53,6 +53,8 @@ New-MgBetaGroupSiteListPermission -InputObject <ISitesIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to permissions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

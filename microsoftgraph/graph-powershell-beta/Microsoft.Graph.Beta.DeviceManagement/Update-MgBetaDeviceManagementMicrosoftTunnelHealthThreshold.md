@@ -53,6 +53,8 @@ Update the navigation property microsoftTunnelHealthThresholds in deviceManageme
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

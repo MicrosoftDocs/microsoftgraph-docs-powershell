@@ -46,6 +46,8 @@ Get-MgGroupSiteLastModifiedByUserServiceProvisioningErrorCount -InputObject <ISi
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

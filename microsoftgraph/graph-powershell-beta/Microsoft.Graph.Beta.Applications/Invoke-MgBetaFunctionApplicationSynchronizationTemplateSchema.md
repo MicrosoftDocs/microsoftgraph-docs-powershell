@@ -44,6 +44,8 @@ List all the functions currently supported in the attributeMappingSource.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

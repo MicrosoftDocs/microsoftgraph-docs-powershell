@@ -48,6 +48,8 @@ A collection of smaller subtasks linked to the more complex parent task.
 | Delegated (personal Microsoft account) | Tasks.Read, Tasks.ReadWrite,  |
 | Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

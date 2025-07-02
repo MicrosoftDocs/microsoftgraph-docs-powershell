@@ -32,6 +32,8 @@ Lock-MgBetaUserManagedDeviceRemote -InputObject <IDevicesCorporateManagementIden
 ## DESCRIPTION
 Remote lock
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

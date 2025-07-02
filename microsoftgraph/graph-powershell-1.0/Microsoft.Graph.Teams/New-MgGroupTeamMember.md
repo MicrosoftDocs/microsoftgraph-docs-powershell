@@ -47,6 +47,8 @@ New-MgGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create new navigation property to members for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -38,6 +38,8 @@ Delete navigation property mutualTlsOauthConfigurations for directory
 | Delegated (personal Microsoft account) | Not supported |
 | Application | MutualTlsOauthConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

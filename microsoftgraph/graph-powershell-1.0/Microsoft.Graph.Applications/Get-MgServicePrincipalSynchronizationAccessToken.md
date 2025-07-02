@@ -59,6 +59,8 @@ Acquire an OAuth access token to authorize the Microsoft Entra provisioning serv
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

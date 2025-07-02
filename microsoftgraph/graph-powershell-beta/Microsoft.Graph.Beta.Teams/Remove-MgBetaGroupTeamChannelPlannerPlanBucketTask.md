@@ -30,6 +30,8 @@ Remove-MgBetaGroupTeamChannelPlannerPlanBucketTask -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Delete navigation property tasks for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

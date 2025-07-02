@@ -68,6 +68,8 @@ Update-MgBetaUserDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property columns in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

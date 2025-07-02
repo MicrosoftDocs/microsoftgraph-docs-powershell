@@ -24,6 +24,8 @@ Get-MgBetaRoleManagementDirectory [-ExpandProperty <String[]>] [-Property <Strin
 ## DESCRIPTION
 Get directory from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

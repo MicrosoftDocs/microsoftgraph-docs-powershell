@@ -29,6 +29,8 @@ Get enrichedAuditLogs from networkAccess
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

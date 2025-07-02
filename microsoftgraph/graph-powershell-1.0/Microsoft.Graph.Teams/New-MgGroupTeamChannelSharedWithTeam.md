@@ -48,6 +48,8 @@ New-MgGroupTeamChannelSharedWithTeam -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to sharedWithTeams for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

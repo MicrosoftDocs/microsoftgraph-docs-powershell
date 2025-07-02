@@ -33,6 +33,8 @@ Get-MgSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitCount
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExchangeProtectionPolicyId

@@ -45,6 +45,8 @@ Update-MgBetaUserOnlineMeetingRegistrationRegistrant -InputObject <ICloudCommuni
 ## DESCRIPTION
 Update the navigation property registrants in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

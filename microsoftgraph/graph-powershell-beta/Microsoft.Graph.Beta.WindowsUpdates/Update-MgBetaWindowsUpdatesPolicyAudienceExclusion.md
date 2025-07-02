@@ -43,6 +43,8 @@ Update-MgBetaWindowsUpdatesPolicyAudienceExclusion -InputObject <IWindowsUpdates
 ## DESCRIPTION
 Update the navigation property exclusions in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -42,6 +42,8 @@ Get userInsightsSettings through this navigation property.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

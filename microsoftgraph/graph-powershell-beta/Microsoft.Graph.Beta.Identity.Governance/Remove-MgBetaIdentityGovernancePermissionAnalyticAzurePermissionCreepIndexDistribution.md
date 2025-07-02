@@ -31,6 +31,8 @@ Remove-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistri
 ## DESCRIPTION
 Delete navigation property permissionsCreepIndexDistributions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

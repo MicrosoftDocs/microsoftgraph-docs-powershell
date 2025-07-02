@@ -54,6 +54,8 @@ New-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact
 ## DESCRIPTION
 Create new navigation property to driveRestoreArtifacts for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

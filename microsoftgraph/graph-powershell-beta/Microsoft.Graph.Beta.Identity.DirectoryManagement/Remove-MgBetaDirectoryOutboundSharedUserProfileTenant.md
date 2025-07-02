@@ -30,6 +30,8 @@ Remove-MgBetaDirectoryOutboundSharedUserProfileTenant -InputObject <IIdentityDir
 ## DESCRIPTION
 Delete navigation property tenants for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

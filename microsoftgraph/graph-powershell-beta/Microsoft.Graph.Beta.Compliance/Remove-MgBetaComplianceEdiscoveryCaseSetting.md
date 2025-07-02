@@ -29,6 +29,8 @@ Remove-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity> 
 ## DESCRIPTION
 Delete navigation property settings for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

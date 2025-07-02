@@ -57,6 +57,8 @@ Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

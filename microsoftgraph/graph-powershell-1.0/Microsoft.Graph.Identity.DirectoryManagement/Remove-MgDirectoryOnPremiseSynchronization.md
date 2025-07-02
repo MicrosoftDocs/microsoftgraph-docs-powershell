@@ -32,6 +32,8 @@ Remove-MgDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Delete navigation property onPremisesSynchronization for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -39,6 +39,8 @@ Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 ## DESCRIPTION
 The collection property of AppLogUploadRequest.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

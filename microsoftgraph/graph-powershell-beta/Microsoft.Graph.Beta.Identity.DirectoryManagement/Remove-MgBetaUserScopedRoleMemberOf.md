@@ -32,6 +32,8 @@ Remove-MgBetaUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Delete navigation property scopedRoleMemberOf for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

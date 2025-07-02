@@ -51,6 +51,8 @@ New-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationStat
 ## DESCRIPTION
 Create new navigation property to managedDeviceMobileAppConfigurationStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,6 +48,8 @@ New-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to tags for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

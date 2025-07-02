@@ -31,6 +31,8 @@ Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
 ## DESCRIPTION
 Delete navigation property iosLobAppProvisioningConfigurations for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

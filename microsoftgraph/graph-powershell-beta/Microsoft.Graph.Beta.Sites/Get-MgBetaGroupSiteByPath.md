@@ -30,6 +30,8 @@ Get-MgBetaGroupSiteByPath -InputObject <ISitesIdentity> [-ResponseHeadersVariabl
 ## DESCRIPTION
 Invoke function getByPath
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

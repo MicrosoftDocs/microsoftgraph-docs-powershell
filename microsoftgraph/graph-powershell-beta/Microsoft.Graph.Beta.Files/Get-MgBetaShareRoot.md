@@ -32,6 +32,8 @@ Get-MgBetaShareRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Get root from shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

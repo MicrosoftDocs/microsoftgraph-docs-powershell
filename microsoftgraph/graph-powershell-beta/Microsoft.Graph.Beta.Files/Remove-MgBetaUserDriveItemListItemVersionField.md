@@ -33,6 +33,8 @@ Remove-MgBetaUserDriveItemListItemVersionField -InputObject <IFilesIdentity> [-I
 ## DESCRIPTION
 Delete navigation property fields for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

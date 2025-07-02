@@ -32,6 +32,8 @@ Remove-MgTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property messages for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

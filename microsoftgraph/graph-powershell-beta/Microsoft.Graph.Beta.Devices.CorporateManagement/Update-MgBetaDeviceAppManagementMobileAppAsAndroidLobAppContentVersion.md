@@ -51,6 +51,8 @@ Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion
 ## DESCRIPTION
 Update the navigation property contentVersions in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

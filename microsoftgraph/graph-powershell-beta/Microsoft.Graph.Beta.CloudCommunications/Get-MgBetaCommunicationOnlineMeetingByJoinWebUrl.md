@@ -37,6 +37,8 @@ Get onlineMeetings from communications
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

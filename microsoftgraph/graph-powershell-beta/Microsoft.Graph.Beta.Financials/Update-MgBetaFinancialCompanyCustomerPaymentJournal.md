@@ -57,6 +57,8 @@ Update the navigation property customerPaymentJournals in financials
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Financials.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Account

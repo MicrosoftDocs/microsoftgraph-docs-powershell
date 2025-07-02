@@ -29,6 +29,8 @@ Remove-MgBetaGroupDriveListItemPermission -InputObject <IFilesIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property permissions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

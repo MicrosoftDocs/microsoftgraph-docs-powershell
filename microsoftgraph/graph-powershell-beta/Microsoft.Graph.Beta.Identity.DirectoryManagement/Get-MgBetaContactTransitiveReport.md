@@ -40,6 +40,8 @@ Get-MgBetaContactTransitiveReport -InputObject <IIdentityDirectoryManagementIden
 The transitive reports for a contact.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

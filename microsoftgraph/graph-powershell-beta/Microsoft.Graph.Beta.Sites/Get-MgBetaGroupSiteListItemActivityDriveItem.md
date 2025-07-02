@@ -30,6 +30,8 @@ Get-MgBetaGroupSiteListItemActivityDriveItem -InputObject <ISitesIdentity> [-Exp
 ## DESCRIPTION
 Get driveItem from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

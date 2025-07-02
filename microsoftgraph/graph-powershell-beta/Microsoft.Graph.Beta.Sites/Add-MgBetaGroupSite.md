@@ -49,6 +49,8 @@ Add-MgBetaGroupSite -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Follow a user's site or multiple sites.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -56,6 +56,8 @@ Update the navigation property settings in groups
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.Authorization, Directory.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -51,6 +51,8 @@ Update-MgBetaDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentity
 ## DESCRIPTION
 Update the navigation property scopedRoleMembers in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

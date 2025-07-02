@@ -32,6 +32,8 @@ Remove-MgBetaGroupEventAttachment -InputObject <ICalendarIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property attachments for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttachmentId

@@ -23,6 +23,8 @@ Get-MgExternal [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHea
 ## DESCRIPTION
 Get external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

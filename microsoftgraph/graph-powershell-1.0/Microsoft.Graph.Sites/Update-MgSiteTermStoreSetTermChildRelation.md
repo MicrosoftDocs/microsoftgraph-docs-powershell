@@ -82,6 +82,8 @@ Update-MgSiteTermStoreSetTermChildRelation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property relations in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

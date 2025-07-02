@@ -66,6 +66,8 @@ New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfig
 ## DESCRIPTION
 Create new navigation property to combinationConfigurations for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

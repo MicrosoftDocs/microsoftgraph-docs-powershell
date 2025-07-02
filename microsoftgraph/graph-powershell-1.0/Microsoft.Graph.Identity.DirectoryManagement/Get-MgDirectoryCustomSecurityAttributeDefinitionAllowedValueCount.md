@@ -41,6 +41,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CustomSecurityAttributeDefinitionId

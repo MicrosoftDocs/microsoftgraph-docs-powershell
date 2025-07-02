@@ -62,6 +62,8 @@ Get-MgBetaSiteContentTypeBaseType -InputObject <ISitesIdentity> [-ExpandProperty
 ## DESCRIPTION
 The collection of content types that are ancestors of this content type.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

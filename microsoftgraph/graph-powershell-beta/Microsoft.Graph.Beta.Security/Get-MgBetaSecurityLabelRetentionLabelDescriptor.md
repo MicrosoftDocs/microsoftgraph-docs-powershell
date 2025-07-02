@@ -32,6 +32,8 @@ Get-MgBetaSecurityLabelRetentionLabelDescriptor -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Represents out-of-the-box values that provide more options to improve the manageability and organization of the content you need to label.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

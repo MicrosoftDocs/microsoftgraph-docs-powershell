@@ -37,6 +37,8 @@ Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperation -InputObject <I
 ## DESCRIPTION
 Get the item of type microsoft.graph.ediscovery.caseOperation as microsoft.graph.ediscovery.caseExportOperation
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

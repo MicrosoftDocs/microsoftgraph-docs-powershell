@@ -40,6 +40,8 @@ Get-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionReques
 ## DESCRIPTION
 Zero or more log collection requests triggered for the app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

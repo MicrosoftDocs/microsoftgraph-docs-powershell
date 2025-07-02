@@ -30,6 +30,8 @@ Remove-MgBetaUserInformationProtectionThreatAssessmentRequestResult -InputObject
 ## DESCRIPTION
 Delete navigation property results for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

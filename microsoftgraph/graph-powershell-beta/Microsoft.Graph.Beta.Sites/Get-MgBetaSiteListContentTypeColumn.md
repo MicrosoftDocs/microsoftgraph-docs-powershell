@@ -48,6 +48,8 @@ The collection of column definitions for this content type.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

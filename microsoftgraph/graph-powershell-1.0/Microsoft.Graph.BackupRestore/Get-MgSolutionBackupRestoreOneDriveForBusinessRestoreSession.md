@@ -40,6 +40,8 @@ Get-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession -InputObject <IBack
 ## DESCRIPTION
 The list of OneDrive for Business restore sessions available in the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -58,6 +58,8 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -InputObject
 ## DESCRIPTION
 Create new navigation property to decisions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewId

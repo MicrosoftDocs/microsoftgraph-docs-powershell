@@ -48,6 +48,8 @@ New-MgSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Create new navigation property to details for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

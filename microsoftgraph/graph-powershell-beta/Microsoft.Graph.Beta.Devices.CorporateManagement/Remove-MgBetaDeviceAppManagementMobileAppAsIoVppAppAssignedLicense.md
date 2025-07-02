@@ -30,6 +30,8 @@ Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense
 ## DESCRIPTION
 Delete navigation property assignedLicenses for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

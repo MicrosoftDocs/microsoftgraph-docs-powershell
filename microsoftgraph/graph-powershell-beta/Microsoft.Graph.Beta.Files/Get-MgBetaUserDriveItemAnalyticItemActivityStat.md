@@ -41,6 +41,8 @@ Get-MgBetaUserDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity> [-
 ## DESCRIPTION
 Get itemActivityStats from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

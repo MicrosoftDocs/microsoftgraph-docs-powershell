@@ -34,6 +34,8 @@ Remove-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreAr
 ## DESCRIPTION
 Delete navigation property granularMailboxRestoreArtifacts for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExchangeRestoreSessionId

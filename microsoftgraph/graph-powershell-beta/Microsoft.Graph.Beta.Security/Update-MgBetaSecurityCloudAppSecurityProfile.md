@@ -53,6 +53,8 @@ Update-MgBetaSecurityCloudAppSecurityProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property cloudAppSecurityProfiles in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -36,6 +36,8 @@ Used for navigating to the item that was shared.
 For file attachments, the type is fileAttachment.
 For linked attachments, the type is driveItem.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

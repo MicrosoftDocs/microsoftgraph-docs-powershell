@@ -44,6 +44,8 @@ Get-MgBetaUserContactFolderChildFolderContactExtension -InputObject <IPersonalCo
 The collection of open extensions defined for the contact.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

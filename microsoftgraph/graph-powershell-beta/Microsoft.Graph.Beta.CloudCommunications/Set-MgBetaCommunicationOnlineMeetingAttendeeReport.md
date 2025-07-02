@@ -34,6 +34,8 @@ Set-MgBetaCommunicationOnlineMeetingAttendeeReport -InputObject <ICloudCommunica
 The content stream of the attendee report of a Teams live event.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

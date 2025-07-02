@@ -24,6 +24,8 @@ Get-MgBetaSecurityTrigger [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Get triggers from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

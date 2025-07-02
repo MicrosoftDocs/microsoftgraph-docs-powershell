@@ -30,6 +30,8 @@ Remove-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval
 ## DESCRIPTION
 Delete navigation property scheduledPermissionsApprovals for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApprovalId

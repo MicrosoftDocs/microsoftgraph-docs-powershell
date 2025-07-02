@@ -49,6 +49,8 @@ Because the group resource supports extensions, you can also use the GET operati
 | Delegated (personal Microsoft account) | Not supported |
 | Application | GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

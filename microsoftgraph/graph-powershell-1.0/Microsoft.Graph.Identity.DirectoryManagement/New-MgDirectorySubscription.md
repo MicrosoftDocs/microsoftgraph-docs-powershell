@@ -35,6 +35,8 @@ New-MgDirectorySubscription -BodyParameter <IMicrosoftGraphCompanySubscription>
 ## DESCRIPTION
 Create new navigation property to subscriptions for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

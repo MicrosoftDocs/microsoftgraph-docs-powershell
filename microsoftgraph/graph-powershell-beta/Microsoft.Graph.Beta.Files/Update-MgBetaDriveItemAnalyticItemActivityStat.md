@@ -57,6 +57,8 @@ Update-MgBetaDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property itemActivityStats in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Access

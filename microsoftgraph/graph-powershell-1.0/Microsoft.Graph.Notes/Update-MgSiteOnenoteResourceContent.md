@@ -48,6 +48,8 @@ Update-MgSiteOnenoteResourceContent -InputObject <INotesIdentity>
 ## DESCRIPTION
 Update the navigation property resources in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -51,6 +51,8 @@ New-MgServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IApplicati
 ## DESCRIPTION
 Create new navigation property to directories for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

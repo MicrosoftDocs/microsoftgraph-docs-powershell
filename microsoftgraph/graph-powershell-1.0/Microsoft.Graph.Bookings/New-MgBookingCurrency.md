@@ -31,6 +31,8 @@ New-MgBookingCurrency -BodyParameter <IMicrosoftGraphBookingCurrency> [-Response
 ## DESCRIPTION
 Create new navigation property to bookingCurrencies for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

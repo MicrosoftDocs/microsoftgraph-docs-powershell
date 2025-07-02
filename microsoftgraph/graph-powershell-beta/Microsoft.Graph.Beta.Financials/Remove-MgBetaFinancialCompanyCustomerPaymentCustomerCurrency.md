@@ -29,6 +29,8 @@ Remove-MgBetaFinancialCompanyCustomerPaymentCustomerCurrency -InputObject <IFina
 ## DESCRIPTION
 Delete navigation property currency for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

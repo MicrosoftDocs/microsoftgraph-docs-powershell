@@ -40,6 +40,8 @@ Get-MgBetaTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-ExpandPrope
 ## DESCRIPTION
 The channels those are either shared with this deleted team or created in this deleted team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

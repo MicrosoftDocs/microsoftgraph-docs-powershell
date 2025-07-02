@@ -32,6 +32,8 @@ Remove-MgDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete entity from dataPolicyOperations
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DataPolicyOperationId

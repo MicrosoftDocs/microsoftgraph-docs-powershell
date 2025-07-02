@@ -25,6 +25,8 @@ Get-MgBetaGroupSiteGetByPathOperation -GroupId <String> -Path <String> -SiteId <
 ## DESCRIPTION
 The collection of long running operations for the site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

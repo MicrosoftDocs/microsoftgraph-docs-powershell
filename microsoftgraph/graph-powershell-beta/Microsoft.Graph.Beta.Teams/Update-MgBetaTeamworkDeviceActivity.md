@@ -47,6 +47,8 @@ Update-MgBetaTeamworkDeviceActivity -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property activity in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivePeripherals

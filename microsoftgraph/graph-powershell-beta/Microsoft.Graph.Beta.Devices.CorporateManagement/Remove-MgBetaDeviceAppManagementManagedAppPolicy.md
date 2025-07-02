@@ -32,6 +32,8 @@ Remove-MgBetaDeviceAppManagementManagedAppPolicy -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Delete navigation property managedAppPolicies for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

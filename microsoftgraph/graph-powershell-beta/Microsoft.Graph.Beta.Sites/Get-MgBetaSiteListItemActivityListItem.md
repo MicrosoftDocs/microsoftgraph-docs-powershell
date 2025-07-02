@@ -29,6 +29,8 @@ Get-MgBetaSiteListItemActivityListItem -InputObject <ISitesIdentity> [-ExpandPro
 ## DESCRIPTION
 Get listItem from sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

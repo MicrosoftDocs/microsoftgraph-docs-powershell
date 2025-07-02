@@ -29,6 +29,8 @@ Remove-MgBetaEntitlementManagementAccessPackageResourceRequest -InputObject <IId
 ## DESCRIPTION
 Delete navigation property accessPackageResourceRequests for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

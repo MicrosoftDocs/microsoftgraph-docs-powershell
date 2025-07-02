@@ -47,6 +47,8 @@ Update-MgBetaChatOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property operations in chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

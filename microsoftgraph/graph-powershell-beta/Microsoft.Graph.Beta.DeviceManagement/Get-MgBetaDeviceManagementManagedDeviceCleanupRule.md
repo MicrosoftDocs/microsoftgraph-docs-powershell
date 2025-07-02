@@ -37,6 +37,8 @@ Get-MgBetaDeviceManagementManagedDeviceCleanupRule -InputObject <IDeviceManageme
 ## DESCRIPTION
 Device cleanup rule V2
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

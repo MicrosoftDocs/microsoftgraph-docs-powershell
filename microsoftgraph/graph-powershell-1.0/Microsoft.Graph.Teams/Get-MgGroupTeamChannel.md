@@ -48,6 +48,8 @@ The collection of channels and messages associated with the team.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

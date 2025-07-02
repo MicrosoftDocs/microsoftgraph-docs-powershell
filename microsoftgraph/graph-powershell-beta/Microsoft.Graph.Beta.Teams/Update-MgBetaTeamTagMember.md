@@ -48,6 +48,8 @@ Update-MgBetaTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property members in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

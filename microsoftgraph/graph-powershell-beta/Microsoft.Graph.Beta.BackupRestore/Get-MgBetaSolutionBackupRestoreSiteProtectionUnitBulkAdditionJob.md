@@ -37,6 +37,8 @@ Get-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob -InputObject <I
 ## DESCRIPTION
 Get siteProtectionUnitsBulkAdditionJobs from solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

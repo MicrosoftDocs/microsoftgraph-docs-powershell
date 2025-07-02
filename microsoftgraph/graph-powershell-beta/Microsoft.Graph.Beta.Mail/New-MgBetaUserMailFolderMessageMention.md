@@ -48,6 +48,8 @@ New-MgBetaUserMailFolderMessageMention -InputObject <IMailIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to mentions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

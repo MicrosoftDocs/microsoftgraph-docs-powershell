@@ -41,6 +41,8 @@ Get-MgPolicyActivityBasedTimeoutPolicyApplyTo -InputObject <IIdentitySignInsIden
 ## DESCRIPTION
 Get appliesTo from policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityBasedTimeoutPolicyId

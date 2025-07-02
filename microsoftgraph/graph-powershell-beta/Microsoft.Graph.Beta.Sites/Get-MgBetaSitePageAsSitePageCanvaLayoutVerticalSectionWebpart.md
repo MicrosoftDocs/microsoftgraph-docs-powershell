@@ -40,6 +40,8 @@ Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart -InputObject <ISit
 ## DESCRIPTION
 The set of web parts in this section.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

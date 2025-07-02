@@ -24,6 +24,8 @@ Remove-MgIdentityGovernanceLifecycleWorkflowInsight [-IfMatch <String>] [-Respon
 ## DESCRIPTION
 Delete navigation property insights for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

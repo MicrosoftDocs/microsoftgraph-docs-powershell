@@ -52,6 +52,8 @@ Update-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob -InputObj
 ## DESCRIPTION
 Update the navigation property mailboxProtectionUnitsBulkAdditionJobs in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

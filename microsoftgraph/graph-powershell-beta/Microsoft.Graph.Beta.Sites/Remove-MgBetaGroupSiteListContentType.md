@@ -32,6 +32,8 @@ Remove-MgBetaGroupSiteListContentType -InputObject <ISitesIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property contentTypes for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

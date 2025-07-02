@@ -61,6 +61,8 @@ Add-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIdentit
 ## DESCRIPTION
 Invoke action applyHold
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

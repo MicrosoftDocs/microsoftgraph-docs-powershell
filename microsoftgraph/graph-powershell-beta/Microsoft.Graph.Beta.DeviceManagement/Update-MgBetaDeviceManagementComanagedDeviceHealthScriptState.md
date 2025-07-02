@@ -57,6 +57,8 @@ Update-MgBetaDeviceManagementComanagedDeviceHealthScriptState -InputObject <IDev
 ## DESCRIPTION
 Update the navigation property deviceHealthScriptStates in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

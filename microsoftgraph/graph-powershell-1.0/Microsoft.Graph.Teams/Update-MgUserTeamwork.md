@@ -48,6 +48,8 @@ Update-MgUserTeamwork -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the navigation property teamwork in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

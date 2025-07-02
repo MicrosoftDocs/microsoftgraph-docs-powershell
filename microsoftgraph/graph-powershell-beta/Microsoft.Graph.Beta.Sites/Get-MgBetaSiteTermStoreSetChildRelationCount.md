@@ -46,6 +46,8 @@ Get-MgBetaSiteTermStoreSetChildRelationCount -InputObject <ISitesIdentity> [-Fil
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

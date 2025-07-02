@@ -68,6 +68,8 @@ New-MgBetaUserDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to columns for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaSecurityLabelDepartment -InputObject <ISecurityIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property departments for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DepartmentTemplateId

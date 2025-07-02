@@ -44,6 +44,8 @@ We recommend using a transparent image with no padding around the logo.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.Read.All, OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All, Organization.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

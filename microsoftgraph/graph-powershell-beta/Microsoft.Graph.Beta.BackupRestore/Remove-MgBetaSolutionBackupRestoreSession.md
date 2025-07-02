@@ -33,6 +33,8 @@ Remove-MgBetaSolutionBackupRestoreSession -InputObject <IBackupRestoreIdentity> 
 ## DESCRIPTION
 Delete a draft restoreSessionBase object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

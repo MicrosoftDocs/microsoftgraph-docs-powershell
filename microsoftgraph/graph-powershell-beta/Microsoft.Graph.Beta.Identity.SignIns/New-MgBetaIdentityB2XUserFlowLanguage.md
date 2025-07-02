@@ -49,6 +49,8 @@ New-MgBetaIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Create new navigation property to languages for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

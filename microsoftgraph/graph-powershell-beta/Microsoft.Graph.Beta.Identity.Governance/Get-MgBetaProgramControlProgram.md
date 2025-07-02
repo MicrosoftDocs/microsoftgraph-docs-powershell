@@ -43,6 +43,8 @@ Get-MgBetaProgramControlProgram -InputObject <IIdentityGovernanceIdentity> [-Exp
 ## DESCRIPTION
 The program this control is part of.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

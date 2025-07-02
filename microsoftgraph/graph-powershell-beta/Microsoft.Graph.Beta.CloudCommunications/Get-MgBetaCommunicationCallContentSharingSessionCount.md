@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.InitiateGroupCall.All, Calls.Initiate.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallId

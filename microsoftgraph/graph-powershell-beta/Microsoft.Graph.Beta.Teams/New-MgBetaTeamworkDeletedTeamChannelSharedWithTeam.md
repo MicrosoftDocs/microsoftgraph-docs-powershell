@@ -50,6 +50,8 @@ New-MgBetaTeamworkDeletedTeamChannelSharedWithTeam -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to sharedWithTeams for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

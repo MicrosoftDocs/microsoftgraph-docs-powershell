@@ -55,6 +55,8 @@ Update-MgBetaGroupDriveListItemDocumentSetVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property documentSetVersions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask -InputObject
 ## DESCRIPTION
 Delete navigation property tasks for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -52,6 +52,8 @@ Nullable.
 | Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
 | Application | Notes.Read.All, Notes.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -51,6 +51,8 @@ Update-MgBetaUserDriveListOperation -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property operations in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

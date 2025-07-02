@@ -32,6 +32,8 @@ Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowUserProcessingResult
 ## DESCRIPTION
 Invoke function summary
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EndDateTime

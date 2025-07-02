@@ -32,6 +32,8 @@ Remove-MgBetaDirectoryDeletedItem -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Delete navigation property deletedItems for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectoryObjectId

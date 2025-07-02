@@ -29,6 +29,8 @@ Get-MgBetaGroupSitePageTemplateLastModifiedByUser -InputObject <ISitesIdentity> 
 ## DESCRIPTION
 Get lastModifiedByUser from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

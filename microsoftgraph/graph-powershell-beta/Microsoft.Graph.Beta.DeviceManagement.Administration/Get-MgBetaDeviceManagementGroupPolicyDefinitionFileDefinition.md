@@ -39,6 +39,8 @@ Get-MgBetaDeviceManagementGroupPolicyDefinitionFileDefinition
 ## DESCRIPTION
 The group policy definitions associated with the file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -24,6 +24,8 @@ Get-MgReportAuthenticationMethod [-ExpandProperty <String[]>] [-Property <String
 ## DESCRIPTION
 Container for navigation properties for Microsoft Entra authentication methods resources.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

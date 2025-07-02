@@ -39,6 +39,8 @@ Get-MgBetaUserChatOperation -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

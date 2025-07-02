@@ -30,6 +30,8 @@ Get-MgBetaGroupSiteListItemActivityListItem -InputObject <ISitesIdentity> [-Expa
 ## DESCRIPTION
 Get listItem from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -32,6 +32,8 @@ Get-MgSecurityThreatIntelligenceSslCertificateRelatedHostCount -InputObject <ISe
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

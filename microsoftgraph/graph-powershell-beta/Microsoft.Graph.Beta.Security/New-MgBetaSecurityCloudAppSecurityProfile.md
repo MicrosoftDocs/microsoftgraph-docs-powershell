@@ -34,6 +34,8 @@ New-MgBetaSecurityCloudAppSecurityProfile -BodyParameter <IMicrosoftGraphCloudAp
 ## DESCRIPTION
 Create new navigation property to cloudAppSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -47,6 +47,8 @@ Update-MgBetaNetworkAccessConnectivityBranchConnectivityConfiguration -InputObje
 ## DESCRIPTION
 Update the navigation property connectivityConfiguration in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

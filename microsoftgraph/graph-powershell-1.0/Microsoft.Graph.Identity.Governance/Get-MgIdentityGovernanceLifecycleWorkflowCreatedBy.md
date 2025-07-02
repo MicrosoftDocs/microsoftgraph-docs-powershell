@@ -32,6 +32,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowCreatedBy -InputObject <IIdentityGovern
 ## DESCRIPTION
 The user who created the workflow.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

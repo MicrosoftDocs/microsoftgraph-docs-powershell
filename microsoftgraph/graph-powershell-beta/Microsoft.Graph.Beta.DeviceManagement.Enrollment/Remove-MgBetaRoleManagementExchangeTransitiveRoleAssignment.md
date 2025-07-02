@@ -29,6 +29,8 @@ Remove-MgBetaRoleManagementExchangeTransitiveRoleAssignment -InputObject <IDevic
 ## DESCRIPTION
 Delete navigation property transitiveRoleAssignments for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

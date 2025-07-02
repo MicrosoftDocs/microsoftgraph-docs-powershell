@@ -22,6 +22,8 @@ Get-MgBetaGroupDriveActivity -DriveId <String> -GroupId <String> [-ExpandPropert
 ## DESCRIPTION
 The list of recent activities that took place under this drive.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

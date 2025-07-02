@@ -32,6 +32,8 @@ Get-MgGroupOnenoteNotebookSectionPageContent -InputObject <INotesIdentity> -OutF
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

@@ -29,6 +29,8 @@ Remove-MgBetaSecurityProviderTenantSetting -InputObject <ISecurityIdentity> [-If
 ## DESCRIPTION
 Delete navigation property providerTenantSettings for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

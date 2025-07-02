@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanyJournalAccount -InputObject <IFinancialsIdentity> [-Ex
 ## DESCRIPTION
 Get account from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

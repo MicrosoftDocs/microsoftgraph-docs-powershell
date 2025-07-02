@@ -51,6 +51,8 @@ Update-MgBetaGroupSiteRecycleBinLastModifiedByUserMailboxSetting -InputObject <I
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

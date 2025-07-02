@@ -32,6 +32,8 @@ Invoke-MgBetaRetireUserManagedDevice -InputObject <IDevicesCorporateManagementId
 ## DESCRIPTION
 Retire a device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

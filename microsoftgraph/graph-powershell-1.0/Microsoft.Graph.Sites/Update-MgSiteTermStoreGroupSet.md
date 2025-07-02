@@ -88,6 +88,8 @@ Update-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property sets in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

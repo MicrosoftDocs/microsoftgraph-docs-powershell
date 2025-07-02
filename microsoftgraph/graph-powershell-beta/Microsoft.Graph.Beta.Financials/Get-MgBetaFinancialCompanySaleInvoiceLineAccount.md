@@ -44,6 +44,8 @@ Get-MgBetaFinancialCompanySaleInvoiceLineAccount -InputObject <IFinancialsIdenti
 ## DESCRIPTION
 Get account from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

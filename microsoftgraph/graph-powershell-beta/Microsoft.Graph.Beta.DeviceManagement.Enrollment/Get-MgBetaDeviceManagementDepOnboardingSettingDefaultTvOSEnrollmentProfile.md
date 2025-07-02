@@ -30,6 +30,8 @@ Get-MgBetaDeviceManagementDepOnboardingSettingDefaultTvOSEnrollmentProfile
 ## DESCRIPTION
 Default TvOS Enrollment Profile
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DepOnboardingSettingId

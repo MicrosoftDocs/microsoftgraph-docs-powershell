@@ -34,6 +34,8 @@ List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipa
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -49,6 +49,8 @@ Copy-MgGroupDriveRoot -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

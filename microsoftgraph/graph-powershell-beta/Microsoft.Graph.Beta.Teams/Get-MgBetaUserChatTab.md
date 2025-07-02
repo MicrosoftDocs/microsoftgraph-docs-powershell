@@ -42,6 +42,8 @@ Get-MgBetaUserChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 A collection of all the tabs in the chat.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

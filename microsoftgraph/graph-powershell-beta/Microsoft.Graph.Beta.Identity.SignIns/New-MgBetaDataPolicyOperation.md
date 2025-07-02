@@ -33,6 +33,8 @@ New-MgBetaDataPolicyOperation -BodyParameter <IMicrosoftGraphDataPolicyOperation
 ## DESCRIPTION
 Add new entity to dataPolicyOperations
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

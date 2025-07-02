@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Channel.ReadBasic.All, ChannelSettings.ReadWrite.All, ChannelSettings.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

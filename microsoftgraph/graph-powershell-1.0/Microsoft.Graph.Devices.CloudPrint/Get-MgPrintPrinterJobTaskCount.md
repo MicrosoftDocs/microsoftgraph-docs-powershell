@@ -32,6 +32,8 @@ Get-MgPrintPrinterJobTaskCount -InputObject <IDevicesCloudPrintIdentity> [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

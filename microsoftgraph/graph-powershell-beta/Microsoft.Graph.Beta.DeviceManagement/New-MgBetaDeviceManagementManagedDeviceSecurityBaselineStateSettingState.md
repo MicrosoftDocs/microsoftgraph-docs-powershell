@@ -54,6 +54,8 @@ New-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState
 ## DESCRIPTION
 Create new navigation property to settingStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

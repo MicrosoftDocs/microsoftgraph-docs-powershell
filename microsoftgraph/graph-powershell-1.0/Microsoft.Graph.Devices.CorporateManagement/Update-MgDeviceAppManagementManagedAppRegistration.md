@@ -58,6 +58,8 @@ Update-MgDeviceAppManagementManagedAppRegistration -InputObject <IDevicesCorpora
 ## DESCRIPTION
 Update the navigation property managedAppRegistrations in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -44,6 +44,8 @@ Update-MgBetaIdentityGovernanceRoleManagementAlertIncident -InputObject <IIdenti
 ## DESCRIPTION
 Update the navigation property alertIncidents in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -55,6 +55,8 @@ Update-MgBetaSecurityThreatIntelligenceHostPort -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property hostPorts in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

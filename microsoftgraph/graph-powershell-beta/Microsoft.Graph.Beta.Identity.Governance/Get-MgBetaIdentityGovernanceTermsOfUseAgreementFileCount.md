@@ -32,6 +32,8 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileCount -InputObject <IIdentity
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementId

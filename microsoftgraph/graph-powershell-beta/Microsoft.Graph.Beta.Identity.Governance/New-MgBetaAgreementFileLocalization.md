@@ -50,6 +50,8 @@ New-MgBetaAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Create new navigation property to localizations for agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

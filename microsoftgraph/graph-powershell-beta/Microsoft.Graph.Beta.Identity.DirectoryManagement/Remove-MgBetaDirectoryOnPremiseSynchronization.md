@@ -32,6 +32,8 @@ Remove-MgBetaDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryM
 ## DESCRIPTION
 Delete navigation property onPremisesSynchronization for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -32,6 +32,8 @@ Get-MgSiteGetByPathOnenote -InputObject <INotesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Calls the OneNote service for notebook related operations.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -48,6 +48,8 @@ Update-MgBetaCommunicationCallOperation -InputObject <ICloudCommunicationsIdenti
 ## DESCRIPTION
 Update the navigation property operations in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

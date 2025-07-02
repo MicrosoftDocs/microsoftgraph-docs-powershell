@@ -32,6 +32,8 @@ Remove-MgSecuritySecureScore -InputObject <ISecurityIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property secureScores for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

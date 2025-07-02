@@ -38,6 +38,8 @@ Get-MgBetaDeviceManagementGroupPolicyCategoryDefinition -InputObject <IDeviceMan
 ## DESCRIPTION
 The immediate GroupPolicyDefinition children of the category
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

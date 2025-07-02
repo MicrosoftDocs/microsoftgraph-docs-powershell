@@ -51,6 +51,8 @@ New-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Create new navigation property to files for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

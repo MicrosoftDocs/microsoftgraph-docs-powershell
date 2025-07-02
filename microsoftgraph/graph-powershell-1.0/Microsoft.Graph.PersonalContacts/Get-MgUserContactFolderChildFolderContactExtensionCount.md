@@ -32,6 +32,8 @@ Get-MgUserContactFolderChildFolderContactExtensionCount -InputObject <IPersonalC
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContactFolderId

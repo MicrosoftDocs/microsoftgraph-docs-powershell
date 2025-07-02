@@ -32,6 +32,8 @@ Get-MgSiteGetByPathAnalytic -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Analytics about the view activities that took place on this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

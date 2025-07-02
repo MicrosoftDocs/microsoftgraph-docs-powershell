@@ -52,6 +52,8 @@ Update-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecuri
 ## DESCRIPTION
 Update the navigation property userSources in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

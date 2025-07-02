@@ -46,6 +46,8 @@ New-MgBetaOrganizationExtension -InputObject <IIdentityDirectoryManagementIdenti
 ## DESCRIPTION
 Create new navigation property to extensions for organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

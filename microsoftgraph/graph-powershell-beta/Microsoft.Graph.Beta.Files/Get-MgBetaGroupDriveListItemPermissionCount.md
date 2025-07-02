@@ -29,6 +29,8 @@ Get-MgBetaGroupDriveListItemPermissionCount -InputObject <IFilesIdentity> [-Filt
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

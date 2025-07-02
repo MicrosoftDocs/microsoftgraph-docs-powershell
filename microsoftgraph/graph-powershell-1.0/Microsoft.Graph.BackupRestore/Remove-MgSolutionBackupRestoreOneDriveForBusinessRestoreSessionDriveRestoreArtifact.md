@@ -34,6 +34,8 @@ Remove-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtif
 ## DESCRIPTION
 Delete navigation property driveRestoreArtifacts for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveRestoreArtifactId

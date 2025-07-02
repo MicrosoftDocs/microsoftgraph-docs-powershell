@@ -55,6 +55,8 @@ Update-MgBetaPrintPrinterShare -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update the navigation property printerShares in print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

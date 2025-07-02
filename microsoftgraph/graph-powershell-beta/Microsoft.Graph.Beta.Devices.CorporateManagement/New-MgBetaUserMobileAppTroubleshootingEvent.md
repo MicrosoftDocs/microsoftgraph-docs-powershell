@@ -55,6 +55,8 @@ New-MgBetaUserMobileAppTroubleshootingEvent -InputObject <IDevicesCorporateManag
 ## DESCRIPTION
 Create new navigation property to mobileAppTroubleshootingEvents for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

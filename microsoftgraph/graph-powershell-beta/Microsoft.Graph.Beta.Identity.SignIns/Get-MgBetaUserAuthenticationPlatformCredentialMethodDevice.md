@@ -35,6 +35,8 @@ Supports $expand.
 When you get a user's Platform Credential registration information, this property is returned only on a single GET and when you specify ?$expand.
 For example, GET /users/admin@contoso.com/authentication/platformCredentialAuthenticationMethod/_jpuR-TGZtk6aQCLF3BQjA2?$expand=device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -41,6 +41,8 @@ Get-MgBetaShareListContentTypeColumnPosition -InputObject <IFilesIdentity> [-Exp
 ## DESCRIPTION
 Column order information in a content type.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

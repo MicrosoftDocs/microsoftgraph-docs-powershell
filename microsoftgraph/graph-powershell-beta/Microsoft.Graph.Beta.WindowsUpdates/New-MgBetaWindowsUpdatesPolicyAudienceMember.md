@@ -43,6 +43,8 @@ New-MgBetaWindowsUpdatesPolicyAudienceMember -InputObject <IWindowsUpdatesIdenti
 ## DESCRIPTION
 Create new navigation property to members for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

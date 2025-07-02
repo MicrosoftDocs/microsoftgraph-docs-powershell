@@ -32,6 +32,8 @@ Get-MgBetaSitePageLastModifiedByUser -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get lastModifiedByUser from sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

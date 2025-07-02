@@ -21,6 +21,8 @@ Get-MgBetaIdentityGovernancePermissionAnalyticAzure [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Azure permissions analytics findings.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

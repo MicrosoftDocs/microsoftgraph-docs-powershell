@@ -32,6 +32,8 @@ Get-MgSecurityThreatIntelligenceHostSslCertificateHost -InputObject <ISecurityId
 ## DESCRIPTION
 The host for this hostSslCertificate.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -32,6 +32,8 @@ Get-MgBetaExternalConnectionGroupMemberCount -InputObject <ISearchIdentity> [-Fi
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExternalConnectionId

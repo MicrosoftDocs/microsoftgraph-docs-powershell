@@ -55,6 +55,8 @@ Update-MgBetaSiteListSubscription -InputObject <ISitesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property subscriptions in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

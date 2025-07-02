@@ -33,6 +33,8 @@ Remove-MgBetaGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> [-IfMatch <
 ## DESCRIPTION
 Remove a user or group from the accepted-senders list of the specified group.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectoryObjectId

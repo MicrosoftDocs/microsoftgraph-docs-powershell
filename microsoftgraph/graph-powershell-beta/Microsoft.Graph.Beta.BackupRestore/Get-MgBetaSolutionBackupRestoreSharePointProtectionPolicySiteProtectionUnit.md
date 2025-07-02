@@ -44,6 +44,8 @@ Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit
 ## DESCRIPTION
 The protection units (sites) that are protected under the site protection policy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

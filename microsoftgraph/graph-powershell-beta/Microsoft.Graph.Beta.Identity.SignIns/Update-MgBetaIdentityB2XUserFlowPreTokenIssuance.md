@@ -45,6 +45,8 @@ Update-MgBetaIdentityB2XUserFlowPreTokenIssuance -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Update the navigation property preTokenIssuance in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

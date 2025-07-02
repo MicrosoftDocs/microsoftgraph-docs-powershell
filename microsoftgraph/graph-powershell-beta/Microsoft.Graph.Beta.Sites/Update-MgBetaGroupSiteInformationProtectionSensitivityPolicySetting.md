@@ -45,6 +45,8 @@ Update-MgBetaGroupSiteInformationProtectionSensitivityPolicySetting -InputObject
 ## DESCRIPTION
 Update the navigation property sensitivityPolicySettings in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

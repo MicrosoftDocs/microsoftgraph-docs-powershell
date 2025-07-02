@@ -58,6 +58,8 @@ New-MgSiteGetByPathContentType -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to contentTypes for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

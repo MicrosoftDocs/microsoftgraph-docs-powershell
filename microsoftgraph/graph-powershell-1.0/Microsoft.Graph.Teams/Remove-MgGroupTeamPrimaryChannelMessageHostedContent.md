@@ -48,6 +48,8 @@ Remove-MgGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentit
 ## DESCRIPTION
 Delete navigation property hostedContents for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatMessageHostedContentId

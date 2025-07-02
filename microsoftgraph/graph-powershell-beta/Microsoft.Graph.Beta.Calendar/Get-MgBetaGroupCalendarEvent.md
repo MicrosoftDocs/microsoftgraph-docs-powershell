@@ -52,6 +52,8 @@ Read-only.
 | Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read,  |
 | Application | Calendars.ReadBasic, Calendars.Read,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

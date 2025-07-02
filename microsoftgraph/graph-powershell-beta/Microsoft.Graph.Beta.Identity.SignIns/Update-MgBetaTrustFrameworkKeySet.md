@@ -58,6 +58,8 @@ Specifying the ID in the request payload is optional.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TrustFrameworkKeySet.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

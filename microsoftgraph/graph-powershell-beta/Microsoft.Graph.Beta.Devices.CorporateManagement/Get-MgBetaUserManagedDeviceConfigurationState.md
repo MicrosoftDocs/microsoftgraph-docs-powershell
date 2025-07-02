@@ -40,6 +40,8 @@ Get-MgBetaUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateMan
 ## DESCRIPTION
 Device configuration states for this device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

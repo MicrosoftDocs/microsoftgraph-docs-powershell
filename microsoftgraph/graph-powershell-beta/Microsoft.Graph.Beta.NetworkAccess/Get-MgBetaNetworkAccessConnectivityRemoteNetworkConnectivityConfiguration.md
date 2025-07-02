@@ -29,6 +29,8 @@ Get-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration -Input
 ## DESCRIPTION
 Specifies the connectivity details of all device links associated with a remote network.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -32,6 +32,8 @@ Remove-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity> [-
 ## DESCRIPTION
 Delete navigation property payloads for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

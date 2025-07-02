@@ -44,6 +44,8 @@ New-MgBetaUserDeviceRegisteredUserByRef -InputObject <ICrossDeviceExperiencesIde
 ## DESCRIPTION
 Create new navigation property ref to registeredUsers for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

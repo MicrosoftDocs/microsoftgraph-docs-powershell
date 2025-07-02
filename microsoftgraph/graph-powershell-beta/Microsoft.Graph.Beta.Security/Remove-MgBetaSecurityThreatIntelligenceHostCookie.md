@@ -32,6 +32,8 @@ Remove-MgBetaSecurityThreatIntelligenceHostCookie -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Delete navigation property hostCookies for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

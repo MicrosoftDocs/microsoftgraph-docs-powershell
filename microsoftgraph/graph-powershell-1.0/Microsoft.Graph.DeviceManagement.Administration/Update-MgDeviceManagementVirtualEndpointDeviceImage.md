@@ -52,6 +52,8 @@ Update-MgDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagem
 ## DESCRIPTION
 Update the navigation property deviceImages in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

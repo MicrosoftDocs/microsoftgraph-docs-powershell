@@ -51,6 +51,8 @@ New-MgBetaPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Create new navigation property to jobs for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AcknowledgedDateTime

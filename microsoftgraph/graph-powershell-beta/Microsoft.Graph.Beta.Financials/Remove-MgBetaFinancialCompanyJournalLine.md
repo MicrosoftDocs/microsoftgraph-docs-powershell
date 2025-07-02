@@ -43,6 +43,8 @@ Remove-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-If
 ## DESCRIPTION
 Delete navigation property journalLines for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

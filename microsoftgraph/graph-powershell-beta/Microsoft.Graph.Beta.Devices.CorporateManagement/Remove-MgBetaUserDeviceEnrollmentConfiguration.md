@@ -29,6 +29,8 @@ Remove-MgBetaUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateMa
 ## DESCRIPTION
 Delete navigation property deviceEnrollmentConfigurations for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceEnrollmentConfigurationId

@@ -48,6 +48,8 @@ Update-MgBetaSitePageAsSitePageCanvaLayoutVerticalSection -InputObject <ISitesId
 ## DESCRIPTION
 Update the navigation property verticalSection in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

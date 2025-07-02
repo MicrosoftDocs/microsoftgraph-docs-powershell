@@ -32,6 +32,8 @@ Get-MgBetaGroupOwnerCountAsOrgContact -InputObject <IGroupsIdentity> [-Filter <S
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

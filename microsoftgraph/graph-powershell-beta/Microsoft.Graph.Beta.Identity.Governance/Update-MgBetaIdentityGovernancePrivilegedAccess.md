@@ -32,6 +32,8 @@ Update-MgBetaIdentityGovernancePrivilegedAccess -BodyParameter <IMicrosoftGraphP
 ## DESCRIPTION
 Update the navigation property privilegedAccess in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

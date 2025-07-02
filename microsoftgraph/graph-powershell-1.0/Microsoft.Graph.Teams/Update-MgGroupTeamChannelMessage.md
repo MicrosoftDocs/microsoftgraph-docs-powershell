@@ -63,6 +63,8 @@ Update-MgGroupTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property messages in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -47,6 +47,8 @@ Update-MgBetaExternalConnectionOperation -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the navigation property operations in external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

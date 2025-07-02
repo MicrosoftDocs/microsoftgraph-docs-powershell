@@ -50,6 +50,8 @@ Update-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISite
 ## DESCRIPTION
 Update the navigation property horizontalSections in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

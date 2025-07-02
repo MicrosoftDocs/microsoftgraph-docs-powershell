@@ -39,6 +39,8 @@ Create new navigation property to enterpriseCodeSigningCertificates for deviceAp
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

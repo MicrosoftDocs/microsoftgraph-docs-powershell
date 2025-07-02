@@ -34,6 +34,8 @@ Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment
 ## DESCRIPTION
 Delete navigation property assignments for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcProvisioningPolicyAssignmentId

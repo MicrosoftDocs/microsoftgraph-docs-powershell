@@ -45,6 +45,8 @@ Get signUps from auditLogs
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AuditLog.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

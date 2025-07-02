@@ -52,6 +52,8 @@ Retrieve the hosted content in an app's icon.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AppCatalog.Read.All, AppCatalog.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

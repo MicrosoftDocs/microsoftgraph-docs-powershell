@@ -20,6 +20,8 @@ Get-MgBetaFinancial [-ExpandProperty <String[]>] [-Property <String[]>] [-Respon
 ## DESCRIPTION
 Get financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

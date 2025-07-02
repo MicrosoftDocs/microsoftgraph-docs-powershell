@@ -45,6 +45,8 @@ Update-MgBetaSecurityPartnerSecurityScoreCustomerInsight -InputObject <ISecurity
 ## DESCRIPTION
 Update the navigation property customerInsights in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

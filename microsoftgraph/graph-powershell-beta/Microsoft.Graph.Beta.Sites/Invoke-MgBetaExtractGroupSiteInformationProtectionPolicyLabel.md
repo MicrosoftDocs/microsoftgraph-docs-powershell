@@ -50,6 +50,8 @@ Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -InputObject <ISit
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

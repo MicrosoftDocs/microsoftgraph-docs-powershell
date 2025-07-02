@@ -103,6 +103,8 @@ Update-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Update the navigation property salesOrderLines in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Account

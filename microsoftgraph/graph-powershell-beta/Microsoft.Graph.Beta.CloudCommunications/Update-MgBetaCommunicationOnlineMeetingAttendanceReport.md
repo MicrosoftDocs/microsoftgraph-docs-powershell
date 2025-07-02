@@ -87,6 +87,8 @@ Update-MgBetaCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudComm
 ## DESCRIPTION
 Update the navigation property attendanceReports in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

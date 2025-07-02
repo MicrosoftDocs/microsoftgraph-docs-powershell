@@ -33,6 +33,8 @@ Remove-MgGroupConversationThreadPostInReplyToExtension -InputObject <IGroupsIden
 ## DESCRIPTION
 Delete navigation property extensions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConversationId

@@ -32,6 +32,8 @@ Get-MgExternalConnectionGroupCount -InputObject <ISearchIdentity> [-Filter <Stri
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExternalConnectionId

@@ -35,6 +35,8 @@ If the request is from an eligible administrator to activate a role, this parame
 Otherwise, it's null.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

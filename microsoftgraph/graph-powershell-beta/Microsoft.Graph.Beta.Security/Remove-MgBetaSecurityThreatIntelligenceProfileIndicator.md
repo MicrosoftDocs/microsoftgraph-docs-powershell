@@ -32,6 +32,8 @@ Remove-MgBetaSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityI
 ## DESCRIPTION
 Delete navigation property intelligenceProfileIndicators for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

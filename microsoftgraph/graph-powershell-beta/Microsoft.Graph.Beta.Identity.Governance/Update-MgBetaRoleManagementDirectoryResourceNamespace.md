@@ -48,6 +48,8 @@ Update-MgBetaRoleManagementDirectoryResourceNamespace -InputObject <IIdentityGov
 ## DESCRIPTION
 Update the navigation property resourceNamespaces in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

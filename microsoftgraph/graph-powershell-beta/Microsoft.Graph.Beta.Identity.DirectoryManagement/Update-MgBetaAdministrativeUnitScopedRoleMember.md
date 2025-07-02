@@ -46,6 +46,8 @@ Update-MgBetaAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectory
 ## DESCRIPTION
 Update the navigation property scopedRoleMembers in administrativeUnits
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

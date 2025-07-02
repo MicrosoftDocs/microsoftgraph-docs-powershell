@@ -32,6 +32,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Application.Read.All, User.Read, Application.ReadWrite.All,  |
 | Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

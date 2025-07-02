@@ -45,6 +45,8 @@ Update-MgBetaIdentityB2CUserFlowLanguageDefaultPage -InputObject <IIdentitySignI
 ## DESCRIPTION
 Update the navigation property defaultPages in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSourceSite -InputObject <IComplia
 ## DESCRIPTION
 The SharePoint site associated with the siteSource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

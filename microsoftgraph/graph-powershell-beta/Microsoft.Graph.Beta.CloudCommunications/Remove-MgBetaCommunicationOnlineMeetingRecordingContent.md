@@ -34,6 +34,8 @@ Remove-MgBetaCommunicationOnlineMeetingRecordingContent -InputObject <ICloudComm
 The content of the recording.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallRecordingId

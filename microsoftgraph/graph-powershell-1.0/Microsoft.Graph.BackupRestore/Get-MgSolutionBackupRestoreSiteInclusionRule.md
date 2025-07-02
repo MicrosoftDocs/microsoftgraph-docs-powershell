@@ -40,6 +40,8 @@ Get-MgSolutionBackupRestoreSiteInclusionRule -InputObject <IBackupRestoreIdentit
 ## DESCRIPTION
 The list of site inclusion rules applied to the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

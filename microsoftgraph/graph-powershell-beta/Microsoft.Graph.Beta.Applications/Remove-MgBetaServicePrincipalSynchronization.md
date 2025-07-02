@@ -32,6 +32,8 @@ Remove-MgBetaServicePrincipalSynchronization -InputObject <IApplicationsIdentity
 ## DESCRIPTION
 Delete navigation property synchronization for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

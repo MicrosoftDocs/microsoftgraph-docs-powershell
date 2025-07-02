@@ -46,6 +46,8 @@ New-MgBetaGroupEventInstanceExtension -InputObject <ICalendarIdentity> -BodyPara
 ## DESCRIPTION
 Create new navigation property to extensions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

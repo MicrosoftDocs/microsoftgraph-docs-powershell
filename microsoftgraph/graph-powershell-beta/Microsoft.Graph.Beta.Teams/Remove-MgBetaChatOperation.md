@@ -29,6 +29,8 @@ Remove-MgBetaChatOperation -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property operations for chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

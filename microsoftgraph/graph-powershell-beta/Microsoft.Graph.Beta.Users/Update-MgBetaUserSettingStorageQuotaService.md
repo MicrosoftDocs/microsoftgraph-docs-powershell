@@ -48,6 +48,8 @@ Update-MgBetaUserSettingStorageQuotaService -InputObject <IUsersIdentity> -BodyP
 ## DESCRIPTION
 Update the navigation property services in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

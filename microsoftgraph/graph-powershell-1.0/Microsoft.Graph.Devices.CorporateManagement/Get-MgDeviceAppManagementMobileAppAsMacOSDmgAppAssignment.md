@@ -40,6 +40,8 @@ Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment -InputObject <IDevices
 ## DESCRIPTION
 The list of group assignments for this mobile app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -45,6 +45,8 @@ Update-MgBetaExternalIndustryDataRoleGroup -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the navigation property roleGroups in external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

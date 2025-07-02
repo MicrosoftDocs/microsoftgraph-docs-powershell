@@ -166,6 +166,8 @@ Update-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property children in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

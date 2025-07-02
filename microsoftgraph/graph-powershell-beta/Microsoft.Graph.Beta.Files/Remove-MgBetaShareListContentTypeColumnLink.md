@@ -32,6 +32,8 @@ Remove-MgBetaShareListContentTypeColumnLink -InputObject <IFilesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property columnLinks for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnLinkId

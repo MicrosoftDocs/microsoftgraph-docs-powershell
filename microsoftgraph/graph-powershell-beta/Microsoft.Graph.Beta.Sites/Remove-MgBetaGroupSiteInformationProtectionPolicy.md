@@ -29,6 +29,8 @@ Remove-MgBetaGroupSiteInformationProtectionPolicy -InputObject <ISitesIdentity> 
 ## DESCRIPTION
 Delete navigation property policy for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

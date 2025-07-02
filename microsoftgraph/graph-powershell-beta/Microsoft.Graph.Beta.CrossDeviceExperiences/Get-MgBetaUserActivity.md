@@ -44,6 +44,8 @@ The user's activities across devices.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

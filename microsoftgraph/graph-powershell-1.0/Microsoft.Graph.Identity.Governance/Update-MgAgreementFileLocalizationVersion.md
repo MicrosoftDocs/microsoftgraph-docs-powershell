@@ -52,6 +52,8 @@ Update-MgAgreementFileLocalizationVersion -InputObject <IIdentityGovernanceIdent
 ## DESCRIPTION
 Update the navigation property versions in agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

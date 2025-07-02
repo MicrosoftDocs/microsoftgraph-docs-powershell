@@ -48,6 +48,8 @@ Update-MgSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIdent
 ## DESCRIPTION
 Update the navigation property articleIndicators in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

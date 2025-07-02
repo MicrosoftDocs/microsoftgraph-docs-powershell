@@ -29,6 +29,8 @@ Remove-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property definitions for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

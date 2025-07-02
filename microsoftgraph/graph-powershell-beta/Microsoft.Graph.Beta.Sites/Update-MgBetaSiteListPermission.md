@@ -61,6 +61,8 @@ Update the navigation property permissions in sites
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

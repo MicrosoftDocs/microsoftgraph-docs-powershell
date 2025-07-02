@@ -53,6 +53,8 @@ Create new navigation property to windowsAutopilotDeviceIdentities for deviceMan
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

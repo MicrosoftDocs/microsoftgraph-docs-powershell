@@ -42,6 +42,8 @@ The collection of fileAttachment, itemAttachment, and referenceAttachment attach
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

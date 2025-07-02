@@ -49,6 +49,8 @@ New-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest -InputObject <IS
 ## DESCRIPTION
 Create new navigation property to threatAssessmentRequests for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

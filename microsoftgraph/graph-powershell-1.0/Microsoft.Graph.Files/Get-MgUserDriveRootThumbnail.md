@@ -46,6 +46,8 @@ For more information, see getting thumbnails.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

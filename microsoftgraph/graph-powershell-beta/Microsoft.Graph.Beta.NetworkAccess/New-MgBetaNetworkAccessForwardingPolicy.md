@@ -31,6 +31,8 @@ New-MgBetaNetworkAccessForwardingPolicy -BodyParameter <IMicrosoftGraphNetworkac
 ## DESCRIPTION
 Create new navigation property to forwardingPolicies for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

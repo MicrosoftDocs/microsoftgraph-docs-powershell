@@ -29,6 +29,8 @@ Get-MgBetaNetworkAccessForwardingProfilePolicyCount -InputObject <INetworkAccess
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

@@ -37,6 +37,8 @@ Get-MgBetaCommunicationOnlineMeetingAiInsight -InputObject <ICloudCommunications
 ## DESCRIPTION
 Get aiInsights from communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -50,6 +50,8 @@ New-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion -InputObject 
 ## DESCRIPTION
 Create new navigation property to versions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

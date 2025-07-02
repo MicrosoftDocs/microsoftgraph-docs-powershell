@@ -51,6 +51,8 @@ New-MgBetaUserDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration
 ## DESCRIPTION
 Invoke action createEnrollmentNotificationConfiguration
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

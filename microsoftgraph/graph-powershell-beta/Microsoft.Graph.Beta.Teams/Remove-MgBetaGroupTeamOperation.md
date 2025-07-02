@@ -32,6 +32,8 @@ Remove-MgBetaGroupTeamOperation -InputObject <ITeamsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property operations for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

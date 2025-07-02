@@ -57,6 +57,8 @@ Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByMailboxS
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

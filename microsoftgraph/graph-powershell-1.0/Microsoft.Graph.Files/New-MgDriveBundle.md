@@ -81,6 +81,8 @@ New-MgDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphD
 ## DESCRIPTION
 Create new navigation property to bundles for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

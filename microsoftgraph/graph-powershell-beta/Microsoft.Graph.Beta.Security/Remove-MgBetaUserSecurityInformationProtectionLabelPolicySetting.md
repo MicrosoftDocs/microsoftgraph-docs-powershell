@@ -29,6 +29,8 @@ Remove-MgBetaUserSecurityInformationProtectionLabelPolicySetting -InputObject <I
 ## DESCRIPTION
 Delete navigation property labelPolicySettings for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

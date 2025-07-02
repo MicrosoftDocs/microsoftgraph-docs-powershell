@@ -36,6 +36,8 @@ New-MgReportAuthenticationMethodUserRegistrationDetail -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to userRegistrationDetails for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

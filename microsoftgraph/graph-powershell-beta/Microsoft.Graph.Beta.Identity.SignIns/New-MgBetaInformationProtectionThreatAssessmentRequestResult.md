@@ -48,6 +48,8 @@ New-MgBetaInformationProtectionThreatAssessmentRequestResult -InputObject <IIden
 ## DESCRIPTION
 Create new navigation property to results for informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

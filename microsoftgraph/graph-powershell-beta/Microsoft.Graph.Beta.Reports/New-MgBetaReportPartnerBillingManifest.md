@@ -34,6 +34,8 @@ New-MgBetaReportPartnerBillingManifest -BodyParameter <IMicrosoftGraphPartnersBi
 ## DESCRIPTION
 Create new navigation property to manifests for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

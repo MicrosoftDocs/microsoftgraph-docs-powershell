@@ -59,6 +59,8 @@ Get-MgBetaFinancialCompanySaleQuoteLine -InputObject <IFinancialsIdentity> [-Exp
 ## DESCRIPTION
 Get salesQuoteLines from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

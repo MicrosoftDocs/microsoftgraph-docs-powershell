@@ -31,6 +31,8 @@ Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToDirectoryObjectByRef
 ## DESCRIPTION
 Delete ref of navigation property appliesTo for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectoryObjectId

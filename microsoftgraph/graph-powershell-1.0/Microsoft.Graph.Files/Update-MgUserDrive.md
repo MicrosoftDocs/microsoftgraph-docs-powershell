@@ -62,6 +62,8 @@ Update-MgUserDrive -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property drives in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

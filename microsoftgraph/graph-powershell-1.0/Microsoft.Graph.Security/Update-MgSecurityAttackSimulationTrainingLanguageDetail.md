@@ -52,6 +52,8 @@ Update-MgSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecurityI
 ## DESCRIPTION
 Update the navigation property languageDetails in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

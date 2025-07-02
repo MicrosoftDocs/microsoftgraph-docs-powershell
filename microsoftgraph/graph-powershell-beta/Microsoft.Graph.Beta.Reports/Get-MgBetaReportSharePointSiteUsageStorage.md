@@ -32,6 +32,8 @@ Get-MgBetaReportSharePointSiteUsageStorage -InputObject <IReportsIdentity> -OutF
 ## DESCRIPTION
 Invoke function getSharePointSiteUsageStorage
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

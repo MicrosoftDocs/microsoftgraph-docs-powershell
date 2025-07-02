@@ -32,6 +32,8 @@ Get-MgBetaUserSettingStorage -InputObject <IUsersIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get storage from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

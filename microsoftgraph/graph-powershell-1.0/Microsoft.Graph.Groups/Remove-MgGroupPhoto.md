@@ -40,6 +40,8 @@ Delete navigation property photo for groups
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ProfilePhoto.ReadWrite.All, Group.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

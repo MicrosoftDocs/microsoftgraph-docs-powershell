@@ -30,6 +30,8 @@ Invoke-MgBetaInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery
 ## DESCRIPTION
 Perform MDM key recovery and TPM attestation
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -48,6 +48,8 @@ Update-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart -InputObjec
 ## DESCRIPTION
 Update the navigation property webparts in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

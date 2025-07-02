@@ -32,6 +32,8 @@ Remove-MgSiteAnalyticItemActivityStat -InputObject <ISitesIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property itemActivityStats for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

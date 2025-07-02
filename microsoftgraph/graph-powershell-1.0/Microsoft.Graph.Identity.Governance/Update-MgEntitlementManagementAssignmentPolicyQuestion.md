@@ -48,6 +48,8 @@ Update-MgEntitlementManagementAssignmentPolicyQuestion -InputObject <IIdentityGo
 ## DESCRIPTION
 Update the navigation property questions in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

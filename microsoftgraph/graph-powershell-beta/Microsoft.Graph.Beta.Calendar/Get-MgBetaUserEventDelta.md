@@ -57,6 +57,8 @@ The following table lists the differences between the delta function on events a
 | Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
 | Application | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

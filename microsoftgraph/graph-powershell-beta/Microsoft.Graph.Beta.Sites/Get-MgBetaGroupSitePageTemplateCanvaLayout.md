@@ -29,6 +29,8 @@ Get-MgBetaGroupSitePageTemplateCanvaLayout -InputObject <ISitesIdentity> [-Expan
 ## DESCRIPTION
 The layout of the content in a given SharePoint page template, including horizontal sections and vertical sections.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

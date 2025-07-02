@@ -39,6 +39,8 @@ New-MgShareSharedDriveItemSharedDriveItem -BodyParameter <IMicrosoftGraphSharedD
 ## DESCRIPTION
 Add new entity to shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

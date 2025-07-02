@@ -50,6 +50,8 @@ The fileAttachment and itemAttachment attachments for the message.
 | Delegated (personal Microsoft account) | Mail.Read,  |
 | Application | Mail.Read,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

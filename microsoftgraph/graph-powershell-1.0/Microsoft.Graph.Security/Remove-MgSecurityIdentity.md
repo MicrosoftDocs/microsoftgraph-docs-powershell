@@ -23,6 +23,8 @@ Remove-MgSecurityIdentity [-IfMatch <String>] [-ResponseHeadersVariable <String>
 ## DESCRIPTION
 Delete navigation property identities for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

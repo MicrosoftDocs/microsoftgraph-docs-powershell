@@ -47,6 +47,8 @@ Restore-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Respon
 ## DESCRIPTION
 Restore a document set version.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

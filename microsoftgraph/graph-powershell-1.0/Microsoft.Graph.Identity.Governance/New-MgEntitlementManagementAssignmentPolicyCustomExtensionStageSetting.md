@@ -49,6 +49,8 @@ New-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting
 ## DESCRIPTION
 Create new navigation property to customExtensionStageSettings for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

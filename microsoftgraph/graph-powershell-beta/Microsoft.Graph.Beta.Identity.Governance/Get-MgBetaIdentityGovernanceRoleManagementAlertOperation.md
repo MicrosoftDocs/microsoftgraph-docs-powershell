@@ -45,6 +45,8 @@ Represents operations on resources that take a long time to complete and can run
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

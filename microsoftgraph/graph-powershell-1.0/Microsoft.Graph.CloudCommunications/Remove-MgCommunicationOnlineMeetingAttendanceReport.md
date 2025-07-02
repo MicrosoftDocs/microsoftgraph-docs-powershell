@@ -32,6 +32,8 @@ Remove-MgCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunic
 ## DESCRIPTION
 Delete navigation property attendanceReports for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

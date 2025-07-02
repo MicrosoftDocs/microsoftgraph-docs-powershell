@@ -57,6 +57,8 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplate -InputObject <IMa
 ## DESCRIPTION
 Update the navigation property managementTemplates in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

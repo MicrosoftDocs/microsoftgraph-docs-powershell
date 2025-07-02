@@ -33,6 +33,8 @@ Remove-MgUserDriveListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property documentSetVersions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

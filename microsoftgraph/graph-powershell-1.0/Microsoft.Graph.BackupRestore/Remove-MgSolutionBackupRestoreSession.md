@@ -33,6 +33,8 @@ Remove-MgSolutionBackupRestoreSession -InputObject <IBackupRestoreIdentity> [-If
 ## DESCRIPTION
 Delete a draft restoreSessionBase object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

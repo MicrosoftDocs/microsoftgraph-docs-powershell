@@ -31,6 +31,8 @@ Remove-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
 ## DESCRIPTION
 Delete navigation property assignedDevices for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

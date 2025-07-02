@@ -48,6 +48,8 @@ New-MgGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> 
 ## DESCRIPTION
 Create new navigation property to hostedContents for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

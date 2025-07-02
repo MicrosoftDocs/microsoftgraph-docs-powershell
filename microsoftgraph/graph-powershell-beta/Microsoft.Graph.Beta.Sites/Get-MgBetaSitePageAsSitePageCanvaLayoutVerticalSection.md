@@ -32,6 +32,8 @@ Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSection -InputObject <ISitesIdent
 ## DESCRIPTION
 Vertical section on the SharePoint page.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

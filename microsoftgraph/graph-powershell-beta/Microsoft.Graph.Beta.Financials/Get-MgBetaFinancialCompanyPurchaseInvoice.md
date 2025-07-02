@@ -37,6 +37,8 @@ Get-MgBetaFinancialCompanyPurchaseInvoice -InputObject <IFinancialsIdentity> [-E
 ## DESCRIPTION
 Get purchaseInvoices from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

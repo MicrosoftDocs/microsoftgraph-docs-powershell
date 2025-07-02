@@ -29,6 +29,8 @@ Invoke-MgBetaFinancialCompanyJournal -InputObject <IFinancialsIdentity> [-Respon
 ## DESCRIPTION
 Invoke action post
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

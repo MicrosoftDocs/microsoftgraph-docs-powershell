@@ -41,6 +41,8 @@ Get-MgBetaUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Device compliance policy states for this device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

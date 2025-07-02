@@ -29,6 +29,8 @@ Read the Microsoft Purview Information Protection policy settings for the user o
 | Delegated (personal Microsoft account) | Not supported |
 | Application | InformationProtectionPolicy.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

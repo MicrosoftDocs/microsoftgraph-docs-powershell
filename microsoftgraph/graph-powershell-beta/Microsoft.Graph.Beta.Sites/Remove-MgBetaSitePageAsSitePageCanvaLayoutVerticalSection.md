@@ -32,6 +32,8 @@ Remove-MgBetaSitePageAsSitePageCanvaLayoutVerticalSection -InputObject <ISitesId
 ## DESCRIPTION
 Delete navigation property verticalSection for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

@@ -53,6 +53,8 @@ New-MgBetaCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunication
 ## DESCRIPTION
 Create new navigation property to transcripts for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

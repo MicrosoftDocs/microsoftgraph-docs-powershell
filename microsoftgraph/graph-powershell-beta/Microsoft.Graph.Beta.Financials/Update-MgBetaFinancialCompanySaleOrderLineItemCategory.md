@@ -75,6 +75,8 @@ Update-MgBetaFinancialCompanySaleOrderLineItemCategory -InputObject <IFinancials
 ## DESCRIPTION
 Update the navigation property itemCategory in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

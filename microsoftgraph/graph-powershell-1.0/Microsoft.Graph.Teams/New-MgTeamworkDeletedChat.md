@@ -31,6 +31,8 @@ New-MgTeamworkDeletedChat -BodyParameter <Hashtable> [-ResponseHeadersVariable <
 ## DESCRIPTION
 Create new navigation property to deletedChats for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

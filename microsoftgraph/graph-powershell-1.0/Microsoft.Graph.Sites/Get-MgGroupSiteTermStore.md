@@ -54,6 +54,8 @@ Get-MgGroupSiteTermStore -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 The default termStore under this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

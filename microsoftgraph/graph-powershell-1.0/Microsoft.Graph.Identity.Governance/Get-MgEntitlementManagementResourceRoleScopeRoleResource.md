@@ -29,6 +29,8 @@ Get-MgEntitlementManagementResourceRoleScopeRoleResource -InputObject <IIdentity
 ## DESCRIPTION
 Get resource from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRoleScopeId

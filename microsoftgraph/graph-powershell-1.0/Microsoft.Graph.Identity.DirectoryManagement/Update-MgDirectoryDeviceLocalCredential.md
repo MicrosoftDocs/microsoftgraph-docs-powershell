@@ -50,6 +50,8 @@ Update-MgDirectoryDeviceLocalCredential -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Update the navigation property deviceLocalCredentials in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

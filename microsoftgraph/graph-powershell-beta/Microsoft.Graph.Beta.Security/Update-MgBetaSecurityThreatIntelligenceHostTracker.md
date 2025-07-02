@@ -49,6 +49,8 @@ Update-MgBetaSecurityThreatIntelligenceHostTracker -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Update the navigation property hostTrackers in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

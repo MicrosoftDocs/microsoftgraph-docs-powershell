@@ -37,6 +37,8 @@ Get-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity
 ## DESCRIPTION
 Get labels from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

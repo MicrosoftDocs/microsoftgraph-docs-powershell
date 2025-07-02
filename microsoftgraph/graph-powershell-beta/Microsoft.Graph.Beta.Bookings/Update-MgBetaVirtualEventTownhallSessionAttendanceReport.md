@@ -53,6 +53,8 @@ Update-MgBetaVirtualEventTownhallSessionAttendanceReport -InputObject <IBookings
 ## DESCRIPTION
 Update the navigation property attendanceReports in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -63,6 +63,8 @@ Get-MgBetaSiteTermStoreSetParentGroupSetChild -InputObject <ISitesIdentity> [-Ex
 ## DESCRIPTION
 Children terms of set in term \[store\].
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

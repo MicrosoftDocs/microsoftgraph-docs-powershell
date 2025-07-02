@@ -48,6 +48,8 @@ Update-MgDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryManage
 ## DESCRIPTION
 Update the navigation property serviceConfigurationRecords in domains
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
