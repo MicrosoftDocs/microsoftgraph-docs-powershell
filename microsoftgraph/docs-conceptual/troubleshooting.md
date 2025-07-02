@@ -3,7 +3,7 @@ title: "Error handling and troubleshooting cmdlets"
 description: "Learn how to diagnose common errors in Microsoft Graph PowerShell"
 
 ms.topic: troubleshooting
-ms.date: 07/12/2024
+ms.date: 07/01/2025
 ms.author: eunicewaweru
 manager: CelesteDG
 author: msewaweru
@@ -24,7 +24,7 @@ Get-InstalledModule
 
 The version of the `Microsoft.Graph` module should be the most recent compared to the latest release in the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). If your installed module isn't up to date, update it by running:
 
-```PowerShell
+```powerShell
 Update-Module Microsoft.Graph
 ```
 
@@ -62,14 +62,14 @@ For more info, see [App-only authentication](app-only.md).
 
 ## Using -Debug
 
-The **-Debug** parameter provides a powerful way to examine a script while it's running in order to identify and correct errors in the script. The following are the important parts of a **-Debug** output:
+The **-Debug** parameter provides a powerful way to examine a script while it's running in order to identify and correct errors in the script. Each part of the **-Debug** output provides key information that helps you diagnose and resolve issues more efficiently. The following are the important parts of a **-Debug** output:
 
 1. **cmdletBeginProcessing** - this part allows you to confirm the cmdlet you're running and the parameter list provided to the cmdlet. For example, `DEBUG: [CmdletBeginProcessing]: - Get-MgUser begin processing with parameterSet 'List1'.` shows that you're running the `Get-MgUser` cmdlet and the parameter list is `List1`.
 1. **AuthType** - is either `delegated` or `application`.
 1. **AuthProviderType** - the type of authentication that you're using. For example, interactive, device-code, and certificate.
 1. **Scopes** - shows all the scopes that you authenticated to for the particular application, acquired by decoding the access token.
 1. **HTTP request** - comprises of:
-    1. Method - could be GET, POST, PUSH, UPDATE
+    1. Method - could be GET, POST, PUT, PATCH
     1. URI - URI changes based on the cloud you connected to and the version of the SDK you're running.
     1. Body - shows the body of your request.
 1. **HTTP response** - comprises of the following information:
@@ -85,9 +85,9 @@ To enable debug logging on a per command basis, specify the **-Debug** parameter
 Get-MgUser -UserId 'DoesNotExist' -Debug
 ```
 
-The following image shows a sample output of this command.
+The following image shows a sample output of the `Get-MgUser -UserId 'DoesNotExist' -Debug` command.
 
-:::image type="content" source="images/sample-debug-response.png" alt-text="sample debug output":::
+:::image type="content" source="images/sample-debug-response.png" alt-text="Sample debug output for Get-MgUser with -Debug parameter":::
 
 To enable debug logging for an entire PowerShell session, set the value of the **$DebugPreference** variable to `Continue`.
 
@@ -99,28 +99,28 @@ Using the **-Debug** parameter is helpful when you want to open a support ticket
 
 ### Using -ErrorVariable
 
-When you run a PowerShell cmdlet and an error occurs, the error record will be appended to the *automatic variable* named `$error`. When you use the **-ErrorVariable** parameter in a call to a command, the error is assigned to the variable name that you specify. Even when you use the **-ErrorVariable** parameter, the `$error` variable is still updated.
+When you run a PowerShell cmdlet and an error occurs, the error record will be appended to the global *automatic variable* named `$error`. This variable is available in every PowerShell session and stores a collection of error records that have occurred during the session. When you use the **-ErrorVariable** parameter in a call to a command, the error is also assigned to the variable name that you specify. Even when you use the **-ErrorVariable** parameter, the `$error` variable is still updated.
 
-By default, the **-ErrorVariable** parameter will overwrite the variable with the name that you specify. If you want to append an error to the variable instead of overwriting it, you can put a plus sign (+) in front of the variable name. For example,
+By default, the **-ErrorVariable** parameter will overwrite the variable you specify. If you want to append an error to the variable instead of overwriting it, you can put a plus sign (+) in front of the variable name. For example,
 
 ```powershell
 Get-MgUser -UserId 'f' -ErrorVariable MyError
-$MyError.Count # Should be 1
+$MyError.Count # MyError should contain 1 error
 Get-MgUser -UserId 'doesNotExist' -ErrorVariable +MyError
-$MyError.Count # Should be 2
+$MyError.Count # MyError should now contain 2 errors
 ```
 
 ### Using ErrorAction
 
-The **-ErrorAction** common parameter allows you to specify which action to take if a command fails. The available options are: **Stop***, **Continue**, **SilentlyContinue**, **Ignore**, or **Inquire**.
+The **-ErrorAction** common parameter allows you to specify which action to take if a command fails. The available options are: **Stop**, **Continue**, **SilentlyContinue**, **Ignore**, or **Inquire**.
 
-When you specify the **-ErrorAction** parameter during a call to a command, the specified behavior will override the `$ErrorActionPreference` variable in Windows PowerShell
+When you specify the **-ErrorAction** parameter during a call to a command, the specified behavior will override the `$ErrorActionPreference` variable in Windows PowerShell.
 
-By default, Windows PowerShell uses an error action preference of **Continue**, which means that errors will be written out to the host, but the script will continue to execute. If you set `$ErrorActionPreference` to **Stop** or if you use `Stop` as the parameter value for **-ErrorAction**, Windows PowerShell will stop the script execution at the point an error occurs.
+By default, Windows PowerShell uses an error action preference of **Continue**, which means that errors will be written out to the host, but the script will continue to execute. The `$ErrorActionPreference` variable is a global setting that determines the default error handling behavior for all commands in the session, unless overridden by the `-ErrorAction` parameter on a specific command. If you set `$ErrorActionPreference` to **Stop** or if you use `Stop` as the parameter value for **-ErrorAction**, Windows PowerShell will stop the script execution at the point an error occurs.
 
 ## Next steps
 
 For more information related to troubleshooting, see:
 
-- [API reliability & support](/graph/best-practices-concept#reliability-and-support)
-- [API permissions reference](/graph/permissions-reference)
+- [API reliability & support](/graph/best-practices-concept#reliability-and-support): Learn best practices for ensuring reliable API usage and how to get support for Microsoft Graph issues.
+- [API permissions reference](/graph/permissions-reference): Find detailed information about the permissions required for different Microsoft Graph APIs and cmdlets.
