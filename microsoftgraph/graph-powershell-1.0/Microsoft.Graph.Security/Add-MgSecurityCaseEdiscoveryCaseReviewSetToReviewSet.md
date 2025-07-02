@@ -22,7 +22,6 @@ The location provides a URL that will return a Add to review set operation.
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalDataOptions <String>] [-AdditionalProperties <Hashtable>]
- [-CloudAttachmentVersion <String>] [-DocumentVersion <String>] [-ItemsToInclude <String>]
  [-Search <IMicrosoftGraphSecurityEdiscoverySearch>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -39,7 +38,6 @@ Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId <String> 
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalDataOptions <String>] [-AdditionalProperties <Hashtable>]
- [-CloudAttachmentVersion <String>] [-DocumentVersion <String>] [-ItemsToInclude <String>]
  [-Search <IMicrosoftGraphSecurityEdiscoverySearch>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -133,36 +131,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -CloudAttachmentVersion
-cloudAttachmentVersion
-
-```yaml
-Type: String
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DocumentVersion
-documentVersion
-
-```yaml
-Type: String
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -EdiscoveryCaseId
 The unique identifier of ediscoveryCase
 
@@ -221,21 +189,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ItemsToInclude
-itemsToInclude
-
-```yaml
-Type: String
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -351,9 +304,6 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdditionalDataOptions <String>]`: additionalDataOptions
-  - `[CloudAttachmentVersion <String>]`: cloudAttachmentVersion
-  - `[DocumentVersion <String>]`: documentVersion
-  - `[ItemsToInclude <String>]`: itemsToInclude
   - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentQuery <String>]`: 
@@ -389,10 +339,6 @@ Read-only.
       - `[Status <String>]`: caseOperationStatus
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AdditionalDataOptions <String>]`: additionalDataOptions
-      - `[CloudAttachmentVersion <String>]`: cloudAttachmentVersion
-      - `[DocumentVersion <String>]`: documentVersion
-      - `[ItemsToInclude <String>]`: itemsToInclude
       - `[ReviewSet <IMicrosoftGraphSecurityEdiscoveryReviewSet>]`: ediscoveryReviewSet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -437,7 +383,6 @@ Read-only.
       - `[MailboxCount <Int32?>]`: The number of mailboxes that had search hits.
       - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch
       - `[SiteCount <Int32?>]`: The number of mailboxes that had search hits.
-      - `[StatisticsOptions <String>]`: statisticsOptions
       - `[UnindexedItemCount <Int64?>]`: The estimated count of unindexed items for the collection.
       - `[UnindexedItemsSize <Int64?>]`: The estimated size of unindexed items for the collection.
     - `[NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource- `[]`>]`: noncustodialDataSource sources that are included in the eDiscovery search
@@ -562,10 +507,6 @@ Read-only.
     - `[Status <String>]`: caseOperationStatus
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AdditionalDataOptions <String>]`: additionalDataOptions
-    - `[CloudAttachmentVersion <String>]`: cloudAttachmentVersion
-    - `[DocumentVersion <String>]`: documentVersion
-    - `[ItemsToInclude <String>]`: itemsToInclude
     - `[ReviewSet <IMicrosoftGraphSecurityEdiscoveryReviewSet>]`: ediscoveryReviewSet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -610,7 +551,6 @@ Read-only.
     - `[MailboxCount <Int32?>]`: The number of mailboxes that had search hits.
     - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch
     - `[SiteCount <Int32?>]`: The number of mailboxes that had search hits.
-    - `[StatisticsOptions <String>]`: statisticsOptions
     - `[UnindexedItemCount <Int64?>]`: The estimated count of unindexed items for the collection.
     - `[UnindexedItemsSize <Int64?>]`: The estimated size of unindexed items for the collection.
   - `[NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource- `[]`>]`: noncustodialDataSource sources that are included in the eDiscovery search

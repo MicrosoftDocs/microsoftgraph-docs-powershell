@@ -9,7 +9,7 @@ ms.subservice: windows-autopatch
 # Remove-MgBetaWindowsUpdatesResourceConnection
 
 ## SYNOPSIS
-Delete a resourceConnection object.
+Delete an operationalInsightsConnection object.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-MgBetaWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdent
 ```
 
 ## DESCRIPTION
-Delete a resourceConnection object.
+Delete an operationalInsightsConnection object.
 
 **Permissions**
 
@@ -227,7 +227,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesresourceconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesresourceconnection)
 
-[https://learn.microsoft.com/graph/api/windowsupdates-resourceconnection-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-resourceconnection-delete?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/windowsupdates-operationalinsightsconnection-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-operationalinsightsconnection-delete?view=graph-rest-beta)
 
 
 

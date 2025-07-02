@@ -9,7 +9,7 @@ ms.subservice: windows-autopatch
 # Remove-MgBetaWindowsUpdatesPolicyComplianceChange
 
 ## SYNOPSIS
-Delete a complianceChange object.
+Delete a contentApproval object.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesI
 ```
 
 ## DESCRIPTION
-Delete a complianceChange object.
+Delete a contentApproval object.
 
 **Permissions**
 
@@ -242,7 +242,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicycompliancechange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicycompliancechange)
 
-[https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-delete?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/windowsupdates-contentapproval-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-contentapproval-delete?view=graph-rest-beta)
 
 
 

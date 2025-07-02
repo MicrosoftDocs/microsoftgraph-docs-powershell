@@ -9,7 +9,7 @@ ms.subservice: project-rome
 # Remove-MgBetaUserSettingWindows
 
 ## SYNOPSIS
-Delete navigation property windows for users
+Delete all windowsSetting objects of a user.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserSettingWindows](/powershell/module/Microsoft.Graph.Users/Remove-MgUserSettingWindows?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Remove-MgBetaUserSettingWindows -InputObject <IUsersIdentity> [-IfMatch <String>
 ```
 
 ## DESCRIPTION
-Delete navigation property windows for users
+Delete all windowsSetting objects of a user.
 
 ## EXAMPLES
 
@@ -238,6 +238,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingwindows](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingwindows)
+
+[https://learn.microsoft.com/graph/api/windowssetting-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowssetting-delete?view=graph-rest-beta)
 
 
 

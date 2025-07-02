@@ -240,8 +240,8 @@ Accept wildcard characters: False
 
 ### -ImpactType
 Indicates the scope of impact of a recommendation.
-Tenant level indicates that the recommendation impacts the whole tenant.
-Other possible values include users, applications.
+tenantLevel indicates that the recommendation impacts the whole tenant.
+Other possible values include users, apps.
 
 ```yaml
 Type: String

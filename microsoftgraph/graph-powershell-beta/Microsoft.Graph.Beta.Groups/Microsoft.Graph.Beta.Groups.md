@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Groups
-Module Guid: e95bda23-a1bf-4857-b91d-d0721b865e48
+Module Guid: 16b3bf5f-6586-4e38-9f04-205af42b7c2c
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.groups/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-Module Guid: 419aefe1-eba9-4143-98a9-41bbae7957aa
+Module Guid: ab9fbd4c-5f8a-4fe3-85a8-e91cc186b0b5
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devicemanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

@@ -217,7 +217,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserbyuserprincipalname](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserbyuserprincipalname)
 
-[https://learn.microsoft.com/graph/api/intune-onboarding-user-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-user-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-mam-user-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-user-delete?view=graph-rest-1.0)
 
 
 

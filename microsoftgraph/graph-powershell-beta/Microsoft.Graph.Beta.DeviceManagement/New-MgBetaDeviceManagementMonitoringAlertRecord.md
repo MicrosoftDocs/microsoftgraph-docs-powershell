@@ -322,8 +322,10 @@ ALERTIMPACT `<IMicrosoftGraphDeviceManagementAlertImpact>`: alertImpact
   - `[AggregationType <String>]`: aggregationType
   - `[AlertImpactDetails <IMicrosoftGraphKeyValuePair- `[]`>]`: The detail information of the impact.
 For example, if the Frontline Cloud PCs near concurrency limit alert is triggered, the details contain the impacted Frontline license SKU name, such as Windows 365 Frontline 2 vCPU/8GB/128GB, and the corresponding impacted value.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[Value <Int32?>]`: The number value of the impact.
 For the aggregation types of count and affectedCloudPcCount, the value indicates the number of affected instances.
 For example, 6 affectedCloudPcCount means that six Cloud PCs are affected.
@@ -339,8 +341,10 @@ Read-only.
     - `[AggregationType <String>]`: aggregationType
     - `[AlertImpactDetails <IMicrosoftGraphKeyValuePair- `[]`>]`: The detail information of the impact.
 For example, if the Frontline Cloud PCs near concurrency limit alert is triggered, the details contain the impacted Frontline license SKU name, such as Windows 365 Frontline 2 vCPU/8GB/128GB, and the corresponding impacted value.
-      - `[Name <String>]`: Name for this key-value pair
-      - `[Value <String>]`: Value for this key-value pair
+      - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+      - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
     - `[Value <Int32?>]`: The number value of the impact.
 For the aggregation types of count and affectedCloudPcCount, the value indicates the number of affected instances.
 For example, 6 affectedCloudPcCount means that six Cloud PCs are affected.

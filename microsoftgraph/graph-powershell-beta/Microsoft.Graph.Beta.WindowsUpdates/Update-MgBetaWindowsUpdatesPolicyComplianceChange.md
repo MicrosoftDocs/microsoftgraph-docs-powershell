@@ -9,7 +9,7 @@ ms.subservice: windows-autopatch
 # Update-MgBetaWindowsUpdatesPolicyComplianceChange
 
 ## SYNOPSIS
-Update the properties of a contentApproval object.
+Update the properties of a complianceChange object.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ Update-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesI
 ```
 
 ## DESCRIPTION
-Update the properties of a contentApproval object.
+Update the properties of a complianceChange object.
 
 **Permissions**
 
@@ -522,7 +522,7 @@ It can only be set to true on automatic policies that target monthly security up
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicycompliancechange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicycompliancechange)
 
-[https://learn.microsoft.com/graph/api/windowsupdates-contentapproval-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-contentapproval-update?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-update?view=graph-rest-beta)
 
 
 

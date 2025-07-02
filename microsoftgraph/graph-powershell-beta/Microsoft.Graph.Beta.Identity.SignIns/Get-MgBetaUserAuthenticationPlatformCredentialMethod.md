@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserAuthenticationPlatformCredentialMethod
 
 ## SYNOPSIS
-Get platformCredentialMethods from users
+Represents a platform credential instance registered to a user on Mac OS.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserAuthenticationPlatformCredentialMethod -InputObject <IIdentitySign
 ```
 
 ## DESCRIPTION
-Get platformCredentialMethods from users
+Represents a platform credential instance registered to a user on Mac OS.
 
 **Permissions**
 
