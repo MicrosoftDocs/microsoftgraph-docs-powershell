@@ -21,8 +21,8 @@ Update the properties of an alert object.
 Update-MgBetaSecurityAlertV2 -AlertId <String> [-ResponseHeadersVariable <String>] [-ActorDisplayName <String>]
  [-AdditionalData <Hashtable>] [-AdditionalProperties <Hashtable>] [-AlertPolicyId <String>]
  [-AlertWebUrl <String>] [-AssignedTo <String>] [-Category <String>] [-Classification <String>]
- [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DetectionSource <String>] [-DetectorId <String>] [-Determination <String>]
+ [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>] [-CustomDetails <Hashtable>]
+ [-Description <String>] [-DetectionSource <String>] [-DetectorId <String>] [-Determination <String>]
  [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <DateTime>] [-Id <String>]
  [-IncidentId <String>] [-IncidentWebUrl <String>] [-LastActivityDateTime <DateTime>]
  [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>] [-ProductName <String>]
@@ -45,14 +45,15 @@ Update-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> [-ResponseHeadersV
  [-ActorDisplayName <String>] [-AdditionalData <Hashtable>] [-AdditionalProperties <Hashtable>]
  [-AlertPolicyId <String>] [-AlertWebUrl <String>] [-AssignedTo <String>] [-Category <String>]
  [-Classification <String>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DetectionSource <String>] [-DetectorId <String>] [-Determination <String>]
- [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <DateTime>] [-Id <String>]
- [-IncidentId <String>] [-IncidentWebUrl <String>] [-LastActivityDateTime <DateTime>]
- [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>] [-ProductName <String>]
- [-ProviderAlertId <String>] [-RecommendedActions <String>] [-ResolvedDateTime <DateTime>]
- [-ServiceSource <String>] [-Severity <String>] [-Status <String>] [-SystemTags <String[]>]
- [-TenantId <String>] [-ThreatDisplayName <String>] [-ThreatFamilyName <String>] [-Title <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CustomDetails <Hashtable>] [-Description <String>] [-DetectionSource <String>] [-DetectorId <String>]
+ [-Determination <String>] [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>]
+ [-FirstActivityDateTime <DateTime>] [-Id <String>] [-IncidentId <String>] [-IncidentWebUrl <String>]
+ [-LastActivityDateTime <DateTime>] [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>]
+ [-ProductName <String>] [-ProviderAlertId <String>] [-RecommendedActions <String>]
+ [-ResolvedDateTime <DateTime>] [-ServiceSource <String>] [-Severity <String>] [-Status <String>]
+ [-SystemTags <String[]>] [-TenantId <String>] [-ThreatDisplayName <String>] [-ThreatFamilyName <String>]
+ [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -268,6 +269,21 @@ Time when Microsoft 365 Defender created the alert.
 
 ```yaml
 Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomDetails
+dictionary
+
+```yaml
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -767,6 +783,7 @@ Aligned with the MITRE ATT&CK framework.
     - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
     - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
   - `[CreatedDateTime <DateTime?>]`: Time when Microsoft 365 Defender created the alert.
+  - `[CustomDetails <IMicrosoftGraphSecurityDictionary>]`: dictionary
   - `[Description <String>]`: String value describing each alert.
   - `[DetectionSource <String>]`: detectionSource
   - `[DetectorId <String>]`: The ID of the detector that triggered the alert.

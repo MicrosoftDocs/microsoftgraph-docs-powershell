@@ -405,7 +405,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmember)
 
-[https://learn.microsoft.com/graph/api/conversationmember-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/channel-update-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-update-members?view=graph-rest-1.0)
 
 
 

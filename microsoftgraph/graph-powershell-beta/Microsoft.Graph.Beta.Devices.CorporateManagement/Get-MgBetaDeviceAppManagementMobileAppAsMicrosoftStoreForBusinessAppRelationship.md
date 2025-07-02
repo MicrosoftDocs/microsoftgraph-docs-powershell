@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship
 
 ## SYNOPSIS
-List of relationships for this mobile app.
+The set of direct relationships for this app.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship
 ```
 
 ## DESCRIPTION
-List of relationships for this mobile app.
+The set of direct relationships for this app.
 
 ## EXAMPLES
 

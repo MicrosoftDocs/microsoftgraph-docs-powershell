@@ -411,7 +411,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuser)
 
-[https://learn.microsoft.com/graph/api/riskyusers-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/riskyusers-list?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/riskyusers-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/riskyusers-get?view=graph-rest-beta)
 
 
 

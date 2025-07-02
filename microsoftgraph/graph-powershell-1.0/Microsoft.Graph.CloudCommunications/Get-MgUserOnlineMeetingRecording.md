@@ -10,7 +10,8 @@ ms.subservice: teams
 
 ## SYNOPSIS
 Get a callRecording object associated with a scheduled onlineMeeting.
-This API doesn't support getting call recordings from channel meetings.
+This API supports the retrieval of call transcripts from private chat meetings and channel meetings.
+However, private channel meetings are not supported at this time.
 For a recording, this API returns the metadata of the single recording associated with the online meeting.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
 
@@ -61,7 +62,8 @@ Get-MgUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity> [-E
 
 ## DESCRIPTION
 Get a callRecording object associated with a scheduled onlineMeeting.
-This API doesn't support getting call recordings from channel meetings.
+This API supports the retrieval of call transcripts from private chat meetings and channel meetings.
+However, private channel meetings are not supported at this time.
 For a recording, this API returns the metadata of the single recording associated with the online meeting.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
 

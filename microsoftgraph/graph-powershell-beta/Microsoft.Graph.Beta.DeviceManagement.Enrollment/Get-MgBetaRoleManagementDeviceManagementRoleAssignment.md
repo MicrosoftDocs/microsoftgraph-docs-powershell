@@ -364,8 +364,6 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/rbacapplicationmultiple-list-roleassignments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplicationmultiple-list-roleassignments?view=graph-rest-beta)
-
 
 
 

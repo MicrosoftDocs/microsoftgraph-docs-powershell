@@ -9,9 +9,8 @@ ms.subservice: entra-groups
 # New-MgGroup
 
 ## SYNOPSIS
-Create a new group as specified in the request body.
-You can create the following types of groups: This operation returns by default only a subset of the properties for each group.
-These default properties are noted in the Properties section.
+Create a new group object if it doesn't exist, or update the properties of an existing group object.You can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
+For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
 > [!NOTE]
@@ -61,9 +60,8 @@ New-MgGroup -BodyParameter <IMicrosoftGraphGroup> [-ResponseHeadersVariable <Str
 ```
 
 ## DESCRIPTION
-Create a new group as specified in the request body.
-You can create the following types of groups: This operation returns by default only a subset of the properties for each group.
-These default properties are noted in the Properties section.
+Create a new group object if it doesn't exist, or update the properties of an existing group object.You can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
+For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
 **Permissions**
@@ -3504,17 +3502,17 @@ Read-only.
 Read-only.
                         - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                          - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
-                          - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
-                          - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
-                          - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
-                          - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
-                          - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
-                          - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
-                          - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
-                          - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
-                          - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
-                          - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
+                          - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
+                          - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
+                          - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
+                          - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
+                          - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
+                          - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
+                          - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
+                          - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
+                          - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
+                          - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
+                          - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
                         - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                       - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -8880,17 +8878,17 @@ Read-only.
 Read-only.
                       - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                        - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
-                        - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
-                        - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
-                        - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
-                        - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
-                        - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
-                        - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
-                        - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
-                        - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
-                        - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
-                        - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
+                        - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
+                        - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
+                        - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
+                        - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
+                        - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
+                        - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
+                        - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
+                        - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
+                        - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
+                        - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
+                        - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
                       - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                     - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -13773,17 +13771,17 @@ Read-only.
 Read-only.
                       - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                        - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
-                        - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
-                        - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
-                        - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
-                        - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
-                        - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
-                        - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
-                        - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
-                        - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
-                        - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
-                        - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
+                        - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
+                        - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
+                        - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
+                        - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
+                        - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
+                        - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
+                        - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
+                        - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
+                        - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
+                        - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
+                        - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
                       - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                     - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -19337,17 +19335,17 @@ Read-only.
 Read-only.
                 - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
-                  - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
-                  - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
-                  - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
-                  - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
-                  - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
-                  - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
-                  - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
-                  - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
-                  - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
-                  - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
+                  - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
+                  - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
+                  - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
+                  - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
+                  - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
+                  - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
+                  - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
+                  - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
+                  - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
+                  - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
+                  - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
                 - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
               - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -26881,17 +26879,17 @@ Read-only.
 Read-only.
               - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
-                - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
-                - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
-                - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
-                - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
-                - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
-                - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
-                - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
-                - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
-                - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
-                - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
+                - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
+                - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
+                - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
+                - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
+                - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
+                - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
+                - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
+                - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
+                - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
+                - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
+                - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
               - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
             - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -27410,7 +27408,7 @@ Always null when the object hasn't been deleted.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroup)
 
-[https://learn.microsoft.com/graph/api/group-post-groups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-groups?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-1.0)
 
 
 

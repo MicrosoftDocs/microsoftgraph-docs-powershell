@@ -9,7 +9,7 @@ ms.subservice: entra-global-secure-access
 # Invoke-MgBetaUsageNetworkAccessReportProfiling
 
 ## SYNOPSIS
-Invoke function usageProfiling
+Returns an object containing count tables for the traffic types in Global Secure Access, aggregated by the time period specified.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Invoke-MgBetaUsageNetworkAccessReportProfiling -InputObject <INetworkAccessIdent
 ```
 
 ## DESCRIPTION
-Invoke function usageProfiling
+Returns an object containing count tables for the traffic types in Global Secure Access, aggregated by the time period specified.
 
 **Permissions**
 
@@ -295,6 +295,8 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetausagenetworkaccessreportprofiling](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetausagenetworkaccessreportprofiling)
+
+[https://learn.microsoft.com/graph/api/networkaccess-reports-usageprofiling?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-reports-usageprofiling?view=graph-rest-beta)
 
 
 

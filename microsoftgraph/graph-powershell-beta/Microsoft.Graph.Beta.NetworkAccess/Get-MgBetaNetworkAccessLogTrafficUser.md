@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaNetworkAccessLogTrafficUser
 
 ## SYNOPSIS
-Get user from networkAccess
+Represents the user associated with the network traffic, providing details about the individual or account initiating the transaction.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaNetworkAccessLogTrafficUser -InputObject <INetworkAccessIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Get user from networkAccess
+Represents the user associated with the network traffic, providing details about the individual or account initiating the transaction.
 
 ## EXAMPLES
 

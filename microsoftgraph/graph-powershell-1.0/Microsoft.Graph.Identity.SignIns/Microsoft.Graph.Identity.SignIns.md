@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: 03eac6a6-9e9c-4c90-a167-6bff7b5eacc6
+Module Guid: 422481e6-5294-4a0e-9e47-71689ce79cd2
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US

@@ -9,7 +9,7 @@ ms.subservice: intune
 # Remove-MgDeviceAppManagementManagedEBookAssignment
 
 ## SYNOPSIS
-Deletes a iosVppEBookAssignment.
+Deletes a managedEBookAssignment.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementManagedEBookAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedEBookAssignment?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorpora
 ```
 
 ## DESCRIPTION
-Deletes a iosVppEBookAssignment.
+Deletes a managedEBookAssignment.
 
 **Permissions**
 
@@ -265,7 +265,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookassignment)
 
-[https://learn.microsoft.com/graph/api/intune-books-iosvppebookassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-iosvppebookassignment-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-delete?view=graph-rest-1.0)
 
 
 

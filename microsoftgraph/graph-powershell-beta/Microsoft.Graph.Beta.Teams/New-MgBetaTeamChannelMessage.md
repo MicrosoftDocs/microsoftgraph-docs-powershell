@@ -9,7 +9,7 @@ ms.subservice: teams
 # New-MgBetaTeamChannelMessage
 
 ## SYNOPSIS
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified channel.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMessage?view=graph-powershell-1.0)
@@ -63,7 +63,7 @@ New-MgBetaTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified channel.
 
 **Permissions**
 
@@ -1516,7 +1516,7 @@ Link to the message in Microsoft Teams.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessage)
 
-[https://learn.microsoft.com/graph/api/chatmessage-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chatmessage-post?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/channel-post-messages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-post-messages?view=graph-rest-beta)
 
 
 

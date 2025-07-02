@@ -10,7 +10,7 @@ ms.subservice: intune
 # Get-MgDeviceAppManagementManagedEBookAssignment
 
 ## SYNOPSIS
-Read properties and relationships of the iosVppEBookAssignment object.
+Read properties and relationships of the managedEBookAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedEBookAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookAssignment?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the iosVppEBookAssignment object.
+Read properties and relationships of the managedEBookAssignment object.
 
 **Permissions**
 
@@ -364,9 +364,9 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedebookassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedebookassignment)
 
-[https://learn.microsoft.com/graph/api/intune-books-iosvppebookassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-iosvppebookassignment-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-books-iosvppebookassignment-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-iosvppebookassignment-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-list?view=graph-rest-1.0)
 
 
 

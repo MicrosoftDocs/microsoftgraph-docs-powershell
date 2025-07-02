@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaNetworkAccessLogTrafficDevice
 
 ## SYNOPSIS
-Get device from networkAccess
+Represents the device associated with the network traffic, providing details about the hardware or virtual machine involved in the transaction.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaNetworkAccessLogTrafficDevice -InputObject <INetworkAccessIdentity> [-
 ```
 
 ## DESCRIPTION
-Get device from networkAccess
+Represents the device associated with the network traffic, providing details about the hardware or virtual machine involved in the transaction.
 
 ## EXAMPLES
 

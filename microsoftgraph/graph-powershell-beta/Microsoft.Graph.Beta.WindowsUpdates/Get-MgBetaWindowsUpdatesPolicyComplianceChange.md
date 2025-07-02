@@ -10,7 +10,7 @@ ms.subservice: windows-autopatch
 # Get-MgBetaWindowsUpdatesPolicyComplianceChange
 
 ## SYNOPSIS
-Read the properties and relationships of a contentApproval object.
+Read the properties and relationships of a complianceChange object.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIden
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a contentApproval object.
+Read the properties and relationships of a complianceChange object.
 
 **Permissions**
 
@@ -341,7 +341,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicycompliancechange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicycompliancechange)
 
-[https://learn.microsoft.com/graph/api/windowsupdates-contentapproval-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-contentapproval-get?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/windowsupdates-updatepolicy-list-compliancechanges?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-updatepolicy-list-compliancechanges?view=graph-rest-beta)
 

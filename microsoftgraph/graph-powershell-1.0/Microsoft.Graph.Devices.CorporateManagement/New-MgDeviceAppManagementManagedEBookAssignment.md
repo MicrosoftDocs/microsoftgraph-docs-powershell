@@ -9,7 +9,7 @@ ms.subservice: intune
 # New-MgDeviceAppManagementManagedEBookAssignment
 
 ## SYNOPSIS
-Create a new managedEBookAssignment object.
+Create a new iosVppEBookAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedEBookAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedEBookAssignment?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Create a new managedEBookAssignment object.
+Create a new iosVppEBookAssignment object.
 
 **Permissions**
 
@@ -329,7 +329,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebookassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebookassignment)
 
-[https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-books-iosvppebookassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-iosvppebookassignment-create?view=graph-rest-1.0)
 
 
 

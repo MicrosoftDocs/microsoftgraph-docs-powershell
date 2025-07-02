@@ -9,7 +9,7 @@ ms.subservice: entra-global-secure-access
 # Get-MgBetaNetworkAccessReportDiscoveredApplicationSegmentReport
 
 ## SYNOPSIS
-Invoke function getDiscoveredApplicationSegmentReport
+Returns a collection of discoveredApplicationSegmentReport based on aggregated traffic logs for a given period.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Get-MgBetaNetworkAccessReportDiscoveredApplicationSegmentReport -InputObject <IN
 ```
 
 ## DESCRIPTION
-Invoke function getDiscoveredApplicationSegmentReport
+Returns a collection of discoveredApplicationSegmentReport based on aggregated traffic logs for a given period.
 
 **Permissions**
 
@@ -265,6 +265,8 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportdiscoveredapplicationsegmentreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportdiscoveredapplicationsegmentreport)
+
+[https://learn.microsoft.com/graph/api/networkaccess-reports-getdiscoveredapplicationsegmentreport?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-reports-getdiscoveredapplicationsegmentreport?view=graph-rest-beta)
 
 
 

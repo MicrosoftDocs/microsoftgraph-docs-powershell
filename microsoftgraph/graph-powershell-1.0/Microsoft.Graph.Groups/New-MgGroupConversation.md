@@ -9,7 +9,9 @@ ms.subservice: extensions
 # New-MgGroupConversation
 
 ## SYNOPSIS
-Use reply thread or reply post to further post to that conversation.
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+The table in the Permissions section lists the resources that support open extensions.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversation?view=graph-powershell-beta)
@@ -49,7 +51,9 @@ New-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Use reply thread or reply post to further post to that conversation.
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+The table in the Permissions section lists the resources that support open extensions.
 
 **Permissions**
 
@@ -582,7 +586,7 @@ Returned by default.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation)
 
-[https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
 
 
 

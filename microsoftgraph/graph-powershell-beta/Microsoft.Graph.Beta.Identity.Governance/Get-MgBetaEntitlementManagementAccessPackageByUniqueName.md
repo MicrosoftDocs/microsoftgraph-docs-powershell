@@ -9,9 +9,7 @@ ms.subservice: entra-id-governance
 # Get-MgBetaEntitlementManagementAccessPackageByUniqueName
 
 ## SYNOPSIS
-Retrieve an access package with a list of accessPackageResourceRoleScope objects.
-These objects represent the resource roles that an access package assigns to each subject.
-Each object links to an accessPackageResourceRole and an accessPackageResourceScope.
+Retrieve the properties and relationships of an accessPackage object.
 
 ## SYNTAX
 
@@ -30,9 +28,7 @@ Get-MgBetaEntitlementManagementAccessPackageByUniqueName -InputObject <IIdentity
 ```
 
 ## DESCRIPTION
-Retrieve an access package with a list of accessPackageResourceRoleScope objects.
-These objects represent the resource roles that an access package assigns to each subject.
-Each object links to an accessPackageResourceRole and an accessPackageResourceScope.
+Retrieve the properties and relationships of an accessPackage object.
 
 **Permissions**
 
@@ -274,7 +270,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagebyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagebyuniquename)
 
-[https://learn.microsoft.com/graph/api/accesspackage-list-accesspackageresourcerolescopes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackage-list-accesspackageresourcerolescopes?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/accesspackage-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackage-get?view=graph-rest-beta)
 
 
 

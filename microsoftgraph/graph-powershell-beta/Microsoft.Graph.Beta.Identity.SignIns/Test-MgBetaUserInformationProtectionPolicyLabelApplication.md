@@ -258,8 +258,10 @@ BODYPARAMETER `<IPathsUqg0TfUsersUserIdInformationprotectionPolicyLabelsMicrosof
     - `[Format <String>]`: contentFormat
     - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
     - `[Metadata <IMicrosoftGraphKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
-      - `[Name <String>]`: Name for this key-value pair
-      - `[Value <String>]`: Value for this key-value pair
+      - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+      - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
     - `[State <String>]`: contentState
   - `[LabelingOptions <IMicrosoftGraphLabelingOptions>]`: labelingOptions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -277,8 +279,10 @@ CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
   - `[Format <String>]`: contentFormat
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
   - `[Metadata <IMicrosoftGraphKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[State <String>]`: contentState
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
@@ -373,8 +377,10 @@ LABELINGOPTIONS `<IMicrosoftGraphLabelingOptions>`: labelingOptions
     - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified.
 The message appears in administrative logs.
   - `[ExtendedProperties <IMicrosoftGraphKeyValuePair- `[]`>]`: Extended properties will be parsed and returned in the standard MIP labeled metadata format as part of the label information.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[LabelId <String>]`: The GUID of the label that should be applied to the information.
 
 ## RELATED LINKS

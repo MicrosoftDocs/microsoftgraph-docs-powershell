@@ -418,6 +418,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[BandwidthLowEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the available bandwidth or bandwidth policy was low enough to cause poor quality of the audio sent.
         - `[BasicServiceSetIdentifier <String>]`: The wireless LAN basic service set identifier of the media endpoint used to connect to the network.
+This property isn't available if the user disables precise location sharing in their operating system or Microsoft Teams app settings.
         - `[ConnectionType <String>]`: networkConnectionType
         - `[DelayEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network delay was significant enough to impact the ability to have real-time two-way communication.
         - `[DnsSuffix <String>]`: DNS suffix associated with the network adapter of the media endpoint.
@@ -587,6 +588,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[BandwidthLowEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the available bandwidth or bandwidth policy was low enough to cause poor quality of the audio sent.
       - `[BasicServiceSetIdentifier <String>]`: The wireless LAN basic service set identifier of the media endpoint used to connect to the network.
+This property isn't available if the user disables precise location sharing in their operating system or Microsoft Teams app settings.
       - `[ConnectionType <String>]`: networkConnectionType
       - `[DelayEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network delay was significant enough to impact the ability to have real-time two-way communication.
       - `[DnsSuffix <String>]`: DNS suffix associated with the network adapter of the media endpoint.

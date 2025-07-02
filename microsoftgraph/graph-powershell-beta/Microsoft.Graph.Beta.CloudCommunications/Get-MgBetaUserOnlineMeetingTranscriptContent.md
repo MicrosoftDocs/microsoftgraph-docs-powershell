@@ -11,6 +11,7 @@ ms.subservice: teams
 ## SYNOPSIS
 Retrieve a callTranscript object associated with a scheduled onlineMeeting.
 This API supports the retrieval of call transcripts from private chat meetings and channel meetings.
+However, private channel meetings are not supported at this time.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
@@ -36,6 +37,7 @@ Get-MgBetaUserOnlineMeetingTranscriptContent -InputObject <ICloudCommunicationsI
 ## DESCRIPTION
 Retrieve a callTranscript object associated with a scheduled onlineMeeting.
 This API supports the retrieval of call transcripts from private chat meetings and channel meetings.
+However, private channel meetings are not supported at this time.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 

@@ -9,7 +9,7 @@ ms.subservice: entra-id
 # Set-MgBetaServicePrincipalClaimPolicy
 
 ## SYNOPSIS
-Create a new customClaimsPolicy object if it doesn't exist, or replace an existing one.
+Update a customClaimsPolicy object.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Set-MgBetaServicePrincipalClaimPolicy -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create a new customClaimsPolicy object if it doesn't exist, or replace an existing one.
+Update a customClaimsPolicy object.
 
 **Permissions**
 
@@ -403,7 +403,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalclaimpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalclaimpolicy)
 
-[https://learn.microsoft.com/graph/api/serviceprincipal-put-claimspolicy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-put-claimspolicy?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/customclaimspolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customclaimspolicy-update?view=graph-rest-beta)
 
 
 

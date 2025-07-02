@@ -390,7 +390,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmember)
 
-[https://learn.microsoft.com/graph/api/conversationmember-add?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-add?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/channel-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-post-members?view=graph-rest-1.0)
 
 
 

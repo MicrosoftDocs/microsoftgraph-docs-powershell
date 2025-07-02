@@ -1954,8 +1954,10 @@ For example:User to User - For Microsoft Entra ID to Microsoft Entra synchroniza
         - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
       - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair- `[]`>]`: Settings associated with the job.
 Some settings are inherited from the template.
-        - `[Name <String>]`: Name for this key-value pair
-        - `[Value <String>]`: Value for this key-value pair
+        - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+        - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
       - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
     - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>]`: Represents a collection of credentials to access provisioned cloud applications.
       - `[Key <String>]`: synchronizationSecret
@@ -2787,8 +2789,10 @@ For example:User to User - For Microsoft Entra ID to Microsoft Entra synchroniza
           - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
         - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair- `[]`>]`: Settings associated with the job.
 Some settings are inherited from the template.
-          - `[Name <String>]`: Name for this key-value pair
-          - `[Value <String>]`: Value for this key-value pair
+          - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+          - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
         - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
       - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>]`: Represents a collection of credentials to access provisioned cloud applications.
         - `[Key <String>]`: synchronizationSecret
@@ -3483,8 +3487,10 @@ For example:User to User - For Microsoft Entra ID to Microsoft Entra synchroniza
       - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
     - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair- `[]`>]`: Settings associated with the job.
 Some settings are inherited from the template.
-      - `[Name <String>]`: Name for this key-value pair
-      - `[Value <String>]`: Value for this key-value pair
+      - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+      - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
     - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
   - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>]`: Represents a collection of credentials to access provisioned cloud applications.
     - `[Key <String>]`: synchronizationSecret
