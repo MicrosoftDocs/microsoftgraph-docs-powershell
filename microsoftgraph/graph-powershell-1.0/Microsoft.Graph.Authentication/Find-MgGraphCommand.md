@@ -8,38 +8,47 @@ schema: 2.0.0
 # Find-MgGraphCommand
 
 ## SYNOPSIS
-Find-MgGraphCommand aims to make it easier for you to discover which API path a command calls, by providing a URI or a command name.
-The Find-MgGraphCommand allows to:  - Pass a Microsoft Graph URL (relative and absolute) and get an equivalent Microsoft Graph PowerShell command.
-- Pass a command and get the URL it calls.
-- Pass a command or URI wildcard (.*) to find all commands that match it.
+Find-MgGraphCommand aims to make it easier for you to discover which API path a command calls, by
+providing a URI or a command name.
 
 ## SYNTAX
 
 ### FindByCommandOrUri (Default)
+
 ```
 Find-MgGraphCommand [-ApiVersion <String>] [-InputObject] <Object[]> [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### FindByUri
+
 ```
 Find-MgGraphCommand [-Uri] <String[]> [-Method <String>] [-ApiVersion <String>]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### FindByCommand
+
 ```
 Find-MgGraphCommand [-ApiVersion <String>] -Command <String[]> [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Find-MgGraphCommand aims to make it easier for you to discover which API path a command calls, by providing a URI or a command name.
+
+Find-MgGraphCommand aims to make it easier for you to discover which API path a command calls, by
+providing a URI or a command name. The Find-MgGraphCommand allows to:
+
+- Pass a Microsoft Graph URL (relative and absolute) and get an equivalent Microsoft Graph
+  PowerShell command.
+- Pass a command and get the URL it calls.
+- Pass a command or URI wildcard (.*) to find all commands that match it.
 
 ## EXAMPLES
 
 ### Example 1: Use a URI to get all related cmdlets
-```
+
+```powershell
 PS C:\> Find-MgGraphCommand -Uri "/users/{id}"
 
  APIVersion: v1.0
@@ -63,7 +72,8 @@ Update-MgUser Users  PATCH  /users/{user-id}                     {DeviceManageme
 This example finds all commands that call the provided Microsoft Graph URI.
 
 ### Example 2: Pass a command and get the URI it calls
-```
+
+```powershell
 PS C:\> Find-MgGraphCommand -Command 'Get-MgUser'
 
 APIVersion: v1.0
@@ -85,7 +95,8 @@ Get-MgUser Users  GET    /users           IMicrosoftGraphUser {DeviceManagementA
 This example looks up a command with the provided command name that calls both beta and v1.0 version of the API.
 
 ### Example 3: Pass a command and get the permissions required
-```
+
+```powershell
 PS C:\> Find-MgGraphCommand -command Get-MgUser | Select -First 1 -ExpandProperty Permissions
 
 Name                                         IsAdmin Description                                   FullDescription
@@ -101,7 +112,8 @@ User.ReadWrite.All                           True    Read and write all users' f
 This example retrieves the scopes required for a particular command.
 
 ### Example 4: Find Microsoft Graph PowerShell commands using a command wildcard
-```
+
+```powershell
 PS C:\> Find-MgGraphCommand -Command .*UserToDo.* -APIVersion 'v1.0'
    APIVersion: v1.0
 
@@ -119,7 +131,8 @@ Get-MgUserTodoListTask                         Users           GET    /users/{us
 Uses a wildcard syntax to search for commands.
 
 ### Example 5: Find Microsoft Graph PowerShell commands using a URI wildcard
-```
+
+```powershell
 PS C:\> Find-MgGraphCommand -Uri ".*users.*" -Method 'Get' -ApiVersion 'v1.0'
 Command                               Module                       Method URI
 -------                               ------                       ------ ---
@@ -135,6 +148,7 @@ Searches for commands using URI wildcard.
 ## PARAMETERS
 
 ### -ApiVersion
+
 The service API version.
 
 ```yaml
@@ -150,8 +164,8 @@ Accept wildcard characters: False
 ```
 
 ### -Command
-The name of a command.
-e.g., Get-MgUser.}
+
+The name of a command. For example, `Get-MgUser`.
 
 ```yaml
 Type: String[]
@@ -166,6 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
+
 Pipeline input object
 
 ```yaml
@@ -181,6 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Method
+
 The HTTP method a command makes.
 
 ```yaml
@@ -196,6 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProgressAction
+
 Treat this as a common parameter.
 
 ```yaml
@@ -211,8 +228,8 @@ Accept wildcard characters: False
 ```
 
 ### -Uri
-The API path a command calls.
-e.g., /users.
+
+The API path a command calls. For example, `/users`.
 
 ```yaml
 Type: String[]
@@ -227,21 +244,33 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,
+-WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Pipeline input accepts API URIs as an array of strings.
+### System.String[]
+
+Pipeline input accepts API URIs as an array of strings.
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Authentication.Models.IGraphCommand with the following properties:
-### 1. Command: Name of command.
-### 2. Module: Module in which a command is defined.
-### 3. Method: The HTTP method a command makes.
-### 4. Uri: The Microsoft Graph API URI a command calls.
-### 5. OutputType: The return type of a command.
-### 6. Permissions: Permissions needed to use a command. This field can be empty if the permissions are not yet available in Graph Explorer.
-### 7. Variants: The parameter sets of a command.
+### Microsoft.Graph.PowerShell.Authentication.Models.IGraphCommand
+
+The **IGraphCommand** class has the following properties:
+
+- **Command**: Name of command.
+- **Module**: Module in which a command is defined.
+- **Method**: The HTTP method a command makes.
+- **Uri**: The Microsoft Graph API URI a command calls.
+- **OutputType**: The return type of a command.
+- **Permissions**: Permissions needed to use a command. This field can be empty if the permissions
+  are not yet available in Graph Explorer.
+- **Variants**: The parameter sets of a command.
+
 ## NOTES
 
 ## RELATED LINKS

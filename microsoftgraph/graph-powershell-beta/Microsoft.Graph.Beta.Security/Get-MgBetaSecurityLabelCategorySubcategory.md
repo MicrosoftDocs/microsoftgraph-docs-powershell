@@ -4,10 +4,9 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategory
 schema: 2.0.0
 ms.subservice: security
-ms.subservice: security
 ---
 
-# Get-MgBetaSecurityLabelCategorySubcategory
+# Get-MgBetaSecurityLabelCategorySubCategory
 
 ## SYNOPSIS
 Read the properties and relationships of a subcategoryTemplate object.

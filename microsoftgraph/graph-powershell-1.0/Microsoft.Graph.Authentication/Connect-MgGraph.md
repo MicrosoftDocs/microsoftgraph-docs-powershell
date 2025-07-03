@@ -8,8 +8,7 @@ schema: 2.0.0
 # Connect-MgGraph
 
 ## SYNOPSIS
-Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access.
-There are a number of cmdlets that can be used to manage the different parameters required during authentication, for example, environment, application ID, and certificate.
+You must invoke Connect-MgGraph before any commands that access Microsoft Graph.
 
 ## SYNTAX
 
@@ -54,8 +53,12 @@ Connect-MgGraph [-ContextScope <ContextScope>] [-Environment <String>] [-ClientT
 ```
 
 ## DESCRIPTION
-You must invoke Connect-MgGraph before any commands that access Microsoft Graph.
-This cmdlet gets the access token using the Microsoft Authentication Library
+
+Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access.
+There are a number of cmdlets that can be used to manage the different parameters required during
+authentication, for example, environment, application ID, and certificate.
+
+This cmdlet gets the access token using the Microsoft Authentication Library.
 
 ## EXAMPLES
 
