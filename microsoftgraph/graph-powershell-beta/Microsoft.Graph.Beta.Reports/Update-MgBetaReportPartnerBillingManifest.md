@@ -21,14 +21,14 @@ Update-MgBetaReportPartnerBillingManifest -ManifestId <String> [-ResponseHeaders
  [-AdditionalProperties <Hashtable>] [-BlobCount <Int32>] [-Blobs <IMicrosoftGraphPartnersBillingBlob[]>]
  [-CreatedDateTime <DateTime>] [-DataFormat <String>] [-ETag <String>] [-Id <String>] [-PartitionType <String>]
  [-PartnerTenantId <String>] [-RootDirectory <String>] [-SasToken <String>] [-SchemaVersion <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaReportPartnerBillingManifest -ManifestId <String>
  -BodyParameter <IMicrosoftGraphPartnersBillingManifest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,14 +37,14 @@ Update-MgBetaReportPartnerBillingManifest -InputObject <IReportsIdentity> [-Resp
  [-AdditionalProperties <Hashtable>] [-BlobCount <Int32>] [-Blobs <IMicrosoftGraphPartnersBillingBlob[]>]
  [-CreatedDateTime <DateTime>] [-DataFormat <String>] [-ETag <String>] [-Id <String>] [-PartitionType <String>]
  [-PartnerTenantId <String>] [-RootDirectory <String>] [-SasToken <String>] [-SchemaVersion <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaReportPartnerBillingManifest -InputObject <IReportsIdentity>
  -BodyParameter <IMicrosoftGraphPartnersBillingManifest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -113,6 +113,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -261,21 +276,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -328,21 +328,6 @@ The version of the manifest schema.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

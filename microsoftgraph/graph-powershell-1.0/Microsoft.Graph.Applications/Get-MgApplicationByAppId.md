@@ -19,7 +19,7 @@ Get the properties and relationships of an application object.
 ### Get (Default)
 ```
 Get-MgApplicationByAppId -AppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Get-MgApplicationByAppId -AppId <String> [-ExpandProperty <String[]>] [-Property
 ```
 Get-MgApplicationByAppId -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,7 +48,7 @@ Get the properties and relationships of an application object.
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgApplicationByAppId -Property "id,appId,displayName,requiredResourceAccess" 
+Get-MgApplicationByAppId -Property "id,appId,displayName,requiredResourceAccess"
 
 ```
 This example will retrieve an application by its appid and only specific properties
@@ -114,21 +114,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

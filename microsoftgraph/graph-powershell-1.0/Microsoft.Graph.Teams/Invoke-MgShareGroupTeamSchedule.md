@@ -25,7 +25,7 @@ The notifyTeam parameter further specifies which employees can view the item.
 ```
 Invoke-MgShareGroupTeamSchedule -GroupId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-NotifyTeam] [-StartDateTime <DateTime>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Invoke-MgShareGroupTeamSchedule -GroupId <String> [-ResponseHeadersVariable <Str
 ```
 Invoke-MgShareGroupTeamSchedule -GroupId <String>
  -BodyParameter <IPaths1N3C8HgGroupsGroupIdTeamScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ Invoke-MgShareGroupTeamSchedule -GroupId <String>
 ```
 Invoke-MgShareGroupTeamSchedule -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-NotifyTeam] [-StartDateTime <DateTime>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -49,7 +49,7 @@ Invoke-MgShareGroupTeamSchedule -InputObject <ITeamsIdentity> [-ResponseHeadersV
 ```
 Invoke-MgShareGroupTeamSchedule -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1N3C8HgGroupsGroupIdTeamScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -93,6 +93,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -187,21 +202,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -224,21 +224,6 @@ Accept wildcard characters: False
 Type: DateTime
 Parameter Sets: ShareExpanded, ShareViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -282,9 +267,9 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1N3C8HgGroupsGroupIdTeamScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EndDateTime <DateTime?>]`: 
-  - `[NotifyTeam <Boolean?>]`: 
-  - `[StartDateTime <DateTime?>]`: 
+  - `[EndDateTime <DateTime?>]`:
+  - `[NotifyTeam <Boolean?>]`:
+  - `[StartDateTime <DateTime?>]`:
 
 INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo

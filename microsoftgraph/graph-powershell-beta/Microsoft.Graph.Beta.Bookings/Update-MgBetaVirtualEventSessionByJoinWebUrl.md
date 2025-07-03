@@ -30,7 +30,7 @@ Update-MgBetaVirtualEventSessionByJoinWebUrl -JoinWebUrl <String> -VirtualEventI
  [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>] [-ShareMeetingChatHistoryDefault <String>]
  [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-VideoOnDemandWebUrl <String>]
  [-VideoTeleconferenceId <String>] [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,21 +51,21 @@ Update-MgBetaVirtualEventSessionByJoinWebUrl [-JoinWebUrl <String>] -InputObject
  [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>] [-ShareMeetingChatHistoryDefault <String>]
  [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-VideoOnDemandWebUrl <String>]
  [-VideoTeleconferenceId <String>] [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaVirtualEventSessionByJoinWebUrl -JoinWebUrl <String> -VirtualEventId <String>
  -BodyParameter <IMicrosoftGraphVirtualEventSession> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaVirtualEventSessionByJoinWebUrl -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphVirtualEventSession> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -398,6 +398,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -EndDateTime
 dateTimeTimeZone
 To construct, see NOTES section for ENDDATETIME properties and create a hash table.
@@ -598,21 +613,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RecordAutomatically
 Indicates whether to record the meeting automatically.
 
@@ -759,21 +759,6 @@ To construct, see NOTES section for WATERMARKPROTECTION properties and create a 
 Type: IMicrosoftGraphWatermarkProtectionValues
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

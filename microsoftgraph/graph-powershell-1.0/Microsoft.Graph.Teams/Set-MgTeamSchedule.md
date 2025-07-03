@@ -33,13 +33,13 @@ Set-MgTeamSchedule -TeamId <String> [-ResponseHeadersVariable <String>] [-Additi
  [-TimeClockSettings <IMicrosoftGraphTimeClockSettings>] [-TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]
  [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
  [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgTeamSchedule -TeamId <String> -BodyParameter <IMicrosoftGraphSchedule>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -56,13 +56,13 @@ Set-MgTeamSchedule -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <Stri
  [-TimeClockSettings <IMicrosoftGraphTimeClockSettings>] [-TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]
  [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
  [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphSchedule>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -129,6 +129,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -300,21 +315,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -568,36 +568,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkforceIntegrationIds
-The IDs for the workforce integrations associated with this schedule.
-
-```yaml
-Type: String[]
-Parameter Sets: SetExpanded, SetViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -606,6 +576,21 @@ The cmdlet is not run.
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WorkforceIntegrationIds
+The IDs for the workforce integrations associated with this schedule.
+
+```yaml
+Type: String[]
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -660,8 +645,8 @@ Required.
   - `[IsActivitiesIncludedWhenCopyingShiftsEnabled <Boolean?>]`: Indicates whether copied shifts include activities from the original shift.
   - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
     - `[AssignedTo <String>]`: scheduleChangeRequestActor
-    - `[ManagerActionMessage <String>]`: 
-    - `[SenderMessage <String>]`: 
+    - `[ManagerActionMessage <String>]`:
+    - `[SenderMessage <String>]`:
     - `[State <String>]`: scheduleChangeState
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -673,8 +658,8 @@ Read-only.
   - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
   - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest- `[]`>]`: The open shift requests in the schedule.
     - `[AssignedTo <String>]`: scheduleChangeRequestActor
-    - `[ManagerActionMessage <String>]`: 
-    - `[SenderMessage <String>]`: 
+    - `[ManagerActionMessage <String>]`:
+    - `[SenderMessage <String>]`:
     - `[State <String>]`: scheduleChangeState
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -708,8 +693,8 @@ Required.
         - `[Theme <String>]`: scheduleEntityTheme
       - `[DisplayName <String>]`: The shift label of the shiftItem.
       - `[Notes <String>]`: The shift notes for the shiftItem.
-      - `[EndDateTime <DateTime?>]`: 
-      - `[StartDateTime <DateTime?>]`: 
+      - `[EndDateTime <DateTime?>]`:
+      - `[StartDateTime <DateTime?>]`:
       - `[Theme <String>]`: scheduleEntityTheme
       - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
     - `[IsStagedForDeletion <Boolean?>]`: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
@@ -735,8 +720,8 @@ Required.
 Read-only.
     - `[DraftShift <IMicrosoftGraphShiftItem>]`: shiftItem
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[EndDateTime <DateTime?>]`: 
-      - `[StartDateTime <DateTime?>]`: 
+      - `[EndDateTime <DateTime?>]`:
+      - `[StartDateTime <DateTime?>]`:
       - `[Theme <String>]`: scheduleEntityTheme
       - `[Activities <IMicrosoftGraphShiftActivity- `[]`>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift.
 For example, an assignment or a scheduled break or lunch.
@@ -755,8 +740,8 @@ Required.
     - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
     - `[SenderShiftId <String>]`: User ID of the sender of the offer shift request.
     - `[AssignedTo <String>]`: scheduleChangeRequestActor
-    - `[ManagerActionMessage <String>]`: 
-    - `[SenderMessage <String>]`: 
+    - `[ManagerActionMessage <String>]`:
+    - `[SenderMessage <String>]`:
     - `[State <String>]`: scheduleChangeState
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -817,8 +802,8 @@ Required.
 Required.
   - `[TimeOffRequests <IMicrosoftGraphTimeOffRequest- `[]`>]`: The time off requests in the schedule.
     - `[AssignedTo <String>]`: scheduleChangeRequestActor
-    - `[ManagerActionMessage <String>]`: 
-    - `[SenderMessage <String>]`: 
+    - `[ManagerActionMessage <String>]`:
+    - `[SenderMessage <String>]`:
     - `[State <String>]`: scheduleChangeState
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -839,8 +824,8 @@ Required.
 Read-only.
     - `[DraftTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[EndDateTime <DateTime?>]`: 
-      - `[StartDateTime <DateTime?>]`: 
+      - `[EndDateTime <DateTime?>]`:
+      - `[StartDateTime <DateTime?>]`:
       - `[Theme <String>]`: scheduleEntityTheme
       - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem.
 Required.
@@ -910,8 +895,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 OFFERSHIFTREQUESTS `<IMicrosoftGraphOfferShiftRequest- `[]`>`: The offer requests for shifts in the schedule.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionMessage <String>]`: 
-  - `[SenderMessage <String>]`: 
+  - `[ManagerActionMessage <String>]`:
+  - `[SenderMessage <String>]`:
   - `[State <String>]`: scheduleChangeState
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -932,8 +917,8 @@ Read-only.
 
 OPENSHIFTCHANGEREQUESTS `<IMicrosoftGraphOpenShiftChangeRequest- `[]`>`: The open shift requests in the schedule.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionMessage <String>]`: 
-  - `[SenderMessage <String>]`: 
+  - `[ManagerActionMessage <String>]`:
+  - `[SenderMessage <String>]`:
   - `[State <String>]`: scheduleChangeState
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -986,8 +971,8 @@ Required.
       - `[Theme <String>]`: scheduleEntityTheme
     - `[DisplayName <String>]`: The shift label of the shiftItem.
     - `[Notes <String>]`: The shift notes for the shiftItem.
-    - `[EndDateTime <DateTime?>]`: 
-    - `[StartDateTime <DateTime?>]`: 
+    - `[EndDateTime <DateTime?>]`:
+    - `[StartDateTime <DateTime?>]`:
     - `[Theme <String>]`: scheduleEntityTheme
     - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
   - `[IsStagedForDeletion <Boolean?>]`: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
@@ -1031,8 +1016,8 @@ For example, in the access reviews decisions API, this property might record the
 Read-only.
   - `[DraftShift <IMicrosoftGraphShiftItem>]`: shiftItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EndDateTime <DateTime?>]`: 
-    - `[StartDateTime <DateTime?>]`: 
+    - `[EndDateTime <DateTime?>]`:
+    - `[StartDateTime <DateTime?>]`:
     - `[Theme <String>]`: scheduleEntityTheme
     - `[Activities <IMicrosoftGraphShiftActivity- `[]`>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift.
 For example, an assignment or a scheduled break or lunch.
@@ -1066,8 +1051,8 @@ SWAPSHIFTSCHANGEREQUESTS `<IMicrosoftGraphSwapShiftsChangeRequest- `[]`>`: The s
   - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
   - `[SenderShiftId <String>]`: User ID of the sender of the offer shift request.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionMessage <String>]`: 
-  - `[SenderMessage <String>]`: 
+  - `[ManagerActionMessage <String>]`:
+  - `[SenderMessage <String>]`:
   - `[State <String>]`: scheduleChangeState
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1160,8 +1145,8 @@ Required.
 
 TIMEOFFREQUESTS `<IMicrosoftGraphTimeOffRequest- `[]`>`: The time off requests in the schedule.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionMessage <String>]`: 
-  - `[SenderMessage <String>]`: 
+  - `[ManagerActionMessage <String>]`:
+  - `[SenderMessage <String>]`:
   - `[State <String>]`: scheduleChangeState
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1198,8 +1183,8 @@ For example, in the access reviews decisions API, this property might record the
 Read-only.
   - `[DraftTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EndDateTime <DateTime?>]`: 
-    - `[StartDateTime <DateTime?>]`: 
+    - `[EndDateTime <DateTime?>]`:
+    - `[StartDateTime <DateTime?>]`:
     - `[Theme <String>]`: scheduleEntityTheme
     - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem.
 Required.

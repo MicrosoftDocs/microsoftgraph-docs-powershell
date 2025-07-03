@@ -16,7 +16,7 @@ Update the navigation property roleAssignmentApprovals in roleManagement
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval -ApprovalId <String> -RbacApplicationId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Steps <IMicrosoftGraphApprovalStep[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Steps <IMicrosoftGraphApprovalStep[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -24,14 +24,14 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval -ApprovalId <Stri
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval -ApprovalId <String> -RbacApplicationId <String>
  -BodyParameter <IMicrosoftGraphApproval> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval -InputObject <IIdentityGovernanceIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Steps <IMicrosoftGraphApprovalStep[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Steps <IMicrosoftGraphApprovalStep[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval -InputObject <IId
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphApproval> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -95,6 +95,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -142,21 +157,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RbacApplicationId
 The unique identifier of rbacApplication
 
@@ -195,21 +195,6 @@ To construct, see NOTES section for STEPS properties and create a hash table.
 Type: IMicrosoftGraphApprovalStep[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

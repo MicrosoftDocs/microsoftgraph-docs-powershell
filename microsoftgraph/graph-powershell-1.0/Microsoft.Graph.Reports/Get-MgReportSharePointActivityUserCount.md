@@ -20,13 +20,13 @@ A user is considered active if they have executed a file activity (save, sync, m
 ### Get (Default)
 ```
 Get-MgReportSharePointActivityUserCount -Period <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportSharePointActivityUserCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ A user is considered active if they have executed a file activity (save, sync, m
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSharePointActivityUserCount -Period $periodId 
+Get-MgReportSharePointActivityUserCount -Period $periodId
 
 ```
 This example shows how to use the Get-MgReportSharePointActivityUserCount Cmdlet.
@@ -119,21 +119,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

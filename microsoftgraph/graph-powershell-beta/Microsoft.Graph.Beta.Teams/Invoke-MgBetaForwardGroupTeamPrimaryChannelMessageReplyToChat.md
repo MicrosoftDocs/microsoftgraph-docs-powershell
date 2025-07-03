@@ -18,14 +18,14 @@ Forward a chat message, a channel message, or a channel message reply to a chat.
 Invoke-MgBetaForwardGroupTeamPrimaryChannelMessageReplyToChat -ChatMessageId <String> -GroupId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalMessage <IMicrosoftGraphChatMessage>]
  [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>] [-TargetChatIds <String[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Forward
 ```
 Invoke-MgBetaForwardGroupTeamPrimaryChannelMessageReplyToChat -ChatMessageId <String> -GroupId <String>
  -BodyParameter <IPaths1Qoe17OGroupsGroupIdTeamPrimarychannelMessagesChatmessageIdRepliesMicrosoftGraphForwardtochatPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,14 +34,14 @@ Invoke-MgBetaForwardGroupTeamPrimaryChannelMessageReplyToChat -ChatMessageId <St
 Invoke-MgBetaForwardGroupTeamPrimaryChannelMessageReplyToChat -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalMessage <IMicrosoftGraphChatMessage>]
  [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>] [-TargetChatIds <String[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ForwardViaIdentity
 ```
 Invoke-MgBetaForwardGroupTeamPrimaryChannelMessageReplyToChat -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Qoe17OGroupsGroupIdTeamPrimarychannelMessagesChatmessageIdRepliesMicrosoftGraphForwardtochatPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -114,6 +114,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -GroupId
 The unique identifier of group
 
@@ -175,21 +190,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -212,21 +212,6 @@ Accept wildcard characters: False
 Type: String[]
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

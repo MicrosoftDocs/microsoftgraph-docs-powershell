@@ -16,7 +16,7 @@ Create new navigation property to frontLineServicePlans for deviceManagement
 ```
 New-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllotmentLicensesCount <Int32>] [-DisplayName <String>] [-Id <String>]
- [-TotalCount <Int32>] [-UsedCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-TotalCount <Int32>] [-UsedCount <Int32>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ New-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan [-ResponseHeadersV
 ```
 New-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
  -BodyParameter <IMicrosoftGraphCloudPcFrontLineServicePlan> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -80,6 +80,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DisplayName
 The display name of the front-line service plan.
 For example, 2vCPU/8GB/128GB Front-line or 4vCPU/16GB/256GB Front-line.
@@ -119,21 +134,6 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -183,21 +183,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

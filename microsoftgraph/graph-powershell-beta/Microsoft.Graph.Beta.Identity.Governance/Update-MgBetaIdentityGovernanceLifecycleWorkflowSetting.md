@@ -20,7 +20,7 @@ Update the properties of a lifecycleManagementSettings object.
 ```
 Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-EmailSettings <IMicrosoftGraphEmailSettings>] [-Id <String>]
- [-WorkflowScheduleIntervalInHours <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WorkflowScheduleIntervalInHours <Int32>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting [-ResponseHeadersVariabl
 ```
 Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting
  -BodyParameter <IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -98,6 +98,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -EmailSettings
 emailSettings
 To construct, see NOTES section for EMAILSETTINGS properties and create a hash table.
@@ -145,13 +160,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
 
 ```yaml
-Type: ActionPreference
+Type: String
 Parameter Sets: (All)
-Aliases: proga
+Aliases: RHV
 
 Required: False
 Position: Named
@@ -160,13 +175,14 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ResponseHeadersVariable
-Optional Response Headers Variable.
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
-Type: String
+Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: RHV
+Aliases: wi
 
 Required: False
 Position: Named
@@ -188,37 +204,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

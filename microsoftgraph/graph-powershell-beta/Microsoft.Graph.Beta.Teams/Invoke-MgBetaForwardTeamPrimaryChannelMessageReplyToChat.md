@@ -18,14 +18,14 @@ Forward a chat message, a channel message, or a channel message reply to a chat.
 Invoke-MgBetaForwardTeamPrimaryChannelMessageReplyToChat -ChatMessageId <String> -TeamId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalMessage <IMicrosoftGraphChatMessage>]
  [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>] [-TargetChatIds <String[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Forward
 ```
 Invoke-MgBetaForwardTeamPrimaryChannelMessageReplyToChat -ChatMessageId <String> -TeamId <String>
  -BodyParameter <IPathsMynu6HTeamsTeamIdPrimarychannelMessagesChatmessageIdRepliesMicrosoftGraphForwardtochatPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,14 +34,14 @@ Invoke-MgBetaForwardTeamPrimaryChannelMessageReplyToChat -ChatMessageId <String>
 Invoke-MgBetaForwardTeamPrimaryChannelMessageReplyToChat -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalMessage <IMicrosoftGraphChatMessage>]
  [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>] [-TargetChatIds <String[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ForwardViaIdentity
 ```
 Invoke-MgBetaForwardTeamPrimaryChannelMessageReplyToChat -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsMynu6HTeamsTeamIdPrimarychannelMessagesChatmessageIdRepliesMicrosoftGraphForwardtochatPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -114,6 +114,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -152,21 +167,6 @@ Accept wildcard characters: False
 Type: String[]
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -214,21 +214,6 @@ Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

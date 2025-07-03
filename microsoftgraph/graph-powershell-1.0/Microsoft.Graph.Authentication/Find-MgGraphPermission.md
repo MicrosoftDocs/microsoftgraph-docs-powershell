@@ -15,12 +15,12 @@ Retrieves permissions that are applicable to a certain domain.
 ### Search
 ```
 Find-MgGraphPermission [-SearchString] <String> [-ExactMatch] [-PermissionType <String>] [-Online]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### All
 ```
-Find-MgGraphPermission [-PermissionType <String>] [-Online] [-All] [-ProgressAction <ActionPreference>]
+Find-MgGraphPermission [-PermissionType <String>] [-Online] [-All]
  [<CommonParameters>]
 ```
 
@@ -159,21 +159,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-Treat this as a common parameter.
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -SearchString
 The SearchString parameter allows you to specify a string such as 'user' or 'mail' that represents the subject or domain of the permission you're searching for.
 Since permissions usually have names such as 'User.Read' or 'Mail.ReadWrite', the command uses the SearchString parameter to return all permissions that contain the value specified for SearchString in the name of the permission.
@@ -195,18 +180,27 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### You can pipe permission names in the form of strings to Find-MgGraphPermission.
+### System.String
+
+You can pipe permission names in the form of strings.
+
 ## OUTPUTS
 
-### This command returns a collection of items with the following fields:
-### * Name: The name of the permission as found in Microsoft Graph permissions reference documentation. Names will typically
-### have a form like 'User.Read.All', or 'Files.ReadWrite' for instance.
-### * Description: Provides a description of what access is granted by the permission
-### * Id: The unique identifier for the permission in the form of a Guid. The unique identifier is required for using
-### certain Microsoft Graph REST API resources or Microsoft Graph-based PowerShell commands that manage application consent.
-### * Consent: Denotes whether the specified permission requires administrator or user consent. The valid values are 'Admin' and 'User'.
-### * PermissionType: Valid values are 'Delegated' or 'Application' depending on whether the permission is one that is delegated by
-### the user to the application ('Delegated'), or is directly assigned to the application without the consent of a user ('Application').
+### Microsoft.Graph.Authentication.Permission
+
+This command returns a collection of items with the following fields:
+* Name: The name of the permission as found in Microsoft Graph permissions reference documentation.
+  Names will typically have a form like 'User.Read.All', or 'Files.ReadWrite' for instance.
+* Description: Provides a description of what access is granted by the permission
+* Id: The unique identifier for the permission in the form of a Guid. The unique identifier is
+  required for using certain Microsoft Graph REST API resources or Microsoft Graph-based PowerShell
+  commands that manage application consent.
+* Consent: Denotes whether the specified permission requires administrator or user consent. The
+  valid values are 'Admin' and 'User'.
+* PermissionType: Valid values are 'Delegated' or 'Application' depending on whether the permission
+  is one that is delegated by the user to the application ('Delegated'), or is directly assigned to
+  the application without the consent of a user ('Application').
+
 ## NOTES
 
 ## RELATED LINKS

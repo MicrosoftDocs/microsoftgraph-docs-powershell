@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Authentication-Help.xml
 Module Name: Microsoft.Graph.Authentication
 online version: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/find-mggraphcommand
@@ -16,7 +16,7 @@ providing a URI or a command name.
 ### FindByCommandOrUri (Default)
 
 ```
-Find-MgGraphCommand [-ApiVersion <String>] [-InputObject] <Object[]> [-ProgressAction <ActionPreference>]
+Find-MgGraphCommand [-ApiVersion <String>] [-InputObject] <Object[]>
  [<CommonParameters>]
 ```
 
@@ -24,13 +24,13 @@ Find-MgGraphCommand [-ApiVersion <String>] [-InputObject] <Object[]> [-ProgressA
 
 ```
 Find-MgGraphCommand [-Uri] <String[]> [-Method <String>] [-ApiVersion <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### FindByCommand
 
 ```
-Find-MgGraphCommand [-ApiVersion <String>] -Command <String[]> [-ProgressAction <ActionPreference>]
+Find-MgGraphCommand [-ApiVersion <String>] -Command <String[]>
  [<CommonParameters>]
 ```
 
@@ -203,22 +203,6 @@ The HTTP method a command makes.
 Type: String
 Parameter Sets: FindByUri
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-
-Treat this as a common parameter.
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named

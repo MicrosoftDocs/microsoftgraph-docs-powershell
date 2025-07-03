@@ -21,14 +21,14 @@ Update-MgGroupSiteOnenote -GroupId <String> -SiteId <String> [-ResponseHeadersVa
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Notebooks <IMicrosoftGraphNotebook[]>]
  [-Operations <IMicrosoftGraphOnenoteOperation[]>] [-Pages <IMicrosoftGraphOnenotePage[]>]
  [-Resources <IMicrosoftGraphOnenoteResource[]>] [-SectionGroups <IMicrosoftGraphSectionGroup[]>]
- [-Sections <IMicrosoftGraphOnenoteSection[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Sections <IMicrosoftGraphOnenoteSection[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgGroupSiteOnenote -GroupId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphOnenote>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,14 +38,14 @@ Update-MgGroupSiteOnenote -InputObject <ISitesIdentity> [-ResponseHeadersVariabl
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Notebooks <IMicrosoftGraphNotebook[]>]
  [-Operations <IMicrosoftGraphOnenoteOperation[]>] [-Pages <IMicrosoftGraphOnenotePage[]>]
  [-Resources <IMicrosoftGraphOnenoteResource[]>] [-SectionGroups <IMicrosoftGraphSectionGroup[]>]
- [-Sections <IMicrosoftGraphOnenoteSection[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Sections <IMicrosoftGraphOnenoteSection[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgGroupSiteOnenote -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphOnenote>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -84,6 +84,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -204,21 +219,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Resources
 The image and other file resources in OneNote pages.
 Getting a resources collection isn't supported, but you can get the binary content of a specific resource.
@@ -298,21 +298,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -443,7 +428,7 @@ Read-only.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
           - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section. 
+        - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section.
 Read-only.
 Nullable.
           - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
@@ -455,7 +440,7 @@ Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[Content <Byte- `[]`>]`: The page's HTML content.
-          - `[ContentUrl <String>]`: The URL for the page's HTML content. 
+          - `[ContentUrl <String>]`: The URL for the page's HTML content.
 Read-only.
           - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page.
 Read-only.
@@ -474,7 +459,7 @@ Read-only.
           - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
           - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
           - `[Title <String>]`: The title of the page.
-          - `[UserTags <String- `[]`>]`: 
+          - `[UserTags <String- `[]`>]`:
         - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section.
 Read-only.
         - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
@@ -506,7 +491,7 @@ Read-only.
     - `[ResourceId <String>]`: The resource id.
     - `[ResourceLocation <String>]`: The resource URI for the object.
 For example, the resource URI for a copied page or section.
-  - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The pages in all OneNote notebooks that are owned by the user or group. 
+  - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The pages in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
   - `[Resources <IMicrosoftGraphOnenoteResource- `[]`>]`: The image and other file resources in OneNote pages.
@@ -519,10 +504,10 @@ Read-only.
 Read-only.
     - `[Content <Byte- `[]`>]`: The content stream
     - `[ContentUrl <String>]`: The URL for downloading the content
-  - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in all OneNote notebooks that are owned by the user or group. 
+  - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
-  - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in all OneNote notebooks that are owned by the user or group. 
+  - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
 
@@ -658,7 +643,7 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
         - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section. 
+      - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section.
 Read-only.
 Nullable.
         - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
@@ -670,7 +655,7 @@ Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[Content <Byte- `[]`>]`: The page's HTML content.
-        - `[ContentUrl <String>]`: The URL for the page's HTML content. 
+        - `[ContentUrl <String>]`: The URL for the page's HTML content.
 Read-only.
         - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page.
 Read-only.
@@ -689,7 +674,7 @@ Read-only.
         - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
         - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
         - `[Title <String>]`: The title of the page.
-        - `[UserTags <String- `[]`>]`: 
+        - `[UserTags <String- `[]`>]`:
       - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section.
 Read-only.
       - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
@@ -735,7 +720,7 @@ Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Content <Byte- `[]`>]`: The page's HTML content.
-  - `[ContentUrl <String>]`: The URL for the page's HTML content. 
+  - `[ContentUrl <String>]`: The URL for the page's HTML content.
 Read-only.
   - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page.
 Read-only.
@@ -837,7 +822,7 @@ Read-only.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
           - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section. 
+        - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section.
 Read-only.
 Nullable.
         - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section.
@@ -856,7 +841,7 @@ Read-only.
     - `[UserRole <String>]`: onenoteUserRole
   - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
   - `[Title <String>]`: The title of the page.
-  - `[UserTags <String- `[]`>]`: 
+  - `[UserTags <String- `[]`>]`:
 
 RESOURCES `<IMicrosoftGraphOnenoteResource- `[]`>`: The image and other file resources in OneNote pages.
 Getting a resources collection isn't supported, but you can get the binary content of a specific resource.
@@ -953,7 +938,7 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
         - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section. 
+      - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section.
 Read-only.
 Nullable.
         - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
@@ -965,7 +950,7 @@ Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[Content <Byte- `[]`>]`: The page's HTML content.
-        - `[ContentUrl <String>]`: The URL for the page's HTML content. 
+        - `[ContentUrl <String>]`: The URL for the page's HTML content.
 Read-only.
         - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page.
 Read-only.
@@ -984,7 +969,7 @@ Read-only.
         - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
         - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
         - `[Title <String>]`: The title of the page.
-        - `[UserTags <String- `[]`>]`: 
+        - `[UserTags <String- `[]`>]`:
       - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section.
 Read-only.
       - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
@@ -1039,7 +1024,7 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Href <String>]`: The URL of the link.
     - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-  - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section. 
+  - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section.
 Read-only.
 Nullable.
     - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
@@ -1051,7 +1036,7 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Content <Byte- `[]`>]`: The page's HTML content.
-    - `[ContentUrl <String>]`: The URL for the page's HTML content. 
+    - `[ContentUrl <String>]`: The URL for the page's HTML content.
 Read-only.
     - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page.
 Read-only.
@@ -1133,7 +1118,7 @@ Read-only.
       - `[UserRole <String>]`: onenoteUserRole
     - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
     - `[Title <String>]`: The title of the page.
-    - `[UserTags <String- `[]`>]`: 
+    - `[UserTags <String- `[]`>]`:
   - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section.
 Read-only.
   - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook

@@ -21,7 +21,7 @@ You can also use the method updateAudience to update the deploymentAudience.
 Update-MgBetaWindowsUpdatesPolicyAudienceById -UpdatePolicyId <String> [-ResponseHeadersVariable <String>]
  [-AddExclusions <String[]>] [-AddMembers <String[]>] [-AdditionalProperties <Hashtable>]
  [-MemberEntityType <String>] [-RemoveExclusions <String[]>] [-RemoveMembers <String[]>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgBetaWindowsUpdatesPolicyAudienceById -UpdatePolicyId <String> [-Respons
 ```
 Update-MgBetaWindowsUpdatesPolicyAudienceById -UpdatePolicyId <String>
  -BodyParameter <IPathsObvu5AAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencebyidPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Update-MgBetaWindowsUpdatesPolicyAudienceById -UpdatePolicyId <String>
 Update-MgBetaWindowsUpdatesPolicyAudienceById -InputObject <IWindowsUpdatesIdentity>
  [-ResponseHeadersVariable <String>] [-AddExclusions <String[]>] [-AddMembers <String[]>]
  [-AdditionalProperties <Hashtable>] [-MemberEntityType <String>] [-RemoveExclusions <String[]>]
- [-RemoveMembers <String[]>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-RemoveMembers <String[]>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ Update-MgBetaWindowsUpdatesPolicyAudienceById -InputObject <IWindowsUpdatesIdent
 ```
 Update-MgBetaWindowsUpdatesPolicyAudienceById -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IPathsObvu5AAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencebyidPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -121,6 +121,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -182,21 +197,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RemoveExclusions
 
 
@@ -251,21 +251,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

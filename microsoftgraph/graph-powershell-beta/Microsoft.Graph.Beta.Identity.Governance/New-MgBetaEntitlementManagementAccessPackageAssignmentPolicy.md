@@ -31,14 +31,14 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy [-ResponseHeadersVa
  [-RequestApprovalSettings <IMicrosoftGraphApprovalSettings>]
  [-RequestorSettings <IMicrosoftGraphRequestorSettings>]
  [-VerifiableCredentialSettings <IMicrosoftGraphVerifiableCredentialSettings>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
  -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -562,6 +562,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CreatedBy
 
 
@@ -752,21 +767,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Questions
 Questions that are posed to the requestor.
 To construct, see NOTES section for QUESTIONS properties and create a hash table.
@@ -838,21 +838,6 @@ To construct, see NOTES section for VERIFIABLECREDENTIALSETTINGS properties and 
 Type: IMicrosoftGraphVerifiableCredentialSettings
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

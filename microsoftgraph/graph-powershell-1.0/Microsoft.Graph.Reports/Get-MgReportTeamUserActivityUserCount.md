@@ -20,13 +20,13 @@ The activity types are number of teams chat messages, private chat messages, cal
 ### Get (Default)
 ```
 Get-MgReportTeamUserActivityUserCount -Period <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportTeamUserActivityUserCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ The activity types are number of teams chat messages, private chat messages, cal
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportTeamUserActivityUserCount -Period $periodId 
+Get-MgReportTeamUserActivityUserCount -Period $periodId
 
 ```
 This example shows how to use the Get-MgReportTeamUserActivityUserCount Cmdlet.
@@ -119,21 +119,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -18,13 +18,13 @@ New-MgBetaSiteListActivity -ListId <String> -SiteId <String> [-ResponseHeadersVa
  [-Action <IMicrosoftGraphItemActionSet>] [-Actor <IMicrosoftGraphIdentitySet>]
  [-AdditionalProperties <Hashtable>] [-DriveItem <IMicrosoftGraphDriveItem>] [-Id <String>]
  [-ListItem <IMicrosoftGraphListItem>] [-Times <IMicrosoftGraphItemActivityTimeSet>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSiteListActivity -ListId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphItemActivityOld>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,13 +34,13 @@ New-MgBetaSiteListActivity -InputObject <ISitesIdentity> [-ResponseHeadersVariab
  [-Action <IMicrosoftGraphItemActionSet>] [-Actor <IMicrosoftGraphIdentitySet>]
  [-AdditionalProperties <Hashtable>] [-DriveItem <IMicrosoftGraphDriveItem>] [-Id <String>]
  [-ListItem <IMicrosoftGraphListItem>] [-Times <IMicrosoftGraphItemActivityTimeSet>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaSiteListActivity -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphItemActivityOld>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -111,6 +111,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -208,21 +223,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -261,21 +261,6 @@ To construct, see NOTES section for TIMES properties and create a hash table.
 Type: IMicrosoftGraphItemActivityTimeSet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -17,7 +17,7 @@ Reply with quote to a single chat message or multiple chat messages in a chat.
 ```
 Invoke-MgBetaGraphTeamPrimaryChannelMessageReply -ChatMessageId <String> -TeamId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>]
- [-ReplyMessage <IMicrosoftGraphChatMessage>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ReplyMessage <IMicrosoftGraphChatMessage>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -25,7 +25,7 @@ Invoke-MgBetaGraphTeamPrimaryChannelMessageReply -ChatMessageId <String> -TeamId
 ```
 Invoke-MgBetaGraphTeamPrimaryChannelMessageReply -ChatMessageId <String> -TeamId <String>
  -Body <IPaths1Nc9Lr5TeamsTeamIdPrimarychannelMessagesChatmessageIdRepliesMicrosoftGraphReplywithquotePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Invoke-MgBetaGraphTeamPrimaryChannelMessageReply -ChatMessageId <String> -TeamId
 ```
 Invoke-MgBetaGraphTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>]
- [-ReplyMessage <IMicrosoftGraphChatMessage>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ReplyMessage <IMicrosoftGraphChatMessage>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ Invoke-MgBetaGraphTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity>
 Invoke-MgBetaGraphTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths1Nc9Lr5TeamsTeamIdPrimarychannelMessagesChatmessageIdRepliesMicrosoftGraphReplywithquotePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -114,6 +114,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -152,21 +167,6 @@ Accept wildcard characters: False
 Type: String[]
 Parameter Sets: GraphExpanded, GraphViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -215,21 +215,6 @@ Parameter Sets: GraphExpanded, Graph
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

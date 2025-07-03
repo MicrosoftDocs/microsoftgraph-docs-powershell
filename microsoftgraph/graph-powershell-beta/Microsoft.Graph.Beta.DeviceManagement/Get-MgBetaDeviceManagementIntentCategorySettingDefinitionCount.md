@@ -16,7 +16,7 @@ Get the number of the resource
 ```
 Get-MgBetaDeviceManagementIntentCategorySettingDefinitionCount -DeviceManagementIntentId <String>
  -DeviceManagementIntentSettingCategoryId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Get-MgBetaDeviceManagementIntentCategorySettingDefinitionCount -DeviceManagement
 ```
 Get-MgBetaDeviceManagementIntentCategorySettingDefinitionCount -InputObject <IDeviceManagementIdentity>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -115,21 +115,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
