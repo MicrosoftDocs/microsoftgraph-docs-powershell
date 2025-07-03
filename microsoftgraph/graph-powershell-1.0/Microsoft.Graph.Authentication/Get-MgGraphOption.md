@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Gets global configurations that apply to the SDK.
-For example, check if Web Account Manager (WAM) support has been enabled.
 
 ## SYNTAX
 
@@ -26,7 +25,7 @@ For example, check if Web Account Manager (WAM) support has been enabled.
 ### Example 1: Check if WAM support has been enabled
 ```
 PS C:\> Get-MgGraphOption
-EnableWAMForMSGraph 
+EnableWAMForMSGraph
 --------------------
                 True
 ```

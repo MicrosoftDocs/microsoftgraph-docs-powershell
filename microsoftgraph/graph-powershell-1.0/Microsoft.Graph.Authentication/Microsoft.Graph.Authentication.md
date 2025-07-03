@@ -1,8 +1,8 @@
 ﻿---
 Module Name: Microsoft.Graph.Authentication
 Module Guid: 883916f2-9184-46ee-b1f8-b6a2fb784cee
-Download Help Link: {{ Update Download Link }}
-Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
+Download Help Link:
+Help Version:
 Locale: en-US
 ---
 
@@ -11,45 +11,44 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ## Microsoft.Graph.Authentication Cmdlets
-### [Find-MgGraphCommand](Find-MgGraphCommand.md)
-{{ Fill in the Description }}
-
-### [Find-MgGraphPermission](Find-MgGraphPermission.md)
-{{ Fill in the Description }}
-
 ### [Add-MgEnvironment](Add-MgEnvironment.md)
-{{ Fill in the Description }}
+Adds Microsoft Graph environment to the settings file.
 
 ### [Connect-MgGraph](Connect-MgGraph.md)
-{{ Fill in the Description }}
+You must invoke Connect-MgGraph before any commands that access Microsoft Graph.
 
 ### [Disconnect-MgGraph](Disconnect-MgGraph.md)
-{{ Fill in the Description }}
+Use Disconnect-MgGraph to sign out.
+
+### [Find-MgGraphCommand](Find-MgGraphCommand.md)
+Find-MgGraphCommand aims to make it easier for you to discover which API path a command calls, by providing a URI or a command name.
+
+### [Find-MgGraphPermission](Find-MgGraphPermission.md)
+Retrieves permissions that are applicable to a certain domain.
 
 ### [Get-MgContext](Get-MgContext.md)
-{{ Fill in the Description }}
+Retrieves session details.
 
 ### [Get-MgEnvironment](Get-MgEnvironment.md)
-{{ Fill in the Description }}
+When you use Connect-MgGraph, you can choose to target other environments. By default, Connect-MgGraph targets the global public cloud.
 
 ### [Get-MgGraphOption](Get-MgGraphOption.md)
-{{ Fill in the Description }}
+Gets global configurations that apply to the SDK.
 
 ### [Get-MgRequestContext](Get-MgRequestContext.md)
-{{ Fill in the Description }}
+Gets graph request context details
 
 ### [Invoke-MgGraphRequest](Invoke-MgGraphRequest.md)
-{{ Fill in the Description }}
+This command issues REST API requests.
 
 ### [Remove-MgEnvironment](Remove-MgEnvironment.md)
-{{ Fill in the Description }}
+Removes Microsoft Graph environment to the settings file
 
 ### [Set-MgEnvironment](Set-MgEnvironment.md)
-{{ Fill in the Description }}
+Sets a Microsoft Graph environment to the settings file.
 
 ### [Set-MgGraphOption](Set-MgGraphOption.md)
-{{ Fill in the Description }}
+Sets global configurations that apply to the SDK.
 
 ### [Set-MgRequestContext](Set-MgRequestContext.md)
-{{ Fill in the Description }}
-
+Sets request context for Microsoft Graph invocations
