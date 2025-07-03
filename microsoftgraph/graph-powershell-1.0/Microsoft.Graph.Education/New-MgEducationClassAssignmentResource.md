@@ -23,21 +23,21 @@ You can create the following types of assignment resources: Every resource has a
 New-MgEducationClassAssignmentResource -EducationAssignmentId <String> -EducationClassId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DistributeForStudentWork]
  [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEducationClassAssignmentResource -EducationAssignmentId <String> -EducationClassId <String>
  -BodyParameter <IMicrosoftGraphEducationAssignmentResource> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgEducationClassAssignmentResource -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DistributeForStudentWork] [-Id <String>]
- [-Resource <IMicrosoftGraphEducationResource>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Resource <IMicrosoftGraphEducationResource>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,7 +45,7 @@ New-MgEducationClassAssignmentResource -InputObject <IEducationIdentity> [-Respo
 ```
 New-MgEducationClassAssignmentResource -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationAssignmentResource> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -239,6 +239,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DistributeForStudentWork
 Indicates whether this resource should be copied to each student submission for modification and submission.
 Required
@@ -332,21 +347,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Resource
 educationResource
 To construct, see NOTES section for RESOURCE properties and create a hash table.
@@ -370,21 +370,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

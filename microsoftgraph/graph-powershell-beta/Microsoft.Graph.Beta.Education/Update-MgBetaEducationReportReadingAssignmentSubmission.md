@@ -22,14 +22,14 @@ Update-MgBetaEducationReportReadingAssignmentSubmission -ReadingAssignmentSubmis
  [-MissedQuestionMarks <Int64>] [-MissedShorts <Int64>] [-MonotoneScore <Double>] [-Omissions <Int64>]
  [-Repetitions <Int64>] [-SelfCorrections <Int64>] [-StudentId <String>] [-SubmissionDateTime <DateTime>]
  [-SubmissionId <String>] [-UnexpectedPauses <Int64>] [-WordCount <Int64>] [-WordsPerMinute <Double>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEducationReportReadingAssignmentSubmission -ReadingAssignmentSubmissionId <String>
  -BodyParameter <IMicrosoftGraphReadingAssignmentSubmission> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -42,14 +42,14 @@ Update-MgBetaEducationReportReadingAssignmentSubmission -InputObject <IEducation
  [-MissedQuestionMarks <Int64>] [-MissedShorts <Int64>] [-MonotoneScore <Double>] [-Omissions <Int64>]
  [-Repetitions <Int64>] [-SelfCorrections <Int64>] [-StudentId <String>] [-SubmissionDateTime <DateTime>]
  [-SubmissionId <String>] [-UnexpectedPauses <Int64>] [-WordCount <Int64>] [-WordsPerMinute <Double>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationReportReadingAssignmentSubmission -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphReadingAssignmentSubmission> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -159,6 +159,21 @@ ID of the class this reading progress is associated with.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -335,21 +350,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ReadingAssignmentSubmissionId
 The unique identifier of readingAssignmentSubmission
 
@@ -472,6 +472,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WordCount
 Words count of the reading progress.
 
@@ -498,37 +514,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

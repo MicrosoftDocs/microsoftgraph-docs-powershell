@@ -18,7 +18,7 @@ Set-MgBetaDeviceAppManagementWdacSupplementalPolicy
  -WindowsDefenderApplicationControlSupplementalPolicyId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>]
  [-WdacPolicyAssignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Set-MgBetaDeviceAppManagementWdacSupplementalPolicy
 Set-MgBetaDeviceAppManagementWdacSupplementalPolicy
  -WindowsDefenderApplicationControlSupplementalPolicyId <String>
  -BodyParameter <IPaths1Pgdjs1DeviceappmanagementWdacsupplementalpoliciesWindowsdefenderapplicationcontrolsupplementalpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Set-MgBetaDeviceAppManagementWdacSupplementalPolicy
 Set-MgBetaDeviceAppManagementWdacSupplementalPolicy -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-WdacPolicyAssignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -44,7 +44,7 @@ Set-MgBetaDeviceAppManagementWdacSupplementalPolicy -InputObject <IDevicesCorpor
 ```
 Set-MgBetaDeviceAppManagementWdacSupplementalPolicy -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPaths1Pgdjs1DeviceappmanagementWdacsupplementalpoliciesWindowsdefenderapplicationcontrolsupplementalpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -94,6 +94,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -140,21 +155,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -186,36 +186,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WindowsDefenderApplicationControlSupplementalPolicyId
-The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
-
-```yaml
-Type: String
-Parameter Sets: AssignExpanded, Assign
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -226,6 +196,21 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsDefenderApplicationControlSupplementalPolicyId
+The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
+
+```yaml
+Type: String
+Parameter Sets: AssignExpanded, Assign
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

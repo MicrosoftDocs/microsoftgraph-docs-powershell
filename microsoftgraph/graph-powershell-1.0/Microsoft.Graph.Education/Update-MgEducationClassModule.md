@@ -26,14 +26,14 @@ Update-MgEducationClassModule -EducationClassId <String> -EducationModuleId <Str
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsPinned] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-Resources <IMicrosoftGraphEducationModuleResource[]>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEducationClassModule -EducationClassId <String> -EducationModuleId <String>
  -BodyParameter <IMicrosoftGraphEducationModule> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -42,13 +42,13 @@ Update-MgEducationClassModule -InputObject <IEducationIdentity> [-ResponseHeader
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IsPinned] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-Resources <IMicrosoftGraphEducationModuleResource[]>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgEducationClassModule -InputObject <IEducationIdentity> -BodyParameter <IMicrosoftGraphEducationModule>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -114,6 +114,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -271,21 +286,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Resources
 Learning objects that are associated with this module.
 Only teachers can modify this list.
@@ -326,21 +326,6 @@ educationModuleStatus
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

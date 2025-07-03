@@ -17,14 +17,14 @@ Invoke action downloadAppDiagnostics
 Invoke-MgBetaDownloadDeviceManagementComanagedDeviceAppDiagnostic -OutFile <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Request <IMicrosoftGraphPowerliftDownloadRequest>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Download
 ```
 Invoke-MgBetaDownloadDeviceManagementComanagedDeviceAppDiagnostic -OutFile <String>
  -Body <IPaths1K3Iuv6DevicemanagementComanageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -74,6 +74,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -119,21 +134,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Request
 Request used to download app diagnostic files.
 To construct, see NOTES section for REQUEST properties and create a hash table.
@@ -157,21 +157,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

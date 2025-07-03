@@ -19,7 +19,7 @@ Create new navigation property to assignments for deviceManagement
 ```
 New-MgDeviceManagementVirtualEndpointUserSettingAssignment -CloudPcUserSettingId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-Id <String>] [-Target <Hashtable>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Id <String>] [-Target <Hashtable>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ New-MgDeviceManagementVirtualEndpointUserSettingAssignment -CloudPcUserSettingId
 ```
 New-MgDeviceManagementVirtualEndpointUserSettingAssignment -CloudPcUserSettingId <String>
  -BodyParameter <IMicrosoftGraphCloudPcUserSettingAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -35,7 +35,7 @@ New-MgDeviceManagementVirtualEndpointUserSettingAssignment -CloudPcUserSettingId
 New-MgDeviceManagementVirtualEndpointUserSettingAssignment
  -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-Target <Hashtable>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -43,7 +43,7 @@ New-MgDeviceManagementVirtualEndpointUserSettingAssignment
 New-MgDeviceManagementVirtualEndpointUserSettingAssignment
  -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphCloudPcUserSettingAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -93,6 +93,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -163,21 +178,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -200,21 +200,6 @@ cloudPcManagementAssignmentTarget
 Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

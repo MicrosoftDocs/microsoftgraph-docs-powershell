@@ -26,14 +26,14 @@ Update-MgBetaDeviceManagementMobileThreatDefenseConnector -MobileThreatDefenseCo
  [-MicrosoftDefenderForEndpointAttachEnabled] [-PartnerState <MobileThreatPartnerTenantState>]
  [-PartnerUnresponsivenessThresholdInDays <Int32>] [-PartnerUnsupportedOSVersionBlocked]
  [-WindowsDeviceBlockedOnMissingPartnerData] [-WindowsEnabled] [-WindowsMobileApplicationManagementEnabled]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementMobileThreatDefenseConnector -MobileThreatDefenseConnectorId <String>
  -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,7 +48,7 @@ Update-MgBetaDeviceManagementMobileThreatDefenseConnector
  [-MicrosoftDefenderForEndpointAttachEnabled] [-PartnerState <MobileThreatPartnerTenantState>]
  [-PartnerUnresponsivenessThresholdInDays <Int32>] [-PartnerUnsupportedOSVersionBlocked]
  [-WindowsDeviceBlockedOnMissingPartnerData] [-WindowsEnabled] [-WindowsMobileApplicationManagementEnabled]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -56,7 +56,7 @@ Update-MgBetaDeviceManagementMobileThreatDefenseConnector
 Update-MgBetaDeviceManagementMobileThreatDefenseConnector
  -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -184,6 +184,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -404,13 +419,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
 
 ```yaml
-Type: ActionPreference
+Type: String
 Parameter Sets: (All)
-Aliases: proga
+Aliases: RHV
 
 Required: False
 Position: Named
@@ -419,13 +434,14 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ResponseHeadersVariable
-Optional Response Headers Variable.
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
-Type: String
+Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: RHV
+Aliases: wi
 
 Required: False
 Position: Named
@@ -481,37 +497,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

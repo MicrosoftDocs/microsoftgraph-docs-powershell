@@ -22,7 +22,7 @@ Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
  -CrossTenantAccessPolicyConfigurationPartnerTenantId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-ExternalCloudAuthorizedApplicationId <String>]
  [-TenantId <String>] [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
@@ -30,7 +30,7 @@ Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
 Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
  -CrossTenantAccessPolicyConfigurationPartnerTenantId <String>
  -BodyParameter <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -39,14 +39,14 @@ Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObje
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-ExternalCloudAuthorizedApplicationId <String>] [-TenantId <String>]
  [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -110,6 +110,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -191,21 +206,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -245,21 +245,6 @@ To construct, see NOTES section for USERSYNCINBOUND properties and create a hash
 Type: IMicrosoftGraphCrossTenantUserSyncInbound
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

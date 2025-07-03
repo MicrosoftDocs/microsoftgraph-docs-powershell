@@ -36,13 +36,13 @@ Update-MgBetaDirectory [-ResponseHeadersVariable <String>] [-AdditionalPropertie
  [-Recommendations <IMicrosoftGraphRecommendation[]>]
  [-SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>]
  [-Subscriptions <IMicrosoftGraphCompanySubscription[]>] [-Templates <IMicrosoftGraphTemplate>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDirectory -BodyParameter <IMicrosoftGraphDirectory> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -139,6 +139,21 @@ To construct, see NOTES section for CERTIFICATEAUTHORITIES properties and create
 Type: IMicrosoftGraphCertificateAuthorityPath
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -357,21 +372,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PublicKeyInfrastructure
 publicKeyInfrastructureRoot
 To construct, see NOTES section for PUBLICKEYINFRASTRUCTURE properties and create a hash table.
@@ -459,21 +459,6 @@ To construct, see NOTES section for TEMPLATES properties and create a hash table
 Type: IMicrosoftGraphTemplate
 Parameter Sets: UpdateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

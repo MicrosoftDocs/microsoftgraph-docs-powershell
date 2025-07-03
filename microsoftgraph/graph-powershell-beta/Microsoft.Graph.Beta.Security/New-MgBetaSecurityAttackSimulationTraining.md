@@ -23,14 +23,14 @@ New-MgBetaSecurityAttackSimulationTraining [-ResponseHeadersVariable <String>]
  [-DurationInMinutes <Int32>] [-HasEvaluation] [-Id <String>]
  [-LanguageDetails <IMicrosoftGraphTrainingLanguageDetail[]>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
  [-LastModifiedDateTime <DateTime>] [-Source <String>] [-SupportedLocales <String[]>] [-Tags <String[]>]
- [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Type <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityAttackSimulationTraining -BodyParameter <IMicrosoftGraphTraining>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -84,6 +84,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -275,21 +290,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -357,21 +357,6 @@ trainingType
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

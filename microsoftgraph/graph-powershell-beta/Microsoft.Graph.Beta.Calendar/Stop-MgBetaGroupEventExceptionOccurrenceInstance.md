@@ -21,7 +21,7 @@ You need to be an organizer to cancel a meeting.' This action differs from Delet
 ```
 Stop-MgBetaGroupEventExceptionOccurrenceInstance -EventId <String> -EventId1 <String> -EventId2 <String>
  -GroupId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Comment <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Stop-MgBetaGroupEventExceptionOccurrenceInstance -EventId <String> -EventId1 <St
 Stop-MgBetaGroupEventExceptionOccurrenceInstance -EventId <String> -EventId1 <String> -EventId2 <String>
  -GroupId <String>
  -BodyParameter <IPaths1Itiyb7GroupsGroupIdEventsEventIdExceptionoccurrencesEventId1InstancesEventId2MicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Stop-MgBetaGroupEventExceptionOccurrenceInstance -EventId <String> -EventId1 <St
 ```
 Stop-MgBetaGroupEventExceptionOccurrenceInstance -InputObject <ICalendarIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Comment <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ Stop-MgBetaGroupEventExceptionOccurrenceInstance -InputObject <ICalendarIdentity
 ```
 Stop-MgBetaGroupEventExceptionOccurrenceInstance -InputObject <ICalendarIdentity>
  -BodyParameter <IPaths1Itiyb7GroupsGroupIdEventsEventIdExceptionoccurrencesEventId1InstancesEventId2MicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -99,6 +99,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CancelExpanded, CancelViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -213,21 +228,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -235,21 +235,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

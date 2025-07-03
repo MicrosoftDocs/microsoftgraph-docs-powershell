@@ -19,14 +19,14 @@ Get the number of the resource
 ```
 Get-MgGroupOnenoteNotebookSectionGroupSectionCount -GroupId <String> -NotebookId <String>
  -SectionGroupId <String> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgGroupOnenoteNotebookSectionGroupSectionCount -InputObject <INotesIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -106,21 +106,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

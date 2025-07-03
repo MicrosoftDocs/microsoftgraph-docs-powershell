@@ -27,14 +27,14 @@ A channel can't be archived or unarchived if its team is archived.
 ```
 Invoke-MgArchiveTeamPrimaryChannel -TeamId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ShouldSetSpoSiteReadOnlyForMembers] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Archive
 ```
 Invoke-MgArchiveTeamPrimaryChannel -TeamId <String>
  -BodyParameter <IPaths136Ckd2TeamsTeamIdPrimarychannelMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,14 +42,14 @@ Invoke-MgArchiveTeamPrimaryChannel -TeamId <String>
 ```
 Invoke-MgArchiveTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ShouldSetSpoSiteReadOnlyForMembers] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ArchiveViaIdentity
 ```
 Invoke-MgArchiveTeamPrimaryChannel -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths136Ckd2TeamsTeamIdPrimarychannelMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -95,6 +95,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -144,21 +159,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -204,21 +204,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -254,7 +239,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths136Ckd2TeamsTeamIdPrimarychannelMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ShouldSetSpoSiteReadOnlyForMembers <Boolean?>]`: 
+  - `[ShouldSetSpoSiteReadOnlyForMembers <Boolean?>]`:
 
 INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo

@@ -23,14 +23,14 @@ Use the start job only when the job is currently paused or in quarantine.
 ### Start (Default)
 ```
 Start-MgApplicationSynchronizationJob -ApplicationId <String> -SynchronizationJobId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### StartViaIdentity
 ```
 Start-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -54,6 +54,21 @@ Parameter Sets: Start
 Aliases: ObjectId
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -106,21 +121,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -145,21 +145,6 @@ Parameter Sets: Start
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

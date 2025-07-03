@@ -19,13 +19,13 @@ Update the navigation property storage in users
 ```
 Update-MgUserSettingStorage -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Quota <IMicrosoftGraphUnifiedStorageQuota>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserSettingStorage -UserId <String> -BodyParameter <IMicrosoftGraphUserStorage>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,13 +33,13 @@ Update-MgUserSettingStorage -UserId <String> -BodyParameter <IMicrosoftGraphUser
 ```
 Update-MgUserSettingStorage -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Quota <IMicrosoftGraphUnifiedStorageQuota>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserSettingStorage -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUserStorage>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -78,6 +78,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -128,21 +143,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Quota
 unifiedStorageQuota
 To construct, see NOTES section for QUOTA properties and create a hash table.
@@ -183,21 +183,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -245,18 +230,18 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Deleted <Int64?>]`: 
-    - `[ManageWebUrl <String>]`: 
-    - `[Remaining <Int64?>]`: 
-    - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`: 
-      - `[DisplayName <String>]`: 
-      - `[ManageWebUrl <String>]`: 
-      - `[Used <Int64?>]`: 
+    - `[Deleted <Int64?>]`:
+    - `[ManageWebUrl <String>]`:
+    - `[Remaining <Int64?>]`:
+    - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`:
+      - `[DisplayName <String>]`:
+      - `[ManageWebUrl <String>]`:
+      - `[Used <Int64?>]`:
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[State <String>]`: 
-    - `[Total <Int64?>]`: 
-    - `[Used <Int64?>]`: 
+    - `[State <String>]`:
+    - `[Total <Int64?>]`:
+    - `[Used <Int64?>]`:
 
 INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
@@ -285,17 +270,17 @@ QUOTA `<IMicrosoftGraphUnifiedStorageQuota>`: unifiedStorageQuota
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Deleted <Int64?>]`: 
-  - `[ManageWebUrl <String>]`: 
-  - `[Remaining <Int64?>]`: 
-  - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`: 
-    - `[DisplayName <String>]`: 
-    - `[ManageWebUrl <String>]`: 
-    - `[Used <Int64?>]`: 
+  - `[Deleted <Int64?>]`:
+  - `[ManageWebUrl <String>]`:
+  - `[Remaining <Int64?>]`:
+  - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`:
+    - `[DisplayName <String>]`:
+    - `[ManageWebUrl <String>]`:
+    - `[Used <Int64?>]`:
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[State <String>]`: 
-  - `[Total <Int64?>]`: 
+  - `[State <String>]`:
+  - `[Total <Int64?>]`:
   - `[Used <Int64?>]`:
 
 ## RELATED LINKS

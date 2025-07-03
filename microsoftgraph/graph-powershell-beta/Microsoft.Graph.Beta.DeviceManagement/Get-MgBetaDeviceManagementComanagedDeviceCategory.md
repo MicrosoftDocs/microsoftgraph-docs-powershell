@@ -16,14 +16,14 @@ Device category
 ```
 Get-MgBetaDeviceManagementComanagedDeviceCategory -ManagedDeviceId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaDeviceManagementComanagedDeviceCategory -InputObject <IDeviceManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -88,21 +88,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -20,14 +20,14 @@ New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance -RbacApplic
  [-EndDateTime <DateTime>] [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>]
  [-PrincipalId <String>] [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
  [-RoleEligibilityScheduleId <String>] [-StartDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance -RbacApplicationId <String>
  -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,14 +38,14 @@ New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance -InputObjec
  [-EndDateTime <DateTime>] [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>]
  [-PrincipalId <String>] [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
  [-RoleEligibilityScheduleId <String>] [-StartDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -118,6 +118,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -265,21 +280,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RbacApplicationId
 The unique identifier of rbacApplication
 
@@ -363,21 +363,6 @@ Time that the roleEligibilityScheduleInstance will start.
 Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -20,28 +20,28 @@ Update the navigation property resources in groups
 Update-MgBetaGroupOnenoteResource -GroupId <String> -OnenoteResourceId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
  [-ContentUrl <String>] [-Id <String>] [-Self <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupOnenoteResource -GroupId <String> -OnenoteResourceId <String>
  -BodyParameter <IMicrosoftGraphOnenoteResource> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaGroupOnenoteResource -InputObject <INotesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ContentUrl <String>] [-Id <String>]
- [-Self <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Self <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupOnenoteResource -InputObject <INotesIdentity> -BodyParameter <IMicrosoftGraphOnenoteResource>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -80,6 +80,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -190,21 +205,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -227,21 +227,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

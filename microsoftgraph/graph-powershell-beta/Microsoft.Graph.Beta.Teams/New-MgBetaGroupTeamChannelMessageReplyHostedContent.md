@@ -20,28 +20,28 @@ Create new navigation property to hostedContents for groups
 New-MgBetaGroupTeamChannelMessageReplyHostedContent -ChannelId <String> -ChatMessageId <String>
  -ChatMessageId1 <String> -GroupId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ContentBytesInputFile <String>] [-ContentType <String>] [-Id <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupTeamChannelMessageReplyHostedContent -ChannelId <String> -ChatMessageId <String>
  -ChatMessageId1 <String> -GroupId <String> -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaGroupTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentBytesInputFile <String>]
- [-ContentType <String>] [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ContentType <String>] [-Id <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity> -BodyParameter <Hashtable>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -121,6 +121,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -221,21 +236,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -243,21 +243,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

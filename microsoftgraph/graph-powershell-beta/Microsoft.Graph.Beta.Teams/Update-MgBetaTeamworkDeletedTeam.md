@@ -19,13 +19,13 @@ Update the navigation property deletedTeams in teamwork
 ```
 Update-MgBetaTeamworkDeletedTeam -DeletedTeamId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Channels <IMicrosoftGraphChannel[]>] [-Id <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTeamworkDeletedTeam -DeletedTeamId <String> -BodyParameter <IMicrosoftGraphDeletedTeam>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,13 +33,13 @@ Update-MgBetaTeamworkDeletedTeam -DeletedTeamId <String> -BodyParameter <IMicros
 ```
 Update-MgBetaTeamworkDeletedTeam -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Channels <IMicrosoftGraphChannel[]>] [-Id <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTeamworkDeletedTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphDeletedTeam>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -89,6 +89,21 @@ To construct, see NOTES section for CHANNELS properties and create a hash table.
 Type: IMicrosoftGraphChannel[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -159,21 +174,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -181,21 +181,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

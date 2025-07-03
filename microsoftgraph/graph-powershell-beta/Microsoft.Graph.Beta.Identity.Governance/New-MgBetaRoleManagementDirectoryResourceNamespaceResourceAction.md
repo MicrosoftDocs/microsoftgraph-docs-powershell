@@ -22,7 +22,7 @@ New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacRes
  [-AuthenticationContext <IMicrosoftGraphAuthenticationContextClassReference>]
  [-AuthenticationContextId <String>] [-Description <String>] [-Id <String>] [-IsAuthenticationContextSettable]
  [-IsPrivileged] [-Name <String>] [-ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]
- [-ResourceScopeId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-ResourceScopeId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacRes
 ```
 New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId <String>
  -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -40,7 +40,7 @@ New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <I
  [-AuthenticationContext <IMicrosoftGraphAuthenticationContextClassReference>]
  [-AuthenticationContextId <String>] [-Description <String>] [-Id <String>] [-IsAuthenticationContextSettable]
  [-IsPrivileged] [-Name <String>] [-ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]
- [-ResourceScopeId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-ResourceScopeId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -48,7 +48,7 @@ New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <I
 ```
 New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -133,6 +133,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -251,21 +266,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResourceScope
 unifiedRbacResourceScope
 To construct, see NOTES section for RESOURCESCOPE properties and create a hash table.
@@ -321,21 +321,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

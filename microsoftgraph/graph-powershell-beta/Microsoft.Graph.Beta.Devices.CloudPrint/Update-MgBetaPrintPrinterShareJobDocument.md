@@ -18,14 +18,14 @@ Update-MgBetaPrintPrinterShareJobDocument -PrintDocumentId <String> -PrintJobId 
  -PrinterShareId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphPrinterDocumentConfiguration>] [-ContentType <String>] [-DisplayName <String>]
  [-DownloadedDateTime <DateTime>] [-Id <String>] [-Size <Int64>] [-UploadedDateTime <DateTime>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPrintPrinterShareJobDocument -PrintDocumentId <String> -PrintJobId <String>
  -PrinterShareId <String> -BodyParameter <IMicrosoftGraphPrintDocument> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,14 +34,14 @@ Update-MgBetaPrintPrinterShareJobDocument -InputObject <IDevicesCloudPrintIdenti
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphPrinterDocumentConfiguration>] [-ContentType <String>] [-DisplayName <String>]
  [-DownloadedDateTime <DateTime>] [-Id <String>] [-Size <Int64>] [-UploadedDateTime <DateTime>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrintPrinterShareJobDocument -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IMicrosoftGraphPrintDocument> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -90,6 +90,21 @@ To construct, see NOTES section for CONFIGURATION properties and create a hash t
 Type: IMicrosoftGraphPrinterDocumentConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -237,21 +252,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -290,21 +290,6 @@ Accept wildcard characters: False
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

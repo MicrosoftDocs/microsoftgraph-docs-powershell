@@ -22,7 +22,7 @@ For example, GET /users/admin@contoso.com/authentication/windowsHelloForBusiness
 ```
 Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethodDevice -UserId <String>
  -WindowsHelloForBusinessAuthenticationMethodId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethodDevice -UserId <String>
 ```
 Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethodDevice -InputObject <IIdentitySignInsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -86,21 +86,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

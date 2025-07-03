@@ -26,13 +26,13 @@ Update-MgBetaSecurityIncident -IncidentId <String> [-ResponseHeadersVariable <St
  [-RecommendedActions <String>] [-RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>]
  [-RedirectIncidentId <String>] [-ResolvingComment <String>] [-Severity <String>] [-Status <String>]
  [-Summary <String>] [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityIncident -IncidentId <String> -BodyParameter <IMicrosoftGraphSecurityIncident>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,13 +46,13 @@ Update-MgBetaSecurityIncident -InputObject <ISecurityIdentity> [-ResponseHeaders
  [-RecommendedActions <String>] [-RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>]
  [-RedirectIncidentId <String>] [-ResolvingComment <String>] [-Severity <String>] [-Status <String>]
  [-Summary <String>] [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphSecurityIncident>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -177,6 +177,21 @@ To construct, see NOTES section for COMMENTS properties and create a hash table.
 Type: IMicrosoftGraphSecurityAlertComment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -367,21 +382,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RecommendedActions
 A rich text string that represents the actions that are reccomnded to take in order to resolve the incident.
 
@@ -528,21 +528,6 @@ The Microsoft Entra tenant in which the alert was created.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

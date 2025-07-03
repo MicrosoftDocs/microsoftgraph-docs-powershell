@@ -19,14 +19,14 @@ Get the number of the resource
 ```
 Get-MgSiteTermStoreSetParentGroupSetTermChildRelationCount -SetId <String> -SetId1 <String> -SiteId <String>
  -TermId <String> -TermId1 <String> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgSiteTermStoreSetParentGroupSetTermChildRelationCount -SetId <String> -SetId1 <String> -SiteId <String>
  -TermId <String> -TermId1 <String> -StoreId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -34,14 +34,14 @@ Get-MgSiteTermStoreSetParentGroupSetTermChildRelationCount -SetId <String> -SetI
 ```
 Get-MgSiteTermStoreSetParentGroupSetTermChildRelationCount -InputObject <ISitesIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgSiteTermStoreSetParentGroupSetTermChildRelationCount -InputObject <ISitesIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -94,21 +94,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

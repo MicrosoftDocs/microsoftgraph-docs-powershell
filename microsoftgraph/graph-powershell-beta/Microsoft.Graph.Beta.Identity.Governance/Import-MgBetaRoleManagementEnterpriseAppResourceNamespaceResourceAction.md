@@ -17,7 +17,7 @@ Invoke action importResourceActions
 Import-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction -RbacApplicationId <String>
  -UnifiedRbacResourceNamespaceId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Format <String>] [-OverwriteResourceNamespace] [-Value <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Import
@@ -25,7 +25,7 @@ Import-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction -RbacApp
 Import-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction -RbacApplicationId <String>
  -UnifiedRbacResourceNamespaceId <String>
  -BodyParameter <IPaths1Uh8VqdRolemanagementEnterpriseappsRbacapplicationIdResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Import-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction -RbacApp
 Import-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Format <String>] [-OverwriteResourceNamespace] [-Value <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ImportViaIdentity
@@ -42,7 +42,7 @@ Import-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction
 Import-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths1Uh8VqdRolemanagementEnterpriseappsRbacapplicationIdResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -81,6 +81,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -145,21 +160,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RbacApplicationId
 The unique identifier of rbacApplication
 
@@ -212,21 +212,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: ImportExpanded, ImportViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

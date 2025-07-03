@@ -20,7 +20,7 @@ Update the navigation property endpoints in servicePrincipals
 Update-MgBetaServicePrincipalEndpoint -EndpointId <String> -ServicePrincipalId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Capability <String>]
  [-DeletedDateTime <DateTime>] [-Id <String>] [-ProviderId <String>] [-ProviderName <String>]
- [-ProviderResourceId <String>] [-Uri <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ProviderResourceId <String>] [-Uri <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgBetaServicePrincipalEndpoint -EndpointId <String> -ServicePrincipalId <
 ```
 Update-MgBetaServicePrincipalEndpoint -EndpointId <String> -ServicePrincipalId <String>
  -BodyParameter <IMicrosoftGraphEndpoint> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,14 +36,14 @@ Update-MgBetaServicePrincipalEndpoint -EndpointId <String> -ServicePrincipalId <
 Update-MgBetaServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Capability <String>] [-DeletedDateTime <DateTime>] [-Id <String>]
  [-ProviderId <String>] [-ProviderName <String>] [-ProviderResourceId <String>] [-Uri <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaServicePrincipalEndpoint -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphEndpoint> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -93,6 +93,21 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -176,21 +191,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -283,21 +283,6 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -20,7 +20,7 @@ For more information on how to propose a time, and how to receive and accept a n
 Invoke-MgBetaAcceptUserEventExceptionOccurrenceTentatively -EventId <String> -EventId1 <String>
  -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Comment <String>]
  [-ProposedNewTime <IMicrosoftGraphTimeSlot>] [-SendResponse] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Accept
@@ -28,7 +28,7 @@ Invoke-MgBetaAcceptUserEventExceptionOccurrenceTentatively -EventId <String> -Ev
 Invoke-MgBetaAcceptUserEventExceptionOccurrenceTentatively -EventId <String> -EventId1 <String>
  -UserId <String>
  -BodyParameter <IPaths132Hit7UsersUserIdEventsEventIdExceptionoccurrencesEventId1MicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,14 +37,14 @@ Invoke-MgBetaAcceptUserEventExceptionOccurrenceTentatively -EventId <String> -Ev
 Invoke-MgBetaAcceptUserEventExceptionOccurrenceTentatively -InputObject <ICalendarIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Comment <String>]
  [-ProposedNewTime <IMicrosoftGraphTimeSlot>] [-SendResponse] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AcceptViaIdentity
 ```
 Invoke-MgBetaAcceptUserEventExceptionOccurrenceTentatively -InputObject <ICalendarIdentity>
  -BodyParameter <IPaths132Hit7UsersUserIdEventsEventIdExceptionoccurrencesEventId1MicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -95,6 +95,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -179,21 +194,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ProposedNewTime
 timeSlot
 To construct, see NOTES section for PROPOSEDNEWTIME properties and create a hash table.
@@ -249,21 +249,6 @@ Parameter Sets: AcceptExpanded, Accept
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

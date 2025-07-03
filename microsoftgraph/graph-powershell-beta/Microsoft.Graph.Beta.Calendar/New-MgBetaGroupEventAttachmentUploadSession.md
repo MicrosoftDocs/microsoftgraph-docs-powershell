@@ -28,14 +28,14 @@ The following are the steps to attach a file to an Outlook item using an upload 
 New-MgBetaGroupEventAttachmentUploadSession -EventId <String> -GroupId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupEventAttachmentUploadSession -EventId <String> -GroupId <String>
  -BodyParameter <IPaths155FaypGroupsGroupIdEventsEventIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,14 +44,14 @@ New-MgBetaGroupEventAttachmentUploadSession -EventId <String> -GroupId <String>
 New-MgBetaGroupEventAttachmentUploadSession -InputObject <ICalendarIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupEventAttachmentUploadSession -InputObject <ICalendarIdentity>
  -BodyParameter <IPaths155FaypGroupsGroupIdEventsEventIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -116,6 +116,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -EventId
 The unique identifier of event
 
@@ -177,21 +192,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -199,21 +199,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

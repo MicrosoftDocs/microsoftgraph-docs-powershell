@@ -21,7 +21,7 @@ An optional expiration date and time can be supplied.
 ```
 Set-MgBetaUserPresenceStatusMessage -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Set-MgBetaUserPresenceStatusMessage -UserId <String> [-ResponseHeadersVariable <
 ```
 Set-MgBetaUserPresenceStatusMessage -UserId <String>
  -BodyParameter <IPathsDovi6RUsersUserIdPresenceMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,14 +38,14 @@ Set-MgBetaUserPresenceStatusMessage -UserId <String>
 Set-MgBetaUserPresenceStatusMessage -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgBetaUserPresenceStatusMessage -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsDovi6RUsersUserIdPresenceMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -140,6 +140,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -186,21 +201,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -241,21 +241,6 @@ Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

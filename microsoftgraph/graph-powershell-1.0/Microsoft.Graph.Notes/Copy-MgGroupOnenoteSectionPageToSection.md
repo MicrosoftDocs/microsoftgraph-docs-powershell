@@ -21,7 +21,7 @@ For copy operations, you follow an asynchronous calling pattern:  First call the
 ```
 Copy-MgGroupOnenoteSectionPageToSection -GroupId <String> -OnenotePageId <String> -OnenoteSectionId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-GroupId1 <String>] [-Id <String>]
- [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Copy-MgGroupOnenoteSectionPageToSection -GroupId <String> -OnenotePageId <String
 ```
 Copy-MgGroupOnenoteSectionPageToSection [-GroupId <String>] -InputObject <INotesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Copy-MgGroupOnenoteSectionPageToSection [-GroupId <String>] -InputObject <INotes
 ```
 Copy-MgGroupOnenoteSectionPageToSection -GroupId <String> -OnenotePageId <String> -OnenoteSectionId <String>
  -BodyParameter <IPaths5Iixu6GroupsGroupIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,7 +45,7 @@ Copy-MgGroupOnenoteSectionPageToSection -GroupId <String> -OnenotePageId <String
 ```
 Copy-MgGroupOnenoteSectionPageToSection -InputObject <INotesIdentity>
  -BodyParameter <IPaths5Iixu6GroupsGroupIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -85,6 +85,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -206,21 +221,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -266,21 +266,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -316,10 +301,10 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths5Iixu6GroupsGroupIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[GroupId <String>]`: 
-  - `[Id <String>]`: 
-  - `[SiteCollectionId <String>]`: 
-  - `[SiteId <String>]`: 
+  - `[GroupId <String>]`:
+  - `[Id <String>]`:
+  - `[SiteCollectionId <String>]`:
+  - `[SiteId <String>]`:
 
 INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group

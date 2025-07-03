@@ -22,13 +22,13 @@ A delegated permission grant authorizes a client service principal (representing
 New-MgBetaOauth2PermissionGrant [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ClientId <String>] [-ConsentType <String>] [-ExpiryTime <DateTime>] [-Id <String>] [-PrincipalId <String>]
  [-ResourceId <String>] [-Scope <String>] [-StartTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaOauth2PermissionGrant -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -108,6 +108,21 @@ Supports $filter (eq only).
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -202,21 +217,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResourceId
 The id of the resource service principal to which access is authorized.
 This identifies the API that the client is authorized to attempt to call on behalf of a signed-in user.
@@ -275,21 +275,6 @@ Required.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

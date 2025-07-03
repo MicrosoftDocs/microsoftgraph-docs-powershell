@@ -20,7 +20,7 @@ Create new navigation property to versions for users
 New-MgBetaUserDriveListItemVersion -DriveId <String> -ListItemId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Fields <Hashtable>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Publication <IMicrosoftGraphPublicationFacet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Publication <IMicrosoftGraphPublicationFacet>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ New-MgBetaUserDriveListItemVersion -DriveId <String> -ListItemId <String> -UserI
 ```
 New-MgBetaUserDriveListItemVersion -DriveId <String> -ListItemId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphListItemVersion> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -36,7 +36,7 @@ New-MgBetaUserDriveListItemVersion -DriveId <String> -ListItemId <String> -UserI
 New-MgBetaUserDriveListItemVersion -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Fields <Hashtable>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Publication <IMicrosoftGraphPublicationFacet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Publication <IMicrosoftGraphPublicationFacet>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,7 +44,7 @@ New-MgBetaUserDriveListItemVersion -InputObject <IFilesIdentity> [-ResponseHeade
 ```
 New-MgBetaUserDriveListItemVersion -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphListItemVersion> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -82,6 +82,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -209,21 +224,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Publication
 publicationFacet
 To construct, see NOTES section for PUBLICATION properties and create a hash table.
@@ -264,21 +264,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

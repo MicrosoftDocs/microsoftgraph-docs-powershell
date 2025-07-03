@@ -19,7 +19,7 @@ Invoke action assignSensitivityLabel
 ```
 Set-MgBetaDriveItemSensitivityLabel -DriveId <String> -DriveItemId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AssignmentMethod <String>] [-JustificationText <String>]
- [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Set-MgBetaDriveItemSensitivityLabel -DriveId <String> -DriveItemId <String> [-Re
 ```
 Set-MgBetaDriveItemSensitivityLabel -DriveId <String> -DriveItemId <String>
  -BodyParameter <IPaths1K1XfclDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Set-MgBetaDriveItemSensitivityLabel -DriveId <String> -DriveItemId <String>
 ```
 Set-MgBetaDriveItemSensitivityLabel -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AssignmentMethod <String>] [-JustificationText <String>]
- [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,7 +43,7 @@ Set-MgBetaDriveItemSensitivityLabel -InputObject <IFilesIdentity> [-ResponseHead
 ```
 Set-MgBetaDriveItemSensitivityLabel -InputObject <IFilesIdentity>
  -BodyParameter <IPaths1K1XfclDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -105,6 +105,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -199,21 +214,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -236,21 +236,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

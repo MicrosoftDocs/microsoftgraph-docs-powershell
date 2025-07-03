@@ -20,7 +20,7 @@ Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
  [-DisplayName <String>] [-FailedUpdateCount <Int32>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
  [-SuccessfulUpdateCount <Int32>] [-TotalUpdateCount <Int32>] [-UpdateCategory <MacOSSoftwareUpdateCategory>]
  [-UpdateStateSummaries <IMicrosoftGraphMacOSSoftwareUpdateStateSummary[]>] [-UserId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -28,7 +28,7 @@ Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
 Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
  -MacOSSoftwareUpdateAccountSummaryId <String> -MacOSSoftwareUpdateCategorySummaryId <String>
  -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,14 +39,14 @@ Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
  [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-SuccessfulUpdateCount <Int32>] [-TotalUpdateCount <Int32>]
  [-UpdateCategory <MacOSSoftwareUpdateCategory>]
  [-UpdateStateSummaries <IMicrosoftGraphMacOSSoftwareUpdateStateSummary[]>] [-UserId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
  -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -93,6 +93,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -233,21 +248,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -331,21 +331,6 @@ The user ID.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

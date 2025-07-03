@@ -18,7 +18,7 @@ Update-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting
  -AccessPackageAssignmentPolicyId <String> -CustomExtensionStageSettingId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CustomExtension <IMicrosoftGraphCustomCalloutExtension>] [-Id <String>] [-Stage <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -26,7 +26,7 @@ Update-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting
 Update-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting
  -AccessPackageAssignmentPolicyId <String> -CustomExtensionStageSettingId <String>
  -BodyParameter <IMicrosoftGraphCustomExtensionStageSetting> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,7 +34,7 @@ Update-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting
 Update-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CustomExtension <IMicrosoftGraphCustomCalloutExtension>] [-Id <String>]
- [-Stage <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Stage <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ Update-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting
 ```
 Update-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting
  -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphCustomExtensionStageSetting>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -96,6 +96,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -177,21 +192,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -214,21 +214,6 @@ accessPackageCustomExtensionStage
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -17,14 +17,14 @@ Invoke action unenrollAssetsById
 Invoke-MgBetaGraphWindowsUpdatesDeploymentAudienceMember -DeploymentId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
  [-MemberEntityType <String>] [-UpdateCategory <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Graph
 ```
 Invoke-MgBetaGraphWindowsUpdatesDeploymentAudienceMember -DeploymentId <String>
  -Body <IPaths1T38YsrAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersMicrosoftGraphWindowsupdatesUnenrollassetsbyidPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Invoke-MgBetaGraphWindowsUpdatesDeploymentAudienceMember -DeploymentId <String>
 Invoke-MgBetaGraphWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
  [-MemberEntityType <String>] [-UpdateCategory <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GraphViaIdentity
@@ -41,7 +41,7 @@ Invoke-MgBetaGraphWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsU
 Invoke-MgBetaGraphWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesIdentity>
  [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths1T38YsrAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersMicrosoftGraphWindowsupdatesUnenrollassetsbyidPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -96,6 +96,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -190,21 +205,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -227,21 +227,6 @@ updateCategory
 Type: String
 Parameter Sets: GraphExpanded, GraphViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -20,7 +20,7 @@ Check in a checked out driveItem resource, which makes the version of the docume
 ```
 Invoke-MgBetaCheckinUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CheckInAs <String>]
- [-Comment <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Comment <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Invoke-MgBetaCheckinUserDriveItem -DriveId <String> -DriveItemId <String> -UserI
 ```
 Invoke-MgBetaCheckinUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
  -Body <IPathsTplberUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,14 +36,14 @@ Invoke-MgBetaCheckinUserDriveItem -DriveId <String> -DriveItemId <String> -UserI
 ```
 Invoke-MgBetaCheckinUserDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CheckInAs <String>] [-Comment <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CheckinViaIdentity
 ```
 Invoke-MgBetaCheckinUserDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsTplberUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -131,6 +131,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DriveId
 The unique identifier of drive
 
@@ -207,21 +222,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -246,21 +246,6 @@ Parameter Sets: CheckinExpanded, Checkin
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -21,14 +21,14 @@ Update-MgBetaSecurityHostSecurityProfile -HostSecurityProfileId <String> [-Respo
  [-NetBiosName <String>] [-NetworkInterfaces <IMicrosoftGraphNetworkInterface[]>] [-OS <String>]
  [-OSVersion <String>] [-ParentHost <String>] [-RelatedHostIds <String[]>] [-RiskScore <String>]
  [-Tags <String[]>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityHostSecurityProfile -HostSecurityProfileId <String>
  -BodyParameter <IMicrosoftGraphHostSecurityProfile> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,14 +40,14 @@ Update-MgBetaSecurityHostSecurityProfile -InputObject <ISecurityIdentity> [-Resp
  [-NetBiosName <String>] [-NetworkInterfaces <IMicrosoftGraphNetworkInterface[]>] [-OS <String>]
  [-OSVersion <String>] [-ParentHost <String>] [-RelatedHostIds <String[]>] [-RiskScore <String>]
  [-Tags <String[]>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityHostSecurityProfile -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphHostSecurityProfile> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -115,6 +115,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -362,21 +377,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RelatedHostIds
 
 
@@ -445,21 +445,6 @@ To construct, see NOTES section for VENDORINFORMATION properties and create a ha
 Type: IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -19,7 +19,7 @@ Create new navigation property to allMembers for groups
 ```
 New-MgBetaGroupTeamChannelMember -ChannelId <String> -GroupId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Roles <String[]>]
- [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ New-MgBetaGroupTeamChannelMember -ChannelId <String> -GroupId <String> [-Respons
 ```
 New-MgBetaGroupTeamChannelMember -ChannelId <String> -GroupId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Roles <String[]>]
- [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,21 +35,21 @@ New-MgBetaGroupTeamChannelMember -ChannelId <String> -GroupId <String> [-Respons
 ```
 New-MgBetaGroupTeamChannelMember -ChannelId <String> -GroupId <String>
  -BodyParameter <IMicrosoftGraphConversationMember> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupTeamChannelMember -ChannelId <String> -GroupId <String>
  -BodyParameter <IMicrosoftGraphConversationMember> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
 New-MgBetaGroupTeamChannelMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Roles <String[]>]
- [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -57,7 +57,7 @@ New-MgBetaGroupTeamChannelMember -InputObject <ITeamsIdentity> [-ResponseHeaders
 ```
 New-MgBetaGroupTeamChannelMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Roles <String[]>]
- [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -65,14 +65,14 @@ New-MgBetaGroupTeamChannelMember -InputObject <ITeamsIdentity> [-ResponseHeaders
 ```
 New-MgBetaGroupTeamChannelMember -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphConversationMember> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupTeamChannelMember -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphConversationMember> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -122,6 +122,21 @@ Parameter Sets: CreateExpanded, CreateExpanded1, Create1, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -205,21 +220,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -262,21 +262,6 @@ This property is settable only for members of a chat.
 Type: DateTime
 Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

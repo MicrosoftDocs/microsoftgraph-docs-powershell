@@ -18,7 +18,7 @@ This operation is used to assign a user to an access package, or to remove an ac
 ```
 New-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-Answers <IMicrosoftGraphAccessPackageAnswer[]>]
  [-Justification <String>] [-RequestType <String>] -AccessPackageId <String> -AssignmentPolicyId <String>
- -TargetId <String> [-StartDate <String>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ -TargetId <String> [-StartDate <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-Answers <IMicros
 ```
 New-MgBetaEntitlementManagementAccessPackageAssignmentRequest
  -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded
@@ -42,21 +42,21 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-ResponseHeadersV
  [-RequestType <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject>]
  [-Schedule <IMicrosoftGraphRequestSchedule>]
  [-VerifiedCredentialsData <IMicrosoftGraphVerifiedCredentialData[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateRequestAdminAddExternal
 ```
 New-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-Answers <IMicrosoftGraphAccessPackageAnswer[]>]
  [-Justification <String>] [-RequestType <String>] -AccessPackageId <String> -AssignmentPolicyId <String>
- [-StartDate <String>] -TargetEmail <String> [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-StartDate <String>] -TargetEmail <String> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CreateRequestAdminRemove
 ```
 New-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-Justification <String>] [-RequestType <String>]
- -AccessPackageAssignmentId <String> [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ -AccessPackageAssignmentId <String> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -235,6 +235,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CreatedDateTime
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -370,21 +385,6 @@ The requestor's supplied justification.
 Type: String
 Parameter Sets: CreateRequestAdminAdd, CreateExpanded, CreateRequestAdminAddExternal, CreateRequestAdminRemove
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -543,21 +543,6 @@ To construct, see NOTES section for VERIFIEDCREDENTIALSDATA properties and creat
 Type: IMicrosoftGraphVerifiedCredentialData[]
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

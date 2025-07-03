@@ -17,14 +17,14 @@ Invoke action enrollAssetsById
 Invoke-MgBetaEnrollWindowsUpdatesDeploymentAudienceMemberAssetById -DeploymentId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
  [-MemberEntityType <String>] [-UpdateCategory <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Enroll
 ```
 Invoke-MgBetaEnrollWindowsUpdatesDeploymentAudienceMemberAssetById -DeploymentId <String>
  -Body <IPaths1Cgy4T7AdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersMicrosoftGraphWindowsupdatesEnrollassetsbyidPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Invoke-MgBetaEnrollWindowsUpdatesDeploymentAudienceMemberAssetById -DeploymentId
 Invoke-MgBetaEnrollWindowsUpdatesDeploymentAudienceMemberAssetById -InputObject <IWindowsUpdatesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
  [-MemberEntityType <String>] [-UpdateCategory <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EnrollViaIdentity
@@ -41,7 +41,7 @@ Invoke-MgBetaEnrollWindowsUpdatesDeploymentAudienceMemberAssetById -InputObject 
 Invoke-MgBetaEnrollWindowsUpdatesDeploymentAudienceMemberAssetById -InputObject <IWindowsUpdatesIdentity>
  [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths1Cgy4T7AdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersMicrosoftGraphWindowsupdatesEnrollassetsbyidPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -96,6 +96,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -190,21 +205,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -227,21 +227,6 @@ updateCategory
 Type: String
 Parameter Sets: EnrollExpanded, EnrollViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

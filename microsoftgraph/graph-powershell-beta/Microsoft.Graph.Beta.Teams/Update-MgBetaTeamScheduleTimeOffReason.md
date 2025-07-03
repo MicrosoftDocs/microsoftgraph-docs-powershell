@@ -23,14 +23,14 @@ Update-MgBetaTeamScheduleTimeOffReason -TeamId <String> -TimeOffReasonId <String
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Code <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-IconType <String>] [-Id <String>]
  [-IsActive] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTeamScheduleTimeOffReason -TeamId <String> -TimeOffReasonId <String>
  -BodyParameter <IMicrosoftGraphTimeOffReason> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,7 +38,7 @@ Update-MgBetaTeamScheduleTimeOffReason -TeamId <String> -TimeOffReasonId <String
 Update-MgBetaTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Code <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-DisplayName <String>] [-IconType <String>] [-Id <String>] [-IsActive]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ Update-MgBetaTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-ResponseH
 ```
 Update-MgBetaTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphTimeOffReason> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -96,6 +96,21 @@ This field must be unique within the team in Microsoft Teams and uses an alphanu
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -230,21 +245,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -284,21 +284,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

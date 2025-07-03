@@ -20,13 +20,13 @@ Create new navigation property to operations for users
 New-MgUserAuthenticationOperation -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-LastActionDateTime <DateTime>] [-ResourceLocation <String>] [-Status <String>] [-StatusDetail <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserAuthenticationOperation -UserId <String> -BodyParameter <IMicrosoftGraphLongRunningOperation>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,14 +35,14 @@ New-MgUserAuthenticationOperation -UserId <String> -BodyParameter <IMicrosoftGra
 New-MgUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-LastActionDateTime <DateTime>] [-ResourceLocation <String>] [-Status <String>] [-StatusDetail <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphLongRunningOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -80,6 +80,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -164,21 +179,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResourceLocation
 URI of the resource that the operation is performed on.
 
@@ -248,21 +248,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

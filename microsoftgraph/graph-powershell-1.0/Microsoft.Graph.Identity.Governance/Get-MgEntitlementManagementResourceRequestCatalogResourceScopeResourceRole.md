@@ -20,7 +20,7 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
  -AccessPackageResourceRequestId <String> -AccessPackageResourceScopeId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### List
@@ -29,7 +29,7 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole -Acce
  -AccessPackageResourceRequestId <String> -AccessPackageResourceScopeId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
@@ -37,7 +37,7 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole -Acce
 Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole -AccessPackageResourceId <String>
  -AccessPackageResourceRequestId <String> -AccessPackageResourceRoleId <String>
  -AccessPackageResourceScopeId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole -Acce
 Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
  -AccessPackageResourceRequestId <String> -AccessPackageResourceRoleId <String>
  -AccessPackageResourceScopeId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -54,7 +54,7 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -62,7 +62,7 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -242,21 +242,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 Select properties to be returned
 
@@ -302,6 +287,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List1, List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -324,21 +324,6 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List1, List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1, List
-Aliases:
 
 Required: False
 Position: Named

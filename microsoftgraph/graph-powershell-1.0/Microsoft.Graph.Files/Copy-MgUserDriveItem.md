@@ -21,14 +21,14 @@ Asynchronously creates a copy of an driveItem (including any children), under a 
 Copy-MgUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Name <String>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
 ```
 Copy-MgUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
  -BodyParameter <IPaths8Bxd2FUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,14 +36,14 @@ Copy-MgUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
 ```
 Copy-MgUserDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
 Copy-MgUserDriveItem -InputObject <IFilesIdentity>
  -BodyParameter <IPaths8Bxd2FUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -82,6 +82,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -177,21 +192,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -216,21 +216,6 @@ Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -272,7 +257,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths8Bxd2FUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Name <String>]`: 
+  - `[Name <String>]`:
   - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.

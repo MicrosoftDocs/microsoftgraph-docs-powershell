@@ -18,7 +18,7 @@ Get the number of the resource
 ### Get1 (Default)
 ```
 Get-MgBetaSecurityThreatIntelligenceHostSslCertificateCount [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -26,14 +26,14 @@ Get-MgBetaSecurityThreatIntelligenceHostSslCertificateCount [-Filter <String>] [
 ```
 Get-MgBetaSecurityThreatIntelligenceHostSslCertificateCount -HostId <String> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaSecurityThreatIntelligenceHostSslCertificateCount -InputObject <ISecurityIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -101,21 +101,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

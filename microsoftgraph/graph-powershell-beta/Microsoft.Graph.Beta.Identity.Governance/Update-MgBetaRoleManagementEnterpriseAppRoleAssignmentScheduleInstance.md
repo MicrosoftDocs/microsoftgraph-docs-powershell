@@ -22,7 +22,7 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -RbacAppl
  [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-RoleAssignmentOriginId <String>] [-RoleAssignmentScheduleId <String>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
- [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -RbacAppl
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -RbacApplicationId <String>
  -UnifiedRoleAssignmentScheduleInstanceId <String>
  -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -44,7 +44,7 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance
  [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-RoleAssignmentOriginId <String>] [-RoleAssignmentScheduleId <String>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
- [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -53,7 +53,7 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -158,6 +158,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -307,21 +322,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RbacApplicationId
 The unique identifier of rbacApplication
 
@@ -437,21 +437,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -18,7 +18,7 @@ Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <
  -OnPremisesAgentId <String> -OnPremisesPublishingProfileId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]
  [-ExternalIP <String>] [-Id <String>] [-MachineName <String>] [-Status <String>]
- [-SupportedPublishingTypes <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-SupportedPublishingTypes <String[]>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <
 Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <String>
  -OnPremisesAgentId <String> -OnPremisesPublishingProfileId <String>
  -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,14 +36,14 @@ Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicatio
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>] [-ExternalIP <String>] [-Id <String>]
  [-MachineName <String>] [-Status <String>] [-SupportedPublishingTypes <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -99,6 +99,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -226,21 +241,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -278,21 +278,6 @@ Possible values are: applicationProxy, exchangeOnline, authentication, provision
 Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

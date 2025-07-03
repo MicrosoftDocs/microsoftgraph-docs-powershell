@@ -26,14 +26,14 @@ New-MgVirtualEventTownhall [-ResponseHeadersVariable <String>] [-AdditionalPrope
  [-InvitedAttendees <IMicrosoftGraphIdentity[]>] [-IsInviteOnly]
  [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>] [-Sessions <IMicrosoftGraphVirtualEventSession[]>]
  [-Settings <IMicrosoftGraphVirtualEventSettings>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
- [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgVirtualEventTownhall -BodyParameter <IMicrosoftGraphVirtualEventTownhall>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -87,6 +87,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -266,21 +281,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -351,21 +351,6 @@ virtualEventStatus
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -521,7 +506,7 @@ Optional.
       - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting.
 Optional.
 Read-only.
-      - `[Passcode <String>]`: The passcode to join a meeting. 
+      - `[Passcode <String>]`: The passcode to join a meeting.
 Optional.
 Read-only.
     - `[JoinWebUrl <String>]`: The join URL of the online meeting.
@@ -710,7 +695,7 @@ Optional.
     - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting.
 Optional.
 Read-only.
-    - `[Passcode <String>]`: The passcode to join a meeting. 
+    - `[Passcode <String>]`: The passcode to join a meeting.
 Optional.
 Read-only.
   - `[JoinWebUrl <String>]`: The join URL of the online meeting.

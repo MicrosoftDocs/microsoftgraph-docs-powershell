@@ -18,14 +18,14 @@ New-MgBetaWindowsUpdatesDeploymentAudienceApplicableContent -DeploymentId <Strin
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CatalogEntry <IMicrosoftGraphWindowsUpdatesCatalogEntry>] [-CatalogEntryId <String>]
  [-MatchedDevices <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaWindowsUpdatesDeploymentAudienceApplicableContent -DeploymentId <String>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesApplicableContent> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -34,14 +34,14 @@ New-MgBetaWindowsUpdatesDeploymentAudienceApplicableContent -InputObject <IWindo
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CatalogEntry <IMicrosoftGraphWindowsUpdatesCatalogEntry>] [-CatalogEntryId <String>]
  [-MatchedDevices <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaWindowsUpdatesDeploymentAudienceApplicableContent -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesApplicableContent> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -113,6 +113,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DeploymentId
 The unique identifier of deployment
 
@@ -175,21 +190,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -197,21 +197,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

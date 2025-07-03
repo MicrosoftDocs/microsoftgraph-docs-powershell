@@ -21,14 +21,14 @@ Update the properties of a day note.
 Update-MgBetaTeamScheduleDayNote -DayNoteId <String> -TeamId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DayNoteDate <DateTime>]
  [-DraftDayNote <IMicrosoftGraphItemBody>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SharedDayNote <IMicrosoftGraphItemBody>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-SharedDayNote <IMicrosoftGraphItemBody>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTeamScheduleDayNote -DayNoteId <String> -TeamId <String> -BodyParameter <IMicrosoftGraphDayNote>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,14 +37,14 @@ Update-MgBetaTeamScheduleDayNote -DayNoteId <String> -TeamId <String> -BodyParam
 Update-MgBetaTeamScheduleDayNote -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DayNoteDate <DateTime>]
  [-DraftDayNote <IMicrosoftGraphItemBody>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SharedDayNote <IMicrosoftGraphItemBody>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-SharedDayNote <IMicrosoftGraphItemBody>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTeamScheduleDayNote -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphDayNote>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -83,6 +83,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -211,21 +226,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -266,21 +266,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

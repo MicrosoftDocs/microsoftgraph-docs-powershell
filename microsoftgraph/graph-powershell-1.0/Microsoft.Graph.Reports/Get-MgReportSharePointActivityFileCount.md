@@ -19,13 +19,13 @@ Get the number of unique, licensed users who interacted with files stored on Sha
 ### Get (Default)
 ```
 Get-MgReportSharePointActivityFileCount -Period <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportSharePointActivityFileCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Get the number of unique, licensed users who interacted with files stored on Sha
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSharePointActivityFileCount -Period $periodId 
+Get-MgReportSharePointActivityFileCount -Period $periodId
 
 ```
 This example shows how to use the Get-MgReportSharePointActivityFileCount Cmdlet.
@@ -117,21 +117,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

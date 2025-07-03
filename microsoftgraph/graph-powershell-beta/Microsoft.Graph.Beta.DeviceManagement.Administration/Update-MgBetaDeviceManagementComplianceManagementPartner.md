@@ -25,14 +25,14 @@ Update-MgBetaDeviceManagementComplianceManagementPartner -ComplianceManagementPa
  [-LastHeartbeatDateTime <DateTime>]
  [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-MacOSOnboarded]
  [-PartnerState <DeviceManagementPartnerTenantState>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementComplianceManagementPartner -ComplianceManagementPartnerId <String>
  -BodyParameter <IMicrosoftGraphComplianceManagementPartner> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,14 +45,14 @@ Update-MgBetaDeviceManagementComplianceManagementPartner -InputObject <IDeviceMa
  [-LastHeartbeatDateTime <DateTime>]
  [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-MacOSOnboarded]
  [-PartnerState <DeviceManagementPartnerTenantState>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementComplianceManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphComplianceManagementPartner> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -141,6 +141,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -301,21 +316,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -323,21 +323,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

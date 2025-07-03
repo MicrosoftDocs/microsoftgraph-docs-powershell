@@ -15,7 +15,7 @@ Invoke action reprocess
 ### Reprocess (Default)
 ```
 Update-MgBetaEntitlementManagementAccessPackageAssignment -AccessPackageAssignmentId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,14 +31,14 @@ Update-MgBetaEntitlementManagementAccessPackageAssignment -AccessPackageAssignme
  [-CustomExtensionCalloutInstances <IMicrosoftGraphCustomExtensionCalloutInstance[]>]
  [-ExpiredDateTime <DateTime>] [-Id <String>] [-IsExtended] [-Schedule <IMicrosoftGraphRequestSchedule>]
  [-Target <IMicrosoftGraphAccessPackageSubject>] [-TargetId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEntitlementManagementAccessPackageAssignment -AccessPackageAssignmentId <String>
  [-ResponseHeadersVariable <String>] -BodyParameter <IMicrosoftGraphAccessPackageAssignment>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,20 +53,20 @@ Update-MgBetaEntitlementManagementAccessPackageAssignment -InputObject <IIdentit
  [-CustomExtensionCalloutInstances <IMicrosoftGraphCustomExtensionCalloutInstance[]>]
  [-ExpiredDateTime <DateTime>] [-Id <String>] [-IsExtended] [-Schedule <IMicrosoftGraphRequestSchedule>]
  [-Target <IMicrosoftGraphAccessPackageSubject>] [-TargetId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEntitlementManagementAccessPackageAssignment -InputObject <IIdentityGovernanceIdentity>
  [-ResponseHeadersVariable <String>] -BodyParameter <IMicrosoftGraphAccessPackageAssignment>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReprocessViaIdentity
 ```
 Update-MgBetaEntitlementManagementAccessPackageAssignment -InputObject <IIdentityGovernanceIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -280,6 +280,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CustomExtensionCalloutInstances
 Information about all the custom extension calls that were made during the access package assignment workflow.
 To construct, see NOTES section for CUSTOMEXTENSIONCALLOUTINSTANCES properties and create a hash table.
@@ -390,21 +405,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -461,21 +461,6 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

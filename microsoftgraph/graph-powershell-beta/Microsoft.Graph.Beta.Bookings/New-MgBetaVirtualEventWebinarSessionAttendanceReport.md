@@ -22,14 +22,14 @@ New-MgBetaVirtualEventWebinarSessionAttendanceReport -VirtualEventSessionId <Str
  [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]
  [-ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>] [-Id <String>]
  [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaVirtualEventWebinarSessionAttendanceReport -VirtualEventSessionId <String>
  -VirtualEventWebinarId <String> -BodyParameter <IMicrosoftGraphMeetingAttendanceReport>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,14 +40,14 @@ New-MgBetaVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsIden
  [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]
  [-ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>] [-Id <String>]
  [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -102,6 +102,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -202,21 +217,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -272,21 +272,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

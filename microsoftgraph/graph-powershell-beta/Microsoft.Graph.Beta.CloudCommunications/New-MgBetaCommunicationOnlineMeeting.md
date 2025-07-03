@@ -37,13 +37,13 @@ New-MgBetaCommunicationOnlineMeeting [-ResponseHeadersVariable <String>] [-Addit
  [-ShareMeetingChatHistoryDefault <String>] [-StartDateTime <DateTime>] [-Subject <String>]
  [-Transcripts <IMicrosoftGraphCallTranscript[]>] [-VideoTeleconferenceId <String>]
  [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaCommunicationOnlineMeeting -BodyParameter <IMicrosoftGraphOnlineMeeting>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -472,6 +472,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CreationDateTime
 The meeting creation time in UTC.
 Read-only.
@@ -723,21 +738,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RecordAutomatically
 Indicates whether to record the meeting automatically.
 
@@ -904,21 +904,6 @@ To construct, see NOTES section for WATERMARKPROTECTION properties and create a 
 Type: IMicrosoftGraphWatermarkProtectionValues
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

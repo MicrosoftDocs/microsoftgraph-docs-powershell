@@ -18,7 +18,7 @@ Get the number of the resource
 ### Get1 (Default)
 ```
 Get-MgBetaSiteOnenoteSectionGroupCount -SiteId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -26,20 +26,20 @@ Get-MgBetaSiteOnenoteSectionGroupCount -SiteId <String> [-Filter <String>] [-Sea
 ```
 Get-MgBetaSiteOnenoteSectionGroupCount -SectionGroupId <String> -SiteId <String> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgBetaSiteOnenoteSectionGroupCount -InputObject <INotesIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaSiteOnenoteSectionGroupCount -InputObject <INotesIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -101,21 +101,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

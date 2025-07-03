@@ -27,7 +27,7 @@ Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision
  [-PrincipalResourceMembership <IMicrosoftGraphDecisionItemPrincipalResourceMembership>]
  [-Recommendation <String>] [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]
  [-ResourceLink <String>] [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <DateTime>]
- [-Target <Hashtable>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Target <Hashtable>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision
 Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision
  -AccessReviewInstanceDecisionItemId <String> -AccessReviewInstanceId <String>
  -AccessReviewScheduleDefinitionId <String> -BodyParameter <IMicrosoftGraphAccessReviewInstanceDecisionItem>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -51,7 +51,7 @@ Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision
  [-PrincipalResourceMembership <IMicrosoftGraphDecisionItemPrincipalResourceMembership>]
  [-Recommendation <String>] [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]
  [-ResourceLink <String>] [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <DateTime>]
- [-Target <Hashtable>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Target <Hashtable>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -59,7 +59,7 @@ Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision
 ```
 Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision
  -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessReviewInstanceDecisionItem>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -213,6 +213,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -377,21 +392,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Recommendation
 A system-generated recommendation for the approval decision based off last interactive sign-in to tenant.
 Recommend approve if sign-in is within 30 days of start of review.
@@ -502,21 +502,6 @@ accessReviewInstanceDecisionItemTarget
 Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

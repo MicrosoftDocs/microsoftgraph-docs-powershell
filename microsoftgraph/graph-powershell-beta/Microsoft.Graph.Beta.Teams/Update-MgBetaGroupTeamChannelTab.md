@@ -21,7 +21,7 @@ Update-MgBetaGroupTeamChannelTab -ChannelId <String> -GroupId <String> -TeamsTab
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphTeamsTabConfiguration>] [-DisplayName <String>] [-Id <String>]
  [-MessageId <String>] [-SortOrderIndex <String>] [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppId <String>]
- [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-WebUrl <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgBetaGroupTeamChannelTab -ChannelId <String> -GroupId <String> -TeamsTab
 ```
 Update-MgBetaGroupTeamChannelTab -ChannelId <String> -GroupId <String> -TeamsTabId <String>
  -BodyParameter <IMicrosoftGraphTeamsTab> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,13 +38,13 @@ Update-MgBetaGroupTeamChannelTab -InputObject <ITeamsIdentity> [-ResponseHeaders
  [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphTeamsTabConfiguration>]
  [-DisplayName <String>] [-Id <String>] [-MessageId <String>] [-SortOrderIndex <String>]
  [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppId <String>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsTab>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -109,6 +109,21 @@ To construct, see NOTES section for CONFIGURATION properties and create a hash t
 Type: IMicrosoftGraphTeamsTabConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -209,21 +224,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -310,21 +310,6 @@ Read only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

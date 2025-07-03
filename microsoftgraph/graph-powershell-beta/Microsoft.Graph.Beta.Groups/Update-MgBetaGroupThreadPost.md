@@ -25,7 +25,7 @@ Update-MgBetaGroupThreadPost -ConversationThreadId <String> -GroupId <String> -P
  [-NewParticipants <IMicrosoftGraphRecipient[]>] [-ReceivedDateTime <DateTime>]
  [-Sender <IMicrosoftGraphRecipient>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,20 +41,20 @@ Update-MgBetaGroupThreadPost [-ConversationThreadId <String>] -InputObject <IGro
  [-NewParticipants <IMicrosoftGraphRecipient[]>] [-ReceivedDateTime <DateTime>]
  [-Sender <IMicrosoftGraphRecipient>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupThreadPost -ConversationThreadId <String> -GroupId <String> -PostId <String>
  -BodyParameter <IMicrosoftGraphPost> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupThreadPost -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphPost>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -156,6 +156,21 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -464,21 +479,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ReceivedDateTime
 Specifies when the post was received.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -537,21 +537,6 @@ To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and
 Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

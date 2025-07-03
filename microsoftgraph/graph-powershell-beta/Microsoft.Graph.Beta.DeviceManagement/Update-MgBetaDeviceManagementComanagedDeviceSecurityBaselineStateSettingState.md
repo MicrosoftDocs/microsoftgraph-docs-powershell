@@ -20,7 +20,7 @@ Update-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState -M
  [-ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>] [-ErrorCode <String>]
  [-Id <String>] [-SettingCategoryId <String>] [-SettingCategoryName <String>] [-SettingId <String>]
  [-SettingName <String>] [-SourcePolicies <IMicrosoftGraphSettingSource[]>]
- [-State <SecurityBaselineComplianceState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-State <SecurityBaselineComplianceState>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState -M
 Update-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState -ManagedDeviceId <String>
  -SecurityBaselineSettingStateId <String> -SecurityBaselineStateId <String>
  -BodyParameter <IMicrosoftGraphSecurityBaselineSettingState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,7 +40,7 @@ Update-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState
  [-ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>] [-ErrorCode <String>]
  [-Id <String>] [-SettingCategoryId <String>] [-SettingCategoryName <String>] [-SettingId <String>]
  [-SettingName <String>] [-SourcePolicies <IMicrosoftGraphSettingSource[]>]
- [-State <SecurityBaselineComplianceState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-State <SecurityBaselineComplianceState>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,7 +48,7 @@ Update-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState
 ```
 Update-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState
  -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphSecurityBaselineSettingState>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -87,6 +87,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -177,21 +192,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -326,21 +326,6 @@ Security Baseline Compliance State
 Type: SecurityBaselineComplianceState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

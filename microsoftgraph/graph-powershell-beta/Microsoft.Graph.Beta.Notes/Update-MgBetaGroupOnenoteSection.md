@@ -23,7 +23,7 @@ Update-MgBetaGroupOnenoteSection -GroupId <String> -OnenoteSectionId <String>
  [-IsDefault] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Links <IMicrosoftGraphSectionLinks>] [-Pages <IMicrosoftGraphOnenotePage[]>] [-PagesUrl <String>]
  [-ParentNotebook <IMicrosoftGraphNotebook>] [-ParentSectionGroup <IMicrosoftGraphSectionGroup>]
- [-Self <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Self <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Update-MgBetaGroupOnenoteSection -GroupId <String> -OnenoteSectionId <String>
 ```
 Update-MgBetaGroupOnenoteSection -GroupId <String> -OnenoteSectionId <String>
  -BodyParameter <IMicrosoftGraphOnenoteSection> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -42,13 +42,13 @@ Update-MgBetaGroupOnenoteSection -InputObject <INotesIdentity> [-ResponseHeaders
  [-LastModifiedDateTime <DateTime>] [-Links <IMicrosoftGraphSectionLinks>]
  [-Pages <IMicrosoftGraphOnenotePage[]>] [-PagesUrl <String>] [-ParentNotebook <IMicrosoftGraphNotebook>]
  [-ParentSectionGroup <IMicrosoftGraphSectionGroup>] [-Self <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupOnenoteSection -InputObject <INotesIdentity> -BodyParameter <IMicrosoftGraphOnenoteSection>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -87,6 +87,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -342,21 +357,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -379,21 +379,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -21,14 +21,14 @@ New-MgBetaGroupDriveRootVersion -DriveId <String> -GroupId <String> [-ResponseHe
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Publication <IMicrosoftGraphPublicationFacet>] [-Size <Int64>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupDriveRootVersion -DriveId <String> -GroupId <String>
  -BodyParameter <IMicrosoftGraphDriveItemVersion> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -37,13 +37,13 @@ New-MgBetaGroupDriveRootVersion -InputObject <IFilesIdentity> [-ResponseHeadersV
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Publication <IMicrosoftGraphPublicationFacet>] [-Size <Int64>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupDriveRootVersion -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDriveItemVersion>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -82,6 +82,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -209,21 +224,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Publication
 publicationFacet
 To construct, see NOTES section for PUBLICATION properties and create a hash table.
@@ -266,21 +266,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

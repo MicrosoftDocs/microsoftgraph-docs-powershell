@@ -20,7 +20,7 @@ Create new navigation property to calendarPermissions for users
 New-MgUserCalendarPermission -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>]
  [-Id <String>] [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded1
@@ -28,20 +28,20 @@ New-MgUserCalendarPermission -UserId <String> [-ResponseHeadersVariable <String>
 New-MgUserCalendarPermission -UserId <String> -CalendarId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>]
  [-Id <String>] [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgUserCalendarPermission -UserId <String> -CalendarId <String>
  -BodyParameter <IMicrosoftGraphCalendarPermission> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserCalendarPermission -UserId <String> -BodyParameter <IMicrosoftGraphCalendarPermission>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -50,7 +50,7 @@ New-MgUserCalendarPermission -UserId <String> -BodyParameter <IMicrosoftGraphCal
 New-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>]
  [-Id <String>] [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -58,21 +58,21 @@ New-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-ResponseHeadersV
 New-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>]
  [-Id <String>] [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
 New-MgUserCalendarPermission -InputObject <ICalendarIdentity>
  -BodyParameter <IMicrosoftGraphCalendarPermission> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserCalendarPermission -InputObject <ICalendarIdentity>
  -BodyParameter <IMicrosoftGraphCalendarPermission> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -138,6 +138,21 @@ Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -239,21 +254,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -293,21 +293,6 @@ Parameter Sets: CreateExpanded, CreateExpanded1, Create1, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -16,14 +16,14 @@ Get content for the navigation property picture from financials
 ```
 Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -CompanyId <String> -PictureId <String>
  -PurchaseInvoiceLineId <String> -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-PassThru] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -CompanyId <String> -PictureId <String>
  -PurchaseInvoiceLineId <String> -PurchaseInvoiceId <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -31,14 +31,14 @@ Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -CompanyId <Stri
 ```
 Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -InputObject <IFinancialsIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -InputObject <IFinancialsIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -133,21 +133,6 @@ Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

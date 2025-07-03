@@ -21,7 +21,7 @@ Update-MgBetaDeviceManagementComanagementEligibleDevice -ComanagementEligibleDev
  [-ManagementState <ManagementState>] [-Manufacturer <String>] [-MdmStatus <String>] [-Model <String>]
  [-OSDescription <String>] [-OSVersion <String>] [-OwnerType <OwnerType>] [-ReferenceId <String>]
  [-SerialNumber <String>] [-Status <ComanagementEligibleType>] [-Upn <String>] [-UserEmail <String>]
- [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgBetaDeviceManagementComanagementEligibleDevice -ComanagementEligibleDev
 ```
 Update-MgBetaDeviceManagementComanagementEligibleDevice -ComanagementEligibleDeviceId <String>
  -BodyParameter <IMicrosoftGraphComanagementEligibleDevice> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,7 +41,7 @@ Update-MgBetaDeviceManagementComanagementEligibleDevice -InputObject <IDeviceMan
  [-ManagementState <ManagementState>] [-Manufacturer <String>] [-MdmStatus <String>] [-Model <String>]
  [-OSDescription <String>] [-OSVersion <String>] [-OwnerType <OwnerType>] [-ReferenceId <String>]
  [-SerialNumber <String>] [-Status <ComanagementEligibleType>] [-Upn <String>] [-UserEmail <String>]
- [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,7 +49,7 @@ Update-MgBetaDeviceManagementComanagementEligibleDevice -InputObject <IDeviceMan
 ```
 Update-MgBetaDeviceManagementComanagementEligibleDevice -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphComanagementEligibleDevice> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -122,6 +122,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -340,21 +355,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ReferenceId
 ReferenceId
 
@@ -467,21 +467,6 @@ UserName
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

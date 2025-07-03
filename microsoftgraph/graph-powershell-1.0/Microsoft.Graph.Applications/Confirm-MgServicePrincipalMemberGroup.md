@@ -24,14 +24,14 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 ```
 Confirm-MgServicePrincipalMemberGroup -ServicePrincipalId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Check
 ```
 Confirm-MgServicePrincipalMemberGroup -ServicePrincipalId <String>
  -BodyParameter <IPathsO5Kx2YServiceprincipalsServiceprincipalIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,14 +39,14 @@ Confirm-MgServicePrincipalMemberGroup -ServicePrincipalId <String>
 ```
 Confirm-MgServicePrincipalMemberGroup -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CheckViaIdentity
 ```
 Confirm-MgServicePrincipalMemberGroup -InputObject <IApplicationsIdentity>
  -BodyParameter <IPathsO5Kx2YServiceprincipalsServiceprincipalIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -100,6 +100,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -GroupIds
 
 
@@ -146,21 +161,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -185,21 +185,6 @@ Parameter Sets: CheckExpanded, Check
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -241,7 +226,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPathsO5Kx2YServiceprincipalsServiceprincipalIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[GroupIds <String- `[]`>]`: 
+  - `[GroupIds <String- `[]`>]`:
 
 INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppId <String>]`: Alternate key of application

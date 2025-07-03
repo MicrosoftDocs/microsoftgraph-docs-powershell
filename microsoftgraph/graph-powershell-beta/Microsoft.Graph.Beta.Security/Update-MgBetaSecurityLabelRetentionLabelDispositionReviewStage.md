@@ -20,14 +20,14 @@ Update the navigation property dispositionReviewStages in security
 Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -DispositionReviewStageNumber <String>
  -RetentionLabelId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-Name <String>] [-ReviewersEmailAddresses <String[]>] [-StageNumber <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -DispositionReviewStageNumber <String>
  -RetentionLabelId <String> -BodyParameter <IMicrosoftGraphSecurityDispositionReviewStage>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,14 +36,14 @@ Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -DispositionRevie
 Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>]
  [-ReviewersEmailAddresses <String[]>] [-StageNumber <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityDispositionReviewStage> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -81,6 +81,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -161,21 +176,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -228,21 +228,6 @@ The unique sequence number for each stage of the disposition review.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

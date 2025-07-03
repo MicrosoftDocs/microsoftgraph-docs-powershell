@@ -18,13 +18,13 @@ Invoke function preview
 ### Preview (Default)
 ```
 Invoke-MgPreviewSiteOnenotePage -OnenotePageId <String> -SiteId <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### PreviewViaIdentity
 ```
 Invoke-MgPreviewSiteOnenotePage -InputObject <INotesIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -74,21 +74,6 @@ Parameter Sets: Preview
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

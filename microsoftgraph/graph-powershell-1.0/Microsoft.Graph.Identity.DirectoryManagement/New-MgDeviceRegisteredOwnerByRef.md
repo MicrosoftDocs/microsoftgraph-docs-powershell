@@ -19,14 +19,14 @@ Add a user as a registered owner of the device.
 ### CreateExpanded (Default)
 ```
 New-MgDeviceRegisteredOwnerByRef -DeviceId <String> [-ResponseHeadersVariable <String>] -OdataId <String>
- [-AdditionalProperties <Hashtable>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-AdditionalProperties <Hashtable>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceRegisteredOwnerByRef -DeviceId <String> -BodyParameter <IReferenceCreate>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ New-MgDeviceRegisteredOwnerByRef -DeviceId <String> -BodyParameter <IReferenceCr
 ```
 New-MgDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManagementIdentity>
  [-ResponseHeadersVariable <String>] -OdataId <String> [-AdditionalProperties <Hashtable>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ New-MgDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManagementIdent
 ```
 New-MgDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IReferenceCreate> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -95,6 +95,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -175,21 +190,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -197,21 +197,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

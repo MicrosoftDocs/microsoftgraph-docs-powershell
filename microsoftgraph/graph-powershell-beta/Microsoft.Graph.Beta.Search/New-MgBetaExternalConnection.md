@@ -29,13 +29,13 @@ New-MgBetaExternalConnection [-ResponseHeadersVariable <String>]
  [-Quota <IMicrosoftGraphExternalConnectorsConnectionQuota>]
  [-Schema <IMicrosoftGraphExternalConnectorsSchema>]
  [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -142,6 +142,21 @@ To construct, see NOTES section for CONFIGURATION properties and create a hash t
 Type: IMicrosoftGraphExternalConnectorsConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -310,21 +325,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Quota
 connectionQuota
 To construct, see NOTES section for QUOTA properties and create a hash table.
@@ -395,21 +395,6 @@ connectionState
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

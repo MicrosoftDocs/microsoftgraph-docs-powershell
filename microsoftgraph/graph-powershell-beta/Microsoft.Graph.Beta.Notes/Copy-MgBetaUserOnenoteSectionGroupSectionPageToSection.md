@@ -22,7 +22,7 @@ For copy operations, you follow an asynchronous calling pattern:  First call the
 Copy-MgBetaUserOnenoteSectionGroupSectionPageToSection -OnenotePageId <String> -OnenoteSectionId <String>
  -SectionGroupId <String> -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>]
- [-SiteId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-SiteId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Copy-MgBetaUserOnenoteSectionGroupSectionPageToSection -OnenotePageId <String> -
 Copy-MgBetaUserOnenoteSectionGroupSectionPageToSection -OnenotePageId <String> -OnenoteSectionId <String>
  -SectionGroupId <String> -UserId <String>
  -BodyParameter <IPaths56BwctUsersUserIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Copy-MgBetaUserOnenoteSectionGroupSectionPageToSection -OnenotePageId <String> -
 ```
 Copy-MgBetaUserOnenoteSectionGroupSectionPageToSection -InputObject <INotesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>]
- [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,7 +47,7 @@ Copy-MgBetaUserOnenoteSectionGroupSectionPageToSection -InputObject <INotesIdent
 ```
 Copy-MgBetaUserOnenoteSectionGroupSectionPageToSection -InputObject <INotesIdentity>
  -BodyParameter <IPaths56BwctUsersUserIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -87,6 +87,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -181,21 +196,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -265,21 +265,6 @@ Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

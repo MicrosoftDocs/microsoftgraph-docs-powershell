@@ -19,14 +19,14 @@ Get the number of the resource
 ```
 Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategoryCount -MobileAppId <String> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategoryCount -InputObject <IDevicesCorporateManagementIdentity>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -91,21 +91,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

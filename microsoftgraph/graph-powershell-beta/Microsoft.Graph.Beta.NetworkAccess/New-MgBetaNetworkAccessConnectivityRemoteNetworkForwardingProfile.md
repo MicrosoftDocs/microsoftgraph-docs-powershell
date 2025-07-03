@@ -20,14 +20,14 @@ New-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile -RemoteNetwork
  [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>]
  [-Priority <Int32>] [-ServicePrincipal <IMicrosoftGraphServicePrincipal>] [-State <String>]
  [-TrafficForwardingType <String>] [-Version <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile -RemoteNetworkId <String>
  -BodyParameter <IMicrosoftGraphNetworkaccessForwardingProfile> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,14 +38,14 @@ New-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile -InputObject <
  [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>]
  [-Priority <Int32>] [-ServicePrincipal <IMicrosoftGraphServicePrincipal>] [-State <String>]
  [-TrafficForwardingType <String>] [-Version <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile -InputObject <INetworkAccessIdentity>
  -BodyParameter <IMicrosoftGraphNetworkaccessForwardingProfile> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -98,6 +98,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -224,21 +239,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RemoteNetworkId
 The unique identifier of remoteNetwork
 
@@ -322,21 +322,6 @@ Profile version.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -28,7 +28,7 @@ New-MgBetaChatMessageReply -ChatId <String> -ChatMessageId <String> [-ResponseHe
  [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
  [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage[]>]
  [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -44,20 +44,20 @@ New-MgBetaChatMessageReply [-ChatId <String>] -InputObject <ITeamsIdentity> [-Re
  [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
  [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage[]>]
  [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaChatMessageReply -ChatId <String> -ChatMessageId <String> -BodyParameter <IMicrosoftGraphChatMessage>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChatMessage>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -198,6 +198,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -488,21 +503,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Reactions
 Reactions for this chat message (for example, Like).
 To construct, see NOTES section for REACTIONS properties and create a hash table.
@@ -607,21 +607,6 @@ Link to the message in Microsoft Teams.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

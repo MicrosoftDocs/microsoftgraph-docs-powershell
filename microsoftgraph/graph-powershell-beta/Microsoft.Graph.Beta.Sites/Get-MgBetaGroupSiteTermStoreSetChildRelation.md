@@ -20,7 +20,7 @@ To indicate which terms are related to the current term as either pinned or reus
 Get-MgBetaGroupSiteTermStoreSetChildRelation -GroupId <String> -SetId <String> -SiteId <String>
  -TermId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### List
@@ -29,14 +29,14 @@ Get-MgBetaGroupSiteTermStoreSetChildRelation -GroupId <String> -SetId <String> -
  -TermId <String> -TermId1 <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgBetaGroupSiteTermStoreSetChildRelation -GroupId <String> -RelationId <String> -SetId <String>
  -SiteId <String> -TermId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -44,7 +44,7 @@ Get-MgBetaGroupSiteTermStoreSetChildRelation -GroupId <String> -RelationId <Stri
 ```
 Get-MgBetaGroupSiteTermStoreSetChildRelation -GroupId <String> -RelationId <String> -SetId <String>
  -SiteId <String> -TermId <String> -TermId1 <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -52,14 +52,14 @@ Get-MgBetaGroupSiteTermStoreSetChildRelation -GroupId <String> -RelationId <Stri
 ```
 Get-MgBetaGroupSiteTermStoreSetChildRelation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaGroupSiteTermStoreSetChildRelation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -191,21 +191,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 Select properties to be returned
 
@@ -296,6 +281,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List1, List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -348,21 +348,6 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List1, List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1, List
-Aliases:
 
 Required: False
 Position: Named

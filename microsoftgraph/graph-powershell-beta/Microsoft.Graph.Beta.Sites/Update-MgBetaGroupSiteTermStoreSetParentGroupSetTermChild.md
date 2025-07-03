@@ -23,7 +23,7 @@ Update-MgBetaGroupSiteTermStoreSetParentGroupSetTermChild -GroupId <String> -Set
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
  [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
- [-Set <IMicrosoftGraphTermStoreSet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Set <IMicrosoftGraphTermStoreSet>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Update-MgBetaGroupSiteTermStoreSetParentGroupSetTermChild -GroupId <String> -Set
 ```
 Update-MgBetaGroupSiteTermStoreSetParentGroupSetTermChild -GroupId <String> -SetId <String> -SetId1 <String>
  -SiteId <String> -TermId <String> -TermId1 <String> -BodyParameter <IMicrosoftGraphTermStoreTerm>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,7 +43,7 @@ Update-MgBetaGroupSiteTermStoreSetParentGroupSetTermChild -InputObject <ISitesId
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
  [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
- [-Set <IMicrosoftGraphTermStoreSet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Set <IMicrosoftGraphTermStoreSet>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -51,7 +51,7 @@ Update-MgBetaGroupSiteTermStoreSetParentGroupSetTermChild -InputObject <ISitesId
 ```
 Update-MgBetaGroupSiteTermStoreSetParentGroupSetTermChild -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphTermStoreTerm> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -100,6 +100,21 @@ To construct, see NOTES section for CHILDREN properties and create a hash table.
 Type: IMicrosoftGraphTermStoreTerm[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -226,21 +241,6 @@ Read-only.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -381,21 +381,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

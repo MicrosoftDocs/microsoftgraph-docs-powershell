@@ -19,7 +19,7 @@ You can extend the following reference types with other codes that better align 
 ```
 New-MgBetaExternalIndustryDataReferenceDefinition [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Code <String>] [-DisplayName <String>] [-Id <String>] [-IsDisabled]
- [-ReferenceType <String>] [-SortIndex <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ReferenceType <String>] [-SortIndex <Int32>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ New-MgBetaExternalIndustryDataReferenceDefinition [-ResponseHeadersVariable <Str
 ```
 New-MgBetaExternalIndustryDataReferenceDefinition
  -BodyParameter <IMicrosoftGraphIndustryDataReferenceDefinition> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -113,6 +113,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DisplayName
 A human-readable representation of the reference code value for display in a user interface.
 
@@ -174,21 +189,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ReferenceType
 The categorical type for a collection of enumerated values.
 
@@ -231,21 +231,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

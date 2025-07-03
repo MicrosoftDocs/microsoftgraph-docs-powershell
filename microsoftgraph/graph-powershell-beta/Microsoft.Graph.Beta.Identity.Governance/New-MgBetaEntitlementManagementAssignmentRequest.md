@@ -30,13 +30,13 @@ New-MgBetaEntitlementManagementAssignmentRequest [-ResponseHeadersVariable <Stri
  [-RequestType <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject>]
  [-Schedule <IMicrosoftGraphRequestSchedule>]
  [-VerifiedCredentialsData <IMicrosoftGraphVerifiedCredentialData[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaEntitlementManagementAssignmentRequest -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -338,6 +338,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CreatedDateTime
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -481,21 +496,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Requestor
 accessPackageSubject
 To construct, see NOTES section for REQUESTOR properties and create a hash table.
@@ -601,21 +601,6 @@ To construct, see NOTES section for VERIFIEDCREDENTIALSDATA properties and creat
 Type: IMicrosoftGraphVerifiedCredentialData[]
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -25,7 +25,7 @@ The following are the steps to attach a file to an Outlook item using an upload 
 New-MgBetaUserEventExceptionOccurrenceAttachmentUploadSession -EventId <String> -EventId1 <String>
  -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -33,7 +33,7 @@ New-MgBetaUserEventExceptionOccurrenceAttachmentUploadSession -EventId <String> 
 New-MgBetaUserEventExceptionOccurrenceAttachmentUploadSession -EventId <String> -EventId1 <String>
  -UserId <String>
  -BodyParameter <IPaths25Jjn4UsersUserIdEventsEventIdExceptionoccurrencesEventId1AttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,14 +42,14 @@ New-MgBetaUserEventExceptionOccurrenceAttachmentUploadSession -EventId <String> 
 New-MgBetaUserEventExceptionOccurrenceAttachmentUploadSession -InputObject <ICalendarIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserEventExceptionOccurrenceAttachmentUploadSession -InputObject <ICalendarIdentity>
  -BodyParameter <IPaths25Jjn4UsersUserIdEventsEventIdExceptionoccurrencesEventId1AttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -114,6 +114,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -EventId
 The unique identifier of event
 
@@ -175,21 +190,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -214,21 +214,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

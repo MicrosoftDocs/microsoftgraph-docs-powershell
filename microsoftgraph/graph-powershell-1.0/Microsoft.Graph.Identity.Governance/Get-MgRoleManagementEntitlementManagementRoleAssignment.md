@@ -21,21 +21,21 @@ Resource to grant access to users or groups.
 Get-MgRoleManagementEntitlementManagementRoleAssignment [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgRoleManagementEntitlementManagementRoleAssignment -UnifiedRoleAssignmentId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdentityGovernanceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -56,7 +56,7 @@ Resource to grant access to users or groups.
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgRoleManagementEntitlementManagementRoleAssignment -Filter "appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'" -ExpandProperty "principal" 
+Get-MgRoleManagementEntitlementManagementRoleAssignment -Filter "appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'" -ExpandProperty "principal"
 
 ```
 This example will request using $filter for role assignments on an access package catalog and expand the principal object
@@ -171,21 +171,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 Select properties to be returned
 
@@ -231,6 +216,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -272,21 +272,6 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

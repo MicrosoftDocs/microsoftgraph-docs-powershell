@@ -22,7 +22,7 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copy-MgBetaGroupOnenoteNotebookSectionGroupSectionToSectionGroup -GroupId <String> -NotebookId <String>
  -OnenoteSectionId <String> -SectionGroupId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-GroupId1 <String>] [-Id <String>] [-RenameAs <String>]
- [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Copy-MgBetaGroupOnenoteNotebookSectionGroupSectionToSectionGroup -GroupId <Strin
 Copy-MgBetaGroupOnenoteNotebookSectionGroupSectionToSectionGroup [-GroupId <String>]
  -InputObject <INotesIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-RenameAs <String>] [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
@@ -39,7 +39,7 @@ Copy-MgBetaGroupOnenoteNotebookSectionGroupSectionToSectionGroup [-GroupId <Stri
 Copy-MgBetaGroupOnenoteNotebookSectionGroupSectionToSectionGroup -GroupId <String> -NotebookId <String>
  -OnenoteSectionId <String> -SectionGroupId <String>
  -BodyParameter <IPaths1TzitooGroupsGroupIdOnenoteNotebooksNotebookIdSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,7 +47,7 @@ Copy-MgBetaGroupOnenoteNotebookSectionGroupSectionToSectionGroup -GroupId <Strin
 ```
 Copy-MgBetaGroupOnenoteNotebookSectionGroupSectionToSectionGroup -InputObject <INotesIdentity>
  -BodyParameter <IPaths1TzitooGroupsGroupIdOnenoteNotebooksNotebookIdSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -87,6 +87,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -208,21 +223,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RenameAs
 
 
@@ -290,21 +290,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

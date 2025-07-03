@@ -21,7 +21,7 @@ Update the properties of an externalAuthenticationMethodConfiguration object.
 Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
  -AuthenticationMethodConfigurationId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ExcludeTargets <IMicrosoftGraphExcludeTarget[]>] [-Id <String>]
- [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-State <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
  -AuthenticationMethodConfigurationId <String>
  -BodyParameter <IMicrosoftGraphAuthenticationMethodConfiguration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,7 +38,7 @@ Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
  -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ExcludeTargets <IMicrosoftGraphExcludeTarget[]>] [-Id <String>]
- [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-State <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 ```
 Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
  -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphAuthenticationMethodConfiguration>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -134,6 +134,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ExcludeTargets
 Groups of users that are excluded from a policy.
 To construct, see NOTES section for EXCLUDETARGETS properties and create a hash table.
@@ -197,21 +212,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -234,21 +234,6 @@ authenticationMethodState
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

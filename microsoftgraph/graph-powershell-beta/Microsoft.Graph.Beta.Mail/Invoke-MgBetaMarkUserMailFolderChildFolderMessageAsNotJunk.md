@@ -18,7 +18,7 @@ This API removes the sender from the list of blocked senders and moves the messa
 ```
 Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsNotJunk -MailFolderId <String> -MailFolderId1 <String>
  -MessageId <String> -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-MoveToInbox] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-MoveToInbox] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsNotJunk -MailFolderId <String
 Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsNotJunk -MailFolderId <String> -MailFolderId1 <String>
  -MessageId <String> -UserId <String>
  -BodyParameter <IPathsB8Bsb2UsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,14 +35,14 @@ Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsNotJunk -MailFolderId <String
 ```
 Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsNotJunk -InputObject <IMailIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-MoveToInbox]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MarkViaIdentity
 ```
 Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsNotJunk -InputObject <IMailIdentity>
  -BodyParameter <IPathsB8Bsb2UsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -82,6 +82,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -176,21 +191,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -215,21 +215,6 @@ Parameter Sets: MarkExpanded, Mark
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

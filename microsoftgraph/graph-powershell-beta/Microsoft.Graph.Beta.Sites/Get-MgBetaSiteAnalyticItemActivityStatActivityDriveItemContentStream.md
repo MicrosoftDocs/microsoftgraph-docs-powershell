@@ -16,14 +16,14 @@ The content stream, if the item represents a file.
 ```
 Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContentStream -ItemActivityId <String>
  -ItemActivityStatId <String> [-SiteId <String>] -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContentStream -InputObject <ISitesIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -120,21 +120,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

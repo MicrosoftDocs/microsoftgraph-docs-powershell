@@ -21,14 +21,14 @@ Update-MgBetaGroupSiteGetByPathRecycleBin -GroupId <String> -Path <String> -Site
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser>]
  [-LastModifiedDateTime <DateTime>] [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>]
  [-Settings <IMicrosoftGraphRecycleBinSettings>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupSiteGetByPathRecycleBin -GroupId <String> -Path <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphRecycleBin> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,7 +39,7 @@ Update-MgBetaGroupSiteGetByPathRecycleBin -InputObject <ISitesIdentity> [-Respon
  [-Id <String>] [-Items <IMicrosoftGraphRecycleBinItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>] [-Name <String>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-Settings <IMicrosoftGraphRecycleBinSettings>]
- [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-WebUrl <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -47,7 +47,7 @@ Update-MgBetaGroupSiteGetByPathRecycleBin -InputObject <ISitesIdentity> [-Respon
 ```
 Update-MgBetaGroupSiteGetByPathRecycleBin -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphRecycleBin> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -85,6 +85,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -340,21 +355,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -409,21 +409,6 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

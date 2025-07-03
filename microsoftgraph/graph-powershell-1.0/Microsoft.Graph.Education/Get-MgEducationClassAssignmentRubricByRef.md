@@ -20,14 +20,14 @@ Only teachers, students, and applications with application permissions can perfo
 ### Get (Default)
 ```
 Get-MgEducationClassAssignmentRubricByRef -EducationAssignmentId <String> -EducationClassId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgEducationClassAssignmentRubricByRef -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -104,21 +104,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

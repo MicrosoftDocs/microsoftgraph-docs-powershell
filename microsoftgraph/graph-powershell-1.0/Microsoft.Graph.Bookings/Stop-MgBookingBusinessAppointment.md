@@ -20,7 +20,7 @@ Cancel the specified bookingAppointment in the specified bookingBusiness and sen
 ```
 Stop-MgBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CancellationMessage <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Stop-MgBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusines
 ```
 Stop-MgBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
  -BodyParameter <IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,14 +36,14 @@ Stop-MgBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusines
 ```
 Stop-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CancellationMessage <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CancelViaIdentity
 ```
 Stop-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
  -BodyParameter <IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -153,6 +153,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -199,21 +214,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -221,21 +221,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -279,7 +264,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CancellationMessage <String>]`: 
+  - `[CancellationMessage <String>]`:
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord

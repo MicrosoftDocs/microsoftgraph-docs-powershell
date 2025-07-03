@@ -20,7 +20,7 @@ Read-only.
 ```
 Get-MgGroupOnenoteNotebookSectionParentSectionGroup -GroupId <String> -NotebookId <String>
  -OnenoteSectionId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Get-MgGroupOnenoteNotebookSectionParentSectionGroup -GroupId <String> -NotebookI
 ```
 Get-MgGroupOnenoteNotebookSectionParentSectionGroup -InputObject <INotesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -124,21 +124,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

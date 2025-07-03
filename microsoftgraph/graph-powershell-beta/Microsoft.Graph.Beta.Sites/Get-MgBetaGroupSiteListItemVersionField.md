@@ -19,7 +19,7 @@ A collection of the fields and values for this version of the list item.
 ```
 Get-MgBetaGroupSiteListItemVersionField -GroupId <String> -ListId <String> -ListItemId <String>
  -ListItemVersionId <String> -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Get-MgBetaGroupSiteListItemVersionField -GroupId <String> -ListId <String> -List
 ```
 Get-MgBetaGroupSiteListItemVersionField -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -137,21 +137,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

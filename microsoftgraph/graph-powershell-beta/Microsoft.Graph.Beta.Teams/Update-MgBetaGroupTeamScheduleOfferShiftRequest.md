@@ -22,14 +22,14 @@ Update-MgBetaGroupTeamScheduleOfferShiftRequest -GroupId <String> -OfferShiftReq
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ManagerActionMessage <String>] [-RecipientActionMessage <String>] [-RecipientUserId <String>]
  [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupTeamScheduleOfferShiftRequest -GroupId <String> -OfferShiftRequestId <String>
  -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,14 +39,14 @@ Update-MgBetaGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ManagerActionMessage <String>] [-RecipientActionMessage <String>] [-RecipientUserId <String>]
  [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -99,6 +99,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -226,21 +241,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RecipientActionMessage
 Custom message sent by recipient of the offer shift request.
 
@@ -323,21 +323,6 @@ scheduleChangeState
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

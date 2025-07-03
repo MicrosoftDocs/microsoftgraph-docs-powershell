@@ -20,14 +20,14 @@ Update the navigation property managedAppPolicies in deviceAppManagement
 Update-MgDeviceAppManagementManagedAppPolicy -ManagedAppPolicyId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Version <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceAppManagementManagedAppPolicy -ManagedAppPolicyId <String>
  -BodyParameter <IMicrosoftGraphManagedAppPolicy> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,7 +35,7 @@ Update-MgDeviceAppManagementManagedAppPolicy -ManagedAppPolicyId <String>
 Update-MgDeviceAppManagementManagedAppPolicy -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Version <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -43,7 +43,7 @@ Update-MgDeviceAppManagementManagedAppPolicy -InputObject <IDevicesCorporateMana
 ```
 Update-MgDeviceAppManagementManagedAppPolicy -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphManagedAppPolicy> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -81,6 +81,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -206,21 +221,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -243,21 +243,6 @@ Version of the entity.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

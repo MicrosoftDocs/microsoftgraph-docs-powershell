@@ -20,7 +20,7 @@ Invoke function getActivitiesByInterval
 Get-MgBetaShareListItemActivityByInterval -EndDateTime <String> -Interval <String> -SharedDriveItemId <String>
  -StartDateTime <String> [-Count] [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### Get
@@ -28,7 +28,7 @@ Get-MgBetaShareListItemActivityByInterval -EndDateTime <String> -Interval <Strin
 Get-MgBetaShareListItemActivityByInterval -EndDateTime <String> -Interval <String> -ListItemId <String>
  -SharedDriveItemId <String> -StartDateTime <String> [-Count] [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Get-MgBetaShareListItemActivityByInterval -EndDateTime <String> -Interval <Strin
 ```
 Get-MgBetaShareListItemActivityByInterval -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -44,7 +44,7 @@ Get-MgBetaShareListItemActivityByInterval -InputObject <IFilesIdentity> [-Count]
 ```
 Get-MgBetaShareListItemActivityByInterval -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -176,21 +176,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 Select properties to be returned
 
@@ -251,6 +236,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -288,21 +288,6 @@ Show only the first n items
 Type: Int32
 Parameter Sets: (All)
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
 
 Required: False
 Position: Named

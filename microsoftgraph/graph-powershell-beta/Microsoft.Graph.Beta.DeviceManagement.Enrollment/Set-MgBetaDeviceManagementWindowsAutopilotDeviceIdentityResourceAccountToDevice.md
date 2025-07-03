@@ -17,7 +17,7 @@ Assigns resource account to Autopilot devices.
 Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice
  -WindowsAutopilotDeviceIdentityId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-ResourceAccountName <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice
 Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice
  -WindowsAutopilotDeviceIdentityId <String>
  -BodyParameter <IPaths1G076VfDevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphAssignresourceaccounttodevicePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice
 Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice
  -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-ResourceAccountName <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,7 +44,7 @@ Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice
 Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice
  -InputObject <IDeviceManagementEnrollmentIdentity>
  -BodyParameter <IPaths1G076VfDevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphAssignresourceaccounttodevicePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -109,6 +109,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -151,21 +166,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -215,36 +215,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WindowsAutopilotDeviceIdentityId
-The unique identifier of windowsAutopilotDeviceIdentity
-
-```yaml
-Type: String
-Parameter Sets: AssignExpanded, Assign
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -255,6 +225,21 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsAutopilotDeviceIdentityId
+The unique identifier of windowsAutopilotDeviceIdentity
+
+```yaml
+Type: String
+Parameter Sets: AssignExpanded, Assign
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

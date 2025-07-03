@@ -21,7 +21,7 @@ Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus -DeviceComplianc
  -DeviceCompliancePolicyId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceDisplayName <String>] [-DeviceModel <String>]
  [-Id <String>] [-LastReportedDateTime <DateTime>] [-Platform <Int32>] [-Status <String>] [-UserName <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus -DeviceComplianc
 ```
 Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus -DeviceComplianceDeviceStatusId <String>
  -DeviceCompliancePolicyId <String> -BodyParameter <IMicrosoftGraphDeviceComplianceDeviceStatus>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus -InputObject <ID
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceDisplayName <String>] [-DeviceModel <String>]
  [-Id <String>] [-LastReportedDateTime <DateTime>] [-Platform <Int32>] [-Status <String>] [-UserName <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,7 +47,7 @@ Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus -InputObject <ID
 ```
 Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceComplianceDeviceStatus> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -103,6 +103,21 @@ The DateTime when device compliance grace period expires
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -248,21 +263,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -315,21 +315,6 @@ UserPrincipalName.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -19,55 +19,55 @@ Delete navigation property allMembers for teams
 ```
 Remove-MgBetaTeamChannelMember -ChannelId <String> -TeamId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Remove
 ```
 Remove-MgBetaTeamChannelMember -ChannelId <String> -TeamId <String> [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsCpcqklTeamsTeamIdChannelsChannelIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete1
 ```
 Remove-MgBetaTeamChannelMember -ChannelId <String> -ConversationMemberId <String> -TeamId <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete
 ```
 Remove-MgBetaTeamChannelMember -ChannelId <String> -ConversationMemberId <String> -TeamId <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentityExpanded
 ```
 Remove-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
 ```
 Remove-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsCpcqklTeamsTeamIdChannelsChannelIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
 ```
 Remove-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -129,6 +129,21 @@ Parameter Sets: RemoveExpanded, Remove, Delete1, Delete
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -211,21 +226,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -264,21 +264,6 @@ To construct, see NOTES section for VALUES properties and create a hash table.
 Type: IMicrosoftGraphConversationMember[]
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -23,13 +23,13 @@ Update-MgTeamScheduleTimeCard -TeamId <String> -TimeCardId <String> [-ResponseHe
  [-ConfirmedBy <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Notes <IMicrosoftGraphItemBody>]
  [-OriginalEntry <IMicrosoftGraphTimeCardEntry>] [-State <String>] [-UserId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgTeamScheduleTimeCard -TeamId <String> -TimeCardId <String> -BodyParameter <IMicrosoftGraphTimeCard>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,13 +41,13 @@ Update-MgTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-ResponseHeadersVar
  [-ConfirmedBy <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Notes <IMicrosoftGraphItemBody>]
  [-OriginalEntry <IMicrosoftGraphTimeCardEntry>] [-State <String>] [-UserId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeCard>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -129,6 +129,21 @@ To construct, see NOTES section for CLOCKOUTEVENT properties and create a hash t
 Type: IMicrosoftGraphTimeCardEvent
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -263,21 +278,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -345,21 +345,6 @@ User ID to which the timeCard belongs.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

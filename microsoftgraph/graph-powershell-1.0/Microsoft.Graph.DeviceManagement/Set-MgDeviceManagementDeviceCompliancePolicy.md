@@ -21,14 +21,14 @@ Not yet documented
 Set-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Assign
 ```
 Set-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId <String>
  -BodyParameter <IPathsYydoy0DevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,14 +37,14 @@ Set-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId <String>
 Set-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AssignViaIdentity
 ```
 Set-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IPathsYydoy0DevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -134,6 +134,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DeviceCompliancePolicyId
 The unique identifier of deviceCompliancePolicy
 
@@ -180,21 +195,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -202,21 +202,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -266,7 +251,7 @@ Read-only.
 
 BODYPARAMETER `<IPathsYydoy0DevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment- `[]`>]`: 
+  - `[Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment- `[]`>]`:
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.

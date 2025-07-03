@@ -19,7 +19,7 @@ This feature requires Teams Premium and attendees must have a valid United State
 Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm -JoinWebUrl <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Attendees <IMicrosoftGraphAttendeeNotificationInfo[]>] [-RemindBeforeTimeInMinutesType <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm -JoinWebUrl <
 ```
 Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm -JoinWebUrl <String> -UserId <String>
  -BodyParameter <IPaths1Iwum32UsersUserIdOnlinemeetingsJoinweburlMicrosoftGraphSendvirtualappointmentremindersmsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm -JoinWebUrl <
 Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Attendees <IMicrosoftGraphAttendeeNotificationInfo[]>] [-RemindBeforeTimeInMinutesType <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -44,7 +44,7 @@ Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm -InputObject 
 ```
 Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths1Iwum32UsersUserIdOnlinemeetingsJoinweburlMicrosoftGraphSendvirtualappointmentremindersmsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -100,6 +100,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -164,21 +179,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RemindBeforeTimeInMinutesType
 remindBeforeTimeInMinutesType
 
@@ -218,21 +218,6 @@ Parameter Sets: SendExpanded, Send
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -22,7 +22,7 @@ Update-MgCommunicationOnlineMeetingTranscript -CallTranscriptId <String> -Online
  [-ContentCorrelationId <String>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>]
  [-EndDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
  [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MetadataContentInputFile <String>]
- [-TranscriptContentUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-TranscriptContentUrl <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Update-MgCommunicationOnlineMeetingTranscript -CallTranscriptId <String> -Online
 ```
 Update-MgCommunicationOnlineMeetingTranscript -CallTranscriptId <String> -OnlineMeetingId <String>
  -BodyParameter <IMicrosoftGraphCallTranscript> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,7 +40,7 @@ Update-MgCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunications
  [-ContentCorrelationId <String>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>]
  [-EndDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
  [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MetadataContentInputFile <String>]
- [-TranscriptContentUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-TranscriptContentUrl <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,7 +48,7 @@ Update-MgCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunications
 ```
 Update-MgCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IMicrosoftGraphCallTranscript> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -114,6 +114,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -298,21 +313,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -336,21 +336,6 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

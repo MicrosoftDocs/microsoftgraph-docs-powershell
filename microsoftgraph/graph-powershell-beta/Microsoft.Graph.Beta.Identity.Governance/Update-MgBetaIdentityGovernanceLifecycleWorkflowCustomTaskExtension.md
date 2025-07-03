@@ -25,7 +25,7 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -CustomTaskE
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-CreatedBy <IMicrosoftGraphUser>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
  [-EndpointConfiguration <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphUser>]
- [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -CustomTaskE
 ```
 Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -CustomTaskExtensionId <String>
  -BodyParameter <IMicrosoftGraphIdentityGovernanceCustomTaskExtension> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,7 +45,7 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-CreatedBy <IMicrosoftGraphUser>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
  [-EndpointConfiguration <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphUser>]
- [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -53,7 +53,7 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject
 ```
 Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphIdentityGovernanceCustomTaskExtension> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -176,6 +176,21 @@ To construct, see NOTES section for CLIENTCONFIGURATION properties and create a 
 Type: IMicrosoftGraphCustomExtensionClientConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -353,21 +368,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -375,21 +375,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

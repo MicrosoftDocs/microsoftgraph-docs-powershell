@@ -18,14 +18,14 @@ Update-MgBetaDeviceManagementCartToClassAssociation -CartToClassAssociationId <S
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ClassroomIds <String[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DeviceCartIds <String[]>] [-DisplayName <String>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Version <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementCartToClassAssociation -CartToClassAssociationId <String>
  -BodyParameter <IMicrosoftGraphCartToClassAssociation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,14 +34,14 @@ Update-MgBetaDeviceManagementCartToClassAssociation -InputObject <IDeviceManagem
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ClassroomIds <String[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DeviceCartIds <String[]>] [-DisplayName <String>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Version <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementCartToClassAssociation -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphCartToClassAssociation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -112,6 +112,21 @@ Identifiers of classrooms to be associated with device carts.
 Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -242,21 +257,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -283,21 +283,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

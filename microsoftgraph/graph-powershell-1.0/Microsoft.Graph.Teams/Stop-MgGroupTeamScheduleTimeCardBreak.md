@@ -19,7 +19,7 @@ Invoke action endBreak
 ```
 Stop-MgGroupTeamScheduleTimeCardBreak -GroupId <String> -TimeCardId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-IsAtApprovedLocation]
- [-Notes <IMicrosoftGraphItemBody>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Notes <IMicrosoftGraphItemBody>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Stop-MgGroupTeamScheduleTimeCardBreak -GroupId <String> -TimeCardId <String>
 ```
 Stop-MgGroupTeamScheduleTimeCardBreak -GroupId <String> -TimeCardId <String>
  -BodyParameter <IPaths125VjoyGroupsGroupIdTeamScheduleTimecardsTimecardIdMicrosoftGraphEndbreakPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,14 +35,14 @@ Stop-MgGroupTeamScheduleTimeCardBreak -GroupId <String> -TimeCardId <String>
 ```
 Stop-MgGroupTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-IsAtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EndViaIdentity
 ```
 Stop-MgGroupTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths125VjoyGroupsGroupIdTeamScheduleTimecardsTimecardIdMicrosoftGraphEndbreakPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -81,6 +81,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -161,21 +176,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -200,21 +200,6 @@ Parameter Sets: EndExpanded, End
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -256,7 +241,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths125VjoyGroupsGroupIdTeamScheduleTimecardsTimecardIdMicrosoftGraphEndbreakPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsAtApprovedLocation <Boolean?>]`: 
+  - `[IsAtApprovedLocation <Boolean?>]`:
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.

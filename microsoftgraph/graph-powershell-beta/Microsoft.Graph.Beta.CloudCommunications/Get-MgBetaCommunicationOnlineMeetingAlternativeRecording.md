@@ -16,7 +16,7 @@ Read-only.
 ### Get (Default)
 ```
 Get-MgBetaCommunicationOnlineMeetingAlternativeRecording -OnlineMeetingId <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Get-MgBetaCommunicationOnlineMeetingAlternativeRecording -OnlineMeetingId <Strin
 ```
 Get-MgBetaCommunicationOnlineMeetingAlternativeRecording -InputObject <ICloudCommunicationsIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -107,21 +107,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

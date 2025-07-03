@@ -18,14 +18,14 @@ Update-MgBetaSecurityPartnerSecurityScoreRequirement -SecurityRequirementId <Str
  [-ResponseHeadersVariable <String>] [-ActionUrl <String>] [-AdditionalProperties <Hashtable>]
  [-ComplianceStatus <String>] [-HelpUrl <String>] [-Id <String>] [-MaxScore <Int64>]
  [-RequirementType <String>] [-Score <Int64>] [-State <String>] [-UpdatedDateTime <DateTime>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityPartnerSecurityScoreRequirement -SecurityRequirementId <String>
  -BodyParameter <IMicrosoftGraphPartnerSecurityRequirement> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,14 +34,14 @@ Update-MgBetaSecurityPartnerSecurityScoreRequirement -InputObject <ISecurityIden
  [-ResponseHeadersVariable <String>] [-ActionUrl <String>] [-AdditionalProperties <Hashtable>]
  [-ComplianceStatus <String>] [-HelpUrl <String>] [-Id <String>] [-MaxScore <Int64>]
  [-RequirementType <String>] [-Score <Int64>] [-State <String>] [-UpdatedDateTime <DateTime>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityPartnerSecurityScoreRequirement -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphPartnerSecurityRequirement> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -104,6 +104,21 @@ complianceStatus
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -185,21 +200,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -286,21 +286,6 @@ The date the requirement properties were last updated.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

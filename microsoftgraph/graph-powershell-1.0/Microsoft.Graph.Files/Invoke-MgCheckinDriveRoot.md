@@ -20,14 +20,14 @@ Check in a checked out driveItem resource, which makes the version of the docume
 ```
 Invoke-MgCheckinDriveRoot -DriveId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CheckInAs <String>] [-Comment <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Checkin
 ```
 Invoke-MgCheckinDriveRoot -DriveId <String>
  -Body <IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,14 +35,14 @@ Invoke-MgCheckinDriveRoot -DriveId <String>
 ```
 Invoke-MgCheckinDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CheckInAs <String>] [-Comment <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CheckinViaIdentity
 ```
 Invoke-MgCheckinDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -130,6 +130,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DriveId
 The unique identifier of drive
 
@@ -191,21 +206,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -213,21 +213,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -271,13 +256,13 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODY `<IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CheckInAs <String>]`: 
-  - `[Comment <String>]`: 
+  - `[CheckInAs <String>]`:
+  - `[Comment <String>]`:
 
 BODYPARAMETER `<IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CheckInAs <String>]`: 
-  - `[Comment <String>]`: 
+  - `[CheckInAs <String>]`:
+  - `[Comment <String>]`:
 
 INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition

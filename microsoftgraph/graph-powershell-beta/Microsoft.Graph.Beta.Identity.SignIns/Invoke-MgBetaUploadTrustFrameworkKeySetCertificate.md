@@ -19,14 +19,14 @@ This method returns trustFrameworkKey.
 ```
 Invoke-MgBetaUploadTrustFrameworkKeySetCertificate -TrustFrameworkKeySetId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Key <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Upload
 ```
 Invoke-MgBetaUploadTrustFrameworkKeySetCertificate -TrustFrameworkKeySetId <String>
  -BodyParameter <IPaths19SkfwzTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphUploadcertificatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,14 +34,14 @@ Invoke-MgBetaUploadTrustFrameworkKeySetCertificate -TrustFrameworkKeySetId <Stri
 ```
 Invoke-MgBetaUploadTrustFrameworkKeySetCertificate -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Key <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UploadViaIdentity
 ```
 Invoke-MgBetaUploadTrustFrameworkKeySetCertificate -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IPaths19SkfwzTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphUploadcertificatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -108,6 +108,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -154,21 +169,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -193,21 +193,6 @@ Parameter Sets: UploadExpanded, Upload
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -20,7 +20,7 @@ Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState -ManagedDeviceId
  [-ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>] [-ErrorCode <String>]
  [-Id <String>] [-SettingCategoryId <String>] [-SettingCategoryName <String>] [-SettingId <String>]
  [-SettingName <String>] [-SourcePolicies <IMicrosoftGraphSettingSource[]>]
- [-State <SecurityBaselineComplianceState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-State <SecurityBaselineComplianceState>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState -ManagedDeviceId
 Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState -ManagedDeviceId <String>
  -SecurityBaselineSettingStateId <String> -SecurityBaselineStateId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphSecurityBaselineSettingState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,7 +40,7 @@ Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState
  [-ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>] [-ErrorCode <String>]
  [-Id <String>] [-SettingCategoryId <String>] [-SettingCategoryName <String>] [-SettingId <String>]
  [-SettingName <String>] [-SourcePolicies <IMicrosoftGraphSettingSource[]>]
- [-State <SecurityBaselineComplianceState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-State <SecurityBaselineComplianceState>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,7 +49,7 @@ Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState
 Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphSecurityBaselineSettingState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -87,6 +87,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -177,21 +192,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -343,21 +343,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

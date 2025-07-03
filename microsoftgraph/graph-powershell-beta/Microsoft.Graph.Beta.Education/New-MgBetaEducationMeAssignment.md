@@ -28,13 +28,13 @@ New-MgBetaEducationMeAssignment [-ResponseHeadersVariable <String>] [-AddToCalen
  [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
  [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
  [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaEducationMeAssignment -BodyParameter <IMicrosoftGraphEducationAssignment>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -196,6 +196,21 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -395,21 +410,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Resources
 Learning objects that are associated with this assignment.
 Only teachers can modify this list.
@@ -484,21 +484,6 @@ To construct, see NOTES section for SUBMISSIONS properties and create a hash tab
 Type: IMicrosoftGraphEducationSubmission[]
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

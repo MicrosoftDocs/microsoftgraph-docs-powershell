@@ -20,14 +20,14 @@ Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-Respo
  [-EnrollmentTarget <String>] [-Id <String>] [-LastAppSyncDateTime <DateTime>] [-LastAppSyncStatus <String>]
  [-LastModifiedDateTime <DateTime>] [-ManagedGooglePlayInitialScopeTagIds <String[]>]
  [-OwnerOrganizationName <String>] [-OwnerUserPrincipalName <String>] [-TargetGroupIds <String[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
  -BodyParameter <IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -115,6 +115,21 @@ To construct, see NOTES section for COMPANYCODES properties and create a hash ta
 Type: IMicrosoftGraphAndroidEnrollmentCompanyCode[]
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -274,21 +289,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -311,21 +311,6 @@ Specifies which AAD groups can enroll devices in Android for Work device managem
 Type: String[]
 Parameter Sets: UpdateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

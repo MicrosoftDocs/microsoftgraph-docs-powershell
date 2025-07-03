@@ -24,7 +24,7 @@ Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult -TaskId 
  -TaskProcessingResultId <String> -WorkflowId <String> -WorkflowVersionNumber <Int32>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>] [-Source <String>] [-Type <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult -TaskId 
 Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult -TaskId <String>
  -TaskProcessingResultId <String> -WorkflowId <String> -WorkflowVersionNumber <Int32>
  -BodyParameter <IPaths4QmbagIdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdVersionsWorkflowversionVersionnumberTasksTaskIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult -TaskId 
 Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>]
- [-Source <String>] [-Type <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-Source <String>] [-Type <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -51,7 +51,7 @@ Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult
 Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths4QmbagIdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdVersionsWorkflowversionVersionnumberTasksTaskIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -92,6 +92,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -153,21 +168,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -247,6 +247,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WorkflowId
 The unique identifier of workflow
 
@@ -277,37 +293,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -330,8 +315,8 @@ BODYPARAMETER `<IPaths4QmbagIdentitygovernanceLifecycleworkflowsWorkflowsWorkflo
   - `[Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>]`: customTaskExtensionCallbackData
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[OperationStatus <String>]`: customTaskExtensionOperationStatus
-  - `[Source <String>]`: 
-  - `[Type <String>]`: 
+  - `[Source <String>]`:
+  - `[Type <String>]`:
 
 DATA `<IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>`: customTaskExtensionCallbackData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

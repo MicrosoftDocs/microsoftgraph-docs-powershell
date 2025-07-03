@@ -19,14 +19,14 @@ To proactively opt in to the new behavior ahead of time, use the contentStream p
 ```
 Get-MgBetaSiteListItemActivityDriveItemContent -ItemActivityOldId <String> -ListId <String>
  -ListItemId <String> -SiteId <String> [-Format <String>] -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaSiteListItemActivityDriveItemContent -InputObject <ISitesIdentity> [-Format <String>]
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -156,21 +156,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

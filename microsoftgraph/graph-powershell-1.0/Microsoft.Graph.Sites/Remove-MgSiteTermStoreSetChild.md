@@ -18,7 +18,7 @@ Delete navigation property children for sites
 ### Delete (Default)
 ```
 Remove-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,48 +26,48 @@ Remove-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String>
 ```
 Remove-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String> -StoreId <String>
  -TermId1 <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete2
 ```
 Remove-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String> -TermId1 <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete1
 ```
 Remove-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String> -StoreId <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity3
 ```
 Remove-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity2
 ```
 Remove-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
 ```
 Remove-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -77,6 +77,21 @@ Delete navigation property children for sites
 ## EXAMPLES
 
 ## PARAMETERS
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -135,21 +150,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -238,21 +238,6 @@ Parameter Sets: Delete3, Delete2
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

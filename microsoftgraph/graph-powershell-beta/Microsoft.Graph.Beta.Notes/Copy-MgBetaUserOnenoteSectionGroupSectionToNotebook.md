@@ -22,7 +22,7 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copy-MgBetaUserOnenoteSectionGroupSectionToNotebook -OnenoteSectionId <String> -SectionGroupId <String>
  -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-GroupId <String>]
  [-Id <String>] [-RenameAs <String>] [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
@@ -30,7 +30,7 @@ Copy-MgBetaUserOnenoteSectionGroupSectionToNotebook -OnenoteSectionId <String> -
 Copy-MgBetaUserOnenoteSectionGroupSectionToNotebook -OnenoteSectionId <String> -SectionGroupId <String>
  -UserId <String>
  -BodyParameter <IPathsDqjogtUsersUserIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,14 +39,14 @@ Copy-MgBetaUserOnenoteSectionGroupSectionToNotebook -OnenoteSectionId <String> -
 Copy-MgBetaUserOnenoteSectionGroupSectionToNotebook -InputObject <INotesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>]
  [-RenameAs <String>] [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
 Copy-MgBetaUserOnenoteSectionGroupSectionToNotebook -InputObject <INotesIdentity>
  -BodyParameter <IPathsDqjogtUsersUserIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -86,6 +86,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -159,21 +174,6 @@ Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -264,21 +264,6 @@ Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -20,7 +20,7 @@ Update the navigation property allMembers in teams
 Update-MgTeamChannelMember -ChannelId <String> -ConversationMemberId <String> -TeamId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-Roles <String[]>] [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
@@ -28,28 +28,28 @@ Update-MgTeamChannelMember -ChannelId <String> -ConversationMemberId <String> -T
 Update-MgTeamChannelMember -ChannelId <String> -ConversationMemberId <String> -TeamId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-Roles <String[]>] [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgTeamChannelMember -ChannelId <String> -ConversationMemberId <String> -TeamId <String>
  -BodyParameter <IMicrosoftGraphConversationMember> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgTeamChannelMember -ChannelId <String> -ConversationMemberId <String> -TeamId <String>
  -BodyParameter <IMicrosoftGraphConversationMember> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgTeamChannelMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Roles <String[]>]
- [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -57,21 +57,21 @@ Update-MgTeamChannelMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariab
 ```
 Update-MgTeamChannelMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Roles <String[]>]
- [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphConversationMember>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphConversationMember>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -140,6 +140,21 @@ Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -223,21 +238,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -295,21 +295,6 @@ This property is settable only for members of a chat.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

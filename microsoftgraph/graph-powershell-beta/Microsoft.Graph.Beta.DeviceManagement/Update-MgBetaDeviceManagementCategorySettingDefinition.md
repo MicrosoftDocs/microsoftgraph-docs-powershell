@@ -20,7 +20,7 @@ Update-MgBetaDeviceManagementCategorySettingDefinition -DeviceManagementSettingC
  [-Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>] [-Description <String>]
  [-DisplayName <String>] [-DocumentationUrl <String>] [-HeaderSubtitle <String>] [-HeaderTitle <String>]
  [-Id <String>] [-IsTopLevel] [-Keywords <String[]>] [-PlaceholderText <String>]
- [-ValueType <DeviceManangementIntentValueType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ValueType <DeviceManangementIntentValueType>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgBetaDeviceManagementCategorySettingDefinition -DeviceManagementSettingC
 Update-MgBetaDeviceManagementCategorySettingDefinition -DeviceManagementSettingCategoryId <String>
  -DeviceManagementSettingDefinitionId <String>
  -BodyParameter <IMicrosoftGraphDeviceManagementSettingDefinition> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,7 +40,7 @@ Update-MgBetaDeviceManagementCategorySettingDefinition -InputObject <IDeviceMana
  [-Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>] [-Description <String>]
  [-DisplayName <String>] [-DocumentationUrl <String>] [-HeaderSubtitle <String>] [-HeaderTitle <String>]
  [-Id <String>] [-IsTopLevel] [-Keywords <String[]>] [-PlaceholderText <String>]
- [-ValueType <DeviceManangementIntentValueType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ValueType <DeviceManangementIntentValueType>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,7 +48,7 @@ Update-MgBetaDeviceManagementCategorySettingDefinition -InputObject <IDeviceMana
 ```
 Update-MgBetaDeviceManagementCategorySettingDefinition -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceManagementSettingDefinition> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -94,6 +94,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -325,21 +340,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -362,21 +362,6 @@ deviceManangementIntentValueType
 Type: DeviceManangementIntentValueType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

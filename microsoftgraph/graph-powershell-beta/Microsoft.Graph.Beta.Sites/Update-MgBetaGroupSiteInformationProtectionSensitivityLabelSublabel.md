@@ -21,7 +21,7 @@ Update-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel -GroupId <St
  [-AutoLabeling <IMicrosoftGraphAutoLabeling>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsDefault] [-IsEndpointProtectionEnabled] [-LabelActions <IMicrosoftGraphLabelActionBase[]>]
  [-Name <String>] [-Priority <Int32>] [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -29,7 +29,7 @@ Update-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel -GroupId <St
 Update-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel -GroupId <String>
  -SensitivityLabelId <String> -SensitivityLabelId1 <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphSensitivityLabel> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,14 +40,14 @@ Update-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel -InputObject
  [-AutoLabeling <IMicrosoftGraphAutoLabeling>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsDefault] [-IsEndpointProtectionEnabled] [-LabelActions <IMicrosoftGraphLabelActionBase[]>]
  [-Name <String>] [-Priority <Int32>] [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphSensitivityLabel> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -147,6 +147,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -318,21 +333,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -416,21 +416,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

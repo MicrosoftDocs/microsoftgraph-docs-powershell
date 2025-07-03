@@ -18,14 +18,14 @@ Update-MgBetaDeviceAppManagementMultiplePolicySet -PolicySetId <String> [-Respon
  [-AddedPolicySetItems <IMicrosoftGraphPolicySetItem[]>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphPolicySetAssignment[]>] [-DeletedPolicySetItems <String[]>]
  [-UpdatedPolicySetItems <IMicrosoftGraphPolicySetItem[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaDeviceAppManagementMultiplePolicySet -PolicySetId <String>
  -BodyParameter <IPathsNb5PtwDeviceappmanagementPolicysetsPolicysetIdMicrosoftGraphUpdatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Update-MgBetaDeviceAppManagementMultiplePolicySet -InputObject <IDevicesCorporat
  [-ResponseHeadersVariable <String>] [-AddedPolicySetItems <IMicrosoftGraphPolicySetItem[]>]
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphPolicySetAssignment[]>]
  [-DeletedPolicySetItems <String[]>] [-UpdatedPolicySetItems <IMicrosoftGraphPolicySetItem[]>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -43,7 +43,7 @@ Update-MgBetaDeviceAppManagementMultiplePolicySet -InputObject <IDevicesCorporat
 ```
 Update-MgBetaDeviceAppManagementMultiplePolicySet -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPathsNb5PtwDeviceappmanagementPolicysetsPolicysetIdMicrosoftGraphUpdatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -125,6 +125,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DeletedPolicySetItems
 
 
@@ -201,21 +216,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -239,21 +239,6 @@ To construct, see NOTES section for UPDATEDPOLICYSETITEMS properties and create 
 Type: IMicrosoftGraphPolicySetItem[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

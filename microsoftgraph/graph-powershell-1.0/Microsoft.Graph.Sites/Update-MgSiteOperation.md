@@ -21,7 +21,7 @@ Update-MgSiteOperation -RichLongRunningOperationId <String> -SiteId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-LastActionDateTime <DateTime>]
  [-PercentageComplete <Int32>] [-ResourceId <String>] [-ResourceLocation <String>] [-Status <String>]
- [-StatusDetail <String>] [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-StatusDetail <String>] [-Type <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgSiteOperation -RichLongRunningOperationId <String> -SiteId <String>
 ```
 Update-MgSiteOperation -RichLongRunningOperationId <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphRichLongRunningOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,13 +38,13 @@ Update-MgSiteOperation -InputObject <ISitesIdentity> [-ResponseHeadersVariable <
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphPublicError>]
  [-Id <String>] [-LastActionDateTime <DateTime>] [-PercentageComplete <Int32>] [-ResourceId <String>]
  [-ResourceLocation <String>] [-Status <String>] [-StatusDetail <String>] [-Type <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSiteOperation -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphRichLongRunningOperation>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -83,6 +83,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -194,21 +209,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -325,21 +325,6 @@ The type of the operation.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

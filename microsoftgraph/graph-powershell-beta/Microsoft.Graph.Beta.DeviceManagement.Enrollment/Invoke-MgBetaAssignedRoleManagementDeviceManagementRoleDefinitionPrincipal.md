@@ -22,7 +22,7 @@ Invoke-MgBetaAssignedRoleManagementDeviceManagementRoleDefinitionPrincipal -Unif
  [-Count] [-DirectoryScopeId <String>] [-DirectoryScopeType <String>] [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-Transitive] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### AssignedViaIdentity
@@ -31,7 +31,7 @@ Invoke-MgBetaAssignedRoleManagementDeviceManagementRoleDefinitionPrincipal
  -InputObject <IDeviceManagementEnrollmentIdentity> [-Count] [-DirectoryScopeId <String>]
  [-DirectoryScopeType <String>] [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Transitive]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -151,21 +151,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 Select properties to be returned
 
@@ -207,6 +192,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -267,21 +267,6 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

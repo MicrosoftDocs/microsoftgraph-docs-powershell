@@ -19,26 +19,26 @@ Get details about SharePoint activity by user.
 ### Get (Default)
 ```
 Get-MgReportSharePointActivityUserDetail -Date <DateTime> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgReportSharePointActivityUserDetail -Period <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgReportSharePointActivityUserDetail -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportSharePointActivityUserDetail -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -134,21 +134,6 @@ Parameter Sets: Get1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

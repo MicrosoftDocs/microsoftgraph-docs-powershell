@@ -21,7 +21,7 @@ New-MgBetaCommunicationOnlineMeetingTranscript -OnlineMeetingId <String> [-Respo
  [-AdditionalProperties <Hashtable>] [-CallId <String>] [-ContentCorrelationId <String>]
  [-ContentInputFile <String>] [-CreatedDateTime <DateTime>] [-EndDateTime <DateTime>] [-Id <String>]
  [-MeetingId <String>] [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MetadataContentInputFile <String>]
- [-TranscriptContentUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-TranscriptContentUrl <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ New-MgBetaCommunicationOnlineMeetingTranscript -OnlineMeetingId <String> [-Respo
 ```
 New-MgBetaCommunicationOnlineMeetingTranscript -OnlineMeetingId <String>
  -BodyParameter <IMicrosoftGraphCallTranscript> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -39,7 +39,7 @@ New-MgBetaCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunication
  [-ContentCorrelationId <String>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>]
  [-EndDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
  [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MetadataContentInputFile <String>]
- [-TranscriptContentUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-TranscriptContentUrl <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,7 +47,7 @@ New-MgBetaCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunication
 ```
 New-MgBetaCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IMicrosoftGraphCallTranscript> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -96,6 +96,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -282,21 +297,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -320,21 +320,6 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -23,14 +23,14 @@ This convenience is not available when forwarding from an Outlook.com account.
 Invoke-MgForwardUserEventInstance -EventId <String> -EventId1 <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Comment <String>]
  [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Forward
 ```
 Invoke-MgForwardUserEventInstance -EventId <String> -EventId1 <String> -UserId <String>
  -BodyParameter <IPaths1K9ImduUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Invoke-MgForwardUserEventInstance -EventId <String> -EventId1 <String> -UserId <
 ```
 Invoke-MgForwardUserEventInstance -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ Invoke-MgForwardUserEventInstance -InputObject <ICalendarIdentity> [-ResponseHea
 ```
 Invoke-MgForwardUserEventInstance -InputObject <ICalendarIdentity>
  -BodyParameter <IPaths1K9ImduUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -97,6 +97,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -181,21 +196,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -242,21 +242,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -292,8 +277,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1K9ImduUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Comment <String>]`: 
-  - `[ToRecipients <IMicrosoftGraphRecipient- `[]`>]`: 
+  - `[Comment <String>]`:
+  - `[ToRecipients <IMicrosoftGraphRecipient- `[]`>]`:
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Address <String>]`: The email address of the person or entity.

@@ -21,7 +21,7 @@ Update-MgServicePrincipalSynchronizationTemplate -ServicePrincipalId <String>
  -SynchronizationTemplateId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ApplicationId <String>] [-Default] [-Description <String>] [-Discoverable] [-FactoryTag <String>]
  [-Id <String>] [-Metadata <IMicrosoftGraphSynchronizationMetadataEntry[]>]
- [-Schema <IMicrosoftGraphSynchronizationSchema>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Schema <IMicrosoftGraphSynchronizationSchema>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgServicePrincipalSynchronizationTemplate -ServicePrincipalId <String>
 ```
 Update-MgServicePrincipalSynchronizationTemplate -ServicePrincipalId <String>
  -SynchronizationTemplateId <String> -BodyParameter <IMicrosoftGraphSynchronizationTemplate>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,14 +39,14 @@ Update-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIden
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-Default]
  [-Description <String>] [-Discoverable] [-FactoryTag <String>] [-Id <String>]
  [-Metadata <IMicrosoftGraphSynchronizationMetadataEntry[]>] [-Schema <IMicrosoftGraphSynchronizationSchema>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -99,6 +99,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -227,21 +242,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -297,21 +297,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -384,7 +369,7 @@ Not nullable.
 Anchor attributes must have a unique value identifying an object, and must be immutable.
 Default is false.
 One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
-          - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`: 
+          - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`:
             - `[Key <String>]`: Key.
             - `[Value <String>]`: Value.
           - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
@@ -423,11 +408,11 @@ null if discovery hasn't yet occurred.
     - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule- `[]`>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
       - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[IncludedContainers <String- `[]`>]`: 
+        - `[IncludedContainers <String- `[]`>]`:
       - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
       - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[IncludedGroups <String- `[]`>]`: 
+        - `[IncludedGroups <String- `[]`>]`:
       - `[Id <String>]`: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -553,7 +538,7 @@ Not nullable.
 Anchor attributes must have a unique value identifying an object, and must be immutable.
 Default is false.
 One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
-        - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`: 
+        - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`:
           - `[Key <String>]`: Key.
           - `[Value <String>]`: Value.
         - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
@@ -592,11 +577,11 @@ null if discovery hasn't yet occurred.
   - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule- `[]`>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
     - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IncludedContainers <String- `[]`>]`: 
+      - `[IncludedContainers <String- `[]`>]`:
     - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
     - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IncludedGroups <String- `[]`>]`: 
+      - `[IncludedGroups <String- `[]`>]`:
     - `[Id <String>]`: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.

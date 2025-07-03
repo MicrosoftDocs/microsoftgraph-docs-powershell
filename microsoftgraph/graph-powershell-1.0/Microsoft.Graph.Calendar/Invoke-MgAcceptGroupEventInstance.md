@@ -20,7 +20,7 @@ Accept the specified event in a user calendar.
 ```
 Invoke-MgAcceptGroupEventInstance -EventId <String> -EventId1 <String> -GroupId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Comment <String>] [-SendResponse]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Invoke-MgAcceptGroupEventInstance -EventId <String> -EventId1 <String> -GroupId 
 ```
 Invoke-MgAcceptGroupEventInstance -EventId <String> -EventId1 <String> -GroupId <String>
  -BodyParameter <IPaths1Mj8GzzGroupsGroupIdEventsEventIdInstancesEventId1MicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,14 +36,14 @@ Invoke-MgAcceptGroupEventInstance -EventId <String> -EventId1 <String> -GroupId 
 ```
 Invoke-MgAcceptGroupEventInstance -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Comment <String>] [-SendResponse] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AcceptViaIdentity
 ```
 Invoke-MgAcceptGroupEventInstance -InputObject <ICalendarIdentity>
  -BodyParameter <IPaths1Mj8GzzGroupsGroupIdEventsEventIdInstancesEventId1MicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -92,6 +92,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -191,21 +206,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -232,21 +232,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -286,8 +271,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1Mj8GzzGroupsGroupIdEventsEventIdInstancesEventId1MicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Comment <String>]`: 
-  - `[SendResponse <Boolean?>]`: 
+  - `[Comment <String>]`:
+  - `[SendResponse <Boolean?>]`:
 
 INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment

@@ -21,14 +21,14 @@ Update-MgGroupAppRoleAssignment -AppRoleAssignmentId <String> -GroupId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppRoleId <String>]
  [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Id <String>] [-PrincipalDisplayName <String>]
  [-PrincipalId <String>] [-PrincipalType <String>] [-ResourceDisplayName <String>] [-ResourceId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgGroupAppRoleAssignment -AppRoleAssignmentId <String> -GroupId <String>
  -BodyParameter <IMicrosoftGraphAppRoleAssignment> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,14 +37,14 @@ Update-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-ResponseH
  [-AdditionalProperties <Hashtable>] [-AppRoleId <String>] [-CreatedDateTime <DateTime>]
  [-DeletedDateTime <DateTime>] [-Id <String>] [-PrincipalDisplayName <String>] [-PrincipalId <String>]
  [-PrincipalType <String>] [-ResourceDisplayName <String>] [-ResourceId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphAppRoleAssignment> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -115,6 +115,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -266,21 +281,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResourceDisplayName
 The display name of the resource app's service principal to which the assignment is made.
 Maximum length is 256 characters.
@@ -321,21 +321,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

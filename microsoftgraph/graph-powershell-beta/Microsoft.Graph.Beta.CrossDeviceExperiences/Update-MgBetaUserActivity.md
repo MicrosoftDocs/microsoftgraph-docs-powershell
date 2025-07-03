@@ -23,14 +23,14 @@ Update-MgBetaUserActivity -UserActivityId <String> -UserId <String> [-ResponseHe
  [-CreatedDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-FallbackUrl <String>]
  [-HistoryItems <IMicrosoftGraphActivityHistoryItem[]>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Status <String>] [-UserTimezone <String>] [-VisualElements <IMicrosoftGraphVisualInfo>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserActivity -UserActivityId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphUserActivity> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,14 +41,14 @@ Update-MgBetaUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-Respo
  [-CreatedDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-FallbackUrl <String>]
  [-HistoryItems <IMicrosoftGraphActivityHistoryItem[]>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Status <String>] [-UserTimezone <String>] [-VisualElements <IMicrosoftGraphVisualInfo>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserActivity -InputObject <ICrossDeviceExperiencesIdentity>
  -BodyParameter <IMicrosoftGraphUserActivity> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -157,6 +157,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -319,21 +334,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -418,21 +418,6 @@ To construct, see NOTES section for VISUALELEMENTS properties and create a hash 
 Type: IMicrosoftGraphVisualInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -21,14 +21,14 @@ Update-MgBetaDeviceAppManagementManagedEBookDeviceState -DeviceInstallStateId <S
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeviceId <String>]
  [-DeviceName <String>] [-ErrorCode <String>] [-Id <String>] [-InstallState <InstallState>]
  [-LastSyncDateTime <DateTime>] [-OSDescription <String>] [-OSVersion <String>] [-UserName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementManagedEBookDeviceState -DeviceInstallStateId <String> -ManagedEBookId <String>
  -BodyParameter <IMicrosoftGraphDeviceInstallState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,14 +37,14 @@ Update-MgBetaDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCo
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeviceId <String>]
  [-DeviceName <String>] [-ErrorCode <String>] [-Id <String>] [-InstallState <InstallState>]
  [-LastSyncDateTime <DateTime>] [-OSDescription <String>] [-OSVersion <String>] [-UserName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceInstallState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -90,6 +90,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -275,21 +290,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -312,21 +312,6 @@ Device User Name.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

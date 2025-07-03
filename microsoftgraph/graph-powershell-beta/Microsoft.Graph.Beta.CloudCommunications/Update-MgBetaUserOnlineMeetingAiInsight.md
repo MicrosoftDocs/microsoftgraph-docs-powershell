@@ -19,14 +19,14 @@ Update-MgBetaUserOnlineMeetingAiInsight -CallAiInsightId <String> -OnlineMeeting
  [-AdditionalProperties <Hashtable>] [-CallId <String>] [-ContentCorrelationId <String>]
  [-CreatedDateTime <DateTime>] [-EndDateTime <DateTime>] [-Id <String>]
  [-MeetingNotes <IMicrosoftGraphMeetingNote[]>] [-Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserOnlineMeetingAiInsight -CallAiInsightId <String> -OnlineMeetingId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphCallAiInsight> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,14 +36,14 @@ Update-MgBetaUserOnlineMeetingAiInsight -InputObject <ICloudCommunicationsIdenti
  [-AdditionalProperties <Hashtable>] [-CallId <String>] [-ContentCorrelationId <String>]
  [-CreatedDateTime <DateTime>] [-EndDateTime <DateTime>] [-Id <String>]
  [-MeetingNotes <IMicrosoftGraphMeetingNote[]>] [-Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserOnlineMeetingAiInsight -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IMicrosoftGraphCallAiInsight> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -122,6 +122,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -253,21 +268,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -306,21 +306,6 @@ To construct, see NOTES section for VIEWPOINT properties and create a hash table
 Type: IMicrosoftGraphCallAiInsightViewPoint
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

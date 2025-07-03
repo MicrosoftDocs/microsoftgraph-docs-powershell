@@ -19,14 +19,14 @@ Create new navigation property to scopedRoleMemberOf for users
 ```
 New-MgUserScopedRoleMemberOf -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AdministrativeUnitId <String>] [-Id <String>] [-RoleId <String>]
- [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserScopedRoleMemberOf -UserId <String> -BodyParameter <IMicrosoftGraphScopedRoleMembership>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,14 +35,14 @@ New-MgUserScopedRoleMemberOf -UserId <String> -BodyParameter <IMicrosoftGraphSco
 New-MgUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AdministrativeUnitId <String>]
  [-Id <String>] [-RoleId <String>] [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -98,6 +98,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -142,21 +157,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -215,21 +215,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -25,7 +25,7 @@ Update-MgBetaDeviceManagementDeviceHealthScript -DeviceHealthScriptId <String>
  [-Publisher <String>] [-RemediationScriptContentInputFile <String>]
  [-RemediationScriptParameters <IMicrosoftGraphDeviceHealthScriptParameter[]>] [-RoleScopeTagIds <String[]>]
  [-RunAs32Bit] [-RunAsAccount <RunAsAccountType>] [-RunSummary <IMicrosoftGraphDeviceHealthScriptRunSummary>]
- [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Version <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Update-MgBetaDeviceManagementDeviceHealthScript -DeviceHealthScriptId <String>
 ```
 Update-MgBetaDeviceManagementDeviceHealthScript -DeviceHealthScriptId <String>
  -BodyParameter <IMicrosoftGraphDeviceHealthScript> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -49,7 +49,7 @@ Update-MgBetaDeviceManagementDeviceHealthScript -InputObject <IDeviceManagementI
  [-Publisher <String>] [-RemediationScriptContentInputFile <String>]
  [-RemediationScriptParameters <IMicrosoftGraphDeviceHealthScriptParameter[]>] [-RoleScopeTagIds <String[]>]
  [-RunAs32Bit] [-RunAsAccount <RunAsAccountType>] [-RunSummary <IMicrosoftGraphDeviceHealthScriptRunSummary>]
- [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Version <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -57,7 +57,7 @@ Update-MgBetaDeviceManagementDeviceHealthScript -InputObject <IDeviceManagementI
 ```
 Update-MgBetaDeviceManagementDeviceHealthScript -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceHealthScript> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -119,6 +119,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -322,21 +337,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Publisher
 Name of the device health script publisher
 
@@ -466,21 +466,6 @@ Version of the device health script
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

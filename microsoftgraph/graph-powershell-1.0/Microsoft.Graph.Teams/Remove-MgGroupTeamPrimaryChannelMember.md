@@ -19,20 +19,20 @@ Delete navigation property allMembers for groups
 ```
 Remove-MgGroupTeamPrimaryChannelMember -GroupId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete1
 ```
 Remove-MgGroupTeamPrimaryChannelMember -ConversationMemberId <String> -GroupId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete
 ```
 Remove-MgGroupTeamPrimaryChannelMember -ConversationMemberId <String> -GroupId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,34 +40,34 @@ Remove-MgGroupTeamPrimaryChannelMember -ConversationMemberId <String> -GroupId <
 ```
 Remove-MgGroupTeamPrimaryChannelMember -GroupId <String> [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths1U0Ye8TGroupsGroupIdTeamPrimarychannelMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentityExpanded
 ```
 Remove-MgGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
 ```
 Remove-MgGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths1U0Ye8TGroupsGroupIdTeamPrimarychannelMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
 ```
 Remove-MgGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -106,6 +106,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -200,21 +215,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -238,21 +238,6 @@ To construct, see NOTES section for VALUES properties and create a hash table.
 Type: IMicrosoftGraphConversationMember[]
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -297,7 +282,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1U0Ye8TGroupsGroupIdTeamPrimarychannelMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Values <IMicrosoftGraphConversationMember- `[]`>]`: 
+  - `[Values <IMicrosoftGraphConversationMember- `[]`>]`:
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: The display name of the user.

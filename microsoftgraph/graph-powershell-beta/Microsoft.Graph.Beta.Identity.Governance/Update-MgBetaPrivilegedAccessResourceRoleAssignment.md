@@ -23,7 +23,7 @@ Update-MgBetaPrivilegedAccessResourceRoleAssignment -GovernanceResourceId <Strin
  [-Resource <IMicrosoftGraphGovernanceResource>] [-ResourceId <String>]
  [-RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>] [-RoleDefinitionId <String>]
  [-StartDateTime <DateTime>] [-Status <String>] [-Subject <IMicrosoftGraphGovernanceSubject>]
- [-SubjectId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-SubjectId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Update-MgBetaPrivilegedAccessResourceRoleAssignment -GovernanceResourceId <Strin
 Update-MgBetaPrivilegedAccessResourceRoleAssignment -GovernanceResourceId <String>
  -GovernanceRoleAssignmentId <String> -PrivilegedAccessId <String>
  -BodyParameter <IMicrosoftGraphGovernanceRoleAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,7 +45,7 @@ Update-MgBetaPrivilegedAccessResourceRoleAssignment -InputObject <IIdentityGover
  [-Resource <IMicrosoftGraphGovernanceResource>] [-ResourceId <String>]
  [-RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>] [-RoleDefinitionId <String>]
  [-StartDateTime <DateTime>] [-Status <String>] [-Subject <IMicrosoftGraphGovernanceSubject>]
- [-SubjectId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-SubjectId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -53,7 +53,7 @@ Update-MgBetaPrivilegedAccessResourceRoleAssignment -InputObject <IIdentityGover
 ```
 Update-MgBetaPrivilegedAccessResourceRoleAssignment -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphGovernanceRoleAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -107,6 +107,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -281,21 +296,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Resource
 governanceResource
 To construct, see NOTES section for RESOURCE properties and create a hash table.
@@ -431,21 +431,6 @@ The ID of the subject that the role assignment is associated with.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

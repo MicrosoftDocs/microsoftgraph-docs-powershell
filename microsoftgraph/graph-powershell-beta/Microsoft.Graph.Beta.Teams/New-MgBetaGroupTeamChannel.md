@@ -26,13 +26,13 @@ New-MgBetaGroupTeamChannel -GroupId <String> [-ResponseHeadersVariable <String>]
  [-Planner <IMicrosoftGraphTeamsChannelPlanner>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>] [-Summary <IMicrosoftGraphChannelSummary>]
  [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <String>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupTeamChannel -GroupId <String> -BodyParameter <IMicrosoftGraphChannel>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,13 +47,13 @@ New-MgBetaGroupTeamChannel -InputObject <ITeamsIdentity> [-ResponseHeadersVariab
  [-Planner <IMicrosoftGraphTeamsChannelPlanner>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>] [-Summary <IMicrosoftGraphChannelSummary>]
  [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <String>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChannel>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -109,6 +109,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -382,21 +397,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -485,21 +485,6 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

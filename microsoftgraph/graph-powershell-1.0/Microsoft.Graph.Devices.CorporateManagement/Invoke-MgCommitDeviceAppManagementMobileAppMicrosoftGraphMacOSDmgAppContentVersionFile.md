@@ -21,7 +21,7 @@ Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersi
  -MobileAppContentFileId <String> -MobileAppContentId <String> -MobileAppId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Commit
@@ -29,7 +29,7 @@ Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersi
 Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile
  -MobileAppContentFileId <String> -MobileAppContentId <String> -MobileAppId <String>
  -BodyParameter <IPathsA5AptjDeviceappmanagementMobileappsMobileappIdMicrosoftGraphMacosdmgappContentversionsMobileappcontentIdFilesMobileappcontentfileIdMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersi
 Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -47,7 +47,7 @@ Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersi
 Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPathsA5AptjDeviceappmanagementMobileappsMobileappIdMicrosoftGraphMacosdmgappContentversionsMobileappcontentIdFilesMobileappcontentfileIdMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -86,6 +86,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -196,21 +211,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -218,21 +218,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

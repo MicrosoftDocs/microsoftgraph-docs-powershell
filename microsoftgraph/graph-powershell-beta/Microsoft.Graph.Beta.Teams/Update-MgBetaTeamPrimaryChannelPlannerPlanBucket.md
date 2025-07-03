@@ -18,7 +18,7 @@ Update-MgBetaTeamPrimaryChannelPlannerPlanBucket -PlannerBucketId <String> -Plan
  -TeamId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>] [-CreationSource <IMicrosoftGraphPlannerBucketCreation>]
  [-Id <String>] [-IsArchived] [-Name <String>] [-OrderHint <String>] [-PlanId <String>]
- [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Update-MgBetaTeamPrimaryChannelPlannerPlanBucket -PlannerBucketId <String> -Plan
 ```
 Update-MgBetaTeamPrimaryChannelPlannerPlanBucket -PlannerBucketId <String> -PlannerPlanId <String>
  -TeamId <String> -BodyParameter <IMicrosoftGraphPlannerBucket> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,7 +35,7 @@ Update-MgBetaTeamPrimaryChannelPlannerPlanBucket -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>] [-CreationSource <IMicrosoftGraphPlannerBucketCreation>]
  [-Id <String>] [-IsArchived] [-Name <String>] [-OrderHint <String>] [-PlanId <String>]
- [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,7 +43,7 @@ Update-MgBetaTeamPrimaryChannelPlannerPlanBucket -InputObject <ITeamsIdentity>
 ```
 Update-MgBetaTeamPrimaryChannelPlannerPlanBucket -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphPlannerBucket> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -97,6 +97,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -256,21 +271,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -313,21 +313,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

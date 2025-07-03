@@ -20,7 +20,7 @@ Update-MgBetaNetworkAccessForwardingProfile -ForwardingProfileId <String> [-Resp
  [-Description <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Name <String>]
  [-Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>] [-Priority <Int32>]
  [-ServicePrincipal <IMicrosoftGraphServicePrincipal>] [-State <String>] [-TrafficForwardingType <String>]
- [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Version <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgBetaNetworkAccessForwardingProfile -ForwardingProfileId <String> [-Resp
 ```
 Update-MgBetaNetworkAccessForwardingProfile -ForwardingProfileId <String>
  -BodyParameter <IMicrosoftGraphNetworkaccessForwardingProfile> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,14 +39,14 @@ Update-MgBetaNetworkAccessForwardingProfile -InputObject <INetworkAccessIdentity
  [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>]
  [-Priority <Int32>] [-ServicePrincipal <IMicrosoftGraphServicePrincipal>] [-State <String>]
  [-TrafficForwardingType <String>] [-Version <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaNetworkAccessForwardingProfile -InputObject <INetworkAccessIdentity>
  -BodyParameter <IMicrosoftGraphNetworkaccessForwardingProfile> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -127,6 +127,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -268,21 +283,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -351,21 +351,6 @@ Profile version.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

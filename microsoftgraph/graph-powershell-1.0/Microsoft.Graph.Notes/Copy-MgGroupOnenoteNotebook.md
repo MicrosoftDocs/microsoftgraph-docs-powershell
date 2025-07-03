@@ -20,7 +20,7 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 ```
 Copy-MgGroupOnenoteNotebook -GroupId <String> -NotebookId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-GroupId1 <String>] [-NotebookFolder <String>] [-RenameAs <String>]
- [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,14 +29,14 @@ Copy-MgGroupOnenoteNotebook -GroupId <String> -NotebookId <String> [-ResponseHea
 Copy-MgGroupOnenoteNotebook [-GroupId <String>] -InputObject <INotesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-NotebookFolder <String>]
  [-RenameAs <String>] [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
 ```
 Copy-MgGroupOnenoteNotebook -GroupId <String> -NotebookId <String>
  -BodyParameter <IPaths1Nalx8HGroupsGroupIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,7 +44,7 @@ Copy-MgGroupOnenoteNotebook -GroupId <String> -NotebookId <String>
 ```
 Copy-MgGroupOnenoteNotebook -InputObject <INotesIdentity>
  -BodyParameter <IPaths1Nalx8HGroupsGroupIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -91,6 +91,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -197,21 +212,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RenameAs
 
 
@@ -272,21 +272,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -322,11 +307,11 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1Nalx8HGroupsGroupIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[GroupId <String>]`: 
-  - `[NotebookFolder <String>]`: 
-  - `[RenameAs <String>]`: 
-  - `[SiteCollectionId <String>]`: 
-  - `[SiteId <String>]`: 
+  - `[GroupId <String>]`:
+  - `[NotebookFolder <String>]`:
+  - `[RenameAs <String>]`:
+  - `[SiteCollectionId <String>]`:
+  - `[SiteId <String>]`:
 
 INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group

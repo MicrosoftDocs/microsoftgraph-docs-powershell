@@ -20,7 +20,7 @@ Create new navigation property to thumbnails for groups
 New-MgGroupDriveItemThumbnail -DriveId <String> -DriveItemId <String> -GroupId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Large <IMicrosoftGraphThumbnail>] [-Medium <IMicrosoftGraphThumbnail>] [-Small <IMicrosoftGraphThumbnail>]
- [-Source <IMicrosoftGraphThumbnail>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Source <IMicrosoftGraphThumbnail>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ New-MgGroupDriveItemThumbnail -DriveId <String> -DriveItemId <String> -GroupId <
 ```
 New-MgGroupDriveItemThumbnail -DriveId <String> -DriveItemId <String> -GroupId <String>
  -BodyParameter <IMicrosoftGraphThumbnailSet> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -36,13 +36,13 @@ New-MgGroupDriveItemThumbnail -DriveId <String> -DriveItemId <String> -GroupId <
 New-MgGroupDriveItemThumbnail -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Large <IMicrosoftGraphThumbnail>]
  [-Medium <IMicrosoftGraphThumbnail>] [-Small <IMicrosoftGraphThumbnail>] [-Source <IMicrosoftGraphThumbnail>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgGroupDriveItemThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphThumbnailSet>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -81,6 +81,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -208,21 +223,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -262,21 +262,6 @@ To construct, see NOTES section for SOURCE properties and create a hash table.
 Type: IMicrosoftGraphThumbnail
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

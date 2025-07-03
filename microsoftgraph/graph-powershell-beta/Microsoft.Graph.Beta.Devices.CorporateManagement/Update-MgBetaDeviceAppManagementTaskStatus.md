@@ -17,14 +17,14 @@ Set the task's status and attach a note.
 Update-MgBetaDeviceAppManagementTaskStatus -DeviceAppManagementTaskId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Note <String>]
  [-Status <DeviceAppManagementTaskStatus>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementTaskStatus -DeviceAppManagementTaskId <String>
  -BodyParameter <IPathsH16W9LDeviceappmanagementDeviceappmanagementtasksDeviceappmanagementtaskIdMicrosoftGraphUpdatestatusPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,14 +33,14 @@ Update-MgBetaDeviceAppManagementTaskStatus -DeviceAppManagementTaskId <String>
 Update-MgBetaDeviceAppManagementTaskStatus -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Note <String>]
  [-Status <DeviceAppManagementTaskStatus>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementTaskStatus -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPathsH16W9LDeviceappmanagementDeviceappmanagementtasksDeviceappmanagementtaskIdMicrosoftGraphUpdatestatusPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -87,6 +87,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -166,21 +181,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -203,21 +203,6 @@ Device app management task status.
 Type: DeviceAppManagementTaskStatus
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

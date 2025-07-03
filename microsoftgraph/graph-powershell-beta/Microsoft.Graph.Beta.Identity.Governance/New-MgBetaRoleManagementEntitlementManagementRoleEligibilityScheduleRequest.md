@@ -26,7 +26,7 @@ New-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest [-Re
  [-PrincipalId <String>] [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
  [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-Status <String>]
  [-TargetSchedule <IMicrosoftGraphUnifiedRoleEligibilitySchedule>] [-TargetScheduleId <String>]
- [-TicketInfo <IMicrosoftGraphTicketInfo>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-TicketInfo <IMicrosoftGraphTicketInfo>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ New-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest [-Re
 ```
 New-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
  -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -150,6 +150,21 @@ The request completion date time.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -337,21 +352,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -473,21 +473,6 @@ To construct, see NOTES section for TICKETINFO properties and create a hash tabl
 Type: IMicrosoftGraphTicketInfo
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

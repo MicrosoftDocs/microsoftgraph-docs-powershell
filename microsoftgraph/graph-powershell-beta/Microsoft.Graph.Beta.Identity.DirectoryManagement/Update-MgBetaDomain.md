@@ -29,13 +29,13 @@ Update-MgBetaDomain -DomainId <String> [-ResponseHeadersVariable <String>] [-Add
  [-SharedEmailDomainInvitations <IMicrosoftGraphSharedEmailDomainInvitation[]>]
  [-State <IMicrosoftGraphDomainState>] [-SupportedServices <String[]>]
  [-VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDomain -DomainId <String> -BodyParameter <IMicrosoftGraphDomain>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -51,13 +51,13 @@ Update-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Respon
  [-SharedEmailDomainInvitations <IMicrosoftGraphSharedEmailDomainInvitation[]>]
  [-State <IMicrosoftGraphDomainState>] [-SupportedServices <String[]>]
  [-VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <IMicrosoftGraphDomain>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -162,6 +162,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -381,21 +396,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -506,21 +506,6 @@ To construct, see NOTES section for VERIFICATIONDNSRECORDS properties and create
 Type: IMicrosoftGraphDomainDnsRecord[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

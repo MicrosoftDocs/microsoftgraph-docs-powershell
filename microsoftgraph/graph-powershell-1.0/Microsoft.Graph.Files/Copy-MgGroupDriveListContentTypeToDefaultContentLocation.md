@@ -22,7 +22,7 @@ The file can then be added as a default file or template via a POST operation.
 Copy-MgGroupDriveListContentTypeToDefaultContentLocation -ContentTypeId <String> -DriveId <String>
  -GroupId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-DestinationFileName <String>] [-SourceFile <IMicrosoftGraphItemReference>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
@@ -30,7 +30,7 @@ Copy-MgGroupDriveListContentTypeToDefaultContentLocation -ContentTypeId <String>
 Copy-MgGroupDriveListContentTypeToDefaultContentLocation -ContentTypeId <String> -DriveId <String>
  -GroupId <String>
  -BodyParameter <IPaths1R50Zw4GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,14 +39,14 @@ Copy-MgGroupDriveListContentTypeToDefaultContentLocation -ContentTypeId <String>
 Copy-MgGroupDriveListContentTypeToDefaultContentLocation -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
  [-SourceFile <IMicrosoftGraphItemReference>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
 Copy-MgGroupDriveListContentTypeToDefaultContentLocation -InputObject <IFilesIdentity>
  -BodyParameter <IPaths1R50Zw4GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -86,6 +86,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -195,21 +210,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -233,21 +233,6 @@ To construct, see NOTES section for SOURCEFILE properties and create a hash tabl
 Type: IMicrosoftGraphItemReference
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -291,7 +276,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1R50Zw4GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DestinationFileName <String>]`: 
+  - `[DestinationFileName <String>]`:
   - `[SourceFile <IMicrosoftGraphItemReference>]`: itemReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.

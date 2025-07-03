@@ -21,14 +21,14 @@ New-MgBetaGroupTeamScheduleTimeOffRequest -GroupId <String> [-ResponseHeadersVar
  [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-EndDateTime <DateTime>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ManagerActionMessage <String>] [-SenderMessage <String>] [-StartDateTime <DateTime>] [-State <String>]
- [-TimeOffReasonId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-TimeOffReasonId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupTeamScheduleTimeOffRequest -GroupId <String> -BodyParameter <IMicrosoftGraphTimeOffRequest>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ New-MgBetaGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-Respon
  [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-EndDateTime <DateTime>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ManagerActionMessage <String>] [-SenderMessage <String>] [-StartDateTime <DateTime>] [-State <String>]
- [-TimeOffReasonId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-TimeOffReasonId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ New-MgBetaGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-Respon
 ```
 New-MgBetaGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphTimeOffRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -99,6 +99,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -227,21 +242,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -310,21 +310,6 @@ The reason for the time off.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -16,7 +16,7 @@ Delete navigation property assignments for deviceManagement
 ```
 Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment
  -WindowsQualityUpdateProfileAssignmentId <String> -WindowsQualityUpdateProfileId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment
 ```
 Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment -InputObject <IDeviceManagementIdentity>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,6 +41,21 @@ Delete navigation property assignments for deviceManagement
 ## EXAMPLES
 
 ## PARAMETERS
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -103,13 +118,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
 
 ```yaml
-Type: ActionPreference
+Type: String
 Parameter Sets: (All)
-Aliases: proga
+Aliases: RHV
 
 Required: False
 Position: Named
@@ -118,13 +133,14 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ResponseHeadersVariable
-Optional Response Headers Variable.
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
-Type: String
+Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: RHV
+Aliases: wi
 
 Required: False
 Position: Named
@@ -157,37 +173,6 @@ Parameter Sets: Delete
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

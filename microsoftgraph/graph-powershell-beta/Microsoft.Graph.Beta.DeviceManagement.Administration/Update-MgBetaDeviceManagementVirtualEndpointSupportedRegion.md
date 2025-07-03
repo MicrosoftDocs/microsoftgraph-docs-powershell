@@ -17,14 +17,14 @@ Update the navigation property supportedRegions in deviceManagement
 Update-MgBetaDeviceManagementVirtualEndpointSupportedRegion -CloudPcSupportedRegionId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-RegionGroup <String>] [-RegionStatus <String>] [-SupportedSolution <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementVirtualEndpointSupportedRegion -CloudPcSupportedRegionId <String>
  -BodyParameter <IMicrosoftGraphCloudPcSupportedRegion> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -33,14 +33,14 @@ Update-MgBetaDeviceManagementVirtualEndpointSupportedRegion
  -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-RegionGroup <String>]
  [-RegionStatus <String>] [-SupportedSolution <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementVirtualEndpointSupportedRegion
  -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <IMicrosoftGraphCloudPcSupportedRegion>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -91,6 +91,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -160,21 +175,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RegionGroup
 cloudPcRegionGroup
 
@@ -227,21 +227,6 @@ cloudPcManagementService
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

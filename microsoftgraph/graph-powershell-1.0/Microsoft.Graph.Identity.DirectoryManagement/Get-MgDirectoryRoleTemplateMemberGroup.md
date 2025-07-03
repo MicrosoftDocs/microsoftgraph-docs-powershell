@@ -24,14 +24,14 @@ If you get the DirectoryResultSizeLimitExceeded error code, use the List group t
 ```
 Get-MgDirectoryRoleTemplateMemberGroup -DirectoryRoleTemplateId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgDirectoryRoleTemplateMemberGroup -DirectoryRoleTemplateId <String>
  -BodyParameter <IPathsU5PhcgDirectoryroletemplatesDirectoryroletemplateIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,14 +39,14 @@ Get-MgDirectoryRoleTemplateMemberGroup -DirectoryRoleTemplateId <String>
 ```
 Get-MgDirectoryRoleTemplateMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgDirectoryRoleTemplateMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPathsU5PhcgDirectoryroletemplatesDirectoryroletemplateIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -89,6 +89,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -138,21 +153,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -179,21 +179,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -233,7 +218,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPathsU5PhcgDirectoryroletemplatesDirectoryroletemplateIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SecurityEnabledOnly <Boolean?>]`: 
+  - `[SecurityEnabledOnly <Boolean?>]`:
 
 INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit

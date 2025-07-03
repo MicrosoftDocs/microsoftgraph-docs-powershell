@@ -19,7 +19,7 @@ Update the navigation property photo in users
 ```
 Update-MgUserContactFolderContactPhoto -ContactFolderId <String> -ContactId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Height <Int32>] [-Id <String>]
- [-Width <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Width <Int32>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -27,14 +27,14 @@ Update-MgUserContactFolderContactPhoto -ContactFolderId <String> -ContactId <Str
 ```
 Update-MgUserContactFolderContactPhoto -ContactFolderId <String> -ContactId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphProfilePhoto> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgUserContactFolderContactPhoto -InputObject <IPersonalContactsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Height <Int32>] [-Id <String>]
- [-Width <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Width <Int32>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ Update-MgUserContactFolderContactPhoto -InputObject <IPersonalContactsIdentity>
 ```
 Update-MgUserContactFolderContactPhoto -InputObject <IPersonalContactsIdentity>
  -BodyParameter <IMicrosoftGraphProfilePhoto> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -88,6 +88,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -184,21 +199,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -229,37 +229,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Width
-The width of the photo.
-Read-only.
-
-```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -272,6 +241,22 @@ Aliases: wi
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Width
+The width of the photo.
+Read-only.
+
+```yaml
+Type: Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

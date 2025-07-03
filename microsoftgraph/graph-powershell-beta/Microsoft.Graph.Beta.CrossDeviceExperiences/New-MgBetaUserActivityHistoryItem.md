@@ -21,14 +21,14 @@ New-MgBetaUserActivityHistoryItem -UserActivityId <String> -UserId <String> [-Re
  [-ActiveDurationSeconds <Int32>] [-Activity <IMicrosoftGraphUserActivity>] [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-LastActiveDateTime <DateTime>]
  [-LastModifiedDateTime <DateTime>] [-StartedDateTime <DateTime>] [-Status <String>] [-UserTimezone <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserActivityHistoryItem -UserActivityId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphActivityHistoryItem> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,14 +38,14 @@ New-MgBetaUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-ExpirationDateTime <DateTime>]
  [-Id <String>] [-LastActiveDateTime <DateTime>] [-LastModifiedDateTime <DateTime>]
  [-StartedDateTime <DateTime>] [-Status <String>] [-UserTimezone <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
  -BodyParameter <IMicrosoftGraphActivityHistoryItem> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -116,6 +116,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -231,21 +246,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -332,21 +332,6 @@ Values supplied as Olson IDs in order to support cross-platform representation.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -21,14 +21,14 @@ New-MgBetaNetworkAccessConnectivityBranchDeviceLink -BranchSiteId <String> [-Res
  [-IPAddress <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Name <String>]
  [-RedundancyConfiguration <IMicrosoftGraphNetworkaccessRedundancyConfiguration>]
  [-TunnelConfiguration <IMicrosoftGraphNetworkaccessTunnelConfiguration>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaNetworkAccessConnectivityBranchDeviceLink -BranchSiteId <String>
  -BodyParameter <IMicrosoftGraphNetworkaccessDeviceLink> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -39,14 +39,14 @@ New-MgBetaNetworkAccessConnectivityBranchDeviceLink -InputObject <INetworkAccess
  [-IPAddress <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Name <String>]
  [-RedundancyConfiguration <IMicrosoftGraphNetworkaccessRedundancyConfiguration>]
  [-TunnelConfiguration <IMicrosoftGraphNetworkaccessTunnelConfiguration>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaNetworkAccessConnectivityBranchDeviceLink -InputObject <INetworkAccessIdentity>
  -BodyParameter <IMicrosoftGraphNetworkaccessDeviceLink> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -172,6 +172,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DeviceVendor
 deviceVendor
 
@@ -279,21 +294,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RedundancyConfiguration
 redundancyConfiguration
 To construct, see NOTES section for REDUNDANCYCONFIGURATION properties and create a hash table.
@@ -333,21 +333,6 @@ To construct, see NOTES section for TUNNELCONFIGURATION properties and create a 
 Type: IMicrosoftGraphNetworkaccessTunnelConfiguration
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -20,7 +20,7 @@ Wipe a device
 Clear-MgBetaDeviceManagementManagedDevice -ManagedDeviceId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>]
  [-ObliterationBehavior <ObliterationBehavior>] [-PersistEsimDataPlan] [-UseProtectedWipe]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Clear-MgBetaDeviceManagementManagedDevice -ManagedDeviceId <String> [-ResponseHe
 ```
 Clear-MgBetaDeviceManagementManagedDevice -ManagedDeviceId <String>
  -BodyParameter <IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Clear-MgBetaDeviceManagementManagedDevice -ManagedDeviceId <String>
 Clear-MgBetaDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-KeepEnrollmentData] [-KeepUserData]
  [-MacOSUnlockCode <String>] [-ObliterationBehavior <ObliterationBehavior>] [-PersistEsimDataPlan]
- [-UseProtectedWipe] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-UseProtectedWipe] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,7 +45,7 @@ Clear-MgBetaDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentit
 ```
 Clear-MgBetaDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -92,6 +92,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -235,21 +250,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -276,21 +276,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

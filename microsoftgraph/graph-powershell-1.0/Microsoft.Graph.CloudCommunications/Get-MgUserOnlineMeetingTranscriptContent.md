@@ -23,13 +23,13 @@ Retrieving the content of the transcript returns the stream of text associated w
 ```
 Get-MgUserOnlineMeetingTranscriptContent -CallTranscriptId <String> -OnlineMeetingId <String> -UserId <String>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgUserOnlineMeetingTranscriptContent -InputObject <ICloudCommunicationsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -65,7 +65,7 @@ This example will get a calltranscript content
 
 Import-Module Microsoft.Graph.CloudCommunications
 
-Get-MgUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt" 
+Get-MgUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt"
 
 ```
 This example will get a calltranscript content specifying $format query param
@@ -160,21 +160,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
