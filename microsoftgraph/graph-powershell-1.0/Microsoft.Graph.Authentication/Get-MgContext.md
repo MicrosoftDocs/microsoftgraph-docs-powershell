@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgContext
 
 ## SYNOPSIS
-Get-MgContext is used to retrieve the details about your current session, which include:  - ClientID - TenantID - Certificate Thumbprint - Scopes consented to - AuthType: Delegated or app-only - AuthProviderType - CertificateName - Account - AppName - ContextScope - Certificate - PSHostVersion - ClientTimeOut.
+Retrieves session details.
 
 ## SYNTAX
 
@@ -17,7 +17,22 @@ Get-MgContext [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Retrieves session details.
+
+Get-MgContext is used to retrieve the details about your current session, which include:
+
+- ClientID
+- TenantID
+- Certificate Thumbprint
+- Scopes consented to
+- AuthType: Delegated or app-only
+- AuthProviderType
+- CertificateName
+- Account
+- AppName
+- ContextScope
+- Certificate
+- PSHostVersion
+- ClientTimeout
 
 ## EXAMPLES
 

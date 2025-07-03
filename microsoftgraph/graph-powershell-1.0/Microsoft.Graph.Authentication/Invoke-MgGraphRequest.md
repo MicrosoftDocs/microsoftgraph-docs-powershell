@@ -8,9 +8,7 @@ schema: 2.0.0
 # Invoke-MgGraphRequest
 
 ## SYNOPSIS
-Invoke-MgGraphRequest issues REST API requests to the Graph API.
-It works for any Graph API if you know the REST URI, method, and optional body parameter.
-This command is especially useful for accessing APIs for which there isn't an equivalent cmdlet yet.
+This command issues REST API requests.
 
 ## SYNTAX
 
@@ -24,7 +22,9 @@ Invoke-MgGraphRequest [[-Method] <GraphRequestMethod>] [-Uri] <Uri> [[-Body] <Ob
 ```
 
 ## DESCRIPTION
-This command issues REST API requests.
+Invoke-MgGraphRequest issues REST API requests to the Graph API. It works for any Graph API if you
+know the REST URI, method, and optional body parameter. This command is especially useful for
+accessing APIs for which there isn't an equivalent cmdlet yet.
 
 ## EXAMPLES
 
