@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoremailboxprotectionunit
@@ -10,22 +10,19 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property mailboxProtectionUnits for solutions
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreMailboxProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreMailboxProtectionUnit?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
 Remove-MgSolutionBackupRestoreMailboxProtectionUnit -MailboxProtectionUnitId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgSolutionBackupRestoreMailboxProtectionUnit -InputObject <IBackupRestoreIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,22 +31,17 @@ Delete navigation property mailboxProtectionUnits for solutions
 
 ## EXAMPLES
 
-## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### EXAMPLE 1
 ```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+## PARAMETERS
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -127,6 +119,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -134,6 +141,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -174,53 +196,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
-  - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
-  - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
-  - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
-  - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
-  - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
-  - `[GranularMailboxRestoreArtifactId <String>]`: The unique identifier of granularMailboxRestoreArtifact
-  - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
-  - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
-  - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
-  - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
-  - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
-  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
-  - `[ProtectionUnitBaseId <String>]`: The unique identifier of protectionUnitBase
-  - `[RestorePointId <String>]`: The unique identifier of restorePoint
-  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
-  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
-  - `[SharePointProtectionPolicyId <String>]`: The unique identifier of sharePointProtectionPolicy
-  - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
-  - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
-  - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
-  - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
+INPUTOBJECT \<IBackupRestoreIdentity\>: Identity Parameter
+  \[DriveProtectionRuleId \<String\>\]: The unique identifier of driveProtectionRule
+  \[DriveProtectionUnitId \<String\>\]: The unique identifier of driveProtectionUnit
+  \[DriveRestoreArtifactId \<String\>\]: The unique identifier of driveRestoreArtifact
+  \[ExchangeProtectionPolicyId \<String\>\]: The unique identifier of exchangeProtectionPolicy
+  \[ExchangeRestoreSessionId \<String\>\]: The unique identifier of exchangeRestoreSession
+  \[GranularMailboxRestoreArtifactId \<String\>\]: The unique identifier of granularMailboxRestoreArtifact
+  \[MailboxProtectionRuleId \<String\>\]: The unique identifier of mailboxProtectionRule
+  \[MailboxProtectionUnitId \<String\>\]: The unique identifier of mailboxProtectionUnit
+  \[MailboxRestoreArtifactId \<String\>\]: The unique identifier of mailboxRestoreArtifact
+  \[OneDriveForBusinessProtectionPolicyId \<String\>\]: The unique identifier of oneDriveForBusinessProtectionPolicy
+  \[OneDriveForBusinessRestoreSessionId \<String\>\]: The unique identifier of oneDriveForBusinessRestoreSession
+  \[ProtectionPolicyBaseId \<String\>\]: The unique identifier of protectionPolicyBase
+  \[ProtectionUnitBaseId \<String\>\]: The unique identifier of protectionUnitBase
+  \[RestorePointId \<String\>\]: The unique identifier of restorePoint
+  \[RestoreSessionBaseId \<String\>\]: The unique identifier of restoreSessionBase
+  \[ServiceAppId \<String\>\]: The unique identifier of serviceApp
+  \[SharePointProtectionPolicyId \<String\>\]: The unique identifier of sharePointProtectionPolicy
+  \[SharePointRestoreSessionId \<String\>\]: The unique identifier of sharePointRestoreSession
+  \[SiteProtectionRuleId \<String\>\]: The unique identifier of siteProtectionRule
+  \[SiteProtectionUnitId \<String\>\]: The unique identifier of siteProtectionUnit
+  \[SiteRestoreArtifactId \<String\>\]: The unique identifier of siteRestoreArtifact
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoremailboxprotectionunit](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoremailboxprotectionunit)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

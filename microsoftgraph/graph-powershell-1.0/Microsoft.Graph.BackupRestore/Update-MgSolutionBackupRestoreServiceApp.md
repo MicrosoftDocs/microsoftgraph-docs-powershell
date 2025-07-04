@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreserviceapp
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property serviceApps in solutions
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreServiceApp?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,13 +18,13 @@ Update-MgSolutionBackupRestoreServiceApp -ServiceAppId <String> [-ResponseHeader
  [-AdditionalProperties <Hashtable>] [-Application <IMicrosoftGraphIdentity>] [-EffectiveDateTime <DateTime>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-RegistrationDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSolutionBackupRestoreServiceApp -ServiceAppId <String> -BodyParameter <IMicrosoftGraphServiceApp>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,20 +35,30 @@ Update-MgSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentity>
  [-Application <IMicrosoftGraphIdentity>] [-EffectiveDateTime <DateTime>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-RegistrationDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentity>
  -BodyParameter <IMicrosoftGraphServiceApp> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property serviceApps in solutions
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -99,21 +106,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -210,6 +202,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RegistrationDateTime
 Timestamp of the creation of the service app entity.
 
@@ -270,6 +277,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -303,91 +325,68 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLICATION `<IMicrosoftGraphIdentity>`: identity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+APPLICATION \<IMicrosoftGraphIdentity\>: identity
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity or actor.
+  \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-BODYPARAMETER `<IMicrosoftGraphServiceApp>`: serviceApp
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphServiceApp\>: serviceApp
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
+    \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  - `[EffectiveDateTime <DateTime?>]`: Timestamp of the effective activation of the service app.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of the entity.
-  - `[RegistrationDateTime <DateTime?>]`: Timestamp of the creation of the service app entity.
-  - `[Status <String>]`: serviceAppStatus
+  \[EffectiveDateTime \<DateTime?\>\]: Timestamp of the effective activation of the service app.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification of the entity.
+  \[RegistrationDateTime \<DateTime?\>\]: Timestamp of the creation of the service app entity.
+  \[Status \<String\>\]: serviceAppStatus
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
-  - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
-  - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
-  - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
-  - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
-  - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
-  - `[GranularMailboxRestoreArtifactId <String>]`: The unique identifier of granularMailboxRestoreArtifact
-  - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
-  - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
-  - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
-  - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
-  - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
-  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
-  - `[ProtectionUnitBaseId <String>]`: The unique identifier of protectionUnitBase
-  - `[RestorePointId <String>]`: The unique identifier of restorePoint
-  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
-  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
-  - `[SharePointProtectionPolicyId <String>]`: The unique identifier of sharePointProtectionPolicy
-  - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
-  - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
-  - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
-  - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
+INPUTOBJECT \<IBackupRestoreIdentity\>: Identity Parameter
+  \[DriveProtectionRuleId \<String\>\]: The unique identifier of driveProtectionRule
+  \[DriveProtectionUnitId \<String\>\]: The unique identifier of driveProtectionUnit
+  \[DriveRestoreArtifactId \<String\>\]: The unique identifier of driveRestoreArtifact
+  \[ExchangeProtectionPolicyId \<String\>\]: The unique identifier of exchangeProtectionPolicy
+  \[ExchangeRestoreSessionId \<String\>\]: The unique identifier of exchangeRestoreSession
+  \[GranularMailboxRestoreArtifactId \<String\>\]: The unique identifier of granularMailboxRestoreArtifact
+  \[MailboxProtectionRuleId \<String\>\]: The unique identifier of mailboxProtectionRule
+  \[MailboxProtectionUnitId \<String\>\]: The unique identifier of mailboxProtectionUnit
+  \[MailboxRestoreArtifactId \<String\>\]: The unique identifier of mailboxRestoreArtifact
+  \[OneDriveForBusinessProtectionPolicyId \<String\>\]: The unique identifier of oneDriveForBusinessProtectionPolicy
+  \[OneDriveForBusinessRestoreSessionId \<String\>\]: The unique identifier of oneDriveForBusinessRestoreSession
+  \[ProtectionPolicyBaseId \<String\>\]: The unique identifier of protectionPolicyBase
+  \[ProtectionUnitBaseId \<String\>\]: The unique identifier of protectionUnitBase
+  \[RestorePointId \<String\>\]: The unique identifier of restorePoint
+  \[RestoreSessionBaseId \<String\>\]: The unique identifier of restoreSessionBase
+  \[ServiceAppId \<String\>\]: The unique identifier of serviceApp
+  \[SharePointProtectionPolicyId \<String\>\]: The unique identifier of sharePointProtectionPolicy
+  \[SharePointRestoreSessionId \<String\>\]: The unique identifier of sharePointRestoreSession
+  \[SiteProtectionRuleId \<String\>\]: The unique identifier of siteProtectionRule
+  \[SiteProtectionUnitId \<String\>\]: The unique identifier of siteProtectionUnit
+  \[SiteRestoreArtifactId \<String\>\]: The unique identifier of siteRestoreArtifact
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
+    \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreserviceapp](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreserviceapp)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

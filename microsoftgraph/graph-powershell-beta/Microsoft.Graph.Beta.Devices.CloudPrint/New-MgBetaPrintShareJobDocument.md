@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintsharejobdocument
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to documents for print
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrintShareJobDocument](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShareJobDocument?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,14 +18,14 @@ New-MgBetaPrintShareJobDocument -PrintJobId <String> -PrinterShareId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphPrinterDocumentConfiguration>] [-ContentType <String>] [-DisplayName <String>]
  [-DownloadedDateTime <DateTime>] [-Id <String>] [-Size <Int64>] [-UploadedDateTime <DateTime>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaPrintShareJobDocument -PrintJobId <String> -PrinterShareId <String>
  -BodyParameter <IMicrosoftGraphPrintDocument> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -36,7 +33,7 @@ New-MgBetaPrintShareJobDocument -PrintJobId <String> -PrinterShareId <String>
 New-MgBetaPrintShareJobDocument -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]
  [-ContentType <String>] [-DisplayName <String>] [-DownloadedDateTime <DateTime>] [-Id <String>]
- [-Size <Int64>] [-UploadedDateTime <DateTime>] [-Headers <IDictionary>]
+ [-Size <Int64>] [-UploadedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,13 +41,23 @@ New-MgBetaPrintShareJobDocument -InputObject <IDevicesCloudPrintIdentity> [-Resp
 ```
 New-MgBetaPrintShareJobDocument -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IMicrosoftGraphPrintDocument> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to documents for print
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -101,21 +108,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ContentType
 The document's content (MIME) type.
 Read-only.
@@ -149,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -DownloadedDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -240,6 +232,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -272,12 +279,27 @@ Accept wildcard characters: False
 ```
 
 ### -UploadedDateTime
-
+.
 
 ```yaml
 Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -319,121 +341,98 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintDocument>`: printDocument
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPrintDocument\>: printDocument
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Collate <Boolean?>]`: 
-    - `[ColorMode <String>]`: printColorMode
-    - `[Copies <Int32?>]`: 
-    - `[Dpi <Int32?>]`: 
-    - `[DuplexMode <String>]`: printDuplexMode
-    - `[FeedDirection <String>]`: printerFeedDirection
-    - `[FeedOrientation <String>]`: printerFeedOrientation
-    - `[Finishings <String- `[]`>]`: 
-    - `[FitPdfToPage <Boolean?>]`: 
-    - `[InputBin <String>]`: 
-    - `[Margin <IMicrosoftGraphPrintMargin>]`: printMargin
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Bottom <Int32?>]`: The margin in microns from the bottom edge.
-      - `[Left <Int32?>]`: The margin in microns from the left edge.
-      - `[Right <Int32?>]`: The margin in microns from the right edge.
-      - `[Top <Int32?>]`: The margin in microns from the top edge.
-    - `[MediaSize <String>]`: 
-    - `[MediaType <String>]`: 
-    - `[MultipageLayout <String>]`: printMultipageLayout
-    - `[Orientation <String>]`: printOrientation
-    - `[OutputBin <String>]`: 
-    - `[PageRanges <IMicrosoftGraphIntegerRange- `[]`>]`: 
-      - `[End <Int64?>]`: The inclusive upper bound of the integer range.
-      - `[Maximum <Int64?>]`: 
-      - `[Minimum <Int64?>]`: 
-      - `[Start <Int64?>]`: The inclusive lower bound of the integer range.
-    - `[PagesPerSheet <Int32?>]`: 
-    - `[Quality <String>]`: printQuality
-    - `[Scaling <String>]`: printScaling
-  - `[ContentType <String>]`: The document's content (MIME) type.
+  \[Configuration \<IMicrosoftGraphPrinterDocumentConfiguration\>\]: printerDocumentConfiguration
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Collate \<Boolean?\>\]: 
+    \[ColorMode \<String\>\]: printColorMode
+    \[Copies \<Int32?\>\]: 
+    \[Dpi \<Int32?\>\]: 
+    \[DuplexMode \<String\>\]: printDuplexMode
+    \[FeedDirection \<String\>\]: printerFeedDirection
+    \[FeedOrientation \<String\>\]: printerFeedOrientation
+    \[Finishings \<String\[\]\>\]: 
+    \[FitPdfToPage \<Boolean?\>\]: 
+    \[InputBin \<String\>\]: 
+    \[Margin \<IMicrosoftGraphPrintMargin\>\]: printMargin
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Bottom \<Int32?\>\]: The margin in microns from the bottom edge.
+      \[Left \<Int32?\>\]: The margin in microns from the left edge.
+      \[Right \<Int32?\>\]: The margin in microns from the right edge.
+      \[Top \<Int32?\>\]: The margin in microns from the top edge.
+    \[MediaSize \<String\>\]: 
+    \[MediaType \<String\>\]: 
+    \[MultipageLayout \<String\>\]: printMultipageLayout
+    \[Orientation \<String\>\]: printOrientation
+    \[OutputBin \<String\>\]: 
+    \[PageRanges \<IMicrosoftGraphIntegerRange\[\]\>\]: 
+      \[End \<Int64?\>\]: The inclusive upper bound of the integer range.
+      \[Maximum \<Int64?\>\]: 
+      \[Minimum \<Int64?\>\]: 
+      \[Start \<Int64?\>\]: The inclusive lower bound of the integer range.
+    \[PagesPerSheet \<Int32?\>\]: 
+    \[Quality \<String\>\]: printQuality
+    \[Scaling \<String\>\]: printScaling
+  \[ContentType \<String\>\]: The document's content (MIME) type.
 Read-only.
-  - `[DisplayName <String>]`: The document's name.
+  \[DisplayName \<String\>\]: The document's name.
 Read-only.
-  - `[DownloadedDateTime <DateTime?>]`: 
-  - `[Size <Int64?>]`: The document's size in bytes.
+  \[DownloadedDateTime \<DateTime?\>\]: 
+  \[Size \<Int64?\>\]: The document's size in bytes.
 Read-only.
-  - `[UploadedDateTime <DateTime?>]`: 
+  \[UploadedDateTime \<DateTime?\>\]: 
 
-CONFIGURATION `<IMicrosoftGraphPrinterDocumentConfiguration>`: printerDocumentConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Collate <Boolean?>]`: 
-  - `[ColorMode <String>]`: printColorMode
-  - `[Copies <Int32?>]`: 
-  - `[Dpi <Int32?>]`: 
-  - `[DuplexMode <String>]`: printDuplexMode
-  - `[FeedDirection <String>]`: printerFeedDirection
-  - `[FeedOrientation <String>]`: printerFeedOrientation
-  - `[Finishings <String- `[]`>]`: 
-  - `[FitPdfToPage <Boolean?>]`: 
-  - `[InputBin <String>]`: 
-  - `[Margin <IMicrosoftGraphPrintMargin>]`: printMargin
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Bottom <Int32?>]`: The margin in microns from the bottom edge.
-    - `[Left <Int32?>]`: The margin in microns from the left edge.
-    - `[Right <Int32?>]`: The margin in microns from the right edge.
-    - `[Top <Int32?>]`: The margin in microns from the top edge.
-  - `[MediaSize <String>]`: 
-  - `[MediaType <String>]`: 
-  - `[MultipageLayout <String>]`: printMultipageLayout
-  - `[Orientation <String>]`: printOrientation
-  - `[OutputBin <String>]`: 
-  - `[PageRanges <IMicrosoftGraphIntegerRange- `[]`>]`: 
-    - `[End <Int64?>]`: The inclusive upper bound of the integer range.
-    - `[Maximum <Int64?>]`: 
-    - `[Minimum <Int64?>]`: 
-    - `[Start <Int64?>]`: The inclusive lower bound of the integer range.
-  - `[PagesPerSheet <Int32?>]`: 
-  - `[Quality <String>]`: printQuality
-  - `[Scaling <String>]`: printScaling
+CONFIGURATION \<IMicrosoftGraphPrinterDocumentConfiguration\>: printerDocumentConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Collate \<Boolean?\>\]: 
+  \[ColorMode \<String\>\]: printColorMode
+  \[Copies \<Int32?\>\]: 
+  \[Dpi \<Int32?\>\]: 
+  \[DuplexMode \<String\>\]: printDuplexMode
+  \[FeedDirection \<String\>\]: printerFeedDirection
+  \[FeedOrientation \<String\>\]: printerFeedOrientation
+  \[Finishings \<String\[\]\>\]: 
+  \[FitPdfToPage \<Boolean?\>\]: 
+  \[InputBin \<String\>\]: 
+  \[Margin \<IMicrosoftGraphPrintMargin\>\]: printMargin
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Bottom \<Int32?\>\]: The margin in microns from the bottom edge.
+    \[Left \<Int32?\>\]: The margin in microns from the left edge.
+    \[Right \<Int32?\>\]: The margin in microns from the right edge.
+    \[Top \<Int32?\>\]: The margin in microns from the top edge.
+  \[MediaSize \<String\>\]: 
+  \[MediaType \<String\>\]: 
+  \[MultipageLayout \<String\>\]: printMultipageLayout
+  \[Orientation \<String\>\]: printOrientation
+  \[OutputBin \<String\>\]: 
+  \[PageRanges \<IMicrosoftGraphIntegerRange\[\]\>\]: 
+    \[End \<Int64?\>\]: The inclusive upper bound of the integer range.
+    \[Maximum \<Int64?\>\]: 
+    \[Minimum \<Int64?\>\]: 
+    \[Start \<Int64?\>\]: The inclusive lower bound of the integer range.
+  \[PagesPerSheet \<Int32?\>\]: 
+  \[Quality \<String\>\]: printQuality
+  \[Scaling \<String\>\]: printScaling
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
-  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
-  - `[PrintJobId <String>]`: The unique identifier of printJob
-  - `[PrintOperationId <String>]`: The unique identifier of printOperation
-  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
-  - `[PrintServiceId <String>]`: The unique identifier of printService
-  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
-  - `[PrintTaskId <String>]`: The unique identifier of printTask
-  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
-  - `[PrinterId <String>]`: The unique identifier of printer
-  - `[PrinterShareId <String>]`: The unique identifier of printerShare
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PrintConnectorId \<String\>\]: The unique identifier of printConnector
+  \[PrintDocumentId \<String\>\]: The unique identifier of printDocument
+  \[PrintJobId \<String\>\]: The unique identifier of printJob
+  \[PrintOperationId \<String\>\]: The unique identifier of printOperation
+  \[PrintServiceEndpointId \<String\>\]: The unique identifier of printServiceEndpoint
+  \[PrintServiceId \<String\>\]: The unique identifier of printService
+  \[PrintTaskDefinitionId \<String\>\]: The unique identifier of printTaskDefinition
+  \[PrintTaskId \<String\>\]: The unique identifier of printTask
+  \[PrintTaskTriggerId \<String\>\]: The unique identifier of printTaskTrigger
+  \[PrinterId \<String\>\]: The unique identifier of printer
+  \[PrinterShareId \<String\>\]: The unique identifier of printerShare
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintsharejobdocument](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintsharejobdocument)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

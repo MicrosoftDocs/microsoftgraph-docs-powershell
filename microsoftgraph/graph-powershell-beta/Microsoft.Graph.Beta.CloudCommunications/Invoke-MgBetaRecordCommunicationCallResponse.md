@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarecordcommunicationcallresponse
 schema: 2.0.0
-ms.subservice: cloud-communications
 ---
 
 # Invoke-MgBetaRecordCommunicationCallResponse
@@ -16,9 +15,6 @@ This action isn't intended to record the entire call.
 The maximum length of recording is 2 minutes.The Cloud Communications Platform doesn't save the recording permanently and discards it shortly after the call ends.
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value provided in the completed notification.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgRecordCommunicationCallResponse](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRecordCommunicationCallResponse?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### RecordExpanded (Default)
@@ -27,7 +23,7 @@ Invoke-MgBetaRecordCommunicationCallResponse -CallId <String> [-ResponseHeadersV
  [-AdditionalProperties <Hashtable>] [-BargeInAllowed] [-ClientContext <String>]
  [-InitialSilenceTimeoutInSeconds <Int32>] [-MaxRecordDurationInSeconds <Int32>]
  [-MaxSilenceTimeoutInSeconds <Int32>] [-PlayBeep] [-Prompts <IMicrosoftGraphPrompt[]>] [-StopTones <String[]>]
- [-StreamWhileRecording] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-StreamWhileRecording] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -35,7 +31,7 @@ Invoke-MgBetaRecordCommunicationCallResponse -CallId <String> [-ResponseHeadersV
 ```
 Invoke-MgBetaRecordCommunicationCallResponse -CallId <String>
  -BodyParameter <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,7 +41,7 @@ Invoke-MgBetaRecordCommunicationCallResponse -InputObject <ICloudCommunicationsI
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BargeInAllowed]
  [-ClientContext <String>] [-InitialSilenceTimeoutInSeconds <Int32>] [-MaxRecordDurationInSeconds <Int32>]
  [-MaxSilenceTimeoutInSeconds <Int32>] [-PlayBeep] [-Prompts <IMicrosoftGraphPrompt[]>] [-StopTones <String[]>]
- [-StreamWhileRecording] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-StreamWhileRecording] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -53,7 +49,7 @@ Invoke-MgBetaRecordCommunicationCallResponse -InputObject <ICloudCommunicationsI
 ```
 Invoke-MgBetaRecordCommunicationCallResponse -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -66,11 +62,11 @@ The maximum length of recording is 2 minutes.The Cloud Communications Platform d
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value provided in the completed notification.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	bargeInAllowed = $true
@@ -97,10 +93,6 @@ $params = @{
 
 Invoke-MgBetaRecordCommunicationCallResponse -CallId $callId -BodyParameter $params
 
-```
-This example shows how to use the Invoke-MgBetaRecordCommunicationCallResponse Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -119,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -BargeInAllowed
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -134,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -165,27 +157,12 @@ Accept wildcard characters: False
 ```
 
 ### -ClientContext
-
+.
 
 ```yaml
 Type: String
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -210,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -InitialSilenceTimeoutInSeconds
-
+.
 
 ```yaml
 Type: Int32
@@ -241,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxRecordDurationInSeconds
-
+.
 
 ```yaml
 Type: Int32
@@ -256,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxSilenceTimeoutInSeconds
-
+.
 
 ```yaml
 Type: Int32
@@ -271,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlayBeep
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -285,8 +262,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Prompts
+### -ProgressAction
+{{ Fill ProgressAction Description }}
 
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Prompts
+.
 
 ```yaml
 Type: IMicrosoftGraphPrompt[]
@@ -316,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -StopTones
-
+.
 
 ```yaml
 Type: String[]
@@ -331,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -StreamWhileRecording
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -341,6 +333,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -378,65 +385,43 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[BargeInAllowed <Boolean?>]`: 
-  - `[ClientContext <String>]`: 
-  - `[InitialSilenceTimeoutInSeconds <Int32?>]`: 
-  - `[MaxRecordDurationInSeconds <Int32?>]`: 
-  - `[MaxSilenceTimeoutInSeconds <Int32?>]`: 
-  - `[PlayBeep <Boolean?>]`: 
-  - `[Prompts <IMicrosoftGraphPrompt- `[]`>]`: 
-  - `[StopTones <String- `[]`>]`: 
-  - `[StreamWhileRecording <Boolean?>]`: 
+BODYPARAMETER \<IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[BargeInAllowed \<Boolean?\>\]: 
+  \[ClientContext \<String\>\]: 
+  \[InitialSilenceTimeoutInSeconds \<Int32?\>\]: 
+  \[MaxRecordDurationInSeconds \<Int32?\>\]: 
+  \[MaxSilenceTimeoutInSeconds \<Int32?\>\]: 
+  \[PlayBeep \<Boolean?\>\]: 
+  \[Prompts \<IMicrosoftGraphPrompt\[\]\>\]: 
+  \[StopTones \<String\[\]\>\]: 
+  \[StreamWhileRecording \<Boolean?\>\]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
-  - `[CallAiInsightId <String>]`: The unique identifier of callAiInsight
-  - `[CallId <String>]`: The unique identifier of call
-  - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallRecordingId <String>]`: The unique identifier of callRecording
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
-  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
-  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
-  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
-  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[ParticipantId <String>]`: The unique identifier of participant
-  - `[PresenceId <String>]`: The unique identifier of presence
-  - `[SessionId <String>]`: The unique identifier of session
-  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
+  \[CallAiInsightId \<String\>\]: The unique identifier of callAiInsight
+  \[CallId \<String\>\]: The unique identifier of call
+  \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
+  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
+  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
+  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
+  \[FromDateTime \<DateTime?\>\]: Usage: fromDateTime={fromDateTime}
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
+  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[ParticipantId \<String\>\]: The unique identifier of participant
+  \[PresenceId \<String\>\]: The unique identifier of presence
+  \[SessionId \<String\>\]: The unique identifier of session
+  \[ToDateTime \<DateTime?\>\]: Usage: toDateTime={toDateTime}
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarecordcommunicationcallresponse](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarecordcommunicationcallresponse)
 
 [https://learn.microsoft.com/graph/api/call-record?view=graph-rest-beta](https://learn.microsoft.com/graph/api/call-record?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

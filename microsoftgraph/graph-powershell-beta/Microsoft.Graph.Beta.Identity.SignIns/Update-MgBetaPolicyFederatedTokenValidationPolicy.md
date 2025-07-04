@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Update-MgBetaPolicyFederatedTokenValidationPolicy
@@ -18,20 +17,30 @@ Update the properties of a federatedTokenValidationPolicy object.
 Update-MgBetaPolicyFederatedTokenValidationPolicy [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Id <String>]
  [-ValidatingDomains <IMicrosoftGraphValidatingDomains>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPolicyFederatedTokenValidationPolicy
  -BodyParameter <IMicrosoftGraphFederatedTokenValidationPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a federatedTokenValidationPolicy object.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -63,21 +72,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -128,6 +122,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -151,6 +160,21 @@ To construct, see NOTES section for VALIDATINGDOMAINS properties and create a ha
 Type: IMicrosoftGraphValidatingDomains
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -191,46 +215,23 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphFederatedTokenValidationPolicy>`: federatedTokenValidationPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+BODYPARAMETER \<IMicrosoftGraphFederatedTokenValidationPolicy\>: federatedTokenValidationPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ValidatingDomains <IMicrosoftGraphValidatingDomains>]`: validatingDomains
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[RootDomains <String>]`: rootDomains
+  \[ValidatingDomains \<IMicrosoftGraphValidatingDomains\>\]: validatingDomains
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[RootDomains \<String\>\]: rootDomains
 
-VALIDATINGDOMAINS `<IMicrosoftGraphValidatingDomains>`: validatingDomains
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[RootDomains <String>]`: rootDomains
+VALIDATINGDOMAINS \<IMicrosoftGraphValidatingDomains\>: validatingDomains
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[RootDomains \<String\>\]: rootDomains
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy)
 
 [https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

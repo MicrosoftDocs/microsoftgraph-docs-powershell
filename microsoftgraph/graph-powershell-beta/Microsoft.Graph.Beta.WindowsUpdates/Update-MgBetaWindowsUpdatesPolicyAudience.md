@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyaudience
@@ -18,14 +18,14 @@ Update-MgBetaWindowsUpdatesPolicyAudience -UpdatePolicyId <String> [-ResponseHea
  [-AdditionalProperties <Hashtable>] [-ApplicableContent <IMicrosoftGraphWindowsUpdatesApplicableContent[]>]
  [-Exclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-Id <String>]
  [-Members <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaWindowsUpdatesPolicyAudience -UpdatePolicyId <String>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesDeploymentAudience> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,20 +35,30 @@ Update-MgBetaWindowsUpdatesPolicyAudience -InputObject <IWindowsUpdatesIdentity>
  [-ApplicableContent <IMicrosoftGraphWindowsUpdatesApplicableContent[]>]
  [-Exclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-Id <String>]
  [-Members <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaWindowsUpdatesPolicyAudience -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesDeploymentAudience> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property audience in admin
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -98,21 +108,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -195,6 +190,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -219,6 +229,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -258,107 +283,84 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLICABLECONTENT `<IMicrosoftGraphWindowsUpdatesApplicableContent- `[]`>`: Content eligible to deploy to devices in the audience.
+APPLICABLECONTENT \<IMicrosoftGraphWindowsUpdatesApplicableContent\[\]\>: Content eligible to deploy to devices in the audience.
 Not nullable.
 Read-only.
-  - `[CatalogEntry <IMicrosoftGraphWindowsUpdatesCatalogEntry>]`: catalogEntry
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[CatalogEntry \<IMicrosoftGraphWindowsUpdatesCatalogEntry\>\]: catalogEntry
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DeployableUntilDateTime <DateTime?>]`: The date on which the content is no longer available to deploy.
+    \[DeployableUntilDateTime \<DateTime?\>\]: The date on which the content is no longer available to deploy.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[DisplayName <String>]`: The display name of the content.
+    \[DisplayName \<String\>\]: The display name of the content.
 Read-only.
-    - `[ReleaseDateTime <DateTime?>]`: The release date for the content.
+    \[ReleaseDateTime \<DateTime?\>\]: The release date for the content.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[CatalogEntryId <String>]`: ID of the catalog entry for the applicable content.
-  - `[MatchedDevices <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch- `[]`>]`: Collection of devices and recommendations for applicable catalog content.
-    - `[DeviceId <String>]`: Collection of vendors who recommend the content.
-    - `[RecommendedBy <String- `[]`>]`: Collection of vendors who recommend the content.
+  \[CatalogEntryId \<String\>\]: ID of the catalog entry for the applicable content.
+  \[MatchedDevices \<IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch\[\]\>\]: Collection of devices and recommendations for applicable catalog content.
+    \[DeviceId \<String\>\]: Collection of vendors who recommend the content.
+    \[RecommendedBy \<String\[\]\>\]: Collection of vendors who recommend the content.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsUpdatesDeploymentAudience>`: deploymentAudience
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphWindowsUpdatesDeploymentAudience\>: deploymentAudience
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ApplicableContent <IMicrosoftGraphWindowsUpdatesApplicableContent- `[]`>]`: Content eligible to deploy to devices in the audience.
+  \[ApplicableContent \<IMicrosoftGraphWindowsUpdatesApplicableContent\[\]\>\]: Content eligible to deploy to devices in the audience.
 Not nullable.
 Read-only.
-    - `[CatalogEntry <IMicrosoftGraphWindowsUpdatesCatalogEntry>]`: catalogEntry
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[CatalogEntry \<IMicrosoftGraphWindowsUpdatesCatalogEntry\>\]: catalogEntry
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[DeployableUntilDateTime <DateTime?>]`: The date on which the content is no longer available to deploy.
+      \[DeployableUntilDateTime \<DateTime?\>\]: The date on which the content is no longer available to deploy.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-      - `[DisplayName <String>]`: The display name of the content.
+      \[DisplayName \<String\>\]: The display name of the content.
 Read-only.
-      - `[ReleaseDateTime <DateTime?>]`: The release date for the content.
+      \[ReleaseDateTime \<DateTime?\>\]: The release date for the content.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[CatalogEntryId <String>]`: ID of the catalog entry for the applicable content.
-    - `[MatchedDevices <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch- `[]`>]`: Collection of devices and recommendations for applicable catalog content.
-      - `[DeviceId <String>]`: Collection of vendors who recommend the content.
-      - `[RecommendedBy <String- `[]`>]`: Collection of vendors who recommend the content.
-  - `[Exclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>]`: Specifies the assets to exclude from the audience.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[CatalogEntryId \<String\>\]: ID of the catalog entry for the applicable content.
+    \[MatchedDevices \<IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch\[\]\>\]: Collection of devices and recommendations for applicable catalog content.
+      \[DeviceId \<String\>\]: Collection of vendors who recommend the content.
+      \[RecommendedBy \<String\[\]\>\]: Collection of vendors who recommend the content.
+  \[Exclusions \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>\]: Specifies the assets to exclude from the audience.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Members <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>]`: Specifies the assets to include in the audience.
+  \[Members \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>\]: Specifies the assets to include in the audience.
 
-EXCLUSIONS `<IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>`: Specifies the assets to exclude from the audience.
-  - `[Id <String>]`: The unique identifier for an entity.
+EXCLUSIONS \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>: Specifies the assets to exclude from the audience.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
-  - `[ApplicableContentCatalogEntryId <String>]`: The unique identifier of applicableContent
-  - `[ApplicableContentDeviceMatchDeviceId <String>]`: The unique identifier of applicableContentDeviceMatch
-  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
-  - `[CatalogId <String>]`: Usage: catalogID='{catalogID}'
-  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
-  - `[DaysInPast <Int32?>]`: Usage: daysInPast={daysInPast}
-  - `[DeploymentId <String>]`: The unique identifier of deployment
-  - `[EditionId <String>]`: The unique identifier of edition
-  - `[KbNumber <Int32?>]`: Usage: kbNumber={kbNumber}
-  - `[KnownIssueId <String>]`: The unique identifier of knownIssue
-  - `[ProductId <String>]`: The unique identifier of product
-  - `[ProductRevisionId <String>]`: The unique identifier of productRevision
-  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
-  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
-  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
+INPUTOBJECT \<IWindowsUpdatesIdentity\>: Identity Parameter
+  \[ApplicableContentCatalogEntryId \<String\>\]: The unique identifier of applicableContent
+  \[ApplicableContentDeviceMatchDeviceId \<String\>\]: The unique identifier of applicableContentDeviceMatch
+  \[CatalogEntryId \<String\>\]: The unique identifier of catalogEntry
+  \[CatalogId \<String\>\]: Usage: catalogID='{catalogID}'
+  \[ComplianceChangeId \<String\>\]: The unique identifier of complianceChange
+  \[DaysInPast \<Int32?\>\]: Usage: daysInPast={daysInPast}
+  \[DeploymentId \<String\>\]: The unique identifier of deployment
+  \[EditionId \<String\>\]: The unique identifier of edition
+  \[KbNumber \<Int32?\>\]: Usage: kbNumber={kbNumber}
+  \[KnownIssueId \<String\>\]: The unique identifier of knownIssue
+  \[ProductId \<String\>\]: The unique identifier of product
+  \[ProductRevisionId \<String\>\]: The unique identifier of productRevision
+  \[ResourceConnectionId \<String\>\]: The unique identifier of resourceConnection
+  \[UpdatableAssetId \<String\>\]: The unique identifier of updatableAsset
+  \[UpdatePolicyId \<String\>\]: The unique identifier of updatePolicy
 
-MEMBERS `<IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>`: Specifies the assets to include in the audience.
-  - `[Id <String>]`: The unique identifier for an entity.
+MEMBERS \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>: Specifies the assets to include in the audience.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyaudience](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyaudience)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

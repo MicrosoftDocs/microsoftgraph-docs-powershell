@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcomanagementeligibledevice
@@ -21,28 +21,30 @@ New-MgBetaDeviceManagementComanagementEligibleDevice [-ResponseHeadersVariable <
  [-MdmStatus <String>] [-Model <String>] [-OSDescription <String>] [-OSVersion <String>]
  [-OwnerType <OwnerType>] [-ReferenceId <String>] [-SerialNumber <String>] [-Status <ComanagementEligibleType>]
  [-Upn <String>] [-UserEmail <String>] [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementComanagementEligibleDevice -BodyParameter <IMicrosoftGraphComanagementEligibleDevice>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to comanagementEligibleDevices for deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -84,21 +86,6 @@ Device registration status.
 Type: DeviceRegistrationState
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -303,6 +290,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReferenceId
 ReferenceId
 
@@ -423,6 +425,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -455,54 +472,31 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphComanagementEligibleDevice>`: Device Co-Management eligibility state
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphComanagementEligibleDevice\>: Device Co-Management eligibility state
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ClientRegistrationStatus <DeviceRegistrationState?>]`: Device registration status.
-  - `[DeviceName <String>]`: DeviceName
-  - `[DeviceType <DeviceType?>]`: Device type.
-  - `[EntitySource <Int32?>]`: EntitySource
-  - `[ManagementAgents <ManagementAgentType?>]`: Management agent type.
-  - `[ManagementState <ManagementState?>]`: Management state of device in Microsoft Intune.
-  - `[Manufacturer <String>]`: Manufacturer
-  - `[MdmStatus <String>]`: MDMStatus
-  - `[Model <String>]`: Model
-  - `[OSDescription <String>]`: OSDescription
-  - `[OSVersion <String>]`: OSVersion
-  - `[OwnerType <OwnerType?>]`: Owner type of device.
-  - `[ReferenceId <String>]`: ReferenceId
-  - `[SerialNumber <String>]`: SerialNumber
-  - `[Status <ComanagementEligibleType?>]`: comanagementEligibleType
-  - `[Upn <String>]`: UPN
-  - `[UserEmail <String>]`: UserEmail
-  - `[UserId <String>]`: UserId
-  - `[UserName <String>]`: UserName
+  \[ClientRegistrationStatus \<DeviceRegistrationState?\>\]: Device registration status.
+  \[DeviceName \<String\>\]: DeviceName
+  \[DeviceType \<DeviceType?\>\]: Device type.
+  \[EntitySource \<Int32?\>\]: EntitySource
+  \[ManagementAgents \<ManagementAgentType?\>\]: Management agent type.
+  \[ManagementState \<ManagementState?\>\]: Management state of device in Microsoft Intune.
+  \[Manufacturer \<String\>\]: Manufacturer
+  \[MdmStatus \<String\>\]: MDMStatus
+  \[Model \<String\>\]: Model
+  \[OSDescription \<String\>\]: OSDescription
+  \[OSVersion \<String\>\]: OSVersion
+  \[OwnerType \<OwnerType?\>\]: Owner type of device.
+  \[ReferenceId \<String\>\]: ReferenceId
+  \[SerialNumber \<String\>\]: SerialNumber
+  \[Status \<ComanagementEligibleType?\>\]: comanagementEligibleType
+  \[Upn \<String\>\]: UPN
+  \[UserEmail \<String\>\]: UserEmail
+  \[UserId \<String\>\]: UserId
+  \[UserName \<String\>\]: UserName
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcomanagementeligibledevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcomanagementeligibledevice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
