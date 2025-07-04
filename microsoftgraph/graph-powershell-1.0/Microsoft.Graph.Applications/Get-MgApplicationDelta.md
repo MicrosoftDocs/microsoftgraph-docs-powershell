@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationdelta
@@ -247,4 +247,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationdelta)
 
 [https://learn.microsoft.com/graph/api/application-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delta?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
