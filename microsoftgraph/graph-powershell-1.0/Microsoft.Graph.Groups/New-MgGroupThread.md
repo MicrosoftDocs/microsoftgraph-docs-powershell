@@ -64,11 +64,11 @@ Note: You can also start a new thread in an existing conversation.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	topic = "New Conversation Thread Topic"
@@ -91,6 +91,10 @@ $params = @{
 }
 
 New-MgGroupThread -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgGroupThread Cmdlet.
+
 
 ## PARAMETERS
 

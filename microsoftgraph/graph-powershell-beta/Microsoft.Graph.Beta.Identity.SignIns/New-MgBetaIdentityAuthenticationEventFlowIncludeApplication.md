@@ -62,11 +62,11 @@ The app must have an associated service principal in the tenant.
 | Application | EventListener.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.authenticationConditionApplication"
@@ -74,6 +74,10 @@ $params = @{
 }
 
 New-MgBetaIdentityAuthenticationEventFlowIncludeApplication -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaIdentityAuthenticationEventFlowIncludeApplication Cmdlet.
+
 
 ## PARAMETERS
 

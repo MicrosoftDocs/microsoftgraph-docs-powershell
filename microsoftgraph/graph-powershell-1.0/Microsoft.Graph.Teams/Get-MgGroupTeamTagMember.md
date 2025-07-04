@@ -40,18 +40,6 @@ Get-MgGroupTeamTagMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Users assigned to the tag.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -367,6 +355,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamtagmember)
+
+
 
 
 

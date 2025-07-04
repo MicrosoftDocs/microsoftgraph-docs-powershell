@@ -57,11 +57,11 @@ Assign and activate a hardware token at the same time by hardware token serial n
 | Application | UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	verificationCode = "588651"
@@ -71,6 +71,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Set-MgBetaUserAuthenticationHardwareOathMethodAndActivateBySerialNumber -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaUserAuthenticationHardwareOathMethodAndActivateBySerialNumber Cmdlet.
+
 
 ## PARAMETERS
 

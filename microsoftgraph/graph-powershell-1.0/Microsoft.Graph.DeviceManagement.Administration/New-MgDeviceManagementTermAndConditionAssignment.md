@@ -56,11 +56,11 @@ Create a new termsAndConditionsAssignment object.
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.termsAndConditionsAssignment"
@@ -71,6 +71,10 @@ $params = @{
 }
 
 New-MgDeviceManagementTermAndConditionAssignment -TermsAndConditionsId $termsAndConditionsId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementTermAndConditionAssignment Cmdlet.
+
 
 ## PARAMETERS
 

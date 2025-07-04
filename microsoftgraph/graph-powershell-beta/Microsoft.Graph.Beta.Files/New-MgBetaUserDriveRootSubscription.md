@@ -54,18 +54,6 @@ New-MgBetaUserDriveRootSubscription -InputObject <IFilesIdentity> -BodyParameter
 ## DESCRIPTION
 Create new navigation property to subscriptions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -627,6 +615,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootsubscription)
+
 
 
 

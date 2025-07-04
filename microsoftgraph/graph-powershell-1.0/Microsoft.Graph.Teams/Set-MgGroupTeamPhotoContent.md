@@ -32,18 +32,6 @@ Set-MgGroupTeamPhotoContent -InputObject <ITeamsIdentity> [-Data <Stream>] [-Res
 ## DESCRIPTION
 The profile photo for the team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentType
@@ -273,6 +261,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteamphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteamphotocontent)
+
 
 
 

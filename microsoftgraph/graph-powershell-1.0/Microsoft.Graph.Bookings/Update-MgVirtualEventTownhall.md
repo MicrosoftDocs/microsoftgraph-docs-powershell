@@ -66,11 +66,11 @@ Update the properties of a virtualEventTownhall object.
 Only the Organizer and Co-organizer can make changes to a townhall event.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	startDateTime = @{
@@ -84,6 +84,10 @@ $params = @{
 }
 
 Update-MgVirtualEventTownhall -VirtualEventTownhallId $virtualEventTownhallId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgVirtualEventTownhall Cmdlet.
+
 
 ## PARAMETERS
 

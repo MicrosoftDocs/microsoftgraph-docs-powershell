@@ -43,13 +43,17 @@ Get-MgBetaSecurityLabelAuthority -InputObject <ISecurityIdentity> [-ExpandProper
 Read the properties and relationships of a authorityTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityLabelAuthority
+
+```
+This example shows how to use the Get-MgBetaSecurityLabelAuthority Cmdlet.
+
 
 ## PARAMETERS
 

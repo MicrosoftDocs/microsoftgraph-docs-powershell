@@ -35,13 +35,17 @@ Currently, the mailbox types supported are the user's primary and in-place archi
 To learn how to get a list of users in a tenant, see List users.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 Get-MgBetaUserSettingExchange -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserSettingExchange Cmdlet.
+
 
 ## PARAMETERS
 

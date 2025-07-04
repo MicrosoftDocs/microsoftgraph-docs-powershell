@@ -34,13 +34,17 @@ Get-MgReportEmailAppUsageVersionUserCount -InputObject <IReportsIdentity> -OutFi
 Get the count of unique users by Outlook desktop version.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportEmailAppUsageVersionUserCount -Period $periodId
+Get-MgReportEmailAppUsageVersionUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportEmailAppUsageVersionUserCount Cmdlet.
+
 
 ## PARAMETERS
 

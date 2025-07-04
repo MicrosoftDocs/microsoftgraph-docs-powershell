@@ -50,18 +50,6 @@ Invoke-MgAcceptUserEventInstance -InputObject <ICalendarIdentity>
 ## DESCRIPTION
 Accept the specified event in a user calendar.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -318,6 +306,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptusereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptusereventinstance)
 
 [https://learn.microsoft.com/graph/api/event-accept?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-accept?view=graph-rest-1.0)
+
 
 
 

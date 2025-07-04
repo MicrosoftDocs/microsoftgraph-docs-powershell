@@ -63,18 +63,6 @@ This convenience is not available when forwarding from an Outlook.com account.
 | Delegated (personal Microsoft account) | Calendars.Read,  |
 | Application | Calendars.Read,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -327,6 +315,7 @@ TORECIPIENTS `<IMicrosoftGraphRecipient- `[]`>`: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgforwardgroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgforwardgroupevent)
 
 [https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0)
+
 
 
 

@@ -43,11 +43,11 @@ Only owner tenants can manage a multi-tenant organization.
 To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Contoso organization"
@@ -55,6 +55,10 @@ $params = @{
 }
 
 Update-MgBetaTenantRelationshipMultiTenantOrganization -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaTenantRelationshipMultiTenantOrganization Cmdlet.
+
 
 ## PARAMETERS
 

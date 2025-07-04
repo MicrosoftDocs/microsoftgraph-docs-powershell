@@ -75,11 +75,11 @@ Send a new reply to a chatMessage in a specified channel.
 | Application | Teamwork.Migrate.All,  |
 
 ## EXAMPLES
+### Example 1: Send a new reply to a chatMessage
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	body = @{
@@ -90,13 +90,17 @@ $params = @{
 
 New-MgBetaTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will send a new reply to a chatmessage
+
+### Example 2: Import messages
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
-	createdDateTime = \[System.DateTime\]::Parse("2019-02-04T19:58:15.511Z")
+	createdDateTime = [System.DateTime]::Parse("2019-02-04T19:58:15.511Z")
 	from = @{
 		user = @{
 			id = "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca"
@@ -110,6 +114,10 @@ $params = @{
 }
 
 New-MgBetaTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+
+```
+This example will import messages
+
 
 ## PARAMETERS
 

@@ -69,18 +69,6 @@ Alternatively, create a draft to reply to a message, and send it later.
 | Delegated (personal Microsoft account) | Mail.Send,  |
 | Application | Mail.Send,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -597,6 +585,7 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetareplyusermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetareplyusermailfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-beta)
+
 
 
 

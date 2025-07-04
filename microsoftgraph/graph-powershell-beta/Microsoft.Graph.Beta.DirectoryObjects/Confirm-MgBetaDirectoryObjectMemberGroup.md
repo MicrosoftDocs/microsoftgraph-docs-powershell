@@ -66,11 +66,11 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 | Application | Application.Read.All, Application.ReadWrite.All, User.Read.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, User.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Check group memberships for a directory object
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
-```
 
 $params = @{
 	groupIds = @(
@@ -83,6 +83,10 @@ $params = @{
 }
 
 Confirm-MgBetaDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example will check group memberships for a directory object
+
 
 ## PARAMETERS
 

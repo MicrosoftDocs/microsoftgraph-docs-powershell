@@ -33,13 +33,17 @@ Get-MgBetaReportServiceActivityUsageMetricForTeamByMeetingJoined -InputObject <I
 Get usage metrics based on the number of times users joined Teams meetings without errors.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportServiceActivityUsageMetricForTeamByMeetingJoined
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityUsageMetricForTeamByMeetingJoined Cmdlet.
+
 
 ## PARAMETERS
 

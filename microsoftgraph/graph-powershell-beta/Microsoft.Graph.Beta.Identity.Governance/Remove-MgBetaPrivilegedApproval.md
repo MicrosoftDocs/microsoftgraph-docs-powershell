@@ -29,18 +29,6 @@ Remove-MgBetaPrivilegedApproval -InputObject <IIdentityGovernanceIdentity> [-IfM
 ## DESCRIPTION
 Delete entity from privilegedApproval
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -301,6 +289,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprivilegedapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprivilegedapproval)
+
 
 
 

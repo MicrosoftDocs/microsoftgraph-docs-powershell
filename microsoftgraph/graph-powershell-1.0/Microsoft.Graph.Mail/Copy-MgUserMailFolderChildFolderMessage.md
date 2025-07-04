@@ -51,18 +51,6 @@ Copy-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity>
 ## DESCRIPTION
 Copy a message to a folder within the user's mailbox.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -299,6 +287,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/copy-mgusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/copy-mgusermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-1.0)
+
 
 
 

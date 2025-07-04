@@ -49,18 +49,6 @@ Restore-MgShareListItemVersion -InputObject <IFilesIdentity> [-ResponseHeadersVa
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -262,6 +250,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgsharelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgsharelistitemversion)
 
 [https://learn.microsoft.com/graph/api/listitemversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitemversion-restore?view=graph-rest-1.0)
+
 
 
 
