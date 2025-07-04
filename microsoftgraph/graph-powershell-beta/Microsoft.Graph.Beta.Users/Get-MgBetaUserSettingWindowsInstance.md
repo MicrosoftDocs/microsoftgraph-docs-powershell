@@ -41,18 +41,6 @@ Get-MgBetaUserSettingWindowsInstance -InputObject <IUsersIdentity> [-ExpandPrope
 ## DESCRIPTION
 A collection of setting values for a given windowsSetting.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -361,6 +349,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingwindowsinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingwindowsinstance)
+
 
 
 

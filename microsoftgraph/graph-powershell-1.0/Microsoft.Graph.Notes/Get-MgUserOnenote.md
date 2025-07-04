@@ -32,18 +32,6 @@ Get-MgUserOnenote -InputObject <INotesIdentity> [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 Get onenote from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -185,6 +173,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenote](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenote)
+
 
 
 

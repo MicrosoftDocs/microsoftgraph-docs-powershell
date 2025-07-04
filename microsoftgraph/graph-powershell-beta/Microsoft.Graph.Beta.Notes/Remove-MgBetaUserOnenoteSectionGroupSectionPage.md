@@ -33,18 +33,6 @@ Remove-MgBetaUserOnenoteSectionGroupSectionPage -InputObject <INotesIdentity> [-
 ## DESCRIPTION
 Delete navigation property pages for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -262,6 +250,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetauseronenotesectiongroupsectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetauseronenotesectiongroupsectionpage)
+
 
 
 

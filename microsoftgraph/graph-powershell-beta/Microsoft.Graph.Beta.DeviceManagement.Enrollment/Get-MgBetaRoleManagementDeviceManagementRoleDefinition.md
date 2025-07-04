@@ -45,18 +45,6 @@ Get roleDefinitions from roleManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementRBAC.Read.All, CloudPC.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.Read.Directory, RoleManagement.Read.CloudPC, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory, Directory.Read.All, DeviceManagementRBAC.ReadWrite.All, Directory.ReadWrite.All, CloudPC.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -334,6 +322,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementdevicemanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementdevicemanagementroledefinition)
+
 
 
 

@@ -49,18 +49,6 @@ Update-MgBetaCommunicationOnlineMeetingAiInsight -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Update the navigation property aiInsights in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActionItems
@@ -444,6 +432,7 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingaiinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingaiinsight)
+
 
 
 

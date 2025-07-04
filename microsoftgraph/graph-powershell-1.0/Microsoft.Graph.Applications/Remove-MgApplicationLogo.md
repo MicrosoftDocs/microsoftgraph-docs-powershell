@@ -34,18 +34,6 @@ Remove-MgApplicationLogo -InputObject <IApplicationsIdentity> [-IfMatch <String>
 The main logo for the application.
 Not nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -230,6 +218,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationlogo](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationlogo)
+
 
 
 

@@ -29,18 +29,6 @@ Remove-MgBetaIdentityProductChange -InputObject <IIdentitySignInsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property productChanges for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChangeItemBaseId
@@ -282,6 +270,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityproductchange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityproductchange)
+
 
 
 
