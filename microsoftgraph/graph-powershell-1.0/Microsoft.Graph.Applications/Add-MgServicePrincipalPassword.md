@@ -61,13 +61,17 @@ Add a strong password or secret to a servicePrincipal object.
 
 Import-Module Microsoft.Graph.Applications
 
+$servicePrincipalId = 'your-service-principal-id'
+
 $params = @{
 	passwordCredential = @{
 		displayName = "Password friendly name"
 	}
 }
 
-Add-MgServicePrincipalPassword -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+$secret = Add-MgServicePrincipalPassword -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+ 
+$secret | format-list
 
 ```
 This example shows how to use the Add-MgServicePrincipalPassword Cmdlet.
