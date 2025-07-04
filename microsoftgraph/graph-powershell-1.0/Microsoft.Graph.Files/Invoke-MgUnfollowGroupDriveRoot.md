@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Unfollow a driveItem.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnfollowGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaUnfollowGroupDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unfollow (Default)

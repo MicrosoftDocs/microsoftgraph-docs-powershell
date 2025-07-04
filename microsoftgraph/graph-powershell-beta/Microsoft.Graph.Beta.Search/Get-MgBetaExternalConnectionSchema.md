@@ -11,6 +11,9 @@ ms.subservice: search
 ## SYNOPSIS
 Retrieve the properties of a schema for an externalConnection.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionSchema?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

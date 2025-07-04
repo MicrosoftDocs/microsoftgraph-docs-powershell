@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property onenote in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserOnenote](/powershell/module/Microsoft.Graph.Notes/Update-MgUserOnenote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -11,6 +11,9 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationAccessToken?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AcquireExpanded (Default)

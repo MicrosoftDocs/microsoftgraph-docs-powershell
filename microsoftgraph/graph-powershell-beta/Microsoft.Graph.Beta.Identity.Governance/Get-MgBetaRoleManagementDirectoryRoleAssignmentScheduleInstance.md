@@ -12,6 +12,9 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 Get the instance of an active role assignment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

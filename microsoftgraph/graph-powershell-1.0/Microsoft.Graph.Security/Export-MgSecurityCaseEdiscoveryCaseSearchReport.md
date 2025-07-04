@@ -12,6 +12,9 @@ ms.subservice: ediscovery
 Export an item report from an estimated ediscoverySearch.
 For details, see Manage a collection estimate.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport](/powershell/module/Microsoft.Graph.Beta.Security/Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)

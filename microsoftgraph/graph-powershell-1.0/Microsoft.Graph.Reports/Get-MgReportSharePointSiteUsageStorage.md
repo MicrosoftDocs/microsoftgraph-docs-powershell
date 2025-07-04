@@ -11,6 +11,9 @@ ms.subservice: reports
 ## SYNOPSIS
 Get the trend of storage allocated and consumed during the reporting period.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageStorage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

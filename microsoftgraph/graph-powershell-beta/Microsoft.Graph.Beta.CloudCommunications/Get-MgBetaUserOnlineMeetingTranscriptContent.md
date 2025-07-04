@@ -15,6 +15,9 @@ However, private channel meetings are not supported at this time.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingTranscriptContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

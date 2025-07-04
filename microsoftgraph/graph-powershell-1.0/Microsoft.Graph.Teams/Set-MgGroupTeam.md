@@ -15,6 +15,9 @@ If the creation of the team call is delayed, you can retry the call up to three 
 If the group was created less than 15 minutes ago, the call might fail with a 404 error code due to replication delays.
 If the group was created less than 15 minutes ago, it's possible for a call to create a team to fail with a 404 error code, due to ongoing replication delays.The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

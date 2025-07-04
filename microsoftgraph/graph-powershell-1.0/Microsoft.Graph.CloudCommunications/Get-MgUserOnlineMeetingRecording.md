@@ -15,6 +15,9 @@ However, private channel meetings are not supported at this time.
 For a recording, this API returns the metadata of the single recording associated with the online meeting.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingRecording?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)

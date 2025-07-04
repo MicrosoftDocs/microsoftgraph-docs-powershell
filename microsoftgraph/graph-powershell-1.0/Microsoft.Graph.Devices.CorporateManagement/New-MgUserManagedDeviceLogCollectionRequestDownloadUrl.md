@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action createDownloadUrl
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserManagedDeviceLogCollectionRequestDownloadUrl](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaUserManagedDeviceLogCollectionRequestDownloadUrl?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Create (Default)

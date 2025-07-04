@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Recover passcode
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Restore-MgBetaDeviceManagementManagedDevicePasscode?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Recover (Default)

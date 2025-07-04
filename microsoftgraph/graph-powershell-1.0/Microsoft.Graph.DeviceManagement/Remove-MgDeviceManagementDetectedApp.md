@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Deletes a detectedApp.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDetectedApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

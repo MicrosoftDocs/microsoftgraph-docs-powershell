@@ -11,6 +11,9 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 Update access decisions, known as accessReviewInstanceDecisionItems, for which the user is the reviewer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Wipe a device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Clear-MgBetaUserManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### WipeExpanded (Default)
