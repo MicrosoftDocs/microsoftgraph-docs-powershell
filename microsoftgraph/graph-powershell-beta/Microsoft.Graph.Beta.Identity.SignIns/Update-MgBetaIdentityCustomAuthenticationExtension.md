@@ -49,6 +49,14 @@ Update-MgBetaIdentityCustomAuthenticationExtension -InputObject <IIdentitySignIn
 ## DESCRIPTION
 Update the navigation property customAuthenticationExtensions in identity
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CustomAuthenticationExtension.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CustomAuthenticationExtension.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

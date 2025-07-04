@@ -32,6 +32,14 @@ Remove-MgTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentity
 Remove a tenant from a multitenant organization.
 A tenant can be removed in the following scenarios:
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MultiTenantOrganization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | MultiTenantOrganization.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,14 @@ Get-MgBetaIdentityProductChange -InputObject <IIdentitySignInsIdentity> [-Expand
 ## DESCRIPTION
 Represents entry point for Microsoft Entra product changes and planned new features.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChangeManagement.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChangeManagement.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

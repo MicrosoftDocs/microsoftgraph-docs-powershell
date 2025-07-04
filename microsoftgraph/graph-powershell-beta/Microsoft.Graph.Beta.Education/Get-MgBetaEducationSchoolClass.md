@@ -23,6 +23,14 @@ Get-MgBetaEducationSchoolClass -EducationSchoolId <String> [-ExpandProperty <Str
 ## DESCRIPTION
 Retrieve a list of classes owned by a school.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduRoster.ReadBasic,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

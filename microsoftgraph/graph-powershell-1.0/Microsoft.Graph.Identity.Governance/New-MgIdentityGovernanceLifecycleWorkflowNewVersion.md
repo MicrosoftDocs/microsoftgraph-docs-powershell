@@ -47,6 +47,14 @@ New-MgIdentityGovernanceLifecycleWorkflowNewVersion -InputObject <IIdentityGover
 ## DESCRIPTION
 Create a new version of the workflow object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -30,6 +30,14 @@ Remove-MgBetaTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-IfMatc
 ## DESCRIPTION
 Delete an instance of a workforceIntegration.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | WorkforceIntegration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | WorkforceIntegration.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -44,6 +44,14 @@ Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITea
 ## DESCRIPTION
 Retrieve the hosted content in an app's icon.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AppCatalog.Read.All, AppCatalog.Submit, AppCatalog.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AppCatalog.Read.All, AppCatalog.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

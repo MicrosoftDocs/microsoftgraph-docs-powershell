@@ -32,6 +32,14 @@ Invoke-MgBetaUsageNetworkAccessReportProfiling -InputObject <INetworkAccessIdent
 ## DESCRIPTION
 Returns an object containing count tables for the traffic types in Global Secure Access, aggregated by the time period specified.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | NetworkAccess-Reports.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | NetworkAccess-Reports.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

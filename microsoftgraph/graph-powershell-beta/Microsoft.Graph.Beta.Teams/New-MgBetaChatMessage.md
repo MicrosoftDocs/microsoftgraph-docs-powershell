@@ -64,6 +64,14 @@ New-MgBetaChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 Send a new chatMessage in the specified chat.
 This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before creating a chat message.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChatMessage.Send, Group.ReadWrite.All, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Teamwork.Migrate.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

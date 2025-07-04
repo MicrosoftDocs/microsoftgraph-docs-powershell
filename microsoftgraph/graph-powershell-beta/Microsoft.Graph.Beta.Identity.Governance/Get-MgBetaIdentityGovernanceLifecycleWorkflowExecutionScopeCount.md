@@ -29,6 +29,14 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScopeCount -InputObject <I
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

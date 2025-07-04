@@ -48,6 +48,14 @@ New-MgBetaSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity>
 Add an ediscoveryCaseMember to an ediscoveryCase.
 The ediscoveryCaseMember can be one of two types: a user or a role group.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -30,6 +30,14 @@ Remove-MgTeamChannelTab -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Resp
 ## DESCRIPTION
 Removes (unpins) a tab from the specified channel within a team.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsTab.ReadWriteSelfForTeam, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsTab.Delete.Group, TeamsTab.ReadWriteSelfForTeam.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.Group, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

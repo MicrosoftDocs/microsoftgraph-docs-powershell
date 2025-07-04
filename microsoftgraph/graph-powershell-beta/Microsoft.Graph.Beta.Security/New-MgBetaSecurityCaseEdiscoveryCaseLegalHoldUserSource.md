@@ -49,6 +49,14 @@ New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -InputObject <ISecurityI
 ## DESCRIPTION
 Create a new userSource object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
