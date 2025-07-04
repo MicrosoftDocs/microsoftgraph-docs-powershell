@@ -19,14 +19,14 @@ Update-MgBetaNetworkAccessAlert -AlertId <String> [-ResponseHeadersVariable <Str
  [-AlertType <String>] [-CreationDateTime <DateTime>] [-Description <String>] [-DetectionTechnology <String>]
  [-DisplayName <String>] [-Id <String>] [-Policy <IMicrosoftGraphNetworkaccessFilteringPolicy>]
  [-RelatedResources <IMicrosoftGraphNetworkaccessRelatedResource[]>] [-Severity <String>]
- [-VendorName <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-VendorName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaNetworkAccessAlert -AlertId <String> -BodyParameter <IMicrosoftGraphNetworkaccessAlert>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Update-MgBetaNetworkAccessAlert -InputObject <INetworkAccessIdentity> [-Response
  [-AlertType <String>] [-CreationDateTime <DateTime>] [-Description <String>] [-DetectionTechnology <String>]
  [-DisplayName <String>] [-Id <String>] [-Policy <IMicrosoftGraphNetworkaccessFilteringPolicy>]
  [-RelatedResources <IMicrosoftGraphNetworkaccessRelatedResource[]>] [-Severity <String>]
- [-VendorName <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-VendorName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -45,13 +45,11 @@ Update-MgBetaNetworkAccessAlert -InputObject <INetworkAccessIdentity> [-Response
 ```
 Update-MgBetaNetworkAccessAlert -InputObject <INetworkAccessIdentity>
  -BodyParameter <IMicrosoftGraphNetworkaccessAlert> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property alerts in networkAccess
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -129,21 +127,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -270,6 +253,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RelatedResources
 
 
@@ -322,6 +320,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

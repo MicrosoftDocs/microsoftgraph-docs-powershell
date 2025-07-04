@@ -15,8 +15,6 @@ Delete ref of navigation property memberOf for onPremisesPublishingProfiles
 ## DESCRIPTION
 Delete ref of navigation property memberOf for onPremisesPublishingProfiles
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### CommonParameters

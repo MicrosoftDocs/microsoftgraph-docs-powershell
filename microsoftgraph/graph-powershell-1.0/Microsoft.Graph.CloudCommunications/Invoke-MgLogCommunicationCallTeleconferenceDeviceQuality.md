@@ -26,7 +26,7 @@ This method is only for the CVI partners to provide their media quality data.
 ```
 Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Quality <IMicrosoftGraphTeleconferenceDeviceQuality>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality [-ResponseHeadersVariab
 ```
 Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality
  -Body <IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -173,21 +173,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -218,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Quality
 teleconferenceDeviceQuality
 To construct, see NOTES section for QUALITY properties and create a hash table.
@@ -241,6 +241,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -293,7 +308,7 @@ This needs to be copied over from Microsoft.Graph.Call.CallChainId.
     - `[CloudServiceName <String>]`: The Azure deployed cloud service name, such as contoso.cloudapp.net.
     - `[DeviceDescription <String>]`: Any additional description, such as VTC Bldg 30/21.
     - `[DeviceName <String>]`: The user media agent name, such as Cisco SX80.
-    - `[MediaLegId <String>]`: A unique identifier for a specific media leg of a participant in a conference.
+    - `[MediaLegId <String>]`: A unique identifier for a specific media leg of a participant in a conference. 
 One participant can have multiple media leg identifiers if retargeting happens.
 CVI partner assigns this value.
     - `[MediaQualityList <IMicrosoftGraphTeleconferenceDeviceMediaQuality- `[]`>]`: The list of media qualities in a media session (call), such as audio quality, video quality, and/or screen sharing quality.
@@ -306,7 +321,7 @@ For example, 0.01 means 0.01%.
 For example, 0.01 means 0.01%.
       - `[AverageOutboundRoundTripDelay <TimeSpan?>]`: The average outbound stream network round trip delay.
       - `[ChannelIndex <Int32?>]`: The channel index of media.
-Indexing begins with 1.
+Indexing begins with 1. 
 If a media session contains 3 video modalities, channel indexes will be 1, 2, and 3.
       - `[InboundPackets <Int64?>]`: The total number of the inbound packets.
       - `[LocalIPAddress <String>]`: the local IP address for the media session.
@@ -338,7 +353,7 @@ This needs to be copied over from Microsoft.Graph.Call.CallChainId.
   - `[CloudServiceName <String>]`: The Azure deployed cloud service name, such as contoso.cloudapp.net.
   - `[DeviceDescription <String>]`: Any additional description, such as VTC Bldg 30/21.
   - `[DeviceName <String>]`: The user media agent name, such as Cisco SX80.
-  - `[MediaLegId <String>]`: A unique identifier for a specific media leg of a participant in a conference.
+  - `[MediaLegId <String>]`: A unique identifier for a specific media leg of a participant in a conference. 
 One participant can have multiple media leg identifiers if retargeting happens.
 CVI partner assigns this value.
   - `[MediaQualityList <IMicrosoftGraphTeleconferenceDeviceMediaQuality- `[]`>]`: The list of media qualities in a media session (call), such as audio quality, video quality, and/or screen sharing quality.
@@ -351,7 +366,7 @@ For example, 0.01 means 0.01%.
 For example, 0.01 means 0.01%.
     - `[AverageOutboundRoundTripDelay <TimeSpan?>]`: The average outbound stream network round trip delay.
     - `[ChannelIndex <Int32?>]`: The channel index of media.
-Indexing begins with 1.
+Indexing begins with 1. 
 If a media session contains 3 video modalities, channel indexes will be 1, 2, and 3.
     - `[InboundPackets <Int64?>]`: The total number of the inbound packets.
     - `[LocalIPAddress <String>]`: the local IP address for the media session.

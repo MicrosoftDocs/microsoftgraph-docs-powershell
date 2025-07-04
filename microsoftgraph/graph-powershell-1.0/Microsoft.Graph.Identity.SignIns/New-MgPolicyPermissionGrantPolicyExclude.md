@@ -24,14 +24,14 @@ New-MgPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId <String> [-Res
  [-ClientApplicationPublisherIds <String[]>] [-ClientApplicationTenantIds <String[]>]
  [-ClientApplicationsFromVerifiedPublisherOnly] [-Id <String>] [-PermissionClassification <String>]
  [-PermissionType <String>] [-Permissions <String[]>] [-ResourceApplication <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId <String>
  -BodyParameter <IMicrosoftGraphPermissionGrantConditionSet> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -41,14 +41,14 @@ New-MgPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdentity>
  [-ClientApplicationPublisherIds <String[]>] [-ClientApplicationTenantIds <String[]>]
  [-ClientApplicationsFromVerifiedPublisherOnly] [-Id <String>] [-PermissionClassification <String>]
  [-PermissionType <String>] [-Permissions <String[]>] [-ResourceApplication <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphPermissionGrantConditionSet> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -67,8 +67,8 @@ You do this by adding a permissionGrantConditionSet to the excludes collection o
 ### Example 1: Create a permission grant policy exclude
 
 ```powershell
-Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"
-New-MgPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId "testtenant-sampleapp-permissions" -PermissionType "application" -ResourceApplication "00000000-0000-0000-0000-000000000000" -Permissions "00000000-0000-0000-0000-000000000000" | fl
+Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
+New-MgPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId "testtenant-sampleapp-permissions" -PermissionType "application" -ResourceApplication "00000000-0000-0000-0000-000000000000" -Permissions "00000000-0000-0000-0000-000000000000" | fl 
 
 ClientApplicationIds                        : {all}
 ClientApplicationPublisherIds               : {all}
@@ -175,21 +175,6 @@ Default is the single value all.
 Type: String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -310,6 +295,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResourceApplication
 The appId of the resource application (for example the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
@@ -333,6 +333,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

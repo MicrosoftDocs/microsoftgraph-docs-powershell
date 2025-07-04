@@ -17,7 +17,7 @@ Create new navigation property to microsoftTunnelServerLogCollectionResponses fo
 New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-ExpiryDateTime <DateTime>] [-Id <String>]
  [-RequestDateTime <DateTime>] [-ServerId <String>] [-SizeInBytes <Int64>] [-StartDateTime <DateTime>]
- [-Status <MicrosoftTunnelLogCollectionStatus>] [-Headers <IDictionary>]
+ [-Status <MicrosoftTunnelLogCollectionStatus>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -25,7 +25,7 @@ New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse [-ResponseH
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse
  -BodyParameter <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,8 +38,6 @@ Create new navigation property to microsoftTunnelServerLogCollectionResponses fo
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -71,21 +69,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -142,6 +125,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -232,6 +230,21 @@ Enum type that represent the status of log collection
 Type: MicrosoftTunnelLogCollectionStatus
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

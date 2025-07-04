@@ -20,21 +20,19 @@ Create new navigation property to galleryImages for deviceManagement
 New-MgDeviceManagementVirtualEndpointGalleryImage [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EndDate <DateTime>] [-ExpirationDate <DateTime>]
  [-Id <String>] [-OfferName <String>] [-PublisherName <String>] [-SizeInGb <Int32>] [-SkuName <String>]
- [-StartDate <DateTime>] [-Status <String>] [-Headers <IDictionary>]
+ [-StartDate <DateTime>] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementVirtualEndpointGalleryImage -BodyParameter <IMicrosoftGraphCloudPcGalleryImage>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to galleryImages for deviceManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -66,21 +64,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -185,6 +168,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PublisherName
 The publisher name of this gallery image that is passed to Azure Resource Manager (ARM) to retrieve the image resource.
 Read-only.
@@ -273,6 +271,21 @@ cloudPcGalleryImageStatus
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

@@ -19,7 +19,7 @@ Update the ref of navigation property postFederationSignup in identity
 ```
 Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -B2XIdentityUserFlowId <String>
  [-ResponseHeadersVariable <String>] -OdataId <String> [-AdditionalProperties <Hashtable>]
- [-OdataType <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-OdataType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,14 +27,14 @@ Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -B2XIdentityUserFlowId <S
 ```
 Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -B2XIdentityUserFlowId <String>
  -BodyParameter <IReferenceUpdate> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
 Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <String>] -OdataId <String> [-AdditionalProperties <Hashtable>]
- [-OdataType <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-OdataType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -InputObject <IIdentitySi
 ```
 Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IReferenceUpdate> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,8 +55,6 @@ Update the ref of navigation property postFederationSignup in identity
 | Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityUserFlow.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -103,21 +101,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -198,6 +181,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -205,6 +203,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

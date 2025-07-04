@@ -21,7 +21,7 @@ New-MgBetaGroupTeamChannelPlannerPlan -ChannelId <String> -GroupId <String> [-Re
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>] [-Details <IMicrosoftGraphPlannerPlanDetails>]
  [-Id <String>] [-IsArchived] [-Owner <String>]
  [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>]
- [-Title <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ New-MgBetaGroupTeamChannelPlannerPlan -ChannelId <String> -GroupId <String> [-Re
 ```
 New-MgBetaGroupTeamChannelPlannerPlan -ChannelId <String> -GroupId <String>
  -BodyParameter <IMicrosoftGraphPlannerPlan> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -41,21 +41,19 @@ New-MgBetaGroupTeamChannelPlannerPlan -InputObject <ITeamsIdentity> [-ResponseHe
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>] [-Details <IMicrosoftGraphPlannerPlanDetails>]
  [-Id <String>] [-IsArchived] [-Owner <String>]
  [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>]
- [-Title <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupTeamChannelPlannerPlan -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphPlannerPlan>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to plans for groups
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -133,21 +131,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -348,6 +331,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -405,6 +403,21 @@ Title of the plan.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

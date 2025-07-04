@@ -23,7 +23,7 @@ Send-MgBetaGroupTeamActivityNotification -GroupId <String> [-ResponseHeadersVari
  [-ActivityType <String>] [-AdditionalProperties <Hashtable>] [-ChainId <Int64>]
  [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>] [-TeamsAppId <String>]
  [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Send-MgBetaGroupTeamActivityNotification -GroupId <String> [-ResponseHeadersVari
 ```
 Send-MgBetaGroupTeamActivityNotification -GroupId <String>
  -BodyParameter <IPaths1TgtfpkGroupsGroupIdTeamMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ Send-MgBetaGroupTeamActivityNotification -InputObject <ITeamsIdentity> [-Respons
  [-ActivityType <String>] [-AdditionalProperties <Hashtable>] [-ChainId <Int64>]
  [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>] [-TeamsAppId <String>]
  [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -49,15 +49,13 @@ Send-MgBetaGroupTeamActivityNotification -InputObject <ITeamsIdentity> [-Respons
 ```
 Send-MgBetaGroupTeamActivityNotification -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1TgtfpkGroupsGroupIdTeamMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Send an activity feed notification in the scope of a team.
 For more information, see sending Teams activity notifications.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -118,21 +116,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -206,6 +189,21 @@ To construct, see NOTES section for PREVIEWTEXT properties and create a hash tab
 Type: IMicrosoftGraphItemBody
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -291,6 +289,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -336,8 +349,10 @@ BODYPARAMETER `<IPaths1TgtfpkGroupsGroupIdTeamMicrosoftGraphSendactivitynotifica
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TeamsAppId <String>]`: 
   - `[TemplateParameters <IMicrosoftGraphKeyValuePair- `[]`>]`: 
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[Topic <IMicrosoftGraphTeamworkActivityTopic>]`: teamworkActivityTopic
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Source <String>]`: teamworkActivityTopicSource
@@ -400,8 +415,10 @@ PREVIEWTEXT `<IMicrosoftGraphItemBody>`: itemBody
   - `[ContentType <String>]`: bodyType
 
 TEMPLATEPARAMETERS `<IMicrosoftGraphKeyValuePair- `[]`>`: .
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+  - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+  - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
 
 TOPIC `<IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

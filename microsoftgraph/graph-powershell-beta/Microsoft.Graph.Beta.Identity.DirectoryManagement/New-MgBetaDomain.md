@@ -34,13 +34,13 @@ New-MgBetaDomain [-ResponseHeadersVariable <String>] [-AdditionalProperties <Has
  [-SharedEmailDomainInvitations <IMicrosoftGraphSharedEmailDomainInvitation[]>]
  [-State <IMicrosoftGraphDomainState>] [-SupportedServices <String[]>]
  [-VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDomain -BodyParameter <IMicrosoftGraphDomain> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,8 +59,6 @@ For example, subdomain.contoso.com is automatically be verified if contoso.com h
 | Delegated (work or school account) | Domain.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Domain.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -129,21 +127,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -332,6 +315,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -442,6 +440,21 @@ To construct, see NOTES section for VERIFICATIONDNSRECORDS properties and create
 Type: IMicrosoftGraphDomainDnsRecord[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

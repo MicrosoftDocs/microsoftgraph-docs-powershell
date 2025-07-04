@@ -21,7 +21,7 @@ New-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -RbacApplica
  [-EndDateTime <DateTime>] [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>]
  [-PrincipalId <String>] [-RoleAssignmentOriginId <String>] [-RoleAssignmentScheduleId <String>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
- [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ New-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -RbacApplica
 ```
 New-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -RbacApplicationId <String>
  -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -41,7 +41,7 @@ New-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -InputObject
  [-EndDateTime <DateTime>] [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>]
  [-PrincipalId <String>] [-RoleAssignmentOriginId <String>] [-RoleAssignmentScheduleId <String>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
- [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -49,13 +49,11 @@ New-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -InputObject
 ```
 New-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to roleAssignmentScheduleInstances for roleManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -154,21 +152,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -318,6 +301,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RbacApplicationId
 The unique identifier of rbacApplication
 
@@ -416,6 +414,21 @@ When this instance starts.
 Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

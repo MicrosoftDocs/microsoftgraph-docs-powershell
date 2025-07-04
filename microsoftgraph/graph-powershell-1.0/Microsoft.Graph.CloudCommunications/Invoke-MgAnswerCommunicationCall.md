@@ -26,14 +26,14 @@ This API supports the following PSTN scenarios:
 Invoke-MgAnswerCommunicationCall -CallId <String> [-ResponseHeadersVariable <String>]
  [-AcceptedModalities <String[]>] [-AdditionalProperties <Hashtable>] [-CallOptions <Hashtable>]
  [-CallbackUri <String>] [-MediaConfig <Hashtable>] [-ParticipantCapacity <Int32>] [-Headers <IDictionary>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Answer
 ```
 Invoke-MgAnswerCommunicationCall -CallId <String>
  -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ Invoke-MgAnswerCommunicationCall -CallId <String>
 Invoke-MgAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AcceptedModalities <String[]>] [-AdditionalProperties <Hashtable>]
  [-CallOptions <Hashtable>] [-CallbackUri <String>] [-MediaConfig <Hashtable>] [-ParticipantCapacity <Int32>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -50,7 +50,7 @@ Invoke-MgAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 ```
 Invoke-MgAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -237,21 +237,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -328,6 +313,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -335,6 +335,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -378,16 +393,16 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AcceptedModalities <String- `[]`>]`:
+  - `[AcceptedModalities <String- `[]`>]`: 
   - `[CallOptions <IMicrosoftGraphIncomingCallOptions>]`: incomingCallOptions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[HideBotAfterEscalation <Boolean?>]`: Indicates whether to hide the app after the call is escalated.
     - `[IsContentSharingNotificationEnabled <Boolean?>]`: Indicates whether content sharing notifications should be enabled for the call.
     - `[IsDeltaRosterEnabled <Boolean?>]`: Indicates whether delta roster is enabled for the call.
-  - `[CallbackUri <String>]`:
+  - `[CallbackUri <String>]`: 
   - `[MediaConfig <IMicrosoftGraphMediaConfig>]`: mediaConfig
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ParticipantCapacity <Int32?>]`:
+  - `[ParticipantCapacity <Int32?>]`: 
 
 INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord

@@ -25,7 +25,7 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile -WindowsAutopilot
  [-LastModifiedDateTime <DateTime>] [-Locale <String>] [-ManagementServiceAppId <String>]
  [-OutOfBoxExperienceSetting <IMicrosoftGraphOutOfBoxExperienceSetting>]
  [-OutOfBoxExperienceSettings <IMicrosoftGraphOutOfBoxExperienceSettings>] [-PreprovisioningAllowed]
- [-RoleScopeTagIds <String[]>] [-Headers <IDictionary>] [-WhatIf]
+ [-RoleScopeTagIds <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile -WindowsAutopilot
 ```
 Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile -WindowsAutopilotDeploymentProfileId <String>
  -BodyParameter <IMicrosoftGraphWindowsAutopilotDeploymentProfile> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -49,7 +49,7 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile
  [-LastModifiedDateTime <DateTime>] [-Locale <String>] [-ManagementServiceAppId <String>]
  [-OutOfBoxExperienceSetting <IMicrosoftGraphOutOfBoxExperienceSetting>]
  [-OutOfBoxExperienceSettings <IMicrosoftGraphOutOfBoxExperienceSettings>] [-PreprovisioningAllowed]
- [-RoleScopeTagIds <String[]>] [-Headers <IDictionary>] [-WhatIf]
+ [-RoleScopeTagIds <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -58,7 +58,7 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile
 Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile
  -InputObject <IDeviceManagementEnrollmentIdentity>
  -BodyParameter <IMicrosoftGraphWindowsAutopilotDeploymentProfile> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -71,8 +71,6 @@ Update the navigation property windowsAutopilotDeploymentProfiles in deviceManag
 | Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -136,21 +134,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -510,6 +493,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -540,6 +538,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WindowsAutopilotDeploymentProfileId
+The unique identifier of windowsAutopilotDeploymentProfile
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -550,21 +578,6 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsAutopilotDeploymentProfileId
-The unique identifier of windowsAutopilotDeploymentProfile
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -21,7 +21,7 @@ New-MgBetaUserManagedDeviceConfigurationState -ManagedDeviceId <String> -UserId 
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>] [-State <String>] [-UserId1 <String>]
- [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>]
+ [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ New-MgBetaUserManagedDeviceConfigurationState -ManagedDeviceId <String> -UserId 
 ```
 New-MgBetaUserManagedDeviceConfigurationState -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -39,7 +39,7 @@ New-MgBetaUserManagedDeviceConfigurationState [-UserId <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>] [-State <String>]
- [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>]
+ [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,13 +47,11 @@ New-MgBetaUserManagedDeviceConfigurationState [-UserId <String>]
 ```
 New-MgBetaUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceConfigurationStates for users
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -85,21 +83,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -187,6 +170,21 @@ Supported platform types for policies.
 Type: PolicyPlatformType
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -324,6 +322,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

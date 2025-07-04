@@ -22,14 +22,14 @@ Update-MgTenantRelationshipMultiTenantOrganizationTenant -MultiTenantOrganizatio
  [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-JoinedDateTime <DateTime>] [-Role <String>] [-State <String>] [-TenantId <String>]
  [-TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgTenantRelationshipMultiTenantOrganizationTenant -MultiTenantOrganizationMemberId <String>
  -BodyParameter <IMicrosoftGraphMultiTenantOrganizationMember> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,14 +39,14 @@ Update-MgTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentity
  [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-JoinedDateTime <DateTime>] [-Role <String>] [-State <String>] [-TenantId <String>]
  [-TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphMultiTenantOrganizationMember> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,8 +59,6 @@ Update the navigation property tenants in tenantRelationships
 | Delegated (work or school account) | MultiTenantOrganization.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | MultiTenantOrganization.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -124,21 +122,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -251,6 +234,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -321,6 +319,21 @@ To construct, see NOTES section for TRANSITIONDETAILS properties and create a ha
 Type: IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

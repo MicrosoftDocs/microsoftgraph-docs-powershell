@@ -18,7 +18,7 @@ Update-MgBetaTeamChannelPlannerPlanBucket -ChannelId <String> -PlannerBucketId <
  -TeamId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>] [-CreationSource <IMicrosoftGraphPlannerBucketCreation>]
  [-Id <String>] [-IsArchived] [-Name <String>] [-OrderHint <String>] [-PlanId <String>]
- [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>]
+ [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Update-MgBetaTeamChannelPlannerPlanBucket -ChannelId <String> -PlannerBucketId <
 ```
 Update-MgBetaTeamChannelPlannerPlanBucket -ChannelId <String> -PlannerBucketId <String> -PlannerPlanId <String>
  -TeamId <String> -BodyParameter <IMicrosoftGraphPlannerBucket> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,20 +35,18 @@ Update-MgBetaTeamChannelPlannerPlanBucket -InputObject <ITeamsIdentity> [-Respon
  [-AdditionalProperties <Hashtable>] [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]
  [-CreationSource <IMicrosoftGraphPlannerBucketCreation>] [-Id <String>] [-IsArchived] [-Name <String>]
  [-OrderHint <String>] [-PlanId <String>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTeamChannelPlannerPlanBucket -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphPlannerBucket> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property buckets in teams
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -108,21 +106,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -285,6 +268,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -327,6 +325,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -24,14 +24,14 @@ New-MgIdentityB2XUserFlow [-ResponseHeadersVariable <String>] [-AdditionalProper
  [-Languages <IMicrosoftGraphUserFlowLanguageConfiguration[]>]
  [-UserAttributeAssignments <IMicrosoftGraphIdentityUserFlowAttributeAssignment[]>]
  [-UserFlowIdentityProviders <IMicrosoftGraphIdentityProviderBase[]>] [-UserFlowType <String>]
- [-UserFlowTypeVersion <Single>] [-Headers <IDictionary>] [-WhatIf]
+ [-UserFlowTypeVersion <Single>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgIdentityB2XUserFlow -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,8 +45,6 @@ Create a new b2xIdentityUserFlow object.
 | Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityUserFlow.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -94,21 +92,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -169,6 +152,21 @@ To construct, see NOTES section for LANGUAGES properties and create a hash table
 Type: IMicrosoftGraphUserFlowLanguageConfiguration[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -254,6 +252,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -301,7 +314,7 @@ Read-only.
 BODYPARAMETER `<IMicrosoftGraphB2XIdentityUserFlow>`: b2xIdentityUserFlow
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserFlowType <String>]`: userFlowType
-  - `[UserFlowTypeVersion <Single?>]`:
+  - `[UserFlowTypeVersion <Single?>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ApiConnectorConfiguration <IMicrosoftGraphUserFlowApiConnectorConfiguration>]`: userFlowApiConnectorConfiguration
@@ -325,7 +338,7 @@ Not nullable.
     - `[ClientSecret <String>]`: The client secret for the application.
 This is the client secret obtained when registering the application with the identity provider.
 This is write-only.
-A read operation will return .
+A read operation will return . 
 Required.
 Not nullable.
     - `[Name <String>]`: The display name of the identity provider.
@@ -362,7 +375,7 @@ false means the user can't complete sign-up without providing a value.
 Read-only.
       - `[DataType <String>]`: identityUserFlowAttributeDataType
       - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
-      - `[DisplayName <String>]`: The display name of the user flow attribute.
+      - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
       - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
     - `[UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem- `[]`>]`: The input options for the user flow attribute.
@@ -371,7 +384,7 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
       - `[Name <String>]`: The display name of the property displayed to the user in the user flow.
       - `[Value <String>]`: The value that is set when this item is selected.
     - `[UserInputType <String>]`: identityUserFlowAttributeInputType
-  - `[UserFlowIdentityProviders <IMicrosoftGraphIdentityProviderBase- `[]`>]`:
+  - `[UserFlowIdentityProviders <IMicrosoftGraphIdentityProviderBase- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: The display name of the identity provider.
@@ -386,7 +399,7 @@ Not nullable.
   - `[ClientSecret <String>]`: The client secret for the application.
 This is the client secret obtained when registering the application with the identity provider.
 This is write-only.
-A read operation will return .
+A read operation will return . 
 Required.
 Not nullable.
   - `[Name <String>]`: The display name of the identity provider.
@@ -425,7 +438,7 @@ false means the user can't complete sign-up without providing a value.
 Read-only.
     - `[DataType <String>]`: identityUserFlowAttributeDataType
     - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
-    - `[DisplayName <String>]`: The display name of the user flow attribute.
+    - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
     - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
   - `[UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem- `[]`>]`: The input options for the user flow attribute.

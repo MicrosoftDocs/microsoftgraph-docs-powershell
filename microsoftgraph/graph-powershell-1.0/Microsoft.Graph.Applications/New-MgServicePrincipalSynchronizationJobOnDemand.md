@@ -22,14 +22,14 @@ The rate limit for this API is 5 requests per 10 seconds.
 New-MgServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId <String> -SynchronizationJobId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Parameters <IMicrosoftGraphSynchronizationJobApplicationParameters[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Provision
 ```
 New-MgServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId <String> -SynchronizationJobId <String>
  -BodyParameter <IPathsJgtujvServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,14 +38,14 @@ New-MgServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId <String> -S
 New-MgServicePrincipalSynchronizationJobOnDemand -InputObject <IApplicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Parameters <IMicrosoftGraphSynchronizationJobApplicationParameters[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ProvisionViaIdentity
 ```
 New-MgServicePrincipalSynchronizationJobOnDemand -InputObject <IApplicationsIdentity>
  -BodyParameter <IPathsJgtujvServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -183,21 +183,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -237,6 +222,21 @@ To construct, see NOTES section for PARAMETERS properties and create a hash tabl
 Type: IMicrosoftGraphSynchronizationJobApplicationParameters[]
 Parameter Sets: ProvisionExpanded, ProvisionViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -290,6 +290,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -325,7 +340,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPathsJgtujvServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Parameters <IMicrosoftGraphSynchronizationJobApplicationParameters- `[]`>]`:
+  - `[Parameters <IMicrosoftGraphSynchronizationJobApplicationParameters- `[]`>]`: 
     - `[RuleId <String>]`: The identifier of the synchronizationRule to be applied.
 This rule ID is defined in the schema for a given synchronization job or template.
     - `[Subjects <IMicrosoftGraphSynchronizationJobSubject- `[]`>]`: The identifiers of one or more objects to which a synchronizationJob is to be applied.
@@ -333,7 +348,7 @@ This rule ID is defined in the schema for a given synchronization job or templat
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Manager <IMicrosoftGraphSynchronizationJobSubject>]`: synchronizationJobSubject
         - `[Members <IMicrosoftGraphSynchronizationJobSubject- `[]`>]`: All group members that you would like to provision.
-        - `[Owners <IMicrosoftGraphSynchronizationJobSubject- `[]`>]`:
+        - `[Owners <IMicrosoftGraphSynchronizationJobSubject- `[]`>]`: 
       - `[ObjectId <String>]`: The identifier of an object to which a synchronizationJob is to be applied.
 Can be one of the following: An onPremisesDistinguishedName for synchronization from Active Directory to Azure AD.The user ID for synchronization from Microsoft Entra ID to a third-party.The Worker ID of the Workday worker for synchronization from Workday to either Active Directory or Microsoft Entra ID.
       - `[ObjectTypeName <String>]`: The type of the object to which a synchronizationJob is to be applied.
@@ -374,7 +389,7 @@ This rule ID is defined in the schema for a given synchronization job or templat
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Manager <IMicrosoftGraphSynchronizationJobSubject>]`: synchronizationJobSubject
       - `[Members <IMicrosoftGraphSynchronizationJobSubject- `[]`>]`: All group members that you would like to provision.
-      - `[Owners <IMicrosoftGraphSynchronizationJobSubject- `[]`>]`:
+      - `[Owners <IMicrosoftGraphSynchronizationJobSubject- `[]`>]`: 
     - `[ObjectId <String>]`: The identifier of an object to which a synchronizationJob is to be applied.
 Can be one of the following: An onPremisesDistinguishedName for synchronization from Active Directory to Azure AD.The user ID for synchronization from Microsoft Entra ID to a third-party.The Worker ID of the Workday worker for synchronization from Workday to either Active Directory or Microsoft Entra ID.
     - `[ObjectTypeName <String>]`: The type of the object to which a synchronizationJob is to be applied.

@@ -9,7 +9,7 @@ ms.subservice: intune
 # New-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Create a new windowsAppX object.
+Create a new managedAndroidLobApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -23,19 +23,19 @@ New-MgDeviceAppManagementMobileApp [-ResponseHeadersVariable <String>] [-Additio
  [-Description <String>] [-Developer <String>] [-DisplayName <String>] [-Id <String>]
  [-InformationUrl <String>] [-IsFeatured] [-LargeIcon <IMicrosoftGraphMimeContent>] [-Notes <String>]
  [-Owner <String>] [-PrivacyInformationUrl <String>] [-Publisher <String>]
- [-PublishingState <MobileAppPublishingState>] [-Headers <IDictionary>]
+ [-PublishingState <MobileAppPublishingState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create a new windowsAppX object.
+Create a new managedAndroidLobApp object.
 
 **Permissions**
 
@@ -71,7 +71,7 @@ $params = @{
 	publishingState = "processing"
 	committedContentVersion = "Committed Content Version value"
 	fileName = "File Name value"
-	size =
+	size = 
 	applicableArchitectures = "x86"
 	identityName = "Identity Name value"
 	identityPublisherHash = "Identity Publisher Hash value"
@@ -152,21 +152,6 @@ To construct, see NOTES section for CATEGORIES properties and create a hash tabl
 Type: IMicrosoftGraphMobileAppCategory[]
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -342,6 +327,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Publisher
 The publisher of the app.
 
@@ -379,6 +379,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -476,7 +491,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp)
 
-[https://learn.microsoft.com/graph/api/intune-apps-windowsappx-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-windowsappx-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-managedandroidlobapp-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-managedandroidlobapp-create?view=graph-rest-1.0)
 
 
 

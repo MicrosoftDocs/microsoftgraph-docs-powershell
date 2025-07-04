@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementcomanageddevicecloudpcreviewstatus
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Set-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus
@@ -20,14 +19,14 @@ After the review is completed, use this API again to set the Cloud PC back to a 
 Set-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus -ManagedDeviceId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus -ManagedDeviceId <String>
  -BodyParameter <IPaths17Ydg7DDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphSetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,14 +35,14 @@ Set-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus -ManagedDeviceId <S
 Set-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IPaths17Ydg7DDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphSetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -51,8 +50,6 @@ Set-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus -InputObject <IDevi
 Set the review status of a specific Cloud PC device.
 Use this API to set the review status of a Cloud PC to in review if you consider a Cloud PC as suspicious.
 After the review is completed, use this API again to set the Cloud PC back to a normal state.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -84,21 +81,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -163,6 +145,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -186,6 +183,21 @@ To construct, see NOTES section for REVIEWSTATUS properties and create a hash ta
 Type: IMicrosoftGraphCloudPcReviewStatus
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

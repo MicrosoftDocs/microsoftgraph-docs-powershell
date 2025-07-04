@@ -25,7 +25,7 @@ For more details, see presence sessions and time-out and expiration.
 ```
 Set-MgCommunicationPresenceUserPreferredPresence -PresenceId <String> [-ResponseHeadersVariable <String>]
  [-Activity <String>] [-AdditionalProperties <Hashtable>] [-Availability <String>]
- [-ExpirationDuration <TimeSpan>] [-Headers <IDictionary>] [-PassThru]
+ [-ExpirationDuration <TimeSpan>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Set-MgCommunicationPresenceUserPreferredPresence -PresenceId <String> [-Response
 ```
 Set-MgCommunicationPresenceUserPreferredPresence -PresenceId <String>
  -BodyParameter <IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,14 +42,14 @@ Set-MgCommunicationPresenceUserPreferredPresence -PresenceId <String>
 Set-MgCommunicationPresenceUserPreferredPresence -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <String>] [-Activity <String>] [-AdditionalProperties <Hashtable>]
  [-Availability <String>] [-ExpirationDuration <TimeSpan>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgCommunicationPresenceUserPreferredPresence -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -60,8 +60,6 @@ Preferred presence takes effect only when at least one presence session exists f
 Otherwise, the user's presence shows as Offline.
 A presence session is created as a result of a successful setPresence operation, or if the user is signed in on a Microsoft Teams client.
 For more details, see presence sessions and time-out and expiration.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -123,21 +121,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -217,6 +200,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -224,6 +222,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -267,9 +280,9 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Activity <String>]`:
-  - `[Availability <String>]`:
-  - `[ExpirationDuration <TimeSpan?>]`:
+  - `[Activity <String>]`: 
+  - `[Availability <String>]`: 
+  - `[ExpirationDuration <TimeSpan?>]`: 
 
 INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord

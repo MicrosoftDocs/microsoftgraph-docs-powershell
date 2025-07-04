@@ -18,7 +18,7 @@ The content stream, if the item represents a file.
 ### Get (Default)
 ```
 Get-MgGroupTeamPrimaryChannelFileFolderContent -GroupId <String> [-Format <String>] -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -26,13 +26,11 @@ Get-MgGroupTeamPrimaryChannelFileFolderContent -GroupId <String> [-Format <Strin
 ```
 Get-MgGroupTeamPrimaryChannelFileFolderContent -InputObject <ITeamsIdentity> [-Format <String>]
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -123,6 +121,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

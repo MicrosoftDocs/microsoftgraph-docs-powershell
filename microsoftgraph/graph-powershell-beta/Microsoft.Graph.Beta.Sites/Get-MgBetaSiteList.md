@@ -10,7 +10,7 @@ ms.subservice: sharepoint
 # Get-MgBetaSiteList
 
 ## SYNOPSIS
-Return the metadata for a list.
+Get the list of richLongRunningOperations associated with a list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteList?view=graph-powershell-1.0)
@@ -22,25 +22,25 @@ Return the metadata for a list.
 Get-MgBetaSiteList -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaSiteList -ListId <String> -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Return the metadata for a list.
+Get the list of richLongRunningOperations associated with a list.
 
 **Permissions**
 
@@ -187,6 +187,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -247,21 +262,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -284,6 +284,21 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List1
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List1
+Aliases:
 
 Required: False
 Position: Named
@@ -369,7 +384,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelist)
 
-[https://learn.microsoft.com/graph/api/list-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/list-get?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/list-list-operations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/list-list-operations?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/list-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/list-list?view=graph-rest-beta)
 

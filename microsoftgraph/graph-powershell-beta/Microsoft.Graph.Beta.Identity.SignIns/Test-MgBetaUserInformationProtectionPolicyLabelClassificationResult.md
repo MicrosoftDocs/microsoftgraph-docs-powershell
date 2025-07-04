@@ -21,14 +21,14 @@ The API returns an informationProtectionAction that contains one of more of the 
 Test-MgBetaUserInformationProtectionPolicyLabelClassificationResult -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ClassificationResults <IMicrosoftGraphClassificationResult[]>] [-ContentInfo <IMicrosoftGraphContentInfo>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
 Test-MgBetaUserInformationProtectionPolicyLabelClassificationResult -UserId <String>
  -BodyParameter <IPathsLl6FnzUsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,14 +37,14 @@ Test-MgBetaUserInformationProtectionPolicyLabelClassificationResult -UserId <Str
 Test-MgBetaUserInformationProtectionPolicyLabelClassificationResult -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ClassificationResults <IMicrosoftGraphClassificationResult[]>] [-ContentInfo <IMicrosoftGraphContentInfo>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentity
 ```
 Test-MgBetaUserInformationProtectionPolicyLabelClassificationResult -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IPathsLl6FnzUsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -53,8 +53,6 @@ Using classification results, compute the information protection label that shou
 This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
 To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
 The API returns an informationProtectionAction that contains one of more of the following:
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +95,6 @@ To construct, see NOTES section for CLASSIFICATIONRESULTS properties and create 
 Type: IMicrosoftGraphClassificationResult[]
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -167,6 +150,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -191,6 +189,21 @@ Parameter Sets: EvaluateExpanded, Evaluate
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -241,8 +254,10 @@ BODYPARAMETER `<IPathsLl6FnzUsersUserIdInformationprotectionPolicyLabelsMicrosof
     - `[Format <String>]`: contentFormat
     - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
     - `[Metadata <IMicrosoftGraphKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
-      - `[Name <String>]`: Name for this key-value pair
-      - `[Value <String>]`: Value for this key-value pair
+      - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+      - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
     - `[State <String>]`: contentState
 
 CLASSIFICATIONRESULTS `<IMicrosoftGraphClassificationResult- `[]`>`: .
@@ -255,8 +270,10 @@ CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
   - `[Format <String>]`: contentFormat
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
   - `[Metadata <IMicrosoftGraphKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[State <String>]`: contentState
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter

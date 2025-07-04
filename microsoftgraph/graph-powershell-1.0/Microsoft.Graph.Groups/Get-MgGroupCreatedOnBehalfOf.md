@@ -20,14 +20,14 @@ Read-only.
 ### Get (Default)
 ```
 Get-MgGroupCreatedOnBehalfOf -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgGroupCreatedOnBehalfOf -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -35,8 +35,6 @@ Get-MgGroupCreatedOnBehalfOf -InputObject <IGroupsIdentity> [-ExpandProperty <St
 The user (or application) that created the group.
 NOTE: This property isn't set if the user is an administrator.
 Read-only.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -98,6 +96,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

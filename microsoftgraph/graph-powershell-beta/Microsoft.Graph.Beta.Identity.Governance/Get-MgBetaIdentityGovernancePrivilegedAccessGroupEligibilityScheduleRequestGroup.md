@@ -21,22 +21,20 @@ Supports $expand and $select nested in $expand for select properties like id, di
 Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup
  -PrivilegedAccessGroupEligibilityScheduleRequestId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 References the group that is the scope of the membership or ownership eligibility request through PIM for groups.
 Supports $expand and $select nested in $expand for select properties like id, displayName, and mail.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -95,6 +93,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

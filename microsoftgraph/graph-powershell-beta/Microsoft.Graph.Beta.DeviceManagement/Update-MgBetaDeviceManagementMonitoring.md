@@ -17,20 +17,18 @@ Update the navigation property monitoring in deviceManagement
 Update-MgBetaDeviceManagementMonitoring [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AlertRecords <IMicrosoftGraphDeviceManagementAlertRecord[]>]
  [-AlertRules <IMicrosoftGraphDeviceManagementAlertRule[]>] [-Id <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementMonitoring -BodyParameter <IMicrosoftGraphDeviceManagementMonitoring>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property monitoring in deviceManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +95,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -143,6 +126,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -150,6 +148,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -198,8 +211,10 @@ Read-only.
     - `[AggregationType <String>]`: aggregationType
     - `[AlertImpactDetails <IMicrosoftGraphKeyValuePair- `[]`>]`: The detail information of the impact.
 For example, if the Frontline Cloud PCs near concurrency limit alert is triggered, the details contain the impacted Frontline license SKU name, such as Windows 365 Frontline 2 vCPU/8GB/128GB, and the corresponding impacted value.
-      - `[Name <String>]`: Name for this key-value pair
-      - `[Value <String>]`: Value for this key-value pair
+      - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+      - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
     - `[Value <Int32?>]`: The number value of the impact.
 For the aggregation types of count and affectedCloudPcCount, the value indicates the number of affected instances.
 For example, 6 affectedCloudPcCount means that six Cloud PCs are affected.
@@ -268,8 +283,10 @@ Read-only.
       - `[AggregationType <String>]`: aggregationType
       - `[AlertImpactDetails <IMicrosoftGraphKeyValuePair- `[]`>]`: The detail information of the impact.
 For example, if the Frontline Cloud PCs near concurrency limit alert is triggered, the details contain the impacted Frontline license SKU name, such as Windows 365 Frontline 2 vCPU/8GB/128GB, and the corresponding impacted value.
-        - `[Name <String>]`: Name for this key-value pair
-        - `[Value <String>]`: Value for this key-value pair
+        - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+        - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
       - `[Value <Int32?>]`: The number value of the impact.
 For the aggregation types of count and affectedCloudPcCount, the value indicates the number of affected instances.
 For example, 6 affectedCloudPcCount means that six Cloud PCs are affected.

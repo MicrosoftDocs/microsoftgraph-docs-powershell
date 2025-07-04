@@ -19,7 +19,7 @@ Update-MgBetaDirectoryImpactedResource -ImpactedResourceId <String> [-ResponseHe
  [-AdditionalProperties <Hashtable>] [-ApiUrl <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedBy <String>] [-LastModifiedDateTime <String>] [-Owner <String>] [-PortalUrl <String>]
  [-PostponeUntilDateTime <DateTime>] [-Rank <Int32>] [-RecommendationId <String>] [-ResourceType <String>]
- [-Status <String>] [-SubjectId <String>] [-Headers <IDictionary>]
+ [-Status <String>] [-SubjectId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Update-MgBetaDirectoryImpactedResource -ImpactedResourceId <String> [-ResponseHe
 ```
 Update-MgBetaDirectoryImpactedResource -ImpactedResourceId <String>
  -BodyParameter <IMicrosoftGraphImpactedResource> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,20 +38,18 @@ Update-MgBetaDirectoryImpactedResource -InputObject <IIdentityDirectoryManagemen
  [-DisplayName <String>] [-Id <String>] [-LastModifiedBy <String>] [-LastModifiedDateTime <String>]
  [-Owner <String>] [-PortalUrl <String>] [-PostponeUntilDateTime <DateTime>] [-Rank <Int32>]
  [-RecommendationId <String>] [-ResourceType <String>] [-Status <String>] [-SubjectId <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IMicrosoftGraphImpactedResource> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property impactedResources in directory
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -129,21 +127,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -299,6 +282,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Rank
 Indicates the importance of the resource.
 A resource with a rank equal to 1 is of the highest importance.
@@ -384,6 +382,21 @@ For example, this property is set to the applicationId if the resourceType is an
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

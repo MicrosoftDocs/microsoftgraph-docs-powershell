@@ -23,7 +23,7 @@ Update-MgBetaFinancialCompanySaleOrderLine -CompanyId <String> -SalesOrderLineId
  [-NetAmount <Decimal>] [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>]
  [-Sequence <Int32>] [-ShipQuantity <Decimal>] [-ShipmentDate <DateTime>] [-ShippedQuantity <Decimal>]
  [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitOfMeasureId <String>]
- [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,21 +39,21 @@ Update-MgBetaFinancialCompanySaleOrderLine -CompanyId <String> -SalesOrderLineId
  [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>] [-Sequence <Int32>]
  [-ShipQuantity <Decimal>] [-ShipmentDate <DateTime>] [-ShippedQuantity <Decimal>] [-TaxCode <String>]
  [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitOfMeasureId <String>] [-UnitPrice <Decimal>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaFinancialCompanySaleOrderLine -CompanyId <String> -SalesOrderLineId <String>
  -SalesOrderId <String> -BodyParameter <IMicrosoftGraphSalesOrderLine> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaFinancialCompanySaleOrderLine -CompanyId <String> -SalesOrderLineId <String>
  -BodyParameter <IMicrosoftGraphSalesOrderLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -67,7 +67,7 @@ Update-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity>
  [-NetAmount <Decimal>] [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>]
  [-Sequence <Int32>] [-ShipQuantity <Decimal>] [-ShipmentDate <DateTime>] [-ShippedQuantity <Decimal>]
  [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitOfMeasureId <String>]
- [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -82,7 +82,7 @@ Update-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity>
  [-NetAmount <Decimal>] [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>]
  [-Sequence <Int32>] [-ShipQuantity <Decimal>] [-ShipmentDate <DateTime>] [-ShippedQuantity <Decimal>]
  [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitOfMeasureId <String>]
- [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -90,20 +90,18 @@ Update-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity>
 ```
 Update-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity>
  -BodyParameter <IMicrosoftGraphSalesOrderLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity>
  -BodyParameter <IMicrosoftGraphSalesOrderLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property salesOrderLines in financials
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -208,21 +206,6 @@ Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -487,6 +470,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Quantity
 
 
@@ -678,6 +676,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

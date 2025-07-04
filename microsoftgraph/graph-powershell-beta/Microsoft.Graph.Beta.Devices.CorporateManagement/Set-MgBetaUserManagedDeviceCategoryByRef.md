@@ -19,7 +19,7 @@ Update the ref of navigation property deviceCategory in users
 ```
 Set-MgBetaUserManagedDeviceCategoryByRef -ManagedDeviceId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] -OdataId <String> [-AdditionalProperties <Hashtable>]
- [-OdataType <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-OdataType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,14 +27,14 @@ Set-MgBetaUserManagedDeviceCategoryByRef -ManagedDeviceId <String> -UserId <Stri
 ```
 Set-MgBetaUserManagedDeviceCategoryByRef -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IReferenceUpdate> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
 Set-MgBetaUserManagedDeviceCategoryByRef -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] -OdataId <String> [-AdditionalProperties <Hashtable>]
- [-OdataType <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-OdataType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,13 +42,11 @@ Set-MgBetaUserManagedDeviceCategoryByRef -InputObject <IDevicesCorporateManageme
 ```
 Set-MgBetaUserManagedDeviceCategoryByRef -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IReferenceUpdate> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the ref of navigation property deviceCategory in users
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -80,21 +78,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -190,6 +173,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -214,6 +212,21 @@ Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

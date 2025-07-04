@@ -21,7 +21,7 @@ Update-MgUserMailFolderMessageRule -MailFolderId <String> -MessageRuleId <String
  [-ResponseHeadersVariable <String>] [-Actions <IMicrosoftGraphMessageRuleActions>]
  [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphMessageRulePredicates>]
  [-DisplayName <String>] [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>]
- [-IsEnabled] [-IsReadOnly] [-Sequence <Int32>] [-Headers <IDictionary>]
+ [-IsEnabled] [-IsReadOnly] [-Sequence <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgUserMailFolderMessageRule -MailFolderId <String> -MessageRuleId <String
 ```
 Update-MgUserMailFolderMessageRule -MailFolderId <String> -MessageRuleId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphMessageRule> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,14 +38,14 @@ Update-MgUserMailFolderMessageRule -InputObject <IMailIdentity> [-ResponseHeader
  [-Actions <IMicrosoftGraphMessageRuleActions>] [-AdditionalProperties <Hashtable>]
  [-Conditions <IMicrosoftGraphMessageRulePredicates>] [-DisplayName <String>]
  [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>] [-IsEnabled] [-IsReadOnly]
- [-Sequence <Int32>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Sequence <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMessageRule>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -130,21 +130,6 @@ To construct, see NOTES section for CONDITIONS properties and create a hash tabl
 Type: IMicrosoftGraphMessageRulePredicates
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -307,6 +292,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -346,6 +346,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

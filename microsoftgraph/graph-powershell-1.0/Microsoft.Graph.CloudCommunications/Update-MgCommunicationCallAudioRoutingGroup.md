@@ -20,7 +20,7 @@ Modify sources and receivers of an audioRoutingGroup.
 ```
 Update-MgCommunicationCallAudioRoutingGroup -AudioRoutingGroupId <String> -CallId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-Receivers <String[]>]
- [-RoutingMode <String>] [-Sources <String[]>] [-Headers <IDictionary>]
+ [-RoutingMode <String>] [-Sources <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,14 +28,14 @@ Update-MgCommunicationCallAudioRoutingGroup -AudioRoutingGroupId <String> -CallI
 ```
 Update-MgCommunicationCallAudioRoutingGroup -AudioRoutingGroupId <String> -CallId <String>
  -BodyParameter <IMicrosoftGraphAudioRoutingGroup> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-Receivers <String[]>]
- [-RoutingMode <String>] [-Sources <String[]>] [-Headers <IDictionary>]
+ [-RoutingMode <String>] [-Sources <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,7 +43,7 @@ Update-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsId
 ```
 Update-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IMicrosoftGraphAudioRoutingGroup> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -145,21 +145,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -204,6 +189,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -259,6 +259,21 @@ List of source participant ids.
 Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

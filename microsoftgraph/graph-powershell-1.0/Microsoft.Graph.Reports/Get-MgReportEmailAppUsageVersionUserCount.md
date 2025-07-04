@@ -19,14 +19,14 @@ Get the count of unique users by Outlook desktop version.
 ### Get (Default)
 ```
 Get-MgReportEmailAppUsageVersionUserCount -Period <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportEmailAppUsageVersionUserCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Get the count of unique users by Outlook desktop version.
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportEmailAppUsageVersionUserCount -Period $periodId
+Get-MgReportEmailAppUsageVersionUserCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportEmailAppUsageVersionUserCount Cmdlet.
@@ -118,6 +118,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

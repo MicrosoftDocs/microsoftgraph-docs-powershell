@@ -27,7 +27,7 @@ Items with this property should be removed from your local state.
 Get-MgSiteListItemDelta -ListId <String> -SiteId <String> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Delta1
@@ -35,14 +35,14 @@ Get-MgSiteListItemDelta -ListId <String> -SiteId <String> [-ExpandProperty <Stri
 Get-MgSiteListItemDelta -ListId <String> -SiteId <String> -Token <String> [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity1
 ```
 Get-MgSiteListItemDelta -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -50,7 +50,7 @@ Get-MgSiteListItemDelta -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ```
 Get-MgSiteListItemDelta -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -89,7 +89,7 @@ This example will initial request
 
 Import-Module Microsoft.Graph.Sites
 
-Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka"
+Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka" 
 
 ```
 This example will last page request
@@ -100,7 +100,7 @@ This example will last page request
 
 Import-Module Microsoft.Graph.Sites
 
-Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest"
+Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest" 
 
 ```
 This example will delta link request
@@ -245,6 +245,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -305,21 +320,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -357,6 +357,21 @@ Show only the first n items
 Type: Int32
 Parameter Sets: (All)
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named

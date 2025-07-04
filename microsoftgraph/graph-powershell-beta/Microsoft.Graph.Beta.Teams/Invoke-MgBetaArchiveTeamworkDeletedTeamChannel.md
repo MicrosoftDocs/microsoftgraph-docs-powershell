@@ -27,7 +27,7 @@ A channel can't be archived or unarchived if its team is archived.
 ```
 Invoke-MgBetaArchiveTeamworkDeletedTeamChannel -ChannelId <String> -DeletedTeamId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ShouldSetSpoSiteReadOnlyForMembers]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Invoke-MgBetaArchiveTeamworkDeletedTeamChannel -ChannelId <String> -DeletedTeamI
 ```
 Invoke-MgBetaArchiveTeamworkDeletedTeamChannel -ChannelId <String> -DeletedTeamId <String>
  -BodyParameter <IPathsPntjelTeamworkDeletedteamsDeletedteamIdChannelsChannelIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,7 +43,7 @@ Invoke-MgBetaArchiveTeamworkDeletedTeamChannel -ChannelId <String> -DeletedTeamI
 ```
 Invoke-MgBetaArchiveTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ShouldSetSpoSiteReadOnlyForMembers]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -51,7 +51,7 @@ Invoke-MgBetaArchiveTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity>
 ```
 Invoke-MgBetaArchiveTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsPntjelTeamworkDeletedteamsDeletedteamIdChannelsChannelIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -64,8 +64,6 @@ Archiving is an asynchronous operation; a channel is archived after the asynchro
 A channel without an owner or that belongs to a group that has no owner, can't be archived.
 To restore a channel from its archived state, use the channel: unarchive method.
 A channel can't be archived or unarchived if its team is archived.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -109,21 +107,6 @@ Parameter Sets: ArchiveExpanded, Archive
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -191,6 +174,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -217,6 +215,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
