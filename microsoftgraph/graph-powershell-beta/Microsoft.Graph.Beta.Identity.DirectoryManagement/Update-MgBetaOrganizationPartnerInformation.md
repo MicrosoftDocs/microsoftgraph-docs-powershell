@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -CommerceUrl
-.
+
 
 ```yaml
 Type: String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -CompanyName
-.
+
 
 ```yaml
 Type: String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -HelpUrl
-.
+
 
 ```yaml
 Type: String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerTenantId
-.
+
 
 ```yaml
 Type: String
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportEmails
-.
+
 
 ```yaml
 Type: String[]
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportTelephones
-.
+
 
 ```yaml
 Type: String[]
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportUrl
-.
+
 
 ```yaml
 Type: String

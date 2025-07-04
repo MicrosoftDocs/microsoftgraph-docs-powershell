@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertDetections
-.
+
 To construct, see NOTES section for ALERTDETECTIONS properties and create a hash table.
 
 ```yaml
@@ -545,7 +545,7 @@ Accept wildcard characters: False
 ```
 
 ### -InvestigationSecurityStates
-.
+
 To construct, see NOTES section for INVESTIGATIONSECURITYSTATES properties and create a hash table.
 
 ```yaml
@@ -561,7 +561,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastEventDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -609,7 +609,7 @@ Accept wildcard characters: False
 ```
 
 ### -MessageSecurityStates
-.
+
 To construct, see NOTES section for MESSAGESECURITYSTATES properties and create a hash table.
 
 ```yaml
@@ -829,7 +829,7 @@ Accept wildcard characters: False
 ```
 
 ### -UriClickSecurityStates
-.
+
 To construct, see NOTES section for URICLICKSECURITYSTATES properties and create a hash table.
 
 ```yaml

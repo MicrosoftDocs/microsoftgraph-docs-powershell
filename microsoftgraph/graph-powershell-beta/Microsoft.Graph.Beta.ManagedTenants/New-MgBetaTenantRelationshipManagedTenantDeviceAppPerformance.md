@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppFriendlyName
-.
+
 
 ```yaml
 Type: String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppName
-.
+
 
 ```yaml
 Type: String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppPublisher
-.
+
 
 ```yaml
 Type: String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppVersion
-.
+
 
 ```yaml
 Type: String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-.
+
 
 ```yaml
 Type: String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceManufacturer
-.
+
 
 ```yaml
 Type: String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceModel
-.
+
 
 ```yaml
 Type: String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-.
+
 
 ```yaml
 Type: String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthStatus
-.
+
 
 ```yaml
 Type: String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsLatestUsedVersion
-.
+
 
 ```yaml
 Type: Int32
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsMostUsedVersion
-.
+
 
 ```yaml
 Type: Int32
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantDisplayName
-.
+
 
 ```yaml
 Type: String
@@ -323,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-.
+
 
 ```yaml
 Type: String
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalAppCrashCount
-.
+
 
 ```yaml
 Type: Int32
@@ -353,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalAppFreezeCount
-.
+
 
 ```yaml
 Type: Int32

@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsMemberManagementRestricted
-.
+
 
 ```yaml
 Type: SwitchParameter

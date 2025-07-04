@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsManualApprovalEnabled
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsWaitlistEnabled
-.
+
 
 ```yaml
 Type: SwitchParameter

@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkforceIntegrations
-.
+
 To construct, see NOTES section for WORKFORCEINTEGRATIONS properties and create a hash table.
 
 ```yaml
