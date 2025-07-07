@@ -202,7 +202,7 @@ Connect-MgGraph -Environment USGov
 
 >[!NOTE]
 >[!IMPORTANT]
->Globally registered apps do not replicate to Azure China. You must [register your own applications in Azure China](/azure/active-directory/develop/quickstart-register-app-portal?tabs=azure-china) and use them when connecting to Microsoft Graph.
+>Globally registered apps do not replicate to Azure China. You must [register your own applications](/entra/identity-platform/quickstart-register-app) and use them when connecting to Microsoft Graph.
 
 ## Use Get-MgContext
 
