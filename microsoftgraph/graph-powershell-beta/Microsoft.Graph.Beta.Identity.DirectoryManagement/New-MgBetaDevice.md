@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.custom: sfi-ga-nochange
 ---
 
 # New-MgBetaDevice

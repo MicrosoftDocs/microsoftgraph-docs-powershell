@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannel
 schema: 2.0.0
 ms.subservice: teams
+ms.custom: sfi-ga-blocked
 ---
 
 # Update-MgTeamChannel

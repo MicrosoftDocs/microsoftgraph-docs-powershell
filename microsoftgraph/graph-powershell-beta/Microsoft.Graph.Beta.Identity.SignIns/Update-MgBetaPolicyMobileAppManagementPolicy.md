@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicymobileappmanagementpolicy
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.custom: sfi-ga-blocked
 ---
 
 # Update-MgBetaPolicyMobileAppManagementPolicy

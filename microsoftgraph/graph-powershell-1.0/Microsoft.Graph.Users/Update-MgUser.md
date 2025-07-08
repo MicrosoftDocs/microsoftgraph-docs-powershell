@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser
 schema: 2.0.0
 ms.subservice: entra-users
+ms.custom: sfi-ga-blocked
 ---
 
 # Update-MgUser

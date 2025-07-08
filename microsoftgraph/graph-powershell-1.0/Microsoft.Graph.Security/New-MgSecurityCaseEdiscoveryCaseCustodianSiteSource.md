@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodiansitesource
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.custom: sfi-ga-blocked
 ---
 
 # New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource

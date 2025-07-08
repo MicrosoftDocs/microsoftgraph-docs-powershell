@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainvitation
 schema: 2.0.0
 ms.subservice: entra-users
+ms.custom: sfi-ga-blocked
 ---
 
 # New-MgBetaInvitation

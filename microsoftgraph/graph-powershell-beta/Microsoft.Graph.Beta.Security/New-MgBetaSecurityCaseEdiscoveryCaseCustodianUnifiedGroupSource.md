@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodianunifiedgroupsource
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.custom: sfi-ga-blocked
 ---
 
 # New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource

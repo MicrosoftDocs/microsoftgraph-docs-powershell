@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinter
 schema: 2.0.0
 ms.subservice: universal-print
+ms.custom: sfi-ga-blocked
 ---
 
 # Update-MgBetaPrintPrinter

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupbyuniquename
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.custom: sfi-ga-blocked
 ---
 
 # Update-MgBetaGroupByUniqueName

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannel
 schema: 2.0.0
 ms.subservice: teams
+ms.custom: sfi-ga-blocked
 ---
 
 # New-MgBetaTeamChannel

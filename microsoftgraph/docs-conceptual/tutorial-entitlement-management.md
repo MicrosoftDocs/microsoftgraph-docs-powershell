@@ -7,6 +7,7 @@ ms.date: 04/23/2025
 ms.author: eunicewaweru
 manager: CelesteDG
 author: msewaweru
+ms.custom: sfi-ga-nochange
 
 #customer intent: As an IT admin managing users' access to resources, I want to use Microsoft Entra entitlement management to create a package of resources that internal users can use for self-service requests, so that I can grant employees the right level of access they need to be productive and remove their access when it's no longer needed.
 ---

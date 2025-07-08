@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationship
 schema: 2.0.0
 ms.subservice: partner-customer-administration
+ms.custom: sfi-ga-nochange
 ---
 
 # Update-MgBetaTenantRelationshipDelegatedAdminRelationship

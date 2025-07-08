@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointprovisioningpolicy
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.custom: sfi-ga-blocked
 ---
 
 # Update-MgDeviceManagementVirtualEndpointProvisioningPolicy

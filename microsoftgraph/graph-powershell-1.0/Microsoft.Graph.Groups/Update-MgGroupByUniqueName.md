@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupbyuniquename
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.custom: sfi-ga-blocked
 ---
 
 # Update-MgGroupByUniqueName

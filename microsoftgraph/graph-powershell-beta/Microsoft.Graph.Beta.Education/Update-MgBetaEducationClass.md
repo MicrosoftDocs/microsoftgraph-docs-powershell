@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclass
 schema: 2.0.0
 ms.subservice: education
+ms.custom: sfi-ga-blocked
 ---
 
 # Update-MgBetaEducationClass

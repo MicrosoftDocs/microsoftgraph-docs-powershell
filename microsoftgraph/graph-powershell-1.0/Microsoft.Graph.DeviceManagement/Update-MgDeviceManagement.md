@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement
 schema: 2.0.0
 ms.subservice: intune
+ms.custom: sfi-ga-nochange
 ---
 
 # Update-MgDeviceManagement

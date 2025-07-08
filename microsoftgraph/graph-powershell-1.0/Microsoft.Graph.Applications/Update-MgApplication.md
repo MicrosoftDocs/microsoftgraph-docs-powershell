@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplication
 schema: 2.0.0
 ms.subservice: entra-applications
+ms.custom: sfi-ropc-nochange
 ---
 
 # Update-MgApplication

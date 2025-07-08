@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelist
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.custom: sfi-ga-blocked
 ---
 
 # New-MgSiteList
