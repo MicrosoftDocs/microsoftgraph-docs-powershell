@@ -1,12 +1,12 @@
 ---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategory
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-MgBetaSecurityLabelCategorySubcategory
 schema: 2.0.0
 ms.subservice: security
 ---
 
-# Get-MgBetaSecurityLabelCategorySubCategory
+# Get-MgBetaSecurityLabelCategorySubcategory
 
 ## SYNOPSIS
 Read the properties and relationships of a subcategoryTemplate object.
@@ -393,7 +393,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategory)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-MgBetaSecurityLabelCategorySubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-MgBetaSecurityLabelCategorySubcategory)
 
 [https://learn.microsoft.com/graph/api/security-subcategorytemplate-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-subcategorytemplate-get?view=graph-rest-beta)
 
