@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingenrichedauditlog
 schema: 2.0.0
-ms.subservice: entra-global-secure-access
 ---
 
 # Update-MgBetaNetworkAccessSettingEnrichedAuditLog
@@ -19,14 +18,14 @@ Update-MgBetaNetworkAccessSettingEnrichedAuditLog [-ResponseHeadersVariable <Str
  [-AdditionalProperties <Hashtable>] [-Exchange <IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>]
  [-Id <String>] [-Sharepoint <IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>]
  [-Teams <IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaNetworkAccessSettingEnrichedAuditLog
  -BodyParameter <IMicrosoftGraphNetworkaccessEnrichedAuditLogs> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -99,21 +98,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Exchange
 enrichedAuditLogsSettings
 To construct, see NOTES section for EXCHANGE properties and create a hash table.
@@ -161,6 +145,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -200,6 +199,21 @@ To construct, see NOTES section for TEAMS properties and create a hash table.
 Type: IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

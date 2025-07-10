@@ -19,7 +19,7 @@ Read-only.
 ### Get (Default)
 ```
 Get-MgBetaCommunicationOnlineMeetingAttendeeReport -OnlineMeetingId <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -27,14 +27,12 @@ Get-MgBetaCommunicationOnlineMeetingAttendeeReport -OnlineMeetingId <String> -Ou
 ```
 Get-MgBetaCommunicationOnlineMeetingAttendeeReport -InputObject <ICloudCommunicationsIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The content stream of the attendee report of a Teams live event.
 Read-only.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -110,6 +108,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

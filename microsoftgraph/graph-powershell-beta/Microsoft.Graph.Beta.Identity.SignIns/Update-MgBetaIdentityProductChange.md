@@ -17,14 +17,14 @@ Update the navigation property productChanges in identity
 Update-MgBetaIdentityProductChange -ChangeItemBaseId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ChangeItemService <String>] [-Description <String>]
  [-DocumentationUrls <String[]>] [-Id <String>] [-ShortDescription <String>] [-SystemTags <String[]>]
- [-Tags <String[]>] [-Title <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-Tags <String[]>] [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityProductChange -ChangeItemBaseId <String> -BodyParameter <IMicrosoftGraphChangeItemBase>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Update-MgBetaIdentityProductChange -ChangeItemBaseId <String> -BodyParameter <IM
 Update-MgBetaIdentityProductChange -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ChangeItemService <String>] [-Description <String>]
  [-DocumentationUrls <String[]>] [-Id <String>] [-ShortDescription <String>] [-SystemTags <String[]>]
- [-Tags <String[]>] [-Title <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-Tags <String[]>] [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,13 +41,11 @@ Update-MgBetaIdentityProductChange -InputObject <IIdentitySignInsIdentity> [-Res
 ```
 Update-MgBetaIdentityProductChange -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphChangeItemBase> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property productChanges in identity
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -105,21 +103,6 @@ Supports $filter (eq, ne, in) and $orderby.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -207,6 +190,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -280,6 +278,21 @@ Supports $filter (eq, ne, in, startswith) and $orderby.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

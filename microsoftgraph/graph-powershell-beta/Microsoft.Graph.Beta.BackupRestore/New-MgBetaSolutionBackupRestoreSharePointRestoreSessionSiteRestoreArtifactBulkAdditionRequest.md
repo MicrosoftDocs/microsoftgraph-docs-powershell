@@ -23,7 +23,7 @@ New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAd
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-ProtectionTimePeriod <IMicrosoftGraphTimePeriod>] [-ProtectionUnitIds <String[]>]
  [-RestorePointPreference <String>] [-SiteIds <String[]>] [-SiteWebUrls <String[]>] [-Status <String>]
- [-Tags <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Tags <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAd
 ```
 New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest
  -SharePointRestoreSessionId <String> -BodyParameter <IMicrosoftGraphSiteRestoreArtifactsBulkAdditionRequest>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,7 +44,7 @@ New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAd
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-ProtectionTimePeriod <IMicrosoftGraphTimePeriod>] [-ProtectionUnitIds <String[]>]
  [-RestorePointPreference <String>] [-SiteIds <String[]>] [-SiteWebUrls <String[]>] [-Status <String>]
- [-Tags <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Tags <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -52,15 +52,13 @@ New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAd
 ```
 New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest
  -InputObject <IBackupRestoreIdentity> -BodyParameter <IMicrosoftGraphSiteRestoreArtifactsBulkAdditionRequest>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new siteRestoreArtifactsBulkAdditionRequest object associated with a sharePointRestoreSession.
 The following steps describe how to create and manage a sharePointRestoreSession with bulk artifact additions:
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -92,21 +90,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -265,6 +248,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProtectionTimePeriod
 timePeriod
 To construct, see NOTES section for PROTECTIONTIMEPERIOD properties and create a hash table.
@@ -397,6 +395,21 @@ restorePointTags
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

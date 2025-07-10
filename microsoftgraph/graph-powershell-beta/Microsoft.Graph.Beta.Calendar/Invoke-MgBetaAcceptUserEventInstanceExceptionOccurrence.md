@@ -17,7 +17,7 @@ Accept the specified event in a user calendar.
 ```
 Invoke-MgBetaAcceptUserEventInstanceExceptionOccurrence -EventId <String> -EventId1 <String> -EventId2 <String>
  -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Comment <String>]
- [-SendResponse] [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-SendResponse] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Invoke-MgBetaAcceptUserEventInstanceExceptionOccurrence -EventId <String> -Event
 Invoke-MgBetaAcceptUserEventInstanceExceptionOccurrence -EventId <String> -EventId1 <String> -EventId2 <String>
  -UserId <String>
  -BodyParameter <IPaths1G573HoUsersUserIdEventsEventIdInstancesEventId1ExceptionoccurrencesEventId2MicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Invoke-MgBetaAcceptUserEventInstanceExceptionOccurrence -EventId <String> -Event
 ```
 Invoke-MgBetaAcceptUserEventInstanceExceptionOccurrence -InputObject <ICalendarIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Comment <String>] [-SendResponse]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -42,14 +42,12 @@ Invoke-MgBetaAcceptUserEventInstanceExceptionOccurrence -InputObject <ICalendarI
 ```
 Invoke-MgBetaAcceptUserEventInstanceExceptionOccurrence -InputObject <ICalendarIdentity>
  -BodyParameter <IPaths1G573HoUsersUserIdEventsEventIdInstancesEventId1ExceptionoccurrencesEventId2MicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Accept the specified event in a user calendar.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -91,21 +89,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -205,6 +188,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -244,6 +242,21 @@ Parameter Sets: AcceptExpanded, Accept
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

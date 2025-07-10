@@ -17,7 +17,7 @@ Get the deployment access key for Microsoft Defender for Identity that is requir
 
 ```
 Get-MgSecurityIdentitySensorDeploymentAccessKey [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,8 +30,6 @@ Get the deployment access key for Microsoft Defender for Identity that is requir
 | Delegated (work or school account) | SecurityIdentitiesSensors.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesSensors.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -47,6 +45,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

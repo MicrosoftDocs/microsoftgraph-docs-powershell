@@ -36,19 +36,17 @@ Update-MgBetaDirectory [-ResponseHeadersVariable <String>] [-AdditionalPropertie
  [-Recommendations <IMicrosoftGraphRecommendation[]>]
  [-SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>]
  [-Subscriptions <IMicrosoftGraphCompanySubscription[]>] [-Templates <IMicrosoftGraphTemplate>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDirectory -BodyParameter <IMicrosoftGraphDirectory> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update directory
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -139,21 +137,6 @@ To construct, see NOTES section for CERTIFICATEAUTHORITIES properties and create
 Type: IMicrosoftGraphCertificateAuthorityPath
 Parameter Sets: UpdateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -372,6 +355,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PublicKeyInfrastructure
 publicKeyInfrastructureRoot
 To construct, see NOTES section for PUBLICKEYINFRASTRUCTURE properties and create a hash table.
@@ -459,6 +457,21 @@ To construct, see NOTES section for TEMPLATES properties and create a hash table
 Type: IMicrosoftGraphTemplate
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -1499,8 +1512,10 @@ For example:User to User - For Microsoft Entra ID to Microsoft Entra synchroniza
               - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
             - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair- `[]`>]`: Settings associated with the job.
 Some settings are inherited from the template.
-              - `[Name <String>]`: Name for this key-value pair
-              - `[Value <String>]`: Value for this key-value pair
+              - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+              - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
             - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
           - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>]`: Represents a collection of credentials to access provisioned cloud applications.
             - `[Key <String>]`: synchronizationSecret
@@ -1906,7 +1921,7 @@ For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
           - `[PhoneType <String>]`: authenticationPhoneType
           - `[SmsSignInState <String>]`: authenticationMethodSignInState
-        - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+        - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: Represents a platform credential instance registered to a user on Mac OS.
           - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
@@ -1919,6 +1934,39 @@ Read-only.
           - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
           - `[KeyStrength <String>]`: authenticationMethodKeyStrength
           - `[Platform <String>]`: authenticationMethodPlatform
+        - `[QrCodePinMethod <IMicrosoftGraphQrCodePinAuthenticationMethod>]`: qrCodePinAuthenticationMethod
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Pin <IMicrosoftGraphQrPin>]`: qrPin
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Code <String>]`: 
+            - `[CreatedDateTime <DateTime?>]`: 
+            - `[ForceChangePinNextSignIn <Boolean?>]`: 
+            - `[UpdatedDateTime <DateTime?>]`: 
+          - `[StandardQrCode <IMicrosoftGraphQrCode>]`: qrCode
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[CreatedDateTime <DateTime?>]`: 
+            - `[ExpireDateTime <DateTime?>]`: 
+            - `[Image <IMicrosoftGraphQrCodeImageDetails>]`: qrCodeImageDetails
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[BinaryValue <Byte- `[]`>]`: 
+              - `[ErrorCorrectionLevel <String>]`: errorCorrectionLevel
+              - `[RawContent <Byte- `[]`>]`: 
+              - `[Version <Int32?>]`: 
+            - `[LastUsedDateTime <DateTime?>]`: 
+            - `[StartDateTime <DateTime?>]`: 
+          - `[TemporaryQrCode <IMicrosoftGraphQrCode>]`: qrCode
         - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[PerUserMfaState <String>]`: perUserMfaState
@@ -2743,6 +2791,29 @@ The default value is false.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[IsSipEnabled <Boolean?>]`: Indicates whether the user has a SIP-enabled client registered for them.
 Read-only.
+      - `[Communications <IMicrosoftGraphUserCloudCommunication>]`: userCloudCommunication
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[CallSettings <IMicrosoftGraphCallSettings>]`: callSettings
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Delegates <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegate settings.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[AllowedActions <IMicrosoftGraphDelegateAllowedActions>]`: delegateAllowedActions
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[JoinActiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows participation in active calls.
+              - `[MakeCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be made on their behalf.
+              - `[ManageCallAndDelegateSettings <Boolean?>]`: Indicates whether the delegator or delegate allows the management of call and delegation settings.
+              - `[PickUpHeldCalls <Boolean?>]`: Indicates whether the delegator or delegate allows held calls to be picked up.
+              - `[ReceiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be received on their behalf.
+            - `[CreatedDateTime <DateTime?>]`: Date and time when the delegator or delegate entry was created.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            - `[IsActive <Boolean?>]`: Indicates whether the delegator or delegate relationship is currently active.
+          - `[Delegators <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegator settings.
       - `[CompanyName <String>]`: The name of the company the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -9839,8 +9910,10 @@ For example:User to User - For Microsoft Entra ID to Microsoft Entra synchroniza
                 - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
               - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair- `[]`>]`: Settings associated with the job.
 Some settings are inherited from the template.
-                - `[Name <String>]`: Name for this key-value pair
-                - `[Value <String>]`: Value for this key-value pair
+                - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+                - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
               - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
             - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>]`: Represents a collection of credentials to access provisioned cloud applications.
               - `[Key <String>]`: synchronizationSecret
@@ -10244,7 +10317,7 @@ For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
             - `[PhoneType <String>]`: authenticationPhoneType
             - `[SmsSignInState <String>]`: authenticationMethodSignInState
-          - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+          - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: Represents a platform credential instance registered to a user on Mac OS.
             - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
@@ -10257,6 +10330,39 @@ Read-only.
             - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
             - `[KeyStrength <String>]`: authenticationMethodKeyStrength
             - `[Platform <String>]`: authenticationMethodPlatform
+          - `[QrCodePinMethod <IMicrosoftGraphQrCodePinAuthenticationMethod>]`: qrCodePinAuthenticationMethod
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Pin <IMicrosoftGraphQrPin>]`: qrPin
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Code <String>]`: 
+              - `[CreatedDateTime <DateTime?>]`: 
+              - `[ForceChangePinNextSignIn <Boolean?>]`: 
+              - `[UpdatedDateTime <DateTime?>]`: 
+            - `[StandardQrCode <IMicrosoftGraphQrCode>]`: qrCode
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[CreatedDateTime <DateTime?>]`: 
+              - `[ExpireDateTime <DateTime?>]`: 
+              - `[Image <IMicrosoftGraphQrCodeImageDetails>]`: qrCodeImageDetails
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[BinaryValue <Byte- `[]`>]`: 
+                - `[ErrorCorrectionLevel <String>]`: errorCorrectionLevel
+                - `[RawContent <Byte- `[]`>]`: 
+                - `[Version <Int32?>]`: 
+              - `[LastUsedDateTime <DateTime?>]`: 
+              - `[StartDateTime <DateTime?>]`: 
+            - `[TemporaryQrCode <IMicrosoftGraphQrCode>]`: qrCode
           - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[PerUserMfaState <String>]`: perUserMfaState
@@ -11081,6 +11187,29 @@ The default value is false.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[IsSipEnabled <Boolean?>]`: Indicates whether the user has a SIP-enabled client registered for them.
 Read-only.
+        - `[Communications <IMicrosoftGraphUserCloudCommunication>]`: userCloudCommunication
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[CallSettings <IMicrosoftGraphCallSettings>]`: callSettings
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Delegates <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegate settings.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[AllowedActions <IMicrosoftGraphDelegateAllowedActions>]`: delegateAllowedActions
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[JoinActiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows participation in active calls.
+                - `[MakeCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be made on their behalf.
+                - `[ManageCallAndDelegateSettings <Boolean?>]`: Indicates whether the delegator or delegate allows the management of call and delegation settings.
+                - `[PickUpHeldCalls <Boolean?>]`: Indicates whether the delegator or delegate allows held calls to be picked up.
+                - `[ReceiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be received on their behalf.
+              - `[CreatedDateTime <DateTime?>]`: Date and time when the delegator or delegate entry was created.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              - `[IsActive <Boolean?>]`: Indicates whether the delegator or delegate relationship is currently active.
+            - `[Delegators <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegator settings.
         - `[CompanyName <String>]`: The name of the company the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -17483,8 +17612,8 @@ Only applies to recommendations with category set to identitySecureScore.
     - `[FeatureAreas <String- `[]`>]`: The directory feature that the recommendation is related to.
     - `[ImpactStartDateTime <DateTime?>]`: The future date and time when a recommendation should be completed.
     - `[ImpactType <String>]`: Indicates the scope of impact of a recommendation.
-Tenant level indicates that the recommendation impacts the whole tenant.
-Other possible values include users, applications.
+tenantLevel indicates that the recommendation impacts the whole tenant.
+Other possible values include users, apps.
     - `[ImpactedResources <IMicrosoftGraphImpactedResource- `[]`>]`: The list of directory objects associated with the recommendation.
     - `[Insights <String>]`: Describes why a recommendation uniquely applies to your directory.
 Corresponds to the Description section of a recommendation shown in the Microsoft Entra admin center.
@@ -17872,8 +18001,8 @@ Only applies to recommendations with category set to identitySecureScore.
   - `[FeatureAreas <String- `[]`>]`: The directory feature that the recommendation is related to.
   - `[ImpactStartDateTime <DateTime?>]`: The future date and time when a recommendation should be completed.
   - `[ImpactType <String>]`: Indicates the scope of impact of a recommendation.
-Tenant level indicates that the recommendation impacts the whole tenant.
-Other possible values include users, applications.
+tenantLevel indicates that the recommendation impacts the whole tenant.
+Other possible values include users, apps.
   - `[ImpactedResources <IMicrosoftGraphImpactedResource- `[]`>]`: The list of directory objects associated with the recommendation.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.

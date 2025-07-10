@@ -19,7 +19,7 @@ Get collaborators from security
 ```
 Get-MgBetaSecuritySubjectRightsRequestCollaboratorByUserPrincipalName -SubjectRightsRequestId <String>
  -UserPrincipalName <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -27,13 +27,11 @@ Get-MgBetaSecuritySubjectRightsRequestCollaboratorByUserPrincipalName -SubjectRi
 ```
 Get-MgBetaSecuritySubjectRightsRequestCollaboratorByUserPrincipalName -InputObject <ISecurityIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get collaborators from security
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -80,6 +78,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

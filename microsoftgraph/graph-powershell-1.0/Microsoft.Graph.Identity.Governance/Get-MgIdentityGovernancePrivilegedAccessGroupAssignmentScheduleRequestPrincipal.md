@@ -20,7 +20,7 @@ Supports $expand and $select nested in $expand for id only.
 ```
 Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal
  -PrivilegedAccessGroupAssignmentScheduleRequestId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -28,15 +28,13 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal
 ```
 Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 References the principal that's in the scope of this membership or ownership assignment request through the group that's governed by PIM.
 Supports $expand and $select nested in $expand for id only.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -95,6 +93,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

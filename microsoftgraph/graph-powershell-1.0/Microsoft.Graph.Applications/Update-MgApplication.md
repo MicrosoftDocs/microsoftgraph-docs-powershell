@@ -46,13 +46,13 @@ Update-MgApplication -ApplicationId <String> [-ResponseHeadersVariable <String>]
  [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>] [-UniqueName <String>]
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Web <IMicrosoftGraphWebApplication>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgApplication -ApplicationId <String> -BodyParameter <IMicrosoftGraphApplication>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -86,13 +86,13 @@ Update-MgApplication -InputObject <IApplicationsIdentity> [-ResponseHeadersVaria
  [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>] [-UniqueName <String>]
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Web <IMicrosoftGraphWebApplication>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgApplication -InputObject <IApplicationsIdentity> -BodyParameter <IMicrosoftGraphApplication>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -295,21 +295,6 @@ To construct, see NOTES section for CERTIFICATION properties and create a hash t
 Type: IMicrosoftGraphCertification
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -766,6 +751,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PublicClient
 publicClientApplication
 To construct, see NOTES section for PUBLICCLIENT properties and create a hash table.
@@ -1072,6 +1072,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -1131,9 +1146,9 @@ This text appears in tenant-wide admin consent experiences.
     - `[AdminConsentDisplayName <String>]`: The permission's title, intended to be read by an administrator granting the permission on behalf of all users.
     - `[Id <String>]`: Unique delegated permission identifier inside the collection of delegated permissions defined for a resource application.
     - `[IsEnabled <Boolean?>]`: When you create or update a permission, this property must be set to true (which is the default).
-To delete a permission, this property must first be set to false.
+To delete a permission, this property must first be set to false. 
 At that point, in a subsequent call, the permission may be removed.
-    - `[Origin <String>]`:
+    - `[Origin <String>]`: 
     - `[Type <String>]`: The possible values are: User and Admin.
 Specifies whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator consent should always be required.
 While Microsoft Graph defines the default consent requirement for each permission, the tenant administrator may override the behavior in their organization (by allowing, restricting, or limiting user consent to this delegated permission).
@@ -1156,11 +1171,11 @@ However, any other permissions not listed in preAuthorizedApplications (requeste
     - `[AppId <String>]`: The unique identifier for the application.
     - `[DelegatedPermissionIds <String- `[]`>]`: The unique identifier for the oauth2PermissionScopes the application requires.
   - `[RequestedAccessTokenVersion <Int32?>]`: Specifies the access token version expected by this resource.
-This changes the version and format of the JWT produced independent of the endpoint or client used to request the access token.
+This changes the version and format of the JWT produced independent of the endpoint or client used to request the access token. 
 The endpoint used, v1.0 or v2.0, is chosen by the client and only impacts the version of id_tokens.
-Resources need to explicitly configure requestedAccessTokenVersion to indicate the supported access token format.
+Resources need to explicitly configure requestedAccessTokenVersion to indicate the supported access token format. 
 Possible values for requestedAccessTokenVersion are 1, 2, or null.
-If the value is null, this defaults to 1, which corresponds to the v1.0 endpoint.
+If the value is null, this defaults to 1, which corresponds to the v1.0 endpoint. 
 If signInAudience on the application is configured as AzureADandPersonalMicrosoftAccount or PersonalMicrosoftAccount, the value for this property must be 2.
 
 APPMANAGEMENTPOLICIES `<IMicrosoftGraphAppManagementPolicy- `[]`>`: The appManagementPolicy applied to this application.
@@ -1209,7 +1224,7 @@ This is displayed when the app role is being assigned and, if the app role funct
   - `[Id <String>]`: Unique role identifier inside the appRoles collection.
 When creating a new app role, a new GUID identifier must be provided.
   - `[IsEnabled <Boolean?>]`: When creating or updating an app role, this must be set to true (which is the default).
-To delete a role, this must first be set to false.
+To delete a role, this must first be set to false. 
 At that point, in a subsequent call, this role may be removed.
   - `[Origin <String>]`: Specifies if the app role is defined on the application object or on the servicePrincipal entity.
 Must not be included in any POST or PATCH requests.
@@ -1225,9 +1240,9 @@ May not begin with ..
 
 AUTHENTICATIONBEHAVIORS `<IMicrosoftGraphAuthenticationBehaviors>`: authenticationBehaviors
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[BlockAzureAdGraphAccess <Boolean?>]`:
-  - `[RemoveUnverifiedEmailClaim <Boolean?>]`:
-  - `[RequireClientServicePrincipal <Boolean?>]`:
+  - `[BlockAzureAdGraphAccess <Boolean?>]`: 
+  - `[RemoveUnverifiedEmailClaim <Boolean?>]`: 
+  - `[RequireClientServicePrincipal <Boolean?>]`: 
 
 BODYPARAMETER `<IMicrosoftGraphApplication>`: application
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1260,9 +1275,9 @@ This text appears in tenant-wide admin consent experiences.
       - `[AdminConsentDisplayName <String>]`: The permission's title, intended to be read by an administrator granting the permission on behalf of all users.
       - `[Id <String>]`: Unique delegated permission identifier inside the collection of delegated permissions defined for a resource application.
       - `[IsEnabled <Boolean?>]`: When you create or update a permission, this property must be set to true (which is the default).
-To delete a permission, this property must first be set to false.
+To delete a permission, this property must first be set to false. 
 At that point, in a subsequent call, the permission may be removed.
-      - `[Origin <String>]`:
+      - `[Origin <String>]`: 
       - `[Type <String>]`: The possible values are: User and Admin.
 Specifies whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator consent should always be required.
 While Microsoft Graph defines the default consent requirement for each permission, the tenant administrator may override the behavior in their organization (by allowing, restricting, or limiting user consent to this delegated permission).
@@ -1285,11 +1300,11 @@ However, any other permissions not listed in preAuthorizedApplications (requeste
       - `[AppId <String>]`: The unique identifier for the application.
       - `[DelegatedPermissionIds <String- `[]`>]`: The unique identifier for the oauth2PermissionScopes the application requires.
     - `[RequestedAccessTokenVersion <Int32?>]`: Specifies the access token version expected by this resource.
-This changes the version and format of the JWT produced independent of the endpoint or client used to request the access token.
+This changes the version and format of the JWT produced independent of the endpoint or client used to request the access token. 
 The endpoint used, v1.0 or v2.0, is chosen by the client and only impacts the version of id_tokens.
-Resources need to explicitly configure requestedAccessTokenVersion to indicate the supported access token format.
+Resources need to explicitly configure requestedAccessTokenVersion to indicate the supported access token format. 
 Possible values for requestedAccessTokenVersion are 1, 2, or null.
-If the value is null, this defaults to 1, which corresponds to the v1.0 endpoint.
+If the value is null, this defaults to 1, which corresponds to the v1.0 endpoint. 
 If signInAudience on the application is configured as AzureADandPersonalMicrosoftAccount or PersonalMicrosoftAccount, the value for this property must be 2.
   - `[AppId <String>]`: The unique identifier for the application that is assigned to an application by Microsoft Entra ID.
 Not nullable.
@@ -1341,7 +1356,7 @@ This is displayed when the app role is being assigned and, if the app role funct
     - `[Id <String>]`: Unique role identifier inside the appRoles collection.
 When creating a new app role, a new GUID identifier must be provided.
     - `[IsEnabled <Boolean?>]`: When creating or updating an app role, this must be set to true (which is the default).
-To delete a role, this must first be set to false.
+To delete a role, this must first be set to false. 
 At that point, in a subsequent call, this role may be removed.
     - `[Origin <String>]`: Specifies if the app role is defined on the application object or on the servicePrincipal entity.
 Must not be included in any POST or PATCH requests.
@@ -1360,9 +1375,9 @@ Read-only.
 null if the app wasn't created from an application template.
   - `[AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]`: authenticationBehaviors
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[BlockAzureAdGraphAccess <Boolean?>]`:
-    - `[RemoveUnverifiedEmailClaim <Boolean?>]`:
-    - `[RequireClientServicePrincipal <Boolean?>]`:
+    - `[BlockAzureAdGraphAccess <Boolean?>]`: 
+    - `[RemoveUnverifiedEmailClaim <Boolean?>]`: 
+    - `[RequireClientServicePrincipal <Boolean?>]`: 
   - `[Certification <IMicrosoftGraphCertification>]`: certification
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CertificationExpirationDateTime <DateTime?>]`: The timestamp when the current certification for the application expires.
@@ -1371,15 +1386,15 @@ null if the app wasn't created from an application template.
   - `[CreatedDateTime <DateTime?>]`: The date and time the application was registered.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
+Read-only. 
 Supports $filter (eq, ne, not, ge, le, in, and eq on null values) and $orderby.
   - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: directoryObject
-  - `[DefaultRedirectUri <String>]`:
+  - `[DefaultRedirectUri <String>]`: 
   - `[Description <String>]`: Free text field to provide a description of the application object to end users.
 The maximum allowed size is 1,024 characters.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
   - `[DisabledByMicrosoftStatus <String>]`: Specifies whether Microsoft has disabled the registered application.
-Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
+Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). 
 Supports $filter (eq, ne, not).
   - `[DisplayName <String>]`: The display name for the application.
 Maximum length is 256 characters.
@@ -1442,8 +1457,8 @@ It has a limit of 600 characters.
 Supports $filter (eq).
   - `[GroupMembershipClaims <String>]`: Configures the groups claim issued in a user or OAuth 2.0 access token that the application expects.
 To set this attribute, use one of the following valid string values: None, SecurityGroup (for security groups and Microsoft Entra roles), All (this gets all of the security groups, distribution groups, and Microsoft Entra directory roles that the signed-in user is a member of).
-  - `[HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy- `[]`>]`:
-    - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`:
+  - `[HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy- `[]`>]`: 
+    - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Definition <String- `[]`>]`: A string collection containing a JSON string that defines the rules and settings for a policy.
 The syntax for the definition differs for each derived policy type.
 Required.
@@ -1495,7 +1510,7 @@ Optional.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Key <Byte- `[]`>]`: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
     - `[KeyId <String>]`: The unique identifier (GUID) for the key.
@@ -1507,7 +1522,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Not nullable.
   - `[NativeAuthenticationApisEnabled <String>]`: nativeAuthenticationApisEnabled
   - `[Notes <String>]`: Notes relevant for the management of the application.
-  - `[Oauth2RequirePostResponse <Boolean?>]`:
+  - `[Oauth2RequirePostResponse <Boolean?>]`: 
   - `[OptionalClaims <IMicrosoftGraphOptionalClaims>]`: optionalClaims
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AccessToken <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the JWT access token.
@@ -1646,7 +1661,7 @@ Not nullable.
 Anchor attributes must have a unique value identifying an object, and must be immutable.
 Default is false.
 One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
-              - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`:
+              - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`: 
                 - `[Key <String>]`: Key.
                 - `[Value <String>]`: Value.
               - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
@@ -1685,11 +1700,11 @@ null if discovery hasn't yet occurred.
         - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule- `[]`>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
           - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[IncludedContainers <String- `[]`>]`:
+            - `[IncludedContainers <String- `[]`>]`: 
           - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
           - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[IncludedGroups <String- `[]`>]`:
+            - `[IncludedGroups <String- `[]`>]`: 
           - `[Id <String>]`: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -1859,8 +1874,8 @@ Strings added here will also appear in the tags property of any associated servi
   - `[TokenEncryptionKeyId <String>]`: Specifies the keyId of a public key from the keyCredentials collection.
 When configured, Microsoft Entra ID encrypts all the tokens it emits by using the key this property points to.
 The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.
-  - `[TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy- `[]`>]`:
-    - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`:
+  - `[TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy- `[]`>]`: 
+    - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Definition <String- `[]`>]`: A string collection containing a JSON string that defines the rules and settings for a policy.
 The syntax for the definition differs for each derived policy type.
 Required.
@@ -1875,8 +1890,8 @@ Required.
 Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy- `[]`>]`:
-    - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`:
+  - `[TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy- `[]`>]`: 
+    - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Definition <String- `[]`>]`: A string collection containing a JSON string that defines the rules and settings for a policy.
 The syntax for the definition differs for each derived policy type.
 Required.
@@ -1907,9 +1922,9 @@ Read-only.
       - `[EnableAccessTokenIssuance <Boolean?>]`: Specifies whether this web application can request an access token using the OAuth 2.0 implicit flow.
       - `[EnableIdTokenIssuance <Boolean?>]`: Specifies whether this web application can request an ID token using the OAuth 2.0 implicit flow.
     - `[LogoutUrl <String>]`: Specifies the URL that is used by Microsoft's authorization service to log out a user using front-channel, back-channel or SAML logout protocols.
-    - `[RedirectUriSettings <IMicrosoftGraphRedirectUriSettings- `[]`>]`:
-      - `[Index <Int32?>]`:
-      - `[Uri <String>]`:
+    - `[RedirectUriSettings <IMicrosoftGraphRedirectUriSettings- `[]`>]`: 
+      - `[Index <Int32?>]`: 
+      - `[Uri <String>]`: 
     - `[RedirectUris <String- `[]`>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
 CERTIFICATION `<IMicrosoftGraphCertification>`: certification
@@ -1984,7 +1999,7 @@ It has a limit of 600 characters.
 Supports $filter (eq).
 
 HOMEREALMDISCOVERYPOLICIES `<IMicrosoftGraphHomeRealmDiscoveryPolicy- `[]`>`: .
-  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`:
+  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -2055,7 +2070,7 @@ Optional.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Key <Byte- `[]`>]`: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
   - `[KeyId <String>]`: The unique identifier (GUID) for the key.
@@ -2198,7 +2213,7 @@ Not nullable.
 Anchor attributes must have a unique value identifying an object, and must be immutable.
 Default is false.
 One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
-            - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`:
+            - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`: 
               - `[Key <String>]`: Key.
               - `[Value <String>]`: Value.
             - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
@@ -2237,11 +2252,11 @@ null if discovery hasn't yet occurred.
       - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule- `[]`>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
         - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[IncludedContainers <String- `[]`>]`:
+          - `[IncludedContainers <String- `[]`>]`: 
         - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
         - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[IncludedGroups <String- `[]`>]`:
+          - `[IncludedGroups <String- `[]`>]`: 
         - `[Id <String>]`: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -2407,7 +2422,7 @@ Unless mentioned explicitly, metadata values should not be changed.
     - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
 
 TOKENISSUANCEPOLICIES `<IMicrosoftGraphTokenIssuancePolicy- `[]`>`: .
-  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`:
+  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -2428,7 +2443,7 @@ Always null when the object hasn't been deleted.
 Read-only.
 
 TOKENLIFETIMEPOLICIES `<IMicrosoftGraphTokenLifetimePolicy- `[]`>`: .
-  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`:
+  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -2462,9 +2477,9 @@ WEB `<IMicrosoftGraphWebApplication>`: webApplication
     - `[EnableAccessTokenIssuance <Boolean?>]`: Specifies whether this web application can request an access token using the OAuth 2.0 implicit flow.
     - `[EnableIdTokenIssuance <Boolean?>]`: Specifies whether this web application can request an ID token using the OAuth 2.0 implicit flow.
   - `[LogoutUrl <String>]`: Specifies the URL that is used by Microsoft's authorization service to log out a user using front-channel, back-channel or SAML logout protocols.
-  - `[RedirectUriSettings <IMicrosoftGraphRedirectUriSettings- `[]`>]`:
-    - `[Index <Int32?>]`:
-    - `[Uri <String>]`:
+  - `[RedirectUriSettings <IMicrosoftGraphRedirectUriSettings- `[]`>]`: 
+    - `[Index <Int32?>]`: 
+    - `[Uri <String>]`: 
   - `[RedirectUris <String- `[]`>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
 ## RELATED LINKS
