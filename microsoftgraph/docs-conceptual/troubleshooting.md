@@ -62,7 +62,7 @@ For more info, see [App-only authentication](app-only.md).
 
 ## Using -Debug
 
-The **-Debug** parameter provides a powerful way to examine a script while it's running in order to identify and correct errors in the script. Each part of the **-Debug** output provides key information that helps you diagnose and resolve issues more efficiently. The following are the important parts of a **-Debug** output:
+The **-Debug** parameter provides a powerful way to examine a script while it's running in order to identify and correct errors in the script. Each part of the **-Debug** output provides key information that helps you diagnose and resolve issues more efficiently. The following section lists the important parts of a **-Debug** output:
 
 1. **cmdletBeginProcessing** - this part allows you to confirm the cmdlet you're running and the parameter list provided to the cmdlet. For example, `DEBUG: [CmdletBeginProcessing]: - Get-MgUser begin processing with parameterSet 'List1'.` shows that you're running the `Get-MgUser` cmdlet and the parameter list is `List1`.
 1. **AuthType** - is either `delegated` or `application`.
@@ -101,7 +101,7 @@ Using the **-Debug** parameter is helpful when you want to open a support ticket
 
 When you run a PowerShell cmdlet and an error occurs, the error record will be appended to the global *automatic variable* named `$error`. This variable is available in every PowerShell session and stores a collection of error records that have occurred during the session. When you use the **-ErrorVariable** parameter in a call to a command, the error is also assigned to the variable name that you specify. Even when you use the **-ErrorVariable** parameter, the `$error` variable is still updated.
 
-By default, the **-ErrorVariable** parameter will overwrite the variable you specify. If you want to append an error to the variable instead of overwriting it, you can put a plus sign (+) in front of the variable name. For example,
+By default, the **-ErrorVariable** parameter overwrites the variable you specify. If you want to append an error to the variable instead of overwriting it, you can put a plus sign (+) in front of the variable name. For example,
 
 ```powershell
 Get-MgUser -UserId 'f' -ErrorVariable MyError
@@ -114,9 +114,9 @@ $MyError.Count # MyError should now contain 2 errors
 
 The **-ErrorAction** common parameter allows you to specify which action to take if a command fails. The available options are: **Stop**, **Continue**, **SilentlyContinue**, **Ignore**, or **Inquire**.
 
-When you specify the **-ErrorAction** parameter during a call to a command, the specified behavior will override the `$ErrorActionPreference` variable in Windows PowerShell.
+When you specify the **-ErrorAction** parameter during a call to a command, the specified behavior overrides the `$ErrorActionPreference` variable in Windows PowerShell.
 
-By default, Windows PowerShell uses an error action preference of **Continue**, which means that errors will be written out to the host, but the script will continue to execute. The `$ErrorActionPreference` variable is a global setting that determines the default error handling behavior for all commands in the session, unless overridden by the `-ErrorAction` parameter on a specific command. If you set `$ErrorActionPreference` to **Stop** or if you use `Stop` as the parameter value for **-ErrorAction**, Windows PowerShell will stop the script execution at the point an error occurs.
+By default, Windows PowerShell uses an error action preference of **Continue**, which means that errors is written out to the host, but the script continues to execute. The `$ErrorActionPreference` variable is a global setting that determines the default error handling behavior for all commands in the session, unless overridden by the `-ErrorAction` parameter on a specific command. If you set `$ErrorActionPreference` to **Stop** or if you use `Stop` as the parameter value for **-ErrorAction**, Windows PowerShell stops the script execution at the point an error occurs.
 
 ## Next steps
 
