@@ -3,7 +3,7 @@ title: "Use Microsoft Graph PowerShell authentication commands"
 description: "Learn how to use the authentication cmdlets in Microsoft Graph PowerShell"
 
 ms.topic: how-to
-ms.date: 07/01/2025
+ms.date: 07/10/2025
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
