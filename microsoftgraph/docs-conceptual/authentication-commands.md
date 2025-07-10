@@ -45,7 +45,7 @@ There are three ways to allow delegated access using `Connect-MgGraph`:
 
 #### Use delegated access with a custom application for Microsoft Graph PowerShell
 
-Follow the steps below to create a custom application that you can use to connect to Microsoft Graph PowerShell. Use this approach if you need to isolate and limit the consent permissions granted for Microsoft Graph PowerShell usage.
+Complete the following steps to create a custom application that you can use to connect to Microsoft Graph PowerShell. Use this approach if you need to isolate and limit the consent permissions granted for Microsoft Graph PowerShell usage.
 
 1. Go to the <a href="https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade" target="_blank">Microsoft Entra admin center - App registrations</a> > **New Registration**.
     1. Enter a **Name** for your application, for example *Microsoft Graph PowerShell - High Privilege admin use only*.
@@ -71,7 +71,7 @@ Connect-MgGraph -ClientId <YOUR_NEW_APP_ID> -TenantId <YOUR_TENANT_ID>
 
 #### Use client credential with a certificate
 
-To use app-only access, you can load the certificate from either *Cert:\CurrentUser\My\\* or *Cert:\LocalMachine\My\\* when you specify the `-CertificateThumbprint` or `-CertificateName` parameters with `Connect-MgGraph`. Make sure that the certificate you're using is present in either certificate store before calling `Connect-MgGraph`. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
+To use app-only access, you can load the certificate from either *Cert:\CurrentUser\My\\* or *Cert:\LocalMachine\My\\* when you specify the `-CertificateThumbprint` or `-CertificateName` parameters with `Connect-MgGraph`. Ensure the certificate you're using is present in either certificate store before calling `Connect-MgGraph`. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
 - Use Certificate Thumbprint:
 
@@ -96,7 +96,7 @@ To use app-only access, you can load the certificate from either *Cert:\CurrentU
 
 #### Use client secret credentials
 
-This type of grant will help when you need interactions in the background without a user to sign in. You can use the **-ClientSecretCredential** parameter with **Connect-MgGraph** to provide client secret credentials. See [Get-Credential](/powershell/module/microsoft.powershell.security/get-credential) on how to get or create credentials.
+This type of grant helps when you need interactions in the background without a user to sign in. You can use the **-ClientSecretCredential** parameter with **Connect-MgGraph** to provide client secret credentials. See [Get-Credential](/powershell/module/microsoft.powershell.security/get-credential) on how to get or create credentials.
 
 ```powershell
 # Define the Application (Client) ID and Secret
@@ -136,7 +136,7 @@ A common challenge when writing automation scripts is the management of secrets,
 
 ### Connect to an environment or cloud
 
-By default, `Connect-MgGraph` targets the global public cloud. For more details on targeting other clouds, see the [Use Get-MgEnvironment](#use-get-mgenvironment) section below.
+By default, `Connect-MgGraph` targets the global public cloud. For more details on targeting other clouds, see the [Use Get-MgEnvironment](#use-get-mgenvironment) section.
 
 ### Connect to an environment as a different identity
 
@@ -164,7 +164,7 @@ For more information, see [Passwordless authentication options for Microsoft Ent
 
 ## Use Disconnect-MgGraph
 
-Once you're signed in, you'll remain signed in until you invoke `Disconnect-MgGraph`. Microsoft Graph PowerShell automatically refreshes the access token for you, and sign-in persists across PowerShell sessions because Microsoft Graph PowerShell securely caches the token when using the default `CurrentUser` context scope. If you use the `-ContextScope Process` parameter with `Connect-MgGraph`, sign-in will only persist for the current PowerShell session.
+Once you're signed in, you remain signed in until you invoke `Disconnect-MgGraph`. Microsoft Graph PowerShell automatically refreshes the access token for you, and sign-in persists across PowerShell sessions because Microsoft Graph PowerShell securely caches the token when using the default `CurrentUser` context scope. If you use the `-ContextScope Process` parameter with `Connect-MgGraph`, sign-in only persists for the current PowerShell session.
 
 Use `Disconnect-MgGraph` to sign out.
 
@@ -202,7 +202,7 @@ Connect-MgGraph -Environment USGov
 
 >[!NOTE]
 >[!IMPORTANT]
->Globally registered apps do not replicate to Azure China. You must [register your own applications](/entra/identity-platform/quickstart-register-app) and use them when connecting to Microsoft Graph.
+>Globally registered apps don't replicate to Azure China. You must [register your own applications](/entra/identity-platform/quickstart-register-app) and use them when connecting to Microsoft Graph.
 
 ## Use Get-MgContext
 
@@ -251,7 +251,7 @@ ClientTimeout         : 00:05:00
 ```
 
 To retrieve all the scopes that you've consented to, use `Select-Object` with the `-ExpandProperty` parameter to expand the `Scopes` property:
-Each scope will be output on a new line when using `-ExpandProperty`.
+Each scope is output on a new line when using `-ExpandProperty`.
 
 ```powershell
 Get-MgContext | Select -ExpandProperty Scopes
