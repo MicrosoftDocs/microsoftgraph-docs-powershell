@@ -40,18 +40,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | GroupMember.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Group.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -200,6 +188,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrantcount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrantcount)
+
 
 
 

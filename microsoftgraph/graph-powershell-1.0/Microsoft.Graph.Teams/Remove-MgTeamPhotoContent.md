@@ -32,18 +32,6 @@ Remove-MgTeamPhotoContent -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Re
 ## DESCRIPTION
 The profile photo for the team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -239,6 +227,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamphotocontent)
+
 
 
 

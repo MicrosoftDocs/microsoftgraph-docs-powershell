@@ -47,18 +47,6 @@ Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <ICalendar
 ## DESCRIPTION
 Invoke function allowedCalendarSharingRoles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CalendarId
@@ -274,6 +262,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgcalendarusercalendarallowedcalendarsharingroles](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgcalendarusercalendarallowedcalendarsharingroles)
+
 
 
 

@@ -29,18 +29,6 @@ Get-MgBetaUserAuthenticationHardwareOathMethodDevice -InputObject <IIdentitySign
 ## DESCRIPTION
 Exposes the hardware OATH method in the directory.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -266,6 +254,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationhardwareoathmethoddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationhardwareoathmethoddevice)
+
 
 
 

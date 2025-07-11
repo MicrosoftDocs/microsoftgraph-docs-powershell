@@ -33,18 +33,6 @@ Remove-MgBetaUserSettingWindows -InputObject <IUsersIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete all windowsSetting objects of a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -250,6 +238,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingwindows](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingwindows)
 
 [https://learn.microsoft.com/graph/api/windowssetting-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowssetting-delete?view=graph-rest-beta)
+
 
 
 

@@ -40,18 +40,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.Read.All, Policy.ReadWrite.ApplicationConfiguration, Policy.Read.ApplicationConfiguration, Policy.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppManagementPolicyId
@@ -241,6 +229,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicyapplytocount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicyapplytocount)
+
 
 
 

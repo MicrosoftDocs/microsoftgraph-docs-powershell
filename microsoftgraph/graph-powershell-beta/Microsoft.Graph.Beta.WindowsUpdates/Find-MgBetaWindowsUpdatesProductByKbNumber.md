@@ -39,18 +39,6 @@ Invoke function findByKbNumber
 | Delegated (personal Microsoft account) | Not supported |
 | Application | WindowsUpdates.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -285,6 +273,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/find-mgbetawindowsupdatesproductbykbnumber](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/find-mgbetawindowsupdatesproductbykbnumber)
+
 
 
 

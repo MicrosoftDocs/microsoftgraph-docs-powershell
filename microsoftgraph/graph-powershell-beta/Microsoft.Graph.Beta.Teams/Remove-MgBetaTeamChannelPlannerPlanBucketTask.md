@@ -30,18 +30,6 @@ Remove-MgBetaTeamChannelPlannerPlanBucketTask -InputObject <ITeamsIdentity> [-If
 ## DESCRIPTION
 Delete navigation property tasks for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -307,6 +295,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelplannerplanbuckettask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelplannerplanbuckettask)
+
 
 
 

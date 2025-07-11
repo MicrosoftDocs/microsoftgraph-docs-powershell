@@ -60,18 +60,6 @@ Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
 ## DESCRIPTION
 Update the navigation property assignmentScheduleInstances in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessId
@@ -15577,6 +15565,7 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupassignmentscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupassignmentscheduleinstance)
+
 
 
 

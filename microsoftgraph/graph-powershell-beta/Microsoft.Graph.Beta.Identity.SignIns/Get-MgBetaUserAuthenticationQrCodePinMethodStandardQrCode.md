@@ -37,18 +37,6 @@ Read the properties and relationships of a qrCode object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -261,6 +249,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationqrcodepinmethodstandardqrcode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationqrcodepinmethodstandardqrcode)
 
 [https://learn.microsoft.com/graph/api/qrcode-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/qrcode-get?view=graph-rest-beta)
+
 
 
 

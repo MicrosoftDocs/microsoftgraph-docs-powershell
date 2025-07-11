@@ -29,18 +29,6 @@ Complete-MgBetaUserChatMigration -InputObject <ITeamsIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Invoke action completeMigration
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -246,6 +234,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetauserchatmigration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetauserchatmigration)
+
 
 
 

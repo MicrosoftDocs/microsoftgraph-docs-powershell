@@ -30,18 +30,6 @@ Remove-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration
 ## DESCRIPTION
 Delete navigation property connectivityConfiguration for networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -223,6 +211,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfiguration)
+
 
 
 

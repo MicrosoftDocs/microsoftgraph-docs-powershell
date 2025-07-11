@@ -60,18 +60,6 @@ New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAd
 Create a new siteRestoreArtifactsBulkAdditionRequest object associated with a sharePointRestoreSession.
 The following steps describe how to create and manage a sharePointRestoreSession with bulk artifact additions:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -585,6 +573,7 @@ PROTECTIONTIMEPERIOD `<IMicrosoftGraphTimePeriod>`: timePeriod
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresessionsiterestoreartifactbulkadditionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresessionsiterestoreartifactbulkadditionrequest)
 
 [https://learn.microsoft.com/graph/api/sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests?view=graph-rest-beta](https://learn.microsoft.com/graph/api/sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests?view=graph-rest-beta)
+
 
 
 

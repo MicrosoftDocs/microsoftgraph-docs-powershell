@@ -31,18 +31,6 @@ Update-MgBetaRoleManagementDefender -BodyParameter <IMicrosoftGraphRbacApplicati
 ## DESCRIPTION
 Update the navigation property defender in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -541,6 +529,7 @@ Read-only when isBuiltIn is true.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdefender](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdefender)
+
 
 
 

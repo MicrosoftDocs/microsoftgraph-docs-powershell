@@ -32,18 +32,6 @@ Restore-MgBetaUserDriveItemListItemVersion -InputObject <IFilesIdentity> [-Respo
 ## DESCRIPTION
 Invoke action restoreVersion
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -259,6 +247,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetauserdriveitemlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetauserdriveitemlistitemversion)
+
 
 
 
