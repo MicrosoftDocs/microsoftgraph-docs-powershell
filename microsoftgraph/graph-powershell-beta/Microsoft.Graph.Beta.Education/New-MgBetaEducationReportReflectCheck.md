@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationreportreflectcheck
@@ -18,13 +18,13 @@ New-MgBetaEducationReportReflectCheck [-ResponseHeadersVariable <String>] [-Addi
  [-CheckInId <String>] [-CheckInTitle <String>] [-ClassId <String>] [-CreatedDateTime <DateTime>]
  [-CreatorId <String>] [-Id <String>] [-IsClosed] [-ResponderId <String>] [-ResponseEmotion <String>]
  [-ResponseFeedback <String>] [-SubmitDateTime <DateTime>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaEducationReportReflectCheck -BodyParameter <IMicrosoftGraphReflectCheckInResponse>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,6 +32,16 @@ New-MgBetaEducationReportReflectCheck -BodyParameter <IMicrosoftGraphReflectChec
 Create new navigation property to reflectCheckInResponses for education
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -103,21 +113,6 @@ ID of the class associated with the Reflect check-in.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -204,6 +199,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponderId
 ID of the user who responded to the Reflect check-in.
 
@@ -281,6 +291,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -313,49 +338,26 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphReflectCheckInResponse>`: reflectCheckInResponse
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphReflectCheckInResponse\>: reflectCheckInResponse
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CheckInId <String>]`: Identifier for the Reflect check-in.
-  - `[CheckInTitle <String>]`: The question or prompt of the Reflect check-in that this response addresses.
-  - `[ClassId <String>]`: ID of the class associated with the Reflect check-in.
-  - `[CreatedDateTime <DateTime?>]`: Date and time when the Reflect check-in was created.
+  \[CheckInId \<String\>\]: Identifier for the Reflect check-in.
+  \[CheckInTitle \<String\>\]: The question or prompt of the Reflect check-in that this response addresses.
+  \[ClassId \<String\>\]: ID of the class associated with the Reflect check-in.
+  \[CreatedDateTime \<DateTime?\>\]: Date and time when the Reflect check-in was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[CreatorId <String>]`: ID of the user who created the Reflect check-in.
-  - `[IsClosed <Boolean?>]`: Indicates whether the Reflect check-in is closed (true) or open (false).
-  - `[ResponderId <String>]`: ID of the user who responded to the Reflect check-in.
-  - `[ResponseEmotion <String>]`: responseEmotionType
-  - `[ResponseFeedback <String>]`: responseFeedbackType
-  - `[SubmitDateTime <DateTime?>]`: Date and time when the response to the Reflect check-in was submitted.
+  \[CreatorId \<String\>\]: ID of the user who created the Reflect check-in.
+  \[IsClosed \<Boolean?\>\]: Indicates whether the Reflect check-in is closed (true) or open (false).
+  \[ResponderId \<String\>\]: ID of the user who responded to the Reflect check-in.
+  \[ResponseEmotion \<String\>\]: responseEmotionType
+  \[ResponseFeedback \<String\>\]: responseFeedbackType
+  \[SubmitDateTime \<DateTime?\>\]: Date and time when the response to the Reflect check-in was submitted.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationreportreflectcheck](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationreportreflectcheck)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecategory
@@ -10,30 +10,27 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a deviceCategory object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCategory?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementDeviceCategory -DeviceCategoryId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementDeviceCategory -DeviceCategoryId <String>
  -BodyParameter <IMicrosoftGraphDeviceCategory> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-DisplayName <String>] [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,26 +38,18 @@ Update-MgDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity>
 ```
 Update-MgDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceCategory> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a deviceCategory object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceCategory"
@@ -69,10 +58,6 @@ $params = @{
 }
 
 Update-MgDeviceManagementDeviceCategory -DeviceCategoryId $deviceCategoryId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceManagementDeviceCategory Cmdlet.
-
 
 ## PARAMETERS
 
@@ -107,21 +92,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -217,6 +187,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -224,6 +209,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -265,75 +265,53 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceCategory>`: Device categories provides a way to organize your devices.
+BODYPARAMETER \<IMicrosoftGraphDeviceCategory\>: Device categories provides a way to organize your devices.
 Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment.
 You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: Optional description for the device category.
-  - `[DisplayName <String>]`: Display name for the device category.
+  \[Description \<String\>\]: Optional description for the device category.
+  \[DisplayName \<String\>\]: Display name for the device category.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[BrowserSharedCookieId <String>]`: The unique identifier of browserSharedCookie
-  - `[BrowserSiteId <String>]`: The unique identifier of browserSite
-  - `[BrowserSiteListId <String>]`: The unique identifier of browserSiteList
-  - `[DetectedAppId <String>]`: The unique identifier of detectedApp
-  - `[DeviceCategoryId <String>]`: The unique identifier of deviceCategory
-  - `[DeviceComplianceActionItemId <String>]`: The unique identifier of deviceComplianceActionItem
-  - `[DeviceComplianceDeviceStatusId <String>]`: The unique identifier of deviceComplianceDeviceStatus
-  - `[DeviceCompliancePolicyAssignmentId <String>]`: The unique identifier of deviceCompliancePolicyAssignment
-  - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
-  - `[DeviceCompliancePolicySettingStateSummaryId <String>]`: The unique identifier of deviceCompliancePolicySettingStateSummary
-  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
-  - `[DeviceComplianceScheduledActionForRuleId <String>]`: The unique identifier of deviceComplianceScheduledActionForRule
-  - `[DeviceComplianceSettingStateId <String>]`: The unique identifier of deviceComplianceSettingState
-  - `[DeviceComplianceUserStatusId <String>]`: The unique identifier of deviceComplianceUserStatus
-  - `[DeviceConfigurationAssignmentId <String>]`: The unique identifier of deviceConfigurationAssignment
-  - `[DeviceConfigurationDeviceStatusId <String>]`: The unique identifier of deviceConfigurationDeviceStatus
-  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
-  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
-  - `[DeviceConfigurationUserStatusId <String>]`: The unique identifier of deviceConfigurationUserStatus
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
-  - `[LocalizedNotificationMessageId <String>]`: The unique identifier of localizedNotificationMessage
-  - `[MalwareStateForWindowsDeviceId <String>]`: The unique identifier of malwareStateForWindowsDevice
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
-  - `[SettingStateDeviceSummaryId <String>]`: The unique identifier of settingStateDeviceSummary
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
-  - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
-  - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
+  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
+  \[BrowserSharedCookieId \<String\>\]: The unique identifier of browserSharedCookie
+  \[BrowserSiteId \<String\>\]: The unique identifier of browserSite
+  \[BrowserSiteListId \<String\>\]: The unique identifier of browserSiteList
+  \[DetectedAppId \<String\>\]: The unique identifier of detectedApp
+  \[DeviceCategoryId \<String\>\]: The unique identifier of deviceCategory
+  \[DeviceComplianceActionItemId \<String\>\]: The unique identifier of deviceComplianceActionItem
+  \[DeviceComplianceDeviceStatusId \<String\>\]: The unique identifier of deviceComplianceDeviceStatus
+  \[DeviceCompliancePolicyAssignmentId \<String\>\]: The unique identifier of deviceCompliancePolicyAssignment
+  \[DeviceCompliancePolicyId \<String\>\]: The unique identifier of deviceCompliancePolicy
+  \[DeviceCompliancePolicySettingStateSummaryId \<String\>\]: The unique identifier of deviceCompliancePolicySettingStateSummary
+  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
+  \[DeviceComplianceScheduledActionForRuleId \<String\>\]: The unique identifier of deviceComplianceScheduledActionForRule
+  \[DeviceComplianceSettingStateId \<String\>\]: The unique identifier of deviceComplianceSettingState
+  \[DeviceComplianceUserStatusId \<String\>\]: The unique identifier of deviceComplianceUserStatus
+  \[DeviceConfigurationAssignmentId \<String\>\]: The unique identifier of deviceConfigurationAssignment
+  \[DeviceConfigurationDeviceStatusId \<String\>\]: The unique identifier of deviceConfigurationDeviceStatus
+  \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
+  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
+  \[DeviceConfigurationUserStatusId \<String\>\]: The unique identifier of deviceConfigurationUserStatus
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
+  \[LocalizedNotificationMessageId \<String\>\]: The unique identifier of localizedNotificationMessage
+  \[MalwareStateForWindowsDeviceId \<String\>\]: The unique identifier of malwareStateForWindowsDevice
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
+  \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[SecretReferenceValueId \<String\>\]: Usage: secretReferenceValueId='{secretReferenceValueId}'
+  \[SettingStateDeviceSummaryId \<String\>\]: The unique identifier of settingStateDeviceSummary
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsInformationProtectionAppLearningSummaryId \<String\>\]: The unique identifier of windowsInformationProtectionAppLearningSummary
+  \[WindowsInformationProtectionNetworkLearningSummaryId \<String\>\]: The unique identifier of windowsInformationProtectionNetworkLearningSummary
+  \[WindowsMalwareInformationId \<String\>\]: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecategory)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

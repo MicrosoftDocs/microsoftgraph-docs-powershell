@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessactivityusercount
 schema: 2.0.0
-ms.subservice: reports
 ---
 
 # Get-MgReportSkypeForBusinessActivityUserCount
@@ -12,22 +11,19 @@ ms.subservice: reports
 Get the trends on how many unique users organized and participated in conference sessions held in your organization through Skype for Business.
 The report also includes the number of peer-to-peer sessions.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessActivityUserCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgReportSkypeForBusinessActivityUserCount -Period <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportSkypeForBusinessActivityUserCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -36,17 +32,13 @@ Get the trends on how many unique users organized and participated in conference
 The report also includes the number of peer-to-peer sessions.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Reports
+```
 
 Get-MgReportSkypeForBusinessActivityUserCount -Period $periodId
-
-```
-This example shows how to use the Get-MgReportSkypeForBusinessActivityUserCount Cmdlet.
-
 
 ## PARAMETERS
 
@@ -126,6 +118,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -157,55 +164,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[Date <DateTime?>]`: Usage: date={date}
-  - `[DeviceManagementExportJobId <String>]`: The unique identifier of deviceManagementExportJob
-  - `[DirectoryAuditId <String>]`: The unique identifier of directoryAudit
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
-  - `[Filter <String>]`: Usage: filter='{filter}'
-  - `[GroupId <String>]`: Usage: groupId='{groupId}'
-  - `[IncludedUserRoles <String>]`: Usage: includedUserRoles='{includedUserRoles}'
-  - `[IncludedUserTypes <String>]`: Usage: includedUserTypes='{includedUserTypes}'
-  - `[ManifestId <String>]`: The unique identifier of manifest
-  - `[OperationId <String>]`: The unique identifier of operation
-  - `[Period <String>]`: Usage: period='{period}'
-  - `[PrintUsageByPrinterId <String>]`: The unique identifier of printUsageByPrinter
-  - `[PrintUsageByUserId <String>]`: The unique identifier of printUsageByUser
-  - `[PrinterId <String>]`: Usage: printerId='{printerId}'
-  - `[ProvisioningObjectSummaryId <String>]`: The unique identifier of provisioningObjectSummary
-  - `[SignInId <String>]`: The unique identifier of signIn
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
+INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
+  \[Date \<DateTime?\>\]: Usage: date={date}
+  \[DeviceManagementExportJobId \<String\>\]: The unique identifier of deviceManagementExportJob
+  \[DirectoryAuditId \<String\>\]: The unique identifier of directoryAudit
+  \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[Filter \<String\>\]: Usage: filter='{filter}'
+  \[GroupId \<String\>\]: Usage: groupId='{groupId}'
+  \[IncludedUserRoles \<String\>\]: Usage: includedUserRoles='{includedUserRoles}'
+  \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
+  \[ManifestId \<String\>\]: The unique identifier of manifest
+  \[OperationId \<String\>\]: The unique identifier of operation
+  \[Period \<String\>\]: Usage: period='{period}'
+  \[PrintUsageByPrinterId \<String\>\]: The unique identifier of printUsageByPrinter
+  \[PrintUsageByUserId \<String\>\]: The unique identifier of printUsageByUser
+  \[PrinterId \<String\>\]: Usage: printerId='{printerId}'
+  \[ProvisioningObjectSummaryId \<String\>\]: The unique identifier of provisioningObjectSummary
+  \[SignInId \<String\>\]: The unique identifier of signIn
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[SkipToken \<String\>\]: Usage: skipToken='{skipToken}'
+  \[StartDateTime \<DateTime?\>\]: Usage: startDateTime={startDateTime}
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[UserRegistrationDetailsId \<String\>\]: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessactivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessactivityusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

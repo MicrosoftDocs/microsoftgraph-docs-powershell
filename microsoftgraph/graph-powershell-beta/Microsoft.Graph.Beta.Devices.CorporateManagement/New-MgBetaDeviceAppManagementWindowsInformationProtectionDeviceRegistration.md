@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectiondeviceregistration
@@ -17,7 +17,7 @@ Create new navigation property to windowsInformationProtectionDeviceRegistration
 New-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DeviceMacAddress <String>] [-DeviceName <String>]
  [-DeviceRegistrationId <String>] [-DeviceType <String>] [-Id <String>] [-LastCheckInDateTime <DateTime>]
- [-UserId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,22 +25,24 @@ New-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration [-Re
 ```
 New-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration
  -BodyParameter <IMicrosoftGraphWindowsInformationProtectionDeviceRegistration>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to windowsInformationProtectionDeviceRegistrations for deviceAppManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -72,21 +74,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -196,6 +183,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -218,6 +220,21 @@ UserId associated with this device registration record.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -258,41 +275,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsInformationProtectionDeviceRegistration>`: Represents device registration records for Bring-Your-Own-Device(BYOD) Windows devices.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphWindowsInformationProtectionDeviceRegistration\>: Represents device registration records for Bring-Your-Own-Device(BYOD) Windows devices.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeviceMacAddress <String>]`: Device Mac address.
-  - `[DeviceName <String>]`: Device name.
-  - `[DeviceRegistrationId <String>]`: Device identifier for this device registration record.
-  - `[DeviceType <String>]`: Device type, for example, Windows laptop VS Windows phone.
-  - `[LastCheckInDateTime <DateTime?>]`: Last checkin time of the device.
-  - `[UserId <String>]`: UserId associated with this device registration record.
+  \[DeviceMacAddress \<String\>\]: Device Mac address.
+  \[DeviceName \<String\>\]: Device name.
+  \[DeviceRegistrationId \<String\>\]: Device identifier for this device registration record.
+  \[DeviceType \<String\>\]: Device type, for example, Windows laptop VS Windows phone.
+  \[LastCheckInDateTime \<DateTime?\>\]: Last checkin time of the device.
+  \[UserId \<String\>\]: UserId associated with this device registration record.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectiondeviceregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectiondeviceregistration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

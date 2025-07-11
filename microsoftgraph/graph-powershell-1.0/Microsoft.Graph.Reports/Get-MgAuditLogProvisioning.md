@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogprovisioning
 schema: 2.0.0
-ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgAuditLogProvisioning
 
 ## SYNOPSIS
 Get provisioning from auditLogs
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAuditLogProvisioning](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogProvisioning?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -21,20 +17,20 @@ Get provisioning from auditLogs
 Get-MgAuditLogProvisioning [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgAuditLogProvisioning -ProvisioningObjectSummaryId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgAuditLogProvisioning -InputObject <IReportsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -42,28 +38,20 @@ Get-MgAuditLogProvisioning -InputObject <IReportsIdentity> [-ExpandProperty <Str
 Get provisioning from auditLogs
 
 ## EXAMPLES
-### Example 1: Successful request
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Reports
+```
 
 Get-MgAuditLogProvisioning
 
+### EXAMPLE 2
 ```
-This example will successful request
-
-### Example 2: Error reponse
-
-```powershell
-
 Import-Module Microsoft.Graph.Reports
+```
 
 Get-MgAuditLogProvisioning
-
-```
-This example will error reponse
-
 
 ## PARAMETERS
 
@@ -174,6 +162,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -234,21 +237,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -279,6 +267,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -295,55 +298,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[Date <DateTime?>]`: Usage: date={date}
-  - `[DeviceManagementExportJobId <String>]`: The unique identifier of deviceManagementExportJob
-  - `[DirectoryAuditId <String>]`: The unique identifier of directoryAudit
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
-  - `[Filter <String>]`: Usage: filter='{filter}'
-  - `[GroupId <String>]`: Usage: groupId='{groupId}'
-  - `[IncludedUserRoles <String>]`: Usage: includedUserRoles='{includedUserRoles}'
-  - `[IncludedUserTypes <String>]`: Usage: includedUserTypes='{includedUserTypes}'
-  - `[ManifestId <String>]`: The unique identifier of manifest
-  - `[OperationId <String>]`: The unique identifier of operation
-  - `[Period <String>]`: Usage: period='{period}'
-  - `[PrintUsageByPrinterId <String>]`: The unique identifier of printUsageByPrinter
-  - `[PrintUsageByUserId <String>]`: The unique identifier of printUsageByUser
-  - `[PrinterId <String>]`: Usage: printerId='{printerId}'
-  - `[ProvisioningObjectSummaryId <String>]`: The unique identifier of provisioningObjectSummary
-  - `[SignInId <String>]`: The unique identifier of signIn
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
+INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
+  \[Date \<DateTime?\>\]: Usage: date={date}
+  \[DeviceManagementExportJobId \<String\>\]: The unique identifier of deviceManagementExportJob
+  \[DirectoryAuditId \<String\>\]: The unique identifier of directoryAudit
+  \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[Filter \<String\>\]: Usage: filter='{filter}'
+  \[GroupId \<String\>\]: Usage: groupId='{groupId}'
+  \[IncludedUserRoles \<String\>\]: Usage: includedUserRoles='{includedUserRoles}'
+  \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
+  \[ManifestId \<String\>\]: The unique identifier of manifest
+  \[OperationId \<String\>\]: The unique identifier of operation
+  \[Period \<String\>\]: Usage: period='{period}'
+  \[PrintUsageByPrinterId \<String\>\]: The unique identifier of printUsageByPrinter
+  \[PrintUsageByUserId \<String\>\]: The unique identifier of printUsageByUser
+  \[PrinterId \<String\>\]: Usage: printerId='{printerId}'
+  \[ProvisioningObjectSummaryId \<String\>\]: The unique identifier of provisioningObjectSummary
+  \[SignInId \<String\>\]: The unique identifier of signIn
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[SkipToken \<String\>\]: Usage: skipToken='{skipToken}'
+  \[StartDateTime \<DateTime?\>\]: Usage: startDateTime={startDateTime}
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[UserRegistrationDetailsId \<String\>\]: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogprovisioning)
 
 [https://learn.microsoft.com/graph/api/provisioningobjectsummary-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/provisioningobjectsummary-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

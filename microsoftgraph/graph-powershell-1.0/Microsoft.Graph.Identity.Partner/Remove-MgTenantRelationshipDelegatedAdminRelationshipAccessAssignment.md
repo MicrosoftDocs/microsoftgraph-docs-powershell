@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadminrelationshipaccessassignment
 schema: 2.0.0
-ms.subservice: partner-customer-administration
 ---
 
 # Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
@@ -11,16 +10,13 @@ ms.subservice: partner-customer-administration
 ## SYNOPSIS
 Delete a delegatedAdminAccessAssignment object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
 Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
  -DelegatedAdminAccessAssignmentId <String> -DelegatedAdminRelationshipId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,50 +24,22 @@ Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 ```
 Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObject <IIdentityPartnerIdentity>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete a delegatedAdminAccessAssignment object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DelegatedAdminRelationship.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DelegatedAdminRelationship.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Partner
+```
 
 Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -DelegatedAdminAccessAssignmentId $delegatedAdminAccessAssignmentId -IfMatch W/'"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="'
 
-
-```
-This example shows how to use the Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment Cmdlet.
-
-
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -DelegatedAdminAccessAssignmentId
 The unique identifier of delegatedAdminAccessAssignment
@@ -164,6 +132,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -171,6 +154,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -211,39 +209,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
-  - `[DelegatedAdminAccessAssignmentId <String>]`: The unique identifier of delegatedAdminAccessAssignment
-  - `[DelegatedAdminCustomerId <String>]`: The unique identifier of delegatedAdminCustomer
-  - `[DelegatedAdminRelationshipId <String>]`: The unique identifier of delegatedAdminRelationship
-  - `[DelegatedAdminRelationshipOperationId <String>]`: The unique identifier of delegatedAdminRelationshipOperation
-  - `[DelegatedAdminRelationshipRequestId <String>]`: The unique identifier of delegatedAdminRelationshipRequest
-  - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
+INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
+  \[DelegatedAdminAccessAssignmentId \<String\>\]: The unique identifier of delegatedAdminAccessAssignment
+  \[DelegatedAdminCustomerId \<String\>\]: The unique identifier of delegatedAdminCustomer
+  \[DelegatedAdminRelationshipId \<String\>\]: The unique identifier of delegatedAdminRelationship
+  \[DelegatedAdminRelationshipOperationId \<String\>\]: The unique identifier of delegatedAdminRelationshipOperation
+  \[DelegatedAdminRelationshipRequestId \<String\>\]: The unique identifier of delegatedAdminRelationshipRequest
+  \[DelegatedAdminServiceManagementDetailId \<String\>\]: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadminrelationshipaccessassignment)
 
 [https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

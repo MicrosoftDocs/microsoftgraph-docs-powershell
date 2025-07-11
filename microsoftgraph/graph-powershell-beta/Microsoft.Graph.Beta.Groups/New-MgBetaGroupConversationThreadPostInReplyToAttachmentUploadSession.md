@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthreadpostinreplytoattachmentuploadsession
 schema: 2.0.0
-ms.subservice: outlook
 ---
 
 # New-MgBetaGroupConversationThreadPostInReplyToAttachmentUploadSession
@@ -18,9 +17,6 @@ Request headers for each PUT operation let you specify the exact range of bytes 
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupConversationThreadPostInReplyToAttachmentUploadSession](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThreadPostInReplyToAttachmentUploadSession?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -28,7 +24,7 @@ The following are the steps to attach a file to an Outlook item using an upload 
 New-MgBetaGroupConversationThreadPostInReplyToAttachmentUploadSession -ConversationId <String>
  -ConversationThreadId <String> -GroupId <String> -PostId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -36,7 +32,7 @@ New-MgBetaGroupConversationThreadPostInReplyToAttachmentUploadSession -Conversat
 New-MgBetaGroupConversationThreadPostInReplyToAttachmentUploadSession -ConversationId <String>
  -ConversationThreadId <String> -GroupId <String> -PostId <String>
  -BodyParameter <IPaths64Ja8VGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdInreplytoAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,14 +41,14 @@ New-MgBetaGroupConversationThreadPostInReplyToAttachmentUploadSession -Conversat
 New-MgBetaGroupConversationThreadPostInReplyToAttachmentUploadSession -InputObject <IGroupsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupConversationThreadPostInReplyToAttachmentUploadSession -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths64Ja8VGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdInreplytoAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -67,6 +63,16 @@ This allows transfer to be resumed, in case the network connection is dropped du
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -102,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -114,21 +120,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -223,6 +214,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -230,6 +236,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -271,88 +292,65 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTACHMENTITEM `<IMicrosoftGraphAttachmentItem>`: attachmentItem
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttachmentType <String>]`: attachmentType
-  - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages.
+ATTACHMENTITEM \<IMicrosoftGraphAttachmentItem\>: attachmentItem
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AttachmentType \<String\>\]: attachmentType
+  \[ContentId \<String\>\]: The CID or Content-Id of the attachment for referencing in case of in-line attachments using \<img src='cid:contentId'\> tag in HTML messages.
 Optional.
-  - `[ContentType <String>]`: The nature of the data in the attachment.
+  \[ContentType \<String\>\]: The nature of the data in the attachment.
 Optional.
-  - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
+  \[IsInline \<Boolean?\>\]: true if the attachment is an inline attachment; otherwise, false.
 Optional.
-  - `[Name <String>]`: The display name of the attachment.
+  \[Name \<String\>\]: The display name of the attachment.
 This can be a descriptive string and doesn't have to be the actual file name.
 Required.
-  - `[Size <Int64?>]`: The length of the attachment in bytes.
+  \[Size \<Int64?\>\]: The length of the attachment in bytes.
 Required.
 
-BODYPARAMETER `<IPaths64Ja8VGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdInreplytoAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttachmentItem <IMicrosoftGraphAttachmentItem>]`: attachmentItem
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AttachmentType <String>]`: attachmentType
-    - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages.
+BODYPARAMETER \<IPaths64Ja8VGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdInreplytoAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AttachmentItem \<IMicrosoftGraphAttachmentItem\>\]: attachmentItem
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[AttachmentType \<String\>\]: attachmentType
+    \[ContentId \<String\>\]: The CID or Content-Id of the attachment for referencing in case of in-line attachments using \<img src='cid:contentId'\> tag in HTML messages.
 Optional.
-    - `[ContentType <String>]`: The nature of the data in the attachment.
+    \[ContentType \<String\>\]: The nature of the data in the attachment.
 Optional.
-    - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
+    \[IsInline \<Boolean?\>\]: true if the attachment is an inline attachment; otherwise, false.
 Optional.
-    - `[Name <String>]`: The display name of the attachment.
+    \[Name \<String\>\]: The display name of the attachment.
 This can be a descriptive string and doesn't have to be the actual file name.
 Required.
-    - `[Size <Int64?>]`: The length of the attachment in bytes.
+    \[Size \<Int64?\>\]: The length of the attachment in bytes.
 Required.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ConversationId <String>]`: The unique identifier of conversation
-  - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListId <String>]`: Usage: listId='{listId}'
-  - `[MentionId <String>]`: The unique identifier of mention
-  - `[ModelName <String>]`: Usage: modelName='{modelName}'
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[PostId <String>]`: The unique identifier of post
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[UniqueName <String>]`: Alternate key of group
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ConversationId \<String\>\]: The unique identifier of conversation
+  \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DirectorySettingId \<String\>\]: The unique identifier of directorySetting
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[EndpointId \<String\>\]: The unique identifier of endpoint
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListId \<String\>\]: Usage: listId='{listId}'
+  \[MentionId \<String\>\]: The unique identifier of mention
+  \[ModelName \<String\>\]: Usage: modelName='{modelName}'
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[PostId \<String\>\]: The unique identifier of post
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[UniqueName \<String\>\]: Alternate key of group
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthreadpostinreplytoattachmentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthreadpostinreplytoattachmentuploadsession)
 
 [https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-beta](https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

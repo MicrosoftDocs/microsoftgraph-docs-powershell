@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebookfromweburl
 schema: 2.0.0
-ms.subservice: onenote
 ---
 
 # Get-MgGroupSiteOnenoteNotebookFromWebUrl
@@ -12,23 +11,20 @@ ms.subservice: onenote
 Retrieve the properties and relationships of a notebook object by using its URL path.
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebookFromWebUrl?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
 Get-MgGroupSiteOnenoteNotebookFromWebUrl -GroupId <String> -SiteId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgGroupSiteOnenoteNotebookFromWebUrl -GroupId <String> -SiteId <String>
  -BodyParameter <IPathsVsb7C2GroupsGroupIdSitesSiteIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,14 +32,14 @@ Get-MgGroupSiteOnenoteNotebookFromWebUrl -GroupId <String> -SiteId <String>
 ```
 Get-MgGroupSiteOnenoteNotebookFromWebUrl -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgGroupSiteOnenoteNotebookFromWebUrl -InputObject <ISitesIdentity>
  -BodyParameter <IPathsVsb7C2GroupsGroupIdSitesSiteIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -52,6 +48,16 @@ Retrieve the properties and relationships of a notebook object by using its URL 
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -71,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -83,21 +89,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -147,6 +138,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -178,12 +184,27 @@ Accept wildcard characters: False
 ```
 
 ### -WebUrl
-
+.
 
 ```yaml
 Type: String
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -225,81 +246,58 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsVsb7C2GroupsGroupIdSitesSiteIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[WebUrl <String>]`:
+BODYPARAMETER \<IPathsVsb7C2GroupsGroupIdSitesSiteIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[WebUrl \<String\>\]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
-  - `[BaseItemId <String>]`: The unique identifier of baseItem
-  - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
-  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
-  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[GroupId1 <String>]`: The unique identifier of group
-  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
-  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
-  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
-  - `[ListId <String>]`: The unique identifier of list
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[RelationId <String>]`: The unique identifier of relation
-  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
-  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
-  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
-  - `[SetId <String>]`: The unique identifier of set
-  - `[SetId1 <String>]`: The unique identifier of set
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[SiteId1 <String>]`: The unique identifier of site
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: The unique identifier of store
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[TermId <String>]`: The unique identifier of term
-  - `[TermId1 <String>]`: The unique identifier of term
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WebPartId <String>]`: The unique identifier of webPart
+INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
+  \[BaseItemId \<String\>\]: The unique identifier of baseItem
+  \[BaseSitePageId \<String\>\]: The unique identifier of baseSitePage
+  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
+  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[GroupId1 \<String\>\]: The unique identifier of group
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ItemActivityId \<String\>\]: The unique identifier of itemActivity
+  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
+  \[ListId \<String\>\]: The unique identifier of list
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[RelationId \<String\>\]: The unique identifier of relation
+  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
+  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
+  \[SectionGroupId1 \<String\>\]: The unique identifier of sectionGroup
+  \[SetId \<String\>\]: The unique identifier of set
+  \[SetId1 \<String\>\]: The unique identifier of set
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[SiteId1 \<String\>\]: The unique identifier of site
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[StoreId \<String\>\]: The unique identifier of store
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[TermId \<String\>\]: The unique identifier of term
+  \[TermId1 \<String\>\]: The unique identifier of term
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebookfromweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebookfromweburl)
 
 [https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeople
 schema: 2.0.0
-ms.subservice: people
 ---
 
 # Get-MgAdminPeople
@@ -11,39 +10,24 @@ ms.subservice: people
 ## SYNOPSIS
 Retrieve the properties and relationships of a peopleAdminSettings object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAdminPeople](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeople?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
 Get-MgAdminPeople [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a peopleAdminSettings object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgAdminPeople
-
-```
-This example shows how to use the Get-MgAdminPeople Cmdlet.
-
 
 ## PARAMETERS
 
@@ -74,6 +58,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -123,26 +122,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeople](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeople)
 
 [https://learn.microsoft.com/graph/api/peopleadminsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/peopleadminsettings-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

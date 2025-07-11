@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintserviceendpoint
@@ -10,22 +10,19 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to endpoints for print
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintServiceEndpoint?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgPrintServiceEndpoint -PrintServiceId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Uri <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgPrintServiceEndpoint -PrintServiceId <String> -BodyParameter <IMicrosoftGraphPrintServiceEndpoint>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,20 +30,30 @@ New-MgPrintServiceEndpoint -PrintServiceId <String> -BodyParameter <IMicrosoftGr
 ```
 New-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Uri <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IMicrosoftGraphPrintServiceEndpoint> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to endpoints for print
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -78,21 +85,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -173,6 +165,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -195,6 +202,21 @@ The URI that can be used to access the service.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -236,52 +258,29 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintServiceEndpoint>`: printServiceEndpoint
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPrintServiceEndpoint\>: printServiceEndpoint
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: A human-readable display name for the endpoint.
-  - `[Uri <String>]`: The URI that can be used to access the service.
+  \[DisplayName \<String\>\]: A human-readable display name for the endpoint.
+  \[Uri \<String\>\]: The URI that can be used to access the service.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
-  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
-  - `[PrintJobId <String>]`: The unique identifier of printJob
-  - `[PrintOperationId <String>]`: The unique identifier of printOperation
-  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
-  - `[PrintServiceId <String>]`: The unique identifier of printService
-  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
-  - `[PrintTaskId <String>]`: The unique identifier of printTask
-  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
-  - `[PrinterId <String>]`: The unique identifier of printer
-  - `[PrinterShareId <String>]`: The unique identifier of printerShare
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PrintConnectorId \<String\>\]: The unique identifier of printConnector
+  \[PrintDocumentId \<String\>\]: The unique identifier of printDocument
+  \[PrintJobId \<String\>\]: The unique identifier of printJob
+  \[PrintOperationId \<String\>\]: The unique identifier of printOperation
+  \[PrintServiceEndpointId \<String\>\]: The unique identifier of printServiceEndpoint
+  \[PrintServiceId \<String\>\]: The unique identifier of printService
+  \[PrintTaskDefinitionId \<String\>\]: The unique identifier of printTaskDefinition
+  \[PrintTaskId \<String\>\]: The unique identifier of printTask
+  \[PrintTaskTriggerId \<String\>\]: The unique identifier of printTaskTrigger
+  \[PrinterId \<String\>\]: The unique identifier of printer
+  \[PrinterShareId \<String\>\]: The unique identifier of printerShare
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintserviceendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintserviceendpoint)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

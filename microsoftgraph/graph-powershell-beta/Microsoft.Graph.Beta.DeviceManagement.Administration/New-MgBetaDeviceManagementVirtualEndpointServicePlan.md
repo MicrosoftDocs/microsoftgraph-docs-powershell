@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointserviceplan
@@ -17,14 +17,14 @@ Create new navigation property to servicePlans for deviceManagement
 New-MgBetaDeviceManagementVirtualEndpointServicePlan [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-ProvisioningType <String>]
  [-RamInGb <Int32>] [-StorageInGb <Int32>] [-SupportedSolution <String>] [-Type <String>]
- [-UserProfileInGb <Int32>] [-VCpuCount <Int32>] [-Headers <IDictionary>]
+ [-UserProfileInGb <Int32>] [-VCpuCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementVirtualEndpointServicePlan -BodyParameter <IMicrosoftGraphCloudPcServicePlan>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,6 +32,16 @@ New-MgBetaDeviceManagementVirtualEndpointServicePlan -BodyParameter <IMicrosoftG
 Create new navigation property to servicePlans for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -63,21 +73,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -120,6 +115,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -252,6 +262,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -284,48 +309,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcServicePlan>`: cloudPcServicePlan
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphCloudPcServicePlan\>: cloudPcServicePlan
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The name for the service plan.
+  \[DisplayName \<String\>\]: The name for the service plan.
 Read-only.
-  - `[ProvisioningType <String>]`: cloudPcProvisioningType
-  - `[RamInGb <Int32?>]`: The size of the RAM in GB.
+  \[ProvisioningType \<String\>\]: cloudPcProvisioningType
+  \[RamInGb \<Int32?\>\]: The size of the RAM in GB.
 Read-only.
-  - `[StorageInGb <Int32?>]`: The size of the OS Disk in GB.
+  \[StorageInGb \<Int32?\>\]: The size of the OS Disk in GB.
 Read-only.
-  - `[SupportedSolution <String>]`: cloudPcManagementService
-  - `[Type <String>]`: cloudPcServicePlanType
-  - `[UserProfileInGb <Int32?>]`: The size of the user profile disk in GB.
+  \[SupportedSolution \<String\>\]: cloudPcManagementService
+  \[Type \<String\>\]: cloudPcServicePlanType
+  \[UserProfileInGb \<Int32?\>\]: The size of the user profile disk in GB.
 Read-only.
-  - `[VCpuCount <Int32?>]`: The number of vCPUs.
+  \[VCpuCount \<Int32?\>\]: The number of vCPUs.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointserviceplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointserviceplan)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

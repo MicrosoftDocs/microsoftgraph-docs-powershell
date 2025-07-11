@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunfavoriteserviceannouncementmessage
 schema: 2.0.0
-ms.subservice: service-communications
 ---
 
 # Invoke-MgBetaUnfavoriteServiceAnnouncementMessage
@@ -11,23 +10,20 @@ ms.subservice: service-communications
 ## SYNOPSIS
 Remove the favorite status of serviceUpdateMessages for the signed in user.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUnfavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgUnfavoriteServiceAnnouncementMessage?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UnfavoriteExpanded (Default)
 ```
 Invoke-MgBetaUnfavoriteServiceAnnouncementMessage [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Unfavorite
 ```
 Invoke-MgBetaUnfavoriteServiceAnnouncementMessage
  -Body <IPaths1U36FhAdminServiceannouncementMessagesMicrosoftGraphUnfavoritePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,11 +31,11 @@ Invoke-MgBetaUnfavoriteServiceAnnouncementMessage
 Remove the favorite status of serviceUpdateMessages for the signed in user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+```
 
 $params = @{
 	messageIds = @(
@@ -49,10 +45,6 @@ $params = @{
 }
 
 Invoke-MgBetaUnfavoriteServiceAnnouncementMessage -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaUnfavoriteServiceAnnouncementMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -72,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Body
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -84,21 +76,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -118,12 +95,27 @@ Accept wildcard characters: False
 ```
 
 ### -MessageIds
-
+.
 
 ```yaml
 Type: String[]
 Parameter Sets: UnfavoriteExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -139,6 +131,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -179,35 +186,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1U36FhAdminServiceannouncementMessagesMicrosoftGraphUnfavoritePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageIds <String- `[]`>]`:
+BODY \<IPaths1U36FhAdminServiceannouncementMessagesMicrosoftGraphUnfavoritePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[MessageIds \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunfavoriteserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunfavoriteserviceannouncementmessage)
 
 [https://learn.microsoft.com/graph/api/serviceupdatemessage-unfavorite?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceupdatemessage-unfavorite?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataoutboundprovisioningflowset
@@ -17,20 +17,30 @@ Create new navigation property to outboundProvisioningFlowSets for external
 New-MgBetaExternalIndustryDataOutboundProvisioningFlowSet [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Filter <Hashtable>] [-Id <String>]
  [-ProvisioningFlows <IMicrosoftGraphIndustryDataProvisioningFlow[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaExternalIndustryDataOutboundProvisioningFlowSet
  -BodyParameter <IMicrosoftGraphIndustryDataOutboundProvisioningFlowSet> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to outboundProvisioningFlowSets for external
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -62,21 +72,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -141,6 +136,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProvisioningFlows
 A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
 To construct, see NOTES section for PROVISIONINGFLOWS properties and create a hash table.
@@ -164,6 +174,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -204,47 +229,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataOutboundProvisioningFlowSet>`: outboundProvisioningFlowSet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIndustryDataOutboundProvisioningFlowSet\>: outboundProvisioningFlowSet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The display name of the flowSet provided by the caller.
-  - `[Filter <IMicrosoftGraphIndustryDataFilter>]`: filter
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ProvisioningFlows <IMicrosoftGraphIndustryDataProvisioningFlow- `[]`>]`: A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[DisplayName \<String\>\]: The display name of the flowSet provided by the caller.
+  \[Filter \<IMicrosoftGraphIndustryDataFilter\>\]: filter
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ProvisioningFlows \<IMicrosoftGraphIndustryDataProvisioningFlow\[\]\>\]: A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ReadinessStatus <String>]`: readinessStatus
+    \[ReadinessStatus \<String\>\]: readinessStatus
 
-PROVISIONINGFLOWS `<IMicrosoftGraphIndustryDataProvisioningFlow- `[]`>`: A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
-  - `[Id <String>]`: The unique identifier for an entity.
+PROVISIONINGFLOWS \<IMicrosoftGraphIndustryDataProvisioningFlow\[\]\>: A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ReadinessStatus <String>]`: readinessStatus
+  \[ReadinessStatus \<String\>\]: readinessStatus
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataoutboundprovisioningflowset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataoutboundprovisioningflowset)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

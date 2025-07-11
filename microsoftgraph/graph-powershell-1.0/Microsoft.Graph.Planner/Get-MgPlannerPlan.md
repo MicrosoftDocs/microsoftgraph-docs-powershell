@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplan
 schema: 2.0.0
-ms.subservice: planner
-ms.subservice: planner
 ---
 
 # Get-MgPlannerPlan
@@ -12,55 +10,40 @@ ms.subservice: planner
 ## SYNOPSIS
 Retrieve the properties and relationships of a plannerplan object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlan?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgPlannerPlan [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgPlannerPlan -PlannerPlanId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgPlannerPlan -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a plannerplan object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.ReadWrite.All, Group.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 Get-MgPlannerPlan
-
-```
-This example shows how to use the Get-MgPlannerPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -186,6 +169,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -231,21 +229,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -276,6 +259,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -292,12 +290,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
+  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
+  \[PlannerTaskId \<String\>\]: The unique identifier of plannerTask
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
@@ -306,26 +304,4 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/plannerplan-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplan-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/planner-list-plans?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planner-list-plans?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

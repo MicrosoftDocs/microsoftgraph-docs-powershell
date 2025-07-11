@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportpartnerbillingmanifest
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to manifests for reports
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Reports/New-MgReportPartnerBillingManifest?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,13 +18,13 @@ New-MgBetaReportPartnerBillingManifest [-ResponseHeadersVariable <String>] [-Add
  [-BlobCount <Int32>] [-Blobs <IMicrosoftGraphPartnersBillingBlob[]>] [-CreatedDateTime <DateTime>]
  [-DataFormat <String>] [-ETag <String>] [-Id <String>] [-PartitionType <String>] [-PartnerTenantId <String>]
  [-RootDirectory <String>] [-SasToken <String>] [-SchemaVersion <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaReportPartnerBillingManifest -BodyParameter <IMicrosoftGraphPartnersBillingManifest>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,6 +32,16 @@ New-MgBetaReportPartnerBillingManifest -BodyParameter <IMicrosoftGraphPartnersBi
 Create new navigation property to manifests for reports
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -97,21 +104,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -229,6 +221,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -289,6 +296,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -321,61 +343,38 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BLOBS `<IMicrosoftGraphPartnersBillingBlob- `[]`>`: A collection of blob objects that contain details of all the files for the partner tenant ID.
-  - `[Name <String>]`: The blob name.
-  - `[PartitionValue <String>]`: The partition that contains the file.
+BLOBS \<IMicrosoftGraphPartnersBillingBlob\[\]\>: A collection of blob objects that contain details of all the files for the partner tenant ID.
+  \[Name \<String\>\]: The blob name.
+  \[PartitionValue \<String\>\]: The partition that contains the file.
 A large partition is split into multiple files, each with the same partitionValue.
 
-BODYPARAMETER `<IMicrosoftGraphPartnersBillingManifest>`: manifest
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPartnersBillingManifest\>: manifest
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[BlobCount <Int32?>]`: The total file count for this partner tenant ID.
-  - `[Blobs <IMicrosoftGraphPartnersBillingBlob- `[]`>]`: A collection of blob objects that contain details of all the files for the partner tenant ID.
-    - `[Name <String>]`: The blob name.
-    - `[PartitionValue <String>]`: The partition that contains the file.
+  \[BlobCount \<Int32?\>\]: The total file count for this partner tenant ID.
+  \[Blobs \<IMicrosoftGraphPartnersBillingBlob\[\]\>\]: A collection of blob objects that contain details of all the files for the partner tenant ID.
+    \[Name \<String\>\]: The blob name.
+    \[PartitionValue \<String\>\]: The partition that contains the file.
 A large partition is split into multiple files, each with the same partitionValue.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when a manifest resource was created.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when a manifest resource was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[DataFormat <String>]`: The billing data file format.
+  \[DataFormat \<String\>\]: The billing data file format.
 The possible value is: compressedJSONLines.
 Each blob is a compressed file and data in the file is in JSON lines format.
 Decompress the file to access the data.
-  - `[ETag <String>]`: Version of data represented by the manifest.
+  \[ETag \<String\>\]: Version of data represented by the manifest.
 Any change in eTag indicates a new data version.
-  - `[PartitionType <String>]`: Indicates the division of data.
+  \[PartitionType \<String\>\]: Indicates the division of data.
 If a given partition has more than the supported number, the data is split into multiple files, each file representing a specific partitionValue.
 By default, the data in the file is partitioned by the number of line items.
-  - `[PartnerTenantId <String>]`: The Microsoft Entra tenant ID of the partner.
-  - `[RootDirectory <String>]`: The root directory that contains all the files.
-  - `[SasToken <String>]`: The SAS token for accessing the directory or an individual file in the directory.
-  - `[SchemaVersion <String>]`: The version of the manifest schema.
+  \[PartnerTenantId \<String\>\]: The Microsoft Entra tenant ID of the partner.
+  \[RootDirectory \<String\>\]: The root directory that contains all the files.
+  \[SasToken \<String\>\]: The SAS token for accessing the directory or an individual file in the directory.
+  \[SchemaVersion \<String\>\]: The version of the manifest schema.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportpartnerbillingmanifest)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

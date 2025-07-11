@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemactivitybyinterval
 schema: 2.0.0
-ms.subservice: sharepoint
 ---
 
 # Get-MgGroupDriveItemActivityByInterval
@@ -12,9 +11,6 @@ ms.subservice: sharepoint
 Get a collection of itemActivityStats resources for the activities that took place on this resource within the specified time interval.
 Analytics aggregates might not be available for all action types.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemActivityByInterval?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -22,7 +18,7 @@ Analytics aggregates might not be available for all action types.
 Get-MgGroupDriveItemActivityByInterval -DriveId <String> -DriveItemId <String> -GroupId <String> [-Count]
  [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
@@ -30,7 +26,7 @@ Get-MgGroupDriveItemActivityByInterval -DriveId <String> -DriveItemId <String> -
 Get-MgGroupDriveItemActivityByInterval -DriveId <String> -DriveItemId <String> -GroupId <String>
  -EndDateTime <String> -Interval <String> -StartDateTime <String> [-Count] [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -38,7 +34,7 @@ Get-MgGroupDriveItemActivityByInterval -DriveId <String> -DriveItemId <String> -
 ```
 Get-MgGroupDriveItemActivityByInterval -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -46,7 +42,7 @@ Get-MgGroupDriveItemActivityByInterval -InputObject <IFilesIdentity> [-Count] [-
 ```
 Get-MgGroupDriveItemActivityByInterval -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -55,6 +51,16 @@ Get a collection of itemActivityStats resources for the activities that took pla
 Analytics aggregates might not be available for all action types.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -209,6 +215,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -250,21 +271,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -314,6 +320,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -330,58 +351,35 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
-  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemId1 <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
-  - `[SharedDriveItemId <String>]`: The unique identifier of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[ThumbnailSetId <String>]`: The unique identifier of thumbnailSet
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
+  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
+  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemId1 \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
+  \[SharedDriveItemId \<String\>\]: The unique identifier of sharedDriveItem
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[ThumbnailSetId \<String\>\]: The unique identifier of thumbnailSet
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemactivitybyinterval)
 
 [https://learn.microsoft.com/graph/api/itemactivitystat-getactivitybyinterval?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itemactivitystat-getactivitybyinterval?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

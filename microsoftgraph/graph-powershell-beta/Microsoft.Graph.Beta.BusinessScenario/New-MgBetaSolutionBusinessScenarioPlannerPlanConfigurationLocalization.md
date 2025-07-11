@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.BusinessScenario-help.xml
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization
@@ -17,7 +17,7 @@ Create new navigation property to localizations for solutions
 New-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>] [-Id <String>]
- [-LanguageTag <String>] [-PlanTitle <String>] [-Headers <IDictionary>]
+ [-LanguageTag <String>] [-PlanTitle <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -25,7 +25,7 @@ New-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization -Business
 ```
 New-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId <String>
  -BodyParameter <IMicrosoftGraphPlannerPlanConfigurationLocalization> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -33,7 +33,7 @@ New-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization -Business
 New-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBusinessScenarioIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>] [-Id <String>]
- [-LanguageTag <String>] [-PlanTitle <String>] [-Headers <IDictionary>]
+ [-LanguageTag <String>] [-PlanTitle <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,21 +41,23 @@ New-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization -InputObj
 ```
 New-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBusinessScenarioIdentity>
  -BodyParameter <IMicrosoftGraphPlannerPlanConfigurationLocalization> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to localizations for solutions
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BusinessScenarioConfig.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -115,21 +117,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -213,6 +200,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -220,6 +222,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -261,50 +278,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlanConfigurationLocalization>`: plannerPlanConfigurationLocalization
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPlannerPlanConfigurationLocalization\>: plannerPlanConfigurationLocalization
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization- `[]`>]`: Localized names for configured buckets in the plan configuration.
-    - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
-    - `[Name <String>]`: Name of the bucket.
-  - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
-  - `[PlanTitle <String>]`: Localized title of the plan.
+  \[Buckets \<IMicrosoftGraphPlannerPlanConfigurationBucketLocalization\[\]\>\]: Localized names for configured buckets in the plan configuration.
+    \[ExternalBucketId \<String\>\]: Application-specified identifier of the bucket.
+    \[Name \<String\>\]: Name of the bucket.
+  \[LanguageTag \<String\>\]: The language code associated with the localized names in this object.
+  \[PlanTitle \<String\>\]: Localized title of the plan.
 
-BUCKETS `<IMicrosoftGraphPlannerPlanConfigurationBucketLocalization- `[]`>`: Localized names for configured buckets in the plan configuration.
-  - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
-  - `[Name <String>]`: Name of the bucket.
+BUCKETS \<IMicrosoftGraphPlannerPlanConfigurationBucketLocalization\[\]\>: Localized names for configured buckets in the plan configuration.
+  \[ExternalBucketId \<String\>\]: Application-specified identifier of the bucket.
+  \[Name \<String\>\]: Name of the bucket.
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
-  - `[UniqueName <String>]`: Alternate key of businessScenario
+INPUTOBJECT \<IBusinessScenarioIdentity\>: Identity Parameter
+  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
+  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

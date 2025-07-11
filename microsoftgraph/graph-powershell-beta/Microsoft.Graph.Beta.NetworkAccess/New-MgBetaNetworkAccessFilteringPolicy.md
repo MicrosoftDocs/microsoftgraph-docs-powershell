@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessfilteringpolicy
@@ -17,29 +17,31 @@ Create new navigation property to filteringPolicies for networkAccess
 New-MgBetaNetworkAccessFilteringPolicy [-ResponseHeadersVariable <String>] [-Action <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-Name <String>] [-PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>]
- [-Version <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaNetworkAccessFilteringPolicy -BodyParameter <IMicrosoftGraphNetworkaccessFilteringPolicy>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to filteringPolicies for networkAccess
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | NetworkAccess.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -86,21 +88,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -211,6 +198,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -233,6 +235,21 @@ Version.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -273,50 +290,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessFilteringPolicy>`: filteringPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Description.
-  - `[Name <String>]`: Policy name.
-  - `[PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule- `[]`>]`: Represents the definition of the policy ruleset that makes up the core definition of a policy.
-    - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphNetworkaccessFilteringPolicy\>: filteringPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Description \<String\>\]: Description.
+  \[Name \<String\>\]: Policy name.
+  \[PolicyRules \<IMicrosoftGraphNetworkaccessPolicyRule\[\]\>\]: Represents the definition of the policy ruleset that makes up the core definition of a policy.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Name <String>]`: Name.
-  - `[Version <String>]`: Version.
-  - `[Id <String>]`: The unique identifier for an entity.
+    \[Name \<String\>\]: Name.
+  \[Version \<String\>\]: Version.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Action <String>]`: filteringPolicyAction
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the filtering Policy was originally created.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when a particular profile was last modified or updated.
+  \[Action \<String\>\]: filteringPolicyAction
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when the filtering Policy was originally created.
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when a particular profile was last modified or updated.
 
-POLICYRULES `<IMicrosoftGraphNetworkaccessPolicyRule- `[]`>`: Represents the definition of the policy ruleset that makes up the core definition of a policy.
-  - `[Id <String>]`: The unique identifier for an entity.
+POLICYRULES \<IMicrosoftGraphNetworkaccessPolicyRule\[\]\>: Represents the definition of the policy ruleset that makes up the core definition of a policy.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Name <String>]`: Name.
+  \[Name \<String\>\]: Name.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessfilteringpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessfilteringpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessfilteringprofile
@@ -18,29 +18,31 @@ New-MgBetaNetworkAccessFilteringProfile [-ResponseHeadersVariable <String>] [-Ad
  [-ConditionalAccessPolicies <IMicrosoftGraphNetworkaccessConditionalAccessPolicy[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Name <String>] [-Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>] [-Priority <Int64>] [-State <String>]
- [-Version <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaNetworkAccessFilteringProfile -BodyParameter <IMicrosoftGraphNetworkaccessFilteringProfile>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to filteringProfiles for networkAccess
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | NetworkAccess.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -84,21 +86,6 @@ To construct, see NOTES section for CONDITIONALACCESSPOLICIES properties and cre
 Type: IMicrosoftGraphNetworkaccessConditionalAccessPolicy[]
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -229,6 +216,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -274,6 +276,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -306,92 +323,69 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessFilteringProfile>`: filteringProfile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Description.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the profile was last modified.
-  - `[Name <String>]`: The name of the profile.
-  - `[Policies <IMicrosoftGraphNetworkaccessPolicyLink- `[]`>]`: The traffic forwarding policies associated with this profile.
-    - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphNetworkaccessFilteringProfile\>: filteringProfile
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Description \<String\>\]: Description.
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the profile was last modified.
+  \[Name \<String\>\]: The name of the profile.
+  \[Policies \<IMicrosoftGraphNetworkaccessPolicyLink\[\]\>\]: The traffic forwarding policies associated with this profile.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Policy <IMicrosoftGraphNetworkaccessPolicy>]`: policy
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[Policy \<IMicrosoftGraphNetworkaccessPolicy\>\]: policy
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Description <String>]`: Description.
-      - `[Name <String>]`: Policy name.
-      - `[PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule- `[]`>]`: Represents the definition of the policy ruleset that makes up the core definition of a policy.
-        - `[Id <String>]`: The unique identifier for an entity.
+      \[Description \<String\>\]: Description.
+      \[Name \<String\>\]: Policy name.
+      \[PolicyRules \<IMicrosoftGraphNetworkaccessPolicyRule\[\]\>\]: Represents the definition of the policy ruleset that makes up the core definition of a policy.
+        \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-        - `[Name <String>]`: Name.
-      - `[Version <String>]`: Version.
-    - `[State <String>]`: status
-    - `[Version <String>]`: Version.
-  - `[State <String>]`: status
-  - `[Version <String>]`: Profile version.
-  - `[Id <String>]`: The unique identifier for an entity.
+        \[Name \<String\>\]: Name.
+      \[Version \<String\>\]: Version.
+    \[State \<String\>\]: status
+    \[Version \<String\>\]: Version.
+  \[State \<String\>\]: status
+  \[Version \<String\>\]: Profile version.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ConditionalAccessPolicies <IMicrosoftGraphNetworkaccessConditionalAccessPolicy- `[]`>]`: A set of associated policies defined to regulate access to resources or systems based on specific conditions.
+  \[ConditionalAccessPolicies \<IMicrosoftGraphNetworkaccessConditionalAccessPolicy\[\]\>\]: A set of associated policies defined to regulate access to resources or systems based on specific conditions.
 Automatically expanded.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[CreatedDateTime <DateTime?>]`: Indicates the date and time the conditional access policy was created.
-    - `[Description <String>]`: Provides a summary of the conditional access policy.
-    - `[DisplayName <String>]`: Represents the human-readable name or title assigned to the conditional access policy.
-    - `[ModifiedDateTime <DateTime?>]`: Indicates the date and time when the conditional access policy was last modified.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the filteringProfile was created.
-  - `[Priority <Int64?>]`: The priority used to order the profile for processing within a list.
+    \[CreatedDateTime \<DateTime?\>\]: Indicates the date and time the conditional access policy was created.
+    \[Description \<String\>\]: Provides a summary of the conditional access policy.
+    \[DisplayName \<String\>\]: Represents the human-readable name or title assigned to the conditional access policy.
+    \[ModifiedDateTime \<DateTime?\>\]: Indicates the date and time when the conditional access policy was last modified.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when the filteringProfile was created.
+  \[Priority \<Int64?\>\]: The priority used to order the profile for processing within a list.
 
-CONDITIONALACCESSPOLICIES `<IMicrosoftGraphNetworkaccessConditionalAccessPolicy- `[]`>`: A set of associated policies defined to regulate access to resources or systems based on specific conditions.
+CONDITIONALACCESSPOLICIES \<IMicrosoftGraphNetworkaccessConditionalAccessPolicy\[\]\>: A set of associated policies defined to regulate access to resources or systems based on specific conditions.
 Automatically expanded.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: Indicates the date and time the conditional access policy was created.
-  - `[Description <String>]`: Provides a summary of the conditional access policy.
-  - `[DisplayName <String>]`: Represents the human-readable name or title assigned to the conditional access policy.
-  - `[ModifiedDateTime <DateTime?>]`: Indicates the date and time when the conditional access policy was last modified.
+  \[CreatedDateTime \<DateTime?\>\]: Indicates the date and time the conditional access policy was created.
+  \[Description \<String\>\]: Provides a summary of the conditional access policy.
+  \[DisplayName \<String\>\]: Represents the human-readable name or title assigned to the conditional access policy.
+  \[ModifiedDateTime \<DateTime?\>\]: Indicates the date and time when the conditional access policy was last modified.
 
-POLICIES `<IMicrosoftGraphNetworkaccessPolicyLink- `[]`>`: The traffic forwarding policies associated with this profile.
-  - `[Id <String>]`: The unique identifier for an entity.
+POLICIES \<IMicrosoftGraphNetworkaccessPolicyLink\[\]\>: The traffic forwarding policies associated with this profile.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Policy <IMicrosoftGraphNetworkaccessPolicy>]`: policy
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Policy \<IMicrosoftGraphNetworkaccessPolicy\>\]: policy
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Description <String>]`: Description.
-    - `[Name <String>]`: Policy name.
-    - `[PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule- `[]`>]`: Represents the definition of the policy ruleset that makes up the core definition of a policy.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[Description \<String\>\]: Description.
+    \[Name \<String\>\]: Policy name.
+    \[PolicyRules \<IMicrosoftGraphNetworkaccessPolicyRule\[\]\>\]: Represents the definition of the policy ruleset that makes up the core definition of a policy.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Name <String>]`: Name.
-    - `[Version <String>]`: Version.
-  - `[State <String>]`: status
-  - `[Version <String>]`: Version.
+      \[Name \<String\>\]: Name.
+    \[Version \<String\>\]: Version.
+  \[State \<String\>\]: status
+  \[Version \<String\>\]: Version.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessfilteringprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessfilteringprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

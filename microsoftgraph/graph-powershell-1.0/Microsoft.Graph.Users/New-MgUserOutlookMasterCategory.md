@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory
@@ -10,22 +10,19 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to masterCategories for users
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgUserOutlookMasterCategory -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Color <String>] [-DisplayName <String>] [-Id <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserOutlookMasterCategory -UserId <String> -BodyParameter <IMicrosoftGraphOutlookCategory>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,32 +30,25 @@ New-MgUserOutlookMasterCategory -UserId <String> -BodyParameter <IMicrosoftGraph
 ```
 New-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Color <String>] [-DisplayName <String>] [-Id <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphOutlookCategory>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to masterCategories for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | MailboxSettings.ReadWrite,  |
-| Delegated (personal Microsoft account) | MailboxSettings.ReadWrite,  |
-| Application | MailboxSettings.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users
+```
 
 $params = @{
 	displayName = "Project expenses"
@@ -67,11 +57,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOutlookMasterCategory -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgUserOutlookMasterCategory Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -113,21 +98,6 @@ categoryColor
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -200,6 +170,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -224,6 +209,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -263,61 +263,39 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOutlookCategory>`: outlookCategory
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphOutlookCategory\>: outlookCategory
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Color <String>]`: categoryColor
-  - `[DisplayName <String>]`: A unique name that identifies a category in the user's mailbox.
+  \[Color \<String\>\]: categoryColor
+  \[DisplayName \<String\>\]: A unique name that identifies a category in the user's mailbox.
 After a category is created, the name cannot be changed.
 Read-only.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ServiceStorageQuotaBreakdownId <String>]`: The unique identifier of serviceStorageQuotaBreakdown
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
-  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserPrincipalName <String>]`: Alternate key of user
-  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
-  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ServiceStorageQuotaBreakdownId \<String\>\]: The unique identifier of serviceStorageQuotaBreakdown
+  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
+  \[TimeZoneStandard \<String\>\]: Usage: TimeZoneStandard='{TimeZoneStandard}'
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[TrendingId \<String\>\]: The unique identifier of trending
+  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserPrincipalName \<String\>\]: Alternate key of user
+  \[WindowsSettingId \<String\>\]: The unique identifier of windowsSetting
+  \[WindowsSettingInstanceId \<String\>\]: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

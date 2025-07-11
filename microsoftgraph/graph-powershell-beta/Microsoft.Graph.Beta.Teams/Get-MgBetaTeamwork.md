@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamwork
 schema: 2.0.0
-ms.subservice: teams
 ---
 
 # Get-MgBetaTeamwork
@@ -11,39 +10,24 @@ ms.subservice: teams
 ## SYNOPSIS
 Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamwork](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamwork?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
 Get-MgBetaTeamwork [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Teamwork.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Teamwork.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaTeamwork
-
-```
-This example shows how to use the Get-MgBetaTeamwork Cmdlet.
-
 
 ## PARAMETERS
 
@@ -74,6 +58,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -123,26 +122,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamwork)
 
 [https://learn.microsoft.com/graph/api/teamwork-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamwork-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationcalldtmftone
@@ -10,16 +10,13 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action sendDtmfTones
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaCommunicationCallDtmfTone](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Send-MgBetaCommunicationCallDtmfTone?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### SendExpanded (Default)
 ```
 Send-MgCommunicationCallDtmfTone -CallId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-DelayBetweenTonesMS <Int32>]
- [-Tones <String[]>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Tones <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -27,7 +24,7 @@ Send-MgCommunicationCallDtmfTone -CallId <String> [-ResponseHeadersVariable <Str
 ```
 Send-MgCommunicationCallDtmfTone -CallId <String>
  -BodyParameter <IPathsO55L3LCommunicationsCallsCallIdMicrosoftGraphSenddtmftonesPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,14 +33,14 @@ Send-MgCommunicationCallDtmfTone -CallId <String>
 Send-MgCommunicationCallDtmfTone -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ClientContext <String>]
  [-DelayBetweenTonesMS <Int32>] [-Tones <String[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
 Send-MgCommunicationCallDtmfTone -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsO55L3LCommunicationsCallsCallIdMicrosoftGraphSenddtmftonesPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -51,6 +48,16 @@ Send-MgCommunicationCallDtmfTone -InputObject <ICloudCommunicationsIdentity>
 Invoke action sendDtmfTones
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -70,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -101,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientContext
-
+.
 
 ```yaml
 Type: String
@@ -115,23 +122,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DelayBetweenTonesMS
-
+.
 
 ```yaml
 Type: Int32
@@ -176,6 +168,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -192,12 +199,27 @@ Accept wildcard characters: False
 ```
 
 ### -Tones
-
+.
 
 ```yaml
 Type: String[]
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -239,52 +261,29 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsO55L3LCommunicationsCallsCallIdMicrosoftGraphSenddtmftonesPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ClientContext <String>]`:
-  - `[DelayBetweenTonesMS <Int32?>]`:
-  - `[Tones <String- `[]`>]`:
+BODYPARAMETER \<IPathsO55L3LCommunicationsCallsCallIdMicrosoftGraphSenddtmftonesPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ClientContext \<String\>\]: 
+  \[DelayBetweenTonesMS \<Int32?\>\]: 
+  \[Tones \<String\[\]\>\]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
-  - `[CallId <String>]`: The unique identifier of call
-  - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallRecordingId <String>]`: The unique identifier of callRecording
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
-  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
-  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[ParticipantId <String>]`: The unique identifier of participant
-  - `[PresenceId <String>]`: The unique identifier of presence
-  - `[SessionId <String>]`: The unique identifier of session
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
+  \[CallId \<String\>\]: The unique identifier of call
+  \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
+  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
+  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
+  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[ParticipantId \<String\>\]: The unique identifier of participant
+  \[PresenceId \<String\>\]: The unique identifier of presence
+  \[SessionId \<String\>\]: The unique identifier of session
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationcalldtmftone](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationcalldtmftone)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

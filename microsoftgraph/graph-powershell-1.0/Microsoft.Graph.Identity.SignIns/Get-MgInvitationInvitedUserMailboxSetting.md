@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitationinvitedusermailboxsetting
@@ -12,14 +12,11 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 Returned only on $select.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitationInvitedUserMailboxSetting?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
 Get-MgInvitationInvitedUserMailboxSetting [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -29,6 +26,16 @@ You can get or update settings for sending automatic replies to incoming message
 Returned only on $select.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -59,6 +66,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -106,27 +128,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitationinvitedusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitationinvitedusermailboxsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

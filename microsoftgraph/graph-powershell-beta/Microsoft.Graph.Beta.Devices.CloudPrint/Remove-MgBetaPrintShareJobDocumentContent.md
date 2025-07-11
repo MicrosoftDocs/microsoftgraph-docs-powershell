@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintsharejobdocumentcontent
@@ -11,22 +11,19 @@ schema: 2.0.0
 The unique identifier for an entity.
 Read-only.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPrintShareJobDocumentContent](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintShareJobDocumentContent?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
 Remove-MgBetaPrintShareJobDocumentContent -PrintDocumentId <String> -PrintJobId <String>
  -PrinterShareId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaPrintShareJobDocumentContent -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,22 +33,17 @@ Read-only.
 
 ## EXAMPLES
 
-## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### EXAMPLE 1
 ```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+## PARAMETERS
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -159,6 +151,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -166,6 +173,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -206,45 +228,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
-  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
-  - `[PrintJobId <String>]`: The unique identifier of printJob
-  - `[PrintOperationId <String>]`: The unique identifier of printOperation
-  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
-  - `[PrintServiceId <String>]`: The unique identifier of printService
-  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
-  - `[PrintTaskId <String>]`: The unique identifier of printTask
-  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
-  - `[PrinterId <String>]`: The unique identifier of printer
-  - `[PrinterShareId <String>]`: The unique identifier of printerShare
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PrintConnectorId \<String\>\]: The unique identifier of printConnector
+  \[PrintDocumentId \<String\>\]: The unique identifier of printDocument
+  \[PrintJobId \<String\>\]: The unique identifier of printJob
+  \[PrintOperationId \<String\>\]: The unique identifier of printOperation
+  \[PrintServiceEndpointId \<String\>\]: The unique identifier of printServiceEndpoint
+  \[PrintServiceId \<String\>\]: The unique identifier of printService
+  \[PrintTaskDefinitionId \<String\>\]: The unique identifier of printTaskDefinition
+  \[PrintTaskId \<String\>\]: The unique identifier of printTask
+  \[PrintTaskTriggerId \<String\>\]: The unique identifier of printTaskTrigger
+  \[PrinterId \<String\>\]: The unique identifier of printer
+  \[PrinterShareId \<String\>\]: The unique identifier of printerShare
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintsharejobdocumentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintsharejobdocumentcontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

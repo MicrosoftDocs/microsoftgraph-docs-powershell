@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtask
@@ -18,29 +18,31 @@ New-MgBetaDeviceAppManagementTask [-ResponseHeadersVariable <String>] [-Addition
  [-AssignedTo <String>] [-Category <DeviceAppManagementTaskCategory>] [-CreatedDateTime <DateTime>]
  [-Creator <String>] [-CreatorNotes <String>] [-Description <String>] [-DisplayName <String>]
  [-DueDateTime <DateTime>] [-Id <String>] [-Priority <DeviceAppManagementTaskPriority>]
- [-Status <DeviceAppManagementTaskStatus>] [-Headers <IDictionary>]
+ [-Status <DeviceAppManagementTaskStatus>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceAppManagementTask -BodyParameter <IMicrosoftGraphDeviceAppManagementTask>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceAppManagementTasks for deviceAppManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -97,21 +99,6 @@ Device app management task category.
 Type: DeviceAppManagementTaskCategory
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -256,6 +243,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -278,6 +280,21 @@ Device app management task status.
 Type: DeviceAppManagementTaskStatus
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -318,45 +335,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceAppManagementTask>`: A device app management task.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceAppManagementTask\>: A device app management task.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AssignedTo <String>]`: The name or email of the admin this task is assigned to.
-  - `[Category <DeviceAppManagementTaskCategory?>]`: Device app management task category.
-  - `[CreatedDateTime <DateTime?>]`: The created date.
-  - `[Creator <String>]`: The email address of the creator.
-  - `[CreatorNotes <String>]`: Notes from the creator.
-  - `[Description <String>]`: The description.
-  - `[DisplayName <String>]`: The name.
-  - `[DueDateTime <DateTime?>]`: The due date.
-  - `[Priority <DeviceAppManagementTaskPriority?>]`: Device app management task priority.
-  - `[Status <DeviceAppManagementTaskStatus?>]`: Device app management task status.
+  \[AssignedTo \<String\>\]: The name or email of the admin this task is assigned to.
+  \[Category \<DeviceAppManagementTaskCategory?\>\]: Device app management task category.
+  \[CreatedDateTime \<DateTime?\>\]: The created date.
+  \[Creator \<String\>\]: The email address of the creator.
+  \[CreatorNotes \<String\>\]: Notes from the creator.
+  \[Description \<String\>\]: The description.
+  \[DisplayName \<String\>\]: The name.
+  \[DueDateTime \<DateTime?\>\]: The due date.
+  \[Priority \<DeviceAppManagementTaskPriority?\>\]: Device app management task priority.
+  \[Status \<DeviceAppManagementTaskStatus?\>\]: Device app management task status.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtask)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmacossoftwareupdateaccountsummary
@@ -19,28 +19,30 @@ New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary [-ResponseHeadersVar
  [-DeviceId <String>] [-DeviceName <String>] [-DisplayName <String>] [-FailedUpdateCount <Int32>]
  [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-OSVersion <String>] [-SuccessfulUpdateCount <Int32>]
  [-TotalUpdateCount <Int32>] [-UserId <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary
  -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateAccountSummary> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to macOSSoftwareUpdateAccountSummaries for deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -83,21 +85,6 @@ To construct, see NOTES section for CATEGORYSUMMARIES properties and create a ha
 Type: IMicrosoftGraphMacOSSoftwareUpdateCategorySummary[]
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -227,6 +214,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -302,6 +304,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -334,86 +351,63 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMacOSSoftwareUpdateAccountSummary>`: MacOS software update account summary report for a device and user
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphMacOSSoftwareUpdateAccountSummary\>: MacOS software update account summary report for a device and user
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CategorySummaries <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary- `[]`>]`: Summary of the updates by category.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[CategorySummaries \<IMicrosoftGraphMacOSSoftwareUpdateCategorySummary\[\]\>\]: Summary of the updates by category.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DeviceId <String>]`: The device ID.
-    - `[DisplayName <String>]`: The name of the report
-    - `[FailedUpdateCount <Int32?>]`: Number of failed updates on the device
-    - `[LastUpdatedDateTime <DateTime?>]`: Last date time the report for this device was updated.
-    - `[SuccessfulUpdateCount <Int32?>]`: Number of successful updates on the device
-    - `[TotalUpdateCount <Int32?>]`: Number of total updates on the device
-    - `[UpdateCategory <MacOSSoftwareUpdateCategory?>]`: MacOS Software Update Category
-    - `[UpdateStateSummaries <IMicrosoftGraphMacOSSoftwareUpdateStateSummary- `[]`>]`: Summary of the update states.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[DeviceId \<String\>\]: The device ID.
+    \[DisplayName \<String\>\]: The name of the report
+    \[FailedUpdateCount \<Int32?\>\]: Number of failed updates on the device
+    \[LastUpdatedDateTime \<DateTime?\>\]: Last date time the report for this device was updated.
+    \[SuccessfulUpdateCount \<Int32?\>\]: Number of successful updates on the device
+    \[TotalUpdateCount \<Int32?\>\]: Number of total updates on the device
+    \[UpdateCategory \<MacOSSoftwareUpdateCategory?\>\]: MacOS Software Update Category
+    \[UpdateStateSummaries \<IMicrosoftGraphMacOSSoftwareUpdateStateSummary\[\]\>\]: Summary of the update states.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[DisplayName <String>]`: Human readable name of the software update
-      - `[LastUpdatedDateTime <DateTime?>]`: Last date time the report for this device and product key was updated.
-      - `[ProductKey <String>]`: Product key of the software update.
-      - `[State <MacOSSoftwareUpdateState?>]`: MacOS Software Update State
-      - `[UpdateCategory <MacOSSoftwareUpdateCategory?>]`: MacOS Software Update Category
-      - `[UpdateVersion <String>]`: Version of the software update
-    - `[UserId <String>]`: The user ID.
-  - `[DeviceId <String>]`: The device ID.
-  - `[DeviceName <String>]`: The device name.
-  - `[DisplayName <String>]`: The name of the report
-  - `[FailedUpdateCount <Int32?>]`: Number of failed updates on the device.
-  - `[LastUpdatedDateTime <DateTime?>]`: Last date time the report for this device was updated.
-  - `[OSVersion <String>]`: The OS version.
-  - `[SuccessfulUpdateCount <Int32?>]`: Number of successful updates on the device.
-  - `[TotalUpdateCount <Int32?>]`: Number of total updates on the device.
-  - `[UserId <String>]`: The user ID.
-  - `[UserPrincipalName <String>]`: The user principal name
+      \[DisplayName \<String\>\]: Human readable name of the software update
+      \[LastUpdatedDateTime \<DateTime?\>\]: Last date time the report for this device and product key was updated.
+      \[ProductKey \<String\>\]: Product key of the software update.
+      \[State \<MacOSSoftwareUpdateState?\>\]: MacOS Software Update State
+      \[UpdateCategory \<MacOSSoftwareUpdateCategory?\>\]: MacOS Software Update Category
+      \[UpdateVersion \<String\>\]: Version of the software update
+    \[UserId \<String\>\]: The user ID.
+  \[DeviceId \<String\>\]: The device ID.
+  \[DeviceName \<String\>\]: The device name.
+  \[DisplayName \<String\>\]: The name of the report
+  \[FailedUpdateCount \<Int32?\>\]: Number of failed updates on the device.
+  \[LastUpdatedDateTime \<DateTime?\>\]: Last date time the report for this device was updated.
+  \[OSVersion \<String\>\]: The OS version.
+  \[SuccessfulUpdateCount \<Int32?\>\]: Number of successful updates on the device.
+  \[TotalUpdateCount \<Int32?\>\]: Number of total updates on the device.
+  \[UserId \<String\>\]: The user ID.
+  \[UserPrincipalName \<String\>\]: The user principal name
 
-CATEGORYSUMMARIES `<IMicrosoftGraphMacOSSoftwareUpdateCategorySummary- `[]`>`: Summary of the updates by category.
-  - `[Id <String>]`: The unique identifier for an entity.
+CATEGORYSUMMARIES \<IMicrosoftGraphMacOSSoftwareUpdateCategorySummary\[\]\>: Summary of the updates by category.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeviceId <String>]`: The device ID.
-  - `[DisplayName <String>]`: The name of the report
-  - `[FailedUpdateCount <Int32?>]`: Number of failed updates on the device
-  - `[LastUpdatedDateTime <DateTime?>]`: Last date time the report for this device was updated.
-  - `[SuccessfulUpdateCount <Int32?>]`: Number of successful updates on the device
-  - `[TotalUpdateCount <Int32?>]`: Number of total updates on the device
-  - `[UpdateCategory <MacOSSoftwareUpdateCategory?>]`: MacOS Software Update Category
-  - `[UpdateStateSummaries <IMicrosoftGraphMacOSSoftwareUpdateStateSummary- `[]`>]`: Summary of the update states.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[DeviceId \<String\>\]: The device ID.
+  \[DisplayName \<String\>\]: The name of the report
+  \[FailedUpdateCount \<Int32?\>\]: Number of failed updates on the device
+  \[LastUpdatedDateTime \<DateTime?\>\]: Last date time the report for this device was updated.
+  \[SuccessfulUpdateCount \<Int32?\>\]: Number of successful updates on the device
+  \[TotalUpdateCount \<Int32?\>\]: Number of total updates on the device
+  \[UpdateCategory \<MacOSSoftwareUpdateCategory?\>\]: MacOS Software Update Category
+  \[UpdateStateSummaries \<IMicrosoftGraphMacOSSoftwareUpdateStateSummary\[\]\>\]: Summary of the update states.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DisplayName <String>]`: Human readable name of the software update
-    - `[LastUpdatedDateTime <DateTime?>]`: Last date time the report for this device and product key was updated.
-    - `[ProductKey <String>]`: Product key of the software update.
-    - `[State <MacOSSoftwareUpdateState?>]`: MacOS Software Update State
-    - `[UpdateCategory <MacOSSoftwareUpdateCategory?>]`: MacOS Software Update Category
-    - `[UpdateVersion <String>]`: Version of the software update
-  - `[UserId <String>]`: The user ID.
+    \[DisplayName \<String\>\]: Human readable name of the software update
+    \[LastUpdatedDateTime \<DateTime?\>\]: Last date time the report for this device and product key was updated.
+    \[ProductKey \<String\>\]: Product key of the software update.
+    \[State \<MacOSSoftwareUpdateState?\>\]: MacOS Software Update State
+    \[UpdateCategory \<MacOSSoftwareUpdateCategory?\>\]: MacOS Software Update Category
+    \[UpdateVersion \<String\>\]: Version of the software update
+  \[UserId \<String\>\]: The user ID.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmacossoftwareupdateaccountsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmacossoftwareupdateaccountsummary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

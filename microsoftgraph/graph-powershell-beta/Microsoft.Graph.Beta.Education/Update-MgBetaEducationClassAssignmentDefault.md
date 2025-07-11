@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentdefault
 schema: 2.0.0
-ms.subservice: education
 ---
 
 # Update-MgBetaEducationClassAssignmentDefault
@@ -12,9 +11,6 @@ ms.subservice: education
 Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -22,14 +18,14 @@ Only teachers can update these settings.
 Update-MgBetaEducationClassAssignmentDefault -EducationClassId <String> [-ResponseHeadersVariable <String>]
  [-AddToCalendarAction <String>] [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>]
  [-DueTime <String>] [-Id <String>] [-NotificationChannelUrl <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEducationClassAssignmentDefault -EducationClassId <String>
  -BodyParameter <IMicrosoftGraphEducationAssignmentDefaults> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,34 +33,26 @@ Update-MgBetaEducationClassAssignmentDefault -EducationClassId <String>
 Update-MgBetaEducationClassAssignmentDefault -InputObject <IEducationIdentity>
  [-ResponseHeadersVariable <String>] [-AddToCalendarAction <String>] [-AddedStudentAction <String>]
  [-AdditionalProperties <Hashtable>] [-DueTime <String>] [-Id <String>] [-NotificationChannelUrl <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationClassAssignmentDefault -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationAssignmentDefaults> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	addedStudentAction = "assignIfOpen"
@@ -73,10 +61,6 @@ $params = @{
 }
 
 Update-MgBetaEducationClassAssignmentDefault -EducationClassId $educationClassId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaEducationClassAssignmentDefault Cmdlet.
-
 
 ## PARAMETERS
 
@@ -138,21 +122,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -250,6 +219,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -257,6 +241,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -298,62 +297,41 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationAssignmentDefaults>`: educationAssignmentDefaults
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphEducationAssignmentDefaults\>: educationAssignmentDefaults
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AddToCalendarAction <String>]`: educationAddToCalendarOptions
-  - `[AddedStudentAction <String>]`: educationAddedStudentAction
-  - `[DueTime <String>]`: Class-level default value for due time field.
+  \[AddToCalendarAction \<String\>\]: educationAddToCalendarOptions
+  \[AddedStudentAction \<String\>\]: educationAddedStudentAction
+  \[DueTime \<String\>\]: Class-level default value for due time field.
 Default value is 23:59:00.
-  - `[NotificationChannelUrl <String>]`: Default Teams channel to which notifications are sent.
+  \[NotificationChannelUrl \<String\>\]: Default Teams channel to which notifications are sent.
 Default value is null.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
-  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationAssignmentResourceId1 <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
-  - `[EducationClassId <String>]`: The unique identifier of educationClass
-  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
-  - `[EducationGradingSchemeId <String>]`: The unique identifier of educationGradingScheme
-  - `[EducationModuleId <String>]`: The unique identifier of educationModule
-  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
-  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
-  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
-  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
-  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSubmissionResourceId1 <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationUserId <String>]`: The unique identifier of educationUser
-  - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
-  - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
+INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
+  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
+  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationAssignmentResourceId1 \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
+  \[EducationClassId \<String\>\]: The unique identifier of educationClass
+  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
+  \[EducationGradingSchemeId \<String\>\]: The unique identifier of educationGradingScheme
+  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
+  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
+  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
+  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
+  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
+  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
+  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationSubmissionResourceId1 \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationUserId \<String\>\]: The unique identifier of educationUser
+  \[ReadingAssignmentSubmissionId \<String\>\]: The unique identifier of readingAssignmentSubmission
+  \[ReflectCheckInResponseId \<String\>\]: The unique identifier of reflectCheckInResponse
+  \[SpeakerAssignmentSubmissionId \<String\>\]: The unique identifier of speakerAssignmentSubmission
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentdefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentdefault)
 
 [https://learn.microsoft.com/graph/api/educationassignmentdefaults-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignmentdefaults-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryuserserviceprovisioning
 schema: 2.0.0
-ms.subservice: entra-users
 ---
 
 # Invoke-MgBetaRetryUserServiceProvisioning
@@ -11,22 +10,19 @@ ms.subservice: entra-users
 ## SYNOPSIS
 Retry the provisioning of a user object in Microsoft Entra ID.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgRetryUserServiceProvisioning](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgRetryUserServiceProvisioning?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Retry (Default)
 ```
 Invoke-MgBetaRetryUserServiceProvisioning -UserId <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### RetryViaIdentity
 ```
 Invoke-MgBetaRetryUserServiceProvisioning -InputObject <IUsersActionsIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,34 +30,15 @@ Invoke-MgBetaRetryUserServiceProvisioning -InputObject <IUsersActionsIdentity>
 Retry the provisioning of a user object in Microsoft Entra ID.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 Invoke-MgBetaRetryUserServiceProvisioning -UserId $userId
 
-```
-This example shows how to use the Invoke-MgBetaRetryUserServiceProvisioning Cmdlet.
-
-
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -109,6 +86,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -133,6 +125,21 @@ Parameter Sets: Retry
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -171,34 +178,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryuserserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryuserserviceprovisioning)
 
 [https://learn.microsoft.com/graph/api/user-retryserviceprovisioning?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-retryserviceprovisioning?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

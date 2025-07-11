@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooluser
 schema: 2.0.0
-ms.subservice: education
 ---
 
 # Get-MgBetaEducationSchoolUser
@@ -11,41 +10,26 @@ ms.subservice: education
 ## SYNOPSIS
 Retrieve a list of users at a school.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolUser?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
 Get-MgBetaEducationSchoolUser -EducationSchoolId <String> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve a list of users at a school.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationSchoolUser -EducationSchoolId $educationSchoolId
-
-```
-This example shows how to use the Get-MgBetaEducationSchoolUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -155,6 +139,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -200,21 +199,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -245,6 +229,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -261,26 +260,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooluser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooluser)
 
 [https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

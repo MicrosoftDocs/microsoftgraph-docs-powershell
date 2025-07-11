@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectorytransitiveroleassignmentcount
@@ -15,21 +15,23 @@ Get the number of the resource
 ```
 Get-MgBetaRoleManagementDirectoryTransitiveRoleAssignmentCount [-Filter <String>] [-Search <String>]
  -ConsistencyLevel <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.Read.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -79,6 +81,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -123,27 +140,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectorytransitiveroleassignmentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectorytransitiveroleassignmentcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

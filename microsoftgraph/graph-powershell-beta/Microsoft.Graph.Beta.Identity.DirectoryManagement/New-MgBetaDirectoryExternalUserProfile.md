@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryexternaluserprofile
@@ -18,28 +18,30 @@ New-MgBetaDirectoryExternalUserProfile [-ResponseHeadersVariable <String>] [-Add
  [-Address <IMicrosoftGraphPhysicalOfficeAddress>] [-CompanyName <String>] [-CreatedBy <String>]
  [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Department <String>] [-DisplayName <String>]
  [-Id <String>] [-IsDiscoverable] [-IsEnabled] [-JobTitle <String>] [-PhoneNumber <String>]
- [-SupervisorId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-SupervisorId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDirectoryExternalUserProfile -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to externalUserProfiles for directory
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ExternalUserProfile.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ExternalUserProfile.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -97,21 +99,6 @@ Supports $filter (eq, startswith).
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -294,6 +281,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -317,6 +319,21 @@ Supports $filter (eq, startswith).
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -357,40 +374,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalOfficeAddress>`: physicalOfficeAddress
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[City <String>]`: The city.
-  - `[CountryOrRegion <String>]`: The country or region.
+ADDRESS \<IMicrosoftGraphPhysicalOfficeAddress\>: physicalOfficeAddress
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[City \<String\>\]: The city.
+  \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-  - `[OfficeLocation <String>]`: Office location such as building and office number for an organizational contact.
-  - `[PostalCode <String>]`: The postal code.
-  - `[State <String>]`: The state.
-  - `[Street <String>]`: The street.
+  \[OfficeLocation \<String\>\]: Office location such as building and office number for an organizational contact.
+  \[PostalCode \<String\>\]: The postal code.
+  \[State \<String\>\]: The state.
+  \[Street \<String\>\]: The street.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryexternaluserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryexternaluserprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

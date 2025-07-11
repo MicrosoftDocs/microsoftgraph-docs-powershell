@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventtownhallpresenter
 schema: 2.0.0
-ms.subservice: cloud-communications
 ---
 
 # Remove-MgBetaVirtualEventTownhallPresenter
@@ -12,22 +11,19 @@ ms.subservice: cloud-communications
 Delete a virtualEventPresenter from a virtual event.
 Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgVirtualEventTownhallPresenter](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventTownhallPresenter?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
 Remove-MgBetaVirtualEventTownhallPresenter -VirtualEventPresenterId <String> -VirtualEventTownhallId <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaVirtualEventTownhallPresenter -InputObject <IBookingsIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,34 +32,15 @@ Delete a virtualEventPresenter from a virtual event.
 Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
+```
 
 Remove-MgBetaVirtualEventTownhallPresenter -VirtualEventTownhallId $virtualEventTownhallId -VirtualEventPresenterId $virtualEventPresenterId
 
-```
-This example shows how to use the Remove-MgBetaVirtualEventTownhallPresenter Cmdlet.
-
-
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -126,6 +103,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -171,6 +163,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -203,53 +210,31 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[Email <String>]`: Alternate key of virtualEventRegistration
-  - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[UserId <String>]`: Alternate key of virtualEventRegistration
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventRegistrationQuestionBaseId <String>]`: The unique identifier of virtualEventRegistrationQuestionBase
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerId \<String\>\]: The unique identifier of bookingCustomer
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
+  \[Email \<String\>\]: Alternate key of virtualEventRegistration
+  \[JoinWebUrl \<String\>\]: Alternate key of virtualEventSession
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UserId \<String\>\]: Alternate key of virtualEventRegistration
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventRegistrationQuestionBaseId \<String\>\]: The unique identifier of virtualEventRegistrationQuestionBase
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventtownhallpresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventtownhallpresenter)
 
 [https://learn.microsoft.com/graph/api/virtualeventpresenter-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventpresenter-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

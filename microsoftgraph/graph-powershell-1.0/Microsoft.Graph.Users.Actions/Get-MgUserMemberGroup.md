@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermembergroup
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgUserMemberGroup
@@ -15,15 +14,12 @@ This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the DirectoryResultSizeLimitExceeded error code.
 If you get the DirectoryResultSizeLimitExceeded error code, use the List group transitive memberOf API instead.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMemberGroup](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserMemberGroup?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
 Get-MgUserMemberGroup -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-SecurityEnabledOnly] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-SecurityEnabledOnly] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,7 +27,7 @@ Get-MgUserMemberGroup -UserId <String> [-ResponseHeadersVariable <String>] [-Add
 ```
 Get-MgUserMemberGroup -UserId <String>
  -BodyParameter <IPaths18H5WxmUsersUserIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,14 +35,14 @@ Get-MgUserMemberGroup -UserId <String>
 ```
 Get-MgUserMemberGroup -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgUserMemberGroup -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths18H5WxmUsersUserIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -57,20 +53,12 @@ This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the DirectoryResultSizeLimitExceeded error code.
 If you get the DirectoryResultSizeLimitExceeded error code, use the List group transitive memberOf API instead.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, User.Read.All, Group.ReadWrite.All, GroupMember.Read.All, Application.ReadWrite.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, Application.ReadWrite.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, User.Read.All, Device.ReadWrite.All, Device.Read.All, Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Check group memberships for the signed-in user
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
+```
 
 $params = @{
 	securityEnabledOnly = $true
@@ -78,10 +66,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Get-MgUserMemberGroup -UserId $userId -BodyParameter $params
-
-```
-This example will check group memberships for the signed-in user
-
 
 ## PARAMETERS
 
@@ -101,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -113,21 +97,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -162,6 +131,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -178,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityEnabledOnly
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -201,6 +185,21 @@ Parameter Sets: GetExpanded, Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -240,38 +239,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths18H5WxmUsersUserIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SecurityEnabledOnly <Boolean?>]`:
+BODYPARAMETER \<IPaths18H5WxmUsersUserIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[SecurityEnabledOnly \<Boolean?\>\]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermembergroup)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

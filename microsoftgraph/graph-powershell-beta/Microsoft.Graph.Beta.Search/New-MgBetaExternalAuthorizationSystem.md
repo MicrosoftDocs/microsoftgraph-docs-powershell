@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalauthorizationsystem
@@ -17,13 +17,13 @@ Create new navigation property to authorizationSystems for external
 New-MgBetaExternalAuthorizationSystem [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AuthorizationSystemId <String>] [-AuthorizationSystemName <String>] [-AuthorizationSystemType <String>]
  [-DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>] [-Id <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaExternalAuthorizationSystem -BodyParameter <IMicrosoftGraphAuthorizationSystem>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,6 +31,16 @@ New-MgBetaExternalAuthorizationSystem -BodyParameter <IMicrosoftGraphAuthorizati
 Create new navigation property to authorizationSystems for external
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -114,21 +124,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DataCollectionInfo
 dataCollectionInfo
 To construct, see NOTES section for DATACOLLECTIONINFO properties and create a hash table.
@@ -176,6 +171,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -183,6 +193,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -223,55 +248,32 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthorizationSystem>`: authorizationSystem
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAuthorizationSystem\>: authorizationSystem
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AuthorizationSystemId <String>]`: ID of the authorization system retrieved from the customer cloud environment.
+  \[AuthorizationSystemId \<String\>\]: ID of the authorization system retrieved from the customer cloud environment.
 Supports $filter(eq, contains) and $orderBy.
-  - `[AuthorizationSystemName <String>]`: Name of the authorization system detected after onboarding.
+  \[AuthorizationSystemName \<String\>\]: Name of the authorization system detected after onboarding.
 Supports $filter(eq,contains) and $orderBy.
-  - `[AuthorizationSystemType <String>]`: The type of authorization system.
+  \[AuthorizationSystemType \<String\>\]: The type of authorization system.
 Can be gcp, azure, or aws.
 Supports $filter(eq).
-  - `[DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>]`: dataCollectionInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[DataCollectionInfo \<IMicrosoftGraphDataCollectionInfo\>\]: dataCollectionInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Entitlements <IMicrosoftGraphEntitlementsDataCollectionInfo>]`: entitlementsDataCollectionInfo
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    \[Entitlements \<IMicrosoftGraphEntitlementsDataCollectionInfo\>\]: entitlementsDataCollectionInfo
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-DATACOLLECTIONINFO `<IMicrosoftGraphDataCollectionInfo>`: dataCollectionInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+DATACOLLECTIONINFO \<IMicrosoftGraphDataCollectionInfo\>: dataCollectionInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Entitlements <IMicrosoftGraphEntitlementsDataCollectionInfo>]`: entitlementsDataCollectionInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  \[Entitlements \<IMicrosoftGraphEntitlementsDataCollectionInfo\>\]: entitlementsDataCollectionInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalauthorizationsystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalauthorizationsystem)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

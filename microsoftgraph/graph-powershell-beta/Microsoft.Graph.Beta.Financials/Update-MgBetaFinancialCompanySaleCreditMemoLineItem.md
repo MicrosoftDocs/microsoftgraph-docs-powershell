@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Financials-help.xml
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemolineitem
@@ -20,7 +20,7 @@ Update-MgBetaFinancialCompanySaleCreditMemoLineItem -CompanyId <String> -SalesCr
  [-ItemCategory <IMicrosoftGraphItemCategory>] [-ItemCategoryCode <String>] [-ItemCategoryId <String>]
  [-LastModifiedDateTime <DateTime>] [-Number <String>] [-Picture <IMicrosoftGraphPicture[]>]
  [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>] [-Type <String>] [-UnitCost <Decimal>]
- [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgBetaFinancialCompanySaleCreditMemoLineItem -CompanyId <String> -SalesCr
 ```
 Update-MgBetaFinancialCompanySaleCreditMemoLineItem -CompanyId <String> -SalesCreditMemoLineId <String>
  -BodyParameter <IMicrosoftGraphItem> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,7 +39,7 @@ Update-MgBetaFinancialCompanySaleCreditMemoLineItem -InputObject <IFinancialsIde
  [-ItemCategory <IMicrosoftGraphItemCategory>] [-ItemCategoryCode <String>] [-ItemCategoryId <String>]
  [-LastModifiedDateTime <DateTime>] [-Number <String>] [-Picture <IMicrosoftGraphPicture[]>]
  [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>] [-Type <String>] [-UnitCost <Decimal>]
- [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -47,13 +47,23 @@ Update-MgBetaFinancialCompanySaleCreditMemoLineItem -InputObject <IFinancialsIde
 ```
 Update-MgBetaFinancialCompanySaleCreditMemoLineItem -InputObject <IFinancialsIdentity>
  -BodyParameter <IMicrosoftGraphItem> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property item in financials
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -73,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -BaseUnitOfMeasureId
-
+.
 
 ```yaml
 Type: String
@@ -88,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Blocked
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -133,23 +143,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DisplayName
-
+.
 
 ```yaml
 Type: String
@@ -164,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Gtin
-
+.
 
 ```yaml
 Type: String
@@ -194,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-
+.
 
 ```yaml
 Type: String
@@ -225,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -Inventory
-
+.
 
 ```yaml
 Type: Decimal
@@ -256,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -ItemCategoryCode
-
+.
 
 ```yaml
 Type: String
@@ -271,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -ItemCategoryId
-
+.
 
 ```yaml
 Type: String
@@ -286,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -301,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -Number
-
+.
 
 ```yaml
 Type: String
@@ -316,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### -Picture
-
+.
 To construct, see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
@@ -332,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -PriceIncludesTax
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -342,6 +337,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -377,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaxGroupCode
-
+.
 
 ```yaml
 Type: String
@@ -392,7 +402,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaxGroupId
-
+.
 
 ```yaml
 Type: String
@@ -407,7 +417,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-
+.
 
 ```yaml
 Type: String
@@ -422,7 +432,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnitCost
-
+.
 
 ```yaml
 Type: Decimal
@@ -437,7 +447,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnitPrice
-
+.
 
 ```yaml
 Type: Decimal
@@ -447,6 +457,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -484,113 +509,90 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphItem>`: item
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[BaseUnitOfMeasureId <String>]`: 
-  - `[Blocked <Boolean?>]`: 
-  - `[DisplayName <String>]`: 
-  - `[Gtin <String>]`: 
-  - `[Id <String>]`: 
-  - `[Inventory <Decimal?>]`: 
-  - `[ItemCategory <IMicrosoftGraphItemCategory>]`: itemCategory
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[Id <String>]`: 
-    - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[ItemCategoryCode <String>]`: 
-  - `[ItemCategoryId <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[Number <String>]`: 
-  - `[Picture <IMicrosoftGraphPicture- `[]`>]`: 
-    - `[Content <Byte- `[]`>]`: 
-    - `[ContentType <String>]`: 
-    - `[Height <Int32?>]`: 
-    - `[Id <String>]`: 
-    - `[Width <Int32?>]`: 
-  - `[PriceIncludesTax <Boolean?>]`: 
-  - `[TaxGroupCode <String>]`: 
-  - `[TaxGroupId <String>]`: 
-  - `[Type <String>]`: 
-  - `[UnitCost <Decimal?>]`: 
-  - `[UnitPrice <Decimal?>]`: 
+BODYPARAMETER \<IMicrosoftGraphItem\>: item
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[BaseUnitOfMeasureId \<String\>\]: 
+  \[Blocked \<Boolean?\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[Gtin \<String\>\]: 
+  \[Id \<String\>\]: 
+  \[Inventory \<Decimal?\>\]: 
+  \[ItemCategory \<IMicrosoftGraphItemCategory\>\]: itemCategory
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: 
+    \[DisplayName \<String\>\]: 
+    \[Id \<String\>\]: 
+    \[LastModifiedDateTime \<DateTime?\>\]: 
+  \[ItemCategoryCode \<String\>\]: 
+  \[ItemCategoryId \<String\>\]: 
+  \[LastModifiedDateTime \<DateTime?\>\]: 
+  \[Number \<String\>\]: 
+  \[Picture \<IMicrosoftGraphPicture\[\]\>\]: 
+    \[Content \<Byte\[\]\>\]: 
+    \[ContentType \<String\>\]: 
+    \[Height \<Int32?\>\]: 
+    \[Id \<String\>\]: 
+    \[Width \<Int32?\>\]: 
+  \[PriceIncludesTax \<Boolean?\>\]: 
+  \[TaxGroupCode \<String\>\]: 
+  \[TaxGroupId \<String\>\]: 
+  \[Type \<String\>\]: 
+  \[UnitCost \<Decimal?\>\]: 
+  \[UnitPrice \<Decimal?\>\]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
-  - `[AccountId <String>]`: The unique identifier of account
-  - `[AgedAccountsPayableId <String>]`: The unique identifier of agedAccountsPayable
-  - `[AgedAccountsReceivableId <String>]`: The unique identifier of agedAccountsReceivable
-  - `[CompanyId <String>]`: The unique identifier of company
-  - `[CompanyInformationId <String>]`: The unique identifier of companyInformation
-  - `[CountryRegionId <String>]`: The unique identifier of countryRegion
-  - `[CurrencyId <String>]`: The unique identifier of currency
-  - `[CustomerId <String>]`: The unique identifier of customer
-  - `[CustomerPaymentId <String>]`: The unique identifier of customerPayment
-  - `[CustomerPaymentJournalId <String>]`: The unique identifier of customerPaymentJournal
-  - `[DimensionId <String>]`: The unique identifier of dimension
-  - `[DimensionValueId <String>]`: The unique identifier of dimensionValue
-  - `[EmployeeId <String>]`: The unique identifier of employee
-  - `[GeneralLedgerEntryId <String>]`: The unique identifier of generalLedgerEntry
-  - `[ItemCategoryId <String>]`: The unique identifier of itemCategory
-  - `[ItemId <String>]`: The unique identifier of item
-  - `[JournalId <String>]`: The unique identifier of journal
-  - `[JournalLineId <String>]`: The unique identifier of journalLine
-  - `[PaymentMethodId <String>]`: The unique identifier of paymentMethod
-  - `[PaymentTermId <String>]`: The unique identifier of paymentTerm
-  - `[PictureId <String>]`: The unique identifier of picture
-  - `[PurchaseInvoiceId <String>]`: The unique identifier of purchaseInvoice
-  - `[PurchaseInvoiceLineId <String>]`: The unique identifier of purchaseInvoiceLine
-  - `[SalesCreditMemoId <String>]`: The unique identifier of salesCreditMemo
-  - `[SalesCreditMemoLineId <String>]`: The unique identifier of salesCreditMemoLine
-  - `[SalesInvoiceId <String>]`: The unique identifier of salesInvoice
-  - `[SalesInvoiceLineId <String>]`: The unique identifier of salesInvoiceLine
-  - `[SalesOrderId <String>]`: The unique identifier of salesOrder
-  - `[SalesOrderLineId <String>]`: The unique identifier of salesOrderLine
-  - `[SalesQuoteId <String>]`: The unique identifier of salesQuote
-  - `[SalesQuoteLineId <String>]`: The unique identifier of salesQuoteLine
-  - `[ShipmentMethodId <String>]`: The unique identifier of shipmentMethod
-  - `[TaxAreaId <String>]`: The unique identifier of taxArea
-  - `[TaxGroupId <String>]`: The unique identifier of taxGroup
-  - `[UnitOfMeasureId <String>]`: The unique identifier of unitOfMeasure
-  - `[VendorId <String>]`: The unique identifier of vendor
+INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
+  \[AccountId \<String\>\]: The unique identifier of account
+  \[AgedAccountsPayableId \<String\>\]: The unique identifier of agedAccountsPayable
+  \[AgedAccountsReceivableId \<String\>\]: The unique identifier of agedAccountsReceivable
+  \[CompanyId \<String\>\]: The unique identifier of company
+  \[CompanyInformationId \<String\>\]: The unique identifier of companyInformation
+  \[CountryRegionId \<String\>\]: The unique identifier of countryRegion
+  \[CurrencyId \<String\>\]: The unique identifier of currency
+  \[CustomerId \<String\>\]: The unique identifier of customer
+  \[CustomerPaymentId \<String\>\]: The unique identifier of customerPayment
+  \[CustomerPaymentJournalId \<String\>\]: The unique identifier of customerPaymentJournal
+  \[DimensionId \<String\>\]: The unique identifier of dimension
+  \[DimensionValueId \<String\>\]: The unique identifier of dimensionValue
+  \[EmployeeId \<String\>\]: The unique identifier of employee
+  \[GeneralLedgerEntryId \<String\>\]: The unique identifier of generalLedgerEntry
+  \[ItemCategoryId \<String\>\]: The unique identifier of itemCategory
+  \[ItemId \<String\>\]: The unique identifier of item
+  \[JournalId \<String\>\]: The unique identifier of journal
+  \[JournalLineId \<String\>\]: The unique identifier of journalLine
+  \[PaymentMethodId \<String\>\]: The unique identifier of paymentMethod
+  \[PaymentTermId \<String\>\]: The unique identifier of paymentTerm
+  \[PictureId \<String\>\]: The unique identifier of picture
+  \[PurchaseInvoiceId \<String\>\]: The unique identifier of purchaseInvoice
+  \[PurchaseInvoiceLineId \<String\>\]: The unique identifier of purchaseInvoiceLine
+  \[SalesCreditMemoId \<String\>\]: The unique identifier of salesCreditMemo
+  \[SalesCreditMemoLineId \<String\>\]: The unique identifier of salesCreditMemoLine
+  \[SalesInvoiceId \<String\>\]: The unique identifier of salesInvoice
+  \[SalesInvoiceLineId \<String\>\]: The unique identifier of salesInvoiceLine
+  \[SalesOrderId \<String\>\]: The unique identifier of salesOrder
+  \[SalesOrderLineId \<String\>\]: The unique identifier of salesOrderLine
+  \[SalesQuoteId \<String\>\]: The unique identifier of salesQuote
+  \[SalesQuoteLineId \<String\>\]: The unique identifier of salesQuoteLine
+  \[ShipmentMethodId \<String\>\]: The unique identifier of shipmentMethod
+  \[TaxAreaId \<String\>\]: The unique identifier of taxArea
+  \[TaxGroupId \<String\>\]: The unique identifier of taxGroup
+  \[UnitOfMeasureId \<String\>\]: The unique identifier of unitOfMeasure
+  \[VendorId \<String\>\]: The unique identifier of vendor
 
-ITEMCATEGORY `<IMicrosoftGraphItemCategory>`: itemCategory
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Code <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[Id <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
+ITEMCATEGORY \<IMicrosoftGraphItemCategory\>: itemCategory
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Code \<String\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[Id \<String\>\]: 
+  \[LastModifiedDateTime \<DateTime?\>\]: 
 
-PICTURE `<IMicrosoftGraphPicture- `[]`>`: .
-  - `[Content <Byte- `[]`>]`: 
-  - `[ContentType <String>]`: 
-  - `[Height <Int32?>]`: 
-  - `[Id <String>]`: 
-  - `[Width <Int32?>]`:
+PICTURE \<IMicrosoftGraphPicture\[\]\>: .
+  \[Content \<Byte\[\]\>\]: 
+  \[ContentType \<String\>\]: 
+  \[Height \<Int32?\>\]: 
+  \[Id \<String\>\]: 
+  \[Width \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemolineitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemolineitem)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

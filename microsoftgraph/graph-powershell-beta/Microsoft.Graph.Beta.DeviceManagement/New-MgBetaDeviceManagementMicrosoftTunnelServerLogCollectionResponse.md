@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelserverlogcollectionresponse
@@ -17,7 +17,7 @@ Create new navigation property to microsoftTunnelServerLogCollectionResponses fo
 New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-ExpiryDateTime <DateTime>] [-Id <String>]
  [-RequestDateTime <DateTime>] [-ServerId <String>] [-SizeInBytes <Int64>] [-StartDateTime <DateTime>]
- [-Status <MicrosoftTunnelLogCollectionStatus>] [-Headers <IDictionary>]
+ [-Status <MicrosoftTunnelLogCollectionStatus>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -25,21 +25,23 @@ New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse [-ResponseH
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse
  -BodyParameter <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to microsoftTunnelServerLogCollectionResponses for deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -71,21 +73,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -142,6 +129,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -240,6 +242,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -272,42 +289,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse>`: Entity that stores the server log collection status.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse\>: Entity that stores the server log collection status.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[EndDateTime <DateTime?>]`: The end time of the logs collected
-  - `[ExpiryDateTime <DateTime?>]`: The time when the log collection is expired
-  - `[RequestDateTime <DateTime?>]`: The time when the log collection was requested
-  - `[ServerId <String>]`: ID of the server the log collection is requested upon
-  - `[SizeInBytes <Int64?>]`: The size of the logs in bytes
-  - `[StartDateTime <DateTime?>]`: The start time of the logs collected
-  - `[Status <MicrosoftTunnelLogCollectionStatus?>]`: Enum type that represent the status of log collection
+  \[EndDateTime \<DateTime?\>\]: The end time of the logs collected
+  \[ExpiryDateTime \<DateTime?\>\]: The time when the log collection is expired
+  \[RequestDateTime \<DateTime?\>\]: The time when the log collection was requested
+  \[ServerId \<String\>\]: ID of the server the log collection is requested upon
+  \[SizeInBytes \<Int64?\>\]: The size of the logs in bytes
+  \[StartDateTime \<DateTime?\>\]: The start time of the logs collected
+  \[Status \<MicrosoftTunnelLogCollectionStatus?\>\]: Enum type that represent the status of log collection
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelserverlogcollectionresponse](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelserverlogcollectionresponse)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

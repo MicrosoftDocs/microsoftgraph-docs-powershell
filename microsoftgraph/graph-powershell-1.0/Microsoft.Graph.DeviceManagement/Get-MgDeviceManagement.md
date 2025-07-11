@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagement
 schema: 2.0.0
-ms.subservice: intune
 ---
 
 # Get-MgDeviceManagement
@@ -11,39 +10,24 @@ ms.subservice: intune
 ## SYNOPSIS
 Read properties and relationships of the deviceManagement object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagement?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
 Get-MgDeviceManagement [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Read properties and relationships of the deviceManagement object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementRBAC.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement
+```
 
 Get-MgDeviceManagement
-
-```
-This example shows how to use the Get-MgDeviceManagement Cmdlet.
-
 
 ## PARAMETERS
 
@@ -74,6 +58,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -122,27 +121,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagement)
 
-[https://learn.microsoft.com/graph/api/intune-devices-devicemanagement-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-devicemanagement-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[https://learn.microsoft.com/graph/api/intune-androidforwork-devicemanagement-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-androidforwork-devicemanagement-get?view=graph-rest-1.0)
 

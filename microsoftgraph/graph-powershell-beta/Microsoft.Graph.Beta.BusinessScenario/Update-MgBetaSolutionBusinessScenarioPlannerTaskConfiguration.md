@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.BusinessScenario-help.xml
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskconfiguration
 schema: 2.0.0
-ms.subservice: business-scenarios
 ---
 
 # Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration
@@ -18,14 +17,14 @@ Update the properties of a plannerTaskConfiguration object.
 Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-EditPolicy <IMicrosoftGraphPlannerTaskPolicy>] [-Id <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId <String>
  -BodyParameter <IMicrosoftGraphPlannerTaskConfiguration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -33,33 +32,25 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration -BusinessScenarioI
 Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration -InputObject <IBusinessScenarioIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-EditPolicy <IMicrosoftGraphPlannerTaskPolicy>] [-Id <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration -InputObject <IBusinessScenarioIdentity>
  -BodyParameter <IMicrosoftGraphPlannerTaskConfiguration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a plannerTaskConfiguration object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BusinessScenarioConfig.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.BusinessScenario
+```
 
 $params = @{
 	editPolicy = @{
@@ -121,10 +112,6 @@ overrides = @(
 
 Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
 
-```
-This example shows how to use the Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -167,21 +154,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -251,6 +223,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -258,6 +245,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -299,135 +301,113 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerTaskConfiguration>`: plannerTaskConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPlannerTaskConfiguration\>: plannerTaskConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[EditPolicy <IMicrosoftGraphPlannerTaskPolicy>]`: plannerTaskPolicy
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Rules <IMicrosoftGraphPlannerTaskRoleBasedRule- `[]`>]`: The rules that should be enforced on the tasks when they're being changed outside of the scenario, based on the role of the caller.
-      - `[DefaultRule <String>]`: Default rule that applies when a property or action-specific rule is not provided.
+  \[EditPolicy \<IMicrosoftGraphPlannerTaskPolicy\>\]: plannerTaskPolicy
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Rules \<IMicrosoftGraphPlannerTaskRoleBasedRule\[\]\>\]: The rules that should be enforced on the tasks when they're being changed outside of the scenario, based on the role of the caller.
+      \[DefaultRule \<String\>\]: Default rule that applies when a property or action-specific rule is not provided.
 Possible values are: Allow, Block
-      - `[PropertyRule <IMicrosoftGraphPlannerTaskPropertyRule>]`: plannerTaskPropertyRule
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[RuleKind <String>]`: plannerRuleKind
-        - `[AppliedCategories <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DefaultRules <String- `[]`>]`: The default rules that apply if no override matches to the current data.
-          - `[Overrides <IMicrosoftGraphPlannerRuleOverride- `[]`>]`: Overrides that specify different rules for specific data associated with the field.
-            - `[Name <String>]`: Name of the override.
+      \[PropertyRule \<IMicrosoftGraphPlannerTaskPropertyRule\>\]: plannerTaskPropertyRule
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[RuleKind \<String\>\]: plannerRuleKind
+        \[AppliedCategories \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[DefaultRules \<String\[\]\>\]: The default rules that apply if no override matches to the current data.
+          \[Overrides \<IMicrosoftGraphPlannerRuleOverride\[\]\>\]: Overrides that specify different rules for specific data associated with the field.
+            \[Name \<String\>\]: Name of the override.
 Allowed override values will be dependent on the property affected by the rule.
-            - `[Rules <String- `[]`>]`: Overridden rules.
+            \[Rules \<String\[\]\>\]: Overridden rules.
 These are used as rules for the override instead of the default rules.
-        - `[ApprovalAttachment <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-        - `[Assignments <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-        - `[CheckLists <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-        - `[CompletionRequirements <String- `[]`>]`: Rules and restrictions for completion requirements of the task.
+        \[ApprovalAttachment \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
+        \[Assignments \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
+        \[CheckLists \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
+        \[CompletionRequirements \<String\[\]\>\]: Rules and restrictions for completion requirements of the task.
 Accepted values are allow, add, remove, edit, and block.
-        - `[Delete <String- `[]`>]`: Rules and restrictions for deleting the task.
+        \[Delete \<String\[\]\>\]: Rules and restrictions for deleting the task.
 Accepted values are allow and block.
-        - `[DueDate <String- `[]`>]`: Rules and restrictions for changing the due date of the task.
+        \[DueDate \<String\[\]\>\]: Rules and restrictions for changing the due date of the task.
 Accepted values are allow and block.
-        - `[Forms <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-        - `[Move <String- `[]`>]`: Rules and restrictions for moving the task between buckets or plans.
+        \[Forms \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
+        \[Move \<String\[\]\>\]: Rules and restrictions for moving the task between buckets or plans.
 Accepted values are allow, moveBetweenPlans, moveBetweenBuckets, and block.
-        - `[Notes <String- `[]`>]`: Rules and restrictions for changing the notes of the task.
+        \[Notes \<String\[\]\>\]: Rules and restrictions for changing the notes of the task.
 Accepted values are allow and block.
-        - `[Order <String- `[]`>]`: Rules and restrictions for changing the order of the task.
+        \[Order \<String\[\]\>\]: Rules and restrictions for changing the order of the task.
 Accepted values are allow and block.
-        - `[PercentComplete <String- `[]`>]`: Rules and restrictions for changing the completion percentage of the task.
+        \[PercentComplete \<String\[\]\>\]: Rules and restrictions for changing the completion percentage of the task.
 Accepted values are allow, setToComplete, overrideRequirements, setToNotStarted, setToInProgress, and block.
-        - `[PreviewType <String- `[]`>]`: Rules and restrictions for changing the preview type of the task.
+        \[PreviewType \<String\[\]\>\]: Rules and restrictions for changing the preview type of the task.
 Accepted values are allow and block.
-        - `[Priority <String- `[]`>]`: Rules and restrictions for changing the priority of the task.
+        \[Priority \<String\[\]\>\]: Rules and restrictions for changing the priority of the task.
 Accepted values are allow and block.
-        - `[References <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-        - `[StartDate <String- `[]`>]`: Rules and restrictions for changing the start date of the task.
+        \[References \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
+        \[StartDate \<String\[\]\>\]: Rules and restrictions for changing the start date of the task.
 Accepted values are allow and block.
-        - `[Title <String- `[]`>]`: Rules and restrictions for changing the title of the task.
+        \[Title \<String\[\]\>\]: Rules and restrictions for changing the title of the task.
 Accepted values are allow and block.
-      - `[Role <IMicrosoftGraphPlannerTaskConfigurationRoleBase>]`: plannerTaskConfigurationRoleBase
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[RoleKind <String>]`: plannerUserRoleKind
+      \[Role \<IMicrosoftGraphPlannerTaskConfigurationRoleBase\>\]: plannerTaskConfigurationRoleBase
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[RoleKind \<String\>\]: plannerUserRoleKind
 
-EDITPOLICY `<IMicrosoftGraphPlannerTaskPolicy>`: plannerTaskPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Rules <IMicrosoftGraphPlannerTaskRoleBasedRule- `[]`>]`: The rules that should be enforced on the tasks when they're being changed outside of the scenario, based on the role of the caller.
-    - `[DefaultRule <String>]`: Default rule that applies when a property or action-specific rule is not provided.
+EDITPOLICY \<IMicrosoftGraphPlannerTaskPolicy\>: plannerTaskPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Rules \<IMicrosoftGraphPlannerTaskRoleBasedRule\[\]\>\]: The rules that should be enforced on the tasks when they're being changed outside of the scenario, based on the role of the caller.
+    \[DefaultRule \<String\>\]: Default rule that applies when a property or action-specific rule is not provided.
 Possible values are: Allow, Block
-    - `[PropertyRule <IMicrosoftGraphPlannerTaskPropertyRule>]`: plannerTaskPropertyRule
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[RuleKind <String>]`: plannerRuleKind
-      - `[AppliedCategories <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DefaultRules <String- `[]`>]`: The default rules that apply if no override matches to the current data.
-        - `[Overrides <IMicrosoftGraphPlannerRuleOverride- `[]`>]`: Overrides that specify different rules for specific data associated with the field.
-          - `[Name <String>]`: Name of the override.
+    \[PropertyRule \<IMicrosoftGraphPlannerTaskPropertyRule\>\]: plannerTaskPropertyRule
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[RuleKind \<String\>\]: plannerRuleKind
+      \[AppliedCategories \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DefaultRules \<String\[\]\>\]: The default rules that apply if no override matches to the current data.
+        \[Overrides \<IMicrosoftGraphPlannerRuleOverride\[\]\>\]: Overrides that specify different rules for specific data associated with the field.
+          \[Name \<String\>\]: Name of the override.
 Allowed override values will be dependent on the property affected by the rule.
-          - `[Rules <String- `[]`>]`: Overridden rules.
+          \[Rules \<String\[\]\>\]: Overridden rules.
 These are used as rules for the override instead of the default rules.
-      - `[ApprovalAttachment <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-      - `[Assignments <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-      - `[CheckLists <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-      - `[CompletionRequirements <String- `[]`>]`: Rules and restrictions for completion requirements of the task.
+      \[ApprovalAttachment \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
+      \[Assignments \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
+      \[CheckLists \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
+      \[CompletionRequirements \<String\[\]\>\]: Rules and restrictions for completion requirements of the task.
 Accepted values are allow, add, remove, edit, and block.
-      - `[Delete <String- `[]`>]`: Rules and restrictions for deleting the task.
+      \[Delete \<String\[\]\>\]: Rules and restrictions for deleting the task.
 Accepted values are allow and block.
-      - `[DueDate <String- `[]`>]`: Rules and restrictions for changing the due date of the task.
+      \[DueDate \<String\[\]\>\]: Rules and restrictions for changing the due date of the task.
 Accepted values are allow and block.
-      - `[Forms <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-      - `[Move <String- `[]`>]`: Rules and restrictions for moving the task between buckets or plans.
+      \[Forms \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
+      \[Move \<String\[\]\>\]: Rules and restrictions for moving the task between buckets or plans.
 Accepted values are allow, moveBetweenPlans, moveBetweenBuckets, and block.
-      - `[Notes <String- `[]`>]`: Rules and restrictions for changing the notes of the task.
+      \[Notes \<String\[\]\>\]: Rules and restrictions for changing the notes of the task.
 Accepted values are allow and block.
-      - `[Order <String- `[]`>]`: Rules and restrictions for changing the order of the task.
+      \[Order \<String\[\]\>\]: Rules and restrictions for changing the order of the task.
 Accepted values are allow and block.
-      - `[PercentComplete <String- `[]`>]`: Rules and restrictions for changing the completion percentage of the task.
+      \[PercentComplete \<String\[\]\>\]: Rules and restrictions for changing the completion percentage of the task.
 Accepted values are allow, setToComplete, overrideRequirements, setToNotStarted, setToInProgress, and block.
-      - `[PreviewType <String- `[]`>]`: Rules and restrictions for changing the preview type of the task.
+      \[PreviewType \<String\[\]\>\]: Rules and restrictions for changing the preview type of the task.
 Accepted values are allow and block.
-      - `[Priority <String- `[]`>]`: Rules and restrictions for changing the priority of the task.
+      \[Priority \<String\[\]\>\]: Rules and restrictions for changing the priority of the task.
 Accepted values are allow and block.
-      - `[References <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-      - `[StartDate <String- `[]`>]`: Rules and restrictions for changing the start date of the task.
+      \[References \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
+      \[StartDate \<String\[\]\>\]: Rules and restrictions for changing the start date of the task.
 Accepted values are allow and block.
-      - `[Title <String- `[]`>]`: Rules and restrictions for changing the title of the task.
+      \[Title \<String\[\]\>\]: Rules and restrictions for changing the title of the task.
 Accepted values are allow and block.
-    - `[Role <IMicrosoftGraphPlannerTaskConfigurationRoleBase>]`: plannerTaskConfigurationRoleBase
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[RoleKind <String>]`: plannerUserRoleKind
+    \[Role \<IMicrosoftGraphPlannerTaskConfigurationRoleBase\>\]: plannerTaskConfigurationRoleBase
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[RoleKind \<String\>\]: plannerUserRoleKind
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
-  - `[UniqueName <String>]`: Alternate key of businessScenario
+INPUTOBJECT \<IBusinessScenarioIdentity\>: Identity Parameter
+  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
+  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskconfiguration)
 
 [https://learn.microsoft.com/graph/api/plannertaskconfiguration-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannertaskconfiguration-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

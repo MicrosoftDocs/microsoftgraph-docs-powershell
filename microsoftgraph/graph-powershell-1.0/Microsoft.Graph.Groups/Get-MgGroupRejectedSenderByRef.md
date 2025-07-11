@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref
 schema: 2.0.0
-ms.subservice: entra-groups
 ---
 
 # Get-MgGroupRejectedSenderByRef
@@ -12,30 +11,29 @@ ms.subservice: entra-groups
 Users in the rejected senders list can't post to conversations of the group (identified in the GET request URL).
 Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you get an error.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
 Get-MgGroupRejectedSenderByRef -GroupId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Users in the rejected senders list can't post to conversations of the group (identified in the GET request URL).
 Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you get an error.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -130,6 +128,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -156,21 +169,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -205,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -221,27 +234,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref)
 
 [https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

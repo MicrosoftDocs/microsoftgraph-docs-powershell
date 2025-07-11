@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyadminconsentrequestpolicy
 schema: 2.0.0
-ms.subservice: entra-id-governance
 ---
 
 # Get-MgPolicyAdminConsentRequestPolicy
@@ -11,40 +10,25 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 Read the properties and relationships of an adminConsentRequestPolicy object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
 Get-MgPolicyAdminConsentRequestPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Read the properties and relationships of an adminConsentRequestPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All, Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgPolicyAdminConsentRequestPolicy
-
-```
-This example shows how to use the Get-MgPolicyAdminConsentRequestPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -75,6 +59,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -124,26 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyadminconsentrequestpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyadminconsentrequestpolicy)
 
 [https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

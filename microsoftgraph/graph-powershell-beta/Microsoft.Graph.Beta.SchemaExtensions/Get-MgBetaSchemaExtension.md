@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension
 schema: 2.0.0
-ms.subservice: extensions
-ms.subservice: extensions
 ---
 
 # Get-MgBetaSchemaExtension
 
 ## SYNOPSIS
 Get the properties of the specified schemaExtension definition.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Get-MgSchemaExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -22,13 +17,13 @@ Get the properties of the specified schemaExtension definition.
 Get-MgBetaSchemaExtension [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaSchemaExtension -SchemaExtensionId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -36,32 +31,20 @@ Get-MgBetaSchemaExtension -SchemaExtensionId <String> [-ExpandProperty <String[]
 ```
 Get-MgBetaSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the properties of the specified schemaExtension definition.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, Application.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.SchemaExtensions
-
-Get-MgBetaSchemaExtension -Filter "id eq 'graphlearn_test'" 
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBetaSchemaExtension Cmdlet.
+Import-Module Microsoft.Graph.Beta.SchemaExtensions
+```
 
+Get-MgBetaSchemaExtension -Filter "id eq 'graphlearn_test'"
 
 ## PARAMETERS
 
@@ -172,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -232,21 +230,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -277,6 +260,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -293,8 +291,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
-  - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
+INPUTOBJECT \<ISchemaExtensionsIdentity\>: Identity Parameter
+  \[SchemaExtensionId \<String\>\]: The unique identifier of schemaExtension
 
 ## RELATED LINKS
 
@@ -303,26 +301,4 @@ INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/schemaextension-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/schemaextension-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/schemaextension-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/schemaextension-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

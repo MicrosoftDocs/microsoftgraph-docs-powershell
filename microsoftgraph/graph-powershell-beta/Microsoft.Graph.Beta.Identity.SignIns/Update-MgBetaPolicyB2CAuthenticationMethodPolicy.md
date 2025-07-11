@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2cauthenticationmethodpolicy
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Update-MgBetaPolicyB2CAuthenticationMethodPolicy
@@ -18,33 +17,25 @@ Update the properties of a b2cAuthenticationMethodsPolicy object.
 Update-MgBetaPolicyB2CAuthenticationMethodPolicy [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsEmailPasswordAuthenticationEnabled]
  [-IsPhoneOneTimePasswordAuthenticationEnabled] [-IsUserNameAuthenticationEnabled] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPolicyB2CAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphB2CAuthenticationMethodsPolicy>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a b2cAuthenticationMethodsPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.AuthenticationMethod,  |
-| Delegated (personal Microsoft account) | Policy.ReadWrite.AuthenticationMethod,  |
-| Application | Policy.ReadWrite.AuthenticationMethod,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	isEmailPasswordAuthenticationEnabled = $false
@@ -53,10 +44,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyB2CAuthenticationMethodPolicy -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaPolicyB2CAuthenticationMethodPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -88,21 +75,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -182,6 +154,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -189,6 +176,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -229,39 +231,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphB2CAuthenticationMethodsPolicy>`: b2cAuthenticationMethodsPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphB2CAuthenticationMethodsPolicy\>: b2cAuthenticationMethodsPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsEmailPasswordAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using email if the email and password authentication method is enabled.
-  - `[IsPhoneOneTimePasswordAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using phone number if the phone number and one-time password authentication method is enabled.
-  - `[IsUserNameAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using username if the username and password authentication method is enabled.
+  \[IsEmailPasswordAuthenticationEnabled \<Boolean?\>\]: The tenant admin can configure local accounts using email if the email and password authentication method is enabled.
+  \[IsPhoneOneTimePasswordAuthenticationEnabled \<Boolean?\>\]: The tenant admin can configure local accounts using phone number if the phone number and one-time password authentication method is enabled.
+  \[IsUserNameAuthenticationEnabled \<Boolean?\>\]: The tenant admin can configure local accounts using username if the username and password authentication method is enabled.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2cauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2cauthenticationmethodpolicy)
 
 [https://learn.microsoft.com/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetausermanagedappregistrationbydevicetag
@@ -16,14 +16,14 @@ Issues a wipe operation on an app registration with specified device tag.
 ```
 Clear-MgBetaUserManagedAppRegistrationByDeviceTag -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DeviceTag <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Wipe1
 ```
 Clear-MgBetaUserManagedAppRegistrationByDeviceTag -UserId <String>
  -BodyParameter <IComponentsCn44WaRequestbodiesWipemanagedappregistrationsbydevicetagrequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Clear-MgBetaUserManagedAppRegistrationByDeviceTag -UserId <String>
 ```
 Clear-MgBetaUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeviceTag <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,22 +39,24 @@ Clear-MgBetaUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIde
 ```
 Clear-MgBetaUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponentsCn44WaRequestbodiesWipemanagedappregistrationsbydevicetagrequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Issues a wipe operation on an app registration with specified device tag.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -74,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -89,23 +91,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DeviceTag
-
+.
 
 ```yaml
 Type: String
@@ -165,6 +152,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -189,6 +191,21 @@ Parameter Sets: WipeExpanded1, Wipe1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -228,37 +245,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IComponentsCn44WaRequestbodiesWipemanagedappregistrationsbydevicetagrequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeviceTag <String>]`: 
+BODYPARAMETER \<IComponentsCn44WaRequestbodiesWipemanagedappregistrationsbydevicetagrequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeviceTag \<String\>\]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetausermanagedappregistrationbydevicetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetausermanagedappregistrationbydevicetag)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

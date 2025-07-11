@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/invoke-mgbetareauthorizesubscription
 schema: 2.0.0
-ms.subservice: change-notifications
 ---
 
 # Invoke-MgBetaReauthorizeSubscription
@@ -11,22 +10,19 @@ ms.subservice: change-notifications
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReauthorizeSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Invoke-MgReauthorizeSubscription?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Reauthorize (Default)
 ```
 Invoke-MgBetaReauthorizeSubscription -SubscriptionId <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### ReauthorizeViaIdentity
 ```
 Invoke-MgBetaReauthorizeSubscription -InputObject <IChangeNotificationsIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,34 +30,15 @@ Invoke-MgBetaReauthorizeSubscription -InputObject <IChangeNotificationsIdentity>
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
+```
 
 Invoke-MgBetaReauthorizeSubscription -SubscriptionId $subscriptionId
 
-```
-This example shows how to use the Invoke-MgBetaReauthorizeSubscription Cmdlet.
-
-
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -109,6 +86,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -133,6 +125,21 @@ Parameter Sets: Reauthorize
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -171,34 +178,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
+INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/invoke-mgbetareauthorizesubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/invoke-mgbetareauthorizesubscription)
 
 [https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-beta](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
