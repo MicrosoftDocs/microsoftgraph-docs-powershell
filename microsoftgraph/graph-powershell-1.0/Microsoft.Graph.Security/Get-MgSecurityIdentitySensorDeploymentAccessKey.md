@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the deployment access key for Microsoft Defender for Identity that is required to install sensors associated with the workspace.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentitySensorDeploymentAccessKey](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentitySensorDeploymentAccessKey?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

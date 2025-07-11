@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action createDownloadUrl
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserManagedDeviceLogCollectionRequestDownloadUrl](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserManagedDeviceLogCollectionRequestDownloadUrl?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Create (Default)

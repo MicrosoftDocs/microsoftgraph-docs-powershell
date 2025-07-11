@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Create a new contentType in a site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

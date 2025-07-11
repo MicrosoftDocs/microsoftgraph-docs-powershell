@@ -11,6 +11,9 @@ ms.subservice: reports
 ## SYNOPSIS
 Get details about SharePoint activity by user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityUserDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

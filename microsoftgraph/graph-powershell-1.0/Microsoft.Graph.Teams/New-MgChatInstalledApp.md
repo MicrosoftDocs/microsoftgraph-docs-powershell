@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Install a teamsApp to the specified chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

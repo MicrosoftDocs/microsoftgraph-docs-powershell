@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Unfollow a user's site or multiple sites.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserFollowedSite](/powershell/module/Microsoft.Graph.Sites/Remove-MgUserFollowedSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

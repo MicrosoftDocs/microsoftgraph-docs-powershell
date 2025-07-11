@@ -12,6 +12,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Read properties and relationships of the windows10EnterpriseModernAppManagementConfiguration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

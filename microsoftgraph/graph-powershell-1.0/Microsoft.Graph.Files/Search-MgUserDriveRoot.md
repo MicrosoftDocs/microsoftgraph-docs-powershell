@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Search-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Search-MgBetaUserDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Search (Default)
