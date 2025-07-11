@@ -22,6 +22,14 @@ Get-MgBetaAdminSharepointSetting [-ExpandProperty <String[]>] [-Property <String
 ## DESCRIPTION
 Get the tenant-level settings for SharePoint and OneDrive.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SharePointTenantSettings.Read.All, SharePointTenantSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SharePointTenantSettings.Read.All, SharePointTenantSettings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

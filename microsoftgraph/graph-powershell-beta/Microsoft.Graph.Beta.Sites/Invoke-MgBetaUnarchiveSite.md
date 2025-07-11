@@ -29,6 +29,14 @@ Invoke-MgBetaUnarchiveSite -InputObject <ISitesIdentity> [-ResponseHeadersVariab
 ## DESCRIPTION
 Unarchive an archived SharePoint site.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.FullControl.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.FullControl.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

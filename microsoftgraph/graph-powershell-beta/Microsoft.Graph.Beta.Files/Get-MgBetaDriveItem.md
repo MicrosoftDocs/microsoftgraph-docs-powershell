@@ -42,6 +42,14 @@ All items contained in the drive.
 Read-only.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Files.Read, Group.Read.All, Files.ReadWrite, Files.ReadWrite.All, Files.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
+| Application | Files.Read.All, Group.ReadWrite.All, Group.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

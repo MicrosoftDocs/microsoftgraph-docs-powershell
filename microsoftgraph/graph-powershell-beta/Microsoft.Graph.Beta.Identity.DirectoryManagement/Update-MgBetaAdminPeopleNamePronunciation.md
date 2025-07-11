@@ -30,6 +30,14 @@ Update-MgBetaAdminPeopleNamePronunciation -BodyParameter <IMicrosoftGraphNamePro
 ## DESCRIPTION
 Update the properties of a namePronunciationSettings object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PeopleSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PeopleSettings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

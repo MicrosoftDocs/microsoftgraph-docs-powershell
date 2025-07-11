@@ -20,6 +20,14 @@ Get-MgAuditLogSignInCount [-Filter <String>] [-Search <String>] [-ResponseHeader
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AuditLog.Read.All, Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AuditLog.Read.All, Directory.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

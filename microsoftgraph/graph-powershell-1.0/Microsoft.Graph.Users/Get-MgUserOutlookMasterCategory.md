@@ -37,6 +37,14 @@ Get-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-ExpandProperty <
 ## DESCRIPTION
 A list of categories defined for the user.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MailboxSettings.Read,  |
+| Delegated (personal Microsoft account) | MailboxSettings.Read,  |
+| Application | MailboxSettings.Read,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

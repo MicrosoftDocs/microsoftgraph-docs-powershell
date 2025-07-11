@@ -21,6 +21,14 @@ Get-MgBetaDirectoryTemplateDeviceTemplateCount [-Filter <String>] [-Search <Stri
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceTemplate.Read.All, DeviceTemplate.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceTemplate.Read.All, DeviceTemplate.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
