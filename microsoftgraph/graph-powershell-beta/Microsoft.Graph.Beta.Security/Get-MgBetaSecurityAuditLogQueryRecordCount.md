@@ -15,7 +15,7 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgBetaSecurityAuditLogQueryRecordCount -AuditLogQueryId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -23,7 +23,7 @@ Get-MgBetaSecurityAuditLogQueryRecordCount -AuditLogQueryId <String> [-Filter <S
 ```
 Get-MgBetaSecurityAuditLogQueryRecordCount -InputObject <ISecurityIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,6 +36,8 @@ Get the number of the resource
 | Delegated (work or school account) | AuditLogsQuery-Entra.Read.All, AuditLogsQuery.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-CRM.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AuditLogsQuery-Entra.Read.All, AuditLogsQuery.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-CRM.Read.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +99,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

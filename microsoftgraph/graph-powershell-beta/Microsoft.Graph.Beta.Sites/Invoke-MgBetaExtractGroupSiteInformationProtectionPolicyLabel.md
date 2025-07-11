@@ -18,7 +18,7 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 ```
 Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -GroupId <String> -SiteId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-ContentInfo <IMicrosoftGraphContentInfo>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ContentInfo <IMicrosoftGraphContentInfo>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -GroupId <String> 
 ```
 Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -GroupId <String> -SiteId <String>
  -BodyParameter <IPaths1MuzbywGroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -GroupId <String> 
 ```
 Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-ContentInfo <IMicrosoftGraphContentInfo>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ContentInfo <IMicrosoftGraphContentInfo>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,13 +42,15 @@ Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -InputObject <ISit
 ```
 Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity>
  -BodyParameter <IPaths1MuzbywGroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -80,6 +82,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -145,21 +162,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -184,21 +186,6 @@ Parameter Sets: ExtractExpanded, Extract
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

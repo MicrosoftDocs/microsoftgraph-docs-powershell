@@ -17,7 +17,7 @@ Create new navigation property to customExtensionHandlers for identityGovernance
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler
  -AccessPackageAssignmentPolicyId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CustomExtension <IMicrosoftGraphCustomAccessPackageWorkflowExtension>]
- [-Id <String>] [-Stage <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Id <String>] [-Stage <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -25,7 +25,7 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandl
 ```
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler
  -AccessPackageAssignmentPolicyId <String> -BodyParameter <IMicrosoftGraphCustomExtensionHandler>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandl
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CustomExtension <IMicrosoftGraphCustomAccessPackageWorkflowExtension>]
- [-Id <String>] [-Stage <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Id <String>] [-Stage <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,12 +42,14 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandl
 ```
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler
  -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphCustomExtensionHandler>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to customExtensionHandlers for identityGovernance
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -94,6 +96,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -160,21 +177,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -197,21 +199,6 @@ accessPackageCustomExtensionStage
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

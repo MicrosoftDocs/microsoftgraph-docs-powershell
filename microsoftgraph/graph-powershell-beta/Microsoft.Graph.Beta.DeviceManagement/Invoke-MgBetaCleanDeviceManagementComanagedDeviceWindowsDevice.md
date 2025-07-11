@@ -16,7 +16,7 @@ Clean Windows device
 ```
 Invoke-MgBetaCleanDeviceManagementComanagedDeviceWindowsDevice -ManagedDeviceId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-KeepUserData]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Invoke-MgBetaCleanDeviceManagementComanagedDeviceWindowsDevice -ManagedDeviceId 
 ```
 Invoke-MgBetaCleanDeviceManagementComanagedDeviceWindowsDevice -ManagedDeviceId <String>
  -BodyParameter <IPathsI15RiiDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Invoke-MgBetaCleanDeviceManagementComanagedDeviceWindowsDevice -ManagedDeviceId 
 ```
 Invoke-MgBetaCleanDeviceManagementComanagedDeviceWindowsDevice -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-KeepUserData]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Invoke-MgBetaCleanDeviceManagementComanagedDeviceWindowsDevice -InputObject <IDe
 ```
 Invoke-MgBetaCleanDeviceManagementComanagedDeviceWindowsDevice -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IPathsI15RiiDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -54,6 +54,8 @@ Clean Windows device
 | Delegated (work or school account) | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -85,6 +87,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -164,21 +181,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -186,21 +188,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

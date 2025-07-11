@@ -17,7 +17,7 @@ Get me from education
 
 ```
 Get-MgBetaEducationMe [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,6 +30,8 @@ Get me from education
 | Delegated (work or school account) | EduRoster.ReadBasic,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -60,21 +62,6 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

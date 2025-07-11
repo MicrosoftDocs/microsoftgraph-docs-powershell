@@ -18,7 +18,7 @@ Invoke action reprocess
 ### Reprocess (Default)
 ```
 Update-MgBetaEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,14 +35,14 @@ Update-MgBetaEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequ
  [-RequestType <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject>]
  [-Schedule <IMicrosoftGraphRequestSchedule>]
  [-VerifiedCredentialsData <IMicrosoftGraphVerifiedCredentialData[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String>
  [-ResponseHeadersVariable <String>] -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -58,20 +58,20 @@ Update-MgBetaEntitlementManagementAssignmentRequest -InputObject <IIdentityGover
  [-RequestType <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject>]
  [-Schedule <IMicrosoftGraphRequestSchedule>]
  [-VerifiedCredentialsData <IMicrosoftGraphVerifiedCredentialData[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
  [-ResponseHeadersVariable <String>] -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReprocessViaIdentity
 ```
 Update-MgBetaEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -85,6 +85,8 @@ Invoke action reprocess
 | Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -192,6 +194,21 @@ Read-only.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -374,21 +391,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Requestor
 accessPackageSubject
 To construct, see NOTES section for REQUESTOR properties and create a hash table.
@@ -494,21 +496,6 @@ To construct, see NOTES section for VERIFIEDCREDENTIALSDATA properties and creat
 Type: IMicrosoftGraphVerifiedCredentialData[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

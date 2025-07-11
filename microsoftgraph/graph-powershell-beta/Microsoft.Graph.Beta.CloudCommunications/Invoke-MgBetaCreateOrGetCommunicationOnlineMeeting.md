@@ -22,7 +22,7 @@ If the external ID already exists, this API will return the onlineMeeting object
 Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ChatInfo <IMicrosoftGraphChatInfo>] [-EndDateTime <DateTime>]
  [-ExternalId <String>] [-Participants <IMicrosoftGraphMeetingParticipants>] [-StartDateTime <DateTime>]
- [-Subject <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Subject <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,13 +30,15 @@ Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting [-ResponseHeadersVariable <St
 ```
 Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting
  -BodyParameter <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create an onlineMeeting object with a custom specified external ID.
 If the external ID already exists, this API will return the onlineMeeting object with that external ID.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -79,6 +81,21 @@ To construct, see NOTES section for CHATINFO properties and create a hash table.
 Type: IMicrosoftGraphChatInfo
 Parameter Sets: CreateExpanded1
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -148,21 +165,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -200,21 +202,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

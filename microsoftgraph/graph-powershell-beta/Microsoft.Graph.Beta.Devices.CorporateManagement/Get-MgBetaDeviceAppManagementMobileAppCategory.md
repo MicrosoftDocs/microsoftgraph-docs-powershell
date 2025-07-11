@@ -20,21 +20,21 @@ The mobile app categories.
 Get-MgBetaDeviceAppManagementMobileAppCategory [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgBetaDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### List1
@@ -42,21 +42,21 @@ Get-MgBetaDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> [-E
 Get-MgBetaDeviceAppManagementMobileAppCategory -MobileAppId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgBetaDeviceAppManagementMobileAppCategory -InputObject <IDevicesCorporateManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaDeviceAppManagementMobileAppCategory -InputObject <IDevicesCorporateManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,6 +69,8 @@ The mobile app categories.
 | Delegated (work or school account) | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -209,21 +211,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 Select properties to be returned
 
@@ -269,6 +256,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List, List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -291,21 +293,6 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List, List1
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List, List1
-Aliases:
 
 Required: False
 Position: Named

@@ -19,18 +19,20 @@ Check the publishing status of a contentType in a content type hub site.
 ### Is (Default)
 ```
 Test-MgShareListContentTypePublished -ContentTypeId <String> -SharedDriveItemId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### IsViaIdentity
 ```
 Test-MgShareListContentTypePublished -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Check the publishing status of a contentType in a content type hub site.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -77,21 +79,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

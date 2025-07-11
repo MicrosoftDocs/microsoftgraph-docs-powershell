@@ -20,7 +20,7 @@ Update-MgBetaEntitlementManagementSubject -AccessPackageSubjectId <String> [-Res
  [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization>] [-ConnectedOrganizationId <String>]
  [-DisplayName <String>] [-Email <String>] [-Id <String>] [-ObjectId <String>]
  [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>] [-SubjectLifecycle <String>]
- [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Type <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgBetaEntitlementManagementSubject -AccessPackageSubjectId <String> [-Res
 ```
 Update-MgBetaEntitlementManagementSubject -AccessPackageSubjectId <String>
  -BodyParameter <IMicrosoftGraphAccessPackageSubject> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,7 +38,7 @@ Update-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdent
  [-CleanupScheduledDateTime <DateTime>] [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]
  [-ConnectedOrganizationId <String>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
  [-ObjectId <String>] [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>]
- [-SubjectLifecycle <String>] [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-SubjectLifecycle <String>] [-Type <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,11 +46,13 @@ Update-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdent
 ```
 Update-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphAccessPackageSubject> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update an existing accessPackageSubject object to change the subject lifecycle.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -123,6 +125,21 @@ The Timestamp type represents date and time information using ISO 8601 format an
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -286,21 +303,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -338,21 +340,6 @@ The resource type of the subject.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

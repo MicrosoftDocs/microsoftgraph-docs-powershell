@@ -20,7 +20,7 @@ Update the navigation property hostedContents in teamwork
 Update-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent -ChannelId <String>
  -ChatMessageHostedContentId <String> -ChatMessageId <String> -ChatMessageId1 <String> -DeletedTeamId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentBytesInputFile <String>]
- [-ContentType <String>] [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ContentType <String>] [-Id <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,14 +29,14 @@ Update-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent -ChannelId <Str
 Update-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent -ChannelId <String>
  -ChatMessageHostedContentId <String> -ChatMessageId <String> -ChatMessageId1 <String> -DeletedTeamId <String>
  -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentBytesInputFile <String>]
- [-ContentType <String>] [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ContentType <String>] [-Id <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,11 +44,13 @@ Update-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent -InputObject <I
 ```
 Update-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity>
  -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property hostedContents in teamwork
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -136,6 +138,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -236,21 +253,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -258,21 +260,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

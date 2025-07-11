@@ -17,7 +17,7 @@ Update the navigation property details in groups
 Update-MgBetaGroupTeamChannelPlannerPlanDetail -ChannelId <String> -GroupId <String> -PlannerPlanId <String>
  -IfMatch <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>] [-ContextDetails <Hashtable>]
- [-Id <String>] [-SharedWith <Hashtable>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Id <String>] [-SharedWith <Hashtable>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -25,7 +25,7 @@ Update-MgBetaGroupTeamChannelPlannerPlanDetail -ChannelId <String> -GroupId <Str
 ```
 Update-MgBetaGroupTeamChannelPlannerPlanDetail -ChannelId <String> -GroupId <String> -PlannerPlanId <String>
  -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerPlanDetails> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -33,7 +33,7 @@ Update-MgBetaGroupTeamChannelPlannerPlanDetail -ChannelId <String> -GroupId <Str
 Update-MgBetaGroupTeamChannelPlannerPlanDetail -InputObject <ITeamsIdentity> -IfMatch <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>] [-ContextDetails <Hashtable>]
- [-Id <String>] [-SharedWith <Hashtable>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Id <String>] [-SharedWith <Hashtable>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,11 +41,13 @@ Update-MgBetaGroupTeamChannelPlannerPlanDetail -InputObject <ITeamsIdentity> -If
 ```
 Update-MgBetaGroupTeamChannelPlannerPlanDetail -InputObject <ITeamsIdentity> -IfMatch <String>
  -BodyParameter <IMicrosoftGraphPlannerPlanDetails> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property details in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -105,6 +107,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -218,21 +235,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -255,21 +257,6 @@ plannerUserIds
 Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -22,7 +22,7 @@ New-MgBetaGroupSiteGetByPathPageTemplate -GroupId <String> -Path <String> -SiteI
  [-LastModifiedDateTime <DateTime>] [-Name <String>] [-PageLayout <String>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-PublishingState <IMicrosoftGraphPublicationFacet>]
  [-Title <String>] [-TitleArea <IMicrosoftGraphTitleArea>] [-WebParts <IMicrosoftGraphWebPart[]>]
- [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-WebUrl <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ New-MgBetaGroupSiteGetByPathPageTemplate -GroupId <String> -Path <String> -SiteI
 ```
 New-MgBetaGroupSiteGetByPathPageTemplate -GroupId <String> -Path <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphPageTemplate> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -43,18 +43,20 @@ New-MgBetaGroupSiteGetByPathPageTemplate -InputObject <ISitesIdentity> [-Respons
  [-PageLayout <String>] [-ParentReference <IMicrosoftGraphItemReference>]
  [-PublishingState <IMicrosoftGraphPublicationFacet>] [-Title <String>] [-TitleArea <IMicrosoftGraphTitleArea>]
  [-WebParts <IMicrosoftGraphWebPart[]>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupSiteGetByPathPageTemplate -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphPageTemplate> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to pageTemplates for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,6 +99,21 @@ To construct, see NOTES section for CANVASLAYOUT properties and create a hash ta
 Type: IMicrosoftGraphCanvasLayout
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -356,21 +373,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PublishingState
 publicationFacet
 To construct, see NOTES section for PUBLISHINGSTATE properties and create a hash table.
@@ -472,21 +474,6 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

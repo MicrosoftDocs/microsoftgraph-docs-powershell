@@ -20,18 +20,20 @@ Determine whether a user has access to a shared channel.
 ```
 Invoke-MgHaveTeamworkDeletedTeamChannel -ChannelId <String> -DeletedTeamId <String> [-TenantId <String>]
  [-UserId <String>] [-UserPrincipalName <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### HaveViaIdentity
 ```
 Invoke-MgHaveTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-TenantId <String>] [-UserId <String>]
  [-UserPrincipalName <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Determine whether a user has access to a shared channel.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -93,21 +95,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

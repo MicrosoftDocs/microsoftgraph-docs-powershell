@@ -17,7 +17,7 @@ Get resource from identityGovernance
 Get-MgEntitlementManagementResourceRequestResourceRoleResourceScopeResource
  -AccessPackageResourceRequestId <String> -AccessPackageResourceRoleId <String>
  -AccessPackageResourceScopeId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -25,12 +25,14 @@ Get-MgEntitlementManagementResourceRequestResourceRoleResourceScopeResource
 ```
 Get-MgEntitlementManagementResourceRequestResourceRoleResourceScopeResource
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get resource from identityGovernance
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -122,21 +124,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

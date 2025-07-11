@@ -17,14 +17,14 @@ Create new navigation property to connectors for onPremisesPublishingProfiles
 New-MgBetaOnPremisePublishingProfileConnector -OnPremisesPublishingProfileId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExternalIP <String>] [-Id <String>]
  [-MachineName <String>] [-MemberOf <IMicrosoftGraphConnectorGroup[]>] [-Status <String>] [-Version <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaOnPremisePublishingProfileConnector -OnPremisesPublishingProfileId <String>
  -BodyParameter <IMicrosoftGraphConnector> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -32,18 +32,20 @@ New-MgBetaOnPremisePublishingProfileConnector -OnPremisesPublishingProfileId <St
 New-MgBetaOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExternalIP <String>] [-Id <String>]
  [-MachineName <String>] [-MemberOf <IMicrosoftGraphConnectorGroup[]>] [-Status <String>] [-Version <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphConnector> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to connectors for onPremisesPublishingProfiles
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -75,6 +77,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -188,21 +205,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -241,21 +243,6 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

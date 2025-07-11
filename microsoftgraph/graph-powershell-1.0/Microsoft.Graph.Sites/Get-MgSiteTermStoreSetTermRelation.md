@@ -20,21 +20,21 @@ To indicate which terms are related to the current term as either pinned or reus
 Get-MgSiteTermStoreSetTermRelation -SetId <String> -SiteId <String> -TermId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgSiteTermStoreSetTermRelation -RelationId <String> -SetId <String> -SiteId <String> -TermId <String>
  -StoreId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgSiteTermStoreSetTermRelation -RelationId <String> -SetId <String> -SiteId <String> -TermId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### List1
@@ -42,25 +42,27 @@ Get-MgSiteTermStoreSetTermRelation -RelationId <String> -SetId <String> -SiteId 
 Get-MgSiteTermStoreSetTermRelation -SetId <String> -SiteId <String> -TermId <String> -StoreId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgSiteTermStoreSetTermRelation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgSiteTermStoreSetTermRelation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 To indicate which terms are related to the current term as either pinned or reused.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -171,21 +173,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 Select properties to be returned
 
@@ -276,6 +263,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List, List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -328,21 +330,6 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List, List1
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List, List1
-Aliases:
 
 Required: False
 Position: Named

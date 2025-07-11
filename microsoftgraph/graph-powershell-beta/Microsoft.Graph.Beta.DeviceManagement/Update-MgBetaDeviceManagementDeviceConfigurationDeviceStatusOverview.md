@@ -21,7 +21,7 @@ Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview -DeviceConf
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ConfigurationVersion <Int32>]
  [-ConflictCount <Int32>] [-ErrorCount <Int32>] [-FailedCount <Int32>] [-Id <String>]
  [-LastUpdateDateTime <DateTime>] [-NotApplicableCount <Int32>] [-NotApplicablePlatformCount <Int32>]
- [-PendingCount <Int32>] [-SuccessCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-PendingCount <Int32>] [-SuccessCount <Int32>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview -DeviceConf
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview -DeviceConfigurationId <String>
  -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceOverview> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,7 +38,7 @@ Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview -InputObjec
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ConfigurationVersion <Int32>]
  [-ConflictCount <Int32>] [-ErrorCount <Int32>] [-FailedCount <Int32>] [-Id <String>]
  [-LastUpdateDateTime <DateTime>] [-NotApplicableCount <Int32>] [-NotApplicablePlatformCount <Int32>]
- [-PendingCount <Int32>] [-SuccessCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-PendingCount <Int32>] [-SuccessCount <Int32>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview -InputObjec
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceOverview> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,6 +59,8 @@ Update the navigation property deviceStatusOverview in deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -104,6 +106,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -275,21 +292,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -316,21 +318,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

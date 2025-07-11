@@ -19,13 +19,13 @@ For document libraries, the driveItem relationship exposes the listItem as a dri
 ```
 Get-MgSiteListItemDriveItem -ListId <String> -ListItemId <String> -SiteId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgSiteListItemDriveItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -39,6 +39,8 @@ For document libraries, the driveItem relationship exposes the listItem as a dri
 | Delegated (work or school account) | Files.Read, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
 | Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
 | Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -112,21 +114,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

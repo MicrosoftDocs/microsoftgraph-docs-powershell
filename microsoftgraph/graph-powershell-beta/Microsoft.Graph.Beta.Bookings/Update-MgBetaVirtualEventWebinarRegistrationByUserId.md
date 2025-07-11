@@ -25,7 +25,7 @@ Update-MgBetaVirtualEventWebinarRegistrationByUserId -UserId <String> -VirtualEv
  [-PreferredTimezone <String>] [-RegistrantVideoOnDemandWebUrl <String>] [-RegistrationDateTime <DateTime>]
  [-RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-Status <String>] [-UserId1 <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,25 +38,27 @@ Update-MgBetaVirtualEventWebinarRegistrationByUserId [-UserId <String>] -InputOb
  [-PreferredTimezone <String>] [-RegistrantVideoOnDemandWebUrl <String>] [-RegistrationDateTime <DateTime>]
  [-RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaVirtualEventWebinarRegistrationByUserId -UserId <String> -VirtualEventWebinarId <String>
  -BodyParameter <IMicrosoftGraphVirtualEventRegistration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaVirtualEventWebinarRegistrationByUserId -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphVirtualEventRegistration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property registrations in solutions
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -101,6 +103,21 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -239,21 +256,6 @@ The registrant's time zone details.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -408,21 +410,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

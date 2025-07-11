@@ -21,14 +21,14 @@ Update-MgBetaChatPermissionGrant -ChatId <String> -ResourceSpecificPermissionGra
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ClientAppId <String>]
  [-ClientId <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-Permission <String>]
  [-PermissionType <String>] [-ResourceAppId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaChatPermissionGrant -ChatId <String> -ResourceSpecificPermissionGrantId <String>
  -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,18 +36,20 @@ Update-MgBetaChatPermissionGrant -ChatId <String> -ResourceSpecificPermissionGra
 Update-MgBetaChatPermissionGrant -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ClientAppId <String>] [-ClientId <String>] [-DeletedDateTime <DateTime>]
  [-Id <String>] [-Permission <String>] [-PermissionType <String>] [-ResourceAppId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaChatPermissionGrant -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property permissionGrants in chats
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -121,6 +123,21 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -225,21 +242,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResourceAppId
 ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
@@ -278,21 +280,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

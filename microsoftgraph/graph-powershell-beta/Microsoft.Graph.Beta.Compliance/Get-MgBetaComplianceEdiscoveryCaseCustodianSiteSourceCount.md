@@ -16,14 +16,14 @@ Get the number of the resource
 ```
 Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSourceCount -CaseId <String> -CustodianId <String>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSourceCount -InputObject <IComplianceIdentity>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,6 +36,8 @@ Get the number of the resource
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -112,21 +114,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

@@ -16,7 +16,7 @@ Invoke action reorder
 ```
 Invoke-MgBetaReorderDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Priority <Int32>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Invoke-MgBetaReorderDeviceManagementConfigurationPolicy -DeviceManagementConfigu
 ```
 Invoke-MgBetaReorderDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <String>
  -Body <IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Invoke-MgBetaReorderDeviceManagementConfigurationPolicy -DeviceManagementConfigu
 ```
 Invoke-MgBetaReorderDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Priority <Int32>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ Invoke-MgBetaReorderDeviceManagementConfigurationPolicy -InputObject <IDeviceMan
 Invoke-MgBetaReorderDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -55,6 +55,8 @@ Invoke action reorder
 | Delegated (work or school account) | DeviceManagementConfiguration.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -102,6 +104,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -181,21 +198,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -203,21 +205,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

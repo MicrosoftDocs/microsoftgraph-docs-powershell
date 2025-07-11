@@ -18,7 +18,7 @@ Represents the capability for Microsoft Entra identity synchronization through t
 ### Get (Default)
 ```
 Get-MgApplicationSynchronization -ApplicationId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -26,11 +26,13 @@ Get-MgApplicationSynchronization -ApplicationId <String> [-ExpandProperty <Strin
 ```
 Get-MgApplicationSynchronization -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Represents the capability for Microsoft Entra identity synchronization through the Microsoft Graph API.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -92,21 +94,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

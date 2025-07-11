@@ -23,14 +23,14 @@ Progress is reported until the operation is completed by monitoring the progress
 ```
 Copy-MgBetaDriveRoot -DriveId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ChildrenOnly] [-IncludeAllVersionHistory] [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
 ```
 Copy-MgBetaDriveRoot -DriveId <String>
  -BodyParameter <IPaths11Forp5DrivesDriveIdRootMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,14 +39,14 @@ Copy-MgBetaDriveRoot -DriveId <String>
 Copy-MgBetaDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ChildrenOnly] [-IncludeAllVersionHistory] [-Name <String>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
 Copy-MgBetaDriveRoot -InputObject <IFilesIdentity>
  -BodyParameter <IPaths11Forp5DrivesDriveIdRootMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -55,6 +55,8 @@ Asynchronously create a copy of a driveItem (including any children) under a new
 After the request is acknowledged, it enters a queue.
 The actual copying, including any subitems, occurs at an undetermined time.
 Progress is reported until the operation is completed by monitoring the progress.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -100,6 +102,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -196,21 +213,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -218,21 +220,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

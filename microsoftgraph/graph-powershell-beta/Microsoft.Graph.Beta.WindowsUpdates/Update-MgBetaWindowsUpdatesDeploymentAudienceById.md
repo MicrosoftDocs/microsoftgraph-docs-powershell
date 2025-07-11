@@ -21,7 +21,7 @@ You can also use the method updateAudience to update the deploymentAudience.
 Update-MgBetaWindowsUpdatesDeploymentAudienceById -DeploymentId <String> [-ResponseHeadersVariable <String>]
  [-AddExclusions <String[]>] [-AddMembers <String[]>] [-AdditionalProperties <Hashtable>]
  [-MemberEntityType <String>] [-RemoveExclusions <String[]>] [-RemoveMembers <String[]>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgBetaWindowsUpdatesDeploymentAudienceById -DeploymentId <String> [-Respo
 ```
 Update-MgBetaWindowsUpdatesDeploymentAudienceById -DeploymentId <String>
  -BodyParameter <IPaths1Yczx1TAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencebyidPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Update-MgBetaWindowsUpdatesDeploymentAudienceById -DeploymentId <String>
 Update-MgBetaWindowsUpdatesDeploymentAudienceById -InputObject <IWindowsUpdatesIdentity>
  [-ResponseHeadersVariable <String>] [-AddExclusions <String[]>] [-AddMembers <String[]>]
  [-AdditionalProperties <Hashtable>] [-MemberEntityType <String>] [-RemoveExclusions <String[]>]
- [-RemoveMembers <String[]>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-RemoveMembers <String[]>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ Update-MgBetaWindowsUpdatesDeploymentAudienceById -InputObject <IWindowsUpdatesI
 ```
 Update-MgBetaWindowsUpdatesDeploymentAudienceById -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IPaths1Yczx1TAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencebyidPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -156,6 +156,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DeploymentId
 The unique identifier of deployment
 
@@ -232,21 +247,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RemoveExclusions
 
 
@@ -284,21 +284,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

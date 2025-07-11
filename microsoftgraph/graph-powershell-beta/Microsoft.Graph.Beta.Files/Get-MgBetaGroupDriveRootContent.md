@@ -21,14 +21,14 @@ To proactively opt in to the new behavior ahead of time, use the contentStream p
 ### Get (Default)
 ```
 Get-MgBetaGroupDriveRootContent -DriveId <String> -GroupId <String> [-Format <String>] -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaGroupDriveRootContent -InputObject <IFilesIdentity> [-Format <String>] -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -37,6 +37,8 @@ The content stream, if the item represents a file.
 The content property will have a potentially breaking change in behavior in the future.
 It will stream content directly instead of redirecting.
 To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -142,21 +144,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

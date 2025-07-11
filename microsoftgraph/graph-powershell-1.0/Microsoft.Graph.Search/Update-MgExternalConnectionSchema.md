@@ -21,14 +21,14 @@ Create a new or update an existing schema for a Microsoft Search connection.
 Update-MgExternalConnectionSchema -ExternalConnectionId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-BaseType <String>] [-Id <String>]
  [-Properties <IMicrosoftGraphExternalConnectorsProperty[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgExternalConnectionSchema -ExternalConnectionId <String>
  -BodyParameter <IMicrosoftGraphExternalConnectorsSchema> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,14 +36,14 @@ Update-MgExternalConnectionSchema -ExternalConnectionId <String>
 Update-MgExternalConnectionSchema -InputObject <ISearchIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-BaseType <String>] [-Id <String>]
  [-Properties <IMicrosoftGraphExternalConnectorsProperty[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgExternalConnectionSchema -InputObject <ISearchIdentity>
  -BodyParameter <IMicrosoftGraphExternalConnectorsSchema> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -146,6 +146,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ExternalConnectionId
 The unique identifier of externalConnection
 
@@ -208,21 +223,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Properties
 The properties defined for the items in the connection.
 The minimum number of properties is one, the maximum is 128.
@@ -247,21 +247,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -319,7 +304,7 @@ Optional.
     - `[IsQueryable <Boolean?>]`: Specifies if the property is queryable.
 Queryable properties can be used in Keyword Query Language (KQL) queries.
 Optional.
-    - `[IsRefinable <Boolean?>]`: Specifies if the property is refinable. 
+    - `[IsRefinable <Boolean?>]`: Specifies if the property is refinable.
 Refinable properties can be used to filter search results in the Search API and add a refiner control in the Microsoft Search user experience.
 Optional.
     - `[IsRetrievable <Boolean?>]`: Specifies if the property is retrievable.
@@ -338,7 +323,7 @@ Use the Prefer: include-unknown-enum-members request header to get the following
     - `[Name <String>]`: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
-For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), - `[, ]`, {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, \`, ^. 
+For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), - `[, ]`, {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, \`, ^.
 Required.
     - `[Type <String>]`: propertyType
 
@@ -363,7 +348,7 @@ Optional.
   - `[IsQueryable <Boolean?>]`: Specifies if the property is queryable.
 Queryable properties can be used in Keyword Query Language (KQL) queries.
 Optional.
-  - `[IsRefinable <Boolean?>]`: Specifies if the property is refinable. 
+  - `[IsRefinable <Boolean?>]`: Specifies if the property is refinable.
 Refinable properties can be used to filter search results in the Search API and add a refiner control in the Microsoft Search user experience.
 Optional.
   - `[IsRetrievable <Boolean?>]`: Specifies if the property is retrievable.
@@ -382,7 +367,7 @@ Use the Prefer: include-unknown-enum-members request header to get the following
   - `[Name <String>]`: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
-For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), - `[, ]`, {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, \`, ^. 
+For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), - `[, ]`, {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, \`, ^.
 Required.
   - `[Type <String>]`: propertyType
 

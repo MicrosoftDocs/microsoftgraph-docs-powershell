@@ -21,14 +21,14 @@ Update-MgBetaDeviceManagementDeviceConfigurationUserStatus -DeviceConfigurationI
  -DeviceConfigurationUserStatusId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DevicesCount <Int32>] [-Id <String>] [-LastReportedDateTime <DateTime>]
  [-Status <String>] [-UserDisplayName <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationUserStatus -DeviceConfigurationId <String>
  -DeviceConfigurationUserStatusId <String> -BodyParameter <IMicrosoftGraphDeviceConfigurationUserStatus>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Update-MgBetaDeviceManagementDeviceConfigurationUserStatus -DeviceConfigurationI
 Update-MgBetaDeviceManagementDeviceConfigurationUserStatus -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DevicesCount <Int32>] [-Id <String>]
  [-LastReportedDateTime <DateTime>] [-Status <String>] [-UserDisplayName <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,7 +45,7 @@ Update-MgBetaDeviceManagementDeviceConfigurationUserStatus -InputObject <IDevice
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationUserStatus -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceConfigurationUserStatus> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,6 +58,8 @@ Update the navigation property userStatuses in deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -89,6 +91,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -199,21 +216,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -266,21 +268,6 @@ UserPrincipalName.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

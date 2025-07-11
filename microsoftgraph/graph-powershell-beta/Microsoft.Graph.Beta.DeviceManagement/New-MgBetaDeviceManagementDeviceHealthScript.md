@@ -24,14 +24,14 @@ New-MgBetaDeviceManagementDeviceHealthScript [-ResponseHeadersVariable <String>]
  [-Publisher <String>] [-RemediationScriptContentInputFile <String>]
  [-RemediationScriptParameters <IMicrosoftGraphDeviceHealthScriptParameter[]>] [-RoleScopeTagIds <String[]>]
  [-RunAs32Bit] [-RunAsAccount <RunAsAccountType>] [-RunSummary <IMicrosoftGraphDeviceHealthScriptRunSummary>]
- [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Version <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDeviceHealthScript -BodyParameter <IMicrosoftGraphDeviceHealthScript>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,6 +45,8 @@ Create new navigation property to deviceHealthScripts for deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementScripts.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementScripts.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -92,6 +94,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -264,21 +281,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Publisher
 Name of the device health script publisher
 
@@ -408,21 +410,6 @@ Version of the device health script
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -20,7 +20,7 @@ Read-only.
 ```
 Get-MgBetaGroupSiteOnenoteNotebookSectionParentSectionGroup -GroupId <String> -NotebookId <String>
  -OnenoteSectionId <String> -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -28,12 +28,14 @@ Get-MgBetaGroupSiteOnenoteNotebookSectionParentSectionGroup -GroupId <String> -N
 ```
 Get-MgBetaGroupSiteOnenoteNotebookSectionParentSectionGroup -InputObject <ISitesIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The section group that contains the section.
 Read-only.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -122,21 +124,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

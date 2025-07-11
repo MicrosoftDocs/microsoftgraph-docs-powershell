@@ -17,7 +17,7 @@ The role definition that is enforced with this role setting.
 ```
 Get-MgBetaPrivilegedAccessRoleSettingRoleDefinition -GovernanceRoleSettingId <String>
  -PrivilegedAccessId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -25,12 +25,14 @@ Get-MgBetaPrivilegedAccessRoleSettingRoleDefinition -GovernanceRoleSettingId <St
 ```
 Get-MgBetaPrivilegedAccessRoleSettingRoleDefinition -InputObject <IIdentityGovernanceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Read-only.
 The role definition that is enforced with this role setting.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -104,21 +106,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

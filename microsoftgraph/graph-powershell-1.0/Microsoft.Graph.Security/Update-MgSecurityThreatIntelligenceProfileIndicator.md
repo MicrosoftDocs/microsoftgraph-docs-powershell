@@ -20,14 +20,14 @@ Update the navigation property intelligenceProfileIndicators in security
 Update-MgSecurityThreatIntelligenceProfileIndicator -IntelligenceProfileIndicatorId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>]
  [-FirstSeenDateTime <DateTime>] [-Id <String>] [-LastSeenDateTime <DateTime>] [-Source <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityThreatIntelligenceProfileIndicator -IntelligenceProfileIndicatorId <String>
  -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfileIndicator> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,18 +35,20 @@ Update-MgSecurityThreatIntelligenceProfileIndicator -IntelligenceProfileIndicato
 Update-MgSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>]
  [-FirstSeenDateTime <DateTime>] [-Id <String>] [-LastSeenDateTime <DateTime>] [-Source <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfileIndicator> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property intelligenceProfileIndicators in security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -93,6 +95,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -188,21 +205,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -225,21 +227,6 @@ indicatorSource
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

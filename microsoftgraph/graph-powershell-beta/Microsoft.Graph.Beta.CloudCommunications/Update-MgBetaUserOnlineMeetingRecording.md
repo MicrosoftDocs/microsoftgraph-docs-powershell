@@ -22,14 +22,14 @@ Update-MgBetaUserOnlineMeetingRecording -CallRecordingId <String> -OnlineMeeting
  [-ContentCorrelationId <String>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>]
  [-EndDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
  [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-RecordingContentUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserOnlineMeetingRecording -CallRecordingId <String> -OnlineMeetingId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphCallRecording> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,18 +39,20 @@ Update-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdenti
  [-ContentCorrelationId <String>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>]
  [-EndDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
  [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-RecordingContentUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IMicrosoftGraphCallRecording> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property recordings in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -110,6 +112,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -278,21 +295,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RecordingContentUrl
 The URL that can be used to access the content of the recording.
 Read-only.
@@ -333,21 +335,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

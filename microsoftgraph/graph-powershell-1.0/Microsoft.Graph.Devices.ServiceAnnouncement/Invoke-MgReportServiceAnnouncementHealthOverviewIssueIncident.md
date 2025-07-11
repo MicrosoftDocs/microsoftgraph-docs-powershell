@@ -21,20 +21,22 @@ The operation returns an error if the specified issue doesn't exist for the tena
 ```
 Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident -ServiceHealthId <String>
  -ServiceHealthIssueId <String> -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-PassThru] [<CommonParameters>]
 ```
 
 ### ReportViaIdentity
 ```
 Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident
  -InputObject <IDevicesServiceAnnouncementIdentity> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Provide the Post-Incident Review (PIR) document of a specified service issue for tenant.
 An issue only with status of PostIncidentReviewPublished indicates that the PIR document exists for the issue.
 The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -95,21 +97,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

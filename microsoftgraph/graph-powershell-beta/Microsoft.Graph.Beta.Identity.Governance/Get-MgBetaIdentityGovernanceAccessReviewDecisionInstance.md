@@ -17,19 +17,21 @@ The instance is the parent of the decision item, representing the recurrence of 
 ```
 Get-MgBetaIdentityGovernanceAccessReviewDecisionInstance -AccessReviewInstanceDecisionItemId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaIdentityGovernanceAccessReviewDecisionInstance -InputObject <IIdentityGovernanceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 There's exactly one accessReviewInstance associated with each decision.
 The instance is the parent of the decision item, representing the recurrence of the access review the decision is made on.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -91,21 +93,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

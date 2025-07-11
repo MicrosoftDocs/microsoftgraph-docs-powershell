@@ -17,12 +17,14 @@ Represents billing details for billed and unbilled data.
 
 ```
 Get-MgBetaReportPartnerBilling [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Represents billing details for billed and unbilled data.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -53,21 +55,6 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

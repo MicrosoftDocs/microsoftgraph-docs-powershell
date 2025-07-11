@@ -17,7 +17,7 @@ Update the navigation property documentProcessingJobs in groups
 Update-MgBetaGroupSiteDocumentProcessingJob -DocumentProcessingJobId <String> -GroupId <String>
  -SiteId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-JobType <String>] [-ListItemUniqueId <String>]
- [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,14 +25,14 @@ Update-MgBetaGroupSiteDocumentProcessingJob -DocumentProcessingJobId <String> -G
 ```
 Update-MgBetaGroupSiteDocumentProcessingJob -DocumentProcessingJobId <String> -GroupId <String>
  -SiteId <String> -BodyParameter <IMicrosoftGraphDocumentProcessingJob> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaGroupSiteDocumentProcessingJob -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-JobType <String>]
- [-ListItemUniqueId <String>] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ListItemUniqueId <String>] [-Status <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,11 +40,13 @@ Update-MgBetaGroupSiteDocumentProcessingJob -InputObject <ISitesIdentity> [-Resp
 ```
 Update-MgBetaGroupSiteDocumentProcessingJob -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphDocumentProcessingJob> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property documentProcessingJobs in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -76,6 +78,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -203,21 +220,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -255,21 +257,6 @@ documentProcessingJobStatus
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

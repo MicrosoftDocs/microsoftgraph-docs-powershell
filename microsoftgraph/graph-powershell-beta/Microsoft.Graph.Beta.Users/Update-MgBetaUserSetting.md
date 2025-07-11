@@ -24,14 +24,14 @@ Update-MgBetaUserSetting -UserId <String> [-ResponseHeadersVariable <String>]
  [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]
  [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Storage <IMicrosoftGraphUserStorage>]
- [-Windows <IMicrosoftGraphWindowsSetting[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Windows <IMicrosoftGraphWindowsSetting[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserSetting -UserId <String> -BodyParameter <IMicrosoftGraphUserSettings>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,14 +44,14 @@ Update-MgBetaUserSetting -InputObject <IUsersIdentity> [-ResponseHeadersVariable
  [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]
  [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Storage <IMicrosoftGraphUserStorage>]
- [-Windows <IMicrosoftGraphWindowsSetting[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Windows <IMicrosoftGraphWindowsSetting[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserSetting -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUserSettings>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -65,6 +65,8 @@ Update the navigation property settings in users
 | Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -96,6 +98,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -227,21 +244,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RegionalAndLanguageSettings
 regionalAndLanguageSettings
 To construct, see NOTES section for REGIONALANDLANGUAGESETTINGS properties and create a hash table.
@@ -320,37 +322,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Windows
-The Windows settings of the user stored in the cloud.
-To construct, see NOTES section for WINDOWS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphWindowsSetting[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -359,6 +330,22 @@ The cmdlet is not run.
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Windows
+The Windows settings of the user stored in the cloud.
+To construct, see NOTES section for WINDOWS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsSetting[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named

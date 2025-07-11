@@ -17,7 +17,7 @@ Create new navigation property to picture for financials
 New-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -CompanyId <String> -PurchaseInvoiceLineId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
  [-ContentType <String>] [-Height <Int32>] [-Id <String>] [-Width <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded1
@@ -25,21 +25,21 @@ New-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -CompanyId <String> -Pu
 New-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -CompanyId <String> -PurchaseInvoiceLineId <String>
  -PurchaseInvoiceId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ContentInputFile <String>] [-ContentType <String>] [-Height <Int32>] [-Id <String>] [-Width <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -CompanyId <String> -PurchaseInvoiceLineId <String>
  -PurchaseInvoiceId <String> -BodyParameter <IMicrosoftGraphPicture> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -CompanyId <String> -PurchaseInvoiceLineId <String>
  -BodyParameter <IMicrosoftGraphPicture> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -47,7 +47,7 @@ New-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -CompanyId <String> -Pu
 New-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -InputObject <IFinancialsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
  [-ContentType <String>] [-Height <Int32>] [-Id <String>] [-Width <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -55,25 +55,27 @@ New-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -InputObject <IFinancia
 New-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -InputObject <IFinancialsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
  [-ContentType <String>] [-Height <Int32>] [-Id <String>] [-Width <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
 New-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -InputObject <IFinancialsIdentity>
  -BodyParameter <IMicrosoftGraphPicture> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -InputObject <IFinancialsIdentity>
  -BodyParameter <IMicrosoftGraphPicture> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to picture for financials
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -117,6 +119,21 @@ Parameter Sets: CreateExpanded, CreateExpanded1, Create1, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -214,21 +231,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PurchaseInvoiceId
 The unique identifier of purchaseInvoice
 
@@ -274,36 +276,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Width
-
-
-```yaml
-Type: Int32
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -316,6 +288,21 @@ Aliases: wi
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Width
+
+
+```yaml
+Type: Int32
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

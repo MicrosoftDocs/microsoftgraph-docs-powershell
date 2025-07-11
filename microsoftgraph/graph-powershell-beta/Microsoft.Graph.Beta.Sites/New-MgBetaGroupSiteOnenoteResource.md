@@ -19,7 +19,7 @@ Create new navigation property to resources for groups
 ```
 New-MgBetaGroupSiteOnenoteResource -GroupId <String> -SiteId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ContentUrl <String>] [-Id <String>]
- [-Self <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Self <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -27,14 +27,14 @@ New-MgBetaGroupSiteOnenoteResource -GroupId <String> -SiteId <String> [-Response
 ```
 New-MgBetaGroupSiteOnenoteResource -GroupId <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphOnenoteResource> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaGroupSiteOnenoteResource -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ContentUrl <String>] [-Id <String>]
- [-Self <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Self <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -42,11 +42,13 @@ New-MgBetaGroupSiteOnenoteResource -InputObject <ISitesIdentity> [-ResponseHeade
 ```
 New-MgBetaGroupSiteOnenoteResource -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphOnenoteResource> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to resources for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -78,6 +80,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -173,21 +190,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -227,21 +229,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

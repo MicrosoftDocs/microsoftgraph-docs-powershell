@@ -18,7 +18,7 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgUserMemberOfCount -UserId <String> [-Filter <String>] [-Search <String>] -ConsistencyLevel <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Get-MgUserMemberOfCount -UserId <String> [-Filter <String>] [-Search <String>] -
 ```
 Get-MgUserMemberOfCount -InputObject <IUsersIdentity> [-Filter <String>] [-Search <String>]
  -ConsistencyLevel <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,6 +39,8 @@ Get the number of the resource
 | Delegated (work or school account) | User.Read, GroupMember.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.Read.All, Directory.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -101,21 +103,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

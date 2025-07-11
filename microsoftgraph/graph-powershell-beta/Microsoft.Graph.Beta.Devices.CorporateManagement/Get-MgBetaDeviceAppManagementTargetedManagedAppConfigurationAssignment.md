@@ -21,7 +21,7 @@ Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment
  -TargetedManagedAppConfigurationId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
@@ -29,14 +29,14 @@ Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment
 Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment
  -TargetedManagedAppConfigurationId <String> -TargetedManagedAppPolicyAssignmentId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment
  -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -50,6 +50,8 @@ Navigation property to list of inclusion and exclusion groups to which the polic
 | Delegated (work or school account) | DeviceManagementApps.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -160,21 +162,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 Select properties to be returned
 
@@ -216,6 +203,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -272,21 +274,6 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named

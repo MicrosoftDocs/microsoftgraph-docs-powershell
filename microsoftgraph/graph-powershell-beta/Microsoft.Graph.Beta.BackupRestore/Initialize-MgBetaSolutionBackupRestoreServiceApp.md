@@ -20,14 +20,14 @@ Activate a serviceApp.
 ```
 Initialize-MgBetaSolutionBackupRestoreServiceApp -ServiceAppId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-EffectiveDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Activate
 ```
 Initialize-MgBetaSolutionBackupRestoreServiceApp -ServiceAppId <String>
  -BodyParameter <IPaths19Vx3BnSolutionsBackuprestoreServiceappsServiceappIdMicrosoftGraphActivatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,19 +35,21 @@ Initialize-MgBetaSolutionBackupRestoreServiceApp -ServiceAppId <String>
 ```
 Initialize-MgBetaSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-EffectiveDateTime <DateTime>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
 ```
 Initialize-MgBetaSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentity>
  -BodyParameter <IPaths19Vx3BnSolutionsBackuprestoreServiceappsServiceappIdMicrosoftGraphActivatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Activate a serviceApp.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -79,6 +81,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -128,21 +145,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -167,21 +169,6 @@ Parameter Sets: ActivateExpanded, Activate
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

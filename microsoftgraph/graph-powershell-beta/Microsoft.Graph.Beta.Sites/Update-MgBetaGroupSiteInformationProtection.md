@@ -22,14 +22,14 @@ Update-MgBetaGroupSiteInformationProtection -GroupId <String> -SiteId <String>
  [-SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]
  [-SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]
  [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupSiteInformationProtection -GroupId <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphInformationProtection> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,18 +41,20 @@ Update-MgBetaGroupSiteInformationProtection -InputObject <ISitesIdentity> [-Resp
  [-SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]
  [-SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]
  [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupSiteInformationProtection -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphInformationProtection> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property informationProtection in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -100,6 +102,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -197,21 +214,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -282,21 +284,6 @@ To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and crea
 Type: IMicrosoftGraphThreatAssessmentRequest[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

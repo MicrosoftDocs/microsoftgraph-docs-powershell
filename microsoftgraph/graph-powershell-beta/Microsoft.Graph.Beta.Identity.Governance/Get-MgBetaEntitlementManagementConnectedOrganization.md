@@ -20,21 +20,21 @@ Retrieve the properties and relationships of a connectedOrganization object.
 ### ListAll (Default)
 ```
 Get-MgBetaEntitlementManagementConnectedOrganization [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Sort <String[]>] [-All] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Sort <String[]>] [-All] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaEntitlementManagementConnectedOrganization -ConnectedOrganizationId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaEntitlementManagementConnectedOrganization -InputObject <IIdentityGovernanceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### List
@@ -42,20 +42,20 @@ Get-MgBetaEntitlementManagementConnectedOrganization -InputObject <IIdentityGove
 Get-MgBetaEntitlementManagementConnectedOrganization [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### ListByDisplayNameContains
 ```
 Get-MgBetaEntitlementManagementConnectedOrganization [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Sort <String[]>] [-Top <Int32>] -DisplayNameContains <String> [-All] [-ProgressAction <ActionPreference>]
+ [-Sort <String[]>] [-Top <Int32>] -DisplayNameContains <String> [-All]
  [<CommonParameters>]
 ```
 
 ### ListByDisplayNameEq
 ```
 Get-MgBetaEntitlementManagementConnectedOrganization [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Sort <String[]>] [-Top <Int32>] -DisplayNameEq <String> [-All] [-ProgressAction <ActionPreference>]
+ [-Sort <String[]>] [-Top <Int32>] -DisplayNameEq <String> [-All]
  [<CommonParameters>]
 ```
 
@@ -237,21 +237,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 Select properties to be returned
 
@@ -297,6 +282,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -319,21 +319,6 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List, ListByDisplayNameContains, ListByDisplayNameEq
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named

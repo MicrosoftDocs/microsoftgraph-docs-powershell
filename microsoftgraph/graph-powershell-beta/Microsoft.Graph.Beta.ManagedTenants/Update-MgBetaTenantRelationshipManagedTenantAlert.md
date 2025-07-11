@@ -26,14 +26,14 @@ Update-MgBetaTenantRelationshipManagedTenantAlert -ManagedTenantAlertId <String>
  [-EmailNotifications <IMicrosoftGraphManagedTenantsManagedTenantEmailNotification[]>] [-Id <String>]
  [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Message <String>] [-Severity <String>]
  [-Status <String>] [-TenantId <String>] [-Title <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantAlert -ManagedTenantAlertId <String>
  -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlert> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -50,18 +50,20 @@ Update-MgBetaTenantRelationshipManagedTenantAlert -InputObject <IManagedTenantsI
  [-EmailNotifications <IMicrosoftGraphManagedTenantsManagedTenantEmailNotification[]>] [-Id <String>]
  [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Message <String>] [-Severity <String>]
  [-Status <String>] [-TenantId <String>] [-Title <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantAlert -InputObject <IManagedTenantsIdentity>
  -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlert> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property managedTenantAlerts in tenantRelationships
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -203,6 +205,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -389,21 +406,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -471,21 +473,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

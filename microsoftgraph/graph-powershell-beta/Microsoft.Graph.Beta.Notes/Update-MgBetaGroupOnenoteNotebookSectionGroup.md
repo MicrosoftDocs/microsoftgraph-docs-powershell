@@ -24,14 +24,14 @@ Update-MgBetaGroupOnenoteNotebookSectionGroup -GroupId <String> -NotebookId <Str
  [-ParentNotebook <IMicrosoftGraphNotebook>] [-ParentSectionGroup <IMicrosoftGraphSectionGroup>]
  [-SectionGroups <IMicrosoftGraphSectionGroup[]>] [-SectionGroupsUrl <String>]
  [-Sections <IMicrosoftGraphOnenoteSection[]>] [-SectionsUrl <String>] [-Self <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupOnenoteNotebookSectionGroup -GroupId <String> -NotebookId <String> -SectionGroupId <String>
  -BodyParameter <IMicrosoftGraphSectionGroup> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -42,7 +42,7 @@ Update-MgBetaGroupOnenoteNotebookSectionGroup -InputObject <INotesIdentity> [-Re
  [-LastModifiedDateTime <DateTime>] [-ParentNotebook <IMicrosoftGraphNotebook>]
  [-ParentSectionGroup <IMicrosoftGraphSectionGroup>] [-SectionGroups <IMicrosoftGraphSectionGroup[]>]
  [-SectionGroupsUrl <String>] [-Sections <IMicrosoftGraphOnenoteSection[]>] [-SectionsUrl <String>]
- [-Self <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Self <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -50,11 +50,13 @@ Update-MgBetaGroupOnenoteNotebookSectionGroup -InputObject <INotesIdentity> [-Re
 ```
 Update-MgBetaGroupOnenoteNotebookSectionGroup -InputObject <INotesIdentity>
  -BodyParameter <IMicrosoftGraphSectionGroup> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property sectionGroups in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -86,6 +88,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -275,21 +292,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -395,21 +397,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

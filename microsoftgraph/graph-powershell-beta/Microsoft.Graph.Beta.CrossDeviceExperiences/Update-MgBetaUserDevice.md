@@ -30,7 +30,7 @@ Update-MgBetaUserDevice -DeviceId <String> -UserId <String> [-ResponseHeadersVar
  [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
  [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>] [-Status <String>]
  [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
- [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -52,26 +52,28 @@ Update-MgBetaUserDevice [-DeviceId <String>] -InputObject <ICrossDeviceExperienc
  [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
  [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>] [-Status <String>]
  [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
- [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserDevice -DeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphDevice>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> -BodyParameter <IMicrosoftGraphDevice>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property devices in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -201,6 +203,21 @@ Read-only.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -837,21 +854,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RegisteredOwners
 The user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
@@ -1019,21 +1021,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

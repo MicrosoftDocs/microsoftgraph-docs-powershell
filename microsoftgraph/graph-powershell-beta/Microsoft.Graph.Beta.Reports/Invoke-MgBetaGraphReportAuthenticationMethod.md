@@ -19,39 +19,41 @@ Get the number of users capable of multi-factor authentication, self-service pas
 ### Graph (Default)
 ```
 Invoke-MgBetaGraphReportAuthenticationMethod [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### Graph3
 ```
 Invoke-MgBetaGraphReportAuthenticationMethod -IncludedUserRoles <String> -IncludedUserTypes <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### Graph1
 ```
 Invoke-MgBetaGraphReportAuthenticationMethod -IncludedUserRoles <String> -IncludedUserTypes <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### GraphViaIdentity1
 ```
 Invoke-MgBetaGraphReportAuthenticationMethod -InputObject <IReportsIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### GraphViaIdentity
 ```
 Invoke-MgBetaGraphReportAuthenticationMethod -InputObject <IReportsIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -113,21 +115,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

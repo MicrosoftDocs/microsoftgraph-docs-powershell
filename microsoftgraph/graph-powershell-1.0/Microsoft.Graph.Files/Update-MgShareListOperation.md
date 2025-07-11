@@ -21,7 +21,7 @@ Update-MgShareListOperation -RichLongRunningOperationId <String> -SharedDriveIte
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-LastActionDateTime <DateTime>]
  [-PercentageComplete <Int32>] [-ResourceId <String>] [-ResourceLocation <String>] [-Status <String>]
- [-StatusDetail <String>] [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-StatusDetail <String>] [-Type <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgShareListOperation -RichLongRunningOperationId <String> -SharedDriveIte
 ```
 Update-MgShareListOperation -RichLongRunningOperationId <String> -SharedDriveItemId <String>
  -BodyParameter <IMicrosoftGraphRichLongRunningOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,18 +38,20 @@ Update-MgShareListOperation -InputObject <IFilesIdentity> [-ResponseHeadersVaria
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphPublicError>]
  [-Id <String>] [-LastActionDateTime <DateTime>] [-PercentageComplete <Int32>] [-ResourceId <String>]
  [-ResourceLocation <String>] [-Status <String>] [-StatusDetail <String>] [-Type <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgShareListOperation -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphRichLongRunningOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property operations in shares
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -81,6 +83,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -192,21 +209,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -323,21 +325,6 @@ The type of the operation.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -21,7 +21,7 @@ The response provides details about which memberships could and couldn't be remo
 ```
 Remove-MgBetaTeamworkDeletedTeamChannelAllMember -ChannelId <String> -DeletedTeamId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Remove-MgBetaTeamworkDeletedTeamChannelAllMember -ChannelId <String> -DeletedTea
 ```
 Remove-MgBetaTeamworkDeletedTeamChannelAllMember -ChannelId <String> -DeletedTeamId <String>
  -BodyParameter <IPathsW7ZloyTeamworkDeletedteamsDeletedteamIdChannelsChannelIdAllmembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Remove-MgBetaTeamworkDeletedTeamChannelAllMember -ChannelId <String> -DeletedTea
 ```
 Remove-MgBetaTeamworkDeletedTeamChannelAllMember -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,13 +45,15 @@ Remove-MgBetaTeamworkDeletedTeamChannelAllMember -InputObject <ITeamsIdentity>
 ```
 Remove-MgBetaTeamworkDeletedTeamChannelAllMember -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsW7ZloyTeamworkDeletedteamsDeletedteamIdChannelsChannelIdAllmembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Remove multiple members from a team in a single request.
 The response provides details about which memberships could and couldn't be removed.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -95,6 +97,21 @@ Parameter Sets: RemoveExpanded, Remove
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -147,21 +164,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -185,21 +187,6 @@ To construct, see NOTES section for VALUES properties and create a hash table.
 Type: IMicrosoftGraphConversationMember[]
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

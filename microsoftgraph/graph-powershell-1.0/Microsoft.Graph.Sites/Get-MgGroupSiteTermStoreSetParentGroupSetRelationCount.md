@@ -19,32 +19,34 @@ Get the number of the resource
 ```
 Get-MgGroupSiteTermStoreSetParentGroupSetRelationCount -GroupId <String> -SetId <String> -SetId1 <String>
  -SiteId <String> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgGroupSiteTermStoreSetParentGroupSetRelationCount -GroupId <String> -SetId <String> -SetId1 <String>
  -SiteId <String> -StoreId <String> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgGroupSiteTermStoreSetParentGroupSetRelationCount -InputObject <ISitesIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgGroupSiteTermStoreSetParentGroupSetRelationCount -InputObject <ISitesIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -106,21 +108,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

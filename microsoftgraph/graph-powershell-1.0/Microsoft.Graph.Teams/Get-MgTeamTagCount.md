@@ -18,13 +18,13 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgTeamTagCount -TeamId <String> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgTeamTagCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -38,6 +38,8 @@ Get the number of the resource
 | Delegated (work or school account) | TeamworkTag.Read, TeamworkTag.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamworkTag.Read.All, TeamworkTag.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -84,21 +86,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

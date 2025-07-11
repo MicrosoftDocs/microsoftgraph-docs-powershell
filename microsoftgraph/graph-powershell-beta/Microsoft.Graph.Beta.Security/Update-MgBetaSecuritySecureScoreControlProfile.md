@@ -27,14 +27,14 @@ Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId <Str
  [-Remediation <String>] [-RemediationImpact <String>] [-Service <String>] [-Threats <String[]>]
  [-Tier <String>] [-Title <String>] [-UserImpact <String>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId <String>
  -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,14 +48,14 @@ Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
  [-Remediation <String>] [-RemediationImpact <String>] [-Service <String>] [-Threats <String[]>]
  [-Tier <String>] [-Title <String>] [-UserImpact <String>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -172,6 +172,21 @@ To construct, see NOTES section for COMPLIANCEINFORMATION properties and create 
 Type: IMicrosoftGraphComplianceInformation[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -315,21 +330,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -492,21 +492,6 @@ To construct, see NOTES section for VENDORINFORMATION properties and create a ha
 Type: IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

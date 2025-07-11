@@ -19,7 +19,7 @@ This feature requires Teams Premium and attendees must have a valid United State
 Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm -JoinWebUrl <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Attendees <IMicrosoftGraphAttendeeNotificationInfo[]>] [-RemindBeforeTimeInMinutesType <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm -Joi
 ```
 Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm -JoinWebUrl <String>
  -BodyParameter <IPathsM5H45JCommunicationsOnlinemeetingsJoinweburlMicrosoftGraphSendvirtualappointmentremindersmsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm
  -InputObject <ICloudCommunicationsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Attendees <IMicrosoftGraphAttendeeNotificationInfo[]>]
  [-RemindBeforeTimeInMinutesType <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentity
@@ -45,13 +45,15 @@ Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm
 Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm
  -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsM5H45JCommunicationsOnlinemeetingsJoinweburlMicrosoftGraphSendvirtualappointmentremindersmsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Send an SMS reminder to external attendees for a Teams Virtual Appointment.
 This feature requires Teams Premium and attendees must have a valid United States phone number to receive SMS notifications.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -99,6 +101,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -163,21 +180,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RemindBeforeTimeInMinutesType
 remindBeforeTimeInMinutesType
 
@@ -200,21 +202,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

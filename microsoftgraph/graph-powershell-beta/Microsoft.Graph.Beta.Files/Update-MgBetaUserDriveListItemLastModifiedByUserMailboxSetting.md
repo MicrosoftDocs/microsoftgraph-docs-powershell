@@ -23,14 +23,14 @@ Update-MgBetaUserDriveListItemLastModifiedByUserMailboxSetting -DriveId <String>
  [-DateFormat <String>] [-DelegateMeetingMessageDeliveryOptions <String>]
  [-Language <IMicrosoftGraphLocaleInfo>] [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
  [-UserPurposeV2 <String>] [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserDriveListItemLastModifiedByUserMailboxSetting -DriveId <String> -ListItemId <String>
  -UserId <String> -BodyParameter <IMicrosoftGraphMailboxSettings> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,7 +40,7 @@ Update-MgBetaUserDriveListItemLastModifiedByUserMailboxSetting -InputObject <IFi
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,11 +48,13 @@ Update-MgBetaUserDriveListItemLastModifiedByUserMailboxSetting -InputObject <IFi
 ```
 Update-MgBetaUserDriveListItemLastModifiedByUserMailboxSetting -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphMailboxSettings> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update property mailboxSettings value.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -116,6 +118,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -226,21 +243,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -331,37 +333,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkingHours
-workingHours
-To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphWorkingHours
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -370,6 +341,22 @@ The cmdlet is not run.
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WorkingHours
+workingHours
+To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWorkingHours
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named

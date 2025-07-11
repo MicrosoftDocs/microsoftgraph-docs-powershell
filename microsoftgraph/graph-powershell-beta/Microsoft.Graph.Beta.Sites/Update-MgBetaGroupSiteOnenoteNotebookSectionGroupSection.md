@@ -24,7 +24,7 @@ Update-MgBetaGroupSiteOnenoteNotebookSectionGroupSection -GroupId <String> -Note
  [-LastModifiedDateTime <DateTime>] [-Links <IMicrosoftGraphSectionLinks>]
  [-Pages <IMicrosoftGraphOnenotePage[]>] [-PagesUrl <String>] [-ParentNotebook <IMicrosoftGraphNotebook>]
  [-ParentSectionGroup <IMicrosoftGraphSectionGroup>] [-Self <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -32,7 +32,7 @@ Update-MgBetaGroupSiteOnenoteNotebookSectionGroupSection -GroupId <String> -Note
 Update-MgBetaGroupSiteOnenoteNotebookSectionGroupSection -GroupId <String> -NotebookId <String>
  -OnenoteSectionId <String> -SectionGroupId <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphOnenoteSection> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,7 +43,7 @@ Update-MgBetaGroupSiteOnenoteNotebookSectionGroupSection -InputObject <ISitesIde
  [-IsDefault] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Links <IMicrosoftGraphSectionLinks>] [-Pages <IMicrosoftGraphOnenotePage[]>] [-PagesUrl <String>]
  [-ParentNotebook <IMicrosoftGraphNotebook>] [-ParentSectionGroup <IMicrosoftGraphSectionGroup>]
- [-Self <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Self <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -51,11 +51,13 @@ Update-MgBetaGroupSiteOnenoteNotebookSectionGroupSection -InputObject <ISitesIde
 ```
 Update-MgBetaGroupSiteOnenoteNotebookSectionGroupSection -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphOnenoteSection> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property sections in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -87,6 +89,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -357,21 +374,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -426,21 +428,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

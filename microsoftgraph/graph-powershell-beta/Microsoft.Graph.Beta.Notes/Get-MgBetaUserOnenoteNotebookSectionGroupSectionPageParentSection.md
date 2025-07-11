@@ -21,19 +21,21 @@ Read-only.
 Get-MgBetaUserOnenoteNotebookSectionGroupSectionPageParentSection -NotebookId <String> -OnenotePageId <String>
  -OnenoteSectionId <String> -SectionGroupId <String> -UserId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaUserOnenoteNotebookSectionGroupSectionPageParentSection -InputObject <INotesIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The section that contains the page.
 Read-only.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -122,21 +124,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

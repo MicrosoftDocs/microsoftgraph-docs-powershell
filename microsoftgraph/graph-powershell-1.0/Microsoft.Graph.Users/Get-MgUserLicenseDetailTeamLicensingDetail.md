@@ -19,13 +19,13 @@ Get the license status of a user in Microsoft Teams.
 ### Get (Default)
 ```
 Get-MgUserLicenseDetailTeamLicensingDetail -UserId <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgUserLicenseDetailTeamLicensingDetail -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,6 +38,8 @@ Get the license status of a user in Microsoft Teams.
 | Delegated (work or school account) | User.Read, Directory.ReadWrite.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -69,21 +71,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

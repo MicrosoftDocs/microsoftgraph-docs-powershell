@@ -20,14 +20,14 @@ We recommend using a transparent image with no padding around the logo.
 ### Get (Default)
 ```
 Get-MgBetaOrganizationBrandingBannerLogo -OrganizationId <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaOrganizationBrandingBannerLogo -InputObject <IIdentityDirectoryManagementIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -35,6 +35,8 @@ Get-MgBetaOrganizationBrandingBannerLogo -InputObject <IIdentityDirectoryManagem
 A banner version of your company logo that appears on the sign-in page.
 The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -110,21 +112,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

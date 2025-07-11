@@ -17,14 +17,14 @@ Update entity in privilegedRoleAssignments
 Update-MgBetaPrivilegedRoleAssignment -PrivilegedRoleAssignmentId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-IsElevated]
  [-ResultMessage <String>] [-RoleId <String>] [-RoleInfo <IMicrosoftGraphPrivilegedRole>] [-UserId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPrivilegedRoleAssignment -PrivilegedRoleAssignmentId <String>
  -BodyParameter <IMicrosoftGraphPrivilegedRoleAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -33,18 +33,20 @@ Update-MgBetaPrivilegedRoleAssignment -InputObject <IIdentityGovernanceIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>]
  [-Id <String>] [-IsElevated] [-ResultMessage <String>] [-RoleId <String>]
  [-RoleInfo <IMicrosoftGraphPrivilegedRole>] [-UserId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrivilegedRoleAssignment -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphPrivilegedRoleAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update entity in privilegedRoleAssignments
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -76,6 +78,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -171,21 +188,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -254,21 +256,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

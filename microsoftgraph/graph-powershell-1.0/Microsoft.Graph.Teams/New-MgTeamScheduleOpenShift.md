@@ -23,13 +23,13 @@ New-MgTeamScheduleOpenShift -TeamId <String> [-ResponseHeadersVariable <String>]
  [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>] [-IsStagedForDeletion]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgTeamScheduleOpenShift -TeamId <String> -BodyParameter <IMicrosoftGraphOpenShift>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,13 +40,13 @@ New-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-ResponseHeadersVaria
  [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>] [-IsStagedForDeletion]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphOpenShift>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -120,6 +120,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -233,21 +248,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -303,21 +303,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -394,8 +379,8 @@ Required.
       - `[Theme <String>]`: scheduleEntityTheme
     - `[DisplayName <String>]`: The shift label of the shiftItem.
     - `[Notes <String>]`: The shift notes for the shiftItem.
-    - `[EndDateTime <DateTime?>]`: 
-    - `[StartDateTime <DateTime?>]`: 
+    - `[EndDateTime <DateTime?>]`:
+    - `[StartDateTime <DateTime?>]`:
     - `[Theme <String>]`: scheduleEntityTheme
     - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
   - `[IsStagedForDeletion <Boolean?>]`: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
@@ -435,8 +420,8 @@ Required.
     - `[Theme <String>]`: scheduleEntityTheme
   - `[DisplayName <String>]`: The shift label of the shiftItem.
   - `[Notes <String>]`: The shift notes for the shiftItem.
-  - `[EndDateTime <DateTime?>]`: 
-  - `[StartDateTime <DateTime?>]`: 
+  - `[EndDateTime <DateTime?>]`:
+  - `[StartDateTime <DateTime?>]`:
   - `[Theme <String>]`: scheduleEntityTheme
   - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
 
@@ -510,8 +495,8 @@ Required.
     - `[Theme <String>]`: scheduleEntityTheme
   - `[DisplayName <String>]`: The shift label of the shiftItem.
   - `[Notes <String>]`: The shift notes for the shiftItem.
-  - `[EndDateTime <DateTime?>]`: 
-  - `[StartDateTime <DateTime?>]`: 
+  - `[EndDateTime <DateTime?>]`:
+  - `[StartDateTime <DateTime?>]`:
   - `[Theme <String>]`: scheduleEntityTheme
   - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
 

@@ -19,19 +19,21 @@ Update the navigation property identities in security
 ```
 Update-MgSecurityIdentity [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-HealthIssues <IMicrosoftGraphSecurityHealthIssue[]>] [-Id <String>]
- [-Sensors <IMicrosoftGraphSecuritySensor[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Sensors <IMicrosoftGraphSecuritySensor[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityIdentity -BodyParameter <IMicrosoftGraphSecurityIdentityContainer>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property identities in security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -63,6 +65,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -113,21 +130,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -151,21 +153,6 @@ To construct, see NOTES section for SENSORS properties and create a hash table.
 Type: IMicrosoftGraphSecuritySensor[]
 Parameter Sets: UpdateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -253,7 +240,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Description <String>]`: Description of the sensor.
       - `[DomainControllerDnsNames <String- `[]`>]`: DNS names for the domain controller
       - `[IsDelayedDeploymentEnabled <Boolean?>]`: Indicates whether to delay updates for the sensor.
-      - `[NetworkAdapters <IMicrosoftGraphSecurityNetworkAdapter- `[]`>]`: 
+      - `[NetworkAdapters <IMicrosoftGraphSecurityNetworkAdapter- `[]`>]`:
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[IsEnabled <Boolean?>]`: Indicates whether the network adapter is selected for capturing and analyzing network traffic.
@@ -328,7 +315,7 @@ These commands run in sequence for the single recommended fix.
     - `[Description <String>]`: Description of the sensor.
     - `[DomainControllerDnsNames <String- `[]`>]`: DNS names for the domain controller
     - `[IsDelayedDeploymentEnabled <Boolean?>]`: Indicates whether to delay updates for the sensor.
-    - `[NetworkAdapters <IMicrosoftGraphSecurityNetworkAdapter- `[]`>]`: 
+    - `[NetworkAdapters <IMicrosoftGraphSecurityNetworkAdapter- `[]`>]`:
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[IsEnabled <Boolean?>]`: Indicates whether the network adapter is selected for capturing and analyzing network traffic.

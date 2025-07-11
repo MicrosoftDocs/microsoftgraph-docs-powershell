@@ -16,21 +16,21 @@ Get the number of the resource
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -AccessPackageResourceRequestId <String>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### Get2
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -AccessPackageResourceRequestId <String>
  -AccessPackageResourceId <String> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -AccessPackageResourceRequestId <String>
  -AccessPackageResourceRoleId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -38,25 +38,27 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -AccessPackag
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -InputObject <IIdentityGovernanceIdentity>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -InputObject <IIdentityGovernanceIdentity>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -InputObject <IIdentityGovernanceIdentity>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -148,21 +150,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

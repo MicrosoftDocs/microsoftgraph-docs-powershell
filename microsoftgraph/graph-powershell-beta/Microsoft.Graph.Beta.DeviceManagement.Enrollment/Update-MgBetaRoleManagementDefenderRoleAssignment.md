@@ -20,14 +20,14 @@ Update-MgBetaRoleManagementDefenderRoleAssignment -UnifiedRoleAssignmentMultiple
  [-DirectoryScopeIds <String[]>] [-DirectoryScopes <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>]
  [-Id <String>] [-PrincipalIds <String[]>] [-Principals <IMicrosoftGraphDirectoryObject[]>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaRoleManagementDefenderRoleAssignment -UnifiedRoleAssignmentMultipleId <String>
  -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentMultiple> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,14 +38,14 @@ Update-MgBetaRoleManagementDefenderRoleAssignment -InputObject <IDeviceManagemen
  [-DirectoryScopeIds <String[]>] [-DirectoryScopes <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>]
  [-Id <String>] [-PrincipalIds <String[]>] [-Principals <IMicrosoftGraphDirectoryObject[]>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaRoleManagementDefenderRoleAssignment -InputObject <IDeviceManagementEnrollmentIdentity>
  -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentMultiple> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,6 +58,8 @@ Update the navigation property roleAssignments in roleManagement
 | Delegated (work or school account) | RoleManagement.ReadWrite.Defender,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagement.ReadWrite.Defender,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -136,6 +138,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -294,21 +311,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -364,21 +366,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

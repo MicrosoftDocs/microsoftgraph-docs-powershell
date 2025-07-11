@@ -16,13 +16,13 @@ Create new navigation property ref to registeredUsers for users
 ```
 New-MgBetaUserDeviceRegisteredUserByRef -DeviceId <String> -UserId <String> [-ResponseHeadersVariable <String>]
  -OdataId <String> [-AdditionalProperties <Hashtable>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserDeviceRegisteredUserByRef -DeviceId <String> -UserId <String> -BodyParameter <IReferenceCreate>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ New-MgBetaUserDeviceRegisteredUserByRef -DeviceId <String> -UserId <String> -Bod
 ```
 New-MgBetaUserDeviceRegisteredUserByRef -InputObject <ICrossDeviceExperiencesIdentity>
  [-ResponseHeadersVariable <String>] -OdataId <String> [-AdditionalProperties <Hashtable>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,11 +38,13 @@ New-MgBetaUserDeviceRegisteredUserByRef -InputObject <ICrossDeviceExperiencesIde
 ```
 New-MgBetaUserDeviceRegisteredUserByRef -InputObject <ICrossDeviceExperiencesIdentity>
  -BodyParameter <IReferenceCreate> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property ref to registeredUsers for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -74,6 +76,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -154,21 +171,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -193,21 +195,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

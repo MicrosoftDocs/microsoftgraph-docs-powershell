@@ -21,13 +21,13 @@ Update-MgUserInsightUsed -UsedInsightId <String> -UserId <String> [-ResponseHead
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastUsed <IMicrosoftGraphUsageDetails>]
  [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserInsightUsed -UsedInsightId <String> -UserId <String> -BodyParameter <IMicrosoftGraphUsedInsight>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,18 +37,20 @@ Update-MgUserInsightUsed -InputObject <IUsersIdentity> [-ResponseHeadersVariable
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastUsed <IMicrosoftGraphUsageDetails>]
  [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserInsightUsed -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUsedInsight>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property used in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -80,6 +82,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -138,21 +155,6 @@ To construct, see NOTES section for LASTUSED properties and create a hash table.
 Type: IMicrosoftGraphUsageDetails
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -248,21 +250,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

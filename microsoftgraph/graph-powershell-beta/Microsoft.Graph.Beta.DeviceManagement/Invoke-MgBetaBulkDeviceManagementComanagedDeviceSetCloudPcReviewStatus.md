@@ -18,19 +18,21 @@ Invoke action bulkSetCloudPcReviewStatus
 Invoke-MgBetaBulkDeviceManagementComanagedDeviceSetCloudPcReviewStatus [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ManagedDeviceIds <String[]>]
  [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Bulk
 ```
 Invoke-MgBetaBulkDeviceManagementComanagedDeviceSetCloudPcReviewStatus
  -BodyParameter <IPaths2Im5QnDevicemanagementComanageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action bulkSetCloudPcReviewStatus
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -65,6 +67,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -87,21 +104,6 @@ Accept wildcard characters: False
 Type: String[]
 Parameter Sets: BulkExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -133,21 +135,6 @@ To construct, see NOTES section for REVIEWSTATUS properties and create a hash ta
 Type: IMicrosoftGraphCloudPcReviewStatus
 Parameter Sets: BulkExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

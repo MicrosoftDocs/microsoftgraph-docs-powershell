@@ -19,14 +19,14 @@ Invoke action setExternalEventInformation
 ```
 Set-MgVirtualEventExternalEventInformation -VirtualEventId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ExternalEventId <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgVirtualEventExternalEventInformation -VirtualEventId <String>
  -BodyParameter <IPaths168Q9LmSolutionsVirtualeventsEventsVirtualeventIdMicrosoftGraphSetexternaleventinformationPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,19 +34,21 @@ Set-MgVirtualEventExternalEventInformation -VirtualEventId <String>
 ```
 Set-MgVirtualEventExternalEventInformation -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ExternalEventId <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgVirtualEventExternalEventInformation -InputObject <IBookingsIdentity>
  -BodyParameter <IPaths168Q9LmSolutionsVirtualeventsEventsVirtualeventIdMicrosoftGraphSetexternaleventinformationPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action setExternalEventInformation
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -78,6 +80,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -142,21 +159,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -181,21 +183,6 @@ Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -237,7 +224,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths168Q9LmSolutionsVirtualeventsEventsVirtualeventIdMicrosoftGraphSetexternaleventinformationPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ExternalEventId <String>]`: 
+  - `[ExternalEventId <String>]`:
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord

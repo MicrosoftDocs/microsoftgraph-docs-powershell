@@ -19,14 +19,14 @@ Get the number of the resource
 ```
 Get-MgBetaContactTransitiveMemberOfCount -OrgContactId <String> [-Filter <String>] [-Search <String>]
  -ConsistencyLevel <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaContactTransitiveMemberOfCount -InputObject <IIdentityDirectoryManagementIdentity> [-Filter <String>]
  [-Search <String>] -ConsistencyLevel <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,6 +39,8 @@ Get the number of the resource
 | Delegated (work or school account) | OrgContact.Read.All, Group.Read.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrgContact.Read.All, Group.Read.All, Directory.Read.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -113,21 +115,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

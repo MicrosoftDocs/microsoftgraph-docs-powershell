@@ -20,14 +20,14 @@ Update entity in dataPolicyOperations
 Update-MgDataPolicyOperation -DataPolicyOperationId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-Id <String>] [-Progress <Double>]
  [-Status <String>] [-StorageLocation <String>] [-SubmittedDateTime <DateTime>] [-UserId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDataPolicyOperation -DataPolicyOperationId <String>
  -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,18 +35,20 @@ Update-MgDataPolicyOperation -DataPolicyOperationId <String>
 Update-MgDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-Id <String>] [-Progress <Double>]
  [-Status <String>] [-StorageLocation <String>] [-SubmittedDateTime <DateTime>] [-UserId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDataPolicyOperation -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update entity in dataPolicyOperations
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -90,6 +92,21 @@ Null until the operation completes.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -175,21 +192,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -258,21 +260,6 @@ The id for the user on whom the operation is performed.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

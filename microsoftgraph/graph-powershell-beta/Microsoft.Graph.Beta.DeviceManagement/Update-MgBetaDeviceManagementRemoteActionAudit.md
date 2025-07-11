@@ -20,14 +20,14 @@ Update-MgBetaDeviceManagementRemoteActionAudit -RemoteActionAuditId <String>
  [-DeviceActionCategory <DeviceActionCategory>] [-DeviceDisplayName <String>] [-DeviceImei <String>]
  [-DeviceOwnerUserPrincipalName <String>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
  [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>] [-UserName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementRemoteActionAudit -RemoteActionAuditId <String>
  -BodyParameter <IMicrosoftGraphRemoteActionAudit> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,14 +38,14 @@ Update-MgBetaDeviceManagementRemoteActionAudit -InputObject <IDeviceManagementId
  [-DeviceActionCategory <DeviceActionCategory>] [-DeviceDisplayName <String>] [-DeviceImei <String>]
  [-DeviceOwnerUserPrincipalName <String>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
  [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>] [-UserName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementRemoteActionAudit -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphRemoteActionAudit> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,6 +58,8 @@ Update the navigation property remoteActionAudits in deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -129,6 +131,21 @@ BulkAction ID
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -274,21 +291,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RemoteActionAuditId
 The unique identifier of remoteActionAudit
 
@@ -341,21 +343,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -22,7 +22,7 @@ New-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeet
  [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <String>]
  [-ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>] [-Id <String>]
  [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>] [-RegistrationId <String>] [-Role <String>]
- [-TotalAttendanceInSeconds <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-TotalAttendanceInSeconds <Int32>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ New-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord -MeetingAtt
  [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <String>]
  [-ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>] [-Id <String>]
  [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>] [-RegistrationId <String>] [-Role <String>]
- [-TotalAttendanceInSeconds <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-TotalAttendanceInSeconds <Int32>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,14 +41,14 @@ New-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord -MeetingAtt
 ```
 New-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord -MeetingAttendanceReportId <String>
  -OnlineMeetingId <String> -BodyParameter <IMicrosoftGraphAttendanceRecord> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <String>
  -BodyParameter <IMicrosoftGraphAttendanceRecord> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -59,7 +59,7 @@ New-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord
  [-EmailAddress <String>]
  [-ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>] [-Id <String>]
  [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>] [-RegistrationId <String>] [-Role <String>]
- [-TotalAttendanceInSeconds <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-TotalAttendanceInSeconds <Int32>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -71,7 +71,7 @@ New-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord
  [-EmailAddress <String>]
  [-ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>] [-Id <String>]
  [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>] [-RegistrationId <String>] [-Role <String>]
- [-TotalAttendanceInSeconds <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-TotalAttendanceInSeconds <Int32>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -79,7 +79,7 @@ New-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord
 ```
 New-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord
  -InputObject <ICloudCommunicationsIdentity> -BodyParameter <IMicrosoftGraphAttendanceRecord>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -87,12 +87,14 @@ New-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord
 ```
 New-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord
  -InputObject <ICloudCommunicationsIdentity> -BodyParameter <IMicrosoftGraphAttendanceRecord>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to attendanceRecords for communications
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -140,6 +142,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -267,21 +284,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RegistrantId
 Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
@@ -357,21 +359,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

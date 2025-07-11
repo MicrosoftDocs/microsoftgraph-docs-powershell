@@ -20,14 +20,14 @@ You can get or set a photo for a contact.
 ```
 Get-MgUserContactFolderContactPhoto -ContactFolderId <String> -ContactId <String> -UserId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgUserContactFolderContactPhoto -InputObject <IPersonalContactsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,6 +41,8 @@ You can get or set a photo for a contact.
 | Delegated (work or school account) | Contacts.Read,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Contacts.Read,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -117,21 +119,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

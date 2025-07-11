@@ -23,18 +23,20 @@ New-MgRiskDetection [-ResponseHeadersVariable <String>] [-Activity <String>] [-A
  [-LastUpdatedDateTime <DateTime>] [-Location <IMicrosoftGraphSignInLocation>] [-RequestId <String>]
  [-RiskDetail <String>] [-RiskEventType <String>] [-RiskLevel <String>] [-RiskState <String>]
  [-Source <String>] [-TokenIssuerType <String>] [-UserDisplayName <String>] [-UserId <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgRiskDetection -BodyParameter <IMicrosoftGraphRiskDetection> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to riskDetections for identityProtection
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -116,6 +118,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -238,21 +255,6 @@ To construct, see NOTES section for LOCATION properties and create a hash table.
 Type: IMicrosoftGraphSignInLocation
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -431,21 +433,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -503,7 +490,7 @@ For example, midnight UTC on Jan 1, 2014 is look like this: 2014-01-01T00:00:00Z
   - `[Location <IMicrosoftGraphSignInLocation>]`: signInLocation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: Provides the city where the sign-in originated and is determined using latitude/longitude information from the sign-in activity.
-    - `[CountryOrRegion <String>]`: Provides the country code info (two letter code) where the sign-in originated. 
+    - `[CountryOrRegion <String>]`: Provides the country code info (two letter code) where the sign-in originated.
 This is calculated using latitude/longitude information from the sign-in activity.
     - `[GeoCoordinates <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -537,7 +524,7 @@ For example, activeDirectory.
 LOCATION `<IMicrosoftGraphSignInLocation>`: signInLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: Provides the city where the sign-in originated and is determined using latitude/longitude information from the sign-in activity.
-  - `[CountryOrRegion <String>]`: Provides the country code info (two letter code) where the sign-in originated. 
+  - `[CountryOrRegion <String>]`: Provides the country code info (two letter code) where the sign-in originated.
 This is calculated using latitude/longitude information from the sign-in activity.
   - `[GeoCoordinates <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

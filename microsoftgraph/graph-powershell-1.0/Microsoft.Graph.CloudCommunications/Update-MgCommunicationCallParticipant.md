@@ -23,14 +23,14 @@ Update-MgCommunicationCallParticipant -CallId <String> -ParticipantId <String>
  [-MediaStreams <IMicrosoftGraphMediaStream[]>] [-Metadata <String>]
  [-RecordingInfo <IMicrosoftGraphRecordingInfo>] [-RemovedState <IMicrosoftGraphRemovedState>]
  [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-RosterSequenceNumber <Int64>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgCommunicationCallParticipant -CallId <String> -ParticipantId <String>
  -BodyParameter <IMicrosoftGraphParticipant> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,18 +41,20 @@ Update-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity
  [-MediaStreams <IMicrosoftGraphMediaStream[]>] [-Metadata <String>]
  [-RecordingInfo <IMicrosoftGraphRecordingInfo>] [-RemovedState <IMicrosoftGraphRemovedState>]
  [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-RosterSequenceNumber <Int64>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IMicrosoftGraphParticipant> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property participants in communications
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -96,6 +98,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -241,21 +258,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RecordingInfo
 recordingInfo
 To construct, see NOTES section for RECORDINGINFO properties and create a hash table.
@@ -330,21 +332,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

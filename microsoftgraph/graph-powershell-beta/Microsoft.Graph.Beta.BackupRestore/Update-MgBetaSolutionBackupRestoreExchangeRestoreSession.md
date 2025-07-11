@@ -26,7 +26,7 @@ Update-MgBetaSolutionBackupRestoreExchangeRestoreSession -ExchangeRestoreSession
  [-MailboxRestoreArtifacts <IMicrosoftGraphMailboxRestoreArtifact[]>]
  [-MailboxRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphMailboxRestoreArtifactsBulkAdditionRequest[]>]
  [-RestoreJobType <String>] [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]
- [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Update-MgBetaSolutionBackupRestoreExchangeRestoreSession -ExchangeRestoreSession
 ```
 Update-MgBetaSolutionBackupRestoreExchangeRestoreSession -ExchangeRestoreSessionId <String>
  -BodyParameter <IMicrosoftGraphExchangeRestoreSession> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -47,7 +47,7 @@ Update-MgBetaSolutionBackupRestoreExchangeRestoreSession -InputObject <IBackupRe
  [-MailboxRestoreArtifacts <IMicrosoftGraphMailboxRestoreArtifact[]>]
  [-MailboxRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphMailboxRestoreArtifactsBulkAdditionRequest[]>]
  [-RestoreJobType <String>] [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]
- [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -55,11 +55,13 @@ Update-MgBetaSolutionBackupRestoreExchangeRestoreSession -InputObject <IBackupRe
 ```
 Update-MgBetaSolutionBackupRestoreExchangeRestoreSession -InputObject <IBackupRestoreIdentity>
  -BodyParameter <IMicrosoftGraphExchangeRestoreSession> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of an exchangeRestoreSession.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -101,6 +103,21 @@ The time of completion of the restore session.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -297,21 +314,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -365,21 +367,6 @@ restoreSessionStatus
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -19,18 +19,20 @@ The content stream, if the item represents a file.
 ```
 Get-MgTeamworkDeletedTeamChannelFileFolderContent -ChannelId <String> -DeletedTeamId <String>
  [-Format <String>] -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgTeamworkDeletedTeamChannelFileFolderContent -InputObject <ITeamsIdentity> [-Format <String>]
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -136,21 +138,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

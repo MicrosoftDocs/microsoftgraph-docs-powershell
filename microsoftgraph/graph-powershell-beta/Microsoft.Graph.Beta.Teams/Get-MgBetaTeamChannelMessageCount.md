@@ -18,14 +18,14 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgBetaTeamChannelMessageCount -ChannelId <String> -TeamId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaTeamChannelMessageCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -39,6 +39,8 @@ Get the number of the resource
 | Delegated (work or school account) | ChannelMessage.Read.All, Group.ReadWrite.All, Group.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChannelMessage.Read.Group, Group.ReadWrite.All, Group.Read.All, ChannelMessage.Read.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -100,21 +102,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

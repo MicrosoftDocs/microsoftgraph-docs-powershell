@@ -16,7 +16,7 @@ Invoke action updateAllMessagesReadState
 ```
 Update-MgBetaUserMailFolderMessageReadState -MailFolderId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-IsRead] [-SuppressReadReceipts]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Update-MgBetaUserMailFolderMessageReadState -MailFolderId <String> -UserId <Stri
 ```
 Update-MgBetaUserMailFolderMessageReadState -MailFolderId <String> -UserId <String>
  -BodyParameter <IPaths2Rl5E1UsersUserIdMailfoldersMailfolderIdMicrosoftGraphUpdateallmessagesreadstatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,14 +32,14 @@ Update-MgBetaUserMailFolderMessageReadState -MailFolderId <String> -UserId <Stri
 ```
 Update-MgBetaUserMailFolderMessageReadState -InputObject <IMailIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-IsRead] [-SuppressReadReceipts] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserMailFolderMessageReadState -InputObject <IMailIdentity>
  -BodyParameter <IPaths2Rl5E1UsersUserIdMailfoldersMailfolderIdMicrosoftGraphUpdateallmessagesreadstatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -53,6 +53,8 @@ Invoke action updateAllMessagesReadState
 | Delegated (work or school account) | Mail.ReadWrite,  |
 | Delegated (personal Microsoft account) | Mail.ReadWrite,  |
 | Application | Mail.ReadWrite,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -84,6 +86,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -163,21 +180,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -217,21 +219,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

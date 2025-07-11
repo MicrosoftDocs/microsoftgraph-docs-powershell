@@ -19,14 +19,14 @@ Get the number of the resource
 ```
 Get-MgOrganizationCertificateBasedAuthConfigurationCount -OrganizationId <String> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgOrganizationCertificateBasedAuthConfigurationCount -InputObject <IIdentitySignInsIdentity>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,6 +39,8 @@ Get the number of the resource
 | Delegated (work or school account) | Organization.Read.All, Organization.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Organization.Read.All, Organization.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +99,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

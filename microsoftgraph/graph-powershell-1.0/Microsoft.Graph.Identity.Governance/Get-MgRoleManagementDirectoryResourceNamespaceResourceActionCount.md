@@ -19,14 +19,14 @@ Get the number of the resource
 ```
 Get-MgRoleManagementDirectoryResourceNamespaceResourceActionCount -UnifiedRbacResourceNamespaceId <String>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgRoleManagementDirectoryResourceNamespaceResourceActionCount -InputObject <IIdentityGovernanceIdentity>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,6 +39,8 @@ Get the number of the resource
 | Delegated (work or school account) | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -85,21 +87,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

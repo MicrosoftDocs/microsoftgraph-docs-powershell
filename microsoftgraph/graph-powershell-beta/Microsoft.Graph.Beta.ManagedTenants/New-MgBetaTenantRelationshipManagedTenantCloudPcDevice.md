@@ -19,18 +19,20 @@ New-MgBetaTenantRelationshipManagedTenantCloudPcDevice [-ResponseHeadersVariable
  [-DisplayName <String>] [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-ManagedDeviceId <String>]
  [-ManagedDeviceName <String>] [-ProvisioningPolicyId <String>] [-ServicePlanName <String>]
  [-ServicePlanType <String>] [-TenantDisplayName <String>] [-TenantId <String>] [-UserPrincipalName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantCloudPcDevice
  -BodyParameter <IMicrosoftGraphManagedTenantsCloudPcDevice> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to cloudPcDevices for tenantRelationships
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -75,6 +77,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -199,21 +216,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ProvisioningPolicyId
 The provisioning policy identifier for the cloud PC device.
 Required.
@@ -323,21 +325,6 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

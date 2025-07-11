@@ -27,14 +27,14 @@ A channel can't be archived or unarchived if its team is archived.
 ```
 Invoke-MgArchiveGroupTeamChannel -ChannelId <String> -GroupId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ShouldSetSpoSiteReadOnlyForMembers] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Archive
 ```
 Invoke-MgArchiveGroupTeamChannel -ChannelId <String> -GroupId <String>
  -BodyParameter <IPathsBgkupzGroupsGroupIdTeamChannelsChannelIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,14 +42,14 @@ Invoke-MgArchiveGroupTeamChannel -ChannelId <String> -GroupId <String>
 ```
 Invoke-MgArchiveGroupTeamChannel -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ShouldSetSpoSiteReadOnlyForMembers] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ArchiveViaIdentity
 ```
 Invoke-MgArchiveGroupTeamChannel -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsBgkupzGroupsGroupIdTeamChannelsChannelIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -62,6 +62,8 @@ Archiving is an asynchronous operation; a channel is archived after the asynchro
 A channel without an owner or that belongs to a group that has no owner, can't be archived.
 To restore a channel from its archived state, use the channel: unarchive method.
 A channel can't be archived or unarchived if its team is archived.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -105,6 +107,21 @@ Parameter Sets: ArchiveExpanded, Archive
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -172,21 +189,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -213,21 +215,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -267,7 +254,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPathsBgkupzGroupsGroupIdTeamChannelsChannelIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ShouldSetSpoSiteReadOnlyForMembers <Boolean?>]`: 
+  - `[ShouldSetSpoSiteReadOnlyForMembers <Boolean?>]`:
 
 INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo

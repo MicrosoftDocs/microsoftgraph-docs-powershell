@@ -17,19 +17,21 @@ The name should be the full model filename, including the file extension; for ex
 ### Get (Default)
 ```
 Get-MgBetaGroupSiteContentModelByName -GroupId <String> -ModelName <String> -SiteId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaGroupSiteContentModelByName -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Read the properties and relationships of a contentModel object by its model name.
 The name should be the full model filename, including the file extension; for example, exampleModel.classifier.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -88,21 +90,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

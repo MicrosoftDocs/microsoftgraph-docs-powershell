@@ -18,7 +18,7 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgCommunicationOnlineMeetingTranscriptCount -OnlineMeetingId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -26,11 +26,13 @@ Get-MgCommunicationOnlineMeetingTranscriptCount -OnlineMeetingId <String> [-Filt
 ```
 Get-MgCommunicationOnlineMeetingTranscriptCount -InputObject <ICloudCommunicationsIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -89,21 +91,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

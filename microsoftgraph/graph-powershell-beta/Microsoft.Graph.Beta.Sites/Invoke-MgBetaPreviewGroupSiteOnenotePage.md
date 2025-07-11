@@ -18,18 +18,20 @@ Invoke function preview
 ### Preview (Default)
 ```
 Invoke-MgBetaPreviewGroupSiteOnenotePage -GroupId <String> -OnenotePageId <String> -SiteId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### PreviewViaIdentity
 ```
 Invoke-MgBetaPreviewGroupSiteOnenotePage -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function preview
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -88,21 +90,6 @@ Parameter Sets: Preview
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

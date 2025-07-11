@@ -18,14 +18,14 @@ Update-MgBetaDeviceManagementDeviceHealthScriptAssignment -DeviceHealthScriptAss
  -DeviceHealthScriptId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-RunRemediationScript] [-RunSchedule <IMicrosoftGraphDeviceHealthScriptRunSchedule>]
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementDeviceHealthScriptAssignment -DeviceHealthScriptAssignmentId <String>
  -DeviceHealthScriptId <String> -BodyParameter <IMicrosoftGraphDeviceHealthScriptAssignment>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,14 +35,14 @@ Update-MgBetaDeviceManagementDeviceHealthScriptAssignment -InputObject <IDeviceM
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-RunRemediationScript]
  [-RunSchedule <IMicrosoftGraphDeviceHealthScriptRunSchedule>]
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementDeviceHealthScriptAssignment -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceHealthScriptAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,6 +55,8 @@ Update the navigation property assignments in deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -86,6 +88,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -166,21 +183,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -235,21 +237,6 @@ To construct, see NOTES section for TARGET properties and create a hash table.
 Type: IMicrosoftGraphDeviceAndAppManagementAssignmentTarget
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

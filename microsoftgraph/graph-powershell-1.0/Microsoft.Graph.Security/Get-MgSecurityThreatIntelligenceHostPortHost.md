@@ -21,20 +21,22 @@ When you navigate to hostPorts from a host, assume that this is a return referen
 ```
 Get-MgSecurityThreatIntelligenceHostPortHost -HostPortId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgSecurityThreatIntelligenceHostPortHost -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The host related to this hostPort.
 This is a reverse navigation property.
 When you navigate to hostPorts from a host, assume that this is a return reference.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -96,21 +98,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

@@ -20,14 +20,14 @@ Update the navigation property tabs in users
 Update-MgUserChatTab -ChatId <String> -TeamsTabId <String> -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphTeamsTabConfiguration>]
  [-DisplayName <String>] [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp>] [-WebUrl <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserChatTab -ChatId <String> -TeamsTabId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphTeamsTab> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,18 +35,20 @@ Update-MgUserChatTab -ChatId <String> -TeamsTabId <String> -UserId <String>
 Update-MgUserChatTab -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphTeamsTabConfiguration>]
  [-DisplayName <String>] [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp>] [-WebUrl <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsTab>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property tabs in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -104,6 +106,21 @@ To construct, see NOTES section for CONFIGURATION properties and create a hash t
 Type: IMicrosoftGraphTeamsTabConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -171,21 +188,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -258,21 +260,6 @@ Read only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -357,7 +344,7 @@ For example, in the access reviews decisions API, this property might record the
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[Description <String>]`: Verbose description of the application.
       - `[DisplayName <String>]`: The name of the app provided by the app developer.
-      - `[LastModifiedDateTime <DateTime?>]`: 
+      - `[LastModifiedDateTime <DateTime?>]`:
       - `[PublishingState <String>]`: teamsAppPublishingState
       - `[ShortDescription <String>]`: Short description of the application.
       - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
@@ -444,7 +431,7 @@ For example, in the access reviews decisions API, this property might record the
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Description <String>]`: Verbose description of the application.
     - `[DisplayName <String>]`: The name of the app provided by the app developer.
-    - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[LastModifiedDateTime <DateTime?>]`:
     - `[PublishingState <String>]`: teamsAppPublishingState
     - `[ShortDescription <String>]`: Short description of the application.
     - `[TeamsAppId <String>]`: The ID from the Teams app manifest.

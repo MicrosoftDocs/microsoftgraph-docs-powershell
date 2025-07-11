@@ -19,28 +19,28 @@ Invoke function supportedTimeZones
 ```
 Invoke-MgBetaTimeUserOutlook -UserId <String> [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### Time1
 ```
 Invoke-MgBetaTimeUserOutlook -UserId <String> -TimeZoneStandard <String> [-Count] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### TimeViaIdentity1
 ```
 Invoke-MgBetaTimeUserOutlook -InputObject <IUsersIdentity> [-Count] [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### TimeViaIdentity
 ```
 Invoke-MgBetaTimeUserOutlook -InputObject <IUsersIdentity> [-Count] [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,6 +53,8 @@ Invoke function supportedTimeZones
 | Delegated (work or school account) | User.Read, User.ReadBasic.All,  |
 | Delegated (personal Microsoft account) | User.Read,  |
 | Application | User.Read.All, User.ReadBasic.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -117,21 +119,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -158,6 +145,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -203,21 +205,6 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

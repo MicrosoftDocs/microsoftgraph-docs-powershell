@@ -20,18 +20,20 @@ Update education
 Update-MgBetaEducationRoot [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Classes <IMicrosoftGraphEducationClass[]>] [-Me <IMicrosoftGraphEducationUser>]
  [-Reports <IMicrosoftGraphReportsRoot>] [-Schools <IMicrosoftGraphEducationSchool[]>]
- [-Users <IMicrosoftGraphEducationUser[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Users <IMicrosoftGraphEducationUser[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEducationRoot -BodyParameter <IMicrosoftGraphEducationRoot> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update education
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -82,6 +84,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -105,21 +122,6 @@ To construct, see NOTES section for ME properties and create a hash table.
 Type: IMicrosoftGraphEducationUser
 Parameter Sets: UpdateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -183,21 +185,6 @@ To construct, see NOTES section for USERS properties and create a hash table.
 Type: IMicrosoftGraphEducationUser[]
 Parameter Sets: UpdateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

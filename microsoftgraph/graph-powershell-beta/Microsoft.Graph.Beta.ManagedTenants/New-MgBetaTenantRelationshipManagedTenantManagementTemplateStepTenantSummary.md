@@ -22,7 +22,7 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
  [-ManagementTemplateCollectionDisplayName <String>] [-ManagementTemplateCollectionId <String>]
  [-ManagementTemplateDisplayName <String>] [-ManagementTemplateId <String>]
  [-ManagementTemplateStepDisplayName <String>] [-ManagementTemplateStepId <String>]
- [-NotCompliantTenantsCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-NotCompliantTenantsCount <Int32>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,12 +30,14 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
  -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to managementTemplateStepTenantSummaries for tenantRelationships
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -96,6 +98,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -326,21 +343,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -348,21 +350,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

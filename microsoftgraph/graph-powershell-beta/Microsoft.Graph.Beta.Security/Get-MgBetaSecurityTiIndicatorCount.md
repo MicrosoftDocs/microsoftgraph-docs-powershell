@@ -14,7 +14,7 @@ Get the number of the resource
 
 ```
 Get-MgBetaSecurityTiIndicatorCount [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -27,6 +27,8 @@ Get the number of the resource
 | Delegated (work or school account) | ThreatIndicators.ReadWrite.OwnedBy,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ThreatIndicators.ReadWrite.OwnedBy,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -57,21 +59,6 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

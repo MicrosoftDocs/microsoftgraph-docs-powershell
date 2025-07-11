@@ -23,7 +23,7 @@ Update-MgBetaGroupSiteOnenoteNotebook -GroupId <String> -NotebookId <String> -Si
  [-IsDefault] [-IsShared] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Links <IMicrosoftGraphNotebookLinks>] [-SectionGroups <IMicrosoftGraphSectionGroup[]>]
  [-SectionGroupsUrl <String>] [-Sections <IMicrosoftGraphOnenoteSection[]>] [-SectionsUrl <String>]
- [-Self <String>] [-UserRole <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Self <String>] [-UserRole <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Update-MgBetaGroupSiteOnenoteNotebook -GroupId <String> -NotebookId <String> -Si
 ```
 Update-MgBetaGroupSiteOnenoteNotebook -GroupId <String> -NotebookId <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphNotebook> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -42,18 +42,20 @@ Update-MgBetaGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> [-ResponseHe
  [-LastModifiedDateTime <DateTime>] [-Links <IMicrosoftGraphNotebookLinks>]
  [-SectionGroups <IMicrosoftGraphSectionGroup[]>] [-SectionGroupsUrl <String>]
  [-Sections <IMicrosoftGraphOnenoteSection[]>] [-SectionsUrl <String>] [-Self <String>] [-UserRole <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphNotebook>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property notebooks in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -85,6 +87,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -291,21 +308,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -426,21 +428,6 @@ onenoteUserRole
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

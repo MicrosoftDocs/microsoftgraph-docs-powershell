@@ -17,7 +17,7 @@ Update the navigation property assignmentFilterEvaluationStatusDetails in users
 Update-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail
  -AssignmentFilterEvaluationStatusDetailsId <String> -ManagedDeviceId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-PayloadId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -25,7 +25,7 @@ Update-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail
 Update-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail
  -AssignmentFilterEvaluationStatusDetailsId <String> -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -33,7 +33,7 @@ Update-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail
 Update-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-PayloadId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -41,11 +41,13 @@ Update-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail
 Update-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property assignmentFilterEvaluationStatusDetails in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -92,6 +94,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -172,21 +189,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -211,21 +213,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

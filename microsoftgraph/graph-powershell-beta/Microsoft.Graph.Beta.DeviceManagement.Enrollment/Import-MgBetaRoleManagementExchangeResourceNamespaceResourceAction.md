@@ -16,7 +16,7 @@ Invoke action importResourceActions
 ```
 Import-MgBetaRoleManagementExchangeResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Format <String>]
- [-OverwriteResourceNamespace] [-Value <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-OverwriteResourceNamespace] [-Value <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Import-MgBetaRoleManagementExchangeResourceNamespaceResourceAction -UnifiedRbacR
 ```
 Import-MgBetaRoleManagementExchangeResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId <String>
  -BodyParameter <IPaths15BodmaRolemanagementExchangeResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Import-MgBetaRoleManagementExchangeResourceNamespaceResourceAction -UnifiedRbacR
 Import-MgBetaRoleManagementExchangeResourceNamespaceResourceAction
  -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Format <String>] [-OverwriteResourceNamespace] [-Value <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ImportViaIdentity
@@ -41,12 +41,14 @@ Import-MgBetaRoleManagementExchangeResourceNamespaceResourceAction
 Import-MgBetaRoleManagementExchangeResourceNamespaceResourceAction
  -InputObject <IDeviceManagementEnrollmentIdentity>
  -BodyParameter <IPaths15BodmaRolemanagementExchangeResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action importResourceActions
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -78,6 +80,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -142,21 +159,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -194,21 +196,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: ImportExpanded, ImportViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

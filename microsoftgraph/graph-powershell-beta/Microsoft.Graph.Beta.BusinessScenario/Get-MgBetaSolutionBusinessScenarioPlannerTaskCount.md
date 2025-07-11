@@ -16,14 +16,14 @@ Get the number of the resource
 ```
 Get-MgBetaSolutionBusinessScenarioPlannerTaskCount -BusinessScenarioId <String> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaSolutionBusinessScenarioPlannerTaskCount -InputObject <IBusinessScenarioIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,6 +36,8 @@ Get the number of the resource
 | Delegated (work or school account) | BusinessScenarioData.Read.OwnedBy, BusinessScenarioData.ReadWrite.OwnedBy,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BusinessScenarioData.Read.OwnedBy, BusinessScenarioData.ReadWrite.OwnedBy,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +99,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

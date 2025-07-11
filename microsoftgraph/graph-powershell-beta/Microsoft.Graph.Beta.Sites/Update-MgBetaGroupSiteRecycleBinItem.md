@@ -20,7 +20,7 @@ Update-MgBetaGroupSiteRecycleBinItem -GroupId <String> -RecycleBinItemId <String
  [-DeletedDateTime <DateTime>] [-DeletedFromLocation <String>] [-Description <String>] [-ETag <String>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser>]
  [-LastModifiedDateTime <DateTime>] [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>]
- [-Size <Int64>] [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Size <Int64>] [-WebUrl <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgBetaGroupSiteRecycleBinItem -GroupId <String> -RecycleBinItemId <String
 ```
 Update-MgBetaGroupSiteRecycleBinItem -GroupId <String> -RecycleBinItemId <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphRecycleBinItem> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,7 +39,7 @@ Update-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity> [-ResponseHea
  [-DeletedFromLocation <String>] [-Description <String>] [-ETag <String>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser>]
  [-LastModifiedDateTime <DateTime>] [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>]
- [-Size <Int64>] [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Size <Int64>] [-WebUrl <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,11 +47,13 @@ Update-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity> [-ResponseHea
 ```
 Update-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphRecycleBinItem> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property items in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -83,6 +85,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -339,21 +356,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RecycleBinItemId
 The unique identifier of recycleBinItem
 
@@ -422,21 +424,6 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

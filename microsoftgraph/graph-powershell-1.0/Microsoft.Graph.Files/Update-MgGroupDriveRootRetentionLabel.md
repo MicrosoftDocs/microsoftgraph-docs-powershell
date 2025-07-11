@@ -21,14 +21,14 @@ Update-MgGroupDriveRootRetentionLabel -DriveId <String> -GroupId <String> [-Resp
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsLabelAppliedExplicitly]
  [-LabelAppliedBy <IMicrosoftGraphIdentitySet>] [-LabelAppliedDateTime <DateTime>] [-Name <String>]
  [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgGroupDriveRootRetentionLabel -DriveId <String> -GroupId <String>
  -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,18 +37,20 @@ Update-MgGroupDriveRootRetentionLabel -InputObject <IFilesIdentity> [-ResponseHe
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsLabelAppliedExplicitly]
  [-LabelAppliedBy <IMicrosoftGraphIdentitySet>] [-LabelAppliedDateTime <DateTime>] [-Name <String>]
  [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgGroupDriveRootRetentionLabel -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property retentionLabel in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -80,6 +82,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -227,21 +244,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -265,21 +267,6 @@ To construct, see NOTES section for RETENTIONSETTINGS properties and create a ha
 Type: IMicrosoftGraphRetentionLabelSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

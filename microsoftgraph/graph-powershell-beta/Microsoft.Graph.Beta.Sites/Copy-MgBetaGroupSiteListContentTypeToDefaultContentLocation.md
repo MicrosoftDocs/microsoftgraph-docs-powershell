@@ -21,7 +21,7 @@ Invoke action copyToDefaultContentLocation
 Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation -ContentTypeId <String> -GroupId <String>
  -ListId <String> -SiteId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-DestinationFileName <String>] [-SourceFile <IMicrosoftGraphItemReference>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
@@ -29,7 +29,7 @@ Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation -ContentTypeId <Stri
 Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation -ContentTypeId <String> -GroupId <String>
  -ListId <String> -SiteId <String>
  -BodyParameter <IPaths2L9E8PGroupsGroupIdSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,19 +38,21 @@ Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation -ContentTypeId <Stri
 Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation -InputObject <ISitesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
  [-SourceFile <IMicrosoftGraphItemReference>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
 Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation -InputObject <ISitesIdentity>
  -BodyParameter <IPaths2L9E8PGroupsGroupIdSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action copyToDefaultContentLocation
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -82,6 +84,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -191,21 +208,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -244,21 +246,6 @@ To construct, see NOTES section for SOURCEFILE properties and create a hash tabl
 Type: IMicrosoftGraphItemReference
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

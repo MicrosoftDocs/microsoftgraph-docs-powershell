@@ -21,20 +21,20 @@ List of channels either hosted in or shared with the team (incoming channels).
 Get-MgAllTeamChannel -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgAllTeamChannel -ChannelId <String> -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgAllTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -59,7 +59,7 @@ This example will list all channels
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgAllTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
+Get-MgAllTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
 
 ```
 This example will list all shared channels
@@ -189,21 +189,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 Select properties to be returned
 
@@ -249,6 +234,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -286,21 +286,6 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named

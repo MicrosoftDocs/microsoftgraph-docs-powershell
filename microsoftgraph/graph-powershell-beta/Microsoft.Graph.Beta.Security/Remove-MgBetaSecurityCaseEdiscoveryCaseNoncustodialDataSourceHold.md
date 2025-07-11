@@ -22,7 +22,7 @@ The location provides a URL that returns an eDiscoveryHoldOperation object.
 ```
 Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCas
 Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
  [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths101Xa3PSecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityRemoveholdPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,14 +39,14 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCas
 ```
 Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
  -EdiscoveryNoncustodialDataSourceId <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentityExpanded
 ```
 Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -55,14 +55,14 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <
 Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths101Xa3PSecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityRemoveholdPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
 ```
 Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -122,6 +122,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -216,21 +231,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -238,21 +238,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

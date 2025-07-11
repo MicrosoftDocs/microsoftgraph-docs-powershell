@@ -18,19 +18,21 @@ Get ref of postAttributeCollection from identity
 ### Get (Default)
 ```
 Get-MgBetaIdentityB2XUserFlowPostAttributeCollectionByRef -B2XIdentityUserFlowId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaIdentityB2XUserFlowPostAttributeCollectionByRef -InputObject <IIdentitySignInsIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get ref of postAttributeCollection from identity
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -77,21 +79,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

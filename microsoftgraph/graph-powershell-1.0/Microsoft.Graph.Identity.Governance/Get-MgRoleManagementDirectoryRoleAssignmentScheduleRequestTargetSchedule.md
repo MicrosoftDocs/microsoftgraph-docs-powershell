@@ -20,7 +20,7 @@ Supports $expand and $select nested in $expand.
 ```
 Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule
  -UnifiedRoleAssignmentScheduleRequestId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -28,13 +28,15 @@ Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule
 ```
 Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
 Supports $expand and $select nested in $expand.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -81,21 +83,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

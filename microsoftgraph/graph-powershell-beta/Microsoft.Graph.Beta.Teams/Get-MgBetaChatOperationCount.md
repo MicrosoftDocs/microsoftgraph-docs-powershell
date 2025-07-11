@@ -15,14 +15,14 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgBetaChatOperationCount -ChatId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaChatOperationCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -36,6 +36,8 @@ Get the number of the resource
 | Delegated (work or school account) | Chat.ReadBasic, Chat.ReadWrite, Chat.Read,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +99,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

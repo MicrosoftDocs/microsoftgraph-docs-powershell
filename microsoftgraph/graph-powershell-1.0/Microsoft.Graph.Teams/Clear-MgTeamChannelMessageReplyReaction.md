@@ -19,7 +19,7 @@ Invoke action unsetReaction
 ```
 Clear-MgTeamChannelMessageReplyReaction -ChannelId <String> -ChatMessageId <String> -ChatMessageId1 <String>
  -TeamId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-ReactionType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ReactionType <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Clear-MgTeamChannelMessageReplyReaction -ChannelId <String> -ChatMessageId <Stri
 Clear-MgTeamChannelMessageReplyReaction -ChannelId <String> -ChatMessageId <String> -ChatMessageId1 <String>
  -TeamId <String>
  -BodyParameter <IPathsY84W52TeamsTeamIdChannelsChannelIdMessagesChatmessageIdRepliesChatmessageId1MicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,19 +36,21 @@ Clear-MgTeamChannelMessageReplyReaction -ChannelId <String> -ChatMessageId <Stri
 ```
 Clear-MgTeamChannelMessageReplyReaction -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ReactionType <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UnsetViaIdentity
 ```
 Clear-MgTeamChannelMessageReplyReaction -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsY84W52TeamsTeamIdChannelsChannelIdMessagesChatmessageIdRepliesChatmessageId1MicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action unsetReaction
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -128,6 +130,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -170,21 +187,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -234,21 +236,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -284,7 +271,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPathsY84W52TeamsTeamIdChannelsChannelIdMessagesChatmessageIdRepliesChatmessageId1MicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ReactionType <String>]`: 
+  - `[ReactionType <String>]`:
 
 INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo

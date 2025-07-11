@@ -23,7 +23,7 @@ Update-MgBetaDeviceManagementComanagedDeviceHealthScriptState -DeviceId <String>
  [-PostRemediationDetectionScriptOutput <String>] [-PreRemediationDetectionScriptError <String>]
  [-PreRemediationDetectionScriptOutput <String>] [-RemediationScriptError <String>]
  [-RemediationState <RemediationState>] [-UserName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,14 +36,14 @@ Update-MgBetaDeviceManagementComanagedDeviceHealthScriptState [-DeviceId <String
  [-PostRemediationDetectionScriptError <String>] [-PostRemediationDetectionScriptOutput <String>]
  [-PreRemediationDetectionScriptError <String>] [-PreRemediationDetectionScriptOutput <String>]
  [-RemediationScriptError <String>] [-RemediationState <RemediationState>] [-UserName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementComanagedDeviceHealthScriptState -DeviceId <String> -Id <String>
  -ManagedDeviceId <String> -PolicyId <String> -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -51,11 +51,13 @@ Update-MgBetaDeviceManagementComanagedDeviceHealthScriptState -DeviceId <String>
 ```
 Update-MgBetaDeviceManagementComanagedDeviceHealthScriptState -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deviceHealthScriptStates in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -102,6 +104,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -442,21 +459,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RemediationScriptError
 Error output of the remediation script
 
@@ -509,21 +511,6 @@ Name of the user whom ran the device health script
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

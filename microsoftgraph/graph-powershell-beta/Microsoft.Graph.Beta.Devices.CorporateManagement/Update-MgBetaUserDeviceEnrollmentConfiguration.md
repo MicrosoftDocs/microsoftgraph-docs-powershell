@@ -19,7 +19,7 @@ Update-MgBetaUserDeviceEnrollmentConfiguration -DeviceEnrollmentConfigurationId 
  [-Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DeviceEnrollmentConfigurationType <DeviceEnrollmentConfigurationType>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Priority <Int32>]
- [-RoleScopeTagIds <String[]>] [-Version <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-RoleScopeTagIds <String[]>] [-Version <Int32>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Update-MgBetaUserDeviceEnrollmentConfiguration -DeviceEnrollmentConfigurationId 
 ```
 Update-MgBetaUserDeviceEnrollmentConfiguration -DeviceEnrollmentConfigurationId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphDeviceEnrollmentConfiguration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,7 +37,7 @@ Update-MgBetaUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateMa
  [-Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DeviceEnrollmentConfigurationType <DeviceEnrollmentConfigurationType>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Priority <Int32>]
- [-RoleScopeTagIds <String[]>] [-Version <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-RoleScopeTagIds <String[]>] [-Version <Int32>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,11 +45,13 @@ Update-MgBetaUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateMa
 ```
 Update-MgBetaUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceEnrollmentConfiguration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deviceEnrollmentConfigurations in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,6 +99,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -253,21 +270,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -324,21 +326,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

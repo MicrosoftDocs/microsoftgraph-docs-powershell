@@ -20,14 +20,14 @@ Update-MgBetaSecurityThreatSubmissionUrlThreat -UrlThreatSubmissionId <String>
  [-ContentType <String>] [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-Result <IMicrosoftGraphSecuritySubmissionResult>]
  [-Source <String>] [-Status <String>] [-TenantId <String>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityThreatSubmissionUrlThreat -UrlThreatSubmissionId <String>
  -BodyParameter <IMicrosoftGraphSecurityUrlThreatSubmission> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,18 +38,20 @@ Update-MgBetaSecurityThreatSubmissionUrlThreat -InputObject <ISecurityIdentity>
  [-ContentType <String>] [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-Result <IMicrosoftGraphSecuritySubmissionResult>]
  [-Source <String>] [-Status <String>] [-TenantId <String>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityThreatSubmissionUrlThreat -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityUrlThreatSubmission> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property urlThreats in security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -122,6 +124,21 @@ submissionClientSource
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -221,21 +238,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -339,21 +341,6 @@ Denotes the webUrl that needs to be submitted.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

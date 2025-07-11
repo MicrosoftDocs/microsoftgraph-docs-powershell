@@ -21,14 +21,14 @@ Update the properties of a telecomExpenseManagementPartner object.
 Update-MgDeviceManagementTelecomExpenseManagementPartner -TelecomExpenseManagementPartnerId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppAuthorized]
  [-DisplayName <String>] [-Enabled] [-Id <String>] [-LastConnectionDateTime <DateTime>] [-Url <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementTelecomExpenseManagementPartner -TelecomExpenseManagementPartnerId <String>
  -BodyParameter <IMicrosoftGraphTelecomExpenseManagementPartner> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,14 +36,14 @@ Update-MgDeviceManagementTelecomExpenseManagementPartner -TelecomExpenseManageme
 Update-MgDeviceManagementTelecomExpenseManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppAuthorized]
  [-DisplayName <String>] [-Enabled] [-Id <String>] [-LastConnectionDateTime <DateTime>] [-Url <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementTelecomExpenseManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphTelecomExpenseManagementPartner> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -125,6 +125,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -220,21 +235,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -272,21 +272,6 @@ URL of the TEM partner's administrative control panel, where an administrator ca
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -17,7 +17,7 @@ This API returns up to 1,000 deleted objects owned by the user, sorted by ID, an
 ### GetExpanded (Default)
 ```
 Get-MgBetaUserOwnedObjectByType [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Type <String>] [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Type <String>] [-UserId <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -25,13 +25,15 @@ Get-MgBetaUserOwnedObjectByType [-ResponseHeadersVariable <String>] [-Additional
 ```
 Get-MgBetaUserOwnedObjectByType
  -BodyParameter <IPathsSidp1OUsersMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve a list of recently deleted application and group objects owned by the specified user.
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -66,6 +68,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -78,21 +95,6 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -133,21 +135,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: GetExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

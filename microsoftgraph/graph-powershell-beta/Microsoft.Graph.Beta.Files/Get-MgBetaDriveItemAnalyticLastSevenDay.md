@@ -19,14 +19,14 @@ Get lastSevenDays from drives
 ```
 Get-MgBetaDriveItemAnalyticLastSevenDay -DriveId <String> -DriveItemId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaDriveItemAnalyticLastSevenDay -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,6 +39,8 @@ Get lastSevenDays from drives
 | Delegated (work or school account) | Files.Read, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -115,21 +117,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

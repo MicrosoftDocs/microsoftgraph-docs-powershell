@@ -21,7 +21,7 @@ Update-MgBetaGroupTeamOperation -GroupId <String> -TeamsAsyncOperationId <String
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AttemptsCount <Int32>]
  [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphOperationError>] [-Id <String>]
  [-LastActionDateTime <DateTime>] [-OperationType <String>] [-Status <String>] [-TargetResourceId <String>]
- [-TargetResourceLocation <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-TargetResourceLocation <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgBetaGroupTeamOperation -GroupId <String> -TeamsAsyncOperationId <String
 ```
 Update-MgBetaGroupTeamOperation -GroupId <String> -TeamsAsyncOperationId <String>
  -BodyParameter <IMicrosoftGraphTeamsAsyncOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,18 +38,20 @@ Update-MgBetaGroupTeamOperation -InputObject <ITeamsIdentity> [-ResponseHeadersV
  [-AdditionalProperties <Hashtable>] [-AttemptsCount <Int32>] [-CreatedDateTime <DateTime>]
  [-Error <IMicrosoftGraphOperationError>] [-Id <String>] [-LastActionDateTime <DateTime>]
  [-OperationType <String>] [-Status <String>] [-TargetResourceId <String>] [-TargetResourceLocation <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupTeamOperation -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphTeamsAsyncOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property operations in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -96,6 +98,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -222,21 +239,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -307,21 +309,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

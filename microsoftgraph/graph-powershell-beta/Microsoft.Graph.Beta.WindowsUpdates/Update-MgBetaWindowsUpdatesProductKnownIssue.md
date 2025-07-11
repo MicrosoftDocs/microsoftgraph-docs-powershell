@@ -22,7 +22,7 @@ Update-MgBetaWindowsUpdatesProductKnownIssue -KnownIssueId <String> -ProductId <
  [-ResolvedDateTime <DateTime>]
  [-ResolvingKnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]
  [-SafeguardHoldIds <Int32[]>] [-StartDateTime <DateTime>] [-Status <String>] [-Title <String>]
- [-WebViewUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-WebViewUrl <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Update-MgBetaWindowsUpdatesProductKnownIssue -KnownIssueId <String> -ProductId <
 ```
 Update-MgBetaWindowsUpdatesProductKnownIssue -KnownIssueId <String> -ProductId <String>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesKnownIssue> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,7 +43,7 @@ Update-MgBetaWindowsUpdatesProductKnownIssue -InputObject <IWindowsUpdatesIdenti
  [-ResolvedDateTime <DateTime>]
  [-ResolvingKnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]
  [-SafeguardHoldIds <Int32[]>] [-StartDateTime <DateTime>] [-Status <String>] [-Title <String>]
- [-WebViewUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-WebViewUrl <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -51,11 +51,13 @@ Update-MgBetaWindowsUpdatesProductKnownIssue -InputObject <IWindowsUpdatesIdenti
 ```
 Update-MgBetaWindowsUpdatesProductKnownIssue -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesKnownIssue> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property knownIssues in admin
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -87,6 +89,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -232,21 +249,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResolvedDateTime
 The date and time when the known issue was resolved or mitigated.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
@@ -364,21 +366,6 @@ The URL to the known issue in the Windows Release Health dashboard on Microsoft 
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

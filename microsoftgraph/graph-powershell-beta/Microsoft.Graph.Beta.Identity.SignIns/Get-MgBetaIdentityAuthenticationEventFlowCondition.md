@@ -21,20 +21,22 @@ See support for filtering on user flows for syntax information.
 ```
 Get-MgBetaIdentityAuthenticationEventFlowCondition -AuthenticationEventsFlowId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaIdentityAuthenticationEventFlowCondition -InputObject <IIdentitySignInsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The conditions representing the context of the authentication request that's used to decide whether the events policy is invoked.
 Supports $filter (eq).
 See support for filtering on user flows for syntax information.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -96,21 +98,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

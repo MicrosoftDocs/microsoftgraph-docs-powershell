@@ -19,26 +19,26 @@ Read-only.
 ### Get (Default)
 ```
 Get-MgBetaUserPhotoContent -UserId <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgBetaUserPhotoContent -UserId <String> -ProfilePhotoId <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgBetaUserPhotoContent -InputObject <IUsersIdentity> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaUserPhotoContent -InputObject <IUsersIdentity> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,6 +52,8 @@ Read-only.
 | Delegated (work or school account) | User.Read, User.ReadBasic.All, ProfilePhoto.ReadWrite.All, ProfilePhoto.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ProfilePhoto.Read.All, User.ReadBasic.All, User.Read.All, ProfilePhoto.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -125,21 +127,6 @@ Parameter Sets: Get1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

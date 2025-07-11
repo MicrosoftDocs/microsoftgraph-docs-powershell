@@ -56,7 +56,7 @@ Update-MgBetaGroupByUniqueName -UniqueName <String> [-ResponseHeadersVariable <S
  [-TransitiveMembers <IMicrosoftGraphDirectoryObject[]>] [-UniqueName1 <String>]
  [-UnseenConversationsCount <Int32>] [-UnseenCount <Int32>] [-UnseenMessagesCount <Int32>]
  [-Visibility <String>] [-WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -97,20 +97,20 @@ Update-MgBetaGroupByUniqueName [-UniqueName <String>] -InputObject <IGroupsIdent
  [-TransitiveMembers <IMicrosoftGraphDirectoryObject[]>] [-UnseenConversationsCount <Int32>]
  [-UnseenCount <Int32>] [-UnseenMessagesCount <Int32>] [-Visibility <String>]
  [-WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupByUniqueName -UniqueName <String> -BodyParameter <IMicrosoftGraphGroup>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupByUniqueName -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphGroup>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -385,6 +385,21 @@ To construct, see NOTES section for CLOUDLICENSING properties and create a hash 
 Type: IMicrosoftGraphCloudLicensingGroupCloudLicensing
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -1333,21 +1348,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ProxyAddresses
 Email addresses for the group that direct to the same group mailbox.
 For example: \['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'\].
@@ -1744,37 +1744,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WritebackConfiguration
-groupWritebackConfiguration
-To construct, see NOTES section for WRITEBACKCONFIGURATION properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphGroupWritebackConfiguration
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -1783,6 +1752,22 @@ The cmdlet is not run.
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WritebackConfiguration
+groupWritebackConfiguration
+To construct, see NOTES section for WRITEBACKCONFIGURATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphGroupWritebackConfiguration
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named

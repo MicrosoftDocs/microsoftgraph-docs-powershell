@@ -19,14 +19,14 @@ Supports $expand.
 Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExtension
  -AccessPackageAssignmentPolicyId <String> -CustomExtensionStageSettingId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExtension
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -34,6 +34,8 @@ Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExte
 Indicates the custom workflow extension that will be executed at this stage.
 Nullable.
 Supports $expand.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -110,21 +112,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

@@ -16,7 +16,7 @@ Create new navigation property to mobileAppRelationships for deviceAppManagement
 ```
 New-MgBetaDeviceAppManagementMobileAppRelationship [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetId <String>]
- [-TargetType <MobileAppRelationshipType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-TargetType <MobileAppRelationshipType>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ New-MgBetaDeviceAppManagementMobileAppRelationship [-ResponseHeadersVariable <St
 ```
 New-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetId <String>]
- [-TargetType <MobileAppRelationshipType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-TargetType <MobileAppRelationshipType>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,14 +32,14 @@ New-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String> [-Respo
 ```
 New-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String>
  -BodyParameter <IMicrosoftGraphMobileAppRelationship> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetId <String>]
- [-TargetType <MobileAppRelationshipType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-TargetType <MobileAppRelationshipType>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,18 +47,20 @@ New-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorpora
 ```
 New-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphMobileAppRelationship> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceAppManagementMobileAppRelationship -BodyParameter <IMicrosoftGraphMobileAppRelationship>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to mobileAppRelationships for deviceAppManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -90,6 +92,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -155,21 +172,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -212,21 +214,6 @@ Indicates whether the target of a relationship is the parent or the child in the
 Type: MobileAppRelationshipType
 Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

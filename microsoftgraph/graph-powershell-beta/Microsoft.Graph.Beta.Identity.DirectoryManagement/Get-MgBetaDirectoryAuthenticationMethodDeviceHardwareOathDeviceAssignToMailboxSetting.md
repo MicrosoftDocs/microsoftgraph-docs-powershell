@@ -19,7 +19,7 @@ Returned only on $select.
 ```
 Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDeviceAssignToMailboxSetting
  -HardwareOathTokenAuthenticationMethodDeviceId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDeviceAssignToMailboxSe
 ```
 Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDeviceAssignToMailboxSetting
  -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -36,6 +36,8 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +99,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

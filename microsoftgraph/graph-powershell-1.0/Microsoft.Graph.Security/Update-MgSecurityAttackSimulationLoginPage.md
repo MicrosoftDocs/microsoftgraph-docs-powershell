@@ -21,14 +21,14 @@ Update-MgSecurityAttackSimulationLoginPage -LoginPageId <String> [-ResponseHeade
  [-AdditionalProperties <Hashtable>] [-Content <String>] [-CreatedBy <IMicrosoftGraphEmailIdentity>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-Language <String>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
- [-Source <String>] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Source <String>] [-Status <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityAttackSimulationLoginPage -LoginPageId <String> -BodyParameter <IMicrosoftGraphLoginPage>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Update-MgSecurityAttackSimulationLoginPage -InputObject <ISecurityIdentity> [-Re
  [-AdditionalProperties <Hashtable>] [-Content <String>] [-CreatedBy <IMicrosoftGraphEmailIdentity>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-Language <String>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
- [-Source <String>] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Source <String>] [-Status <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,11 +46,13 @@ Update-MgSecurityAttackSimulationLoginPage -InputObject <ISecurityIdentity> [-Re
 ```
 Update-MgSecurityAttackSimulationLoginPage -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphLoginPage> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property loginPages in security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -82,6 +84,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -273,21 +290,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -325,21 +327,6 @@ simulationContentStatus
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

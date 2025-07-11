@@ -21,13 +21,13 @@ Update-MgBetaCommunicationPresence -PresenceId <String> [-ResponseHeadersVariabl
  [-Activity <String>] [-AdditionalProperties <Hashtable>] [-Availability <String>] [-Id <String>]
  [-OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]
  [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaCommunicationPresence -PresenceId <String> -BodyParameter <IMicrosoftGraphPresence>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,18 +37,20 @@ Update-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <String>] [-Activity <String>] [-AdditionalProperties <Hashtable>]
  [-Availability <String>] [-Id <String>] [-OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]
  [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IMicrosoftGraphPresence> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property presences in communications
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -112,6 +114,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -193,21 +210,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -231,21 +233,6 @@ To construct, see NOTES section for STATUSMESSAGE properties and create a hash t
 Type: IMicrosoftGraphPresenceStatusMessage
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

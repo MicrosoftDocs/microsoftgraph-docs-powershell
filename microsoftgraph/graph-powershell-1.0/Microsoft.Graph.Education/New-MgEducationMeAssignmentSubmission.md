@@ -23,7 +23,7 @@ New-MgEducationMeAssignmentSubmission -EducationAssignmentId <String> [-Response
  [-Recipient <Hashtable>] [-Resources <IMicrosoftGraphEducationSubmissionResource[]>]
  [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>]
  [-SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]
- [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ New-MgEducationMeAssignmentSubmission -EducationAssignmentId <String> [-Response
 ```
 New-MgEducationMeAssignmentSubmission -EducationAssignmentId <String>
  -BodyParameter <IMicrosoftGraphEducationSubmission> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -42,7 +42,7 @@ New-MgEducationMeAssignmentSubmission -InputObject <IEducationIdentity> [-Respon
  [-Recipient <Hashtable>] [-Resources <IMicrosoftGraphEducationSubmissionResource[]>]
  [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>]
  [-SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]
- [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -50,11 +50,13 @@ New-MgEducationMeAssignmentSubmission -InputObject <IEducationIdentity> [-Respon
 ```
 New-MgEducationMeAssignmentSubmission -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationSubmission> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to submissions for education
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -86,6 +88,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -175,21 +192,6 @@ To construct, see NOTES section for OUTCOMES properties and create a hash table.
 Type: IMicrosoftGraphEducationOutcome[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -339,21 +341,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -401,7 +388,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Outcomes <IMicrosoftGraphEducationOutcome- `[]`>]`: 
+  - `[Outcomes <IMicrosoftGraphEducationOutcome- `[]`>]`:
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -411,7 +398,7 @@ For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
   - `[ReassignedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Recipient <IMicrosoftGraphEducationSubmissionRecipient>]`: educationSubmissionRecipient
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Resources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
+  - `[Resources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`:
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which the resource was copied, and if null, the student uploaded the resource.
@@ -423,7 +410,7 @@ Read-only.
   - `[ReturnedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Status <String>]`: educationSubmissionStatus
   - `[SubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[SubmittedResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
+  - `[SubmittedResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`:
   - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 EXCUSEDBY `<IMicrosoftGraphIdentitySet>`: identitySet

@@ -22,14 +22,14 @@ Returned only on $select.
 Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting
  -CloudPcProvisioningPolicyAssignmentId <String> -CloudPcProvisioningPolicyId <String> -UserId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting
  -InputObject <IDeviceManagementAdministrationIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -37,6 +37,8 @@ Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMai
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 Returned only on $select.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -113,21 +115,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

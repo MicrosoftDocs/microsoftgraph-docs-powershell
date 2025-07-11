@@ -21,7 +21,7 @@ Update-MgBetaDriveListOperation -DriveId <String> -RichLongRunningOperationId <S
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-LastActionDateTime <DateTime>]
  [-PercentageComplete <Int32>] [-ResourceId <String>] [-ResourceLocation <String>] [-Status <String>]
- [-StatusDetail <String>] [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-StatusDetail <String>] [-Type <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgBetaDriveListOperation -DriveId <String> -RichLongRunningOperationId <S
 ```
 Update-MgBetaDriveListOperation -DriveId <String> -RichLongRunningOperationId <String>
  -BodyParameter <IMicrosoftGraphRichLongRunningOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,18 +38,20 @@ Update-MgBetaDriveListOperation -InputObject <IFilesIdentity> [-ResponseHeadersV
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphPublicError>]
  [-Id <String>] [-LastActionDateTime <DateTime>] [-PercentageComplete <Int32>] [-ResourceId <String>]
  [-ResourceLocation <String>] [-Status <String>] [-StatusDetail <String>] [-Type <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDriveListOperation -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphRichLongRunningOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property operations in drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -81,6 +83,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -211,21 +228,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResourceId
 A unique identifier for the result.
 
@@ -323,21 +325,6 @@ Type of the operation.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -19,21 +19,21 @@ Get the number of the resource
 ```
 Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount -OnlineMeetingId <String>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount -MeetingAttendanceReportId <String>
  -OnlineMeetingId <String> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount
  -InputObject <ICloudCommunicationsIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -41,12 +41,14 @@ Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount
 ```
 Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount
  -InputObject <ICloudCommunicationsIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -120,21 +122,6 @@ Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

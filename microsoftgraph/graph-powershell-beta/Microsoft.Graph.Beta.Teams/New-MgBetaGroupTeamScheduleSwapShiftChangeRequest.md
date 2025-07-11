@@ -22,14 +22,14 @@ New-MgBetaGroupTeamScheduleSwapShiftChangeRequest -GroupId <String> [-ResponseHe
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
  [-RecipientActionMessage <String>] [-RecipientShiftId <String>] [-RecipientUserId <String>]
  [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupTeamScheduleSwapShiftChangeRequest -GroupId <String>
  -BodyParameter <IMicrosoftGraphSwapShiftsChangeRequest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -39,18 +39,20 @@ New-MgBetaGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ManagerActionMessage <String>] [-RecipientActionMessage <String>] [-RecipientShiftId <String>]
  [-RecipientUserId <String>] [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphSwapShiftsChangeRequest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to swapShiftsChangeRequests for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,6 +99,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -209,21 +226,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RecipientActionMessage
 Custom message sent by recipient of the offer shift request.
 
@@ -321,21 +323,6 @@ scheduleChangeState
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

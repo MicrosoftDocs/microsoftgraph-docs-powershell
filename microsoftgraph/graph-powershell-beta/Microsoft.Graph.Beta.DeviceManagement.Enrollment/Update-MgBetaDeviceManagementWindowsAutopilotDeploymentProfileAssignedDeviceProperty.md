@@ -19,7 +19,7 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceProp
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>]
  [-DeviceAccountPassword <String>] [-DeviceAccountUpn <String>] [-DeviceFriendlyName <String>]
  [-DisplayName <String>] [-GroupTag <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -27,7 +27,7 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceProp
 Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceProperty
  -WindowsAutopilotDeploymentProfileId <String> -WindowsAutopilotDeviceIdentityId <String>
  -BodyParameter <IPaths19IcukwDevicemanagementWindowsautopilotdeploymentprofilesWindowsautopilotdeploymentprofileIdAssigneddevicesWindowsautopilotdeviceidentityIdMicrosoftGraphUpdatedevicepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceProp
  -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-DeviceAccountPassword <String>]
  [-DeviceAccountUpn <String>] [-DeviceFriendlyName <String>] [-DisplayName <String>] [-GroupTag <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,12 +46,14 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceProp
 Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceProperty
  -InputObject <IDeviceManagementEnrollmentIdentity>
  -BodyParameter <IPaths19IcukwDevicemanagementWindowsautopilotdeploymentprofilesWindowsautopilotdeploymentprofileIdAssigneddevicesWindowsautopilotdeviceidentityIdMicrosoftGraphUpdatedevicepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Updates properties on Autopilot devices.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -98,6 +100,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -222,21 +239,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -259,6 +261,22 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
 
 Required: False
 Position: Named
@@ -291,37 +309,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

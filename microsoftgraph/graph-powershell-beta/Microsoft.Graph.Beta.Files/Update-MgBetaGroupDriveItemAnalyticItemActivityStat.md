@@ -23,7 +23,7 @@ Update-MgBetaGroupDriveItemAnalyticItemActivityStat -DriveId <String> -DriveItem
  [-Create <IMicrosoftGraphItemActionStat>] [-Delete <IMicrosoftGraphItemActionStat>]
  [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>] [-Id <String>]
  [-IncompleteData <IMicrosoftGraphIncompleteData>] [-IsTrending] [-Move <IMicrosoftGraphItemActionStat>]
- [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Update-MgBetaGroupDriveItemAnalyticItemActivityStat -DriveId <String> -DriveItem
 ```
 Update-MgBetaGroupDriveItemAnalyticItemActivityStat -DriveId <String> -DriveItemId <String> -GroupId <String>
  -ItemActivityStatId <String> -BodyParameter <IMicrosoftGraphItemActivityStat>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,7 +43,7 @@ Update-MgBetaGroupDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity
  [-Create <IMicrosoftGraphItemActionStat>] [-Delete <IMicrosoftGraphItemActionStat>]
  [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>] [-Id <String>]
  [-IncompleteData <IMicrosoftGraphIncompleteData>] [-IsTrending] [-Move <IMicrosoftGraphItemActionStat>]
- [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -51,11 +51,13 @@ Update-MgBetaGroupDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity
 ```
 Update-MgBetaGroupDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphItemActivityStat> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property itemActivityStats in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -119,6 +121,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -340,21 +357,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -378,21 +380,6 @@ Read-only.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

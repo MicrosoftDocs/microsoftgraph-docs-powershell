@@ -17,19 +17,21 @@ Create new navigation property to mobileDeviceManagementPolicies for policies
 New-MgBetaPolicyMobileDeviceManagementPolicy [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AppliesTo <String>] [-ComplianceUrl <String>] [-Description <String>]
  [-DiscoveryUrl <String>] [-DisplayName <String>] [-Id <String>] [-IncludedGroups <IMicrosoftGraphGroup[]>]
- [-IsValid] [-TermsOfUseUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-IsValid] [-TermsOfUseUrl <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaPolicyMobileDeviceManagementPolicy -BodyParameter <IMicrosoftGraphMobilityManagementPolicy>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to mobileDeviceManagementPolicies for policies
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -86,6 +88,21 @@ Compliance URL of the mobility management application.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -202,21 +219,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -239,21 +241,6 @@ Terms of Use URL of the mobility management application.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

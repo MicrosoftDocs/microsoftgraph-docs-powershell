@@ -19,7 +19,7 @@ New-MgBetaDeviceManagementExchangeOnPremisePolicy [-ResponseHeadersVariable <Str
  [-ConditionalAccessSettings <IMicrosoftGraphOnPremisesConditionalAccessSettings>]
  [-DefaultAccessLevel <DeviceManagementExchangeAccessLevel>] [-Id <String>]
  [-KnownDeviceClasses <IMicrosoftGraphDeviceManagementExchangeDeviceClass[]>]
- [-NotificationContentInputFile <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-NotificationContentInputFile <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,11 +27,13 @@ New-MgBetaDeviceManagementExchangeOnPremisePolicy [-ResponseHeadersVariable <Str
 ```
 New-MgBetaDeviceManagementExchangeOnPremisePolicy
  -BodyParameter <IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to exchangeOnPremisesPolicies for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -91,6 +93,21 @@ To construct, see NOTES section for CONDITIONALACCESSSETTINGS properties and cre
 Type: IMicrosoftGraphOnPremisesConditionalAccessSettings
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -177,21 +194,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -199,21 +201,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

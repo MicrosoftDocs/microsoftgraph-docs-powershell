@@ -18,7 +18,7 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgTeamScheduleOpenShiftChangeRequestCount -TeamId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Get-MgTeamScheduleOpenShiftChangeRequestCount -TeamId <String> [-Filter <String>
 ```
 Get-MgTeamScheduleOpenShiftChangeRequestCount -InputObject <ITeamsIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,6 +39,8 @@ Get the number of the resource
 | Delegated (work or school account) | Schedule.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All, Group.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.Read.All, Schedule.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -85,21 +87,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

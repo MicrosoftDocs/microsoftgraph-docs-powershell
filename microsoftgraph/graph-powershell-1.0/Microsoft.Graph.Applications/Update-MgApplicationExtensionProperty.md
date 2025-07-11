@@ -20,7 +20,7 @@ Update the navigation property extensionProperties in applications
 Update-MgApplicationExtensionProperty -ApplicationId <String> -ExtensionPropertyId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>]
  [-DataType <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued] [-IsSyncedFromOnPremises]
- [-Name <String>] [-TargetObjects <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Name <String>] [-TargetObjects <String[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgApplicationExtensionProperty -ApplicationId <String> -ExtensionProperty
 ```
 Update-MgApplicationExtensionProperty -ApplicationId <String> -ExtensionPropertyId <String>
  -BodyParameter <IMicrosoftGraphExtensionProperty> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,7 +36,7 @@ Update-MgApplicationExtensionProperty -ApplicationId <String> -ExtensionProperty
 Update-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-DataType <String>]
  [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued] [-IsSyncedFromOnPremises] [-Name <String>]
- [-TargetObjects <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-TargetObjects <String[]>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -44,11 +44,13 @@ Update-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-Res
 ```
 Update-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphExtensionProperty> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property extensionProperties in applications
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -111,6 +113,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -262,21 +279,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -301,21 +303,6 @@ UserGroupAdministrativeUnitApplicationDeviceOrganization
 Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

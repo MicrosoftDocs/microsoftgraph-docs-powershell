@@ -20,7 +20,7 @@ Update-MgBetaUserOutlookTaskGroupTaskFolder -OutlookTaskFolderId <String> -Outlo
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Name <String>]
  [-ParentGroupKey <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-Tasks <IMicrosoftGraphOutlookTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Tasks <IMicrosoftGraphOutlookTask[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgBetaUserOutlookTaskGroupTaskFolder -OutlookTaskFolderId <String> -Outlo
 ```
 Update-MgBetaUserOutlookTaskGroupTaskFolder -OutlookTaskFolderId <String> -OutlookTaskGroupId <String>
  -UserId <String> -BodyParameter <IMicrosoftGraphOutlookTaskFolder> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,7 +38,7 @@ Update-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity> [-Resp
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Name <String>]
  [-ParentGroupKey <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-Tasks <IMicrosoftGraphOutlookTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Tasks <IMicrosoftGraphOutlookTask[]>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ Update-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity> [-Resp
 ```
 Update-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity>
  -BodyParameter <IMicrosoftGraphOutlookTaskFolder> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,6 +59,8 @@ Update the navigation property taskFolders in users
 | Delegated (work or school account) | Tasks.ReadWrite,  |
 | Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
 | Application | Not supported |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -100,6 +102,21 @@ The version of the task folder.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -248,21 +265,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -323,21 +325,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

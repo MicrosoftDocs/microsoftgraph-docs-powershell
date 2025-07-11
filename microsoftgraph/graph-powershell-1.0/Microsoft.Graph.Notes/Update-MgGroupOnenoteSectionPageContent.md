@@ -20,14 +20,14 @@ Invoke action onenotePatchContent
 Update-MgGroupOnenoteSectionPageContent -GroupId <String> -OnenotePageId <String> -OnenoteSectionId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Patch
 ```
 Update-MgGroupOnenoteSectionPageContent -GroupId <String> -OnenotePageId <String> -OnenoteSectionId <String>
  -BodyParameter <IPathsNbnlfzGroupsGroupIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Update-MgGroupOnenoteSectionPageContent -GroupId <String> -OnenotePageId <String
 ```
 Update-MgGroupOnenoteSectionPageContent -InputObject <INotesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -43,12 +43,14 @@ Update-MgGroupOnenoteSectionPageContent -InputObject <INotesIdentity> [-Response
 ```
 Update-MgGroupOnenoteSectionPageContent -InputObject <INotesIdentity>
  -BodyParameter <IPathsNbnlfzGroupsGroupIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action onenotePatchContent
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -91,6 +93,21 @@ To construct, see NOTES section for COMMANDS properties and create a hash table.
 Type: IMicrosoftGraphOnenotePatchContentCommand[]
 Parameter Sets: PatchExpanded, PatchViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -190,21 +207,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -212,21 +214,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -270,7 +257,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPathsNbnlfzGroupsGroupIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Commands <IMicrosoftGraphOnenotePatchContentCommand- `[]`>]`: 
+  - `[Commands <IMicrosoftGraphOnenotePatchContentCommand- `[]`>]`:
     - `[Action <String>]`: onenotePatchActionType
     - `[Content <String>]`: A string of well-formed HTML to add to the page, and any image or file binary data.
 If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.

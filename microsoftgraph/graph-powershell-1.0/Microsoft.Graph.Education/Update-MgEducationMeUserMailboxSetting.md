@@ -21,19 +21,21 @@ Update-MgEducationMeUserMailboxSetting [-ResponseHeadersVariable <String>] [-Add
  [-ArchiveFolder <String>] [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]
  [-DateFormat <String>] [-DelegateMeetingMessageDeliveryOptions <String>]
  [-Language <IMicrosoftGraphLocaleInfo>] [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEducationMeUserMailboxSetting -BodyParameter <IMicrosoftGraphMailboxSettings>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update property mailboxSettings value.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -99,6 +101,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DateFormat
 The date format for the user's mailbox.
 
@@ -152,21 +169,6 @@ To construct, see NOTES section for LANGUAGE properties and create a hash table.
 Type: IMicrosoftGraphLocaleInfo
 Parameter Sets: UpdateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -235,37 +237,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkingHours
-workingHours
-To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphWorkingHours
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -274,6 +245,22 @@ The cmdlet is not run.
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WorkingHours
+workingHours
+To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWorkingHours
+Parameter Sets: UpdateExpanded
+Aliases:
 
 Required: False
 Position: Named

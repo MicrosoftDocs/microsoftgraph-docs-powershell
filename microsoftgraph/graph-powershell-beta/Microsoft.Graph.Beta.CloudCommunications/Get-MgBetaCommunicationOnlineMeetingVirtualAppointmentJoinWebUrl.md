@@ -21,14 +21,14 @@ With Teams Premium, you can configure a custom lobby room experience for attende
 ### Get (Default)
 ```
 Get-MgBetaCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl -OnlineMeetingId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl -InputObject <ICloudCommunicationsIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -36,6 +36,8 @@ Get-MgBetaCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl -InputObject <I
 Get a join web URL for a Teams Virtual Appointment.
 This web URL includes enhanced business-to-customer experiences such as mobile browser join and virtual lobby rooms.
 With Teams Premium, you can configure a custom lobby room experience for attendees by adding your company logo and access the Virtual Appointments usage report for organizational analytics.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -79,21 +81,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

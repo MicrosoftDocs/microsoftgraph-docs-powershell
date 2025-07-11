@@ -17,7 +17,7 @@ Create new navigation property to matchedDevices for admin
 New-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice
  -ApplicableContentCatalogEntryId <String> -DeploymentId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DeviceId <String>] [-RecommendedBy <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -25,14 +25,14 @@ New-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice
 New-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice
  -ApplicableContentCatalogEntryId <String> -DeploymentId <String>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice -InputObject <IWindowsUpdatesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeviceId <String>]
- [-RecommendedBy <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-RecommendedBy <String[]>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,11 +40,13 @@ New-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice -InputO
 ```
 New-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to matchedDevices for admin
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -91,6 +93,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -155,21 +172,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RecommendedBy
 Collection of vendors who recommend the content.
 
@@ -192,21 +194,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

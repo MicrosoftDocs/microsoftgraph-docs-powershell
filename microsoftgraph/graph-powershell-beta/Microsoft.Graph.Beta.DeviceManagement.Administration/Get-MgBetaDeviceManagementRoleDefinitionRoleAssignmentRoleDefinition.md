@@ -19,7 +19,7 @@ Role definition this assignment is part of.
 ```
 Get-MgBetaDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition -RoleAssignmentId <String>
  -RoleDefinitionId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Get-MgBetaDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition -RoleAssign
 ```
 Get-MgBetaDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition
  -InputObject <IDeviceManagementAdministrationIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -41,6 +41,8 @@ Role definition this assignment is part of.
 | Delegated (work or school account) | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -87,21 +89,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

@@ -1,48 +1,116 @@
 ---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategorycount
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-MgBetaSecurityLabelCategorySubcategory
 schema: 2.0.0
+ms.subservice: security
 ---
 
-# Get-MgBetaSecurityLabelCategorySubcategoryCount
+# Get-MgBetaSecurityLabelCategorySubcategory
 
 ## SYNOPSIS
-Get the number of the resource
+Read the properties and relationships of a subcategoryTemplate object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelCategorySubcategoryCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCategorySubcategoryCount?view=graph-powershell-1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCategorySubcategory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
-### Get (Default)
+### List (Default)
 ```
-Get-MgBetaSecurityLabelCategorySubcategoryCount -CategoryTemplateId <String> [-Filter <String>]
- [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaSecurityLabelCategorySubcategory -CategoryTemplateId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgBetaSecurityLabelCategorySubcategory -CategoryTemplateId <String> -SubcategoryTemplateId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaSecurityLabelCategorySubcategoryCount -InputObject <ISecurityIdentity> [-Filter <String>]
- [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the number of the resource
+Read the properties and relationships of a subcategoryTemplate object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityLabelCategorySubcategory -CategoryTemplateId $categoryTemplateId
+
+```
+This example shows how to use the Get-MgBetaSecurityLabelCategorySubcategory Cmdlet.
+
 
 ## PARAMETERS
+
+### -All
+List all pages.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -CategoryTemplateId
 The unique identifier of categoryTemplate
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -54,7 +122,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -95,13 +163,28 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
+### -PageSize
+Sets the page size of results.
 
 ```yaml
-Type: ActionPreference
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Property
+Select properties to be returned
+
+```yaml
+Type: String[]
 Parameter Sets: (All)
-Aliases: proga
+Aliases: Select
 
 Required: False
 Position: Named
@@ -130,12 +213,72 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: String[]
+Parameter Sets: List
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubcategoryTemplateId
+The unique identifier of subcategoryTemplate
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -149,7 +292,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.IDictionary
 ## OUTPUTS
 
-### System.Int32
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubcategoryTemplate
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -250,8 +393,11 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategorycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategorycount)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-MgBetaSecurityLabelCategorySubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-MgBetaSecurityLabelCategorySubcategory)
 
+[https://learn.microsoft.com/graph/api/security-subcategorytemplate-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-subcategorytemplate-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/security-categorytemplate-list-subcategories?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-categorytemplate-list-subcategories?view=graph-rest-beta)
 
 
 

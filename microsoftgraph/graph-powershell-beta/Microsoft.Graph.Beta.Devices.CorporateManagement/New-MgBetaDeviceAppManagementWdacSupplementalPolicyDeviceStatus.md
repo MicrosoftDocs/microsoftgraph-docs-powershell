@@ -21,7 +21,7 @@ New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
  [-DeviceName <String>] [-Id <String>] [-LastSyncDateTime <DateTime>] [-OSDescription <String>]
  [-OSVersion <String>] [-Policy <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy>]
  [-PolicyVersion <String>] [-UserName <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -29,7 +29,7 @@ New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
 New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
  -WindowsDefenderApplicationControlSupplementalPolicyId <String>
  -BodyParameter <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
  [-DeviceName <String>] [-Id <String>] [-LastSyncDateTime <DateTime>] [-OSDescription <String>]
  [-OSVersion <String>] [-Policy <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy>]
  [-PolicyVersion <String>] [-UserName <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -50,7 +50,7 @@ New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
 New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -64,6 +64,8 @@ Create new navigation property to deviceStatuses for deviceAppManagement
 | Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -95,6 +97,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -266,21 +283,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -326,36 +328,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WindowsDefenderApplicationControlSupplementalPolicyId
-The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -366,6 +338,21 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsDefenderApplicationControlSupplementalPolicyId
+The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, Create
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

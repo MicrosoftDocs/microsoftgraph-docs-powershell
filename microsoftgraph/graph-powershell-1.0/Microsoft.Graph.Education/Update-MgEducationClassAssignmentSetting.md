@@ -21,7 +21,7 @@ Only teachers can update these settings.
 ```
 Update-MgEducationClassAssignmentSetting -EducationClassId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-GradingCategories <IMicrosoftGraphEducationGradingCategory[]>]
- [-Id <String>] [-SubmissionAnimationDisabled] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Id <String>] [-SubmissionAnimationDisabled] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,14 +29,14 @@ Update-MgEducationClassAssignmentSetting -EducationClassId <String> [-ResponseHe
 ```
 Update-MgEducationClassAssignmentSetting -EducationClassId <String>
  -BodyParameter <IMicrosoftGraphEducationAssignmentSettings> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-GradingCategories <IMicrosoftGraphEducationGradingCategory[]>]
- [-Id <String>] [-SubmissionAnimationDisabled] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Id <String>] [-SubmissionAnimationDisabled] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,7 +44,7 @@ Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-Res
 ```
 Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationAssignmentSettings> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -137,6 +137,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -EducationClassId
 The unique identifier of educationClass
 
@@ -215,21 +230,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -258,21 +258,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

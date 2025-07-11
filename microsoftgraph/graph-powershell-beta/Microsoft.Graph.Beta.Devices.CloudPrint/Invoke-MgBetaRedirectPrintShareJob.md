@@ -23,14 +23,14 @@ For details about how to use this API to add pull printing support to Universal 
 Invoke-MgBetaRedirectPrintShareJob -PrintJobId <String> -PrinterShareId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-DestinationPrinterId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Redirect
 ```
 Invoke-MgBetaRedirectPrintShareJob -PrintJobId <String> -PrinterShareId <String>
  -BodyParameter <IPathsQcb95LPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,14 +39,14 @@ Invoke-MgBetaRedirectPrintShareJob -PrintJobId <String> -PrinterShareId <String>
 Invoke-MgBetaRedirectPrintShareJob -InputObject <IDevicesCloudPrintIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-DestinationPrinterId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RedirectViaIdentity
 ```
 Invoke-MgBetaRedirectPrintShareJob -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IPathsQcb95LPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -54,6 +54,8 @@ Invoke-MgBetaRedirectPrintShareJob -InputObject <IDevicesCloudPrintIdentity>
 Redirect a print job to a different printer.
 Redirecting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -96,6 +98,21 @@ To construct, see NOTES section for CONFIGURATION properties and create a hash t
 Type: IMicrosoftGraphPrintJobConfiguration
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -180,21 +197,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -202,21 +204,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

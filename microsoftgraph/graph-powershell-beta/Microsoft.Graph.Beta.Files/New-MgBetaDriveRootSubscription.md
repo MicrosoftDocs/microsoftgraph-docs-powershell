@@ -23,13 +23,13 @@ New-MgBetaDriveRootSubscription -DriveId <String> [-ResponseHeadersVariable <Str
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
  [-LifecycleNotificationUrl <String>] [-NotificationContentType <String>] [-NotificationQueryOptions <String>]
  [-NotificationUrl <String>] [-NotificationUrlAppId <String>] [-Resource <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDriveRootSubscription -DriveId <String> -BodyParameter <IMicrosoftGraphSubscription>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,18 +41,20 @@ New-MgBetaDriveRootSubscription -InputObject <IFilesIdentity> [-ResponseHeadersV
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
  [-LifecycleNotificationUrl <String>] [-NotificationContentType <String>] [-NotificationQueryOptions <String>]
  [-NotificationUrl <String>] [-NotificationUrlAppId <String>] [-Resource <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDriveRootSubscription -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphSubscription>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to subscriptions for drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -136,6 +138,21 @@ The client can check that the change notification came from the service by compa
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -405,21 +422,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Resource
 Required.
 Specifies the resource that is monitored for changes.
@@ -445,21 +447,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

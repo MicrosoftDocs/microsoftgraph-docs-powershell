@@ -15,6 +15,8 @@ Delete ref of navigation property appliesTo for directory
 ## DESCRIPTION
 Delete ref of navigation property appliesTo for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### CommonParameters

@@ -21,14 +21,14 @@ Update-MgAgreementFileLocalization -AgreementFileLocalizationId <String> -Agreem
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-FileData <IMicrosoftGraphAgreementFileData>] [-FileName <String>] [-Id <String>]
  [-IsDefault] [-IsMajorVersion] [-Language <String>] [-Versions <IMicrosoftGraphAgreementFileVersion[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgAgreementFileLocalization -AgreementFileLocalizationId <String> -AgreementId <String>
  -BodyParameter <IMicrosoftGraphAgreementFileLocalization> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,18 +37,20 @@ Update-MgAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-FileData <IMicrosoftGraphAgreementFileData>] [-FileName <String>] [-Id <String>]
  [-IsDefault] [-IsMajorVersion] [-Language <String>] [-Versions <IMicrosoftGraphAgreementFileVersion[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphAgreementFileLocalization> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property localizations in agreements
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -110,6 +112,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -277,21 +294,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -316,21 +318,6 @@ To construct, see NOTES section for VERSIONS properties and create a hash table.
 Type: IMicrosoftGraphAgreementFileVersion[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

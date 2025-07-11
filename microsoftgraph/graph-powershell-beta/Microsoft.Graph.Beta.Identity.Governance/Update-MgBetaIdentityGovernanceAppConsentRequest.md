@@ -22,14 +22,14 @@ Update-MgBetaIdentityGovernanceAppConsentRequest -AppConsentRequestId <String>
  [-AppId <String>] [-ConsentType <String>] [-Id <String>]
  [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
  [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityGovernanceAppConsentRequest -AppConsentRequestId <String>
  -BodyParameter <IMicrosoftGraphAppConsentRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,18 +39,20 @@ Update-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernan
  [-AppId <String>] [-ConsentType <String>] [-Id <String>]
  [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
  [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphAppConsentRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property appConsentRequests in identityGovernance
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -131,6 +133,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -218,21 +235,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -257,21 +259,6 @@ To construct, see NOTES section for USERCONSENTREQUESTS properties and create a 
 Type: IMicrosoftGraphUserConsentRequest[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

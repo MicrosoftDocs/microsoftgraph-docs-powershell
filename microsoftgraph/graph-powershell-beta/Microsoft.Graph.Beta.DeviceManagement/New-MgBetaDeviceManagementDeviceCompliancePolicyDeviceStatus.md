@@ -21,7 +21,7 @@ New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus -DeviceCompliancePo
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceDisplayName <String>] [-DeviceModel <String>]
  [-Id <String>] [-LastReportedDateTime <DateTime>] [-Platform <Int32>] [-Status <String>] [-UserName <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus -DeviceCompliancePo
 ```
 New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus -DeviceCompliancePolicyId <String>
  -BodyParameter <IMicrosoftGraphDeviceComplianceDeviceStatus> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,7 +38,7 @@ New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus -InputObject <IDevi
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceDisplayName <String>] [-DeviceModel <String>]
  [-Id <String>] [-LastReportedDateTime <DateTime>] [-Platform <Int32>] [-Status <String>] [-UserName <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus -InputObject <IDevi
 ```
 New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceComplianceDeviceStatus> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,6 +59,8 @@ Create new navigation property to deviceStatuses for deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -100,6 +102,21 @@ The DateTime when device compliance grace period expires
 Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -230,21 +247,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -297,21 +299,6 @@ UserPrincipalName.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

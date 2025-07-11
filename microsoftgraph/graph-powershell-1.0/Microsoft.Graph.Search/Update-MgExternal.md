@@ -19,18 +19,20 @@ Update external
 ```
 Update-MgExternal [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update external
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -65,6 +67,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Connections
 
 To construct, see NOTES section for CONNECTIONS properties and create a hash table.
@@ -96,21 +113,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -118,21 +120,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -175,7 +162,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal>`: external
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Connections <IMicrosoftGraphExternalConnectorsExternalConnection- `[]`>]`: 
+  - `[Connections <IMicrosoftGraphExternalConnectorsExternalConnection- `[]`>]`:
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]`: activitySettings
@@ -189,7 +176,7 @@ Read-only.
 Optional.
     - `[Description <String>]`: Description of the connection displayed in the Microsoft 365 admin center.
 Optional.
-    - `[Groups <IMicrosoftGraphExternalConnectorsExternalGroup- `[]`>]`: 
+    - `[Groups <IMicrosoftGraphExternalConnectorsExternalGroup- `[]`>]`:
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Description <String>]`: The description of the external group.
@@ -201,7 +188,7 @@ You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup a
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[Type <String>]`: identityType
-    - `[Items <IMicrosoftGraphExternalConnectorsExternalItem- `[]`>]`: 
+    - `[Items <IMicrosoftGraphExternalConnectorsExternalItem- `[]`>]`:
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Acl <IMicrosoftGraphExternalConnectorsAcl- `[]`>]`: An array of access control entries.
@@ -231,7 +218,7 @@ Required.
     - `[Name <String>]`: The display name of the connection to be displayed in the Microsoft 365 admin center.
 Maximum length of 128 characters.
 Required.
-    - `[Operations <IMicrosoftGraphExternalConnectorsConnectionOperation- `[]`>]`: 
+    - `[Operations <IMicrosoftGraphExternalConnectorsConnectionOperation- `[]`>]`:
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Error <IMicrosoftGraphPublicError>]`: publicError
@@ -266,7 +253,7 @@ Optional.
         - `[IsQueryable <Boolean?>]`: Specifies if the property is queryable.
 Queryable properties can be used in Keyword Query Language (KQL) queries.
 Optional.
-        - `[IsRefinable <Boolean?>]`: Specifies if the property is refinable. 
+        - `[IsRefinable <Boolean?>]`: Specifies if the property is refinable.
 Refinable properties can be used to filter search results in the Search API and add a refiner control in the Microsoft Search user experience.
 Optional.
         - `[IsRetrievable <Boolean?>]`: Specifies if the property is retrievable.
@@ -285,7 +272,7 @@ Use the Prefer: include-unknown-enum-members request header to get the following
         - `[Name <String>]`: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
-For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), - `[, ]`, {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, \`, ^. 
+For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), - `[, ]`, {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, \`, ^.
 Required.
         - `[Type <String>]`: propertyType
     - `[SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>]`: searchSettings
@@ -326,7 +313,7 @@ Read-only.
 Optional.
   - `[Description <String>]`: Description of the connection displayed in the Microsoft 365 admin center.
 Optional.
-  - `[Groups <IMicrosoftGraphExternalConnectorsExternalGroup- `[]`>]`: 
+  - `[Groups <IMicrosoftGraphExternalConnectorsExternalGroup- `[]`>]`:
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Description <String>]`: The description of the external group.
@@ -338,7 +325,7 @@ You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup a
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Type <String>]`: identityType
-  - `[Items <IMicrosoftGraphExternalConnectorsExternalItem- `[]`>]`: 
+  - `[Items <IMicrosoftGraphExternalConnectorsExternalItem- `[]`>]`:
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Acl <IMicrosoftGraphExternalConnectorsAcl- `[]`>]`: An array of access control entries.
@@ -368,7 +355,7 @@ Required.
   - `[Name <String>]`: The display name of the connection to be displayed in the Microsoft 365 admin center.
 Maximum length of 128 characters.
 Required.
-  - `[Operations <IMicrosoftGraphExternalConnectorsConnectionOperation- `[]`>]`: 
+  - `[Operations <IMicrosoftGraphExternalConnectorsConnectionOperation- `[]`>]`:
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Error <IMicrosoftGraphPublicError>]`: publicError
@@ -403,7 +390,7 @@ Optional.
       - `[IsQueryable <Boolean?>]`: Specifies if the property is queryable.
 Queryable properties can be used in Keyword Query Language (KQL) queries.
 Optional.
-      - `[IsRefinable <Boolean?>]`: Specifies if the property is refinable. 
+      - `[IsRefinable <Boolean?>]`: Specifies if the property is refinable.
 Refinable properties can be used to filter search results in the Search API and add a refiner control in the Microsoft Search user experience.
 Optional.
       - `[IsRetrievable <Boolean?>]`: Specifies if the property is retrievable.
@@ -422,7 +409,7 @@ Use the Prefer: include-unknown-enum-members request header to get the following
       - `[Name <String>]`: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
-For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), - `[, ]`, {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, \`, ^. 
+For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), - `[, ]`, {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, \`, ^.
 Required.
       - `[Type <String>]`: propertyType
   - `[SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>]`: searchSettings

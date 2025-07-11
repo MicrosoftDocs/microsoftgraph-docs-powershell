@@ -19,7 +19,7 @@ The principal can be the creator or approver of the unifiedRoleAssignmentSchedul
 Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleRequestByCurrentUser -On <String>
  -RbacApplicationId <String> [-Count] [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### FilterViaIdentity
@@ -27,13 +27,15 @@ Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleRequestByCur
 Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleRequestByCurrentUser
  -InputObject <IIdentityGovernanceIdentity> [-Count] [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 In PIM, retrieve the requests for active role assignments for a particular principal.
 The principal can be the creator or approver of the unifiedRoleAssignmentScheduleRequest object, or they can be the target of the assignment.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -128,21 +130,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 Select properties to be returned
 
@@ -203,6 +190,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -225,21 +227,6 @@ Show only the first n items
 Type: Int32
 Parameter Sets: (All)
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
 
 Required: False
 Position: Named

@@ -17,7 +17,7 @@ Supports $expand.
 ```
 Get-MgBetaIdentityGovernanceRoleManagementAlertConfigurationAlertDefinition
  -UnifiedRoleManagementAlertConfigurationId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -25,13 +25,15 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertConfigurationAlertDefinition
 ```
 Get-MgBetaIdentityGovernanceRoleManagementAlertConfigurationAlertDefinition
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The definition of the alert that contains its description, impact, and measures to mitigate or prevent it.
 Supports $expand.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -78,21 +80,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

@@ -21,14 +21,14 @@ Update-MgBetaGroupTeamChannelSharedWithTeam -ChannelId <String> -GroupId <String
  -SharedWithChannelTeamInfoId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AllowedMembers <IMicrosoftGraphConversationMember[]>] [-DisplayName <String>] [-Id <String>] [-IsHostTeam]
  [-Team <IMicrosoftGraphTeam>] [-TenantId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupTeamChannelSharedWithTeam -ChannelId <String> -GroupId <String>
  -SharedWithChannelTeamInfoId <String> -BodyParameter <IMicrosoftGraphSharedWithChannelTeamInfo>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,18 +37,20 @@ Update-MgBetaGroupTeamChannelSharedWithTeam -ChannelId <String> -GroupId <String
 Update-MgBetaGroupTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowedMembers <IMicrosoftGraphConversationMember[]>]
  [-DisplayName <String>] [-Id <String>] [-IsHostTeam] [-Team <IMicrosoftGraphTeam>] [-TenantId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupTeamChannelSharedWithTeam -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphSharedWithChannelTeamInfo> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property sharedWithTeams in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -108,6 +110,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -206,21 +223,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -274,21 +276,6 @@ The ID of the Microsoft Entra tenant.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

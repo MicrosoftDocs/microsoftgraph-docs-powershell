@@ -20,14 +20,14 @@ Update the navigation property details in groups
 Update-MgGroupPlannerPlanDetail -GroupId <String> -PlannerPlanId <String> -IfMatch <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>] [-Id <String>] [-SharedWith <Hashtable>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgGroupPlannerPlanDetail -GroupId <String> -PlannerPlanId <String> -IfMatch <String>
  -BodyParameter <IMicrosoftGraphPlannerPlanDetails> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,18 +35,20 @@ Update-MgGroupPlannerPlanDetail -GroupId <String> -PlannerPlanId <String> -IfMat
 Update-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>] [-Id <String>] [-SharedWith <Hashtable>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String>
  -BodyParameter <IMicrosoftGraphPlannerPlanDetails> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property details in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -89,6 +91,21 @@ To construct, see NOTES section for CATEGORYDESCRIPTIONS properties and create a
 Type: IMicrosoftGraphPlannerCategoryDescriptions
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -189,21 +206,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -226,21 +228,6 @@ plannerUserIds
 Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

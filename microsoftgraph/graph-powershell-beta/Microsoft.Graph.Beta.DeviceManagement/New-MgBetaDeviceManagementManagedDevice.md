@@ -44,13 +44,13 @@ New-MgBetaDeviceManagementManagedDevice [-ResponseHeadersVariable <String>] [-Ad
  [-ProcessorArchitecture <ManagedDeviceArchitecture>] [-RoleScopeTagIds <String[]>]
  [-SecurityBaselineStates <IMicrosoftGraphSecurityBaselineState[]>] [-SkuFamily <String>]
  [-Users <IMicrosoftGraphUser[]>] [-WindowsProtectionState <IMicrosoftGraphWindowsProtectionState>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementManagedDevice -BodyParameter <IMicrosoftGraphManagedDevice>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -64,6 +64,8 @@ Create new navigation property to managedDevices for deviceManagement
 | Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -218,6 +220,21 @@ To construct, see NOTES section for CONFIGURATIONMANAGERCLIENTINFORMATION proper
 Type: IMicrosoftGraphConfigurationManagerClientInformation
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -669,21 +686,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -761,37 +763,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WindowsProtectionState
-Device protection status entity.
-To construct, see NOTES section for WINDOWSPROTECTIONSTATE properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphWindowsProtectionState
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -800,6 +771,22 @@ The cmdlet is not run.
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsProtectionState
+Device protection status entity.
+To construct, see NOTES section for WINDOWSPROTECTIONSTATE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsProtectionState
+Parameter Sets: CreateExpanded
+Aliases:
 
 Required: False
 Position: Named

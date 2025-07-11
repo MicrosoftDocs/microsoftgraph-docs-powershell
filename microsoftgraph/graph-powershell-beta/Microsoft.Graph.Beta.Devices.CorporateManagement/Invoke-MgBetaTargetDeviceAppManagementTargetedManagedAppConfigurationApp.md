@@ -21,7 +21,7 @@ Invoke-MgBetaTargetDeviceAppManagementTargetedManagedAppConfigurationApp
  -TargetedManagedAppConfigurationId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AppGroupType <TargetedManagedAppGroupType>]
  [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Target
@@ -29,7 +29,7 @@ Invoke-MgBetaTargetDeviceAppManagementTargetedManagedAppConfigurationApp
 Invoke-MgBetaTargetDeviceAppManagementTargetedManagedAppConfigurationApp
  -TargetedManagedAppConfigurationId <String>
  -BodyParameter <IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Invoke-MgBetaTargetDeviceAppManagementTargetedManagedAppConfigurationApp
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AppGroupType <TargetedManagedAppGroupType>]
  [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TargetViaIdentity
@@ -47,7 +47,7 @@ Invoke-MgBetaTargetDeviceAppManagementTargetedManagedAppConfigurationApp
 Invoke-MgBetaTargetDeviceAppManagementTargetedManagedAppConfigurationApp
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -61,6 +61,8 @@ Invoke action targetApps
 | Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -126,6 +128,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -172,21 +189,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -211,21 +213,6 @@ Parameter Sets: TargetExpanded, Target
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

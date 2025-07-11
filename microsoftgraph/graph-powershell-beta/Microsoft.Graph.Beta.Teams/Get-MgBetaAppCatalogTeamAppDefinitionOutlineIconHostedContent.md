@@ -17,28 +17,28 @@ Retrieve the hosted content in an app's icon.
 ```
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitionId <String>
  -TeamsAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitionId <String>
  -TeamsAppId <String> [-ResponseHeadersVariable <String>] -OutFile <String> [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] -OutFile <String> [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,6 +51,8 @@ Retrieve the hosted content in an app's icon.
 | Delegated (work or school account) | AppCatalog.Read.All, AppCatalog.Submit, AppCatalog.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AppCatalog.Read.All, AppCatalog.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -126,21 +128,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

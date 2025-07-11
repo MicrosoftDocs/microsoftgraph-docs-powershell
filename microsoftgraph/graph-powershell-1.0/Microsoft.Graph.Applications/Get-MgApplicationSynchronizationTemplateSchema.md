@@ -19,14 +19,14 @@ Default synchronization schema for the jobs based on this template.
 ```
 Get-MgApplicationSynchronizationTemplateSchema -ApplicationId <String> -SynchronizationTemplateId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,6 +39,8 @@ Default synchronization schema for the jobs based on this template.
 | Delegated (work or school account) | Synchronization.Read.All, Synchronization.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -100,21 +102,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

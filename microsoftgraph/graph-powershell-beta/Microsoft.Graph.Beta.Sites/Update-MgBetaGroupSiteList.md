@@ -28,7 +28,7 @@ Update-MgBetaGroupSiteList -GroupId <String> -ListId <String> -SiteId <String>
  [-List <IMicrosoftGraphListInfo>] [-Name <String>] [-Operations <IMicrosoftGraphRichLongRunningOperation[]>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-Permissions <IMicrosoftGraphPermission[]>]
  [-SharepointIds <IMicrosoftGraphSharepointIds>] [-Subscriptions <IMicrosoftGraphSubscription[]>]
- [-System <Hashtable>] [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-System <Hashtable>] [-WebUrl <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Update-MgBetaGroupSiteList -GroupId <String> -ListId <String> -SiteId <String>
 ```
 Update-MgBetaGroupSiteList -GroupId <String> -ListId <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphList> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,19 +51,21 @@ Update-MgBetaGroupSiteList -InputObject <ISitesIdentity> [-ResponseHeadersVariab
  [-List <IMicrosoftGraphListInfo>] [-Name <String>] [-Operations <IMicrosoftGraphRichLongRunningOperation[]>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-Permissions <IMicrosoftGraphPermission[]>]
  [-SharepointIds <IMicrosoftGraphSharepointIds>] [-Subscriptions <IMicrosoftGraphSubscription[]>]
- [-System <Hashtable>] [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-System <Hashtable>] [-WebUrl <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphList>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property lists in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -122,6 +124,21 @@ To construct, see NOTES section for COLUMNS properties and create a hash table.
 Type: IMicrosoftGraphColumnDefinition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -479,21 +496,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -579,21 +581,6 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

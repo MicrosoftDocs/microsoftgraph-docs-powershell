@@ -23,7 +23,7 @@ New-MgBetaSiteOnenoteSectionGroupSection -SectionGroupId <String> -SiteId <Strin
  [-IsDefault] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Links <IMicrosoftGraphSectionLinks>] [-Pages <IMicrosoftGraphOnenotePage[]>] [-PagesUrl <String>]
  [-ParentNotebook <IMicrosoftGraphNotebook>] [-ParentSectionGroup <IMicrosoftGraphSectionGroup>]
- [-Self <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Self <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ New-MgBetaSiteOnenoteSectionGroupSection -SectionGroupId <String> -SiteId <Strin
 ```
 New-MgBetaSiteOnenoteSectionGroupSection -SectionGroupId <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphOnenoteSection> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -42,14 +42,14 @@ New-MgBetaSiteOnenoteSectionGroupSection -InputObject <INotesIdentity> [-Respons
  [-LastModifiedDateTime <DateTime>] [-Links <IMicrosoftGraphSectionLinks>]
  [-Pages <IMicrosoftGraphOnenotePage[]>] [-PagesUrl <String>] [-ParentNotebook <IMicrosoftGraphNotebook>]
  [-ParentSectionGroup <IMicrosoftGraphSectionGroup>] [-Self <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaSiteOnenoteSectionGroupSection -InputObject <INotesIdentity>
  -BodyParameter <IMicrosoftGraphOnenoteSection> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -62,6 +62,8 @@ Create new navigation property to sections for sites
 | Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite,  |
 | Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
 | Application | Notes.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -93,6 +95,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -318,21 +335,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -387,21 +389,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

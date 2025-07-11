@@ -20,7 +20,7 @@ Update the navigation property documents in print
 Update-MgPrintPrinterJobDocument -PrintDocumentId <String> -PrintJobId <String> -PrinterId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentType <String>]
  [-DisplayName <String>] [-DownloadedDateTime <DateTime>] [-Id <String>] [-Size <Int64>]
- [-UploadedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-UploadedDateTime <DateTime>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgPrintPrinterJobDocument -PrintDocumentId <String> -PrintJobId <String> 
 ```
 Update-MgPrintPrinterJobDocument -PrintDocumentId <String> -PrintJobId <String> -PrinterId <String>
  -BodyParameter <IMicrosoftGraphPrintDocument> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,18 +36,20 @@ Update-MgPrintPrinterJobDocument -PrintDocumentId <String> -PrintJobId <String> 
 Update-MgPrintPrinterJobDocument -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-DisplayName <String>]
  [-DownloadedDateTime <DateTime>] [-Id <String>] [-Size <Int64>] [-UploadedDateTime <DateTime>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgPrintPrinterJobDocument -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IMicrosoftGraphPrintDocument> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property documents in print
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -79,6 +81,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -222,21 +239,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -276,21 +278,6 @@ Read-only
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -23,14 +23,14 @@ Because the group resource supports extensions, you can also use the GET operati
 ### Get (Default)
 ```
 Get-MgBetaGroupByUniqueName -UniqueName <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaGroupByUniqueName -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -48,6 +48,8 @@ Because the group resource supports extensions, you can also use the GET operati
 | Delegated (work or school account) | GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -94,21 +96,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

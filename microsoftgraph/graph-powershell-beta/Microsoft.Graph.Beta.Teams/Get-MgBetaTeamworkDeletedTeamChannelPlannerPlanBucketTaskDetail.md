@@ -19,20 +19,22 @@ More details about the task.
 Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskDetail -ChannelId <String> -DeletedTeamId <String>
  -PlannerBucketId <String> -PlannerPlanId <String> -PlannerTaskId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskDetail -InputObject <ITeamsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Read-only.
 Nullable.
 More details about the task.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -151,21 +153,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

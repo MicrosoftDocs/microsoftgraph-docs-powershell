@@ -21,7 +21,7 @@ Get-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <Strin
  -SiteId <String> -TermId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### List3
@@ -30,7 +30,7 @@ Get-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <Strin
  -SiteId <String> -TermId <String> -StoreId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### List2
@@ -39,7 +39,7 @@ Get-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <Strin
  -SiteId <String> -TermId <String> -TermId1 <String> -StoreId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### List
@@ -48,7 +48,7 @@ Get-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <Strin
  -SiteId <String> -TermId <String> -TermId1 <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get3
@@ -56,7 +56,7 @@ Get-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <Strin
 Get-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
  -SetId <String> -SiteId <String> -TermId <String> -StoreId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### Get2
@@ -64,14 +64,14 @@ Get-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <Strin
 Get-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
  -SetId <String> -SiteId <String> -TermId <String> -TermId1 <String> -StoreId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
  -SetId <String> -SiteId <String> -TermId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -80,39 +80,41 @@ Get-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <Strin
 Get-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
  -SetId <String> -SiteId <String> -TermId <String> -TermId1 <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity3
 ```
 Get-MgGroupSiteTermStoreGroupSetChildRelation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity2
 ```
 Get-MgGroupSiteTermStoreGroupSetChildRelation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgGroupSiteTermStoreGroupSetChildRelation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgGroupSiteTermStoreGroupSetChildRelation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 To indicate which terms are related to the current term as either pinned or reused.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -253,21 +255,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 Select properties to be returned
 
@@ -358,6 +345,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List1, List3, List2, List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -425,21 +427,6 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List1, List3, List2, List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1, List3, List2, List
-Aliases:
 
 Required: False
 Position: Named

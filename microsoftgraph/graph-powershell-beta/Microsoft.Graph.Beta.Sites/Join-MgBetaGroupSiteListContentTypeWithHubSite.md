@@ -21,7 +21,7 @@ Invoke action associateWithHubSites
 Join-MgBetaGroupSiteListContentTypeWithHubSite -ContentTypeId <String> -GroupId <String> -ListId <String>
  -SiteId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Associate
@@ -29,7 +29,7 @@ Join-MgBetaGroupSiteListContentTypeWithHubSite -ContentTypeId <String> -GroupId 
 Join-MgBetaGroupSiteListContentTypeWithHubSite -ContentTypeId <String> -GroupId <String> -ListId <String>
  -SiteId <String>
  -BodyParameter <IPaths3YvvqxGroupsGroupIdSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Join-MgBetaGroupSiteListContentTypeWithHubSite -ContentTypeId <String> -GroupId 
 ```
 Join-MgBetaGroupSiteListContentTypeWithHubSite -InputObject <ISitesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-HubSiteUrls <String[]>]
- [-PropagateToExistingLists] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-PropagateToExistingLists] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,12 +45,14 @@ Join-MgBetaGroupSiteListContentTypeWithHubSite -InputObject <ISitesIdentity>
 ```
 Join-MgBetaGroupSiteListContentTypeWithHubSite -InputObject <ISitesIdentity>
  -BodyParameter <IPaths3YvvqxGroupsGroupIdSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action associateWithHubSites
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -82,6 +84,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -191,21 +208,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PropagateToExistingLists
 
 
@@ -245,21 +247,6 @@ Parameter Sets: AssociateExpanded, Associate
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

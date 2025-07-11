@@ -25,7 +25,7 @@ Update-MgVirtualEventWebinarRegistrationByUserId -UserId <String> -VirtualEventW
  [-PreferredTimezone <String>] [-RegistrationDateTime <DateTime>]
  [-RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-Status <String>] [-UserId1 <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,25 +38,27 @@ Update-MgVirtualEventWebinarRegistrationByUserId [-UserId <String>] -InputObject
  [-PreferredTimezone <String>] [-RegistrationDateTime <DateTime>]
  [-RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgVirtualEventWebinarRegistrationByUserId -UserId <String> -VirtualEventWebinarId <String>
  -BodyParameter <IMicrosoftGraphVirtualEventRegistration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgVirtualEventWebinarRegistrationByUserId -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphVirtualEventRegistration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property registrations in solutions
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -101,6 +103,21 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -247,21 +264,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RegistrationDateTime
 Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -393,21 +395,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -550,7 +537,7 @@ Optional.
       - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting.
 Optional.
 Read-only.
-      - `[Passcode <String>]`: The passcode to join a meeting. 
+      - `[Passcode <String>]`: The passcode to join a meeting.
 Optional.
 Read-only.
     - `[JoinWebUrl <String>]`: The join URL of the online meeting.
@@ -691,7 +678,7 @@ Optional.
     - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting.
 Optional.
 Read-only.
-    - `[Passcode <String>]`: The passcode to join a meeting. 
+    - `[Passcode <String>]`: The passcode to join a meeting.
 Optional.
 Read-only.
   - `[JoinWebUrl <String>]`: The join URL of the online meeting.

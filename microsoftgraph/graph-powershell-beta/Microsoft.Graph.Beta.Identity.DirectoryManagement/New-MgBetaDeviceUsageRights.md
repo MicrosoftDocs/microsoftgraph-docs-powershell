@@ -16,14 +16,14 @@ Create new navigation property to usageRights for devices
 ```
 New-MgBetaDeviceUsageRights -DeviceId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>]
- [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-State <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceUsageRights -DeviceId <String> -BodyParameter <IMicrosoftGraphUsageRight>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ New-MgBetaDeviceUsageRights -DeviceId <String> -BodyParameter <IMicrosoftGraphUs
 ```
 New-MgBetaDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-Id <String>]
- [-ServiceIdentifier <String>] [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ServiceIdentifier <String>] [-State <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,11 +39,13 @@ New-MgBetaDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 New-MgBetaDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IMicrosoftGraphUsageRight> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to usageRights for devices
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -85,6 +87,21 @@ Product id corresponding to the usage right.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -155,21 +172,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -207,21 +209,6 @@ usageRightState
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

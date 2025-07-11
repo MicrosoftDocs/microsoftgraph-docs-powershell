@@ -19,14 +19,14 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -ApprovalId <
  [-AdditionalProperties <Hashtable>] [-AssignedToMe] [-DisplayName <String>] [-Id <String>]
  [-Justification <String>] [-ReviewResult <String>] [-ReviewedBy <IMicrosoftGraphIdentity>]
  [-ReviewedDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -ApprovalId <String>
  -ApprovalStepId <String> -RbacApplicationId <String> -BodyParameter <IMicrosoftGraphApprovalStep>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,18 +36,20 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -InputObject 
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssignedToMe]
  [-DisplayName <String>] [-Id <String>] [-Justification <String>] [-ReviewResult <String>]
  [-ReviewedBy <IMicrosoftGraphIdentity>] [-ReviewedDateTime <DateTime>] [-Status <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphApprovalStep> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property steps in roleManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -128,6 +130,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DisplayName
 The label provided by the policy creator to identify an approval step.
 Read-only.
@@ -198,21 +215,6 @@ The justification associated with the approval step decision.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -310,21 +312,6 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

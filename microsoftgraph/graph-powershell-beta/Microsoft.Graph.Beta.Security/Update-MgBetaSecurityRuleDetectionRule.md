@@ -20,14 +20,14 @@ Update-MgBetaSecurityRuleDetectionRule -DetectionRuleId <String> [-ResponseHeade
  [-Id <String>] [-IsEnabled] [-LastModifiedBy <String>] [-LastModifiedDateTime <DateTime>]
  [-LastRunDetails <IMicrosoftGraphSecurityRunDetails>]
  [-QueryCondition <IMicrosoftGraphSecurityQueryCondition>] [-Schedule <IMicrosoftGraphSecurityRuleSchedule>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityRuleDetectionRule -DetectionRuleId <String>
  -BodyParameter <IMicrosoftGraphSecurityDetectionRule> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,14 +38,14 @@ Update-MgBetaSecurityRuleDetectionRule -InputObject <ISecurityIdentity> [-Respon
  [-Id <String>] [-IsEnabled] [-LastModifiedBy <String>] [-LastModifiedDateTime <DateTime>]
  [-LastRunDetails <IMicrosoftGraphSecurityRunDetails>]
  [-QueryCondition <IMicrosoftGraphSecurityQueryCondition>] [-Schedule <IMicrosoftGraphSecurityRuleSchedule>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityRuleDetectionRule -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityDetectionRule> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,6 +58,8 @@ Update the navigation property detectionRules in security
 | Delegated (work or school account) | CustomDetection.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CustomDetection.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -89,6 +91,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -292,21 +309,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -QueryCondition
 queryCondition
 To construct, see NOTES section for QUERYCONDITION properties and create a hash table.
@@ -346,21 +348,6 @@ To construct, see NOTES section for SCHEDULE properties and create a hash table.
 Type: IMicrosoftGraphSecurityRuleSchedule
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

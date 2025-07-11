@@ -17,13 +17,13 @@ Update the navigation property roleScopeTags in deviceManagement
 Update-MgBetaDeviceManagementRoleScopeTag -RoleScopeTagId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment[]>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementRoleScopeTag -RoleScopeTagId <String> -BodyParameter <IMicrosoftGraphRoleScopeTag>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Update-MgBetaDeviceManagementRoleScopeTag -RoleScopeTagId <String> -BodyParamete
 Update-MgBetaDeviceManagementRoleScopeTag -InputObject <IDeviceManagementAdministrationIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment[]>] [-Description <String>] [-DisplayName <String>]
- [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Id <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Update-MgBetaDeviceManagementRoleScopeTag -InputObject <IDeviceManagementAdminis
 ```
 Update-MgBetaDeviceManagementRoleScopeTag -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphRoleScopeTag> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,6 +53,8 @@ Update the navigation property roleScopeTags in deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -100,6 +102,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -180,21 +197,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -219,21 +221,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

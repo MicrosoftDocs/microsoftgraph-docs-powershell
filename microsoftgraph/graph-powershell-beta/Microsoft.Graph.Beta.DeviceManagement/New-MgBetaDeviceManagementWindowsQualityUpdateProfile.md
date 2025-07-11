@@ -19,7 +19,7 @@ New-MgBetaDeviceManagementWindowsQualityUpdateProfile [-ResponseHeadersVariable 
  [-CreatedDateTime <DateTime>] [-DeployableContentDisplayName <String>] [-Description <String>]
  [-DisplayName <String>] [-ExpeditedUpdateSettings <IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-ReleaseDateDisplayName <String>]
- [-RoleScopeTagIds <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-RoleScopeTagIds <String[]>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ New-MgBetaDeviceManagementWindowsQualityUpdateProfile [-ResponseHeadersVariable 
 ```
 New-MgBetaDeviceManagementWindowsQualityUpdateProfile
  -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfile> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,6 +40,8 @@ Create new navigation property to windowsQualityUpdateProfiles for deviceManagem
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -87,6 +89,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -212,21 +229,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ReleaseDateDisplayName
 Friendly release date to display for a Quality Update release
 
@@ -264,21 +266,6 @@ List of Scope Tags for this Quality Update entity.
 Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -18,14 +18,14 @@ New-MgBetaDeviceManagementDeviceShellScriptDeviceRunState -DeviceShellScriptId <
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ErrorCode <Int32>]
  [-ErrorDescription <String>] [-Id <String>] [-LastStateUpdateDateTime <DateTime>]
  [-ManagedDevice <IMicrosoftGraphManagedDevice>] [-ResultMessage <String>] [-RunState <RunState>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDeviceShellScriptDeviceRunState -DeviceShellScriptId <String>
  -BodyParameter <IMicrosoftGraphDeviceManagementScriptDeviceState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -34,14 +34,14 @@ New-MgBetaDeviceManagementDeviceShellScriptDeviceRunState -InputObject <IDeviceM
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ErrorCode <Int32>]
  [-ErrorDescription <String>] [-Id <String>] [-LastStateUpdateDateTime <DateTime>]
  [-ManagedDevice <IMicrosoftGraphManagedDevice>] [-ResultMessage <String>] [-RunState <RunState>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementDeviceShellScriptDeviceRunState -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceManagementScriptDeviceState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,6 +54,8 @@ Create new navigation property to deviceRunStates for deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -85,6 +87,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -211,21 +228,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -263,21 +265,6 @@ Indicates the type of execution status of the device management script.
 Type: RunState
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

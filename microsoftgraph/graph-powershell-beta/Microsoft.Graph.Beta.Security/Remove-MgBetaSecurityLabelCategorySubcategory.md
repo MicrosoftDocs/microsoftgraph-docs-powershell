@@ -1,91 +1,47 @@
 ---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelcategorysubcategory
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelcategorysubcategory
 schema: 2.0.0
 ---
 
-# Update-MgBetaSecurityLabelCategorySubcategory
+# Remove-MgBetaSecurityLabelCategorySubcategory
 
 ## SYNOPSIS
-Update the navigation property subcategories in security
+Delete navigation property subcategories for security
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelCategorySubcategory?view=graph-powershell-1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelCategorySubcategory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### Delete (Default)
 ```
-Update-MgBetaSecurityLabelCategorySubcategory -CategoryTemplateId <String> -SubcategoryTemplateId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaSecurityLabelCategorySubcategory -CategoryTemplateId <String> -SubcategoryTemplateId <String>
- -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaSecurityLabelCategorySubcategory -CategoryTemplateId <String> -SubcategoryTemplateId <String>
+ [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### DeleteViaIdentity
 ```
-Update-MgBetaSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> -BodyParameter <Hashtable>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property subcategories in security
+Delete navigation property subcategories for security
+
+## EXAMPLES
 
 ## PARAMETERS
-
-### -AdditionalProperties
-Additional Parameters
-
-```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-subcategoryTemplate
-
-```yaml
-Type: Hashtable
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
 
 ### -CategoryTemplateId
 The unique identifier of categoryTemplate
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -95,45 +51,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -CreatedBy
-identitySet
-To construct, see NOTES section for CREATEDBY properties and create a hash table.
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CreatedDateTime
-Represents the date and time in which the filePlanDescriptorTemplate is created.
-Read-only.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DisplayName
-Unique string that defines a filePlanDescriptorTemplate name.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -157,13 +81,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Id
-The unique identifier for an entity.
-Read-only.
+### -IfMatch
+ETag
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -179,7 +102,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -189,17 +112,17 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: ActionPreference
+Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: proga
+Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -224,25 +147,10 @@ The unique identifier of subcategoryTemplate
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: Delete
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -271,27 +179,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
-### System.Collections.Hashtable
 ### System.Collections.IDictionary
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubcategoryTemplate
+### System.Boolean
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
-
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
@@ -387,7 +283,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelcategorysubcategory)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelcategorysubcategory)
 
 
 

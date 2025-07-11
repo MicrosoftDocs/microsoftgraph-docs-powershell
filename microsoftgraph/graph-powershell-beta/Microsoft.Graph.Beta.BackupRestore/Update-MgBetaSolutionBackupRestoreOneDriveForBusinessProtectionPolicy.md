@@ -27,7 +27,7 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
  [-DriveProtectionUnitsBulkAdditionJobs <IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob[]>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-RetentionSettings <IMicrosoftGraphRetentionSetting[]>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -35,7 +35,7 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
 Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
  -OneDriveForBusinessProtectionPolicyId <String>
  -BodyParameter <IMicrosoftGraphOneDriveForBusinessProtectionPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,19 +48,21 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy -InputObje
  [-DriveProtectionUnitsBulkAdditionJobs <IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob[]>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-RetentionSettings <IMicrosoftGraphRetentionSetting[]>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy -InputObject <IBackupRestoreIdentity>
  -BodyParameter <IMicrosoftGraphOneDriveForBusinessProtectionPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the protection policy for the OneDrive service in Microsoft 365.
 This method adds a driveProtectionUnit to or removes it from a oneDriveForBusinessProtectionPolicy object.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -92,6 +94,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -282,21 +299,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -335,21 +337,6 @@ protectionPolicyStatus
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

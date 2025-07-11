@@ -20,7 +20,7 @@ A smaller image reduces bandwidth requirements and make the page load faster.
 ### Get (Default)
 ```
 Get-MgBetaOrganizationBrandingBackgroundImage -OrganizationId <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -28,13 +28,15 @@ Get-MgBetaOrganizationBrandingBackgroundImage -OrganizationId <String> -OutFile 
 ```
 Get-MgBetaOrganizationBrandingBackgroundImage -InputObject <IIdentityDirectoryManagementIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
 A smaller image reduces bandwidth requirements and make the page load faster.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -110,21 +112,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

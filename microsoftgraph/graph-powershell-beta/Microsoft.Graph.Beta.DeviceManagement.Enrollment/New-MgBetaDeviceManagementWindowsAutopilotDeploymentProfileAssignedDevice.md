@@ -30,14 +30,14 @@ New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
  [-RemediationStateLastModifiedDateTime <DateTime>] [-ResourceName <String>] [-SerialNumber <String>]
  [-SkuNumber <String>] [-SystemFamily <String>] [-UserPrincipalName <String>]
  [-UserlessEnrollmentStatus <WindowsAutopilotUserlessEnrollmentStatus>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
  -WindowsAutopilotDeploymentProfileId <String> -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -59,7 +59,7 @@ New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
  [-RemediationStateLastModifiedDateTime <DateTime>] [-ResourceName <String>] [-SerialNumber <String>]
  [-SkuNumber <String>] [-SystemFamily <String>] [-UserPrincipalName <String>]
  [-UserlessEnrollmentStatus <WindowsAutopilotUserlessEnrollmentStatus>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -67,11 +67,13 @@ New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
 New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
  -InputObject <IDeviceManagementEnrollmentIdentity>
  -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to assignedDevices for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -148,6 +150,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -440,21 +457,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PurchaseOrderIdentifier
 Purchase Order Identifier of the Windows autopilot device.
 
@@ -605,36 +607,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WindowsAutopilotDeploymentProfileId
-The unique identifier of windowsAutopilotDeploymentProfile
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -645,6 +617,21 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsAutopilotDeploymentProfileId
+The unique identifier of windowsAutopilotDeploymentProfile
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, Create
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

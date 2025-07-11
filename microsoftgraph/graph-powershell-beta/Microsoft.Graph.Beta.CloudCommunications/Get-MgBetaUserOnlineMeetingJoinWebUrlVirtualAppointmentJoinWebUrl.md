@@ -18,14 +18,14 @@ With Teams Premium, you can configure a custom lobby room experience for attende
 ### Get (Default)
 ```
 Get-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentJoinWebUrl -JoinWebUrl <String> -UserId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentJoinWebUrl -InputObject <ICloudCommunicationsIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -41,6 +41,8 @@ With Teams Premium, you can configure a custom lobby room experience for attende
 | Delegated (work or school account) | OnlineMeetings.Read, OnlineMeetings.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -84,21 +86,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

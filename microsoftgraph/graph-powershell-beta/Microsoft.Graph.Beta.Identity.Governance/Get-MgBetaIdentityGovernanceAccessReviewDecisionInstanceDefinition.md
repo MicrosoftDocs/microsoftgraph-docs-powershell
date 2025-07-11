@@ -17,19 +17,21 @@ It's the parent schedule for the instance, where instances are created for each 
 ```
 Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDefinition -AccessReviewInstanceDecisionItemId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDefinition -InputObject <IIdentityGovernanceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 There's exactly one accessReviewScheduleDefinition associated with each instance.
 It's the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -91,21 +93,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

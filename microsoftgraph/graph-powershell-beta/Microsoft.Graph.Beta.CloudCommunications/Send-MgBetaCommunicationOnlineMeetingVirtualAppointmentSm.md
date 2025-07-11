@@ -23,14 +23,14 @@ Attendees must have a valid United States phone number to receive these SMS noti
 Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm -OnlineMeetingId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Attendees <IMicrosoftGraphAttendeeNotificationInfo[]>] [-MessageType <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm -OnlineMeetingId <String>
  -BodyParameter <IPaths17Lqpb4CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,14 +39,14 @@ Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm -OnlineMeetingId <Stri
 Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Attendees <IMicrosoftGraphAttendeeNotificationInfo[]>] [-MessageType <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
 Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths17Lqpb4CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -54,6 +54,8 @@ Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm -InputObject <ICloudCo
 Send an SMS notification to external attendees when a Teams Virtual Appointment is confirmed, rescheduled, or canceled.
 This feature requires Teams Premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -101,6 +103,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -180,21 +197,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -202,21 +204,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

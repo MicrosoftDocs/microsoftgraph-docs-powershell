@@ -20,14 +20,14 @@ Create new navigation property to detectedApps for deviceManagement
 New-MgBetaDeviceManagementDetectedApp [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-DeviceCount <Int32>] [-DisplayName <String>] [-Id <String>]
  [-ManagedDevices <IMicrosoftGraphManagedDevice[]>] [-Platform <DetectedAppPlatformType>] [-Publisher <String>]
- [-SizeInByte <Int64>] [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-SizeInByte <Int64>] [-Version <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDetectedApp -BodyParameter <IMicrosoftGraphDetectedApp>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,6 +41,8 @@ Create new navigation property to detectedApps for deviceManagement
 | Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -73,6 +75,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -171,21 +188,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Publisher
 Indicates the publisher of the discovered application.
 For example: 'Microsoft'.
@@ -242,21 +244,6 @@ Read-only
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -17,7 +17,7 @@ Get the number of the resource
 
 ```
 Get-MgPrintServiceCount [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,6 +30,8 @@ Get the number of the resource
 | Delegated (work or school account) | PrintJob.ReadBasic, PrintSettings.ReadWrite.All, PrintSettings.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite.All, PrintJob.ReadWrite, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.Read, PrintJob.Create, PrinterShare.ReadWrite.All, PrinterShare.ReadBasic.All, PrinterShare.Read.All, Printer.ReadWrite.All, Printer.Read.All, Printer.Create, PrintConnector.ReadWrite.All, PrintConnector.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -60,21 +62,6 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

@@ -19,14 +19,14 @@ The \[set\] in which the term is created.
 ```
 Get-MgGroupSiteTermStoreGroupSetTermSet -GroupId <String> -GroupId1 <String> -SetId <String> -SiteId <String>
  -TermId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgGroupSiteTermStoreGroupSetTermSet -GroupId <String> -GroupId1 <String> -SetId <String> -SiteId <String>
  -TermId <String> -StoreId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -34,18 +34,20 @@ Get-MgGroupSiteTermStoreGroupSetTermSet -GroupId <String> -GroupId1 <String> -Se
 ```
 Get-MgGroupSiteTermStoreGroupSetTermSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgGroupSiteTermStoreGroupSetTermSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The \[set\] in which the term is created.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -122,21 +124,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

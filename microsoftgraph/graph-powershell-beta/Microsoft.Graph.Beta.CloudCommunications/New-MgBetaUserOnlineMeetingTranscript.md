@@ -22,7 +22,7 @@ New-MgBetaUserOnlineMeetingTranscript -OnlineMeetingId <String> -UserId <String>
  [-ContentCorrelationId <String>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>]
  [-EndDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
  [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MetadataContentInputFile <String>]
- [-TranscriptContentUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-TranscriptContentUrl <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ New-MgBetaUserOnlineMeetingTranscript -OnlineMeetingId <String> -UserId <String>
 ```
 New-MgBetaUserOnlineMeetingTranscript -OnlineMeetingId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphCallTranscript> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -40,7 +40,7 @@ New-MgBetaUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity
  [-ContentCorrelationId <String>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>]
  [-EndDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
  [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MetadataContentInputFile <String>]
- [-TranscriptContentUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-TranscriptContentUrl <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,11 +48,13 @@ New-MgBetaUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity
 ```
 New-MgBetaUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IMicrosoftGraphCallTranscript> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to transcripts for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -95,6 +97,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -281,21 +298,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -336,21 +338,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -26,14 +26,14 @@ New-MgBetaInvitation [-ResponseHeadersVariable <String>] [-AdditionalProperties 
  [-InvitedUserDisplayName <String>] [-InvitedUserEmailAddress <String>]
  [-InvitedUserMessageInfo <IMicrosoftGraphInvitedUserMessageInfo>]
  [-InvitedUserSponsors <IMicrosoftGraphDirectoryObject[]>] [-InvitedUserType <String>] [-ResetRedemption]
- [-SendInvitationMessage] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-SendInvitationMessage] [-Status <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaInvitation -BodyParameter <IMicrosoftGraphInvitation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -138,6 +138,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -303,21 +318,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResetRedemption
 Reset the user's redemption status and reinvite a user while retaining their user identifier, group memberships, and app assignments.
 This property allows you to enable a user to sign-in using a different email address from the one in the previous invitation.
@@ -375,21 +375,6 @@ Possible values: PendingAcceptance, Completed, InProgress, and Error
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

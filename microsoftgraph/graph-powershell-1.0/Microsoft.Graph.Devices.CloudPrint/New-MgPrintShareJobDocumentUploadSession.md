@@ -24,7 +24,7 @@ This allows transfer to be resumed, in case the network connection is dropped du
 New-MgPrintShareJobDocumentUploadSession -PrintDocumentId <String> -PrintJobId <String>
  -PrinterShareId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Properties <IMicrosoftGraphPrintDocumentUploadProperties>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -32,7 +32,7 @@ New-MgPrintShareJobDocumentUploadSession -PrintDocumentId <String> -PrintJobId <
 New-MgPrintShareJobDocumentUploadSession -PrintDocumentId <String> -PrintJobId <String>
  -PrinterShareId <String>
  -BodyParameter <IPathsCv1Pi3PrintSharesPrintershareIdJobsPrintjobIdDocumentsPrintdocumentIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,14 +41,14 @@ New-MgPrintShareJobDocumentUploadSession -PrintDocumentId <String> -PrintJobId <
 New-MgPrintShareJobDocumentUploadSession -InputObject <IDevicesCloudPrintIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Properties <IMicrosoftGraphPrintDocumentUploadProperties>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgPrintShareJobDocumentUploadSession -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IPathsCv1Pi3PrintSharesPrintershareIdJobsPrintjobIdDocumentsPrintdocumentIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -65,6 +65,8 @@ This allows transfer to be resumed, in case the network connection is dropped du
 | Delegated (work or school account) | PrintJob.Create, PrintJob.ReadWrite.All, PrintJob.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PrintJob.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -96,6 +98,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -175,21 +192,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Properties
 printDocumentUploadProperties
 To construct, see NOTES section for PROPERTIES properties and create a hash table.
@@ -213,21 +215,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

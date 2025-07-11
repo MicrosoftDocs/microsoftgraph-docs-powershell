@@ -20,7 +20,7 @@ Some common uses for this function are to:
 ### GetExpanded (Default)
 ```
 Get-MgBetaServicePrincipalById [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Ids <String[]>] [-Types <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Ids <String[]>] [-Types <String[]>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,13 +28,15 @@ Get-MgBetaServicePrincipalById [-ResponseHeadersVariable <String>] [-AdditionalP
 ```
 Get-MgBetaServicePrincipalById
  -BodyParameter <IPaths15YkyvsServiceprincipalsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -69,6 +71,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -99,21 +116,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -136,21 +138,6 @@ Accept wildcard characters: False
 Type: String[]
 Parameter Sets: GetExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

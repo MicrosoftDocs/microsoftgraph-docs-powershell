@@ -22,27 +22,27 @@ Policies in the former category are restricted in what kinds of changes may be m
 ```
 Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy
  -AuthenticationStrengthPolicyId <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### Usage1
 ```
 Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy
  -AuthenticationStrengthPolicyId <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### UsageViaIdentity1
 ```
 Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### UsageViaIdentity
 ```
 Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -50,6 +50,8 @@ Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy -InputOb
 The usage function allows the caller to see which Conditional Access policies reference a specified authentication strength policy.
 The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that do not require such a claim.
 Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -96,21 +98,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

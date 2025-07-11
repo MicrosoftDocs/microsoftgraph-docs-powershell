@@ -19,14 +19,14 @@ New-MgBetaSecurityAuditLogQueryRecord -AuditLogQueryId <String> [-ResponseHeader
  [-AuditLogRecordType <String>] [-ClientIP <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-ObjectId <String>] [-Operation <String>] [-OrganizationId <String>] [-Service <String>] [-UserId <String>]
  [-UserPrincipalName <String>] [-UserType <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityAuditLogQueryRecord -AuditLogQueryId <String>
  -BodyParameter <IMicrosoftGraphSecurityAuditLogRecord> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -36,18 +36,20 @@ New-MgBetaSecurityAuditLogQueryRecord -InputObject <ISecurityIdentity> [-Respons
  [-AuditLogRecordType <String>] [-ClientIP <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-ObjectId <String>] [-Operation <String>] [-OrganizationId <String>] [-Service <String>] [-UserId <String>]
  [-UserPrincipalName <String>] [-UserType <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaSecurityAuditLogQueryRecord -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityAuditLogRecord> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to records for security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -150,6 +152,21 @@ The IP address is displayed in either an IPv4 or IPv6 address format.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -267,21 +284,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -352,21 +354,6 @@ auditLogUserType
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

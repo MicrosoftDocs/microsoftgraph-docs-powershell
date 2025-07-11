@@ -20,14 +20,14 @@ Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId <String> [-ResponseH
  [-DataDomain <String>] [-DisplayName <String>] [-EffectiveDateTime <DateTime>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReadinessStatus <String>]
  [-Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId <String>
  -BodyParameter <IMicrosoftGraphIndustryDataInboundFlow> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,14 +37,14 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-Re
  [-DataDomain <String>] [-DisplayName <String>] [-EffectiveDateTime <DateTime>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReadinessStatus <String>]
  [-Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
  -BodyParameter <IMicrosoftGraphIndustryDataInboundFlow> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -106,6 +106,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -252,21 +267,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ReadinessStatus
 readinessStatus
 
@@ -297,37 +297,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Year
-yearTimePeriodDefinition
-To construct, see NOTES section for YEAR properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphIndustryDataYearTimePeriodDefinition
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -336,6 +305,22 @@ The cmdlet is not run.
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Year
+yearTimePeriodDefinition
+To construct, see NOTES section for YEAR properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphIndustryDataYearTimePeriodDefinition
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named

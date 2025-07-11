@@ -17,14 +17,14 @@ Invoke action downloadPowerliftAppDiagnostic
 Invoke-MgBetaDownloadUserManagedDevicePowerliftAppDiagnostic -UserId <String> -OutFile <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Request <IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Download
 ```
 Invoke-MgBetaDownloadUserManagedDevicePowerliftAppDiagnostic -UserId <String> -OutFile <String>
  -Body <IPaths1T1XobeUsersUserIdManageddevicesMicrosoftGraphDownloadpowerliftappdiagnosticPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Invoke-MgBetaDownloadUserManagedDevicePowerliftAppDiagnostic -UserId <String> -O
 Invoke-MgBetaDownloadUserManagedDevicePowerliftAppDiagnostic -InputObject <IDevicesCorporateManagementIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Request <IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DownloadViaIdentity
@@ -41,12 +41,14 @@ Invoke-MgBetaDownloadUserManagedDevicePowerliftAppDiagnostic -InputObject <IDevi
 Invoke-MgBetaDownloadUserManagedDevicePowerliftAppDiagnostic -InputObject <IDevicesCorporateManagementIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths1T1XobeUsersUserIdManageddevicesMicrosoftGraphDownloadpowerliftappdiagnosticPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action downloadPowerliftAppDiagnostic
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -94,6 +96,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -158,21 +175,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Request
 This type contains request details to download app diagnostic files.
 To construct, see NOTES section for REQUEST properties and create a hash table.
@@ -213,21 +215,6 @@ Parameter Sets: DownloadExpanded, Download
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

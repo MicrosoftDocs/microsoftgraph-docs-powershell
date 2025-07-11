@@ -19,14 +19,14 @@ A collection of the fields and values for this version of the list item.
 ```
 Get-MgShareListItemDocumentSetVersionField -DocumentSetVersionId <String> -SharedDriveItemId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgShareListItemDocumentSetVersionField -DocumentSetVersionId <String> -ListItemId <String>
  -SharedDriveItemId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -34,18 +34,20 @@ Get-MgShareListItemDocumentSetVersionField -DocumentSetVersionId <String> -ListI
 ```
 Get-MgShareListItemDocumentSetVersionField -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgShareListItemDocumentSetVersionField -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 A collection of the fields and values for this version of the list item.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -119,21 +121,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

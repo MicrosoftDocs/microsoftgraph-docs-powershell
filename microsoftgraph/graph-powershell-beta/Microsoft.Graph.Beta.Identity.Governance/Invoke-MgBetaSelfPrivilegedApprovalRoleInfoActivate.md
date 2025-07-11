@@ -17,14 +17,14 @@ Invoke action selfActivate
 Invoke-MgBetaSelfPrivilegedApprovalRoleInfoActivate -PrivilegedApprovalId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Duration <String>]
  [-Reason <String>] [-TicketNumber <String>] [-TicketSystem <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Self
 ```
 Invoke-MgBetaSelfPrivilegedApprovalRoleInfoActivate -PrivilegedApprovalId <String>
  -BodyParameter <IPathsZs8JlrPrivilegedapprovalIdRoleinfoMicrosoftGraphSelfactivatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,19 +33,21 @@ Invoke-MgBetaSelfPrivilegedApprovalRoleInfoActivate -PrivilegedApprovalId <Strin
 Invoke-MgBetaSelfPrivilegedApprovalRoleInfoActivate -InputObject <IIdentityGovernanceIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Duration <String>]
  [-Reason <String>] [-TicketNumber <String>] [-TicketSystem <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SelfViaIdentity
 ```
 Invoke-MgBetaSelfPrivilegedApprovalRoleInfoActivate -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPathsZs8JlrPrivilegedapprovalIdRoleinfoMicrosoftGraphSelfactivatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action selfActivate
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -77,6 +79,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -141,21 +158,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Reason
 
 
@@ -208,21 +210,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: SelfExpanded, SelfViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

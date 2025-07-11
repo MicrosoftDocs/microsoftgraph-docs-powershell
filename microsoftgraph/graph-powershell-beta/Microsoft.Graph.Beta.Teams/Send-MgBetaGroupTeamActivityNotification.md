@@ -23,7 +23,7 @@ Send-MgBetaGroupTeamActivityNotification -GroupId <String> [-ResponseHeadersVari
  [-ActivityType <String>] [-AdditionalProperties <Hashtable>] [-ChainId <Int64>]
  [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>] [-TeamsAppId <String>]
  [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Send-MgBetaGroupTeamActivityNotification -GroupId <String> [-ResponseHeadersVari
 ```
 Send-MgBetaGroupTeamActivityNotification -GroupId <String>
  -BodyParameter <IPaths1TgtfpkGroupsGroupIdTeamMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ Send-MgBetaGroupTeamActivityNotification -InputObject <ITeamsIdentity> [-Respons
  [-ActivityType <String>] [-AdditionalProperties <Hashtable>] [-ChainId <Int64>]
  [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>] [-TeamsAppId <String>]
  [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -49,13 +49,15 @@ Send-MgBetaGroupTeamActivityNotification -InputObject <ITeamsIdentity> [-Respons
 ```
 Send-MgBetaGroupTeamActivityNotification -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1TgtfpkGroupsGroupIdTeamMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Send an activity feed notification in the scope of a team.
 For more information, see sending Teams activity notifications.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -116,6 +118,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -197,21 +214,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Recipient
 teamworkNotificationRecipient
 
@@ -281,21 +283,6 @@ To construct, see NOTES section for TOPIC properties and create a hash table.
 Type: IMicrosoftGraphTeamworkActivityTopic
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

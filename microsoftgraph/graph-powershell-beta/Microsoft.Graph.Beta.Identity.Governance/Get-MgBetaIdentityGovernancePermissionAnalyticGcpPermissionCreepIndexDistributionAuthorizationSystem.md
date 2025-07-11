@@ -16,7 +16,7 @@ Represents an authorization system onboarded to Permissions Management.
 ```
 Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistributionAuthorizationSystem
  -PermissionsCreepIndexDistributionId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -24,12 +24,14 @@ Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistributio
 ```
 Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistributionAuthorizationSystem
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Represents an authorization system onboarded to Permissions Management.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -88,21 +90,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

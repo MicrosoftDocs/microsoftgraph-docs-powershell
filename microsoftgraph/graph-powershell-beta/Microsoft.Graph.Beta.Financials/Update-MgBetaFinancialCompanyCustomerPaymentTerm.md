@@ -18,7 +18,7 @@ Update-MgBetaFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPa
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CalculateDiscountOnCreditMemos]
  [-Code <String>] [-DiscountDateCalculation <String>] [-DiscountPercent <Decimal>] [-DisplayName <String>]
  [-DueDateCalculation <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
@@ -27,21 +27,21 @@ Update-MgBetaFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CalculateDiscountOnCreditMemos]
  [-Code <String>] [-DiscountDateCalculation <String>] [-DiscountPercent <Decimal>] [-DisplayName <String>]
  [-DueDateCalculation <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <String>
  -BodyParameter <IMicrosoftGraphPaymentTerm> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymentId <String>
  -BodyParameter <IMicrosoftGraphPaymentTerm> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -50,7 +50,7 @@ Update-MgBetaFinancialCompanyCustomerPaymentTerm -InputObject <IFinancialsIdenti
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CalculateDiscountOnCreditMemos]
  [-Code <String>] [-DiscountDateCalculation <String>] [-DiscountPercent <Decimal>] [-DisplayName <String>]
  [-DueDateCalculation <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -59,25 +59,27 @@ Update-MgBetaFinancialCompanyCustomerPaymentTerm -InputObject <IFinancialsIdenti
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CalculateDiscountOnCreditMemos]
  [-Code <String>] [-DiscountDateCalculation <String>] [-DiscountPercent <Decimal>] [-DisplayName <String>]
  [-DueDateCalculation <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgBetaFinancialCompanyCustomerPaymentTerm -InputObject <IFinancialsIdentity>
  -BodyParameter <IMicrosoftGraphPaymentTerm> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanyCustomerPaymentTerm -InputObject <IFinancialsIdentity>
  -BodyParameter <IMicrosoftGraphPaymentTerm> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property paymentTerm in financials
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -151,6 +153,21 @@ Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -308,21 +325,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -330,21 +332,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

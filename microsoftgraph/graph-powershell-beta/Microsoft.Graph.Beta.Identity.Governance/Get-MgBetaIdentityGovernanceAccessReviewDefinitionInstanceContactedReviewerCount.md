@@ -20,14 +20,14 @@ Get the number of the resource
 Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewerCount
  -AccessReviewInstanceId <String> -AccessReviewScheduleDefinitionId <String> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewerCount
  -InputObject <IIdentityGovernanceIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -41,6 +41,8 @@ Get the number of the resource
 | Delegated (work or school account) | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -117,21 +119,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

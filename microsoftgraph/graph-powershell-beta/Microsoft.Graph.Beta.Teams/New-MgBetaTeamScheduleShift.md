@@ -25,13 +25,13 @@ New-MgBetaTeamScheduleShift -TeamId <String> [-ResponseHeadersVariable <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SchedulingGroupInfo <IMicrosoftGraphSchedulingGroupInfo>] [-SharedShift <IMicrosoftGraphShiftItem>]
  [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-UserId <String>] [-UserInfo <IMicrosoftGraphShiftsUserInfo>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTeamScheduleShift -TeamId <String> -BodyParameter <IMicrosoftGraphShift>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,13 +43,13 @@ New-MgBetaTeamScheduleShift -InputObject <ITeamsIdentity> [-ResponseHeadersVaria
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SchedulingGroupInfo <IMicrosoftGraphSchedulingGroupInfo>] [-SharedShift <IMicrosoftGraphShiftItem>]
  [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-UserId <String>] [-UserInfo <IMicrosoftGraphShiftsUserInfo>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphShift>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -146,6 +146,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -251,21 +266,6 @@ To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash 
 Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -392,21 +392,6 @@ To construct, see NOTES section for USERINFO properties and create a hash table.
 Type: IMicrosoftGraphShiftsUserInfo
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

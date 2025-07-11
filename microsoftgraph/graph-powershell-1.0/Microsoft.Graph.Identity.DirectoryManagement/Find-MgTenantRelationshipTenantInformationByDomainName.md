@@ -20,19 +20,21 @@ You can use this API to validate tenant information and use the tenantId to conf
 ### Find (Default)
 ```
 Find-MgTenantRelationshipTenantInformationByDomainName -DomainName <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### FindViaIdentity
 ```
 Find-MgTenantRelationshipTenantInformationByDomainName -InputObject <IIdentityDirectoryManagementIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Given a domain name, search for a tenant and read its tenantInformation.
 You can use this API to validate tenant information and use the tenantId to configure cross-tenant access settings between you and the tenant.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -79,21 +81,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

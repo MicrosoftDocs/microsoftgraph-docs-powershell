@@ -16,7 +16,7 @@ Invoke function crossTenantAccessReport
 ```
 Invoke-MgBetaCrossNetworkAccessReportTenantAccessReport -EndDateTime <DateTime> -StartDateTime <DateTime>
  [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -24,11 +24,13 @@ Invoke-MgBetaCrossNetworkAccessReportTenantAccessReport -EndDateTime <DateTime> 
 ```
 Invoke-MgBetaCrossNetworkAccessReportTenantAccessReport -InputObject <INetworkAccessIdentity> [-Count]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function crossTenantAccessReport
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -108,21 +110,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -153,6 +140,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 Usage: startDateTime={startDateTime}
 
@@ -175,21 +177,6 @@ Show only the first n items
 Type: Int32
 Parameter Sets: (All)
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
 
 Required: False
 Position: Named

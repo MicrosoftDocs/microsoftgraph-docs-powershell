@@ -21,7 +21,7 @@ Create a new customSecurityAttributeDefinition object.
 New-MgDirectoryCustomSecurityAttributeDefinition [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowedValues <IMicrosoftGraphAllowedValue[]>] [-AttributeSet <String>]
  [-Description <String>] [-Id <String>] [-IsCollection] [-IsSearchable] [-Name <String>] [-Status <String>]
- [-Type <String>] [-UsePreDefinedValuesOnly] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Type <String>] [-UsePreDefinedValuesOnly] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ New-MgDirectoryCustomSecurityAttributeDefinition [-ResponseHeadersVariable <Stri
 ```
 New-MgDirectoryCustomSecurityAttributeDefinition
  -BodyParameter <IMicrosoftGraphCustomSecurityAttributeDefinition> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -192,6 +192,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Description
 Description of the custom security attribute.
 Can be up to 128 characters long and include Unicode characters.
@@ -293,21 +308,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -371,21 +371,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

@@ -26,13 +26,13 @@ Update-MgBetaTeamPrimaryChannel -TeamId <String> [-ResponseHeadersVariable <Stri
  [-Planner <IMicrosoftGraphTeamsChannelPlanner>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>] [-Summary <IMicrosoftGraphChannelSummary>]
  [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <String>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTeamPrimaryChannel -TeamId <String> -BodyParameter <IMicrosoftGraphChannel>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,18 +47,20 @@ Update-MgBetaTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ResponseHeadersV
  [-Planner <IMicrosoftGraphTeamsChannelPlanner>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>] [-Summary <IMicrosoftGraphChannelSummary>]
  [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <String>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTeamPrimaryChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChannel>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property primaryChannel in teams
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -107,6 +109,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -365,21 +382,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -483,21 +485,6 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

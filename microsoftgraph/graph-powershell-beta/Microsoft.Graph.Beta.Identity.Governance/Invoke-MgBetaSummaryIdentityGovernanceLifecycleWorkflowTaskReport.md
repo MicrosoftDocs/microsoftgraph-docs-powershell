@@ -21,13 +21,13 @@ Because the volume of task processing results and task reports returned by the L
 ```
 Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowTaskReport -EndDateTime <DateTime>
  -StartDateTime <DateTime> -WorkflowId <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### SummaryViaIdentity
 ```
 Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowTaskReport -InputObject <IIdentityGovernanceIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -35,6 +35,8 @@ Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowTaskReport -InputObject <
 Get a taskReportSummary object.
 This API provides a summary of task processing results for a specified time period.
 Because the volume of task processing results and task reports returned by the List API calls can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -81,21 +83,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

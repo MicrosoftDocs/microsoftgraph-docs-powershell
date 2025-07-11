@@ -18,14 +18,14 @@ New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -ApprovalId <Str
  -RbacApplicationId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AssignedToMe] [-DisplayName <String>] [-Id <String>] [-Justification <String>] [-ReviewResult <String>]
  [-ReviewedBy <IMicrosoftGraphIdentity>] [-ReviewedDateTime <DateTime>] [-Status <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -ApprovalId <String>
  -RbacApplicationId <String> -BodyParameter <IMicrosoftGraphApprovalStep> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -34,18 +34,20 @@ New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -InputObject <II
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssignedToMe]
  [-DisplayName <String>] [-Id <String>] [-Justification <String>] [-ReviewResult <String>]
  [-ReviewedBy <IMicrosoftGraphIdentity>] [-ReviewedDateTime <DateTime>] [-Status <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphApprovalStep> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to steps for roleManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -108,6 +110,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -181,21 +198,6 @@ The justification associated with the approval step decision.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -293,21 +295,6 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

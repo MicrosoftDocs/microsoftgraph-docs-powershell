@@ -23,7 +23,7 @@ When you run a workflow on demand, the tasks are executed regardless of whether 
 ```
 Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Subjects <IMicrosoftGraphUser[]>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -Workflo
 ```
 Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId <String>
  -BodyParameter <IPaths129Ny71IdentitygovernanceLifecycleworkflowsDeleteditemsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceActivatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -Workflo
 Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Subjects <IMicrosoftGraphUser[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
@@ -48,7 +48,7 @@ Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow
 Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths129Ny71IdentitygovernanceLifecycleworkflowsDeleteditemsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceActivatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -57,6 +57,8 @@ Run a workflow object on-demand.
 You can run any workflow on-demand, including scheduled workflows.
 Workflows created from the 'Real-time employee termination' template are run on-demand only.
 When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -88,6 +90,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -137,21 +154,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -183,36 +185,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkflowId
-The unique identifier of workflow
-
-```yaml
-Type: String
-Parameter Sets: ActivateExpanded, Activate
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -223,6 +195,21 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WorkflowId
+The unique identifier of workflow
+
+```yaml
+Type: String
+Parameter Sets: ActivateExpanded, Activate
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -19,14 +19,14 @@ Get the order of identityUserFlowAttributeAssignments being collected within a u
 ### Get (Default)
 ```
 Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder -B2XIdentityUserFlowId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentitySignInsIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -40,6 +40,8 @@ Get the order of identityUserFlowAttributeAssignments being collected within a u
 | Delegated (work or school account) | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -86,21 +88,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

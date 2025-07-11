@@ -18,20 +18,20 @@ Invoke function managedDeviceEnrollmentTopFailures
 ### Top (Default)
 ```
 Get-MgBetaReportManagedDeviceEnrollmentTopFailure -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
 ```
 
 ### Top1
 ```
 Get-MgBetaReportManagedDeviceEnrollmentTopFailure -Period <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
 ### TopViaIdentity
 ```
 Get-MgBetaReportManagedDeviceEnrollmentTopFailure -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -45,6 +45,8 @@ Invoke function managedDeviceEnrollmentTopFailures
 | Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -118,21 +120,6 @@ Parameter Sets: Top1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

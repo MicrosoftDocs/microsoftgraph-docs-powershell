@@ -19,7 +19,7 @@ Detailed information for the roleDefinition object that is referenced through th
 ```
 Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceRoleDefinition
  -UnifiedRoleAssignmentScheduleInstanceId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -27,12 +27,14 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceRoleDefinition
 ```
 Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceRoleDefinition
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -79,21 +81,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

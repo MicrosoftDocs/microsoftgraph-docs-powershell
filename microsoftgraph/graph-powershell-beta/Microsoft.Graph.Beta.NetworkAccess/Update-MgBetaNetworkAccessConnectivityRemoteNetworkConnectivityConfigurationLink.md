@@ -19,7 +19,7 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-LocalConfigurations <IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration[]>]
  [-PeerConfiguration <IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -27,7 +27,7 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
 Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
  -ConnectivityConfigurationLinkId <String> -RemoteNetworkId <String>
  -BodyParameter <IMicrosoftGraphNetworkaccessConnectivityConfigurationLink> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,7 +37,7 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
  [-DisplayName <String>] [-Id <String>]
  [-LocalConfigurations <IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration[]>]
  [-PeerConfiguration <IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -45,11 +45,13 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
 Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
  -InputObject <INetworkAccessIdentity>
  -BodyParameter <IMicrosoftGraphNetworkaccessConnectivityConfigurationLink> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property links in networkAccess
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -81,6 +83,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -193,21 +210,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RemoteNetworkId
 The unique identifier of remoteNetwork
 
@@ -230,21 +232,6 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

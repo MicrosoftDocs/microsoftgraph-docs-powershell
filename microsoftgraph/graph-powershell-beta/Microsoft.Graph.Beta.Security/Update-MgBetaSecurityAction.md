@@ -20,13 +20,13 @@ Update-MgBetaSecurityAction -SecurityActionId <String> [-ResponseHeadersVariable
  [-ErrorInfo <IMicrosoftGraphResultInfo>] [-Id <String>] [-LastActionDateTime <DateTime>] [-Name <String>]
  [-Parameters <IMicrosoftGraphKeyValuePair[]>] [-States <IMicrosoftGraphSecurityActionState[]>]
  [-Status <String>] [-User <String>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityAction -SecurityActionId <String> -BodyParameter <IMicrosoftGraphSecurityAction>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,18 +38,20 @@ Update-MgBetaSecurityAction -InputObject <ISecurityIdentity> [-ResponseHeadersVa
  [-ErrorInfo <IMicrosoftGraphResultInfo>] [-Id <String>] [-LastActionDateTime <DateTime>] [-Name <String>]
  [-Parameters <IMicrosoftGraphKeyValuePair[]>] [-States <IMicrosoftGraphSecurityActionState[]>]
  [-Status <String>] [-User <String>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityAction -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphSecurityAction>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property securityActions in security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -156,6 +158,21 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -293,21 +310,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -393,21 +395,6 @@ To construct, see NOTES section for VENDORINFORMATION properties and create a ha
 Type: IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

@@ -19,7 +19,7 @@ Get the properties and relationships of an application object.
 ### Get (Default)
 ```
 Get-MgBetaApplicationByUniqueName -UniqueName <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Get-MgBetaApplicationByUniqueName -UniqueName <String> [-ExpandProperty <String[
 ```
 Get-MgBetaApplicationByUniqueName -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,6 +40,8 @@ Get the properties and relationships of an application object.
 | Delegated (work or school account) | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Application.Read.All, User.Read, Application.ReadWrite.All,  |
 | Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -86,21 +88,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

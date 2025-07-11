@@ -19,7 +19,7 @@ Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvan
  [-AdditionalProperties <Hashtable>] [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceId <String>]
  [-DeviceModel <String>] [-DeviceName <String>] [-Id <String>] [-PlatformType <DeviceType>] [-Setting <String>]
  [-SettingName <String>] [-State <String>] [-UserEmail <String>] [-UserId <String>] [-UserName <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvan
 Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState
  -AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>
  -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvan
  [-AdditionalProperties <Hashtable>] [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceId <String>]
  [-DeviceModel <String>] [-DeviceName <String>] [-Id <String>] [-PlatformType <DeviceType>] [-Setting <String>]
  [-SettingName <String>] [-State <String>] [-UserEmail <String>] [-UserId <String>] [-UserName <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,7 +48,7 @@ Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvan
 Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState
  -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -62,6 +62,8 @@ Update the navigation property advancedThreatProtectionOnboardingDeviceSettingSt
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -118,6 +120,21 @@ The DateTime when device compliance grace period expires
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -225,21 +242,6 @@ Device type.
 Type: DeviceType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
@@ -360,21 +362,6 @@ The User PrincipalName that is being reported
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

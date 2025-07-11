@@ -22,7 +22,7 @@ For copy operations, you follow an asynchronous calling pattern:  First call the
 Copy-MgGroupSiteOnenoteSectionPageToSection -GroupId <String> -OnenotePageId <String>
  -OnenoteSectionId <String> -SiteId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-GroupId1 <String>] [-Id <String>] [-SiteCollectionId <String>]
- [-SiteId1 <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-SiteId1 <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Copy-MgGroupSiteOnenoteSectionPageToSection -GroupId <String> -OnenotePageId <St
 ```
 Copy-MgGroupSiteOnenoteSectionPageToSection [-GroupId <String>] [-SiteId <String>]
  -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-SiteCollectionId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-Id <String>] [-SiteCollectionId <String>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Copy-MgGroupSiteOnenoteSectionPageToSection [-GroupId <String>] [-SiteId <String
 Copy-MgGroupSiteOnenoteSectionPageToSection -GroupId <String> -OnenotePageId <String>
  -OnenoteSectionId <String> -SiteId <String>
  -BodyParameter <IPaths1Haomx0GroupsGroupIdSitesSiteIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,13 +47,15 @@ Copy-MgGroupSiteOnenoteSectionPageToSection -GroupId <String> -OnenotePageId <St
 ```
 Copy-MgGroupSiteOnenoteSectionPageToSection -InputObject <ISitesIdentity>
  -BodyParameter <IPaths1Haomx0GroupsGroupIdSitesSiteIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -85,6 +87,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -206,21 +223,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -293,21 +295,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -343,10 +330,10 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1Haomx0GroupsGroupIdSitesSiteIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[GroupId <String>]`: 
-  - `[Id <String>]`: 
-  - `[SiteCollectionId <String>]`: 
-  - `[SiteId <String>]`: 
+  - `[GroupId <String>]`:
+  - `[Id <String>]`:
+  - `[SiteCollectionId <String>]`:
+  - `[SiteId <String>]`:
 
 INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem

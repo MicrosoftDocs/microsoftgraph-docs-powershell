@@ -20,7 +20,7 @@ Update the properties of an identityApiConnector object.
 ```
 Update-MgBetaIdentityApiConnector -IdentityApiConnectorId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-TargetUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Id <String>] [-TargetUrl <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,14 +28,14 @@ Update-MgBetaIdentityApiConnector -IdentityApiConnectorId <String> [-ResponseHea
 ```
 Update-MgBetaIdentityApiConnector -IdentityApiConnectorId <String>
  -BodyParameter <IMicrosoftGraphIdentityApiConnector> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-TargetUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Id <String>] [-TargetUrl <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,7 +43,7 @@ Update-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-Resp
 ```
 Update-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphIdentityApiConnector> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -147,6 +147,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DisplayName
 The name of the API connector.
 
@@ -224,21 +239,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -261,21 +261,6 @@ The URL of the API endpoint to call.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

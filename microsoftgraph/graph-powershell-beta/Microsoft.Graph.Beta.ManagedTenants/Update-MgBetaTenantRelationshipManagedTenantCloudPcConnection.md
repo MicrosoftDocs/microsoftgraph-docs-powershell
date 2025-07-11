@@ -17,7 +17,7 @@ Update the navigation property cloudPcConnections in tenantRelationships
 Update-MgBetaTenantRelationshipManagedTenantCloudPcConnection -CloudPcConnectionId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-HealthCheckStatus <String>] [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-TenantDisplayName <String>]
- [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-TenantId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,7 +25,7 @@ Update-MgBetaTenantRelationshipManagedTenantCloudPcConnection -CloudPcConnection
 ```
 Update-MgBetaTenantRelationshipManagedTenantCloudPcConnection -CloudPcConnectionId <String>
  -BodyParameter <IMicrosoftGraphManagedTenantsCloudPcConnection> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -33,7 +33,7 @@ Update-MgBetaTenantRelationshipManagedTenantCloudPcConnection -CloudPcConnection
 Update-MgBetaTenantRelationshipManagedTenantCloudPcConnection -InputObject <IManagedTenantsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-HealthCheckStatus <String>] [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-TenantDisplayName <String>]
- [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-TenantId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -41,11 +41,13 @@ Update-MgBetaTenantRelationshipManagedTenantCloudPcConnection -InputObject <IMan
 ```
 Update-MgBetaTenantRelationshipManagedTenantCloudPcConnection -InputObject <IManagedTenantsIdentity>
  -BodyParameter <IMicrosoftGraphManagedTenantsCloudPcConnection> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property cloudPcConnections in tenantRelationships
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -89,6 +91,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -194,21 +211,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -250,21 +252,6 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

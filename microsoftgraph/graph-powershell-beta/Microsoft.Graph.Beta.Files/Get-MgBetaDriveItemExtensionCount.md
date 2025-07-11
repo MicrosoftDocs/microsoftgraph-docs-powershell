@@ -15,14 +15,14 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgBetaDriveItemExtensionCount -DriveId <String> -DriveItemId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaDriveItemExtensionCount -InputObject <IFilesIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -36,6 +36,8 @@ Get the number of the resource
 | Delegated (work or school account) | Files.Read, Sites.ReadWrite.All, Sites.Read.All, Sites.Manage.All, Sites.FullControl.All, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Sites.Manage.All, Sites.FullControl.All, Files.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -112,21 +114,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

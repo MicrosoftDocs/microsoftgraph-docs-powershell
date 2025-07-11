@@ -18,14 +18,14 @@ This API removes the sender from the list of blocked senders and moves the messa
 ```
 Invoke-MgBetaMarkUserMailFolderMessageAsNotJunk -MailFolderId <String> -MessageId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-MoveToInbox]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Mark
 ```
 Invoke-MgBetaMarkUserMailFolderMessageAsNotJunk -MailFolderId <String> -MessageId <String> -UserId <String>
  -BodyParameter <IPaths1M75L3YUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,20 +33,22 @@ Invoke-MgBetaMarkUserMailFolderMessageAsNotJunk -MailFolderId <String> -MessageI
 ```
 Invoke-MgBetaMarkUserMailFolderMessageAsNotJunk -InputObject <IMailIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-MoveToInbox]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MarkViaIdentity
 ```
 Invoke-MgBetaMarkUserMailFolderMessageAsNotJunk -InputObject <IMailIdentity>
  -BodyParameter <IPaths1M75L3YUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Mark a message as not junk.
 This API removes the sender from the list of blocked senders and moves the message to the Inbox folder, when moveToInbox is true.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -78,6 +80,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -157,21 +174,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -196,21 +198,6 @@ Parameter Sets: MarkExpanded, Mark
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

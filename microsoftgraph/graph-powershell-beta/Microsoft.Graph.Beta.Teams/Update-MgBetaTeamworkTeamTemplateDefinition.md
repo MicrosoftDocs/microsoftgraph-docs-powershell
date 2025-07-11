@@ -19,7 +19,7 @@ Update-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateDefinitionId <String> -
  [-Categories <String[]>] [-Description <String>] [-DisplayName <String>] [-IconUrl <String>] [-Id <String>]
  [-LanguageTag <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-ParentTemplateId <String>] [-PublisherName <String>] [-ShortDescription <String>]
- [-TeamDefinition <IMicrosoftGraphTeam>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-TeamDefinition <IMicrosoftGraphTeam>] [-Headers <IDictionary>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Update-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateDefinitionId <String> -
 ```
 Update-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateDefinitionId <String> -TeamTemplateId <String>
  -BodyParameter <IMicrosoftGraphTeamTemplateDefinition> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,18 +37,20 @@ Update-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity> [-Resp
  [-DisplayName <String>] [-IconUrl <String>] [-Id <String>] [-LanguageTag <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-ParentTemplateId <String>]
  [-PublisherName <String>] [-ShortDescription <String>] [-TeamDefinition <IMicrosoftGraphTeam>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphTeamTemplateDefinition> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property definitions in teamwork
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -105,6 +107,21 @@ The assigned categories for the team template.
 Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -266,21 +283,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PublisherName
 The organization which published the team template.
 
@@ -366,21 +368,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

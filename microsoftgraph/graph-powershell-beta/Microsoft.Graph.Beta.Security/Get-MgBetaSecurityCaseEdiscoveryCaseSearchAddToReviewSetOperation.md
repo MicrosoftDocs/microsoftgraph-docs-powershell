@@ -19,7 +19,7 @@ Adds the results of the eDiscovery search to the specified reviewSet.
 ```
 Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation -EdiscoveryCaseId <String>
  -EdiscoverySearchId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -27,11 +27,13 @@ Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation -EdiscoveryCas
 ```
 Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation -InputObject <ISecurityIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Adds the results of the eDiscovery search to the specified reviewSet.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -108,21 +110,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

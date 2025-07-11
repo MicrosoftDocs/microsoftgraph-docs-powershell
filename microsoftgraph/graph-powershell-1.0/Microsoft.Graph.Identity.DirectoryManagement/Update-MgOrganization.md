@@ -31,13 +31,13 @@ Update-MgOrganization -OrganizationId <String> [-ResponseHeadersVariable <String
  [-SecurityComplianceNotificationMails <String[]>] [-SecurityComplianceNotificationPhones <String[]>]
  [-State <String>] [-Street <String>] [-TechnicalNotificationMails <String[]>] [-TenantType <String>]
  [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgOrganization -OrganizationId <String> -BodyParameter <IMicrosoftGraphOrganization>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -56,14 +56,14 @@ Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-Resp
  [-SecurityComplianceNotificationMails <String[]>] [-SecurityComplianceNotificationPhones <String[]>]
  [-State <String>] [-Street <String>] [-TechnicalNotificationMails <String[]>] [-TenantType <String>]
  [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IMicrosoftGraphOrganization> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -215,6 +215,21 @@ City name of the address for the organization.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -525,21 +540,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ProvisionedPlans
 Not nullable.
 To construct, see NOTES section for PROVISIONEDPLANS properties and create a hash table.
@@ -673,21 +673,6 @@ To construct, see NOTES section for VERIFIEDDOMAINS properties and create a hash
 Type: IMicrosoftGraphVerifiedDomain[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -984,8 +969,8 @@ See a detailed description of each value.
   - `[Street <String>]`: Street name of the address for organization.
   - `[TechnicalNotificationMails <String- `[]`>]`: Not nullable.
   - `[TenantType <String>]`: Not nullable.
-Can be one of the following types:  AAD - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios. 
-AAD B2C An identity access management (IAM) service that serves business-to-consumer (B2C) scenarios. 
+Can be one of the following types:  AAD - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios.
+AAD B2C An identity access management (IAM) service that serves business-to-consumer (B2C) scenarios.
 CIAM - A customer identity & access management (CIAM) solution that provides an integrated platform to serve consumers, partners, and citizen scenarios.
   - `[VerifiedDomains <IMicrosoftGraphVerifiedDomain- `[]`>]`: The collection of domains associated with this tenant.
 Not nullable.

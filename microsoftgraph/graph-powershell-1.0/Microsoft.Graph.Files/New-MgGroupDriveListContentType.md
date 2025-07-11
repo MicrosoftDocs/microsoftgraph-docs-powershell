@@ -25,13 +25,13 @@ New-MgGroupDriveListContentType -DriveId <String> -GroupId <String> [-ResponseHe
  [-DocumentTemplate <IMicrosoftGraphDocumentSetContent>] [-Group <String>] [-Hidden] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-IsBuiltIn] [-Name <String>]
  [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-PropagateChanges] [-ReadOnly] [-Sealed]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgGroupDriveListContentType -DriveId <String> -GroupId <String> -BodyParameter <IMicrosoftGraphContentType>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,18 +45,20 @@ New-MgGroupDriveListContentType -InputObject <IFilesIdentity> [-ResponseHeadersV
  [-DocumentTemplate <IMicrosoftGraphDocumentSetContent>] [-Group <String>] [-Hidden] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-IsBuiltIn] [-Name <String>]
  [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-PropagateChanges] [-ReadOnly] [-Sealed]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgGroupDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphContentType>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to contentTypes for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -180,6 +182,21 @@ To construct, see NOTES section for COLUMNS properties and create a hash table.
 Type: IMicrosoftGraphColumnDefinition[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -420,21 +437,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PropagateChanges
 If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
 
@@ -492,21 +494,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -728,9 +715,9 @@ For examples, see Examples of common formulas in lists.
       - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set.
       - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
     - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
-    - `[SharedColumns <IMicrosoftGraphColumnDefinition- `[]`>]`: 
+    - `[SharedColumns <IMicrosoftGraphColumnDefinition- `[]`>]`:
     - `[ShouldPrefixNameToFile <Boolean?>]`: Indicates whether to add the name of the document set to each file name.
-    - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition- `[]`>]`: 
+    - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition- `[]`>]`:
     - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
   - `[DocumentTemplate <IMicrosoftGraphDocumentSetContent>]`: documentSetContent
   - `[Group <String>]`: The name of the group this content type belongs to.
@@ -959,9 +946,9 @@ For examples, see Examples of common formulas in lists.
       - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set.
       - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
     - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
-    - `[SharedColumns <IMicrosoftGraphColumnDefinition- `[]`>]`: 
+    - `[SharedColumns <IMicrosoftGraphColumnDefinition- `[]`>]`:
     - `[ShouldPrefixNameToFile <Boolean?>]`: Indicates whether to add the name of the document set to each file name.
-    - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition- `[]`>]`: 
+    - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition- `[]`>]`:
     - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
   - `[DocumentTemplate <IMicrosoftGraphDocumentSetContent>]`: documentSetContent
   - `[Group <String>]`: The name of the group this content type belongs to.
@@ -1191,9 +1178,9 @@ For examples, see Examples of common formulas in lists.
       - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set.
       - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
     - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
-    - `[SharedColumns <IMicrosoftGraphColumnDefinition- `[]`>]`: 
+    - `[SharedColumns <IMicrosoftGraphColumnDefinition- `[]`>]`:
     - `[ShouldPrefixNameToFile <Boolean?>]`: Indicates whether to add the name of the document set to each file name.
-    - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition- `[]`>]`: 
+    - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition- `[]`>]`:
     - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
   - `[DocumentTemplate <IMicrosoftGraphDocumentSetContent>]`: documentSetContent
   - `[Group <String>]`: The name of the group this content type belongs to.
@@ -1578,7 +1565,7 @@ DOCUMENTSET `<IMicrosoftGraphDocumentSet>`: documentSet
     - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set.
     - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
   - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
-  - `[SharedColumns <IMicrosoftGraphColumnDefinition- `[]`>]`: 
+  - `[SharedColumns <IMicrosoftGraphColumnDefinition- `[]`>]`:
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
@@ -1737,7 +1724,7 @@ User will be prompted with this message if validation fails.
       - `[Formula <String>]`: The formula to validate column value.
 For examples, see Examples of common formulas in lists.
   - `[ShouldPrefixNameToFile <Boolean?>]`: Indicates whether to add the name of the document set to each file name.
-  - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition- `[]`>]`: 
+  - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition- `[]`>]`:
   - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
 
 DOCUMENTTEMPLATE `<IMicrosoftGraphDocumentSetContent>`: documentSetContent

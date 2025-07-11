@@ -22,14 +22,14 @@ Update-MgBetaDeviceManagementWindowsFeatureUpdateProfile -WindowsFeatureUpdatePr
  [-InstallFeatureUpdatesOptional] [-InstallLatestWindows10OnWindows11IneligibleDevice]
  [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
  [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementWindowsFeatureUpdateProfile -WindowsFeatureUpdateProfileId <String>
  -BodyParameter <IMicrosoftGraphWindowsFeatureUpdateProfile> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -42,14 +42,14 @@ Update-MgBetaDeviceManagementWindowsFeatureUpdateProfile -InputObject <IDeviceMa
  [-InstallFeatureUpdatesOptional] [-InstallLatestWindows10OnWindows11IneligibleDevice]
  [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
  [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementWindowsFeatureUpdateProfile -InputObject <IDeviceManagementEnrollmentIdentity>
  -BodyParameter <IMicrosoftGraphWindowsFeatureUpdateProfile> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -62,6 +62,8 @@ Update the navigation property windowsFeatureUpdateProfiles in deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -109,6 +111,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -295,21 +312,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -356,36 +358,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WindowsFeatureUpdateProfileId
-The unique identifier of windowsFeatureUpdateProfile
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -396,6 +368,21 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsFeatureUpdateProfileId
+The unique identifier of windowsFeatureUpdateProfile
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

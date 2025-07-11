@@ -18,13 +18,13 @@ Get the number of the resource
 ### Get1 (Default)
 ```
 Get-MgBetaPrintPrinterShareCount [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Headers <IDictionary>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaPrintPrinterShareCount -PrinterId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Get-MgBetaPrintPrinterShareCount -PrinterId <String> [-Filter <String>] [-Search
 ```
 Get-MgBetaPrintPrinterShareCount -InputObject <IDevicesCloudPrintIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,6 +45,8 @@ Get the number of the resource
 | Delegated (work or school account) | PrinterShare.ReadBasic.All, PrinterShare.ReadWrite.All, PrinterShare.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -103,21 +105,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

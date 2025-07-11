@@ -18,19 +18,21 @@ New-MgBetaDeviceManagementMonitoringAlertRecord [-ResponseHeadersVariable <Strin
  [-AdditionalProperties <Hashtable>] [-AlertImpact <IMicrosoftGraphDeviceManagementAlertImpact>]
  [-AlertRuleId <String>] [-AlertRuleTemplate <String>] [-DetectedDateTime <DateTime>] [-DisplayName <String>]
  [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-ResolvedDateTime <DateTime>] [-Severity <String>]
- [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementMonitoringAlertRecord -BodyParameter <IMicrosoftGraphDeviceManagementAlertRecord>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to alertRecords for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -108,6 +110,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -191,21 +208,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResolvedDateTime
 The date and time when the alert event was resolved.
 The Timestamp type represents date and time information using ISO 8601 format.
@@ -260,21 +262,6 @@ alertStatusType
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named

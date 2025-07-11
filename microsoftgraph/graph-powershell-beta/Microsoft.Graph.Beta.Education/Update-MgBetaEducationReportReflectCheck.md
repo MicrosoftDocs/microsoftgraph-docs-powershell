@@ -18,14 +18,14 @@ Update-MgBetaEducationReportReflectCheck -ReflectCheckInResponseId <String> [-Re
  [-AdditionalProperties <Hashtable>] [-CheckInId <String>] [-CheckInTitle <String>] [-ClassId <String>]
  [-CreatedDateTime <DateTime>] [-CreatorId <String>] [-Id <String>] [-IsClosed] [-ResponderId <String>]
  [-ResponseEmotion <String>] [-ResponseFeedback <String>] [-SubmitDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEducationReportReflectCheck -ReflectCheckInResponseId <String>
  -BodyParameter <IMicrosoftGraphReflectCheckInResponse> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,18 +34,20 @@ Update-MgBetaEducationReportReflectCheck -InputObject <IEducationIdentity> [-Res
  [-AdditionalProperties <Hashtable>] [-CheckInId <String>] [-CheckInTitle <String>] [-ClassId <String>]
  [-CreatedDateTime <DateTime>] [-CreatorId <String>] [-Id <String>] [-IsClosed] [-ResponderId <String>]
  [-ResponseEmotion <String>] [-ResponseFeedback <String>] [-SubmitDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationReportReflectCheck -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphReflectCheckInResponse> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property reflectCheckInResponses in education
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -117,6 +119,21 @@ ID of the class associated with the Reflect check-in.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -219,21 +236,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ReflectCheckInResponseId
 The unique identifier of reflectCheckInResponse
 
@@ -318,21 +320,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
