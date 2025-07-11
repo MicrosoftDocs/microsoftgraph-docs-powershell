@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroup
 
 ## SYNOPSIS
-References the group that is the scope of the membership or ownership assignment through PIM for groups.
+References the group that is the scope of the membership or ownership assignment through PIM for Groups.
 Supports $expand.
 
 > [!NOTE]
@@ -21,22 +21,20 @@ Supports $expand.
 Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroup
  -PrivilegedAccessGroupAssignmentScheduleInstanceId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroup
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-References the group that is the scope of the membership or ownership assignment through PIM for groups.
+References the group that is the scope of the membership or ownership assignment through PIM for Groups.
 Supports $expand.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -95,6 +93,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

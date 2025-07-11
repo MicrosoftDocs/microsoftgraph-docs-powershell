@@ -19,7 +19,7 @@ Retrieve the properties and relationships of a servicePrincipal object.
 ### Get (Default)
 ```
 Get-MgServicePrincipalByAppId -AppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Get-MgServicePrincipalByAppId -AppId <String> [-ExpandProperty <String[]>] [-Pro
 ```
 Get-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,8 +40,6 @@ Retrieve the properties and relationships of a servicePrincipal object.
 | Delegated (work or school account) | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -103,6 +101,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

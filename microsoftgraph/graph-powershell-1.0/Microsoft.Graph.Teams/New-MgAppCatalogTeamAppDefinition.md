@@ -24,7 +24,7 @@ New-MgAppCatalogTeamAppDefinition -TeamsAppId <String> [-ResponseHeadersVariable
  [-AdditionalProperties <Hashtable>] [-Authorization <IMicrosoftGraphTeamsAppAuthorization>] [-Bot <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-PublishingState <String>] [-ShortDescription <String>]
- [-TeamsAppId1 <String>] [-Version <String>] [-Headers <IDictionary>]
+ [-TeamsAppId1 <String>] [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,14 +35,14 @@ New-MgAppCatalogTeamAppDefinition [-TeamsAppId <String>] -InputObject <ITeamsIde
  [-Authorization <IMicrosoftGraphTeamsAppAuthorization>] [-Bot <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-PublishingState <String>] [-ShortDescription <String>]
- [-Version <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgAppCatalogTeamAppDefinition -TeamsAppId <String> -BodyParameter <IMicrosoftGraphTeamsAppDefinition>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -50,7 +50,7 @@ New-MgAppCatalogTeamAppDefinition -TeamsAppId <String> -BodyParameter <IMicrosof
 ```
 New-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphTeamsAppDefinition> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -152,21 +152,6 @@ teamworkBot
 Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -283,6 +268,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PublishingState
 teamsAppPublishingState
 
@@ -385,6 +385,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -455,7 +470,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Description <String>]`: Verbose description of the application.
   - `[DisplayName <String>]`: The name of the app provided by the app developer.
-  - `[LastModifiedDateTime <DateTime?>]`:
+  - `[LastModifiedDateTime <DateTime?>]`: 
   - `[PublishingState <String>]`: teamsAppPublishingState
   - `[ShortDescription <String>]`: Short description of the application.
   - `[TeamsAppId <String>]`: The ID from the Teams app manifest.

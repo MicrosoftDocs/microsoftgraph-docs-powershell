@@ -19,14 +19,14 @@ Get the number of the resource
 ```
 Get-MgBetaContactDirectReportCount -OrgContactId <String> [-Filter <String>] [-Search <String>]
  -ConsistencyLevel <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaContactDirectReportCount -InputObject <IIdentityDirectoryManagementIdentity> [-Filter <String>]
  [-Search <String>] -ConsistencyLevel <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,8 +39,6 @@ Get the number of the resource
 | Delegated (work or school account) | OrgContact.Read.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrgContact.Read.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -115,6 +113,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -208,11 +221,14 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
   - `[PendingExternalUserProfileId <String>]`: The unique identifier of pendingExternalUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
+  - `[ProfilePropertySettingId <String>]`: The unique identifier of profilePropertySetting
+  - `[ProfileSourceId <String>]`: The unique identifier of profileSource
   - `[RecommendationId <String>]`: The unique identifier of recommendation
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
+  - `[SourceId <String>]`: Alternate key of profileSource
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
   - `[TenantId <String>]`: Usage: tenantId='{tenantId}'
   - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference

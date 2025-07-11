@@ -19,22 +19,20 @@ The allowed format is .css format only and not larger than 25 KB.
 ### Get (Default)
 ```
 Get-MgBetaOrganizationBrandingCustomCss -OrganizationId <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaOrganizationBrandingCustomCss -InputObject <IIdentityDirectoryManagementIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -114,6 +112,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -186,11 +199,14 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
   - `[PendingExternalUserProfileId <String>]`: The unique identifier of pendingExternalUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
+  - `[ProfilePropertySettingId <String>]`: The unique identifier of profilePropertySetting
+  - `[ProfileSourceId <String>]`: The unique identifier of profileSource
   - `[RecommendationId <String>]`: The unique identifier of recommendation
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
+  - `[SourceId <String>]`: Alternate key of profileSource
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
   - `[TenantId <String>]`: Usage: tenantId='{tenantId}'
   - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference

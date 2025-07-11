@@ -26,14 +26,14 @@ Find-MgUserMeetingTime -UserId <String> [-ResponseHeadersVariable <String>] [-Ad
  [-LocationConstraint <IMicrosoftGraphLocationConstraint>] [-MaxCandidates <Int32>]
  [-MeetingDuration <TimeSpan>] [-MinimumAttendeePercentage <Double>] [-ReturnSuggestionReasons]
  [-TimeConstraint <IMicrosoftGraphTimeConstraint>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Find
 ```
 Find-MgUserMeetingTime -UserId <String>
  -BodyParameter <IComponents1H459T5RequestbodiesFindmeetingtimesrequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,14 +44,14 @@ Find-MgUserMeetingTime -InputObject <IUsersActionsIdentity> [-ResponseHeadersVar
  [-LocationConstraint <IMicrosoftGraphLocationConstraint>] [-MaxCandidates <Int32>]
  [-MeetingDuration <TimeSpan>] [-MinimumAttendeePercentage <Double>] [-ReturnSuggestionReasons]
  [-TimeConstraint <IMicrosoftGraphTimeConstraint>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### FindViaIdentity
 ```
 Find-MgUserMeetingTime -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponents1H459T5RequestbodiesFindmeetingtimesrequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -168,21 +168,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -290,6 +275,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -351,6 +351,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -393,13 +408,13 @@ ATTENDEES `<IMicrosoftGraphAttendeeBase- `[]`>`: .
 
 BODYPARAMETER `<IComponents1H459T5RequestbodiesFindmeetingtimesrequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Attendees <IMicrosoftGraphAttendeeBase- `[]`>]`:
+  - `[Attendees <IMicrosoftGraphAttendeeBase- `[]`>]`: 
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Address <String>]`: The email address of the person or entity.
       - `[Name <String>]`: The display name of the person or entity.
     - `[Type <String>]`: attendeeType
-  - `[IsOrganizerOptional <Boolean?>]`:
+  - `[IsOrganizerOptional <Boolean?>]`: 
   - `[LocationConstraint <IMicrosoftGraphLocationConstraint>]`: locationConstraint
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsRequired <Boolean?>]`: The client requests the service to include in the response a meeting location for the meeting.
@@ -432,14 +447,14 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 If set to false and the specified resource is busy, findMeetingTimes returns the resource best ranked in the user's cache without checking if it's free.
 Default is true.
     - `[SuggestLocation <Boolean?>]`: The client requests the service to suggest one or more meeting locations.
-  - `[MaxCandidates <Int32?>]`:
-  - `[MeetingDuration <TimeSpan?>]`:
-  - `[MinimumAttendeePercentage <Double?>]`:
-  - `[ReturnSuggestionReasons <Boolean?>]`:
+  - `[MaxCandidates <Int32?>]`: 
+  - `[MeetingDuration <TimeSpan?>]`: 
+  - `[MinimumAttendeePercentage <Double?>]`: 
+  - `[ReturnSuggestionReasons <Boolean?>]`: 
   - `[TimeConstraint <IMicrosoftGraphTimeConstraint>]`: timeConstraint
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ActivityDomain <String>]`: activityDomain
-    - `[TimeSlots <IMicrosoftGraphTimeSlot- `[]`>]`:
+    - `[TimeSlots <IMicrosoftGraphTimeSlot- `[]`>]`: 
       - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
@@ -486,7 +501,7 @@ Default is true.
 TIMECONSTRAINT `<IMicrosoftGraphTimeConstraint>`: timeConstraint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActivityDomain <String>]`: activityDomain
-  - `[TimeSlots <IMicrosoftGraphTimeSlot- `[]`>]`:
+  - `[TimeSlots <IMicrosoftGraphTimeSlot- `[]`>]`: 
     - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).

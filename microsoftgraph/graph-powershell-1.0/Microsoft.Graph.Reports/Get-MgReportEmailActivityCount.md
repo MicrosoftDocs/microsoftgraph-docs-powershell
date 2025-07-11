@@ -19,13 +19,13 @@ Enables you to understand the trends of email activity (like how many were sent,
 ### Get (Default)
 ```
 Get-MgReportEmailActivityCount -Period <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportEmailActivityCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Enables you to understand the trends of email activity (like how many were sent,
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportEmailActivityCount -Period $periodId
+Get-MgReportEmailActivityCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportEmailActivityCount Cmdlet.
@@ -117,6 +117,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

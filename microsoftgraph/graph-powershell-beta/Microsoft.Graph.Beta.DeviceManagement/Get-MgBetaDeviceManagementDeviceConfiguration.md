@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Invoke action windowsPrivacyAccessControls
+The device configurations.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfiguration?view=graph-powershell-1.0)
@@ -20,78 +20,27 @@ Invoke action windowsPrivacyAccessControls
 Get-MgBetaDeviceManagementDeviceConfiguration [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaDeviceManagementDeviceConfiguration -DeviceConfigurationId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AccessExpanded
-```
-Get-MgBetaDeviceManagementDeviceConfiguration -DeviceConfigurationId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-WindowsPrivacyAccessControls <IMicrosoftGraphWindowsPrivacyDataAccessControlItem[]>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Access
-```
-Get-MgBetaDeviceManagementDeviceConfiguration -DeviceConfigurationId <String>
- -BodyParameter <IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AccessViaIdentityExpanded
-```
-Get-MgBetaDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-WindowsPrivacyAccessControls <IMicrosoftGraphWindowsPrivacyDataAccessControlItem[]>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### AccessViaIdentity
-```
-Get-MgBetaDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action windowsPrivacyAccessControls
-
-## EXAMPLES
+The device configurations.
 
 ## PARAMETERS
-
-### -AdditionalProperties
-Additional Parameters
-
-```yaml
-Type: Hashtable
-Parameter Sets: AccessExpanded, AccessViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -All
 List all pages.
@@ -104,37 +53,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Access, AccessViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -160,7 +78,7 @@ The unique identifier of deviceConfiguration
 
 ```yaml
 Type: String
-Parameter Sets: Get, AccessExpanded, Access
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -175,7 +93,7 @@ Expand related entities
 
 ```yaml
 Type: String[]
-Parameter Sets: List, Get, GetViaIdentity
+Parameter Sets: (All)
 Aliases: Expand
 
 Required: False
@@ -221,7 +139,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IDeviceManagementIdentity
-Parameter Sets: GetViaIdentity, AccessViaIdentityExpanded, AccessViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -246,17 +164,17 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -ProgressAction
+{{ Fill ProgressAction Description }}
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: AccessExpanded, Access, AccessViaIdentityExpanded, AccessViaIdentity
-Aliases:
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -266,7 +184,7 @@ Select properties to be returned
 
 ```yaml
 Type: String[]
-Parameter Sets: List, Get, GetViaIdentity
+Parameter Sets: (All)
 Aliases: Select
 
 Required: False
@@ -306,21 +224,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -351,34 +254,17 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -Skip
+Skip the first n items
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsPrivacyAccessControls
-
-To construct, see NOTES section for WINDOWSPRIVACYACCESSCONTROLS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphWindowsPrivacyDataAccessControlItem[]
-Parameter Sets: AccessExpanded, AccessViaIdentityExpanded
+Type: Int32
+Parameter Sets: List
 Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -389,29 +275,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.Beta.PowerShell.Models.IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema
 ### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfiguration
-### System.Boolean
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
-
-BODYPARAMETER `<IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[WindowsPrivacyAccessControls <IMicrosoftGraphWindowsPrivacyDataAccessControlItem- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-    - `[AccessLevel <WindowsPrivacyDataAccessLevel?>]`: Determine the access level to specific Windows privacy data category.
-    - `[AppDisplayName <String>]`: The Package Family Name of a Windows app.
-When set, the access level applies to the specified application.
-    - `[AppPackageFamilyName <String>]`: The Package Family Name of a Windows app.
-When set, the access level applies to the specified application.
-    - `[DataCategory <WindowsPrivacyDataCategory?>]`: Windows privacy data category specifier for privacy data access.
 
 INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
@@ -521,16 +393,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
-
-WINDOWSPRIVACYACCESSCONTROLS `<IMicrosoftGraphWindowsPrivacyDataAccessControlItem- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-  - `[AccessLevel <WindowsPrivacyDataAccessLevel?>]`: Determine the access level to specific Windows privacy data category.
-  - `[AppDisplayName <String>]`: The Package Family Name of a Windows app.
-When set, the access level applies to the specified application.
-  - `[AppPackageFamilyName <String>]`: The Package Family Name of a Windows app.
-When set, the access level applies to the specified application.
-  - `[DataCategory <WindowsPrivacyDataCategory?>]`: Windows privacy data category specifier for privacy data access.
 
 ## RELATED LINKS
 

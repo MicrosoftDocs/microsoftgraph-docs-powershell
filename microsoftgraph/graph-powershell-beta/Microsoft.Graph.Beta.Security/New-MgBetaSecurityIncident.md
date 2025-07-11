@@ -25,19 +25,17 @@ New-MgBetaSecurityIncident [-ResponseHeadersVariable <String>] [-AdditionalPrope
  [-RecommendedActions <String>] [-RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>]
  [-RedirectIncidentId <String>] [-ResolvingComment <String>] [-Severity <String>] [-Status <String>]
  [-Summary <String>] [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityIncident -BodyParameter <IMicrosoftGraphSecurityIncident> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to incidents for security
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -128,21 +126,6 @@ To construct, see NOTES section for COMMENTS properties and create a hash table.
 Type: IMicrosoftGraphSecurityAlertComment[]
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -294,6 +277,21 @@ Time when the incident was last updated.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -456,6 +454,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -506,6 +519,7 @@ Aligned with the MITRE ATT&CK framework.
     - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
     - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
   - `[CreatedDateTime <DateTime?>]`: Time when Microsoft 365 Defender created the alert.
+  - `[CustomDetails <IMicrosoftGraphSecurityDictionary>]`: dictionary
   - `[Description <String>]`: String value describing each alert.
   - `[DetectionSource <String>]`: detectionSource
   - `[DetectorId <String>]`: The ID of the detector that triggered the alert.
@@ -562,6 +576,7 @@ Aligned with the MITRE ATT&CK framework.
       - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
       - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
     - `[CreatedDateTime <DateTime?>]`: Time when Microsoft 365 Defender created the alert.
+    - `[CustomDetails <IMicrosoftGraphSecurityDictionary>]`: dictionary
     - `[Description <String>]`: String value describing each alert.
     - `[DetectionSource <String>]`: detectionSource
     - `[DetectorId <String>]`: The ID of the detector that triggered the alert.
