@@ -62,11 +62,11 @@ Update the navigation property webAccounts in users
 | Application | User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	webUrl = "https://github.com/innocenty.popov"
@@ -74,6 +74,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileWebAccount -UserId $userId -WebAccountId $webAccountId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfileWebAccount Cmdlet.
+
 
 ## PARAMETERS
 

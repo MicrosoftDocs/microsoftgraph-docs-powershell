@@ -53,20 +53,28 @@ Since the device resource supports extensions, you can also use the GET operatio
 | Application | Device.Read.All, Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get a device
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDevice -DeviceId $deviceId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
+This example will get a device
 
-Get-MgBetaDevice -DeviceId $deviceId -Property "id,extensionAttributes"
+### Example 2: Get a device and return only its id and extensionAttributes properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDevice -DeviceId $deviceId -Property "id,extensionAttributes" 
+
+```
+This example will get a device and return only its id and extensionattributes properties
+
 
 ## PARAMETERS
 

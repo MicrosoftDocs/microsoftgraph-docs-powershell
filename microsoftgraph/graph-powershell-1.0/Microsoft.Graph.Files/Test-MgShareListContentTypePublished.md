@@ -32,18 +32,6 @@ Test-MgShareListContentTypePublished -InputObject <IFilesIdentity> [-ResponseHea
 ## DESCRIPTION
 Check the publishing status of a contentType in a content type hub site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -184,6 +172,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgsharelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgsharelistcontenttypepublished)
 
 [https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
+
 
 
 

@@ -41,11 +41,11 @@ New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-```
 
 $params = @{
 	displayName = "test-canary-02"
@@ -61,6 +61,10 @@ $params = @{
 }
 
 New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection Cmdlet.
+
 
 ## PARAMETERS
 

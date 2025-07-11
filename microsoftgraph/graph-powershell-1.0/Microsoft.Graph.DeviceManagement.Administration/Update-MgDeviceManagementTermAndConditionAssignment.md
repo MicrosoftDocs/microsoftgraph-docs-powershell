@@ -58,11 +58,11 @@ Update the properties of a termsAndConditionsAssignment object.
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.termsAndConditionsAssignment"
@@ -73,6 +73,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementTermAndConditionAssignment -TermsAndConditionsId $termsAndConditionsId -TermsAndConditionsAssignmentId $termsAndConditionsAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementTermAndConditionAssignment Cmdlet.
+
 
 ## PARAMETERS
 

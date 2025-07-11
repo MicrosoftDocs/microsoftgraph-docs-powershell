@@ -43,11 +43,11 @@ Create a new telecomExpenseManagementPartner object.
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.telecomExpenseManagementPartner"
@@ -55,10 +55,14 @@ $params = @{
 	url = "Url value"
 	appAuthorized = $true
 	enabled = $true
-	lastConnectionDateTime = \[System.DateTime\]::Parse("2016-12-31T23:58:36.6670033-08:00")
+	lastConnectionDateTime = [System.DateTime]::Parse("2016-12-31T23:58:36.6670033-08:00")
 }
 
 New-MgDeviceManagementTelecomExpenseManagementPartner -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementTelecomExpenseManagementPartner Cmdlet.
+
 
 ## PARAMETERS
 

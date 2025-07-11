@@ -53,11 +53,11 @@ Update one or more tenant-level settings for SharePoint and OneDrive.
 | Application | SharePointTenantSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	deletedUserPersonalSiteRetentionPeriodInDays = 365
@@ -73,6 +73,10 @@ personalSiteDefaultStorageLimitInMB = 120000
 }
 
 Update-MgAdminSharepointSetting -BodyParameter $params
+
+```
+This example shows how to use the Update-MgAdminSharepointSetting Cmdlet.
+
 
 ## PARAMETERS
 

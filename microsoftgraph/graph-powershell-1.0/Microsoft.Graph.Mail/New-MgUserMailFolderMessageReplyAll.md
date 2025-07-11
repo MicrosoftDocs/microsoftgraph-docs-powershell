@@ -68,18 +68,6 @@ Alternatively, reply-all to a message in a single action.
 | Delegated (personal Microsoft account) | Mail.ReadWrite,  |
 | Application | Mail.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -508,6 +496,7 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessagereplyall](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessagereplyall)
 
 [https://learn.microsoft.com/graph/api/message-createreplyall?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-createreplyall?view=graph-rest-1.0)
+
 
 
 

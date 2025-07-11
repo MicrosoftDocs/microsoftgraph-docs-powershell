@@ -45,11 +45,11 @@ Update the properties of an authorizationPolicy object.
 | Application | Policy.ReadWrite.Authorization,  |
 
 ## EXAMPLES
+### Example 1: Update or set Guest user access level for the tenant
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	allowEmailVerifiedUsersToJoinOrganization = $false
@@ -57,10 +57,14 @@ $params = @{
 
 Update-MgPolicyAuthorizationPolicy -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will update or set guest user access level for the tenant
+
+### Example 2: Block MSOL PowerShell in tenant
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	blockMsolPowerShell = $true
@@ -68,10 +72,14 @@ $params = @{
 
 Update-MgPolicyAuthorizationPolicy -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will block msol powershell in tenant
+
+### Example 3: Disable default user role's permission to create applications
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	defaultUserRolePermissions = @{
@@ -81,10 +89,14 @@ $params = @{
 
 Update-MgPolicyAuthorizationPolicy -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example will disable default user role's permission to create applications
+
+### Example 4: Enable default user role to use Self-Serve Password Reset feature
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	allowedToUseSSPR = $true
@@ -92,10 +104,14 @@ $params = @{
 
 Update-MgPolicyAuthorizationPolicy -BodyParameter $params
 
-### EXAMPLE 5
 ```
+This example will enable default user role to use self-serve password reset feature
+
+### Example 5: Disable user consent to apps for default user role
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	defaultUserRolePermissions = @{
@@ -106,10 +122,14 @@ $params = @{
 
 Update-MgPolicyAuthorizationPolicy -BodyParameter $params
 
-### EXAMPLE 6
 ```
+This example will disable user consent to apps for default user role
+
+### Example 6: Enable user consent to apps, subject to app consent policy
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	defaultUserRolePermissions = @{
@@ -120,6 +140,10 @@ $params = @{
 }
 
 Update-MgPolicyAuthorizationPolicy -BodyParameter $params
+
+```
+This example will enable user consent to apps, subject to app consent policy
+
 
 ## PARAMETERS
 

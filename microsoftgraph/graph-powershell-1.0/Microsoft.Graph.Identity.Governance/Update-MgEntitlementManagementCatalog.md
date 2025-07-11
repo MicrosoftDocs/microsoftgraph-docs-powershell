@@ -64,17 +64,21 @@ Update an existing accessPackageCatalog object to change one or more of its prop
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Catalog One"
 }
 
 Update-MgEntitlementManagementCatalog -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgEntitlementManagementCatalog Cmdlet.
+
 
 ## PARAMETERS
 

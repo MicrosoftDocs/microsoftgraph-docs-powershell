@@ -59,17 +59,21 @@ For example, change an alert's state from active to resolved.
 | Application | HealthMonitoringAlert.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 $params = @{
 	state = "resolved"
 }
 
 Update-MgBetaReportHealthMonitoringAlert -AlertId $alertId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaReportHealthMonitoringAlert Cmdlet.
+
 
 ## PARAMETERS
 

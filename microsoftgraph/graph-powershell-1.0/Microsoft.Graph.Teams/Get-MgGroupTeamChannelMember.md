@@ -62,18 +62,6 @@ Get-MgGroupTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -389,6 +377,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannelmember)
+
+
 
 
 

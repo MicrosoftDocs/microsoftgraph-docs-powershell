@@ -55,17 +55,21 @@ Update the properties of a sourceSystemDefinition object.
 | Application | IndustryData-SourceSystem.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	vendor = "LMS Vendor"
 }
 
 Update-MgBetaExternalIndustryDataSourceSystem -SourceSystemDefinitionId $sourceSystemDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaExternalIndustryDataSourceSystem Cmdlet.
+
 
 ## PARAMETERS
 

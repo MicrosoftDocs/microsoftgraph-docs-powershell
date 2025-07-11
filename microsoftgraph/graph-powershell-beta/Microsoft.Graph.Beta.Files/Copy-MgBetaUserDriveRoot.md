@@ -57,18 +57,6 @@ You can optionally copy exclusively the child items, specify a new parent folder
 Once the request is accepted, the operation is queued and processed asynchronously.
 Use the monitor URL to track progress until the operation completes.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -397,6 +385,7 @@ For OneDrive, this property isn't populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetauserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetauserdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)
+
 
 
 

@@ -58,11 +58,11 @@ For more information about how to handle operations, see commsOperation
 | Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	clientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
@@ -79,6 +79,10 @@ $params = @{
 }
 
 Invoke-MgPlayCommunicationCallPrompt -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgPlayCommunicationCallPrompt Cmdlet.
+
 
 ## PARAMETERS
 
