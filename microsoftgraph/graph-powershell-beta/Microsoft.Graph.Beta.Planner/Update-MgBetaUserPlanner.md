@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -All
-.
+
 To construct, see NOTES section for ALL properties and create a hash table.
 
 ```yaml
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -Plans
-.
+
 To construct, see NOTES section for PLANS properties and create a hash table.
 
 ```yaml

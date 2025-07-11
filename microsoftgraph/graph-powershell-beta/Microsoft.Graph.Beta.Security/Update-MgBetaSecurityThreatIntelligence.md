@@ -253,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntelligenceProfileIndicators
-.
+
 To construct, see NOTES section for INTELLIGENCEPROFILEINDICATORS properties and create a hash table.
 
 ```yaml

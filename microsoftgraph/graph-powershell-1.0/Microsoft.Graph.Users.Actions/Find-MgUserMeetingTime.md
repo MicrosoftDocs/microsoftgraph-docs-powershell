@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Attendees
-.
+
 To construct, see NOTES section for ATTENDEES properties and create a hash table.
 
 ```yaml
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsOrganizerOptional
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCandidates
-.
+
 
 ```yaml
 Type: Int32
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -MeetingDuration
-.
+
 
 ```yaml
 Type: TimeSpan
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimumAttendeePercentage
-.
+
 
 ```yaml
 Type: Double
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnSuggestionReasons
-.
+
 
 ```yaml
 Type: SwitchParameter

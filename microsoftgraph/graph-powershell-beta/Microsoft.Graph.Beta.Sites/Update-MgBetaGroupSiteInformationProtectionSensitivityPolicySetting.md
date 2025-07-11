@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DowngradeSensitivityRequiresJustification
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -HelpWebUrl
-.
+
 
 ```yaml
 Type: String
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsMandatory
-.
+
 
 ```yaml
 Type: SwitchParameter

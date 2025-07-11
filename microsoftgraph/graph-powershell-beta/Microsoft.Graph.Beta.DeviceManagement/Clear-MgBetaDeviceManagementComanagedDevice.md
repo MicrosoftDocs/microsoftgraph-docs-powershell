@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeepEnrollmentData
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeepUserData
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -MacOSUnlockCode
-.
+
 
 ```yaml
 Type: String
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -PersistEsimDataPlan
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseProtectedWipe
-.
+
 
 ```yaml
 Type: SwitchParameter

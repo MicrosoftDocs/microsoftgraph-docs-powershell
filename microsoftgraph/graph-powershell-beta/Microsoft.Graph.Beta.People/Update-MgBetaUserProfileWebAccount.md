@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsSearchable
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -376,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThumbnailUrl
-.
+
 
 ```yaml
 Type: String
