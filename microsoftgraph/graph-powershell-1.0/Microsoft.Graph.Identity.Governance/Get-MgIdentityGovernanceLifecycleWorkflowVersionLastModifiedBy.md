@@ -19,7 +19,7 @@ The unique identifier of the Microsoft Entra identity that last modified the wor
 ```
 Get-MgIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy -WorkflowId <String>
  -WorkflowVersionNumber <Int32> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -27,13 +27,11 @@ Get-MgIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy -WorkflowId <Stri
 ```
 Get-MgIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy -InputObject <IIdentityGovernanceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The unique identifier of the Microsoft Entra identity that last modified the workflow.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -80,6 +78,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

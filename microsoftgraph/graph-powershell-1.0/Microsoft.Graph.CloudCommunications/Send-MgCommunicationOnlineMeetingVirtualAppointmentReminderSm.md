@@ -22,7 +22,7 @@ This feature requires Teams premium and attendees must have a valid United State
 Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm -OnlineMeetingId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Attendees <IMicrosoftGraphAttendeeNotificationInfo[]>] [-RemindBeforeTimeInMinutesType <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm -OnlineMeetingId <
 ```
 Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm -OnlineMeetingId <String>
  -BodyParameter <IPaths1Hwkb04CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentremindersmsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm -OnlineMeetingId <
 Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Attendees <IMicrosoftGraphAttendeeNotificationInfo[]>] [-RemindBeforeTimeInMinutesType <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -47,15 +47,13 @@ Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm -InputObject <IClo
 ```
 Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths1Hwkb04CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentremindersmsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Send an SMS reminder to external attendees for a Teams virtual appointment.
 This feature requires Teams premium and attendees must have a valid United States phone number to receive SMS notifications.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -103,21 +101,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -182,6 +165,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RemindBeforeTimeInMinutesType
 remindBeforeTimeInMinutesType
 
@@ -204,6 +202,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -254,7 +267,7 @@ Required.
 
 BODYPARAMETER `<IPaths1Hwkb04CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentremindersmsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Attendees <IMicrosoftGraphAttendeeNotificationInfo- `[]`>]`:
+  - `[Attendees <IMicrosoftGraphAttendeeNotificationInfo- `[]`>]`: 
     - `[PhoneNumber <String>]`: The phone number of the external attendee.
 Required.
     - `[TimeZone <String>]`: The time zone of the external attendee.

@@ -20,14 +20,14 @@ To use a sharing URL with this API, your app needs to transform the URL into a s
 ### Get (Default)
 ```
 Get-MgShareDriveItem -SharedDriveItemId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgShareDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -61,7 +61,7 @@ This example shows how to use the Get-MgShareDriveItem Cmdlet.
 
 Import-Module Microsoft.Graph.Files
 
-Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
+Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children" 
 
 ```
 This example shows how to use the Get-MgShareDriveItem Cmdlet.
@@ -112,6 +112,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

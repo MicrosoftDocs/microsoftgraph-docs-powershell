@@ -18,7 +18,7 @@ The ediscoveryCaseMember can be one of two types: a user or a role group.
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-RecipientType <String>]
- [-SmtpAddress <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-SmtpAddress <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -26,14 +26,14 @@ New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId <String> [-Response
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId <String>
  -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseMember> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-RecipientType <String>]
- [-SmtpAddress <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-SmtpAddress <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ New-MgBetaSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity> [-Re
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseMember> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,8 +55,6 @@ The ediscoveryCaseMember can be one of two types: a user or a role group.
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -88,21 +86,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -184,6 +167,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RecipientType
 recipientType
 
@@ -222,6 +220,21 @@ Allowed only for case members of type user.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

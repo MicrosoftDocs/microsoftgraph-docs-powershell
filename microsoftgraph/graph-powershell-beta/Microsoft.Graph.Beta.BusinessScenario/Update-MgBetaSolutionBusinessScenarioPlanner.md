@@ -18,7 +18,7 @@ Update-MgBetaSolutionBusinessScenarioPlanner -BusinessScenarioId <String> [-Resp
  [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-PlanConfiguration <IMicrosoftGraphPlannerPlanConfiguration>]
  [-TaskConfiguration <IMicrosoftGraphPlannerTaskConfiguration>]
- [-Tasks <IMicrosoftGraphBusinessScenarioTask[]>] [-Headers <IDictionary>]
+ [-Tasks <IMicrosoftGraphBusinessScenarioTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Update-MgBetaSolutionBusinessScenarioPlanner -BusinessScenarioId <String> [-Resp
 ```
 Update-MgBetaSolutionBusinessScenarioPlanner -BusinessScenarioId <String>
  -BodyParameter <IMicrosoftGraphBusinessScenarioPlanner> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,7 +35,7 @@ Update-MgBetaSolutionBusinessScenarioPlanner -InputObject <IBusinessScenarioIden
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-PlanConfiguration <IMicrosoftGraphPlannerPlanConfiguration>]
  [-TaskConfiguration <IMicrosoftGraphPlannerTaskConfiguration>]
- [-Tasks <IMicrosoftGraphBusinessScenarioTask[]>] [-Headers <IDictionary>]
+ [-Tasks <IMicrosoftGraphBusinessScenarioTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,13 +43,11 @@ Update-MgBetaSolutionBusinessScenarioPlanner -InputObject <IBusinessScenarioIden
 ```
 Update-MgBetaSolutionBusinessScenarioPlanner -InputObject <IBusinessScenarioIdentity>
  -BodyParameter <IMicrosoftGraphBusinessScenarioPlanner> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property planner in solutions
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -93,21 +91,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -177,6 +160,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -216,6 +214,21 @@ To construct, see NOTES section for TASKS properties and create a hash table.
 Type: IMicrosoftGraphBusinessScenarioTask[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

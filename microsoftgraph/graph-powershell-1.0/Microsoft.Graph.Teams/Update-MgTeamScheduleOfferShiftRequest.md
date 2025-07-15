@@ -22,14 +22,14 @@ Update-MgTeamScheduleOfferShiftRequest -OfferShiftRequestId <String> -TeamId <St
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ManagerActionMessage <String>] [-RecipientActionMessage <String>] [-RecipientUserId <String>]
  [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgTeamScheduleOfferShiftRequest -OfferShiftRequestId <String> -TeamId <String>
  -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,7 +38,7 @@ Update-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-ResponseH
  [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
  [-RecipientActionMessage <String>] [-RecipientUserId <String>] [-SenderMessage <String>]
- [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>]
+ [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,13 +46,11 @@ Update-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-ResponseH
 ```
 Update-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property offerShiftRequests in teams
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -99,21 +97,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -226,6 +209,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RecipientActionMessage
 Custom message sent by recipient of the offer shift request.
 
@@ -331,6 +329,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -367,8 +380,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IMicrosoftGraphOfferShiftRequest>`: offerShiftRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionMessage <String>]`:
-  - `[SenderMessage <String>]`:
+  - `[ManagerActionMessage <String>]`: 
+  - `[SenderMessage <String>]`: 
   - `[State <String>]`: scheduleChangeState
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

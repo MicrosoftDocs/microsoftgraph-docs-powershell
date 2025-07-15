@@ -17,7 +17,7 @@ Update the navigation property mobileAppIntentAndStates in users
 Update-MgBetaUserMobileAppIntentAndState -MobileAppIntentAndStateId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-ManagedDeviceIdentifier <String>] [-MobileAppList <IMicrosoftGraphMobileAppIntentAndStateDetail[]>]
- [-UserId1 <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-UserId1 <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,7 +25,7 @@ Update-MgBetaUserMobileAppIntentAndState -MobileAppIntentAndStateId <String> -Us
 ```
 Update-MgBetaUserMobileAppIntentAndState -MobileAppIntentAndStateId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphMobileAppIntentAndState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -33,14 +33,14 @@ Update-MgBetaUserMobileAppIntentAndState -MobileAppIntentAndStateId <String> -Us
 Update-MgBetaUserMobileAppIntentAndState [-UserId <String>] -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-ManagedDeviceIdentifier <String>] [-MobileAppList <IMicrosoftGraphMobileAppIntentAndStateDetail[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserMobileAppIntentAndState -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphMobileAppIntentAndState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,8 +53,6 @@ Update the navigation property mobileAppIntentAndStates in users
 | Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -86,21 +84,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -197,6 +180,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -246,6 +244,21 @@ Identifier for the user that tried to enroll the device.
 Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

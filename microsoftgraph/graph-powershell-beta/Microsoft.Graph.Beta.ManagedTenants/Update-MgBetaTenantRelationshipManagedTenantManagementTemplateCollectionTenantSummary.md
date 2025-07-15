@@ -23,7 +23,7 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSu
  [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
  [-ManagementTemplateCollectionDisplayName <String>] [-ManagementTemplateCollectionId <String>]
  [-RegressedStepsCount <Int32>] [-RegressedUsersCount <Int32>] [-TenantId <String>]
- [-UnlicensedUsersCount <Int32>] [-Headers <IDictionary>] [-WhatIf]
+ [-UnlicensedUsersCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSu
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
  -ManagementTemplateCollectionTenantSummaryId <String>
  -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,7 +47,7 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSu
  [-LastActionDateTime <DateTime>] [-ManagementTemplateCollectionDisplayName <String>]
  [-ManagementTemplateCollectionId <String>] [-RegressedStepsCount <Int32>] [-RegressedUsersCount <Int32>]
  [-TenantId <String>] [-UnlicensedUsersCount <Int32>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -55,14 +55,12 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSu
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
  -InputObject <IManagedTenantsIdentity>
  -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property managementTemplateCollectionTenantSummaries in tenantRelationships
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -123,21 +121,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -399,6 +382,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RegressedStepsCount
 
 
@@ -470,6 +468,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

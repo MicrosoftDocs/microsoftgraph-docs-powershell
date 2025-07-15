@@ -19,7 +19,7 @@ Specifying the ID in the request payload is optional.
 ```
 Update-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Keys <IMicrosoftGraphTrustFrameworkKey[]>]
- [-KeysV2 <IMicrosoftGraphTrustFrameworkKeyV2[]>] [-Headers <IDictionary>]
+ [-KeysV2 <IMicrosoftGraphTrustFrameworkKeyV2[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,14 +27,14 @@ Update-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId <String> [-ResponseHea
 ```
 Update-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId <String>
  -BodyParameter <IMicrosoftGraphTrustFrameworkKeySet> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Keys <IMicrosoftGraphTrustFrameworkKey[]>]
- [-KeysV2 <IMicrosoftGraphTrustFrameworkKeyV2[]>] [-Headers <IDictionary>]
+ [-KeysV2 <IMicrosoftGraphTrustFrameworkKeyV2[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ Update-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity> [-Resp
 ```
 Update-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphTrustFrameworkKeySet> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,8 +57,6 @@ Specifying the ID in the request payload is optional.
 | Delegated (work or school account) | TrustFrameworkKeySet.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TrustFrameworkKeySet.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -90,21 +88,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -187,6 +170,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -211,6 +209,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

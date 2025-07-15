@@ -17,7 +17,7 @@ Update the navigation property bucketTaskBoardFormat in teamwork
 Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskBoardFormat -ChannelId <String>
  -DeletedTeamId <String> -PlannerBucketId <String> -PlannerPlanId <String> -PlannerTaskId <String>
  -IfMatch <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-OrderHint <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-OrderHint <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskBoardFormat -Channel
 Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskBoardFormat -ChannelId <String>
  -DeletedTeamId <String> -PlannerBucketId <String> -PlannerPlanId <String> -PlannerTaskId <String>
  -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskBoardFormat -Channel
 ```
 Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskBoardFormat -InputObject <ITeamsIdentity>
  -IfMatch <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-OrderHint <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-OrderHint <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -42,14 +42,12 @@ Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskBoardFormat -InputOb
 ```
 Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskBoardFormat -InputObject <ITeamsIdentity>
  -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property bucketTaskBoardFormat in teamwork
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -93,21 +91,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -252,6 +235,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -259,6 +257,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

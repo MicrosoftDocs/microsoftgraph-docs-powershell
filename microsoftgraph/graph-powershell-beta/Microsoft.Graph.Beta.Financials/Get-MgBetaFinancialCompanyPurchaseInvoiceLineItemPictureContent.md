@@ -16,14 +16,14 @@ Get content for the navigation property picture from financials
 ```
 Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -CompanyId <String> -PictureId <String>
  -PurchaseInvoiceLineId <String> -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PassThru] [<CommonParameters>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -CompanyId <String> -PictureId <String>
  -PurchaseInvoiceLineId <String> -PurchaseInvoiceId <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -31,20 +31,18 @@ Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -CompanyId <Stri
 ```
 Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -InputObject <IFinancialsIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -InputObject <IFinancialsIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get content for the navigation property picture from financials
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -133,6 +131,21 @@ Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

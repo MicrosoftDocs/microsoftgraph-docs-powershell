@@ -22,16 +22,15 @@ The location provides a URL that will return a Add to review set operation.
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalDataOptions <String>] [-AdditionalProperties <Hashtable>]
- [-CloudAttachmentVersion <String>] [-DocumentVersion <String>] [-ItemsToInclude <String>]
  [-Search <IMicrosoftGraphSecurityEdiscoverySearch>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Add
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
  -BodyParameter <IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,16 +38,15 @@ Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId <String> 
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalDataOptions <String>] [-AdditionalProperties <Hashtable>]
- [-CloudAttachmentVersion <String>] [-DocumentVersion <String>] [-ItemsToInclude <String>]
  [-Search <IMicrosoftGraphSecurityEdiscoverySearch>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -InputObject <ISecurityIdentity>
  -BodyParameter <IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -133,51 +131,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -CloudAttachmentVersion
-cloudAttachmentVersion
-
-```yaml
-Type: String
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DocumentVersion
-documentVersion
-
-```yaml
-Type: String
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -EdiscoveryCaseId
 The unique identifier of ediscoveryCase
 
@@ -239,21 +192,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ItemsToInclude
-itemsToInclude
-
-```yaml
-Type: String
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PassThru
 Returns true when the command succeeds
 
@@ -265,6 +203,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -292,6 +245,21 @@ To construct, see NOTES section for SEARCH properties and create a hash table.
 Type: IMicrosoftGraphSecurityEdiscoverySearch
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -336,12 +304,9 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdditionalDataOptions <String>]`: additionalDataOptions
-  - `[CloudAttachmentVersion <String>]`: cloudAttachmentVersion
-  - `[DocumentVersion <String>]`: documentVersion
-  - `[ItemsToInclude <String>]`: itemsToInclude
   - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContentQuery <String>]`:
+    - `[ContentQuery <String>]`: 
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -352,11 +317,11 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[CreatedDateTime <DateTime?>]`:
-    - `[Description <String>]`:
-    - `[DisplayName <String>]`:
+    - `[CreatedDateTime <DateTime?>]`: 
+    - `[Description <String>]`: 
+    - `[DisplayName <String>]`: 
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`:
+    - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation>]`: ediscoveryAddToReviewSetOperation
@@ -374,26 +339,22 @@ Read-only.
       - `[Status <String>]`: caseOperationStatus
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AdditionalDataOptions <String>]`: additionalDataOptions
-      - `[CloudAttachmentVersion <String>]`: cloudAttachmentVersion
-      - `[DocumentVersion <String>]`: documentVersion
-      - `[ItemsToInclude <String>]`: itemsToInclude
       - `[ReviewSet <IMicrosoftGraphSecurityEdiscoveryReviewSet>]`: ediscoveryReviewSet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedDateTime <DateTime?>]`:
-        - `[Description <String>]`:
-        - `[DisplayName <String>]`:
+        - `[CreatedDateTime <DateTime?>]`: 
+        - `[Description <String>]`: 
+        - `[DisplayName <String>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery- `[]`>]`: Represents queries within the review set.
-          - `[ContentQuery <String>]`:
+          - `[ContentQuery <String>]`: 
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[CreatedDateTime <DateTime?>]`:
-          - `[Description <String>]`:
-          - `[DisplayName <String>]`:
+          - `[CreatedDateTime <DateTime?>]`: 
+          - `[Description <String>]`: 
+          - `[DisplayName <String>]`: 
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[LastModifiedDateTime <DateTime?>]`:
+          - `[LastModifiedDateTime <DateTime?>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch
@@ -422,7 +383,6 @@ Read-only.
       - `[MailboxCount <Int32?>]`: The number of mailboxes that had search hits.
       - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch
       - `[SiteCount <Int32?>]`: The number of mailboxes that had search hits.
-      - `[StatisticsOptions <String>]`: statisticsOptions
       - `[UnindexedItemCount <Int64?>]`: The estimated count of unindexed items for the collection.
       - `[UnindexedItemsSize <Int64?>]`: The estimated size of unindexed items for the collection.
     - `[NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource- `[]`>]`: noncustodialDataSource sources that are included in the eDiscovery search
@@ -514,7 +474,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 SEARCH `<IMicrosoftGraphSecurityEdiscoverySearch>`: ediscoverySearch
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentQuery <String>]`:
+  - `[ContentQuery <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -525,11 +485,11 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`:
-  - `[Description <String>]`:
-  - `[DisplayName <String>]`:
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[Description <String>]`: 
+  - `[DisplayName <String>]`: 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`:
+  - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation>]`: ediscoveryAddToReviewSetOperation
@@ -547,26 +507,22 @@ Read-only.
     - `[Status <String>]`: caseOperationStatus
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AdditionalDataOptions <String>]`: additionalDataOptions
-    - `[CloudAttachmentVersion <String>]`: cloudAttachmentVersion
-    - `[DocumentVersion <String>]`: documentVersion
-    - `[ItemsToInclude <String>]`: itemsToInclude
     - `[ReviewSet <IMicrosoftGraphSecurityEdiscoveryReviewSet>]`: ediscoveryReviewSet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedDateTime <DateTime?>]`:
-      - `[Description <String>]`:
-      - `[DisplayName <String>]`:
+      - `[CreatedDateTime <DateTime?>]`: 
+      - `[Description <String>]`: 
+      - `[DisplayName <String>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery- `[]`>]`: Represents queries within the review set.
-        - `[ContentQuery <String>]`:
+        - `[ContentQuery <String>]`: 
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedDateTime <DateTime?>]`:
-        - `[Description <String>]`:
-        - `[DisplayName <String>]`:
+        - `[CreatedDateTime <DateTime?>]`: 
+        - `[Description <String>]`: 
+        - `[DisplayName <String>]`: 
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedDateTime <DateTime?>]`:
+        - `[LastModifiedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch
@@ -595,7 +551,6 @@ Read-only.
     - `[MailboxCount <Int32?>]`: The number of mailboxes that had search hits.
     - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch
     - `[SiteCount <Int32?>]`: The number of mailboxes that had search hits.
-    - `[StatisticsOptions <String>]`: statisticsOptions
     - `[UnindexedItemCount <Int64?>]`: The estimated count of unindexed items for the collection.
     - `[UnindexedItemsSize <Int64?>]`: The estimated size of unindexed items for the collection.
   - `[NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource- `[]`>]`: noncustodialDataSource sources that are included in the eDiscovery search

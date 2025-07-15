@@ -10,7 +10,8 @@ ms.subservice: entra-groups
 # Get-MgBetaGroupThread
 
 ## SYNOPSIS
-Get a thread object.
+Get a specific thread that belongs to a group.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-1.0)
@@ -22,25 +23,26 @@ Get a thread object.
 Get-MgBetaGroupThread -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaGroupThread -ConversationThreadId <String> -GroupId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaGroupThread -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get a thread object.
+Get a specific thread that belongs to a group.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
 **Permissions**
 
@@ -202,6 +204,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -247,21 +264,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -284,6 +286,21 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -336,7 +353,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthread)
 
-[https://learn.microsoft.com/graph/api/group-get-thread?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-get-thread?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/conversationthread-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conversationthread-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/group-list-threads?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-threads?view=graph-rest-beta)
 

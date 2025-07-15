@@ -21,16 +21,16 @@ For details, see Manage a collection estimate.
 ```
 Export-MgSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId <String> -EdiscoverySearchId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalOptions <String>] [-AdditionalProperties <Hashtable>]
- [-CloudAttachmentVersion <String>] [-Description <String>] [-DisplayName <String>] [-DocumentVersion <String>]
- [-ExportCriteria <String>] [-ExportLocation <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Description <String>] [-DisplayName <String>] [-ExportCriteria <String>] [-ExportLocation <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Export
 ```
 Export-MgSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId <String> -EdiscoverySearchId <String>
  -BodyParameter <IPaths1L5Hy36SecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityExportreportPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,16 +38,16 @@ Export-MgSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId <String> -Edis
 ```
 Export-MgSecurityCaseEdiscoveryCaseSearchReport -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalOptions <String>] [-AdditionalProperties <Hashtable>]
- [-CloudAttachmentVersion <String>] [-Description <String>] [-DisplayName <String>] [-DocumentVersion <String>]
- [-ExportCriteria <String>] [-ExportLocation <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Description <String>] [-DisplayName <String>] [-ExportCriteria <String>] [-ExportLocation <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ExportViaIdentity
 ```
 Export-MgSecurityCaseEdiscoveryCaseSearchReport -InputObject <ISecurityIdentity>
  -BodyParameter <IPaths1L5Hy36SecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityExportreportPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -202,36 +202,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -CloudAttachmentVersion
-cloudAttachmentVersion
-
-```yaml
-Type: String
-Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Description
 
 
@@ -249,21 +219,6 @@ Accept wildcard characters: False
 
 ### -DisplayName
 
-
-```yaml
-Type: String
-Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DocumentVersion
-documentVersion
 
 ```yaml
 Type: String
@@ -383,6 +338,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -390,6 +360,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -434,10 +419,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IPaths1L5Hy36SecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityExportreportPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdditionalOptions <String>]`: additionalOptions
-  - `[CloudAttachmentVersion <String>]`: cloudAttachmentVersion
-  - `[Description <String>]`:
-  - `[DisplayName <String>]`:
-  - `[DocumentVersion <String>]`: documentVersion
+  - `[Description <String>]`: 
+  - `[DisplayName <String>]`: 
   - `[ExportCriteria <String>]`: exportCriteria
   - `[ExportLocation <String>]`: exportLocation
 

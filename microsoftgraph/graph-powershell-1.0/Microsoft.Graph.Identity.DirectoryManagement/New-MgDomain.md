@@ -33,13 +33,13 @@ New-MgDomain [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtab
  [-RootDomain <IMicrosoftGraphDomain>] [-ServiceConfigurationRecords <IMicrosoftGraphDomainDnsRecord[]>]
  [-State <IMicrosoftGraphDomainState>] [-SupportedServices <String[]>]
  [-VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDomain -BodyParameter <IMicrosoftGraphDomain> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -143,21 +143,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -375,6 +360,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -476,6 +476,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -516,7 +531,7 @@ Read-only.
 The value is either Managed or Federated.
 Managed indicates a cloud managed domain where Microsoft Entra ID performs user authentication.
 Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services.
-Not nullable.
+Not nullable. 
 To update this property in delegated scenarios, the calling app must be assigned the Directory.AccessAsUser.All delegated permission.
   - `[AvailabilityStatus <String>]`: This property is always null except when the verify action is used.
 When the verify action is used, a domain entity is returned in the response.
@@ -537,8 +552,8 @@ Doesn't support $expand.
     - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Microsoft Entra services.
     - `[PreferredAuthenticationProtocol <String>]`: authenticationProtocol
     - `[SigningCertificate <String>]`: Current certificate used to sign tokens passed to the Microsoft identity platform.
-The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.
-This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
+The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class. 
+This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated. 
 Microsoft Entra ID updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate.
 If a new certificate isn't available, Microsoft Entra ID monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
     - `[DisplayName <String>]`: The display name of the identity provider.
@@ -553,7 +568,7 @@ If false (default), the SAML authentication requests sent to the federated IdP a
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
-    - `[PasswordResetUri <String>]`:
+    - `[PasswordResetUri <String>]`: 
     - `[PromptLoginBehavior <String>]`: promptLoginBehavior
     - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Microsoft Entra services.
 Corresponds to the LogOffUri property of the Set-EntraDomainFederationSettings PowerShell cmdlet.
@@ -578,8 +593,8 @@ Otherwise, false if the domain is a subdomain or unverified.
 Not nullable.
   - `[IsVerified <Boolean?>]`: true if the domain completed domain ownership verification.
 Not nullable.
-  - `[Manufacturer <String>]`:
-  - `[Model <String>]`:
+  - `[Manufacturer <String>]`: 
+  - `[Model <String>]`: 
   - `[PasswordNotificationWindowInDays <Int32?>]`: Specifies the number of days before a user receives notification that their password expires.
 If the property isn't set, a default value of 14 days is used.
   - `[PasswordValidityPeriodInDays <Int32?>]`: Specifies the length of time that a password is valid before it must be changed.
@@ -604,9 +619,9 @@ Not nullable.
 The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
     - `[Operation <String>]`: Type of asynchronous operation.
 The values can be ForceDelete or Verification.
-    - `[Status <String>]`: Current status of the operation.
-Scheduled - Operation is scheduled but hasn't started.
-InProgress - Task is in progress.
+    - `[Status <String>]`: Current status of the operation. 
+Scheduled - Operation is scheduled but hasn't started. 
+InProgress - Task is in progress. 
 Failed - The operation failed.
   - `[SupportedServices <String- `[]`>]`: The capabilities assigned to the domain.
 Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
@@ -633,8 +648,8 @@ Doesn't support $expand.
   - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Microsoft Entra services.
   - `[PreferredAuthenticationProtocol <String>]`: authenticationProtocol
   - `[SigningCertificate <String>]`: Current certificate used to sign tokens passed to the Microsoft identity platform.
-The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.
-This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
+The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class. 
+This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated. 
 Microsoft Entra ID updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate.
 If a new certificate isn't available, Microsoft Entra ID monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
   - `[DisplayName <String>]`: The display name of the identity provider.
@@ -649,7 +664,7 @@ If false (default), the SAML authentication requests sent to the federated IdP a
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
-  - `[PasswordResetUri <String>]`:
+  - `[PasswordResetUri <String>]`: 
   - `[PromptLoginBehavior <String>]`: promptLoginBehavior
   - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Microsoft Entra services.
 Corresponds to the LogOffUri property of the Set-EntraDomainFederationSettings PowerShell cmdlet.
@@ -669,7 +684,7 @@ Read-only.
 The value is either Managed or Federated.
 Managed indicates a cloud managed domain where Microsoft Entra ID performs user authentication.
 Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services.
-Not nullable.
+Not nullable. 
 To update this property in delegated scenarios, the calling app must be assigned the Directory.AccessAsUser.All delegated permission.
   - `[AvailabilityStatus <String>]`: This property is always null except when the verify action is used.
 When the verify action is used, a domain entity is returned in the response.
@@ -690,8 +705,8 @@ Doesn't support $expand.
     - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Microsoft Entra services.
     - `[PreferredAuthenticationProtocol <String>]`: authenticationProtocol
     - `[SigningCertificate <String>]`: Current certificate used to sign tokens passed to the Microsoft identity platform.
-The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.
-This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
+The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class. 
+This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated. 
 Microsoft Entra ID updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate.
 If a new certificate isn't available, Microsoft Entra ID monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
     - `[DisplayName <String>]`: The display name of the identity provider.
@@ -706,7 +721,7 @@ If false (default), the SAML authentication requests sent to the federated IdP a
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
-    - `[PasswordResetUri <String>]`:
+    - `[PasswordResetUri <String>]`: 
     - `[PromptLoginBehavior <String>]`: promptLoginBehavior
     - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Microsoft Entra services.
 Corresponds to the LogOffUri property of the Set-EntraDomainFederationSettings PowerShell cmdlet.
@@ -731,8 +746,8 @@ Otherwise, false if the domain is a subdomain or unverified.
 Not nullable.
   - `[IsVerified <Boolean?>]`: true if the domain completed domain ownership verification.
 Not nullable.
-  - `[Manufacturer <String>]`:
-  - `[Model <String>]`:
+  - `[Manufacturer <String>]`: 
+  - `[Model <String>]`: 
   - `[PasswordNotificationWindowInDays <Int32?>]`: Specifies the number of days before a user receives notification that their password expires.
 If the property isn't set, a default value of 14 days is used.
   - `[PasswordValidityPeriodInDays <Int32?>]`: Specifies the length of time that a password is valid before it must be changed.
@@ -757,9 +772,9 @@ Not nullable.
 The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
     - `[Operation <String>]`: Type of asynchronous operation.
 The values can be ForceDelete or Verification.
-    - `[Status <String>]`: Current status of the operation.
-Scheduled - Operation is scheduled but hasn't started.
-InProgress - Task is in progress.
+    - `[Status <String>]`: Current status of the operation. 
+Scheduled - Operation is scheduled but hasn't started. 
+InProgress - Task is in progress. 
 Failed - The operation failed.
   - `[SupportedServices <String- `[]`>]`: The capabilities assigned to the domain.
 Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
@@ -789,9 +804,9 @@ STATE `<IMicrosoftGraphDomainState>`: domainState
 The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
   - `[Operation <String>]`: Type of asynchronous operation.
 The values can be ForceDelete or Verification.
-  - `[Status <String>]`: Current status of the operation.
-Scheduled - Operation is scheduled but hasn't started.
-InProgress - Task is in progress.
+  - `[Status <String>]`: Current status of the operation. 
+Scheduled - Operation is scheduled but hasn't started. 
+InProgress - Task is in progress. 
 Failed - The operation failed.
 
 VERIFICATIONDNSRECORDS `<IMicrosoftGraphDomainDnsRecord- `[]`>`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.

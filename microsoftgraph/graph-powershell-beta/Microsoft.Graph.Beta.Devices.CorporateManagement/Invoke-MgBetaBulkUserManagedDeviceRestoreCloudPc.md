@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetabulkusermanageddevicerestorecloudpc
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Invoke-MgBetaBulkUserManagedDeviceRestoreCloudPc
@@ -17,7 +16,7 @@ Restore multiple Cloud PC devices with a single request that includes the IDs of
 ```
 Invoke-MgBetaBulkUserManagedDeviceRestoreCloudPc -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ManagedDeviceIds <String[]>] [-RestorePointDateTime <DateTime>]
- [-TimeRange <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-TimeRange <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,7 +24,7 @@ Invoke-MgBetaBulkUserManagedDeviceRestoreCloudPc -UserId <String> [-ResponseHead
 ```
 Invoke-MgBetaBulkUserManagedDeviceRestoreCloudPc -UserId <String>
  -BodyParameter <IPaths14X3W2OUsersUserIdManageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,21 +33,19 @@ Invoke-MgBetaBulkUserManagedDeviceRestoreCloudPc -UserId <String>
 Invoke-MgBetaBulkUserManagedDeviceRestoreCloudPc -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ManagedDeviceIds <String[]>]
  [-RestorePointDateTime <DateTime>] [-TimeRange <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### BulkViaIdentity
 ```
 Invoke-MgBetaBulkUserManagedDeviceRestoreCloudPc -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPaths14X3W2OUsersUserIdManageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -80,21 +77,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -136,6 +118,21 @@ Accept wildcard characters: False
 Type: String[]
 Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -198,6 +195,21 @@ Parameter Sets: BulkExpanded, Bulk
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

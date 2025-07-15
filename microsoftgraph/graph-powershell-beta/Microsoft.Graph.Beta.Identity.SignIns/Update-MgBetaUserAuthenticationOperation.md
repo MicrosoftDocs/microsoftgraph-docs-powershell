@@ -20,7 +20,7 @@ Update the navigation property operations in users
 Update-MgBetaUserAuthenticationOperation -LongRunningOperationId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Id <String>] [-LastActionDateTime <DateTime>] [-ResourceLocation <String>] [-Status <String>]
- [-StatusDetail <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-StatusDetail <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgBetaUserAuthenticationOperation -LongRunningOperationId <String> -UserI
 ```
 Update-MgBetaUserAuthenticationOperation -LongRunningOperationId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphLongRunningOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,7 +36,7 @@ Update-MgBetaUserAuthenticationOperation -LongRunningOperationId <String> -UserI
 Update-MgBetaUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Id <String>] [-LastActionDateTime <DateTime>] [-ResourceLocation <String>] [-Status <String>]
- [-StatusDetail <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-StatusDetail <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -44,13 +44,11 @@ Update-MgBetaUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity>
 ```
 Update-MgBetaUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphLongRunningOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property operations in users
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -82,21 +80,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -196,6 +179,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResourceLocation
 URI of the resource that the operation is performed on.
 
@@ -265,6 +263,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

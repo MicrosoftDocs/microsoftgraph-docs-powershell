@@ -38,13 +38,13 @@ Update-MgSecurityAlert -AlertId <String> [-ResponseHeadersVariable <String>] [-A
  [-UserStates <IMicrosoftGraphUserSecurityState[]>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
  [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityAlert -AlertId <String> -BodyParameter <IMicrosoftGraphAlert>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -70,13 +70,13 @@ Update-MgSecurityAlert -InputObject <ISecurityIdentity> [-ResponseHeadersVariabl
  [-UserStates <IMicrosoftGraphUserSecurityState[]>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
  [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphAlert>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -349,21 +349,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -671,6 +656,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RecommendedActions
 Vendor/provider recommended action(s) to take as a result of the alert (for example, isolate machine, enforce2FA, reimage host).
 
@@ -892,6 +892,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -926,19 +941,19 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 ALERTDETECTIONS `<IMicrosoftGraphAlertDetection- `[]`>`: .
-  - `[DetectionType <String>]`:
-  - `[Method <String>]`:
-  - `[Name <String>]`:
+  - `[DetectionType <String>]`: 
+  - `[Method <String>]`: 
+  - `[Name <String>]`: 
 
 BODYPARAMETER `<IMicrosoftGraphAlert>`: alert
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActivityGroupName <String>]`: Name or alias of the activity group (attacker) this alert is attributed to.
-  - `[AlertDetections <IMicrosoftGraphAlertDetection- `[]`>]`:
-    - `[DetectionType <String>]`:
-    - `[Method <String>]`:
-    - `[Name <String>]`:
+  - `[AlertDetections <IMicrosoftGraphAlertDetection- `[]`>]`: 
+    - `[DetectionType <String>]`: 
+    - `[Method <String>]`: 
+    - `[Name <String>]`: 
   - `[AssignedTo <String>]`: Name of the analyst the alert is assigned to for triage, investigation, or remediation (supports update).
   - `[AzureSubscriptionId <String>]`: Azure subscription ID, present if this alert is related to an Azure resource.
   - `[AzureTenantId <String>]`: Microsoft Entra tenant ID.
@@ -974,31 +989,31 @@ Required.
     - `[Path <String>]`: Full file path of the file/imageFile.
     - `[RiskScore <String>]`: Provider generated/calculated risk score of the alert file.
 Recommended value range of 0-1, which equates to a percentage.
-  - `[HistoryStates <IMicrosoftGraphAlertHistoryState- `[]`>]`:
-    - `[AppId <String>]`:
-    - `[AssignedTo <String>]`:
-    - `[Comments <String- `[]`>]`:
+  - `[HistoryStates <IMicrosoftGraphAlertHistoryState- `[]`>]`: 
+    - `[AppId <String>]`: 
+    - `[AssignedTo <String>]`: 
+    - `[Comments <String- `[]`>]`: 
     - `[Feedback <String>]`: alertFeedback
     - `[Status <String>]`: alertStatus
-    - `[UpdatedDateTime <DateTime?>]`:
-    - `[User <String>]`:
+    - `[UpdatedDateTime <DateTime?>]`: 
+    - `[User <String>]`: 
   - `[HostStates <IMicrosoftGraphHostSecurityState- `[]`>]`: Security-related stateful information generated by the provider about the host(s) related to this alert.
     - `[Fqdn <String>]`: Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
-    - `[IsAzureAdJoined <Boolean?>]`:
-    - `[IsAzureAdRegistered <Boolean?>]`:
+    - `[IsAzureAdJoined <Boolean?>]`: 
+    - `[IsAzureAdRegistered <Boolean?>]`: 
     - `[IsHybridAzureDomainJoined <Boolean?>]`: True if the host is domain joined to an on-premises Active Directory domain.
     - `[NetBiosName <String>]`: The local host name, without the DNS domain name.
     - `[OS <String>]`: Host Operating System.
 (For example, Windows 10, macOS, RHEL, etc.).
     - `[PrivateIPAddress <String>]`: Private (not routable) IPv4 or IPv6 address (see RFC 1918) at the time of the alert.
     - `[PublicIPAddress <String>]`: Publicly routable IPv4 or IPv6 address (see RFC 1918) at time of the alert.
-    - `[RiskScore <String>]`: Provider-generated/calculated risk score of the host.
+    - `[RiskScore <String>]`: Provider-generated/calculated risk score of the host. 
 Recommended value range of 0-1, which equates to a percentage.
   - `[IncidentIds <String- `[]`>]`: IDs of incidents related to current alert.
-  - `[InvestigationSecurityStates <IMicrosoftGraphInvestigationSecurityState- `[]`>]`:
-    - `[Name <String>]`:
-    - `[Status <String>]`:
-  - `[LastEventDateTime <DateTime?>]`:
+  - `[InvestigationSecurityStates <IMicrosoftGraphInvestigationSecurityState- `[]`>]`: 
+    - `[Name <String>]`: 
+    - `[Status <String>]`: 
+  - `[LastEventDateTime <DateTime?>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: Time at which the alert entity was last modified.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1008,16 +1023,16 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Name <String>]`: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
     - `[Severity <String>]`: Provider-determined severity of this malware.
     - `[WasRunning <Boolean?>]`: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
-  - `[MessageSecurityStates <IMicrosoftGraphMessageSecurityState- `[]`>]`:
-    - `[ConnectingIP <String>]`:
-    - `[DeliveryAction <String>]`:
-    - `[DeliveryLocation <String>]`:
-    - `[Directionality <String>]`:
-    - `[InternetMessageId <String>]`:
-    - `[MessageFingerprint <String>]`:
-    - `[MessageReceivedDateTime <DateTime?>]`:
-    - `[MessageSubject <String>]`:
-    - `[NetworkMessageId <String>]`:
+  - `[MessageSecurityStates <IMicrosoftGraphMessageSecurityState- `[]`>]`: 
+    - `[ConnectingIP <String>]`: 
+    - `[DeliveryAction <String>]`: 
+    - `[DeliveryLocation <String>]`: 
+    - `[Directionality <String>]`: 
+    - `[InternetMessageId <String>]`: 
+    - `[MessageFingerprint <String>]`: 
+    - `[MessageReceivedDateTime <DateTime?>]`: 
+    - `[MessageSubject <String>]`: 
+    - `[NetworkMessageId <String>]`: 
   - `[NetworkConnections <IMicrosoftGraphNetworkConnection- `[]`>]`: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
     - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook or SMTP).
     - `[DestinationAddress <String>]`: Destination IP address (of the network connection).
@@ -1099,13 +1114,13 @@ This field indicates which properties triggered the alert generation.
     - `[Type <String>]`: Type of the property in the key:value pair for interpretation.
 For example, String, Boolean etc.
     - `[Value <String>]`: Value of the property serving as a detection trigger.
-  - `[UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState- `[]`>]`:
-    - `[ClickAction <String>]`:
-    - `[ClickDateTime <DateTime?>]`:
-    - `[Id <String>]`:
-    - `[SourceId <String>]`:
-    - `[UriDomain <String>]`:
-    - `[Verdict <String>]`:
+  - `[UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState- `[]`>]`: 
+    - `[ClickAction <String>]`: 
+    - `[ClickDateTime <DateTime?>]`: 
+    - `[Id <String>]`: 
+    - `[SourceId <String>]`: 
+    - `[UriDomain <String>]`: 
+    - `[Verdict <String>]`: 
   - `[UserStates <IMicrosoftGraphUserSecurityState- `[]`>]`: Security-related stateful information generated by the provider about the user accounts related to this alert.
     - `[AadUserId <String>]`: AAD User object identifier (GUID) - represents the physical/multi-account user entity.
     - `[AccountName <String>]`: Account name of user account (without Active Directory domain or DNS domain) - (also called mailNickName).
@@ -1154,25 +1169,25 @@ FILESTATES `<IMicrosoftGraphFileSecurityState- `[]`>`: Security-related stateful
 Recommended value range of 0-1, which equates to a percentage.
 
 HISTORYSTATES `<IMicrosoftGraphAlertHistoryState- `[]`>`: .
-  - `[AppId <String>]`:
-  - `[AssignedTo <String>]`:
-  - `[Comments <String- `[]`>]`:
+  - `[AppId <String>]`: 
+  - `[AssignedTo <String>]`: 
+  - `[Comments <String- `[]`>]`: 
   - `[Feedback <String>]`: alertFeedback
   - `[Status <String>]`: alertStatus
-  - `[UpdatedDateTime <DateTime?>]`:
-  - `[User <String>]`:
+  - `[UpdatedDateTime <DateTime?>]`: 
+  - `[User <String>]`: 
 
 HOSTSTATES `<IMicrosoftGraphHostSecurityState- `[]`>`: Security-related stateful information generated by the provider about the host(s) related to this alert.
   - `[Fqdn <String>]`: Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
-  - `[IsAzureAdJoined <Boolean?>]`:
-  - `[IsAzureAdRegistered <Boolean?>]`:
+  - `[IsAzureAdJoined <Boolean?>]`: 
+  - `[IsAzureAdRegistered <Boolean?>]`: 
   - `[IsHybridAzureDomainJoined <Boolean?>]`: True if the host is domain joined to an on-premises Active Directory domain.
   - `[NetBiosName <String>]`: The local host name, without the DNS domain name.
   - `[OS <String>]`: Host Operating System.
 (For example, Windows 10, macOS, RHEL, etc.).
   - `[PrivateIPAddress <String>]`: Private (not routable) IPv4 or IPv6 address (see RFC 1918) at the time of the alert.
   - `[PublicIPAddress <String>]`: Publicly routable IPv4 or IPv6 address (see RFC 1918) at time of the alert.
-  - `[RiskScore <String>]`: Provider-generated/calculated risk score of the host.
+  - `[RiskScore <String>]`: Provider-generated/calculated risk score of the host. 
 Recommended value range of 0-1, which equates to a percentage.
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
@@ -1241,8 +1256,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 INVESTIGATIONSECURITYSTATES `<IMicrosoftGraphInvestigationSecurityState- `[]`>`: .
-  - `[Name <String>]`:
-  - `[Status <String>]`:
+  - `[Name <String>]`: 
+  - `[Status <String>]`: 
 
 MALWARESTATES `<IMicrosoftGraphMalwareState- `[]`>`: Threat Intelligence pertaining to malware related to this alert.
   - `[Category <String>]`: Provider-generated malware category (for example, trojan, ransomware, etc.).
@@ -1252,15 +1267,15 @@ MALWARESTATES `<IMicrosoftGraphMalwareState- `[]`>`: Threat Intelligence pertain
   - `[WasRunning <Boolean?>]`: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
 
 MESSAGESECURITYSTATES `<IMicrosoftGraphMessageSecurityState- `[]`>`: .
-  - `[ConnectingIP <String>]`:
-  - `[DeliveryAction <String>]`:
-  - `[DeliveryLocation <String>]`:
-  - `[Directionality <String>]`:
-  - `[InternetMessageId <String>]`:
-  - `[MessageFingerprint <String>]`:
-  - `[MessageReceivedDateTime <DateTime?>]`:
-  - `[MessageSubject <String>]`:
-  - `[NetworkMessageId <String>]`:
+  - `[ConnectingIP <String>]`: 
+  - `[DeliveryAction <String>]`: 
+  - `[DeliveryLocation <String>]`: 
+  - `[Directionality <String>]`: 
+  - `[InternetMessageId <String>]`: 
+  - `[MessageFingerprint <String>]`: 
+  - `[MessageReceivedDateTime <DateTime?>]`: 
+  - `[MessageSubject <String>]`: 
+  - `[NetworkMessageId <String>]`: 
 
 NETWORKCONNECTIONS `<IMicrosoftGraphNetworkConnection- `[]`>`: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
   - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook or SMTP).
@@ -1345,12 +1360,12 @@ For example, String, Boolean etc.
   - `[Value <String>]`: Value of the property serving as a detection trigger.
 
 URICLICKSECURITYSTATES `<IMicrosoftGraphUriClickSecurityState- `[]`>`: .
-  - `[ClickAction <String>]`:
-  - `[ClickDateTime <DateTime?>]`:
-  - `[Id <String>]`:
-  - `[SourceId <String>]`:
-  - `[UriDomain <String>]`:
-  - `[Verdict <String>]`:
+  - `[ClickAction <String>]`: 
+  - `[ClickDateTime <DateTime?>]`: 
+  - `[Id <String>]`: 
+  - `[SourceId <String>]`: 
+  - `[UriDomain <String>]`: 
+  - `[Verdict <String>]`: 
 
 USERSTATES `<IMicrosoftGraphUserSecurityState- `[]`>`: Security-related stateful information generated by the provider about the user accounts related to this alert.
   - `[AadUserId <String>]`: AAD User object identifier (GUID) - represents the physical/multi-account user entity.

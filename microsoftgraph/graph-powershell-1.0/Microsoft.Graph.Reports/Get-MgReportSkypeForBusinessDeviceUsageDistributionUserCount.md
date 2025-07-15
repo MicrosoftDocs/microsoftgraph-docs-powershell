@@ -20,14 +20,14 @@ The report will show you the number of users per device including Windows, Windo
 ### Get (Default)
 ```
 Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount -Period <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ The report will show you the number of users per device including Windows, Windo
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount -Period $periodId
+Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount Cmdlet.
@@ -120,6 +120,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

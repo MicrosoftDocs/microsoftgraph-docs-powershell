@@ -20,7 +20,7 @@ New-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction -RbacApplic
  [-AuthenticationContext <IMicrosoftGraphAuthenticationContextClassReference>]
  [-AuthenticationContextId <String>] [-Description <String>] [-Id <String>] [-IsAuthenticationContextSettable]
  [-IsPrivileged] [-Name <String>] [-ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]
- [-ResourceScopeId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-ResourceScopeId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ New-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction -RbacApplic
 ```
 New-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction -RbacApplicationId <String>
  -UnifiedRbacResourceNamespaceId <String> -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ New-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction -InputObjec
  [-AuthenticationContext <IMicrosoftGraphAuthenticationContextClassReference>]
  [-AuthenticationContextId <String>] [-Description <String>] [-Id <String>] [-IsAuthenticationContextSettable]
  [-IsPrivileged] [-Name <String>] [-ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]
- [-ResourceScopeId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-ResourceScopeId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -47,13 +47,11 @@ New-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction -InputObjec
 ```
 New-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to resourceActions for roleManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -132,21 +130,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -265,6 +248,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RbacApplicationId
 The unique identifier of rbacApplication
 
@@ -335,6 +333,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

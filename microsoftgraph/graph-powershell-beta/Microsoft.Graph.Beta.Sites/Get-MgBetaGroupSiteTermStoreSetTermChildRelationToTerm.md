@@ -20,7 +20,7 @@ The term to which the relationship is defined.
 ```
 Get-MgBetaGroupSiteTermStoreSetTermChildRelationToTerm -GroupId <String> -RelationId <String> -SetId <String>
  -SiteId <String> -TermId <String> -TermId1 <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -28,14 +28,12 @@ Get-MgBetaGroupSiteTermStoreSetTermChildRelationToTerm -GroupId <String> -Relati
 ```
 Get-MgBetaGroupSiteTermStoreSetTermChildRelationToTerm -InputObject <ISitesIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The to \[term\] of the relation.
 The term to which the relationship is defined.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,6 +95,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

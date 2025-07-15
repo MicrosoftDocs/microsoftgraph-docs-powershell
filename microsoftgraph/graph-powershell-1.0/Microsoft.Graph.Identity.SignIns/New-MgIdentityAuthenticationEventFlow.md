@@ -21,14 +21,14 @@ The following derived subtypes are supported:- externalUsersSelfServiceSignupEve
 ```
 New-MgIdentityAuthenticationEventFlow [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Description <String>] [-DisplayName <String>]
- [-Id <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgIdentityAuthenticationEventFlow -BodyParameter <IMicrosoftGraphAuthenticationEventsFlow>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -352,21 +352,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Description
 The description of the events policy.
 
@@ -429,6 +414,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -436,6 +436,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -484,7 +499,7 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Applications <IMicrosoftGraphAuthenticationConditionsApplications>]`: authenticationConditionsApplications
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication- `[]`>]`:
+      - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication- `[]`>]`: 
         - `[AppId <String>]`: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
   - `[Description <String>]`: The description of the events policy.
   - `[DisplayName <String>]`: Required.
@@ -494,7 +509,7 @@ CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Applications <IMicrosoftGraphAuthenticationConditionsApplications>]`: authenticationConditionsApplications
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication- `[]`>]`:
+    - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication- `[]`>]`: 
       - `[AppId <String>]`: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
 
 ## RELATED LINKS

@@ -21,7 +21,7 @@ The term to which the relationship is defined.
 Get-MgSiteTermStoreSetParentGroupSetTermChildRelationToTerm -RelationId <String> -SetId <String>
  -SetId1 <String> -SiteId <String> -TermId <String> -TermId1 <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
@@ -29,28 +29,26 @@ Get-MgSiteTermStoreSetParentGroupSetTermChildRelationToTerm -RelationId <String>
 Get-MgSiteTermStoreSetParentGroupSetTermChildRelationToTerm -RelationId <String> -SetId <String>
  -SetId1 <String> -SiteId <String> -TermId <String> -TermId1 <String> -StoreId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgSiteTermStoreSetParentGroupSetTermChildRelationToTerm -InputObject <ISitesIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgSiteTermStoreSetParentGroupSetTermChildRelationToTerm -InputObject <ISitesIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The to \[term\] of the relation.
 The term to which the relationship is defined.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,6 +95,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

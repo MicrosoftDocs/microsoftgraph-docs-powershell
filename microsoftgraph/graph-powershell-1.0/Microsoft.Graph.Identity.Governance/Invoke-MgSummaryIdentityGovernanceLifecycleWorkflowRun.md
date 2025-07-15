@@ -20,13 +20,13 @@ Because the amount of runs returned by the List API call can be overwhelming, th
 ```
 Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRun -EndDateTime <DateTime> -StartDateTime <DateTime>
  -WorkflowId <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### SummaryViaIdentity
 ```
 Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRun -InputObject <IIdentityGovernanceIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -41,8 +41,6 @@ Because the amount of runs returned by the List API call can be overwhelming, th
 | Delegated (work or school account) | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -89,6 +87,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

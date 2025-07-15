@@ -20,7 +20,7 @@ Update the navigation property roleManagementPolicyAssignments in policies
 Update-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Policy <IMicrosoftGraphUnifiedRoleManagementPolicy>] [-PolicyId <String>] [-RoleDefinitionId <String>]
- [-ScopeId <String>] [-ScopeType <String>] [-Headers <IDictionary>]
+ [-ScopeId <String>] [-ScopeType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssign
 ```
 Update-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId <String>
  -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,7 +36,7 @@ Update-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssign
 Update-MgPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Policy <IMicrosoftGraphUnifiedRoleManagementPolicy>] [-PolicyId <String>] [-RoleDefinitionId <String>]
- [-ScopeId <String>] [-ScopeType <String>] [-Headers <IDictionary>]
+ [-ScopeId <String>] [-ScopeType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,13 +44,11 @@ Update-MgPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignInsIden
 ```
 Update-MgPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property roleManagementPolicyAssignments in policies
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -82,21 +80,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -171,6 +154,21 @@ Inherited from entity.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -260,6 +258,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -320,7 +333,7 @@ Use All for all settings.
 Allowed values are: Eligibility, Assignment.
         - `[Operations <String- `[]`>]`: The role management operations that are the target of the policy rule.
 Allowed values are: All, Activate, Deactivate, Assign, Update, Remove, Extend, Renew.
-        - `[TargetObjects <IMicrosoftGraphDirectoryObject- `[]`>]`:
+        - `[TargetObjects <IMicrosoftGraphDirectoryObject- `[]`>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -348,7 +361,7 @@ Inherited from entity.
   - `[RoleDefinitionId <String>]`: For Microsoft Entra roles policy, it's the identifier of the role definition object where the policy applies.
 For PIM for groups membership and ownership, it's either member or owner.
 Supports $filter (eq).
-  - `[ScopeId <String>]`: The identifier of the scope where the policy is assigned.
+  - `[ScopeId <String>]`: The identifier of the scope where the policy is assigned. 
 Can be / for the tenant or a group ID.
 Required.
   - `[ScopeType <String>]`: The type of the scope where the policy is assigned.
@@ -439,7 +452,7 @@ Use All for all settings.
 Allowed values are: Eligibility, Assignment.
       - `[Operations <String- `[]`>]`: The role management operations that are the target of the policy rule.
 Allowed values are: All, Activate, Deactivate, Assign, Update, Remove, Extend, Renew.
-      - `[TargetObjects <IMicrosoftGraphDirectoryObject- `[]`>]`:
+      - `[TargetObjects <IMicrosoftGraphDirectoryObject- `[]`>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.

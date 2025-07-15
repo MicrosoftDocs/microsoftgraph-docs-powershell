@@ -48,13 +48,13 @@ Update-MgBetaDeviceAppManagement [-ResponseHeadersVariable <String>] [-Additiona
  [-WindowsInformationProtectionWipeActions <IMicrosoftGraphWindowsInformationProtectionWipeAction[]>]
  [-WindowsManagedAppProtections <IMicrosoftGraphWindowsManagedAppProtection[]>]
  [-WindowsManagementApp <IMicrosoftGraphWindowsManagementApp>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -68,8 +68,6 @@ Update deviceAppManagement
 | Delegated (work or school account) | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -117,21 +115,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -518,6 +501,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -589,22 +587,6 @@ To construct, see NOTES section for WDACSUPPLEMENTALPOLICIES properties and crea
 Type: IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
 
 Required: False
 Position: Named
@@ -685,6 +667,37 @@ To construct, see NOTES section for WINDOWSMANAGEMENTAPP properties and create a
 Type: IMicrosoftGraphWindowsManagementApp
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
 
 Required: False
 Position: Named
@@ -794,8 +807,10 @@ Read-only.
   - `[AppActionIfSamsungKnoxAttestationRequired <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[ApprovedKeyboards <IMicrosoftGraphKeyValuePair- `[]`>]`: If Keyboard Restriction is enabled, only keyboards in this approved list will be allowed.
 A key should be Android package id for a keyboard and value should be a friendly name
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[Apps <IMicrosoftGraphManagedMobileApp- `[]`>]`: List of apps to which the policy is deployed.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -936,8 +951,10 @@ Read-only.
     - `[AppActionIfSamsungKnoxAttestationRequired <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
     - `[ApprovedKeyboards <IMicrosoftGraphKeyValuePair- `[]`>]`: If Keyboard Restriction is enabled, only keyboards in this approved list will be allowed.
 A key should be Android package id for a keyboard and value should be a friendly name
-      - `[Name <String>]`: Name for this key-value pair
-      - `[Value <String>]`: Value for this key-value pair
+      - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+      - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
     - `[Apps <IMicrosoftGraphManagedMobileApp- `[]`>]`: List of apps to which the policy is deployed.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1615,7 +1632,7 @@ Read-only.
     - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
     - `[Publisher <String>]`: The publisher of the app.
     - `[PublishingState <MobileAppPublishingState?>]`: Indicates the publishing state of an app.
-    - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: List of relationships for this mobile app.
+    - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: The set of direct relationships for this app.
     - `[RoleScopeTagIds <String- `[]`>]`: List of scope tag ids for this mobile app.
   - `[PolicySets <IMicrosoftGraphPolicySet- `[]`>]`: The PolicySet of Policies and Applications
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1674,14 +1691,11 @@ Read-only.
           - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
           - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
         - `[BaseUri <String>]`: Base CSP Path
-        - `[CategoryId <String>]`: Specify category in which the setting is under.
-Support $filters.
-        - `[Description <String>]`: Description of the setting.
-        - `[DisplayName <String>]`: Name of the setting.
-For example: Allow Toast.
-        - `[HelpText <String>]`: Help text of the setting.
-Give more details of the setting.
-        - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at.
+        - `[CategoryId <String>]`: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
+        - `[Description <String>]`: Description of the item
+        - `[DisplayName <String>]`: Display name of the item
+        - `[HelpText <String>]`: Help text of the item
+        - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at
         - `[Keywords <String- `[]`>]`: Tokens which to search settings on
         - `[Name <String>]`: Name of the item
         - `[Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]`: deviceManagementConfigurationSettingOccurrence
@@ -1692,9 +1706,9 @@ A MinDeviceOccurrence of 0 means setting is optional
         - `[OffsetUri <String>]`: Offset CSP Path from Base
         - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
           - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
+Applicable for reusable setting.
         - `[RiskLevel <DeviceManagementConfigurationSettingRiskLevel?>]`: Setting RiskLevel
-        - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
+        - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
         - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
         - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
         - `[Version <String>]`: Item Version
@@ -2042,8 +2056,10 @@ Read-only.
   - `[CustomDialerAppPackageId <String>]`: PackageId of a custom dialer app to click-to-open a phone number on Android.
   - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
   - `[CustomSettings <IMicrosoftGraphKeyValuePair- `[]`>]`: A set of string key and string value pairs to be sent to the affected users, unalterned by this service
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
   - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2303,8 +2319,10 @@ Read-only.
   - `[DisableProtectionOfManagedOutboundOpenInData <Boolean?>]`: Disable protection of data transferred to other apps through IOS OpenIn option.
 This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps.
   - `[ExemptedAppProtocols <IMicrosoftGraphKeyValuePair- `[]`>]`: Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[ExemptedUniversalLinks <String- `[]`>]`: A list of custom urls that are allowed to invocate an unmanaged app
   - `[FaceIdBlocked <Boolean?>]`: Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
   - `[FilterOpenInToOnlyManagedApps <Boolean?>]`: Defines if open-in operation is supported from the managed app to the filesharing locations selected.
@@ -2675,7 +2693,7 @@ Read-only.
   - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
   - `[Publisher <String>]`: The publisher of the app.
   - `[PublishingState <MobileAppPublishingState?>]`: Indicates the publishing state of an app.
-  - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: List of relationships for this mobile app.
+  - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: The set of direct relationships for this app.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[TargetId <String>]`: The unique app identifier of the target of the mobile app relationship entity.
@@ -2734,8 +2752,10 @@ Read-only.
 
 TARGETEDMANAGEDAPPCONFIGURATIONS `<IMicrosoftGraphTargetedManagedAppConfiguration- `[]`>`: Targeted managed app configurations.
   - `[CustomSettings <IMicrosoftGraphKeyValuePair- `[]`>]`: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[Settings <IMicrosoftGraphDeviceManagementConfigurationSetting- `[]`>]`: List of settings contained in this App Configuration policy
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -2751,14 +2771,11 @@ Read-only.
         - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
         - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
       - `[BaseUri <String>]`: Base CSP Path
-      - `[CategoryId <String>]`: Specify category in which the setting is under.
-Support $filters.
-      - `[Description <String>]`: Description of the setting.
-      - `[DisplayName <String>]`: Name of the setting.
-For example: Allow Toast.
-      - `[HelpText <String>]`: Help text of the setting.
-Give more details of the setting.
-      - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at.
+      - `[CategoryId <String>]`: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
+      - `[Description <String>]`: Description of the item
+      - `[DisplayName <String>]`: Display name of the item
+      - `[HelpText <String>]`: Help text of the item
+      - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at
       - `[Keywords <String- `[]`>]`: Tokens which to search settings on
       - `[Name <String>]`: Name of the item
       - `[Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]`: deviceManagementConfigurationSettingOccurrence
@@ -2769,9 +2786,9 @@ A MinDeviceOccurrence of 0 means setting is optional
       - `[OffsetUri <String>]`: Offset CSP Path from Base
       - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
         - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
+Applicable for reusable setting.
       - `[RiskLevel <DeviceManagementConfigurationSettingRiskLevel?>]`: Setting RiskLevel
-      - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
+      - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
       - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
       - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
       - `[Version <String>]`: Item Version

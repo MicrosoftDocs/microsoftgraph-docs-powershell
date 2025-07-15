@@ -22,7 +22,7 @@ For example, GET /users/admin@contoso.com/authentication/windowsHelloForBusiness
 ```
 Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethodDevice -UserId <String>
  -WindowsHelloForBusinessAuthenticationMethodId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethodDevice -UserId <String>
 ```
 Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethodDevice -InputObject <IIdentitySignInsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,8 +38,6 @@ The registered device on which this Windows Hello for Business key resides.
 Supports $expand.
 When you get a user's Windows Hello for Business registration information, this property is returned only on a single GET and when you specify ?$expand.
 For example, GET /users/admin@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2?$expand=device.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -86,6 +84,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

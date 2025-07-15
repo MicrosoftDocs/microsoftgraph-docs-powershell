@@ -20,7 +20,7 @@ Update-MgBetaPrintPrinterShareJob -PrintJobId <String> -PrinterShareId <String>
  [-CreatedBy <IMicrosoftGraphUserIdentity>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
  [-Documents <IMicrosoftGraphPrintDocument[]>] [-ErrorCode <Int32>] [-Id <String>] [-IsFetchable]
  [-RedirectedFrom <String>] [-RedirectedTo <String>] [-Status <IMicrosoftGraphPrintJobStatus>]
- [-Tasks <IMicrosoftGraphPrintTask[]>] [-Headers <IDictionary>] [-WhatIf]
+ [-Tasks <IMicrosoftGraphPrintTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgBetaPrintPrinterShareJob -PrintJobId <String> -PrinterShareId <String>
 ```
 Update-MgBetaPrintPrinterShareJob -PrintJobId <String> -PrinterShareId <String>
  -BodyParameter <IMicrosoftGraphPrintJob> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,20 +39,18 @@ Update-MgBetaPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity> [-Re
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Documents <IMicrosoftGraphPrintDocument[]>]
  [-ErrorCode <Int32>] [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>] [-RedirectedTo <String>]
  [-Status <IMicrosoftGraphPrintJobStatus>] [-Tasks <IMicrosoftGraphPrintTask[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IMicrosoftGraphPrintJob> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property jobs in print
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -125,21 +123,6 @@ To construct, see NOTES section for CONFIGURATION properties and create a hash t
 Type: IMicrosoftGraphPrintJobConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -318,6 +301,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RedirectedFrom
 Contains the source job URL, if the job has been redirected from another printer.
 
@@ -387,6 +385,21 @@ To construct, see NOTES section for TASKS properties and create a hash table.
 Type: IMicrosoftGraphPrintTask[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

@@ -17,7 +17,7 @@ Update the navigation property authorizationSystems in external
 Update-MgBetaExternalAuthorizationSystem -AuthorizationSystemId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AuthorizationSystemId1 <String>] [-AuthorizationSystemName <String>]
  [-AuthorizationSystemType <String>] [-DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>] [-Id <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -25,27 +25,25 @@ Update-MgBetaExternalAuthorizationSystem -AuthorizationSystemId <String> [-Respo
 Update-MgBetaExternalAuthorizationSystem [-AuthorizationSystemId <String>] -InputObject <ISearchIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AuthorizationSystemName <String>]
  [-AuthorizationSystemType <String>] [-DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>] [-Id <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaExternalAuthorizationSystem -AuthorizationSystemId <String>
  -BodyParameter <IMicrosoftGraphAuthorizationSystem> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaExternalAuthorizationSystem -InputObject <ISearchIdentity>
  -BodyParameter <IMicrosoftGraphAuthorizationSystem> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property authorizationSystems in external
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -156,21 +154,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DataCollectionInfo
 dataCollectionInfo
 To construct, see NOTES section for DATACOLLECTIONINFO properties and create a hash table.
@@ -234,6 +217,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -241,6 +239,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

@@ -16,14 +16,14 @@ Collection of device objects created based on this template.
 ```
 Get-MgBetaDirectoryTemplateDeviceInstanceByDeviceId -DeviceId <String> -DeviceTemplateId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaDirectoryTemplateDeviceInstanceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,8 +36,6 @@ Collection of device objects created based on this template.
 | Delegated (work or school account) | DeviceTemplate.ReadWrite.All, DeviceTemplate.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceTemplate.Read.All, DeviceTemplate.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -114,6 +112,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

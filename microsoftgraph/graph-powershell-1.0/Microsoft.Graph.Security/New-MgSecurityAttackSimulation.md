@@ -30,13 +30,13 @@ New-MgSecurityAttackSimulation [-ResponseHeadersVariable <String>] [-AdditionalP
  [-OAuthConsentAppDetail <IMicrosoftGraphOAuthConsentAppDetail>] [-Payload <IMicrosoftGraphPayload>]
  [-PayloadDeliveryPlatform <String>] [-Report <IMicrosoftGraphSimulationReport>] [-Status <String>]
  [-TrainingSetting <IMicrosoftGraphTrainingSetting>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -186,21 +186,6 @@ Supports $filter and $orderby.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -507,6 +492,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Report
 simulationReport
 To construct, see NOTES section for REPORT properties and create a hash table.
@@ -561,6 +561,21 @@ To construct, see NOTES section for TRAININGSETTING properties and create a hash
 Type: IMicrosoftGraphTrainingSetting
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -637,7 +652,7 @@ Read-only.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Description <String>]`: Description of the notification as defined by the user.
-        - `[Details <IMicrosoftGraphEndUserNotificationDetail- `[]`>]`:
+        - `[Details <IMicrosoftGraphEndUserNotificationDetail- `[]`>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[EmailContent <String>]`: Email HTML content.
@@ -727,7 +742,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Description <String>]`: Description of the attack simulation and training campaign payload.
     - `[Detail <IMicrosoftGraphPayloadDetail>]`: payloadDetail
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`:
+      - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: 
         - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Length <Int32?>]`: Length of coachmark.
@@ -848,7 +863,7 @@ For example, in the access reviews decisions API, this property might record the
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Description <String>]`: Description of the notification as defined by the user.
-      - `[Details <IMicrosoftGraphEndUserNotificationDetail- `[]`>]`:
+      - `[Details <IMicrosoftGraphEndUserNotificationDetail- `[]`>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[EmailContent <String>]`: Email HTML content.
@@ -966,7 +981,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Description <String>]`: Description of the attack simulation and training campaign payload.
   - `[Detail <IMicrosoftGraphPayloadDetail>]`: payloadDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`:
+    - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: 
       - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Length <Int32?>]`: Length of coachmark.

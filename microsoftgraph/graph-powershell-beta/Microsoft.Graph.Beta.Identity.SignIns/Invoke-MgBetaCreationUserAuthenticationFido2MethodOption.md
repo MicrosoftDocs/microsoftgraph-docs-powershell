@@ -17,7 +17,7 @@ Self-service operations aren't supported.
 ### Creation (Default)
 ```
 Invoke-MgBetaCreationUserAuthenticationFido2MethodOption -UserId <String> [-ChallengeTimeoutInMinutes <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -25,7 +25,7 @@ Invoke-MgBetaCreationUserAuthenticationFido2MethodOption -UserId <String> [-Chal
 ```
 Invoke-MgBetaCreationUserAuthenticationFido2MethodOption -InputObject <IIdentitySignInsIdentity>
  [-ChallengeTimeoutInMinutes <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -98,6 +98,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
