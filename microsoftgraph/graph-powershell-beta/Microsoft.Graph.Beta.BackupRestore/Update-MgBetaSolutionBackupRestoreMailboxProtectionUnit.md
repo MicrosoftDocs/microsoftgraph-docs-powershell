@@ -21,16 +21,16 @@ Update-MgBetaSolutionBackupRestoreMailboxProtectionUnit -MailboxProtectionUnitId
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DirectoryObjectId <String>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-MailboxType <String>] [-PolicyId <String>] [-ProtectionSources <String>]
- [-Status <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-MailboxType <String>] [-OffboardRequestedDateTime <DateTime>]
+ [-PolicyId <String>] [-ProtectionSources <String>] [-Status <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSolutionBackupRestoreMailboxProtectionUnit -MailboxProtectionUnitId <String>
  -BodyParameter <IMicrosoftGraphMailboxProtectionUnit> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,22 +39,20 @@ Update-MgBetaSolutionBackupRestoreMailboxProtectionUnit -InputObject <IBackupRes
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DirectoryObjectId <String>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-MailboxType <String>] [-PolicyId <String>] [-ProtectionSources <String>]
- [-Status <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-MailboxType <String>] [-OffboardRequestedDateTime <DateTime>]
+ [-PolicyId <String>] [-ProtectionSources <String>] [-Status <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSolutionBackupRestoreMailboxProtectionUnit -InputObject <IBackupRestoreIdentity>
  -BodyParameter <IMicrosoftGraphMailboxProtectionUnit> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property mailboxProtectionUnits in solutions
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -86,21 +84,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -274,6 +257,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -OffboardRequestedDateTime
+The time when protection unit offboard was requested.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PolicyId
 The unique identifier of the protection policy based on which protection unit was created.
 
@@ -281,6 +279,21 @@ The unique identifier of the protection policy based on which protection unit wa
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -326,6 +339,21 @@ protectionUnitStatus
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -397,6 +425,7 @@ This property is read-only.
     - `[Target <String>]`: The target of the error.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+  - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
   - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
   - `[ProtectionSources <String>]`: protectionSource
   - `[Status <String>]`: protectionUnitStatus

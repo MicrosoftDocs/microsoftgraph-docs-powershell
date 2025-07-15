@@ -24,17 +24,17 @@ New-MgBetaEducationUserAssignment -EducationUserId <String> [-ResponseHeadersVar
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-DueDateTime <DateTime>]
  [-Grading <Hashtable>] [-GradingCategory <IMicrosoftGraphEducationGradingCategory>]
  [-GradingScheme <IMicrosoftGraphEducationGradingScheme>] [-Id <String>]
- [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
+ [-Instructions <IMicrosoftGraphEducationItemBody>] [-LanguageTag <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
  [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
  [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaEducationUserAssignment -EducationUserId <String> -BodyParameter <IMicrosoftGraphEducationAssignment>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,24 +47,22 @@ New-MgBetaEducationUserAssignment -InputObject <IEducationIdentity> [-ResponseHe
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-DueDateTime <DateTime>]
  [-Grading <Hashtable>] [-GradingCategory <IMicrosoftGraphEducationGradingCategory>]
  [-GradingScheme <IMicrosoftGraphEducationGradingScheme>] [-Id <String>]
- [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
+ [-Instructions <IMicrosoftGraphEducationItemBody>] [-LanguageTag <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
  [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
  [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaEducationUserAssignment -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to assignments for education
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -219,21 +217,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -415,6 +398,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -LanguageTag
+Specifies the language in which UI notifications for the assignment are displayed.
+If languageTag isn't provided, the default language is en-US.
+Optional.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -LastModifiedBy
 identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
@@ -456,6 +456,21 @@ Updating the notificationChannelUrl isn't allowed after the assignment has been 
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -538,6 +553,21 @@ To construct, see NOTES section for SUBMISSIONS properties and create a hash tab
 Type: IMicrosoftGraphEducationSubmission[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -639,6 +669,9 @@ Indicates whether teachers can grade with points in addition to letter grades.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: 
     - `[ContentType <String>]`: bodyType
+  - `[LanguageTag <String>]`: Specifies the language in which UI notifications for the assignment are displayed.
+If languageTag isn't provided, the default language is en-US.
+Optional.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[ModuleUrl <String>]`: The URL of the module from which to access the assignment.
   - `[NotificationChannelUrl <String>]`: Optional field to specify the URL of the channel to post the assignment publish notification.
@@ -767,6 +800,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
   - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
   - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
+  - `[SpeakerAssignmentSubmissionId <String>]`: The unique identifier of speakerAssignmentSubmission
 
 INSTRUCTIONS `<IMicrosoftGraphEducationItemBody>`: educationItemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

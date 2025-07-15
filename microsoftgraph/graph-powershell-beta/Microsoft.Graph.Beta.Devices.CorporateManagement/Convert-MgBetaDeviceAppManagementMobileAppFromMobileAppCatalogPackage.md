@@ -15,7 +15,7 @@ Invoke function convertFromMobileAppCatalogPackage
 ### Convert (Default)
 ```
 Convert-MgBetaDeviceAppManagementMobileAppFromMobileAppCatalogPackage -MobileAppCatalogPackageId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -23,7 +23,7 @@ Convert-MgBetaDeviceAppManagementMobileAppFromMobileAppCatalogPackage -MobileApp
 ```
 Convert-MgBetaDeviceAppManagementMobileAppFromMobileAppCatalogPackage
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,8 +36,6 @@ Invoke function convertFromMobileAppCatalogPackage
 | Delegated (work or school account) | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -81,6 +79,21 @@ Parameter Sets: Convert
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -16,7 +16,7 @@ Update content for the navigation property picture in financials
 ```
 Set-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -CompanyId <String> -PictureId <String>
  -PurchaseInvoiceLineId <String> [-Data <Stream>] [-ResponseHeadersVariable <String>] -InFile <String>
- [-ContentType <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-ContentType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,27 +25,25 @@ Set-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -CompanyId <Stri
 Set-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -CompanyId <String> -PictureId <String>
  -PurchaseInvoiceLineId <String> -PurchaseInvoiceId <String> [-Data <Stream>]
  [-ResponseHeadersVariable <String>] -InFile <String> [-ContentType <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity1
 ```
 Set-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -InputObject <IFinancialsIdentity>
  [-Data <Stream>] [-ResponseHeadersVariable <String>] -InFile <String> [-ContentType <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent -InputObject <IFinancialsIdentity>
  [-Data <Stream>] [-ResponseHeadersVariable <String>] -InFile <String> [-ContentType <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update content for the navigation property picture in financials
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -58,21 +56,6 @@ Parameter Sets: Set, Set1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -172,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PurchaseInvoiceId
 The unique identifier of purchaseInvoice
 
@@ -209,6 +207,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

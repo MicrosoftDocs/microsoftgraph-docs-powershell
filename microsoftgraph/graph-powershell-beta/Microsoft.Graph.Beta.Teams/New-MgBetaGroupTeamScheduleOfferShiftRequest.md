@@ -21,7 +21,7 @@ New-MgBetaGroupTeamScheduleOfferShiftRequest -GroupId <String> [-ResponseHeaders
  [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
  [-RecipientActionMessage <String>] [-RecipientUserId <String>] [-SenderMessage <String>]
- [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>]
+ [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ New-MgBetaGroupTeamScheduleOfferShiftRequest -GroupId <String> [-ResponseHeaders
 ```
 New-MgBetaGroupTeamScheduleOfferShiftRequest -GroupId <String>
  -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,7 +38,7 @@ New-MgBetaGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-Res
  [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
  [-RecipientActionMessage <String>] [-RecipientUserId <String>] [-SenderMessage <String>]
- [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>]
+ [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,13 +46,11 @@ New-MgBetaGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-Res
 ```
 New-MgBetaGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to offerShiftRequests for groups
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -99,21 +97,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -212,7 +195,8 @@ Accept wildcard characters: False
 ```
 
 ### -ManagerActionMessage
-
+The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
 
 ```yaml
 Type: String
@@ -226,8 +210,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RecipientActionMessage
-Custom message sent by recipient of the offer shift request.
+The message sent by the recipient regarding the request.
 
 ```yaml
 Type: String
@@ -242,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecipientUserId
-User id of the recipient of the offer shift request.
+The recipient's user ID.
 
 ```yaml
 Type: String
@@ -272,7 +271,8 @@ Accept wildcard characters: False
 ```
 
 ### -SenderMessage
-
+The message sent by the sender of the scheduleChangeRequest.
+Optional.
 
 ```yaml
 Type: String
@@ -287,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -SenderShiftId
-User id of the sender of the offer shift request.
+The sender's shift ID.
 
 ```yaml
 Type: String
@@ -308,6 +308,21 @@ scheduleChangeState
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -352,8 +367,10 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IMicrosoftGraphOfferShiftRequest>`: offerShiftRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionMessage <String>]`: 
-  - `[SenderMessage <String>]`: 
+  - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+  - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
   - `[State <String>]`: scheduleChangeState
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -368,9 +385,9 @@ This property is read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-  - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-  - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+  - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+  - `[RecipientUserId <String>]`: The recipient's user ID.
+  - `[SenderShiftId <String>]`: The sender's shift ID.
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

@@ -17,7 +17,7 @@ Update the navigation property itemCategory in financials
 Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -CompanyId <String>
  -PurchaseInvoiceLineId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Code <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
@@ -25,7 +25,7 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -CompanyId <String>
 Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -CompanyId <String>
  -PurchaseInvoiceLineId <String> -PurchaseInvoiceId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Code <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-WhatIf]
+ [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -CompanyId <String>
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -CompanyId <String>
  -PurchaseInvoiceLineId <String> -PurchaseInvoiceId <String> -BodyParameter <IMicrosoftGraphItemCategory>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -CompanyId <String>
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -CompanyId <String>
  -PurchaseInvoiceLineId <String> -BodyParameter <IMicrosoftGraphItemCategory>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -50,7 +50,7 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -CompanyId <String>
 Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -InputObject <IFinancialsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Code <String>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -58,27 +58,25 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -InputObject <IFina
 Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -InputObject <IFinancialsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Code <String>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -InputObject <IFinancialsIdentity>
  -BodyParameter <IMicrosoftGraphItemCategory> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -InputObject <IFinancialsIdentity>
  -BodyParameter <IMicrosoftGraphItemCategory> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property itemCategory in financials
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -137,21 +135,6 @@ Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -234,6 +217,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PurchaseInvoiceId
 The unique identifier of purchaseInvoice
 
@@ -271,6 +269,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

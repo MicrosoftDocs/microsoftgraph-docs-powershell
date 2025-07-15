@@ -20,7 +20,7 @@ Get the availability information of staff members of a Microsoft Bookings calend
 ```
 Get-MgBetaBookingBusinessStaffAvailability -BookingBusinessId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-StaffIds <String[]>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>]
+ [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Get-MgBetaBookingBusinessStaffAvailability -BookingBusinessId <String> [-Respons
 ```
 Get-MgBetaBookingBusinessStaffAvailability -BookingBusinessId <String>
  -BodyParameter <IPaths1U5Iok1SolutionsBookingbusinessesBookingbusinessIdMicrosoftGraphGetstaffavailabilityPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Get-MgBetaBookingBusinessStaffAvailability -BookingBusinessId <String>
 ```
 Get-MgBetaBookingBusinessStaffAvailability -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-StaffIds <String[]>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>]
+ [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,7 +44,7 @@ Get-MgBetaBookingBusinessStaffAvailability -InputObject <IBookingsIdentity> [-Re
 ```
 Get-MgBetaBookingBusinessStaffAvailability -InputObject <IBookingsIdentity>
  -BodyParameter <IPaths1U5Iok1SolutionsBookingbusinessesBookingbusinessIdMicrosoftGraphGetstaffavailabilityPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -134,21 +134,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -EndDateTime
 dateTimeTimeZone
 To construct, see NOTES section for ENDDATETIME properties and create a hash table.
@@ -196,6 +181,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -234,6 +234,21 @@ To construct, see NOTES section for STARTDATETIME properties and create a hash t
 Type: IMicrosoftGraphDateTimeZone
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

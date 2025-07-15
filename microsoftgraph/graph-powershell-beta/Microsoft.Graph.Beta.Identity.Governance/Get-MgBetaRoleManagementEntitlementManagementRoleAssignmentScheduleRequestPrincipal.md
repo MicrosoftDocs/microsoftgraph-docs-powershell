@@ -20,7 +20,7 @@ Supports $expand and $select nested in $expand for id only.
 ```
 Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal
  -UnifiedRoleAssignmentScheduleRequestId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -28,15 +28,13 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrinci
 ```
 Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The principal that's getting a role assignment through the request.
 Supports $expand and $select nested in $expand for id only.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -83,6 +81,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

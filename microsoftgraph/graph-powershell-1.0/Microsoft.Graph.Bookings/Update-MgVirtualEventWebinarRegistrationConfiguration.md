@@ -21,14 +21,14 @@ Update-MgVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId <St
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Capacity <Int32>] [-Id <String>]
  [-IsManualApprovalEnabled] [-IsWaitlistEnabled]
  [-Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>] [-RegistrationWebUrl <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId <String>
  -BodyParameter <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,21 +38,19 @@ Update-MgVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsIde
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Capacity <Int32>] [-Id <String>]
  [-IsManualApprovalEnabled] [-IsWaitlistEnabled]
  [-Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>] [-RegistrationWebUrl <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property registrationConfiguration in solutions
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -98,21 +96,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -194,6 +177,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Questions
 Registration questions.
 To construct, see NOTES section for QUESTIONS properties and create a hash table.
@@ -255,6 +253,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -300,8 +313,8 @@ The default value is false.
   - `[RegistrationWebUrl <String>]`: Registration URL of the virtual event.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[IsManualApprovalEnabled <Boolean?>]`:
-  - `[IsWaitlistEnabled <Boolean?>]`:
+  - `[IsManualApprovalEnabled <Boolean?>]`: 
+  - `[IsWaitlistEnabled <Boolean?>]`: 
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord

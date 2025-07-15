@@ -22,20 +22,18 @@ Update-MgBetaReportPartnerBilling [-ResponseHeadersVariable <String>] [-Addition
  [-Operations <IMicrosoftGraphPartnersBillingOperation[]>]
  [-Reconciliation <IMicrosoftGraphPartnersBillingReconciliation>]
  [-Usage <IMicrosoftGraphPartnersBillingAzureUsage>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaReportPartnerBilling -BodyParameter <IMicrosoftGraphPartnersBilling>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property billing in reports
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -67,21 +65,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -148,6 +131,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Reconciliation
 billingReconciliation
 To construct, see NOTES section for RECONCILIATION properties and create a hash table.
@@ -187,6 +185,21 @@ To construct, see NOTES section for USAGE properties and create a hash table.
 Type: IMicrosoftGraphPartnersBillingAzureUsage
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -273,6 +286,10 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[Unbilled <IMicrosoftGraphPartnersBillingUnbilledReconciliation>]`: unbilledReconciliation
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
   - `[Usage <IMicrosoftGraphPartnersBillingAzureUsage>]`: azureUsage
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -327,6 +344,10 @@ RECONCILIATION `<IMicrosoftGraphPartnersBillingReconciliation>`: billingReconcil
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Billed <IMicrosoftGraphPartnersBillingBilledReconciliation>]`: billedReconciliation
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[Unbilled <IMicrosoftGraphPartnersBillingUnbilledReconciliation>]`: unbilledReconciliation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.

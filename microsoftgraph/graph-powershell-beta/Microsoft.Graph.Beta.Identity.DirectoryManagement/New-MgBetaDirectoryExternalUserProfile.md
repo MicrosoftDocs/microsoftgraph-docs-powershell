@@ -18,14 +18,14 @@ New-MgBetaDirectoryExternalUserProfile [-ResponseHeadersVariable <String>] [-Add
  [-Address <IMicrosoftGraphPhysicalOfficeAddress>] [-CompanyName <String>] [-CreatedBy <String>]
  [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Department <String>] [-DisplayName <String>]
  [-Id <String>] [-IsDiscoverable] [-IsEnabled] [-JobTitle <String>] [-PhoneNumber <String>]
- [-SupervisorId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-SupervisorId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDirectoryExternalUserProfile -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,8 +38,6 @@ Create new navigation property to externalUserProfiles for directory
 | Delegated (work or school account) | ExternalUserProfile.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ExternalUserProfile.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +95,6 @@ Supports $filter (eq, startswith).
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -294,6 +277,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -317,6 +315,21 @@ Supports $filter (eq, startswith).
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

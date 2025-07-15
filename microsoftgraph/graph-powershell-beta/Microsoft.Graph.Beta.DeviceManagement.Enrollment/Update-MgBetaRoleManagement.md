@@ -22,13 +22,13 @@ Update-MgBetaRoleManagement [-ResponseHeadersVariable <String>] [-AdditionalProp
  [-DeviceManagement <IMicrosoftGraphRbacApplicationMultiple>] [-Directory <IMicrosoftGraphRbacApplication>]
  [-EnterpriseApps <IMicrosoftGraphRbacApplication[]>] [-EntitlementManagement <IMicrosoftGraphRbacApplication>]
  [-Exchange <IMicrosoftGraphUnifiedRbacApplication>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,8 +41,6 @@ Update roleManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -85,21 +83,6 @@ To construct, see NOTES section for CLOUDPC properties and create a hash table.
 Type: IMicrosoftGraphRbacApplicationMultiple
 Parameter Sets: UpdateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -219,6 +202,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -226,6 +224,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -332,11 +345,9 @@ Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
         - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+Read-only.
       - `[Condition <String>]`: 
       - `[Description <String>]`: Description of the role assignment.
       - `[DirectoryScopeIds <String- `[]`>]`: Ids of the directory objects that represent the scopes of the assignment.
@@ -737,11 +748,9 @@ Supports $filter (eq, ne).
 Read-only.
     - `[CustomAppScopes <IMicrosoftGraphCustomAppScope- `[]`>]`: Workload-specific scope object that represents the resources for which the principal has been granted access.
       - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
       - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CustomAttributes <IMicrosoftGraphCustomAppScopeAttributesDictionary>]`: customAppScopeAttributesDictionary
@@ -815,11 +824,9 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
       - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+Read-only.
     - `[Condition <String>]`: 
     - `[Description <String>]`: Description of the role assignment.
     - `[DirectoryScopeIds <String- `[]`>]`: Ids of the directory objects that represent the scopes of the assignment.
@@ -951,11 +958,9 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
       - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+Read-only.
     - `[Condition <String>]`: 
     - `[Description <String>]`: Description of the role assignment.
     - `[DirectoryScopeIds <String- `[]`>]`: Ids of the directory objects that represent the scopes of the assignment.
@@ -1087,11 +1092,9 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
       - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+Read-only.
     - `[Condition <String>]`: 
     - `[Description <String>]`: Description of the role assignment.
     - `[DirectoryScopeIds <String- `[]`>]`: Ids of the directory objects that represent the scopes of the assignment.
@@ -1241,11 +1244,9 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
       - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+Read-only.
     - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment or role eligibility is scoped to an app.
 The scope of an assignment or role eligibility determines the set of resources for which the principal has been granted access.
 App scopes are scopes that are defined and understood by this application only.
@@ -1665,11 +1666,9 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
       - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+Read-only.
     - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment or role eligibility is scoped to an app.
 The scope of an assignment or role eligibility determines the set of resources for which the principal has been granted access.
 App scopes are scopes that are defined and understood by this application only.
@@ -2090,11 +2089,9 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
       - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+Read-only.
     - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment or role eligibility is scoped to an app.
 The scope of an assignment or role eligibility determines the set of resources for which the principal has been granted access.
 App scopes are scopes that are defined and understood by this application only.
@@ -2439,11 +2436,9 @@ EXCHANGE `<IMicrosoftGraphUnifiedRbacApplication>`: unifiedRbacApplication
 Read-only.
   - `[CustomAppScopes <IMicrosoftGraphCustomAppScope- `[]`>]`: Workload-specific scope object that represents the resources for which the principal has been granted access.
     - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
     - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[CustomAttributes <IMicrosoftGraphCustomAppScopeAttributesDictionary>]`: customAppScopeAttributesDictionary
@@ -2502,11 +2497,9 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
       - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+Read-only.
     - `[AppScopeId <String>]`: Identifier of the app specific scope when the assignment scope is app specific.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
 App scopes are scopes that are defined and understood by a resource application only.
