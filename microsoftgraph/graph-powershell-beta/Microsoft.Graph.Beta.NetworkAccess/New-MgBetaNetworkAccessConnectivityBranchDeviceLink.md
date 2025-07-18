@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchdevicelink
 schema: 2.0.0
+ms.subservice: entra-global-secure-access
 ---
 
 # New-MgBetaNetworkAccessConnectivityBranchDeviceLink
