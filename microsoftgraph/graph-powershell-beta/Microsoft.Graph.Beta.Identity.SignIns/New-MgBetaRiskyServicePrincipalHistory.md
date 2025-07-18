@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsEnabled
-.
+
 
 ```yaml
 Type: SwitchParameter

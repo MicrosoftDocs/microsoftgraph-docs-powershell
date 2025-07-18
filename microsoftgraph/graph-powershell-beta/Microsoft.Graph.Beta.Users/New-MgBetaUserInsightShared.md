@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharingHistory
-.
+
 To construct, see NOTES section for SHARINGHISTORY properties and create a hash table.
 
 ```yaml

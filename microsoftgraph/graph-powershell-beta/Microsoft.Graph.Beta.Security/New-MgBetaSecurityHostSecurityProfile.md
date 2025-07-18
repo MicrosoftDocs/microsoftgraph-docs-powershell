@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureSubscriptionId
-.
+
 
 ```yaml
 Type: String
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureTenantId
-.
+
 
 ```yaml
 Type: String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirstSeenDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fqdn
-.
+
 
 ```yaml
 Type: String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsAzureAdJoined
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsAzureAdRegistered
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsHybridAzureDomainJoined
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastSeenDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogonUsers
-.
+
 To construct, see NOTES section for LOGONUSERS properties and create a hash table.
 
 ```yaml
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetBiosName
-.
+
 
 ```yaml
 Type: String
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInterfaces
-.
+
 To construct, see NOTES section for NETWORKINTERFACES properties and create a hash table.
 
 ```yaml
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -OS
-.
+
 
 ```yaml
 Type: String
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSVersion
-.
+
 
 ```yaml
 Type: String
@@ -296,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentHost
-.
+
 
 ```yaml
 Type: String
@@ -326,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### -RelatedHostIds
-.
+
 
 ```yaml
 Type: String[]
@@ -356,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### -RiskScore
-.
+
 
 ```yaml
 Type: String
@@ -371,7 +371,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-.
+
 
 ```yaml
 Type: String[]

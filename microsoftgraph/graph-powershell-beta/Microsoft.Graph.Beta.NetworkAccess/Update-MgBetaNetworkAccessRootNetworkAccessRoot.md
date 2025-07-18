@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -Alerts
-.
+
 To construct, see NOTES section for ALERTS properties and create a hash table.
 
 ```yaml
@@ -293,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThreatIntelligencePolicies
-.
+
 To construct, see NOTES section for THREATINTELLIGENCEPOLICIES properties and create a hash table.
 
 ```yaml

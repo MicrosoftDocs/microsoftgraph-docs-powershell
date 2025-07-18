@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Applications
-.
+
 To construct, see NOTES section for APPLICATIONS properties and create a hash table.
 
 ```yaml
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -Members
-.
+
 To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml

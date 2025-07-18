@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -CurrencyCode
-.
+
 
 ```yaml
 Type: String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -CurrencyId
-.
+
 
 ```yaml
 Type: String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiscountAmount
-.
+
 
 ```yaml
 Type: Decimal
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiscountAppliedBeforeTax
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -DueDate
-.
+
 
 ```yaml
 Type: DateTime
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+
 
 ```yaml
 Type: String
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -InvoiceDate
-.
+
 
 ```yaml
 Type: DateTime
@@ -280,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -295,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -Number
-.
+
 
 ```yaml
 Type: String
@@ -326,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### -PayToContact
-.
+
 
 ```yaml
 Type: String
@@ -341,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### -PayToName
-.
+
 
 ```yaml
 Type: String
@@ -356,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### -PayToVendorId
-.
+
 
 ```yaml
 Type: String
@@ -371,7 +371,7 @@ Accept wildcard characters: False
 ```
 
 ### -PayToVendorNumber
-.
+
 
 ```yaml
 Type: String
@@ -386,7 +386,7 @@ Accept wildcard characters: False
 ```
 
 ### -PricesIncludeTax
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -431,7 +431,7 @@ Accept wildcard characters: False
 ```
 
 ### -PurchaseInvoiceLines
-.
+
 To construct, see NOTES section for PURCHASEINVOICELINES properties and create a hash table.
 
 ```yaml
@@ -478,7 +478,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShipToContact
-.
+
 
 ```yaml
 Type: String
@@ -493,7 +493,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShipToName
-.
+
 
 ```yaml
 Type: String
@@ -508,7 +508,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-.
+
 
 ```yaml
 Type: String
@@ -523,7 +523,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalAmountExcludingTax
-.
+
 
 ```yaml
 Type: Decimal
@@ -538,7 +538,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalAmountIncludingTax
-.
+
 
 ```yaml
 Type: Decimal
@@ -553,7 +553,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalTaxAmount
-.
+
 
 ```yaml
 Type: Decimal
@@ -584,7 +584,7 @@ Accept wildcard characters: False
 ```
 
 ### -VendorId
-.
+
 
 ```yaml
 Type: String
@@ -599,7 +599,7 @@ Accept wildcard characters: False
 ```
 
 ### -VendorInvoiceNumber
-.
+
 
 ```yaml
 Type: String
@@ -614,7 +614,7 @@ Accept wildcard characters: False
 ```
 
 ### -VendorName
-.
+
 
 ```yaml
 Type: String
@@ -629,7 +629,7 @@ Accept wildcard characters: False
 ```
 
 ### -VendorNumber
-.
+
 
 ```yaml
 Type: String
