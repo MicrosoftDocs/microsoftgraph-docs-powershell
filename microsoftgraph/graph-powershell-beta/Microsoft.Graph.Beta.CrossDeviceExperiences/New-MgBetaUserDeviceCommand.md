@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdevicecommand
@@ -18,13 +18,13 @@ New-MgBetaUserDeviceCommand -DeviceId <String> -UserId <String> [-ResponseHeader
  [-AdditionalProperties <Hashtable>] [-AppServiceName <String>] [-Error <String>] [-Id <String>]
  [-PackageFamilyName <String>] [-Payload <Hashtable>] [-PermissionTicket <String>] [-PostBackUri <String>]
  [-Responsepayload <Hashtable>] [-Status <String>] [-Type <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserDeviceCommand -DeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphCommand>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,20 +34,30 @@ New-MgBetaUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity> [-Res
  [-AdditionalProperties <Hashtable>] [-AppServiceName <String>] [-Error <String>] [-Id <String>]
  [-PackageFamilyName <String>] [-Payload <Hashtable>] [-PermissionTicket <String>] [-PostBackUri <String>]
  [-Responsepayload <Hashtable>] [-Status <String>] [-Type <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity>
  -BodyParameter <IMicrosoftGraphCommand> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to commands for users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -67,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppServiceName
-
+.
 
 ```yaml
 Type: String
@@ -97,21 +107,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DeviceId
 The unique identifier of device
 
@@ -128,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Error
-
+.
 
 ```yaml
 Type: String
@@ -190,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -PackageFamilyName
-
+.
 
 ```yaml
 Type: String
@@ -220,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionTicket
-
+.
 
 ```yaml
 Type: String
@@ -235,12 +230,27 @@ Accept wildcard characters: False
 ```
 
 ### -PostBackUri
-
+.
 
 ```yaml
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -280,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-
+.
 
 ```yaml
 Type: String
@@ -295,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-
+.
 
 ```yaml
 Type: String
@@ -318,6 +328,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -357,59 +382,36 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCommand>`: command
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphCommand\>: command
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AppServiceName <String>]`: 
-  - `[Error <String>]`: 
-  - `[PackageFamilyName <String>]`: 
-  - `[Payload <IMicrosoftGraphPayloadRequest>]`: payloadRequest
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[PermissionTicket <String>]`: 
-  - `[PostBackUri <String>]`: 
-  - `[Responsepayload <IMicrosoftGraphPayloadResponse>]`: payloadResponse
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[AppServiceName \<String\>\]: 
+  \[Error \<String\>\]: 
+  \[PackageFamilyName \<String\>\]: 
+  \[Payload \<IMicrosoftGraphPayloadRequest\>\]: payloadRequest
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[PermissionTicket \<String\>\]: 
+  \[PostBackUri \<String\>\]: 
+  \[Responsepayload \<IMicrosoftGraphPayloadResponse\>\]: payloadResponse
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Status <String>]`: 
-  - `[Type <String>]`: 
+  \[Status \<String\>\]: 
+  \[Type \<String\>\]: 
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
-  - `[ActivityHistoryItemId <String>]`: The unique identifier of activityHistoryItem
-  - `[CommandId <String>]`: The unique identifier of command
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceTemplateId <String>]`: The unique identifier of deviceTemplate
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[UsageRightId <String>]`: The unique identifier of usageRight
-  - `[UserActivityId <String>]`: The unique identifier of userActivity
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
+  \[ActivityHistoryItemId \<String\>\]: The unique identifier of activityHistoryItem
+  \[CommandId \<String\>\]: The unique identifier of command
+  \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceTemplateId \<String\>\]: The unique identifier of deviceTemplate
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[UsageRightId \<String\>\]: The unique identifier of usageRight
+  \[UserActivityId \<String\>\]: The unique identifier of userActivity
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdevicecommand](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdevicecommand)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

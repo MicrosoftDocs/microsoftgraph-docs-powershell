@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyserviceprincipalcreationpolicy
@@ -18,13 +18,13 @@ New-MgBetaPolicyServicePrincipalCreationPolicy [-ResponseHeadersVariable <String
  [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Excludes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>] [-Id <String>]
  [-Includes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>] [-IsBuiltIn] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaPolicyServicePrincipalCreationPolicy -BodyParameter <IMicrosoftGraphServicePrincipalCreationPolicy>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,6 +32,16 @@ New-MgBetaPolicyServicePrincipalCreationPolicy -BodyParameter <IMicrosoftGraphSe
 Create new navigation property to servicePrincipalCreationPolicies for policies
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -63,21 +73,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -130,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Excludes
-
+.
 To construct, see NOTES section for EXCLUDES properties and create a hash table.
 
 ```yaml
@@ -177,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Includes
-
+.
 To construct, see NOTES section for INCLUDES properties and create a hash table.
 
 ```yaml
@@ -193,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsBuiltIn
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -207,6 +202,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -214,6 +224,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -254,69 +279,46 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphServicePrincipalCreationPolicy>`: servicePrincipalCreationPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Description for this policy.
+BODYPARAMETER \<IMicrosoftGraphServicePrincipalCreationPolicy\>: servicePrincipalCreationPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Description \<String\>\]: Description for this policy.
 Required.
-  - `[DisplayName <String>]`: Display name for this policy.
+  \[DisplayName \<String\>\]: Display name for this policy.
 Required.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Excludes <IMicrosoftGraphServicePrincipalCreationConditionSet- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Excludes \<IMicrosoftGraphServicePrincipalCreationConditionSet\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ApplicationIds <String- `[]`>]`: 
-    - `[ApplicationPublisherIds <String- `[]`>]`: 
-    - `[ApplicationTenantIds <String- `[]`>]`: 
-    - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
-    - `[CertifiedApplicationsOnly <Boolean?>]`: 
-  - `[Includes <IMicrosoftGraphServicePrincipalCreationConditionSet- `[]`>]`: 
-  - `[IsBuiltIn <Boolean?>]`: 
+    \[ApplicationIds \<String\[\]\>\]: 
+    \[ApplicationPublisherIds \<String\[\]\>\]: 
+    \[ApplicationTenantIds \<String\[\]\>\]: 
+    \[ApplicationsFromVerifiedPublisherOnly \<Boolean?\>\]: 
+    \[CertifiedApplicationsOnly \<Boolean?\>\]: 
+  \[Includes \<IMicrosoftGraphServicePrincipalCreationConditionSet\[\]\>\]: 
+  \[IsBuiltIn \<Boolean?\>\]: 
 
-EXCLUDES `<IMicrosoftGraphServicePrincipalCreationConditionSet- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+EXCLUDES \<IMicrosoftGraphServicePrincipalCreationConditionSet\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ApplicationIds <String- `[]`>]`: 
-  - `[ApplicationPublisherIds <String- `[]`>]`: 
-  - `[ApplicationTenantIds <String- `[]`>]`: 
-  - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
-  - `[CertifiedApplicationsOnly <Boolean?>]`: 
+  \[ApplicationIds \<String\[\]\>\]: 
+  \[ApplicationPublisherIds \<String\[\]\>\]: 
+  \[ApplicationTenantIds \<String\[\]\>\]: 
+  \[ApplicationsFromVerifiedPublisherOnly \<Boolean?\>\]: 
+  \[CertifiedApplicationsOnly \<Boolean?\>\]: 
 
-INCLUDES `<IMicrosoftGraphServicePrincipalCreationConditionSet- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+INCLUDES \<IMicrosoftGraphServicePrincipalCreationConditionSet\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ApplicationIds <String- `[]`>]`: 
-  - `[ApplicationPublisherIds <String- `[]`>]`: 
-  - `[ApplicationTenantIds <String- `[]`>]`: 
-  - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
-  - `[CertifiedApplicationsOnly <Boolean?>]`:
+  \[ApplicationIds \<String\[\]\>\]: 
+  \[ApplicationPublisherIds \<String\[\]\>\]: 
+  \[ApplicationTenantIds \<String\[\]\>\]: 
+  \[ApplicationsFromVerifiedPublisherOnly \<Boolean?\>\]: 
+  \[CertifiedApplicationsOnly \<Boolean?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyserviceprincipalcreationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyserviceprincipalcreationpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

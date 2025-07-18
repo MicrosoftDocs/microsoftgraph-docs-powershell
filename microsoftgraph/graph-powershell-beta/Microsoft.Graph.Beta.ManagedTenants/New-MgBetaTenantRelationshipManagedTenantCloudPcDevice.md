@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcloudpcdevice
@@ -19,20 +19,30 @@ New-MgBetaTenantRelationshipManagedTenantCloudPcDevice [-ResponseHeadersVariable
  [-DisplayName <String>] [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-ManagedDeviceId <String>]
  [-ManagedDeviceName <String>] [-ProvisioningPolicyId <String>] [-ServicePlanName <String>]
  [-ServicePlanType <String>] [-TenantDisplayName <String>] [-TenantId <String>] [-UserPrincipalName <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantCloudPcDevice
  -BodyParameter <IMicrosoftGraphManagedTenantsCloudPcDevice> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to cloudPcDevices for tenantRelationships
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -77,21 +87,6 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -208,6 +203,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -333,6 +343,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -365,72 +390,49 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsCloudPcDevice>`: cloudPcDevice
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsCloudPcDevice\>: cloudPcDevice
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CloudPcStatus <String>]`: The status of the cloud PC.
+  \[CloudPcStatus \<String\>\]: The status of the cloud PC.
 Possible values are: notProvisioned, provisioning, provisioned, upgrading, inGracePeriod, deprovisioning, failed.
 Required.
 Read-only.
-  - `[DeviceSpecification <String>]`: The specification of the cloud PC device.
+  \[DeviceSpecification \<String\>\]: The specification of the cloud PC device.
 Required.
 Read-only.
-  - `[DisplayName <String>]`: The display name  of the cloud PC device.
+  \[DisplayName \<String\>\]: The display name  of the cloud PC device.
 Required.
 Read-only.
-  - `[LastRefreshedDateTime <DateTime?>]`: Date and time the entity was last updated in the multi-tenant management platform.
+  \[LastRefreshedDateTime \<DateTime?\>\]: Date and time the entity was last updated in the multi-tenant management platform.
 Required.
 Read-only.
-  - `[ManagedDeviceId <String>]`: The managed device identifier of the cloud PC device.
+  \[ManagedDeviceId \<String\>\]: The managed device identifier of the cloud PC device.
 Optional.
 Read-only.
-  - `[ManagedDeviceName <String>]`: The managed device display name of the cloud PC device.
+  \[ManagedDeviceName \<String\>\]: The managed device display name of the cloud PC device.
 Optional.
 Read-only.
-  - `[ProvisioningPolicyId <String>]`: The provisioning policy identifier for the cloud PC device.
+  \[ProvisioningPolicyId \<String\>\]: The provisioning policy identifier for the cloud PC device.
 Required.
 Read-only.
-  - `[ServicePlanName <String>]`: The service plan name of the cloud PC device.
+  \[ServicePlanName \<String\>\]: The service plan name of the cloud PC device.
 Required.
 Read-only.
-  - `[ServicePlanType <String>]`: The service plan type of the cloud PC device.
+  \[ServicePlanType \<String\>\]: The service plan type of the cloud PC device.
 Required.
 Read-only.
-  - `[TenantDisplayName <String>]`: The display name for the managed tenant.
+  \[TenantDisplayName \<String\>\]: The display name for the managed tenant.
 Required.
 Read-only.
-  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
+  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
 Required.
 Read-only.
-  - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user assigned to the cloud PC device.
+  \[UserPrincipalName \<String\>\]: The user principal name (UPN) of the user assigned to the cloud PC device.
 Required.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcloudpcdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcloudpcdevice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

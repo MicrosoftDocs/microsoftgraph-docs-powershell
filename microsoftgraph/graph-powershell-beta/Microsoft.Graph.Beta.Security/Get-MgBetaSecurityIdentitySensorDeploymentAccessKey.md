@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensordeploymentaccesskey
 schema: 2.0.0
-ms.subservice: security
 ---
 
 # Get-MgBetaSecurityIdentitySensorDeploymentAccessKey
@@ -11,39 +10,24 @@ ms.subservice: security
 ## SYNOPSIS
 Get the deployment access key associated with a Microsoft Defender for Identity, needed to install sensors associated with the workspace.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIdentitySensorDeploymentAccessKey](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIdentitySensorDeploymentAccessKey?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
 Get-MgBetaSecurityIdentitySensorDeploymentAccessKey [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the deployment access key associated with a Microsoft Defender for Identity, needed to install sensors associated with the workspace.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityIdentitiesSensors.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityIdentitiesSensors.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 Get-MgBetaSecurityIdentitySensorDeploymentAccessKey
-
-```
-This example shows how to use the Get-MgBetaSecurityIdentitySensorDeploymentAccessKey Cmdlet.
-
 
 ## PARAMETERS
 
@@ -59,6 +43,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -93,26 +92,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensordeploymentaccesskey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensordeploymentaccesskey)
 
 [https://learn.microsoft.com/graph/api/security-sensor-getdeploymentaccesskey?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-sensor-getdeploymentaccesskey?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

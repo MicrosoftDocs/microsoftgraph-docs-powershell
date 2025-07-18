@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting
 schema: 2.0.0
-ms.subservice: teams
 ---
 
 # Update-MgTeamworkTeamAppSetting
@@ -11,22 +10,19 @@ ms.subservice: teams
 ## SYNOPSIS
 Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkTeamAppSetting?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgTeamworkTeamAppSetting [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AllowUserRequestsForAppAccess] [-Id <String>] [-IsUserPersonalScopeResourceSpecificConsentEnabled]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSettings>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,9 +30,11 @@ Update-MgTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSettings>
 Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
 
 ## EXAMPLES
-### Example 1: Update the tenant-wide teamsAppSettings for all Teams apps in the tenant
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.teamsAppSettings"
@@ -44,8 +42,6 @@ $params = @{
 }
 
 Update-MgTeamworkTeamAppSetting -BodyParameter $params
-```
-This example updates the tenant-wide teamsAppSettings for all Teams apps in the tenant
 
 ## PARAMETERS
 
@@ -92,21 +88,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -158,6 +139,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -165,6 +161,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -205,12 +216,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppSettings>`: teamsAppSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphTeamsAppSettings\>: teamsAppSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AllowUserRequestsForAppAccess <Boolean?>]`: Indicates whether users are allowed to request access to the unavailable Teams apps.
-  - `[IsUserPersonalScopeResourceSpecificConsentEnabled <Boolean?>]`: Indicates whether resource-specific consent for personal scope in Teams apps is enabled for the tenant.
+  \[AllowUserRequestsForAppAccess \<Boolean?\>\]: Indicates whether users are allowed to request access to the unavailable Teams apps.
+  \[IsUserPersonalScopeResourceSpecificConsentEnabled \<Boolean?\>\]: Indicates whether resource-specific consent for personal scope in Teams apps is enabled for the tenant.
 True indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed in the personal scope.
 False blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.
 
@@ -219,26 +230,4 @@ False blocks the installation of any Teams app that requires resource-specific p
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting)
 
 [https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

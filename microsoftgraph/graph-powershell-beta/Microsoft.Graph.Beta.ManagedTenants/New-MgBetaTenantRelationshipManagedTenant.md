@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenant
@@ -18,13 +18,13 @@ New-MgBetaTenantRelationshipManagedTenant [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Contract <IMicrosoftGraphManagedTenantsTenantContract>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
  [-TenantId <String>] [-TenantStatusInformation <IMicrosoftGraphManagedTenantsTenantStatusInformation>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenant -BodyParameter <IMicrosoftGraphManagedTenantsTenant>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,6 +32,16 @@ New-MgBetaTenantRelationshipManagedTenant -BodyParameter <IMicrosoftGraphManaged
 Create new navigation property to tenants for tenantRelationships
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -63,21 +73,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -179,6 +174,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -227,6 +237,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -259,137 +284,114 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsTenant>`: tenant
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsTenant\>: tenant
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Contract <IMicrosoftGraphManagedTenantsTenantContract>]`: tenantContract
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContractType <Int32?>]`: The type of relationship that exists between the managing entity and tenant.
+  \[Contract \<IMicrosoftGraphManagedTenantsTenantContract\>\]: tenantContract
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ContractType \<Int32?\>\]: The type of relationship that exists between the managing entity and tenant.
 Optional.
 Read-only.
-    - `[DefaultDomainName <String>]`: The default domain name for the tenant.
+    \[DefaultDomainName \<String\>\]: The default domain name for the tenant.
 Required.
 Read-only.
-    - `[DisplayName <String>]`: The display name for the tenant.
+    \[DisplayName \<String\>\]: The display name for the tenant.
 Optional.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The date and time the tenant was created in the multi-tenant management platform.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time the tenant was created in the multi-tenant management platform.
 Optional.
 Read-only.
-  - `[DisplayName <String>]`: The display name for the tenant.
+  \[DisplayName \<String\>\]: The display name for the tenant.
 Required.
 Read-only.
-  - `[LastUpdatedDateTime <DateTime?>]`: The date and time the tenant was last updated within the multi-tenant management platform.
+  \[LastUpdatedDateTime \<DateTime?\>\]: The date and time the tenant was last updated within the multi-tenant management platform.
 Optional.
 Read-only.
-  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
+  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 Read-only.
-  - `[TenantStatusInformation <IMicrosoftGraphManagedTenantsTenantStatusInformation>]`: tenantStatusInformation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DelegatedPrivilegeStatus <String>]`: delegatedPrivilegeStatus
-    - `[LastDelegatedPrivilegeRefreshDateTime <DateTime?>]`: The date and time the delegated admin privileges status was updated.
+  \[TenantStatusInformation \<IMicrosoftGraphManagedTenantsTenantStatusInformation\>\]: tenantStatusInformation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DelegatedPrivilegeStatus \<String\>\]: delegatedPrivilegeStatus
+    \[LastDelegatedPrivilegeRefreshDateTime \<DateTime?\>\]: The date and time the delegated admin privileges status was updated.
 Optional.
 Read-only.
-    - `[OffboardedByUserId <String>]`: The identifier for the account that offboarded the managed tenant.
+    \[OffboardedByUserId \<String\>\]: The identifier for the account that offboarded the managed tenant.
 Optional.
 Read-only.
-    - `[OffboardedDateTime <DateTime?>]`: The date and time when the managed tenant was offboarded.
+    \[OffboardedDateTime \<DateTime?\>\]: The date and time when the managed tenant was offboarded.
 Optional.
 Read-only.
-    - `[OnboardedByUserId <String>]`: The identifier for the account that onboarded the managed tenant.
+    \[OnboardedByUserId \<String\>\]: The identifier for the account that onboarded the managed tenant.
 Optional.
 Read-only.
-    - `[OnboardedDateTime <DateTime?>]`: The date and time when the managed tenant was onboarded.
+    \[OnboardedDateTime \<DateTime?\>\]: The date and time when the managed tenant was onboarded.
 Optional.
 Read-only.
-    - `[OnboardingStatus <String>]`: tenantOnboardingStatus
-    - `[TenantOnboardingEligibilityReason <String>]`: tenantOnboardingEligibilityReason
-    - `[WorkloadStatuses <IMicrosoftGraphManagedTenantsWorkloadStatus- `[]`>]`: The collection of workload statues for the managed tenant.
+    \[OnboardingStatus \<String\>\]: tenantOnboardingStatus
+    \[TenantOnboardingEligibilityReason \<String\>\]: tenantOnboardingEligibilityReason
+    \[WorkloadStatuses \<IMicrosoftGraphManagedTenantsWorkloadStatus\[\]\>\]: The collection of workload statues for the managed tenant.
 Optional.
 Read-only.
-      - `[DisplayName <String>]`: The display name for the workload.
+      \[DisplayName \<String\>\]: The display name for the workload.
 Required.
 Read-only.
-      - `[OffboardedDateTime <DateTime?>]`: The date and time the workload was offboarded.
+      \[OffboardedDateTime \<DateTime?\>\]: The date and time the workload was offboarded.
 Optional.
 Read-only.
-      - `[OnboardedDateTime <DateTime?>]`: The date and time the workload was onboarded.
+      \[OnboardedDateTime \<DateTime?\>\]: The date and time the workload was onboarded.
 Optional.
 Read-only.
-      - `[OnboardingStatus <String>]`: workloadOnboardingStatus
+      \[OnboardingStatus \<String\>\]: workloadOnboardingStatus
 
-CONTRACT `<IMicrosoftGraphManagedTenantsTenantContract>`: tenantContract
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContractType <Int32?>]`: The type of relationship that exists between the managing entity and tenant.
+CONTRACT \<IMicrosoftGraphManagedTenantsTenantContract\>: tenantContract
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ContractType \<Int32?\>\]: The type of relationship that exists between the managing entity and tenant.
 Optional.
 Read-only.
-  - `[DefaultDomainName <String>]`: The default domain name for the tenant.
+  \[DefaultDomainName \<String\>\]: The default domain name for the tenant.
 Required.
 Read-only.
-  - `[DisplayName <String>]`: The display name for the tenant.
+  \[DisplayName \<String\>\]: The display name for the tenant.
 Optional.
 Read-only.
 
-TENANTSTATUSINFORMATION `<IMicrosoftGraphManagedTenantsTenantStatusInformation>`: tenantStatusInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DelegatedPrivilegeStatus <String>]`: delegatedPrivilegeStatus
-  - `[LastDelegatedPrivilegeRefreshDateTime <DateTime?>]`: The date and time the delegated admin privileges status was updated.
+TENANTSTATUSINFORMATION \<IMicrosoftGraphManagedTenantsTenantStatusInformation\>: tenantStatusInformation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DelegatedPrivilegeStatus \<String\>\]: delegatedPrivilegeStatus
+  \[LastDelegatedPrivilegeRefreshDateTime \<DateTime?\>\]: The date and time the delegated admin privileges status was updated.
 Optional.
 Read-only.
-  - `[OffboardedByUserId <String>]`: The identifier for the account that offboarded the managed tenant.
+  \[OffboardedByUserId \<String\>\]: The identifier for the account that offboarded the managed tenant.
 Optional.
 Read-only.
-  - `[OffboardedDateTime <DateTime?>]`: The date and time when the managed tenant was offboarded.
+  \[OffboardedDateTime \<DateTime?\>\]: The date and time when the managed tenant was offboarded.
 Optional.
 Read-only.
-  - `[OnboardedByUserId <String>]`: The identifier for the account that onboarded the managed tenant.
+  \[OnboardedByUserId \<String\>\]: The identifier for the account that onboarded the managed tenant.
 Optional.
 Read-only.
-  - `[OnboardedDateTime <DateTime?>]`: The date and time when the managed tenant was onboarded.
+  \[OnboardedDateTime \<DateTime?\>\]: The date and time when the managed tenant was onboarded.
 Optional.
 Read-only.
-  - `[OnboardingStatus <String>]`: tenantOnboardingStatus
-  - `[TenantOnboardingEligibilityReason <String>]`: tenantOnboardingEligibilityReason
-  - `[WorkloadStatuses <IMicrosoftGraphManagedTenantsWorkloadStatus- `[]`>]`: The collection of workload statues for the managed tenant.
+  \[OnboardingStatus \<String\>\]: tenantOnboardingStatus
+  \[TenantOnboardingEligibilityReason \<String\>\]: tenantOnboardingEligibilityReason
+  \[WorkloadStatuses \<IMicrosoftGraphManagedTenantsWorkloadStatus\[\]\>\]: The collection of workload statues for the managed tenant.
 Optional.
 Read-only.
-    - `[DisplayName <String>]`: The display name for the workload.
+    \[DisplayName \<String\>\]: The display name for the workload.
 Required.
 Read-only.
-    - `[OffboardedDateTime <DateTime?>]`: The date and time the workload was offboarded.
+    \[OffboardedDateTime \<DateTime?\>\]: The date and time the workload was offboarded.
 Optional.
 Read-only.
-    - `[OnboardedDateTime <DateTime?>]`: The date and time the workload was onboarded.
+    \[OnboardedDateTime \<DateTime?\>\]: The date and time the workload was onboarded.
 Optional.
 Read-only.
-    - `[OnboardingStatus <String>]`: workloadOnboardingStatus
+    \[OnboardingStatus \<String\>\]: workloadOnboardingStatus
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenant)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

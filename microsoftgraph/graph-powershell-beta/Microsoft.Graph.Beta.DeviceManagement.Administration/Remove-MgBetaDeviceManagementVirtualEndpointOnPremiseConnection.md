@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointonpremiseconnection
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
@@ -13,23 +12,20 @@ Delete a specific cloudPcOnPremisesConnection object.
 When you delete an Azure network connection, permissions to the service are removed from the specified Azure resources.
 You can't delete an Azure network connection when it's in use, as indicated by the inUse property.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
 Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
  -InputObject <IDeviceManagementAdministrationIdentity> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,17 +35,13 @@ When you delete an Azure network connection, permissions to the service are remo
 You can't delete an Azure network connection when it's in use, as indicated by the inUse property.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+```
 
 Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId
-
-```
-This example shows how to use the Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -62,21 +54,6 @@ Parameter Sets: Delete
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -144,6 +121,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -151,6 +143,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -191,89 +198,67 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
-  - `[AuditEventId <String>]`: The unique identifier of auditEvent
-  - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
-  - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
-  - `[CloudPcBulkActionId <String>]`: The unique identifier of cloudPcBulkAction
-  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
-  - `[CloudPcExportJobId <String>]`: The unique identifier of cloudPcExportJob
-  - `[CloudPcExternalPartnerSettingId <String>]`: The unique identifier of cloudPcExternalPartnerSetting
-  - `[CloudPcFrontLineServicePlanId <String>]`: The unique identifier of cloudPcFrontLineServicePlan
-  - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
-  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
-  - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
-  - `[CloudPcServicePlanId <String>]`: The unique identifier of cloudPcServicePlan
-  - `[CloudPcSnapshotId <String>]`: The unique identifier of cloudPcSnapshot
-  - `[CloudPcSupportedRegionId <String>]`: The unique identifier of cloudPcSupportedRegion
-  - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment
-  - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
-  - `[ComanagementEligibleDeviceId <String>]`: The unique identifier of comanagementEligibleDevice
-  - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
-  - `[DeviceManagementDomainJoinConnectorId <String>]`: The unique identifier of deviceManagementDomainJoinConnector
-  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
-  - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: The unique identifier of deviceManagementExchangeOnPremisesPolicy
-  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
-  - `[GroupPolicyCategoryId <String>]`: The unique identifier of groupPolicyCategory
-  - `[GroupPolicyCategoryId1 <String>]`: The unique identifier of groupPolicyCategory
-  - `[GroupPolicyDefinitionFileId <String>]`: The unique identifier of groupPolicyDefinitionFile
-  - `[GroupPolicyDefinitionId <String>]`: The unique identifier of groupPolicyDefinition
-  - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
-  - `[GroupPolicyObjectFileId <String>]`: The unique identifier of groupPolicyObjectFile
-  - `[GroupPolicyOperationId <String>]`: The unique identifier of groupPolicyOperation
-  - `[GroupPolicyPresentationId <String>]`: The unique identifier of groupPolicyPresentation
-  - `[GroupPolicySettingMappingId <String>]`: The unique identifier of groupPolicySettingMapping
-  - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
-  - `[IntuneBrandingProfileAssignmentId <String>]`: The unique identifier of intuneBrandingProfileAssignment
-  - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
-  - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
-  - `[ManagedAllDeviceCertificateStateId <String>]`: The unique identifier of managedAllDeviceCertificateState
-  - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
-  - `[NdesConnectorId <String>]`: The unique identifier of ndesConnector
-  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
-  - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
-  - `[RestrictedAppsViolationId <String>]`: The unique identifier of restrictedAppsViolation
-  - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
-  - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
-  - `[RoleScopeTagAutoAssignmentId <String>]`: The unique identifier of roleScopeTagAutoAssignment
-  - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
-  - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
-  - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
-  - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
-  - `[TermsAndConditionsGroupAssignmentId <String>]`: The unique identifier of termsAndConditionsGroupAssignment
-  - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
-  - `[UnsupportedGroupPolicyExtensionId <String>]`: The unique identifier of unsupportedGroupPolicyExtension
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
+INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
+  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
+  \[CartToClassAssociationId \<String\>\]: The unique identifier of cartToClassAssociation
+  \[CloudPcAuditEventId \<String\>\]: The unique identifier of cloudPcAuditEvent
+  \[CloudPcBulkActionId \<String\>\]: The unique identifier of cloudPcBulkAction
+  \[CloudPcDeviceImageId \<String\>\]: The unique identifier of cloudPcDeviceImage
+  \[CloudPcExportJobId \<String\>\]: The unique identifier of cloudPcExportJob
+  \[CloudPcExternalPartnerSettingId \<String\>\]: The unique identifier of cloudPcExternalPartnerSetting
+  \[CloudPcFrontLineServicePlanId \<String\>\]: The unique identifier of cloudPcFrontLineServicePlan
+  \[CloudPcGalleryImageId \<String\>\]: The unique identifier of cloudPcGalleryImage
+  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
+  \[CloudPcOnPremisesConnectionId \<String\>\]: The unique identifier of cloudPcOnPremisesConnection
+  \[CloudPcProvisioningPolicyAssignmentId \<String\>\]: The unique identifier of cloudPcProvisioningPolicyAssignment
+  \[CloudPcProvisioningPolicyId \<String\>\]: The unique identifier of cloudPcProvisioningPolicy
+  \[CloudPcServicePlanId \<String\>\]: The unique identifier of cloudPcServicePlan
+  \[CloudPcSnapshotId \<String\>\]: The unique identifier of cloudPcSnapshot
+  \[CloudPcSupportedRegionId \<String\>\]: The unique identifier of cloudPcSupportedRegion
+  \[CloudPcUserSettingAssignmentId \<String\>\]: The unique identifier of cloudPcUserSettingAssignment
+  \[CloudPcUserSettingId \<String\>\]: The unique identifier of cloudPcUserSetting
+  \[ComanagementEligibleDeviceId \<String\>\]: The unique identifier of comanagementEligibleDevice
+  \[ComplianceManagementPartnerId \<String\>\]: The unique identifier of complianceManagementPartner
+  \[DeviceAndAppManagementRoleAssignmentId \<String\>\]: The unique identifier of deviceAndAppManagementRoleAssignment
+  \[DeviceManagementDomainJoinConnectorId \<String\>\]: The unique identifier of deviceManagementDomainJoinConnector
+  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
+  \[DeviceManagementExchangeOnPremisesPolicyId \<String\>\]: The unique identifier of deviceManagementExchangeOnPremisesPolicy
+  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
+  \[GroupPolicyCategoryId \<String\>\]: The unique identifier of groupPolicyCategory
+  \[GroupPolicyCategoryId1 \<String\>\]: The unique identifier of groupPolicyCategory
+  \[GroupPolicyDefinitionFileId \<String\>\]: The unique identifier of groupPolicyDefinitionFile
+  \[GroupPolicyDefinitionId \<String\>\]: The unique identifier of groupPolicyDefinition
+  \[GroupPolicyMigrationReportId \<String\>\]: The unique identifier of groupPolicyMigrationReport
+  \[GroupPolicyObjectFileId \<String\>\]: The unique identifier of groupPolicyObjectFile
+  \[GroupPolicyOperationId \<String\>\]: The unique identifier of groupPolicyOperation
+  \[GroupPolicyPresentationId \<String\>\]: The unique identifier of groupPolicyPresentation
+  \[GroupPolicySettingMappingId \<String\>\]: The unique identifier of groupPolicySettingMapping
+  \[GroupPolicyUploadedDefinitionFileId \<String\>\]: The unique identifier of groupPolicyUploadedDefinitionFile
+  \[IntuneBrandingProfileAssignmentId \<String\>\]: The unique identifier of intuneBrandingProfileAssignment
+  \[IntuneBrandingProfileId \<String\>\]: The unique identifier of intuneBrandingProfile
+  \[IosUpdateDeviceStatusId \<String\>\]: The unique identifier of iosUpdateDeviceStatus
+  \[ManagedAllDeviceCertificateStateId \<String\>\]: The unique identifier of managedAllDeviceCertificateState
+  \[MobileThreatDefenseConnectorId \<String\>\]: The unique identifier of mobileThreatDefenseConnector
+  \[NdesConnectorId \<String\>\]: The unique identifier of ndesConnector
+  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
+  \[ResourceOperationId \<String\>\]: The unique identifier of resourceOperation
+  \[RestrictedAppsViolationId \<String\>\]: The unique identifier of restrictedAppsViolation
+  \[RoleAssignmentId \<String\>\]: The unique identifier of roleAssignment
+  \[RoleDefinitionId \<String\>\]: The unique identifier of roleDefinition
+  \[RoleScopeTagAutoAssignmentId \<String\>\]: The unique identifier of roleScopeTagAutoAssignment
+  \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
+  \[TelecomExpenseManagementPartnerId \<String\>\]: The unique identifier of telecomExpenseManagementPartner
+  \[TermsAndConditionsAcceptanceStatusId \<String\>\]: The unique identifier of termsAndConditionsAcceptanceStatus
+  \[TermsAndConditionsAssignmentId \<String\>\]: The unique identifier of termsAndConditionsAssignment
+  \[TermsAndConditionsGroupAssignmentId \<String\>\]: The unique identifier of termsAndConditionsGroupAssignment
+  \[TermsAndConditionsId \<String\>\]: The unique identifier of termsAndConditions
+  \[UnsupportedGroupPolicyExtensionId \<String\>\]: The unique identifier of unsupportedGroupPolicyExtension
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserPfxCertificateId \<String\>\]: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointonpremiseconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointonpremiseconnection)
 
 [https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

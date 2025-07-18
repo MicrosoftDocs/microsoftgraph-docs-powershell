@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummary
@@ -20,29 +20,31 @@ Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary [-Re
  [-CompliantDeviceCount <Int32>] [-ConflictDeviceCount <Int32>] [-ErrorDeviceCount <Int32>] [-Id <String>]
  [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>] [-NotAssignedDeviceCount <Int32>]
  [-RemediatedDeviceCount <Int32>] [-UnknownDeviceCount <Int32>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
  -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -62,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdvancedThreatProtectionOnboardingDeviceSettingStates
-
+.
 To construct, see NOTES section for ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES properties and create a hash table.
 
 ```yaml
@@ -104,21 +106,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -229,6 +216,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RemediatedDeviceCount
 Number of remediated devices
 
@@ -274,6 +276,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -306,74 +323,51 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES `<IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES \<IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
-  - `[DeviceId <String>]`: The Device Id that is being reported
-  - `[DeviceModel <String>]`: The device model that is being reported
-  - `[DeviceName <String>]`: The Device Name that is being reported
-  - `[PlatformType <DeviceType?>]`: Device type.
-  - `[Setting <String>]`: The setting class name and property name.
-  - `[SettingName <String>]`: The Setting Name that is being reported
-  - `[State <String>]`: complianceStatus
-  - `[UserEmail <String>]`: The User email address that is being reported
-  - `[UserId <String>]`: The user Id that is being reported
-  - `[UserName <String>]`: The User Name that is being reported
-  - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
+  \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
+  \[DeviceId \<String\>\]: The Device Id that is being reported
+  \[DeviceModel \<String\>\]: The device model that is being reported
+  \[DeviceName \<String\>\]: The Device Name that is being reported
+  \[PlatformType \<DeviceType?\>\]: Device type.
+  \[Setting \<String\>\]: The setting class name and property name.
+  \[SettingName \<String\>\]: The Setting Name that is being reported
+  \[State \<String\>\]: complianceStatus
+  \[UserEmail \<String\>\]: The User email address that is being reported
+  \[UserId \<String\>\]: The user Id that is being reported
+  \[UserName \<String\>\]: The User Name that is being reported
+  \[UserPrincipalName \<String\>\]: The User PrincipalName that is being reported
 
-BODYPARAMETER `<IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary>`: Windows defender advanced threat protection onboarding state summary across the account.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary\>: Windows defender advanced threat protection onboarding state summary across the account.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AdvancedThreatProtectionOnboardingDeviceSettingStates <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[AdvancedThreatProtectionOnboardingDeviceSettingStates \<IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
-    - `[DeviceId <String>]`: The Device Id that is being reported
-    - `[DeviceModel <String>]`: The device model that is being reported
-    - `[DeviceName <String>]`: The Device Name that is being reported
-    - `[PlatformType <DeviceType?>]`: Device type.
-    - `[Setting <String>]`: The setting class name and property name.
-    - `[SettingName <String>]`: The Setting Name that is being reported
-    - `[State <String>]`: complianceStatus
-    - `[UserEmail <String>]`: The User email address that is being reported
-    - `[UserId <String>]`: The user Id that is being reported
-    - `[UserName <String>]`: The User Name that is being reported
-    - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
-  - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
-  - `[ConflictDeviceCount <Int32?>]`: Number of conflict devices
-  - `[ErrorDeviceCount <Int32?>]`: Number of error devices
-  - `[NonCompliantDeviceCount <Int32?>]`: Number of NonCompliant devices
-  - `[NotApplicableDeviceCount <Int32?>]`: Number of not applicable devices
-  - `[NotAssignedDeviceCount <Int32?>]`: Number of not assigned devices
-  - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
-  - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
+    \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
+    \[DeviceId \<String\>\]: The Device Id that is being reported
+    \[DeviceModel \<String\>\]: The device model that is being reported
+    \[DeviceName \<String\>\]: The Device Name that is being reported
+    \[PlatformType \<DeviceType?\>\]: Device type.
+    \[Setting \<String\>\]: The setting class name and property name.
+    \[SettingName \<String\>\]: The Setting Name that is being reported
+    \[State \<String\>\]: complianceStatus
+    \[UserEmail \<String\>\]: The User email address that is being reported
+    \[UserId \<String\>\]: The user Id that is being reported
+    \[UserName \<String\>\]: The User Name that is being reported
+    \[UserPrincipalName \<String\>\]: The User PrincipalName that is being reported
+  \[CompliantDeviceCount \<Int32?\>\]: Number of compliant devices
+  \[ConflictDeviceCount \<Int32?\>\]: Number of conflict devices
+  \[ErrorDeviceCount \<Int32?\>\]: Number of error devices
+  \[NonCompliantDeviceCount \<Int32?\>\]: Number of NonCompliant devices
+  \[NotApplicableDeviceCount \<Int32?\>\]: Number of not applicable devices
+  \[NotAssignedDeviceCount \<Int32?\>\]: Number of not assigned devices
+  \[RemediatedDeviceCount \<Int32?\>\]: Number of remediated devices
+  \[UnknownDeviceCount \<Int32?\>\]: Number of unknown devices
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

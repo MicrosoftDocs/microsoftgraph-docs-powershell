@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # New-MgIdentityAuthenticationEventListener
@@ -12,9 +11,6 @@ ms.subservice: entra-sign-in
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventListener?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,13 +18,13 @@ You can create one of the following subtypes that are derived from authenticatio
 New-MgIdentityAuthenticationEventListener [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AuthenticationEventsFlowId <String>]
  [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Id <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgIdentityAuthenticationEventListener -BodyParameter <IMicrosoftGraphAuthenticationEventListener>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,20 +32,12 @@ New-MgIdentityAuthenticationEventListener -BodyParameter <IMicrosoftGraphAuthent
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EventListener.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EventListener.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartListener"
@@ -71,10 +59,6 @@ $params = @{
 }
 
 New-MgIdentityAuthenticationEventListener -BodyParameter $params
-
-```
-This example shows how to use the New-MgIdentityAuthenticationEventListener Cmdlet.
-
 
 ## PARAMETERS
 
@@ -141,21 +125,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -187,6 +156,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -194,6 +178,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -234,51 +233,29 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationEventListener>`: authenticationEventListener
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAuthenticationEventListener\>: authenticationEventListener
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AuthenticationEventsFlowId <String>]`: Indicates the authenticationEventListener is associated with an authenticationEventsFlow.
+  \[AuthenticationEventsFlowId \<String\>\]: Indicates the authenticationEventListener is associated with an authenticationEventsFlow.
 Read-only.
-  - `[Conditions <IMicrosoftGraphAuthenticationConditions>]`: authenticationConditions
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Applications <IMicrosoftGraphAuthenticationConditionsApplications>]`: authenticationConditionsApplications
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication- `[]`>]`:
-        - `[AppId <String>]`: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
+  \[Conditions \<IMicrosoftGraphAuthenticationConditions\>\]: authenticationConditions
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Applications \<IMicrosoftGraphAuthenticationConditionsApplications\>\]: authenticationConditionsApplications
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[IncludeApplications \<IMicrosoftGraphAuthenticationConditionApplication\[\]\>\]: 
+        \[AppId \<String\>\]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
 
-CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Applications <IMicrosoftGraphAuthenticationConditionsApplications>]`: authenticationConditionsApplications
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication- `[]`>]`:
-      - `[AppId <String>]`: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
+CONDITIONS \<IMicrosoftGraphAuthenticationConditions\>: authenticationConditions
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Applications \<IMicrosoftGraphAuthenticationConditionsApplications\>\]: authenticationConditionsApplications
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IncludeApplications \<IMicrosoftGraphAuthenticationConditionApplication\[\]\>\]: 
+      \[AppId \<String\>\]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
