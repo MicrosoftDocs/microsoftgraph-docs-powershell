@@ -32,18 +32,6 @@ New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy
 ## DESCRIPTION
 Create new navigation property to policies for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -336,6 +324,7 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthpolicy)
+
 
 
 

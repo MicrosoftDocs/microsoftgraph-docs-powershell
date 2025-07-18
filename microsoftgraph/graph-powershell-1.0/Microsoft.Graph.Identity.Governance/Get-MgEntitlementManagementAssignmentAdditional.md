@@ -50,18 +50,6 @@ This can be used to prepare to configure the incompatible access packages for a 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -365,6 +353,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentadditional](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentadditional)
 
 [https://learn.microsoft.com/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-1.0)
+
 
 
 

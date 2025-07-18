@@ -44,13 +44,17 @@ You can't remove a member from groups with dynamic memberships.
 | Application | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Remove-MgBetaGroupMemberDirectoryObjectByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgBetaGroupMemberDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 

@@ -43,17 +43,21 @@ Update an existing entitlementManagementSettings object to change one or more of
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	externalUserLifecycleAction = "None"
 }
 
 Update-MgBetaEntitlementManagementSetting -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaEntitlementManagementSetting Cmdlet.
+
 
 ## PARAMETERS
 

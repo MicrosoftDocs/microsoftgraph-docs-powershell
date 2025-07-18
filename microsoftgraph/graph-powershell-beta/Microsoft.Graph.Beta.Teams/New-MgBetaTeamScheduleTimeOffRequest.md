@@ -60,18 +60,6 @@ Create instance of a timeoffrequest object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -483,6 +471,7 @@ This property is read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffrequest)
 
 [https://learn.microsoft.com/graph/api/timeoffrequest-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/timeoffrequest-post?view=graph-rest-beta)
+
 
 
 

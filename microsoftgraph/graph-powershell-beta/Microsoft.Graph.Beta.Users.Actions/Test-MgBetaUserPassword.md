@@ -42,17 +42,21 @@ Use this action to provide real-time feedback on password strength while the use
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	password = "1234567890"
 }
 
 Test-MgBetaUserPassword -BodyParameter $params
+
+```
+This example shows how to use the Test-MgBetaUserPassword Cmdlet.
+
 
 ## PARAMETERS
 

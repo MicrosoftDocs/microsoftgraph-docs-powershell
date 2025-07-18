@@ -30,18 +30,6 @@ Invoke-MgBetaArchiveSiteGetByPath -InputObject <ISitesIdentity> [-ResponseHeader
 ## DESCRIPTION
 Archive an active SharePoint site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -262,6 +250,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaarchivesitegetbypath](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaarchivesitegetbypath)
 
 [https://learn.microsoft.com/graph/api/site-archive?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-archive?view=graph-rest-beta)
+
 
 
 

@@ -59,18 +59,6 @@ Clock in to start a timeCard.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -330,6 +318,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockteamscheduletimecardin](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockteamscheduletimecardin)
 
 [https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-1.0)
+
 
 
 

@@ -32,18 +32,6 @@ Remove-MgBetaDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Delete navigation property scopedMembers for directoryRoles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryRoleId
@@ -272,6 +260,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryrolescopedmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryrolescopedmember)
+
 
 
 

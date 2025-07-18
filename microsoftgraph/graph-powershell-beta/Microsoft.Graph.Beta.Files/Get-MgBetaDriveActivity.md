@@ -31,13 +31,17 @@ The list of recent activities that took place under this drive.
 | Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Get-MgBetaDriveActivity -DriveId $driveId
+
+```
+This example shows how to use the Get-MgBetaDriveActivity Cmdlet.
+
 
 ## PARAMETERS
 

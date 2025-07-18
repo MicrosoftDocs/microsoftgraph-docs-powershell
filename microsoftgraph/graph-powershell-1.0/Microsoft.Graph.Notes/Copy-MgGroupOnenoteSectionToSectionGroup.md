@@ -59,18 +59,6 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 | Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
 | Application | Notes.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -357,6 +345,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/copy-mggrouponenotesectiontosectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/copy-mggrouponenotesectiontosectiongroup)
 
 [https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-1.0)
+
 
 
 

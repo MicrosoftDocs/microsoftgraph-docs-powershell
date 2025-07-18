@@ -54,18 +54,6 @@ New-MgShareListSubscription -InputObject <IFilesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to subscriptions for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -591,6 +579,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistsubscription)
+
 
 
 

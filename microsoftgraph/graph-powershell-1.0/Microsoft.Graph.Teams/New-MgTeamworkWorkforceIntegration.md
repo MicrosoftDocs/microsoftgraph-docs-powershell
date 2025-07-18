@@ -45,11 +45,11 @@ Create a new workforceIntegration object.
 | Application | WorkforceIntegration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "ABCWorkforceIntegration"
@@ -65,6 +65,10 @@ $params = @{
 }
 
 New-MgTeamworkWorkforceIntegration -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeamworkWorkforceIntegration Cmdlet.
+
 
 ## PARAMETERS
 
