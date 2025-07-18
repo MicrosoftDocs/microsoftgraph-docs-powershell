@@ -29,6 +29,14 @@ Get-MgBetaDirectoryTemplateDeviceInstanceByDeviceId -InputObject <IIdentityDirec
 ## DESCRIPTION
 Collection of device objects created based on this template.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceTemplate.ReadWrite.All, DeviceTemplate.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceTemplate.Read.All, DeviceTemplate.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

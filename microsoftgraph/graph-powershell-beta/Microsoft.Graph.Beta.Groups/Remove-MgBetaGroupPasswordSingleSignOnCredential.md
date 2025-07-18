@@ -47,6 +47,14 @@ Remove-MgBetaGroupPasswordSingleSignOnCredential -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Delete the password-based single sign-on credentials for a given group to a given service principal.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.AccessAsUser.All, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

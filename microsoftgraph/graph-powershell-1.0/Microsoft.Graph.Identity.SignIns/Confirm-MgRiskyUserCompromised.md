@@ -33,6 +33,14 @@ Confirm-MgRiskyUserCompromised
 Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityRiskyUser.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityRiskyUser.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
