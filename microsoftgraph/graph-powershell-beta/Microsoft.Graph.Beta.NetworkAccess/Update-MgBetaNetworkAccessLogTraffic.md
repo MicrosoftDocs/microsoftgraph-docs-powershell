@@ -72,18 +72,6 @@ Update-MgBetaNetworkAccessLogTraffic -InputObject <INetworkAccessIdentity>
 ## DESCRIPTION
 Update the navigation property traffic in networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessHeaders
@@ -18279,6 +18267,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesslogtraffic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesslogtraffic)
+
 
 
 

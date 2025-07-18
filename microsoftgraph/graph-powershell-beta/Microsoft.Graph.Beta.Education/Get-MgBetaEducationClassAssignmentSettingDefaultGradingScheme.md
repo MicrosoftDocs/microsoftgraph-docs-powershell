@@ -29,18 +29,6 @@ Get-MgBetaEducationClassAssignmentSettingDefaultGradingScheme -InputObject <IEdu
 ## DESCRIPTION
 Get defaultGradingScheme from education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -189,6 +177,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsettingdefaultgradingscheme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsettingdefaultgradingscheme)
+
 
 
 

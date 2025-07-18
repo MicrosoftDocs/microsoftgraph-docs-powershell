@@ -49,18 +49,6 @@ Update-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode -InputObject <IIden
 Create a standard or temporary QR code, if there is no active QR code, or update a standard QR code.
 Only the expireDateTime property can be updated for a standard QR code.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -424,6 +412,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationqrcodepinmethodstandardqrcode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationqrcodepinmethodstandardqrcode)
 
 [https://learn.microsoft.com/graph/api/qrcode-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/qrcode-update?view=graph-rest-beta)
+
 
 
 

@@ -31,18 +31,6 @@ Remove-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice
 ## DESCRIPTION
 Delete navigation property matchedDevices for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicableContentCatalogEntryId
@@ -248,6 +236,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesdeploymentaudienceapplicablecontentmatcheddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesdeploymentaudienceapplicablecontentmatcheddevice)
+
 
 
 

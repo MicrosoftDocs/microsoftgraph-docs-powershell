@@ -52,18 +52,6 @@ Update-MgBetaSolutionBackupRestoreSiteInclusionRule -InputObject <IBackupRestore
 ## DESCRIPTION
 Update the navigation property siteInclusionRules in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -468,6 +456,7 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresiteinclusionrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresiteinclusionrule)
+
 
 
 

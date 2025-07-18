@@ -32,18 +32,6 @@ Remove-MgGroupSiteOnenoteResourceContent -InputObject <ISitesIdentity> [-IfMatch
 ## DESCRIPTION
 The content stream
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -277,6 +265,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteonenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteonenoteresourcecontent)
+
 
 
 

@@ -47,18 +47,6 @@ Update-MgBetaEducationReportReflectCheck -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property reflectCheckInResponses in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -429,6 +417,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationreportreflectcheck](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationreportreflectcheck)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgBetaDeviceManagementReportSecurityTaskAppReport -OutFile <String>
 ## DESCRIPTION
 Invoke action retrieveSecurityTaskAppsReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -349,6 +337,7 @@ BODY `<IPaths1E44FioDevicemanagementReportsMicrosoftGraphRetrievesecuritytaskapp
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportsecuritytaskappreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportsecuritytaskappreport)
+
 
 
 

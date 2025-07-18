@@ -32,18 +32,6 @@ Get-MgUserOwnedDeviceCountAsAppRoleAssignment -InputObject <IUsersIdentity> [-Fi
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -210,6 +198,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddevicecountasapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddevicecountasapproleassignment)
+
 
 
 
