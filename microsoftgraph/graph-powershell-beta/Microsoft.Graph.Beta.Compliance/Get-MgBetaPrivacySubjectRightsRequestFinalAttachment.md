@@ -12,6 +12,9 @@ ms.subservice: compliance
 Get the final attachment for a subject rights request.
 The attachment is a zip file that contains all the files that were included by the privacy administrator.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestFinalAttachment](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestFinalAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

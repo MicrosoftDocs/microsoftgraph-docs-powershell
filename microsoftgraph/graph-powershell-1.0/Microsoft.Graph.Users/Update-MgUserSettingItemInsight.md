@@ -11,6 +11,9 @@ ms.subservice: insights
 ## SYNOPSIS
 Update the privacy settings for itemInsights and meeting hours insights of a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserSettingItemInsight](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSettingItemInsight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The day notes in the schedule.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleDayNote](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleDayNote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

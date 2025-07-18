@@ -11,6 +11,9 @@ ms.subservice: search
 ## SYNOPSIS
 Create a new or update an existing schema for a Microsoft Search connection.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

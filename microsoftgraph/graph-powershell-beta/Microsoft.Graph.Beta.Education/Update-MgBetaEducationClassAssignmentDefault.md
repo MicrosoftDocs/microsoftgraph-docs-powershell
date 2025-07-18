@@ -12,6 +12,9 @@ ms.subservice: education
 Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

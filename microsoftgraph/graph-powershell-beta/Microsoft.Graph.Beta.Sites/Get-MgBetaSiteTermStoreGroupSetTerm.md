@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Read the properties and relationships of a term object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetTerm?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

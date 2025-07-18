@@ -12,6 +12,9 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 Get a list of the siteProtectionUnit objects that are associated with a sharePointProtectionPolicy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreProtectionUnitAsSiteProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreProtectionUnitAsSiteProtectionUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
