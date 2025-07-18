@@ -19,14 +19,14 @@ Get the number of the resource
 ```
 Get-MgSecurityAttackSimulationTrainingLanguageDetailCount -TrainingId <String> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgSecurityAttackSimulationTrainingLanguageDetailCount -InputObject <ISecurityIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,8 +39,6 @@ Get the number of the resource
 | Delegated (work or school account) | AttackSimulation.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AttackSimulation.Read.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -87,6 +85,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

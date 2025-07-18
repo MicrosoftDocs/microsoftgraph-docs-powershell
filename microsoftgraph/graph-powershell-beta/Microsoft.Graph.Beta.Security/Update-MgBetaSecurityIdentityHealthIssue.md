@@ -23,14 +23,14 @@ Update-MgBetaSecurityIdentityHealthIssue -HealthIssueId <String> [-ResponseHeade
  [-Description <String>] [-DisplayName <String>] [-DomainNames <String[]>] [-HealthIssueType <String>]
  [-Id <String>] [-IssueTypeId <String>] [-LastModifiedDateTime <DateTime>] [-Recommendations <String[]>]
  [-RecommendedActionCommands <String[]>] [-SensorDnsNames <String[]>] [-Severity <String>] [-Status <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityIdentityHealthIssue -HealthIssueId <String>
  -BodyParameter <IMicrosoftGraphSecurityHealthIssue> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,14 +40,14 @@ Update-MgBetaSecurityIdentityHealthIssue -InputObject <ISecurityIdentity> [-Resp
  [-Description <String>] [-DisplayName <String>] [-DomainNames <String[]>] [-HealthIssueType <String>]
  [-Id <String>] [-IssueTypeId <String>] [-LastModifiedDateTime <DateTime>] [-Recommendations <String[]>]
  [-RecommendedActionCommands <String[]>] [-SensorDnsNames <String[]>] [-Severity <String>] [-Status <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityIdentityHealthIssue -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityHealthIssue> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -123,21 +123,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -313,6 +298,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Recommendations
 A list of recommended actions that can be taken to resolve the issue effectively and efficiently.
 These actions might include instructions for further investigation and aren't limited to prewritten responses.
@@ -407,6 +407,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -482,6 +497,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
   - `[CloudAppDiscoveryReportId <String>]`: The unique identifier of cloudAppDiscoveryReport
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
+  - `[ContentFormats <String- `[]`>]`: Usage: contentFormats={contentFormats}
   - `[CustomerInsightTenantId <String>]`: The unique identifier of customerInsight
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
@@ -519,8 +535,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[IncidentId <String>]`: The unique identifier of incident
   - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
   - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[LabelIds <String- `[]`>]`: Usage: labelIds={labelIds}
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
+  - `[Locale <String>]`: Usage: locale='{locale}'
   - `[LoginPageId <String>]`: The unique identifier of loginPage
   - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
@@ -535,6 +553,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecurityRequirementId <String>]`: The unique identifier of securityRequirement
   - `[SecurityScoreHistoryId <String>]`: The unique identifier of securityScoreHistory
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun

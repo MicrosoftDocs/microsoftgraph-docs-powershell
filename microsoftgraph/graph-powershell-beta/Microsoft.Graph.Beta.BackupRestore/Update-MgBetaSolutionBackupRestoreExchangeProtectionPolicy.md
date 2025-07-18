@@ -27,14 +27,14 @@ Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy -ExchangeProtectionPo
  [-MailboxProtectionUnits <IMicrosoftGraphMailboxProtectionUnit[]>]
  [-MailboxProtectionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob[]>]
  [-RetentionSettings <IMicrosoftGraphRetentionSetting[]>] [-Status <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy -ExchangeProtectionPolicyId <String>
  -BodyParameter <IMicrosoftGraphExchangeProtectionPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -47,21 +47,19 @@ Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy -InputObject <IBackup
  [-MailboxProtectionUnits <IMicrosoftGraphMailboxProtectionUnit[]>]
  [-MailboxProtectionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob[]>]
  [-RetentionSettings <IMicrosoftGraphRetentionSetting[]>] [-Status <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy -InputObject <IBackupRestoreIdentity>
  -BodyParameter <IMicrosoftGraphExchangeProtectionPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update an Exchange protection policy.
 This method adds a mailboxprotectionunit to or removes it from the protection policy.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -93,21 +91,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -298,6 +281,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -336,6 +334,21 @@ protectionPolicyStatus
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -431,6 +444,7 @@ For examples, see mailboxExpression examples.
     - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+    - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
     - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
     - `[ProtectionSources <String>]`: protectionSource
     - `[Status <String>]`: protectionUnitStatus
@@ -567,6 +581,7 @@ This property is read-only.
     - `[Target <String>]`: The target of the error.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+  - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
   - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
   - `[ProtectionSources <String>]`: protectionSource
   - `[Status <String>]`: protectionUnitStatus

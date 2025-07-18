@@ -18,22 +18,20 @@ This can be set using either the @odata.bind annotation or the environment's ori
 Get-MgEntitlementManagementResourceRoleResourceScopeResourceEnvironment -AccessPackageResourceId <String>
  -AccessPackageResourceRoleId <String> -AccessPackageResourceScopeId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgEntitlementManagementResourceRoleResourceScopeResourceEnvironment
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Contains the environment information for the resource.
 This can be set using either the @odata.bind annotation or the environment's originId.Supports $expand.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -125,6 +123,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

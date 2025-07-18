@@ -19,7 +19,7 @@ Only a plan that is archived can be unarchived.
 ```
 Invoke-MgBetaUnarchiveTeamworkDeletedTeamChannelPlannerPlan -ChannelId <String> -DeletedTeamId <String>
  -PlannerPlanId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Justification <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-Justification <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Invoke-MgBetaUnarchiveTeamworkDeletedTeamChannelPlannerPlan -ChannelId <String> 
 Invoke-MgBetaUnarchiveTeamworkDeletedTeamChannelPlannerPlan -ChannelId <String> -DeletedTeamId <String>
  -PlannerPlanId <String>
  -BodyParameter <IPaths3FgpniTeamworkDeletedteamsDeletedteamIdChannelsChannelIdPlannerPlansPlannerplanIdMicrosoftGraphUnarchivePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Invoke-MgBetaUnarchiveTeamworkDeletedTeamChannelPlannerPlan -ChannelId <String> 
 ```
 Invoke-MgBetaUnarchiveTeamworkDeletedTeamChannelPlannerPlan -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Justification <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -44,7 +44,7 @@ Invoke-MgBetaUnarchiveTeamworkDeletedTeamChannelPlannerPlan -InputObject <ITeams
 ```
 Invoke-MgBetaUnarchiveTeamworkDeletedTeamChannelPlannerPlan -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths3FgpniTeamworkDeletedteamsDeletedteamIdChannelsChannelIdPlannerPlansPlannerplanIdMicrosoftGraphUnarchivePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -52,8 +52,6 @@ Invoke-MgBetaUnarchiveTeamworkDeletedTeamChannelPlannerPlan -InputObject <ITeams
 Unarchive a plannerPlan object.
 Unarchiving a plan, also unarchives the plannerTasks and plannerBuckets in the plan.
 Only a plan that is archived can be unarchived.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +95,6 @@ Parameter Sets: UnarchiveExpanded, Unarchive
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -209,6 +192,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -216,6 +214,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

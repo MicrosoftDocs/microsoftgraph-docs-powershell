@@ -20,20 +20,18 @@ Create new navigation property to resourceNamespaces for roleManagement
 New-MgRoleManagementEntitlementManagementResourceNamespace [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>]
  [-ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgRoleManagementEntitlementManagementResourceNamespace
  -BodyParameter <IMicrosoftGraphUnifiedRbacResourceNamespace> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to resourceNamespaces for roleManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -65,21 +63,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -129,6 +112,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResourceActions
 
 To construct, see NOTES section for RESOURCEACTIONS properties and create a hash table.
@@ -152,6 +150,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -196,25 +209,25 @@ BODYPARAMETER `<IMicrosoftGraphUnifiedRbacResourceNamespace>`: unifiedRbacResour
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Name <String>]`:
-  - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction- `[]`>]`:
+  - `[Name <String>]`: 
+  - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[ActionVerb <String>]`:
-    - `[AuthenticationContextId <String>]`:
-    - `[Description <String>]`:
-    - `[IsAuthenticationContextSettable <Boolean?>]`:
-    - `[Name <String>]`:
-    - `[ResourceScopeId <String>]`:
+    - `[ActionVerb <String>]`: 
+    - `[AuthenticationContextId <String>]`: 
+    - `[Description <String>]`: 
+    - `[IsAuthenticationContextSettable <Boolean?>]`: 
+    - `[Name <String>]`: 
+    - `[ResourceScopeId <String>]`: 
 
 RESOURCEACTIONS `<IMicrosoftGraphUnifiedRbacResourceAction- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[ActionVerb <String>]`:
-  - `[AuthenticationContextId <String>]`:
-  - `[Description <String>]`:
-  - `[IsAuthenticationContextSettable <Boolean?>]`:
-  - `[Name <String>]`:
+  - `[ActionVerb <String>]`: 
+  - `[AuthenticationContextId <String>]`: 
+  - `[Description <String>]`: 
+  - `[IsAuthenticationContextSettable <Boolean?>]`: 
+  - `[Name <String>]`: 
   - `[ResourceScopeId <String>]`:
 
 ## RELATED LINKS

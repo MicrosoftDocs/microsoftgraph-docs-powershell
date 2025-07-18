@@ -46,7 +46,7 @@ Update-MgBetaApplicationByUniqueName -UniqueName <String> [-ResponseHeadersVaria
  [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>] [-UniqueName1 <String>]
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Web <IMicrosoftGraphWebApplication>]
- [-Windows <IMicrosoftGraphWindowsApplication>] [-Headers <IDictionary>]
+ [-Windows <IMicrosoftGraphWindowsApplication>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -80,14 +80,14 @@ Update-MgBetaApplicationByUniqueName [-UniqueName <String>] -InputObject <IAppli
  [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Web <IMicrosoftGraphWebApplication>]
- [-Windows <IMicrosoftGraphWindowsApplication>] [-Headers <IDictionary>]
+ [-Windows <IMicrosoftGraphWindowsApplication>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaApplicationByUniqueName -UniqueName <String> -BodyParameter <IMicrosoftGraphApplication>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -95,7 +95,7 @@ Update-MgBetaApplicationByUniqueName -UniqueName <String> -BodyParameter <IMicro
 ```
 Update-MgBetaApplicationByUniqueName -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphApplication> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -259,21 +259,6 @@ To construct, see NOTES section for CERTIFICATION properties and create a hash t
 Type: IMicrosoftGraphCertification
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -519,8 +504,7 @@ Accept wildcard characters: False
 
 ### -IdentifierUris
 Also known as App ID URI, this value is set when an application is used as a resource app.
-The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
-You can use the default value provided, which is in the form api://`<appId>`, or specify a more readable URI like https://contoso.com/api.
+The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique across Microsoft Entra ID.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
@@ -745,6 +729,21 @@ To construct, see NOTES section for PASSWORDCREDENTIALS properties and create a 
 Type: IMicrosoftGraphPasswordCredential[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -1086,22 +1085,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Windows
 windowsApplication
 To construct, see NOTES section for WINDOWS properties and create a hash table.
@@ -1110,6 +1093,37 @@ To construct, see NOTES section for WINDOWS properties and create a hash table.
 Type: IMicrosoftGraphWindowsApplication
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
 
 Required: False
 Position: Named
@@ -1201,6 +1215,12 @@ Always null when the object hasn't been deleted.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: 
       - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
+      - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Operator <String>]`: customSecurityAttributeComparisonOperator
       - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
@@ -1209,6 +1229,7 @@ For existing applications, the enforcement date can be retroactively applied.
       - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
       - `[State <String>]`: appManagementRestrictionState
     - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: 
+      - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
       - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -1223,11 +1244,6 @@ For existing applications, the enforcement date can be retroactively applied.
         - `[AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
-            - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
-              - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-              - `[Operator <String>]`: customSecurityAttributeComparisonOperator
           - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
           - `[State <String>]`: appManagementRestrictionState
@@ -1242,6 +1258,7 @@ For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
           - `[State <String>]`: appManagementRestrictionState
+        - `[UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
 
 APPROLES `<IMicrosoftGraphAppRole- `[]`>`: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
@@ -1355,6 +1372,12 @@ Always null when the object hasn't been deleted.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: 
         - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
+        - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Operator <String>]`: customSecurityAttributeComparisonOperator
         - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
@@ -1363,6 +1386,7 @@ For existing applications, the enforcement date can be retroactively applied.
         - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
         - `[State <String>]`: appManagementRestrictionState
       - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: 
+        - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
         - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -1377,11 +1401,6 @@ For existing applications, the enforcement date can be retroactively applied.
           - `[AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
-              - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
-                - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-                - `[Operator <String>]`: customSecurityAttributeComparisonOperator
             - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
             - `[State <String>]`: appManagementRestrictionState
@@ -1396,6 +1415,7 @@ For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
             - `[State <String>]`: appManagementRestrictionState
+          - `[UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
   - `[AppRoles <IMicrosoftGraphAppRole- `[]`>]`: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
 Not nullable.
@@ -1561,8 +1581,7 @@ Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[IdentifierUris <String- `[]`>]`: Also known as App ID URI, this value is set when an application is used as a resource app.
-The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
-You can use the default value provided, which is in the form api://`<appId>`, or specify a more readable URI like https://contoso.com/api.
+The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique across Microsoft Entra ID.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
@@ -2209,6 +2228,12 @@ Always null when the object hasn't been deleted.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: 
           - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
+          - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Operator <String>]`: customSecurityAttributeComparisonOperator
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
@@ -2217,6 +2242,7 @@ For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
           - `[State <String>]`: appManagementRestrictionState
         - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: 
+          - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -2231,11 +2257,6 @@ For existing applications, the enforcement date can be retroactively applied.
             - `[AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
-                - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
-                  - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-                  - `[Operator <String>]`: customSecurityAttributeComparisonOperator
               - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
               - `[State <String>]`: appManagementRestrictionState
@@ -2250,6 +2271,7 @@ For existing applications, the enforcement date can be retroactively applied.
               - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
               - `[State <String>]`: appManagementRestrictionState
+            - `[UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
     - `[AppRoles <IMicrosoftGraphAppRole- `[]`>]`: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
 Not nullable.
@@ -2394,8 +2416,7 @@ Always null when the object hasn't been deleted.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[IdentifierUris <String- `[]`>]`: Also known as App ID URI, this value is set when an application is used as a resource app.
-The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
-You can use the default value provided, which is in the form api://`<appId>`, or specify a more readable URI like https://contoso.com/api.
+The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique across Microsoft Entra ID.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
@@ -3087,6 +3108,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
   - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
+  - `[ApprovedClientAppId <String>]`: The unique identifier of approvedClientApp
   - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
   - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
   - `[ConnectorId <String>]`: The unique identifier of connector

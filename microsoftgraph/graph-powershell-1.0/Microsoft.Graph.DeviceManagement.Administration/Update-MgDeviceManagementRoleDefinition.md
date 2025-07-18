@@ -22,14 +22,14 @@ Update-MgDeviceManagementRoleDefinition -RoleDefinitionId <String> [-ResponseHea
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsBuiltIn] [-RoleAssignments <IMicrosoftGraphRoleAssignment[]>]
  [-RolePermissions <IMicrosoftGraphRolePermission[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementRoleDefinition -RoleDefinitionId <String>
  -BodyParameter <IMicrosoftGraphRoleDefinition> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,14 +38,14 @@ Update-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministr
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IsBuiltIn] [-RoleAssignments <IMicrosoftGraphRoleAssignment[]>]
  [-RolePermissions <IMicrosoftGraphRolePermission[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphRoleDefinition> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -131,21 +131,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -242,6 +227,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -305,6 +305,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -357,7 +372,7 @@ Set to True if it is built-in, or set to False if it is a custom role definition
 Read-only.
     - `[Description <String>]`: Description of the Role Assignment.
     - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
-    - `[ResourceScopes <String- `[]`>]`: List of ids of role scope member security groups.
+    - `[ResourceScopes <String- `[]`>]`: List of ids of role scope member security groups. 
 These are IDs from Azure Active Directory.
     - `[RoleDefinition <IMicrosoftGraphRoleDefinition>]`: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
@@ -406,7 +421,7 @@ ROLEASSIGNMENTS `<IMicrosoftGraphRoleAssignment- `[]`>`: List of Role assignment
 Read-only.
   - `[Description <String>]`: Description of the Role Assignment.
   - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
-  - `[ResourceScopes <String- `[]`>]`: List of ids of role scope member security groups.
+  - `[ResourceScopes <String- `[]`>]`: List of ids of role scope member security groups. 
 These are IDs from Azure Active Directory.
   - `[RoleDefinition <IMicrosoftGraphRoleDefinition>]`: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.

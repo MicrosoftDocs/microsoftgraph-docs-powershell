@@ -21,14 +21,14 @@ End the open break in a specific timeCard.
 Stop-MgBetaGroupTeamScheduleTimeCardBreak -GroupId <String> -TimeCardId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AtApprovedLocation]
  [-IsAtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### End
 ```
 Stop-MgBetaGroupTeamScheduleTimeCardBreak -GroupId <String> -TimeCardId <String>
  -BodyParameter <IPaths125VjoyGroupsGroupIdTeamScheduleTimecardsTimecardIdMicrosoftGraphEndbreakPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Stop-MgBetaGroupTeamScheduleTimeCardBreak -GroupId <String> -TimeCardId <String>
 ```
 Stop-MgBetaGroupTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AtApprovedLocation] [-IsAtApprovedLocation]
- [-Notes <IMicrosoftGraphItemBody>] [-Headers <IDictionary>] [-WhatIf]
+ [-Notes <IMicrosoftGraphItemBody>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,14 +44,12 @@ Stop-MgBetaGroupTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity> [-Respon
 ```
 Stop-MgBetaGroupTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths125VjoyGroupsGroupIdTeamScheduleTimecardsTimecardIdMicrosoftGraphEndbreakPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 End the open break in a specific timeCard.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -98,21 +96,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -193,6 +176,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -217,6 +215,21 @@ Parameter Sets: EndExpanded, End
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
