@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/search-mgbetasolutionbackuprestorepoint
@@ -245,31 +245,53 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ARTIFACTQUERY \<IMicrosoftGraphArtifactQuery\>: artifactQuery
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ArtifactType \<String\>\]: restorableArtifact
-  \[QueryExpression \<String\>\]: Specifies criteria to retrieve artifacts.
+ARTIFACTQUERY `<IMicrosoftGraphArtifactQuery>`: artifactQuery
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ArtifactType <String>]`: restorableArtifact
+  - `[QueryExpression <String>]`: Specifies criteria to retrieve artifacts.
 
-BODYPARAMETER \<IPathsHu2059SolutionsBackuprestoreRestorepointsMicrosoftGraphSearchPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ArtifactQuery \<IMicrosoftGraphArtifactQuery\>\]: artifactQuery
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ArtifactType \<String\>\]: restorableArtifact
-    \[QueryExpression \<String\>\]: Specifies criteria to retrieve artifacts.
-  \[ProtectionTimePeriod \<IMicrosoftGraphTimePeriod\>\]: timePeriod
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[EndDateTime \<DateTime?\>\]: The date time of the end of the time period.
-    \[StartDateTime \<DateTime?\>\]: The date time of the start of the time period.
-  \[ProtectionUnitIds \<String\[\]\>\]: 
-  \[RestorePointPreference \<String\>\]: restorePointPreference
-  \[Tags \<String\>\]: restorePointTags
+BODYPARAMETER `<IPathsHu2059SolutionsBackuprestoreRestorepointsMicrosoftGraphSearchPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ArtifactQuery <IMicrosoftGraphArtifactQuery>]`: artifactQuery
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ArtifactType <String>]`: restorableArtifact
+    - `[QueryExpression <String>]`: Specifies criteria to retrieve artifacts.
+  - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
+    - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+  - `[ProtectionUnitIds <String- `[]`>]`: 
+  - `[RestorePointPreference <String>]`: restorePointPreference
+  - `[Tags <String>]`: restorePointTags
 
-PROTECTIONTIMEPERIOD \<IMicrosoftGraphTimePeriod\>: timePeriod
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[EndDateTime \<DateTime?\>\]: The date time of the end of the time period.
-  \[StartDateTime \<DateTime?\>\]: The date time of the start of the time period.
+PROTECTIONTIMEPERIOD `<IMicrosoftGraphTimePeriod>`: timePeriod
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
+  - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/search-mgbetasolutionbackuprestorepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/search-mgbetasolutionbackuprestorepoint)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

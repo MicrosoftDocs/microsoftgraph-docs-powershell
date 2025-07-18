@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostinreplytoattachment
@@ -336,39 +336,61 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphAttachment\>: attachment
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAttachment>`: attachment
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ContentType \<String\>\]: The MIME type.
-  \[IsInline \<Boolean?\>\]: true if the attachment is an inline attachment; otherwise, false.
-  \[LastModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  - `[ContentType <String>]`: The MIME type.
+  - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
+  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  \[Name \<String\>\]: The attachment's file name.
-  \[Size \<Int32?\>\]: The length of the attachment in bytes.
+  - `[Name <String>]`: The attachment's file name.
+  - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[ConversationId \<String\>\]: The unique identifier of conversation
-  \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
-  \[GroupSettingId \<String\>\]: The unique identifier of groupSetting
-  \[GroupSettingTemplateId \<String\>\]: The unique identifier of groupSettingTemplate
-  \[Interval \<String\>\]: Usage: interval='{interval}'
-  \[ListId \<String\>\]: Usage: listId='{listId}'
-  \[Path \<String\>\]: Usage: path='{path}'
-  \[PostId \<String\>\]: The unique identifier of post
-  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
-  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
-  \[SiteId \<String\>\]: The unique identifier of site
-  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
-  \[UniqueName \<String\>\]: Alternate key of group
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[ConversationId <String>]`: The unique identifier of conversation
+  - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
+  - `[GroupSettingId <String>]`: The unique identifier of groupSetting
+  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
+  - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ListId <String>]`: Usage: listId='{listId}'
+  - `[Path <String>]`: Usage: path='{path}'
+  - `[PostId <String>]`: The unique identifier of post
+  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
+  - `[SiteId <String>]`: The unique identifier of site
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[UniqueName <String>]`: Alternate key of group
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostinreplytoattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostinreplytoattachment)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
