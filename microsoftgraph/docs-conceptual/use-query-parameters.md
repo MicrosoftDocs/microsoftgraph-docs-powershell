@@ -4,7 +4,7 @@ description: "Learn how to use optional query parameters in Microsoft Graph Powe
 ms.topic: conceptual
 ms.date: 09/30/2024
 author: msewaweru
-manager: CelesteDG
+manager: mwongerapk
 ms.author: eunicewaweru
 ms.reviewer: maisarissi
 

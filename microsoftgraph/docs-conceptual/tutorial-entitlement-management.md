@@ -5,7 +5,7 @@ description: "Learn how to manage access to resources in Microsoft Entra entitle
 ms.topic: tutorial
 ms.date: 04/23/2025
 ms.author: eunicewaweru
-manager: CelesteDG
+manager: mwongerapk
 author: msewaweru
 
 #customer intent: As an IT admin managing users' access to resources, I want to use Microsoft Entra entitlement management to create a package of resources that internal users can use for self-service requests, so that I can grant employees the right level of access they need to be productive and remove their access when it's no longer needed.
