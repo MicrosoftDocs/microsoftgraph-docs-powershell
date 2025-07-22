@@ -18,7 +18,7 @@ You can also use the method removeMembers to remove members.
 ```
 Remove-MgBetaWindowsUpdatesPolicyAudienceMemberById -UpdatableAssetId <String> -UpdatePolicyId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
- [-MemberEntityType <String>] [-Headers <IDictionary>] [-PassThru]
+ [-MemberEntityType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Remove-MgBetaWindowsUpdatesPolicyAudienceMemberById -UpdatableAssetId <String> -
 ```
 Remove-MgBetaWindowsUpdatesPolicyAudienceMemberById -UpdatableAssetId <String> -UpdatePolicyId <String>
  -BodyParameter <IPaths9QtqoxAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Remove-MgBetaWindowsUpdatesPolicyAudienceMemberById -UpdatableAssetId <String> -
 ```
 Remove-MgBetaWindowsUpdatesPolicyAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
- [-MemberEntityType <String>] [-Headers <IDictionary>] [-PassThru]
+ [-MemberEntityType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,15 +42,13 @@ Remove-MgBetaWindowsUpdatesPolicyAudienceMemberById -InputObject <IWindowsUpdate
 ```
 Remove-MgBetaWindowsUpdatesPolicyAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IPaths9QtqoxAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Remove members of the same type from an updatableAssetGroup.
 You can also use the method removeMembers to remove members.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -82,21 +80,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -176,6 +159,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -215,6 +213,21 @@ Parameter Sets: RemoveExpanded, Remove
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

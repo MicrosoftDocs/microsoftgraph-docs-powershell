@@ -19,14 +19,14 @@ Get the count of user mailboxes in each quota category.
 ### Get (Default)
 ```
 Get-MgReportMailboxUsageQuotaStatusMailboxCount -Period <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportMailboxUsageQuotaStatusMailboxCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Get the count of user mailboxes in each quota category.
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportMailboxUsageQuotaStatusMailboxCount -Period $periodId
+Get-MgReportMailboxUsageQuotaStatusMailboxCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportMailboxUsageQuotaStatusMailboxCount Cmdlet.
@@ -118,6 +118,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

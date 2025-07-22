@@ -15,8 +15,6 @@ Delete ref of navigation property members for administrativeUnits
 ## DESCRIPTION
 Delete ref of navigation property members for administrativeUnits
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### CommonParameters

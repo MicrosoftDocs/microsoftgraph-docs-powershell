@@ -21,13 +21,13 @@ New-MgBetaSecurityAction [-ResponseHeadersVariable <String>] [-ActionReason <Str
  [-Id <String>] [-LastActionDateTime <DateTime>] [-Name <String>] [-Parameters <IMicrosoftGraphKeyValuePair[]>]
  [-States <IMicrosoftGraphSecurityActionState[]>] [-Status <String>] [-User <String>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityAction -BodyParameter <IMicrosoftGraphSecurityAction> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -174,21 +174,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -CreatedDateTime
 Timestamp when the action is created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -302,6 +287,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -380,6 +380,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -440,8 +455,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Name <String>]`: Action name.
   - `[Parameters <IMicrosoftGraphKeyValuePair- `[]`>]`: Collection of parameters (key-value pairs) necessary to invoke the action, for example, URL or fileHash to block.).
 Required.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[States <IMicrosoftGraphSecurityActionState- `[]`>]`: Collection of securityActionState to keep the history of an action.
     - `[AppId <String>]`: The Application ID of the calling application that submitted an update (PATCH) to the action.
 The appId should be extracted from the auth token and not entered manually by the calling application.
@@ -471,8 +488,10 @@ ERRORINFO `<IMicrosoftGraphResultInfo>`: resultInfo
 
 PARAMETERS `<IMicrosoftGraphKeyValuePair- `[]`>`: Collection of parameters (key-value pairs) necessary to invoke the action, for example, URL or fileHash to block.).
 Required.
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+  - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+  - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
 
 STATES `<IMicrosoftGraphSecurityActionState- `[]`>`: Collection of securityActionState to keep the history of an action.
   - `[AppId <String>]`: The Application ID of the calling application that submitted an update (PATCH) to the action.

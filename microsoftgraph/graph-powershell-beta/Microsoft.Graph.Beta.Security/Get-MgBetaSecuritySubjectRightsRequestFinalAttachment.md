@@ -20,14 +20,14 @@ The attachment is a zip file that contains all the files that were included by t
 ### Get (Default)
 ```
 Get-MgBetaSecuritySubjectRightsRequestFinalAttachment -SubjectRightsRequestId <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaSecuritySubjectRightsRequestFinalAttachment -InputObject <ISecurityIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -42,8 +42,6 @@ The attachment is a zip file that contains all the files that were included by t
 | Delegated (work or school account) | SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -104,6 +102,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

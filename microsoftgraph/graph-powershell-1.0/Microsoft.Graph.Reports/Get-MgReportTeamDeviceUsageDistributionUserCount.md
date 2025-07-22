@@ -19,14 +19,14 @@ Get the number of Microsoft Teams unique users by device type over the selected 
 ### Get (Default)
 ```
 Get-MgReportTeamDeviceUsageDistributionUserCount -Period <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportTeamDeviceUsageDistributionUserCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Get the number of Microsoft Teams unique users by device type over the selected 
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportTeamDeviceUsageDistributionUserCount -Period $periodId
+Get-MgReportTeamDeviceUsageDistributionUserCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportTeamDeviceUsageDistributionUserCount Cmdlet.
@@ -118,6 +118,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

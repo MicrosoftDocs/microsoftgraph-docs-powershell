@@ -15,8 +15,6 @@ Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
 ## DESCRIPTION
 Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### CommonParameters

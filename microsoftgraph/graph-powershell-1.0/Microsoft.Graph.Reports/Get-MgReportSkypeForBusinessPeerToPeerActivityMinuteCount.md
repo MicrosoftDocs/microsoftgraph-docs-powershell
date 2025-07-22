@@ -20,14 +20,14 @@ Types of sessions include audio and video.
 ### Get (Default)
 ```
 Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount -Period <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ Types of sessions include audio and video.
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount -Period $periodId
+Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount Cmdlet.
@@ -120,6 +120,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

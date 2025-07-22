@@ -28,14 +28,14 @@ For more information, see the delta query documentation.
 Get-MgTeamChannelMessageDelta -ChannelId <String> -TeamId <String> [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity
 ```
 Get-MgTeamChannelMessageDelta -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -64,7 +64,7 @@ For more information, see the delta query documentation.
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Top 2
+Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Top 2 
 
 ```
 This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
@@ -75,7 +75,7 @@ This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Skiptoken "-FG3FPHv7HuyuazNLuy3eXlzQGbEjYLUsW9-pYkmXgn5KGsaOwrCoor2W23dGNNM1KtAX4AyvpFQNVsBgsEwUOX9lw8x9zDumgJy-C-UbjZLlZDQACyC9FyrVelZus9n.--rshdLwy_WBFJd8anPXJPbSUtUD7r3V4neB5tcrG58"
+Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Skiptoken "-FG3FPHv7HuyuazNLuy3eXlzQGbEjYLUsW9-pYkmXgn5KGsaOwrCoor2W23dGNNM1KtAX4AyvpFQNVsBgsEwUOX9lw8x9zDumgJy-C-UbjZLlZDQACyC9FyrVelZus9n.--rshdLwy_WBFJd8anPXJPbSUtUD7r3V4neB5tcrG58" 
 
 ```
 This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
@@ -86,7 +86,7 @@ This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Skiptoken "8UusBixEHS9UUau6uGcryrA6FpnWwMJbuTYILM1PArHxnZzDVcsHQrijNzCyIVeEauMQsKUfMhNjLWFs1o4sBS_LofJ7xMftZUfec_pijuT6cAk5ugcWCca9RCjK7iVj.DKZ9w4bX9vCR7Sj9P0_qxjLAAPiEZgxlOxxmCLMzHJ4"
+Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Skiptoken "8UusBixEHS9UUau6uGcryrA6FpnWwMJbuTYILM1PArHxnZzDVcsHQrijNzCyIVeEauMQsKUfMhNjLWFs1o4sBS_LofJ7xMftZUfec_pijuT6cAk5ugcWCca9RCjK7iVj.DKZ9w4bX9vCR7Sj9P0_qxjLAAPiEZgxlOxxmCLMzHJ4" 
 
 ```
 This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
@@ -97,7 +97,7 @@ This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Deltatoken "aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_y_eMWVQtBO_ejzzyIxl00ji-tQ3HzAbW4liZAVG88lO3nG_6-MBFoHY1n8y21YUzjocG-Cn1tCNeeLPLTzIe5Dw.EP9gLiCoF2CE_e6l_m1bTk2aokD9KcgfgfcLGqd1r_4"
+Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Deltatoken "aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_y_eMWVQtBO_ejzzyIxl00ji-tQ3HzAbW4liZAVG88lO3nG_6-MBFoHY1n8y21YUzjocG-Cn1tCNeeLPLTzIe5Dw.EP9gLiCoF2CE_e6l_m1bTk2aokD9KcgfgfcLGqd1r_4" 
 
 ```
 This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
@@ -242,6 +242,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -287,21 +302,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -339,6 +339,21 @@ Show only the first n items
 Type: Int32
 Parameter Sets: (All)
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named

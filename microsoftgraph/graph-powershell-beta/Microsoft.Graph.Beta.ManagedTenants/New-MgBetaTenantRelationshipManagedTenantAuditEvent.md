@@ -18,21 +18,19 @@ New-MgBetaTenantRelationshipManagedTenantAuditEvent [-ResponseHeadersVariable <S
  [-ActivityDateTime <DateTime>] [-ActivityId <String>] [-AdditionalProperties <Hashtable>] [-Category <String>]
  [-HttpVerb <String>] [-IPAddress <String>] [-Id <String>] [-InitiatedByAppId <String>]
  [-InitiatedByUpn <String>] [-InitiatedByUserId <String>] [-RequestBody <String>] [-RequestUrl <String>]
- [-TenantIds <String>] [-TenantNames <String>] [-Headers <IDictionary>]
+ [-TenantIds <String>] [-TenantNames <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantAuditEvent -BodyParameter <IMicrosoftGraphManagedTenantsAuditEvent>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to auditEvents for tenantRelationships
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -127,21 +125,6 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -267,6 +250,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RequestBody
 The raw HTTP request body.
 Some sensitive information may be removed.
@@ -341,6 +339,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

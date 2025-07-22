@@ -18,7 +18,7 @@ New-MgBetaTeamworkDeviceOperation -TeamworkDeviceId <String> [-ResponseHeadersVa
  [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphOperationError>] [-Id <String>]
  [-LastActionBy <IMicrosoftGraphIdentitySet>] [-LastActionDateTime <DateTime>] [-OperationType <String>]
- [-StartedDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
+ [-StartedDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ New-MgBetaTeamworkDeviceOperation -TeamworkDeviceId <String> [-ResponseHeadersVa
 ```
 New-MgBetaTeamworkDeviceOperation -TeamworkDeviceId <String>
  -BodyParameter <IMicrosoftGraphTeamworkDeviceOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -35,7 +35,7 @@ New-MgBetaTeamworkDeviceOperation -InputObject <ITeamsIdentity> [-ResponseHeader
  [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphOperationError>] [-Id <String>]
  [-LastActionBy <IMicrosoftGraphIdentitySet>] [-LastActionDateTime <DateTime>] [-OperationType <String>]
- [-StartedDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
+ [-StartedDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,13 +43,11 @@ New-MgBetaTeamworkDeviceOperation -InputObject <ITeamsIdentity> [-ResponseHeader
 ```
 New-MgBetaTeamworkDeviceOperation -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphTeamworkDeviceOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to operations for teamwork
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -91,21 +89,6 @@ Time at which the operation reached a final state (for example, Successful, Fail
 Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -254,6 +237,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -308,6 +306,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

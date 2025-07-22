@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaNetworkAccessLogTrafficDevice
 
 ## SYNOPSIS
-Get device from networkAccess
+Represents the device associated with the network traffic, providing details about the hardware or virtual machine involved in the transaction.
 
 ## SYNTAX
 
@@ -16,20 +16,18 @@ Get device from networkAccess
 ```
 Get-MgBetaNetworkAccessLogTrafficDevice -NetworkAccessTrafficTransactionId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaNetworkAccessLogTrafficDevice -InputObject <INetworkAccessIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get device from networkAccess
-
-## EXAMPLES
+Represents the device associated with the network traffic, providing details about the hardware or virtual machine involved in the transaction.
 
 ## PARAMETERS
 
@@ -88,6 +86,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -17,14 +17,14 @@ Invoke action targetApps
 Invoke-MgBetaTargetDeviceAppManagementWindowsManagedAppProtectionApp -WindowsManagedAppProtectionId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Target
 ```
 Invoke-MgBetaTargetDeviceAppManagementWindowsManagedAppProtectionApp -WindowsManagedAppProtectionId <String>
  -BodyParameter <IPaths1YpfxrgDeviceappmanagementWindowsmanagedappprotectionsWindowsmanagedappprotectionIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Invoke-MgBetaTargetDeviceAppManagementWindowsManagedAppProtectionApp -WindowsMan
 Invoke-MgBetaTargetDeviceAppManagementWindowsManagedAppProtectionApp
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-Headers <IDictionary>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TargetViaIdentity
@@ -41,7 +41,7 @@ Invoke-MgBetaTargetDeviceAppManagementWindowsManagedAppProtectionApp
 Invoke-MgBetaTargetDeviceAppManagementWindowsManagedAppProtectionApp
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPaths1YpfxrgDeviceappmanagementWindowsmanagedappprotectionsWindowsmanagedappprotectionIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -55,8 +55,6 @@ Invoke action targetApps
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -107,21 +105,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -168,6 +151,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -175,6 +173,36 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsManagedAppProtectionId
+The unique identifier of windowsManagedAppProtection
+
+```yaml
+Type: String
+Parameter Sets: TargetExpanded, Target
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -193,21 +221,6 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsManagedAppProtectionId
-The unique identifier of windowsManagedAppProtection
-
-```yaml
-Type: String
-Parameter Sets: TargetExpanded, Target
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

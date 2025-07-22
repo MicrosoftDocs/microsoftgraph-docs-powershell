@@ -19,14 +19,14 @@ Update-MgBetaSecurityAuditLogQueryRecord -AuditLogQueryId <String> -AuditLogReco
  [-AuditData <Hashtable>] [-AuditLogRecordType <String>] [-ClientIP <String>] [-CreatedDateTime <DateTime>]
  [-Id <String>] [-ObjectId <String>] [-Operation <String>] [-OrganizationId <String>] [-Service <String>]
  [-UserId <String>] [-UserPrincipalName <String>] [-UserType <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityAuditLogQueryRecord -AuditLogQueryId <String> -AuditLogRecordId <String>
  -BodyParameter <IMicrosoftGraphSecurityAuditLogRecord> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,20 +36,18 @@ Update-MgBetaSecurityAuditLogQueryRecord -InputObject <ISecurityIdentity> [-Resp
  [-AuditLogRecordType <String>] [-ClientIP <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-ObjectId <String>] [-Operation <String>] [-OrganizationId <String>] [-Service <String>] [-UserId <String>]
  [-UserPrincipalName <String>] [-UserType <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityAuditLogQueryRecord -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityAuditLogRecord> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property records in security
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -175,21 +173,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -CreatedDateTime
 The date and time in UTC when the user performed the activity.
 
@@ -299,6 +282,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -369,6 +367,21 @@ auditLogUserType
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

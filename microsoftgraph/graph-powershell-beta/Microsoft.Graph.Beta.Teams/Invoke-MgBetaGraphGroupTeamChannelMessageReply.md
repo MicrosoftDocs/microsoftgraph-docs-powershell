@@ -17,7 +17,7 @@ Reply with quote to a single chat message or multiple chat messages in a chat.
 ```
 Invoke-MgBetaGraphGroupTeamChannelMessageReply -ChannelId <String> -ChatMessageId <String> -GroupId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>]
- [-ReplyMessage <IMicrosoftGraphChatMessage>] [-Headers <IDictionary>]
+ [-ReplyMessage <IMicrosoftGraphChatMessage>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -25,7 +25,7 @@ Invoke-MgBetaGraphGroupTeamChannelMessageReply -ChannelId <String> -ChatMessageI
 ```
 Invoke-MgBetaGraphGroupTeamChannelMessageReply -ChannelId <String> -ChatMessageId <String> -GroupId <String>
  -Body <IPathsFmgo51GroupsGroupIdTeamChannelsChannelIdMessagesChatmessageIdRepliesMicrosoftGraphReplywithquotePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Invoke-MgBetaGraphGroupTeamChannelMessageReply -ChannelId <String> -ChatMessageI
 ```
 Invoke-MgBetaGraphGroupTeamChannelMessageReply -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>]
- [-ReplyMessage <IMicrosoftGraphChatMessage>] [-Headers <IDictionary>]
+ [-ReplyMessage <IMicrosoftGraphChatMessage>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,13 +42,11 @@ Invoke-MgBetaGraphGroupTeamChannelMessageReply -InputObject <ITeamsIdentity>
 Invoke-MgBetaGraphGroupTeamChannelMessageReply -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsFmgo51GroupsGroupIdTeamChannelsChannelIdMessagesChatmessageIdRepliesMicrosoftGraphReplywithquotePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Reply with quote to a single chat message or multiple chat messages in a chat.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -129,21 +127,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -GroupId
 The unique identifier of group
 
@@ -205,6 +188,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReplyMessage
 chatMessage
 To construct, see NOTES section for REPLYMESSAGE properties and create a hash table.
@@ -228,6 +226,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

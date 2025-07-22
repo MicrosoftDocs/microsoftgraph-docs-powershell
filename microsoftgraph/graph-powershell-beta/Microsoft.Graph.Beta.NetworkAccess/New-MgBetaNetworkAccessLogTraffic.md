@@ -30,20 +30,18 @@ New-MgBetaNetworkAccessLogTraffic [-ResponseHeadersVariable <String>]
  [-SessionId <String>] [-SourceIP <String>] [-SourcePort <Int32>] [-TenantId <String>] [-ThreatType <String>]
  [-TrafficType <String>] [-TransactionId <String>] [-TransportProtocol <String>] [-User <IMicrosoftGraphUser>]
  [-UserId <String>] [-UserPrincipalName <String>] [-VendorNames <String[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaNetworkAccessLogTraffic -BodyParameter <IMicrosoftGraphNetworkaccessNetworkAccessTraffic>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to traffic for networkAccess
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -94,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -AgentVersion
-Represents the version of the Global Secure Access client agent software.
+Represents the version of the Global Secure Access (GSA) client agent software.
 Supports $filter (eq) and $orderby.
 
 ```yaml
@@ -141,21 +139,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ConnectionId
 Represents a unique identifier assigned to a connection.
 Supports $filter (eq) and $orderby.
@@ -189,7 +172,8 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-
+Informational error message.
+For example: 'Threat intelligence detected a transaction and triggered an alert.' or 'The Global Secure Access (GSA) policy blocked the destination and triggered an alert.' Supports $filter (eq) and $orderby.
 
 ```yaml
 Type: String
@@ -252,7 +236,8 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationUrl
-
+Represents the URL of the destination in a network communication.
+Supports $filter (eq) and $orderby.
 
 ```yaml
 Type: String
@@ -362,7 +347,8 @@ Accept wildcard characters: False
 ```
 
 ### -FilteringProfileId
-
+The ID of the Filtering Profile associated with the action performed on traffic.
+Supports $filter (eq) and $orderby.
 
 ```yaml
 Type: String
@@ -377,7 +363,8 @@ Accept wildcard characters: False
 ```
 
 ### -FilteringProfileName
-
+The name of the Filtering Profile associated with the action performed on traffic.
+Supports $filter (eq) and $orderby.
 
 ```yaml
 Type: String
@@ -422,7 +409,8 @@ Accept wildcard characters: False
 ```
 
 ### -InitiatingProcessName
-
+The process initiating the traffic transaction.
+Supports $filter (eq) and $orderby.
 
 ```yaml
 Type: String
@@ -483,7 +471,8 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyName
-
+The name of the filtering policy associated with the action performed on traffic.
+Supports $filter (eq) and $orderby.
 
 ```yaml
 Type: String
@@ -514,7 +503,8 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyRuleName
-
+The name of the rule associated with the action performed on traffic.
+Supports $filter (eq) and $orderby.
 
 ```yaml
 Type: String
@@ -529,7 +519,8 @@ Accept wildcard characters: False
 ```
 
 ### -PopProcessingRegion
-
+The Point-of-Presence processing region of the traffic.
+Supports $filter (eq) and $orderby.
 
 ```yaml
 Type: String
@@ -559,6 +550,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReceivedBytes
 Represents the total number of bytes received in a network communication or data transfer.
 Supports $filter (eq) and $orderby.
@@ -576,7 +582,8 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteNetworkId
-
+The ID from which traffic was sent or received, providing visibility into the origin of the traffic.
+Supports $filter (eq) and $orderby.
 
 ```yaml
 Type: String
@@ -591,7 +598,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceTenantId
-
+Tenant ID that owns the resource.
+Supports $filter (eq) and $orderby.
 
 ```yaml
 Type: String
@@ -606,7 +614,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResponseCode
-
+The HTTP response code inspected in the intercepted HTTP traffic.
+Supports $filter (eq) and $orderby.
 
 ```yaml
 Type: Int32
@@ -716,7 +725,8 @@ Accept wildcard characters: False
 ```
 
 ### -ThreatType
-
+The type of threat detected in the traffic.
+Supports $filter (eq) and $orderby.
 
 ```yaml
 Type: String
@@ -826,12 +836,28 @@ Accept wildcard characters: False
 ```
 
 ### -VendorNames
-
+The name of the vendors who detected the threat.
+Supports $filter (eq) and $orderby.
 
 ```yaml
 Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -880,28 +906,30 @@ ACCESSHEADERS `<IMicrosoftGraphNetworkaccessHeaders>`: headers
 
 APPLICATIONSNAPSHOT `<IMicrosoftGraphNetworkaccessApplicationSnapshot>`: applicationSnapshot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AppId <String>]`: 
+  - `[AppId <String>]`: The unique identifier of the application accessed during the transaction.
 
 BODYPARAMETER `<IMicrosoftGraphNetworkaccessNetworkAccessTraffic>`: networkAccessTraffic
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Action <String>]`: filteringPolicyAction
-  - `[AgentVersion <String>]`: Represents the version of the Global Secure Access client agent software.
+  - `[AgentVersion <String>]`: Represents the version of the Global Secure Access (GSA) client agent software.
 Supports $filter (eq) and $orderby.
   - `[ApplicationSnapshot <IMicrosoftGraphNetworkaccessApplicationSnapshot>]`: applicationSnapshot
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AppId <String>]`: 
+    - `[AppId <String>]`: The unique identifier of the application accessed during the transaction.
   - `[ConnectionId <String>]`: Represents a unique identifier assigned to a connection.
 Supports $filter (eq) and $orderby.
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time when a network access traffic log entry was created.
 Supports $filter (eq) and $orderby.
-  - `[Description <String>]`: 
+  - `[Description <String>]`: Informational error message.
+For example: 'Threat intelligence detected a transaction and triggered an alert.' or 'The Global Secure Access (GSA) policy blocked the destination and triggered an alert.' Supports $filter (eq) and $orderby.
   - `[DestinationFqdn <String>]`: Represents the Fully Qualified Domain Name (FQDN) of the destination host or server in a network communication.
 Supports $filter (eq) and $orderby.
   - `[DestinationIP <String>]`: Represents the IP address of the destination host or server in a network communication.
 Supports $filter (eq) and $orderby.
   - `[DestinationPort <Int32?>]`: Represents the network port number on the destination host or server in a network communication.
 Supports $filter (eq) and $orderby.
-  - `[DestinationUrl <String>]`: 
+  - `[DestinationUrl <String>]`: Represents the URL of the destination in a network communication.
+Supports $filter (eq) and $orderby.
   - `[DestinationWebCategory <IMicrosoftGraphNetworkaccessWebCategory>]`: webCategory
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name for the web category.
@@ -1118,44 +1146,53 @@ Supports $filter (eq) and $orderby.
 Supports $filter (eq) and $orderby.
   - `[DeviceOperatingSystemVersion <String>]`: Represents the version or release number of the operating system installed on a device within a network infrastructure.
 Supports $filter (eq) and $orderby.
-  - `[FilteringProfileId <String>]`: 
-  - `[FilteringProfileName <String>]`: 
+  - `[FilteringProfileId <String>]`: The ID of the Filtering Profile associated with the action performed on traffic.
+Supports $filter (eq) and $orderby.
+  - `[FilteringProfileName <String>]`: The name of the Filtering Profile associated with the action performed on traffic.
+Supports $filter (eq) and $orderby.
   - `[Headers <IMicrosoftGraphNetworkaccessHeaders>]`: headers
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Origin <String>]`: Represents the origin or source from which the request is being made.
     - `[Referrer <String>]`: Represents the referring URL or the URL of the web page that the current request originates from.
     - `[XForwardedFor <String>]`: Represents the information about the client original IP address when the request passes through one or more proxy servers or load balancers.
   - `[HttpMethod <String>]`: httpMethod
-  - `[InitiatingProcessName <String>]`: 
+  - `[InitiatingProcessName <String>]`: The process initiating the traffic transaction.
+Supports $filter (eq) and $orderby.
   - `[NetworkProtocol <String>]`: networkingProtocol
   - `[OperationStatus <String>]`: networkTrafficOperationStatus
   - `[PolicyId <String>]`: Represents a unique identifier assigned to a policy.
 Supports $filter (eq) and $orderby.
-  - `[PolicyName <String>]`: 
+  - `[PolicyName <String>]`: The name of the filtering policy associated with the action performed on traffic.
+Supports $filter (eq) and $orderby.
   - `[PolicyRuleId <String>]`: Represents a unique identifier assigned to a policy rule.
 Supports $filter (eq) and $orderby.
-  - `[PolicyRuleName <String>]`: 
-  - `[PopProcessingRegion <String>]`: 
+  - `[PolicyRuleName <String>]`: The name of the rule associated with the action performed on traffic.
+Supports $filter (eq) and $orderby.
+  - `[PopProcessingRegion <String>]`: The Point-of-Presence processing region of the traffic.
+Supports $filter (eq) and $orderby.
   - `[PrivateAccessDetails <IMicrosoftGraphNetworkaccessPrivateAccessDetails>]`: privateAccessDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AccessType <String>]`: accessType
-    - `[AppSegmentId <String>]`: 
+    - `[AppSegmentId <String>]`: The unique identifier for Application segment ID from Azure AD.
     - `[ConnectionStatus <String>]`: connectionStatus
-    - `[ConnectorIP <String>]`: 
-    - `[ConnectorId <String>]`: 
-    - `[ConnectorName <String>]`: 
-    - `[ProcessingRegion <String>]`: 
+    - `[ConnectorIP <String>]`: Private access connector IP address.
+    - `[ConnectorId <String>]`: Private access connector ID.
+    - `[ConnectorName <String>]`: Private access connector name.
+    - `[ProcessingRegion <String>]`: Region where the request was processed by the backend service.
     - `[ThirdPartyTokenDetails <IMicrosoftGraphNetworkaccessThirdPartyTokenDetails>]`: thirdPartyTokenDetails
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ExpirationDateTime <DateTime?>]`: 
-      - `[IssuedAtDateTime <DateTime?>]`: 
-      - `[UniqueTokenIdentifier <String>]`: 
-      - `[ValidFromDateTime <DateTime?>]`: 
+      - `[ExpirationDateTime <DateTime?>]`: Time the token will expire.
+      - `[IssuedAtDateTime <DateTime?>]`: Time the token was issued at.
+      - `[UniqueTokenIdentifier <String>]`: Unique token identifier.
+      - `[ValidFromDateTime <DateTime?>]`: Time the token is valid from.
   - `[ReceivedBytes <Int64?>]`: Represents the total number of bytes received in a network communication or data transfer.
 Supports $filter (eq) and $orderby.
-  - `[RemoteNetworkId <String>]`: 
-  - `[ResourceTenantId <String>]`: 
-  - `[ResponseCode <Int32?>]`: 
+  - `[RemoteNetworkId <String>]`: The ID from which traffic was sent or received, providing visibility into the origin of the traffic.
+Supports $filter (eq) and $orderby.
+  - `[ResourceTenantId <String>]`: Tenant ID that owns the resource.
+Supports $filter (eq) and $orderby.
+  - `[ResponseCode <Int32?>]`: The HTTP response code inspected in the intercepted HTTP traffic.
+Supports $filter (eq) and $orderby.
   - `[SentBytes <Int64?>]`: Represents the total number of bytes sent in a network communication or data transfer.
 Supports $filter (eq) and $orderby.
   - `[SessionId <String>]`: Represents a unique identifier assigned to a session or connection within a network infrastructure.
@@ -1166,7 +1203,8 @@ Supports $filter (eq) and $orderby.
 Supports $filter (eq) and $orderby.
   - `[TenantId <String>]`: Represents a unique identifier assigned to a tenant within a network infrastructure.
 Supports $filter (eq) and $orderby.
-  - `[ThreatType <String>]`: 
+  - `[ThreatType <String>]`: The type of threat detected in the traffic.
+Supports $filter (eq) and $orderby.
   - `[TrafficType <String>]`: trafficType
   - `[TransactionId <String>]`: Represents a unique identifier assigned to a specific transaction or operation.
 Key.
@@ -2112,8 +2150,10 @@ For example:User to User - For Microsoft Entra ID to Microsoft Entra synchroniza
             - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
           - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair- `[]`>]`: Settings associated with the job.
 Some settings are inherited from the template.
-            - `[Name <String>]`: Name for this key-value pair
-            - `[Value <String>]`: Value for this key-value pair
+            - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+            - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
           - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
         - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>]`: Represents a collection of credentials to access provisioned cloud applications.
           - `[Key <String>]`: synchronizationSecret
@@ -2339,7 +2379,7 @@ For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
         - `[PhoneType <String>]`: authenticationPhoneType
         - `[SmsSignInState <String>]`: authenticationMethodSignInState
-      - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+      - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: Represents a platform credential instance registered to a user on Mac OS.
         - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
@@ -2352,6 +2392,39 @@ Read-only.
         - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
         - `[KeyStrength <String>]`: authenticationMethodKeyStrength
         - `[Platform <String>]`: authenticationMethodPlatform
+      - `[QrCodePinMethod <IMicrosoftGraphQrCodePinAuthenticationMethod>]`: qrCodePinAuthenticationMethod
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Pin <IMicrosoftGraphQrPin>]`: qrPin
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Code <String>]`: 
+          - `[CreatedDateTime <DateTime?>]`: 
+          - `[ForceChangePinNextSignIn <Boolean?>]`: 
+          - `[UpdatedDateTime <DateTime?>]`: 
+        - `[StandardQrCode <IMicrosoftGraphQrCode>]`: qrCode
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[CreatedDateTime <DateTime?>]`: 
+          - `[ExpireDateTime <DateTime?>]`: 
+          - `[Image <IMicrosoftGraphQrCodeImageDetails>]`: qrCodeImageDetails
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[BinaryValue <Byte- `[]`>]`: 
+            - `[ErrorCorrectionLevel <String>]`: errorCorrectionLevel
+            - `[RawContent <Byte- `[]`>]`: 
+            - `[Version <Int32?>]`: 
+          - `[LastUsedDateTime <DateTime?>]`: 
+          - `[StartDateTime <DateTime?>]`: 
+        - `[TemporaryQrCode <IMicrosoftGraphQrCode>]`: qrCode
       - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[PerUserMfaState <String>]`: perUserMfaState
@@ -3176,6 +3249,29 @@ The default value is false.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[IsSipEnabled <Boolean?>]`: Indicates whether the user has a SIP-enabled client registered for them.
 Read-only.
+    - `[Communications <IMicrosoftGraphUserCloudCommunication>]`: userCloudCommunication
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CallSettings <IMicrosoftGraphCallSettings>]`: callSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Delegates <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegate settings.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[AllowedActions <IMicrosoftGraphDelegateAllowedActions>]`: delegateAllowedActions
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[JoinActiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows participation in active calls.
+            - `[MakeCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be made on their behalf.
+            - `[ManageCallAndDelegateSettings <Boolean?>]`: Indicates whether the delegator or delegate allows the management of call and delegation settings.
+            - `[PickUpHeldCalls <Boolean?>]`: Indicates whether the delegator or delegate allows held calls to be picked up.
+            - `[ReceiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be received on their behalf.
+          - `[CreatedDateTime <DateTime?>]`: Date and time when the delegator or delegate entry was created.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[IsActive <Boolean?>]`: Indicates whether the delegator or delegate relationship is currently active.
+        - `[Delegators <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegator settings.
     - `[CompanyName <String>]`: The name of the company the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -9269,7 +9365,8 @@ Read-only.
 Supports $filter (eq) and $orderby.
   - `[UserPrincipalName <String>]`: Represents the user principal name (UPN) associated with a user.
 Supports $filter (eq) and $orderby.
-  - `[VendorNames <String- `[]`>]`: 
+  - `[VendorNames <String- `[]`>]`: The name of the vendors who detected the threat.
+Supports $filter (eq) and $orderby.
 
 DESTINATIONWEBCATEGORY `<IMicrosoftGraphNetworkaccessWebCategory>`: webCategory
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9485,18 +9582,18 @@ Read-only.
 PRIVATEACCESSDETAILS `<IMicrosoftGraphNetworkaccessPrivateAccessDetails>`: privateAccessDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AccessType <String>]`: accessType
-  - `[AppSegmentId <String>]`: 
+  - `[AppSegmentId <String>]`: The unique identifier for Application segment ID from Azure AD.
   - `[ConnectionStatus <String>]`: connectionStatus
-  - `[ConnectorIP <String>]`: 
-  - `[ConnectorId <String>]`: 
-  - `[ConnectorName <String>]`: 
-  - `[ProcessingRegion <String>]`: 
+  - `[ConnectorIP <String>]`: Private access connector IP address.
+  - `[ConnectorId <String>]`: Private access connector ID.
+  - `[ConnectorName <String>]`: Private access connector name.
+  - `[ProcessingRegion <String>]`: Region where the request was processed by the backend service.
   - `[ThirdPartyTokenDetails <IMicrosoftGraphNetworkaccessThirdPartyTokenDetails>]`: thirdPartyTokenDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ExpirationDateTime <DateTime?>]`: 
-    - `[IssuedAtDateTime <DateTime?>]`: 
-    - `[UniqueTokenIdentifier <String>]`: 
-    - `[ValidFromDateTime <DateTime?>]`: 
+    - `[ExpirationDateTime <DateTime?>]`: Time the token will expire.
+    - `[IssuedAtDateTime <DateTime?>]`: Time the token was issued at.
+    - `[UniqueTokenIdentifier <String>]`: Unique token identifier.
+    - `[ValidFromDateTime <DateTime?>]`: Time the token is valid from.
 
 USER `<IMicrosoftGraphUser>`: user
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10442,8 +10539,10 @@ For example:User to User - For Microsoft Entra ID to Microsoft Entra synchroniza
           - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
         - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair- `[]`>]`: Settings associated with the job.
 Some settings are inherited from the template.
-          - `[Name <String>]`: Name for this key-value pair
-          - `[Value <String>]`: Value for this key-value pair
+          - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+          - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
         - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
       - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>]`: Represents a collection of credentials to access provisioned cloud applications.
         - `[Key <String>]`: synchronizationSecret
@@ -10868,7 +10967,7 @@ For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
       - `[PhoneType <String>]`: authenticationPhoneType
       - `[SmsSignInState <String>]`: authenticationMethodSignInState
-    - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+    - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: Represents a platform credential instance registered to a user on Mac OS.
       - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
@@ -10881,6 +10980,39 @@ Read-only.
       - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
       - `[KeyStrength <String>]`: authenticationMethodKeyStrength
       - `[Platform <String>]`: authenticationMethodPlatform
+    - `[QrCodePinMethod <IMicrosoftGraphQrCodePinAuthenticationMethod>]`: qrCodePinAuthenticationMethod
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Pin <IMicrosoftGraphQrPin>]`: qrPin
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Code <String>]`: 
+        - `[CreatedDateTime <DateTime?>]`: 
+        - `[ForceChangePinNextSignIn <Boolean?>]`: 
+        - `[UpdatedDateTime <DateTime?>]`: 
+      - `[StandardQrCode <IMicrosoftGraphQrCode>]`: qrCode
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[CreatedDateTime <DateTime?>]`: 
+        - `[ExpireDateTime <DateTime?>]`: 
+        - `[Image <IMicrosoftGraphQrCodeImageDetails>]`: qrCodeImageDetails
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[BinaryValue <Byte- `[]`>]`: 
+          - `[ErrorCorrectionLevel <String>]`: errorCorrectionLevel
+          - `[RawContent <Byte- `[]`>]`: 
+          - `[Version <Int32?>]`: 
+        - `[LastUsedDateTime <DateTime?>]`: 
+        - `[StartDateTime <DateTime?>]`: 
+      - `[TemporaryQrCode <IMicrosoftGraphQrCode>]`: qrCode
     - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[PerUserMfaState <String>]`: perUserMfaState
@@ -11705,6 +11837,29 @@ The default value is false.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsSipEnabled <Boolean?>]`: Indicates whether the user has a SIP-enabled client registered for them.
 Read-only.
+  - `[Communications <IMicrosoftGraphUserCloudCommunication>]`: userCloudCommunication
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[CallSettings <IMicrosoftGraphCallSettings>]`: callSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Delegates <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegate settings.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[AllowedActions <IMicrosoftGraphDelegateAllowedActions>]`: delegateAllowedActions
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[JoinActiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows participation in active calls.
+          - `[MakeCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be made on their behalf.
+          - `[ManageCallAndDelegateSettings <Boolean?>]`: Indicates whether the delegator or delegate allows the management of call and delegation settings.
+          - `[PickUpHeldCalls <Boolean?>]`: Indicates whether the delegator or delegate allows held calls to be picked up.
+          - `[ReceiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be received on their behalf.
+        - `[CreatedDateTime <DateTime?>]`: Date and time when the delegator or delegate entry was created.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[IsActive <Boolean?>]`: Indicates whether the delegator or delegate relationship is currently active.
+      - `[Delegators <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegator settings.
   - `[CompanyName <String>]`: The name of the company the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).

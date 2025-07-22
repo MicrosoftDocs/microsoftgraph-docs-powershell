@@ -18,7 +18,7 @@ Read properties and relationships of the deviceManagement object.
 
 ```
 Get-MgDeviceManagement [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -77,6 +77,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -122,7 +137,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagement)
 
-[https://learn.microsoft.com/graph/api/intune-devices-devicemanagement-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-devicemanagement-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-raimportcerts-devicemanagement-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-raimportcerts-devicemanagement-get?view=graph-rest-1.0)
 
 
 
