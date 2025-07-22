@@ -23,20 +23,18 @@ New-MgVirtualEvent [-ResponseHeadersVariable <String>] [-AdditionalProperties <H
  [-ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>] [-Id <String>]
  [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>] [-Sessions <IMicrosoftGraphVirtualEventSession[]>]
  [-Settings <IMicrosoftGraphVirtualEventSettings>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
- [-Status <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgVirtualEvent -BodyParameter <IMicrosoftGraphVirtualEvent> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to events for solutions
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -68,21 +66,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -213,6 +196,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -283,6 +281,21 @@ virtualEventStatus
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -404,10 +417,21 @@ Read-only.
           - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
           - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
         - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
+        - `[ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]`: virtualEventExternalRegistrationInformation
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Referrer <String>]`: A URL or string that represents the location from which the registrant registered.
+Optional.
+          - `[RegistrationId <String>]`: The identifier for a virtualEventExternalRegistrationInformation object.
+Optional.
+If set, the maximum supported length is 256 characters.
         - `[Identity <IMicrosoftGraphIdentity>]`: identity
+        - `[RegistrationId <String>]`: Unique identifier of a virtualEventRegistration that is available to all participants registered for the virtualEventWebinar.
         - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
         - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+      - `[ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation- `[]`>]`: The external information of a virtual event.
+Returned only for event organizers or coorganizers.
+Read-only.
       - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended.
 Read-only.
       - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started.
@@ -440,7 +464,7 @@ Optional.
       - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting.
 Optional.
 Read-only.
-      - `[Passcode <String>]`: The passcode to join a meeting.
+      - `[Passcode <String>]`: The passcode to join a meeting. 
 Optional.
 Read-only.
     - `[JoinWebUrl <String>]`: The join URL of the online meeting.
@@ -558,15 +582,32 @@ Read-only.
         - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
         - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
       - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
+      - `[ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]`: virtualEventExternalRegistrationInformation
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Referrer <String>]`: A URL or string that represents the location from which the registrant registered.
+Optional.
+        - `[RegistrationId <String>]`: The identifier for a virtualEventExternalRegistrationInformation object.
+Optional.
+If set, the maximum supported length is 256 characters.
       - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+      - `[RegistrationId <String>]`: Unique identifier of a virtualEventRegistration that is available to all participants registered for the virtualEventWebinar.
       - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
       - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+    - `[ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation- `[]`>]`: The external information of a virtual event.
+Returned only for event organizers or coorganizers.
+Read-only.
+      - `[ApplicationId <String>]`: Identifier of the application that hosts the externalEventId.
+Read-only.
+      - `[ExternalEventId <String>]`: The identifier for a virtualEventExternalInformation object that associates the virtual event with an event ID in an external application.
+This association bundles all the information (both supported and not supported in virtualEvent) into one virtual event object.
+Optional.
+If set, the maximum supported length is 256 characters.
     - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended.
 Read-only.
     - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started.
@@ -602,7 +643,7 @@ Optional.
     - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting.
 Optional.
 Read-only.
-    - `[Passcode <String>]`: The passcode to join a meeting.
+    - `[Passcode <String>]`: The passcode to join a meeting. 
 Optional.
 Read-only.
   - `[JoinWebUrl <String>]`: The join URL of the online meeting.

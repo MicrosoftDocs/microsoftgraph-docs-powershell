@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property sessions in communications
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallRecordSession?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -22,14 +19,14 @@ Update-MgCommunicationCallRecordSession -CallRecordId <String> -SessionId <Strin
  [-Callee <IMicrosoftGraphCallRecordsEndpoint>] [-Caller <IMicrosoftGraphCallRecordsEndpoint>]
  [-EndDateTime <DateTime>] [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-IsTest]
  [-Modalities <String[]>] [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgCommunicationCallRecordSession -CallRecordId <String> -SessionId <String>
  -BodyParameter <IMicrosoftGraphCallRecordsSession> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,20 +36,18 @@ Update-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdenti
  [-Callee <IMicrosoftGraphCallRecordsEndpoint>] [-Caller <IMicrosoftGraphCallRecordsEndpoint>]
  [-EndDateTime <DateTime>] [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-IsTest]
  [-Modalities <String[]>] [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IMicrosoftGraphCallRecordsSession> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property sessions in communications
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -128,21 +123,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -260,6 +240,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -317,6 +312,21 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -418,6 +428,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[BandwidthLowEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the available bandwidth or bandwidth policy was low enough to cause poor quality of the audio sent.
         - `[BasicServiceSetIdentifier <String>]`: The wireless LAN basic service set identifier of the media endpoint used to connect to the network.
+This property isn't available if the user disables precise location sharing in their operating system or Microsoft Teams app settings.
         - `[ConnectionType <String>]`: networkConnectionType
         - `[DelayEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network delay was significant enough to impact the ability to have real-time two-way communication.
         - `[DnsSuffix <String>]`: DNS suffix associated with the network adapter of the media endpoint.
@@ -587,6 +598,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[BandwidthLowEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the available bandwidth or bandwidth policy was low enough to cause poor quality of the audio sent.
       - `[BasicServiceSetIdentifier <String>]`: The wireless LAN basic service set identifier of the media endpoint used to connect to the network.
+This property isn't available if the user disables precise location sharing in their operating system or Microsoft Teams app settings.
       - `[ConnectionType <String>]`: networkConnectionType
       - `[DelayEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network delay was significant enough to impact the ability to have real-time two-way communication.
       - `[DnsSuffix <String>]`: DNS suffix associated with the network adapter of the media endpoint.

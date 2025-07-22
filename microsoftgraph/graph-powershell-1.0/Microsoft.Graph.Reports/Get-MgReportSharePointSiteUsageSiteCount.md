@@ -19,13 +19,13 @@ Get the trend of total and active site count during the reporting period.
 ### Get (Default)
 ```
 Get-MgReportSharePointSiteUsageSiteCount -Period <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportSharePointSiteUsageSiteCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Get the trend of total and active site count during the reporting period.
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSharePointSiteUsageSiteCount -Period $periodId
+Get-MgReportSharePointSiteUsageSiteCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportSharePointSiteUsageSiteCount Cmdlet.
@@ -117,6 +117,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

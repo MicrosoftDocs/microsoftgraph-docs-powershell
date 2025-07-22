@@ -21,6 +21,7 @@ Update-MgBetaSolutionBackupRestore [-ResponseHeadersVariable <String>] [-Additio
  [-DriveInclusionRules <IMicrosoftGraphDriveProtectionRule[]>]
  [-DriveProtectionUnits <IMicrosoftGraphDriveProtectionUnit[]>]
  [-DriveProtectionUnitsBulkAdditionJobs <IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob[]>]
+ [-EmailNotificationsSetting <IMicrosoftGraphEmailNotificationsSetting>]
  [-ExchangeProtectionPolicies <IMicrosoftGraphExchangeProtectionPolicy[]>]
  [-ExchangeRestoreSessions <IMicrosoftGraphExchangeRestoreSession[]>] [-Id <String>]
  [-MailboxInclusionRules <IMicrosoftGraphMailboxProtectionRule[]>]
@@ -37,20 +38,18 @@ Update-MgBetaSolutionBackupRestore [-ResponseHeadersVariable <String>] [-Additio
  [-SiteInclusionRules <IMicrosoftGraphSiteProtectionRule[]>]
  [-SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit[]>]
  [-SiteProtectionUnitsBulkAdditionJobs <IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSolutionBackupRestore -BodyParameter <IMicrosoftGraphBackupRestoreRoot>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property backupRestore in solutions
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -82,21 +81,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -138,6 +122,22 @@ To construct, see NOTES section for DRIVEPROTECTIONUNITSBULKADDITIONJOBS propert
 
 ```yaml
 Type: IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EmailNotificationsSetting
+emailNotificationsSetting
+To construct, see NOTES section for EMAILNOTIFICATIONSSETTING properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphEmailNotificationsSetting
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -283,6 +283,21 @@ To construct, see NOTES section for ONEDRIVEFORBUSINESSRESTORESESSIONS propertie
 Type: IMicrosoftGraphOneDriveForBusinessRestoreSession[]
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -482,6 +497,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -559,6 +589,7 @@ For examples, see driveExpression examples.
     - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+    - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
     - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
     - `[ProtectionSources <String>]`: protectionSource
     - `[Status <String>]`: protectionUnitStatus
@@ -577,6 +608,22 @@ Read-only.
 Read-only.
     - `[DirectoryObjectIds <String- `[]`>]`: The list of OneDrive directoryObjectIds to add to the OneDrive protection policy.
     - `[Drives <String- `[]`>]`: The list of email addresses to add to the OneDrive protection policy.
+  - `[EmailNotificationsSetting <IMicrosoftGraphEmailNotificationsSetting>]`: emailNotificationsSetting
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[AdditionalEvents <String>]`: notificationEventsType
+    - `[IsEnabled <Boolean?>]`: Indicates whether notifications are enabled.
+    - `[Recipients <IMicrosoftGraphNotificationRecipients>]`: notificationRecipients
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CustomRecipients <IMicrosoftGraphEmailIdentity- `[]`>]`: A list of users or groups that receive notifications.
+Only specify this property when role is set to custom.
+        - `[DisplayName <String>]`: The display name of the identity.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
+        - `[Email <String>]`: Email address of the user.
+      - `[Role <String>]`: notificationRecipientsType
   - `[ExchangeProtectionPolicies <IMicrosoftGraphExchangeProtectionPolicy- `[]`>]`: The list of Exchange protection policies in the tenant.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The time of creation of the policy.
@@ -607,6 +654,7 @@ For examples, see mailboxExpression examples.
       - `[Error <IMicrosoftGraphPublicError>]`: publicError
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+      - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
       - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
       - `[ProtectionSources <String>]`: protectionSource
       - `[Status <String>]`: protectionUnitStatus
@@ -664,6 +712,7 @@ Read-only.
           - `[Error <IMicrosoftGraphPublicError>]`: publicError
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+          - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
           - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
           - `[ProtectionSources <String>]`: protectionSource
           - `[Status <String>]`: protectionUnitStatus
@@ -706,8 +755,6 @@ Future value; don't use.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
-This property isn't implemented yet.
-Future value; don't use.
       - `[Mailboxes <String- `[]`>]`: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
   - `[MailboxInclusionRules <IMicrosoftGraphMailboxProtectionRule- `[]`>]`: The list of mailbox inclusion rules applied to the tenant.
   - `[MailboxProtectionUnits <IMicrosoftGraphMailboxProtectionUnit- `[]`>]`: The list of mailbox protection units in the tenant.
@@ -765,8 +812,6 @@ Future value; don't use.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
-This property isn't implemented yet.
-Future value; don't use.
       - `[Drives <String- `[]`>]`: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
   - `[ProtectionPolicies <IMicrosoftGraphProtectionPolicyBase- `[]`>]`: List of protection policies in the tenant.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -838,6 +883,7 @@ For examples, see siteExpression example.
       - `[Error <IMicrosoftGraphPublicError>]`: publicError
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+      - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
       - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
       - `[ProtectionSources <String>]`: protectionSource
       - `[Status <String>]`: protectionUnitStatus
@@ -896,8 +942,6 @@ Future value; don't use.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[SiteIds <String- `[]`>]`: The list of SharePoint site IDs that are added to the corresponding SharePoint restore session in a bulk operation.
-This property isn't implemented yet.
-Future value; don't use.
       - `[SiteWebUrls <String- `[]`>]`: The list of SharePoint site URLs that are added to the corresponding SharePoint restore session in a bulk operation.
   - `[SiteInclusionRules <IMicrosoftGraphSiteProtectionRule- `[]`>]`: The list of site inclusion rules applied to the tenant.
   - `[SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit- `[]`>]`: The list of site protection units in the tenant.
@@ -968,6 +1012,7 @@ This property is read-only.
     - `[Target <String>]`: The target of the error.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+  - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
   - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
   - `[ProtectionSources <String>]`: protectionSource
   - `[Status <String>]`: protectionUnitStatus
@@ -1010,6 +1055,23 @@ This property is read-only.
 Read-only.
   - `[DirectoryObjectIds <String- `[]`>]`: The list of OneDrive directoryObjectIds to add to the OneDrive protection policy.
   - `[Drives <String- `[]`>]`: The list of email addresses to add to the OneDrive protection policy.
+
+EMAILNOTIFICATIONSSETTING `<IMicrosoftGraphEmailNotificationsSetting>`: emailNotificationsSetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[AdditionalEvents <String>]`: notificationEventsType
+  - `[IsEnabled <Boolean?>]`: Indicates whether notifications are enabled.
+  - `[Recipients <IMicrosoftGraphNotificationRecipients>]`: notificationRecipients
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CustomRecipients <IMicrosoftGraphEmailIdentity- `[]`>]`: A list of users or groups that receive notifications.
+Only specify this property when role is set to custom.
+      - `[DisplayName <String>]`: The display name of the identity.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
+      - `[Email <String>]`: Email address of the user.
+    - `[Role <String>]`: notificationRecipientsType
 
 EXCHANGEPROTECTIONPOLICIES `<IMicrosoftGraphExchangeProtectionPolicy- `[]`>`: The list of Exchange protection policies in the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1064,6 +1126,7 @@ For examples, see mailboxExpression examples.
     - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+    - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
     - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
     - `[ProtectionSources <String>]`: protectionSource
     - `[Status <String>]`: protectionUnitStatus
@@ -1145,6 +1208,7 @@ Read-only.
         - `[Error <IMicrosoftGraphPublicError>]`: publicError
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+        - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
         - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
         - `[ProtectionSources <String>]`: protectionSource
         - `[Status <String>]`: protectionUnitStatus
@@ -1187,8 +1251,6 @@ Future value; don't use.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
-This property isn't implemented yet.
-Future value; don't use.
     - `[Mailboxes <String- `[]`>]`: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
 
 MAILBOXINCLUSIONRULES `<IMicrosoftGraphMailboxProtectionRule- `[]`>`: The list of mailbox inclusion rules applied to the tenant.
@@ -1256,6 +1318,7 @@ This property is read-only.
     - `[Target <String>]`: The target of the error.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+  - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
   - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
   - `[ProtectionSources <String>]`: protectionSource
   - `[Status <String>]`: protectionUnitStatus
@@ -1353,6 +1416,7 @@ For examples, see driveExpression examples.
     - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+    - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
     - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
     - `[ProtectionSources <String>]`: protectionSource
     - `[Status <String>]`: protectionUnitStatus
@@ -1431,6 +1495,7 @@ Read-only.
         - `[Error <IMicrosoftGraphPublicError>]`: publicError
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+        - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
         - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
         - `[ProtectionSources <String>]`: protectionSource
         - `[Status <String>]`: protectionUnitStatus
@@ -1461,8 +1526,6 @@ Future value; don't use.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
-This property isn't implemented yet.
-Future value; don't use.
     - `[Drives <String- `[]`>]`: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
 
 PROTECTIONPOLICIES `<IMicrosoftGraphProtectionPolicyBase- `[]`>`: List of protection policies in the tenant.
@@ -1518,6 +1581,7 @@ This property is read-only.
     - `[Target <String>]`: The target of the error.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+  - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
   - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
   - `[ProtectionSources <String>]`: protectionSource
   - `[Status <String>]`: protectionUnitStatus
@@ -1559,6 +1623,7 @@ This property is read-only.
       - `[Target <String>]`: The target of the error.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+    - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
     - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
     - `[ProtectionSources <String>]`: protectionSource
     - `[Status <String>]`: protectionUnitStatus
@@ -1696,6 +1761,7 @@ For examples, see siteExpression example.
     - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+    - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
     - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
     - `[ProtectionSources <String>]`: protectionSource
     - `[Status <String>]`: protectionUnitStatus
@@ -1774,6 +1840,7 @@ Read-only.
         - `[Error <IMicrosoftGraphPublicError>]`: publicError
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+        - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
         - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
         - `[ProtectionSources <String>]`: protectionSource
         - `[Status <String>]`: protectionUnitStatus
@@ -1804,8 +1871,6 @@ Future value; don't use.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[SiteIds <String- `[]`>]`: The list of SharePoint site IDs that are added to the corresponding SharePoint restore session in a bulk operation.
-This property isn't implemented yet.
-Future value; don't use.
     - `[SiteWebUrls <String- `[]`>]`: The list of SharePoint site URLs that are added to the corresponding SharePoint restore session in a bulk operation.
 
 SITEINCLUSIONRULES `<IMicrosoftGraphSiteProtectionRule- `[]`>`: The list of site inclusion rules applied to the tenant.
@@ -1873,6 +1938,7 @@ This property is read-only.
     - `[Target <String>]`: The target of the error.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+  - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
   - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
   - `[ProtectionSources <String>]`: protectionSource
   - `[Status <String>]`: protectionUnitStatus

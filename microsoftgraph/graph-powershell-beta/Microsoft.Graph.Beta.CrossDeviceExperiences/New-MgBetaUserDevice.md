@@ -30,14 +30,14 @@ New-MgBetaUserDevice -UserId <String> [-ResponseHeadersVariable <String>] [-Acco
  [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
  [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>] [-Status <String>]
  [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
- [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Headers <IDictionary>]
+ [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserDevice -UserId <String> -BodyParameter <IMicrosoftGraphDevice>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -59,21 +59,19 @@ New-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> [-ResponseHe
  [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
  [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>] [-Status <String>]
  [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
- [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Headers <IDictionary>]
+ [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> -BodyParameter <IMicrosoftGraphDevice>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to devices for users
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -203,21 +201,6 @@ Read-only.
 Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -542,7 +525,7 @@ Accept wildcard characters: False
 
 ### -IsManagementRestricted
 Indicates whether the device is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only.
 To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
 
@@ -827,6 +810,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RegisteredOwners
 The user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
@@ -1000,6 +998,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -1165,7 +1178,7 @@ Supports $filter (eq, ne, not).
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
   - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
   - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
@@ -1369,7 +1382,7 @@ Supports $filter (eq, ne, not).
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
     - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
     - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.

@@ -19,14 +19,14 @@ The owner must be specified as an object ID (GUID), not a UPN.
 ```
 Get-MgBetaTeamOwnerByUserPrincipalName -TeamId <String> -UserPrincipalName <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaTeamOwnerByUserPrincipalName -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,8 +34,6 @@ The list of this team's owners.
 Currently, when creating a team using application permissions, exactly one owner must be specified.
 When using user-delegated permissions, no owner can be specified (the current user is the owner).
 The owner must be specified as an object ID (GUID), not a UPN.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -82,6 +80,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

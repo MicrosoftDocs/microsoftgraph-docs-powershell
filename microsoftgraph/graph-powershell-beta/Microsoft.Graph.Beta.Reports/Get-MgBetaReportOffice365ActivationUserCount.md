@@ -17,7 +17,7 @@ Invoke function getOffice365ActivationsUserCounts
 
 ```
 Get-MgBetaReportOffice365ActivationUserCount -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,8 +30,6 @@ Invoke function getOffice365ActivationsUserCounts
 | Delegated (work or school account) | Reports.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Reports.Read.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -76,6 +74,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

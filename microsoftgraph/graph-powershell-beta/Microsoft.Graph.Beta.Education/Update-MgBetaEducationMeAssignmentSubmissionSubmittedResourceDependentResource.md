@@ -19,7 +19,7 @@ Update-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource -
  -EducationSubmissionResourceId1 <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AssignmentResourceUrl <String>]
  [-DependentResources <IMicrosoftGraphEducationSubmissionResource[]>] [-Id <String>]
- [-Resource <IMicrosoftGraphEducationResource>] [-Headers <IDictionary>]
+ [-Resource <IMicrosoftGraphEducationResource>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource -
 Update-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource -EducationAssignmentId <String>
  -EducationSubmissionId <String> -EducationSubmissionResourceId <String>
  -EducationSubmissionResourceId1 <String> -BodyParameter <IMicrosoftGraphEducationSubmissionResource>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,21 +38,19 @@ Update-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource
  -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AssignmentResourceUrl <String>] [-DependentResources <IMicrosoftGraphEducationSubmissionResource[]>]
  [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource
  -InputObject <IEducationIdentity> -BodyParameter <IMicrosoftGraphEducationSubmissionResource>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property dependentResources in education
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -100,21 +98,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -241,6 +224,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Resource
 educationResource
 To construct, see NOTES section for RESOURCE properties and create a hash table.
@@ -264,6 +262,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -367,6 +380,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
   - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
   - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
+  - `[SpeakerAssignmentSubmissionId <String>]`: The unique identifier of speakerAssignmentSubmission
 
 RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

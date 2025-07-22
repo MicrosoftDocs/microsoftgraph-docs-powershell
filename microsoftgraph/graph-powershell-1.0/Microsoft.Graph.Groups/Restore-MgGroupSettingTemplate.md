@@ -10,54 +10,29 @@ ms.subservice: entra-directory-management
 
 ## SYNOPSIS
 Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
-If an item was accidentally deleted, you can fully restore the item.
-However, security groups can't be restored.
-Also, restoring an application doesn't restore the associated service principal automatically.
-You must call this API to explicitly restore the deleted service principal.
-A recently deleted item remains available for up to 30 days.
-After 30 days, the item is permanently deleted.
+Restore a recently deleted directory object from deleted items.
+The following types are supported:- administrativeUnit- application- certificateBasedAuthPki- certificateAuthorityDetail- group- servicePrincipal
 
 ## SYNTAX
 
 ### Restore (Default)
 ```
 Restore-MgGroupSettingTemplate -GroupSettingTemplateId <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
 ```
 Restore-MgGroupSettingTemplate -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
-If an item was accidentally deleted, you can fully restore the item.
-However, security groups can't be restored.
-Also, restoring an application doesn't restore the associated service principal automatically.
-You must call this API to explicitly restore the deleted service principal.
-A recently deleted item remains available for up to 30 days.
-After 30 days, the item is permanently deleted.
-
-## EXAMPLES
+Restore a recently deleted directory object from deleted items.
+The following types are supported:- administrativeUnit- application- certificateBasedAuthPki- certificateAuthorityDetail- group- servicePrincipal
 
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -GroupSettingTemplateId
 The unique identifier of groupSettingTemplate
@@ -105,6 +80,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -112,6 +102,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

@@ -19,13 +19,13 @@ Get the count of users by activity type and service.
 ### Get (Default)
 ```
 Get-MgReportOffice365ServiceUserCount -Period <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportOffice365ServiceUserCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Get the count of users by activity type and service.
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportOffice365ServiceUserCount -Period $periodId
+Get-MgReportOffice365ServiceUserCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportOffice365ServiceUserCount Cmdlet.
@@ -117,6 +117,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

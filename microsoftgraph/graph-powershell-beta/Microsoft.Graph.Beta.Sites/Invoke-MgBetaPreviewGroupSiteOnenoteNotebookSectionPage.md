@@ -19,20 +19,18 @@ Invoke function preview
 ```
 Invoke-MgBetaPreviewGroupSiteOnenoteNotebookSectionPage -GroupId <String> -NotebookId <String>
  -OnenotePageId <String> -OnenoteSectionId <String> -SiteId <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### PreviewViaIdentity
 ```
 Invoke-MgBetaPreviewGroupSiteOnenoteNotebookSectionPage -InputObject <ISitesIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function preview
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -127,6 +125,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -179,6 +192,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+  - `[ContentFormats <String- `[]`>]`: Usage: contentFormats={contentFormats}
   - `[ContentModelId <String>]`: The unique identifier of contentModel
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ContentTypeId1 <String>]`: The unique identifier of contentType
@@ -197,9 +211,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[ItemActivityId <String>]`: The unique identifier of itemActivity
   - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
   - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
+  - `[LabelIds <String- `[]`>]`: Usage: labelIds={labelIds}
   - `[ListId <String>]`: The unique identifier of list
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[Locale <String>]`: Usage: locale='{locale}'
   - `[ModelName <String>]`: Usage: modelName='{modelName}'
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation

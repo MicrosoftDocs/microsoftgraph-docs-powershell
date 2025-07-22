@@ -25,23 +25,23 @@ New-MgSolutionBackupRestoreSharePointProtectionPolicy [-ResponseHeadersVariable 
  [-DisplayName <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-RetentionSettings <IMicrosoftGraphRetentionSetting[]>]
  [-SiteInclusionRules <IMicrosoftGraphSiteProtectionRule[]>]
- [-SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit[]>] [-Status <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit[]>]
+ [-SiteProtectionUnitsBulkAdditionJobs <IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob[]>]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSolutionBackupRestoreSharePointProtectionPolicy
  -BodyParameter <IMicrosoftGraphSharePointProtectionPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a protection policy for a M365 service SharePoint.
 Policy will be created in inactive state.
 User can also provide a list of protection units under the policy.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -73,21 +73,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -199,6 +184,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -262,6 +262,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SiteProtectionUnitsBulkAdditionJobs
+
+To construct, see NOTES section for SITEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 protectionPolicyStatus
 
@@ -269,6 +285,21 @@ protectionPolicyStatus
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -349,8 +380,7 @@ Read-only.
         - `[Target <String>]`: The target of the error.
       - `[Message <String>]`: A non-localized message for the developer.
       - `[Target <String>]`: The target of the error.
-    - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
+    - `[IsAutoApplyEnabled <Boolean?>]`: 
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
     - `[Status <String>]`: protectionRuleStatus
@@ -369,6 +399,18 @@ For examples, see siteExpression example.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[SiteId <String>]`: Unique identifier of the SharePoint site.
+  - `[SiteProtectionUnitsBulkAdditionJobs <IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob- `[]`>]`: 
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+    - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+    - `[Status <String>]`: protectionUnitsBulkJobStatus
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[SiteIds <String- `[]`>]`: The list of SharePoint site IDs to add to the SharePoint protection policy.
+    - `[SiteWebUrls <String- `[]`>]`: The list of SharePoint site URLs to add to the SharePoint protection policy.
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -423,8 +465,7 @@ For example, in the access reviews decisions API, this property might record the
       - `[Target <String>]`: The target of the error.
     - `[Message <String>]`: A non-localized message for the developer.
     - `[Target <String>]`: The target of the error.
-  - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
+  - `[IsAutoApplyEnabled <Boolean?>]`: 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
   - `[Status <String>]`: protectionRuleStatus
@@ -467,6 +508,42 @@ For example, in the access reviews decisions API, this property might record the
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[SiteId <String>]`: Unique identifier of the SharePoint site.
+
+SITEPROTECTIONUNITSBULKADDITIONJOBS `<IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob- `[]`>`: .
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+  - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+  - `[Status <String>]`: protectionUnitsBulkJobStatus
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[SiteIds <String- `[]`>]`: The list of SharePoint site IDs to add to the SharePoint protection policy.
+  - `[SiteWebUrls <String- `[]`>]`: The list of SharePoint site URLs to add to the SharePoint protection policy.
 
 ## RELATED LINKS
 

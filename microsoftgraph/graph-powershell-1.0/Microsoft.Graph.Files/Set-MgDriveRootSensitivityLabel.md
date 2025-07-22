@@ -19,7 +19,7 @@ Invoke action assignSensitivityLabel
 ```
 Set-MgDriveRootSensitivityLabel -DriveId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AssignmentMethod <String>] [-JustificationText <String>]
- [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru]
+ [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Set-MgDriveRootSensitivityLabel -DriveId <String> [-ResponseHeadersVariable <Str
 ```
 Set-MgDriveRootSensitivityLabel -DriveId <String>
  -BodyParameter <IPaths9Hea9QDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Set-MgDriveRootSensitivityLabel -DriveId <String>
 ```
 Set-MgDriveRootSensitivityLabel -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AssignmentMethod <String>] [-JustificationText <String>]
- [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru]
+ [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,14 +43,12 @@ Set-MgDriveRootSensitivityLabel -InputObject <IFilesIdentity> [-ResponseHeadersV
 ```
 Set-MgDriveRootSensitivityLabel -InputObject <IFilesIdentity>
  -BodyParameter <IPaths9Hea9QDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action assignSensitivityLabel
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +95,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -191,6 +174,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -213,6 +211,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -257,8 +270,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IPaths9Hea9QDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignmentMethod <String>]`: sensitivityLabelAssignmentMethod
-  - `[JustificationText <String>]`:
-  - `[SensitivityLabelId <String>]`:
+  - `[JustificationText <String>]`: 
+  - `[SensitivityLabelId <String>]`: 
 
 INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition

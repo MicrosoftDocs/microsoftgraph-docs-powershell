@@ -19,7 +19,7 @@ Invoke action unsetReaction
 ```
 Clear-MgBetaTeamworkDeletedTeamChannelMessageReaction -ChannelId <String> -ChatMessageId <String>
  -DeletedTeamId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-ReactionType <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-ReactionType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Clear-MgBetaTeamworkDeletedTeamChannelMessageReaction -ChannelId <String> -ChatM
 Clear-MgBetaTeamworkDeletedTeamChannelMessageReaction -ChannelId <String> -ChatMessageId <String>
  -DeletedTeamId <String>
  -BodyParameter <IPathsPad1StTeamworkDeletedteamsDeletedteamIdChannelsChannelIdMessagesChatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Clear-MgBetaTeamworkDeletedTeamChannelMessageReaction -ChannelId <String> -ChatM
 ```
 Clear-MgBetaTeamworkDeletedTeamChannelMessageReaction -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ReactionType <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -44,14 +44,12 @@ Clear-MgBetaTeamworkDeletedTeamChannelMessageReaction -InputObject <ITeamsIdenti
 ```
 Clear-MgBetaTeamworkDeletedTeamChannelMessageReaction -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsPad1StTeamworkDeletedteamsDeletedteamIdChannelsChannelIdMessagesChatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action unsetReaction
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -110,21 +108,6 @@ Parameter Sets: UnsetExpanded, Unset
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -192,6 +175,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReactionType
 
 
@@ -214,6 +212,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

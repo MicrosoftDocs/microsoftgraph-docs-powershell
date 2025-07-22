@@ -9,7 +9,7 @@ ms.subservice: entra-groups
 # Remove-MgBetaGroupThread
 
 ## SYNOPSIS
-Delete conversationThread.
+Delete a thread object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThread?view=graph-powershell-1.0)
@@ -19,19 +19,19 @@ Delete conversationThread.
 ### Delete (Default)
 ```
 Remove-MgBetaGroupThread -ConversationThreadId <String> -GroupId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaGroupThread -InputObject <IGroupsIdentity> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete conversationThread.
+Delete a thread object.
 
 **Permissions**
 
@@ -55,21 +55,6 @@ This example shows how to use the Remove-MgBetaGroupThread Cmdlet.
 
 
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -ConversationThreadId
 The unique identifier of conversationThread
@@ -162,6 +147,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -169,6 +169,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -237,7 +252,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthread)
 
-[https://learn.microsoft.com/graph/api/conversationthread-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conversationthread-delete?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/group-delete-thread?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-delete-thread?view=graph-rest-beta)
 
 
 

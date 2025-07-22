@@ -20,14 +20,14 @@ Read the properties and relationships of a federatedIdentityCredential object.
 ```
 Get-MgApplicationFederatedIdentityCredentialByName -ApplicationId <String> -Name <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgApplicationFederatedIdentityCredentialByName -InputObject <IApplicationsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,8 +40,6 @@ Read the properties and relationships of a federatedIdentityCredential object.
 | Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
 | Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -115,6 +113,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

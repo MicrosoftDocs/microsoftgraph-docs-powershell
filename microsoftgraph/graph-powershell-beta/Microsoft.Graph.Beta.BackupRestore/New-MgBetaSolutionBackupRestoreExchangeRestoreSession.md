@@ -25,21 +25,19 @@ New-MgBetaSolutionBackupRestoreExchangeRestoreSession [-ResponseHeadersVariable 
  [-MailboxRestoreArtifacts <IMicrosoftGraphMailboxRestoreArtifact[]>]
  [-MailboxRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphMailboxRestoreArtifactsBulkAdditionRequest[]>]
  [-RestoreJobType <String>] [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]
- [-Status <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSolutionBackupRestoreExchangeRestoreSession -BodyParameter <IMicrosoftGraphExchangeRestoreSession>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to exchangeRestoreSessions for solutions
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -81,21 +79,6 @@ The time of completion of the restore session.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -261,6 +244,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -314,6 +312,21 @@ restoreSessionStatus
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -416,6 +429,7 @@ Read-only.
         - `[Error <IMicrosoftGraphPublicError>]`: publicError
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+        - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
         - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
         - `[ProtectionSources <String>]`: protectionSource
         - `[Status <String>]`: protectionUnitStatus
@@ -458,8 +472,6 @@ Future value; don't use.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
-This property isn't implemented yet.
-Future value; don't use.
     - `[Mailboxes <String- `[]`>]`: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
@@ -533,6 +545,7 @@ This property is read-only.
       - `[Error <IMicrosoftGraphPublicError>]`: publicError
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+      - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
       - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
       - `[ProtectionSources <String>]`: protectionSource
       - `[Status <String>]`: protectionUnitStatus
@@ -597,6 +610,7 @@ This property is read-only.
       - `[Error <IMicrosoftGraphPublicError>]`: publicError
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+      - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
       - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
       - `[ProtectionSources <String>]`: protectionSource
       - `[Status <String>]`: protectionUnitStatus
@@ -652,8 +666,6 @@ Future value; don't use.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
-This property isn't implemented yet.
-Future value; don't use.
   - `[Mailboxes <String- `[]`>]`: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
 
 RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: restoreSessionArtifactCount

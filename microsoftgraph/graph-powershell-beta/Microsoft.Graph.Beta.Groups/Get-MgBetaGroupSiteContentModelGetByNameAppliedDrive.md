@@ -17,7 +17,7 @@ List all the contentModelUsage information related to a contentModel applied to 
 ```
 Get-MgBetaGroupSiteContentModelGetByNameAppliedDrive -GroupId <String> -ModelName <String> -SiteId <String>
  [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -25,13 +25,11 @@ Get-MgBetaGroupSiteContentModelGetByNameAppliedDrive -GroupId <String> -ModelNam
 ```
 Get-MgBetaGroupSiteContentModelGetByNameAppliedDrive -InputObject <IGroupsIdentity> [-Count] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 List all the contentModelUsage information related to a contentModel applied to a SharePoint document library.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -126,6 +124,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -171,13 +184,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
+### -Top
+Show only the first n items
 
 ```yaml
 Type: Int32
 Parameter Sets: (All)
-Aliases:
+Aliases: Limit
 
 Required: False
 Position: Named
@@ -186,13 +199,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Show only the first n items
+### -Skip
+Skip the first n items
 
 ```yaml
 Type: Int32
 Parameter Sets: (All)
-Aliases: Limit
+Aliases:
 
 Required: False
 Position: Named

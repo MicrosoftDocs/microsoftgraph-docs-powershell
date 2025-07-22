@@ -18,14 +18,14 @@ New-MgBetaGroupSiteInformationProtectionPolicyLabel -GroupId <String> -SiteId <S
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Color <String>]
  [-Description <String>] [-Id <String>] [-IsActive] [-Name <String>]
  [-Parent <IMicrosoftGraphParentLabelDetails>] [-Sensitivity <Int32>] [-Tooltip <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupSiteInformationProtectionPolicyLabel -GroupId <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -34,20 +34,18 @@ New-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Color <String>]
  [-Description <String>] [-Id <String>] [-IsActive] [-Name <String>]
  [-Parent <IMicrosoftGraphParentLabelDetails>] [-Sensitivity <Int32>] [-Tooltip <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to labels for groups
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -89,21 +87,6 @@ The color that the UI should display for the label, if configured.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -236,6 +219,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -288,6 +286,21 @@ The tooltip that should be displayed for the label in a UI.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -358,6 +371,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+  - `[ContentFormats <String- `[]`>]`: Usage: contentFormats={contentFormats}
   - `[ContentModelId <String>]`: The unique identifier of contentModel
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ContentTypeId1 <String>]`: The unique identifier of contentType
@@ -376,9 +390,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[ItemActivityId <String>]`: The unique identifier of itemActivity
   - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
   - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
+  - `[LabelIds <String- `[]`>]`: Usage: labelIds={labelIds}
   - `[ListId <String>]`: The unique identifier of list
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[Locale <String>]`: Usage: locale='{locale}'
   - `[ModelName <String>]`: Usage: modelName='{modelName}'
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation

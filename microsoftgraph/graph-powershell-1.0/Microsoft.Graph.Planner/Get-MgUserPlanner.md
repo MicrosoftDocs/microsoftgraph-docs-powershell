@@ -19,14 +19,14 @@ Read-only.
 ### Get (Default)
 ```
 Get-MgUserPlanner -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -41,8 +41,6 @@ Read-only.
 | Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -89,6 +87,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

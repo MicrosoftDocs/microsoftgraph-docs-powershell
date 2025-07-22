@@ -19,14 +19,14 @@ Get the total number of files and how many of them were active across all group 
 ### Get (Default)
 ```
 Get-MgReportOffice365GroupActivityFileCount -Period <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportOffice365GroupActivityFileCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Get the total number of files and how many of them were active across all group 
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportOffice365GroupActivityFileCount -Period $periodId
+Get-MgReportOffice365GroupActivityFileCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportOffice365GroupActivityFileCount Cmdlet.
@@ -118,6 +118,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
