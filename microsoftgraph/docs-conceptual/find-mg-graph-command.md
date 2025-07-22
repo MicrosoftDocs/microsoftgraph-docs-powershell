@@ -5,7 +5,7 @@ description: "Learn how to use the Find-MgGraphCommand to aid in discoverability
 ms.topic: how-to
 ms.date: 01/22/2025
 author: msewaweru
-manager: CelesteDG
+manager: mwongerapk
 ms.author: eunicewaweru
 reviewer: maisarissi
 

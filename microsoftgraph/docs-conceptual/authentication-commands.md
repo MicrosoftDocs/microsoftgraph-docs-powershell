@@ -5,7 +5,7 @@ description: "Learn how to use the authentication cmdlets in Microsoft Graph Pow
 ms.topic: how-to
 ms.date: 07/10/2025
 author: msewaweru
-manager: CelesteDG
+manager: mwongerapk
 ms.author: eunicewaweru
 
 #customer intent: As a Microsoft Graph PowerShell user, I want to understand the different authentication options available, so that I can securely connect to Microsoft Graph and manage my resources.

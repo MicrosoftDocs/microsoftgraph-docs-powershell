@@ -5,7 +5,7 @@ description: "Learn how to migrate your applications from Azure AD PowerShell to
 ms.topic: conceptual
 ms.date: 10/28/2024
 author: msewaweru
-manager: CelesteDG
+manager: mwongerapk
 ms.author: eunicewaweru
 ms.reviewer: stevemutungi
 

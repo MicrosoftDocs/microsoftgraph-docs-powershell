@@ -5,7 +5,7 @@ description: "Learn how to create eligible and active role assignments in Micros
 ms.topic: how-to
 ms.date: 01/28/2025
 author: msewaweru
-manager: CelesteDG
+manager: mwongerapk
 ms.author: eunicewaweru
 ms.reviewer: mandardalvi
 

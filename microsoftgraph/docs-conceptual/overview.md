@@ -4,7 +4,7 @@ description: "Learn about the features of Microsoft Graph PowerShell that can he
 ms.topic: overview
 ms.date: 01/13/2025
 author: msewaweru
-manager: CelesteDG
+manager: mwongerapk
 ms.author: eunicewaweru
 ms.reviewer: maisarissi
 
