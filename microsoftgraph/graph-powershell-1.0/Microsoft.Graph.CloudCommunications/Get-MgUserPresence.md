@@ -9,17 +9,15 @@ ms.subservice: cloud-communications
 # Get-MgUserPresence
 
 ## SYNOPSIS
-Get a user's presence information.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserPresence?view=graph-powershell-beta)
+Set a presence status message for a user.
+An optional expiration date and time can be supplied.
 
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgUserPresence -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -27,11 +25,12 @@ Get-MgUserPresence -UserId <String> [-ExpandProperty <String[]>] [-Property <Str
 ```
 Get-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get a user's presence information.
+Set a presence status message for a user.
+An optional expiration date and time can be supplied.
 
 **Permissions**
 
@@ -111,6 +110,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -195,7 +209,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguserpresence)
 
-[https://learn.microsoft.com/graph/api/presence-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-1.0)
 
 
 

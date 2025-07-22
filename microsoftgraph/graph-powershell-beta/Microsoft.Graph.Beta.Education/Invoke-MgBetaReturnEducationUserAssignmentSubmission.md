@@ -22,13 +22,13 @@ This action can only be done by the teacher.
 ```
 Invoke-MgBetaReturnEducationUserAssignmentSubmission -EducationAssignmentId <String>
  -EducationSubmissionId <String> -EducationUserId <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReturnViaIdentity
 ```
 Invoke-MgBetaReturnEducationUserAssignmentSubmission -InputObject <IEducationIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,24 +37,7 @@ Make the grade and feedback associated with this submission available to the stu
 This will change the status of the submission from 'submitted' to 'returned' and indicates that feedback is provided or grading is done.
 This action can only be done by the teacher.
 
-## EXAMPLES
-
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment
@@ -132,6 +115,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -139,6 +137,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -198,6 +211,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
   - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
   - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
+  - `[SpeakerAssignmentSubmissionId <String>]`: The unique identifier of speakerAssignmentSubmission
 
 ## RELATED LINKS
 

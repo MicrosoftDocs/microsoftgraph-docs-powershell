@@ -11,22 +11,19 @@ schema: 2.0.0
 The content of the recording.
 Read-only.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingRecordingContent?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgUserOnlineMeetingRecordingContent -CallRecordingId <String> -OnlineMeetingId <String> -UserId <String>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgUserOnlineMeetingRecordingContent -InputObject <ICloudCommunicationsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -41,8 +38,6 @@ Read-only.
 | Delegated (work or school account) | OnlineMeetingRecording.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -133,6 +128,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

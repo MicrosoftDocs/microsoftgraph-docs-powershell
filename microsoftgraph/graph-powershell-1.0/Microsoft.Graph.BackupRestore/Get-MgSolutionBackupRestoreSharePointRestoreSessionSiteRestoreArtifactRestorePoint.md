@@ -20,21 +20,19 @@ Represents the date and time when an artifact is protected by a protectionPolicy
 Get-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoint
  -SharePointRestoreSessionId <String> -SiteRestoreArtifactId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoint
  -InputObject <IBackupRestoreIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Represents the date and time when an artifact is protected by a protectionPolicy and can be restored.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -81,6 +79,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -163,13 +176,17 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
   - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
+  - `[DriveProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of driveProtectionUnitsBulkAdditionJob
   - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
+  - `[DriveRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
   - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
   - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
   - `[GranularMailboxRestoreArtifactId <String>]`: The unique identifier of granularMailboxRestoreArtifact
   - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
   - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
+  - `[MailboxProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
   - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
+  - `[MailboxRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of mailboxRestoreArtifactsBulkAdditionRequest
   - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
   - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
   - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
@@ -181,7 +198,9 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
   - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
   - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
+  - `[SiteProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of siteProtectionUnitsBulkAdditionJob
   - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
+  - `[SiteRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
 ## RELATED LINKS
 

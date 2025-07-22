@@ -22,14 +22,14 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copy-MgBetaGroupOnenoteSectionToSectionGroup -GroupId <String> -OnenoteSectionId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-GroupId1 <String>] [-Id <String>]
  [-RenameAs <String>] [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
 ```
 Copy-MgBetaGroupOnenoteSectionToSectionGroup [-GroupId <String>] -InputObject <INotesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-RenameAs <String>]
- [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>]
+ [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Copy-MgBetaGroupOnenoteSectionToSectionGroup [-GroupId <String>] -InputObject <I
 ```
 Copy-MgBetaGroupOnenoteSectionToSectionGroup -GroupId <String> -OnenoteSectionId <String>
  -BodyParameter <IPaths7006K8GroupsGroupIdOnenoteSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,7 +45,7 @@ Copy-MgBetaGroupOnenoteSectionToSectionGroup -GroupId <String> -OnenoteSectionId
 ```
 Copy-MgBetaGroupOnenoteSectionToSectionGroup -InputObject <INotesIdentity>
  -BodyParameter <IPaths7006K8GroupsGroupIdOnenoteSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -60,8 +60,6 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 | Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite,  |
 | Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
 | Application | Notes.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -93,21 +91,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -214,6 +197,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RenameAs
 
 
@@ -266,6 +264,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

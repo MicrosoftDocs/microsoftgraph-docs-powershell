@@ -23,13 +23,13 @@ Update-MgPolicyAuthorizationPolicy [-ResponseHeadersVariable <String>] [-Additio
  [-AllowedToSignUpEmailBasedSubscriptions] [-AllowedToUseSspr] [-BlockMsolPowerShell]
  [-DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-GuestUserRoleId <String>] [-Id <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPolicyAuthorizationPolicy -BodyParameter <IMicrosoftGraphAuthorizationPolicy>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -273,21 +273,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DefaultUserRolePermissions
 defaultUserRolePermissions
 To construct, see NOTES section for DEFAULTUSERROLEPERMISSIONS properties and create a hash table.
@@ -399,6 +384,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -406,6 +406,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -472,10 +487,10 @@ This doesn't affect Microsoft Entra Connect or Microsoft Graph.
     - `[AllowedToCreateApps <Boolean?>]`: Indicates whether the default user role can create applications.
 This setting corresponds to the Users can register applications setting in the User settings menu in the Microsoft Entra admin center.
     - `[AllowedToCreateSecurityGroups <Boolean?>]`: Indicates whether the default user role can create security groups.
-This setting corresponds to the following menus in the Microsoft Entra admin center:  The Users can create security groups in Microsoft Entra admin centers, API or PowerShell setting in the Group settings menu.
+This setting corresponds to the following menus in the Microsoft Entra admin center:  The Users can create security groups in Microsoft Entra admin centers, API or PowerShell setting in the Group settings menu. 
 Users can create security groups setting in the User settings menu.
     - `[AllowedToCreateTenants <Boolean?>]`: Indicates whether the default user role can create tenants.
-This setting corresponds to the Restrict non-admin users from creating tenants setting in the User settings menu in the Microsoft Entra admin center.
+This setting corresponds to the Restrict non-admin users from creating tenants setting in the User settings menu in the Microsoft Entra admin center. 
 When this setting is false, users assigned the Tenant Creator role can still create tenants.
     - `[AllowedToReadBitlockerKeysForOwnedDevice <Boolean?>]`: Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role.
     - `[AllowedToReadOtherUsers <Boolean?>]`: Indicates whether the default user role can read other users.
@@ -491,10 +506,10 @@ DEFAULTUSERROLEPERMISSIONS `<IMicrosoftGraphDefaultUserRolePermissions>`: defaul
   - `[AllowedToCreateApps <Boolean?>]`: Indicates whether the default user role can create applications.
 This setting corresponds to the Users can register applications setting in the User settings menu in the Microsoft Entra admin center.
   - `[AllowedToCreateSecurityGroups <Boolean?>]`: Indicates whether the default user role can create security groups.
-This setting corresponds to the following menus in the Microsoft Entra admin center:  The Users can create security groups in Microsoft Entra admin centers, API or PowerShell setting in the Group settings menu.
+This setting corresponds to the following menus in the Microsoft Entra admin center:  The Users can create security groups in Microsoft Entra admin centers, API or PowerShell setting in the Group settings menu. 
 Users can create security groups setting in the User settings menu.
   - `[AllowedToCreateTenants <Boolean?>]`: Indicates whether the default user role can create tenants.
-This setting corresponds to the Restrict non-admin users from creating tenants setting in the User settings menu in the Microsoft Entra admin center.
+This setting corresponds to the Restrict non-admin users from creating tenants setting in the User settings menu in the Microsoft Entra admin center. 
 When this setting is false, users assigned the Tenant Creator role can still create tenants.
   - `[AllowedToReadBitlockerKeysForOwnedDevice <Boolean?>]`: Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role.
   - `[AllowedToReadOtherUsers <Boolean?>]`: Indicates whether the default user role can read other users.

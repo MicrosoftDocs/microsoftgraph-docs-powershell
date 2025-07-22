@@ -22,7 +22,7 @@ Update-MgBetaDeviceManagementIoUpdateStatus -IosUpdateDeviceStatusId <String>
  [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceDisplayName <String>] [-DeviceId <String>]
  [-DeviceModel <String>] [-Id <String>] [-InstallStatus <String>] [-LastReportedDateTime <DateTime>]
  [-OSVersion <String>] [-Platform <Int32>] [-Status <String>] [-UserId <String>] [-UserName <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Update-MgBetaDeviceManagementIoUpdateStatus -IosUpdateDeviceStatusId <String>
 ```
 Update-MgBetaDeviceManagementIoUpdateStatus -IosUpdateDeviceStatusId <String>
  -BodyParameter <IMicrosoftGraphIosUpdateDeviceStatus> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,7 +40,7 @@ Update-MgBetaDeviceManagementIoUpdateStatus -InputObject <IDeviceManagementAdmin
  [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceDisplayName <String>] [-DeviceId <String>]
  [-DeviceModel <String>] [-Id <String>] [-InstallStatus <String>] [-LastReportedDateTime <DateTime>]
  [-OSVersion <String>] [-Platform <Int32>] [-Status <String>] [-UserId <String>] [-UserName <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,7 +48,7 @@ Update-MgBetaDeviceManagementIoUpdateStatus -InputObject <IDeviceManagementAdmin
 ```
 Update-MgBetaDeviceManagementIoUpdateStatus -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphIosUpdateDeviceStatus> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -61,8 +61,6 @@ Update the navigation property iosUpdateStatuses in deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -104,21 +102,6 @@ The DateTime when device compliance grace period expires
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -294,6 +277,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -361,6 +359,21 @@ UserPrincipalName.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

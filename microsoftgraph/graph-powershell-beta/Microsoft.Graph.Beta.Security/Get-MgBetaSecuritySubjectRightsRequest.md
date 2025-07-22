@@ -20,21 +20,21 @@ Get subjectRightsRequests from security
 Get-MgBetaSecuritySubjectRightsRequest [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaSecuritySubjectRightsRequest -SubjectRightsRequestId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaSecuritySubjectRightsRequest -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,8 +47,6 @@ Get subjectRightsRequests from security
 | Delegated (work or school account) | SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -159,6 +157,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -200,21 +213,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -264,6 +262,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -295,6 +308,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
   - `[CloudAppDiscoveryReportId <String>]`: The unique identifier of cloudAppDiscoveryReport
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
+  - `[ContentFormats <String- `[]`>]`: Usage: contentFormats={contentFormats}
   - `[CustomerInsightTenantId <String>]`: The unique identifier of customerInsight
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
@@ -332,8 +346,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[IncidentId <String>]`: The unique identifier of incident
   - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
   - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[LabelIds <String- `[]`>]`: Usage: labelIds={labelIds}
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
+  - `[Locale <String>]`: Usage: locale='{locale}'
   - `[LoginPageId <String>]`: The unique identifier of loginPage
   - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
@@ -348,6 +364,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecurityRequirementId <String>]`: The unique identifier of securityRequirement
   - `[SecurityScoreHistoryId <String>]`: The unique identifier of securityScoreHistory
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun

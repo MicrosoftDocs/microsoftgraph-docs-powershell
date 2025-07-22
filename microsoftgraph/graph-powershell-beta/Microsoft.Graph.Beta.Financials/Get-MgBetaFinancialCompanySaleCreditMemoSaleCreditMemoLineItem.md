@@ -16,7 +16,7 @@ Get item from financials
 ```
 Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItem -CompanyId <String> -SalesCreditMemoId <String>
  -SalesCreditMemoLineId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -24,13 +24,11 @@ Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItem -CompanyId <Strin
 ```
 Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItem -InputObject <IFinancialsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get item from financials
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -92,6 +90,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

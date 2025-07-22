@@ -17,14 +17,14 @@ Get the properties and relationships of a customClaimsPolicy object.
 ```
 Get-MgBetaServicePrincipalClaimPolicy -ServicePrincipalId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaServicePrincipalClaimPolicy -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -99,6 +99,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -166,6 +181,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
   - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
+  - `[ApprovedClientAppId <String>]`: The unique identifier of approvedClientApp
   - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
   - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
   - `[ConnectorId <String>]`: The unique identifier of connector

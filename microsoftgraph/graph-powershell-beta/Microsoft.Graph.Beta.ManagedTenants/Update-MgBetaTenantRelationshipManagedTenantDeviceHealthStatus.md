@@ -20,14 +20,14 @@ Update-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus -DeviceHealthStat
  [-DeviceName <String>] [-HealthStatus <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
  [-OSVersion <String>] [-PrimaryDiskType <String>] [-RestartCount <Int32>] [-StartupPerformanceScore <Double>]
  [-TenantDisplayName <String>] [-TenantId <String>] [-TopProcesses <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus -DeviceHealthStatusId <String>
  -BodyParameter <IMicrosoftGraphManagedTenantsDeviceHealthStatus> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,20 +38,18 @@ Update-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus -InputObject <IMa
  [-DeviceName <String>] [-HealthStatus <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
  [-OSVersion <String>] [-PrimaryDiskType <String>] [-RestartCount <Int32>] [-StartupPerformanceScore <Double>]
  [-TenantDisplayName <String>] [-TenantId <String>] [-TopProcesses <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus -InputObject <IManagedTenantsIdentity>
  -BodyParameter <IMicrosoftGraphManagedTenantsDeviceHealthStatus> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deviceHealthStatuses in tenantRelationships
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -112,21 +110,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -313,6 +296,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -395,6 +393,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

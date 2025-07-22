@@ -10,7 +10,7 @@ ms.subservice: intune
 # Get-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Read properties and relationships of the deviceConfiguration object.
+Read properties and relationships of the windows10EnterpriseModernAppManagementConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -22,25 +22,25 @@ Read properties and relationships of the deviceConfiguration object.
 Get-MgDeviceManagementDeviceConfiguration [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the deviceConfiguration object.
+Read properties and relationships of the windows10EnterpriseModernAppManagementConfiguration object.
 
 **Permissions**
 
@@ -187,6 +187,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -232,21 +247,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -269,6 +269,21 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -332,9 +347,9 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfiguration-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-editionupgradeconfiguration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-editionupgradeconfiguration-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-list?view=graph-rest-1.0)
 
 
 

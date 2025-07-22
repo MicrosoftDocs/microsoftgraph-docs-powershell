@@ -17,7 +17,7 @@ Forward a chat message, a channel message, or a channel message reply to a chat.
 ```
 Invoke-MgBetaForwardChatMessageToChat -ChatId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalMessage <IMicrosoftGraphChatMessage>] [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>]
- [-TargetChatIds <String[]>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-TargetChatIds <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,7 +25,7 @@ Invoke-MgBetaForwardChatMessageToChat -ChatId <String> [-ResponseHeadersVariable
 ```
 Invoke-MgBetaForwardChatMessageToChat -ChatId <String>
  -BodyParameter <IPaths16U0Av9ChatsChatIdMessagesMicrosoftGraphForwardtochatPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Invoke-MgBetaForwardChatMessageToChat -ChatId <String>
 ```
 Invoke-MgBetaForwardChatMessageToChat -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalMessage <IMicrosoftGraphChatMessage>] [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>]
- [-TargetChatIds <String[]>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-TargetChatIds <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -41,14 +41,12 @@ Invoke-MgBetaForwardChatMessageToChat -InputObject <ITeamsIdentity> [-ResponseHe
 ```
 Invoke-MgBetaForwardChatMessageToChat -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths16U0Av9ChatsChatIdMessagesMicrosoftGraphForwardtochatPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Forward a chat message, a channel message, or a channel message reply to a chat.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -114,21 +112,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -175,6 +158,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -197,6 +195,21 @@ Accept wildcard characters: False
 Type: String[]
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

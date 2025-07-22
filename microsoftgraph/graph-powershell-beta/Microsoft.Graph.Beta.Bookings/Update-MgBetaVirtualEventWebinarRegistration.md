@@ -25,14 +25,14 @@ Update-MgBetaVirtualEventWebinarRegistration -VirtualEventRegistrationId <String
  [-PreferredTimezone <String>] [-RegistrantVideoOnDemandWebUrl <String>] [-RegistrationDateTime <DateTime>]
  [-RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-Status <String>] [-UserId <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaVirtualEventWebinarRegistration -VirtualEventRegistrationId <String>
  -VirtualEventWebinarId <String> -BodyParameter <IMicrosoftGraphVirtualEventRegistration>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,20 +46,18 @@ Update-MgBetaVirtualEventWebinarRegistration -InputObject <IBookingsIdentity>
  [-PreferredTimezone <String>] [-RegistrantVideoOnDemandWebUrl <String>] [-RegistrationDateTime <DateTime>]
  [-RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-Status <String>] [-UserId <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaVirtualEventWebinarRegistration -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphVirtualEventRegistration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property registrations in solutions
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -104,21 +102,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -265,6 +248,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RegistrantVideoOnDemandWebUrl
 
 
@@ -282,7 +280,7 @@ Accept wildcard characters: False
 
 ### -RegistrationDateTime
 Date and time when the registrant registers for the virtual event.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
@@ -405,6 +403,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -460,7 +473,7 @@ If set, the maximum supported length is 256 characters.
   - `[PreferredTimezone <String>]`: The registrant's time zone details.
   - `[RegistrantVideoOnDemandWebUrl <String>]`: 
   - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
     - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
@@ -606,7 +619,7 @@ Read-only.
       - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[Registrations <IMicrosoftGraphVirtualEventRegistration- `[]`>]`: 
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[VideoOnDemandWebUrl <String>]`: 
+    - `[VideoOnDemandWebUrl <String>]`: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
   - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
   - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
@@ -805,7 +818,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[PreferredTimezone <String>]`: The registrant's time zone details.
     - `[RegistrantVideoOnDemandWebUrl <String>]`: 
     - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
       - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
@@ -821,7 +834,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
     - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[VideoOnDemandWebUrl <String>]`:
+  - `[VideoOnDemandWebUrl <String>]`: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
 
 ## RELATED LINKS
 

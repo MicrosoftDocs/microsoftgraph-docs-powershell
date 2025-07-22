@@ -21,7 +21,7 @@ For copy operations, you follow an asynchronous calling pattern:  First call the
 ```
 Copy-MgBetaUserOnenoteSectionPageToSection -OnenotePageId <String> -OnenoteSectionId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>]
- [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>]
+ [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Copy-MgBetaUserOnenoteSectionPageToSection -OnenotePageId <String> -OnenoteSecti
 ```
 Copy-MgBetaUserOnenoteSectionPageToSection -OnenotePageId <String> -OnenoteSectionId <String> -UserId <String>
  -BodyParameter <IPaths1L9Hd4FUsersUserIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Copy-MgBetaUserOnenoteSectionPageToSection -OnenotePageId <String> -OnenoteSecti
 ```
 Copy-MgBetaUserOnenoteSectionPageToSection -InputObject <INotesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>]
- [-SiteId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-SiteId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -45,15 +45,13 @@ Copy-MgBetaUserOnenoteSectionPageToSection -InputObject <INotesIdentity> [-Respo
 ```
 Copy-MgBetaUserOnenoteSectionPageToSection -InputObject <INotesIdentity>
  -BodyParameter <IPaths1L9Hd4FUsersUserIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -85,21 +83,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -194,6 +177,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -248,6 +246,21 @@ Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

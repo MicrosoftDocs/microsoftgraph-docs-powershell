@@ -16,7 +16,7 @@ Play lost mode sound
 ```
 Invoke-MgBetaPlayUserManagedDeviceLostModeSound -ManagedDeviceId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DurationInMinutes <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Invoke-MgBetaPlayUserManagedDeviceLostModeSound -ManagedDeviceId <String> -UserI
 ```
 Invoke-MgBetaPlayUserManagedDeviceLostModeSound -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IPaths1Cgto95UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Invoke-MgBetaPlayUserManagedDeviceLostModeSound -ManagedDeviceId <String> -UserI
 ```
 Invoke-MgBetaPlayUserManagedDeviceLostModeSound -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DurationInMinutes <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,14 +40,12 @@ Invoke-MgBetaPlayUserManagedDeviceLostModeSound -InputObject <IDevicesCorporateM
 ```
 Invoke-MgBetaPlayUserManagedDeviceLostModeSound -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPaths1Cgto95UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Play lost mode sound
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -79,21 +77,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -173,6 +156,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -197,6 +195,21 @@ Parameter Sets: PlayExpanded, Play
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

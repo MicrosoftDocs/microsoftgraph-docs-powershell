@@ -19,7 +19,7 @@ New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest [-Res
  [-Action <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-Justification <String>] [-Notes <String>] [-RequestedPermissions <IMicrosoftGraphPermissionsDefinition>]
  [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-StatusDetail <String>]
- [-TicketInfo <IMicrosoftGraphTicketInfo>] [-Headers <IDictionary>]
+ [-TicketInfo <IMicrosoftGraphTicketInfo>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest [-Res
 ```
 New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest
  -BodyParameter <IMicrosoftGraphScheduledPermissionsRequest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -235,21 +235,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -CreatedDateTime
 Defines when the identity created the request.
 
@@ -318,6 +303,21 @@ Additional context for the permissions request.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -396,6 +396,21 @@ To construct, see NOTES section for TICKETINFO properties and create a hash tabl
 Type: IMicrosoftGraphTicketInfo
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

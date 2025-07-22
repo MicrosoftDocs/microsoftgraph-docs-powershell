@@ -17,7 +17,7 @@ Invoke action generateServerLogCollectionRequest
 New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionRequest
  -MicrosoftTunnelServerId <String> -MicrosoftTunnelSiteId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-StartDateTime <DateTime>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Generate
@@ -25,7 +25,7 @@ New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionR
 New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionRequest
  -MicrosoftTunnelServerId <String> -MicrosoftTunnelSiteId <String>
  -BodyParameter <IPathsN9IcgeDevicemanagementMicrosofttunnelsitesMicrosofttunnelsiteIdMicrosofttunnelserversMicrosofttunnelserverIdMicrosoftGraphGenerateserverlogcollectionrequestPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionR
 New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionRequest
  -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-StartDateTime <DateTime>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GenerateViaIdentity
@@ -42,7 +42,7 @@ New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionR
 New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionRequest
  -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IPathsN9IcgeDevicemanagementMicrosofttunnelsitesMicrosofttunnelsiteIdMicrosofttunnelserversMicrosofttunnelserverIdMicrosoftGraphGenerateserverlogcollectionrequestPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -56,8 +56,6 @@ Invoke action generateServerLogCollectionRequest
 | Delegated (work or school account) | DeviceManagementConfiguration.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -89,21 +87,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -183,6 +166,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -205,6 +203,21 @@ Accept wildcard characters: False
 Type: DateTime
 Parameter Sets: GenerateExpanded, GenerateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

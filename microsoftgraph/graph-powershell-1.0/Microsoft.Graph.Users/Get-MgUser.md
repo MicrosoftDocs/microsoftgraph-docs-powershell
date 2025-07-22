@@ -27,20 +27,20 @@ Customers through Microsoft Entra ID for customers can also use this API operati
 Get-MgUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
  [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgUser -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgUser -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -88,7 +88,7 @@ To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
 
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
-Get-MgUser -UserId 'e4e2b110-8d4f-434f-a990-7cd63e23aed6' |
+Get-MgUser -UserId 'e4e2b110-8d4f-434f-a990-7cd63e23aed6' | 
   Format-List  ID, DisplayName, Mail, UserPrincipalName
 
 Id                : e4e2b110-8d4f-434f-a990-7cd63e23aed6
@@ -109,8 +109,8 @@ To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -Count userCount -ConsistencyLevel eventual
 
-Id                                   DisplayName              Mail                           UserPrincipalName
---                                   -----------              ----                           -----------------
+Id                                   DisplayName              Mail                           UserPrincipalName        
+--                                   -----------              ----                           -----------------               
 00f9b5d4-290f-413d-ab86-feb3cdc23736 Johanna Lorenz           JohannaL@Contoso.com           JohannaL@Contoso.com
 0568f35e-9177-4630-abd6-d533b21f1f78 Brian Johnson (TAILSPIN) BrianJ@Contoso.com             BrianJ@Contoso.com
 075b32dd-edb7-47cf-89ef-f3f733683a3f Patti Fernandez          PattiF@Contoso.com             PattiF@Contoso.com
@@ -149,8 +149,8 @@ To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -ConsistencyLevel eventual -Count userCount -Search '"DisplayName:Conf"'
 
-Id                                   DisplayName       Mail                UserPrincipalName
---                                   -----------       ----                -----------------
+Id                                   DisplayName       Mail                UserPrincipalName                   
+--                                   -----------       ----                -----------------                             
 0d005a1a-5e61-4388-bf5e-9060d727f891 Conf Room Baker   Baker@Contoso.com   Baker@Contoso.com
 1e34292e-e5a3-46fd-9cac-8d37f2d3ab4a Conf Room Stevens Stevens@Contoso.com Stevens@Contoso.com
 4aec2afd-be23-46d1-9138-f5ee6b77af5a Conf Room Crystal Crystal@Contoso.com Crystal@Contoso.com
@@ -170,8 +170,8 @@ To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -ConsistencyLevel eventual -Count userCount -Filter "startsWith(DisplayName, 'Conf')" -OrderBy UserPrincipalName
 
-Id                                   DisplayName       Mail                UserPrincipalName
---                                   -----------       ----                -----------------
+Id                                   DisplayName       Mail                UserPrincipalName                   
+--                                   -----------       ----                -----------------                   
 0d005a1a-5e61-4388-bf5e-9060d727f891 Conf Room Baker   Baker@Contoso.com   Baker@Contoso.com
 4aec2afd-be23-46d1-9138-f5ee6b77af5a Conf Room Crystal Crystal@Contoso.com Crystal@Contoso.com
 82a56dfc-31f9-4b90-8a1c-6c4326bbffd9 Conf Room Hood    Hood@Contoso.com    Hood@Contoso.com
@@ -306,6 +306,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -445,7 +460,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/user-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/user-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-onboarding-user-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-user-list?view=graph-rest-1.0)
 
 
 

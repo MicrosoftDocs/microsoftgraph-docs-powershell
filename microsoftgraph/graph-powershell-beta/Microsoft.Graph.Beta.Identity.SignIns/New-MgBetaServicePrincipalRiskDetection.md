@@ -24,21 +24,19 @@ New-MgBetaServicePrincipalRiskDetection [-ResponseHeadersVariable <String>] [-Ac
  [-Location <IMicrosoftGraphSignInLocation>] [-MitreTechniqueId <String>] [-RequestId <String>]
  [-RiskDetail <String>] [-RiskEventType <String>] [-RiskLevel <String>] [-RiskState <String>]
  [-ServicePrincipalDisplayName <String>] [-ServicePrincipalId <String>] [-Source <String>]
- [-TokenIssuerType <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-TokenIssuerType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaServicePrincipalRiskDetection -BodyParameter <IMicrosoftGraphServicePrincipalRiskDetection>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to servicePrincipalRiskDetections for identityProtection
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -133,21 +131,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -306,6 +289,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RequestId
 Request identifier of the sign-in activity associated with the risk detection.
 This property is null if the risk detection isn't associated with a sign-in activity.
@@ -453,6 +451,21 @@ tokenIssuerType
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

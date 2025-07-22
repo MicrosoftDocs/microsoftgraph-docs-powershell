@@ -15,8 +15,6 @@ Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
 ## DESCRIPTION
 Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### CommonParameters
@@ -41,6 +39,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
   - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
+  - `[ApprovedClientAppId <String>]`: The unique identifier of approvedClientApp
   - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
   - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
   - `[ConnectorId <String>]`: The unique identifier of connector

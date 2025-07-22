@@ -19,12 +19,12 @@ Update the navigation property submissions in education
 ```
 Update-MgEducationMeAssignmentSubmission -EducationAssignmentId <String> -EducationSubmissionId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-ExcusedBy <IMicrosoftGraphIdentitySet>] [-Id <String>] [-Outcomes <IMicrosoftGraphEducationOutcome[]>]
- [-ReassignedBy <IMicrosoftGraphIdentitySet>] [-Recipient <Hashtable>]
- [-Resources <IMicrosoftGraphEducationSubmissionResource[]>] [-ReturnedBy <IMicrosoftGraphIdentitySet>]
- [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>]
+ [-ExcusedBy <IMicrosoftGraphIdentitySet>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-Outcomes <IMicrosoftGraphEducationOutcome[]>] [-ReassignedBy <IMicrosoftGraphIdentitySet>]
+ [-Recipient <Hashtable>] [-Resources <IMicrosoftGraphEducationSubmissionResource[]>]
+ [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>]
  [-SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]
- [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>]
+ [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,18 +32,19 @@ Update-MgEducationMeAssignmentSubmission -EducationAssignmentId <String> -Educat
 ```
 Update-MgEducationMeAssignmentSubmission -EducationAssignmentId <String> -EducationSubmissionId <String>
  -BodyParameter <IMicrosoftGraphEducationSubmission> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgEducationMeAssignmentSubmission -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ExcusedBy <IMicrosoftGraphIdentitySet>] [-Id <String>]
- [-Outcomes <IMicrosoftGraphEducationOutcome[]>] [-ReassignedBy <IMicrosoftGraphIdentitySet>]
- [-Recipient <Hashtable>] [-Resources <IMicrosoftGraphEducationSubmissionResource[]>]
- [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Outcomes <IMicrosoftGraphEducationOutcome[]>]
+ [-ReassignedBy <IMicrosoftGraphIdentitySet>] [-Recipient <Hashtable>]
+ [-Resources <IMicrosoftGraphEducationSubmissionResource[]>] [-ReturnedBy <IMicrosoftGraphIdentitySet>]
+ [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>]
  [-SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]
- [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>]
+ [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -51,13 +52,11 @@ Update-MgEducationMeAssignmentSubmission -InputObject <IEducationIdentity> [-Res
 ```
 Update-MgEducationMeAssignmentSubmission -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationSubmission> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property submissions in education
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -89,21 +88,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -200,6 +184,22 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -LastModifiedBy
+identitySet
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphIdentitySet
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Outcomes
 
 To construct, see NOTES section for OUTCOMES properties and create a hash table.
@@ -208,6 +208,21 @@ To construct, see NOTES section for OUTCOMES properties and create a hash table.
 Type: IMicrosoftGraphEducationOutcome[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -357,6 +372,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -404,7 +434,8 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Outcomes <IMicrosoftGraphEducationOutcome- `[]`>]`:
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Outcomes <IMicrosoftGraphEducationOutcome- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -414,7 +445,7 @@ For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
   - `[ReassignedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Recipient <IMicrosoftGraphEducationSubmissionRecipient>]`: educationSubmissionRecipient
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Resources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`:
+  - `[Resources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which the resource was copied, and if null, the student uploaded the resource.
@@ -426,7 +457,7 @@ Read-only.
   - `[ReturnedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Status <String>]`: educationSubmissionStatus
   - `[SubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[SubmittedResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`:
+  - `[SubmittedResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
   - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 EXCUSEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
@@ -454,6 +485,17 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
   - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
   - `[EducationUserId <String>]`: The unique identifier of educationUser
+
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
 OUTCOMES `<IMicrosoftGraphEducationOutcome- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.

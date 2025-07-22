@@ -19,14 +19,14 @@ As part of the request validation for this method, a proof of possession of an e
 ```
 Remove-MgServicePrincipalKey -ServicePrincipalId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-KeyId <String>] [-Proof <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Remove
 ```
 Remove-MgServicePrincipalKey -ServicePrincipalId <String>
  -BodyParameter <IPaths1UhuhlbServiceprincipalsServiceprincipalIdMicrosoftGraphRemovekeyPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,14 +34,14 @@ Remove-MgServicePrincipalKey -ServicePrincipalId <String>
 ```
 Remove-MgServicePrincipalKey -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-KeyId <String>] [-Proof <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
 ```
 Remove-MgServicePrincipalKey -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths1UhuhlbServiceprincipalsServiceprincipalIdMicrosoftGraphRemovekeyPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -109,21 +109,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -185,6 +170,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Proof
 
 
@@ -230,6 +230,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -265,8 +280,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1UhuhlbServiceprincipalsServiceprincipalIdMicrosoftGraphRemovekeyPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[KeyId <String>]`:
-  - `[Proof <String>]`:
+  - `[KeyId <String>]`: 
+  - `[Proof <String>]`: 
 
 INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppId <String>]`: Alternate key of application

@@ -23,7 +23,7 @@ For more information, see: Lifecycle Workflows extensibility approach.
 Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult -TaskId <String>
  -TaskProcessingResultId <String> -WorkflowTemplateId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>]
- [-Source <String>] [-Type <String>] [-Headers <IDictionary>] [-PassThru]
+ [-Source <String>] [-Type <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult -TaskId
 Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult -TaskId <String>
  -TaskProcessingResultId <String> -WorkflowTemplateId <String>
  -BodyParameter <IPathsZ177NiIdentitygovernanceLifecycleworkflowsWorkflowtemplatesWorkflowtemplateIdTasksTaskIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult -TaskId
 Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>]
- [-Source <String>] [-Type <String>] [-Headers <IDictionary>] [-PassThru]
+ [-Source <String>] [-Type <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -50,7 +50,7 @@ Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult
 Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPathsZ177NiIdentitygovernanceLifecycleworkflowsWorkflowtemplatesWorkflowtemplateIdTasksTaskIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -58,8 +58,6 @@ Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult
 Resume a task processing result that's inProgress.
 In the default case an Azure Logic Apps system-assigned managed identity calls this API.
 For more information, see: Lifecycle Workflows extensibility approach.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -91,21 +89,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -167,6 +150,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -246,6 +244,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WorkflowTemplateId
+The unique identifier of workflowTemplate
+
+```yaml
+Type: String
+Parameter Sets: ResumeExpanded, Resume
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -256,21 +284,6 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WorkflowTemplateId
-The unique identifier of workflowTemplate
-
-```yaml
-Type: String
-Parameter Sets: ResumeExpanded, Resume
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -299,8 +312,8 @@ BODYPARAMETER `<IPathsZ177NiIdentitygovernanceLifecycleworkflowsWorkflowtemplate
   - `[Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>]`: customTaskExtensionCallbackData
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[OperationStatus <String>]`: customTaskExtensionOperationStatus
-  - `[Source <String>]`:
-  - `[Type <String>]`:
+  - `[Source <String>]`: 
+  - `[Type <String>]`: 
 
 DATA `<IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>`: customTaskExtensionCallbackData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

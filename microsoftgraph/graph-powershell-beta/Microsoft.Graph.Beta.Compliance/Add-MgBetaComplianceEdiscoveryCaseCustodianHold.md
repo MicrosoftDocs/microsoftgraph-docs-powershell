@@ -16,21 +16,21 @@ Invoke action applyHold
 ```
 Add-MgBetaComplianceEdiscoveryCaseCustodianHold -CaseId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Apply1
 ```
 Add-MgBetaComplianceEdiscoveryCaseCustodianHold -CaseId <String> [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsWwm7HsComplianceEdiscoveryCasesCaseIdCustodiansMicrosoftGraphEdiscoveryApplyholdPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Apply
 ```
 Add-MgBetaComplianceEdiscoveryCaseCustodianHold -CaseId <String> -CustodianId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Add-MgBetaComplianceEdiscoveryCaseCustodianHold -CaseId <String> -CustodianId <S
 ```
 Add-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -47,21 +47,19 @@ Add-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIdentit
 Add-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIdentity>
  [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsWwm7HsComplianceEdiscoveryCasesCaseIdCustodiansMicrosoftGraphEdiscoveryApplyholdPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity
 ```
 Add-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action applyHold
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -105,21 +103,6 @@ Parameter Sets: ApplyExpanded, Apply1, Apply
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -202,6 +185,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -209,6 +207,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

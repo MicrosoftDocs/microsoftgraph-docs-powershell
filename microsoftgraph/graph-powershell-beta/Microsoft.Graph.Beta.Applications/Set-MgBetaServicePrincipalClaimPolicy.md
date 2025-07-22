@@ -18,14 +18,14 @@ Create a new customClaimsPolicy object if it doesn't exist, or replace an existi
 Set-MgBetaServicePrincipalClaimPolicy -ServicePrincipalId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AudienceOverride <String>] [-Claims <IMicrosoftGraphCustomClaimBase[]>]
  [-Id <String>] [-IncludeApplicationIdInIssuer] [-IncludeBasicClaimSet] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgBetaServicePrincipalClaimPolicy -ServicePrincipalId <String>
  -BodyParameter <IMicrosoftGraphCustomClaimsPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -33,14 +33,14 @@ Set-MgBetaServicePrincipalClaimPolicy -ServicePrincipalId <String>
 Set-MgBetaServicePrincipalClaimPolicy -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AudienceOverride <String>] [-Claims <IMicrosoftGraphCustomClaimBase[]>]
  [-Id <String>] [-IncludeApplicationIdInIssuer] [-IncludeBasicClaimSet] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgBetaServicePrincipalClaimPolicy -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphCustomClaimsPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -146,21 +146,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -243,6 +228,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -267,6 +267,21 @@ Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -354,6 +369,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
   - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
+  - `[ApprovedClientAppId <String>]`: The unique identifier of approvedClientApp
   - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
   - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
   - `[ConnectorId <String>]`: The unique identifier of connector

@@ -19,13 +19,13 @@ Get details about mailbox usage.
 ### Get (Default)
 ```
 Get-MgReportMailboxUsageDetail -Period <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportMailboxUsageDetail -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Get details about mailbox usage.
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportMailboxUsageDetail -Period $periodId
+Get-MgReportMailboxUsageDetail -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportMailboxUsageDetail Cmdlet.
@@ -117,6 +117,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

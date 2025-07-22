@@ -21,7 +21,7 @@ Create a new directory extension definition, represented by an extensionProperty
 New-MgBetaApplicationExtensionProperty -ApplicationId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-DataType <String>]
  [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued] [-IsSyncedFromOnPremises] [-Name <String>]
- [-TargetObjects <String[]>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-TargetObjects <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ New-MgBetaApplicationExtensionProperty -ApplicationId <String> [-ResponseHeaders
 ```
 New-MgBetaApplicationExtensionProperty -ApplicationId <String>
  -BodyParameter <IMicrosoftGraphExtensionProperty> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -37,7 +37,7 @@ New-MgBetaApplicationExtensionProperty -ApplicationId <String>
 New-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-DataType <String>]
  [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued] [-IsSyncedFromOnPremises] [-Name <String>]
- [-TargetObjects <String[]>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-TargetObjects <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -45,7 +45,7 @@ New-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-Re
 ```
 New-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphExtensionProperty> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -142,21 +142,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -293,6 +278,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -317,6 +317,21 @@ UserGroupAdministrativeUnitApplicationDeviceOrganization
 Type: String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -390,6 +405,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
   - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
+  - `[ApprovedClientAppId <String>]`: The unique identifier of approvedClientApp
   - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
   - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
   - `[ConnectorId <String>]`: The unique identifier of connector

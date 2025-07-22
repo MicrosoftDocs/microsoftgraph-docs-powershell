@@ -22,14 +22,14 @@ Admins can approve or reject these apps via this API or the Microsoft Teams admi
 ```
 New-MgAppCatalogTeamApp [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>] [-DisplayName <String>] [-DistributionMethod <String>]
- [-ExternalId <String>] [-Id <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ExternalId <String>] [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -66,7 +66,7 @@ This example shows how to use the New-MgAppCatalogTeamApp Cmdlet.
 
 Import-Module Microsoft.Graph.Teams
 
-New-MgAppCatalogTeamApp -Requiresreview true
+New-MgAppCatalogTeamApp -Requiresreview true 
 
 ```
 This example shows how to use the New-MgAppCatalogTeamApp Cmdlet.
@@ -118,21 +118,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -212,6 +197,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -219,6 +219,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -286,7 +301,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Description <String>]`: Verbose description of the application.
   - `[DisplayName <String>]`: The name of the app provided by the app developer.
-  - `[LastModifiedDateTime <DateTime?>]`:
+  - `[LastModifiedDateTime <DateTime?>]`: 
   - `[PublishingState <String>]`: teamsAppPublishingState
   - `[ShortDescription <String>]`: Short description of the application.
   - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
@@ -323,7 +338,7 @@ For example, in the access reviews decisions API, this property might record the
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Description <String>]`: Verbose description of the application.
     - `[DisplayName <String>]`: The name of the app provided by the app developer.
-    - `[LastModifiedDateTime <DateTime?>]`:
+    - `[LastModifiedDateTime <DateTime?>]`: 
     - `[PublishingState <String>]`: teamsAppPublishingState
     - `[ShortDescription <String>]`: Short description of the application.
     - `[TeamsAppId <String>]`: The ID from the Teams app manifest.

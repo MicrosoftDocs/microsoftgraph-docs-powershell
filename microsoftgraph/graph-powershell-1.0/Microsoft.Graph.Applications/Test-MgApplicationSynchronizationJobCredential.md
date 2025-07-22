@@ -21,7 +21,7 @@ Validate that the credentials are valid in the tenant.
 Test-MgApplicationSynchronizationJobCredential -ApplicationId <String> -SynchronizationJobId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ApplicationIdentifier <String>]
  [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>] [-TemplateId <String>]
- [-UseSavedCredentials] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-UseSavedCredentials] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Test-MgApplicationSynchronizationJobCredential -ApplicationId <String> -Synchron
 ```
 Test-MgApplicationSynchronizationJobCredential -ApplicationId <String> -SynchronizationJobId <String>
  -BodyParameter <IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Test-MgApplicationSynchronizationJobCredential -ApplicationId <String> -Synchron
 Test-MgApplicationSynchronizationJobCredential -InputObject <IApplicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ApplicationIdentifier <String>]
  [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>] [-TemplateId <String>]
- [-UseSavedCredentials] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-UseSavedCredentials] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,14 +46,12 @@ Test-MgApplicationSynchronizationJobCredential -InputObject <IApplicationsIdenti
 ```
 Test-MgApplicationSynchronizationJobCredential -InputObject <IApplicationsIdentity>
  -BodyParameter <IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Validate that the credentials are valid in the tenant.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -115,21 +113,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -195,6 +178,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -255,6 +253,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -290,12 +303,12 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ApplicationIdentifier <String>]`:
-  - `[Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>]`:
+  - `[ApplicationIdentifier <String>]`: 
+  - `[Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>]`: 
     - `[Key <String>]`: synchronizationSecret
     - `[Value <String>]`: The value of the secret.
-  - `[TemplateId <String>]`:
-  - `[UseSavedCredentials <Boolean?>]`:
+  - `[TemplateId <String>]`: 
+  - `[UseSavedCredentials <Boolean?>]`: 
 
 CREDENTIALS `<IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>`: .
   - `[Key <String>]`: synchronizationSecret
