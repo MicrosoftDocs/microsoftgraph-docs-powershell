@@ -28,7 +28,7 @@ To get started with the SDK, follow these steps:
 
 ## Authentication 
 
-The PowerShell SDK supports two types of authentication: [*delegated access*](/graph/auth/auth-concepts#delegated-access-access-on-behalf-of-a-user), and [*app-only access*](/graph/auth/auth-concepts#app-only-access-access-without-a-user). In this guide, you use delegated access to sign in as a user, grant consent to the SDK to act on your behalf, and call Microsoft Graph.
+The PowerShell SDK supports two types of authentication: [*delegated access*](/graph/auth/auth-concepts#delegated-access-access-on-behalf-of-a-user), and [*app-only access*](/graph/auth/auth-concepts#app-only-access-access-without-a-user). In this guide, you use delegated access to sign in as a user, grant consent to the application to act on your behalf, and call Microsoft Graph.
 
 For more details on using app-only access for unattended scenarios, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
@@ -81,8 +81,6 @@ The command prompts you to go to a web page to sign in with your credentials. On
 ## Call Microsoft Graph
 
 After signing in, you can begin making calls to Microsoft Graph.
-
-[!INCLUDE [aad-advanced-queries-note](../includes/aad-advanced-queries-note.md)]
 
 ### Get a user
 
