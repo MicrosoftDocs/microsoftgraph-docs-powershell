@@ -4,7 +4,7 @@ description: "Learn how to programmatically grant and revoke delegated and appli
 ms.topic: how-to
 ms.date: 01/27/2025
 author: msewaweru
-manager: CelesteDG
+manager: mwongerapk
 ms.author: eunicewaweru
 ms.reviewer: jawoods, phsignor
 zone_pivot_groups: graph-powershell-grant-api-permissions

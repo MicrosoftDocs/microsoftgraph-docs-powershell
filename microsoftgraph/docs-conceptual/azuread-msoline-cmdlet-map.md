@@ -5,7 +5,7 @@ description: "Use this map of the Azure AD PowerShell and MSOnline cmdlets to fi
 ms.topic: reference
 ms.date: 02/18/2025
 author: msewaweru
-manager: CelesteDG
+manager: mwongerapk
 ms.author: eunicewaweru
 zone_pivot_groups: powershell-legacy-modules
 zone_pivot_group_filename: microsoftgraph/zone-pivot-groups.json
