@@ -1,6 +1,6 @@
 ---
-title: "Use Find-MgGraphCommand cmdlet"
-description: "Learn how to use the Find-MgGraphCommand to aid in discoverability of cmdlets."
+title: Use Find-MgGraphCommand
+description: Learn how to use the Find-MgGraphCommand to aid in discoverability of cmdlets.
 
 ms.topic: how-to
 ms.date: 01/22/2025
@@ -12,7 +12,7 @@ reviewer: maisarissi
 #customer intent: As a PowerShell user, I want to use the Find-MgGraphCommand cmdlet to easily discover the API path that a command calls, so that I can efficiently work with Microsoft Graph PowerShell commands and understand the permissions required for each command.
 ---
 
-# Use Find-MgGraphCommand cmdlet
+# Use Find-MgGraphCommand
 
 `Find-MgGraphCommand` helps you discover which API path a command calls by providing a URI or command name.
 
@@ -179,5 +179,4 @@ Get-MgUserActivityHistoryItem         CrossDeviceExperiences       GET    /users
 
 - [Find-MgGraphPermission cmdlet](find-mg-graph-permission.md)
 - [Microsoft Graph PowerShell overview](overview.md)
-- [Authentication and permissions in Microsoft Graph PowerShell](authentication.md)
 - [Microsoft Graph REST API reference](/graph/api/overview)

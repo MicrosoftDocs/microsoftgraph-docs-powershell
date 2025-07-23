@@ -1,6 +1,6 @@
 ---
-title: "Get started with the Microsoft Graph PowerShell SDK"
-description: "Get started with the Microsoft Graph PowerShell SDK by using it to perform some basic tasks."
+title: Get started with the Microsoft Graph PowerShell SDK
+description: Get started with the Microsoft Graph PowerShell SDK by using it to perform some basic tasks.
 
 author: msewaweru
 manager: mwongerapk
@@ -17,7 +17,7 @@ In this Quickstart, you use the Microsoft Graph PowerShell SDK to perform some b
 
 ## API version
 
-The SDK contains two modules, Microsoft.Graph and Microsoft.Graph.Beta that call the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0) and [Microsoft Graph REST API beta](/graph/api/overview?view=graph-rest-beta), respectively. Cmdlets are available for the module that is installed.
+The SDK contains two modules, Microsoft.Graph and Microsoft.Graph.Beta that call the [Microsoft Graph REST API v1.0](/graph/api/overview) and [Microsoft Graph REST API beta](/graph/api/overview?view=graph-rest-beta), respectively. Cmdlets are available for the module that is installed.
 
 To get started with the SDK, follow these steps:
 
