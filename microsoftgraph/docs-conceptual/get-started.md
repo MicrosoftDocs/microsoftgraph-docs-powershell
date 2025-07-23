@@ -1,11 +1,11 @@
 ---
-title: "Get started with the Microsoft Graph PowerShell SDK"
-description: "Get started with the Microsoft Graph PowerShell SDK by using it perform some basic tasks."
+title: Get started with the Microsoft Graph PowerShell SDK
+description: Get started with the Microsoft Graph PowerShell SDK by using it to perform some basic tasks.
 
 author: msewaweru
 manager: mwongerapk
 ms.topic: quickstart
-ms.date: 03/18/2025
+ms.date: 07/23/2025
 ms.author: eunicewaweru
 
 #customer intent: As a PowerShell user, I want to learn how to use the Microsoft Graph PowerShell SDK, so that I can perform basic tasks using the Microsoft Graph REST API and authenticate with delegated access.
@@ -13,32 +13,39 @@ ms.author: eunicewaweru
 
 # Get started with the Microsoft Graph PowerShell SDK
 
-In this guide, you'll use the Microsoft Graph PowerShell SDK to perform some basic tasks. If you haven't already, [install the SDK](installation.md) before following this guide.
+In this Quickstart, you use the Microsoft Graph PowerShell SDK to perform some basic tasks. If you haven't already, [install the SDK](installation.md) before following this guide.
 
 ## API version
 
-The SDK contains two modules, Microsoft.Graph and Microsoft.Graph.Beta that call the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true) and [Microsoft Graph REST API beta](/graph/api/overview?view=graph-rest-beta&preserve-view=true), respectively. Cmdlets are available for the module that is installed.
+The SDK contains two modules, Microsoft.Graph and Microsoft.Graph.Beta that call the [Microsoft Graph REST API v1.0](/graph/api/overview) and [Microsoft Graph REST API beta](/graph/api/overview?view=graph-rest-beta), respectively. Cmdlets are available for the module that is installed.
 
-## Authentication
+To get started with the SDK, follow these steps:
 
-The PowerShell SDK supports two types of authentication: *delegated access*, and *app-only access*. In this guide, you'll use delegated access to sign in as a user, grant consent to the SDK to act on your behalf, and call Microsoft Graph.
+1. Install either the `Microsoft.Graph` or `Microsoft.Graph.Beta` module, depending on which API version you want to use.
+2. Import the module into your PowerShell session.
+3. Authenticate using the appropriate permissions.
+4. Begin making calls to Microsoft Graph using the available cmdlets.
 
-For details on using app-only access for unattended scenarios, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
+## Authentication 
+
+The PowerShell SDK supports two types of authentication: [*delegated access*](/graph/auth/auth-concepts#delegated-access-access-on-behalf-of-a-user), and [*app-only access*](/graph/auth/auth-concepts#app-only-access-access-without-a-user). In this guide, you use delegated access to sign in as a user, grant consent to the application to act on your behalf, and call Microsoft Graph.
+
+For more details on using app-only access for unattended scenarios, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
 ### Determine required permission scopes
 
-Each API in the Microsoft Graph is protected by one or more permission scopes. The user logging in must consent to one of the required scopes for the APIs you plan to use. In this example, we'll use the following APIs.
+Each API in the Microsoft Graph is protected by one or more permission scopes. The user logging in must consent to one of the required scopes for the APIs you plan to use. In this example, we use the following APIs.
 
 - [List users](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true) to find the user ID of the logged-in user.
 - [List joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true) to get the Teams the user is a member of.
 - [List channels](/graph/api/channel-list?view=graph-rest-1.0&preserve-view=true) to get the channels in a Team.
 - [Send message](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) to send a message to a Team's channel.
 
-The `User.Read.All` permission scope will enable the first two calls, and the `Group.ReadWrite.All` scope will enable the rest. These permissions require an account with the **Application Administrator** or **Cloud Application Administrator** role to grant consent. For more information, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
+The `User.Read.All` permission scope will enable the first two calls, and the `Group.ReadWrite.All` scope will enable the rest. Granting consent for these permissions typically requires an account with the **Privileged Role Administrator** role. For more information, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 
-#### Using Find-MgGraphCommand to find required permissions
+#### Use Find-MgGraphCommand to find required permissions
 
-The `Find-MgGraphCommand` cmdlet can be used to discover the required permissions for another cmdlet. For example, to see all permissions that can be used to call `Get-MgUser`, run;
+The `Find-MgGraphCommand` cmdlet can be used to discover the required permissions for another cmdlet. For example, to see all permissions that can be used to call `Get-MgUser`, run:
 
 ```powershell
 Find-MgGraphCommand -command Get-MgUser | Select -First 1 -ExpandProperty Permissions
@@ -56,36 +63,34 @@ User.ReadWrite.All                           True    Read and write all users' f
 
 This output has been shortened for readability.
 
-For more information on using this cmdlet, see [Using Find-MgGraphCommand](find-mg-graph-command.md).
+For more information on using this cmdlet, see [Use Find-MgGraphCommand](find-mg-graph-command.md).
 
 ### Sign in
 
-Use the `Connect-MgGraph` command to sign in with the required scopes. You'll need to sign in with an admin account to consent to the required scopes.
+Use the `Connect-MgGraph` command to sign in with the required scopes. You need to sign in with an admin account to consent to the required scopes.
 
 ```powershell
 Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 ```
 
-The command prompts you to go to a web page to sign in with your credentials. Once you've done that, the command indicates success with a `Welcome To Microsoft Graph!` message. You only need to sign in once per session.
+The command prompts you to go to a web page to sign in with your credentials. Once you've done that, the command indicates success with a `Welcome To Microsoft Graph!` message. You only need to sign in once per PowerShell session (that is, until you close and reopen your PowerShell window or call `Disconnect-MgGraph`).
 
 > [!TIP]
 > You can add additional permissions by repeating the `Connect-MgGraph` command with the new permission scopes.
 
 ## Call Microsoft Graph
 
-Now that you're signed in, you can start making calls to Microsoft Graph.
+After signing in, you can begin making calls to Microsoft Graph.
 
-[!INCLUDE [aad-advanced-queries-note](../includes/aad-advanced-queries-note.md)]
+### Get a user
 
-### Get the signed-in user
-
-In this section, you'll locate the signed-in user and get their user Id. You'll need the user Id as a parameter to the other commands you'll run later. Start by running the following command.
+In this section, you will identify a user in the list returned by `Get-MgUser` and store their information in the `$user` variable, which will be used as a parameter in subsequent commands. Start by running the following command.
 
 ```powershell
 Get-MgUser
 ```
 
-This command outputs a listing of users in your Microsoft 365 organization.
+This command outputs a listing of users in your Microsoft 365 organization; in organizations with many users, the output may be limited or paginated, so consider using filtering to locate specific users.
 
 ```powershell
 Id                                   DisplayName              Mail                                  UserPrincipalName
@@ -101,13 +106,15 @@ ce73bdb5-bf12-405e-ab85-40122fdd6eb7 Brian Johnson (TAILSPIN) BrianJ@contoso.onm
 df1347a3-7ce7-4b4d-8aab-7c65b5c907b9 Cameron White                                                  CameronW@contoso…
 ```
 
-You can use an [OData filter](use-query-parameters.md#filter-parameter) to help locate the specific user you want. Run the following command, replacing `Megan Bowen` with the display name of the user you signed in with.
+An OData filter is a query option that allows you to filter results based on specific property values. You can use an [OData filter](use-query-parameters.md#filter-parameter) to help locate the specific user you want. OData filters allow you to query data using expressions such as `property eq 'value'`; see [OData query parameters overview](/graph/query-parameters) for more details on the syntax.
+
+Run the following command, replacing `MeganB@contoso.onmicrosoft.com` with the user principal name of an actual user in your organization that you want to use.
 
 ```powershell
-$user = Get-MgUser -Filter "displayName eq 'Megan Bowen'"
+$user = Get-MgUser -Filter "userPrincipalName eq 'MeganB@contoso.onmicrosoft.com'"
 ```
 
-Verify that worked by entering the following.
+Verify the command worked by entering the following command.
 
 ```powershell
 $user.DisplayName
@@ -115,13 +122,13 @@ $user.DisplayName
 
 ### List the user's joined teams
 
-Now use the user's Id as a parameter to the `Get-MgUserJoinedTeam` command.
+Use the value of `$user.Id` as the `-UserId` parameter in the `Get-MgUserJoinedTeam` command.
 
 ```powershell
 Get-MgUserJoinedTeam -UserId $user.Id
 ```
 
-Just like the `Get-MgUser` command, this command gives a list of teams. Select one of the user's joined teams and copy its `Id`, to use in the next command.
+Like `Get-MgUser`, this command returns a list of teams. Select one of the user's joined teams and copy its `Id` to use in the next command.
 
 ```powershell
 $team = Get-MgTeam -TeamId ID_FROM_PREVIOUS_STEP
@@ -129,7 +136,7 @@ $team = Get-MgTeam -TeamId ID_FROM_PREVIOUS_STEP
 
 ### List team channels
 
-Now use the team's Id as a parameter to the `Get-MgTeamChannel` command, following a similar pattern of listing all channels, then filtering the list to get the specific channel you want.
+Now use the team's Id as a parameter to the `Get-MgTeamChannel` command. First, list all channels, then filter the list to get the specific channel you want.
 
 ```powershell
 Get-MgTeamChannel -TeamId $team.Id
@@ -138,13 +145,13 @@ $channel = Get-MgTeamChannel -TeamId ID_FROM_PREVIOUS_STEP -Filter "displayName 
 
 ### Send a message
 
-Now that you have both the Team Id and the channel Id, you can post a message to the channel. Use the following command to send the message.
+Now that you have both the Team ID and the channel ID, you can post a message to the channel. Use the following command to send the message.
 
 ```powershell
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" }
 ```
 
-This command differs from the previous commands you used. Instead of querying data, it's creating something. In Microsoft Graph, this command translates to an HTTP `POST`, and it requires an object in the body of that post. In this case, the object is a [chatMessage](/graph/api/resources/chatmessage). The `-Body` parameter to the command maps to the `body` property on `chatMessage`. Other properties are mapped in a similar way, so you can change the message you send. For example, to send an urgent message use the following command.
+This command differs from the previous commands you used. Instead of querying data, it's creating something. In Microsoft Graph, this command translates to an HTTP `POST`, and it requires an object in the body of that post. In this case, the object is a [chatMessage](/graph/api/resources/chatmessage). The `-Body` parameter is a hashtable that maps to the `body` property of the `chatMessage` resource. Other properties are mapped in a similar way, so you can change the message you send. For example, to send an urgent message use the following command.
 
 ```powershell
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" } -Importance "urgent"
@@ -152,7 +159,7 @@ New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Conten
 
 ### Sign out
 
-Use the `Disconnect-MgGraph` command to sign out.
+Use the `Disconnect-MgGraph` command to sign out. This ends your current session and revokes the authentication token for the active PowerShell session, ensuring your credentials are no longer available until you sign in again.
 
 ```powershell
 Disconnect-MgGraph
@@ -160,5 +167,7 @@ Disconnect-MgGraph
 
 ## Next steps
 
-- [Learn how to navigate the SDK](navigating.md).
-- [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
+Now that you've completed the basic tasks, explore the following resources to deepen your understanding and expand your usage of the Microsoft Graph PowerShell SDK:
+
+- [Learn how to navigate the SDK](navigating.md)
+- [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md)

@@ -1,6 +1,6 @@
 ---
-title: "Using Find-MgGraphCommand cmdlet"
-description: "Learn how to use the Find-MgGraphCommand to aid in discoverability of cmdlets."
+title: Use Find-MgGraphCommand
+description: Learn how to use the Find-MgGraphCommand to aid in discoverability of cmdlets.
 
 ms.topic: how-to
 ms.date: 01/22/2025
@@ -12,21 +12,23 @@ reviewer: maisarissi
 #customer intent: As a PowerShell user, I want to use the Find-MgGraphCommand cmdlet to easily discover the API path that a command calls, so that I can efficiently work with Microsoft Graph PowerShell commands and understand the permissions required for each command.
 ---
 
-# Using Find-MgGraphCommand cmdlet
+# Use Find-MgGraphCommand
 
-`Find-MgGraphCommand` aims to make it easier for you to discover which API path a command calls, by providing a URI or a command name.
+`Find-MgGraphCommand` helps you discover which API path a command calls by providing a URI or command name.
 
-The `Find-MgGraphCommand` cmdlet allows you to:
+You can use the `Find-MgGraphCommand` cmdlet to:
 
 - Pass a Microsoft Graph URL (relative and absolute) and get an equivalent Microsoft Graph PowerShell command.
 - Pass a command and get the URL it calls.
-- Pass a command or URI wildcard (.*) to find all commands that match it.
+- Pass a command or URI wildcard, for example `.*`, to find all matching commands.
 
-The output of this cmdlet also includes the permissions required to authenticate the specified cmdlet. For more information on cmdlet permissions, see  [Using Find-MgGraphPermission](find-mg-graph-permission.md). Not all cmdlets have the permissions available on running this command. This is an ongoing feature, and permissions will continue to be added.
+The output of this cmdlet also includes the permissions required to authenticate the specified cmdlet. For more information on discovering permissions, see [Using Find-MgGraphPermission](find-mg-graph-permission.md), which is a separate cmdlet dedicated to permissions discovery. 
 
-The permissions displayed don't show the privilege levels. To learn more, including how to choose permissions, permission type, and what is the most privileged/least privileged permission, use the corresponding API page doc.
+The permissions displayed don't indicate privilege levels. For guidance on choosing permissions, understanding permission types, and identifying the most or least privileged permissions, refer to the documentation for the corresponding API page.
 
 ## Find Microsoft Graph PowerShell commands by URI
+
+Before using the cmdlet, review the following syntax for reference.
 
 ### Syntax
 
@@ -61,10 +63,10 @@ Remove-MgUser Users  DELETE /users/{user-id}                     {DeviceManageme
 Update-MgUser Users  PATCH  /users/{user-id}                     {DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, Directory.AccessAsUser.All...} {Update1, UpdateExpanded1, UpdateViaIdentity1, UpdateViaIdentityExpanded1}
 ```
 
->[!Note]
->1. For **-ApiVersion** parameter, there are two possible values: `v1.0` and `beta`.
->1. The **-Method** parameter is only available when using URI to find commands and allows the HTTPs methods such as GET, POST, PUT, PATCH, and DELETE.
->1. The output shown in this article has been shortened for readability.
+> [!NOTE]
+> - For the **-ApiVersion** parameter, there are two possible values: `v1.0` and `beta`.
+> - The **-Method** parameter is only available when using a URI to find commands and allows HTTP methods such as GET, POST, PUT, PATCH, and DELETE.
+> - The output shown in this article has been shortened for readability.
 
 ## Find Microsoft Graph PowerShell commands by command name
 
@@ -175,4 +177,6 @@ Get-MgUserActivityHistoryItem         CrossDeviceExperiences       GET    /users
 
 ## See also
 
-- [Using Find-MgGraphPermission cmdlet](find-mg-graph-permission.md)
+- [Find-MgGraphPermission cmdlet](find-mg-graph-permission.md)
+- [Microsoft Graph PowerShell overview](overview.md)
+- [Microsoft Graph REST API reference](/graph/api/overview)
