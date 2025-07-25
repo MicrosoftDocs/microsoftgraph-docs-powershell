@@ -39,6 +39,14 @@ Get-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Read the properties and relationships of an internalDomainFederation object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Domain.ReadWrite.All, Domain.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain.ReadWrite.All, Domain.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

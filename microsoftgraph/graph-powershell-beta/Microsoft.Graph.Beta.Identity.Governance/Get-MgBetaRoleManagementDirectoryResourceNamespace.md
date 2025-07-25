@@ -39,6 +39,14 @@ Get-MgBetaRoleManagementDirectoryResourceNamespace -InputObject <IIdentityGovern
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRbacResourceNamespace object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

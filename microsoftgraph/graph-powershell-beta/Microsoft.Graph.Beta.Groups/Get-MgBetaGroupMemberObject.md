@@ -45,6 +45,14 @@ Get-MgBetaGroupMemberObject -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action getMemberObjects
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All, User.Read, User.Read.All, Application.Read.All, Application.ReadWrite.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Read.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, User.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Application.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

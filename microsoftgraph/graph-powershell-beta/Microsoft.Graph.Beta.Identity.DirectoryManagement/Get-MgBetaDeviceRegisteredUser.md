@@ -25,6 +25,14 @@ Get-MgBetaDeviceRegisteredUser -DeviceId <String> [-ExpandProperty <String[]>] [
 Retrieve a list of users that are registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Device.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Device.Read.All, Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

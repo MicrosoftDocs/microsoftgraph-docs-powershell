@@ -48,6 +48,14 @@ New-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IApplicat
 ## DESCRIPTION
 Create single sign-on credentials using a password for a user or group.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

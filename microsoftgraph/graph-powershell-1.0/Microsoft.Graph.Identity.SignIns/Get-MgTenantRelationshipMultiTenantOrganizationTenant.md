@@ -39,6 +39,14 @@ Get-MgTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentitySig
 ## DESCRIPTION
 Get a tenant and its properties in the multitenant organization.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MultiTenantOrganization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | MultiTenantOrganization.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

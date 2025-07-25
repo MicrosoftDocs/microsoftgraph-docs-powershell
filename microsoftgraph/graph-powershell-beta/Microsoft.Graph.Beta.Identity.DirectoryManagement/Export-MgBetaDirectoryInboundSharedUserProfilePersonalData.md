@@ -48,6 +48,14 @@ Export-MgBetaDirectoryInboundSharedUserProfilePersonalData -InputObject <IIdenti
 ## DESCRIPTION
 Create a request to export the personal data for an inboundSharedUserProfile.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CrossTenantUserProfileSharing.Read.All, CrossTenantUserProfileSharing.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CrossTenantUserProfileSharing.Read.All, CrossTenantUserProfileSharing.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,14 @@ Remove-MgUserContactFolderPermanent -InputObject <IPersonalContactsIdentity>
 ## DESCRIPTION
 Invoke action permanentDelete
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Contacts.ReadWrite,  |
+| Delegated (personal Microsoft account) | Contacts.ReadWrite,  |
+| Application | Contacts.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

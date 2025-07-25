@@ -31,6 +31,14 @@ Remove-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionReques
 ## DESCRIPTION
 Delete navigation property appLogCollectionRequests for deviceManagement
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
