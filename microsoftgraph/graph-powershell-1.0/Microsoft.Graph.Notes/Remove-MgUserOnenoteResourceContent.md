@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaUserOnenoteResourceContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

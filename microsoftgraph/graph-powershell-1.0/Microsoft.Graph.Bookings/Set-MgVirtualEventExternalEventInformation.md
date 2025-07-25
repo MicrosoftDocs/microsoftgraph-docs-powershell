@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action setExternalEventInformation
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaVirtualEventExternalEventInformation](/powershell/module/Microsoft.Graph.Beta.Bookings/Set-MgBetaVirtualEventExternalEventInformation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

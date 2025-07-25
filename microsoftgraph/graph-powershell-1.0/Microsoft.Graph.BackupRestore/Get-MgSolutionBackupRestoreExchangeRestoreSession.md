@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of Exchange restore sessions available in the tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreExchangeRestoreSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreExchangeRestoreSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

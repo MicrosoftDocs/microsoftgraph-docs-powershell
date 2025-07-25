@@ -11,6 +11,9 @@ ms.subservice: education
 ## SYNOPSIS
 Add an educationUser member to an educationClass.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassMemberByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

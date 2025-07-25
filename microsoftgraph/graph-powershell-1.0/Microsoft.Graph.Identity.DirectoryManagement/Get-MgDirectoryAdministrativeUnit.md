@@ -13,6 +13,9 @@ ms.subservice: entra-directory-management
 Retrieve the properties and relationships of an administrativeUnit object.
 The administrativeUnit resource supports extensions, which also allows you to use the GET operation to get custom properties and extension data in an administrativeUnit instance.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

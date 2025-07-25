@@ -11,6 +11,9 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Retrieve a list of owners for an application that are directoryObject types.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
