@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Self
-.
+
 
 ```yaml
 Type: String

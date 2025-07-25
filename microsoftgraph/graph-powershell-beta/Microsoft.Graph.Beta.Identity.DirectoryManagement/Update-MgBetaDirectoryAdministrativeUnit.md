@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeletedMembers
-.
+
 To construct, see NOTES section for DELETEDMEMBERS properties and create a hash table.
 
 ```yaml
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+
 
 ```yaml
 Type: String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsMemberManagementRestricted
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -MembershipRule
-.
+
 
 ```yaml
 Type: String
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -MembershipRuleProcessingState
-.
+
 
 ```yaml
 Type: String
@@ -318,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -MembershipType
-.
+
 
 ```yaml
 Type: String
@@ -379,7 +379,7 @@ Accept wildcard characters: False
 ```
 
 ### -Visibility
-.
+
 
 ```yaml
 Type: String

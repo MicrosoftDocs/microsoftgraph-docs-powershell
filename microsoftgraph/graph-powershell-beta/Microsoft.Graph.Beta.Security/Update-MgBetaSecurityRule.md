@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DetectionRules
-.
+
 To construct, see NOTES section for DETECTIONRULES properties and create a hash table.
 
 ```yaml

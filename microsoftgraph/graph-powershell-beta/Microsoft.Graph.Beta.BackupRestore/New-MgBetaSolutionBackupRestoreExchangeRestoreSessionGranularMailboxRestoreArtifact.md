@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ArtifactCount
-.
+
 
 ```yaml
 Type: Int32
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -SearchResponseId
-.
+
 
 ```yaml
 Type: String

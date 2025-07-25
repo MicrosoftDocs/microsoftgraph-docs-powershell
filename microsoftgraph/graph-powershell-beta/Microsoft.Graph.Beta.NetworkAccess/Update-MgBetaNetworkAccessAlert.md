@@ -54,7 +54,7 @@ Update the navigation property alerts in networkAccess
 ## PARAMETERS
 
 ### -Actions
-.
+
 To construct, see NOTES section for ACTIONS properties and create a hash table.
 
 ```yaml
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreationDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+
 
 ```yaml
 Type: String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -DetectionTechnology
-.
+
 
 ```yaml
 Type: String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -RelatedResources
-.
+
 
 ```yaml
 Type: IMicrosoftGraphNetworkaccessRelatedResource[]
@@ -314,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### -VendorName
-.
+
 
 ```yaml
 Type: String

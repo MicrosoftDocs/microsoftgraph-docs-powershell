@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountId
-.
+
 
 ```yaml
 Type: String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountNumber
-.
+
 
 ```yaml
 Type: String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Amount
-.
+
 
 ```yaml
 Type: Decimal
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Comment
-.
+
 
 ```yaml
 Type: String
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+
 
 ```yaml
 Type: String
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -DocumentNumber
-.
+
 
 ```yaml
 Type: String
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalDocumentNumber
-.
+
 
 ```yaml
 Type: String
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+
 
 ```yaml
 Type: String
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -JournalDisplayName
-.
+
 
 ```yaml
 Type: String
@@ -346,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -361,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -LineNumber
-.
+
 
 ```yaml
 Type: Int32
@@ -376,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### -PostingDate
-.
+
 
 ```yaml
 Type: DateTime

@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsSearchable
-.
+
 
 ```yaml
 Type: SwitchParameter

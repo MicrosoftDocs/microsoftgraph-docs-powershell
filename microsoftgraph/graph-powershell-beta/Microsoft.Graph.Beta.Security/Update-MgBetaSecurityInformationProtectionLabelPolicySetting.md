@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultLabelId
-.
+
 
 ```yaml
 Type: String

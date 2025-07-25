@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -BirthDate
-.
+
 
 ```yaml
 Type: DateTime
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Email
-.
+
 
 ```yaml
 Type: String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmploymentDate
-.
+
 
 ```yaml
 Type: DateTime
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -GivenName
-.
+
 
 ```yaml
 Type: String
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+
 
 ```yaml
 Type: String
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobTitle
-.
+
 
 ```yaml
 Type: String
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -MiddleName
-.
+
 
 ```yaml
 Type: String
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -MobilePhone
-.
+
 
 ```yaml
 Type: String
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -Number
-.
+
 
 ```yaml
 Type: String
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -PersonalEmail
-.
+
 
 ```yaml
 Type: String
@@ -335,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### -PhoneNumber
-.
+
 
 ```yaml
 Type: String
@@ -350,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -Picture
-.
+
 To construct, see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
@@ -396,7 +396,7 @@ Accept wildcard characters: False
 ```
 
 ### -StatisticsGroupCode
-.
+
 
 ```yaml
 Type: String
@@ -411,7 +411,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-.
+
 
 ```yaml
 Type: String
@@ -426,7 +426,7 @@ Accept wildcard characters: False
 ```
 
 ### -Surname
-.
+
 
 ```yaml
 Type: String
@@ -441,7 +441,7 @@ Accept wildcard characters: False
 ```
 
 ### -TerminationDate
-.
+
 
 ```yaml
 Type: DateTime
