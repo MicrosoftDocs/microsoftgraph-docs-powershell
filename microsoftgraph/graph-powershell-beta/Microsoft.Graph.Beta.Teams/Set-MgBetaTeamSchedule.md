@@ -36,13 +36,13 @@ Set-MgBetaTeamSchedule -TeamId <String> [-ResponseHeadersVariable <String>]
  [-TimeClockSettings <IMicrosoftGraphTimeClockSettings>] [-TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]
  [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
  [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgBetaTeamSchedule -TeamId <String> -BodyParameter <IMicrosoftGraphSchedule>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -62,13 +62,13 @@ Set-MgBetaTeamSchedule -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <
  [-TimeClockSettings <IMicrosoftGraphTimeClockSettings>] [-TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]
  [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
  [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgBetaTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphSchedule>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -181,21 +181,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -397,6 +382,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -666,14 +666,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -WorkforceIntegrationIds
+The IDs for the workforce integrations associated with this schedule.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: String[]
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -682,13 +681,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkforceIntegrationIds
-The IDs for the workforce integrations associated with this schedule.
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: String[]
-Parameter Sets: SetExpanded, SetViaIdentityExpanded
-Aliases:
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
 
 Required: False
 Position: Named
@@ -750,21 +765,25 @@ Required.
   - `[IsCrossLocationShiftsEnabled <Boolean?>]`: Indicates whether the cross-location marketplace feature is enabled for this schedule.
   - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
     - `[AssignedTo <String>]`: scheduleChangeRequestActor
-    - `[ManagerActionMessage <String>]`: 
-    - `[SenderMessage <String>]`: 
+    - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+    - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
     - `[State <String>]`: scheduleChangeState
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-    - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-    - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+    - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+    - `[RecipientUserId <String>]`: The recipient's user ID.
+    - `[SenderShiftId <String>]`: The sender's shift ID.
   - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
   - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest- `[]`>]`: The open shift requests in the schedule.
     - `[AssignedTo <String>]`: scheduleChangeRequestActor
-    - `[ManagerActionMessage <String>]`: 
-    - `[SenderMessage <String>]`: 
+    - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+    - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
     - `[State <String>]`: scheduleChangeState
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -867,18 +886,20 @@ Read-only.
 Permissions that aren't in this collection are disabled.
   - `[StartDayOfWeek <String>]`: dayOfWeek
   - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
-    - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-    - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-    - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+    - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+    - `[RecipientUserId <String>]`: The recipient's user ID.
+    - `[SenderShiftId <String>]`: The sender's shift ID.
     - `[AssignedTo <String>]`: scheduleChangeRequestActor
-    - `[ManagerActionMessage <String>]`: 
-    - `[SenderMessage <String>]`: 
+    - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+    - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
     - `[State <String>]`: scheduleChangeState
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
+    - `[RecipientShiftId <String>]`: The recipient's Shift ID
   - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
   - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -938,17 +959,17 @@ Required.
 Required.
   - `[TimeOffRequests <IMicrosoftGraphTimeOffRequest- `[]`>]`: The time off requests in the schedule.
     - `[AssignedTo <String>]`: scheduleChangeRequestActor
-    - `[ManagerActionMessage <String>]`: 
-    - `[SenderMessage <String>]`: 
+    - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+    - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
     - `[State <String>]`: scheduleChangeState
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[EndDateTime <DateTime?>]`: The date and time the time off ends in ISO 8601 format and in UTC time.
+    - `[StartDateTime <DateTime?>]`: The date and time the time off starts in ISO 8601 format and in UTC time.
     - `[TimeOffReasonId <String>]`: The reason for the time off.
   - `[TimeOffRequestsEnabled <Boolean?>]`: Indicates whether time off requests are enabled for the schedule.
   - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
@@ -1043,8 +1064,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 OFFERSHIFTREQUESTS `<IMicrosoftGraphOfferShiftRequest- `[]`>`: The offer requests for shifts in the schedule.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionMessage <String>]`: 
-  - `[SenderMessage <String>]`: 
+  - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+  - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
   - `[State <String>]`: scheduleChangeState
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1059,14 +1082,16 @@ This property is read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-  - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-  - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+  - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+  - `[RecipientUserId <String>]`: The recipient's user ID.
+  - `[SenderShiftId <String>]`: The sender's shift ID.
 
 OPENSHIFTCHANGEREQUESTS `<IMicrosoftGraphOpenShiftChangeRequest- `[]`>`: The open shift requests in the schedule.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionMessage <String>]`: 
-  - `[SenderMessage <String>]`: 
+  - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+  - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
   - `[State <String>]`: scheduleChangeState
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1231,12 +1256,14 @@ Read-only.
 Permissions that aren't in this collection are disabled.
 
 SWAPSHIFTSCHANGEREQUESTS `<IMicrosoftGraphSwapShiftsChangeRequest- `[]`>`: The swap requests for shifts in the schedule.
-  - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-  - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-  - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+  - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+  - `[RecipientUserId <String>]`: The recipient's user ID.
+  - `[SenderShiftId <String>]`: The sender's shift ID.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionMessage <String>]`: 
-  - `[SenderMessage <String>]`: 
+  - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+  - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
   - `[State <String>]`: scheduleChangeState
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1251,7 +1278,7 @@ This property is read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
+  - `[RecipientShiftId <String>]`: The recipient's Shift ID
 
 TIMECARDS `<IMicrosoftGraphTimeCard- `[]`>`: The time cards in the schedule.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1334,8 +1361,10 @@ Required.
 
 TIMEOFFREQUESTS `<IMicrosoftGraphTimeOffRequest- `[]`>`: The time off requests in the schedule.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionMessage <String>]`: 
-  - `[SenderMessage <String>]`: 
+  - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+  - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
   - `[State <String>]`: scheduleChangeState
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1350,10 +1379,8 @@ This property is read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[EndDateTime <DateTime?>]`: The date and time the time off ends in ISO 8601 format and in UTC time.
+  - `[StartDateTime <DateTime?>]`: The date and time the time off starts in ISO 8601 format and in UTC time.
   - `[TimeOffReasonId <String>]`: The reason for the time off.
 
 TIMESOFF `<IMicrosoftGraphTimeOff- `[]`>`: The instances of times off in the schedule.

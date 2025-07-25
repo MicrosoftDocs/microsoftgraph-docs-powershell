@@ -27,14 +27,14 @@ New-MgBetaGroupSiteList -GroupId <String> -SiteId <String> [-ResponseHeadersVari
  [-List <IMicrosoftGraphListInfo>] [-Name <String>] [-Operations <IMicrosoftGraphRichLongRunningOperation[]>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-Permissions <IMicrosoftGraphPermission[]>]
  [-SharepointIds <IMicrosoftGraphSharepointIds>] [-Subscriptions <IMicrosoftGraphSubscription[]>]
- [-System <Hashtable>] [-WebUrl <String>] [-Headers <IDictionary>]
+ [-System <Hashtable>] [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupSiteList -GroupId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphList>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -50,21 +50,19 @@ New-MgBetaGroupSiteList -InputObject <ISitesIdentity> [-ResponseHeadersVariable 
  [-List <IMicrosoftGraphListInfo>] [-Name <String>] [-Operations <IMicrosoftGraphRichLongRunningOperation[]>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-Permissions <IMicrosoftGraphPermission[]>]
  [-SharepointIds <IMicrosoftGraphSharepointIds>] [-Subscriptions <IMicrosoftGraphSubscription[]>]
- [-System <Hashtable>] [-WebUrl <String>] [-Headers <IDictionary>]
+ [-System <Hashtable>] [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphList>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to lists for groups
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -123,21 +121,6 @@ To construct, see NOTES section for COLUMNS properties and create a hash table.
 Type: IMicrosoftGraphColumnDefinition[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -480,6 +463,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -565,6 +563,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -687,7 +700,7 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
         - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-        - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+        - `[ContentInfo <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -738,7 +751,7 @@ For example - a high contrast image
           - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-          - `[Content <IMicrosoftGraphJson>]`: Json
+          - `[Content <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
           - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
           - `[DisplayText <String>]`: Required.
@@ -866,8 +879,8 @@ This lets services like Microsoft 365 call the application in the context of a d
           - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-            - `[Key <String>]`: Key.
-            - `[Value <String>]`: Value.
+            - `[Key <String>]`: Contains the name of the field that a value is associated with.
+            - `[Value <String>]`: Contains the corresponding value for the specified key.
           - `[Type <String>]`: The unique name for the functionality exposed by the app.
         - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -896,6 +909,12 @@ Always null when the object hasn't been deleted.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: 
               - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
+              - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+                  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                  - `[Operator <String>]`: customSecurityAttributeComparisonOperator
               - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
@@ -904,6 +923,7 @@ For existing applications, the enforcement date can be retroactively applied.
               - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
               - `[State <String>]`: appManagementRestrictionState
             - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: 
+              - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
               - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -918,11 +938,6 @@ For existing applications, the enforcement date can be retroactively applied.
                 - `[AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
-                    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                    - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
-                      - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-                      - `[Operator <String>]`: customSecurityAttributeComparisonOperator
                   - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                   - `[State <String>]`: appManagementRestrictionState
@@ -937,6 +952,7 @@ For existing applications, the enforcement date can be retroactively applied.
                   - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                   - `[State <String>]`: appManagementRestrictionState
+                - `[UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
         - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -1336,6 +1352,10 @@ May not begin with ..
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[ApprovedClientApps <IMicrosoftGraphApprovedClientApp- `[]`>]`: 
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[DisplayName <String>]`: 
           - `[IsRemoteDesktopProtocolEnabled <Boolean?>]`: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
           - `[TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup- `[]`>]`: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -1886,7 +1906,7 @@ Supports $filter (eq, ne, not).
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
             - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
             - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
@@ -2017,7 +2037,7 @@ For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
           - `[PhoneType <String>]`: authenticationPhoneType
           - `[SmsSignInState <String>]`: authenticationMethodSignInState
-        - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+        - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: Represents a platform credential instance registered to a user on Mac OS.
           - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
@@ -2030,6 +2050,44 @@ Read-only.
           - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
           - `[KeyStrength <String>]`: authenticationMethodKeyStrength
           - `[Platform <String>]`: authenticationMethodPlatform
+        - `[QrCodePinMethod <IMicrosoftGraphQrCodePinAuthenticationMethod>]`: qrCodePinAuthenticationMethod
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Pin <IMicrosoftGraphQrPin>]`: qrPin
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Code <String>]`: PIN of the user.
+It is between 8-20 digits as configured in the QR code authentication method policy.
+The code is temporary when issued by admin but permanent after the user changes it at the first login attempt.
+This PIN can be reset by the admin but not the user.
+            - `[CreatedDateTime <DateTime?>]`: The date and time when the PIN was created.
+            - `[ForceChangePinNextSignIn <Boolean?>]`: Defaults to true for a temporary PIN.
+            - `[UpdatedDateTime <DateTime?>]`: The date and time when the PIN was updated.
+          - `[StandardQrCode <IMicrosoftGraphQrCode>]`: qrCode
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[CreatedDateTime <DateTime?>]`: The date and time when the QR code was created.
+            - `[ExpireDateTime <DateTime?>]`: Temporary QR code lifetime is between 1-12 hours.
+Standard QR code lifetime is in days and max.
+is 395 days (13 months) and default value is 365 days (12 months).
+            - `[Image <IMicrosoftGraphQrCodeImageDetails>]`: qrCodeImageDetails
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[BinaryValue <Byte- `[]`>]`: The binary representation of the QR code.
+              - `[ErrorCorrectionLevel <String>]`: errorCorrectionLevel
+              - `[RawContent <Byte- `[]`>]`: Base64-encoded raw content of the QR code.
+              - `[Version <Int32?>]`: Version to create QR code image.
+            - `[LastUsedDateTime <DateTime?>]`: The date and time when the QR code was last used for a successful sign-in.
+            - `[StartDateTime <DateTime?>]`: The date and time when the QR code becomes active and available to use.
+          - `[TemporaryQrCode <IMicrosoftGraphQrCode>]`: qrCode
         - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[PerUserMfaState <String>]`: perUserMfaState
@@ -2628,6 +2686,7 @@ This property is read-only.
             - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
             - `[UserIdentityType <String>]`: teamworkUserIdentityType
+            - `[UserPrincipalName <String>]`: User principal name (UPN) of the user.
         - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -2854,6 +2913,29 @@ The default value is false.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[IsSipEnabled <Boolean?>]`: Indicates whether the user has a SIP-enabled client registered for them.
 Read-only.
+      - `[Communications <IMicrosoftGraphUserCloudCommunication>]`: userCloudCommunication
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[CallSettings <IMicrosoftGraphCallSettings>]`: callSettings
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Delegates <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegate settings.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[AllowedActions <IMicrosoftGraphDelegateAllowedActions>]`: delegateAllowedActions
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[JoinActiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows participation in active calls.
+              - `[MakeCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be made on their behalf.
+              - `[ManageCallAndDelegateSettings <Boolean?>]`: Indicates whether the delegator or delegate allows the management of call and delegation settings.
+              - `[PickUpHeldCalls <Boolean?>]`: Indicates whether the delegator or delegate allows held calls to be picked up.
+              - `[ReceiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be received on their behalf.
+            - `[CreatedDateTime <DateTime?>]`: Date and time when the delegator or delegate entry was created.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            - `[IsActive <Boolean?>]`: Indicates whether the delegator or delegate relationship is currently active.
+          - `[Delegators <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegator settings.
       - `[CompanyName <String>]`: The name of the company the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -2986,6 +3068,103 @@ Through self-service sign-up by an internal user using email verification (Email
 Through self-service sign-up by an external user signing up through a link that is part of a user flow (SelfServiceSignUp). 
 Read-only.Supports $filter (eq, ne, not, and in).
       - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeValue>]`: customSecurityAttributeValue
+      - `[DataSecurityAndGovernance <IMicrosoftGraphUserDataSecurityAndGovernance>]`: userDataSecurityAndGovernance
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[ActionSource <String>]`: labelActionSource
+          - `[ApplicableTo <String>]`: sensitivityLabelTarget
+          - `[ApplicationMode <String>]`: applicationMode
+          - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
+            - `[Id <String>]`: The unique identifier of the label policy.
+            - `[Name <String>]`: The display name of the label policy.
+          - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Message <String>]`: The message displayed to the user when the label is applied automatically.
+            - `[SensitiveTypeIds <String- `[]`>]`: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
+          - `[AutoTooltip <String>]`: 
+          - `[Color <String>]`: 
+          - `[Description <String>]`: 
+          - `[DisplayName <String>]`: 
+          - `[IsDefault <Boolean?>]`: 
+          - `[IsEnabled <Boolean?>]`: 
+          - `[IsEndpointProtectionEnabled <Boolean?>]`: 
+          - `[IsScopedToUser <Boolean?>]`: 
+          - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
+            - `[Name <String>]`: The name of the action (for example, 'Encrypt', 'AddHeader').
+          - `[Locale <String>]`: 
+          - `[Name <String>]`: 
+          - `[Priority <Int32?>]`: 
+          - `[Rights <IMicrosoftGraphUsageRightsIncluded>]`: usageRightsIncluded
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[OwnerEmail <String>]`: The email of owner label rights.
+            - `[UserEmail <String>]`: The email of user with label user rights.
+            - `[Value <String>]`: usageRights
+          - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+          - `[ToolTip <String>]`: 
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Activities <IMicrosoftGraphActivitiesContainer>]`: activitiesContainer
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[ContentActivities <IMicrosoftGraphContentActivity- `[]`>]`: Collection of activity logs related to content processing.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[ContentMetadata <IMicrosoftGraphProcessContentRequest>]`: processContentRequest
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[ActivityMetadata <IMicrosoftGraphActivityMetadata>]`: activityMetadata
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Activity <String>]`: userActivityType
+              - `[ContentEntries <IMicrosoftGraphProcessContentMetadataBase- `[]`>]`: A collection of content entries to be processed.
+Each entry contains the content itself and its metadata.
+Use conversation metadata for content like prompts and responses and file metadata for files.
+Required.
+                - `[Content <IMicrosoftGraphContentBase>]`: contentBase
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[CorrelationId <String>]`: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
+                - `[CreatedDateTime <DateTime?>]`: Required.
+Timestamp indicating when the original content was created (for example, file creation time, message sent time).
+                - `[Identifier <String>]`: Required.
+A unique identifier for this specific content entry within the context of the calling application or enforcement plane (for example, message ID, file path/URL).
+                - `[IsTruncated <Boolean?>]`: Required.
+Indicates if the provided content has been truncated from its original form (for example, due to size limits).
+                - `[Length <Int64?>]`: The length of the original content in bytes.
+                - `[ModifiedDateTime <DateTime?>]`: Required.
+Timestamp indicating when the original content was last modified.
+For ephemeral content like messages, this might be the same as createdDateTime.
+                - `[Name <String>]`: Required.
+A descriptive name for the content (for example, file name, web page title, 'Chat Message').
+                - `[SequenceNumber <Int64?>]`: A sequence number indicating the order in which content was generated or should be processed, required when correlationId is used.
+              - `[DeviceMetadata <IMicrosoftGraphDeviceMetadata>]`: deviceMetadata
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[DeviceType <String>]`: Optional.
+The general type of the device (for example, 'Managed', 'Unmanaged').
+                - `[IPAddress <String>]`: The Internet Protocol (IP) address of the device.
+                - `[OperatingSystemSpecifications <IMicrosoftGraphOperatingSystemSpecifications>]`: operatingSystemSpecifications
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[OperatingSystemPlatform <String>]`: The platform of the operating system (for example, 'Windows').
+                  - `[OperatingSystemVersion <String>]`: The version string of the operating system.
+              - `[IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]`: integratedApplicationMetadata
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Name <String>]`: The name of the integrated application.
+                - `[Version <String>]`: The version number of the integrated application.
+              - `[ProtectedAppMetadata <IMicrosoftGraphProtectedApplicationMetadata>]`: protectedApplicationMetadata
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Name <String>]`: The name of the integrated application.
+                - `[Version <String>]`: The version number of the integrated application.
+                - `[ApplicationLocation <IMicrosoftGraphPolicyLocation>]`: policyLocation
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[Value <String>]`: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
+            - `[ScopeIdentifier <String>]`: The scope identified from computed protection scopes.
+            - `[UserId <String>]`: ID of the user.
+        - `[ProtectionScopes <IMicrosoftGraphUserProtectionScopeContainer>]`: userProtectionScopeContainer
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
       - `[Department <String>]`: The name of the department where the user works.
 Maximum length is 64 characters.Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
       - `[DeviceEnrollmentConfigurations <IMicrosoftGraphDeviceEnrollmentConfiguration- `[]`>]`: Get enrollment configurations targeted to the user
@@ -3555,6 +3734,7 @@ Required when includeResourceData is true.
             - `[ExpirationDateTime <DateTime?>]`: Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
+Any value under 45 minutes after the time of the request is automatically set to 45 minutes after the request time.
 For the maximum supported subscription length of time, see Subscription lifetime.
             - `[IncludeResourceData <Boolean?>]`: Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
@@ -3621,6 +3801,14 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[AssignedRoles <IMicrosoftGraphEngagementRole- `[]`>]`: Represents the collection of Viva Engage roles assigned to a user.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[DisplayName <String>]`: The name of the role.
+          - `[Members <IMicrosoftGraphEngagementRoleMember- `[]`>]`: Users who have been assigned this role.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[User <IMicrosoftGraphUser>]`: user
         - `[LearningCourseActivities <IMicrosoftGraphLearningCourseActivity- `[]`>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -3765,27 +3953,6 @@ Active labels should be hidden or disabled in user interfaces.
               - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
               - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
           - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-            - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-            - `[ApplicableTo <String>]`: sensitivityLabelTarget
-            - `[ApplicationMode <String>]`: applicationMode
-            - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
-              - `[Id <String>]`: 
-              - `[Name <String>]`: 
-            - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
-              - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Message <String>]`: 
-              - `[SensitiveTypeIds <String- `[]`>]`: 
-            - `[Description <String>]`: 
-            - `[DisplayName <String>]`: 
-            - `[IsDefault <Boolean?>]`: 
-            - `[IsEndpointProtectionEnabled <Boolean?>]`: 
-            - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
-              - `[Name <String>]`: 
-            - `[Name <String>]`: 
-            - `[Priority <Int32?>]`: 
-            - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-            - `[ToolTip <String>]`: 
           - `[SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]`: sensitivityPolicySettings
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -4036,7 +4203,7 @@ SharePoint servers might decide to use this hint to preload the script for corre
                 - `[Value <String>]`: Value of the meta data.
               - `[CustomMetadata <IMicrosoftGraphMetaDataKeyValuePair- `[]`>]`: A key-value map where keys are string identifier and values are object of custom key-value pair.
                 - `[Key <String>]`: Key of the metadata.
-                - `[Value <IMicrosoftGraphJson>]`: Json
+                - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
               - `[HtmlStrings <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are rich text with HTML format.
 SharePoint servers treat the values as HTML content and run services like safety checks, search index and link fixup on them.
               - `[ImageSources <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are image sources.
@@ -4282,7 +4449,7 @@ Returned only on $select.
 Read-only. 
 Supports $filter (eq where true only).
       - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit.
-Default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
       - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
@@ -4507,7 +4674,7 @@ Returned by default.
 Supports $filter (eq, ne, not).
         - `[IsFavorite <Boolean?>]`: Indicates whether the user marked the group as favorite.
         - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
         - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
@@ -5070,21 +5237,25 @@ Required.
             - `[IsCrossLocationShiftsEnabled <Boolean?>]`: Indicates whether the cross-location marketplace feature is enabled for this schedule.
             - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
               - `[AssignedTo <String>]`: scheduleChangeRequestActor
-              - `[ManagerActionMessage <String>]`: 
-              - `[SenderMessage <String>]`: 
+              - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+              - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
               - `[State <String>]`: scheduleChangeState
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-              - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-              - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+              - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+              - `[RecipientUserId <String>]`: The recipient's user ID.
+              - `[SenderShiftId <String>]`: The sender's shift ID.
             - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
             - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest- `[]`>]`: The open shift requests in the schedule.
               - `[AssignedTo <String>]`: scheduleChangeRequestActor
-              - `[ManagerActionMessage <String>]`: 
-              - `[SenderMessage <String>]`: 
+              - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+              - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
               - `[State <String>]`: scheduleChangeState
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -5187,18 +5358,20 @@ Read-only.
 Permissions that aren't in this collection are disabled.
             - `[StartDayOfWeek <String>]`: dayOfWeek
             - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
-              - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-              - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-              - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+              - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+              - `[RecipientUserId <String>]`: The recipient's user ID.
+              - `[SenderShiftId <String>]`: The sender's shift ID.
               - `[AssignedTo <String>]`: scheduleChangeRequestActor
-              - `[ManagerActionMessage <String>]`: 
-              - `[SenderMessage <String>]`: 
+              - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+              - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
               - `[State <String>]`: scheduleChangeState
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
+              - `[RecipientShiftId <String>]`: The recipient's Shift ID
             - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
             - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -5258,17 +5431,17 @@ Required.
 Required.
             - `[TimeOffRequests <IMicrosoftGraphTimeOffRequest- `[]`>]`: The time off requests in the schedule.
               - `[AssignedTo <String>]`: scheduleChangeRequestActor
-              - `[ManagerActionMessage <String>]`: 
-              - `[SenderMessage <String>]`: 
+              - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+              - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
               - `[State <String>]`: scheduleChangeState
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-              - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+              - `[EndDateTime <DateTime?>]`: The date and time the time off ends in ISO 8601 format and in UTC time.
+              - `[StartDateTime <DateTime?>]`: The date and time the time off starts in ISO 8601 format and in UTC time.
               - `[TimeOffReasonId <String>]`: The reason for the time off.
             - `[TimeOffRequestsEnabled <Boolean?>]`: Indicates whether time off requests are enabled for the schedule.
             - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
@@ -6141,7 +6314,7 @@ It is an Optional field
         - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+        - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -6332,29 +6505,42 @@ Read-only.
           - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: 
+        - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: The AI insights generated for an online meeting.
+Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
-            - `[OwnerDisplayName <String>]`: 
-            - `[Text <String>]`: 
-            - `[Title <String>]`: 
-          - `[CallId <String>]`: 
-          - `[ContentCorrelationId <String>]`: 
-          - `[CreatedDateTime <DateTime?>]`: 
-          - `[EndDateTime <DateTime?>]`: 
-          - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
-            - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
-              - `[Text <String>]`: 
-              - `[Title <String>]`: 
-            - `[Text <String>]`: 
-            - `[Title <String>]`: 
+          - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: The collection of AI-generated action items.
+Read-only.
+            - `[OwnerDisplayName <String>]`: The display name of the owner of the action item.
+            - `[Text <String>]`: The text content of the action item.
+            - `[Title <String>]`: The title of the action item.
+          - `[CallId <String>]`: The ID for the online meeting call for which the callAiInsight was generated.
+Read-only.
+          - `[ContentCorrelationId <String>]`: The unique ID that correlates the transcript from which the insights were generated.
+Read-only.
+          - `[CreatedDateTime <DateTime?>]`: Date and time at which the corresponding transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+          - `[EndDateTime <DateTime?>]`: Date and time at which the corresponding transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+          - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: The collection of AI-generated meeting notes.
+Read-only.
+            - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: A collection of subpoints of the meeting note.
+              - `[Text <String>]`: The text of the meeting note subpoint.
+              - `[Title <String>]`: The title of the meeting note subpoint.
+            - `[Text <String>]`: The text of the meeting note.
+            - `[Title <String>]`: The title of the meeting note.
           - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
-              - `[EventDateTime <DateTime?>]`: 
+            - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: The collection of AI-generated mention events.
+              - `[EventDateTime <DateTime?>]`: The date and time of the mention event.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[TranscriptUtterance <String>]`: 
+              - `[TranscriptUtterance <String>]`: The utterance in the online meeting transcript that contains the mention event.
         - `[AlternativeRecording <Byte- `[]`>]`: The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
         - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Teams live event.
@@ -7755,7 +7941,7 @@ Users can control this setting in Office Delve.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[InPlaceArchiveMailboxId <String>]`: The unique identifier for the user's in-place archive mailbox.
+          - `[InPlaceArchiveMailboxId <String>]`: 
           - `[PrimaryMailboxId <String>]`: The unique identifier for the user's primary mailbox.
         - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8119,7 +8305,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                 - `[PreferredTimezone <String>]`: The registrant's time zone details.
                 - `[RegistrantVideoOnDemandWebUrl <String>]`: 
                 - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                 - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
                   - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
@@ -8135,7 +8321,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
                 - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
               - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-              - `[VideoOnDemandWebUrl <String>]`: 
+              - `[VideoOnDemandWebUrl <String>]`: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
           - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
           - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8617,7 +8803,7 @@ Read-only.
         - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-        - `[Value <IMicrosoftGraphJson>]`: Json
+        - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
         - `[Visible <Boolean?>]`: Indicates whether the object is visible.
         - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8668,11 +8854,11 @@ Read-only.
 Read-only.
                     - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                   - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                - `[MajorUnit <IMicrosoftGraphJson>]`: Json
-                - `[Maximum <IMicrosoftGraphJson>]`: Json
-                - `[Minimum <IMicrosoftGraphJson>]`: Json
+                - `[MajorUnit <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
+                - `[Maximum <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
+                - `[Minimum <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                 - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                - `[MinorUnit <IMicrosoftGraphJson>]`: Json
+                - `[MinorUnit <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                 - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
@@ -8751,7 +8937,7 @@ Read-only.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                   - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                - `[Value <IMicrosoftGraphJson>]`: Json
+                - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
             - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique identifier for an entity.
@@ -8821,12 +9007,12 @@ Read-only.
                     - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                   - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                  - `[Values <IMicrosoftGraphJson>]`: Json
+                  - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
               - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
               - `[Name <String>]`: The name of the table column.
-              - `[Values <IMicrosoftGraphJson>]`: Json
+              - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
             - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
             - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
             - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -8841,7 +9027,7 @@ Read-only.
               - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-              - `[Values <IMicrosoftGraphJson>]`: Json
+              - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
             - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
             - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
             - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -8945,7 +9131,7 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
       - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-      - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+      - `[ContentInfo <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -8996,7 +9182,7 @@ For example - a high contrast image
         - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-        - `[Content <IMicrosoftGraphJson>]`: Json
+        - `[Content <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
         - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         - `[DisplayText <String>]`: Required.
@@ -9124,8 +9310,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Key.
-          - `[Value <String>]`: Value.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -9154,6 +9340,12 @@ Always null when the object hasn't been deleted.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: 
             - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
+            - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+                - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                - `[Operator <String>]`: customSecurityAttributeComparisonOperator
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
@@ -9162,6 +9354,7 @@ For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
             - `[State <String>]`: appManagementRestrictionState
           - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: 
+            - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -9176,11 +9369,6 @@ For existing applications, the enforcement date can be retroactively applied.
               - `[AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
-                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
-                    - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-                    - `[Operator <String>]`: customSecurityAttributeComparisonOperator
                 - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                 - `[State <String>]`: appManagementRestrictionState
@@ -9195,6 +9383,7 @@ For existing applications, the enforcement date can be retroactively applied.
                 - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                 - `[State <String>]`: appManagementRestrictionState
+              - `[UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
       - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -9594,6 +9783,10 @@ May not begin with ..
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[ApprovedClientApps <IMicrosoftGraphApprovedClientApp- `[]`>]`: 
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[DisplayName <String>]`: 
         - `[IsRemoteDesktopProtocolEnabled <Boolean?>]`: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
         - `[TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup- `[]`>]`: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -10144,7 +10337,7 @@ Supports $filter (eq, ne, not).
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
           - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
           - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
@@ -10275,7 +10468,7 @@ For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
         - `[PhoneType <String>]`: authenticationPhoneType
         - `[SmsSignInState <String>]`: authenticationMethodSignInState
-      - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+      - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: Represents a platform credential instance registered to a user on Mac OS.
         - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
@@ -10288,6 +10481,44 @@ Read-only.
         - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
         - `[KeyStrength <String>]`: authenticationMethodKeyStrength
         - `[Platform <String>]`: authenticationMethodPlatform
+      - `[QrCodePinMethod <IMicrosoftGraphQrCodePinAuthenticationMethod>]`: qrCodePinAuthenticationMethod
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Pin <IMicrosoftGraphQrPin>]`: qrPin
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Code <String>]`: PIN of the user.
+It is between 8-20 digits as configured in the QR code authentication method policy.
+The code is temporary when issued by admin but permanent after the user changes it at the first login attempt.
+This PIN can be reset by the admin but not the user.
+          - `[CreatedDateTime <DateTime?>]`: The date and time when the PIN was created.
+          - `[ForceChangePinNextSignIn <Boolean?>]`: Defaults to true for a temporary PIN.
+          - `[UpdatedDateTime <DateTime?>]`: The date and time when the PIN was updated.
+        - `[StandardQrCode <IMicrosoftGraphQrCode>]`: qrCode
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[CreatedDateTime <DateTime?>]`: The date and time when the QR code was created.
+          - `[ExpireDateTime <DateTime?>]`: Temporary QR code lifetime is between 1-12 hours.
+Standard QR code lifetime is in days and max.
+is 395 days (13 months) and default value is 365 days (12 months).
+          - `[Image <IMicrosoftGraphQrCodeImageDetails>]`: qrCodeImageDetails
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[BinaryValue <Byte- `[]`>]`: The binary representation of the QR code.
+            - `[ErrorCorrectionLevel <String>]`: errorCorrectionLevel
+            - `[RawContent <Byte- `[]`>]`: Base64-encoded raw content of the QR code.
+            - `[Version <Int32?>]`: Version to create QR code image.
+          - `[LastUsedDateTime <DateTime?>]`: The date and time when the QR code was last used for a successful sign-in.
+          - `[StartDateTime <DateTime?>]`: The date and time when the QR code becomes active and available to use.
+        - `[TemporaryQrCode <IMicrosoftGraphQrCode>]`: qrCode
       - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[PerUserMfaState <String>]`: perUserMfaState
@@ -10886,6 +11117,7 @@ This property is read-only.
           - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
           - `[UserIdentityType <String>]`: teamworkUserIdentityType
+          - `[UserPrincipalName <String>]`: User principal name (UPN) of the user.
       - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -11112,6 +11344,29 @@ The default value is false.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[IsSipEnabled <Boolean?>]`: Indicates whether the user has a SIP-enabled client registered for them.
 Read-only.
+    - `[Communications <IMicrosoftGraphUserCloudCommunication>]`: userCloudCommunication
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CallSettings <IMicrosoftGraphCallSettings>]`: callSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Delegates <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegate settings.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[AllowedActions <IMicrosoftGraphDelegateAllowedActions>]`: delegateAllowedActions
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[JoinActiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows participation in active calls.
+            - `[MakeCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be made on their behalf.
+            - `[ManageCallAndDelegateSettings <Boolean?>]`: Indicates whether the delegator or delegate allows the management of call and delegation settings.
+            - `[PickUpHeldCalls <Boolean?>]`: Indicates whether the delegator or delegate allows held calls to be picked up.
+            - `[ReceiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be received on their behalf.
+          - `[CreatedDateTime <DateTime?>]`: Date and time when the delegator or delegate entry was created.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[IsActive <Boolean?>]`: Indicates whether the delegator or delegate relationship is currently active.
+        - `[Delegators <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegator settings.
     - `[CompanyName <String>]`: The name of the company the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -11244,6 +11499,103 @@ Through self-service sign-up by an internal user using email verification (Email
 Through self-service sign-up by an external user signing up through a link that is part of a user flow (SelfServiceSignUp). 
 Read-only.Supports $filter (eq, ne, not, and in).
     - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeValue>]`: customSecurityAttributeValue
+    - `[DataSecurityAndGovernance <IMicrosoftGraphUserDataSecurityAndGovernance>]`: userDataSecurityAndGovernance
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[ActionSource <String>]`: labelActionSource
+        - `[ApplicableTo <String>]`: sensitivityLabelTarget
+        - `[ApplicationMode <String>]`: applicationMode
+        - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
+          - `[Id <String>]`: The unique identifier of the label policy.
+          - `[Name <String>]`: The display name of the label policy.
+        - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Message <String>]`: The message displayed to the user when the label is applied automatically.
+          - `[SensitiveTypeIds <String- `[]`>]`: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
+        - `[AutoTooltip <String>]`: 
+        - `[Color <String>]`: 
+        - `[Description <String>]`: 
+        - `[DisplayName <String>]`: 
+        - `[IsDefault <Boolean?>]`: 
+        - `[IsEnabled <Boolean?>]`: 
+        - `[IsEndpointProtectionEnabled <Boolean?>]`: 
+        - `[IsScopedToUser <Boolean?>]`: 
+        - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
+          - `[Name <String>]`: The name of the action (for example, 'Encrypt', 'AddHeader').
+        - `[Locale <String>]`: 
+        - `[Name <String>]`: 
+        - `[Priority <Int32?>]`: 
+        - `[Rights <IMicrosoftGraphUsageRightsIncluded>]`: usageRightsIncluded
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[OwnerEmail <String>]`: The email of owner label rights.
+          - `[UserEmail <String>]`: The email of user with label user rights.
+          - `[Value <String>]`: usageRights
+        - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+        - `[ToolTip <String>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Activities <IMicrosoftGraphActivitiesContainer>]`: activitiesContainer
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[ContentActivities <IMicrosoftGraphContentActivity- `[]`>]`: Collection of activity logs related to content processing.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[ContentMetadata <IMicrosoftGraphProcessContentRequest>]`: processContentRequest
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[ActivityMetadata <IMicrosoftGraphActivityMetadata>]`: activityMetadata
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Activity <String>]`: userActivityType
+            - `[ContentEntries <IMicrosoftGraphProcessContentMetadataBase- `[]`>]`: A collection of content entries to be processed.
+Each entry contains the content itself and its metadata.
+Use conversation metadata for content like prompts and responses and file metadata for files.
+Required.
+              - `[Content <IMicrosoftGraphContentBase>]`: contentBase
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[CorrelationId <String>]`: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
+              - `[CreatedDateTime <DateTime?>]`: Required.
+Timestamp indicating when the original content was created (for example, file creation time, message sent time).
+              - `[Identifier <String>]`: Required.
+A unique identifier for this specific content entry within the context of the calling application or enforcement plane (for example, message ID, file path/URL).
+              - `[IsTruncated <Boolean?>]`: Required.
+Indicates if the provided content has been truncated from its original form (for example, due to size limits).
+              - `[Length <Int64?>]`: The length of the original content in bytes.
+              - `[ModifiedDateTime <DateTime?>]`: Required.
+Timestamp indicating when the original content was last modified.
+For ephemeral content like messages, this might be the same as createdDateTime.
+              - `[Name <String>]`: Required.
+A descriptive name for the content (for example, file name, web page title, 'Chat Message').
+              - `[SequenceNumber <Int64?>]`: A sequence number indicating the order in which content was generated or should be processed, required when correlationId is used.
+            - `[DeviceMetadata <IMicrosoftGraphDeviceMetadata>]`: deviceMetadata
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[DeviceType <String>]`: Optional.
+The general type of the device (for example, 'Managed', 'Unmanaged').
+              - `[IPAddress <String>]`: The Internet Protocol (IP) address of the device.
+              - `[OperatingSystemSpecifications <IMicrosoftGraphOperatingSystemSpecifications>]`: operatingSystemSpecifications
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[OperatingSystemPlatform <String>]`: The platform of the operating system (for example, 'Windows').
+                - `[OperatingSystemVersion <String>]`: The version string of the operating system.
+            - `[IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]`: integratedApplicationMetadata
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Name <String>]`: The name of the integrated application.
+              - `[Version <String>]`: The version number of the integrated application.
+            - `[ProtectedAppMetadata <IMicrosoftGraphProtectedApplicationMetadata>]`: protectedApplicationMetadata
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Name <String>]`: The name of the integrated application.
+              - `[Version <String>]`: The version number of the integrated application.
+              - `[ApplicationLocation <IMicrosoftGraphPolicyLocation>]`: policyLocation
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Value <String>]`: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
+          - `[ScopeIdentifier <String>]`: The scope identified from computed protection scopes.
+          - `[UserId <String>]`: ID of the user.
+      - `[ProtectionScopes <IMicrosoftGraphUserProtectionScopeContainer>]`: userProtectionScopeContainer
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
     - `[Department <String>]`: The name of the department where the user works.
 Maximum length is 64 characters.Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
     - `[DeviceEnrollmentConfigurations <IMicrosoftGraphDeviceEnrollmentConfiguration- `[]`>]`: Get enrollment configurations targeted to the user
@@ -11825,6 +12177,7 @@ Required when includeResourceData is true.
             - `[ExpirationDateTime <DateTime?>]`: Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
+Any value under 45 minutes after the time of the request is automatically set to 45 minutes after the request time.
 For the maximum supported subscription length of time, see Subscription lifetime.
             - `[IncludeResourceData <Boolean?>]`: Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
@@ -12067,7 +12420,7 @@ Read-only.
               - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-              - `[Value <IMicrosoftGraphJson>]`: Json
+              - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
               - `[Visible <Boolean?>]`: Indicates whether the object is visible.
               - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -12118,11 +12471,11 @@ Read-only.
 Read-only.
                           - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                         - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                      - `[MajorUnit <IMicrosoftGraphJson>]`: Json
-                      - `[Maximum <IMicrosoftGraphJson>]`: Json
-                      - `[Minimum <IMicrosoftGraphJson>]`: Json
+                      - `[MajorUnit <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
+                      - `[Maximum <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
+                      - `[Minimum <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                       - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                      - `[MinorUnit <IMicrosoftGraphJson>]`: Json
+                      - `[MinorUnit <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                       - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
                         - `[Id <String>]`: The unique identifier for an entity.
@@ -12201,7 +12554,7 @@ Read-only.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                         - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                      - `[Value <IMicrosoftGraphJson>]`: Json
+                      - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                   - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[Id <String>]`: The unique identifier for an entity.
@@ -12271,12 +12624,12 @@ Read-only.
                           - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                         - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                        - `[Values <IMicrosoftGraphJson>]`: Json
+                        - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                     - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                     - `[Name <String>]`: The name of the table column.
-                    - `[Values <IMicrosoftGraphJson>]`: Json
+                    - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                   - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                   - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                   - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -12291,7 +12644,7 @@ Read-only.
                     - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                    - `[Values <IMicrosoftGraphJson>]`: Json
+                    - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                   - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                   - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                   - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -12394,6 +12747,14 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[AssignedRoles <IMicrosoftGraphEngagementRole- `[]`>]`: Represents the collection of Viva Engage roles assigned to a user.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[DisplayName <String>]`: The name of the role.
+        - `[Members <IMicrosoftGraphEngagementRoleMember- `[]`>]`: Users who have been assigned this role.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[User <IMicrosoftGraphUser>]`: user
       - `[LearningCourseActivities <IMicrosoftGraphLearningCourseActivity- `[]`>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -12735,27 +13096,6 @@ Active labels should be hidden or disabled in user interfaces.
             - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
             - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
         - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-          - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-          - `[ApplicableTo <String>]`: sensitivityLabelTarget
-          - `[ApplicationMode <String>]`: applicationMode
-          - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
-            - `[Id <String>]`: 
-            - `[Name <String>]`: 
-          - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
-            - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Message <String>]`: 
-            - `[SensitiveTypeIds <String- `[]`>]`: 
-          - `[Description <String>]`: 
-          - `[DisplayName <String>]`: 
-          - `[IsDefault <Boolean?>]`: 
-          - `[IsEndpointProtectionEnabled <Boolean?>]`: 
-          - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
-            - `[Name <String>]`: 
-          - `[Name <String>]`: 
-          - `[Priority <Int32?>]`: 
-          - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-          - `[ToolTip <String>]`: 
         - `[SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]`: sensitivityPolicySettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -13035,7 +13375,7 @@ SharePoint servers might decide to use this hint to preload the script for corre
               - `[Value <String>]`: Value of the meta data.
             - `[CustomMetadata <IMicrosoftGraphMetaDataKeyValuePair- `[]`>]`: A key-value map where keys are string identifier and values are object of custom key-value pair.
               - `[Key <String>]`: Key of the metadata.
-              - `[Value <IMicrosoftGraphJson>]`: Json
+              - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
             - `[HtmlStrings <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are rich text with HTML format.
 SharePoint servers treat the values as HTML content and run services like safety checks, search index and link fixup on them.
             - `[ImageSources <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are image sources.
@@ -13280,7 +13620,7 @@ Returned only on $select.
 Read-only. 
 Supports $filter (eq where true only).
     - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit.
-Default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
     - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
@@ -13505,7 +13845,7 @@ Returned by default.
 Supports $filter (eq, ne, not).
       - `[IsFavorite <Boolean?>]`: Indicates whether the user marked the group as favorite.
       - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
       - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
@@ -14068,21 +14408,25 @@ Required.
           - `[IsCrossLocationShiftsEnabled <Boolean?>]`: Indicates whether the cross-location marketplace feature is enabled for this schedule.
           - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
             - `[AssignedTo <String>]`: scheduleChangeRequestActor
-            - `[ManagerActionMessage <String>]`: 
-            - `[SenderMessage <String>]`: 
+            - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+            - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
             - `[State <String>]`: scheduleChangeState
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-            - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-            - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+            - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+            - `[RecipientUserId <String>]`: The recipient's user ID.
+            - `[SenderShiftId <String>]`: The sender's shift ID.
           - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
           - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest- `[]`>]`: The open shift requests in the schedule.
             - `[AssignedTo <String>]`: scheduleChangeRequestActor
-            - `[ManagerActionMessage <String>]`: 
-            - `[SenderMessage <String>]`: 
+            - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+            - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
             - `[State <String>]`: scheduleChangeState
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -14185,18 +14529,20 @@ Read-only.
 Permissions that aren't in this collection are disabled.
           - `[StartDayOfWeek <String>]`: dayOfWeek
           - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
-            - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-            - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-            - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+            - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+            - `[RecipientUserId <String>]`: The recipient's user ID.
+            - `[SenderShiftId <String>]`: The sender's shift ID.
             - `[AssignedTo <String>]`: scheduleChangeRequestActor
-            - `[ManagerActionMessage <String>]`: 
-            - `[SenderMessage <String>]`: 
+            - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+            - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
             - `[State <String>]`: scheduleChangeState
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
+            - `[RecipientShiftId <String>]`: The recipient's Shift ID
           - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
           - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -14246,17 +14592,17 @@ Required.
 Required.
           - `[TimeOffRequests <IMicrosoftGraphTimeOffRequest- `[]`>]`: The time off requests in the schedule.
             - `[AssignedTo <String>]`: scheduleChangeRequestActor
-            - `[ManagerActionMessage <String>]`: 
-            - `[SenderMessage <String>]`: 
+            - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+            - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
             - `[State <String>]`: scheduleChangeState
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-            - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+            - `[EndDateTime <DateTime?>]`: The date and time the time off ends in ISO 8601 format and in UTC time.
+            - `[StartDateTime <DateTime?>]`: The date and time the time off starts in ISO 8601 format and in UTC time.
             - `[TimeOffReasonId <String>]`: The reason for the time off.
           - `[TimeOffRequestsEnabled <Boolean?>]`: Indicates whether time off requests are enabled for the schedule.
           - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
@@ -15129,7 +15475,7 @@ It is an Optional field
       - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -15320,29 +15666,42 @@ Read-only.
         - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: 
+      - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: The AI insights generated for an online meeting.
+Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
-          - `[OwnerDisplayName <String>]`: 
-          - `[Text <String>]`: 
-          - `[Title <String>]`: 
-        - `[CallId <String>]`: 
-        - `[ContentCorrelationId <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[EndDateTime <DateTime?>]`: 
-        - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
-          - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
-            - `[Text <String>]`: 
-            - `[Title <String>]`: 
-          - `[Text <String>]`: 
-          - `[Title <String>]`: 
+        - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: The collection of AI-generated action items.
+Read-only.
+          - `[OwnerDisplayName <String>]`: The display name of the owner of the action item.
+          - `[Text <String>]`: The text content of the action item.
+          - `[Title <String>]`: The title of the action item.
+        - `[CallId <String>]`: The ID for the online meeting call for which the callAiInsight was generated.
+Read-only.
+        - `[ContentCorrelationId <String>]`: The unique ID that correlates the transcript from which the insights were generated.
+Read-only.
+        - `[CreatedDateTime <DateTime?>]`: Date and time at which the corresponding transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        - `[EndDateTime <DateTime?>]`: Date and time at which the corresponding transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: The collection of AI-generated meeting notes.
+Read-only.
+          - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: A collection of subpoints of the meeting note.
+            - `[Text <String>]`: The text of the meeting note subpoint.
+            - `[Title <String>]`: The title of the meeting note subpoint.
+          - `[Text <String>]`: The text of the meeting note.
+          - `[Title <String>]`: The title of the meeting note.
         - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
-            - `[EventDateTime <DateTime?>]`: 
+          - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: The collection of AI-generated mention events.
+            - `[EventDateTime <DateTime?>]`: The date and time of the mention event.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[TranscriptUtterance <String>]`: 
+            - `[TranscriptUtterance <String>]`: The utterance in the online meeting transcript that contains the mention event.
       - `[AlternativeRecording <Byte- `[]`>]`: The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
       - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Teams live event.
@@ -16743,7 +17102,7 @@ Users can control this setting in Office Delve.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[InPlaceArchiveMailboxId <String>]`: The unique identifier for the user's in-place archive mailbox.
+        - `[InPlaceArchiveMailboxId <String>]`: 
         - `[PrimaryMailboxId <String>]`: The unique identifier for the user's primary mailbox.
       - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -17107,7 +17466,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[PreferredTimezone <String>]`: The registrant's time zone details.
               - `[RegistrantVideoOnDemandWebUrl <String>]`: 
               - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
                 - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
@@ -17123,7 +17482,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
               - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
             - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-            - `[VideoOnDemandWebUrl <String>]`: 
+            - `[VideoOnDemandWebUrl <String>]`: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
         - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
         - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -17304,8 +17663,8 @@ Read-only.
       - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-        - `[Key <String>]`: Key.
-        - `[Value <String>]`: Value.
+        - `[Key <String>]`: Contains the name of the field that a value is associated with.
+        - `[Value <String>]`: Contains the corresponding value for the specified key.
       - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -17478,8 +17837,8 @@ Read-only.
         - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-          - `[Key <String>]`: Key.
-          - `[Value <String>]`: Value.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -17634,7 +17993,7 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
     - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-    - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+    - `[ContentInfo <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -17685,7 +18044,7 @@ For example - a high contrast image
       - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-      - `[Content <IMicrosoftGraphJson>]`: Json
+      - `[Content <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
       - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
       - `[DisplayText <String>]`: Required.
@@ -17822,8 +18181,8 @@ This lets services like Microsoft 365 call the application in the context of a d
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-        - `[Key <String>]`: Key.
-        - `[Value <String>]`: Value.
+        - `[Key <String>]`: Contains the name of the field that a value is associated with.
+        - `[Value <String>]`: Contains the corresponding value for the specified key.
       - `[Type <String>]`: The unique name for the functionality exposed by the app.
     - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -17852,6 +18211,12 @@ Always null when the object hasn't been deleted.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: 
           - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
+          - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Operator <String>]`: customSecurityAttributeComparisonOperator
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
@@ -17860,6 +18225,7 @@ For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
           - `[State <String>]`: appManagementRestrictionState
         - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: 
+          - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -17874,11 +18240,6 @@ For existing applications, the enforcement date can be retroactively applied.
             - `[AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
-                - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
-                  - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-                  - `[Operator <String>]`: customSecurityAttributeComparisonOperator
               - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
               - `[State <String>]`: appManagementRestrictionState
@@ -17893,6 +18254,7 @@ For existing applications, the enforcement date can be retroactively applied.
               - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
               - `[State <String>]`: appManagementRestrictionState
+            - `[UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
     - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -18292,6 +18654,10 @@ May not begin with ..
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[ApprovedClientApps <IMicrosoftGraphApprovedClientApp- `[]`>]`: 
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[DisplayName <String>]`: 
       - `[IsRemoteDesktopProtocolEnabled <Boolean?>]`: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
       - `[TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup- `[]`>]`: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -18842,7 +19208,7 @@ Supports $filter (eq, ne, not).
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
         - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
         - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
@@ -18973,7 +19339,7 @@ For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
       - `[PhoneType <String>]`: authenticationPhoneType
       - `[SmsSignInState <String>]`: authenticationMethodSignInState
-    - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+    - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: Represents a platform credential instance registered to a user on Mac OS.
       - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
@@ -18986,6 +19352,44 @@ Read-only.
       - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
       - `[KeyStrength <String>]`: authenticationMethodKeyStrength
       - `[Platform <String>]`: authenticationMethodPlatform
+    - `[QrCodePinMethod <IMicrosoftGraphQrCodePinAuthenticationMethod>]`: qrCodePinAuthenticationMethod
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Pin <IMicrosoftGraphQrPin>]`: qrPin
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Code <String>]`: PIN of the user.
+It is between 8-20 digits as configured in the QR code authentication method policy.
+The code is temporary when issued by admin but permanent after the user changes it at the first login attempt.
+This PIN can be reset by the admin but not the user.
+        - `[CreatedDateTime <DateTime?>]`: The date and time when the PIN was created.
+        - `[ForceChangePinNextSignIn <Boolean?>]`: Defaults to true for a temporary PIN.
+        - `[UpdatedDateTime <DateTime?>]`: The date and time when the PIN was updated.
+      - `[StandardQrCode <IMicrosoftGraphQrCode>]`: qrCode
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[CreatedDateTime <DateTime?>]`: The date and time when the QR code was created.
+        - `[ExpireDateTime <DateTime?>]`: Temporary QR code lifetime is between 1-12 hours.
+Standard QR code lifetime is in days and max.
+is 395 days (13 months) and default value is 365 days (12 months).
+        - `[Image <IMicrosoftGraphQrCodeImageDetails>]`: qrCodeImageDetails
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[BinaryValue <Byte- `[]`>]`: The binary representation of the QR code.
+          - `[ErrorCorrectionLevel <String>]`: errorCorrectionLevel
+          - `[RawContent <Byte- `[]`>]`: Base64-encoded raw content of the QR code.
+          - `[Version <Int32?>]`: Version to create QR code image.
+        - `[LastUsedDateTime <DateTime?>]`: The date and time when the QR code was last used for a successful sign-in.
+        - `[StartDateTime <DateTime?>]`: The date and time when the QR code becomes active and available to use.
+      - `[TemporaryQrCode <IMicrosoftGraphQrCode>]`: qrCode
     - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[PerUserMfaState <String>]`: perUserMfaState
@@ -19584,6 +19988,7 @@ This property is read-only.
         - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
         - `[UserIdentityType <String>]`: teamworkUserIdentityType
+        - `[UserPrincipalName <String>]`: User principal name (UPN) of the user.
     - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -19810,6 +20215,29 @@ The default value is false.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsSipEnabled <Boolean?>]`: Indicates whether the user has a SIP-enabled client registered for them.
 Read-only.
+  - `[Communications <IMicrosoftGraphUserCloudCommunication>]`: userCloudCommunication
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[CallSettings <IMicrosoftGraphCallSettings>]`: callSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Delegates <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegate settings.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[AllowedActions <IMicrosoftGraphDelegateAllowedActions>]`: delegateAllowedActions
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[JoinActiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows participation in active calls.
+          - `[MakeCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be made on their behalf.
+          - `[ManageCallAndDelegateSettings <Boolean?>]`: Indicates whether the delegator or delegate allows the management of call and delegation settings.
+          - `[PickUpHeldCalls <Boolean?>]`: Indicates whether the delegator or delegate allows held calls to be picked up.
+          - `[ReceiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be received on their behalf.
+        - `[CreatedDateTime <DateTime?>]`: Date and time when the delegator or delegate entry was created.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[IsActive <Boolean?>]`: Indicates whether the delegator or delegate relationship is currently active.
+      - `[Delegators <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegator settings.
   - `[CompanyName <String>]`: The name of the company the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -19942,6 +20370,103 @@ Through self-service sign-up by an internal user using email verification (Email
 Through self-service sign-up by an external user signing up through a link that is part of a user flow (SelfServiceSignUp). 
 Read-only.Supports $filter (eq, ne, not, and in).
   - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeValue>]`: customSecurityAttributeValue
+  - `[DataSecurityAndGovernance <IMicrosoftGraphUserDataSecurityAndGovernance>]`: userDataSecurityAndGovernance
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[ActionSource <String>]`: labelActionSource
+      - `[ApplicableTo <String>]`: sensitivityLabelTarget
+      - `[ApplicationMode <String>]`: applicationMode
+      - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
+        - `[Id <String>]`: The unique identifier of the label policy.
+        - `[Name <String>]`: The display name of the label policy.
+      - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Message <String>]`: The message displayed to the user when the label is applied automatically.
+        - `[SensitiveTypeIds <String- `[]`>]`: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
+      - `[AutoTooltip <String>]`: 
+      - `[Color <String>]`: 
+      - `[Description <String>]`: 
+      - `[DisplayName <String>]`: 
+      - `[IsDefault <Boolean?>]`: 
+      - `[IsEnabled <Boolean?>]`: 
+      - `[IsEndpointProtectionEnabled <Boolean?>]`: 
+      - `[IsScopedToUser <Boolean?>]`: 
+      - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
+        - `[Name <String>]`: The name of the action (for example, 'Encrypt', 'AddHeader').
+      - `[Locale <String>]`: 
+      - `[Name <String>]`: 
+      - `[Priority <Int32?>]`: 
+      - `[Rights <IMicrosoftGraphUsageRightsIncluded>]`: usageRightsIncluded
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[OwnerEmail <String>]`: The email of owner label rights.
+        - `[UserEmail <String>]`: The email of user with label user rights.
+        - `[Value <String>]`: usageRights
+      - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+      - `[ToolTip <String>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Activities <IMicrosoftGraphActivitiesContainer>]`: activitiesContainer
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[ContentActivities <IMicrosoftGraphContentActivity- `[]`>]`: Collection of activity logs related to content processing.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[ContentMetadata <IMicrosoftGraphProcessContentRequest>]`: processContentRequest
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ActivityMetadata <IMicrosoftGraphActivityMetadata>]`: activityMetadata
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Activity <String>]`: userActivityType
+          - `[ContentEntries <IMicrosoftGraphProcessContentMetadataBase- `[]`>]`: A collection of content entries to be processed.
+Each entry contains the content itself and its metadata.
+Use conversation metadata for content like prompts and responses and file metadata for files.
+Required.
+            - `[Content <IMicrosoftGraphContentBase>]`: contentBase
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[CorrelationId <String>]`: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
+            - `[CreatedDateTime <DateTime?>]`: Required.
+Timestamp indicating when the original content was created (for example, file creation time, message sent time).
+            - `[Identifier <String>]`: Required.
+A unique identifier for this specific content entry within the context of the calling application or enforcement plane (for example, message ID, file path/URL).
+            - `[IsTruncated <Boolean?>]`: Required.
+Indicates if the provided content has been truncated from its original form (for example, due to size limits).
+            - `[Length <Int64?>]`: The length of the original content in bytes.
+            - `[ModifiedDateTime <DateTime?>]`: Required.
+Timestamp indicating when the original content was last modified.
+For ephemeral content like messages, this might be the same as createdDateTime.
+            - `[Name <String>]`: Required.
+A descriptive name for the content (for example, file name, web page title, 'Chat Message').
+            - `[SequenceNumber <Int64?>]`: A sequence number indicating the order in which content was generated or should be processed, required when correlationId is used.
+          - `[DeviceMetadata <IMicrosoftGraphDeviceMetadata>]`: deviceMetadata
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[DeviceType <String>]`: Optional.
+The general type of the device (for example, 'Managed', 'Unmanaged').
+            - `[IPAddress <String>]`: The Internet Protocol (IP) address of the device.
+            - `[OperatingSystemSpecifications <IMicrosoftGraphOperatingSystemSpecifications>]`: operatingSystemSpecifications
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[OperatingSystemPlatform <String>]`: The platform of the operating system (for example, 'Windows').
+              - `[OperatingSystemVersion <String>]`: The version string of the operating system.
+          - `[IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]`: integratedApplicationMetadata
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Name <String>]`: The name of the integrated application.
+            - `[Version <String>]`: The version number of the integrated application.
+          - `[ProtectedAppMetadata <IMicrosoftGraphProtectedApplicationMetadata>]`: protectedApplicationMetadata
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Name <String>]`: The name of the integrated application.
+            - `[Version <String>]`: The version number of the integrated application.
+            - `[ApplicationLocation <IMicrosoftGraphPolicyLocation>]`: policyLocation
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Value <String>]`: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
+        - `[ScopeIdentifier <String>]`: The scope identified from computed protection scopes.
+        - `[UserId <String>]`: ID of the user.
+    - `[ProtectionScopes <IMicrosoftGraphUserProtectionScopeContainer>]`: userProtectionScopeContainer
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
   - `[Department <String>]`: The name of the department where the user works.
 Maximum length is 64 characters.Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
   - `[DeviceEnrollmentConfigurations <IMicrosoftGraphDeviceEnrollmentConfiguration- `[]`>]`: Get enrollment configurations targeted to the user
@@ -20523,6 +21048,7 @@ Required when includeResourceData is true.
           - `[ExpirationDateTime <DateTime?>]`: Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
+Any value under 45 minutes after the time of the request is automatically set to 45 minutes after the request time.
 For the maximum supported subscription length of time, see Subscription lifetime.
           - `[IncludeResourceData <Boolean?>]`: Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
@@ -20765,7 +21291,7 @@ Read-only.
             - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-            - `[Value <IMicrosoftGraphJson>]`: Json
+            - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
             - `[Visible <Boolean?>]`: Indicates whether the object is visible.
             - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -20816,11 +21342,11 @@ Read-only.
 Read-only.
                         - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                       - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                    - `[MajorUnit <IMicrosoftGraphJson>]`: Json
-                    - `[Maximum <IMicrosoftGraphJson>]`: Json
-                    - `[Minimum <IMicrosoftGraphJson>]`: Json
+                    - `[MajorUnit <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
+                    - `[Maximum <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
+                    - `[Minimum <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                     - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                    - `[MinorUnit <IMicrosoftGraphJson>]`: Json
+                    - `[MinorUnit <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                     - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
                       - `[Id <String>]`: The unique identifier for an entity.
@@ -20899,7 +21425,7 @@ Read-only.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                       - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                    - `[Value <IMicrosoftGraphJson>]`: Json
+                    - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                 - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
@@ -20969,12 +21495,12 @@ Read-only.
                         - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                       - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                      - `[Values <IMicrosoftGraphJson>]`: Json
+                      - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                   - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                   - `[Name <String>]`: The name of the table column.
-                  - `[Values <IMicrosoftGraphJson>]`: Json
+                  - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                 - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                 - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                 - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -20989,7 +21515,7 @@ Read-only.
                   - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                  - `[Values <IMicrosoftGraphJson>]`: Json
+                  - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                 - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                 - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                 - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -21356,6 +21882,14 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[AssignedRoles <IMicrosoftGraphEngagementRole- `[]`>]`: Represents the collection of Viva Engage roles assigned to a user.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[DisplayName <String>]`: The name of the role.
+      - `[Members <IMicrosoftGraphEngagementRoleMember- `[]`>]`: Users who have been assigned this role.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[User <IMicrosoftGraphUser>]`: user
     - `[LearningCourseActivities <IMicrosoftGraphLearningCourseActivity- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -21500,27 +22034,6 @@ Active labels should be hidden or disabled in user interfaces.
           - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
           - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
       - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-        - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-        - `[ApplicableTo <String>]`: sensitivityLabelTarget
-        - `[ApplicationMode <String>]`: applicationMode
-        - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
-          - `[Id <String>]`: 
-          - `[Name <String>]`: 
-        - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Message <String>]`: 
-          - `[SensitiveTypeIds <String- `[]`>]`: 
-        - `[Description <String>]`: 
-        - `[DisplayName <String>]`: 
-        - `[IsDefault <Boolean?>]`: 
-        - `[IsEndpointProtectionEnabled <Boolean?>]`: 
-        - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
-          - `[Name <String>]`: 
-        - `[Name <String>]`: 
-        - `[Priority <Int32?>]`: 
-        - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-        - `[ToolTip <String>]`: 
       - `[SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]`: sensitivityPolicySettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -21771,7 +22284,7 @@ SharePoint servers might decide to use this hint to preload the script for corre
             - `[Value <String>]`: Value of the meta data.
           - `[CustomMetadata <IMicrosoftGraphMetaDataKeyValuePair- `[]`>]`: A key-value map where keys are string identifier and values are object of custom key-value pair.
             - `[Key <String>]`: Key of the metadata.
-            - `[Value <IMicrosoftGraphJson>]`: Json
+            - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
           - `[HtmlStrings <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are rich text with HTML format.
 SharePoint servers treat the values as HTML content and run services like safety checks, search index and link fixup on them.
           - `[ImageSources <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are image sources.
@@ -22016,7 +22529,7 @@ Returned only on $select.
 Read-only. 
 Supports $filter (eq where true only).
   - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit.
-Default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
   - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
@@ -22241,7 +22754,7 @@ Returned by default.
 Supports $filter (eq, ne, not).
     - `[IsFavorite <Boolean?>]`: Indicates whether the user marked the group as favorite.
     - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
     - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
@@ -22804,21 +23317,25 @@ Required.
         - `[IsCrossLocationShiftsEnabled <Boolean?>]`: Indicates whether the cross-location marketplace feature is enabled for this schedule.
         - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
-          - `[ManagerActionMessage <String>]`: 
-          - `[SenderMessage <String>]`: 
+          - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+          - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
           - `[State <String>]`: scheduleChangeState
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-          - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-          - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+          - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+          - `[RecipientUserId <String>]`: The recipient's user ID.
+          - `[SenderShiftId <String>]`: The sender's shift ID.
         - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
         - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest- `[]`>]`: The open shift requests in the schedule.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
-          - `[ManagerActionMessage <String>]`: 
-          - `[SenderMessage <String>]`: 
+          - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+          - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
           - `[State <String>]`: scheduleChangeState
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -22921,18 +23438,20 @@ Read-only.
 Permissions that aren't in this collection are disabled.
         - `[StartDayOfWeek <String>]`: dayOfWeek
         - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
-          - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-          - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-          - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+          - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+          - `[RecipientUserId <String>]`: The recipient's user ID.
+          - `[SenderShiftId <String>]`: The sender's shift ID.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
-          - `[ManagerActionMessage <String>]`: 
-          - `[SenderMessage <String>]`: 
+          - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+          - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
           - `[State <String>]`: scheduleChangeState
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
+          - `[RecipientShiftId <String>]`: The recipient's Shift ID
         - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
         - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -22982,17 +23501,17 @@ Required.
 Required.
         - `[TimeOffRequests <IMicrosoftGraphTimeOffRequest- `[]`>]`: The time off requests in the schedule.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
-          - `[ManagerActionMessage <String>]`: 
-          - `[SenderMessage <String>]`: 
+          - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+          - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
           - `[State <String>]`: scheduleChangeState
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          - `[EndDateTime <DateTime?>]`: The date and time the time off ends in ISO 8601 format and in UTC time.
+          - `[StartDateTime <DateTime?>]`: The date and time the time off starts in ISO 8601 format and in UTC time.
           - `[TimeOffReasonId <String>]`: The reason for the time off.
         - `[TimeOffRequestsEnabled <Boolean?>]`: Indicates whether time off requests are enabled for the schedule.
         - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
@@ -23865,7 +24384,7 @@ It is an Optional field
     - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -24056,29 +24575,42 @@ Read-only.
       - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: 
+    - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: The AI insights generated for an online meeting.
+Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
-        - `[OwnerDisplayName <String>]`: 
-        - `[Text <String>]`: 
-        - `[Title <String>]`: 
-      - `[CallId <String>]`: 
-      - `[ContentCorrelationId <String>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[EndDateTime <DateTime?>]`: 
-      - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
-        - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
-          - `[Text <String>]`: 
-          - `[Title <String>]`: 
-        - `[Text <String>]`: 
-        - `[Title <String>]`: 
+      - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: The collection of AI-generated action items.
+Read-only.
+        - `[OwnerDisplayName <String>]`: The display name of the owner of the action item.
+        - `[Text <String>]`: The text content of the action item.
+        - `[Title <String>]`: The title of the action item.
+      - `[CallId <String>]`: The ID for the online meeting call for which the callAiInsight was generated.
+Read-only.
+      - `[ContentCorrelationId <String>]`: The unique ID that correlates the transcript from which the insights were generated.
+Read-only.
+      - `[CreatedDateTime <DateTime?>]`: Date and time at which the corresponding transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      - `[EndDateTime <DateTime?>]`: Date and time at which the corresponding transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: The collection of AI-generated meeting notes.
+Read-only.
+        - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: A collection of subpoints of the meeting note.
+          - `[Text <String>]`: The text of the meeting note subpoint.
+          - `[Title <String>]`: The title of the meeting note subpoint.
+        - `[Text <String>]`: The text of the meeting note.
+        - `[Title <String>]`: The title of the meeting note.
       - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
-          - `[EventDateTime <DateTime?>]`: 
+        - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: The collection of AI-generated mention events.
+          - `[EventDateTime <DateTime?>]`: The date and time of the mention event.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[TranscriptUtterance <String>]`: 
+          - `[TranscriptUtterance <String>]`: The utterance in the online meeting transcript that contains the mention event.
     - `[AlternativeRecording <Byte- `[]`>]`: The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
     - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Teams live event.
@@ -25479,7 +26011,7 @@ Users can control this setting in Office Delve.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[InPlaceArchiveMailboxId <String>]`: The unique identifier for the user's in-place archive mailbox.
+      - `[InPlaceArchiveMailboxId <String>]`: 
       - `[PrimaryMailboxId <String>]`: The unique identifier for the user's primary mailbox.
     - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -25843,7 +26375,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[PreferredTimezone <String>]`: The registrant's time zone details.
             - `[RegistrantVideoOnDemandWebUrl <String>]`: 
             - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
               - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
@@ -25859,7 +26391,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
             - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
           - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-          - `[VideoOnDemandWebUrl <String>]`: 
+          - `[VideoOnDemandWebUrl <String>]`: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
       - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
       - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -25943,7 +26475,7 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
       - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-      - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+      - `[ContentInfo <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -25994,7 +26526,7 @@ For example - a high contrast image
         - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-        - `[Content <IMicrosoftGraphJson>]`: Json
+        - `[Content <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
         - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         - `[DisplayText <String>]`: Required.
@@ -26122,8 +26654,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Key.
-          - `[Value <String>]`: Value.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -26152,6 +26684,12 @@ Always null when the object hasn't been deleted.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: 
             - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
+            - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+                - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                - `[Operator <String>]`: customSecurityAttributeComparisonOperator
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
@@ -26160,6 +26698,7 @@ For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
             - `[State <String>]`: appManagementRestrictionState
           - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: 
+            - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -26174,11 +26713,6 @@ For existing applications, the enforcement date can be retroactively applied.
               - `[AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
-                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
-                    - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-                    - `[Operator <String>]`: customSecurityAttributeComparisonOperator
                 - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                 - `[State <String>]`: appManagementRestrictionState
@@ -26193,6 +26727,7 @@ For existing applications, the enforcement date can be retroactively applied.
                 - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                 - `[State <String>]`: appManagementRestrictionState
+              - `[UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
       - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -26592,6 +27127,10 @@ May not begin with ..
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[ApprovedClientApps <IMicrosoftGraphApprovedClientApp- `[]`>]`: 
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[DisplayName <String>]`: 
         - `[IsRemoteDesktopProtocolEnabled <Boolean?>]`: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
         - `[TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup- `[]`>]`: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -27142,7 +27681,7 @@ Supports $filter (eq, ne, not).
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
           - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
           - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
@@ -27273,7 +27812,7 @@ For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
         - `[PhoneType <String>]`: authenticationPhoneType
         - `[SmsSignInState <String>]`: authenticationMethodSignInState
-      - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+      - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: Represents a platform credential instance registered to a user on Mac OS.
         - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
@@ -27286,6 +27825,44 @@ Read-only.
         - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
         - `[KeyStrength <String>]`: authenticationMethodKeyStrength
         - `[Platform <String>]`: authenticationMethodPlatform
+      - `[QrCodePinMethod <IMicrosoftGraphQrCodePinAuthenticationMethod>]`: qrCodePinAuthenticationMethod
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Pin <IMicrosoftGraphQrPin>]`: qrPin
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Code <String>]`: PIN of the user.
+It is between 8-20 digits as configured in the QR code authentication method policy.
+The code is temporary when issued by admin but permanent after the user changes it at the first login attempt.
+This PIN can be reset by the admin but not the user.
+          - `[CreatedDateTime <DateTime?>]`: The date and time when the PIN was created.
+          - `[ForceChangePinNextSignIn <Boolean?>]`: Defaults to true for a temporary PIN.
+          - `[UpdatedDateTime <DateTime?>]`: The date and time when the PIN was updated.
+        - `[StandardQrCode <IMicrosoftGraphQrCode>]`: qrCode
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[CreatedDateTime <DateTime?>]`: The date and time when the QR code was created.
+          - `[ExpireDateTime <DateTime?>]`: Temporary QR code lifetime is between 1-12 hours.
+Standard QR code lifetime is in days and max.
+is 395 days (13 months) and default value is 365 days (12 months).
+          - `[Image <IMicrosoftGraphQrCodeImageDetails>]`: qrCodeImageDetails
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[BinaryValue <Byte- `[]`>]`: The binary representation of the QR code.
+            - `[ErrorCorrectionLevel <String>]`: errorCorrectionLevel
+            - `[RawContent <Byte- `[]`>]`: Base64-encoded raw content of the QR code.
+            - `[Version <Int32?>]`: Version to create QR code image.
+          - `[LastUsedDateTime <DateTime?>]`: The date and time when the QR code was last used for a successful sign-in.
+          - `[StartDateTime <DateTime?>]`: The date and time when the QR code becomes active and available to use.
+        - `[TemporaryQrCode <IMicrosoftGraphQrCode>]`: qrCode
       - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[PerUserMfaState <String>]`: perUserMfaState
@@ -27884,6 +28461,7 @@ This property is read-only.
           - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
           - `[UserIdentityType <String>]`: teamworkUserIdentityType
+          - `[UserPrincipalName <String>]`: User principal name (UPN) of the user.
       - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -28110,6 +28688,29 @@ The default value is false.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[IsSipEnabled <Boolean?>]`: Indicates whether the user has a SIP-enabled client registered for them.
 Read-only.
+    - `[Communications <IMicrosoftGraphUserCloudCommunication>]`: userCloudCommunication
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CallSettings <IMicrosoftGraphCallSettings>]`: callSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Delegates <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegate settings.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[AllowedActions <IMicrosoftGraphDelegateAllowedActions>]`: delegateAllowedActions
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[JoinActiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows participation in active calls.
+            - `[MakeCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be made on their behalf.
+            - `[ManageCallAndDelegateSettings <Boolean?>]`: Indicates whether the delegator or delegate allows the management of call and delegation settings.
+            - `[PickUpHeldCalls <Boolean?>]`: Indicates whether the delegator or delegate allows held calls to be picked up.
+            - `[ReceiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be received on their behalf.
+          - `[CreatedDateTime <DateTime?>]`: Date and time when the delegator or delegate entry was created.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[IsActive <Boolean?>]`: Indicates whether the delegator or delegate relationship is currently active.
+        - `[Delegators <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegator settings.
     - `[CompanyName <String>]`: The name of the company the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -28242,6 +28843,103 @@ Through self-service sign-up by an internal user using email verification (Email
 Through self-service sign-up by an external user signing up through a link that is part of a user flow (SelfServiceSignUp). 
 Read-only.Supports $filter (eq, ne, not, and in).
     - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeValue>]`: customSecurityAttributeValue
+    - `[DataSecurityAndGovernance <IMicrosoftGraphUserDataSecurityAndGovernance>]`: userDataSecurityAndGovernance
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[ActionSource <String>]`: labelActionSource
+        - `[ApplicableTo <String>]`: sensitivityLabelTarget
+        - `[ApplicationMode <String>]`: applicationMode
+        - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
+          - `[Id <String>]`: The unique identifier of the label policy.
+          - `[Name <String>]`: The display name of the label policy.
+        - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Message <String>]`: The message displayed to the user when the label is applied automatically.
+          - `[SensitiveTypeIds <String- `[]`>]`: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
+        - `[AutoTooltip <String>]`: 
+        - `[Color <String>]`: 
+        - `[Description <String>]`: 
+        - `[DisplayName <String>]`: 
+        - `[IsDefault <Boolean?>]`: 
+        - `[IsEnabled <Boolean?>]`: 
+        - `[IsEndpointProtectionEnabled <Boolean?>]`: 
+        - `[IsScopedToUser <Boolean?>]`: 
+        - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
+          - `[Name <String>]`: The name of the action (for example, 'Encrypt', 'AddHeader').
+        - `[Locale <String>]`: 
+        - `[Name <String>]`: 
+        - `[Priority <Int32?>]`: 
+        - `[Rights <IMicrosoftGraphUsageRightsIncluded>]`: usageRightsIncluded
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[OwnerEmail <String>]`: The email of owner label rights.
+          - `[UserEmail <String>]`: The email of user with label user rights.
+          - `[Value <String>]`: usageRights
+        - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+        - `[ToolTip <String>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Activities <IMicrosoftGraphActivitiesContainer>]`: activitiesContainer
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[ContentActivities <IMicrosoftGraphContentActivity- `[]`>]`: Collection of activity logs related to content processing.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[ContentMetadata <IMicrosoftGraphProcessContentRequest>]`: processContentRequest
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[ActivityMetadata <IMicrosoftGraphActivityMetadata>]`: activityMetadata
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Activity <String>]`: userActivityType
+            - `[ContentEntries <IMicrosoftGraphProcessContentMetadataBase- `[]`>]`: A collection of content entries to be processed.
+Each entry contains the content itself and its metadata.
+Use conversation metadata for content like prompts and responses and file metadata for files.
+Required.
+              - `[Content <IMicrosoftGraphContentBase>]`: contentBase
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[CorrelationId <String>]`: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
+              - `[CreatedDateTime <DateTime?>]`: Required.
+Timestamp indicating when the original content was created (for example, file creation time, message sent time).
+              - `[Identifier <String>]`: Required.
+A unique identifier for this specific content entry within the context of the calling application or enforcement plane (for example, message ID, file path/URL).
+              - `[IsTruncated <Boolean?>]`: Required.
+Indicates if the provided content has been truncated from its original form (for example, due to size limits).
+              - `[Length <Int64?>]`: The length of the original content in bytes.
+              - `[ModifiedDateTime <DateTime?>]`: Required.
+Timestamp indicating when the original content was last modified.
+For ephemeral content like messages, this might be the same as createdDateTime.
+              - `[Name <String>]`: Required.
+A descriptive name for the content (for example, file name, web page title, 'Chat Message').
+              - `[SequenceNumber <Int64?>]`: A sequence number indicating the order in which content was generated or should be processed, required when correlationId is used.
+            - `[DeviceMetadata <IMicrosoftGraphDeviceMetadata>]`: deviceMetadata
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[DeviceType <String>]`: Optional.
+The general type of the device (for example, 'Managed', 'Unmanaged').
+              - `[IPAddress <String>]`: The Internet Protocol (IP) address of the device.
+              - `[OperatingSystemSpecifications <IMicrosoftGraphOperatingSystemSpecifications>]`: operatingSystemSpecifications
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[OperatingSystemPlatform <String>]`: The platform of the operating system (for example, 'Windows').
+                - `[OperatingSystemVersion <String>]`: The version string of the operating system.
+            - `[IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]`: integratedApplicationMetadata
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Name <String>]`: The name of the integrated application.
+              - `[Version <String>]`: The version number of the integrated application.
+            - `[ProtectedAppMetadata <IMicrosoftGraphProtectedApplicationMetadata>]`: protectedApplicationMetadata
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Name <String>]`: The name of the integrated application.
+              - `[Version <String>]`: The version number of the integrated application.
+              - `[ApplicationLocation <IMicrosoftGraphPolicyLocation>]`: policyLocation
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Value <String>]`: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
+          - `[ScopeIdentifier <String>]`: The scope identified from computed protection scopes.
+          - `[UserId <String>]`: ID of the user.
+      - `[ProtectionScopes <IMicrosoftGraphUserProtectionScopeContainer>]`: userProtectionScopeContainer
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
     - `[Department <String>]`: The name of the department where the user works.
 Maximum length is 64 characters.Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
     - `[DeviceEnrollmentConfigurations <IMicrosoftGraphDeviceEnrollmentConfiguration- `[]`>]`: Get enrollment configurations targeted to the user
@@ -28306,6 +29004,14 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[AssignedRoles <IMicrosoftGraphEngagementRole- `[]`>]`: Represents the collection of Viva Engage roles assigned to a user.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[DisplayName <String>]`: The name of the role.
+        - `[Members <IMicrosoftGraphEngagementRoleMember- `[]`>]`: Users who have been assigned this role.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[User <IMicrosoftGraphUser>]`: user
       - `[LearningCourseActivities <IMicrosoftGraphLearningCourseActivity- `[]`>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -28871,6 +29577,7 @@ Required when includeResourceData is true.
                 - `[ExpirationDateTime <DateTime?>]`: Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
+Any value under 45 minutes after the time of the request is automatically set to 45 minutes after the request time.
 For the maximum supported subscription length of time, see Subscription lifetime.
                 - `[IncludeResourceData <Boolean?>]`: Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
@@ -29113,7 +29820,7 @@ Read-only.
                   - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-                  - `[Value <IMicrosoftGraphJson>]`: Json
+                  - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                   - `[Visible <Boolean?>]`: Indicates whether the object is visible.
                   - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -29164,11 +29871,11 @@ Read-only.
 Read-only.
                               - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                             - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                          - `[MajorUnit <IMicrosoftGraphJson>]`: Json
-                          - `[Maximum <IMicrosoftGraphJson>]`: Json
-                          - `[Minimum <IMicrosoftGraphJson>]`: Json
+                          - `[MajorUnit <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
+                          - `[Maximum <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
+                          - `[Minimum <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                           - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                          - `[MinorUnit <IMicrosoftGraphJson>]`: Json
+                          - `[MinorUnit <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                           - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
                             - `[Id <String>]`: The unique identifier for an entity.
@@ -29247,7 +29954,7 @@ Read-only.
                             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                             - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                          - `[Value <IMicrosoftGraphJson>]`: Json
+                          - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                       - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
                         - `[Id <String>]`: The unique identifier for an entity.
@@ -29317,12 +30024,12 @@ Read-only.
                               - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                             - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                            - `[Values <IMicrosoftGraphJson>]`: Json
+                            - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                         - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                         - `[Name <String>]`: The name of the table column.
-                        - `[Values <IMicrosoftGraphJson>]`: Json
+                        - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                       - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                       - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                       - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -29337,7 +30044,7 @@ Read-only.
                         - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                        - `[Values <IMicrosoftGraphJson>]`: Json
+                        - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                       - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                       - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                       - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -29676,27 +30383,6 @@ Active labels should be hidden or disabled in user interfaces.
             - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
             - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
         - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-          - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-          - `[ApplicableTo <String>]`: sensitivityLabelTarget
-          - `[ApplicationMode <String>]`: applicationMode
-          - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
-            - `[Id <String>]`: 
-            - `[Name <String>]`: 
-          - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
-            - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Message <String>]`: 
-            - `[SensitiveTypeIds <String- `[]`>]`: 
-          - `[Description <String>]`: 
-          - `[DisplayName <String>]`: 
-          - `[IsDefault <Boolean?>]`: 
-          - `[IsEndpointProtectionEnabled <Boolean?>]`: 
-          - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
-            - `[Name <String>]`: 
-          - `[Name <String>]`: 
-          - `[Priority <Int32?>]`: 
-          - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-          - `[ToolTip <String>]`: 
         - `[SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]`: sensitivityPolicySettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -30014,7 +30700,7 @@ SharePoint servers might decide to use this hint to preload the script for corre
               - `[Value <String>]`: Value of the meta data.
             - `[CustomMetadata <IMicrosoftGraphMetaDataKeyValuePair- `[]`>]`: A key-value map where keys are string identifier and values are object of custom key-value pair.
               - `[Key <String>]`: Key of the metadata.
-              - `[Value <IMicrosoftGraphJson>]`: Json
+              - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
             - `[HtmlStrings <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are rich text with HTML format.
 SharePoint servers treat the values as HTML content and run services like safety checks, search index and link fixup on them.
             - `[ImageSources <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are image sources.
@@ -30259,7 +30945,7 @@ Returned only on $select.
 Read-only. 
 Supports $filter (eq where true only).
     - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit.
-Default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
     - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
@@ -30484,7 +31170,7 @@ Returned by default.
 Supports $filter (eq, ne, not).
       - `[IsFavorite <Boolean?>]`: Indicates whether the user marked the group as favorite.
       - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
       - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
@@ -31047,21 +31733,25 @@ Required.
           - `[IsCrossLocationShiftsEnabled <Boolean?>]`: Indicates whether the cross-location marketplace feature is enabled for this schedule.
           - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
             - `[AssignedTo <String>]`: scheduleChangeRequestActor
-            - `[ManagerActionMessage <String>]`: 
-            - `[SenderMessage <String>]`: 
+            - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+            - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
             - `[State <String>]`: scheduleChangeState
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-            - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-            - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+            - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+            - `[RecipientUserId <String>]`: The recipient's user ID.
+            - `[SenderShiftId <String>]`: The sender's shift ID.
           - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
           - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest- `[]`>]`: The open shift requests in the schedule.
             - `[AssignedTo <String>]`: scheduleChangeRequestActor
-            - `[ManagerActionMessage <String>]`: 
-            - `[SenderMessage <String>]`: 
+            - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+            - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
             - `[State <String>]`: scheduleChangeState
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -31164,18 +31854,20 @@ Read-only.
 Permissions that aren't in this collection are disabled.
           - `[StartDayOfWeek <String>]`: dayOfWeek
           - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
-            - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-            - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-            - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+            - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+            - `[RecipientUserId <String>]`: The recipient's user ID.
+            - `[SenderShiftId <String>]`: The sender's shift ID.
             - `[AssignedTo <String>]`: scheduleChangeRequestActor
-            - `[ManagerActionMessage <String>]`: 
-            - `[SenderMessage <String>]`: 
+            - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+            - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
             - `[State <String>]`: scheduleChangeState
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
+            - `[RecipientShiftId <String>]`: The recipient's Shift ID
           - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
           - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -31225,17 +31917,17 @@ Required.
 Required.
           - `[TimeOffRequests <IMicrosoftGraphTimeOffRequest- `[]`>]`: The time off requests in the schedule.
             - `[AssignedTo <String>]`: scheduleChangeRequestActor
-            - `[ManagerActionMessage <String>]`: 
-            - `[SenderMessage <String>]`: 
+            - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+            - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
             - `[State <String>]`: scheduleChangeState
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-            - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+            - `[EndDateTime <DateTime?>]`: The date and time the time off ends in ISO 8601 format and in UTC time.
+            - `[StartDateTime <DateTime?>]`: The date and time the time off starts in ISO 8601 format and in UTC time.
             - `[TimeOffReasonId <String>]`: The reason for the time off.
           - `[TimeOffRequestsEnabled <Boolean?>]`: Indicates whether time off requests are enabled for the schedule.
           - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
@@ -32108,7 +32800,7 @@ It is an Optional field
       - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -32299,29 +32991,42 @@ Read-only.
         - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: 
+      - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: The AI insights generated for an online meeting.
+Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
-          - `[OwnerDisplayName <String>]`: 
-          - `[Text <String>]`: 
-          - `[Title <String>]`: 
-        - `[CallId <String>]`: 
-        - `[ContentCorrelationId <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[EndDateTime <DateTime?>]`: 
-        - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
-          - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
-            - `[Text <String>]`: 
-            - `[Title <String>]`: 
-          - `[Text <String>]`: 
-          - `[Title <String>]`: 
+        - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: The collection of AI-generated action items.
+Read-only.
+          - `[OwnerDisplayName <String>]`: The display name of the owner of the action item.
+          - `[Text <String>]`: The text content of the action item.
+          - `[Title <String>]`: The title of the action item.
+        - `[CallId <String>]`: The ID for the online meeting call for which the callAiInsight was generated.
+Read-only.
+        - `[ContentCorrelationId <String>]`: The unique ID that correlates the transcript from which the insights were generated.
+Read-only.
+        - `[CreatedDateTime <DateTime?>]`: Date and time at which the corresponding transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        - `[EndDateTime <DateTime?>]`: Date and time at which the corresponding transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: The collection of AI-generated meeting notes.
+Read-only.
+          - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: A collection of subpoints of the meeting note.
+            - `[Text <String>]`: The text of the meeting note subpoint.
+            - `[Title <String>]`: The title of the meeting note subpoint.
+          - `[Text <String>]`: The text of the meeting note.
+          - `[Title <String>]`: The title of the meeting note.
         - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
-            - `[EventDateTime <DateTime?>]`: 
+          - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: The collection of AI-generated mention events.
+            - `[EventDateTime <DateTime?>]`: The date and time of the mention event.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[TranscriptUtterance <String>]`: 
+            - `[TranscriptUtterance <String>]`: The utterance in the online meeting transcript that contains the mention event.
       - `[AlternativeRecording <Byte- `[]`>]`: The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
       - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Teams live event.
@@ -33722,7 +34427,7 @@ Users can control this setting in Office Delve.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[InPlaceArchiveMailboxId <String>]`: The unique identifier for the user's in-place archive mailbox.
+        - `[InPlaceArchiveMailboxId <String>]`: 
         - `[PrimaryMailboxId <String>]`: The unique identifier for the user's primary mailbox.
       - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -34086,7 +34791,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[PreferredTimezone <String>]`: The registrant's time zone details.
               - `[RegistrantVideoOnDemandWebUrl <String>]`: 
               - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
                 - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
@@ -34102,7 +34807,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
               - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
             - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-            - `[VideoOnDemandWebUrl <String>]`: 
+            - `[VideoOnDemandWebUrl <String>]`: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
         - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
         - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -34202,6 +34907,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+  - `[ContentFormats <String- `[]`>]`: Usage: contentFormats={contentFormats}
   - `[ContentModelId <String>]`: The unique identifier of contentModel
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ContentTypeId1 <String>]`: The unique identifier of contentType
@@ -34220,9 +34926,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[ItemActivityId <String>]`: The unique identifier of itemActivity
   - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
   - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
+  - `[LabelIds <String- `[]`>]`: Usage: labelIds={labelIds}
   - `[ListId <String>]`: The unique identifier of list
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[Locale <String>]`: Usage: locale='{locale}'
   - `[ModelName <String>]`: Usage: modelName='{modelName}'
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
@@ -34295,7 +35003,7 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
       - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-      - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+      - `[ContentInfo <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -34346,7 +35054,7 @@ For example - a high contrast image
         - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-        - `[Content <IMicrosoftGraphJson>]`: Json
+        - `[Content <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
         - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         - `[DisplayText <String>]`: Required.
@@ -34474,8 +35182,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Key.
-          - `[Value <String>]`: Value.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -34504,6 +35212,12 @@ Always null when the object hasn't been deleted.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: 
             - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
+            - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+                - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                - `[Operator <String>]`: customSecurityAttributeComparisonOperator
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
@@ -34512,6 +35226,7 @@ For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
             - `[State <String>]`: appManagementRestrictionState
           - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: 
+            - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -34526,11 +35241,6 @@ For existing applications, the enforcement date can be retroactively applied.
               - `[AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
-                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
-                    - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-                    - `[Operator <String>]`: customSecurityAttributeComparisonOperator
                 - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                 - `[State <String>]`: appManagementRestrictionState
@@ -34545,6 +35255,7 @@ For existing applications, the enforcement date can be retroactively applied.
                 - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                 - `[State <String>]`: appManagementRestrictionState
+              - `[UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
       - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -34944,6 +35655,10 @@ May not begin with ..
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[ApprovedClientApps <IMicrosoftGraphApprovedClientApp- `[]`>]`: 
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[DisplayName <String>]`: 
         - `[IsRemoteDesktopProtocolEnabled <Boolean?>]`: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
         - `[TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup- `[]`>]`: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -35494,7 +36209,7 @@ Supports $filter (eq, ne, not).
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
           - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
           - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
@@ -35625,7 +36340,7 @@ For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
         - `[PhoneType <String>]`: authenticationPhoneType
         - `[SmsSignInState <String>]`: authenticationMethodSignInState
-      - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+      - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: Represents a platform credential instance registered to a user on Mac OS.
         - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
@@ -35638,6 +36353,44 @@ Read-only.
         - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
         - `[KeyStrength <String>]`: authenticationMethodKeyStrength
         - `[Platform <String>]`: authenticationMethodPlatform
+      - `[QrCodePinMethod <IMicrosoftGraphQrCodePinAuthenticationMethod>]`: qrCodePinAuthenticationMethod
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Pin <IMicrosoftGraphQrPin>]`: qrPin
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Code <String>]`: PIN of the user.
+It is between 8-20 digits as configured in the QR code authentication method policy.
+The code is temporary when issued by admin but permanent after the user changes it at the first login attempt.
+This PIN can be reset by the admin but not the user.
+          - `[CreatedDateTime <DateTime?>]`: The date and time when the PIN was created.
+          - `[ForceChangePinNextSignIn <Boolean?>]`: Defaults to true for a temporary PIN.
+          - `[UpdatedDateTime <DateTime?>]`: The date and time when the PIN was updated.
+        - `[StandardQrCode <IMicrosoftGraphQrCode>]`: qrCode
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[CreatedDateTime <DateTime?>]`: The date and time when the QR code was created.
+          - `[ExpireDateTime <DateTime?>]`: Temporary QR code lifetime is between 1-12 hours.
+Standard QR code lifetime is in days and max.
+is 395 days (13 months) and default value is 365 days (12 months).
+          - `[Image <IMicrosoftGraphQrCodeImageDetails>]`: qrCodeImageDetails
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[BinaryValue <Byte- `[]`>]`: The binary representation of the QR code.
+            - `[ErrorCorrectionLevel <String>]`: errorCorrectionLevel
+            - `[RawContent <Byte- `[]`>]`: Base64-encoded raw content of the QR code.
+            - `[Version <Int32?>]`: Version to create QR code image.
+          - `[LastUsedDateTime <DateTime?>]`: The date and time when the QR code was last used for a successful sign-in.
+          - `[StartDateTime <DateTime?>]`: The date and time when the QR code becomes active and available to use.
+        - `[TemporaryQrCode <IMicrosoftGraphQrCode>]`: qrCode
       - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[PerUserMfaState <String>]`: perUserMfaState
@@ -36236,6 +36989,7 @@ This property is read-only.
           - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
           - `[UserIdentityType <String>]`: teamworkUserIdentityType
+          - `[UserPrincipalName <String>]`: User principal name (UPN) of the user.
       - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -36462,6 +37216,29 @@ The default value is false.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[IsSipEnabled <Boolean?>]`: Indicates whether the user has a SIP-enabled client registered for them.
 Read-only.
+    - `[Communications <IMicrosoftGraphUserCloudCommunication>]`: userCloudCommunication
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CallSettings <IMicrosoftGraphCallSettings>]`: callSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Delegates <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegate settings.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[AllowedActions <IMicrosoftGraphDelegateAllowedActions>]`: delegateAllowedActions
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[JoinActiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows participation in active calls.
+            - `[MakeCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be made on their behalf.
+            - `[ManageCallAndDelegateSettings <Boolean?>]`: Indicates whether the delegator or delegate allows the management of call and delegation settings.
+            - `[PickUpHeldCalls <Boolean?>]`: Indicates whether the delegator or delegate allows held calls to be picked up.
+            - `[ReceiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be received on their behalf.
+          - `[CreatedDateTime <DateTime?>]`: Date and time when the delegator or delegate entry was created.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[IsActive <Boolean?>]`: Indicates whether the delegator or delegate relationship is currently active.
+        - `[Delegators <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegator settings.
     - `[CompanyName <String>]`: The name of the company the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -36594,6 +37371,103 @@ Through self-service sign-up by an internal user using email verification (Email
 Through self-service sign-up by an external user signing up through a link that is part of a user flow (SelfServiceSignUp). 
 Read-only.Supports $filter (eq, ne, not, and in).
     - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeValue>]`: customSecurityAttributeValue
+    - `[DataSecurityAndGovernance <IMicrosoftGraphUserDataSecurityAndGovernance>]`: userDataSecurityAndGovernance
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[ActionSource <String>]`: labelActionSource
+        - `[ApplicableTo <String>]`: sensitivityLabelTarget
+        - `[ApplicationMode <String>]`: applicationMode
+        - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
+          - `[Id <String>]`: The unique identifier of the label policy.
+          - `[Name <String>]`: The display name of the label policy.
+        - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Message <String>]`: The message displayed to the user when the label is applied automatically.
+          - `[SensitiveTypeIds <String- `[]`>]`: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
+        - `[AutoTooltip <String>]`: 
+        - `[Color <String>]`: 
+        - `[Description <String>]`: 
+        - `[DisplayName <String>]`: 
+        - `[IsDefault <Boolean?>]`: 
+        - `[IsEnabled <Boolean?>]`: 
+        - `[IsEndpointProtectionEnabled <Boolean?>]`: 
+        - `[IsScopedToUser <Boolean?>]`: 
+        - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
+          - `[Name <String>]`: The name of the action (for example, 'Encrypt', 'AddHeader').
+        - `[Locale <String>]`: 
+        - `[Name <String>]`: 
+        - `[Priority <Int32?>]`: 
+        - `[Rights <IMicrosoftGraphUsageRightsIncluded>]`: usageRightsIncluded
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[OwnerEmail <String>]`: The email of owner label rights.
+          - `[UserEmail <String>]`: The email of user with label user rights.
+          - `[Value <String>]`: usageRights
+        - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+        - `[ToolTip <String>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Activities <IMicrosoftGraphActivitiesContainer>]`: activitiesContainer
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[ContentActivities <IMicrosoftGraphContentActivity- `[]`>]`: Collection of activity logs related to content processing.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[ContentMetadata <IMicrosoftGraphProcessContentRequest>]`: processContentRequest
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[ActivityMetadata <IMicrosoftGraphActivityMetadata>]`: activityMetadata
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Activity <String>]`: userActivityType
+            - `[ContentEntries <IMicrosoftGraphProcessContentMetadataBase- `[]`>]`: A collection of content entries to be processed.
+Each entry contains the content itself and its metadata.
+Use conversation metadata for content like prompts and responses and file metadata for files.
+Required.
+              - `[Content <IMicrosoftGraphContentBase>]`: contentBase
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[CorrelationId <String>]`: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
+              - `[CreatedDateTime <DateTime?>]`: Required.
+Timestamp indicating when the original content was created (for example, file creation time, message sent time).
+              - `[Identifier <String>]`: Required.
+A unique identifier for this specific content entry within the context of the calling application or enforcement plane (for example, message ID, file path/URL).
+              - `[IsTruncated <Boolean?>]`: Required.
+Indicates if the provided content has been truncated from its original form (for example, due to size limits).
+              - `[Length <Int64?>]`: The length of the original content in bytes.
+              - `[ModifiedDateTime <DateTime?>]`: Required.
+Timestamp indicating when the original content was last modified.
+For ephemeral content like messages, this might be the same as createdDateTime.
+              - `[Name <String>]`: Required.
+A descriptive name for the content (for example, file name, web page title, 'Chat Message').
+              - `[SequenceNumber <Int64?>]`: A sequence number indicating the order in which content was generated or should be processed, required when correlationId is used.
+            - `[DeviceMetadata <IMicrosoftGraphDeviceMetadata>]`: deviceMetadata
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[DeviceType <String>]`: Optional.
+The general type of the device (for example, 'Managed', 'Unmanaged').
+              - `[IPAddress <String>]`: The Internet Protocol (IP) address of the device.
+              - `[OperatingSystemSpecifications <IMicrosoftGraphOperatingSystemSpecifications>]`: operatingSystemSpecifications
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[OperatingSystemPlatform <String>]`: The platform of the operating system (for example, 'Windows').
+                - `[OperatingSystemVersion <String>]`: The version string of the operating system.
+            - `[IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]`: integratedApplicationMetadata
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Name <String>]`: The name of the integrated application.
+              - `[Version <String>]`: The version number of the integrated application.
+            - `[ProtectedAppMetadata <IMicrosoftGraphProtectedApplicationMetadata>]`: protectedApplicationMetadata
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Name <String>]`: The name of the integrated application.
+              - `[Version <String>]`: The version number of the integrated application.
+              - `[ApplicationLocation <IMicrosoftGraphPolicyLocation>]`: policyLocation
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Value <String>]`: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
+          - `[ScopeIdentifier <String>]`: The scope identified from computed protection scopes.
+          - `[UserId <String>]`: ID of the user.
+      - `[ProtectionScopes <IMicrosoftGraphUserProtectionScopeContainer>]`: userProtectionScopeContainer
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
     - `[Department <String>]`: The name of the department where the user works.
 Maximum length is 64 characters.Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
     - `[DeviceEnrollmentConfigurations <IMicrosoftGraphDeviceEnrollmentConfiguration- `[]`>]`: Get enrollment configurations targeted to the user
@@ -37115,6 +37989,7 @@ Required when includeResourceData is true.
             - `[ExpirationDateTime <DateTime?>]`: Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
+Any value under 45 minutes after the time of the request is automatically set to 45 minutes after the request time.
 For the maximum supported subscription length of time, see Subscription lifetime.
             - `[IncludeResourceData <Boolean?>]`: Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
@@ -37357,7 +38232,7 @@ Read-only.
               - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-              - `[Value <IMicrosoftGraphJson>]`: Json
+              - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
               - `[Visible <Boolean?>]`: Indicates whether the object is visible.
               - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -37408,11 +38283,11 @@ Read-only.
 Read-only.
                           - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                         - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                      - `[MajorUnit <IMicrosoftGraphJson>]`: Json
-                      - `[Maximum <IMicrosoftGraphJson>]`: Json
-                      - `[Minimum <IMicrosoftGraphJson>]`: Json
+                      - `[MajorUnit <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
+                      - `[Maximum <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
+                      - `[Minimum <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                       - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                      - `[MinorUnit <IMicrosoftGraphJson>]`: Json
+                      - `[MinorUnit <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                       - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
                         - `[Id <String>]`: The unique identifier for an entity.
@@ -37491,7 +38366,7 @@ Read-only.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                         - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                      - `[Value <IMicrosoftGraphJson>]`: Json
+                      - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                   - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[Id <String>]`: The unique identifier for an entity.
@@ -37561,12 +38436,12 @@ Read-only.
                           - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                         - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                        - `[Values <IMicrosoftGraphJson>]`: Json
+                        - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                     - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                     - `[Name <String>]`: The name of the table column.
-                    - `[Values <IMicrosoftGraphJson>]`: Json
+                    - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                   - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                   - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                   - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -37581,7 +38456,7 @@ Read-only.
                     - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                    - `[Values <IMicrosoftGraphJson>]`: Json
+                    - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                   - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                   - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                   - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -37951,6 +38826,14 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[AssignedRoles <IMicrosoftGraphEngagementRole- `[]`>]`: Represents the collection of Viva Engage roles assigned to a user.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[DisplayName <String>]`: The name of the role.
+        - `[Members <IMicrosoftGraphEngagementRoleMember- `[]`>]`: Users who have been assigned this role.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[User <IMicrosoftGraphUser>]`: user
       - `[LearningCourseActivities <IMicrosoftGraphLearningCourseActivity- `[]`>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -38095,27 +38978,6 @@ Active labels should be hidden or disabled in user interfaces.
             - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
             - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
         - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-          - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-          - `[ApplicableTo <String>]`: sensitivityLabelTarget
-          - `[ApplicationMode <String>]`: applicationMode
-          - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
-            - `[Id <String>]`: 
-            - `[Name <String>]`: 
-          - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
-            - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Message <String>]`: 
-            - `[SensitiveTypeIds <String- `[]`>]`: 
-          - `[Description <String>]`: 
-          - `[DisplayName <String>]`: 
-          - `[IsDefault <Boolean?>]`: 
-          - `[IsEndpointProtectionEnabled <Boolean?>]`: 
-          - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
-            - `[Name <String>]`: 
-          - `[Name <String>]`: 
-          - `[Priority <Int32?>]`: 
-          - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-          - `[ToolTip <String>]`: 
         - `[SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]`: sensitivityPolicySettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -38366,7 +39228,7 @@ SharePoint servers might decide to use this hint to preload the script for corre
               - `[Value <String>]`: Value of the meta data.
             - `[CustomMetadata <IMicrosoftGraphMetaDataKeyValuePair- `[]`>]`: A key-value map where keys are string identifier and values are object of custom key-value pair.
               - `[Key <String>]`: Key of the metadata.
-              - `[Value <IMicrosoftGraphJson>]`: Json
+              - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
             - `[HtmlStrings <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are rich text with HTML format.
 SharePoint servers treat the values as HTML content and run services like safety checks, search index and link fixup on them.
             - `[ImageSources <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are image sources.
@@ -38611,7 +39473,7 @@ Returned only on $select.
 Read-only. 
 Supports $filter (eq where true only).
     - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit.
-Default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
     - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
@@ -38836,7 +39698,7 @@ Returned by default.
 Supports $filter (eq, ne, not).
       - `[IsFavorite <Boolean?>]`: Indicates whether the user marked the group as favorite.
       - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
       - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
@@ -39399,21 +40261,25 @@ Required.
           - `[IsCrossLocationShiftsEnabled <Boolean?>]`: Indicates whether the cross-location marketplace feature is enabled for this schedule.
           - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
             - `[AssignedTo <String>]`: scheduleChangeRequestActor
-            - `[ManagerActionMessage <String>]`: 
-            - `[SenderMessage <String>]`: 
+            - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+            - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
             - `[State <String>]`: scheduleChangeState
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-            - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-            - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+            - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+            - `[RecipientUserId <String>]`: The recipient's user ID.
+            - `[SenderShiftId <String>]`: The sender's shift ID.
           - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
           - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest- `[]`>]`: The open shift requests in the schedule.
             - `[AssignedTo <String>]`: scheduleChangeRequestActor
-            - `[ManagerActionMessage <String>]`: 
-            - `[SenderMessage <String>]`: 
+            - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+            - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
             - `[State <String>]`: scheduleChangeState
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -39516,18 +40382,20 @@ Read-only.
 Permissions that aren't in this collection are disabled.
           - `[StartDayOfWeek <String>]`: dayOfWeek
           - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
-            - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-            - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-            - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+            - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+            - `[RecipientUserId <String>]`: The recipient's user ID.
+            - `[SenderShiftId <String>]`: The sender's shift ID.
             - `[AssignedTo <String>]`: scheduleChangeRequestActor
-            - `[ManagerActionMessage <String>]`: 
-            - `[SenderMessage <String>]`: 
+            - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+            - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
             - `[State <String>]`: scheduleChangeState
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
+            - `[RecipientShiftId <String>]`: The recipient's Shift ID
           - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
           - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -39577,17 +40445,17 @@ Required.
 Required.
           - `[TimeOffRequests <IMicrosoftGraphTimeOffRequest- `[]`>]`: The time off requests in the schedule.
             - `[AssignedTo <String>]`: scheduleChangeRequestActor
-            - `[ManagerActionMessage <String>]`: 
-            - `[SenderMessage <String>]`: 
+            - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+            - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
             - `[State <String>]`: scheduleChangeState
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-            - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+            - `[EndDateTime <DateTime?>]`: The date and time the time off ends in ISO 8601 format and in UTC time.
+            - `[StartDateTime <DateTime?>]`: The date and time the time off starts in ISO 8601 format and in UTC time.
             - `[TimeOffReasonId <String>]`: The reason for the time off.
           - `[TimeOffRequestsEnabled <Boolean?>]`: Indicates whether time off requests are enabled for the schedule.
           - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
@@ -40460,7 +41328,7 @@ It is an Optional field
       - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -40651,29 +41519,42 @@ Read-only.
         - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: 
+      - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: The AI insights generated for an online meeting.
+Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
-          - `[OwnerDisplayName <String>]`: 
-          - `[Text <String>]`: 
-          - `[Title <String>]`: 
-        - `[CallId <String>]`: 
-        - `[ContentCorrelationId <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[EndDateTime <DateTime?>]`: 
-        - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
-          - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
-            - `[Text <String>]`: 
-            - `[Title <String>]`: 
-          - `[Text <String>]`: 
-          - `[Title <String>]`: 
+        - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: The collection of AI-generated action items.
+Read-only.
+          - `[OwnerDisplayName <String>]`: The display name of the owner of the action item.
+          - `[Text <String>]`: The text content of the action item.
+          - `[Title <String>]`: The title of the action item.
+        - `[CallId <String>]`: The ID for the online meeting call for which the callAiInsight was generated.
+Read-only.
+        - `[ContentCorrelationId <String>]`: The unique ID that correlates the transcript from which the insights were generated.
+Read-only.
+        - `[CreatedDateTime <DateTime?>]`: Date and time at which the corresponding transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        - `[EndDateTime <DateTime?>]`: Date and time at which the corresponding transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: The collection of AI-generated meeting notes.
+Read-only.
+          - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: A collection of subpoints of the meeting note.
+            - `[Text <String>]`: The text of the meeting note subpoint.
+            - `[Title <String>]`: The title of the meeting note subpoint.
+          - `[Text <String>]`: The text of the meeting note.
+          - `[Title <String>]`: The title of the meeting note.
         - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
-            - `[EventDateTime <DateTime?>]`: 
+          - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: The collection of AI-generated mention events.
+            - `[EventDateTime <DateTime?>]`: The date and time of the mention event.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[TranscriptUtterance <String>]`: 
+            - `[TranscriptUtterance <String>]`: The utterance in the online meeting transcript that contains the mention event.
       - `[AlternativeRecording <Byte- `[]`>]`: The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
       - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Teams live event.
@@ -42074,7 +42955,7 @@ Users can control this setting in Office Delve.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[InPlaceArchiveMailboxId <String>]`: The unique identifier for the user's in-place archive mailbox.
+        - `[InPlaceArchiveMailboxId <String>]`: 
         - `[PrimaryMailboxId <String>]`: The unique identifier for the user's primary mailbox.
       - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -42438,7 +43319,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[PreferredTimezone <String>]`: The registrant's time zone details.
               - `[RegistrantVideoOnDemandWebUrl <String>]`: 
               - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
                 - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
@@ -42454,7 +43335,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
               - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
             - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-            - `[VideoOnDemandWebUrl <String>]`: 
+            - `[VideoOnDemandWebUrl <String>]`: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
         - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
         - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -42591,7 +43472,7 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
     - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-    - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+    - `[ContentInfo <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -42642,7 +43523,7 @@ For example - a high contrast image
       - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-      - `[Content <IMicrosoftGraphJson>]`: Json
+      - `[Content <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
       - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
       - `[DisplayText <String>]`: Required.
@@ -42779,8 +43660,8 @@ This lets services like Microsoft 365 call the application in the context of a d
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-        - `[Key <String>]`: Key.
-        - `[Value <String>]`: Value.
+        - `[Key <String>]`: Contains the name of the field that a value is associated with.
+        - `[Value <String>]`: Contains the corresponding value for the specified key.
       - `[Type <String>]`: The unique name for the functionality exposed by the app.
     - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -42809,6 +43690,12 @@ Always null when the object hasn't been deleted.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: 
           - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
+          - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Operator <String>]`: customSecurityAttributeComparisonOperator
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
@@ -42817,6 +43704,7 @@ For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
           - `[State <String>]`: appManagementRestrictionState
         - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: 
+          - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -42831,11 +43719,6 @@ For existing applications, the enforcement date can be retroactively applied.
             - `[AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
-                - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
-                  - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-                  - `[Operator <String>]`: customSecurityAttributeComparisonOperator
               - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
               - `[State <String>]`: appManagementRestrictionState
@@ -42850,6 +43733,7 @@ For existing applications, the enforcement date can be retroactively applied.
               - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
               - `[State <String>]`: appManagementRestrictionState
+            - `[UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
     - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -43249,6 +44133,10 @@ May not begin with ..
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[ApprovedClientApps <IMicrosoftGraphApprovedClientApp- `[]`>]`: 
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[DisplayName <String>]`: 
       - `[IsRemoteDesktopProtocolEnabled <Boolean?>]`: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
       - `[TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup- `[]`>]`: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -43799,7 +44687,7 @@ Supports $filter (eq, ne, not).
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
         - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
         - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
@@ -43930,7 +44818,7 @@ For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
       - `[PhoneType <String>]`: authenticationPhoneType
       - `[SmsSignInState <String>]`: authenticationMethodSignInState
-    - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+    - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: Represents a platform credential instance registered to a user on Mac OS.
       - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
@@ -43943,6 +44831,44 @@ Read-only.
       - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
       - `[KeyStrength <String>]`: authenticationMethodKeyStrength
       - `[Platform <String>]`: authenticationMethodPlatform
+    - `[QrCodePinMethod <IMicrosoftGraphQrCodePinAuthenticationMethod>]`: qrCodePinAuthenticationMethod
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Pin <IMicrosoftGraphQrPin>]`: qrPin
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Code <String>]`: PIN of the user.
+It is between 8-20 digits as configured in the QR code authentication method policy.
+The code is temporary when issued by admin but permanent after the user changes it at the first login attempt.
+This PIN can be reset by the admin but not the user.
+        - `[CreatedDateTime <DateTime?>]`: The date and time when the PIN was created.
+        - `[ForceChangePinNextSignIn <Boolean?>]`: Defaults to true for a temporary PIN.
+        - `[UpdatedDateTime <DateTime?>]`: The date and time when the PIN was updated.
+      - `[StandardQrCode <IMicrosoftGraphQrCode>]`: qrCode
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[CreatedDateTime <DateTime?>]`: The date and time when the QR code was created.
+        - `[ExpireDateTime <DateTime?>]`: Temporary QR code lifetime is between 1-12 hours.
+Standard QR code lifetime is in days and max.
+is 395 days (13 months) and default value is 365 days (12 months).
+        - `[Image <IMicrosoftGraphQrCodeImageDetails>]`: qrCodeImageDetails
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[BinaryValue <Byte- `[]`>]`: The binary representation of the QR code.
+          - `[ErrorCorrectionLevel <String>]`: errorCorrectionLevel
+          - `[RawContent <Byte- `[]`>]`: Base64-encoded raw content of the QR code.
+          - `[Version <Int32?>]`: Version to create QR code image.
+        - `[LastUsedDateTime <DateTime?>]`: The date and time when the QR code was last used for a successful sign-in.
+        - `[StartDateTime <DateTime?>]`: The date and time when the QR code becomes active and available to use.
+      - `[TemporaryQrCode <IMicrosoftGraphQrCode>]`: qrCode
     - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[PerUserMfaState <String>]`: perUserMfaState
@@ -44541,6 +45467,7 @@ This property is read-only.
         - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
         - `[UserIdentityType <String>]`: teamworkUserIdentityType
+        - `[UserPrincipalName <String>]`: User principal name (UPN) of the user.
     - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -44767,6 +45694,29 @@ The default value is false.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsSipEnabled <Boolean?>]`: Indicates whether the user has a SIP-enabled client registered for them.
 Read-only.
+  - `[Communications <IMicrosoftGraphUserCloudCommunication>]`: userCloudCommunication
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[CallSettings <IMicrosoftGraphCallSettings>]`: callSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Delegates <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegate settings.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[AllowedActions <IMicrosoftGraphDelegateAllowedActions>]`: delegateAllowedActions
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[JoinActiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows participation in active calls.
+          - `[MakeCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be made on their behalf.
+          - `[ManageCallAndDelegateSettings <Boolean?>]`: Indicates whether the delegator or delegate allows the management of call and delegation settings.
+          - `[PickUpHeldCalls <Boolean?>]`: Indicates whether the delegator or delegate allows held calls to be picked up.
+          - `[ReceiveCalls <Boolean?>]`: Indicates whether the delegator or delegate allows calls to be received on their behalf.
+        - `[CreatedDateTime <DateTime?>]`: Date and time when the delegator or delegate entry was created.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[IsActive <Boolean?>]`: Indicates whether the delegator or delegate relationship is currently active.
+      - `[Delegators <IMicrosoftGraphDelegationSettings- `[]`>]`: Represents the delegator settings.
   - `[CompanyName <String>]`: The name of the company the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -44899,6 +45849,103 @@ Through self-service sign-up by an internal user using email verification (Email
 Through self-service sign-up by an external user signing up through a link that is part of a user flow (SelfServiceSignUp). 
 Read-only.Supports $filter (eq, ne, not, and in).
   - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeValue>]`: customSecurityAttributeValue
+  - `[DataSecurityAndGovernance <IMicrosoftGraphUserDataSecurityAndGovernance>]`: userDataSecurityAndGovernance
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[ActionSource <String>]`: labelActionSource
+      - `[ApplicableTo <String>]`: sensitivityLabelTarget
+      - `[ApplicationMode <String>]`: applicationMode
+      - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
+        - `[Id <String>]`: The unique identifier of the label policy.
+        - `[Name <String>]`: The display name of the label policy.
+      - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Message <String>]`: The message displayed to the user when the label is applied automatically.
+        - `[SensitiveTypeIds <String- `[]`>]`: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
+      - `[AutoTooltip <String>]`: 
+      - `[Color <String>]`: 
+      - `[Description <String>]`: 
+      - `[DisplayName <String>]`: 
+      - `[IsDefault <Boolean?>]`: 
+      - `[IsEnabled <Boolean?>]`: 
+      - `[IsEndpointProtectionEnabled <Boolean?>]`: 
+      - `[IsScopedToUser <Boolean?>]`: 
+      - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
+        - `[Name <String>]`: The name of the action (for example, 'Encrypt', 'AddHeader').
+      - `[Locale <String>]`: 
+      - `[Name <String>]`: 
+      - `[Priority <Int32?>]`: 
+      - `[Rights <IMicrosoftGraphUsageRightsIncluded>]`: usageRightsIncluded
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[OwnerEmail <String>]`: The email of owner label rights.
+        - `[UserEmail <String>]`: The email of user with label user rights.
+        - `[Value <String>]`: usageRights
+      - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+      - `[ToolTip <String>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Activities <IMicrosoftGraphActivitiesContainer>]`: activitiesContainer
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[ContentActivities <IMicrosoftGraphContentActivity- `[]`>]`: Collection of activity logs related to content processing.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[ContentMetadata <IMicrosoftGraphProcessContentRequest>]`: processContentRequest
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ActivityMetadata <IMicrosoftGraphActivityMetadata>]`: activityMetadata
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Activity <String>]`: userActivityType
+          - `[ContentEntries <IMicrosoftGraphProcessContentMetadataBase- `[]`>]`: A collection of content entries to be processed.
+Each entry contains the content itself and its metadata.
+Use conversation metadata for content like prompts and responses and file metadata for files.
+Required.
+            - `[Content <IMicrosoftGraphContentBase>]`: contentBase
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[CorrelationId <String>]`: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
+            - `[CreatedDateTime <DateTime?>]`: Required.
+Timestamp indicating when the original content was created (for example, file creation time, message sent time).
+            - `[Identifier <String>]`: Required.
+A unique identifier for this specific content entry within the context of the calling application or enforcement plane (for example, message ID, file path/URL).
+            - `[IsTruncated <Boolean?>]`: Required.
+Indicates if the provided content has been truncated from its original form (for example, due to size limits).
+            - `[Length <Int64?>]`: The length of the original content in bytes.
+            - `[ModifiedDateTime <DateTime?>]`: Required.
+Timestamp indicating when the original content was last modified.
+For ephemeral content like messages, this might be the same as createdDateTime.
+            - `[Name <String>]`: Required.
+A descriptive name for the content (for example, file name, web page title, 'Chat Message').
+            - `[SequenceNumber <Int64?>]`: A sequence number indicating the order in which content was generated or should be processed, required when correlationId is used.
+          - `[DeviceMetadata <IMicrosoftGraphDeviceMetadata>]`: deviceMetadata
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[DeviceType <String>]`: Optional.
+The general type of the device (for example, 'Managed', 'Unmanaged').
+            - `[IPAddress <String>]`: The Internet Protocol (IP) address of the device.
+            - `[OperatingSystemSpecifications <IMicrosoftGraphOperatingSystemSpecifications>]`: operatingSystemSpecifications
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[OperatingSystemPlatform <String>]`: The platform of the operating system (for example, 'Windows').
+              - `[OperatingSystemVersion <String>]`: The version string of the operating system.
+          - `[IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]`: integratedApplicationMetadata
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Name <String>]`: The name of the integrated application.
+            - `[Version <String>]`: The version number of the integrated application.
+          - `[ProtectedAppMetadata <IMicrosoftGraphProtectedApplicationMetadata>]`: protectedApplicationMetadata
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Name <String>]`: The name of the integrated application.
+            - `[Version <String>]`: The version number of the integrated application.
+            - `[ApplicationLocation <IMicrosoftGraphPolicyLocation>]`: policyLocation
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Value <String>]`: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
+        - `[ScopeIdentifier <String>]`: The scope identified from computed protection scopes.
+        - `[UserId <String>]`: ID of the user.
+    - `[ProtectionScopes <IMicrosoftGraphUserProtectionScopeContainer>]`: userProtectionScopeContainer
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
   - `[Department <String>]`: The name of the department where the user works.
 Maximum length is 64 characters.Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
   - `[DeviceEnrollmentConfigurations <IMicrosoftGraphDeviceEnrollmentConfiguration- `[]`>]`: Get enrollment configurations targeted to the user
@@ -45480,6 +46527,7 @@ Required when includeResourceData is true.
           - `[ExpirationDateTime <DateTime?>]`: Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
+Any value under 45 minutes after the time of the request is automatically set to 45 minutes after the request time.
 For the maximum supported subscription length of time, see Subscription lifetime.
           - `[IncludeResourceData <Boolean?>]`: Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
@@ -45722,7 +46770,7 @@ Read-only.
             - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-            - `[Value <IMicrosoftGraphJson>]`: Json
+            - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
             - `[Visible <Boolean?>]`: Indicates whether the object is visible.
             - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -45773,11 +46821,11 @@ Read-only.
 Read-only.
                         - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                       - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                    - `[MajorUnit <IMicrosoftGraphJson>]`: Json
-                    - `[Maximum <IMicrosoftGraphJson>]`: Json
-                    - `[Minimum <IMicrosoftGraphJson>]`: Json
+                    - `[MajorUnit <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
+                    - `[Maximum <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
+                    - `[Minimum <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                     - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                    - `[MinorUnit <IMicrosoftGraphJson>]`: Json
+                    - `[MinorUnit <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                     - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
                       - `[Id <String>]`: The unique identifier for an entity.
@@ -45856,7 +46904,7 @@ Read-only.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                       - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                    - `[Value <IMicrosoftGraphJson>]`: Json
+                    - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                 - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
@@ -45926,12 +46974,12 @@ Read-only.
                         - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                       - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                      - `[Values <IMicrosoftGraphJson>]`: Json
+                      - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                   - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                   - `[Name <String>]`: The name of the table column.
-                  - `[Values <IMicrosoftGraphJson>]`: Json
+                  - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                 - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                 - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                 - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -45946,7 +46994,7 @@ Read-only.
                   - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                  - `[Values <IMicrosoftGraphJson>]`: Json
+                  - `[Values <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
                 - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                 - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                 - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -46313,6 +47361,14 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[AssignedRoles <IMicrosoftGraphEngagementRole- `[]`>]`: Represents the collection of Viva Engage roles assigned to a user.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[DisplayName <String>]`: The name of the role.
+      - `[Members <IMicrosoftGraphEngagementRoleMember- `[]`>]`: Users who have been assigned this role.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[User <IMicrosoftGraphUser>]`: user
     - `[LearningCourseActivities <IMicrosoftGraphLearningCourseActivity- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -46457,27 +47513,6 @@ Active labels should be hidden or disabled in user interfaces.
           - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
           - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
       - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-        - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-        - `[ApplicableTo <String>]`: sensitivityLabelTarget
-        - `[ApplicationMode <String>]`: applicationMode
-        - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
-          - `[Id <String>]`: 
-          - `[Name <String>]`: 
-        - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Message <String>]`: 
-          - `[SensitiveTypeIds <String- `[]`>]`: 
-        - `[Description <String>]`: 
-        - `[DisplayName <String>]`: 
-        - `[IsDefault <Boolean?>]`: 
-        - `[IsEndpointProtectionEnabled <Boolean?>]`: 
-        - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
-          - `[Name <String>]`: 
-        - `[Name <String>]`: 
-        - `[Priority <Int32?>]`: 
-        - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-        - `[ToolTip <String>]`: 
       - `[SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]`: sensitivityPolicySettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -46728,7 +47763,7 @@ SharePoint servers might decide to use this hint to preload the script for corre
             - `[Value <String>]`: Value of the meta data.
           - `[CustomMetadata <IMicrosoftGraphMetaDataKeyValuePair- `[]`>]`: A key-value map where keys are string identifier and values are object of custom key-value pair.
             - `[Key <String>]`: Key of the metadata.
-            - `[Value <IMicrosoftGraphJson>]`: Json
+            - `[Value <IMicrosoftGraphJson>]`: Standard way to represent a Json blob on Graph.
           - `[HtmlStrings <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are rich text with HTML format.
 SharePoint servers treat the values as HTML content and run services like safety checks, search index and link fixup on them.
           - `[ImageSources <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are image sources.
@@ -46973,7 +48008,7 @@ Returned only on $select.
 Read-only. 
 Supports $filter (eq where true only).
   - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit.
-Default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
   - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
@@ -47198,7 +48233,7 @@ Returned by default.
 Supports $filter (eq, ne, not).
     - `[IsFavorite <Boolean?>]`: Indicates whether the user marked the group as favorite.
     - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit.
-The default value is false.
+If not set, the default value is null and the default behavior is false.
 Read-only. 
 To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
     - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
@@ -47761,21 +48796,25 @@ Required.
         - `[IsCrossLocationShiftsEnabled <Boolean?>]`: Indicates whether the cross-location marketplace feature is enabled for this schedule.
         - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
-          - `[ManagerActionMessage <String>]`: 
-          - `[SenderMessage <String>]`: 
+          - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+          - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
           - `[State <String>]`: scheduleChangeState
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-          - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-          - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+          - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+          - `[RecipientUserId <String>]`: The recipient's user ID.
+          - `[SenderShiftId <String>]`: The sender's shift ID.
         - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
         - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest- `[]`>]`: The open shift requests in the schedule.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
-          - `[ManagerActionMessage <String>]`: 
-          - `[SenderMessage <String>]`: 
+          - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+          - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
           - `[State <String>]`: scheduleChangeState
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -47878,18 +48917,20 @@ Read-only.
 Permissions that aren't in this collection are disabled.
         - `[StartDayOfWeek <String>]`: dayOfWeek
         - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
-          - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-          - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-          - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+          - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+          - `[RecipientUserId <String>]`: The recipient's user ID.
+          - `[SenderShiftId <String>]`: The sender's shift ID.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
-          - `[ManagerActionMessage <String>]`: 
-          - `[SenderMessage <String>]`: 
+          - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+          - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
           - `[State <String>]`: scheduleChangeState
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
+          - `[RecipientShiftId <String>]`: The recipient's Shift ID
         - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
         - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -47939,17 +48980,17 @@ Required.
 Required.
         - `[TimeOffRequests <IMicrosoftGraphTimeOffRequest- `[]`>]`: The time off requests in the schedule.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
-          - `[ManagerActionMessage <String>]`: 
-          - `[SenderMessage <String>]`: 
+          - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+          - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
           - `[State <String>]`: scheduleChangeState
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          - `[EndDateTime <DateTime?>]`: The date and time the time off ends in ISO 8601 format and in UTC time.
+          - `[StartDateTime <DateTime?>]`: The date and time the time off starts in ISO 8601 format and in UTC time.
           - `[TimeOffReasonId <String>]`: The reason for the time off.
         - `[TimeOffRequestsEnabled <Boolean?>]`: Indicates whether time off requests are enabled for the schedule.
         - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
@@ -48822,7 +49863,7 @@ It is an Optional field
     - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -49013,29 +50054,42 @@ Read-only.
       - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: 
+    - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: The AI insights generated for an online meeting.
+Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
-        - `[OwnerDisplayName <String>]`: 
-        - `[Text <String>]`: 
-        - `[Title <String>]`: 
-      - `[CallId <String>]`: 
-      - `[ContentCorrelationId <String>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[EndDateTime <DateTime?>]`: 
-      - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
-        - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
-          - `[Text <String>]`: 
-          - `[Title <String>]`: 
-        - `[Text <String>]`: 
-        - `[Title <String>]`: 
+      - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: The collection of AI-generated action items.
+Read-only.
+        - `[OwnerDisplayName <String>]`: The display name of the owner of the action item.
+        - `[Text <String>]`: The text content of the action item.
+        - `[Title <String>]`: The title of the action item.
+      - `[CallId <String>]`: The ID for the online meeting call for which the callAiInsight was generated.
+Read-only.
+      - `[ContentCorrelationId <String>]`: The unique ID that correlates the transcript from which the insights were generated.
+Read-only.
+      - `[CreatedDateTime <DateTime?>]`: Date and time at which the corresponding transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      - `[EndDateTime <DateTime?>]`: Date and time at which the corresponding transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: The collection of AI-generated meeting notes.
+Read-only.
+        - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: A collection of subpoints of the meeting note.
+          - `[Text <String>]`: The text of the meeting note subpoint.
+          - `[Title <String>]`: The title of the meeting note subpoint.
+        - `[Text <String>]`: The text of the meeting note.
+        - `[Title <String>]`: The title of the meeting note.
       - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
-          - `[EventDateTime <DateTime?>]`: 
+        - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: The collection of AI-generated mention events.
+          - `[EventDateTime <DateTime?>]`: The date and time of the mention event.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[TranscriptUtterance <String>]`: 
+          - `[TranscriptUtterance <String>]`: The utterance in the online meeting transcript that contains the mention event.
     - `[AlternativeRecording <Byte- `[]`>]`: The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
     - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Teams live event.
@@ -50436,7 +51490,7 @@ Users can control this setting in Office Delve.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[InPlaceArchiveMailboxId <String>]`: The unique identifier for the user's in-place archive mailbox.
+      - `[InPlaceArchiveMailboxId <String>]`: 
       - `[PrimaryMailboxId <String>]`: The unique identifier for the user's primary mailbox.
     - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -50800,7 +51854,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[PreferredTimezone <String>]`: The registrant's time zone details.
             - `[RegistrantVideoOnDemandWebUrl <String>]`: 
             - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
               - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
@@ -50816,7 +51870,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
             - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
           - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-          - `[VideoOnDemandWebUrl <String>]`: 
+          - `[VideoOnDemandWebUrl <String>]`: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
       - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
       - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -51059,6 +52113,7 @@ Required when includeResourceData is true.
   - `[ExpirationDateTime <DateTime?>]`: Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
+Any value under 45 minutes after the time of the request is automatically set to 45 minutes after the request time.
 For the maximum supported subscription length of time, see Subscription lifetime.
   - `[IncludeResourceData <Boolean?>]`: Optional.
 When set to true, change notifications include resource data (such as content of a chat message).

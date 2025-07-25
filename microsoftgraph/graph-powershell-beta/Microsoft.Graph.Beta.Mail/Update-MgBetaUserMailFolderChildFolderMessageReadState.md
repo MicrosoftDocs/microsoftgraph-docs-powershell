@@ -16,7 +16,7 @@ Invoke action updateAllMessagesReadState
 ```
 Update-MgBetaUserMailFolderChildFolderMessageReadState -MailFolderId <String> -MailFolderId1 <String>
  -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-IsRead]
- [-SuppressReadReceipts] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-SuppressReadReceipts] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -25,7 +25,7 @@ Update-MgBetaUserMailFolderChildFolderMessageReadState -MailFolderId <String> -M
 Update-MgBetaUserMailFolderChildFolderMessageReadState -MailFolderId <String> -MailFolderId1 <String>
  -UserId <String>
  -BodyParameter <IPathsZzwsmbUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MicrosoftGraphUpdateallmessagesreadstatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Update-MgBetaUserMailFolderChildFolderMessageReadState -MailFolderId <String> -M
 ```
 Update-MgBetaUserMailFolderChildFolderMessageReadState -InputObject <IMailIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-IsRead] [-SuppressReadReceipts]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -41,14 +41,12 @@ Update-MgBetaUserMailFolderChildFolderMessageReadState -InputObject <IMailIdenti
 ```
 Update-MgBetaUserMailFolderChildFolderMessageReadState -InputObject <IMailIdentity>
  -BodyParameter <IPathsZzwsmbUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MicrosoftGraphUpdateallmessagesreadstatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action updateAllMessagesReadState
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -80,21 +78,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -189,6 +172,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -228,6 +226,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

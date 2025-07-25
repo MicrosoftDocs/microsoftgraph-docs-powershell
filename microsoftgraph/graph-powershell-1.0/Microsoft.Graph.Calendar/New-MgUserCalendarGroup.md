@@ -20,13 +20,13 @@ Create new navigation property to calendarGroups for users
 New-MgUserCalendarGroup -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Calendars <IMicrosoftGraphCalendar[]>] [-ChangeKey <String>]
  [-ClassId <String>] [-Id <String>] [-Name <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserCalendarGroup -UserId <String> -BodyParameter <IMicrosoftGraphCalendarGroup>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,13 +35,13 @@ New-MgUserCalendarGroup -UserId <String> -BodyParameter <IMicrosoftGraphCalendar
 New-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Calendars <IMicrosoftGraphCalendar[]>] [-ChangeKey <String>]
  [-ClassId <String>] [-Id <String>] [-Name <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphCalendarGroup>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -160,21 +160,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -237,6 +222,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -261,6 +261,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -379,7 +394,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[BodyPreview <String>]`: The preview of the message associated with the event.
 It's in text format.
       - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
+      - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
+Instances in a recurring series that are canceled are called canceled occurences.Returned only on $select in a Get operation which specifies the ID (seriesMasterId property value) of a series master event.
       - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[ExceptionOccurrences <IMicrosoftGraphEvent- `[]`>]`: Contains the id property values of the event instances that are exceptions in a recurring series.Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees.
+Exceptions don't include canceled occurrences.Returned only on $select and $expand in a GET operation that specifies the ID (seriesMasterId property value) of a series master event.
       - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
 Nullable.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -392,7 +411,7 @@ This ID is different for each occurrence in a recurring series.
 Read-only.
       - `[Importance <String>]`: importance
       - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -403,7 +422,7 @@ If true, regardless of whether it's a single-day or multi-day event, start, and 
 Set to false if all changes are sent, or if the event is an appointment without any attendees.
       - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
-Optional.
+Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
 Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
       - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
@@ -448,9 +467,9 @@ Read-only.
         - `[JoinUrl <String>]`: The external link that launches the online meeting.
 This is a URL that clients launch into a browser and will redirect the user to join the meeting.
         - `[Phones <IMicrosoftGraphPhone- `[]`>]`: All of the phone numbers associated with this conference.
-          - `[Language <String>]`:
+          - `[Language <String>]`: 
           - `[Number <String>]`: The phone number.
-          - `[Region <String>]`:
+          - `[Region <String>]`: 
           - `[Type <String>]`: phoneType
         - `[QuickDial <String>]`: The preformatted quick dial for this call.
         - `[TollFreeNumbers <String- `[]`>]`: The toll free numbers that can be used to join the conference.
@@ -479,13 +498,13 @@ A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was
 Required if type is absoluteMonthly or absoluteYearly.
           - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
           - `[FirstDayOfWeek <String>]`: dayOfWeek
           - `[Index <String>]`: weekIndex
           - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-          - `[Month <Int32?>]`: The month in which the event occurs.
+          - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
           - `[Type <String>]`: recurrencePatternType
         - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
@@ -638,7 +657,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[BodyPreview <String>]`: The preview of the message associated with the event.
 It's in text format.
     - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
+    - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
+Instances in a recurring series that are canceled are called canceled occurences.Returned only on $select in a Get operation which specifies the ID (seriesMasterId property value) of a series master event.
     - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[ExceptionOccurrences <IMicrosoftGraphEvent- `[]`>]`: Contains the id property values of the event instances that are exceptions in a recurring series.Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees.
+Exceptions don't include canceled occurrences.Returned only on $select and $expand in a GET operation that specifies the ID (seriesMasterId property value) of a series master event.
     - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -651,7 +674,7 @@ This ID is different for each occurrence in a recurring series.
 Read-only.
     - `[Importance <String>]`: importance
     - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -662,7 +685,7 @@ If true, regardless of whether it's a single-day or multi-day event, start, and 
 Set to false if all changes are sent, or if the event is an appointment without any attendees.
     - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
-Optional.
+Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
 Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
     - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
@@ -707,9 +730,9 @@ Read-only.
       - `[JoinUrl <String>]`: The external link that launches the online meeting.
 This is a URL that clients launch into a browser and will redirect the user to join the meeting.
       - `[Phones <IMicrosoftGraphPhone- `[]`>]`: All of the phone numbers associated with this conference.
-        - `[Language <String>]`:
+        - `[Language <String>]`: 
         - `[Number <String>]`: The phone number.
-        - `[Region <String>]`:
+        - `[Region <String>]`: 
         - `[Type <String>]`: phoneType
       - `[QuickDial <String>]`: The preformatted quick dial for this call.
       - `[TollFreeNumbers <String- `[]`>]`: The toll free numbers that can be used to join the conference.
@@ -738,13 +761,13 @@ A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was
 Required if type is absoluteMonthly or absoluteYearly.
         - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
         - `[FirstDayOfWeek <String>]`: dayOfWeek
         - `[Index <String>]`: weekIndex
         - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-        - `[Month <Int32?>]`: The month in which the event occurs.
+        - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
         - `[Type <String>]`: recurrencePatternType
       - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
@@ -821,7 +844,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
   - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlaceId <String>]`: The unique identifier of place

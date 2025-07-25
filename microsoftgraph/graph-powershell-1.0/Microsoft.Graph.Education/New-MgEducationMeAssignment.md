@@ -27,20 +27,18 @@ New-MgEducationMeAssignment [-ResponseHeadersVariable <String>] [-AddToCalendarA
  [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
  [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
  [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEducationMeAssignment -BodyParameter <IMicrosoftGraphEducationAssignment>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to assignments for education
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -195,21 +193,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -393,6 +376,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Resources
 Learning objects that are associated with this assignment.
 Only teachers can modify this list.
@@ -467,6 +465,21 @@ To construct, see NOTES section for SUBMISSIONS properties and create a hash tab
 Type: IMicrosoftGraphEducationSubmission[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -554,7 +567,7 @@ Read-only.
     - `[PercentageWeight <Int32?>]`: The weight of the category; an integer between 0 and 100.
   - `[Instructions <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`:
+    - `[Content <String>]`: 
     - `[ContentType <String>]`: bodyType
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[ModuleUrl <String>]`: The URL of the module from which to access the assignment.
@@ -594,7 +607,7 @@ Read-only.
       - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
       - `[DisplayName <String>]`: The name of this rubric quality.
       - `[QualityId <String>]`: The ID of this resource.
-      - `[Weight <Single?>]`: If present, a numerical weight for this quality.
+      - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
 Weights must add up to 100.
   - `[Status <String>]`: educationAssignmentStatus
   - `[Submissions <IMicrosoftGraphEducationSubmission- `[]`>]`: Once published, there's a submission object for each student representing their work and grade.
@@ -603,7 +616,8 @@ Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[ExcusedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[Outcomes <IMicrosoftGraphEducationOutcome- `[]`>]`:
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[Outcomes <IMicrosoftGraphEducationOutcome- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -613,7 +627,7 @@ For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
     - `[ReassignedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Recipient <IMicrosoftGraphEducationSubmissionRecipient>]`: educationSubmissionRecipient
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Resources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`:
+    - `[Resources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which the resource was copied, and if null, the student uploaded the resource.
@@ -621,7 +635,7 @@ Read-only.
     - `[ReturnedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Status <String>]`: educationSubmissionStatus
     - `[SubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[SubmittedResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`:
+    - `[SubmittedResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
     - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 CATEGORIES `<IMicrosoftGraphEducationCategory- `[]`>`: When set, enables users to easily find assignments of a given type.
@@ -651,7 +665,7 @@ Read-only.
 
 INSTRUCTIONS `<IMicrosoftGraphEducationItemBody>`: educationItemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`:
+  - `[Content <String>]`: 
   - `[ContentType <String>]`: bodyType
 
 LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
@@ -703,7 +717,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`:
+    - `[Content <String>]`: 
     - `[ContentType <String>]`: bodyType
   - `[DisplayName <String>]`: The name of this rubric.
   - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
@@ -720,7 +734,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[DisplayName <String>]`: The name of this rubric quality.
     - `[QualityId <String>]`: The ID of this resource.
-    - `[Weight <Single?>]`: If present, a numerical weight for this quality.
+    - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
 Weights must add up to 100.
 
 SUBMISSIONS `<IMicrosoftGraphEducationSubmission- `[]`>`: Once published, there's a submission object for each student representing their work and grade.
@@ -738,7 +752,8 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Outcomes <IMicrosoftGraphEducationOutcome- `[]`>]`:
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Outcomes <IMicrosoftGraphEducationOutcome- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -748,7 +763,7 @@ For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
   - `[ReassignedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Recipient <IMicrosoftGraphEducationSubmissionRecipient>]`: educationSubmissionRecipient
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Resources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`:
+  - `[Resources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which the resource was copied, and if null, the student uploaded the resource.
@@ -760,7 +775,7 @@ Read-only.
   - `[ReturnedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Status <String>]`: educationSubmissionStatus
   - `[SubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[SubmittedResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`:
+  - `[SubmittedResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
   - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS

@@ -23,7 +23,7 @@ Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression -ApplicationId 
  -SynchronizationTemplateId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Expression <String>] [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
  [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Parse
@@ -31,7 +31,7 @@ Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression -ApplicationId 
 Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression -ApplicationId <String>
  -SynchronizationTemplateId <String>
  -BodyParameter <IPaths1Ukm6NrApplicationsApplicationIdSynchronizationTemplatesSynchronizationtemplateIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,22 +41,20 @@ Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression -InputObject <I
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Expression <String>]
  [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
  [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ParseViaIdentity
 ```
 Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths1Ukm6NrApplicationsApplicationIdSynchronizationTemplatesSynchronizationtemplateIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -106,21 +104,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Expression
 
 
@@ -164,6 +147,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -229,6 +227,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -264,14 +277,14 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1Ukm6NrApplicationsApplicationIdSynchronizationTemplatesSynchronizationtemplateIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Expression <String>]`:
+  - `[Expression <String>]`: 
   - `[TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]`: attributeDefinition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Anchor <Boolean?>]`: true if the attribute should be used as the anchor for the object.
 Anchor attributes must have a unique value identifying an object, and must be immutable.
 Default is false.
 One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
-    - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`:
+    - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`: 
       - `[Key <String>]`: Key.
       - `[Value <String>]`: Value.
     - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
@@ -344,7 +357,7 @@ TARGETATTRIBUTEDEFINITION `<IMicrosoftGraphAttributeDefinition>`: attributeDefin
 Anchor attributes must have a unique value identifying an object, and must be immutable.
 Default is false.
 One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
-  - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`:
+  - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`: 
     - `[Key <String>]`: Key.
     - `[Value <String>]`: Value.
   - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
@@ -380,7 +393,7 @@ TESTINPUTOBJECT `<IMicrosoftGraphExpressionInputObject>`: expressionInputObject
 Anchor attributes must have a unique value identifying an object, and must be immutable.
 Default is false.
 One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
-      - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`:
+      - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`: 
         - `[Key <String>]`: Key.
         - `[Value <String>]`: Value.
       - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.

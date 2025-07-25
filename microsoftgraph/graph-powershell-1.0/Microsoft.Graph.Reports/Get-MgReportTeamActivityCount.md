@@ -20,13 +20,13 @@ The activity types are related to meetings and messages.
 ### Get (Default)
 ```
 Get-MgReportTeamActivityCount -Period <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportTeamActivityCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ The activity types are related to meetings and messages.
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportTeamActivityCount -Period $periodId
+Get-MgReportTeamActivityCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportTeamActivityCount Cmdlet.
@@ -119,6 +119,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
