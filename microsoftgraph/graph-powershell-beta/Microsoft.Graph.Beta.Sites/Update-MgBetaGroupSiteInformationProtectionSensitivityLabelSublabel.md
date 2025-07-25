@@ -57,18 +57,6 @@ Update-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel -InputObject
 ## DESCRIPTION
 Update the navigation property sublabels in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActionSource
@@ -748,6 +736,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteinformationprotectionsensitivitylabelsublabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteinformationprotectionsensitivitylabelsublabel)
+
 
 
 

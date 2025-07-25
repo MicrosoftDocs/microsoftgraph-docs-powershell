@@ -32,18 +32,6 @@ Get-MgUserDriveRootListItemVersionCount -InputObject <IFilesIdentity> [-Filter <
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -212,6 +200,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootlistitemversioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootlistitemversioncount)
+
 
 
 

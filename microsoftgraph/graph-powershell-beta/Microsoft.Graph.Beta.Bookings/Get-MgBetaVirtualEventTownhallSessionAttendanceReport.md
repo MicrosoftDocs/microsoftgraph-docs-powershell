@@ -44,18 +44,6 @@ Get-MgBetaVirtualEventTownhallSessionAttendanceReport -InputObject <IBookingsIde
 Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
 When an online meeting ends, an attendance report is generated for that session.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -360,6 +348,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/meetingattendancereport-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/meetingattendancereport-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/meetingattendancereport-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/meetingattendancereport-list?view=graph-rest-beta)
+
 
 
 

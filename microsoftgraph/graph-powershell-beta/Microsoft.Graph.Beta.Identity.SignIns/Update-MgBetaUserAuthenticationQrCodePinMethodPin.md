@@ -45,18 +45,6 @@ Update-MgBetaUserAuthenticationQrCodePinMethodPin -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Reset a user's PIN and generate a new temporary PIN that's represented by a qrPin object and is linked to the user's QR Code authentication method object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -393,6 +381,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationqrcodepinmethodpin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationqrcodepinmethodpin)
 
 [https://learn.microsoft.com/graph/api/qrpin-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/qrpin-update?view=graph-rest-beta)
+
 
 
 
