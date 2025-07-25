@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthority
@@ -18,13 +18,13 @@ Update-MgBetaDirectoryCertificateAuthority [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>]
  [-CertificateBasedApplicationConfigurations <IMicrosoftGraphCertificateBasedApplicationConfiguration[]>]
  [-Id <String>] [-MutualTlsOauthConfigurations <IMicrosoftGraphMutualTlsOauthConfiguration[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDirectoryCertificateAuthority -BodyParameter <IMicrosoftGraphCertificateAuthorityPath>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,6 +32,16 @@ Update-MgBetaDirectoryCertificateAuthority -BodyParameter <IMicrosoftGraphCertif
 Update the navigation property certificateAuthorities in directory
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -74,21 +84,6 @@ To construct, see NOTES section for CERTIFICATEBASEDAPPLICATIONCONFIGURATIONS pr
 Type: IMicrosoftGraphCertificateBasedApplicationConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -144,6 +139,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -151,6 +161,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -191,105 +216,82 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCertificateAuthorityPath>`: certificateAuthorityPath
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphCertificateAuthorityPath\>: certificateAuthorityPath
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CertificateBasedApplicationConfigurations <IMicrosoftGraphCertificateBasedApplicationConfiguration- `[]`>]`: Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
-    - `[TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity- `[]`>]`: Collection of trusted certificate authorities.
-      - `[Id <String>]`: The unique identifier for an entity.
+  \[CertificateBasedApplicationConfigurations \<IMicrosoftGraphCertificateBasedApplicationConfiguration\[\]\>\]: Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
+    \[TrustedCertificateAuthorities \<IMicrosoftGraphCertificateAuthorityAsEntity\[\]\>\]: Collection of trusted certificate authorities.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Certificate <Byte- `[]`>]`: The trusted certificate.
-      - `[IsRootAuthority <Boolean?>]`: Indicates if the certificate is a root authority.
+      \[Certificate \<Byte\[\]\>\]: The trusted certificate.
+      \[IsRootAuthority \<Boolean?\>\]: Indicates if the certificate is a root authority.
 In a certificateBasedApplicationConfiguration object, at least one object in the trustedCertificateAuthorities collection must be a root authority.
-      - `[Issuer <String>]`: The issuer of the trusted certificate.
-      - `[IssuerSubjectKeyIdentifier <String>]`: The subject key identifier of the trusted certificate.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+      \[Issuer \<String\>\]: The issuer of the trusted certificate.
+      \[IssuerSubjectKeyIdentifier \<String\>\]: The subject key identifier of the trusted certificate.
+    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Description <String>]`: The description of the trusted certificate authorities.
-    - `[DisplayName <String>]`: The display name of the trusted certificate authorities.
-  - `[MutualTlsOauthConfigurations <IMicrosoftGraphMutualTlsOauthConfiguration- `[]`>]`: Defines the trusted certificate authorities for certificates that can be added to Internet of Things (IoT) devices.
-    - `[CertificateAuthorities <IMicrosoftGraphCertificateAuthority- `[]`>]`: Multi-value property that represents a list of trusted certificate authorities.
-      - `[Certificate <Byte- `[]`>]`: Required.
+    \[Description \<String\>\]: The description of the trusted certificate authorities.
+    \[DisplayName \<String\>\]: The display name of the trusted certificate authorities.
+  \[MutualTlsOauthConfigurations \<IMicrosoftGraphMutualTlsOauthConfiguration\[\]\>\]: Defines the trusted certificate authorities for certificates that can be added to Internet of Things (IoT) devices.
+    \[CertificateAuthorities \<IMicrosoftGraphCertificateAuthority\[\]\>\]: Multi-value property that represents a list of trusted certificate authorities.
+      \[Certificate \<Byte\[\]\>\]: Required.
 The base64 encoded string representing the public certificate.
-      - `[CertificateRevocationListUrl <String>]`: The URL of the certificate revocation list.
-      - `[DeltaCertificateRevocationListUrl <String>]`: The URL contains the list of all revoked certificates since the last time a full certificate revocaton list was created.
-      - `[IsRootAuthority <Boolean?>]`: Required.
+      \[CertificateRevocationListUrl \<String\>\]: The URL of the certificate revocation list.
+      \[DeltaCertificateRevocationListUrl \<String\>\]: The URL contains the list of all revoked certificates since the last time a full certificate revocaton list was created.
+      \[IsRootAuthority \<Boolean?\>\]: Required.
 true if the trusted certificate is a root authority, false if the trusted certificate is an intermediate authority.
-      - `[Issuer <String>]`: The issuer of the certificate, calculated from the certificate value.
+      \[Issuer \<String\>\]: The issuer of the certificate, calculated from the certificate value.
 Read-only.
-      - `[IssuerSki <String>]`: The subject key identifier of the certificate, calculated from the certificate value.
+      \[IssuerSki \<String\>\]: The subject key identifier of the certificate, calculated from the certificate value.
 Read-only.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DisplayName <String>]`: Friendly name.
+    \[DisplayName \<String\>\]: Friendly name.
 Supports $filter (eq, in).
-    - `[TlsClientAuthParameter <String>]`: tlsClientRegistrationMetadata
+    \[TlsClientAuthParameter \<String\>\]: tlsClientRegistrationMetadata
 
-CERTIFICATEBASEDAPPLICATIONCONFIGURATIONS `<IMicrosoftGraphCertificateBasedApplicationConfiguration- `[]`>`: Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
-  - `[TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity- `[]`>]`: Collection of trusted certificate authorities.
-    - `[Id <String>]`: The unique identifier for an entity.
+CERTIFICATEBASEDAPPLICATIONCONFIGURATIONS \<IMicrosoftGraphCertificateBasedApplicationConfiguration\[\]\>: Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
+  \[TrustedCertificateAuthorities \<IMicrosoftGraphCertificateAuthorityAsEntity\[\]\>\]: Collection of trusted certificate authorities.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Certificate <Byte- `[]`>]`: The trusted certificate.
-    - `[IsRootAuthority <Boolean?>]`: Indicates if the certificate is a root authority.
+    \[Certificate \<Byte\[\]\>\]: The trusted certificate.
+    \[IsRootAuthority \<Boolean?\>\]: Indicates if the certificate is a root authority.
 In a certificateBasedApplicationConfiguration object, at least one object in the trustedCertificateAuthorities collection must be a root authority.
-    - `[Issuer <String>]`: The issuer of the trusted certificate.
-    - `[IssuerSubjectKeyIdentifier <String>]`: The subject key identifier of the trusted certificate.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+    \[Issuer \<String\>\]: The issuer of the trusted certificate.
+    \[IssuerSubjectKeyIdentifier \<String\>\]: The subject key identifier of the trusted certificate.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: The description of the trusted certificate authorities.
-  - `[DisplayName <String>]`: The display name of the trusted certificate authorities.
+  \[Description \<String\>\]: The description of the trusted certificate authorities.
+  \[DisplayName \<String\>\]: The display name of the trusted certificate authorities.
 
-MUTUALTLSOAUTHCONFIGURATIONS `<IMicrosoftGraphMutualTlsOauthConfiguration- `[]`>`: Defines the trusted certificate authorities for certificates that can be added to Internet of Things (IoT) devices.
-  - `[CertificateAuthorities <IMicrosoftGraphCertificateAuthority- `[]`>]`: Multi-value property that represents a list of trusted certificate authorities.
-    - `[Certificate <Byte- `[]`>]`: Required.
+MUTUALTLSOAUTHCONFIGURATIONS \<IMicrosoftGraphMutualTlsOauthConfiguration\[\]\>: Defines the trusted certificate authorities for certificates that can be added to Internet of Things (IoT) devices.
+  \[CertificateAuthorities \<IMicrosoftGraphCertificateAuthority\[\]\>\]: Multi-value property that represents a list of trusted certificate authorities.
+    \[Certificate \<Byte\[\]\>\]: Required.
 The base64 encoded string representing the public certificate.
-    - `[CertificateRevocationListUrl <String>]`: The URL of the certificate revocation list.
-    - `[DeltaCertificateRevocationListUrl <String>]`: The URL contains the list of all revoked certificates since the last time a full certificate revocaton list was created.
-    - `[IsRootAuthority <Boolean?>]`: Required.
+    \[CertificateRevocationListUrl \<String\>\]: The URL of the certificate revocation list.
+    \[DeltaCertificateRevocationListUrl \<String\>\]: The URL contains the list of all revoked certificates since the last time a full certificate revocaton list was created.
+    \[IsRootAuthority \<Boolean?\>\]: Required.
 true if the trusted certificate is a root authority, false if the trusted certificate is an intermediate authority.
-    - `[Issuer <String>]`: The issuer of the certificate, calculated from the certificate value.
+    \[Issuer \<String\>\]: The issuer of the certificate, calculated from the certificate value.
 Read-only.
-    - `[IssuerSki <String>]`: The subject key identifier of the certificate, calculated from the certificate value.
+    \[IssuerSki \<String\>\]: The subject key identifier of the certificate, calculated from the certificate value.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: Friendly name.
+  \[DisplayName \<String\>\]: Friendly name.
 Supports $filter (eq, in).
-  - `[TlsClientAuthParameter <String>]`: tlsClientRegistrationMetadata
+  \[TlsClientAuthParameter \<String\>\]: tlsClientRegistrationMetadata
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthority)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

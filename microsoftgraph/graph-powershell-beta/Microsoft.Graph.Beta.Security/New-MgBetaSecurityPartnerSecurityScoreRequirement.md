@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritypartnersecurityscorerequirement
@@ -17,14 +17,14 @@ Create new navigation property to requirements for security
 New-MgBetaSecurityPartnerSecurityScoreRequirement [-ResponseHeadersVariable <String>] [-ActionUrl <String>]
  [-AdditionalProperties <Hashtable>] [-ComplianceStatus <String>] [-HelpUrl <String>] [-Id <String>]
  [-MaxScore <Int64>] [-RequirementType <String>] [-Score <Int64>] [-State <String>]
- [-UpdatedDateTime <DateTime>] [-Headers <IDictionary>] [-WhatIf]
+ [-UpdatedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityPartnerSecurityScoreRequirement -BodyParameter <IMicrosoftGraphPartnerSecurityRequirement>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,6 +32,16 @@ New-MgBetaSecurityPartnerSecurityScoreRequirement -BodyParameter <IMicrosoftGrap
 Create new navigation property to requirements for security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -88,21 +98,6 @@ complianceStatus
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -168,6 +163,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -247,6 +257,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -279,43 +304,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPartnerSecurityRequirement>`: securityRequirement
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPartnerSecurityRequirement\>: securityRequirement
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActionUrl <String>]`: The link to the site where the admin can take action on the requirement.
-  - `[ComplianceStatus <String>]`: complianceStatus
-  - `[HelpUrl <String>]`: The link to documentation for the requirement.
-  - `[MaxScore <Int64?>]`: The maximum score possible for the requirement.
-  - `[RequirementType <String>]`: securityRequirementType
-  - `[Score <Int64?>]`: The score received for this requirement.
-  - `[State <String>]`: securityRequirementState
-  - `[UpdatedDateTime <DateTime?>]`: The date the requirement properties were last updated.
+  \[ActionUrl \<String\>\]: The link to the site where the admin can take action on the requirement.
+  \[ComplianceStatus \<String\>\]: complianceStatus
+  \[HelpUrl \<String\>\]: The link to documentation for the requirement.
+  \[MaxScore \<Int64?\>\]: The maximum score possible for the requirement.
+  \[RequirementType \<String\>\]: securityRequirementType
+  \[Score \<Int64?\>\]: The score received for this requirement.
+  \[State \<String\>\]: securityRequirementState
+  \[UpdatedDateTime \<DateTime?\>\]: The date the requirement properties were last updated.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritypartnersecurityscorerequirement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritypartnersecurityscorerequirement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

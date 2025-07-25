@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesproductrevision
@@ -20,14 +20,14 @@ New-MgBetaWindowsUpdatesProductRevision -ProductId <String> [-ResponseHeadersVar
  [-KnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]
  [-OSBuild <IMicrosoftGraphWindowsUpdatesBuildVersionDetails>] [-Product <String>]
  [-ReleaseDateTime <DateTime>] [-Version <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaWindowsUpdatesProductRevision -ProductId <String>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesProductRevision> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,20 +38,30 @@ New-MgBetaWindowsUpdatesProductRevision -InputObject <IWindowsUpdatesIdentity>
  [-IsHotpatchUpdate] [-KnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]
  [-OSBuild <IMicrosoftGraphWindowsUpdatesBuildVersionDetails>] [-Product <String>]
  [-ReleaseDateTime <DateTime>] [-Version <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaWindowsUpdatesProductRevision -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesProductRevision> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to revisions for admin
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -94,21 +104,6 @@ To construct, see NOTES section for CATALOGENTRY properties and create a hash ta
 Type: IMicrosoftGraphWindowsUpdatesCatalogEntry
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -261,6 +256,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReleaseDateTime
 The release date for the content.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -310,6 +320,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -343,129 +368,106 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsUpdatesProductRevision>`: productRevision
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphWindowsUpdatesProductRevision\>: productRevision
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CatalogEntry <IMicrosoftGraphWindowsUpdatesCatalogEntry>]`: catalogEntry
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[CatalogEntry \<IMicrosoftGraphWindowsUpdatesCatalogEntry\>\]: catalogEntry
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DeployableUntilDateTime <DateTime?>]`: The date on which the content is no longer available to deploy.
+    \[DeployableUntilDateTime \<DateTime?\>\]: The date on which the content is no longer available to deploy.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[DisplayName <String>]`: The display name of the content.
+    \[DisplayName \<String\>\]: The display name of the content.
 Read-only.
-    - `[ReleaseDateTime <DateTime?>]`: The release date for the content.
+    \[ReleaseDateTime \<DateTime?\>\]: The release date for the content.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[DisplayName <String>]`: The display name of the content.
+  \[DisplayName \<String\>\]: The display name of the content.
 Read-only.
-  - `[IsHotpatchUpdate <Boolean?>]`: True indicates that the content is hotpatchable; otherwise, false.
+  \[IsHotpatchUpdate \<Boolean?\>\]: True indicates that the content is hotpatchable; otherwise, false.
 For more information, see Deploy a hotpatch quality update using Windows Autopatch.
 Read-only.
-  - `[KnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]`: knowledgeBaseArticle
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[KnowledgeBaseArticle \<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle\>\]: knowledgeBaseArticle
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Url <String>]`: The URL of the knowledge base article.
+    \[Url \<String\>\]: The URL of the knowledge base article.
 Read-only.
-  - `[OSBuild <IMicrosoftGraphWindowsUpdatesBuildVersionDetails>]`: buildVersionDetails
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[BuildNumber <Int32?>]`: The build number of the product release.
+  \[OSBuild \<IMicrosoftGraphWindowsUpdatesBuildVersionDetails\>\]: buildVersionDetails
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[BuildNumber \<Int32?\>\]: The build number of the product release.
 Read-only.
-    - `[MajorVersion <Int32?>]`: The major version of the product release.
+    \[MajorVersion \<Int32?\>\]: The major version of the product release.
 Read-only.
-    - `[MinorVersion <Int32?>]`: The minor version of the product release.
+    \[MinorVersion \<Int32?\>\]: The minor version of the product release.
 Read-only.
-    - `[UpdateBuildRevision <Int32?>]`: The update build revision number of the product revision.
+    \[UpdateBuildRevision \<Int32?\>\]: The update build revision number of the product revision.
 Read-only.
-  - `[Product <String>]`: The product of the revision.
+  \[Product \<String\>\]: The product of the revision.
 Possible values are: Windows 10, Windows 11.
 Read-only.
-  - `[ReleaseDateTime <DateTime?>]`: The release date for the content.
+  \[ReleaseDateTime \<DateTime?\>\]: The release date for the content.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[Version <String>]`: The version of the feature update.
+  \[Version \<String\>\]: The version of the feature update.
 Read-only.
 
-CATALOGENTRY `<IMicrosoftGraphWindowsUpdatesCatalogEntry>`: catalogEntry
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+CATALOGENTRY \<IMicrosoftGraphWindowsUpdatesCatalogEntry\>: catalogEntry
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeployableUntilDateTime <DateTime?>]`: The date on which the content is no longer available to deploy.
+  \[DeployableUntilDateTime \<DateTime?\>\]: The date on which the content is no longer available to deploy.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[DisplayName <String>]`: The display name of the content.
+  \[DisplayName \<String\>\]: The display name of the content.
 Read-only.
-  - `[ReleaseDateTime <DateTime?>]`: The release date for the content.
+  \[ReleaseDateTime \<DateTime?\>\]: The release date for the content.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
-  - `[ApplicableContentCatalogEntryId <String>]`: The unique identifier of applicableContent
-  - `[ApplicableContentDeviceMatchDeviceId <String>]`: The unique identifier of applicableContentDeviceMatch
-  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
-  - `[CatalogId <String>]`: Usage: catalogID='{catalogID}'
-  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
-  - `[DaysInPast <Int32?>]`: Usage: daysInPast={daysInPast}
-  - `[DeploymentId <String>]`: The unique identifier of deployment
-  - `[EditionId <String>]`: The unique identifier of edition
-  - `[KbNumber <Int32?>]`: Usage: kbNumber={kbNumber}
-  - `[KnownIssueId <String>]`: The unique identifier of knownIssue
-  - `[ProductId <String>]`: The unique identifier of product
-  - `[ProductRevisionId <String>]`: The unique identifier of productRevision
-  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
-  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
-  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
+INPUTOBJECT \<IWindowsUpdatesIdentity\>: Identity Parameter
+  \[ApplicableContentCatalogEntryId \<String\>\]: The unique identifier of applicableContent
+  \[ApplicableContentDeviceMatchDeviceId \<String\>\]: The unique identifier of applicableContentDeviceMatch
+  \[CatalogEntryId \<String\>\]: The unique identifier of catalogEntry
+  \[CatalogId \<String\>\]: Usage: catalogID='{catalogID}'
+  \[ComplianceChangeId \<String\>\]: The unique identifier of complianceChange
+  \[DaysInPast \<Int32?\>\]: Usage: daysInPast={daysInPast}
+  \[DeploymentId \<String\>\]: The unique identifier of deployment
+  \[EditionId \<String\>\]: The unique identifier of edition
+  \[KbNumber \<Int32?\>\]: Usage: kbNumber={kbNumber}
+  \[KnownIssueId \<String\>\]: The unique identifier of knownIssue
+  \[ProductId \<String\>\]: The unique identifier of product
+  \[ProductRevisionId \<String\>\]: The unique identifier of productRevision
+  \[ResourceConnectionId \<String\>\]: The unique identifier of resourceConnection
+  \[UpdatableAssetId \<String\>\]: The unique identifier of updatableAsset
+  \[UpdatePolicyId \<String\>\]: The unique identifier of updatePolicy
 
-KNOWLEDGEBASEARTICLE `<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>`: knowledgeBaseArticle
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+KNOWLEDGEBASEARTICLE \<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle\>: knowledgeBaseArticle
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Url <String>]`: The URL of the knowledge base article.
+  \[Url \<String\>\]: The URL of the knowledge base article.
 Read-only.
 
-OSBUILD `<IMicrosoftGraphWindowsUpdatesBuildVersionDetails>`: buildVersionDetails
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[BuildNumber <Int32?>]`: The build number of the product release.
+OSBUILD \<IMicrosoftGraphWindowsUpdatesBuildVersionDetails\>: buildVersionDetails
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[BuildNumber \<Int32?\>\]: The build number of the product release.
 Read-only.
-  - `[MajorVersion <Int32?>]`: The major version of the product release.
+  \[MajorVersion \<Int32?\>\]: The major version of the product release.
 Read-only.
-  - `[MinorVersion <Int32?>]`: The minor version of the product release.
+  \[MinorVersion \<Int32?\>\]: The minor version of the product release.
 Read-only.
-  - `[UpdateBuildRevision <Int32?>]`: The update build revision number of the product revision.
+  \[UpdateBuildRevision \<Int32?\>\]: The update build revision number of the product revision.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesproductrevision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesproductrevision)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

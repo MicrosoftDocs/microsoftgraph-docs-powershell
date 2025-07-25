@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogremotenetwork
@@ -18,13 +18,13 @@ New-MgBetaNetworkAccessLogRemoteNetwork [-ResponseHeadersVariable <String>] [-Ad
  [-BgpRoutesAdvertisedCount <Int32>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DestinationIP <String>] [-Id <String>] [-ReceivedBytes <Int64>] [-RemoteNetworkId <String>]
  [-SentBytes <Int64>] [-SourceIP <String>] [-Status <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaNetworkAccessLogRemoteNetwork -BodyParameter <IMicrosoftGraphNetworkaccessRemoteNetworkHealthEvent>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,6 +32,16 @@ New-MgBetaNetworkAccessLogRemoteNetwork -BodyParameter <IMicrosoftGraphNetworkac
 Create new navigation property to remoteNetworks for networkAccess
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -78,21 +88,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -165,6 +160,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -264,6 +274,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -296,46 +321,23 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessRemoteNetworkHealthEvent>`: remoteNetworkHealthEvent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphNetworkaccessRemoteNetworkHealthEvent\>: remoteNetworkHealthEvent
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[BgpRoutesAdvertisedCount <Int32?>]`: The number of BGP routes advertised through tunnel.
-  - `[CreatedDateTime <DateTime?>]`: The time of the original event generation in UTC.
+  \[BgpRoutesAdvertisedCount \<Int32?\>\]: The number of BGP routes advertised through tunnel.
+  \[CreatedDateTime \<DateTime?\>\]: The time of the original event generation in UTC.
 Supports $filter (ge, le) and $orderby.
-  - `[Description <String>]`: The description of the event.
-  - `[DestinationIP <String>]`: The IP address of the destination.
-  - `[ReceivedBytes <Int64?>]`: The number of bytes sent from the destination to the source.
-  - `[RemoteNetworkId <String>]`: A unique identifier for each remoteNetwork site.
+  \[Description \<String\>\]: The description of the event.
+  \[DestinationIP \<String\>\]: The IP address of the destination.
+  \[ReceivedBytes \<Int64?\>\]: The number of bytes sent from the destination to the source.
+  \[RemoteNetworkId \<String\>\]: A unique identifier for each remoteNetwork site.
 Supports $filter (eq).
-  - `[SentBytes <Int64?>]`: The number of bytes sent from the source to the destination for the connection or session.
-  - `[SourceIP <String>]`: The public IP address.
-  - `[Status <String>]`: remoteNetworkStatus
+  \[SentBytes \<Int64?\>\]: The number of bytes sent from the source to the destination for the connection or session.
+  \[SourceIP \<String\>\]: The public IP address.
+  \[Status \<String\>\]: remoteNetworkStatus
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogremotenetwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogremotenetwork)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

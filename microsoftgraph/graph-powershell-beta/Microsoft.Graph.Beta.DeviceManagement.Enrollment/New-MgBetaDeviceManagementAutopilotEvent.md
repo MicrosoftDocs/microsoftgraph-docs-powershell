@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopilotevent
@@ -26,28 +26,30 @@ New-MgBetaDeviceManagementAutopilotEvent [-ResponseHeadersVariable <String>] [-A
  [-Windows10EnrollmentCompletionPageConfigurationDisplayName <String>]
  [-Windows10EnrollmentCompletionPageConfigurationId <String>]
  [-WindowsAutopilotDeploymentProfileDisplayName <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementAutopilotEvent -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotEvent>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to autopilotEvents for deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -109,21 +111,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -413,6 +400,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -450,22 +452,6 @@ User principal name used to enroll the device.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
 
 Required: False
 Position: Named
@@ -519,6 +505,37 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -535,59 +552,36 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementAutopilotEvent>`: Represents an Autopilot flow event.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceManagementAutopilotEvent\>: Represents an Autopilot flow event.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AccountSetupDuration <TimeSpan?>]`: Time spent in user ESP.
-  - `[AccountSetupStatus <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
-  - `[DeploymentDuration <TimeSpan?>]`: Autopilot deployment duration including enrollment.
-  - `[DeploymentEndDateTime <DateTime?>]`: Deployment end time.
-  - `[DeploymentStartDateTime <DateTime?>]`: Deployment start time.
-  - `[DeploymentState <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
-  - `[DeploymentTotalDuration <TimeSpan?>]`: Total deployment duration from enrollment to Desktop screen.
-  - `[DeviceId <String>]`: Device id associated with the object
-  - `[DeviceRegisteredDateTime <DateTime?>]`: Device registration date.
-  - `[DeviceSerialNumber <String>]`: Device serial number.
-  - `[DeviceSetupDuration <TimeSpan?>]`: Time spent in device ESP.
-  - `[DeviceSetupStatus <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
-  - `[EnrollmentFailureDetails <String>]`: Enrollment failure details.
-  - `[EnrollmentStartDateTime <DateTime?>]`: Device enrollment start date.
-  - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
-  - `[EnrollmentType <String>]`: windowsAutopilotEnrollmentType
-  - `[EventDateTime <DateTime?>]`: Time when the event occurred .
-  - `[ManagedDeviceName <String>]`: Managed device name.
-  - `[OSVersion <String>]`: Device operating system version.
-  - `[UserId <String>]`: UserId id associated with the object
-  - `[UserPrincipalName <String>]`: User principal name used to enroll the device.
-  - `[Windows10EnrollmentCompletionPageConfigurationDisplayName <String>]`: Enrollment Status Page profile name
-  - `[Windows10EnrollmentCompletionPageConfigurationId <String>]`: Enrollment Status Page profile ID
-  - `[WindowsAutopilotDeploymentProfileDisplayName <String>]`: Autopilot profile name.
+  \[AccountSetupDuration \<TimeSpan?\>\]: Time spent in user ESP.
+  \[AccountSetupStatus \<WindowsAutopilotDeploymentState?\>\]: Deployment states for Autopilot devices
+  \[DeploymentDuration \<TimeSpan?\>\]: Autopilot deployment duration including enrollment.
+  \[DeploymentEndDateTime \<DateTime?\>\]: Deployment end time.
+  \[DeploymentStartDateTime \<DateTime?\>\]: Deployment start time.
+  \[DeploymentState \<WindowsAutopilotDeploymentState?\>\]: Deployment states for Autopilot devices
+  \[DeploymentTotalDuration \<TimeSpan?\>\]: Total deployment duration from enrollment to Desktop screen.
+  \[DeviceId \<String\>\]: Device id associated with the object
+  \[DeviceRegisteredDateTime \<DateTime?\>\]: Device registration date.
+  \[DeviceSerialNumber \<String\>\]: Device serial number.
+  \[DeviceSetupDuration \<TimeSpan?\>\]: Time spent in device ESP.
+  \[DeviceSetupStatus \<WindowsAutopilotDeploymentState?\>\]: Deployment states for Autopilot devices
+  \[EnrollmentFailureDetails \<String\>\]: Enrollment failure details.
+  \[EnrollmentStartDateTime \<DateTime?\>\]: Device enrollment start date.
+  \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
+  \[EnrollmentType \<String\>\]: windowsAutopilotEnrollmentType
+  \[EventDateTime \<DateTime?\>\]: Time when the event occurred .
+  \[ManagedDeviceName \<String\>\]: Managed device name.
+  \[OSVersion \<String\>\]: Device operating system version.
+  \[UserId \<String\>\]: UserId id associated with the object
+  \[UserPrincipalName \<String\>\]: User principal name used to enroll the device.
+  \[Windows10EnrollmentCompletionPageConfigurationDisplayName \<String\>\]: Enrollment Status Page profile name
+  \[Windows10EnrollmentCompletionPageConfigurationId \<String\>\]: Enrollment Status Page profile ID
+  \[WindowsAutopilotDeploymentProfileDisplayName \<String\>\]: Autopilot profile name.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopilotevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopilotevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

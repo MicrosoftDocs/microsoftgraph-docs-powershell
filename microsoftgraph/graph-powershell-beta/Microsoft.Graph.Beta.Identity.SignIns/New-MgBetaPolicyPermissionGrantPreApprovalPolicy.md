@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpreapprovalpolicy
 schema: 2.0.0
-ms.subservice: entra-applications
 ---
 
 # New-MgBetaPolicyPermissionGrantPreApprovalPolicy
@@ -17,7 +16,7 @@ Create a new permissionGrantPreApprovalPolicy object.
 ```
 New-MgBetaPolicyPermissionGrantPreApprovalPolicy [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphPreApprovalDetail[]>]
- [-DeletedDateTime <DateTime>] [-Id <String>] [-Headers <IDictionary>]
+ [-DeletedDateTime <DateTime>] [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -25,18 +24,18 @@ New-MgBetaPolicyPermissionGrantPreApprovalPolicy [-ResponseHeadersVariable <Stri
 ```
 New-MgBetaPolicyPermissionGrantPreApprovalPolicy
  -BodyParameter <IMicrosoftGraphPermissionGrantPreApprovalPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new permissionGrantPreApprovalPolicy object.
 
 ## EXAMPLES
-### Example 1: Create a preapproval policy for both group and chat scope
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	conditions = @(
@@ -78,14 +77,10 @@ $params = @{
 
 New-MgBetaPolicyPermissionGrantPreApprovalPolicy -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create a preapproval policy for both group and chat scope
-
-### Example 2: Create a preapproval policy for group scope and preapprove all permissions from a given API
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	conditions = @(
@@ -106,10 +101,6 @@ $params = @{
 }
 
 New-MgBetaPolicyPermissionGrantPreApprovalPolicy -BodyParameter $params
-
-```
-This example will create a preapproval policy for group scope and preapprove all permissions from a given api
-
 
 ## PARAMETERS
 
@@ -152,21 +143,6 @@ To construct, see NOTES section for CONDITIONS properties and create a hash tabl
 Type: IMicrosoftGraphPreApprovalDetail[]
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -222,6 +198,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -229,6 +220,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -269,57 +275,35 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPermissionGrantPreApprovalPolicy>`: permissionGrantPreApprovalPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+BODYPARAMETER \<IMicrosoftGraphPermissionGrantPreApprovalPolicy\>: permissionGrantPreApprovalPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Conditions <IMicrosoftGraphPreApprovalDetail- `[]`>]`: A list of condition sets describing the conditions under which the permission to grant consent for the app has been preapproved.
-    - `[Permissions <IMicrosoftGraphPreApprovedPermissions>]`: preApprovedPermissions
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[PermissionKind <String>]`: permissionKind
-      - `[PermissionType <String>]`: permissionType
-    - `[ScopeType <String>]`: resourceScopeType
-    - `[SensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]`: scopeSensitivityLabels
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[LabelKind <String>]`: labelKind
+  \[Conditions \<IMicrosoftGraphPreApprovalDetail\[\]\>\]: A list of condition sets describing the conditions under which the permission to grant consent for the app has been preapproved.
+    \[Permissions \<IMicrosoftGraphPreApprovedPermissions\>\]: preApprovedPermissions
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[PermissionKind \<String\>\]: permissionKind
+      \[PermissionType \<String\>\]: permissionType
+    \[ScopeType \<String\>\]: resourceScopeType
+    \[SensitivityLabels \<IMicrosoftGraphScopeSensitivityLabels\>\]: scopeSensitivityLabels
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[LabelKind \<String\>\]: labelKind
 
-CONDITIONS `<IMicrosoftGraphPreApprovalDetail- `[]`>`: A list of condition sets describing the conditions under which the permission to grant consent for the app has been preapproved.
-  - `[Permissions <IMicrosoftGraphPreApprovedPermissions>]`: preApprovedPermissions
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[PermissionKind <String>]`: permissionKind
-    - `[PermissionType <String>]`: permissionType
-  - `[ScopeType <String>]`: resourceScopeType
-  - `[SensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]`: scopeSensitivityLabels
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[LabelKind <String>]`: labelKind
+CONDITIONS \<IMicrosoftGraphPreApprovalDetail\[\]\>: A list of condition sets describing the conditions under which the permission to grant consent for the app has been preapproved.
+  \[Permissions \<IMicrosoftGraphPreApprovedPermissions\>\]: preApprovedPermissions
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[PermissionKind \<String\>\]: permissionKind
+    \[PermissionType \<String\>\]: permissionType
+  \[ScopeType \<String\>\]: resourceScopeType
+  \[SensitivityLabels \<IMicrosoftGraphScopeSensitivityLabels\>\]: scopeSensitivityLabels
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[LabelKind \<String\>\]: labelKind
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpreapprovalpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpreapprovalpolicy)
 
 [https://learn.microsoft.com/graph/api/policyroot-post-permissiongrantpreapprovalpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/policyroot-post-permissiongrantpreapprovalpolicies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
