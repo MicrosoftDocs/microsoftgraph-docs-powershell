@@ -53,13 +53,17 @@ The administrativeUnit resource supports extensions, which also allows you to us
 | Application | AdministrativeUnit.Read.All, Directory.ReadWrite.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectoryAdministrativeUnit
+
+```
+This example shows how to use the Get-MgDirectoryAdministrativeUnit Cmdlet.
+
 
 ## PARAMETERS
 

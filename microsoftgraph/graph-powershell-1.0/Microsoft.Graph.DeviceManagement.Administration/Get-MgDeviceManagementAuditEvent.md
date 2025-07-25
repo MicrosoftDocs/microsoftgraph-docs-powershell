@@ -51,13 +51,17 @@ Read properties and relationships of the auditEvent object.
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Get-MgDeviceManagementAuditEvent
+
+```
+This example shows how to use the Get-MgDeviceManagementAuditEvent Cmdlet.
+
 
 ## PARAMETERS
 

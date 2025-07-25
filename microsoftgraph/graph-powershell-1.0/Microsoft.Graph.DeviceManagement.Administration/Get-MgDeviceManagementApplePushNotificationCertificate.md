@@ -34,13 +34,17 @@ Read properties and relationships of the applePushNotificationCertificate object
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Get-MgDeviceManagementApplePushNotificationCertificate
+
+```
+This example shows how to use the Get-MgDeviceManagementApplePushNotificationCertificate Cmdlet.
+
 
 ## PARAMETERS
 

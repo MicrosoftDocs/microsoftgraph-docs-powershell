@@ -35,18 +35,6 @@ Remove-MgBetaGroupCalendarPermanent -InputObject <ICalendarIdentity> [-ResponseH
 Permanently delete a calendar folder and the events that it contains and remove them from the mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -206,6 +194,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupcalendarpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupcalendarpermanent)
 
 [https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-beta)
+
 
 
 

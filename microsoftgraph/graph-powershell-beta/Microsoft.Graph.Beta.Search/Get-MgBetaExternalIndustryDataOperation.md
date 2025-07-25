@@ -52,13 +52,17 @@ The possible states of the long-running operation are notStarted, running, succe
 | Application | IndustryData.ReadBasic.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Get-MgBetaExternalIndustryDataOperation
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataOperation Cmdlet.
+
 
 ## PARAMETERS
 

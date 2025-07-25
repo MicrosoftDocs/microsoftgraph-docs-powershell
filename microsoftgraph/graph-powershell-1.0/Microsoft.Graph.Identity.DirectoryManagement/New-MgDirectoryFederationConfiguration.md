@@ -41,9 +41,8 @@ Create new navigation property to federationConfigurations for directory
 | Application | IdentityProvider.ReadWrite.All,  |
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgDirectoryFederationConfiguration Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 $params = @{
 	"@odata.type" = "microsoft.graph.samlOrWsFedExternalDomainFederation"
@@ -62,6 +61,8 @@ $params = @{
 }
 New-MgDirectoryFederationConfiguration -BodyParameter $params
 ```
+This example shows how to use the New-MgDirectoryFederationConfiguration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

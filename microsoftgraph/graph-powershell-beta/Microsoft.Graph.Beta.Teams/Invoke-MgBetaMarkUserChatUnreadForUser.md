@@ -51,18 +51,6 @@ Invoke-MgBetaMarkUserChatUnreadForUser -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Mark a chat as unread for a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -370,6 +358,7 @@ This property is read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkuserchatunreadforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkuserchatunreadforuser)
 
 [https://learn.microsoft.com/graph/api/chat-markchatunreadforuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-markchatunreadforuser?view=graph-rest-beta)
+
 
 
 

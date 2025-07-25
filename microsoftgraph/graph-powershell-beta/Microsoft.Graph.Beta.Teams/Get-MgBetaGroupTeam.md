@@ -40,18 +40,6 @@ The team associated with this group.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -226,6 +214,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteam)
+
 
 
 

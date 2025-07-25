@@ -31,18 +31,6 @@ Remove-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail
 ## DESCRIPTION
 Delete navigation property assignmentFilterEvaluationStatusDetails for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AssignmentFilterEvaluationStatusDetailsId
@@ -305,6 +293,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetausermanageddeviceassignmentfilterevaluationstatusdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetausermanageddeviceassignmentfilterevaluationstatusdetail)
+
 
 
 

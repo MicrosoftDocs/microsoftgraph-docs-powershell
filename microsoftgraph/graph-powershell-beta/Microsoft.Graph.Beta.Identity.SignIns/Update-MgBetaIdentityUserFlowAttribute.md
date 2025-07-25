@@ -58,17 +58,21 @@ Update the properties of a custom identityUserFlowAttribute object.
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	description = "Your new hobby"
 }
 
 Update-MgBetaIdentityUserFlowAttribute -IdentityUserFlowAttributeId $identityUserFlowAttributeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaIdentityUserFlowAttribute Cmdlet.
+
 
 ## PARAMETERS
 

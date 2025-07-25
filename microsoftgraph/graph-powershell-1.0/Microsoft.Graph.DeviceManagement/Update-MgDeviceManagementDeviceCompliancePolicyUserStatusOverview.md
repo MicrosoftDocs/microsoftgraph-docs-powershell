@@ -60,11 +60,11 @@ Update the properties of a deviceComplianceUserOverview object.
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceComplianceUserOverview"
@@ -73,11 +73,15 @@ $params = @{
 	successCount = 12
 	errorCount = 10
 	failedCount = 11
-	lastUpdateDateTime = \[System.DateTime\]::Parse("2016-12-31T23:58:21.6459442-08:00")
+	lastUpdateDateTime = [System.DateTime]::Parse("2016-12-31T23:58:21.6459442-08:00")
 	configurationVersion = 4
 }
 
 Update-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview Cmdlet.
+
 
 ## PARAMETERS
 

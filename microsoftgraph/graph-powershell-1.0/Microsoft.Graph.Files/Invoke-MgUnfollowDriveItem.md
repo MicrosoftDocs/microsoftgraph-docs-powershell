@@ -34,13 +34,17 @@ Invoke-MgUnfollowDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariab
 Unfollow a driveItem.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 Invoke-MgUnfollowDriveItem -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Invoke-MgUnfollowDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

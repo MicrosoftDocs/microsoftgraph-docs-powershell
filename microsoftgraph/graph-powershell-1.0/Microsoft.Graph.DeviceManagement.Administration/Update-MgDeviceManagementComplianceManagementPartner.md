@@ -67,15 +67,15 @@ Update the properties of a complianceManagementPartner object.
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.complianceManagementPartner"
-	lastHeartbeatDateTime = \[System.DateTime\]::Parse("2016-12-31T23:59:37.9174975-08:00")
+	lastHeartbeatDateTime = [System.DateTime]::Parse("2016-12-31T23:59:37.9174975-08:00")
 	partnerState = "unavailable"
 	displayName = "Display Name value"
 	macOsOnboarded = $true
@@ -111,6 +111,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartnerId $complianceManagementPartnerId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementComplianceManagementPartner Cmdlet.
+
 
 ## PARAMETERS
 

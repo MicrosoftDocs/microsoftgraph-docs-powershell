@@ -70,18 +70,22 @@ Update-MgPrivacySubjectRightsRequest -InputObject <IComplianceIdentity>
 Update the properties of a subjectRightsRequest object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Compliance
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.subjectRightsRequest"
-	internalDueDateTime = \[System.DateTime\]::Parse("2021-08-30T00:00:00Z")
+	internalDueDateTime = [System.DateTime]::Parse("2021-08-30T00:00:00Z")
 }
 
 Update-MgPrivacySubjectRightsRequest -SubjectRightsRequestId $subjectRightsRequestId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPrivacySubjectRightsRequest Cmdlet.
+
 
 ## PARAMETERS
 

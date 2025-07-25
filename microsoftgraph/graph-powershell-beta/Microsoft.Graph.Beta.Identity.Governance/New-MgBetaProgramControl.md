@@ -111,11 +111,11 @@ Prior to making this request, the caller must have previously
 | Application | ProgramControl.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	controlId = "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213"
@@ -124,6 +124,10 @@ $params = @{
 }
 
 New-MgBetaProgramControl -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaProgramControl Cmdlet.
+
 
 ## PARAMETERS
 

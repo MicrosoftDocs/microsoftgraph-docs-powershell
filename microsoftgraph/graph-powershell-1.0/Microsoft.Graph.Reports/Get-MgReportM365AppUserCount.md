@@ -33,20 +33,28 @@ Get-MgReportM365AppUserCount -InputObject <IReportsIdentity> -OutFile <String>
 Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
 
 ## EXAMPLES
+### Example 1: CSV output
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportM365AppUserCount -Format "text/csv"  -Period $periodId
+Get-MgReportM365AppUserCount -Format "text/csv"  -Period $periodId 
 
-### EXAMPLE 2
 ```
+This example will csv output
+
+### Example 2: JSON output
+
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportM365AppUserCount -Format "application/json"  -Period $periodId
+Get-MgReportM365AppUserCount -Format "application/json"  -Period $periodId 
+
+```
+This example will json output
+
 
 ## PARAMETERS
 

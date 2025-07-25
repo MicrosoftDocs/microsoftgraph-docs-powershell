@@ -41,18 +41,6 @@ Delete a bookingService object in the specified bookingBusiness.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BookingBusinessId
@@ -249,6 +237,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessservice)
 
 [https://learn.microsoft.com/graph/api/bookingservice-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingservice-delete?view=graph-rest-1.0)
+
 
 
 

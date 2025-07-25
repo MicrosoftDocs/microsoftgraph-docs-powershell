@@ -63,11 +63,11 @@ Only teachers can update these settings.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	submissionAnimationDisabled = $true
@@ -75,10 +75,14 @@ $params = @{
 
 Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example shows how to use the Update-MgBetaEducationClassAssignmentSetting Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	gradingCategories = @(
@@ -98,6 +102,10 @@ $params = @{
 }
 
 Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaEducationClassAssignmentSetting Cmdlet.
+
 
 ## PARAMETERS
 

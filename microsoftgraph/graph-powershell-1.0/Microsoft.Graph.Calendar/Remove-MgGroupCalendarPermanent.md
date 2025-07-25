@@ -34,18 +34,6 @@ Remove-MgGroupCalendarPermanent -InputObject <ICalendarIdentity> [-ResponseHeade
 Permanently delete a calendar folder and the events that it contains and remove them from the mailbox.
 For more information about item retention, see Configure deleted item retention and recoverable items quotas.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -204,6 +192,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermanent)
 
 [https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-1.0)
+
 
 
 
