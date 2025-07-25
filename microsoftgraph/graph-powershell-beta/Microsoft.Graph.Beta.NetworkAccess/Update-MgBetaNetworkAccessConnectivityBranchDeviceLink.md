@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivitybranchdevicelink
@@ -375,70 +375,70 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BGPCONFIGURATION \<IMicrosoftGraphNetworkaccessBgpConfiguration\>: bgpConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Asn \<Int32?\>\]: Specifies the ASN of the BGP.
-  \[IPAddress \<String\>\]: Specifies the BGP IP address.
-  \[LocalIPAddress \<String\>\]: Specifies the BGP IP address of peer (Microsoft, in this case).
-  \[PeerIPAddress \<String\>\]: Specifies the BGP IP address of customer's on-premise VPN router configuration.
+BGPCONFIGURATION `<IMicrosoftGraphNetworkaccessBgpConfiguration>`: bgpConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Asn <Int32?>]`: Specifies the ASN of the BGP.
+  - `[IPAddress <String>]`: Specifies the BGP IP address.
+  - `[LocalIPAddress <String>]`: Specifies the BGP IP address of peer (Microsoft, in this case).
+  - `[PeerIPAddress <String>]`: Specifies the BGP IP address of customer's on-premise VPN router configuration.
 
-BODYPARAMETER \<IMicrosoftGraphNetworkaccessDeviceLink\>: deviceLink
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphNetworkaccessDeviceLink>`: deviceLink
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[BandwidthCapacityInMbps \<String\>\]: bandwidthCapacityInMbps
-  \[BgpConfiguration \<IMicrosoftGraphNetworkaccessBgpConfiguration\>\]: bgpConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Asn \<Int32?\>\]: Specifies the ASN of the BGP.
-    \[IPAddress \<String\>\]: Specifies the BGP IP address.
-    \[LocalIPAddress \<String\>\]: Specifies the BGP IP address of peer (Microsoft, in this case).
-    \[PeerIPAddress \<String\>\]: Specifies the BGP IP address of customer's on-premise VPN router configuration.
-  \[DeviceVendor \<String\>\]: deviceVendor
-  \[IPAddress \<String\>\]: The public IP address of your CPE (customer premise equipment) device.
-  \[LastModifiedDateTime \<DateTime?\>\]: last modified time.
-  \[Name \<String\>\]: Name.
-  \[RedundancyConfiguration \<IMicrosoftGraphNetworkaccessRedundancyConfiguration\>\]: redundancyConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[RedundancyTier \<String\>\]: redundancyTier
-    \[ZoneLocalIPAddress \<String\>\]: Indicate the specific IP address used for establishing the Border Gateway Protocol (BGP) connection with Microsoft's network.
-  \[TunnelConfiguration \<IMicrosoftGraphNetworkaccessTunnelConfiguration\>\]: tunnelConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[PreSharedKey \<String\>\]: A key to establish secure connection between the link and VPN tunnel on the edge.
-    \[ZoneRedundancyPreSharedKey \<String\>\]: Another key for zone redundant tunnel.
+  - `[BandwidthCapacityInMbps <String>]`: bandwidthCapacityInMbps
+  - `[BgpConfiguration <IMicrosoftGraphNetworkaccessBgpConfiguration>]`: bgpConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Asn <Int32?>]`: Specifies the ASN of the BGP.
+    - `[IPAddress <String>]`: Specifies the BGP IP address.
+    - `[LocalIPAddress <String>]`: Specifies the BGP IP address of peer (Microsoft, in this case).
+    - `[PeerIPAddress <String>]`: Specifies the BGP IP address of customer's on-premise VPN router configuration.
+  - `[DeviceVendor <String>]`: deviceVendor
+  - `[IPAddress <String>]`: The public IP address of your CPE (customer premise equipment) device.
+  - `[LastModifiedDateTime <DateTime?>]`: last modified time.
+  - `[Name <String>]`: Name.
+  - `[RedundancyConfiguration <IMicrosoftGraphNetworkaccessRedundancyConfiguration>]`: redundancyConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[RedundancyTier <String>]`: redundancyTier
+    - `[ZoneLocalIPAddress <String>]`: Indicate the specific IP address used for establishing the Border Gateway Protocol (BGP) connection with Microsoft's network.
+  - `[TunnelConfiguration <IMicrosoftGraphNetworkaccessTunnelConfiguration>]`: tunnelConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[PreSharedKey <String>]`: A key to establish secure connection between the link and VPN tunnel on the edge.
+    - `[ZoneRedundancyPreSharedKey <String>]`: Another key for zone redundant tunnel.
 Required only when you select zoneRedundancy redindancyTier when creating a deviceLink.
 
-INPUTOBJECT \<INetworkAccessIdentity\>: Identity Parameter
-  \[ActivityPivotDateTime \<DateTime?\>\]: Usage: activityPivotDateTime={activityPivotDateTime}
-  \[AggregatedBy \<String\>\]: Usage: aggregatedBy='{aggregatedBy}'
-  \[AlertId \<String\>\]: The unique identifier of alert
-  \[BranchSiteId \<String\>\]: The unique identifier of branchSite
-  \[ConditionalAccessPolicyId \<String\>\]: The unique identifier of conditionalAccessPolicy
-  \[ConnectionId \<String\>\]: The unique identifier of connection
-  \[ConnectivityConfigurationLinkId \<String\>\]: The unique identifier of connectivityConfigurationLink
-  \[DeviceLinkId \<String\>\]: The unique identifier of deviceLink
-  \[DiscoveryPivotDateTime \<DateTime?\>\]: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
-  \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
-  \[FilteringPolicyId \<String\>\]: The unique identifier of filteringPolicy
-  \[FilteringProfileId \<String\>\]: The unique identifier of filteringProfile
-  \[ForwardingPolicyId \<String\>\]: The unique identifier of forwardingPolicy
-  \[ForwardingProfileId \<String\>\]: The unique identifier of forwardingProfile
-  \[NetworkAccessTrafficTransactionId \<String\>\]: The unique identifier of networkAccessTraffic
-  \[PolicyLinkId \<String\>\]: The unique identifier of policyLink
-  \[PolicyRuleId \<String\>\]: The unique identifier of policyRule
-  \[RemoteNetworkHealthEventId \<String\>\]: The unique identifier of remoteNetworkHealthEvent
-  \[RemoteNetworkId \<String\>\]: The unique identifier of remoteNetwork
-  \[StartDateTime \<DateTime?\>\]: Usage: startDateTime={startDateTime}
-  \[ThreatIntelligencePolicyId \<String\>\]: The unique identifier of threatIntelligencePolicy
+INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+  - `[ActivityPivotDateTime <DateTime?>]`: Usage: activityPivotDateTime={activityPivotDateTime}
+  - `[AggregatedBy <String>]`: Usage: aggregatedBy='{aggregatedBy}'
+  - `[AlertId <String>]`: The unique identifier of alert
+  - `[BranchSiteId <String>]`: The unique identifier of branchSite
+  - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
+  - `[ConnectionId <String>]`: The unique identifier of connection
+  - `[ConnectivityConfigurationLinkId <String>]`: The unique identifier of connectivityConfigurationLink
+  - `[DeviceLinkId <String>]`: The unique identifier of deviceLink
+  - `[DiscoveryPivotDateTime <DateTime?>]`: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
+  - `[FilteringPolicyId <String>]`: The unique identifier of filteringPolicy
+  - `[FilteringProfileId <String>]`: The unique identifier of filteringProfile
+  - `[ForwardingPolicyId <String>]`: The unique identifier of forwardingPolicy
+  - `[ForwardingProfileId <String>]`: The unique identifier of forwardingProfile
+  - `[NetworkAccessTrafficTransactionId <String>]`: The unique identifier of networkAccessTraffic
+  - `[PolicyLinkId <String>]`: The unique identifier of policyLink
+  - `[PolicyRuleId <String>]`: The unique identifier of policyRule
+  - `[RemoteNetworkHealthEventId <String>]`: The unique identifier of remoteNetworkHealthEvent
+  - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+  - `[ThreatIntelligencePolicyId <String>]`: The unique identifier of threatIntelligencePolicy
 
-REDUNDANCYCONFIGURATION \<IMicrosoftGraphNetworkaccessRedundancyConfiguration\>: redundancyConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[RedundancyTier \<String\>\]: redundancyTier
-  \[ZoneLocalIPAddress \<String\>\]: Indicate the specific IP address used for establishing the Border Gateway Protocol (BGP) connection with Microsoft's network.
+REDUNDANCYCONFIGURATION `<IMicrosoftGraphNetworkaccessRedundancyConfiguration>`: redundancyConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[RedundancyTier <String>]`: redundancyTier
+  - `[ZoneLocalIPAddress <String>]`: Indicate the specific IP address used for establishing the Border Gateway Protocol (BGP) connection with Microsoft's network.
 
-TUNNELCONFIGURATION \<IMicrosoftGraphNetworkaccessTunnelConfiguration\>: tunnelConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[PreSharedKey \<String\>\]: A key to establish secure connection between the link and VPN tunnel on the edge.
-  \[ZoneRedundancyPreSharedKey \<String\>\]: Another key for zone redundant tunnel.
+TUNNELCONFIGURATION `<IMicrosoftGraphNetworkaccessTunnelConfiguration>`: tunnelConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[PreSharedKey <String>]`: A key to establish secure connection between the link and VPN tunnel on the edge.
+  - `[ZoneRedundancyPreSharedKey <String>]`: Another key for zone redundant tunnel.
 Required only when you select zoneRedundancy redindancyTier when creating a deviceLink.
 
 ## RELATED LINKS
@@ -446,4 +446,26 @@ Required only when you select zoneRedundancy redindancyTier when creating a devi
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivitybranchdevicelink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivitybranchdevicelink)
 
 [https://learn.microsoft.com/graph/api/networkaccess-devicelink-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-devicelink-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalert
@@ -306,47 +306,69 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphHealthMonitoringAlert\>: alert
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphHealthMonitoringAlert>`: alert
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AlertType \<String\>\]: alertType
-  \[Category \<String\>\]: category
-  \[CreatedDateTime \<DateTime?\>\]: The time when Microsoft Entra Health monitoring generated the alert.
+  - `[AlertType <String>]`: alertType
+  - `[Category <String>]`: category
+  - `[CreatedDateTime <DateTime?>]`: The time when Microsoft Entra Health monitoring generated the alert.
 Supports $orderby.
-  \[Documentation \<IMicrosoftGraphHealthMonitoringDocumentation\>\]: documentation
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Enrichment \<IMicrosoftGraphHealthMonitoringEnrichment\>\]: enrichment
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Impacts \<IMicrosoftGraphHealthMonitoringResourceImpactSummary\[\]\>\]: A collection of resource impact summaries that gives a high level view of the kind of resources that were impacted and to what degree.
-      \[ImpactedCount \<String\>\]: The number of resources impacted.
+  - `[Documentation <IMicrosoftGraphHealthMonitoringDocumentation>]`: documentation
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Enrichment <IMicrosoftGraphHealthMonitoringEnrichment>]`: enrichment
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Impacts <IMicrosoftGraphHealthMonitoringResourceImpactSummary- `[]`>]`: A collection of resource impact summaries that gives a high level view of the kind of resources that were impacted and to what degree.
+      - `[ImpactedCount <String>]`: The number of resources impacted.
 The number could be an exhaustive count or a sampling count.
-      \[ImpactedCountLimitExceeded \<Boolean?\>\]: Indicates whether impactedCount is exhaustive or a sampling.
+      - `[ImpactedCountLimitExceeded <Boolean?>]`: Indicates whether impactedCount is exhaustive or a sampling.
 When this value is true, the limit was exceeded and impactedCount represents a sampling; otherwise, impactedCount represents the true number of impacts.
-      \[ResourceType \<String\>\]: The type of resource that was impacted.
+      - `[ResourceType <String>]`: The type of resource that was impacted.
 Examples include user, group, application, servicePrincipal, device.
-    \[State \<String\>\]: enrichmentState
-    \[SupportingData \<IMicrosoftGraphHealthMonitoringSupportingData\>\]: supportingData
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Scenario \<String\>\]: scenario
-  \[Signals \<IMicrosoftGraphHealthMonitoringSignals\>\]: signals
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[State \<String\>\]: alertState
+    - `[State <String>]`: enrichmentState
+    - `[SupportingData <IMicrosoftGraphHealthMonitoringSupportingData>]`: supportingData
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Scenario <String>]`: scenario
+  - `[Signals <IMicrosoftGraphHealthMonitoringSignals>]`: signals
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[State <String>]`: alertState
 
-ENRICHMENT \<IMicrosoftGraphHealthMonitoringEnrichment\>: enrichment
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Impacts \<IMicrosoftGraphHealthMonitoringResourceImpactSummary\[\]\>\]: A collection of resource impact summaries that gives a high level view of the kind of resources that were impacted and to what degree.
-    \[ImpactedCount \<String\>\]: The number of resources impacted.
+ENRICHMENT `<IMicrosoftGraphHealthMonitoringEnrichment>`: enrichment
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Impacts <IMicrosoftGraphHealthMonitoringResourceImpactSummary- `[]`>]`: A collection of resource impact summaries that gives a high level view of the kind of resources that were impacted and to what degree.
+    - `[ImpactedCount <String>]`: The number of resources impacted.
 The number could be an exhaustive count or a sampling count.
-    \[ImpactedCountLimitExceeded \<Boolean?\>\]: Indicates whether impactedCount is exhaustive or a sampling.
+    - `[ImpactedCountLimitExceeded <Boolean?>]`: Indicates whether impactedCount is exhaustive or a sampling.
 When this value is true, the limit was exceeded and impactedCount represents a sampling; otherwise, impactedCount represents the true number of impacts.
-    \[ResourceType \<String\>\]: The type of resource that was impacted.
+    - `[ResourceType <String>]`: The type of resource that was impacted.
 Examples include user, group, application, servicePrincipal, device.
-  \[State \<String\>\]: enrichmentState
-  \[SupportingData \<IMicrosoftGraphHealthMonitoringSupportingData\>\]: supportingData
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  - `[State <String>]`: enrichmentState
+  - `[SupportingData <IMicrosoftGraphHealthMonitoringSupportingData>]`: supportingData
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalert)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
