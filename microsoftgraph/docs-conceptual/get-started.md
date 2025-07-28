@@ -84,7 +84,7 @@ After signing in, you can begin making calls to Microsoft Graph.
 
 ### Get a user
 
-In this section, you will identify a user in the list returned by `Get-MgUser` and store their information in the `$user` variable, which will be used as a parameter in subsequent commands. Start by running the following command.
+In this section, you identify a user in the list returned by `Get-MgUser` and store their information in the `$user` variable, which is used as a parameter in subsequent commands. Start by running the following command.
 
 ```powershell
 Get-MgUser
@@ -159,7 +159,7 @@ New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Conten
 
 ### Sign out
 
-Use the `Disconnect-MgGraph` command to sign out. This ends your current session and revokes the authentication token for the active PowerShell session, ensuring your credentials are no longer available until you sign in again.
+Use the `Disconnect-MgGraph` command to sign out. This  command ends your current session and revokes the authentication token for the active PowerShell session, ensuring your credentials are no longer available until you sign in again.
 
 ```powershell
 Disconnect-MgGraph

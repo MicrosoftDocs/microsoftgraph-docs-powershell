@@ -14,14 +14,14 @@ reviewer: maisarissi
 
 # Use Find-MgGraphPermission
 
-The Microsoft Graph PowerShell SDK requires users to understand both the semantics and syntax of Microsoft Graph API permissions. The `Find-MgGraphPermission` cmdlet helps answer the following questions:
+The Microsoft Graph PowerShell SDK requires users to understand both the semantics and syntax of Microsoft Graph API permissions. The `Find-MgGraphPermission` cmdlet addresses the following questions:
 
 - How do I find the values to supply to the permission-related parameters of commands like `New-MgApplication` and other application and consent related commands?
 - What permissions are applicable to a certain domain? For example, application.
 
 To use Microsoft Graph PowerShell to access Microsoft Graph, users must sign in to Microsoft Graph using the `Connect-MgGraph` cmdlet. Use the [Find-MgGraphCommand](find-mg-graph-command.md) to find which permissions to use for a specific cmdlet or API.
 
-Currently, PowerShell commands and scripts cannot validate user input that refers to permissions. They also do not provide an *auto-complete* experience to help users supply input accurately. This also affects commands or scripts implemented with the Microsoft Graph PowerShell SDK itself.
+Currently, PowerShell commands and scripts can't validate user input that refers to permissions. They also don't provide an *auto-complete* experience to help users supply input accurately. This also affects commands or scripts implemented with the Microsoft Graph PowerShell SDK itself.
 
 ## Find permissions related to a given domain
 
