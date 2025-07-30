@@ -16,7 +16,7 @@ Invoke action assign
 ```
 Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile -WindowsAutopilotDeploymentProfileId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeviceIds <String[]>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile -WindowsAutopilotDep
 ```
 Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile -WindowsAutopilotDeploymentProfileId <String>
  -BodyParameter <IPaths1Bmmkw4DevicemanagementWindowsautopilotdeploymentprofilesWindowsautopilotdeploymentprofileIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile -WindowsAutopilotDep
 ```
 Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile -InputObject <IDeviceManagementEnrollmentIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeviceIds <String[]>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,14 +40,12 @@ Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile -InputObject <IDevic
 ```
 Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile -InputObject <IDeviceManagementEnrollmentIdentity>
  -BodyParameter <IPaths1Bmmkw4DevicemanagementWindowsautopilotdeploymentprofilesWindowsautopilotdeploymentprofileIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action assign
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -79,21 +77,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -158,6 +141,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -165,6 +163,36 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsAutopilotDeploymentProfileId
+The unique identifier of windowsAutopilotDeploymentProfile
+
+```yaml
+Type: String
+Parameter Sets: AssignExpanded, Assign
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -183,21 +211,6 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsAutopilotDeploymentProfileId
-The unique identifier of windowsAutopilotDeploymentProfile
-
-```yaml
-Type: String
-Parameter Sets: AssignExpanded, Assign
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -18,7 +18,7 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgGroupMemberCount -GroupId <String> [-Filter <String>] [-Search <String>] -ConsistencyLevel <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Get-MgGroupMemberCount -GroupId <String> [-Filter <String>] [-Search <String>] -
 ```
 Get-MgGroupMemberCount -InputObject <IGroupsIdentity> [-Filter <String>] [-Search <String>]
  -ConsistencyLevel <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,8 +39,6 @@ Get the number of the resource
 | Delegated (work or school account) | GroupMember.ReadWrite.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | GroupMember.ReadWrite.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.Read.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -118,6 +116,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

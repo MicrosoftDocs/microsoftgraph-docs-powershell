@@ -21,7 +21,7 @@ Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment
  -CloudPcProvisioningPolicyAssignmentId <String> -CloudPcProvisioningPolicyId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AssignedUsers <IMicrosoftGraphUser[]>] [-Id <String>] [-Target <Hashtable>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -29,7 +29,7 @@ Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment
 Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment
  -CloudPcProvisioningPolicyAssignmentId <String> -CloudPcProvisioningPolicyId <String>
  -BodyParameter <IMicrosoftGraphCloudPcProvisioningPolicyAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,7 +37,7 @@ Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment
 Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment
  -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AssignedUsers <IMicrosoftGraphUser[]>] [-Id <String>]
- [-Target <Hashtable>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Target <Hashtable>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -46,13 +46,11 @@ Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment
 Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment
  -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphCloudPcProvisioningPolicyAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property assignments in deviceManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -136,21 +134,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -198,6 +181,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -220,6 +218,21 @@ cloudPcManagementAssignmentTarget
 Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

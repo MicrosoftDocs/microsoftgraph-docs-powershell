@@ -11,9 +11,6 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Create a new conditionalAccessPolicy.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -23,13 +20,13 @@ New-MgIdentityConditionalAccessPolicy [-ResponseHeadersVariable <String>] [-Addi
  [-Description <String>] [-DisplayName <String>]
  [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
  [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>] [-TemplateId <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditionalAccessPolicy>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -328,21 +325,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -CreatedDateTime
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -454,6 +436,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -515,6 +512,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -563,7 +575,7 @@ For details, see rules with multiple expressions
       - `[ExcludeApplications <String- `[]`>]`: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
 Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite  MicrosoftAdminPortals - For more information, see Conditional Access Target resources: Microsoft Admin Portals
       - `[IncludeApplications <String- `[]`>]`: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite  MicrosoftAdminPortals - For more information, see Conditional Access Target resources: Microsoft Admin Portals
-      - `[IncludeAuthenticationContextClassReferences <String- `[]`>]`:
+      - `[IncludeAuthenticationContextClassReferences <String- `[]`>]`: 
       - `[IncludeUserActions <String- `[]`>]`: User actions to include.
 Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
     - `[AuthenticationFlows <IMicrosoftGraphConditionalAccessAuthenticationFlows>]`: conditionalAccessAuthenticationFlows
@@ -571,7 +583,7 @@ Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
       - `[TransferMethods <String>]`: conditionalAccessTransferMethods
     - `[ClientAppTypes <String- `[]`>]`: Client application types included in the policy.
 Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported, other.
-Required.
+Required. 
 The easUnsupported enumeration member will be deprecated in favor of exchangeActiveSync, which includes EAS supported and unsupported platforms.
     - `[ClientApplications <IMicrosoftGraphConditionalAccessClientApplications>]`: conditionalAccessClientApplications
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -616,7 +628,7 @@ Required.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Readonly.
-  - `[Description <String>]`:
+  - `[Description <String>]`: 
   - `[DisplayName <String>]`: Specifies a display name for the conditionalAccessPolicy object.
   - `[GrantControls <IMicrosoftGraphConditionalAccessGrantControls>]`: conditionalAccessGrantControls
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -670,7 +682,7 @@ Readonly.
       - `[Type <String>]`: signinFrequencyType
       - `[Value <Int32?>]`: The number of days or hours.
   - `[State <String>]`: conditionalAccessPolicyState
-  - `[TemplateId <String>]`:
+  - `[TemplateId <String>]`: 
 
 CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet>`: conditionalAccessConditionSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -684,7 +696,7 @@ For details, see rules with multiple expressions
     - `[ExcludeApplications <String- `[]`>]`: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
 Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite  MicrosoftAdminPortals - For more information, see Conditional Access Target resources: Microsoft Admin Portals
     - `[IncludeApplications <String- `[]`>]`: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite  MicrosoftAdminPortals - For more information, see Conditional Access Target resources: Microsoft Admin Portals
-    - `[IncludeAuthenticationContextClassReferences <String- `[]`>]`:
+    - `[IncludeAuthenticationContextClassReferences <String- `[]`>]`: 
     - `[IncludeUserActions <String- `[]`>]`: User actions to include.
 Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
   - `[AuthenticationFlows <IMicrosoftGraphConditionalAccessAuthenticationFlows>]`: conditionalAccessAuthenticationFlows
@@ -692,7 +704,7 @@ Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
     - `[TransferMethods <String>]`: conditionalAccessTransferMethods
   - `[ClientAppTypes <String- `[]`>]`: Client application types included in the policy.
 Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported, other.
-Required.
+Required. 
 The easUnsupported enumeration member will be deprecated in favor of exchangeActiveSync, which includes EAS supported and unsupported platforms.
   - `[ClientApplications <IMicrosoftGraphConditionalAccessClientApplications>]`: conditionalAccessClientApplications
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

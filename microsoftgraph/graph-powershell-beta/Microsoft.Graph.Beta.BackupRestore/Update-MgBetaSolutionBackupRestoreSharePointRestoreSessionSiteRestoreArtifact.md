@@ -22,7 +22,7 @@ Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact
  [-AdditionalProperties <Hashtable>] [-CompletionDateTime <DateTime>] [-DestinationType <String>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-RestorePoint <IMicrosoftGraphRestorePoint>]
  [-RestoredSiteId <String>] [-StartDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -30,7 +30,7 @@ Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact
 Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact
  -SharePointRestoreSessionId <String> -SiteRestoreArtifactId <String>
  -BodyParameter <IMicrosoftGraphSiteRestoreArtifact> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,7 +39,7 @@ Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact
  -InputObject <IBackupRestoreIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CompletionDateTime <DateTime>] [-DestinationType <String>] [-Error <IMicrosoftGraphPublicError>]
  [-Id <String>] [-RestorePoint <IMicrosoftGraphRestorePoint>] [-RestoredSiteId <String>]
- [-StartDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
+ [-StartDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,14 +47,12 @@ Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact
 ```
 Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact
  -InputObject <IBackupRestoreIdentity> -BodyParameter <IMicrosoftGraphSiteRestoreArtifact>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property siteRestoreArtifacts in solutions
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -96,21 +94,6 @@ The time when restoration of restore artifact is completed.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -194,6 +177,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -303,6 +301,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -379,6 +392,7 @@ This property is read-only.
       - `[Error <IMicrosoftGraphPublicError>]`: publicError
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+      - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
       - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
       - `[ProtectionSources <String>]`: protectionSource
       - `[Status <String>]`: protectionUnitStatus
@@ -472,6 +486,7 @@ This property is read-only.
       - `[Target <String>]`: The target of the error.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+    - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
     - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
     - `[ProtectionSources <String>]`: protectionSource
     - `[Status <String>]`: protectionUnitStatus

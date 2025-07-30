@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestActivatedUsing
 
 ## SYNOPSIS
-When the request activates a membership or ownership assignment in PIM for groups, this object represents the eligibility policy for the group.
+When the request activates a membership or ownership assignment in PIM for Groups, this object represents the eligibility policy for the group.
 Otherwise, it is null.
 Supports $expand.
 
@@ -21,7 +21,7 @@ Supports $expand.
 ```
 Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestActivatedUsing
  -PrivilegedAccessGroupAssignmentScheduleRequestId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -29,16 +29,14 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestActivatedU
 ```
 Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestActivatedUsing
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-When the request activates a membership or ownership assignment in PIM for groups, this object represents the eligibility policy for the group.
+When the request activates a membership or ownership assignment in PIM for Groups, this object represents the eligibility policy for the group.
 Otherwise, it is null.
 Supports $expand.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,6 +95,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
