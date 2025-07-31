@@ -76,14 +76,14 @@ New-MgBetaDeviceAppManagementAndroidManagedAppProtection [-ResponseHeadersVariab
  [-RoleScopeTagIds <String[]>] [-SaveAsBlocked] [-ScreenCaptureBlocked] [-SimplePinBlocked]
  [-TargetedAppManagementLevels <AppManagementLevel>] [-Version <String>]
  [-WarnAfterCompanyPortalUpdateDeferralInDays <Int32>] [-WipeAfterCompanyPortalUpdateDeferralInDays <Int32>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceAppManagementAndroidManagedAppProtection
  -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -96,8 +96,6 @@ Create new navigation property to androidManagedAppProtections for deviceAppMana
 | Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -555,21 +553,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -1509,6 +1492,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProtectedMessagingRedirectAppType
 Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
@@ -1720,6 +1718,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WipeAfterCompanyPortalUpdateDeferralInDays
+Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped
+
+```yaml
+Type: Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -1732,21 +1760,6 @@ Aliases: wi
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WipeAfterCompanyPortalUpdateDeferralInDays
-Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped
-
-```yaml
-Type: Int32
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1769,8 +1782,10 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 APPROVEDKEYBOARDS `<IMicrosoftGraphKeyValuePair- `[]`>`: If Keyboard Restriction is enabled, only keyboards in this approved list will be allowed.
 A key should be Android package id for a keyboard and value should be a friendly name
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+  - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+  - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
 
 APPS `<IMicrosoftGraphManagedMobileApp- `[]`>`: List of apps to which the policy is deployed.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1875,8 +1890,10 @@ Read-only.
   - `[AppActionIfSamsungKnoxAttestationRequired <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[ApprovedKeyboards <IMicrosoftGraphKeyValuePair- `[]`>]`: If Keyboard Restriction is enabled, only keyboards in this approved list will be allowed.
 A key should be Android package id for a keyboard and value should be a friendly name
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[Apps <IMicrosoftGraphManagedMobileApp- `[]`>]`: List of apps to which the policy is deployed.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1942,8 +1959,10 @@ Read-only.
   - `[Version <String>]`: Version of the entity.
 
 EXEMPTEDAPPPACKAGES `<IMicrosoftGraphKeyValuePair- `[]`>`: App packages in this list will be exempt from the policy and will be able to receive data from managed apps.
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+  - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+  - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
 
 ## RELATED LINKS
 

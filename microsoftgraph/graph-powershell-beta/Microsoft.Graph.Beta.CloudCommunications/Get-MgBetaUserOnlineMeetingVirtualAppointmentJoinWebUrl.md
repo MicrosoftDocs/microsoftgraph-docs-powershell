@@ -21,14 +21,14 @@ With Teams Premium, you can configure a custom lobby room experience for attende
 ### Get (Default)
 ```
 Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl -OnlineMeetingId <String> -UserId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl -InputObject <ICloudCommunicationsIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -101,6 +101,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

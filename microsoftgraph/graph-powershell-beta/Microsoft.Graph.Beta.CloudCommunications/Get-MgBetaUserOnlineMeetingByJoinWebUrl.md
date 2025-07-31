@@ -16,14 +16,14 @@ Information about a meeting, including the URL used to join a meeting, the atten
 ```
 Get-MgBetaUserOnlineMeetingByJoinWebUrl -JoinWebUrl <String> -UserId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaUserOnlineMeetingByJoinWebUrl -InputObject <ICloudCommunicationsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,8 +36,6 @@ Information about a meeting, including the URL used to join a meeting, the atten
 | Delegated (work or school account) | OnlineMeetings.Read, OnlineMeetings.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -96,6 +94,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

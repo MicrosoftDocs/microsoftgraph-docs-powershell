@@ -9,7 +9,7 @@ ms.subservice: intune
 # Remove-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Deletes a macOSOfficeSuiteApp.
+Deletes a androidLobApp.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -19,19 +19,19 @@ Deletes a macOSOfficeSuiteApp.
 ### Delete (Default)
 ```
 Remove-MgDeviceAppManagementMobileApp -MobileAppId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Deletes a macOSOfficeSuiteApp.
+Deletes a androidLobApp.
 
 **Permissions**
 
@@ -55,21 +55,6 @@ This example shows how to use the Remove-MgDeviceAppManagementMobileApp Cmdlet.
 
 
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -147,6 +132,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -154,6 +154,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -235,7 +250,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileapp)
 
-[https://learn.microsoft.com/graph/api/intune-apps-macosofficesuiteapp-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-macosofficesuiteapp-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-androidlobapp-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-androidlobapp-delete?view=graph-rest-1.0)
 
 
 

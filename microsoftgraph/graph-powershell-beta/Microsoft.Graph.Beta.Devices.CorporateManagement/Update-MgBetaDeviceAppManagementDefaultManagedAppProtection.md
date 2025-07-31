@@ -80,14 +80,14 @@ Update-MgBetaDeviceAppManagementDefaultManagedAppProtection -DefaultManagedAppPr
  [-RoleScopeTagIds <String[]>] [-SaveAsBlocked] [-ScreenCaptureBlocked] [-SimplePinBlocked]
  [-ThirdPartyKeyboardsBlocked] [-Version <String>] [-WarnAfterCompanyPortalUpdateDeferralInDays <Int32>]
  [-WipeAfterCompanyPortalUpdateDeferralInDays <Int32>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementDefaultManagedAppProtection -DefaultManagedAppProtectionId <String>
  -BodyParameter <IMicrosoftGraphDefaultManagedAppProtection> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -155,14 +155,14 @@ Update-MgBetaDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevic
  [-RoleScopeTagIds <String[]>] [-SaveAsBlocked] [-ScreenCaptureBlocked] [-SimplePinBlocked]
  [-ThirdPartyKeyboardsBlocked] [-Version <String>] [-WarnAfterCompanyPortalUpdateDeferralInDays <Int32>]
  [-WipeAfterCompanyPortalUpdateDeferralInDays <Int32>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphDefaultManagedAppProtection> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -175,8 +175,6 @@ Update the navigation property defaultManagedAppProtections in deviceAppManageme
 | Delegated (work or school account) | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -635,21 +633,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -1772,6 +1755,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProtectedMessagingRedirectAppType
 Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
@@ -2002,6 +2000,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WipeAfterCompanyPortalUpdateDeferralInDays
+Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped
+
+```yaml
+Type: Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -2014,21 +2042,6 @@ Aliases: wi
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WipeAfterCompanyPortalUpdateDeferralInDays
-Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped
-
-```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -2155,8 +2168,10 @@ Read-only.
   - `[CustomDialerAppPackageId <String>]`: PackageId of a custom dialer app to click-to-open a phone number on Android.
   - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
   - `[CustomSettings <IMicrosoftGraphKeyValuePair- `[]`>]`: A set of string key and string value pairs to be sent to the affected users, unalterned by this service
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
   - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2221,8 +2236,10 @@ This setting is only allowed to be True when AllowedInboundDataTransferSources i
   - `[WipeAfterCompanyPortalUpdateDeferralInDays <Int32?>]`: Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped
 
 CUSTOMSETTINGS `<IMicrosoftGraphKeyValuePair- `[]`>`: A set of string key and string value pairs to be sent to the affected users, unalterned by this service
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+  - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+  - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
 
 DEPLOYMENTSUMMARY `<IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2239,13 +2256,17 @@ Read-only.
 
 EXEMPTEDAPPPACKAGES `<IMicrosoftGraphKeyValuePair- `[]`>`: Android App packages in this list will be exempt from the policy and will be able to receive data from managed apps.
 (Android only)
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+  - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+  - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
 
 EXEMPTEDAPPPROTOCOLS `<IMicrosoftGraphKeyValuePair- `[]`>`: iOS Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
 (iOS Only)
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+  - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+  - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection

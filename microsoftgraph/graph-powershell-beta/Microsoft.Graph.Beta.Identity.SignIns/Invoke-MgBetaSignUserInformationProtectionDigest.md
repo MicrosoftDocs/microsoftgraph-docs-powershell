@@ -16,14 +16,14 @@ Invoke action signDigest
 ```
 Invoke-MgBetaSignUserInformationProtectionDigest -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Sign
 ```
 Invoke-MgBetaSignUserInformationProtectionDigest -UserId <String>
  -Body <IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Invoke-MgBetaSignUserInformationProtectionDigest -UserId <String>
 ```
 Invoke-MgBetaSignUserInformationProtectionDigest -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SignViaIdentity
@@ -39,13 +39,11 @@ Invoke-MgBetaSignUserInformationProtectionDigest -InputObject <IIdentitySignInsI
 Invoke-MgBetaSignUserInformationProtectionDigest -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action signDigest
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -96,21 +94,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DigestInputFile
 Input File for Digest (.)
 
@@ -157,6 +140,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -181,6 +179,21 @@ Parameter Sets: SignExpanded, Sign
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

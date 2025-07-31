@@ -20,7 +20,7 @@ Mark a chat as read for a user.
 ```
 Invoke-MgBetaMarkUserChatReadForUser -ChatId <String> -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-TenantId <String>] [-User <IMicrosoftGraphTeamworkUserIdentity>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Invoke-MgBetaMarkUserChatReadForUser -ChatId <String> -UserId <String> [-Respons
 ```
 Invoke-MgBetaMarkUserChatReadForUser -ChatId <String> -UserId <String>
  -BodyParameter <IPathsBy90K2UsersUserIdChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Invoke-MgBetaMarkUserChatReadForUser -ChatId <String> -UserId <String>
 ```
 Invoke-MgBetaMarkUserChatReadForUser -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-TenantId <String>] [-User <IMicrosoftGraphTeamworkUserIdentity>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -44,14 +44,12 @@ Invoke-MgBetaMarkUserChatReadForUser -InputObject <ITeamsIdentity> [-ResponseHea
 ```
 Invoke-MgBetaMarkUserChatReadForUser -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsBy90K2UsersUserIdChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Mark a chat as read for a user.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -101,21 +99,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -158,6 +141,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -217,6 +215,21 @@ Parameter Sets: MarkExpanded, Mark
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

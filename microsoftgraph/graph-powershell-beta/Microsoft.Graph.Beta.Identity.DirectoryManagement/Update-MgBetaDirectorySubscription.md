@@ -22,7 +22,7 @@ Update-MgBetaDirectorySubscription -CompanySubscriptionId <String> [-ResponseHea
  [-Id <String>] [-IsTrial] [-NextLifecycleDateTime <DateTime>] [-OcpSubscriptionId <String>]
  [-OwnerId <String>] [-OwnerTenantId <String>] [-OwnerType <String>]
  [-ServiceStatus <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>]
- [-Status <String>] [-TotalLicenses <Int32>] [-Headers <IDictionary>]
+ [-Status <String>] [-TotalLicenses <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Update-MgBetaDirectorySubscription -CompanySubscriptionId <String> [-ResponseHea
 ```
 Update-MgBetaDirectorySubscription -CompanySubscriptionId <String>
  -BodyParameter <IMicrosoftGraphCompanySubscription> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,7 +40,7 @@ Update-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIde
  [-CreatedDateTime <DateTime>] [-Id <String>] [-IsTrial] [-NextLifecycleDateTime <DateTime>]
  [-OcpSubscriptionId <String>] [-OwnerId <String>] [-OwnerTenantId <String>] [-OwnerType <String>]
  [-ServiceStatus <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>]
- [-Status <String>] [-TotalLicenses <Int32>] [-Headers <IDictionary>]
+ [-Status <String>] [-TotalLicenses <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,13 +48,11 @@ Update-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIde
 ```
 Update-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IMicrosoftGraphCompanySubscription> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property subscriptions in directory
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -114,21 +112,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -291,6 +274,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -379,6 +377,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

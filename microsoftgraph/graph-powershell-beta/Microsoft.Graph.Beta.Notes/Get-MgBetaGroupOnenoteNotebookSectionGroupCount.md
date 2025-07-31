@@ -19,34 +19,32 @@ Get the number of the resource
 ```
 Get-MgBetaGroupOnenoteNotebookSectionGroupCount -GroupId <String> -NotebookId <String> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaGroupOnenoteNotebookSectionGroupCount -GroupId <String> -NotebookId <String> -SectionGroupId <String>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgBetaGroupOnenoteNotebookSectionGroupCount -InputObject <INotesIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaGroupOnenoteNotebookSectionGroupCount -InputObject <INotesIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -120,6 +118,21 @@ Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

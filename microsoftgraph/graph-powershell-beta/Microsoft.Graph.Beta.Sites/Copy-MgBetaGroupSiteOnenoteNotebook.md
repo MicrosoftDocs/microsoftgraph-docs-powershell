@@ -23,7 +23,7 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copy-MgBetaGroupSiteOnenoteNotebook -GroupId <String> -NotebookId <String> -SiteId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-GroupId1 <String>]
  [-NotebookFolder <String>] [-RenameAs <String>] [-SiteCollectionId <String>] [-SiteId1 <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
@@ -31,14 +31,14 @@ Copy-MgBetaGroupSiteOnenoteNotebook -GroupId <String> -NotebookId <String> -Site
 Copy-MgBetaGroupSiteOnenoteNotebook [-GroupId <String>] [-SiteId <String>] -InputObject <ISitesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-NotebookFolder <String>]
  [-RenameAs <String>] [-SiteCollectionId <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
 ```
 Copy-MgBetaGroupSiteOnenoteNotebook -GroupId <String> -NotebookId <String> -SiteId <String>
  -BodyParameter <IPathsVl73P1GroupsGroupIdSitesSiteIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ Copy-MgBetaGroupSiteOnenoteNotebook -GroupId <String> -NotebookId <String> -Site
 ```
 Copy-MgBetaGroupSiteOnenoteNotebook -InputObject <ISitesIdentity>
  -BodyParameter <IPathsVl73P1GroupsGroupIdSitesSiteIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -54,8 +54,6 @@ Copy-MgBetaGroupSiteOnenoteNotebook -InputObject <ISitesIdentity>
 Copies a notebook to the Notebooks folder in the destination Documents library.
 The folder is created if it doesn't exist.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -87,21 +85,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -208,6 +191,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RenameAs
 
 
@@ -287,6 +285,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CopyExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

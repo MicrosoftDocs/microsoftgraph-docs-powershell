@@ -16,21 +16,21 @@ Get the number of the resource
 ```
 Get-MgBetaOnPremisePublishingProfileAgentGroupCount -OnPremisesPublishingProfileId <String> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get2
 ```
 Get-MgBetaOnPremisePublishingProfileAgentGroupCount -OnPremisesPublishingProfileId <String>
  -OnPremisesAgentId <String> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgBetaOnPremisePublishingProfileAgentGroupCount -OnPremisesPublishingProfileId <String>
  -OnPremisesAgentGroupId <String> -OnPremisesAgentId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -38,21 +38,21 @@ Get-MgBetaOnPremisePublishingProfileAgentGroupCount -OnPremisesPublishingProfile
 ```
 Get-MgBetaOnPremisePublishingProfileAgentGroupCount -InputObject <IApplicationsIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgBetaOnPremisePublishingProfileAgentGroupCount -InputObject <IApplicationsIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaOnPremisePublishingProfileAgentGroupCount -InputObject <IApplicationsIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -65,8 +65,6 @@ Get the number of the resource
 | Delegated (work or school account) | Policy.Read.HybridAuthentication, Policy.ReadWrite.HybridAuthentication, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -155,6 +153,21 @@ Parameter Sets: Get, Get2, Get1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

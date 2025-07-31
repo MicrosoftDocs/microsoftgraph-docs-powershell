@@ -23,7 +23,7 @@ See support for filtering on user flows for syntax information.
 ```
 Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAuthenticationMethodLoadStart
  -AuthenticationEventsFlowId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlo
 ```
 Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAuthenticationMethodLoadStart
  -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -41,8 +41,6 @@ The configuration for what to invoke when authentication methods are ready to be
 Must have at least one identity provider linked.
 Supports $filter (eq).
 See support for filtering on user flows for syntax information.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -104,6 +102,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

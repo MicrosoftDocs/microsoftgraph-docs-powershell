@@ -21,7 +21,7 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
  -WindowsAutopilotDeviceIdentityId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-DeviceAccountPassword <String>]
  [-DeviceAccountUpn <String>] [-DeviceFriendlyName <String>] [-DisplayName <String>] [-GroupTag <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
 Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
  -WindowsAutopilotDeviceIdentityId <String>
  -BodyParameter <IPaths17Vu19LDevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphUpdatedevicepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
  -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-DeviceAccountPassword <String>]
  [-DeviceAccountUpn <String>] [-DeviceFriendlyName <String>] [-DisplayName <String>] [-GroupTag <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,7 +49,7 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
 Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
  -InputObject <IDeviceManagementEnrollmentIdentity>
  -BodyParameter <IPaths17Vu19LDevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphUpdatedevicepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -63,8 +63,6 @@ Updates properties on Autopilot devices.
 | Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -111,21 +109,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -250,6 +233,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -280,6 +278,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WindowsAutopilotDeviceIdentityId
+The unique identifier of windowsAutopilotDeviceIdentity
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -290,21 +318,6 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsAutopilotDeviceIdentityId
-The unique identifier of windowsAutopilotDeviceIdentity
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

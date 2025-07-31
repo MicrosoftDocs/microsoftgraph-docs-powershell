@@ -27,13 +27,13 @@ Update-MgPrintPrinterJob -PrintJobId <String> -PrinterId <String> [-ResponseHead
  [-CreatedDateTime <DateTime>] [-Documents <IMicrosoftGraphPrintDocument[]>] [-ErrorCode <Int32>]
  [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>] [-RedirectedTo <String>]
  [-Status <IMicrosoftGraphPrintJobStatus>] [-Tasks <IMicrosoftGraphPrintTask[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPrintPrinterJob -PrintJobId <String> -PrinterId <String> -BodyParameter <IMicrosoftGraphPrintJob>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,13 +45,13 @@ Update-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseHea
  [-CreatedDateTime <DateTime>] [-Documents <IMicrosoftGraphPrintDocument[]>] [-ErrorCode <Int32>]
  [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>] [-RedirectedTo <String>]
  [-Status <IMicrosoftGraphPrintJobStatus>] [-Tasks <IMicrosoftGraphPrintTask[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrintJob>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -173,21 +173,6 @@ To construct, see NOTES section for CONFIGURATION properties and create a hash t
 Type: IMicrosoftGraphPrintJobConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -352,6 +337,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RedirectedFrom
 Contains the source job URL, if the job has been redirected from another printer.
 
@@ -421,6 +421,21 @@ To construct, see NOTES section for TASKS properties and create a hash table.
 Type: IMicrosoftGraphPrintTask[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -513,7 +528,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created.
 Read-only.
-  - `[Documents <IMicrosoftGraphPrintDocument- `[]`>]`:
+  - `[Documents <IMicrosoftGraphPrintDocument- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[ContentType <String>]`: The document's content (MIME) type.

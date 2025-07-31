@@ -17,21 +17,19 @@ Create new navigation property to requirements for security
 New-MgBetaSecurityPartnerSecurityScoreRequirement [-ResponseHeadersVariable <String>] [-ActionUrl <String>]
  [-AdditionalProperties <Hashtable>] [-ComplianceStatus <String>] [-HelpUrl <String>] [-Id <String>]
  [-MaxScore <Int64>] [-RequirementType <String>] [-Score <Int64>] [-State <String>]
- [-UpdatedDateTime <DateTime>] [-Headers <IDictionary>] [-WhatIf]
+ [-UpdatedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityPartnerSecurityScoreRequirement -BodyParameter <IMicrosoftGraphPartnerSecurityRequirement>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to requirements for security
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -88,21 +86,6 @@ complianceStatus
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -168,6 +151,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -239,6 +237,21 @@ The date the requirement properties were last updated.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

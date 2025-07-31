@@ -27,14 +27,14 @@ Update-MgBetaRoleManagementEnterpriseApp -RbacApplicationId <String> [-ResponseH
  [-RoleEligibilityScheduleRequests <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]>]
  [-RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]
  [-TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaRoleManagementEnterpriseApp -RbacApplicationId <String>
  -BodyParameter <IMicrosoftGraphRbacApplication> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -52,20 +52,18 @@ Update-MgBetaRoleManagementEnterpriseApp -InputObject <IIdentityGovernanceIdenti
  [-RoleEligibilityScheduleRequests <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]>]
  [-RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]
  [-TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaRoleManagementEnterpriseApp -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphRbacApplication> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property enterpriseApps in roleManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +95,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -159,6 +142,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -360,6 +358,21 @@ To construct, see NOTES section for TRANSITIVEROLEASSIGNMENTS properties and cre
 Type: IMicrosoftGraphUnifiedRoleAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

@@ -27,13 +27,13 @@ Update-MgContact -OrgContactId <String> [-ResponseHeadersVariable <String>] [-Ad
  [-Phones <IMicrosoftGraphPhone[]>] [-ProxyAddresses <String[]>]
  [-ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError[]>] [-Surname <String>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgContact -OrgContactId <String> -BodyParameter <IMicrosoftGraphOrgContact>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -50,20 +50,18 @@ Update-MgContact -InputObject <IIdentityDirectoryManagementIdentity> [-ResponseH
  [-Phones <IMicrosoftGraphPhone[]>] [-ProxyAddresses <String[]>]
  [-ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError[]>] [-Surname <String>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgContact -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <IMicrosoftGraphOrgContact>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update entity in contacts
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -123,21 +121,6 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -444,6 +427,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProxyAddresses
 For example: 'SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'.
 The any operator is required for filter expressions on multi-valued properties.
@@ -527,6 +525,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -585,9 +598,9 @@ It's a free-format string value, for example, 'United States'.
     - `[PostalCode <String>]`: The postal code.
     - `[State <String>]`: The state.
     - `[Street <String>]`: The street.
-  - `[CompanyName <String>]`: Name of the company that this organizational contact belongs to.
+  - `[CompanyName <String>]`: Name of the company that this organizational contact belongs to. 
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  - `[Department <String>]`: The name for the department in which the contact works.
+  - `[Department <String>]`: The name for the department in which the contact works. 
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
   - `[DirectReports <IMicrosoftGraphDirectoryObject- `[]`>]`: The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.)  Read-only.
@@ -627,19 +640,19 @@ Other objects contain the same value for the property.
     - `[PropertyCausingError <String>]`: Name of the directory property causing the error.
 Current possible values: UserPrincipalName or ProxyAddress
     - `[Value <String>]`: Value of the property causing the error.
-  - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced and now mastered in Exchange; null if this object has never been synced from an on-premises directory (default).
+  - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced and now mastered in Exchange; null if this object has never been synced from an on-premises directory (default). 
 Supports $filter (eq, ne, not, in, and eq for null values).
   - `[Phones <IMicrosoftGraphPhone- `[]`>]`: List of phones for this organizational contact.
 Phone types can be mobile, business, and businessFax.
 Only one of each type can ever be present in the collection.
-    - `[Language <String>]`:
+    - `[Language <String>]`: 
     - `[Number <String>]`: The phone number.
-    - `[Region <String>]`:
+    - `[Region <String>]`: 
     - `[Type <String>]`: phoneType
   - `[ProxyAddresses <String- `[]`>]`: For example: 'SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'.
 The any operator is required for filter expressions on multi-valued properties.
 Supports $filter (eq, not, ge, le, startsWith, /$count eq 0, /$count ne 0).
-  - `[ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError- `[]`>]`: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an organizational contact object .
+  - `[ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError- `[]`>]`: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an organizational contact object . 
 Supports $filter (eq, not, for isResolved and serviceInstance).
     - `[CreatedDateTime <DateTime?>]`: The date and time at which the error occurred.
     - `[IsResolved <Boolean?>]`: Indicates whether the error has been attended to.
@@ -719,9 +732,9 @@ Current possible values: UserPrincipalName or ProxyAddress
 PHONES `<IMicrosoftGraphPhone- `[]`>`: List of phones for this organizational contact.
 Phone types can be mobile, business, and businessFax.
 Only one of each type can ever be present in the collection.
-  - `[Language <String>]`:
+  - `[Language <String>]`: 
   - `[Number <String>]`: The phone number.
-  - `[Region <String>]`:
+  - `[Region <String>]`: 
   - `[Type <String>]`: phoneType
 
 SERVICEPROVISIONINGERRORS `<IMicrosoftGraphServiceProvisioningError- `[]`>`: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an organizational contact object .

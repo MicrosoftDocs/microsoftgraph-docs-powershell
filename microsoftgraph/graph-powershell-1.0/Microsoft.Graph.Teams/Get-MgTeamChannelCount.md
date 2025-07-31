@@ -18,14 +18,14 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgTeamChannelCount -TeamId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgTeamChannelCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -39,8 +39,6 @@ Get the number of the resource
 | Delegated (work or school account) | Channel.ReadBasic.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All, ChannelSettings.ReadWrite.All, ChannelSettings.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChannelSettings.Read.Group, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All, ChannelSettings.ReadWrite.Group, ChannelSettings.ReadWrite.All, ChannelSettings.Read.All, Channel.ReadBasic.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -87,6 +85,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

@@ -32,7 +32,7 @@ Update-MgUserContactFolderChildFolderContact -ContactFolderId <String> -ContactF
  [-PersonalNotes <String>] [-Photo <IMicrosoftGraphProfilePhoto>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
  [-Surname <String>] [-Title <String>] [-YomiCompanyName <String>] [-YomiGivenName <String>]
- [-YomiSurname <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-YomiSurname <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Update-MgUserContactFolderChildFolderContact -ContactFolderId <String> -ContactF
 ```
 Update-MgUserContactFolderChildFolderContact -ContactFolderId <String> -ContactFolderId1 <String>
  -ContactId <String> -UserId <String> -BodyParameter <IMicrosoftGraphContact>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -61,7 +61,7 @@ Update-MgUserContactFolderChildFolderContact -InputObject <IPersonalContactsIden
  [-PersonalNotes <String>] [-Photo <IMicrosoftGraphProfilePhoto>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
  [-Surname <String>] [-Title <String>] [-YomiCompanyName <String>] [-YomiGivenName <String>]
- [-YomiSurname <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-YomiSurname <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -69,7 +69,7 @@ Update-MgUserContactFolderChildFolderContact -InputObject <IPersonalContactsIden
 ```
 Update-MgUserContactFolderChildFolderContact -InputObject <IPersonalContactsIdentity>
  -BodyParameter <IMicrosoftGraphContact> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -82,8 +82,6 @@ Update the navigation property contacts in users
 | Delegated (work or school account) | Contacts.ReadWrite,  |
 | Delegated (personal Microsoft account) | Contacts.ReadWrite,  |
 | Application | Contacts.ReadWrite,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -251,21 +249,6 @@ The name of the contact's company.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -756,6 +739,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -849,22 +847,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -YomiCompanyName
 The phonetic Japanese company name of the contact.
 
@@ -902,6 +884,37 @@ The phonetic Japanese surname (last name) of the contact.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
 
 Required: False
 Position: Named

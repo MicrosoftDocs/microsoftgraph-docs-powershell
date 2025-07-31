@@ -19,14 +19,14 @@ For example, GET /users/admin@contoso.com/authentication/platformCredentialAuthe
 ```
 Get-MgBetaUserAuthenticationPlatformCredentialMethodDevice -PlatformCredentialAuthenticationMethodId <String>
  -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaUserAuthenticationPlatformCredentialMethodDevice -InputObject <IIdentitySignInsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,8 +34,6 @@ The registered device on which this Platform Credential resides.
 Supports $expand.
 When you get a user's Platform Credential registration information, this property is returned only on a single GET and when you specify ?$expand.
 For example, GET /users/admin@contoso.com/authentication/platformCredentialAuthenticationMethod/_jpuR-TGZtk6aQCLF3BQjA2?$expand=device.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -94,6 +92,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

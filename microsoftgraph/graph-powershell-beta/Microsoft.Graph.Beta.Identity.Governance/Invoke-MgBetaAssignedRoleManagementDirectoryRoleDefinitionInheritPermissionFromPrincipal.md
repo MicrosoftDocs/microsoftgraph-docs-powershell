@@ -22,7 +22,7 @@ Invoke-MgBetaAssignedRoleManagementDirectoryRoleDefinitionInheritPermissionFromP
  -UnifiedRoleDefinitionId <String> -UnifiedRoleDefinitionId1 <String> [-Count] [-DirectoryScopeId <String>]
  [-DirectoryScopeType <String>] [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Transitive]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Invoke-MgBetaAssignedRoleManagementDirectoryRoleDefinitionInheritPermissionFromP
  -InputObject <IIdentityGovernanceIdentity> [-Count] [-DirectoryScopeId <String>]
  [-DirectoryScopeType <String>] [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Transitive]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -41,8 +41,6 @@ Get the list of security principals (users, groups, and service principals) that
 You can use the $count query parameter to also get the count.
 This API is supported for the directory (Microsoft Entra ID) provider only.
 To list the direct and transitive role assignments for a specific principal, use the List transitiveRoleAssignments API.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -152,6 +150,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -193,21 +206,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -283,6 +281,21 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

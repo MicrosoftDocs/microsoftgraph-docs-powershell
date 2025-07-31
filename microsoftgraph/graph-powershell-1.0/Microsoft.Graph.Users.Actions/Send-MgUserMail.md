@@ -24,14 +24,14 @@ To learn more about the steps involved in the backend before a mail is delivered
 ```
 Send-MgUserMail -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Message <IMicrosoftGraphMessage>] [-SaveToSentItems] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgUserMail -UserId <String>
  -BodyParameter <IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Send-MgUserMail -UserId <String>
 ```
 Send-MgUserMail -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Message <IMicrosoftGraphMessage>] [-SaveToSentItems]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -47,7 +47,7 @@ Send-MgUserMail -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <
 ```
 Send-MgUserMail -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -214,21 +214,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -291,6 +276,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -330,6 +330,21 @@ Parameter Sets: SendExpanded, Send
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -429,7 +444,7 @@ To verify the existence of inline attachments, parse the body property to look f
     - `[InferenceClassification <String>]`: inferenceClassificationType
     - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader- `[]`>]`: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
-It can also contain custom message headers that hold app data for the message.
+It can also contain custom message headers that hold app data for the message. 
 Returned only on applying a $select query option.
 Read-only.
       - `[Name <String>]`: Represents the key in a key-value pair.
@@ -446,12 +461,12 @@ Nullable.
 Read-only.
       - `[Value <String- `[]`>]`: A collection of property values.
     - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
-    - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received.
+    - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received. 
 The date and time information uses ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[ReplyTo <IMicrosoftGraphRecipient- `[]`>]`: The email addresses to use when replying.
     - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-    - `[SentDateTime <DateTime?>]`: The date and time the message was sent.
+    - `[SentDateTime <DateTime?>]`: The date and time the message was sent. 
 The date and time information uses ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the message.
@@ -466,7 +481,7 @@ Read-only.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
-  - `[SaveToSentItems <Boolean?>]`:
+  - `[SaveToSentItems <Boolean?>]`: 
 
 INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
@@ -529,7 +544,7 @@ To verify the existence of inline attachments, parse the body property to look f
   - `[InferenceClassification <String>]`: inferenceClassificationType
   - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader- `[]`>]`: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
-It can also contain custom message headers that hold app data for the message.
+It can also contain custom message headers that hold app data for the message. 
 Returned only on applying a $select query option.
 Read-only.
     - `[Name <String>]`: Represents the key in a key-value pair.
@@ -546,12 +561,12 @@ Nullable.
 Read-only.
     - `[Value <String- `[]`>]`: A collection of property values.
   - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
-  - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received.
+  - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received. 
 The date and time information uses ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[ReplyTo <IMicrosoftGraphRecipient- `[]`>]`: The email addresses to use when replying.
   - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-  - `[SentDateTime <DateTime?>]`: The date and time the message was sent.
+  - `[SentDateTime <DateTime?>]`: The date and time the message was sent. 
 The date and time information uses ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the message.

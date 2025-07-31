@@ -19,20 +19,18 @@ Update search
 ```
 Update-MgSearchEntity [-ResponseHeadersVariable <String>] [-Acronyms <IMicrosoftGraphSearchAcronym[]>]
  [-AdditionalProperties <Hashtable>] [-Bookmarks <IMicrosoftGraphSearchBookmark[]>] [-Id <String>]
- [-Qnas <IMicrosoftGraphSearchQna[]>] [-Headers <IDictionary>] [-WhatIf]
+ [-Qnas <IMicrosoftGraphSearchQna[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update search
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -99,21 +97,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -145,6 +128,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Qnas
 Administrative answer in Microsoft Search results that provide answers for specific search keywords in an organization.
 To construct, see NOTES section for QNAS properties and create a hash table.
@@ -168,6 +166,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -215,8 +228,8 @@ ACRONYMS `<IMicrosoftGraphSearchAcronym- `[]`>`: Administrative answer in Micros
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`:
-      - `[Id <String>]`:
+      - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Date and time when the search answer was created or last edited.
@@ -241,8 +254,8 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`:
-        - `[Id <String>]`:
+        - `[DisplayName <String>]`: 
+        - `[Id <String>]`: 
       - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
       - `[User <IMicrosoftGraphSearchIdentity>]`: identity
     - `[LastModifiedDateTime <DateTime?>]`: Date and time when the search answer was created or last edited.
@@ -345,8 +358,8 @@ BOOKMARKS `<IMicrosoftGraphSearchBookmark- `[]`>`: Administrative answer in Micr
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`:
-      - `[Id <String>]`:
+      - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Date and time when the search answer was created or last edited.
@@ -401,8 +414,8 @@ QNAS `<IMicrosoftGraphSearchQna- `[]`>`: Administrative answer in Microsoft Sear
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`:
-      - `[Id <String>]`:
+      - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Date and time when the search answer was created or last edited.

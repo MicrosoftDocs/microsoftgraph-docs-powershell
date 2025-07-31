@@ -17,13 +17,13 @@ Update the navigation property rosters in planner
 Update-MgBetaPlannerRoster -PlannerRosterId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AssignedSensitivityLabel <IMicrosoftGraphSensitivityLabelAssignment>]
  [-Id <String>] [-Members <IMicrosoftGraphPlannerRosterMember[]>] [-Plans <IMicrosoftGraphPlannerPlan[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPlannerRoster -PlannerRosterId <String> -BodyParameter <IMicrosoftGraphPlannerRoster>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,20 +32,18 @@ Update-MgBetaPlannerRoster -PlannerRosterId <String> -BodyParameter <IMicrosoftG
 Update-MgBetaPlannerRoster -InputObject <IPlannerIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AssignedSensitivityLabel <IMicrosoftGraphSensitivityLabelAssignment>]
  [-Id <String>] [-Members <IMicrosoftGraphPlannerRosterMember[]>] [-Plans <IMicrosoftGraphPlannerPlan[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPlannerRoster -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerRoster>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property rosters in planner
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -93,21 +91,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -205,6 +188,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -212,6 +210,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

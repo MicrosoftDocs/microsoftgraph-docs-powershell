@@ -22,14 +22,14 @@ Get-MgBetaUserContactFolderChildFolderContactExtension -ContactFolderId <String>
  -ContactId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaUserContactFolderChildFolderContactExtension -ContactFolderId <String> -ContactFolderId1 <String>
  -ContactId <String> -ExtensionId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -37,14 +37,12 @@ Get-MgBetaUserContactFolderChildFolderContactExtension -ContactFolderId <String>
 ```
 Get-MgBetaUserContactFolderChildFolderContactExtension -InputObject <IPersonalContactsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The collection of open extensions defined for the contact.
 Nullable.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -215,6 +213,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -260,21 +273,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -316,6 +314,21 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

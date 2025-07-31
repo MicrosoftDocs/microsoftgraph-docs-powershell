@@ -28,19 +28,17 @@ New-MgSecurityAlertV2 [-ResponseHeadersVariable <String>] [-ActorDisplayName <St
  [-ProviderAlertId <String>] [-RecommendedActions <String>] [-ResolvedDateTime <DateTime>]
  [-ServiceSource <String>] [-Severity <String>] [-Status <String>] [-SystemTags <String[]>]
  [-TenantId <String>] [-ThreatDisplayName <String>] [-ThreatFamilyName <String>] [-Title <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityAlertV2 -BodyParameter <IMicrosoftGraphSecurityAlert> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to alerts_v2 for security
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -189,21 +187,6 @@ To construct, see NOTES section for COMMENTS properties and create a hash table.
 Type: IMicrosoftGraphSecurityAlertComment[]
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -454,6 +437,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProviderAlertId
 The ID of the alert as it appears in the security provider product that generated the alert.
 
@@ -626,6 +624,21 @@ Brief identifying string value describing the alert.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

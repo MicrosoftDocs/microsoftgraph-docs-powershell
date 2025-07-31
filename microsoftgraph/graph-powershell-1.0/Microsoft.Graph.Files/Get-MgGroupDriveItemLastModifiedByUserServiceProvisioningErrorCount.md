@@ -19,34 +19,32 @@ Get the number of the resource
 ```
 Get-MgGroupDriveItemLastModifiedByUserServiceProvisioningErrorCount -DriveId <String> -DriveItemId <String>
  -GroupId <String> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgGroupDriveItemLastModifiedByUserServiceProvisioningErrorCount -DriveId <String> -GroupId <String>
  -ListItemId <String> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgGroupDriveItemLastModifiedByUserServiceProvisioningErrorCount -InputObject <IFilesIdentity>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgGroupDriveItemLastModifiedByUserServiceProvisioningErrorCount -InputObject <IFilesIdentity>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -150,6 +148,21 @@ Parameter Sets: Get1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

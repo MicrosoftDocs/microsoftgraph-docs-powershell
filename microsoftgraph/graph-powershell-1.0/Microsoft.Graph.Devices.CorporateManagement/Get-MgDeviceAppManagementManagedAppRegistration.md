@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementManagedAppRegistration
 
 ## SYNOPSIS
-Read properties and relationships of the iosManagedAppRegistration object.
+Read properties and relationships of the androidManagedAppRegistration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta)
@@ -20,25 +20,25 @@ Read properties and relationships of the iosManagedAppRegistration object.
 Get-MgDeviceAppManagementManagedAppRegistration [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgDeviceAppManagementManagedAppRegistration -ManagedAppRegistrationId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgDeviceAppManagementManagedAppRegistration -InputObject <IDevicesCorporateManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the iosManagedAppRegistration object.
+Read properties and relationships of the androidManagedAppRegistration object.
 
 **Permissions**
 
@@ -185,6 +185,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -230,21 +245,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -267,6 +267,21 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -332,9 +347,9 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistration)
 
-[https://learn.microsoft.com/graph/api/intune-mam-iosmanagedappregistration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-iosmanagedappregistration-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappregistration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappregistration-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappregistration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappregistration-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-mam-managedappregistration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappregistration-list?view=graph-rest-1.0)
 
 
 

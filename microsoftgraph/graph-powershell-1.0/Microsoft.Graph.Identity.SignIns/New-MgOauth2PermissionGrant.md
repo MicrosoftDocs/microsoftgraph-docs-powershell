@@ -21,14 +21,14 @@ A delegated permission grant authorizes a client service principal (representing
 ```
 New-MgOauth2PermissionGrant [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ClientId <String>] [-ConsentType <String>] [-Id <String>] [-PrincipalId <String>] [-ResourceId <String>]
- [-Scope <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Scope <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgOauth2PermissionGrant -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -114,21 +114,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ConsentType
 Indicates if authorization is granted for the client application to impersonate all users or only a specific user.
 AllPrincipals indicates authorization to impersonate all users.
@@ -199,6 +184,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResourceId
 The id of the resource service principal to which access is authorized.
 This identifies the API that the client is authorized to attempt to call on behalf of a signed-in user.
@@ -241,6 +241,21 @@ Must not exceed 3,850 characters in length.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

@@ -20,14 +20,14 @@ Clock in to start a timeCard.
 ```
 Invoke-MgClockGroupTeamScheduleTimeCardIn -GroupId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-IsAtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Clock
 ```
 Invoke-MgClockGroupTeamScheduleTimeCardIn -GroupId <String>
  -BodyParameter <IPaths13Pwpp3GroupsGroupIdTeamScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,21 +35,19 @@ Invoke-MgClockGroupTeamScheduleTimeCardIn -GroupId <String>
 ```
 Invoke-MgClockGroupTeamScheduleTimeCardIn -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-IsAtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ClockViaIdentity
 ```
 Invoke-MgClockGroupTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths13Pwpp3GroupsGroupIdTeamScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Clock in to start a timeCard.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -81,21 +79,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -176,6 +159,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -183,6 +181,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -226,7 +239,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths13Pwpp3GroupsGroupIdTeamScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsAtApprovedLocation <Boolean?>]`:
+  - `[IsAtApprovedLocation <Boolean?>]`: 
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.

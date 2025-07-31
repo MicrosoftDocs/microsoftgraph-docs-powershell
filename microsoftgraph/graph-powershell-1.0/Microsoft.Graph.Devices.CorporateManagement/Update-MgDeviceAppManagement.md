@@ -35,13 +35,13 @@ Update-MgDeviceAppManagement [-ResponseHeadersVariable <String>] [-AdditionalPro
  [-TargetedManagedAppConfigurations <IMicrosoftGraphTargetedManagedAppConfiguration[]>]
  [-VppTokens <IMicrosoftGraphVppToken[]>]
  [-WindowsInformationProtectionPolicies <IMicrosoftGraphWindowsInformationProtectionPolicy[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -119,21 +119,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -392,6 +377,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -439,22 +439,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WindowsInformationProtectionPolicies
 Windows information protection for apps running on devices which are not MDM enrolled.
 To construct, see NOTES section for WINDOWSINFORMATIONPROTECTIONPOLICIES properties and create a hash table.
@@ -463,6 +447,37 @@ To construct, see NOTES section for WINDOWSINFORMATIONPROTECTIONPOLICIES propert
 Type: IMicrosoftGraphWindowsInformationProtectionPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
 
 Required: False
 Position: Named
@@ -1061,7 +1076,7 @@ The RMS template allows the IT admin to configure the details about who has acce
 Read-only.
     - `[DaysWithoutContactBeforeUnenroll <Int32?>]`: Offline interval before app data is wiped (days)
     - `[MdmEnrollmentUrl <String>]`: Enrollment url for the MDM
-    - `[MinutesOfInactivityBeforeDeviceLock <Int32?>]`: Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked.
+    - `[MinutesOfInactivityBeforeDeviceLock <Int32?>]`: Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. 
 Range is an integer X where 0 <= X <= 999.
     - `[NumberOfPastPinsRemembered <Int32?>]`: Integer value that specifies the number of past PINs that can be associated to a user account that can't be reused.
 The largest number you can configure for this policy setting is 50.
@@ -1629,7 +1644,7 @@ The RMS template allows the IT admin to configure the details about who has acce
 Read-only.
   - `[DaysWithoutContactBeforeUnenroll <Int32?>]`: Offline interval before app data is wiped (days)
   - `[MdmEnrollmentUrl <String>]`: Enrollment url for the MDM
-  - `[MinutesOfInactivityBeforeDeviceLock <Int32?>]`: Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked.
+  - `[MinutesOfInactivityBeforeDeviceLock <Int32?>]`: Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. 
 Range is an integer X where 0 <= X <= 999.
   - `[NumberOfPastPinsRemembered <Int32?>]`: Integer value that specifies the number of past PINs that can be associated to a user account that can't be reused.
 The largest number you can configure for this policy setting is 50.
@@ -1660,7 +1675,7 @@ The largest number you can configure must be less than the number configured in 
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement)
 
-[https://learn.microsoft.com/graph/api/intune-onboarding-deviceappmanagement-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceappmanagement-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-unlock-deviceappmanagement-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-unlock-deviceappmanagement-update?view=graph-rest-1.0)
 
 
 

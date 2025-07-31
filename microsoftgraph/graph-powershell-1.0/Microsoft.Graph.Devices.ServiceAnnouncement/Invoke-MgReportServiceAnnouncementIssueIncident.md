@@ -21,7 +21,7 @@ The operation returns an error if the specified issue doesn't exist for the tena
 ### Report (Default)
 ```
 Invoke-MgReportServiceAnnouncementIssueIncident -ServiceHealthIssueId <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Invoke-MgReportServiceAnnouncementIssueIncident -ServiceHealthIssueId <String> -
 ```
 Invoke-MgReportServiceAnnouncementIssueIncident -InputObject <IDevicesServiceAnnouncementIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -117,6 +117,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

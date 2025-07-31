@@ -22,15 +22,13 @@ Students can only see assignments that are assigned to them.
 Get-MgBetaEducationMeAssignmentDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get a list of newly-created or updated assignments without reading the entire collection.
 A teacher or an application running with application permissions can see all assignment objects for the class.
 Students can only see assignments that are assigned to them.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -125,6 +123,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -170,21 +183,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -207,6 +205,21 @@ Show only the first n items
 Type: Int32
 Parameter Sets: (All)
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named

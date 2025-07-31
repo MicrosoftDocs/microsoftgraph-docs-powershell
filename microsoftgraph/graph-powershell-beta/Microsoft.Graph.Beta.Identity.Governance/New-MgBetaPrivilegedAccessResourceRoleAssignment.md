@@ -22,7 +22,7 @@ New-MgBetaPrivilegedAccessResourceRoleAssignment -GovernanceResourceId <String> 
  [-Resource <IMicrosoftGraphGovernanceResource>] [-ResourceId <String>]
  [-RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>] [-RoleDefinitionId <String>]
  [-StartDateTime <DateTime>] [-Status <String>] [-Subject <IMicrosoftGraphGovernanceSubject>]
- [-SubjectId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-SubjectId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ New-MgBetaPrivilegedAccessResourceRoleAssignment -GovernanceResourceId <String> 
 ```
 New-MgBetaPrivilegedAccessResourceRoleAssignment -GovernanceResourceId <String> -PrivilegedAccessId <String>
  -BodyParameter <IMicrosoftGraphGovernanceRoleAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -43,7 +43,7 @@ New-MgBetaPrivilegedAccessResourceRoleAssignment -InputObject <IIdentityGovernan
  [-Resource <IMicrosoftGraphGovernanceResource>] [-ResourceId <String>]
  [-RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>] [-RoleDefinitionId <String>]
  [-StartDateTime <DateTime>] [-Status <String>] [-Subject <IMicrosoftGraphGovernanceSubject>]
- [-SubjectId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-SubjectId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -51,13 +51,11 @@ New-MgBetaPrivilegedAccessResourceRoleAssignment -InputObject <IIdentityGovernan
 ```
 New-MgBetaPrivilegedAccessResourceRoleAssignment -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphGovernanceRoleAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to roleAssignments for privilegedAccess
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -105,21 +103,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -279,6 +262,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Resource
 governanceResource
 To construct, see NOTES section for RESOURCE properties and create a hash table.
@@ -414,6 +412,21 @@ The ID of the subject that the role assignment is associated with.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

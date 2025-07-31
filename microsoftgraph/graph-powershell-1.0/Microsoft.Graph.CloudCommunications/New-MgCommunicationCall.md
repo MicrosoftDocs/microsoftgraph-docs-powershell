@@ -31,13 +31,13 @@ New-MgCommunicationCall [-ResponseHeadersVariable <String>] [-AdditionalProperti
  [-ResultInfo <IMicrosoftGraphResultInfo>] [-Source <IMicrosoftGraphParticipantInfo>] [-State <String>]
  [-Subject <String>] [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-TenantId <String>]
  [-ToneInfo <IMicrosoftGraphToneInfo>] [-Transcription <IMicrosoftGraphCallTranscriptionInfo>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -639,21 +639,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ContentSharingSessions
 
 To construct, see NOTES section for CONTENTSHARINGSESSIONS properties and create a hash table.
@@ -825,6 +810,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RequestedModalities
 The list of requested modalities.
 Possible values are: unknown, audio, video, videoBasedScreenSharing, data.
@@ -982,6 +982,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -1025,13 +1040,13 @@ BODYPARAMETER `<IMicrosoftGraphCall>`: call
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup- `[]`>]`:
+  - `[AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Receivers <String- `[]`>]`: List of receiving participant ids.
     - `[RoutingMode <String>]`: routingMode
     - `[Sources <String- `[]`>]`: List of source participant ids.
-  - `[CallChainId <String>]`: A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.
+  - `[CallChainId <String>]`: A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call. 
 This identifier must be copied over from Microsoft.Graph.Call.CallChainId.
   - `[CallOptions <IMicrosoftGraphCallOptions>]`: callOptions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1059,7 +1074,7 @@ Must be an HTTPS URL.
     - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
     - `[ReplyChainMessageId <String>]`: The ID of the reply message.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
-  - `[ContentSharingSessions <IMicrosoftGraphContentSharingSession- `[]`>]`:
+  - `[ContentSharingSessions <IMicrosoftGraphContentSharingSession- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Direction <String>]`: callDirection
@@ -1078,8 +1093,8 @@ Read-only.
     - `[Audio <String>]`: mediaState
   - `[MeetingInfo <IMicrosoftGraphMeetingInfo>]`: meetingInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MyParticipantId <String>]`:
-  - `[Operations <IMicrosoftGraphCommsOperation- `[]`>]`:
+  - `[MyParticipantId <String>]`: 
+  - `[Operations <IMicrosoftGraphCommsOperation- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[ClientContext <String>]`: Unique Client Context string.
@@ -1090,7 +1105,7 @@ Max limit is 256 chars.
       - `[Message <String>]`: The message.
       - `[Subcode <Int32?>]`: The result subcode.
     - `[Status <String>]`: operationStatus
-  - `[Participants <IMicrosoftGraphParticipant- `[]`>]`:
+  - `[Participants <IMicrosoftGraphParticipant- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Info <IMicrosoftGraphParticipantInfo>]`: participantInfo
@@ -1146,7 +1161,7 @@ Whether to remove them from the main mixer.
     - `[ReplacesCallId <String>]`: Optional.
 The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
-  - `[TenantId <String>]`:
+  - `[TenantId <String>]`: 
   - `[ToneInfo <IMicrosoftGraphToneInfo>]`: toneInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[SequenceId <Int64?>]`: An incremental identifier used for ordering DTMF events.

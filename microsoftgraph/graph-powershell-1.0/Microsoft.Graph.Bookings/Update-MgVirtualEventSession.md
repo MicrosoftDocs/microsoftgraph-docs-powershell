@@ -30,14 +30,14 @@ Update-MgVirtualEventSession -VirtualEventId <String> -VirtualEventSessionId <St
  [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>] [-RecordAutomatically]
  [-ShareMeetingChatHistoryDefault <String>] [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Subject <String>]
  [-VideoTeleconferenceId <String>] [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgVirtualEventSession -VirtualEventId <String> -VirtualEventSessionId <String>
  -BodyParameter <IMicrosoftGraphVirtualEventSession> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -55,20 +55,18 @@ Update-MgVirtualEventSession -InputObject <IBookingsIdentity> [-ResponseHeadersV
  [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>] [-RecordAutomatically]
  [-ShareMeetingChatHistoryDefault <String>] [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Subject <String>]
  [-VideoTeleconferenceId <String>] [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgVirtualEventSession -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphVirtualEventSession> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property sessions in solutions
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -363,21 +361,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -EndDateTime
 dateTimeTimeZone
 To construct, see NOTES section for ENDDATETIME properties and create a hash table.
@@ -520,6 +503,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RecordAutomatically
 Indicates whether to record the meeting automatically.
 
@@ -650,6 +648,21 @@ To construct, see NOTES section for WATERMARKPROTECTION properties and create a 
 Type: IMicrosoftGraphWatermarkProtectionValues
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -801,7 +814,7 @@ Optional.
     - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting.
 Optional.
 Read-only.
-    - `[Passcode <String>]`: The passcode to join a meeting.
+    - `[Passcode <String>]`: The passcode to join a meeting. 
 Optional.
 Read-only.
   - `[JoinWebUrl <String>]`: The join URL of the online meeting.
@@ -879,7 +892,7 @@ Optional.
   - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting.
 Optional.
 Read-only.
-  - `[Passcode <String>]`: The passcode to join a meeting.
+  - `[Passcode <String>]`: The passcode to join a meeting. 
 Optional.
 Read-only.
 

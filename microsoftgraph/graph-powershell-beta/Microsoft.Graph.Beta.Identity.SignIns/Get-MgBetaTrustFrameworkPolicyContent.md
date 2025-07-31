@@ -16,14 +16,14 @@ Retrieve a list of trustFrameworkPolicies in the tenant/directory.
 ### Get (Default)
 ```
 Get-MgBetaTrustFrameworkPolicyContent -TrustFrameworkPolicyId <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaTrustFrameworkPolicyContent -InputObject <IIdentitySignInsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -37,8 +37,6 @@ Retrieve a list of trustFrameworkPolicies in the tenant/directory.
 | Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.TrustFramework,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All, Policy.ReadWrite.TrustFramework,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -99,6 +97,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

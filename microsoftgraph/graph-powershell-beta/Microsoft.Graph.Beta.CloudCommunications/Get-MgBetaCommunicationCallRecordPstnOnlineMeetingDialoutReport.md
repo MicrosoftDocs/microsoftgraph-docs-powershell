@@ -17,7 +17,7 @@ The report includes:
 ```
 Get-MgBetaCommunicationCallRecordPstnOnlineMeetingDialoutReport -FromDateTime <DateTime> -ToDateTime <DateTime>
  [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -25,15 +25,13 @@ Get-MgBetaCommunicationCallRecordPstnOnlineMeetingDialoutReport -FromDateTime <D
 ```
 Get-MgBetaCommunicationCallRecordPstnOnlineMeetingDialoutReport -InputObject <ICloudCommunicationsIdentity>
  [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get aggregated report of usage and money spent for the audio conferencing dial-out service over a selected period as a collection of pstnOnlineMeetingDialoutReport entries.The report is aggregated by user, user location, destination context (domestic/international), and currency.
 The report includes:
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -113,6 +111,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -143,21 +156,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ToDateTime
 Usage: toDateTime={toDateTime}
 
@@ -180,6 +178,21 @@ Show only the first n items
 Type: Int32
 Parameter Sets: (All)
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named

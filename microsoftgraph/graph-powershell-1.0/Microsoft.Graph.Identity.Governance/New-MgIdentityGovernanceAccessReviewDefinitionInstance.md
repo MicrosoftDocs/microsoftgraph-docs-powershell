@@ -24,14 +24,14 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefi
  [-FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Id <String>]
  [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Scope <Hashtable>]
  [-Stages <IMicrosoftGraphAccessReviewStage[]>] [-StartDateTime <DateTime>] [-Status <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId <String>
  -BodyParameter <IMicrosoftGraphAccessReviewInstance> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -43,20 +43,18 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstance -InputObject <IIdentityGo
  [-FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Id <String>]
  [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Scope <Hashtable>]
  [-Stages <IMicrosoftGraphAccessReviewStage[]>] [-StartDateTime <DateTime>] [-Status <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgIdentityGovernanceAccessReviewDefinitionInstance -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphAccessReviewInstance> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to instances for identityGovernance
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -103,21 +101,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -240,6 +223,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -344,6 +342,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -406,7 +419,7 @@ For example, in the access reviews decisions API, this property might record the
       - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
     - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.00000000-0000-0000-0000-000000000000 if the assigned reviewer hasn't applied the decision or it was automatically applied.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. 
 Supports $select.
 Read-only.
     - `[ApplyResult <String>]`: The result of applying the decision.
@@ -526,7 +539,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.00000000-0000-0000-0000-000000000000 if the assigned reviewer hasn't applied the decision or it was automatically applied.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. 
 Supports $select.
 Read-only.
   - `[ApplyResult <String>]`: The result of applying the decision.
@@ -682,7 +695,7 @@ For example, in the access reviews decisions API, this property might record the
       - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
     - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.00000000-0000-0000-0000-000000000000 if the assigned reviewer hasn't applied the decision or it was automatically applied.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. 
 Supports $select.
 Read-only.
     - `[ApplyResult <String>]`: The result of applying the decision.

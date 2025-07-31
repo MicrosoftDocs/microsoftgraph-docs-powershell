@@ -20,7 +20,7 @@ Not yet documented
 ```
 Set-MgDeviceAppManagementManagedEBook -ManagedEBookId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ManagedEBookAssignments <IMicrosoftGraphManagedEBookAssignment[]>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Set-MgDeviceAppManagementManagedEBook -ManagedEBookId <String> [-ResponseHeaders
 ```
 Set-MgDeviceAppManagementManagedEBook -ManagedEBookId <String>
  -BodyParameter <IPathsWfdti0DeviceappmanagementManagedebooksManagedebookIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,14 +37,14 @@ Set-MgDeviceAppManagementManagedEBook -ManagedEBookId <String>
 Set-MgDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ManagedEBookAssignments <IMicrosoftGraphManagedEBookAssignment[]>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AssignViaIdentity
 ```
 Set-MgDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPathsWfdti0DeviceappmanagementManagedebooksManagedebookIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -115,21 +115,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -210,6 +195,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -217,6 +217,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -260,7 +275,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPathsWfdti0DeviceappmanagementManagedebooksManagedebookIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ManagedEBookAssignments <IMicrosoftGraphManagedEBookAssignment- `[]`>]`:
+  - `[ManagedEBookAssignments <IMicrosoftGraphManagedEBookAssignment- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[InstallIntent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.

@@ -18,14 +18,14 @@ The underlying Microsoft 365 group object.
 ### Get (Default)
 ```
 Get-MgEducationClassGroup -EducationClassId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgEducationClassGroup -InputObject <IEducationIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -39,8 +39,6 @@ The underlying Microsoft 365 group object.
 | Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.Write, EduRoster.Read, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduRoster.Read.All, EduRoster.ReadWrite.All, Directory.Read.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -102,6 +100,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

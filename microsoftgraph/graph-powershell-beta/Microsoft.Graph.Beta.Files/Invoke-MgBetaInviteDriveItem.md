@@ -21,7 +21,7 @@ Sends a sharing invitation for a driveItem.A sharing invitation provides permiss
 Invoke-MgBetaInviteDriveItem -DriveId <String> -DriveItemId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RequireSignIn] [-RetainInheritedPermissions]
- [-Roles <String[]>] [-SendInvitation] [-Headers <IDictionary>] [-WhatIf]
+ [-Roles <String[]>] [-SendInvitation] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Invoke-MgBetaInviteDriveItem -DriveId <String> -DriveItemId <String> [-ResponseH
 ```
 Invoke-MgBetaInviteDriveItem -DriveId <String> -DriveItemId <String>
  -BodyParameter <IPaths193Fjg3DrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Invoke-MgBetaInviteDriveItem -DriveId <String> -DriveItemId <String>
 Invoke-MgBetaInviteDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RequireSignIn] [-RetainInheritedPermissions]
- [-Roles <String[]>] [-SendInvitation] [-Headers <IDictionary>] [-WhatIf]
+ [-Roles <String[]>] [-SendInvitation] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ Invoke-MgBetaInviteDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVari
 ```
 Invoke-MgBetaInviteDriveItem -InputObject <IFilesIdentity>
  -BodyParameter <IPaths193Fjg3DrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -120,21 +120,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -244,6 +229,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Recipients
 
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
@@ -331,6 +331,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

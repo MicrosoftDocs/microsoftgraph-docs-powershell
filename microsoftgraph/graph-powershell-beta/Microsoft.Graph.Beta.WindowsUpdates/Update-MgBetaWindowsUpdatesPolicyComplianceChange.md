@@ -9,7 +9,7 @@ ms.subservice: windows-autopatch
 # Update-MgBetaWindowsUpdatesPolicyComplianceChange
 
 ## SYNOPSIS
-Update the properties of a contentApproval object.
+Update the properties of a complianceChange object.
 
 ## SYNTAX
 
@@ -19,14 +19,14 @@ Update-MgBetaWindowsUpdatesPolicyComplianceChange -ComplianceChangeId <String> -
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Id <String>] [-IsRevoked] [-RevokedDateTime <DateTime>]
  [-UpdatePolicy <IMicrosoftGraphWindowsUpdatesUpdatePolicy>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaWindowsUpdatesPolicyComplianceChange -ComplianceChangeId <String> -UpdatePolicyId <String>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesComplianceChange> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,18 +35,18 @@ Update-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesI
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Id <String>] [-IsRevoked] [-RevokedDateTime <DateTime>]
  [-UpdatePolicy <IMicrosoftGraphWindowsUpdatesUpdatePolicy>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesComplianceChange> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the properties of a contentApproval object.
+Update the properties of a complianceChange object.
 
 **Permissions**
 
@@ -116,21 +116,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -215,6 +200,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -270,6 +270,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -507,7 +522,7 @@ It can only be set to true on automatic policies that target monthly security up
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicycompliancechange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicycompliancechange)
 
-[https://learn.microsoft.com/graph/api/windowsupdates-contentapproval-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-contentapproval-update?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-update?view=graph-rest-beta)
 
 
 

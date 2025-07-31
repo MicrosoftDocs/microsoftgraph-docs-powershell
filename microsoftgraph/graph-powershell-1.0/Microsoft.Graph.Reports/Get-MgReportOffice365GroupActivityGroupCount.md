@@ -19,14 +19,14 @@ Get the daily total number of groups and how many of them were active based on e
 ### Get (Default)
 ```
 Get-MgReportOffice365GroupActivityGroupCount -Period <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportOffice365GroupActivityGroupCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Get the daily total number of groups and how many of them were active based on e
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportOffice365GroupActivityGroupCount -Period $periodId
+Get-MgReportOffice365GroupActivityGroupCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportOffice365GroupActivityGroupCount Cmdlet.
@@ -118,6 +118,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

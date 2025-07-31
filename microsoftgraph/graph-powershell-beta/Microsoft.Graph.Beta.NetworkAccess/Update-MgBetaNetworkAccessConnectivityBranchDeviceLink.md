@@ -21,14 +21,14 @@ Update-MgBetaNetworkAccessConnectivityBranchDeviceLink -BranchSiteId <String> -D
  [-IPAddress <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Name <String>]
  [-RedundancyConfiguration <IMicrosoftGraphNetworkaccessRedundancyConfiguration>]
  [-TunnelConfiguration <IMicrosoftGraphNetworkaccessTunnelConfiguration>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaNetworkAccessConnectivityBranchDeviceLink -BranchSiteId <String> -DeviceLinkId <String>
  -BodyParameter <IMicrosoftGraphNetworkaccessDeviceLink> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,14 +39,14 @@ Update-MgBetaNetworkAccessConnectivityBranchDeviceLink -InputObject <INetworkAcc
  [-IPAddress <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Name <String>]
  [-RedundancyConfiguration <IMicrosoftGraphNetworkaccessRedundancyConfiguration>]
  [-TunnelConfiguration <IMicrosoftGraphNetworkaccessTunnelConfiguration>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaNetworkAccessConnectivityBranchDeviceLink -InputObject <INetworkAccessIdentity>
  -BodyParameter <IMicrosoftGraphNetworkaccessDeviceLink> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -150,21 +150,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -293,6 +278,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RedundancyConfiguration
 redundancyConfiguration
 To construct, see NOTES section for REDUNDANCYCONFIGURATION properties and create a hash table.
@@ -332,6 +332,21 @@ To construct, see NOTES section for TUNNELCONFIGURATION properties and create a 
 Type: IMicrosoftGraphNetworkaccessTunnelConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

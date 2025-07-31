@@ -9,7 +9,7 @@ ms.subservice: search
 # Set-MgExternalConnectionItem
 
 ## SYNOPSIS
-Update the properties of an externalItem object.
+Create a new externalItem object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Set-MgBetaExternalConnectionItem?view=graph-powershell-beta)
@@ -22,14 +22,14 @@ Set-MgExternalConnectionItem -ExternalConnectionId <String> -ExternalItemId <Str
  [-ResponseHeadersVariable <String>] [-Acl <IMicrosoftGraphExternalConnectorsAcl[]>]
  [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>] [-AdditionalProperties <Hashtable>]
  [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <String>] [-Properties <Hashtable>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgExternalConnectionItem -ExternalConnectionId <String> -ExternalItemId <String>
  -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -38,18 +38,18 @@ Set-MgExternalConnectionItem -InputObject <ISearchIdentity> [-ResponseHeadersVar
  [-Acl <IMicrosoftGraphExternalConnectorsAcl[]>]
  [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>] [-AdditionalProperties <Hashtable>]
  [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <String>] [-Properties <Hashtable>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgExternalConnectionItem -InputObject <ISearchIdentity>
  -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the properties of an externalItem object.
+Create a new externalItem object.
 
 **Permissions**
 
@@ -81,7 +81,7 @@ $params = @{
 	)
 	properties = @{
 		title = "Error in the payment gateway"
-		priority =
+		priority = 
 		assignee = "john@contoso.com"
 	}
 	content = @{
@@ -161,21 +161,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -272,6 +257,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Properties
 properties
 
@@ -294,6 +294,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -412,7 +427,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem)
 
-[https://learn.microsoft.com/graph/api/externalconnectors-externalitem-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-1.0)
 
 
 

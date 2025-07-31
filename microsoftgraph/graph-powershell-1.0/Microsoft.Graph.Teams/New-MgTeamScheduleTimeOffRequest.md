@@ -21,14 +21,14 @@ New-MgTeamScheduleTimeOffRequest -TeamId <String> [-ResponseHeadersVariable <Str
  [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-EndDateTime <DateTime>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ManagerActionMessage <String>] [-SenderMessage <String>] [-StartDateTime <DateTime>] [-State <String>]
- [-TimeOffReasonId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-TimeOffReasonId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgTeamScheduleTimeOffRequest -TeamId <String> -BodyParameter <IMicrosoftGraphTimeOffRequest>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,14 +38,14 @@ New-MgTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-ResponseHeaders
  [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-EndDateTime <DateTime>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ManagerActionMessage <String>] [-SenderMessage <String>] [-StartDateTime <DateTime>] [-State <String>]
- [-TimeOffReasonId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-TimeOffReasonId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeOffRequest>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -59,8 +59,6 @@ Create new navigation property to timeOffRequests for teams
 | Delegated (work or school account) | Schedule.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -107,21 +105,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -235,6 +218,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -326,6 +324,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -362,8 +375,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IMicrosoftGraphTimeOffRequest>`: timeOffRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionMessage <String>]`:
-  - `[SenderMessage <String>]`:
+  - `[ManagerActionMessage <String>]`: 
+  - `[SenderMessage <String>]`: 
   - `[State <String>]`: scheduleChangeState
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

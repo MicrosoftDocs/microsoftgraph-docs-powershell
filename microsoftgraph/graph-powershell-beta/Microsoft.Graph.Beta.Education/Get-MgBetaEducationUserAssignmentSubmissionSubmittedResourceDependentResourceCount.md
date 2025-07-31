@@ -17,20 +17,18 @@ Get the number of the resource
 Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount
  -EducationAssignmentId <String> -EducationSubmissionId <String> -EducationSubmissionResourceId <String>
  -EducationUserId <String> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount
  -InputObject <IEducationIdentity> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -137,6 +135,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent
 schema: 2.0.0
-ms.subservice: security
+ms.subservice: security 
 ---
 
 # New-MgSecurityTriggerRetentionEvent
@@ -25,13 +25,13 @@ New-MgSecurityTriggerRetentionEvent [-ResponseHeadersVariable <String>] [-Additi
  [-EventStatus <IMicrosoftGraphSecurityRetentionEventStatus>] [-EventTriggerDateTime <DateTime>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-LastStatusUpdateDateTime <DateTime>] [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityRetentionEvent>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -102,21 +102,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -321,6 +306,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -344,6 +344,21 @@ To construct, see NOTES section for RETENTIONEVENTTYPE properties and create a h
 Type: IMicrosoftGraphSecurityRetentionEventType
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

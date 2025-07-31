@@ -20,7 +20,7 @@ Trigger an indexOperation
 ```
 Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId <String>
 Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId <String>
  [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsIs84XhSecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityUpdateindexPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -37,14 +37,14 @@ Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId <String>
 ```
 Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId <String>
  -EdiscoveryCustodianId <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -53,14 +53,14 @@ Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIde
 Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsIs84XhSecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityUpdateindexPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -118,21 +118,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -227,6 +212,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -234,6 +234,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

@@ -59,14 +59,14 @@ Update-MgBetaDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtection
  [-ProtectInboundDataFromUnknownSources] [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>]
  [-RoleScopeTagIds <String[]>] [-SaveAsBlocked] [-SimplePinBlocked]
  [-TargetedAppManagementLevels <AppManagementLevel>] [-ThirdPartyKeyboardsBlocked] [-Version <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtectionId <String>
  -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -113,14 +113,14 @@ Update-MgBetaDeviceAppManagementiOSManagedAppProtection -InputObject <IDevicesCo
  [-ProtectInboundDataFromUnknownSources] [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>]
  [-RoleScopeTagIds <String[]>] [-SaveAsBlocked] [-SimplePinBlocked]
  [-TargetedAppManagementLevels <AppManagementLevel>] [-ThirdPartyKeyboardsBlocked] [-Version <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementiOSManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -133,8 +133,6 @@ Update the navigation property iosManagedAppProtections in deviceAppManagement
 | Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -440,21 +438,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -1320,6 +1303,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProtectedMessagingRedirectAppType
 Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
@@ -1449,6 +1447,21 @@ Version of the entity.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -1608,8 +1621,10 @@ Read-only.
   - `[DisableProtectionOfManagedOutboundOpenInData <Boolean?>]`: Disable protection of data transferred to other apps through IOS OpenIn option.
 This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps.
   - `[ExemptedAppProtocols <IMicrosoftGraphKeyValuePair- `[]`>]`: Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[ExemptedUniversalLinks <String- `[]`>]`: A list of custom urls that are allowed to invocate an unmanaged app
   - `[FaceIdBlocked <Boolean?>]`: Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
   - `[FilterOpenInToOnlyManagedApps <Boolean?>]`: Defines if open-in operation is supported from the managed app to the filesharing locations selected.
@@ -1637,8 +1652,10 @@ Read-only.
   - `[Version <String>]`: Version of the entity.
 
 EXEMPTEDAPPPROTOCOLS `<IMicrosoftGraphKeyValuePair- `[]`>`: Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+  - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+  - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection

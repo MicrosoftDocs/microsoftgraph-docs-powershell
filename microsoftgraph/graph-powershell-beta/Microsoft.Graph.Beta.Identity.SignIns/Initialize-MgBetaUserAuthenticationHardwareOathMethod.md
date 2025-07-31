@@ -19,7 +19,7 @@ A user can self-activate their token or an admin can activate for a user.
 Initialize-MgBetaUserAuthenticationHardwareOathMethod -HardwareOathAuthenticationMethodId <String>
  -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-VerificationCode <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Activate
@@ -27,7 +27,7 @@ Initialize-MgBetaUserAuthenticationHardwareOathMethod -HardwareOathAuthenticatio
 Initialize-MgBetaUserAuthenticationHardwareOathMethod -HardwareOathAuthenticationMethodId <String>
  -UserId <String>
  -BodyParameter <IPaths1R6Gg7SUsersUserIdAuthenticationHardwareoathmethodsHardwareoathauthenticationmethodIdMicrosoftGraphActivatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Initialize-MgBetaUserAuthenticationHardwareOathMethod -HardwareOathAuthenticatio
 ```
 Initialize-MgBetaUserAuthenticationHardwareOathMethod -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-VerificationCode <String>] [-Headers <IDictionary>] [-PassThru]
+ [-VerificationCode <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,7 +43,7 @@ Initialize-MgBetaUserAuthenticationHardwareOathMethod -InputObject <IIdentitySig
 ```
 Initialize-MgBetaUserAuthenticationHardwareOathMethod -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IPaths1R6Gg7SUsersUserIdAuthenticationHardwareoathmethodsHardwareoathauthenticationmethodIdMicrosoftGraphActivatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -108,21 +108,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -202,6 +187,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -239,6 +239,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: ActivateExpanded, ActivateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

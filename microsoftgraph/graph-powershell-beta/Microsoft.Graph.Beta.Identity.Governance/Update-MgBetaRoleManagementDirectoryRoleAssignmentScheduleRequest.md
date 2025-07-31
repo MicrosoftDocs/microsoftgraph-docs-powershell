@@ -27,7 +27,7 @@ Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest
  [-PrincipalId <String>] [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
  [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-Status <String>]
  [-TargetSchedule <IMicrosoftGraphUnifiedRoleAssignmentSchedule>] [-TargetScheduleId <String>]
- [-TicketInfo <IMicrosoftGraphTicketInfo>] [-Headers <IDictionary>]
+ [-TicketInfo <IMicrosoftGraphTicketInfo>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest
 Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest
  -UnifiedRoleAssignmentScheduleRequestId <String>
  -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,7 +51,7 @@ Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest -InputObject <
  [-PrincipalId <String>] [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
  [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-Status <String>]
  [-TargetSchedule <IMicrosoftGraphUnifiedRoleAssignmentSchedule>] [-TargetScheduleId <String>]
- [-TicketInfo <IMicrosoftGraphTicketInfo>] [-Headers <IDictionary>]
+ [-TicketInfo <IMicrosoftGraphTicketInfo>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -59,13 +59,11 @@ Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest -InputObject <
 ```
 Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property roleAssignmentScheduleRequests in roleManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -192,21 +190,6 @@ The request completion date time.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -409,6 +392,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -547,6 +545,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

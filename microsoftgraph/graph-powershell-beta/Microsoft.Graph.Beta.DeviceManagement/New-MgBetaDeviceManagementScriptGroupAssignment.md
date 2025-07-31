@@ -16,7 +16,7 @@ Create new navigation property to groupAssignments for deviceManagement
 ```
 New-MgBetaDeviceManagementScriptGroupAssignment -DeviceManagementScriptId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-TargetGroupId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-TargetGroupId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,14 +24,14 @@ New-MgBetaDeviceManagementScriptGroupAssignment -DeviceManagementScriptId <Strin
 ```
 New-MgBetaDeviceManagementScriptGroupAssignment -DeviceManagementScriptId <String>
  -BodyParameter <IMicrosoftGraphDeviceManagementScriptGroupAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementScriptGroupAssignment -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-TargetGroupId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-TargetGroupId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ New-MgBetaDeviceManagementScriptGroupAssignment -InputObject <IDeviceManagementI
 ```
 New-MgBetaDeviceManagementScriptGroupAssignment -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceManagementScriptGroupAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,8 +52,6 @@ Create new navigation property to groupAssignments for deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -85,21 +83,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -165,6 +148,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -187,6 +185,21 @@ The Id of the Azure Active Directory group we are targeting the script to.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

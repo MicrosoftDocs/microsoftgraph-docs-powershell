@@ -25,14 +25,14 @@ Update-MgBetaDeviceAppManagementManagedEBook -ManagedEBookId <String> [-Response
  [-LargeCover <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>]
  [-PrivacyInformationUrl <String>] [-PublishedDateTime <DateTime>] [-Publisher <String>]
  [-UserStateSummary <IMicrosoftGraphUserInstallStateSummary[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementManagedEBook -ManagedEBookId <String>
  -BodyParameter <IMicrosoftGraphManagedEBook> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,14 +45,14 @@ Update-MgBetaDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateMana
  [-InstallSummary <IMicrosoftGraphEBookInstallSummary>] [-LargeCover <IMicrosoftGraphMimeContent>]
  [-LastModifiedDateTime <DateTime>] [-PrivacyInformationUrl <String>] [-PublishedDateTime <DateTime>]
  [-Publisher <String>] [-UserStateSummary <IMicrosoftGraphUserInstallStateSummary[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphManagedEBook> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -65,8 +65,6 @@ Update the navigation property managedEBooks in deviceAppManagement
 | Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -125,21 +123,6 @@ To construct, see NOTES section for CATEGORIES properties and create a hash tabl
 Type: IMicrosoftGraphManagedEBookCategory[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -348,6 +331,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PublishedDateTime
 The date and time when the eBook was published.
 
@@ -401,6 +399,21 @@ To construct, see NOTES section for USERSTATESUMMARY properties and create a has
 Type: IMicrosoftGraphUserInstallStateSummary[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

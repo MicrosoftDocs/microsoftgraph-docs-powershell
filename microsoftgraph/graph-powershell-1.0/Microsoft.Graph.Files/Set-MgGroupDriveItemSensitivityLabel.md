@@ -20,14 +20,14 @@ Invoke action assignSensitivityLabel
 Set-MgGroupDriveItemSensitivityLabel -DriveId <String> -DriveItemId <String> -GroupId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssignmentMethod <String>]
  [-JustificationText <String>] [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Assign
 ```
 Set-MgGroupDriveItemSensitivityLabel -DriveId <String> -DriveItemId <String> -GroupId <String>
  -BodyParameter <IPaths1EhooezGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Set-MgGroupDriveItemSensitivityLabel -DriveId <String> -DriveItemId <String> -Gr
 ```
 Set-MgGroupDriveItemSensitivityLabel -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AssignmentMethod <String>] [-JustificationText <String>]
- [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru]
+ [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,14 +43,12 @@ Set-MgGroupDriveItemSensitivityLabel -InputObject <IFilesIdentity> [-ResponseHea
 ```
 Set-MgGroupDriveItemSensitivityLabel -InputObject <IFilesIdentity>
  -BodyParameter <IPaths1EhooezGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action assignSensitivityLabel
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +95,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -221,6 +204,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -243,6 +241,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -287,8 +300,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IPaths1EhooezGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignmentMethod <String>]`: sensitivityLabelAssignmentMethod
-  - `[JustificationText <String>]`:
-  - `[SensitivityLabelId <String>]`:
+  - `[JustificationText <String>]`: 
+  - `[SensitivityLabelId <String>]`: 
 
 INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition

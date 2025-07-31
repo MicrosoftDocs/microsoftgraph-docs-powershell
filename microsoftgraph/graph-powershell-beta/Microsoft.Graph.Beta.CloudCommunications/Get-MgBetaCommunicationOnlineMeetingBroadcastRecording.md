@@ -15,7 +15,7 @@ Get broadcastRecording for the navigation property onlineMeetings from communica
 ### Get (Default)
 ```
 Get-MgBetaCommunicationOnlineMeetingBroadcastRecording -OnlineMeetingId <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -23,13 +23,11 @@ Get-MgBetaCommunicationOnlineMeetingBroadcastRecording -OnlineMeetingId <String>
 ```
 Get-MgBetaCommunicationOnlineMeetingBroadcastRecording -InputObject <ICloudCommunicationsIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get broadcastRecording for the navigation property onlineMeetings from communications
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -105,6 +103,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

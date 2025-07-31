@@ -19,14 +19,14 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy -Authenticati
  [-CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-ModifiedDateTime <DateTime>] [-PolicyType <String>] [-RequirementsSatisfied <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId <String>
  -BodyParameter <IMicrosoftGraphAuthenticationStrengthPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -36,20 +36,18 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy -InputObject 
  [-CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-ModifiedDateTime <DateTime>] [-PolicyType <String>] [-RequirementsSatisfied <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphAuthenticationStrengthPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property policies in identity
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -122,21 +120,6 @@ To construct, see NOTES section for COMBINATIONCONFIGURATIONS properties and cre
 Type: IMicrosoftGraphAuthenticationCombinationConfiguration[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -268,6 +251,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RequirementsSatisfied
 authenticationStrengthRequirements
 
@@ -290,6 +288,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

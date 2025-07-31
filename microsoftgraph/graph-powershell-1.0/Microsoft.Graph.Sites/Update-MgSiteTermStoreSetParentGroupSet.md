@@ -23,7 +23,7 @@ Update-MgSiteTermStoreSetParentGroupSet -SetId <String> -SetId1 <String> -SiteId
  [-Id <String>] [-LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]
  [-ParentGroup <IMicrosoftGraphTermStoreGroup>] [-Properties <IMicrosoftGraphKeyValue[]>]
  [-Relations <IMicrosoftGraphTermStoreRelation[]>] [-Terms <IMicrosoftGraphTermStoreTerm[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
@@ -34,21 +34,21 @@ Update-MgSiteTermStoreSetParentGroupSet -SetId <String> -SetId1 <String> -SiteId
  [-Id <String>] [-LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]
  [-ParentGroup <IMicrosoftGraphTermStoreGroup>] [-Properties <IMicrosoftGraphKeyValue[]>]
  [-Relations <IMicrosoftGraphTermStoreRelation[]>] [-Terms <IMicrosoftGraphTermStoreTerm[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgSiteTermStoreSetParentGroupSet -SetId <String> -SetId1 <String> -SiteId <String> -StoreId <String>
  -BodyParameter <IMicrosoftGraphTermStoreSet> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSiteTermStoreSetParentGroupSet -SetId <String> -SetId1 <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphTermStoreSet> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -58,7 +58,7 @@ Update-MgSiteTermStoreSetParentGroupSet -InputObject <ISitesIdentity> [-Response
  [-Description <String>] [-Id <String>] [-LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]
  [-ParentGroup <IMicrosoftGraphTermStoreGroup>] [-Properties <IMicrosoftGraphKeyValue[]>]
  [-Relations <IMicrosoftGraphTermStoreRelation[]>] [-Terms <IMicrosoftGraphTermStoreTerm[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -68,27 +68,25 @@ Update-MgSiteTermStoreSetParentGroupSet -InputObject <ISitesIdentity> [-Response
  [-Description <String>] [-Id <String>] [-LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]
  [-ParentGroup <IMicrosoftGraphTermStoreGroup>] [-Properties <IMicrosoftGraphKeyValue[]>]
  [-Relations <IMicrosoftGraphTermStoreRelation[]>] [-Terms <IMicrosoftGraphTermStoreTerm[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgSiteTermStoreSetParentGroupSet -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphTermStoreSet> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSiteTermStoreSetParentGroupSet -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphTermStoreSet> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property sets in sites
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -131,21 +129,6 @@ To construct, see NOTES section for CHILDREN properties and create a hash table.
 Type: IMicrosoftGraphTermStoreTerm[]
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -256,6 +239,21 @@ To construct, see NOTES section for PARENTGROUP properties and create a hash tab
 Type: IMicrosoftGraphTermStoreGroup
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -379,6 +377,21 @@ To construct, see NOTES section for TERMS properties and create a hash table.
 Type: IMicrosoftGraphTermStoreTerm[]
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

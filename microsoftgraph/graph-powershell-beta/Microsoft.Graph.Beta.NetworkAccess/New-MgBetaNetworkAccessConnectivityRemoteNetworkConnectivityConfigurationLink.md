@@ -18,14 +18,14 @@ New-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink -R
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-LocalConfigurations <IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration[]>]
  [-PeerConfiguration <IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink -RemoteNetworkId <String>
  -BodyParameter <IMicrosoftGraphNetworkaccessConnectivityConfigurationLink> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -35,7 +35,7 @@ New-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
  [-DisplayName <String>] [-Id <String>]
  [-LocalConfigurations <IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration[]>]
  [-PeerConfiguration <IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -43,13 +43,11 @@ New-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
 New-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
  -InputObject <INetworkAccessIdentity>
  -BodyParameter <IMicrosoftGraphNetworkaccessConnectivityConfigurationLink> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to links for networkAccess
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -81,21 +79,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -193,6 +176,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RemoteNetworkId
 The unique identifier of remoteNetwork
 
@@ -215,6 +213,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

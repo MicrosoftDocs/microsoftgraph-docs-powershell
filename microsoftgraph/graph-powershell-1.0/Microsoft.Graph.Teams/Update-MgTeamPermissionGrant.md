@@ -21,14 +21,14 @@ Update-MgTeamPermissionGrant -ResourceSpecificPermissionGrantId <String> -TeamId
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ClientAppId <String>]
  [-ClientId <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-Permission <String>]
  [-PermissionType <String>] [-ResourceAppId <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgTeamPermissionGrant -ResourceSpecificPermissionGrantId <String> -TeamId <String>
  -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,20 +36,18 @@ Update-MgTeamPermissionGrant -ResourceSpecificPermissionGrantId <String> -TeamId
 Update-MgTeamPermissionGrant -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ClientAppId <String>] [-ClientId <String>] [-DeletedDateTime <DateTime>]
  [-Id <String>] [-Permission <String>] [-PermissionType <String>] [-ResourceAppId <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgTeamPermissionGrant -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property permissionGrants in teams
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -108,21 +106,6 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -227,6 +210,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResourceAppId
 ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
@@ -282,6 +280,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

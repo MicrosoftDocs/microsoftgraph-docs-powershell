@@ -16,7 +16,7 @@ Update the navigation property originatingKnowledgeBaseArticle in admin
 ```
 Update-MgBetaWindowsUpdatesProductKnownIssueOriginatingKnowledgeBaseArticle -KnownIssueId <String>
  -ProductId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Url <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Url <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Update-MgBetaWindowsUpdatesProductKnownIssueOriginatingKnowledgeBaseArticle -Kno
 ```
 Update-MgBetaWindowsUpdatesProductKnownIssueOriginatingKnowledgeBaseArticle -KnownIssueId <String>
  -ProductId <String> -BodyParameter <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Update-MgBetaWindowsUpdatesProductKnownIssueOriginatingKnowledgeBaseArticle -Kno
 ```
 Update-MgBetaWindowsUpdatesProductKnownIssueOriginatingKnowledgeBaseArticle
  -InputObject <IWindowsUpdatesIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Url <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-Id <String>] [-Url <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,14 +40,12 @@ Update-MgBetaWindowsUpdatesProductKnownIssueOriginatingKnowledgeBaseArticle
 ```
 Update-MgBetaWindowsUpdatesProductKnownIssueOriginatingKnowledgeBaseArticle
  -InputObject <IWindowsUpdatesIdentity> -BodyParameter <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property originatingKnowledgeBaseArticle in admin
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -79,21 +77,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -174,6 +157,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -197,6 +195,21 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

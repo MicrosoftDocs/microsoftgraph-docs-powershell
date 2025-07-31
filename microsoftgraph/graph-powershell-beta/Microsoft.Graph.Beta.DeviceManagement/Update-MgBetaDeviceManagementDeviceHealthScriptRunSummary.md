@@ -21,7 +21,7 @@ Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -DeviceHealthScriptId 
  [-IssueRemediatedCumulativeDeviceCount <Int32>] [-IssueRemediatedDeviceCount <Int32>]
  [-IssueReoccurredDeviceCount <Int32>] [-LastScriptRunDateTime <DateTime>]
  [-NoIssueDetectedDeviceCount <Int32>] [-RemediationScriptErrorDeviceCount <Int32>]
- [-RemediationSkippedDeviceCount <Int32>] [-Headers <IDictionary>]
+ [-RemediationSkippedDeviceCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -DeviceHealthScriptId 
 ```
 Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -DeviceHealthScriptId <String>
  -BodyParameter <IMicrosoftGraphDeviceHealthScriptRunSummary> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,7 +41,7 @@ Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceM
  [-IssueRemediatedCumulativeDeviceCount <Int32>] [-IssueRemediatedDeviceCount <Int32>]
  [-IssueReoccurredDeviceCount <Int32>] [-LastScriptRunDateTime <DateTime>]
  [-NoIssueDetectedDeviceCount <Int32>] [-RemediationScriptErrorDeviceCount <Int32>]
- [-RemediationSkippedDeviceCount <Int32>] [-Headers <IDictionary>]
+ [-RemediationSkippedDeviceCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,7 +49,7 @@ Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceM
 ```
 Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceHealthScriptRunSummary> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -62,8 +62,6 @@ Update the navigation property runSummary in deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -95,21 +93,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -310,6 +293,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RemediationScriptErrorDeviceCount
 Number of devices for which the remediation script execution encountered an error and did not complete
 
@@ -347,6 +345,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

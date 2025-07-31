@@ -20,14 +20,14 @@ Search results are provided in the response.
 ### QueryExpanded (Default)
 ```
 Invoke-MgQuerySearch [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Requests <IMicrosoftGraphSearchRequest[]>] [-Headers <IDictionary>]
+ [-Requests <IMicrosoftGraphSearchRequest[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Query
 ```
 Invoke-MgQuerySearch -Body <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -138,21 +138,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -165,6 +150,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -191,6 +191,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -233,7 +248,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODY `<IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Requests <IMicrosoftGraphSearchRequest- `[]`>]`:
+  - `[Requests <IMicrosoftGraphSearchRequest- `[]`>]`: 
     - `[AggregationFilters <String- `[]`>]`: Contains one or more filters to obtain search results aggregated and filtered to a specific value of a field.
 Optional.Build this filter based on a prior search that aggregates by the same field.
 From the response of the prior search, identify the searchBucket that filters results to the specific value of the field, use the string in its aggregationFilterToken property, and build an aggregation filter string in the format '{field}:/'{aggregationFilterToken}/''.
@@ -282,7 +297,7 @@ Required.
 This property is only applicable to entityType=message.
 Optional.
     - `[EntityTypes <String- `[]`>]`: One or more types of resources expected in the response.
-Possible values are: event, message, driveItem, externalItem, site, list, listItem, drive, chatMessage, person, acronym, bookmark.
+Possible values are: event, message, driveItem, externalItem, site, list, listItem, drive, chatMessage, person, acronym, bookmark. 
 Use the Prefer: include-unknown-enum-members request header to get the following value(s) in this evolvable enum: chatMessage, person, acronym, bookmark.
 See known limitations for those combinations of two or more entity types that are supported in the same search request.
 Required.
@@ -382,7 +397,7 @@ Required.
 This property is only applicable to entityType=message.
 Optional.
   - `[EntityTypes <String- `[]`>]`: One or more types of resources expected in the response.
-Possible values are: event, message, driveItem, externalItem, site, list, listItem, drive, chatMessage, person, acronym, bookmark.
+Possible values are: event, message, driveItem, externalItem, site, list, listItem, drive, chatMessage, person, acronym, bookmark. 
 Use the Prefer: include-unknown-enum-members request header to get the following value(s) in this evolvable enum: chatMessage, person, acronym, bookmark.
 See known limitations for those combinations of two or more entity types that are supported in the same search request.
 Required.

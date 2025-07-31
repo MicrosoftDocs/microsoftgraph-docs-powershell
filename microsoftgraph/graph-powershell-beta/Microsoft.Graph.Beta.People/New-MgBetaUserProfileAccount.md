@@ -20,14 +20,14 @@ New-MgBetaUserProfileAccount -UserId <String> [-ResponseHeadersVariable <String>
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-PreferredLanguageTag <IMicrosoftGraphLocaleInfo>]
  [-Source <IMicrosoftGraphPersonDataSources>] [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserProfileAccount -UserId <String> -BodyParameter <IMicrosoftGraphUserAccountInformation>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ New-MgBetaUserProfileAccount -InputObject <IPeopleIdentity> [-ResponseHeadersVar
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-PreferredLanguageTag <IMicrosoftGraphLocaleInfo>]
  [-Source <IMicrosoftGraphPersonDataSources>] [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,7 +47,7 @@ New-MgBetaUserProfileAccount -InputObject <IPeopleIdentity> [-ResponseHeadersVar
 ```
 New-MgBetaUserProfileAccount -InputObject <IPeopleIdentity>
  -BodyParameter <IMicrosoftGraphUserAccountInformation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -141,21 +141,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -330,6 +315,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -399,6 +399,21 @@ The user principal name (UPN) of the user associated with the account.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
