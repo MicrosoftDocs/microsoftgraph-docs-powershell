@@ -16,7 +16,7 @@ Revoke licenses associated with a specific appleVolumePurchaseProgramToken
 ```
 Revoke-MgBetaDeviceAppManagementVppTokenLicense -VppTokenId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-NotifyManagedDevices] [-RevokeUntrackedLicenses]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Revoke-MgBetaDeviceAppManagementVppTokenLicense -VppTokenId <String> [-ResponseH
 ```
 Revoke-MgBetaDeviceAppManagementVppTokenLicense -VppTokenId <String>
  -BodyParameter <IPaths1C1UpkDeviceappmanagementVpptokensVpptokenIdMicrosoftGraphRevokelicensesPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Revoke-MgBetaDeviceAppManagementVppTokenLicense -VppTokenId <String>
 ```
 Revoke-MgBetaDeviceAppManagementVppTokenLicense -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-NotifyManagedDevices]
- [-RevokeUntrackedLicenses] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-RevokeUntrackedLicenses] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Revoke-MgBetaDeviceAppManagementVppTokenLicense -InputObject <IDevicesCorporateM
 ```
 Revoke-MgBetaDeviceAppManagementVppTokenLicense -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPaths1C1UpkDeviceappmanagementVpptokensVpptokenIdMicrosoftGraphRevokelicensesPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -54,8 +54,6 @@ Revoke licenses associated with a specific appleVolumePurchaseProgramToken
 | Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -87,21 +85,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -166,6 +149,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -205,6 +203,21 @@ Parameter Sets: RevokeExpanded, Revoke
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -19,7 +19,7 @@ Operation entity that represents the latest indexing for the noncustodial data s
 ```
 Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation -EdiscoveryCaseId <String>
  -EdiscoveryNoncustodialDataSourceId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -27,13 +27,11 @@ Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation -Edisco
 ```
 Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation -InputObject <ISecurityIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Operation entity that represents the latest indexing for the noncustodial data source.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -110,6 +108,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

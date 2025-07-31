@@ -18,7 +18,7 @@ Update-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction
  -WindowsInformationProtectionWipeActionId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastCheckInDateTime <DateTime>] [-Status <String>]
  [-TargetedDeviceMacAddress <String>] [-TargetedDeviceName <String>] [-TargetedDeviceRegistrationId <String>]
- [-TargetedUserId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-TargetedUserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Update-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction
 Update-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction
  -WindowsInformationProtectionWipeActionId <String>
  -BodyParameter <IMicrosoftGraphWindowsInformationProtectionWipeAction> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,7 +36,7 @@ Update-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastCheckInDateTime <DateTime>] [-Status <String>]
  [-TargetedDeviceMacAddress <String>] [-TargetedDeviceName <String>] [-TargetedDeviceRegistrationId <String>]
- [-TargetedUserId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-TargetedUserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -45,7 +45,7 @@ Update-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction
 Update-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphWindowsInformationProtectionWipeAction> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,8 +58,6 @@ Update the navigation property windowsInformationProtectionWipeActions in device
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -91,21 +89,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -163,6 +146,21 @@ Last checkin time of the device that was targeted by this wipe action.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -261,6 +259,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WindowsInformationProtectionWipeActionId
+The unique identifier of windowsInformationProtectionWipeAction
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -271,21 +299,6 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsInformationProtectionWipeActionId
-The unique identifier of windowsInformationProtectionWipeAction
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

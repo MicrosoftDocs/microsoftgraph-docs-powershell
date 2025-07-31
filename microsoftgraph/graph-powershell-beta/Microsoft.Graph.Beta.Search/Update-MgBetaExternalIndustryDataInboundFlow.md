@@ -9,7 +9,7 @@ ms.subservice: industry-data-etl
 # Update-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Update the properties of an inboundApiFlow object.
+Update the properties of an inboundFileFlow object.
 
 ## SYNTAX
 
@@ -20,14 +20,14 @@ Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId <String> [-ResponseH
  [-DataDomain <String>] [-DisplayName <String>] [-EffectiveDateTime <DateTime>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReadinessStatus <String>]
  [-Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId <String>
  -BodyParameter <IMicrosoftGraphIndustryDataInboundFlow> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,18 +37,18 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-Re
  [-DataDomain <String>] [-DisplayName <String>] [-EffectiveDateTime <DateTime>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReadinessStatus <String>]
  [-Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
  -BodyParameter <IMicrosoftGraphIndustryDataInboundFlow> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the properties of an inboundApiFlow object.
+Update the properties of an inboundFileFlow object.
 
 **Permissions**
 
@@ -106,21 +106,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -267,6 +252,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReadinessStatus
 readinessStatus
 
@@ -297,22 +297,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Year
 yearTimePeriodDefinition
 To construct, see NOTES section for YEAR properties and create a hash table.
@@ -321,6 +305,37 @@ To construct, see NOTES section for YEAR properties and create a hash table.
 Type: IMicrosoftGraphIndustryDataYearTimePeriodDefinition
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
 
 Required: False
 Position: Named
@@ -505,7 +520,7 @@ Must be unique within the referenceType.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow)
 
-[https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-update?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-update?view=graph-rest-beta)
 
 
 

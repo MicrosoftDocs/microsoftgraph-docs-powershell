@@ -48,13 +48,13 @@ Update-MgServicePrincipal -ServicePrincipalId <String> [-ResponseHeadersVariable
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgServicePrincipal -ServicePrincipalId <String> -BodyParameter <IMicrosoftGraphServicePrincipal>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -90,13 +90,13 @@ Update-MgServicePrincipal -InputObject <IApplicationsIdentity> [-ResponseHeaders
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgServicePrincipal -InputObject <IApplicationsIdentity> -BodyParameter <IMicrosoftGraphServicePrincipal>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -387,21 +387,6 @@ To construct, see NOTES section for CLAIMSMAPPINGPOLICIES properties and create 
 Type: IMicrosoftGraphClaimsMappingPolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -880,6 +865,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RemoteDesktopSecurityConfiguration
 remoteDesktopSecurityConfiguration
 To construct, see NOTES section for REMOTEDESKTOPSECURITYCONFIGURATION properties and create a hash table.
@@ -1150,6 +1150,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -1300,7 +1315,7 @@ This is displayed when the app role is being assigned and, if the app role funct
   - `[Id <String>]`: Unique role identifier inside the appRoles collection.
 When creating a new app role, a new GUID identifier must be provided.
   - `[IsEnabled <Boolean?>]`: When creating or updating an app role, this must be set to true (which is the default).
-To delete a role, this must first be set to false.
+To delete a role, this must first be set to false. 
 At that point, in a subsequent call, this role may be removed.
   - `[Origin <String>]`: Specifies if the app role is defined on the application object or on the servicePrincipal entity.
 Must not be included in any POST or PATCH requests.
@@ -1424,7 +1439,7 @@ This is displayed when the app role is being assigned and, if the app role funct
     - `[Id <String>]`: Unique role identifier inside the appRoles collection.
 When creating a new app role, a new GUID identifier must be provided.
     - `[IsEnabled <Boolean?>]`: When creating or updating an app role, this must be set to true (which is the default).
-To delete a role, this must first be set to false.
+To delete a role, this must first be set to false. 
 At that point, in a subsequent call, this role may be removed.
     - `[Origin <String>]`: Specifies if the app role is defined on the application object or on the servicePrincipal entity.
 Must not be included in any POST or PATCH requests.
@@ -1443,7 +1458,7 @@ Read-only.
 null if the service principal wasn't created from an application template.
   - `[ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy- `[]`>]`: The claimsMappingPolicies assigned to this service principal.
 Supports $expand.
-    - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`:
+    - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Definition <String- `[]`>]`: A string collection containing a JSON string that defines the rules and settings for a policy.
 The syntax for the definition differs for each derived policy type.
 Required.
@@ -1463,7 +1478,7 @@ Read-only.
 Nullable.
   - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeValue>]`: customSecurityAttributeValue
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification- `[]`>]`:
+  - `[DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Classification <String>]`: permissionClassificationType
@@ -1477,20 +1492,20 @@ End-user portals such MyApps displays the application description in this field.
 The maximum allowed size is 1,024 characters.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
   - `[DisabledByMicrosoftStatus <String>]`: Specifies whether Microsoft has disabled the registered application.
-Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
+Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). 
 Supports $filter (eq, ne, not).
   - `[DisplayName <String>]`: The display name for the service principal.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
-  - `[Endpoints <IMicrosoftGraphEndpoint- `[]`>]`:
+  - `[Endpoints <IMicrosoftGraphEndpoint- `[]`>]`: 
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Capability <String>]`:
-    - `[ProviderId <String>]`:
-    - `[ProviderName <String>]`:
-    - `[ProviderResourceId <String>]`:
-    - `[Uri <String>]`:
+    - `[Capability <String>]`: 
+    - `[ProviderId <String>]`: 
+    - `[ProviderName <String>]`: 
+    - `[ProviderResourceId <String>]`: 
+    - `[Uri <String>]`: 
   - `[FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential- `[]`>]`: Federated identities for a specific type of service principal - managed identity.
 Supports $expand and $filter (/$count eq 0, /$count ne 0).
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1523,7 +1538,7 @@ It has a limit of 600 characters.
 Supports $filter (eq).
   - `[HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy- `[]`>]`: The homeRealmDiscoveryPolicies assigned to this service principal.
 Supports $expand.
-    - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`:
+    - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Definition <String- `[]`>]`: A string collection containing a JSON string that defines the rules and settings for a policy.
 The syntax for the definition differs for each derived policy type.
 Required.
@@ -1563,7 +1578,7 @@ Optional.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Key <Byte- `[]`>]`: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
     - `[KeyId <String>]`: The unique identifier (GUID) for the key.
@@ -1618,9 +1633,9 @@ This text appears in tenant-wide admin consent experiences.
     - `[AdminConsentDisplayName <String>]`: The permission's title, intended to be read by an administrator granting the permission on behalf of all users.
     - `[Id <String>]`: Unique delegated permission identifier inside the collection of delegated permissions defined for a resource application.
     - `[IsEnabled <Boolean?>]`: When you create or update a permission, this property must be set to true (which is the default).
-To delete a permission, this property must first be set to false.
+To delete a permission, this property must first be set to false. 
 At that point, in a subsequent call, the permission may be removed.
-    - `[Origin <String>]`:
+    - `[Origin <String>]`: 
     - `[Type <String>]`: The possible values are: User and Admin.
 Specifies whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator consent should always be required.
 While Microsoft Graph defines the default consent requirement for each permission, the tenant administrator may override the behavior in their organization (by allowing, restricting, or limiting user consent to this delegated permission).
@@ -1694,7 +1709,7 @@ Read-only.
 Additional values can be added to hybrid applications.
 These values can be used to identify the permissions exposed by this app within Microsoft Entra ID.
 For example,Client apps can specify a resource URI that is based on the values of this property to acquire an access token, which is the URI returned in the 'aud' claim.The any operator is required for filter expressions on multi-valued properties.
-Not nullable.
+Not nullable. 
 Supports $filter (eq, not, ge, le, startsWith).
   - `[ServicePrincipalType <String>]`: Identifies whether the service principal represents an application, a managed identity, or a legacy application.
 This is set by Microsoft Entra ID internally.
@@ -1747,7 +1762,7 @@ Not nullable.
 Anchor attributes must have a unique value identifying an object, and must be immutable.
 Default is false.
 One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
-              - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`:
+              - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`: 
                 - `[Key <String>]`: Key.
                 - `[Value <String>]`: Value.
               - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
@@ -1786,11 +1801,11 @@ null if discovery hasn't yet occurred.
         - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule- `[]`>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
           - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[IncludedContainers <String- `[]`>]`:
+            - `[IncludedContainers <String- `[]`>]`: 
           - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
           - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[IncludedGroups <String- `[]`>]`:
+            - `[IncludedGroups <String- `[]`>]`: 
           - `[Id <String>]`: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -1961,7 +1976,7 @@ The value is the union of strings set here and on the associated application ent
 When configured, Microsoft Entra ID issues tokens for this application encrypted using the key specified by this property.
 The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.
   - `[TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy- `[]`>]`: The tokenIssuancePolicies assigned to this service principal.
-    - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`:
+    - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Definition <String- `[]`>]`: A string collection containing a JSON string that defines the rules and settings for a policy.
 The syntax for the definition differs for each derived policy type.
 Required.
@@ -1977,7 +1992,7 @@ Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy- `[]`>]`: The tokenLifetimePolicies assigned to this service principal.
-    - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`:
+    - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Definition <String- `[]`>]`: A string collection containing a JSON string that defines the rules and settings for a policy.
 The syntax for the definition differs for each derived policy type.
 Required.
@@ -1992,7 +2007,7 @@ Required.
 Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`:
+  - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: 
   - `[VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>]`: verifiedPublisher
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AddedDateTime <DateTime?>]`: The timestamp when the verified publisher was first added or most recently updated.
@@ -2001,7 +2016,7 @@ Read-only.
 
 CLAIMSMAPPINGPOLICIES `<IMicrosoftGraphClaimsMappingPolicy- `[]`>`: The claimsMappingPolicies assigned to this service principal.
 Supports $expand.
-  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`:
+  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -2044,11 +2059,11 @@ ENDPOINTS `<IMicrosoftGraphEndpoint- `[]`>`: .
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Capability <String>]`:
-  - `[ProviderId <String>]`:
-  - `[ProviderName <String>]`:
-  - `[ProviderResourceId <String>]`:
-  - `[Uri <String>]`:
+  - `[Capability <String>]`: 
+  - `[ProviderId <String>]`: 
+  - `[ProviderName <String>]`: 
+  - `[ProviderResourceId <String>]`: 
+  - `[Uri <String>]`: 
 
 FEDERATEDIDENTITYCREDENTIALS `<IMicrosoftGraphFederatedIdentityCredential- `[]`>`: Federated identities for a specific type of service principal - managed identity.
 Supports $expand and $filter (/$count eq 0, /$count ne 0).
@@ -2083,7 +2098,7 @@ Supports $filter (eq).
 
 HOMEREALMDISCOVERYPOLICIES `<IMicrosoftGraphHomeRealmDiscoveryPolicy- `[]`>`: The homeRealmDiscoveryPolicies assigned to this service principal.
 Supports $expand.
-  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`:
+  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -2154,7 +2169,7 @@ Optional.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Key <Byte- `[]`>]`: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
   - `[KeyId <String>]`: The unique identifier (GUID) for the key.
@@ -2207,9 +2222,9 @@ This text appears in tenant-wide admin consent experiences.
   - `[AdminConsentDisplayName <String>]`: The permission's title, intended to be read by an administrator granting the permission on behalf of all users.
   - `[Id <String>]`: Unique delegated permission identifier inside the collection of delegated permissions defined for a resource application.
   - `[IsEnabled <Boolean?>]`: When you create or update a permission, this property must be set to true (which is the default).
-To delete a permission, this property must first be set to false.
+To delete a permission, this property must first be set to false. 
 At that point, in a subsequent call, the permission may be removed.
-  - `[Origin <String>]`:
+  - `[Origin <String>]`: 
   - `[Type <String>]`: The possible values are: User and Admin.
 Specifies whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator consent should always be required.
 While Microsoft Graph defines the default consent requirement for each permission, the tenant administrator may override the behavior in their organization (by allowing, restricting, or limiting user consent to this delegated permission).
@@ -2325,7 +2340,7 @@ Not nullable.
 Anchor attributes must have a unique value identifying an object, and must be immutable.
 Default is false.
 One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
-            - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`:
+            - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`: 
               - `[Key <String>]`: Key.
               - `[Value <String>]`: Value.
             - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
@@ -2364,11 +2379,11 @@ null if discovery hasn't yet occurred.
       - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule- `[]`>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
         - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[IncludedContainers <String- `[]`>]`:
+          - `[IncludedContainers <String- `[]`>]`: 
         - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
         - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[IncludedGroups <String- `[]`>]`:
+          - `[IncludedGroups <String- `[]`>]`: 
         - `[Id <String>]`: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -2534,7 +2549,7 @@ Unless mentioned explicitly, metadata values should not be changed.
     - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
 
 TOKENISSUANCEPOLICIES `<IMicrosoftGraphTokenIssuancePolicy- `[]`>`: The tokenIssuancePolicies assigned to this service principal.
-  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`:
+  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -2555,7 +2570,7 @@ Always null when the object hasn't been deleted.
 Read-only.
 
 TOKENLIFETIMEPOLICIES `<IMicrosoftGraphTokenLifetimePolicy- `[]`>`: The tokenLifetimePolicies assigned to this service principal.
-  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`:
+  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.

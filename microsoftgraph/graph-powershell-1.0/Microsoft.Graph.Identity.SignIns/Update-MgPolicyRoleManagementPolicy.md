@@ -22,14 +22,14 @@ Update-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId <String> [-Re
  [-EffectiveRules <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>] [-Id <String>] [-IsOrganizationDefault]
  [-LastModifiedBy <IMicrosoftGraphIdentity>] [-LastModifiedDateTime <DateTime>]
  [-Rules <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>] [-ScopeId <String>] [-ScopeType <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId <String>
  -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,20 +39,18 @@ Update-MgPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity> [-Re
  [-EffectiveRules <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>] [-Id <String>] [-IsOrganizationDefault]
  [-LastModifiedBy <IMicrosoftGraphIdentity>] [-LastModifiedDateTime <DateTime>]
  [-Rules <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>] [-ScopeId <String>] [-ScopeType <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property roleManagementPolicies in policies
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -84,21 +82,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -245,6 +228,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -326,6 +324,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -382,7 +395,7 @@ Use All for all settings.
 Allowed values are: Eligibility, Assignment.
       - `[Operations <String- `[]`>]`: The role management operations that are the target of the policy rule.
 Allowed values are: All, Activate, Deactivate, Assign, Update, Remove, Extend, Renew.
-      - `[TargetObjects <IMicrosoftGraphDirectoryObject- `[]`>]`:
+      - `[TargetObjects <IMicrosoftGraphDirectoryObject- `[]`>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -423,7 +436,7 @@ Use All for all settings.
 Allowed values are: Eligibility, Assignment.
     - `[Operations <String- `[]`>]`: The role management operations that are the target of the policy rule.
 Allowed values are: All, Activate, Deactivate, Assign, Update, Remove, Extend, Renew.
-    - `[TargetObjects <IMicrosoftGraphDirectoryObject- `[]`>]`:
+    - `[TargetObjects <IMicrosoftGraphDirectoryObject- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -470,6 +483,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal
@@ -513,7 +527,7 @@ Use All for all settings.
 Allowed values are: Eligibility, Assignment.
     - `[Operations <String- `[]`>]`: The role management operations that are the target of the policy rule.
 Allowed values are: All, Activate, Deactivate, Assign, Update, Remove, Extend, Renew.
-    - `[TargetObjects <IMicrosoftGraphDirectoryObject- `[]`>]`:
+    - `[TargetObjects <IMicrosoftGraphDirectoryObject- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.

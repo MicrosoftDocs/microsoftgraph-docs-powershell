@@ -18,7 +18,7 @@ Update-MgBetaTenantRelationshipManagedTenantDetailedInformation -TenantDetailedI
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-City <String>]
  [-CountryCode <String>] [-CountryName <String>] [-DefaultDomainName <String>] [-DisplayName <String>]
  [-Id <String>] [-IndustryName <String>] [-Region <String>] [-SegmentName <String>] [-TenantId <String>]
- [-VerticalName <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-VerticalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Update-MgBetaTenantRelationshipManagedTenantDetailedInformation -TenantDetailedI
 ```
 Update-MgBetaTenantRelationshipManagedTenantDetailedInformation -TenantDetailedInformationId <String>
  -BodyParameter <IMicrosoftGraphManagedTenantsTenantDetailedInformation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,7 +35,7 @@ Update-MgBetaTenantRelationshipManagedTenantDetailedInformation -InputObject <IM
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-City <String>]
  [-CountryCode <String>] [-CountryName <String>] [-DefaultDomainName <String>] [-DisplayName <String>]
  [-Id <String>] [-IndustryName <String>] [-Region <String>] [-SegmentName <String>] [-TenantId <String>]
- [-VerticalName <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-VerticalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -43,13 +43,11 @@ Update-MgBetaTenantRelationshipManagedTenantDetailedInformation -InputObject <IM
 ```
 Update-MgBetaTenantRelationshipManagedTenantDetailedInformation -InputObject <IManagedTenantsIdentity>
  -BodyParameter <IMicrosoftGraphManagedTenantsTenantDetailedInformation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property tenantsDetailedInformation in tenantRelationships
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -93,21 +91,6 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -246,6 +229,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Region
 The region where the managed tenant is located.
 Optional.
@@ -334,6 +332,21 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

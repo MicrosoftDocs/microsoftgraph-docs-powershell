@@ -9,7 +9,7 @@ ms.subservice: intune
 # Update-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Update the properties of a win32LobApp object.
+Update the properties of a iosVppApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -24,13 +24,13 @@ Update-MgDeviceAppManagementMobileApp -MobileAppId <String> [-ResponseHeadersVar
  [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>] [-IsFeatured]
  [-LargeIcon <IMicrosoftGraphMimeContent>] [-Notes <String>] [-Owner <String>]
  [-PrivacyInformationUrl <String>] [-Publisher <String>] [-PublishingState <MobileAppPublishingState>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceAppManagementMobileApp -MobileAppId <String> -BodyParameter <IMicrosoftGraphMobileApp>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ Update-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementI
  [-Description <String>] [-Developer <String>] [-DisplayName <String>] [-Id <String>]
  [-InformationUrl <String>] [-IsFeatured] [-LargeIcon <IMicrosoftGraphMimeContent>] [-Notes <String>]
  [-Owner <String>] [-PrivacyInformationUrl <String>] [-Publisher <String>]
- [-PublishingState <MobileAppPublishingState>] [-Headers <IDictionary>]
+ [-PublishingState <MobileAppPublishingState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -50,11 +50,11 @@ Update-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementI
 ```
 Update-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphMobileApp> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the properties of a win32LobApp object.
+Update the properties of a iosVppApp object.
 
 **Permissions**
 
@@ -90,14 +90,14 @@ $params = @{
 	publishingState = "processing"
 	committedContentVersion = "Committed Content Version value"
 	fileName = "File Name value"
-	size =
+	size = 
 	installCommandLine = "Install Command Line value"
 	uninstallCommandLine = "Uninstall Command Line value"
 	applicableArchitectures = "x86"
-	minimumFreeDiskSpaceInMB =
-	minimumMemoryInMB =
-	minimumNumberOfProcessors =
-	minimumCpuSpeedInMHz =
+	minimumFreeDiskSpaceInMB = 
+	minimumMemoryInMB = 
+	minimumNumberOfProcessors = 
+	minimumCpuSpeedInMHz = 
 	rules = @(
 		@{
 			"@odata.type" = "microsoft.graph.win32LobAppRegistryRule"
@@ -118,7 +118,7 @@ $params = @{
 	returnCodes = @(
 		@{
 			"@odata.type" = "microsoft.graph.win32LobAppReturnCode"
-			returnCode =
+			returnCode = 
 			type = "success"
 		}
 	)
@@ -202,21 +202,6 @@ To construct, see NOTES section for CATEGORIES properties and create a hash tabl
 Type: IMicrosoftGraphMobileAppCategory[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -423,6 +408,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Publisher
 The publisher of the app.
 
@@ -460,6 +460,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -595,7 +610,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileapp)
 
-[https://learn.microsoft.com/graph/api/intune-apps-win32lobapp-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-win32lobapp-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-iosvppapp-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-iosvppapp-update?view=graph-rest-1.0)
 
 
 

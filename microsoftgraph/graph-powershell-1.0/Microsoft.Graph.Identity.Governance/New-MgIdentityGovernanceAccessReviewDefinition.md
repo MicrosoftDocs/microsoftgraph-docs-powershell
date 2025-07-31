@@ -27,13 +27,13 @@ New-MgIdentityGovernanceAccessReviewDefinition [-ResponseHeadersVariable <String
  [-LastModifiedDateTime <DateTime>] [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]
  [-Scope <Hashtable>] [-Settings <IMicrosoftGraphAccessReviewScheduleSettings>]
  [-StageSettings <IMicrosoftGraphAccessReviewStageSettings[]>] [-Status <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter <IMicrosoftGraphAccessReviewScheduleDefinition>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -355,21 +355,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -CreatedBy
 userIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
@@ -558,6 +543,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -655,6 +655,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -769,7 +784,7 @@ Read-only.
       - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
       - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.00000000-0000-0000-0000-000000000000 if the assigned reviewer hasn't applied the decision or it was automatically applied.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. 
 Supports $select.
 Read-only.
       - `[ApplyResult <String>]`: The result of applying the decision.
@@ -874,14 +889,14 @@ Field only needs to be specified in the case of disableAndDeleteUserApplyAction.
     - `[AutoApplyDecisionsEnabled <Boolean?>]`: Indicates whether decisions are automatically applied.
 When set to false, an admin must apply the decisions manually once the reviewer completes the access review.
 When set to true, decisions are applied automatically after the access review instance duration ends, whether or not the reviewers have responded.
-Default value is false.
+Default value is false. 
 CAUTION: If both autoApplyDecisionsEnabled and defaultDecisionEnabled are true, all access for the principals to the resource risks being revoked if the reviewers fail to respond.
     - `[DecisionHistoriesForReviewersEnabled <Boolean?>]`: Indicates whether decisions on previous access review stages are available for reviewers on an accessReviewInstance with multiple subsequent stages.
 If not provided, the default is disabled (false).
     - `[DefaultDecision <String>]`: Decision chosen if defaultDecisionEnabled is enabled.
 Can be one of Approve, Deny, or Recommendation.
     - `[DefaultDecisionEnabled <Boolean?>]`: Indicates whether the default decision is enabled or disabled when reviewers do not respond.
-Default value is false.
+Default value is false. 
 CAUTION: If both autoApplyDecisionsEnabled and defaultDecisionEnabled are true, all access for the principals to the resource risks being revoked if the reviewers fail to respond.
     - `[InstanceDurationInDays <Int32?>]`: Duration of an access review instance in days.
 NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defined, its durationInDays setting will be used instead of the value of this property.
@@ -909,13 +924,13 @@ NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defin
 Required if type is absoluteMonthly or absoluteYearly.
         - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
         - `[FirstDayOfWeek <String>]`: dayOfWeek
         - `[Index <String>]`: weekIndex
         - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-        - `[Month <Int32?>]`: The month in which the event occurs.
+        - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
         - `[Type <String>]`: recurrencePatternType
       - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
@@ -938,7 +953,7 @@ Default value is false.
   - `[StageSettings <IMicrosoftGraphAccessReviewStageSettings- `[]`>]`: Required only for a multi-stage access review to define the stages and their settings.
 You can break down each review instance into up to three sequential stages, where each stage can have a different set of reviewers, fallback reviewers, and settings.
 Stages are created sequentially based on the dependsOn property.
-Optional.
+Optional. 
 When this property is defined, its settings are used instead of the corresponding settings in the accessReviewScheduleDefinition object and its settings, reviewers, and fallbackReviewers properties.
     - `[DecisionsThatWillMoveToNextStage <String- `[]`>]`: Indicate which decisions will go to the next stage.
 Can be a subset of Approve, Deny, Recommendation, or NotReviewed.
@@ -950,7 +965,7 @@ For example, if stageId is 2, then dependsOn must be 1.
 If stageId is 1, don't specify dependsOn.
 Required if stageId isn't 1.
     - `[DurationInDays <Int32?>]`: The duration of the stage.
-Required.
+Required. 
 NOTE: The cumulative value of this property across all stages  1.
 Will override the instanceDurationInDays setting on the accessReviewScheduleDefinition object.
 2.
@@ -959,19 +974,19 @@ That is, if the review recurs weekly, the cumulative durationInDays can't exceed
     - `[FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope- `[]`>]`: If provided, the fallback reviewers are asked to complete a review if the primary reviewers don't exist.
 For example, if managers are selected as reviewers and a principal under review doesn't have a manager in Microsoft Entra ID, the fallback reviewers are asked to review that principal.
 NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition object.
-    - `[RecommendationInsightSettings <IMicrosoftGraphAccessReviewRecommendationInsightSetting- `[]`>]`:
+    - `[RecommendationInsightSettings <IMicrosoftGraphAccessReviewRecommendationInsightSetting- `[]`>]`: 
     - `[RecommendationsEnabled <Boolean?>]`: Indicates whether showing recommendations to reviewers is enabled.
 Required.
 NOTE: The value of this property overrides override the corresponding setting on the accessReviewScheduleDefinition object.
     - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope- `[]`>]`: Defines who the reviewers are.
-If none is specified, the review is a self-review (users review their own access).
+If none is specified, the review is a self-review (users review their own access). 
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
 NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition.
     - `[StageId <String>]`: Unique identifier of the accessReviewStageSettings object.
 The stageId is used by the dependsOn property to indicate the order of the stages.
 Required.
   - `[Status <String>]`: This read-only field specifies the status of an access review.
-The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
+The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed. 
 Supports $select, $orderby, and $filter (eq only).
 Read-only.
 
@@ -1029,7 +1044,7 @@ For example, in the access reviews decisions API, this property might record the
       - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
     - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.00000000-0000-0000-0000-000000000000 if the assigned reviewer hasn't applied the decision or it was automatically applied.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. 
 Supports $select.
 Read-only.
     - `[ApplyResult <String>]`: The result of applying the decision.
@@ -1145,14 +1160,14 @@ Field only needs to be specified in the case of disableAndDeleteUserApplyAction.
   - `[AutoApplyDecisionsEnabled <Boolean?>]`: Indicates whether decisions are automatically applied.
 When set to false, an admin must apply the decisions manually once the reviewer completes the access review.
 When set to true, decisions are applied automatically after the access review instance duration ends, whether or not the reviewers have responded.
-Default value is false.
+Default value is false. 
 CAUTION: If both autoApplyDecisionsEnabled and defaultDecisionEnabled are true, all access for the principals to the resource risks being revoked if the reviewers fail to respond.
   - `[DecisionHistoriesForReviewersEnabled <Boolean?>]`: Indicates whether decisions on previous access review stages are available for reviewers on an accessReviewInstance with multiple subsequent stages.
 If not provided, the default is disabled (false).
   - `[DefaultDecision <String>]`: Decision chosen if defaultDecisionEnabled is enabled.
 Can be one of Approve, Deny, or Recommendation.
   - `[DefaultDecisionEnabled <Boolean?>]`: Indicates whether the default decision is enabled or disabled when reviewers do not respond.
-Default value is false.
+Default value is false. 
 CAUTION: If both autoApplyDecisionsEnabled and defaultDecisionEnabled are true, all access for the principals to the resource risks being revoked if the reviewers fail to respond.
   - `[InstanceDurationInDays <Int32?>]`: Duration of an access review instance in days.
 NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defined, its durationInDays setting will be used instead of the value of this property.
@@ -1180,13 +1195,13 @@ NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defin
 Required if type is absoluteMonthly or absoluteYearly.
       - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
       - `[FirstDayOfWeek <String>]`: dayOfWeek
       - `[Index <String>]`: weekIndex
       - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-      - `[Month <Int32?>]`: The month in which the event occurs.
+      - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
       - `[Type <String>]`: recurrencePatternType
     - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
@@ -1222,7 +1237,7 @@ For example, if stageId is 2, then dependsOn must be 1.
 If stageId is 1, don't specify dependsOn.
 Required if stageId isn't 1.
   - `[DurationInDays <Int32?>]`: The duration of the stage.
-Required.
+Required. 
 NOTE: The cumulative value of this property across all stages  1.
 Will override the instanceDurationInDays setting on the accessReviewScheduleDefinition object.
 2.
@@ -1237,12 +1252,12 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
     - `[QueryType <String>]`: The type of query.
 Examples include MicrosoftGraph and ARM.
-  - `[RecommendationInsightSettings <IMicrosoftGraphAccessReviewRecommendationInsightSetting- `[]`>]`:
+  - `[RecommendationInsightSettings <IMicrosoftGraphAccessReviewRecommendationInsightSetting- `[]`>]`: 
   - `[RecommendationsEnabled <Boolean?>]`: Indicates whether showing recommendations to reviewers is enabled.
 Required.
 NOTE: The value of this property overrides override the corresponding setting on the accessReviewScheduleDefinition object.
   - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope- `[]`>]`: Defines who the reviewers are.
-If none is specified, the review is a self-review (users review their own access).
+If none is specified, the review is a self-review (users review their own access). 
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
 NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition.
   - `[StageId <String>]`: Unique identifier of the accessReviewStageSettings object.

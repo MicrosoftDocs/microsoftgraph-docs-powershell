@@ -16,20 +16,18 @@ Metadata for Enrollment abandonment summary report
 ```
 Get-MgBetaReportManagedDeviceEnrollmentAbandonmentSummary -Filter <String> -Skip <Int32> -SkipToken <String>
  -Top <Int32> -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### ManagedViaIdentity
 ```
 Get-MgBetaReportManagedDeviceEnrollmentAbandonmentSummary -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Metadata for Enrollment abandonment summary report
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -109,6 +107,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -120,21 +133,6 @@ Aliases: RHV
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Usage: skip={skip}
-
-```yaml
-Type: Int32
-Parameter Sets: Managed
-Aliases:
-
-Required: True
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -161,6 +159,21 @@ Usage: top={top}
 Type: Int32
 Parameter Sets: Managed
 Aliases: Limit
+
+Required: True
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Usage: skip={skip}
+
+```yaml
+Type: Int32
+Parameter Sets: Managed
+Aliases:
 
 Required: True
 Position: Named

@@ -24,14 +24,14 @@ Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -WindowsProte
  [-ManagedDeviceId <String>] [-ManagedDeviceName <String>] [-NetworkInspectionSystemEnabled]
  [-QuickScanOverdue] [-RealTimeProtectionEnabled] [-RebootRequired] [-SignatureUpdateOverdue]
  [-SignatureVersion <String>] [-TenantDisplayName <String>] [-TenantId <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -WindowsProtectionStateId <String>
  -BodyParameter <IMicrosoftGraphManagedTenantsWindowsProtectionState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -46,20 +46,18 @@ Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -InputObject 
  [-ManagedDeviceId <String>] [-ManagedDeviceName <String>] [-NetworkInspectionSystemEnabled]
  [-QuickScanOverdue] [-RealTimeProtectionEnabled] [-RebootRequired] [-SignatureUpdateOverdue]
  [-SignatureVersion <String>] [-TenantDisplayName <String>] [-TenantId <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -InputObject <IManagedTenantsIdentity>
  -BodyParameter <IMicrosoftGraphManagedTenantsWindowsProtectionState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property windowsProtectionStates in tenantRelationships
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -125,21 +123,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -462,6 +445,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -QuickScanOverdue
 A flag indicating weather a quick scan is overdue.
 Optional.
@@ -596,6 +594,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WindowsProtectionStateId
+The unique identifier of windowsProtectionState
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -606,21 +634,6 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsProtectionStateId
-The unique identifier of windowsProtectionState
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -20,20 +20,18 @@ Create new navigation property to roleManagementPolicyAssignments for policies
 New-MgBetaPolicyRoleManagementPolicyAssignment [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Policy <IMicrosoftGraphUnifiedRoleManagementPolicy>]
  [-PolicyId <String>] [-RoleDefinitionId <String>] [-ScopeId <String>] [-ScopeType <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaPolicyRoleManagementPolicyAssignment
  -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to roleManagementPolicyAssignments for policies
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -65,21 +63,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -146,6 +129,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -163,7 +161,7 @@ Accept wildcard characters: False
 
 ### -RoleDefinitionId
 For Microsoft Entra roles policy, it's the identifier of the role definition object where the policy applies.
-For PIM for groups membership and ownership, it's either member or owner.
+For PIM for Groups membership and ownership, it's either member or owner.
 Supports $filter (eq).
 
 ```yaml
@@ -204,6 +202,21 @@ Required.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -297,9 +310,9 @@ Required.
   - `[PolicyId <String>]`: The id of the policy.
 Inherited from entity.
   - `[RoleDefinitionId <String>]`: For Microsoft Entra roles policy, it's the identifier of the role definition object where the policy applies.
-For PIM for groups membership and ownership, it's either member or owner.
+For PIM for Groups membership and ownership, it's either member or owner.
 Supports $filter (eq).
-  - `[ScopeId <String>]`: The identifier of the scope where the policy is assigned. 
+  - `[ScopeId <String>]`: The identifier of the scope where the policy is assigned.
 Can be / for the tenant or a group ID.
 Required.
   - `[ScopeType <String>]`: The type of the scope where the policy is assigned.
