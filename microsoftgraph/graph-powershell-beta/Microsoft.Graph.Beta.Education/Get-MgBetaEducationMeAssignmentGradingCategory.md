@@ -19,20 +19,18 @@ When set, enables users to weight assignments differently when computing a class
 ```
 Get-MgBetaEducationMeAssignmentGradingCategory -EducationAssignmentId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaEducationMeAssignmentGradingCategory -InputObject <IEducationIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 When set, enables users to weight assignments differently when computing a class average grade.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -94,6 +92,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -162,6 +175,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
   - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
   - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
+  - `[SpeakerAssignmentSubmissionId <String>]`: The unique identifier of speakerAssignmentSubmission
 
 ## RELATED LINKS
 

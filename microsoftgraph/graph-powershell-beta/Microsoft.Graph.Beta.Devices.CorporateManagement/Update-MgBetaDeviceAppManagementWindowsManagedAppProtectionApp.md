@@ -17,14 +17,14 @@ Update the navigation property apps in deviceAppManagement
 Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp -ManagedMobileAppId <String>
  -WindowsManagedAppProtectionId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-MobileAppIdentifier <Hashtable>] [-Version <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp -ManagedMobileAppId <String>
  -WindowsManagedAppProtectionId <String> -BodyParameter <IMicrosoftGraphManagedMobileApp>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,14 +33,14 @@ Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp -ManagedMobileApp
 Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-MobileAppIdentifier <Hashtable>] [-Version <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp
  -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphManagedMobileApp>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -54,8 +54,6 @@ Update the navigation property apps in deviceAppManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -87,21 +85,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -182,6 +165,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -212,6 +210,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WindowsManagedAppProtectionId
+The unique identifier of windowsManagedAppProtection
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -222,21 +250,6 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsManagedAppProtectionId
-The unique identifier of windowsManagedAppProtection
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

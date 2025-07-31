@@ -25,13 +25,13 @@ Update-MgSearchQna -QnaId <String> [-ResponseHeadersVariable <String>] [-Additio
  [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Platforms <DevicePlatformType[]>] [-State <String>]
  [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSearchQna -QnaId <String> -BodyParameter <IMicrosoftGraphSearchQna>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,13 +44,13 @@ Update-MgSearchQna -InputObject <ISearchIdentity> [-ResponseHeadersVariable <Str
  [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Platforms <DevicePlatformType[]>] [-State <String>]
  [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoftGraphSearchQna>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -140,21 +140,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -350,6 +335,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -QnaId
 The unique identifier of qna
 
@@ -429,6 +429,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -470,8 +485,8 @@ BODYPARAMETER `<IMicrosoftGraphSearchQna>`: qna
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`:
-      - `[Id <String>]`:
+      - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Date and time when the search answer was created or last edited.
@@ -536,8 +551,8 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`:
-    - `[Id <String>]`:
+    - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
   - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 

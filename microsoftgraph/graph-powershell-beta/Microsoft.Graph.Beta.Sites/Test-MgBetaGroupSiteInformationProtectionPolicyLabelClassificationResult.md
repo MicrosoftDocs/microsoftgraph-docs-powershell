@@ -21,14 +21,14 @@ The API returns an informationProtectionAction that contains one of more of the 
 Test-MgBetaGroupSiteInformationProtectionPolicyLabelClassificationResult -GroupId <String> -SiteId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ClassificationResults <IMicrosoftGraphClassificationResult[]>] [-ContentInfo <IMicrosoftGraphContentInfo>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
 Test-MgBetaGroupSiteInformationProtectionPolicyLabelClassificationResult -GroupId <String> -SiteId <String>
  -BodyParameter <IPaths1X07Bu3GroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,14 +37,14 @@ Test-MgBetaGroupSiteInformationProtectionPolicyLabelClassificationResult -GroupI
 Test-MgBetaGroupSiteInformationProtectionPolicyLabelClassificationResult -InputObject <ISitesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ClassificationResults <IMicrosoftGraphClassificationResult[]>] [-ContentInfo <IMicrosoftGraphContentInfo>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentity
 ```
 Test-MgBetaGroupSiteInformationProtectionPolicyLabelClassificationResult -InputObject <ISitesIdentity>
  -BodyParameter <IPaths1X07Bu3GroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -53,8 +53,6 @@ Using classification results, compute the information protection label that shou
 This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
 To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
 The API returns an informationProtectionAction that contains one of more of the following:
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +95,6 @@ To construct, see NOTES section for CLASSIFICATIONRESULTS properties and create 
 Type: IMicrosoftGraphClassificationResult[]
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -182,6 +165,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -206,6 +204,21 @@ Parameter Sets: EvaluateExpanded, Evaluate
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -280,6 +293,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+  - `[ContentFormats <String- `[]`>]`: Usage: contentFormats={contentFormats}
   - `[ContentModelId <String>]`: The unique identifier of contentModel
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ContentTypeId1 <String>]`: The unique identifier of contentType
@@ -298,9 +312,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[ItemActivityId <String>]`: The unique identifier of itemActivity
   - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
   - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
+  - `[LabelIds <String- `[]`>]`: Usage: labelIds={labelIds}
   - `[ListId <String>]`: The unique identifier of list
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[Locale <String>]`: Usage: locale='{locale}'
   - `[ModelName <String>]`: Usage: modelName='{modelName}'
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation

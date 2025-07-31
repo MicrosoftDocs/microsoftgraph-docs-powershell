@@ -21,14 +21,14 @@ Update-MgBetaDeviceAppManagementManagedEBookUserStateSummary -ManagedEBookId <St
  -UserInstallStateSummaryId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-DeviceStates <IMicrosoftGraphDeviceInstallState[]>] [-FailedDeviceCount <Int32>] [-Id <String>]
  [-InstalledDeviceCount <Int32>] [-NotInstalledDeviceCount <Int32>] [-UserName <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementManagedEBookUserStateSummary -ManagedEBookId <String>
  -UserInstallStateSummaryId <String> -BodyParameter <IMicrosoftGraphUserInstallStateSummary>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,14 +38,14 @@ Update-MgBetaDeviceAppManagementManagedEBookUserStateSummary -InputObject <IDevi
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-DeviceStates <IMicrosoftGraphDeviceInstallState[]>] [-FailedDeviceCount <Int32>] [-Id <String>]
  [-InstalledDeviceCount <Int32>] [-NotInstalledDeviceCount <Int32>] [-UserName <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementManagedEBookUserStateSummary -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphUserInstallStateSummary> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,8 +58,6 @@ Update the navigation property userStateSummary in deviceAppManagement
 | Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -91,21 +89,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -232,6 +215,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -269,6 +267,21 @@ User name.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

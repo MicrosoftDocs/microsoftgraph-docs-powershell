@@ -20,7 +20,7 @@ Associate a published content type present in a content type hub with a list of 
 ```
 Join-MgDriveListContentTypeWithHubSite -ContentTypeId <String> -DriveId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-HubSiteUrls <String[]>]
- [-PropagateToExistingLists] [-Headers <IDictionary>] [-PassThru]
+ [-PropagateToExistingLists] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Join-MgDriveListContentTypeWithHubSite -ContentTypeId <String> -DriveId <String>
 ```
 Join-MgDriveListContentTypeWithHubSite -ContentTypeId <String> -DriveId <String>
  -BodyParameter <IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Join-MgDriveListContentTypeWithHubSite -ContentTypeId <String> -DriveId <String>
 ```
 Join-MgDriveListContentTypeWithHubSite -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-HubSiteUrls <String[]>] [-PropagateToExistingLists]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -44,14 +44,12 @@ Join-MgDriveListContentTypeWithHubSite -InputObject <IFilesIdentity> [-ResponseH
 ```
 Join-MgDriveListContentTypeWithHubSite -InputObject <IFilesIdentity>
  -BodyParameter <IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Associate a published content type present in a content type hub with a list of hub sites.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -83,21 +81,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -192,6 +175,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PropagateToExistingLists
 
 
@@ -214,6 +212,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -257,8 +270,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[HubSiteUrls <String- `[]`>]`:
-  - `[PropagateToExistingLists <Boolean?>]`:
+  - `[HubSiteUrls <String- `[]`>]`: 
+  - `[PropagateToExistingLists <Boolean?>]`: 
 
 INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition

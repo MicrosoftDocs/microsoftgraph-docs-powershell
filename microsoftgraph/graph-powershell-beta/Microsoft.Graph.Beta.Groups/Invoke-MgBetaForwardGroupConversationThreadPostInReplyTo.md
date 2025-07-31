@@ -22,7 +22,7 @@ You can specify both the parent conversation and thread in the request, or, you 
 Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo -ConversationId <String>
  -ConversationThreadId <String> -GroupId <String> -PostId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo -ConversationId <String
 Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo -ConversationId <String>
  -ConversationThreadId <String> -GroupId <String> -PostId <String>
  -BodyParameter <IPaths1TkyrqsGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,22 +40,20 @@ Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo -ConversationId <String
 Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo -InputObject <IGroupsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Comment <String>]
  [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ForwardViaIdentity
 ```
 Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1TkyrqsGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Forward a post to a recipient.
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +95,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -226,6 +209,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -249,6 +247,21 @@ To construct, see NOTES section for TORECIPIENTS properties and create a hash ta
 Type: IMicrosoftGraphRecipient[]
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

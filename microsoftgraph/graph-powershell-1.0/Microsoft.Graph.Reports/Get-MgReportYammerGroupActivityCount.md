@@ -19,13 +19,13 @@ Get the number of Yammer messages posted, read, and liked in groups.
 ### Get (Default)
 ```
 Get-MgReportYammerGroupActivityCount -Period <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportYammerGroupActivityCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Get the number of Yammer messages posted, read, and liked in groups.
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportYammerGroupActivityCount -Period $periodId
+Get-MgReportYammerGroupActivityCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportYammerGroupActivityCount Cmdlet.
@@ -117,6 +117,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

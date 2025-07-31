@@ -16,14 +16,14 @@ Exports the mobile configuration
 ```
 Export-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig -DepOnboardingSettingId <String>
  -EnrollmentProfileId <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### ExportViaIdentity
 ```
 Export-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig
  -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,8 +36,6 @@ Exports the mobile configuration
 | Delegated (work or school account) | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -99,6 +97,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

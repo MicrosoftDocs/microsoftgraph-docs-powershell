@@ -23,7 +23,7 @@ New-MgGroupSiteTermStoreSetParentGroupSetTerm -GroupId <String> -SetId <String> 
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
  [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
- [-Set <IMicrosoftGraphTermStoreSet>] [-Headers <IDictionary>] [-WhatIf]
+ [-Set <IMicrosoftGraphTermStoreSet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ New-MgGroupSiteTermStoreSetParentGroupSetTerm -GroupId <String> -SetId <String> 
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
  [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
- [-Set <IMicrosoftGraphTermStoreSet>] [-Headers <IDictionary>] [-WhatIf]
+ [-Set <IMicrosoftGraphTermStoreSet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,7 +43,7 @@ New-MgGroupSiteTermStoreSetParentGroupSetTerm -GroupId <String> -SetId <String> 
 ```
 New-MgGroupSiteTermStoreSetParentGroupSetTerm -GroupId <String> -SetId <String> -SetId1 <String>
  -SiteId <String> -StoreId <String> -BodyParameter <IMicrosoftGraphTermStoreTerm>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -51,7 +51,7 @@ New-MgGroupSiteTermStoreSetParentGroupSetTerm -GroupId <String> -SetId <String> 
 ```
 New-MgGroupSiteTermStoreSetParentGroupSetTerm -GroupId <String> -SetId <String> -SetId1 <String>
  -SiteId <String> -BodyParameter <IMicrosoftGraphTermStoreTerm> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -61,7 +61,7 @@ New-MgGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity> [-Re
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
  [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
- [-Set <IMicrosoftGraphTermStoreSet>] [-Headers <IDictionary>] [-WhatIf]
+ [-Set <IMicrosoftGraphTermStoreSet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -72,7 +72,7 @@ New-MgGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity> [-Re
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
  [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
- [-Set <IMicrosoftGraphTermStoreSet>] [-Headers <IDictionary>] [-WhatIf]
+ [-Set <IMicrosoftGraphTermStoreSet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -80,20 +80,18 @@ New-MgGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity> [-Re
 ```
 New-MgGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphTermStoreTerm> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphTermStoreTerm> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to terms for groups
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -136,21 +134,6 @@ To construct, see NOTES section for CHILDREN properties and create a hash table.
 Type: IMicrosoftGraphTermStoreTerm[]
 Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -285,6 +268,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Properties
 Collection of properties on the term.
 To construct, see NOTES section for PROPERTIES properties and create a hash table.
@@ -402,6 +400,21 @@ Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

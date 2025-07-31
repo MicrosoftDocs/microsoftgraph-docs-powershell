@@ -16,7 +16,7 @@ Navigation property to deployment summary of the configuration.
 ```
 Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary
  -WindowsManagedAppProtectionId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -24,14 +24,12 @@ Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary
 ```
 Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary
  -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Navigation property to deployment summary of the configuration.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -78,6 +76,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

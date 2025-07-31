@@ -16,13 +16,13 @@ Delete navigation property policies for networkAccess
 ```
 Remove-MgBetaNetworkAccessForwardingProfilePolicy -ForwardingProfileId <String> -PolicyLinkId <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaNetworkAccessForwardingProfilePolicy -InputObject <INetworkAccessIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,24 +37,7 @@ Delete navigation property policies for networkAccess
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
 
-## EXAMPLES
-
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -ForwardingProfileId
 The unique identifier of forwardingProfile
@@ -147,6 +130,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -154,6 +152,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -200,6 +213,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[BranchSiteId <String>]`: The unique identifier of branchSite
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
+  - `[ConnectionId <String>]`: The unique identifier of connection
   - `[ConnectivityConfigurationLinkId <String>]`: The unique identifier of connectivityConfigurationLink
   - `[DeviceLinkId <String>]`: The unique identifier of deviceLink
   - `[DiscoveryPivotDateTime <DateTime?>]`: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
@@ -214,6 +228,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[RemoteNetworkHealthEventId <String>]`: The unique identifier of remoteNetworkHealthEvent
   - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+  - `[ThreatIntelligencePolicyId <String>]`: The unique identifier of threatIntelligencePolicy
 
 ## RELATED LINKS
 

@@ -24,20 +24,19 @@ Update-MgDirectory [-ResponseHeadersVariable <String>] [-AdditionalProperties <H
  [-DeviceLocalCredentials <IMicrosoftGraphDeviceLocalCredentialInfo[]>]
  [-FederationConfigurations <IMicrosoftGraphIdentityProviderBase[]>] [-Id <String>]
  [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization[]>]
+ [-PublicKeyInfrastructure <IMicrosoftGraphPublicKeyInfrastructureRoot>]
  [-Subscriptions <IMicrosoftGraphCompanySubscription[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDirectory -BodyParameter <IMicrosoftGraphDirectory> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update directory
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -101,21 +100,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -232,6 +216,37 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PublicKeyInfrastructure
+publicKeyInfrastructureRoot
+To construct, see NOTES section for PUBLICKEYINFRASTRUCTURE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPublicKeyInfrastructureRoot
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -255,6 +270,21 @@ To construct, see NOTES section for SUBSCRIPTIONS properties and create a hash t
 Type: IMicrosoftGraphCompanySubscription[]
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -309,7 +339,11 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[IsMemberManagementRestricted <Boolean?>]`:
+  - `[IsMemberManagementRestricted <Boolean?>]`: true if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage.
+If not set, the default value is null and the default behavior is false.
+Use this property to define administrative units with roles that don't inherit from tenant-level administrators, and where the management of individual member objects is limited to administrators scoped to a restricted management administrative unit.
+This property is immutable and can't be changed later. 
+For more information on how to work with restricted management administrative units, see Restricted management administrative units in Microsoft Entra ID.
   - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
 Supports $expand.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -368,7 +402,11 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[IsMemberManagementRestricted <Boolean?>]`:
+    - `[IsMemberManagementRestricted <Boolean?>]`: true if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage.
+If not set, the default value is null and the default behavior is false.
+Use this property to define administrative units with roles that don't inherit from tenant-level administrators, and where the management of individual member objects is limited to administrators scoped to a restricted management administrative unit.
+This property is immutable and can't be changed later. 
+For more information on how to work with restricted management administrative units, see Restricted management administrative units in Microsoft Entra ID.
     - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
 Supports $expand.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -497,6 +535,40 @@ This property isn't in use and updating it isn't supported.
       - `[UnifiedGroupWritebackEnabled <Boolean?>]`: Used to indicate that Microsoft 365 Group write-back is enabled.
       - `[UserForcePasswordChangeOnLogonEnabled <Boolean?>]`: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
       - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
+  - `[PublicKeyInfrastructure <IMicrosoftGraphPublicKeyInfrastructureRoot>]`: publicKeyInfrastructureRoot
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[CertificateBasedAuthConfigurations <IMicrosoftGraphCertificateBasedAuthPki- `[]`>]`: The collection of public key infrastructure instances for the certificate-based authentication feature for users.
+      - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CertificateAuthorities <IMicrosoftGraphCertificateAuthorityDetail- `[]`>]`: The collection of certificate authorities contained in this public key infrastructure resource.
+        - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Certificate <Byte- `[]`>]`: The public key of the certificate authority.
+        - `[CertificateAuthorityType <String>]`: certificateAuthorityType
+        - `[CertificateRevocationListUrl <String>]`: The URL to check if the certificate is revoked.
+        - `[CreatedDateTime <DateTime?>]`: The date and time when the certificate authority was created.
+        - `[DeltaCertificateRevocationListUrl <String>]`: 
+        - `[DisplayName <String>]`: The display name of the certificate authority.
+        - `[ExpirationDateTime <DateTime?>]`: The date and time when the certificate authority expires.
+Supports $filter (eq) and $orderby.
+        - `[IsIssuerHintEnabled <Boolean?>]`: Indicates whether the certificate picker presents the certificate authority to the user to use for authentication.
+Default value is false.
+Optional.
+        - `[Issuer <String>]`: The issuer of the certificate authority.
+        - `[IssuerSubjectKeyIdentifier <String>]`: The subject key identifier of certificate authority.
+        - `[Thumbprint <String>]`: The thumbprint of certificate authority certificate.
+Supports $filter (eq, startswith).
+      - `[DisplayName <String>]`: The name of the object.
+Maximum length is 256 characters.
+      - `[LastModifiedDateTime <DateTime?>]`: The date and time when the object was created or last modified.
+      - `[Status <String>]`: The status of any asynchronous jobs runs on the object which can be upload or delete.
+      - `[StatusDetails <String>]`: The status details of the upload/deleted operation of PKI (Public Key Infrastructure).
   - `[Subscriptions <IMicrosoftGraphCompanySubscription- `[]`>]`: List of commercial subscriptions that an organization acquired.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -623,6 +695,41 @@ This property isn't in use and updating it isn't supported.
     - `[UnifiedGroupWritebackEnabled <Boolean?>]`: Used to indicate that Microsoft 365 Group write-back is enabled.
     - `[UserForcePasswordChangeOnLogonEnabled <Boolean?>]`: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
     - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
+
+PUBLICKEYINFRASTRUCTURE `<IMicrosoftGraphPublicKeyInfrastructureRoot>`: publicKeyInfrastructureRoot
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[CertificateBasedAuthConfigurations <IMicrosoftGraphCertificateBasedAuthPki- `[]`>]`: The collection of public key infrastructure instances for the certificate-based authentication feature for users.
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[CertificateAuthorities <IMicrosoftGraphCertificateAuthorityDetail- `[]`>]`: The collection of certificate authorities contained in this public key infrastructure resource.
+      - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Certificate <Byte- `[]`>]`: The public key of the certificate authority.
+      - `[CertificateAuthorityType <String>]`: certificateAuthorityType
+      - `[CertificateRevocationListUrl <String>]`: The URL to check if the certificate is revoked.
+      - `[CreatedDateTime <DateTime?>]`: The date and time when the certificate authority was created.
+      - `[DeltaCertificateRevocationListUrl <String>]`: 
+      - `[DisplayName <String>]`: The display name of the certificate authority.
+      - `[ExpirationDateTime <DateTime?>]`: The date and time when the certificate authority expires.
+Supports $filter (eq) and $orderby.
+      - `[IsIssuerHintEnabled <Boolean?>]`: Indicates whether the certificate picker presents the certificate authority to the user to use for authentication.
+Default value is false.
+Optional.
+      - `[Issuer <String>]`: The issuer of the certificate authority.
+      - `[IssuerSubjectKeyIdentifier <String>]`: The subject key identifier of certificate authority.
+      - `[Thumbprint <String>]`: The thumbprint of certificate authority certificate.
+Supports $filter (eq, startswith).
+    - `[DisplayName <String>]`: The name of the object.
+Maximum length is 256 characters.
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the object was created or last modified.
+    - `[Status <String>]`: The status of any asynchronous jobs runs on the object which can be upload or delete.
+    - `[StatusDetails <String>]`: The status details of the upload/deleted operation of PKI (Public Key Infrastructure).
 
 SUBSCRIPTIONS `<IMicrosoftGraphCompanySubscription- `[]`>`: List of commercial subscriptions that an organization acquired.
   - `[Id <String>]`: The unique identifier for an entity.

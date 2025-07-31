@@ -16,14 +16,14 @@ Issues a wipe operation on an app registration with specified aad device Id.
 ```
 Clear-MgBetaUserManagedAppRegistrationByAzureAdDeviceId -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AzureAdDeviceId <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Wipe
 ```
 Clear-MgBetaUserManagedAppRegistrationByAzureAdDeviceId -UserId <String>
  -BodyParameter <IComponents1WfyhtaRequestbodiesWipemanagedappregistrationsbyazureaddeviceidrequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Clear-MgBetaUserManagedAppRegistrationByAzureAdDeviceId -UserId <String>
 ```
 Clear-MgBetaUserManagedAppRegistrationByAzureAdDeviceId -InputObject <IUsersActionsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AzureAdDeviceId <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Clear-MgBetaUserManagedAppRegistrationByAzureAdDeviceId -InputObject <IUsersActi
 ```
 Clear-MgBetaUserManagedAppRegistrationByAzureAdDeviceId -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponents1WfyhtaRequestbodiesWipemanagedappregistrationsbyazureaddeviceidrequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -53,8 +53,6 @@ Issues a wipe operation on an app registration with specified aad device Id.
 | Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -104,21 +102,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -165,6 +148,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -189,6 +187,21 @@ Parameter Sets: WipeExpanded, Wipe
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

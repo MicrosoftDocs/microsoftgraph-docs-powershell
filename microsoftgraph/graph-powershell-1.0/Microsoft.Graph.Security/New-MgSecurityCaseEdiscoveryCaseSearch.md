@@ -27,14 +27,14 @@ New-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String> [-ResponseHead
  [-LastEstimateStatisticsOperation <IMicrosoftGraphSecurityEdiscoveryEstimateOperation>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String>
  -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -48,14 +48,14 @@ New-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity> [-Respon
  [-LastEstimateStatisticsOperation <IMicrosoftGraphSecurityEdiscoveryEstimateOperation>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -158,21 +158,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -408,6 +393,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -415,6 +415,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -504,30 +519,34 @@ Read-only.
   - `[ReviewSet <IMicrosoftGraphSecurityEdiscoveryReviewSet>]`: ediscoveryReviewSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedDateTime <DateTime?>]`:
-    - `[Description <String>]`:
-    - `[DisplayName <String>]`:
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the review set was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+    - `[Description <String>]`: The description of the data set.
+    - `[DisplayName <String>]`: The name of the data set.
+The name is unique with a maximum limit of 64 characters.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery- `[]`>]`: Represents queries within the review set.
-      - `[ContentQuery <String>]`:
+      - `[ContentQuery <String>]`: 
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedDateTime <DateTime?>]`:
-      - `[Description <String>]`:
-      - `[DisplayName <String>]`:
+      - `[CreatedDateTime <DateTime?>]`: 
+      - `[Description <String>]`: 
+      - `[DisplayName <String>]`: 
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedDateTime <DateTime?>]`:
+      - `[LastModifiedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContentQuery <String>]`:
+    - `[ContentQuery <String>]`: 
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedDateTime <DateTime?>]`:
-    - `[Description <String>]`:
-    - `[DisplayName <String>]`:
+    - `[CreatedDateTime <DateTime?>]`: 
+    - `[Description <String>]`: 
+    - `[DisplayName <String>]`: 
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`:
+    - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation>]`: ediscoveryAddToReviewSetOperation
@@ -583,7 +602,7 @@ Read-only.
 
 BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoverySearch>`: ediscoverySearch
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentQuery <String>]`:
+  - `[ContentQuery <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -594,11 +613,11 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`:
-  - `[Description <String>]`:
-  - `[DisplayName <String>]`:
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[Description <String>]`: 
+  - `[DisplayName <String>]`: 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`:
+  - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation>]`: ediscoveryAddToReviewSetOperation
@@ -623,19 +642,23 @@ Read-only.
     - `[ReviewSet <IMicrosoftGraphSecurityEdiscoveryReviewSet>]`: ediscoveryReviewSet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedDateTime <DateTime?>]`:
-      - `[Description <String>]`:
-      - `[DisplayName <String>]`:
+      - `[CreatedDateTime <DateTime?>]`: The date and time when the review set was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      - `[Description <String>]`: The description of the data set.
+      - `[DisplayName <String>]`: The name of the data set.
+The name is unique with a maximum limit of 64 characters.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery- `[]`>]`: Represents queries within the review set.
-        - `[ContentQuery <String>]`:
+        - `[ContentQuery <String>]`: 
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedDateTime <DateTime?>]`:
-        - `[Description <String>]`:
-        - `[DisplayName <String>]`:
+        - `[CreatedDateTime <DateTime?>]`: 
+        - `[Description <String>]`: 
+        - `[DisplayName <String>]`: 
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedDateTime <DateTime?>]`:
+        - `[LastModifiedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch
@@ -811,13 +834,13 @@ Read-only.
   - `[MailboxCount <Int32?>]`: The number of mailboxes that had search hits.
   - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContentQuery <String>]`:
+    - `[ContentQuery <String>]`: 
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedDateTime <DateTime?>]`:
-    - `[Description <String>]`:
-    - `[DisplayName <String>]`:
+    - `[CreatedDateTime <DateTime?>]`: 
+    - `[Description <String>]`: 
+    - `[DisplayName <String>]`: 
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`:
+    - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation>]`: ediscoveryAddToReviewSetOperation
@@ -838,19 +861,23 @@ Read-only.
       - `[ReviewSet <IMicrosoftGraphSecurityEdiscoveryReviewSet>]`: ediscoveryReviewSet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedDateTime <DateTime?>]`:
-        - `[Description <String>]`:
-        - `[DisplayName <String>]`:
+        - `[CreatedDateTime <DateTime?>]`: The date and time when the review set was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        - `[Description <String>]`: The description of the data set.
+        - `[DisplayName <String>]`: The name of the data set.
+The name is unique with a maximum limit of 64 characters.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery- `[]`>]`: Represents queries within the review set.
-          - `[ContentQuery <String>]`:
+          - `[ContentQuery <String>]`: 
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[CreatedDateTime <DateTime?>]`:
-          - `[Description <String>]`:
-          - `[DisplayName <String>]`:
+          - `[CreatedDateTime <DateTime?>]`: 
+          - `[Description <String>]`: 
+          - `[DisplayName <String>]`: 
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[LastModifiedDateTime <DateTime?>]`:
+          - `[LastModifiedDateTime <DateTime?>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch

@@ -22,13 +22,13 @@ Update-MgBetaDirectoryRecommendation -RecommendationId <String> [-ResponseHeader
  [-LastCheckedDateTime <DateTime>] [-LastModifiedBy <String>] [-LastModifiedDateTime <DateTime>]
  [-MaxScore <Double>] [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-RecommendationType <String>]
  [-ReleaseType <String>] [-RemediationImpact <String>] [-RequiredLicenses <String>] [-Status <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDirectoryRecommendation -RecommendationId <String> -BodyParameter <Hashtable>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,20 +43,18 @@ Update-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagementI
  [-LastCheckedDateTime <DateTime>] [-LastModifiedBy <String>] [-LastModifiedDateTime <DateTime>]
  [-MaxScore <Double>] [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-RecommendationType <String>]
  [-ReleaseType <String>] [-RemediationImpact <String>] [-RequiredLicenses <String>] [-Status <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property recommendations in directory
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -129,21 +127,6 @@ recommendationCategory
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -277,8 +260,8 @@ Accept wildcard characters: False
 
 ### -ImpactType
 Indicates the scope of impact of a recommendation.
-Tenant level indicates that the recommendation impacts the whole tenant.
-Other possible values include users, applications.
+tenantLevel indicates that the recommendation impacts the whole tenant.
+Other possible values include users, apps.
 
 ```yaml
 Type: String
@@ -415,6 +398,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RecommendationId
 The unique identifier of recommendation
 
@@ -522,6 +520,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -568,8 +581,8 @@ IMPACTEDRESOURCES `<IMicrosoftGraphImpactedResource- `[]`>`: The list of directo
 Read-only.
   - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
   - `[AdditionalDetails <IMicrosoftGraphKeyValue- `[]`>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
-    - `[Key <String>]`: Key.
-    - `[Value <String>]`: Value.
+    - `[Key <String>]`: Contains the name of the field that a value is associated with.
+    - `[Value <String>]`: Contains the corresponding value for the specified key.
   - `[ApiUrl <String>]`: The URL link to the corresponding Microsoft Entra resource.
   - `[DisplayName <String>]`: Friendly name of the Microsoft Entra resource.
   - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
@@ -627,11 +640,14 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
   - `[PendingExternalUserProfileId <String>]`: The unique identifier of pendingExternalUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
+  - `[ProfilePropertySettingId <String>]`: The unique identifier of profilePropertySetting
+  - `[ProfileSourceId <String>]`: The unique identifier of profileSource
   - `[RecommendationId <String>]`: The unique identifier of recommendation
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
+  - `[SourceId <String>]`: Alternate key of profileSource
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
   - `[TenantId <String>]`: Usage: tenantId='{tenantId}'
   - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference

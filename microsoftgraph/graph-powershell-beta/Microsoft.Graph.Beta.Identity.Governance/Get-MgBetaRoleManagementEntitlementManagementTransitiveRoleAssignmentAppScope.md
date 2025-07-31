@@ -18,14 +18,14 @@ Supports $expand for the entitlement provider only.
 ```
 Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope -UnifiedRoleAssignmentId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -33,8 +33,6 @@ Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope
 Read-only property with details of the app specific scope when the assignment scope is app specific.
 Containment entity.
 Supports $expand for the entitlement provider only.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -81,6 +79,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

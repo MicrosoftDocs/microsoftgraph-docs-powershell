@@ -21,14 +21,14 @@ These values are shown to a user during a user journey defined by a user flow.
 ```
 Get-MgIdentityB2XUserFlowLanguageDefaultPageContent -B2XIdentityUserFlowId <String>
  -UserFlowLanguageConfigurationId <String> -UserFlowLanguagePageId <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgIdentityB2XUserFlowLanguageDefaultPageContent -InputObject <IIdentitySignInsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -135,6 +135,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -237,6 +252,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

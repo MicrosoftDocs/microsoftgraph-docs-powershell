@@ -11,7 +11,7 @@ ms.subservice: teams
 ## SYNOPSIS
 Replace an existing shift.
 If the specified shift doesn't exist, this method returns 404 Not found.
-The duration of a shift can't be less than 1 minute or longer than 24 hours.
+The duration of a shift can't be less than one minute or longer than 24 hours.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleShift?view=graph-powershell-beta)
@@ -25,13 +25,13 @@ Update-MgTeamScheduleShift -ShiftId <String> -TeamId <String> [-ResponseHeadersV
  [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>] [-IsStagedForDeletion]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgTeamScheduleShift -ShiftId <String> -TeamId <String> -BodyParameter <IMicrosoftGraphShift>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,22 +42,20 @@ Update-MgTeamScheduleShift -InputObject <ITeamsIdentity> [-ResponseHeadersVariab
  [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>] [-IsStagedForDeletion]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphShift>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Replace an existing shift.
 If the specified shift doesn't exist, this method returns 404 Not found.
-The duration of a shift can't be less than 1 minute or longer than 24 hours.
-
-## EXAMPLES
+The duration of a shift can't be less than one minute or longer than 24 hours.
 
 ## PARAMETERS
 
@@ -89,21 +87,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -217,6 +200,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -310,6 +308,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -360,8 +373,8 @@ For example, in the access reviews decisions API, this property might record the
 Read-only.
   - `[DraftShift <IMicrosoftGraphShiftItem>]`: shiftItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EndDateTime <DateTime?>]`:
-    - `[StartDateTime <DateTime?>]`:
+    - `[EndDateTime <DateTime?>]`: 
+    - `[StartDateTime <DateTime?>]`: 
     - `[Theme <String>]`: scheduleEntityTheme
     - `[Activities <IMicrosoftGraphShiftActivity- `[]`>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift.
 For example, an assignment or a scheduled break or lunch.
@@ -403,8 +416,8 @@ For example, in the access reviews decisions API, this property might record the
 
 DRAFTSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EndDateTime <DateTime?>]`:
-  - `[StartDateTime <DateTime?>]`:
+  - `[EndDateTime <DateTime?>]`: 
+  - `[StartDateTime <DateTime?>]`: 
   - `[Theme <String>]`: scheduleEntityTheme
   - `[Activities <IMicrosoftGraphShiftActivity- `[]`>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift.
 For example, an assignment or a scheduled break or lunch.
@@ -477,8 +490,8 @@ For example, in the access reviews decisions API, this property might record the
 
 SHAREDSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EndDateTime <DateTime?>]`:
-  - `[StartDateTime <DateTime?>]`:
+  - `[EndDateTime <DateTime?>]`: 
+  - `[StartDateTime <DateTime?>]`: 
   - `[Theme <String>]`: scheduleEntityTheme
   - `[Activities <IMicrosoftGraphShiftActivity- `[]`>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift.
 For example, an assignment or a scheduled break or lunch.

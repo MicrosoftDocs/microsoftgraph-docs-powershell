@@ -18,14 +18,14 @@ Update-MgBetaNetworkAccessFilteringPolicy -FilteringPolicyId <String> [-Response
  [-Action <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Name <String>]
  [-PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>] [-Version <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaNetworkAccessFilteringPolicy -FilteringPolicyId <String>
  -BodyParameter <IMicrosoftGraphNetworkaccessFilteringPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,20 +34,18 @@ Update-MgBetaNetworkAccessFilteringPolicy -InputObject <INetworkAccessIdentity>
  [-ResponseHeadersVariable <String>] [-Action <String>] [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Name <String>] [-PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>] [-Version <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaNetworkAccessFilteringPolicy -InputObject <INetworkAccessIdentity>
  -BodyParameter <IMicrosoftGraphNetworkaccessFilteringPolicy> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property filteringPolicies in networkAccess
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -94,21 +92,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -250,6 +233,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -272,6 +270,21 @@ Version.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -334,6 +347,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[BranchSiteId <String>]`: The unique identifier of branchSite
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
+  - `[ConnectionId <String>]`: The unique identifier of connection
   - `[ConnectivityConfigurationLinkId <String>]`: The unique identifier of connectivityConfigurationLink
   - `[DeviceLinkId <String>]`: The unique identifier of deviceLink
   - `[DiscoveryPivotDateTime <DateTime?>]`: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
@@ -348,6 +362,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[RemoteNetworkHealthEventId <String>]`: The unique identifier of remoteNetworkHealthEvent
   - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+  - `[ThreatIntelligencePolicyId <String>]`: The unique identifier of threatIntelligencePolicy
 
 POLICYRULES `<IMicrosoftGraphNetworkaccessPolicyRule- `[]`>`: Represents the definition of the policy ruleset that makes up the core definition of a policy.
   - `[Id <String>]`: The unique identifier for an entity.

@@ -22,7 +22,7 @@ Update-MgBetaShareListItemCreatedByUserMailboxSetting -SharedDriveItemId <String
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Update-MgBetaShareListItemCreatedByUserMailboxSetting -ListItemId <String> -Shar
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,14 +41,14 @@ Update-MgBetaShareListItemCreatedByUserMailboxSetting -ListItemId <String> -Shar
 ```
 Update-MgBetaShareListItemCreatedByUserMailboxSetting -ListItemId <String> -SharedDriveItemId <String>
  -BodyParameter <IMicrosoftGraphMailboxSettings> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaShareListItemCreatedByUserMailboxSetting -SharedDriveItemId <String>
  -BodyParameter <IMicrosoftGraphMailboxSettings> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -58,7 +58,7 @@ Update-MgBetaShareListItemCreatedByUserMailboxSetting -InputObject <IFilesIdenti
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -69,7 +69,7 @@ Update-MgBetaShareListItemCreatedByUserMailboxSetting -InputObject <IFilesIdenti
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -77,20 +77,18 @@ Update-MgBetaShareListItemCreatedByUserMailboxSetting -InputObject <IFilesIdenti
 ```
 Update-MgBetaShareListItemCreatedByUserMailboxSetting -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphMailboxSettings> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaShareListItemCreatedByUserMailboxSetting -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphMailboxSettings> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update property mailboxSettings value.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -154,21 +152,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -258,6 +241,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -354,22 +352,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WorkingHours
 workingHours
 To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
@@ -378,6 +360,37 @@ To construct, see NOTES section for WORKINGHOURS properties and create a hash ta
 Type: IMicrosoftGraphWorkingHours
 Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
 
 Required: False
 Position: Named

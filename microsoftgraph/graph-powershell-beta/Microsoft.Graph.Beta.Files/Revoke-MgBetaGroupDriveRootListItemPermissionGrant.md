@@ -17,7 +17,7 @@ Revoke access to a listItem or driveItem granted via a sharing link by removing 
 ```
 Revoke-MgBetaGroupDriveRootListItemPermissionGrant -DriveId <String> -GroupId <String> -PermissionId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-Headers <IDictionary>]
+ [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -25,7 +25,7 @@ Revoke-MgBetaGroupDriveRootListItemPermissionGrant -DriveId <String> -GroupId <S
 ```
 Revoke-MgBetaGroupDriveRootListItemPermissionGrant -DriveId <String> -GroupId <String> -PermissionId <String>
  -BodyParameter <IPathsEa9SlgGroupsGroupIdDrivesDriveIdRootListitemPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Revoke-MgBetaGroupDriveRootListItemPermissionGrant -DriveId <String> -GroupId <S
 ```
 Revoke-MgBetaGroupDriveRootListItemPermissionGrant -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-Headers <IDictionary>]
+ [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,14 +41,12 @@ Revoke-MgBetaGroupDriveRootListItemPermissionGrant -InputObject <IFilesIdentity>
 ```
 Revoke-MgBetaGroupDriveRootListItemPermissionGrant -InputObject <IFilesIdentity>
  -BodyParameter <IPathsEa9SlgGroupsGroupIdDrivesDriveIdRootListitemPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Revoke access to a listItem or driveItem granted via a sharing link by removing the specified recipient from the link.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -80,21 +78,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -190,6 +173,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -197,6 +195,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

@@ -24,14 +24,14 @@ For details, see Role template IDs.
 ```
 Get-MgDirectoryRoleByRoleTemplateId -RoleTemplateId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgDirectoryRoleByRoleTemplateId -InputObject <IIdentityDirectoryManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,8 +48,6 @@ For details, see Role template IDs.
 | Delegated (work or school account) | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.Read.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -96,6 +94,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -164,6 +177,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CertificateAuthorityDetailId <String>]`: The unique identifier of certificateAuthorityDetail
+  - `[CertificateBasedAuthPkiId <String>]`: The unique identifier of certificateBasedAuthPki
   - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
   - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract

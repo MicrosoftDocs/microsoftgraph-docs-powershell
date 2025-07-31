@@ -21,14 +21,14 @@ The response provides details about which memberships could and couldn't be remo
 ```
 Remove-MgTeamPrimaryChannelAllMember -TeamId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Remove
 ```
 Remove-MgTeamPrimaryChannelAllMember -TeamId <String>
  -BodyParameter <IPaths134Jy7KTeamsTeamIdPrimarychannelAllmembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,22 +36,20 @@ Remove-MgTeamPrimaryChannelAllMember -TeamId <String>
 ```
 Remove-MgTeamPrimaryChannelAllMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
 ```
 Remove-MgTeamPrimaryChannelAllMember -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths134Jy7KTeamsTeamIdPrimarychannelAllmembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Remove multiple members from a team in a single request.
 The response provides details about which memberships could and couldn't be removed.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -86,21 +84,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -129,6 +112,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -178,6 +176,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -213,7 +226,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths134Jy7KTeamsTeamIdPrimarychannelAllmembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Values <IMicrosoftGraphConversationMember- `[]`>]`:
+  - `[Values <IMicrosoftGraphConversationMember- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: The display name of the user.

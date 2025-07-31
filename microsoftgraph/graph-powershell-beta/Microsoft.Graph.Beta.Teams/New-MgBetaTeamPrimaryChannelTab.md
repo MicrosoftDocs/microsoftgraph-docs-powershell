@@ -21,13 +21,13 @@ New-MgBetaTeamPrimaryChannelTab -TeamId <String> [-ResponseHeadersVariable <Stri
  [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphTeamsTabConfiguration>]
  [-DisplayName <String>] [-Id <String>] [-MessageId <String>] [-SortOrderIndex <String>]
  [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppId <String>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTeamPrimaryChannelTab -TeamId <String> -BodyParameter <IMicrosoftGraphTeamsTab>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,20 +37,18 @@ New-MgBetaTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-ResponseHeadersV
  [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphTeamsTabConfiguration>]
  [-DisplayName <String>] [-Id <String>] [-MessageId <String>] [-SortOrderIndex <String>]
  [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppId <String>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsTab>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to tabs for teams
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -93,21 +91,6 @@ To construct, see NOTES section for CONFIGURATION properties and create a hash t
 Type: IMicrosoftGraphTeamsTabConfiguration
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -185,6 +168,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -279,6 +277,21 @@ Read only.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

@@ -19,14 +19,14 @@ Currently only the Exchange Online RBAC provider is supported.
 Update-MgBetaRoleManagementExchangeCustomAppScope -CustomAppScopeId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CustomAttributes <Hashtable>]
  [-DisplayName <String>] [-Id <String>] [-Type <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaRoleManagementExchangeCustomAppScope -CustomAppScopeId <String>
  -BodyParameter <IMicrosoftGraphCustomAppScope> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,14 +34,14 @@ Update-MgBetaRoleManagementExchangeCustomAppScope -CustomAppScopeId <String>
 Update-MgBetaRoleManagementExchangeCustomAppScope -InputObject <IDeviceManagementEnrollmentIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CustomAttributes <Hashtable>]
  [-DisplayName <String>] [-Id <String>] [-Type <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaRoleManagementExchangeCustomAppScope -InputObject <IDeviceManagementEnrollmentIdentity>
  -BodyParameter <IMicrosoftGraphCustomAppScope> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -108,21 +108,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -CustomAppScopeId
 The unique identifier of customAppScope
 
@@ -155,7 +140,6 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
 
 ```yaml
@@ -217,6 +201,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -234,13 +233,27 @@ Accept wildcard characters: False
 
 ### -Type
 Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+Read-only.
 
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -285,11 +298,9 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IMicrosoftGraphCustomAppScope>`: customAppScope
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
   - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CustomAttributes <IMicrosoftGraphCustomAppScopeAttributesDictionary>]`: customAppScopeAttributesDictionary

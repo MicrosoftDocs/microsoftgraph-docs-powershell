@@ -22,7 +22,7 @@ Update-MgBetaShareListItemDocumentSetVersion -DocumentSetVersionId <String> -Sha
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Fields <Hashtable>] [-Id <String>]
  [-Items <IMicrosoftGraphDocumentSetVersionItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>]
- [-ShouldCaptureMinorVersion] [-Headers <IDictionary>] [-WhatIf]
+ [-ShouldCaptureMinorVersion] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,21 +34,21 @@ Update-MgBetaShareListItemDocumentSetVersion -DocumentSetVersionId <String> -Lis
  [-Fields <Hashtable>] [-Id <String>] [-Items <IMicrosoftGraphDocumentSetVersionItem[]>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Publication <IMicrosoftGraphPublicationFacet>] [-ShouldCaptureMinorVersion] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaShareListItemDocumentSetVersion -DocumentSetVersionId <String> -SharedDriveItemId <String>
  -BodyParameter <IMicrosoftGraphDocumentSetVersion> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaShareListItemDocumentSetVersion -DocumentSetVersionId <String> -ListItemId <String>
  -SharedDriveItemId <String> -BodyParameter <IMicrosoftGraphDocumentSetVersion>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -59,7 +59,7 @@ Update-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Res
  [-CreatedDateTime <DateTime>] [-Fields <Hashtable>] [-Id <String>]
  [-Items <IMicrosoftGraphDocumentSetVersionItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>]
- [-ShouldCaptureMinorVersion] [-Headers <IDictionary>] [-WhatIf]
+ [-ShouldCaptureMinorVersion] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -70,7 +70,7 @@ Update-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Res
  [-CreatedDateTime <DateTime>] [-Fields <Hashtable>] [-Id <String>]
  [-Items <IMicrosoftGraphDocumentSetVersionItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>]
- [-ShouldCaptureMinorVersion] [-Headers <IDictionary>] [-WhatIf]
+ [-ShouldCaptureMinorVersion] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -78,20 +78,18 @@ Update-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Res
 ```
 Update-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphDocumentSetVersion> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphDocumentSetVersion> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property documentSetVersions in shares
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -133,21 +131,6 @@ Comment about the captured version.
 Type: String
 Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -327,6 +310,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Publication
 publicationFacet
 To construct, see NOTES section for PUBLICATION properties and create a hash table.
@@ -385,6 +383,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

@@ -18,35 +18,33 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgUserCalendarPermissionCount -UserId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgUserCalendarPermissionCount -UserId <String> -CalendarId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgUserCalendarPermissionCount -InputObject <ICalendarIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgUserCalendarPermissionCount -InputObject <ICalendarIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -108,6 +106,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -178,7 +191,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
   - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlaceId <String>]`: The unique identifier of place

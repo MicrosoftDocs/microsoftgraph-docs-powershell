@@ -20,13 +20,13 @@ Update the navigation property restorePoints in solutions
 Update-MgSolutionBackupRestorePoint -RestorePointId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-Id <String>]
  [-ProtectionDateTime <DateTime>] [-ProtectionUnit <IMicrosoftGraphProtectionUnitBase>] [-Tags <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSolutionBackupRestorePoint -RestorePointId <String> -BodyParameter <IMicrosoftGraphRestorePoint>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,20 +35,18 @@ Update-MgSolutionBackupRestorePoint -RestorePointId <String> -BodyParameter <IMi
 Update-MgSolutionBackupRestorePoint -InputObject <IBackupRestoreIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-Id <String>]
  [-ProtectionDateTime <DateTime>] [-ProtectionUnit <IMicrosoftGraphProtectionUnitBase>] [-Tags <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSolutionBackupRestorePoint -InputObject <IBackupRestoreIdentity>
  -BodyParameter <IMicrosoftGraphRestorePoint> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property restorePoints in solutions
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -80,21 +78,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -157,6 +140,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -228,6 +226,21 @@ restorePointTags
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -314,13 +327,17 @@ For example, in the access reviews decisions API, this property might record the
 INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
   - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
+  - `[DriveProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of driveProtectionUnitsBulkAdditionJob
   - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
+  - `[DriveRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
   - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
   - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
   - `[GranularMailboxRestoreArtifactId <String>]`: The unique identifier of granularMailboxRestoreArtifact
   - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
   - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
+  - `[MailboxProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
   - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
+  - `[MailboxRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of mailboxRestoreArtifactsBulkAdditionRequest
   - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
   - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
   - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
@@ -332,7 +349,9 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
   - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
   - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
+  - `[SiteProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of siteProtectionUnitsBulkAdditionJob
   - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
+  - `[SiteRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
 PROTECTIONUNIT `<IMicrosoftGraphProtectionUnitBase>`: protectionUnitBase
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

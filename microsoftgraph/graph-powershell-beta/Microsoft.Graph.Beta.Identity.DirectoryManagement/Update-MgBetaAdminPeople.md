@@ -17,21 +17,21 @@ Update the navigation property people in admin
 Update-MgBetaAdminPeople [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-ItemInsights <IMicrosoftGraphInsightsSettings>]
  [-NamePronunciation <IMicrosoftGraphNamePronunciationSettings>]
- [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-Pronouns <IMicrosoftGraphPronounsSettings>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>]
+ [-ProfilePropertySettings <IMicrosoftGraphProfilePropertySetting[]>]
+ [-ProfileSources <IMicrosoftGraphProfileSource[]>] [-Pronouns <IMicrosoftGraphPronounsSettings>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaAdminPeople -BodyParameter <IMicrosoftGraphPeopleAdminSettings>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property people in admin
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -63,21 +63,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -160,6 +145,53 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProfilePropertySettings
+A collection of profile property configuration settings defined by an administrator for an organization.
+To construct, see NOTES section for PROFILEPROPERTYSETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphProfilePropertySetting[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProfileSources
+A collection of profile source settings configured by an administrator in an organization.
+To construct, see NOTES section for PROFILESOURCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphProfileSource[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Pronouns
 pronounsSettings
 To construct, see NOTES section for PRONOUNS properties and create a hash table.
@@ -183,6 +215,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -256,6 +303,24 @@ For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute l
 Allows an administrator to surface hidden Microsoft Entra ID properties on the Microsoft 365 profile card within their tenant.
 When present, the Microsoft Entra ID field referenced in this property is visible to all users in your tenant on the contact pane of the profile card.
 Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
+  - `[ProfilePropertySettings <IMicrosoftGraphProfilePropertySetting- `[]`>]`: A collection of profile property configuration settings defined by an administrator for an organization.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[AllowedAudiences <String>]`: organizationAllowedAudiences
+    - `[IsUserOverrideForAudienceEnabled <Boolean?>]`: Defines whether a user is allowed to override the tenant admin privacy setting.
+    - `[Name <String>]`: Name of the property-level setting.
+    - `[PrioritizedSourceUrls <String- `[]`>]`: A collection of prioritized profile source URLs ordered by data precedence within an organization.
+  - `[ProfileSources <IMicrosoftGraphProfileSource- `[]`>]`: A collection of profile source settings configured by an administrator in an organization.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DisplayName <String>]`: Name of the profile source intended to inform users about the profile source name.
+    - `[Kind <String>]`: Type of the profile source.
+    - `[Localizations <IMicrosoftGraphProfileSourceLocalization- `[]`>]`: Alternative localized labels specified by an administrator.
+      - `[DisplayName <String>]`: Localized display name.
+      - `[LanguageTag <String>]`: Language locale.
+      - `[WebUrl <String>]`: Localized profile source URL.
+    - `[SourceId <String>]`: Profile source identifier used as an alternate key.
+    - `[WebUrl <String>]`: Web URL of the profile source that directs users to the page view of profile data.
   - `[Pronouns <IMicrosoftGraphPronounsSettings>]`: pronounsSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -294,6 +359,26 @@ For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute l
 Allows an administrator to surface hidden Microsoft Entra ID properties on the Microsoft 365 profile card within their tenant.
 When present, the Microsoft Entra ID field referenced in this property is visible to all users in your tenant on the contact pane of the profile card.
 Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
+
+PROFILEPROPERTYSETTINGS `<IMicrosoftGraphProfilePropertySetting- `[]`>`: A collection of profile property configuration settings defined by an administrator for an organization.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[AllowedAudiences <String>]`: organizationAllowedAudiences
+  - `[IsUserOverrideForAudienceEnabled <Boolean?>]`: Defines whether a user is allowed to override the tenant admin privacy setting.
+  - `[Name <String>]`: Name of the property-level setting.
+  - `[PrioritizedSourceUrls <String- `[]`>]`: A collection of prioritized profile source URLs ordered by data precedence within an organization.
+
+PROFILESOURCES `<IMicrosoftGraphProfileSource- `[]`>`: A collection of profile source settings configured by an administrator in an organization.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[DisplayName <String>]`: Name of the profile source intended to inform users about the profile source name.
+  - `[Kind <String>]`: Type of the profile source.
+  - `[Localizations <IMicrosoftGraphProfileSourceLocalization- `[]`>]`: Alternative localized labels specified by an administrator.
+    - `[DisplayName <String>]`: Localized display name.
+    - `[LanguageTag <String>]`: Language locale.
+    - `[WebUrl <String>]`: Localized profile source URL.
+  - `[SourceId <String>]`: Profile source identifier used as an alternate key.
+  - `[WebUrl <String>]`: Web URL of the profile source that directs users to the page view of profile data.
 
 PRONOUNS `<IMicrosoftGraphPronounsSettings>`: pronounsSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

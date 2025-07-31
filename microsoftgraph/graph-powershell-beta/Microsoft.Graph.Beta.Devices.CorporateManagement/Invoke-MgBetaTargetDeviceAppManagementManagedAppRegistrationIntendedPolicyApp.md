@@ -20,7 +20,7 @@ Invoke action targetApps
 Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp -ManagedAppPolicyId <String>
  -ManagedAppRegistrationId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Target
@@ -28,7 +28,7 @@ Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp -M
 Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp -ManagedAppPolicyId <String>
  -ManagedAppRegistrationId <String>
  -BodyParameter <IPaths1Mv9GnvDeviceappmanagementManagedappregistrationsManagedappregistrationIdIntendedpoliciesManagedapppolicyIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp -M
 Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-Headers <IDictionary>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TargetViaIdentity
@@ -45,7 +45,7 @@ Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp
 Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPaths1Mv9GnvDeviceappmanagementManagedappregistrationsManagedappregistrationIdIntendedpoliciesManagedapppolicyIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -59,8 +59,6 @@ Invoke action targetApps
 | Delegated (work or school account) | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -108,21 +106,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -202,6 +185,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -209,6 +207,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

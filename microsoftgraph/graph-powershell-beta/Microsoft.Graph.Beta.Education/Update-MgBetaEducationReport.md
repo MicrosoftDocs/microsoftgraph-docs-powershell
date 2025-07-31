@@ -16,20 +16,19 @@ Update the navigation property reports in education
 ```
 Update-MgBetaEducationReport [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-ReadingAssignmentSubmissions <IMicrosoftGraphReadingAssignmentSubmission[]>]
- [-ReflectCheckInResponses <IMicrosoftGraphReflectCheckInResponse[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ReflectCheckInResponses <IMicrosoftGraphReflectCheckInResponse[]>]
+ [-SpeakerAssignmentSubmissions <IMicrosoftGraphSpeakerAssignmentSubmission[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEducationReport -BodyParameter <IMicrosoftGraphReportsRoot> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property reports in education
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -64,21 +63,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -102,6 +86,21 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -149,6 +148,37 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SpeakerAssignmentSubmissions
+Details of submitted speaker assignments.
+To construct, see NOTES section for SPEAKERASSIGNMENTSUBMISSIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSpeakerAssignmentSubmission[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -240,6 +270,30 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[SubmitDateTime <DateTime?>]`: Date and time when the response to the Reflect check-in was submitted.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[SpeakerAssignmentSubmissions <IMicrosoftGraphSpeakerAssignmentSubmission- `[]`>]`: Details of submitted speaker assignments.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[AssignmentId <String>]`: ID of the assignment with which this submission is associated.
+    - `[AverageWordsPerMinutePace <Int64?>]`: The average speaking pace of the student, measured in words per minute.
+    - `[ClassId <String>]`: ID of the class this speaker progress is associated with.
+    - `[FillerWordsOccurrencesCount <Int64?>]`: The number of times the student was flagged by Speaker Coach for using a filler word.
+    - `[IncorrectCameraDistanceOccurrencesCount <Int64?>]`: The number of times the student was flagged by Speaker Coach for being either too close or too far away from the camera.
+    - `[LengthOfSubmissionInSeconds <Double?>]`: The length of the student submission in seconds.
+    - `[LostEyeContactOccurrencesCount <Int64?>]`: The number of times the student was flagged by Speaker Coach for losing eye contact with the camera.
+    - `[MonotoneOccurrencesCount <Int64?>]`: The number of times the student was flagged by Speaker Coach for speaking in monotone.
+    - `[NonInclusiveLanguageOccurrencesCount <Int64?>]`: The number of times the student was flagged by Speaker Coach for using non-inclusive or sensitive language.
+    - `[ObstructedViewOccurrencesCount <Int64?>]`: The number of times the student was flagged by Speaker Coach for obstructing the view of their face.
+    - `[RepetitiveLanguageOccurrencesCount <Int64?>]`: The number of times the student was flagged by Speaker Coach for using repetitive language.
+    - `[StudentId <String>]`: ID of the user this speaker progress is associated with.
+    - `[SubmissionDateTime <DateTime?>]`: Date and time of the submission this speaker progress is associated with.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[SubmissionId <String>]`: ID of the submission this speaker progress is associated with.
+    - `[TopFillerWords <String- `[]`>]`: The filler words used most by the student.
+    - `[TopMispronouncedWords <String- `[]`>]`: The words mispronounced most by the student.
+    - `[TopNonInclusiveWordsAndPhrases <String- `[]`>]`: The non-inclusive or sensitive words and phrases most used by the student.
+    - `[TopRepetitiveWordsAndPhrases <String- `[]`>]`: The words and phrases most repeated by the student.
+    - `[WordsSpokenCount <Int64?>]`: Total number of words spoken by the student in the submission.
 
 READINGASSIGNMENTSUBMISSIONS `<IMicrosoftGraphReadingAssignmentSubmission- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
@@ -289,6 +343,31 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[SubmitDateTime <DateTime?>]`: Date and time when the response to the Reflect check-in was submitted.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+
+SPEAKERASSIGNMENTSUBMISSIONS `<IMicrosoftGraphSpeakerAssignmentSubmission- `[]`>`: Details of submitted speaker assignments.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[AssignmentId <String>]`: ID of the assignment with which this submission is associated.
+  - `[AverageWordsPerMinutePace <Int64?>]`: The average speaking pace of the student, measured in words per minute.
+  - `[ClassId <String>]`: ID of the class this speaker progress is associated with.
+  - `[FillerWordsOccurrencesCount <Int64?>]`: The number of times the student was flagged by Speaker Coach for using a filler word.
+  - `[IncorrectCameraDistanceOccurrencesCount <Int64?>]`: The number of times the student was flagged by Speaker Coach for being either too close or too far away from the camera.
+  - `[LengthOfSubmissionInSeconds <Double?>]`: The length of the student submission in seconds.
+  - `[LostEyeContactOccurrencesCount <Int64?>]`: The number of times the student was flagged by Speaker Coach for losing eye contact with the camera.
+  - `[MonotoneOccurrencesCount <Int64?>]`: The number of times the student was flagged by Speaker Coach for speaking in monotone.
+  - `[NonInclusiveLanguageOccurrencesCount <Int64?>]`: The number of times the student was flagged by Speaker Coach for using non-inclusive or sensitive language.
+  - `[ObstructedViewOccurrencesCount <Int64?>]`: The number of times the student was flagged by Speaker Coach for obstructing the view of their face.
+  - `[RepetitiveLanguageOccurrencesCount <Int64?>]`: The number of times the student was flagged by Speaker Coach for using repetitive language.
+  - `[StudentId <String>]`: ID of the user this speaker progress is associated with.
+  - `[SubmissionDateTime <DateTime?>]`: Date and time of the submission this speaker progress is associated with.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[SubmissionId <String>]`: ID of the submission this speaker progress is associated with.
+  - `[TopFillerWords <String- `[]`>]`: The filler words used most by the student.
+  - `[TopMispronouncedWords <String- `[]`>]`: The words mispronounced most by the student.
+  - `[TopNonInclusiveWordsAndPhrases <String- `[]`>]`: The non-inclusive or sensitive words and phrases most used by the student.
+  - `[TopRepetitiveWordsAndPhrases <String- `[]`>]`: The words and phrases most repeated by the student.
+  - `[WordsSpokenCount <Int64?>]`: Total number of words spoken by the student in the submission.
 
 ## RELATED LINKS
 

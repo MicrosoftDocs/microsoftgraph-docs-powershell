@@ -19,21 +19,19 @@ Undo soft deletion of a single chatMessage or a chat message reply in a channel 
 ### Undo (Default)
 ```
 Undo-MgBetaChatMessageSoftDelete -ChatId <String> -ChatMessageId <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UndoViaIdentity
 ```
 Undo-MgBetaChatMessageSoftDelete -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -61,21 +59,6 @@ Parameter Sets: Undo
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -128,6 +111,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -135,6 +133,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

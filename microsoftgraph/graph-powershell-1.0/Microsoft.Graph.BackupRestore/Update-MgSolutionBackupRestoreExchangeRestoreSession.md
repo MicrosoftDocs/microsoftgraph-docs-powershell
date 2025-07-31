@@ -23,15 +23,17 @@ Update-MgSolutionBackupRestoreExchangeRestoreSession -ExchangeRestoreSessionId <
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphPublicError>]
  [-GranularMailboxRestoreArtifacts <IMicrosoftGraphGranularMailboxRestoreArtifact[]>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-MailboxRestoreArtifacts <IMicrosoftGraphMailboxRestoreArtifact[]>] [-Status <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MailboxRestoreArtifacts <IMicrosoftGraphMailboxRestoreArtifact[]>]
+ [-MailboxRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphMailboxRestoreArtifactsBulkAdditionRequest[]>]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSolutionBackupRestoreExchangeRestoreSession -ExchangeRestoreSessionId <String>
  -BodyParameter <IMicrosoftGraphExchangeRestoreSession> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,21 +43,21 @@ Update-MgSolutionBackupRestoreExchangeRestoreSession -InputObject <IBackupRestor
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphPublicError>]
  [-GranularMailboxRestoreArtifacts <IMicrosoftGraphGranularMailboxRestoreArtifact[]>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-MailboxRestoreArtifacts <IMicrosoftGraphMailboxRestoreArtifact[]>] [-Status <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MailboxRestoreArtifacts <IMicrosoftGraphMailboxRestoreArtifact[]>]
+ [-MailboxRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphMailboxRestoreArtifactsBulkAdditionRequest[]>]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSolutionBackupRestoreExchangeRestoreSession -InputObject <IBackupRestoreIdentity>
  -BodyParameter <IMicrosoftGraphExchangeRestoreSession> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of an exchangeRestoreSession.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +99,6 @@ The time of completion of the restore session.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -292,6 +279,37 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MailboxRestoreArtifactsBulkAdditionRequests
+A collection of user mailboxes and destination details that can be used to restore Exchange mailboxes.
+To construct, see NOTES section for MAILBOXRESTOREARTIFACTSBULKADDITIONREQUESTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphMailboxRestoreArtifactsBulkAdditionRequest[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -314,6 +332,21 @@ restoreSessionStatus
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -389,7 +422,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Status <String>]`: restoreSessionStatus
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[GranularMailboxRestoreArtifacts <IMicrosoftGraphGranularMailboxRestoreArtifact- `[]`>]`:
+  - `[GranularMailboxRestoreArtifacts <IMicrosoftGraphGranularMailboxRestoreArtifact- `[]`>]`: 
     - `[RestoredFolderId <String>]`: The new restored folder identifier for the user.
     - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
     - `[DestinationType <String>]`: destinationType
@@ -428,6 +461,28 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[RestoredFolderId <String>]`: The new restored folder identifier for the user.
+  - `[MailboxRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphMailboxRestoreArtifactsBulkAdditionRequest- `[]`>]`: A collection of user mailboxes and destination details that can be used to restore Exchange mailboxes.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time when the bulk request was created.
+    - `[DestinationType <String>]`: destinationType
+    - `[DisplayName <String>]`: Name of the addition request.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp when this entity was last modified.
+    - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
+      - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+    - `[ProtectionUnitIds <String- `[]`>]`: Indicates which protection units to restore.
+This property isn't implemented yet.
+Future value; don't use.
+    - `[RestorePointPreference <String>]`: restorePointPreference
+    - `[Status <String>]`: restoreArtifactsBulkRequestStatus
+    - `[Tags <String>]`: restorePointTags
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
+    - `[Mailboxes <String- `[]`>]`: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -512,13 +567,17 @@ Read-only.
 INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
   - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
+  - `[DriveProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of driveProtectionUnitsBulkAdditionJob
   - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
+  - `[DriveRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
   - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
   - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
   - `[GranularMailboxRestoreArtifactId <String>]`: The unique identifier of granularMailboxRestoreArtifact
   - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
   - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
+  - `[MailboxProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
   - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
+  - `[MailboxRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of mailboxRestoreArtifactsBulkAdditionRequest
   - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
   - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
   - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
@@ -530,7 +589,9 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
   - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
   - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
+  - `[SiteProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of siteProtectionUnitsBulkAdditionJob
   - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
+  - `[SiteRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
 LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -593,6 +654,52 @@ For example, in the access reviews decisions API, this property might record the
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[RestoredFolderId <String>]`: The new restored folder identifier for the user.
+
+MAILBOXRESTOREARTIFACTSBULKADDITIONREQUESTS `<IMicrosoftGraphMailboxRestoreArtifactsBulkAdditionRequest- `[]`>`: A collection of user mailboxes and destination details that can be used to restore Exchange mailboxes.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time when the bulk request was created.
+  - `[DestinationType <String>]`: destinationType
+  - `[DisplayName <String>]`: Name of the addition request.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp when this entity was last modified.
+  - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
+    - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+  - `[ProtectionUnitIds <String- `[]`>]`: Indicates which protection units to restore.
+This property isn't implemented yet.
+Future value; don't use.
+  - `[RestorePointPreference <String>]`: restorePointPreference
+  - `[Status <String>]`: restoreArtifactsBulkRequestStatus
+  - `[Tags <String>]`: restorePointTags
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
+  - `[Mailboxes <String- `[]`>]`: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
 
 ## RELATED LINKS
 

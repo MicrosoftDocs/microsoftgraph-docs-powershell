@@ -22,14 +22,14 @@ Update-MgBetaGroupThread -ConversationThreadId <String> -GroupId <String> [-Resp
  [-AdditionalProperties <Hashtable>] [-CcRecipients <IMicrosoftGraphRecipient[]>] [-HasAttachments]
  [-Id <String>] [-IsLocked] [-LastDeliveredDateTime <DateTime>] [-Posts <IMicrosoftGraphPost[]>]
  [-Preview <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Topic <String>] [-UniqueSenders <String[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupThread -ConversationThreadId <String> -GroupId <String>
  -BodyParameter <IMicrosoftGraphConversationThread> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,13 +38,13 @@ Update-MgBetaGroupThread -InputObject <IGroupsIdentity> [-ResponseHeadersVariabl
  [-AdditionalProperties <Hashtable>] [-CcRecipients <IMicrosoftGraphRecipient[]>] [-HasAttachments]
  [-Id <String>] [-IsLocked] [-LastDeliveredDateTime <DateTime>] [-Posts <IMicrosoftGraphPost[]>]
  [-Preview <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Topic <String>] [-UniqueSenders <String[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphConversationThread>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -126,21 +126,6 @@ To construct, see NOTES section for CCRECIPIENTS properties and create a hash ta
 Type: IMicrosoftGraphRecipient[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -307,6 +292,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -364,6 +364,21 @@ Returned by default.
 Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

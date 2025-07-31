@@ -20,14 +20,14 @@ Create new navigation property to timeOffReasons for groups
 New-MgBetaGroupTeamScheduleTimeOffReason -GroupId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Code <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-DisplayName <String>] [-IconType <String>] [-Id <String>] [-IsActive]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupTeamScheduleTimeOffReason -GroupId <String> -BodyParameter <IMicrosoftGraphTimeOffReason>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ New-MgBetaGroupTeamScheduleTimeOffReason -GroupId <String> -BodyParameter <IMicr
 New-MgBetaGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Code <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-DisplayName <String>] [-IconType <String>] [-Id <String>] [-IsActive]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,13 +44,11 @@ New-MgBetaGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-Respons
 ```
 New-MgBetaGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphTimeOffReason> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to timeOffReasons for groups
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -93,21 +91,6 @@ This field must be unique within the team in Microsoft Teams and uses an alphanu
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -257,6 +240,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -264,6 +262,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

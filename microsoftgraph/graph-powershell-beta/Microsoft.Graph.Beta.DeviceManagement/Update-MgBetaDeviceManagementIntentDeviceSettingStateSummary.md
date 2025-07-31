@@ -19,7 +19,7 @@ Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CompliantCount <Int32>]
  [-ConflictCount <Int32>] [-ErrorCount <Int32>] [-Id <String>] [-NonCompliantCount <Int32>]
  [-NotApplicableCount <Int32>] [-RemediatedCount <Int32>] [-SettingName <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -27,7 +27,7 @@ Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary
 Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary
  -DeviceManagementIntentDeviceSettingStateSummaryId <String> -DeviceManagementIntentId <String>
  -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,14 +37,14 @@ Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary -InputObject <IDevi
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CompliantCount <Int32>]
  [-ConflictCount <Int32>] [-ErrorCount <Int32>] [-Id <String>] [-NonCompliantCount <Int32>]
  [-NotApplicableCount <Int32>] [-RemediatedCount <Int32>] [-SettingName <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -58,8 +58,6 @@ Update the navigation property deviceSettingStateSummaries in deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -105,21 +103,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -261,6 +244,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RemediatedCount
 Number of remediated devices
 
@@ -298,6 +296,21 @@ Name of a setting
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

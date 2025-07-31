@@ -17,14 +17,14 @@ Invoke action setScheduledActions
 Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -DeviceManagementCompliancePolicyId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ScheduledActions <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -DeviceManagementCompliancePolicyId <String>
  -BodyParameter <IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,14 +33,14 @@ Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -DeviceManagementCompl
 Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ScheduledActions <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -54,8 +54,6 @@ Invoke action setScheduledActions
 | Delegated (work or school account) | DeviceManagementConfiguration.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -87,21 +85,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -151,6 +134,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -174,6 +172,21 @@ To construct, see NOTES section for SCHEDULEDACTIONS properties and create a has
 Type: IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

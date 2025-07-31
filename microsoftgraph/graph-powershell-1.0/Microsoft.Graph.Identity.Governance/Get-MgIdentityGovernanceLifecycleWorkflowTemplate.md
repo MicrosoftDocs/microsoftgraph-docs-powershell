@@ -22,21 +22,21 @@ Read the properties and relationships of a workflowTemplate object.
 Get-MgIdentityGovernanceLifecycleWorkflowTemplate [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgIdentityGovernanceLifecycleWorkflowTemplate -WorkflowTemplateId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgIdentityGovernanceLifecycleWorkflowTemplate -InputObject <IIdentityGovernanceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -68,7 +68,7 @@ This example will retrieve all lifecycle workflows workflow templates
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgIdentityGovernanceLifecycleWorkflowTemplate -Filter "category eq 'leaver'"
+Get-MgIdentityGovernanceLifecycleWorkflowTemplate -Filter "category eq 'leaver'" 
 
 ```
 This example will retrieve workflow templates supported for "leaver" workflows
@@ -183,6 +183,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -228,21 +243,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -284,6 +284,21 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

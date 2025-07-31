@@ -21,21 +21,19 @@ New-MgSolutionBackupRestoreSiteInclusionRule [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-IsAutoApplyEnabled]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-SiteExpression <String>]
- [-Status <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSolutionBackupRestoreSiteInclusionRule -BodyParameter <IMicrosoftGraphSiteProtectionRule>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to siteInclusionRules for solutions
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -67,21 +65,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -164,8 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsAutoApplyEnabled
-true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
+
 
 ```yaml
 Type: SwitchParameter
@@ -202,6 +184,21 @@ Timestamp of the last modification made to the rule.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -248,6 +245,21 @@ protectionRuleStatus
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -316,8 +328,7 @@ For example, in the access reviews decisions API, this property might record the
       - `[Target <String>]`: The target of the error.
     - `[Message <String>]`: A non-localized message for the developer.
     - `[Target <String>]`: The target of the error.
-  - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
+  - `[IsAutoApplyEnabled <Boolean?>]`: 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
   - `[Status <String>]`: protectionRuleStatus

@@ -16,7 +16,7 @@ Activate eSIM on the device.
 ```
 Initialize-MgBetaDeviceManagementComanagedDeviceEsim -ManagedDeviceId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Initialize-MgBetaDeviceManagementComanagedDeviceEsim -ManagedDeviceId <String>
 ```
 Initialize-MgBetaDeviceManagementComanagedDeviceEsim -ManagedDeviceId <String>
  -BodyParameter <IPathsV0Rv5SDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Initialize-MgBetaDeviceManagementComanagedDeviceEsim -ManagedDeviceId <String>
 ```
 Initialize-MgBetaDeviceManagementComanagedDeviceEsim -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Initialize-MgBetaDeviceManagementComanagedDeviceEsim -InputObject <IDeviceManage
 ```
 Initialize-MgBetaDeviceManagementComanagedDeviceEsim -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IPathsV0Rv5SDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -54,8 +54,6 @@ Activate eSIM on the device.
 | Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +95,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: ActivateExpanded, ActivateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -181,6 +164,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -188,6 +186,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

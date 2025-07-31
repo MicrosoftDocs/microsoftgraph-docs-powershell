@@ -25,14 +25,14 @@ Update-MgBetaDeviceManagementComplianceSetting -DeviceManagementConfigurationSet
  [-SettingUsage <DeviceManagementConfigurationSettingUsage>]
  [-UxBehavior <DeviceManagementConfigurationControlType>] [-Version <String>]
  [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementComplianceSetting -DeviceManagementConfigurationSettingDefinitionId <String>
  -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,14 +49,14 @@ Update-MgBetaDeviceManagementComplianceSetting -InputObject <IDeviceManagementId
  [-SettingUsage <DeviceManagementConfigurationSettingUsage>]
  [-UxBehavior <DeviceManagementConfigurationControlType>] [-Version <String>]
  [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementComplianceSetting -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -70,8 +70,6 @@ Update the navigation property complianceSettings in deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -160,21 +158,6 @@ Support $filters.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -368,6 +351,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReferredSettingInformationList
 List of referred setting information.
 To construct, see NOTES section for REFERREDSETTINGINFORMATIONLIST properties and create a hash table.
@@ -489,6 +487,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -559,7 +572,7 @@ A MinDeviceOccurrence of 0 means setting is optional
   - `[OffsetUri <String>]`: Offset CSP Path from Base
   - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
     - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
+Applicable for reusable setting.
   - `[RiskLevel <DeviceManagementConfigurationSettingRiskLevel?>]`: Setting RiskLevel
   - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
   - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
@@ -684,7 +697,7 @@ A MinDeviceOccurrence of 0 means setting is optional
 
 REFERREDSETTINGINFORMATIONLIST `<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>`: List of referred setting information.
   - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
+Applicable for reusable setting.
 
 ## RELATED LINKS
 

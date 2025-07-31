@@ -20,14 +20,14 @@ Copy a mailfolder and its contents to another mailfolder.
 ```
 Copy-MgUserMailFolderChildFolder -MailFolderId <String> -MailFolderId1 <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DestinationId <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
 ```
 Copy-MgUserMailFolderChildFolder -MailFolderId <String> -MailFolderId1 <String> -UserId <String>
  -BodyParameter <IPaths1E02JcUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,21 +35,19 @@ Copy-MgUserMailFolderChildFolder -MailFolderId <String> -MailFolderId1 <String> 
 ```
 Copy-MgUserMailFolderChildFolder -InputObject <IMailIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DestinationId <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
 Copy-MgUserMailFolderChildFolder -InputObject <IMailIdentity>
  -BodyParameter <IPaths1E02JcUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Copy a mailfolder and its contents to another mailfolder.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -81,21 +79,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -175,6 +158,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -199,6 +197,21 @@ Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -240,7 +253,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1E02JcUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DestinationId <String>]`:
+  - `[DestinationId <String>]`: 
 
 INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment

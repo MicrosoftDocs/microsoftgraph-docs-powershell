@@ -26,7 +26,7 @@ Alternatively, reply-all to a message in a single action.
 New-MgBetaUserMailFolderChildFolderMessageReplyAll -MailFolderId <String> -MailFolderId1 <String>
  -MessageId <String> -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -34,7 +34,7 @@ New-MgBetaUserMailFolderChildFolderMessageReplyAll -MailFolderId <String> -MailF
 New-MgBetaUserMailFolderChildFolderMessageReplyAll -MailFolderId <String> -MailFolderId1 <String>
  -MessageId <String> -UserId <String>
  -BodyParameter <IPathsKne03XUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphCreatereplyallPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ New-MgBetaUserMailFolderChildFolderMessageReplyAll -MailFolderId <String> -MailF
 ```
 New-MgBetaUserMailFolderChildFolderMessageReplyAll -InputObject <IMailIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Comment <String>]
- [-Message <IMicrosoftGraphMessage>] [-Headers <IDictionary>] [-WhatIf]
+ [-Message <IMicrosoftGraphMessage>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -50,7 +50,7 @@ New-MgBetaUserMailFolderChildFolderMessageReplyAll -InputObject <IMailIdentity>
 ```
 New-MgBetaUserMailFolderChildFolderMessageReplyAll -InputObject <IMailIdentity>
  -BodyParameter <IPathsKne03XUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphCreatereplyallPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -61,8 +61,6 @@ Specifying both will return an HTTP 400 Bad Request error.- If the original mess
 When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, reply-all to a message in a single action.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -104,21 +102,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -219,6 +202,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -243,6 +241,21 @@ Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

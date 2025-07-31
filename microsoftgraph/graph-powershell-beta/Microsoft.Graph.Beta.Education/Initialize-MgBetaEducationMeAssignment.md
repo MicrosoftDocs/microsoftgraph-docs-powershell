@@ -20,37 +20,20 @@ This action can only be performed by a teacher on currently inactive assignments
 ### Activate (Default)
 ```
 Initialize-MgBetaEducationMeAssignment -EducationAssignmentId <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
 ```
 Initialize-MgBetaEducationMeAssignment -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Activate an inactive educationAssignment to signal that the assignment has further action items for teachers or students.
 This action can only be performed by a teacher on currently inactive assignments.
 
-## EXAMPLES
-
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment
@@ -98,6 +81,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -105,6 +103,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -164,6 +177,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
   - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
   - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
+  - `[SpeakerAssignmentSubmissionId <String>]`: The unique identifier of speakerAssignmentSubmission
 
 ## RELATED LINKS
 

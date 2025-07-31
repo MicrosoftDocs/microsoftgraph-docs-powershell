@@ -20,10 +20,12 @@ Update the navigation property backupRestore in solutions
 Update-MgSolutionBackupRestore [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-DriveInclusionRules <IMicrosoftGraphDriveProtectionRule[]>]
  [-DriveProtectionUnits <IMicrosoftGraphDriveProtectionUnit[]>]
+ [-DriveProtectionUnitsBulkAdditionJobs <IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob[]>]
  [-ExchangeProtectionPolicies <IMicrosoftGraphExchangeProtectionPolicy[]>]
  [-ExchangeRestoreSessions <IMicrosoftGraphExchangeRestoreSession[]>] [-Id <String>]
  [-MailboxInclusionRules <IMicrosoftGraphMailboxProtectionRule[]>]
  [-MailboxProtectionUnits <IMicrosoftGraphMailboxProtectionUnit[]>]
+ [-MailboxProtectionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob[]>]
  [-OneDriveForBusinessProtectionPolicies <IMicrosoftGraphOneDriveForBusinessProtectionPolicy[]>]
  [-OneDriveForBusinessRestoreSessions <IMicrosoftGraphOneDriveForBusinessRestoreSession[]>]
  [-ProtectionPolicies <IMicrosoftGraphProtectionPolicyBase[]>]
@@ -33,21 +35,20 @@ Update-MgSolutionBackupRestore [-ResponseHeadersVariable <String>] [-AdditionalP
  [-SharePointProtectionPolicies <IMicrosoftGraphSharePointProtectionPolicy[]>]
  [-SharePointRestoreSessions <IMicrosoftGraphSharePointRestoreSession[]>]
  [-SiteInclusionRules <IMicrosoftGraphSiteProtectionRule[]>]
- [-SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit[]>]
+ [-SiteProtectionUnitsBulkAdditionJobs <IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSolutionBackupRestore -BodyParameter <IMicrosoftGraphBackupRestoreRoot>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property backupRestore in solutions
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -82,21 +83,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DriveInclusionRules
 The list of drive inclusion rules applied to the tenant.
 To construct, see NOTES section for DRIVEINCLUSIONRULES properties and create a hash table.
@@ -119,6 +105,22 @@ To construct, see NOTES section for DRIVEPROTECTIONUNITS properties and create a
 
 ```yaml
 Type: IMicrosoftGraphDriveProtectionUnit[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DriveProtectionUnitsBulkAdditionJobs
+
+To construct, see NOTES section for DRIVEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -224,6 +226,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MailboxProtectionUnitsBulkAdditionJobs
+
+To construct, see NOTES section for MAILBOXPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -OneDriveForBusinessProtectionPolicies
 The list of OneDrive for Business protection policies in the tenant.
 To construct, see NOTES section for ONEDRIVEFORBUSINESSPROTECTIONPOLICIES properties and create a hash table.
@@ -248,6 +266,21 @@ To construct, see NOTES section for ONEDRIVEFORBUSINESSRESTORESESSIONS propertie
 Type: IMicrosoftGraphOneDriveForBusinessRestoreSession[]
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -431,6 +464,37 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SiteProtectionUnitsBulkAdditionJobs
+
+To construct, see NOTES section for SITEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -494,8 +558,7 @@ For example, in the access reviews decisions API, this property might record the
         - `[Target <String>]`: The target of the error.
       - `[Message <String>]`: A non-localized message for the developer.
       - `[Target <String>]`: The target of the error.
-    - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
+    - `[IsAutoApplyEnabled <Boolean?>]`: 
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
     - `[Status <String>]`: protectionRuleStatus
@@ -514,6 +577,18 @@ For examples, see driveExpression examples.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DirectoryObjectId <String>]`: ID of the directory object.
+  - `[DriveProtectionUnitsBulkAdditionJobs <IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob- `[]`>]`: 
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+    - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+    - `[Status <String>]`: protectionUnitsBulkJobStatus
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DirectoryObjectIds <String- `[]`>]`: The list of OneDrive directoryObjectIds to add to the OneDrive protection policy.
+    - `[Drives <String- `[]`>]`: The list of email addresses to add to the OneDrive protection policy.
   - `[ExchangeProtectionPolicies <IMicrosoftGraphExchangeProtectionPolicy- `[]`>]`: The list of Exchange protection policies in the tenant.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The time of creation of the policy.
@@ -530,8 +605,7 @@ Read-only.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: The time of creation of the rule.
       - `[Error <IMicrosoftGraphPublicError>]`: publicError
-      - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
+      - `[IsAutoApplyEnabled <Boolean?>]`: 
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
       - `[Status <String>]`: protectionRuleStatus
@@ -550,6 +624,18 @@ For examples, see mailboxExpression examples.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DirectoryObjectId <String>]`: The ID of the directory object.
+    - `[MailboxProtectionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob- `[]`>]`: 
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+      - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+      - `[Error <IMicrosoftGraphPublicError>]`: publicError
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+      - `[Status <String>]`: protectionUnitsBulkJobStatus
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[DirectoryObjectIds <String- `[]`>]`: The list of Exchange directoryObjectIds to add to the Exchange protection policy.
+      - `[Mailboxes <String- `[]`>]`: The list of Exchange email addresses to add to the Exchange protection policy.
   - `[ExchangeRestoreSessions <IMicrosoftGraphExchangeRestoreSession- `[]`>]`: The list of Exchange restore sessions available in the tenant.
     - `[CompletedDateTime <DateTime?>]`: The time of completion of the restore session.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -560,7 +646,7 @@ Read-only.
     - `[Status <String>]`: restoreSessionStatus
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[GranularMailboxRestoreArtifacts <IMicrosoftGraphGranularMailboxRestoreArtifact- `[]`>]`:
+    - `[GranularMailboxRestoreArtifacts <IMicrosoftGraphGranularMailboxRestoreArtifact- `[]`>]`: 
       - `[RestoredFolderId <String>]`: The new restored folder identifier for the user.
       - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
       - `[DestinationType <String>]`: destinationType
@@ -599,8 +685,31 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[RestoredFolderId <String>]`: The new restored folder identifier for the user.
+    - `[MailboxRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphMailboxRestoreArtifactsBulkAdditionRequest- `[]`>]`: A collection of user mailboxes and destination details that can be used to restore Exchange mailboxes.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[CreatedDateTime <DateTime?>]`: The time when the bulk request was created.
+      - `[DestinationType <String>]`: destinationType
+      - `[DisplayName <String>]`: Name of the addition request.
+      - `[Error <IMicrosoftGraphPublicError>]`: publicError
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedDateTime <DateTime?>]`: Timestamp when this entity was last modified.
+      - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
+        - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+      - `[ProtectionUnitIds <String- `[]`>]`: Indicates which protection units to restore.
+This property isn't implemented yet.
+Future value; don't use.
+      - `[RestorePointPreference <String>]`: restorePointPreference
+      - `[Status <String>]`: restoreArtifactsBulkRequestStatus
+      - `[Tags <String>]`: restorePointTags
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
+      - `[Mailboxes <String- `[]`>]`: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
   - `[MailboxInclusionRules <IMicrosoftGraphMailboxProtectionRule- `[]`>]`: The list of mailbox inclusion rules applied to the tenant.
   - `[MailboxProtectionUnits <IMicrosoftGraphMailboxProtectionUnit- `[]`>]`: The list of mailbox protection units in the tenant.
+  - `[MailboxProtectionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob- `[]`>]`: 
   - `[OneDriveForBusinessProtectionPolicies <IMicrosoftGraphOneDriveForBusinessProtectionPolicy- `[]`>]`: The list of OneDrive for Business protection policies in the tenant.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The time of creation of the policy.
@@ -613,6 +722,7 @@ Read-only.
 Read-only.
     - `[DriveInclusionRules <IMicrosoftGraphDriveProtectionRule- `[]`>]`: Contains the details of the Onedrive for Business protection rule.
     - `[DriveProtectionUnits <IMicrosoftGraphDriveProtectionUnit- `[]`>]`: Contains the protection units associated with a  OneDrive for Business protection policy.
+    - `[DriveProtectionUnitsBulkAdditionJobs <IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob- `[]`>]`: 
   - `[OneDriveForBusinessRestoreSessions <IMicrosoftGraphOneDriveForBusinessRestoreSession- `[]`>]`: The list of OneDrive for Business restore sessions available in the tenant.
     - `[CompletedDateTime <DateTime?>]`: The time of completion of the restore session.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -623,7 +733,7 @@ Read-only.
     - `[Status <String>]`: restoreSessionStatus
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[DriveRestoreArtifacts <IMicrosoftGraphDriveRestoreArtifact- `[]`>]`: A collection of restore points and destination details that can be used to restore a OneDrive for Business drive.
+    - `[DriveRestoreArtifacts <IMicrosoftGraphDriveRestoreArtifact- `[]`>]`: A collection of restore points and destination details that can be used to restore a OneDrive for work or school drive.
       - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
       - `[DestinationType <String>]`: destinationType
       - `[Error <IMicrosoftGraphPublicError>]`: publicError
@@ -633,6 +743,25 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[RestoredSiteId <String>]`: The new site identifier if destinationType is new, and the input site ID if the destinationType is inPlace.
+    - `[DriveRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphDriveRestoreArtifactsBulkAdditionRequest- `[]`>]`: A collection of user mailboxes and destination details that can be used to restore a OneDrive for work or school drive.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[CreatedDateTime <DateTime?>]`: The time when the bulk request was created.
+      - `[DestinationType <String>]`: destinationType
+      - `[DisplayName <String>]`: Name of the addition request.
+      - `[Error <IMicrosoftGraphPublicError>]`: publicError
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedDateTime <DateTime?>]`: Timestamp when this entity was last modified.
+      - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+      - `[ProtectionUnitIds <String- `[]`>]`: Indicates which protection units to restore.
+This property isn't implemented yet.
+Future value; don't use.
+      - `[RestorePointPreference <String>]`: restorePointPreference
+      - `[Status <String>]`: restoreArtifactsBulkRequestStatus
+      - `[Tags <String>]`: restorePointTags
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
+      - `[Drives <String- `[]`>]`: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
   - `[ProtectionPolicies <IMicrosoftGraphProtectionPolicyBase- `[]`>]`: List of protection policies in the tenant.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -687,8 +816,7 @@ Read-only.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: The time of creation of the rule.
       - `[Error <IMicrosoftGraphPublicError>]`: publicError
-      - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
+      - `[IsAutoApplyEnabled <Boolean?>]`: 
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
       - `[Status <String>]`: protectionRuleStatus
@@ -707,6 +835,18 @@ For examples, see siteExpression example.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[SiteId <String>]`: Unique identifier of the SharePoint site.
+    - `[SiteProtectionUnitsBulkAdditionJobs <IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob- `[]`>]`: 
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+      - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+      - `[Error <IMicrosoftGraphPublicError>]`: publicError
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+      - `[Status <String>]`: protectionUnitsBulkJobStatus
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[SiteIds <String- `[]`>]`: The list of SharePoint site IDs to add to the SharePoint protection policy.
+      - `[SiteWebUrls <String- `[]`>]`: The list of SharePoint site URLs to add to the SharePoint protection policy.
   - `[SharePointRestoreSessions <IMicrosoftGraphSharePointRestoreSession- `[]`>]`: The list of SharePoint restore sessions available in the tenant.
     - `[CompletedDateTime <DateTime?>]`: The time of completion of the restore session.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -727,8 +867,28 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[RestoredSiteId <String>]`: The new site identifier if the value of the destinationType property is new, and the existing site ID if the value is inPlace.
+    - `[SiteRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphSiteRestoreArtifactsBulkAdditionRequest- `[]`>]`: A collection of SharePoint site URLs and destination details that can be used to restore SharePoint sites.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[CreatedDateTime <DateTime?>]`: The time when the bulk request was created.
+      - `[DestinationType <String>]`: destinationType
+      - `[DisplayName <String>]`: Name of the addition request.
+      - `[Error <IMicrosoftGraphPublicError>]`: publicError
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedDateTime <DateTime?>]`: Timestamp when this entity was last modified.
+      - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+      - `[ProtectionUnitIds <String- `[]`>]`: Indicates which protection units to restore.
+This property isn't implemented yet.
+Future value; don't use.
+      - `[RestorePointPreference <String>]`: restorePointPreference
+      - `[Status <String>]`: restoreArtifactsBulkRequestStatus
+      - `[Tags <String>]`: restorePointTags
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[SiteIds <String- `[]`>]`: The list of SharePoint site IDs that are added to the corresponding SharePoint restore session in a bulk operation.
+      - `[SiteWebUrls <String- `[]`>]`: The list of SharePoint site URLs that are added to the corresponding SharePoint restore session in a bulk operation.
   - `[SiteInclusionRules <IMicrosoftGraphSiteProtectionRule- `[]`>]`: The list of site inclusion rules applied to the tenant.
   - `[SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit- `[]`>]`: The list of site protection units in the tenant.
+  - `[SiteProtectionUnitsBulkAdditionJobs <IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob- `[]`>]`: 
 
 DRIVEINCLUSIONRULES `<IMicrosoftGraphDriveProtectionRule- `[]`>`: The list of drive inclusion rules applied to the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -757,8 +917,7 @@ For example, in the access reviews decisions API, this property might record the
       - `[Target <String>]`: The target of the error.
     - `[Message <String>]`: A non-localized message for the developer.
     - `[Target <String>]`: The target of the error.
-  - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
+  - `[IsAutoApplyEnabled <Boolean?>]`: 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
   - `[Status <String>]`: protectionRuleStatus
@@ -802,6 +961,42 @@ For example, in the access reviews decisions API, this property might record the
 Read-only.
   - `[DirectoryObjectId <String>]`: ID of the directory object.
 
+DRIVEPROTECTIONUNITSBULKADDITIONJOBS `<IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob- `[]`>`: .
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+  - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+  - `[Status <String>]`: protectionUnitsBulkJobStatus
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[DirectoryObjectIds <String- `[]`>]`: The list of OneDrive directoryObjectIds to add to the OneDrive protection policy.
+  - `[Drives <String- `[]`>]`: The list of email addresses to add to the OneDrive protection policy.
+
 EXCHANGEPROTECTIONPOLICIES `<IMicrosoftGraphExchangeProtectionPolicy- `[]`>`: The list of Exchange protection policies in the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -841,8 +1036,7 @@ Read-only.
         - `[Target <String>]`: The target of the error.
       - `[Message <String>]`: A non-localized message for the developer.
       - `[Target <String>]`: The target of the error.
-    - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
+    - `[IsAutoApplyEnabled <Boolean?>]`: 
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
     - `[Status <String>]`: protectionRuleStatus
@@ -861,6 +1055,18 @@ For examples, see mailboxExpression examples.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DirectoryObjectId <String>]`: The ID of the directory object.
+  - `[MailboxProtectionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob- `[]`>]`: 
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+    - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+    - `[Status <String>]`: protectionUnitsBulkJobStatus
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DirectoryObjectIds <String- `[]`>]`: The list of Exchange directoryObjectIds to add to the Exchange protection policy.
+    - `[Mailboxes <String- `[]`>]`: The list of Exchange email addresses to add to the Exchange protection policy.
 
 EXCHANGERESTORESESSIONS `<IMicrosoftGraphExchangeRestoreSession- `[]`>`: The list of Exchange restore sessions available in the tenant.
   - `[CompletedDateTime <DateTime?>]`: The time of completion of the restore session.
@@ -895,7 +1101,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Status <String>]`: restoreSessionStatus
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[GranularMailboxRestoreArtifacts <IMicrosoftGraphGranularMailboxRestoreArtifact- `[]`>]`:
+  - `[GranularMailboxRestoreArtifacts <IMicrosoftGraphGranularMailboxRestoreArtifact- `[]`>]`: 
     - `[RestoredFolderId <String>]`: The new restored folder identifier for the user.
     - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
     - `[DestinationType <String>]`: destinationType
@@ -934,6 +1140,28 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[RestoredFolderId <String>]`: The new restored folder identifier for the user.
+  - `[MailboxRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphMailboxRestoreArtifactsBulkAdditionRequest- `[]`>]`: A collection of user mailboxes and destination details that can be used to restore Exchange mailboxes.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time when the bulk request was created.
+    - `[DestinationType <String>]`: destinationType
+    - `[DisplayName <String>]`: Name of the addition request.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp when this entity was last modified.
+    - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
+      - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+    - `[ProtectionUnitIds <String- `[]`>]`: Indicates which protection units to restore.
+This property isn't implemented yet.
+Future value; don't use.
+    - `[RestorePointPreference <String>]`: restorePointPreference
+    - `[Status <String>]`: restoreArtifactsBulkRequestStatus
+    - `[Tags <String>]`: restorePointTags
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
+    - `[Mailboxes <String- `[]`>]`: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
 
 MAILBOXINCLUSIONRULES `<IMicrosoftGraphMailboxProtectionRule- `[]`>`: The list of mailbox inclusion rules applied to the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -962,8 +1190,7 @@ For example, in the access reviews decisions API, this property might record the
       - `[Target <String>]`: The target of the error.
     - `[Message <String>]`: A non-localized message for the developer.
     - `[Target <String>]`: The target of the error.
-  - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
+  - `[IsAutoApplyEnabled <Boolean?>]`: 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
   - `[Status <String>]`: protectionRuleStatus
@@ -1007,6 +1234,42 @@ For example, in the access reviews decisions API, this property might record the
 Read-only.
   - `[DirectoryObjectId <String>]`: The ID of the directory object.
 
+MAILBOXPROTECTIONUNITSBULKADDITIONJOBS `<IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob- `[]`>`: .
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+  - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+  - `[Status <String>]`: protectionUnitsBulkJobStatus
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[DirectoryObjectIds <String- `[]`>]`: The list of Exchange directoryObjectIds to add to the Exchange protection policy.
+  - `[Mailboxes <String- `[]`>]`: The list of Exchange email addresses to add to the Exchange protection policy.
+
 ONEDRIVEFORBUSINESSPROTECTIONPOLICIES `<IMicrosoftGraphOneDriveForBusinessProtectionPolicy- `[]`>`: The list of OneDrive for Business protection policies in the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1046,8 +1309,7 @@ Read-only.
         - `[Target <String>]`: The target of the error.
       - `[Message <String>]`: A non-localized message for the developer.
       - `[Target <String>]`: The target of the error.
-    - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
+    - `[IsAutoApplyEnabled <Boolean?>]`: 
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
     - `[Status <String>]`: protectionRuleStatus
@@ -1066,6 +1328,18 @@ For examples, see driveExpression examples.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DirectoryObjectId <String>]`: ID of the directory object.
+  - `[DriveProtectionUnitsBulkAdditionJobs <IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob- `[]`>]`: 
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+    - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+    - `[Status <String>]`: protectionUnitsBulkJobStatus
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DirectoryObjectIds <String- `[]`>]`: The list of OneDrive directoryObjectIds to add to the OneDrive protection policy.
+    - `[Drives <String- `[]`>]`: The list of email addresses to add to the OneDrive protection policy.
 
 ONEDRIVEFORBUSINESSRESTORESESSIONS `<IMicrosoftGraphOneDriveForBusinessRestoreSession- `[]`>`: The list of OneDrive for Business restore sessions available in the tenant.
   - `[CompletedDateTime <DateTime?>]`: The time of completion of the restore session.
@@ -1100,7 +1374,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Status <String>]`: restoreSessionStatus
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[DriveRestoreArtifacts <IMicrosoftGraphDriveRestoreArtifact- `[]`>]`: A collection of restore points and destination details that can be used to restore a OneDrive for Business drive.
+  - `[DriveRestoreArtifacts <IMicrosoftGraphDriveRestoreArtifact- `[]`>]`: A collection of restore points and destination details that can be used to restore a OneDrive for work or school drive.
     - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
     - `[DestinationType <String>]`: destinationType
     - `[Error <IMicrosoftGraphPublicError>]`: publicError
@@ -1127,6 +1401,28 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[RestoredSiteId <String>]`: The new site identifier if destinationType is new, and the input site ID if the destinationType is inPlace.
+  - `[DriveRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphDriveRestoreArtifactsBulkAdditionRequest- `[]`>]`: A collection of user mailboxes and destination details that can be used to restore a OneDrive for work or school drive.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time when the bulk request was created.
+    - `[DestinationType <String>]`: destinationType
+    - `[DisplayName <String>]`: Name of the addition request.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp when this entity was last modified.
+    - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
+      - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+    - `[ProtectionUnitIds <String- `[]`>]`: Indicates which protection units to restore.
+This property isn't implemented yet.
+Future value; don't use.
+    - `[RestorePointPreference <String>]`: restorePointPreference
+    - `[Status <String>]`: restoreArtifactsBulkRequestStatus
+    - `[Tags <String>]`: restorePointTags
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
+    - `[Drives <String- `[]`>]`: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
 
 PROTECTIONPOLICIES `<IMicrosoftGraphProtectionPolicyBase- `[]`>`: List of protection policies in the tenant.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1336,8 +1632,7 @@ Read-only.
         - `[Target <String>]`: The target of the error.
       - `[Message <String>]`: A non-localized message for the developer.
       - `[Target <String>]`: The target of the error.
-    - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
+    - `[IsAutoApplyEnabled <Boolean?>]`: 
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
     - `[Status <String>]`: protectionRuleStatus
@@ -1356,6 +1651,18 @@ For examples, see siteExpression example.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[SiteId <String>]`: Unique identifier of the SharePoint site.
+  - `[SiteProtectionUnitsBulkAdditionJobs <IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob- `[]`>]`: 
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+    - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+    - `[Status <String>]`: protectionUnitsBulkJobStatus
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[SiteIds <String- `[]`>]`: The list of SharePoint site IDs to add to the SharePoint protection policy.
+    - `[SiteWebUrls <String- `[]`>]`: The list of SharePoint site URLs to add to the SharePoint protection policy.
 
 SHAREPOINTRESTORESESSIONS `<IMicrosoftGraphSharePointRestoreSession- `[]`>`: The list of SharePoint restore sessions available in the tenant.
   - `[CompletedDateTime <DateTime?>]`: The time of completion of the restore session.
@@ -1417,6 +1724,28 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[RestoredSiteId <String>]`: The new site identifier if the value of the destinationType property is new, and the existing site ID if the value is inPlace.
+  - `[SiteRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphSiteRestoreArtifactsBulkAdditionRequest- `[]`>]`: A collection of SharePoint site URLs and destination details that can be used to restore SharePoint sites.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time when the bulk request was created.
+    - `[DestinationType <String>]`: destinationType
+    - `[DisplayName <String>]`: Name of the addition request.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp when this entity was last modified.
+    - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
+      - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+    - `[ProtectionUnitIds <String- `[]`>]`: Indicates which protection units to restore.
+This property isn't implemented yet.
+Future value; don't use.
+    - `[RestorePointPreference <String>]`: restorePointPreference
+    - `[Status <String>]`: restoreArtifactsBulkRequestStatus
+    - `[Tags <String>]`: restorePointTags
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[SiteIds <String- `[]`>]`: The list of SharePoint site IDs that are added to the corresponding SharePoint restore session in a bulk operation.
+    - `[SiteWebUrls <String- `[]`>]`: The list of SharePoint site URLs that are added to the corresponding SharePoint restore session in a bulk operation.
 
 SITEINCLUSIONRULES `<IMicrosoftGraphSiteProtectionRule- `[]`>`: The list of site inclusion rules applied to the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1445,8 +1774,7 @@ For example, in the access reviews decisions API, this property might record the
       - `[Target <String>]`: The target of the error.
     - `[Message <String>]`: A non-localized message for the developer.
     - `[Target <String>]`: The target of the error.
-  - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
+  - `[IsAutoApplyEnabled <Boolean?>]`: 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
   - `[Status <String>]`: protectionRuleStatus
@@ -1489,6 +1817,42 @@ For example, in the access reviews decisions API, this property might record the
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[SiteId <String>]`: Unique identifier of the SharePoint site.
+
+SITEPROTECTIONUNITSBULKADDITIONJOBS `<IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob- `[]`>`: .
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+  - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+  - `[Status <String>]`: protectionUnitsBulkJobStatus
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[SiteIds <String- `[]`>]`: The list of SharePoint site IDs to add to the SharePoint protection policy.
+  - `[SiteWebUrls <String- `[]`>]`: The list of SharePoint site URLs to add to the SharePoint protection policy.
 
 ## RELATED LINKS
 

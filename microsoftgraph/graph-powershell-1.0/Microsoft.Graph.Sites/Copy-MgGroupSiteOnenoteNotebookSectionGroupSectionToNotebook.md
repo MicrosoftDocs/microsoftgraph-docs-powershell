@@ -21,7 +21,7 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copy-MgGroupSiteOnenoteNotebookSectionGroupSectionToNotebook -GroupId <String> -NotebookId <String>
  -OnenoteSectionId <String> -SectionGroupId <String> -SiteId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-GroupId1 <String>] [-Id <String>] [-RenameAs <String>]
- [-SiteCollectionId <String>] [-SiteId1 <String>] [-Headers <IDictionary>]
+ [-SiteCollectionId <String>] [-SiteId1 <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Copy-MgGroupSiteOnenoteNotebookSectionGroupSectionToNotebook -GroupId <String> -
 Copy-MgGroupSiteOnenoteNotebookSectionGroupSectionToNotebook [-GroupId <String>] [-SiteId <String>]
  -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-RenameAs <String>] [-SiteCollectionId <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
@@ -38,7 +38,7 @@ Copy-MgGroupSiteOnenoteNotebookSectionGroupSectionToNotebook [-GroupId <String>]
 Copy-MgGroupSiteOnenoteNotebookSectionGroupSectionToNotebook -GroupId <String> -NotebookId <String>
  -OnenoteSectionId <String> -SectionGroupId <String> -SiteId <String>
  -BodyParameter <IPaths1Ob9E1QGroupsGroupIdSitesSiteIdOnenoteNotebooksNotebookIdSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,14 +46,12 @@ Copy-MgGroupSiteOnenoteNotebookSectionGroupSectionToNotebook -GroupId <String> -
 ```
 Copy-MgGroupSiteOnenoteNotebookSectionGroupSectionToNotebook -InputObject <ISitesIdentity>
  -BodyParameter <IPaths1Ob9E1QGroupsGroupIdSitesSiteIdOnenoteNotebooksNotebookIdSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -85,21 +83,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -221,6 +204,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RenameAs
 
 
@@ -323,6 +321,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -358,11 +371,11 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1Ob9E1QGroupsGroupIdSitesSiteIdOnenoteNotebooksNotebookIdSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[GroupId <String>]`:
-  - `[Id <String>]`:
-  - `[RenameAs <String>]`:
-  - `[SiteCollectionId <String>]`:
-  - `[SiteId <String>]`:
+  - `[GroupId <String>]`: 
+  - `[Id <String>]`: 
+  - `[RenameAs <String>]`: 
+  - `[SiteCollectionId <String>]`: 
+  - `[SiteId <String>]`: 
 
 INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem

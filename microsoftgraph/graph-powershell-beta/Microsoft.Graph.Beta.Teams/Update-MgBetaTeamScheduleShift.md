@@ -26,13 +26,13 @@ Update-MgBetaTeamScheduleShift -ShiftId <String> -TeamId <String> [-ResponseHead
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SchedulingGroupInfo <IMicrosoftGraphSchedulingGroupInfo>] [-SharedShift <IMicrosoftGraphShiftItem>]
  [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-UserId <String>] [-UserInfo <IMicrosoftGraphShiftsUserInfo>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTeamScheduleShift -ShiftId <String> -TeamId <String> -BodyParameter <IMicrosoftGraphShift>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,13 +44,13 @@ Update-MgBetaTeamScheduleShift -InputObject <ITeamsIdentity> [-ResponseHeadersVa
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SchedulingGroupInfo <IMicrosoftGraphSchedulingGroupInfo>] [-SharedShift <IMicrosoftGraphShiftItem>]
  [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-UserId <String>] [-UserInfo <IMicrosoftGraphShiftsUserInfo>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphShift>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -58,8 +58,6 @@ Update-MgBetaTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMi
 Replace an existing shift.
 If the specified shift doesn't exist, this method returns 404 Not found.
 The duration of a shift can't be less than 1 minute or longer than 24 hours.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -91,21 +89,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -211,6 +194,21 @@ To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash 
 Type: IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -352,6 +350,21 @@ To construct, see NOTES section for USERINFO properties and create a hash table.
 Type: IMicrosoftGraphShiftsUserInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

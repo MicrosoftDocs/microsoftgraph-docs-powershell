@@ -24,14 +24,14 @@ New-MgBetaUserDriveItemListItemLink -DriveId <String> -DriveItemId <String> -Use
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>]
  [-Message <String>] [-Password <String>] [-Recipients <IMicrosoftGraphDriveRecipient[]>]
  [-RetainInheritedPermissions] [-Scope <String>] [-SendNotification] [-Type <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserDriveItemListItemLink -DriveId <String> -DriveItemId <String> -UserId <String>
  -BodyParameter <IPaths17Cl3GsUsersUserIdDrivesDriveIdItemsDriveitemIdListitemMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ New-MgBetaUserDriveItemListItemLink -DriveId <String> -DriveItemId <String> -Use
 New-MgBetaUserDriveItemListItemLink -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RetainInheritedPermissions] [-Scope <String>]
- [-SendNotification] [-Type <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-SendNotification] [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,7 +48,7 @@ New-MgBetaUserDriveItemListItemLink -InputObject <IFilesIdentity> [-ResponseHead
 ```
 New-MgBetaUserDriveItemListItemLink -InputObject <IFilesIdentity>
  -BodyParameter <IPaths17Cl3GsUsersUserIdDrivesDriveIdItemsDriveitemIdListitemMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -56,8 +56,6 @@ New-MgBetaUserDriveItemListItemLink -InputObject <IFilesIdentity>
 Create a sharing link for a listItem.
 The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -89,21 +87,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -213,6 +196,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Recipients
 
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
@@ -313,6 +311,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

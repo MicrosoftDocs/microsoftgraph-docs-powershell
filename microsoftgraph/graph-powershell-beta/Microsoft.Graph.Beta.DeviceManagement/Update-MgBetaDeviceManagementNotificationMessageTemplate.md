@@ -22,14 +22,14 @@ Update-MgBetaDeviceManagementNotificationMessageTemplate -NotificationMessageTem
  [-BrandingOptions <NotificationTemplateBrandingOptions>] [-DefaultLocale <String>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-LocalizedNotificationMessages <IMicrosoftGraphLocalizedNotificationMessage[]>] [-RoleScopeTagIds <String[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementNotificationMessageTemplate -NotificationMessageTemplateId <String>
  -BodyParameter <IMicrosoftGraphNotificationMessageTemplate> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,14 +39,14 @@ Update-MgBetaDeviceManagementNotificationMessageTemplate -InputObject <IDeviceMa
  [-BrandingOptions <NotificationTemplateBrandingOptions>] [-DefaultLocale <String>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-LocalizedNotificationMessages <IMicrosoftGraphLocalizedNotificationMessage[]>] [-RoleScopeTagIds <String[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementNotificationMessageTemplate -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphNotificationMessageTemplate> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,8 +59,6 @@ Update the navigation property notificationMessageTemplates in deviceManagement
 | Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -105,21 +103,6 @@ Branding is defined in the Intune Admin Console.
 Type: NotificationTemplateBrandingOptions
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -266,6 +249,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -288,6 +286,21 @@ List of Scope Tags for this Entity instance.
 Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

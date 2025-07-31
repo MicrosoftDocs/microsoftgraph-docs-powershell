@@ -22,7 +22,7 @@ For a list of roles that can be assigned with administrative unit scope, see Ass
 New-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AdministrativeUnitId1 <String>]
  [-Id <String>] [-RoleId <String>] [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -30,7 +30,7 @@ New-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId <String>
 New-MgDirectoryAdministrativeUnitScopedRoleMember [-AdministrativeUnitId <String>]
  -InputObject <IIdentityDirectoryManagementIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-RoleId <String>]
- [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-Headers <IDictionary>]
+ [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,14 +38,14 @@ New-MgDirectoryAdministrativeUnitScopedRoleMember [-AdministrativeUnitId <String
 ```
 New-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId <String>
  -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -155,21 +155,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -217,6 +202,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -255,6 +255,21 @@ To construct, see NOTES section for ROLEMEMBERINFO properties and create a hash 
 Type: IMicrosoftGraphIdentity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -313,6 +328,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CertificateAuthorityDetailId <String>]`: The unique identifier of certificateAuthorityDetail
+  - `[CertificateBasedAuthPkiId <String>]`: The unique identifier of certificateBasedAuthPki
   - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
   - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract

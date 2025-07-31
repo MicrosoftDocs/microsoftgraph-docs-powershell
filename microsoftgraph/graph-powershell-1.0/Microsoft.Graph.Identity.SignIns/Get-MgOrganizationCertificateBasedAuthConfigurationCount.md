@@ -19,14 +19,14 @@ Get the number of the resource
 ```
 Get-MgOrganizationCertificateBasedAuthConfigurationCount -OrganizationId <String> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgOrganizationCertificateBasedAuthConfigurationCount -InputObject <IIdentitySignInsIdentity>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,8 +39,6 @@ Get the number of the resource
 | Delegated (work or school account) | Organization.Read.All, Organization.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Organization.Read.All, Organization.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -99,6 +97,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -192,6 +205,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

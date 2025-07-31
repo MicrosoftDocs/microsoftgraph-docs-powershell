@@ -28,13 +28,13 @@ New-MgBetaDeviceManagementIntuneBrandingProfile [-ResponseHeadersVariable <Strin
  [-RoleScopeTagIds <String[]>] [-SendDeviceOwnershipChangePushNotification] [-ShowAzureAdEnterpriseApps]
  [-ShowConfigurationManagerApps] [-ShowDisplayNameNextToLogo] [-ShowLogo] [-ShowOfficeWebApps]
  [-ThemeColor <IMicrosoftGraphRgbColor>] [-ThemeColorLogo <IMicrosoftGraphMimeContent>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementIntuneBrandingProfile -BodyParameter <IMicrosoftGraphIntuneBrandingProfile>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,8 +48,6 @@ Create new navigation property to intuneBrandingProfiles for deviceManagement
 | Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -108,21 +106,6 @@ To construct, see NOTES section for COMPANYPORTALBLOCKEDACTIONS properties and c
 Type: IMicrosoftGraphCompanyPortalBlockedAction[]
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -510,6 +493,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -654,6 +652,21 @@ To construct, see NOTES section for THEMECOLORLOGO properties and create a hash 
 Type: IMicrosoftGraphMimeContent
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

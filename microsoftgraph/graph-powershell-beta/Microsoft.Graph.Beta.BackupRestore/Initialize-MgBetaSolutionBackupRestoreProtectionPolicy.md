@@ -21,14 +21,14 @@ You can add or remove artifacts (sites or user accounts) to or from each active 
 ### Activate (Default)
 ```
 Initialize-MgBetaSolutionBackupRestoreProtectionPolicy -ProtectionPolicyBaseId <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
 ```
 Initialize-MgBetaSolutionBackupRestoreProtectionPolicy -InputObject <IBackupRestoreIdentity>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,24 +37,7 @@ Activate a protectionPolicyBase.
 Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users).
 You can add or remove artifacts (sites or user accounts) to or from each active policy.
 
-## EXAMPLES
-
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -87,6 +70,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProtectionPolicyBaseId
 The unique identifier of protectionPolicyBase
 
@@ -109,6 +107,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -181,8 +194,6 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/initialize-mgbetasolutionbackuprestoreprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/initialize-mgbetasolutionbackuprestoreprotectionpolicy)
-
-[https://learn.microsoft.com/graph/api/protectionpolicybase-activate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/protectionpolicybase-activate?view=graph-rest-beta)
 
 
 

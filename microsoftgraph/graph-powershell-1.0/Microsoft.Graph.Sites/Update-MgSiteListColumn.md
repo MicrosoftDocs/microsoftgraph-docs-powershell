@@ -29,7 +29,7 @@ Update-MgSiteListColumn -ColumnDefinitionId <String> -ListId <String> -SiteId <S
  [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition>]
  [-SourceContentType <IMicrosoftGraphContentTypeInfo>] [-Term <IMicrosoftGraphTermColumn>]
  [-Text <IMicrosoftGraphTextColumn>] [-Thumbnail <Hashtable>] [-Type <String>]
- [-Validation <IMicrosoftGraphColumnValidation>] [-Headers <IDictionary>]
+ [-Validation <IMicrosoftGraphColumnValidation>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Update-MgSiteListColumn -ColumnDefinitionId <String> -ListId <String> -SiteId <S
 ```
 Update-MgSiteListColumn -ColumnDefinitionId <String> -ListId <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphColumnDefinition> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -54,14 +54,14 @@ Update-MgSiteListColumn -InputObject <ISitesIdentity> [-ResponseHeadersVariable 
  [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition>]
  [-SourceContentType <IMicrosoftGraphContentTypeInfo>] [-Term <IMicrosoftGraphTermColumn>]
  [-Text <IMicrosoftGraphTextColumn>] [-Thumbnail <Hashtable>] [-Type <String>]
- [-Validation <IMicrosoftGraphColumnValidation>] [-Headers <IDictionary>]
+ [-Validation <IMicrosoftGraphColumnValidation>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSiteListColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphColumnDefinition>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -75,8 +75,6 @@ Update the navigation property columns in sites
 | Delegated (work or school account) | Sites.Manage.All, Sites.FullControl.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -181,21 +179,6 @@ Helps organize related columns.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -545,6 +528,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PropagateChanges
 If 'true', changes to this column will be propagated to lists that implement the column.
 
@@ -722,6 +720,21 @@ To construct, see NOTES section for VALIDATION properties and create a hash tabl
 Type: IMicrosoftGraphColumnValidation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

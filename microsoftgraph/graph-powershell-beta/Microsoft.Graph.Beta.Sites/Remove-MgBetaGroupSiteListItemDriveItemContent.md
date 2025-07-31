@@ -22,13 +22,13 @@ To proactively opt in to the new behavior ahead of time, use the contentStream p
 ```
 Remove-MgBetaGroupSiteListItemDriveItemContent -GroupId <String> -ListId <String> -ListItemId <String>
  -SiteId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaGroupSiteListItemDriveItemContent -InputObject <ISitesIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,24 +38,7 @@ The content property will have a potentially breaking change in behavior in the 
 It will stream content directly instead of redirecting.
 To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
-## EXAMPLES
-
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -GroupId
 The unique identifier of group
@@ -163,6 +146,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -187,6 +185,21 @@ Parameter Sets: Delete
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -231,6 +244,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+  - `[ContentFormats <String- `[]`>]`: Usage: contentFormats={contentFormats}
   - `[ContentModelId <String>]`: The unique identifier of contentModel
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ContentTypeId1 <String>]`: The unique identifier of contentType
@@ -249,9 +263,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[ItemActivityId <String>]`: The unique identifier of itemActivity
   - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
   - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
+  - `[LabelIds <String- `[]`>]`: Usage: labelIds={labelIds}
   - `[ListId <String>]`: The unique identifier of list
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[Locale <String>]`: Usage: locale='{locale}'
   - `[ModelName <String>]`: Usage: modelName='{modelName}'
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation

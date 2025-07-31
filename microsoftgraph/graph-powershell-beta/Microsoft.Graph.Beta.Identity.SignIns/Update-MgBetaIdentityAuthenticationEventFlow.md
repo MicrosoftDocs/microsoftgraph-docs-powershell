@@ -23,7 +23,7 @@ The following derived subtypes are supported:- externalUsersSelfServiceSignupEve
 Update-MgBetaIdentityAuthenticationEventFlow -AuthenticationEventsFlowId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Description <String>] [-DisplayName <String>]
- [-Id <String>] [-Priority <Int32>] [-Headers <IDictionary>] [-WhatIf]
+ [-Id <String>] [-Priority <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Update-MgBetaIdentityAuthenticationEventFlow -AuthenticationEventsFlowId <String
 ```
 Update-MgBetaIdentityAuthenticationEventFlow -AuthenticationEventsFlowId <String>
  -BodyParameter <IMicrosoftGraphAuthenticationEventsFlow> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,7 +39,7 @@ Update-MgBetaIdentityAuthenticationEventFlow -AuthenticationEventsFlowId <String
 Update-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Description <String>] [-DisplayName <String>]
- [-Id <String>] [-Priority <Int32>] [-Headers <IDictionary>] [-WhatIf]
+ [-Id <String>] [-Priority <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,7 +47,7 @@ Update-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdent
 ```
 Update-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphAuthenticationEventsFlow> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -295,21 +295,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Description
 The description of the events policy.
 
@@ -405,6 +390,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -412,6 +412,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -499,10 +514,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[B2XIdentityUserFlowId <String>]`: The unique identifier of b2xIdentityUserFlow
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[CertificateBasedAuthConfigurationId <String>]`: The unique identifier of certificateBasedAuthConfiguration
-  - `[ChangeItemBaseId <String>]`: The unique identifier of changeItemBase
   - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
+  - `[ContentFormats <String- `[]`>]`: Usage: contentFormats={contentFormats}
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
   - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
   - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
@@ -523,11 +537,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[LabelIds <String- `[]`>]`: Usage: labelIds={labelIds}
+  - `[Locale <String>]`: Usage: locale='{locale}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
   - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
-  - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization
   - `[PasswordAuthenticationMethodId <String>]`: The unique identifier of passwordAuthenticationMethod

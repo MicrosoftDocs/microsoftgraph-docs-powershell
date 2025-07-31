@@ -24,7 +24,7 @@ For more information about purging Teams messages, see:- eDiscovery solution ser
 ```
 Clear-MgSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId <String> -EdiscoverySearchId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-PurgeAreas <String>]
- [-PurgeType <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-PurgeType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Clear-MgSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId <String> -Ediscov
 ```
 Clear-MgSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId <String> -EdiscoverySearchId <String>
  -BodyParameter <IPathsMs4I8WSecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityPurgedataPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Clear-MgSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId <String> -Ediscov
 ```
 Clear-MgSecurityCaseEdiscoveryCaseSearchData -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-PurgeAreas <String>]
- [-PurgeType <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-PurgeType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,7 +48,7 @@ Clear-MgSecurityCaseEdiscoveryCaseSearchData -InputObject <ISecurityIdentity>
 ```
 Clear-MgSecurityCaseEdiscoveryCaseSearchData -InputObject <ISecurityIdentity>
  -BodyParameter <IPathsMs4I8WSecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityPurgedataPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -115,21 +115,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -209,6 +194,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PurgeAreas
 purgeAreas
 
@@ -246,6 +246,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
