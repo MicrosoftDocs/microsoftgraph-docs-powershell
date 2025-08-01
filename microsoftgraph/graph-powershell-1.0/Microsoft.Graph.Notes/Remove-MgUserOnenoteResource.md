@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property resources for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaUserOnenoteResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

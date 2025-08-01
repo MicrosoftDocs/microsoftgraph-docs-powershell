@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Determine whether a user has access to a shared channel.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaHaveGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaHaveGroupTeamPrimaryChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Have (Default)

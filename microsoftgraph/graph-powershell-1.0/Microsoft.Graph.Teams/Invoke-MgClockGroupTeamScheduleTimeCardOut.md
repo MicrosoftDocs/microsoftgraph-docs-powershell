@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action clockOut
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaClockGroupTeamScheduleTimeCardOut](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaClockGroupTeamScheduleTimeCardOut?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ClockExpanded (Default)

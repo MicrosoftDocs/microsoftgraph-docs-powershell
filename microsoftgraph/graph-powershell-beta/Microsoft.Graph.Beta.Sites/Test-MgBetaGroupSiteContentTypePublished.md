@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Invoke function isPublished
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgGroupSiteContentTypePublished](/powershell/module/Microsoft.Graph.Sites/Test-MgGroupSiteContentTypePublished?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Is (Default)

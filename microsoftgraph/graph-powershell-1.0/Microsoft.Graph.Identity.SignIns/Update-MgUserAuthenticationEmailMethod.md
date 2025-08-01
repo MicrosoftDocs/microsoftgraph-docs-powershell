@@ -12,6 +12,9 @@ ms.subservice: entra-sign-in
 Update a user's email address represented by an emailAuthenticationMethod object.
 Self-service operations aren't supported.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaUserAuthenticationEmailMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

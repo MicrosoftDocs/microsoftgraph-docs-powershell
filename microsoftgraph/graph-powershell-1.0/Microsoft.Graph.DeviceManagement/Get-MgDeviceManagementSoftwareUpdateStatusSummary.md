@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Read properties and relationships of the softwareUpdateStatusSummary object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementSoftwareUpdateStatusSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementSoftwareUpdateStatusSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

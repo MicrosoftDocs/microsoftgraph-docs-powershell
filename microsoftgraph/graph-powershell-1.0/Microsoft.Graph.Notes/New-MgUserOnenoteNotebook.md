@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to notebooks for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -12,6 +12,9 @@ ms.subservice: education
 ## SYNOPSIS
 Read the properties and relationships of an educationSchool object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchool?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

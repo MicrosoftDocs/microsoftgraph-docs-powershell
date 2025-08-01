@@ -12,6 +12,9 @@ ms.subservice: teams
 Send activity feed notifications to multiple users in bulk.
 For more information, see sending Teams activity notifications.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Teams/Send-MgTeamworkActivityNotificationToRecipient?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SendExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The page's HTML content.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupOnenoteSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaGroupOnenoteSectionPageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Get a list of virtualEventTownhall objects where the specified user is either the organizer or a coorganizer.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhallByUserIdAndRole](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhallByUserIdAndRole?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
