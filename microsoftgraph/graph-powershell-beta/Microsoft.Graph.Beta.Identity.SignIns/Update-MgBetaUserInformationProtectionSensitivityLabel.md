@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignedPolicies
-.
+
 To construct, see NOTES section for ASSIGNEDPOLICIES properties and create a hash table.
 
 ```yaml
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoTooltip
-.
+
 
 ```yaml
 Type: String
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Color
-.
+
 
 ```yaml
 Type: String
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+
 
 ```yaml
 Type: String
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefault
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsEnabled
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsEndpointProtectionEnabled
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -318,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsScopedToUser
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -333,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabelActions
-.
+
 To construct, see NOTES section for LABELACTIONS properties and create a hash table.
 
 ```yaml
@@ -349,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### -Locale
-.
+
 
 ```yaml
 Type: String
@@ -364,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-.
+
 
 ```yaml
 Type: String
@@ -379,7 +379,7 @@ Accept wildcard characters: False
 ```
 
 ### -Priority
-.
+
 
 ```yaml
 Type: Int32
@@ -455,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sublabels
-.
+
 To construct, see NOTES section for SUBLABELS properties and create a hash table.
 
 ```yaml
@@ -471,7 +471,7 @@ Accept wildcard characters: False
 ```
 
 ### -ToolTip
-.
+
 
 ```yaml
 Type: String

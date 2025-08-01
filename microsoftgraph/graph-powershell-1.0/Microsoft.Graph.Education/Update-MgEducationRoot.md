@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -Classes
-.
+
 To construct, see NOTES section for CLASSES properties and create a hash table.
 
 ```yaml
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Schools
-.
+
 To construct, see NOTES section for SCHOOLS properties and create a hash table.
 
 ```yaml
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Users
-.
+
 To construct, see NOTES section for USERS properties and create a hash table.
 
 ```yaml

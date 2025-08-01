@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-.
+
 
 ```yaml
 Type: String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceActions
-.
+
 To construct, see NOTES section for RESOURCEACTIONS properties and create a hash table.
 
 ```yaml

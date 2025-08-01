@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Assignments
-.
+
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml

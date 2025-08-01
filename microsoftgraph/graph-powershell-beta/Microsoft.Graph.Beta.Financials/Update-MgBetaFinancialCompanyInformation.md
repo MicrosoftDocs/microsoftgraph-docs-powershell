@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -CurrencyCode
-.
+
 
 ```yaml
 Type: String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -CurrentFiscalYearStartDate
-.
+
 
 ```yaml
 Type: DateTime
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Email
-.
+
 
 ```yaml
 Type: String
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -FaxNumber
-.
+
 
 ```yaml
 Type: String
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+
 
 ```yaml
 Type: String
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -Industry
-.
+
 
 ```yaml
 Type: String
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -PhoneNumber
-.
+
 
 ```yaml
 Type: String
@@ -349,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaxRegistrationNumber
-.
+
 
 ```yaml
 Type: String
@@ -364,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -Website
-.
+
 
 ```yaml
 Type: String

@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeySets
-.
+
 To construct, see NOTES section for KEYSETS properties and create a hash table.
 
 ```yaml
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Policies
-.
+
 To construct, see NOTES section for POLICIES properties and create a hash table.
 
 ```yaml
