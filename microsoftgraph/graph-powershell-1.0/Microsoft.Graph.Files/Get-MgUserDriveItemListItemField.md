@@ -32,18 +32,6 @@ Get-MgUserDriveItemListItemField -InputObject <IFilesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The values of the columns set on this list item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -227,6 +215,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitemfield)
+
 
 
 

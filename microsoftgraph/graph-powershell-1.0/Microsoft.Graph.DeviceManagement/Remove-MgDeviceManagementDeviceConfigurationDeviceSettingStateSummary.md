@@ -43,13 +43,17 @@ Deletes a settingStateDeviceSummary.
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary -DeviceConfigurationId $deviceConfigurationId -SettingStateDeviceSummaryId $settingStateDeviceSummaryId
+
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary Cmdlet.
+
 
 ## PARAMETERS
 

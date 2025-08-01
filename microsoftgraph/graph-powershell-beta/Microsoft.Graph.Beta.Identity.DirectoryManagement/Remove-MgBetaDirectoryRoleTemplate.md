@@ -32,18 +32,6 @@ Remove-MgBetaDirectoryRoleTemplate -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Delete entity from directoryRoleTemplates
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryRoleTemplateId
@@ -257,6 +245,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryroletemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryroletemplate)
+
 
 
 

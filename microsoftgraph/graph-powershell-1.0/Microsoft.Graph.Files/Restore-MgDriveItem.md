@@ -50,11 +50,11 @@ Restore-MgDriveItem -InputObject <IFilesIdentity>
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 $params = @{
 	parentReference = @{
@@ -64,6 +64,10 @@ $params = @{
 }
 
 Restore-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Restore-MgDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

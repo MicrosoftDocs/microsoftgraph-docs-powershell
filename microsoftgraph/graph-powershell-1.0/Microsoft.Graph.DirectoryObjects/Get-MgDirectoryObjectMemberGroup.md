@@ -66,17 +66,21 @@ If you get the DirectoryResultSizeLimitExceeded error code, use the List group t
 | Application | Application.Read.All, Application.ReadWrite.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, User.Read.All, Device.ReadWrite.All, Device.Read.All, Directory.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Check group memberships for a directory object
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 $params = @{
 	securityEnabledOnly = $false
 }
 
 Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example will check group memberships for a directory object
+
 
 ## PARAMETERS
 

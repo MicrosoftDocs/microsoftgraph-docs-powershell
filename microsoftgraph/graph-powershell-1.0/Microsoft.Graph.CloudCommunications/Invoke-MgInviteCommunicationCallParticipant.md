@@ -51,11 +51,11 @@ Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
 
 ## EXAMPLES
+### Example 1: Invite one participant to an existing call
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	participants = @(
@@ -77,10 +77,14 @@ $params = @{
 
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will invite one participant to an existing call
+
+### Example 2: Invite multiple participants to an existing group call
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	participants = @(
@@ -114,10 +118,14 @@ $params = @{
 
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will invite multiple participants to an existing group call
+
+### Example 3: Invite participants to an existing group call, replacing an existing Peer-to-Peer call
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	participants = @(
@@ -139,10 +147,14 @@ $params = @{
 
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example will invite participants to an existing group call, replacing an existing peer-to-peer call
+
+### Example 4: Invite one PSTN participant to an existing call
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	participants = @(
@@ -162,10 +174,14 @@ $params = @{
 
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
-### EXAMPLE 5
 ```
+This example will invite one pstn participant to an existing call
+
+### Example 5: Move one participant from one meeting to another
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	participants = @(
@@ -187,6 +203,10 @@ $params = @{
 }
 
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
+
+```
+This example will move one participant from one meeting to another
+
 
 ## PARAMETERS
 

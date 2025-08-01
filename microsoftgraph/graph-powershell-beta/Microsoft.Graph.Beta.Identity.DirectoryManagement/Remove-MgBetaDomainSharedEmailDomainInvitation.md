@@ -29,18 +29,6 @@ Remove-MgBetaDomainSharedEmailDomainInvitation -InputObject <IIdentityDirectoryM
 ## DESCRIPTION
 Delete navigation property sharedEmailDomainInvitations for domains
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DomainId
@@ -269,6 +257,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadomainsharedemaildomaininvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadomainsharedemaildomaininvitation)
+
 
 
 

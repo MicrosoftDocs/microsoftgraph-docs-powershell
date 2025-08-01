@@ -64,11 +64,11 @@ The containing externalConnection must have a schema registered of the correspon
 | Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example: Create a custom item
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	acl = @(
@@ -97,6 +97,10 @@ $params = @{
 }
 
 Set-MgBetaExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId -BodyParameter $params
+
+```
+This example will create a custom item
+
 
 ## PARAMETERS
 

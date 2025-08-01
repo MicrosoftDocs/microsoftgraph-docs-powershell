@@ -63,11 +63,11 @@ Validate that the credentials are valid in the tenant.
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	credentials = @(
@@ -83,6 +83,10 @@ $params = @{
 }
 
 Test-MgBetaServicePrincipalSynchronizationJobCredential -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
+
+```
+This example shows how to use the Test-MgBetaServicePrincipalSynchronizationJobCredential Cmdlet.
+
 
 ## PARAMETERS
 

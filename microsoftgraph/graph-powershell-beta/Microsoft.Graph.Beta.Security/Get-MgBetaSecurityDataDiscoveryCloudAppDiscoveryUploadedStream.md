@@ -39,13 +39,17 @@ Get-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream -InputObject <ISe
 A collection of streams available for generating cloud discovery report.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream
+
+```
+This example shows how to use the Get-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream Cmdlet.
+
 
 ## PARAMETERS
 

@@ -45,11 +45,11 @@ In Azure AD B2C, this operation can currently create a socialIdentityProvider, o
 | Application | IdentityProvider.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a specific social identity provider (Microsoft Entra ID and Azure AD B2C)
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.socialIdentityProvider"
@@ -61,10 +61,14 @@ $params = @{
 
 New-MgIdentityProvider -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a specific social identity provider (microsoft entra id and azure ad b2c)
+
+### Example 2: Create Apple identity provider (only for Azure AD B2C)
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.appleManagedIdentityProvider"
@@ -76,6 +80,10 @@ $params = @{
 }
 
 New-MgIdentityProvider -BodyParameter $params
+
+```
+This example will create apple identity provider (only for azure ad b2c)
+
 
 ## PARAMETERS
 

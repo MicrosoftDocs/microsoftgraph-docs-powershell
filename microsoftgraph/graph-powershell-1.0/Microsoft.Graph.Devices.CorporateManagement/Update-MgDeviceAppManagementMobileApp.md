@@ -65,11 +65,11 @@ Update the properties of a iosVppApp object.
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.win32LobApp"
@@ -79,7 +79,7 @@ $params = @{
 	largeIcon = @{
 		"@odata.type" = "microsoft.graph.mimeContent"
 		type = "Type value"
-		value = \[System.Text.Encoding\]::ASCII.GetBytes("dmFsdWU=")
+		value = [System.Text.Encoding]::ASCII.GetBytes("dmFsdWU=")
 	}
 	isFeatured = $true
 	privacyInformationUrl = "https://example.com/privacyInformationUrl/"
@@ -137,6 +137,10 @@ $params = @{
 }
 
 Update-MgDeviceAppManagementMobileApp -MobileAppId $mobileAppId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementMobileApp Cmdlet.
+
 
 ## PARAMETERS
 

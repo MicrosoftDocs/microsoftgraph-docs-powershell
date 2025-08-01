@@ -51,18 +51,6 @@ Update-MgBetaEducationUserAssignmentResource -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property resources in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -396,6 +384,7 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentresource)
+
 
 
 

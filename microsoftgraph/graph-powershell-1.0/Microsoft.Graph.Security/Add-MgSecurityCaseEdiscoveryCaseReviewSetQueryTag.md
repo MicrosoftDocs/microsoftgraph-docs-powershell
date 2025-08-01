@@ -65,11 +65,11 @@ For details, see Tag documents in a review set in eDiscovery.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	tagsToAdd = @(
@@ -80,6 +80,10 @@ $params = @{
 }
 
 Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag Cmdlet.
+
 
 ## PARAMETERS
 

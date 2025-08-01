@@ -39,11 +39,11 @@ The new property is identified by its directoryPropertyName property.
 For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	directoryPropertyName = "CustomAttribute1"
@@ -61,6 +61,10 @@ $params = @{
 }
 
 New-MgBetaAdminPeopleProfileCardProperty -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaAdminPeopleProfileCardProperty Cmdlet.
+
 
 ## PARAMETERS
 

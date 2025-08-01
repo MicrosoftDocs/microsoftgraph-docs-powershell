@@ -40,11 +40,11 @@ Get the presence information for multiple users.
 | Application | Presence.Read.All, Presence.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	ids = @(
@@ -54,6 +54,10 @@ $params = @{
 }
 
 Get-MgCommunicationPresenceByUserId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgCommunicationPresenceByUserId Cmdlet.
+
 
 ## PARAMETERS
 

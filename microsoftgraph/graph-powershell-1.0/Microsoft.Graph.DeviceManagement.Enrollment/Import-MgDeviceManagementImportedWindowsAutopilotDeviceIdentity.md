@@ -44,11 +44,11 @@ Not yet documented
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
-```
 
 $params = @{
 	importedWindowsAutopilotDeviceIdentities = @(
@@ -59,7 +59,7 @@ $params = @{
 			serialNumber = "Serial Number value"
 			productKey = "Product Key value"
 			importId = "Import Id value"
-			hardwareIdentifier = \[System.Text.Encoding\]::ASCII.GetBytes("aGFyZHdhcmVJZGVudGlmaWVy")
+			hardwareIdentifier = [System.Text.Encoding]::ASCII.GetBytes("aGFyZHdhcmVJZGVudGlmaWVy")
 			state = @{
 				"@odata.type" = "microsoft.graph.importedWindowsAutopilotDeviceIdentityState"
 				deviceImportStatus = "pending"
@@ -73,6 +73,10 @@ $params = @{
 }
 
 Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity -BodyParameter $params
+
+```
+This example shows how to use the Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity Cmdlet.
+
 
 ## PARAMETERS
 

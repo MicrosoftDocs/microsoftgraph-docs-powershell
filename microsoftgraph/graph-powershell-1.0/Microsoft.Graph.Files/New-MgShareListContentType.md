@@ -58,18 +58,6 @@ New-MgShareListContentType -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to contentTypes for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1809,6 +1797,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistcontenttype)
+
 
 
 

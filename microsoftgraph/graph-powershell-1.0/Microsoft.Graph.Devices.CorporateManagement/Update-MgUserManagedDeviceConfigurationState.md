@@ -50,18 +50,6 @@ Update-MgUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Update the navigation property deviceConfigurationStates in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -439,6 +427,7 @@ SETTINGSTATES `<IMicrosoftGraphDeviceConfigurationSettingState- `[]`>`: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddeviceconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddeviceconfigurationstate)
+
 
 
 

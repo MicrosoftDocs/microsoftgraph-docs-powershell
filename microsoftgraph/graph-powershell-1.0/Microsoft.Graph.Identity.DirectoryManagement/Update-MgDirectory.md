@@ -38,18 +38,6 @@ Update-MgDirectory -BodyParameter <IMicrosoftGraphDirectory> [-ResponseHeadersVa
 ## DESCRIPTION
 Update directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -774,6 +762,7 @@ Possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory)
+
 
 
 

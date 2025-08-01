@@ -42,18 +42,6 @@ Update the navigation property androidManagedStoreAccountEnterpriseSettings in d
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -410,6 +398,7 @@ COMPANYCODES `<IMicrosoftGraphAndroidEnrollmentCompanyCode- `[]`>`: Company code
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting)
+
 
 
 

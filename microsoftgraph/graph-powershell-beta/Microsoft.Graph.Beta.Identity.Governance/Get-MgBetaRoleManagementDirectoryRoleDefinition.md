@@ -53,20 +53,28 @@ The following RBAC providers are currently supported:- Cloud PC - device managem
 | Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Get the definition of a custom role for a directory provider
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
 
-### EXAMPLE 2
 ```
+This example will get the definition of a custom role for a directory provider
+
+### Example 2: Get the definition of a built-in role for a directory provider
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
+```
+This example will get the definition of a built-in role for a directory provider
+
 
 ## PARAMETERS
 
