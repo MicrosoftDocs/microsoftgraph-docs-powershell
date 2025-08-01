@@ -19,7 +19,7 @@ Create new navigation property to authenticationContextClassReferences for ident
 ```
 New-MgIdentityConditionalAccessAuthenticationContextClassReference [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsAvailable] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-IsAvailable] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ New-MgIdentityConditionalAccessAuthenticationContextClassReference [-ResponseHea
 ```
 New-MgIdentityConditionalAccessAuthenticationContextClassReference
  -BodyParameter <IMicrosoftGraphAuthenticationContextClassReference> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,8 +40,6 @@ Create new navigation property to authenticationContextClassReferences for ident
 | Delegated (work or school account) | AuthenticationContext.ReadWrite.All, Policy.ReadWrite.ConditionalAccess,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AuthenticationContext.ReadWrite.All, Policy.ReadWrite.ConditionalAccess,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -73,21 +71,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -175,6 +158,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -182,6 +180,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -235,7 +248,7 @@ For example, a selection UX.
   - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps.
 When it's set to false, it shouldn't be shown in authentication context selection UX, or used to protect app resources.
 It's shown and available for Conditional Access policy authoring.
-The default value is false.
+The default value is false. 
 Supports $filter (eq).
 
 ## RELATED LINKS

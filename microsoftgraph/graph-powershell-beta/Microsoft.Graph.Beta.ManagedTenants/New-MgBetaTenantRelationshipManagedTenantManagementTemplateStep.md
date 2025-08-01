@@ -22,20 +22,18 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplateStep [-ResponseHeader
  [-LastActionDateTime <DateTime>] [-ManagementTemplate <IMicrosoftGraphManagedTenantsManagementTemplate>]
  [-PortalLink <IMicrosoftGraphActionUrl>] [-Priority <Int32>] [-UserImpact <String>]
  [-Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementTemplateStep
  -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStep> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to managementTemplateSteps for tenantRelationships
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -93,21 +91,6 @@ managementCategory
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -300,6 +283,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -338,6 +336,21 @@ To construct, see NOTES section for VERSIONS properties and create a hash table.
 Type: IMicrosoftGraphManagedTenantsManagementTemplateStepVersion[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

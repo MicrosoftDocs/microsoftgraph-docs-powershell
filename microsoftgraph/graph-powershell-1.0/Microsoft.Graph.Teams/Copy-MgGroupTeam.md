@@ -28,14 +28,14 @@ The recommended delay between GETs is 5 seconds.
 Copy-MgGroupTeam -GroupId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Classification <String>] [-Description <String>] [-DisplayName <String>] [-MailNickname <String>]
  [-PartsToClone <String>] [-Visibility <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Clone
 ```
 Copy-MgGroupTeam -GroupId <String>
  -BodyParameter <IPaths1Umefn4GroupsGroupIdTeamMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,14 +44,14 @@ Copy-MgGroupTeam -GroupId <String>
 Copy-MgGroupTeam -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Classification <String>] [-Description <String>] [-DisplayName <String>]
  [-MailNickname <String>] [-PartsToClone <String>] [-Visibility <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CloneViaIdentity
 ```
 Copy-MgGroupTeam -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Umefn4GroupsGroupIdTeamMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -64,8 +64,6 @@ Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -107,21 +105,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -251,6 +234,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -273,6 +271,21 @@ teamVisibilityType
 Type: String
 Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -316,10 +329,10 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1Umefn4GroupsGroupIdTeamMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Classification <String>]`:
-  - `[Description <String>]`:
-  - `[DisplayName <String>]`:
-  - `[MailNickname <String>]`:
+  - `[Classification <String>]`: 
+  - `[Description <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[MailNickname <String>]`: 
   - `[PartsToClone <String>]`: clonableTeamParts
   - `[Visibility <String>]`: teamVisibilityType
 

@@ -23,13 +23,13 @@ Update-MgSecurityIdentitySensor -SensorId <String> [-ResponseHeadersVariable <St
  [-DisplayName <String>] [-DomainName <String>] [-HealthIssues <IMicrosoftGraphSecurityHealthIssue[]>]
  [-HealthStatus <String>] [-Id <String>] [-OpenHealthIssuesCount <Int64>] [-SensorType <String>]
  [-Settings <IMicrosoftGraphSecuritySensorSettings>] [-Version <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityIdentitySensor -SensorId <String> -BodyParameter <IMicrosoftGraphSecuritySensor>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,13 +40,13 @@ Update-MgSecurityIdentitySensor -InputObject <ISecurityIdentity> [-ResponseHeade
  [-DisplayName <String>] [-DomainName <String>] [-HealthIssues <IMicrosoftGraphSecurityHealthIssue[]>]
  [-HealthStatus <String>] [-Id <String>] [-OpenHealthIssuesCount <Int64>] [-SensorType <String>]
  [-Settings <IMicrosoftGraphSecuritySensorSettings>] [-Version <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSecurityIdentitySensor -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphSecuritySensor>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -114,21 +114,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -287,6 +272,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -355,6 +355,21 @@ The version of the sensor.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -439,7 +454,7 @@ These commands run in sequence for the single recommended fix.
     - `[Description <String>]`: Description of the sensor.
     - `[DomainControllerDnsNames <String- `[]`>]`: DNS names for the domain controller
     - `[IsDelayedDeploymentEnabled <Boolean?>]`: Indicates whether to delay updates for the sensor.
-    - `[NetworkAdapters <IMicrosoftGraphSecurityNetworkAdapter- `[]`>]`:
+    - `[NetworkAdapters <IMicrosoftGraphSecurityNetworkAdapter- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[IsEnabled <Boolean?>]`: Indicates whether the network adapter is selected for capturing and analyzing network traffic.
@@ -542,7 +557,7 @@ SETTINGS `<IMicrosoftGraphSecuritySensorSettings>`: sensorSettings
   - `[Description <String>]`: Description of the sensor.
   - `[DomainControllerDnsNames <String- `[]`>]`: DNS names for the domain controller
   - `[IsDelayedDeploymentEnabled <Boolean?>]`: Indicates whether to delay updates for the sensor.
-  - `[NetworkAdapters <IMicrosoftGraphSecurityNetworkAdapter- `[]`>]`:
+  - `[NetworkAdapters <IMicrosoftGraphSecurityNetworkAdapter- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[IsEnabled <Boolean?>]`: Indicates whether the network adapter is selected for capturing and analyzing network traffic.

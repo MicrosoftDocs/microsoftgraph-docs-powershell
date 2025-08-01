@@ -23,7 +23,7 @@ Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  [-SettingCategory <String>] [-SettingDisplayName <String>] [-SettingDisplayValue <String>]
  [-SettingDisplayValueType <String>] [-SettingName <String>] [-SettingScope <GroupPolicySettingScope>]
  [-SettingType <GroupPolicySettingType>] [-SettingValue <String>] [-SettingValueDisplayUnits <String>]
- [-SettingValueType <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-SettingValueType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
 Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  -GroupPolicyMigrationReportId <String> -GroupPolicySettingMappingId <String>
  -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -46,7 +46,7 @@ Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  [-SettingDisplayName <String>] [-SettingDisplayValue <String>] [-SettingDisplayValueType <String>]
  [-SettingName <String>] [-SettingScope <GroupPolicySettingScope>] [-SettingType <GroupPolicySettingType>]
  [-SettingValue <String>] [-SettingValueDisplayUnits <String>] [-SettingValueType <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -54,7 +54,7 @@ Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
 Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -67,8 +67,6 @@ Update the navigation property groupPolicySettingMappings in deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -125,21 +123,6 @@ List of Child Ids of the group policy setting.
 Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -345,6 +328,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -502,6 +500,21 @@ The value type of this group policy setting.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

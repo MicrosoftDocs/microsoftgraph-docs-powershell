@@ -22,13 +22,13 @@ New-MgBetaUserProfileName -UserId <String> [-ResponseHeadersVariable <String>]
  [-Maiden <String>] [-Middle <String>] [-Nickname <String>]
  [-Pronunciation <IMicrosoftGraphPersonNamePronounciation>] [-Source <IMicrosoftGraphPersonDataSources>]
  [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-Suffix <String>] [-Title <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserProfileName -UserId <String> -BodyParameter <IMicrosoftGraphPersonName>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,13 +42,13 @@ New-MgBetaUserProfileName -InputObject <IPeopleIdentity> [-ResponseHeadersVariab
  [-Maiden <String>] [-Middle <String>] [-Nickname <String>]
  [-Pronunciation <IMicrosoftGraphPersonNamePronounciation>] [-Source <IMicrosoftGraphPersonDataSources>]
  [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-Suffix <String>] [-Title <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserProfileName -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphPersonName>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -134,21 +134,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -CreatedBy
 identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
@@ -182,21 +167,6 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -First
-First name of the user.
 
 ```yaml
 Type: String
@@ -409,6 +379,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Pronunciation
 personNamePronounciation
 To construct, see NOTES section for PRONUNCIATION properties and create a hash table.
@@ -517,6 +502,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -525,6 +525,21 @@ The cmdlet is not run.
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -First
+First name of the user.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named

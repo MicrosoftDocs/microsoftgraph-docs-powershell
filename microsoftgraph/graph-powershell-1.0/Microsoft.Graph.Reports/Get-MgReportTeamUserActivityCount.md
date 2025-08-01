@@ -20,13 +20,13 @@ The activities are performed by Microsoft Teams licensed users.
 ### Get (Default)
 ```
 Get-MgReportTeamUserActivityCount -Period <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportTeamUserActivityCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ The activities are performed by Microsoft Teams licensed users.
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportTeamUserActivityCount -Period $periodId
+Get-MgReportTeamUserActivityCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportTeamUserActivityCount Cmdlet.
@@ -119,6 +119,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

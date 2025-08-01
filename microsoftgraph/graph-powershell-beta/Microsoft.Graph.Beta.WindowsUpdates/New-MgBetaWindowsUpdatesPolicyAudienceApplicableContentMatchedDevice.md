@@ -16,7 +16,7 @@ Create new navigation property to matchedDevices for admin
 ```
 New-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDevice -ApplicableContentCatalogEntryId <String>
  -UpdatePolicyId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-DeviceId <String>] [-RecommendedBy <String[]>] [-Headers <IDictionary>]
+ [-DeviceId <String>] [-RecommendedBy <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ New-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDevice -Applicable
 ```
 New-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDevice -ApplicableContentCatalogEntryId <String>
  -UpdatePolicyId <String> -BodyParameter <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ New-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDevice -Applicable
 ```
 New-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDevice -InputObject <IWindowsUpdatesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeviceId <String>]
- [-RecommendedBy <String[]>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-RecommendedBy <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,13 +40,11 @@ New-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDevice -InputObjec
 ```
 New-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDevice -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to matchedDevices for admin
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -96,21 +94,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DeviceId
 Collection of vendors who recommend the content.
 
@@ -157,6 +140,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RecommendedBy
 Collection of vendors who recommend the content.
 
@@ -196,6 +194,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

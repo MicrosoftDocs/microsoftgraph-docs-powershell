@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Authentication.dll-Help.xml
 Module Name: Microsoft.Graph.Authentication
 online version: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/connect-mggraph
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Connect-MgGraph
 
 ## SYNOPSIS
-You must invoke Connect-MgGraph before any commands that access Microsoft Graph.
+Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access.
+There are a number of cmdlets that can be used to manage the different parameters required during authentication, for example, environment, application ID, and certificate.
 
 ## SYNTAX
 
@@ -16,7 +17,7 @@ You must invoke Connect-MgGraph before any commands that access Microsoft Graph.
 ```
 Connect-MgGraph [[-Scopes] <String[]>] [[-ClientId] <String>] [-TenantId <String>]
  [-ContextScope <ContextScope>] [-Environment <String>] [-UseDeviceCode] [-ClientTimeout <Double>] [-NoWelcome]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### AppCertificateParameterSet
@@ -24,41 +25,37 @@ Connect-MgGraph [[-Scopes] <String[]>] [[-ClientId] <String>] [-TenantId <String
 Connect-MgGraph [-ClientId] <String> [[-CertificateSubjectName] <String>] [[-CertificateThumbprint] <String>]
  [-SendCertificateChain <Boolean>] [-Certificate <X509Certificate2>] [-TenantId <String>]
  [-ContextScope <ContextScope>] [-Environment <String>] [-ClientTimeout <Double>] [-NoWelcome]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### IdentityParameterSet
 ```
 Connect-MgGraph [[-ClientId] <String>] [-ContextScope <ContextScope>] [-Environment <String>]
- [-ClientTimeout <Double>] [-Identity] [-NoWelcome] [<CommonParameters>]
+ [-ClientTimeout <Double>] [-Identity] [-NoWelcome] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### AppSecretCredentialParameterSet
 ```
 Connect-MgGraph [-ClientSecretCredential <PSCredential>] [-TenantId <String>] [-ContextScope <ContextScope>]
- [-Environment <String>] [-ClientTimeout <Double>] [-NoWelcome]
+ [-Environment <String>] [-ClientTimeout <Double>] [-NoWelcome] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### AccessTokenParameterSet
 ```
 Connect-MgGraph [-AccessToken] <SecureString> [-Environment <String>] [-ClientTimeout <Double>] [-NoWelcome]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### EnvironmentVariableParameterSet
 ```
 Connect-MgGraph [-ContextScope <ContextScope>] [-Environment <String>] [-ClientTimeout <Double>]
- [-EnvironmentVariable] [-NoWelcome] [<CommonParameters>]
+ [-EnvironmentVariable] [-NoWelcome] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-
-Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access.
-There are a number of cmdlets that can be used to manage the different parameters required during
-authentication, for example, environment, application ID, and certificate.
-
-This cmdlet gets the access token using the Microsoft Authentication Library.
+You must invoke Connect-MgGraph before any commands that access Microsoft Graph.
+This cmdlet gets the access token using the Microsoft Authentication Library
 
 ## EXAMPLES
 
@@ -357,6 +354,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

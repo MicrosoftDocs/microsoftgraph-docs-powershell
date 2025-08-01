@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaNetworkAccessLogTrafficUser
 
 ## SYNOPSIS
-Get user from networkAccess
+Represents the user associated with the network traffic, providing details about the individual or account initiating the transaction.
 
 ## SYNTAX
 
@@ -16,20 +16,18 @@ Get user from networkAccess
 ```
 Get-MgBetaNetworkAccessLogTrafficUser -NetworkAccessTrafficTransactionId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaNetworkAccessLogTrafficUser -InputObject <INetworkAccessIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get user from networkAccess
-
-## EXAMPLES
+Represents the user associated with the network traffic, providing details about the individual or account initiating the transaction.
 
 ## PARAMETERS
 
@@ -94,6 +92,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -146,6 +159,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[BranchSiteId <String>]`: The unique identifier of branchSite
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
+  - `[ConnectionId <String>]`: The unique identifier of connection
   - `[ConnectivityConfigurationLinkId <String>]`: The unique identifier of connectivityConfigurationLink
   - `[DeviceLinkId <String>]`: The unique identifier of deviceLink
   - `[DiscoveryPivotDateTime <DateTime?>]`: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
@@ -160,6 +174,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[RemoteNetworkHealthEventId <String>]`: The unique identifier of remoteNetworkHealthEvent
   - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+  - `[ThreatIntelligencePolicyId <String>]`: The unique identifier of threatIntelligencePolicy
 
 ## RELATED LINKS
 

@@ -9,7 +9,9 @@ ms.subservice: entra-directory-management
 # Update-MgOrganization
 
 ## SYNOPSIS
-Update the properties of a organization object.
+Update the properties of the currently authenticated organization.
+In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
+The ID is also known as the tenantId of the organization.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)
@@ -31,13 +33,13 @@ Update-MgOrganization -OrganizationId <String> [-ResponseHeadersVariable <String
  [-SecurityComplianceNotificationMails <String[]>] [-SecurityComplianceNotificationPhones <String[]>]
  [-State <String>] [-Street <String>] [-TechnicalNotificationMails <String[]>] [-TenantType <String>]
  [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgOrganization -OrganizationId <String> -BodyParameter <IMicrosoftGraphOrganization>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -56,18 +58,20 @@ Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-Resp
  [-SecurityComplianceNotificationMails <String[]>] [-SecurityComplianceNotificationPhones <String[]>]
  [-State <String>] [-Street <String>] [-TechnicalNotificationMails <String[]>] [-TenantType <String>]
  [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IMicrosoftGraphOrganization> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the properties of a organization object.
+Update the properties of the currently authenticated organization.
+In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
+The ID is also known as the tenantId of the organization.
 
 **Permissions**
 
@@ -215,21 +219,6 @@ City name of the address for the organization.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -540,6 +529,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProvisionedPlans
 Not nullable.
 To construct, see NOTES section for PROVISIONEDPLANS properties and create a hash table.
@@ -673,6 +677,21 @@ To construct, see NOTES section for VERIFIEDDOMAINS properties and create a hash
 Type: IMicrosoftGraphVerifiedDomain[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -969,8 +988,8 @@ See a detailed description of each value.
   - `[Street <String>]`: Street name of the address for organization.
   - `[TechnicalNotificationMails <String- `[]`>]`: Not nullable.
   - `[TenantType <String>]`: Not nullable.
-Can be one of the following types:  AAD - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios.
-AAD B2C An identity access management (IAM) service that serves business-to-consumer (B2C) scenarios.
+Can be one of the following types:  AAD - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios. 
+AAD B2C An identity access management (IAM) service that serves business-to-consumer (B2C) scenarios. 
 CIAM - A customer identity & access management (CIAM) solution that provides an integrated platform to serve consumers, partners, and citizen scenarios.
   - `[VerifiedDomains <IMicrosoftGraphVerifiedDomain- `[]`>]`: The collection of domains associated with this tenant.
 Not nullable.
@@ -1168,6 +1187,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CertificateAuthorityDetailId <String>]`: The unique identifier of certificateAuthorityDetail
+  - `[CertificateBasedAuthPkiId <String>]`: The unique identifier of certificateBasedAuthPki
   - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
   - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
@@ -1222,7 +1243,7 @@ Not nullable.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization)
 
-[https://learn.microsoft.com/graph/api/intune-onboarding-organization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-organization-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-1.0)
 
 
 

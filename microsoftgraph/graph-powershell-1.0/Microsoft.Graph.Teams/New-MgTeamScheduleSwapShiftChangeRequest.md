@@ -23,14 +23,14 @@ New-MgTeamScheduleSwapShiftChangeRequest -TeamId <String> [-ResponseHeadersVaria
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
  [-RecipientActionMessage <String>] [-RecipientShiftId <String>] [-RecipientUserId <String>]
  [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgTeamScheduleSwapShiftChangeRequest -TeamId <String>
  -BodyParameter <IMicrosoftGraphSwapShiftsChangeRequest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -40,14 +40,14 @@ New-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [-Respons
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
  [-RecipientActionMessage <String>] [-RecipientShiftId <String>] [-RecipientUserId <String>]
  [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphSwapShiftsChangeRequest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -126,21 +126,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -224,7 +209,8 @@ Accept wildcard characters: False
 ```
 
 ### -ManagerActionMessage
-
+The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
 
 ```yaml
 Type: String
@@ -238,8 +224,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RecipientActionMessage
-Custom message sent by recipient of the offer shift request.
+The message sent by the recipient regarding the request.
 
 ```yaml
 Type: String
@@ -254,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecipientShiftId
-ShiftId for the recipient user with whom the request is to swap.
+The recipient's Shift ID
 
 ```yaml
 Type: String
@@ -269,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecipientUserId
-User ID of the recipient of the offer shift request.
+The recipient's user ID.
 
 ```yaml
 Type: String
@@ -299,7 +300,8 @@ Accept wildcard characters: False
 ```
 
 ### -SenderMessage
-
+The message sent by the sender of the scheduleChangeRequest.
+Optional.
 
 ```yaml
 Type: String
@@ -314,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -SenderShiftId
-User ID of the sender of the offer shift request.
+The sender's shift ID.
 
 ```yaml
 Type: String
@@ -358,6 +360,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -393,12 +410,14 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphSwapShiftsChangeRequest>`: swapShiftsChangeRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-  - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
-  - `[SenderShiftId <String>]`: User ID of the sender of the offer shift request.
+  - `[RecipientActionMessage <String>]`: The message sent by the recipient regarding the request.
+  - `[RecipientUserId <String>]`: The recipient's user ID.
+  - `[SenderShiftId <String>]`: The sender's shift ID.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionMessage <String>]`:
-  - `[SenderMessage <String>]`:
+  - `[ManagerActionMessage <String>]`: The message sent by the manager regarding the scheduleChangeRequest.
+Optional.
+  - `[SenderMessage <String>]`: The message sent by the sender of the scheduleChangeRequest.
+Optional.
   - `[State <String>]`: scheduleChangeState
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -413,7 +432,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
+  - `[RecipientShiftId <String>]`: The recipient's Shift ID
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
