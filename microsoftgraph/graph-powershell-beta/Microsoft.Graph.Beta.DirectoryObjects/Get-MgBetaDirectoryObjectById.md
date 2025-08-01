@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectbyid
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryObjectById
@@ -12,15 +11,12 @@ ms.subservice: entra-directory-management
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryObjectById](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObjectById?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
 Get-MgBetaDirectoryObjectById [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Ids <String[]>] [-Types <String[]>] [-Headers <IDictionary>] [-WhatIf]
+ [-Ids <String[]>] [-Types <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +24,7 @@ Get-MgBetaDirectoryObjectById [-ResponseHeadersVariable <String>] [-AdditionalPr
 ```
 Get-MgBetaDirectoryObjectById
  -BodyParameter <IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,20 +32,12 @@ Get-MgBetaDirectoryObjectById
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
+```
 
 $params = @{
 	ids = @(
@@ -66,10 +54,6 @@ types = @(
 }
 
 Get-MgBetaDirectoryObjectById -BodyParameter $params
-
-```
-This example shows how to use the Get-MgBetaDirectoryObjectById Cmdlet.
-
 
 ## PARAMETERS
 
@@ -89,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -101,21 +85,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -135,12 +104,27 @@ Accept wildcard characters: False
 ```
 
 ### -Ids
-
+.
 
 ```yaml
 Type: String[]
 Parameter Sets: GetExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -165,12 +149,27 @@ Accept wildcard characters: False
 ```
 
 ### -Types
-
+.
 
 ```yaml
 Type: String[]
 Parameter Sets: GetExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -211,36 +210,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String- `[]`>]`: 
-  - `[Types <String- `[]`>]`:
+BODYPARAMETER \<IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Ids \<String\[\]\>\]: 
+  \[Types \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectbyid)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

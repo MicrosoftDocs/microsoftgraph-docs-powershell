@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectiongroup
 schema: 2.0.0
-ms.subservice: search
 ---
 
 # Update-MgExternalConnectionGroup
 
 ## SYNOPSIS
 Update the properties of an externalGroup object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -21,14 +17,14 @@ Update the properties of an externalGroup object.
 Update-MgExternalConnectionGroup -ExternalConnectionId <String> -ExternalGroupId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-Members <IMicrosoftGraphExternalConnectorsIdentity[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgExternalConnectionGroup -ExternalConnectionId <String> -ExternalGroupId <String>
  -BodyParameter <IMicrosoftGraphExternalConnectorsExternalGroup> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,33 +32,25 @@ Update-MgExternalConnectionGroup -ExternalConnectionId <String> -ExternalGroupId
 Update-MgExternalConnectionGroup -InputObject <ISearchIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-Members <IMicrosoftGraphExternalConnectorsIdentity[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgExternalConnectionGroup -InputObject <ISearchIdentity>
  -BodyParameter <IMicrosoftGraphExternalConnectorsExternalGroup> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of an externalGroup object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Search
+```
 
 $params = @{
 	displayName = "Contoso Marketing"
@@ -70,10 +58,6 @@ $params = @{
 }
 
 Update-MgExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgExternalConnectionGroup Cmdlet.
-
 
 ## PARAMETERS
 
@@ -105,21 +89,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -249,6 +218,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -256,6 +240,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -297,62 +296,40 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalGroup>`: externalGroup
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphExternalConnectorsExternalGroup\>: externalGroup
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: The description of the external group.
+  \[Description \<String\>\]: The description of the external group.
 Optional.
-  - `[DisplayName <String>]`: The friendly name of the external group.
+  \[DisplayName \<String\>\]: The friendly name of the external group.
 Optional.
-  - `[Members <IMicrosoftGraphExternalConnectorsIdentity- `[]`>]`: A member added to an externalGroup.
+  \[Members \<IMicrosoftGraphExternalConnectorsIdentity\[\]\>\]: A member added to an externalGroup.
 You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup as members.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Type <String>]`: identityType
+    \[Type \<String\>\]: identityType
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
-  - `[AcronymId <String>]`: The unique identifier of acronym
-  - `[BookmarkId <String>]`: The unique identifier of bookmark
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
-  - `[QnaId <String>]`: The unique identifier of qna
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[AcronymId \<String\>\]: The unique identifier of acronym
+  \[BookmarkId \<String\>\]: The unique identifier of bookmark
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
+  \[QnaId \<String\>\]: The unique identifier of qna
 
-MEMBERS `<IMicrosoftGraphExternalConnectorsIdentity- `[]`>`: A member added to an externalGroup.
+MEMBERS \<IMicrosoftGraphExternalConnectorsIdentity\[\]\>: A member added to an externalGroup.
 You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup as members.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Type <String>]`: identityType
+  \[Type \<String\>\]: identityType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectiongroup)
 
 [https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

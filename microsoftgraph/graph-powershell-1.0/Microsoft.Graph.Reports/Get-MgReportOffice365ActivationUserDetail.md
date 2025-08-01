@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationuserdetail
 schema: 2.0.0
-ms.subservice: reports
 ---
 
 # Get-MgReportOffice365ActivationUserDetail
@@ -11,39 +10,24 @@ ms.subservice: reports
 ## SYNOPSIS
 Get details about users who have activated Microsoft 365.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActivationUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActivationUserDetail?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
 Get-MgReportOffice365ActivationUserDetail -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get details about users who have activated Microsoft 365.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Reports.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Reports.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Reports
+```
 
 Get-MgReportOffice365ActivationUserDetail
-
-```
-This example shows how to use the Get-MgReportOffice365ActivationUserDetail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -92,6 +76,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -123,26 +122,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationuserdetail)
 
 [https://learn.microsoft.com/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

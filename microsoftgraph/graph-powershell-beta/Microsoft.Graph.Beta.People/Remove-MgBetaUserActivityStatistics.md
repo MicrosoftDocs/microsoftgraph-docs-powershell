@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauseractivitystatistics
@@ -15,14 +15,14 @@ Delete navigation property activityStatistics for users
 ### Delete (Default)
 ```
 Remove-MgBetaUserActivityStatistics -ActivityStatisticsId <String> -UserId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaUserActivityStatistics -InputObject <IPeopleIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,6 +30,16 @@ Remove-MgBetaUserActivityStatistics -InputObject <IPeopleIdentity> [-IfMatch <St
 Delete navigation property activityStatistics for users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -42,21 +52,6 @@ Parameter Sets: Delete
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -124,6 +119,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -148,6 +158,21 @@ Parameter Sets: Delete
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -186,54 +211,31 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
-  - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
-  - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
-  - `[ItemAddressId <String>]`: The unique identifier of itemAddress
-  - `[ItemEmailId <String>]`: The unique identifier of itemEmail
-  - `[ItemPatentId <String>]`: The unique identifier of itemPatent
-  - `[ItemPhoneId <String>]`: The unique identifier of itemPhone
-  - `[ItemPublicationId <String>]`: The unique identifier of itemPublication
-  - `[LanguageProficiencyId <String>]`: The unique identifier of languageProficiency
-  - `[PersonAnnotationId <String>]`: The unique identifier of personAnnotation
-  - `[PersonAnnualEventId <String>]`: The unique identifier of personAnnualEvent
-  - `[PersonAwardId <String>]`: The unique identifier of personAward
-  - `[PersonCertificationId <String>]`: The unique identifier of personCertification
-  - `[PersonId <String>]`: The unique identifier of person
-  - `[PersonInterestId <String>]`: The unique identifier of personInterest
-  - `[PersonNameId <String>]`: The unique identifier of personName
-  - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
-  - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
-  - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
-  - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WebAccountId <String>]`: The unique identifier of webAccount
-  - `[WorkPositionId <String>]`: The unique identifier of workPosition
+INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
+  \[ActivityStatisticsId \<String\>\]: The unique identifier of activityStatistics
+  \[EducationalActivityId \<String\>\]: The unique identifier of educationalActivity
+  \[ItemAddressId \<String\>\]: The unique identifier of itemAddress
+  \[ItemEmailId \<String\>\]: The unique identifier of itemEmail
+  \[ItemPatentId \<String\>\]: The unique identifier of itemPatent
+  \[ItemPhoneId \<String\>\]: The unique identifier of itemPhone
+  \[ItemPublicationId \<String\>\]: The unique identifier of itemPublication
+  \[LanguageProficiencyId \<String\>\]: The unique identifier of languageProficiency
+  \[PersonAnnotationId \<String\>\]: The unique identifier of personAnnotation
+  \[PersonAnnualEventId \<String\>\]: The unique identifier of personAnnualEvent
+  \[PersonAwardId \<String\>\]: The unique identifier of personAward
+  \[PersonCertificationId \<String\>\]: The unique identifier of personCertification
+  \[PersonId \<String\>\]: The unique identifier of person
+  \[PersonInterestId \<String\>\]: The unique identifier of personInterest
+  \[PersonNameId \<String\>\]: The unique identifier of personName
+  \[PersonWebsiteId \<String\>\]: The unique identifier of personWebsite
+  \[ProjectParticipationId \<String\>\]: The unique identifier of projectParticipation
+  \[SkillProficiencyId \<String\>\]: The unique identifier of skillProficiency
+  \[UserAccountInformationId \<String\>\]: The unique identifier of userAccountInformation
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WebAccountId \<String\>\]: The unique identifier of webAccount
+  \[WorkPositionId \<String\>\]: The unique identifier of workPosition
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauseractivitystatistics](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauseractivitystatistics)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

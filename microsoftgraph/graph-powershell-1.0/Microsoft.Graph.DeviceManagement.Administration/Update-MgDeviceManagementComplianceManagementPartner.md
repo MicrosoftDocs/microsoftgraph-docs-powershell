@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a complianceManagementPartner object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,14 +22,14 @@ Update-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartne
  [-LastHeartbeatDateTime <DateTime>]
  [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-MacOSOnboarded]
  [-PartnerState <DeviceManagementPartnerTenantState>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartnerId <String>
  -BodyParameter <IMicrosoftGraphComplianceManagementPartner> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,37 +42,29 @@ Update-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManage
  [-LastHeartbeatDateTime <DateTime>]
  [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-MacOSOnboarded]
  [-PartnerState <DeviceManagementPartnerTenantState>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphComplianceManagementPartner> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a complianceManagementPartner object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement.Administration
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.complianceManagementPartner"
-	lastHeartbeatDateTime = [System.DateTime]::Parse("2016-12-31T23:59:37.9174975-08:00")
+	lastHeartbeatDateTime = \[System.DateTime\]::Parse("2016-12-31T23:59:37.9174975-08:00")
 	partnerState = "unavailable"
 	displayName = "Display Name value"
 	macOsOnboarded = $true
@@ -111,10 +100,6 @@ $params = @{
 }
 
 Update-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartnerId $complianceManagementPartnerId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceManagementComplianceManagementPartner Cmdlet.
-
 
 ## PARAMETERS
 
@@ -189,21 +174,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -364,6 +334,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -371,6 +356,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -412,88 +412,66 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ANDROIDENROLLMENTASSIGNMENTS `<IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>`: User groups which enroll Android devices through partner.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+ANDROIDENROLLMENTASSIGNMENTS \<IMicrosoftGraphComplianceManagementPartnerAssignment\[\]\>: User groups which enroll Android devices through partner.
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphComplianceManagementPartner>`: Compliance management partner for all platforms
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphComplianceManagementPartner\>: Compliance management partner for all platforms
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>]`: User groups which enroll Android devices through partner.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AndroidOnboarded <Boolean?>]`: Partner onboarded for Android devices.
-  - `[DisplayName <String>]`: Partner display name
-  - `[IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>]`: User groups which enroll ios devices through partner.
-  - `[IosOnboarded <Boolean?>]`: Partner onboarded for ios devices.
-  - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin onboarded to the compliance management partner
-  - `[MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>]`: User groups which enroll Mac devices through partner.
-  - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
-  - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
+  \[AndroidEnrollmentAssignments \<IMicrosoftGraphComplianceManagementPartnerAssignment\[\]\>\]: User groups which enroll Android devices through partner.
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AndroidOnboarded \<Boolean?\>\]: Partner onboarded for Android devices.
+  \[DisplayName \<String\>\]: Partner display name
+  \[IosEnrollmentAssignments \<IMicrosoftGraphComplianceManagementPartnerAssignment\[\]\>\]: User groups which enroll ios devices through partner.
+  \[IosOnboarded \<Boolean?\>\]: Partner onboarded for ios devices.
+  \[LastHeartbeatDateTime \<DateTime?\>\]: Timestamp of last heartbeat after admin onboarded to the compliance management partner
+  \[MacOSEnrollmentAssignments \<IMicrosoftGraphComplianceManagementPartnerAssignment\[\]\>\]: User groups which enroll Mac devices through partner.
+  \[MacOSOnboarded \<Boolean?\>\]: Partner onboarded for Mac devices.
+  \[PartnerState \<DeviceManagementPartnerTenantState?\>\]: Partner state of this tenant.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
-  - `[AuditEventId <String>]`: The unique identifier of auditEvent
-  - `[Category <String>]`: Usage: category='{category}'
-  - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
-  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
-  - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
-  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
-  - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
-  - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment
-  - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
-  - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
-  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
-  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
-  - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
-  - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
-  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
-  - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
-  - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
-  - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
-  - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
-  - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
-  - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
-  - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserPrincipalName <String>]`: Alternate key of user
+INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
+  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
+  \[Category \<String\>\]: Usage: category='{category}'
+  \[CloudPcAuditEventId \<String\>\]: The unique identifier of cloudPcAuditEvent
+  \[CloudPcDeviceImageId \<String\>\]: The unique identifier of cloudPcDeviceImage
+  \[CloudPcGalleryImageId \<String\>\]: The unique identifier of cloudPcGalleryImage
+  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
+  \[CloudPcOnPremisesConnectionId \<String\>\]: The unique identifier of cloudPcOnPremisesConnection
+  \[CloudPcProvisioningPolicyAssignmentId \<String\>\]: The unique identifier of cloudPcProvisioningPolicyAssignment
+  \[CloudPcProvisioningPolicyId \<String\>\]: The unique identifier of cloudPcProvisioningPolicy
+  \[CloudPcUserSettingAssignmentId \<String\>\]: The unique identifier of cloudPcUserSettingAssignment
+  \[CloudPcUserSettingId \<String\>\]: The unique identifier of cloudPcUserSetting
+  \[ComplianceManagementPartnerId \<String\>\]: The unique identifier of complianceManagementPartner
+  \[DeviceAndAppManagementRoleAssignmentId \<String\>\]: The unique identifier of deviceAndAppManagementRoleAssignment
+  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
+  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
+  \[IosUpdateDeviceStatusId \<String\>\]: The unique identifier of iosUpdateDeviceStatus
+  \[MobileThreatDefenseConnectorId \<String\>\]: The unique identifier of mobileThreatDefenseConnector
+  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
+  \[ResourceOperationId \<String\>\]: The unique identifier of resourceOperation
+  \[RoleAssignmentId \<String\>\]: The unique identifier of roleAssignment
+  \[RoleDefinitionId \<String\>\]: The unique identifier of roleDefinition
+  \[TelecomExpenseManagementPartnerId \<String\>\]: The unique identifier of telecomExpenseManagementPartner
+  \[TermsAndConditionsAcceptanceStatusId \<String\>\]: The unique identifier of termsAndConditionsAcceptanceStatus
+  \[TermsAndConditionsAssignmentId \<String\>\]: The unique identifier of termsAndConditionsAssignment
+  \[TermsAndConditionsId \<String\>\]: The unique identifier of termsAndConditions
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserPrincipalName \<String\>\]: Alternate key of user
 
-IOSENROLLMENTASSIGNMENTS `<IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>`: User groups which enroll ios devices through partner.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+IOSENROLLMENTASSIGNMENTS \<IMicrosoftGraphComplianceManagementPartnerAssignment\[\]\>: User groups which enroll ios devices through partner.
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-MACOSENROLLMENTASSIGNMENTS `<IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>`: User groups which enroll Mac devices through partner.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+MACOSENROLLMENTASSIGNMENTS \<IMicrosoftGraphComplianceManagementPartnerAssignment\[\]\>: User groups which enroll Mac devices through partner.
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

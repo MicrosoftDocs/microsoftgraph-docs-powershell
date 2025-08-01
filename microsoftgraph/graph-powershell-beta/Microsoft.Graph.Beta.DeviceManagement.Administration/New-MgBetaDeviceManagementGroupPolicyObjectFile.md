@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicyobjectfile
@@ -18,28 +18,30 @@ New-MgBetaDeviceManagementGroupPolicyObjectFile [-ResponseHeadersVariable <Strin
  [-AdditionalProperties <Hashtable>] [-Content <String>] [-CreatedDateTime <DateTime>]
  [-GroupPolicyObjectId <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-OuDistinguishedName <String>] [-RoleScopeTagIds <String[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementGroupPolicyObjectFile -BodyParameter <IMicrosoftGraphGroupPolicyObjectFile>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to groupPolicyObjectFiles for deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -71,21 +73,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -195,6 +182,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -217,6 +219,21 @@ The list of scope tags for the configuration.
 Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -257,41 +274,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphGroupPolicyObjectFile>`: The Group Policy Object file uploaded by admin.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphGroupPolicyObjectFile\>: The Group Policy Object file uploaded by admin.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Content <String>]`: The Group Policy Object file content.
-  - `[CreatedDateTime <DateTime?>]`: The date and time at which the GroupPolicy was first uploaded.
-  - `[GroupPolicyObjectId <String>]`: The Group Policy Object GUID from GPO Xml content
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time at which the GroupPolicyObjectFile was last modified.
-  - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
-  - `[RoleScopeTagIds <String- `[]`>]`: The list of scope tags for the configuration.
+  \[Content \<String\>\]: The Group Policy Object file content.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time at which the GroupPolicy was first uploaded.
+  \[GroupPolicyObjectId \<String\>\]: The Group Policy Object GUID from GPO Xml content
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time at which the GroupPolicyObjectFile was last modified.
+  \[OuDistinguishedName \<String\>\]: The distinguished name of the OU.
+  \[RoleScopeTagIds \<String\[\]\>\]: The list of scope tags for the configuration.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicyobjectfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicyobjectfile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

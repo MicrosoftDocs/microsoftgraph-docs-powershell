@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallrecordparticipantv2
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to participants_v2 for communications
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCallRecordParticipantV2](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallRecordParticipantV2?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,13 +18,13 @@ New-MgCommunicationCallRecordParticipantV2 -CallRecordId <String> [-ResponseHead
  [-AdditionalProperties <Hashtable>]
  [-AdministrativeUnitInfos <IMicrosoftGraphCallRecordsAdministrativeUnitInfo[]>] [-Id <String>]
  [-Identity <IMicrosoftGraphCommunicationsIdentitySet>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgCommunicationCallRecordParticipantV2 -CallRecordId <String> -BodyParameter <Hashtable>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,20 +34,30 @@ New-MgCommunicationCallRecordParticipantV2 -InputObject <ICloudCommunicationsIde
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AdministrativeUnitInfos <IMicrosoftGraphCallRecordsAdministrativeUnitInfo[]>] [-Id <String>]
  [-Identity <IMicrosoftGraphCommunicationsIdentitySet>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgCommunicationCallRecordParticipantV2 -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to participants_v2 for communications
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -109,21 +116,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -193,6 +185,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -200,6 +207,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -241,68 +263,45 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADMINISTRATIVEUNITINFOS `<IMicrosoftGraphCallRecordsAdministrativeUnitInfo- `[]`>`: List of administrativeUnitInfo objects for the call participant.
-  - `[Id <String>]`: Unique identifier for the administrative unit.
+ADMINISTRATIVEUNITINFOS \<IMicrosoftGraphCallRecordsAdministrativeUnitInfo\[\]\>: List of administrativeUnitInfo objects for the call participant.
+  \[Id \<String\>\]: Unique identifier for the administrative unit.
 
-IDENTITY `<IMicrosoftGraphCommunicationsIdentitySet>`: communicationsIdentitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+IDENTITY \<IMicrosoftGraphCommunicationsIdentitySet\>: communicationsIdentitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
+    \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[ApplicationInstance <IMicrosoftGraphIdentity>]`: identity
-  - `[AssertedIdentity <IMicrosoftGraphIdentity>]`: identity
-  - `[AzureCommunicationServicesUser <IMicrosoftGraphIdentity>]`: identity
-  - `[Encrypted <IMicrosoftGraphIdentity>]`: identity
-  - `[EndpointType <String>]`: endpointType
-  - `[Guest <IMicrosoftGraphIdentity>]`: identity
-  - `[OnPremises <IMicrosoftGraphIdentity>]`: identity
-  - `[Phone <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[ApplicationInstance \<IMicrosoftGraphIdentity\>\]: identity
+  \[AssertedIdentity \<IMicrosoftGraphIdentity\>\]: identity
+  \[AzureCommunicationServicesUser \<IMicrosoftGraphIdentity\>\]: identity
+  \[Encrypted \<IMicrosoftGraphIdentity\>\]: identity
+  \[EndpointType \<String\>\]: endpointType
+  \[Guest \<IMicrosoftGraphIdentity\>\]: identity
+  \[OnPremises \<IMicrosoftGraphIdentity\>\]: identity
+  \[Phone \<IMicrosoftGraphIdentity\>\]: identity
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
-  - `[CallId <String>]`: The unique identifier of call
-  - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallRecordingId <String>]`: The unique identifier of callRecording
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
-  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
-  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[ParticipantId <String>]`: The unique identifier of participant
-  - `[PresenceId <String>]`: The unique identifier of presence
-  - `[SessionId <String>]`: The unique identifier of session
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
+  \[CallId \<String\>\]: The unique identifier of call
+  \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
+  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
+  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
+  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[ParticipantId \<String\>\]: The unique identifier of participant
+  \[PresenceId \<String\>\]: The unique identifier of presence
+  \[SessionId \<String\>\]: The unique identifier of session
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallrecordparticipantv2](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallrecordparticipantv2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

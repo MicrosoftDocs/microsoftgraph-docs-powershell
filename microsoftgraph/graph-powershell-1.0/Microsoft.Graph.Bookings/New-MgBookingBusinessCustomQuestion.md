@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomquestion
 schema: 2.0.0
-ms.subservice: microsoft-bookings
 ---
 
 # New-MgBookingBusinessCustomQuestion
 
 ## SYNOPSIS
 Create a new bookingCustomQuestion object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -21,14 +17,14 @@ Create a new bookingCustomQuestion object.
 New-MgBookingBusinessCustomQuestion -BookingBusinessId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AnswerInputType <String>] [-AnswerOptions <String[]>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBookingBusinessCustomQuestion -BookingBusinessId <String>
  -BodyParameter <IMicrosoftGraphBookingCustomQuestion> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -36,33 +32,25 @@ New-MgBookingBusinessCustomQuestion -BookingBusinessId <String>
 New-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AnswerInputType <String>] [-AnswerOptions <String[]>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphBookingCustomQuestion> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new bookingCustomQuestion object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Bookings
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingCustomQuestion"
@@ -73,10 +61,6 @@ $params = @{
 }
 
 New-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBookingBusinessCustomQuestion Cmdlet.
-
 
 ## PARAMETERS
 
@@ -150,21 +134,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -267,6 +236,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -274,6 +258,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -315,66 +314,44 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBookingCustomQuestion>`: Represents a custom question of the business.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphBookingCustomQuestion\>: Represents a custom question of the business.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AnswerInputType <String>]`: answerInputType
-  - `[AnswerOptions <String- `[]`>]`: List of possible answer values.
-  - `[CreatedDateTime <DateTime?>]`: The date, time, and time zone when the custom question was created.
+  \[AnswerInputType \<String\>\]: answerInputType
+  \[AnswerOptions \<String\[\]\>\]: List of possible answer values.
+  \[CreatedDateTime \<DateTime?\>\]: The date, time, and time zone when the custom question was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[DisplayName <String>]`: The question.
-  - `[LastUpdatedDateTime <DateTime?>]`: The date, time, and time zone when the custom question was last updated.
+  \[DisplayName \<String\>\]: The question.
+  \[LastUpdatedDateTime \<DateTime?\>\]: The date, time, and time zone when the custom question was last updated.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
-  - `[Email <String>]`: Alternate key of virtualEventRegistration
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventRegistrationQuestionBaseId <String>]`: The unique identifier of virtualEventRegistrationQuestionBase
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
+  \[Email \<String\>\]: Alternate key of virtualEventRegistration
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventRegistrationQuestionBaseId \<String\>\]: The unique identifier of virtualEventRegistrationQuestionBase
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomquestion)
 
 [https://learn.microsoft.com/graph/api/bookingbusiness-post-customquestions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-customquestions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

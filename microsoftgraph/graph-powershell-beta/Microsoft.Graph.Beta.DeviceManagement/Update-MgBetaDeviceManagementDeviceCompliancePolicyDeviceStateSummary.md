@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicecompliancepolicydevicestatesummary
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property deviceCompliancePolicyDeviceStateSummary in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,7 +18,7 @@ Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-Response
  [-AdditionalProperties <Hashtable>] [-CompliantDeviceCount <Int32>] [-ConfigManagerCount <Int32>]
  [-ConflictDeviceCount <Int32>] [-ErrorDeviceCount <Int32>] [-Id <String>] [-InGracePeriodCount <Int32>]
  [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>] [-RemediatedDeviceCount <Int32>]
- [-UnknownDeviceCount <Int32>] [-Headers <IDictionary>] [-WhatIf]
+ [-UnknownDeviceCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,21 +26,23 @@ Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-Response
 ```
 Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary
  -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deviceCompliancePolicyDeviceStateSummary in deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -104,21 +103,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -229,6 +213,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RemediatedDeviceCount
 Number of remediated devices
 
@@ -274,6 +273,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -306,44 +320,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary>`: deviceCompliancePolicyDeviceStateSummary
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary\>: deviceCompliancePolicyDeviceStateSummary
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
-  - `[ConfigManagerCount <Int32?>]`: Number of devices that have compliance managed by System Center Configuration Manager
-  - `[ConflictDeviceCount <Int32?>]`: Number of conflict devices
-  - `[ErrorDeviceCount <Int32?>]`: Number of error devices
-  - `[InGracePeriodCount <Int32?>]`: Number of devices that are in grace period
-  - `[NonCompliantDeviceCount <Int32?>]`: Number of NonCompliant devices
-  - `[NotApplicableDeviceCount <Int32?>]`: Number of not applicable devices
-  - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
-  - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
+  \[CompliantDeviceCount \<Int32?\>\]: Number of compliant devices
+  \[ConfigManagerCount \<Int32?\>\]: Number of devices that have compliance managed by System Center Configuration Manager
+  \[ConflictDeviceCount \<Int32?\>\]: Number of conflict devices
+  \[ErrorDeviceCount \<Int32?\>\]: Number of error devices
+  \[InGracePeriodCount \<Int32?\>\]: Number of devices that are in grace period
+  \[NonCompliantDeviceCount \<Int32?\>\]: Number of NonCompliant devices
+  \[NotApplicableDeviceCount \<Int32?\>\]: Number of not applicable devices
+  \[RemediatedDeviceCount \<Int32?\>\]: Number of remediated devices
+  \[UnknownDeviceCount \<Int32?\>\]: Number of unknown devices
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicecompliancepolicydevicestatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicecompliancepolicydevicestatesummary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

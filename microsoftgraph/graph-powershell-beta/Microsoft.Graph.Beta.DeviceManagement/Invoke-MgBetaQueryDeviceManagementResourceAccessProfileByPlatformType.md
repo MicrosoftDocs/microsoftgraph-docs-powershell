@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaquerydevicemanagementresourceaccessprofilebyplatformtype
@@ -16,29 +16,31 @@ Invoke action queryByPlatformType
 ```
 Invoke-MgBetaQueryDeviceManagementResourceAccessProfileByPlatformType [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-PlatformType <PolicyPlatformType>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Query
 ```
 Invoke-MgBetaQueryDeviceManagementResourceAccessProfileByPlatformType
  -Body <IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyplatformtypePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action queryByPlatformType
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -58,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -Body
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -70,21 +72,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -118,6 +105,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -125,6 +127,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -165,34 +182,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyplatformtypePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
+BODY \<IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyplatformtypePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[PlatformType \<PolicyPlatformType?\>\]: Supported platform types for policies.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaquerydevicemanagementresourceaccessprofilebyplatformtype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaquerydevicemanagementresourceaccessprofilebyplatformtype)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

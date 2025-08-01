@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/remove-mgprivacysubjectrightsrequest
@@ -10,22 +10,19 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property subjectRightsRequests for privacy
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/Remove-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
 Remove-MgPrivacySubjectRightsRequest -SubjectRightsRequestId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgPrivacySubjectRightsRequest -InputObject <IComplianceIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,22 +31,17 @@ Delete navigation property subjectRightsRequests for privacy
 
 ## EXAMPLES
 
-## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### EXAMPLE 1
 ```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+## PARAMETERS
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -112,6 +104,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -136,6 +143,21 @@ Parameter Sets: Delete
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -174,36 +196,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserPrincipalName <String>]`: Alternate key of user
+INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
+  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
+  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserPrincipalName \<String\>\]: Alternate key of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/remove-mgprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/remove-mgprivacysubjectrightsrequest)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

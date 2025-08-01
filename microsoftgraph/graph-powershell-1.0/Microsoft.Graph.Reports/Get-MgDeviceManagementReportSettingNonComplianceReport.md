@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportsettingnoncompliancereport
 schema: 2.0.0
-ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementReportSettingNonComplianceReport
 
 ## SYNOPSIS
 Not yet documented
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportSettingNonComplianceReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportSettingNonComplianceReport?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -21,7 +17,7 @@ Not yet documented
 Get-MgDeviceManagementReportSettingNonComplianceReport -OutFile <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Name <String>]
  [-Property <String[]>] [-Search <String>] [-SessionId <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Top <Int32>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,27 +25,19 @@ Get-MgDeviceManagementReportSettingNonComplianceReport -OutFile <String> [-Respo
 ```
 Get-MgDeviceManagementReportSettingNonComplianceReport -OutFile <String>
  -BodyParameter <IPaths19Wsha2DevicemanagementReportsMicrosoftGraphGetsettingnoncompliancereportPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Not yet documented
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Reports
+```
 
 $params = @{
 	name = "Name value"
@@ -71,10 +59,6 @@ filter = "Filter value"
 
 Get-MgDeviceManagementReportSettingNonComplianceReport -BodyParameter $params
 
-```
-This example shows how to use the Get-MgDeviceManagementReportSettingNonComplianceReport Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -93,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -108,23 +92,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Filter
-
+.
 
 ```yaml
 Type: String
@@ -139,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupBy
-
+.
 
 ```yaml
 Type: String[]
@@ -169,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-
+.
 
 ```yaml
 Type: String
@@ -213,8 +182,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Property
+### -ProgressAction
+{{ Fill ProgressAction Description }}
 
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Property
+.
 
 ```yaml
 Type: String[]
@@ -244,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Search
-
+.
 
 ```yaml
 Type: String
@@ -259,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionId
-
+.
 
 ```yaml
 Type: String
@@ -273,23 +257,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-
-
-```yaml
-Type: Int32
-Parameter Sets: GetExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
-
+.
 
 ```yaml
 Type: String[]
@@ -304,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-
+.
 
 ```yaml
 Type: Int32
@@ -314,6 +283,21 @@ Aliases: Limit
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -334,6 +318,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+.
+
+```yaml
+Type: Int32
+Parameter Sets: GetExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -350,43 +349,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths19Wsha2DevicemanagementReportsMicrosoftGraphGetsettingnoncompliancereportPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Filter <String>]`:
-  - `[GroupBy <String- `[]`>]`:
-  - `[Name <String>]`:
-  - `[OrderBy <String- `[]`>]`:
-  - `[Search <String>]`:
-  - `[Select <String- `[]`>]`:
-  - `[SessionId <String>]`:
-  - `[Skip <Int32?>]`:
-  - `[Top <Int32?>]`:
+BODYPARAMETER \<IPaths19Wsha2DevicemanagementReportsMicrosoftGraphGetsettingnoncompliancereportPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Filter \<String\>\]: 
+  \[GroupBy \<String\[\]\>\]: 
+  \[Name \<String\>\]: 
+  \[OrderBy \<String\[\]\>\]: 
+  \[Search \<String\>\]: 
+  \[Select \<String\[\]\>\]: 
+  \[SessionId \<String\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportsettingnoncompliancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportsettingnoncompliancereport)
 
 [https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

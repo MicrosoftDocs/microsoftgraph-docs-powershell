@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportslaazureadauthentication
@@ -16,14 +16,14 @@ Update the navigation property azureADAuthentication in reports
 ```
 Update-MgBetaReportSlaAzureAdAuthentication [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Attainments <IMicrosoftGraphServiceLevelAgreementAttainment[]>]
- [-Id <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaReportSlaAzureAdAuthentication -BodyParameter <IMicrosoftGraphAzureAdAuthentication>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,6 +31,16 @@ Update-MgBetaReportSlaAzureAdAuthentication -BodyParameter <IMicrosoftGraphAzure
 Update the navigation property azureADAuthentication in reports
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -81,21 +91,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -127,6 +122,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -134,6 +144,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -174,48 +199,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTAINMENTS `<IMicrosoftGraphServiceLevelAgreementAttainment- `[]`>`: SLA data for a Microsoft Entra tenant for a calendar month.
-  - `[EndDate <DateTime?>]`: The end date for the calendar month for which SLA attainment is measured.
-  - `[Score <Double?>]`: The level of SLA attainment achieved by the tenant for the calendar month identified, as described in Microsoft Entra SLA performance.
+ATTAINMENTS \<IMicrosoftGraphServiceLevelAgreementAttainment\[\]\>: SLA data for a Microsoft Entra tenant for a calendar month.
+  \[EndDate \<DateTime?\>\]: The end date for the calendar month for which SLA attainment is measured.
+  \[Score \<Double?\>\]: The level of SLA attainment achieved by the tenant for the calendar month identified, as described in Microsoft Entra SLA performance.
 Values are truncated, not rounded, so the actual value is always equal to or higher than the displayed value.
 Values are expressed as a percentage of availability for the tenant.
-  - `[StartDate <DateTime?>]`: The start date for the calendar month for which SLA attainment is measured.
+  \[StartDate \<DateTime?\>\]: The start date for the calendar month for which SLA attainment is measured.
 
-BODYPARAMETER `<IMicrosoftGraphAzureAdAuthentication>`: azureADAuthentication
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAzureAdAuthentication\>: azureADAuthentication
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Attainments <IMicrosoftGraphServiceLevelAgreementAttainment- `[]`>]`: SLA data for a Microsoft Entra tenant for a calendar month.
-    - `[EndDate <DateTime?>]`: The end date for the calendar month for which SLA attainment is measured.
-    - `[Score <Double?>]`: The level of SLA attainment achieved by the tenant for the calendar month identified, as described in Microsoft Entra SLA performance.
+  \[Attainments \<IMicrosoftGraphServiceLevelAgreementAttainment\[\]\>\]: SLA data for a Microsoft Entra tenant for a calendar month.
+    \[EndDate \<DateTime?\>\]: The end date for the calendar month for which SLA attainment is measured.
+    \[Score \<Double?\>\]: The level of SLA attainment achieved by the tenant for the calendar month identified, as described in Microsoft Entra SLA performance.
 Values are truncated, not rounded, so the actual value is always equal to or higher than the displayed value.
 Values are expressed as a percentage of availability for the tenant.
-    - `[StartDate <DateTime?>]`: The start date for the calendar month for which SLA attainment is measured.
+    \[StartDate \<DateTime?\>\]: The start date for the calendar month for which SLA attainment is measured.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportslaazureadauthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportslaazureadauthentication)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreport
 schema: 2.0.0
-ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementReport
@@ -11,40 +10,25 @@ ms.subservice: intune
 ## SYNOPSIS
 Read properties and relationships of the deviceManagementReports object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReport?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
 Get-MgDeviceManagementReport [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Read properties and relationships of the deviceManagementReports object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Reports
+```
 
 Get-MgDeviceManagementReport
-
-```
-This example shows how to use the Get-MgDeviceManagementReport Cmdlet.
-
 
 ## PARAMETERS
 
@@ -75,6 +59,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -124,26 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreport)
 
 [https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

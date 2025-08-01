@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgarchiveserviceannouncementmessage
 schema: 2.0.0
-ms.subservice: service-communications
 ---
 
 # Invoke-MgArchiveServiceAnnouncementMessage
@@ -11,23 +10,20 @@ ms.subservice: service-communications
 ## SYNOPSIS
 Archive a list of serviceUpdateMessages for the signed in user.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaArchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaArchiveServiceAnnouncementMessage?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### ArchiveExpanded (Default)
 ```
 Invoke-MgArchiveServiceAnnouncementMessage [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Archive
 ```
 Invoke-MgArchiveServiceAnnouncementMessage
  -BodyParameter <IPaths19OsejwAdminServiceannouncementMessagesMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,11 +31,11 @@ Invoke-MgArchiveServiceAnnouncementMessage
 Archive a list of serviceUpdateMessages for the signed in user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+```
 
 $params = @{
 	messageIds = @(
@@ -49,10 +45,6 @@ $params = @{
 }
 
 Invoke-MgArchiveServiceAnnouncementMessage -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgArchiveServiceAnnouncementMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -72,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -84,21 +76,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -118,12 +95,27 @@ Accept wildcard characters: False
 ```
 
 ### -MessageIds
-
+.
 
 ```yaml
 Type: String[]
 Parameter Sets: ArchiveExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -139,6 +131,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -179,35 +186,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths19OsejwAdminServiceannouncementMessagesMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageIds <String- `[]`>]`:
+BODYPARAMETER \<IPaths19OsejwAdminServiceannouncementMessagesMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[MessageIds \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgarchiveserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgarchiveserviceannouncementmessage)
 
 [https://learn.microsoft.com/graph/api/serviceupdatemessage-archive?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-archive?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

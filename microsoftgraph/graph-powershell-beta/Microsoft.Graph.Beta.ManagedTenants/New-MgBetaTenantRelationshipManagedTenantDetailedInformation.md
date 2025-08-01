@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdetailedinformation
@@ -18,20 +18,30 @@ New-MgBetaTenantRelationshipManagedTenantDetailedInformation [-ResponseHeadersVa
  [-AdditionalProperties <Hashtable>] [-City <String>] [-CountryCode <String>] [-CountryName <String>]
  [-DefaultDomainName <String>] [-DisplayName <String>] [-Id <String>] [-IndustryName <String>]
  [-Region <String>] [-SegmentName <String>] [-TenantId <String>] [-VerticalName <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantDetailedInformation
  -BodyParameter <IMicrosoftGraphManagedTenantsTenantDetailedInformation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to tenantsDetailedInformation for tenantRelationships
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -75,21 +85,6 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -212,6 +207,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Region
 The region where the managed tenant is located.
 Optional.
@@ -293,6 +303,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -325,61 +350,38 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsTenantDetailedInformation>`: tenantDetailedInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsTenantDetailedInformation\>: tenantDetailedInformation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[City <String>]`: The city where the managed tenant is located.
+  \[City \<String\>\]: The city where the managed tenant is located.
 Optional.
 Read-only.
-  - `[CountryCode <String>]`: The code for the country where the managed tenant is located.
+  \[CountryCode \<String\>\]: The code for the country where the managed tenant is located.
 Optional.
 Read-only.
-  - `[CountryName <String>]`: The name for the country where the managed tenant is located.
+  \[CountryName \<String\>\]: The name for the country where the managed tenant is located.
 Optional.
 Read-only.
-  - `[DefaultDomainName <String>]`: The default domain name for the managed tenant.
+  \[DefaultDomainName \<String\>\]: The default domain name for the managed tenant.
 Optional.
 Read-only.
-  - `[DisplayName <String>]`: The display name for the managed tenant.
-  - `[IndustryName <String>]`: The business industry associated with the managed tenant.
+  \[DisplayName \<String\>\]: The display name for the managed tenant.
+  \[IndustryName \<String\>\]: The business industry associated with the managed tenant.
 Optional.
 Read-only.
-  - `[Region <String>]`: The region where the managed tenant is located.
+  \[Region \<String\>\]: The region where the managed tenant is located.
 Optional.
 Read-only.
-  - `[SegmentName <String>]`: The business segment associated with the managed tenant.
+  \[SegmentName \<String\>\]: The business segment associated with the managed tenant.
 Optional.
 Read-only.
-  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
-  - `[VerticalName <String>]`: The vertical associated with the managed tenant.
+  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
+  \[VerticalName \<String\>\]: The vertical associated with the managed tenant.
 Optional.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdetailedinformation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdetailedinformation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

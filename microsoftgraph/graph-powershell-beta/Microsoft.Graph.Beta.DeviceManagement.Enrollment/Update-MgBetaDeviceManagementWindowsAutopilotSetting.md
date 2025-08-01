@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotsetting
@@ -17,28 +17,30 @@ Update the navigation property windowsAutopilotSettings in deviceManagement
 Update-MgBetaDeviceManagementWindowsAutopilotSetting [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastManualSyncTriggerDateTime <DateTime>]
  [-LastSyncDateTime <DateTime>] [-SyncStatus <WindowsAutopilotSyncStatus>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementWindowsAutopilotSetting -BodyParameter <IMicrosoftGraphWindowsAutopilotSettings>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property windowsAutopilotSettings in deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -70,21 +72,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -149,6 +136,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -171,6 +173,21 @@ windowsAutopilotSyncStatus
 Type: WindowsAutopilotSyncStatus
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -211,38 +228,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsAutopilotSettings>`: The windowsAutopilotSettings resource represents a Windows Autopilot Account to sync data with Windows device data sync service.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphWindowsAutopilotSettings\>: The windowsAutopilotSettings resource represents a Windows Autopilot Account to sync data with Windows device data sync service.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[LastManualSyncTriggerDateTime <DateTime?>]`: Last data sync date time with DDS service.
-  - `[LastSyncDateTime <DateTime?>]`: Last data sync date time with DDS service.
-  - `[SyncStatus <WindowsAutopilotSyncStatus?>]`: windowsAutopilotSyncStatus
+  \[LastManualSyncTriggerDateTime \<DateTime?\>\]: Last data sync date time with DDS service.
+  \[LastSyncDateTime \<DateTime?\>\]: Last data sync date time with DDS service.
+  \[SyncStatus \<WindowsAutopilotSyncStatus?\>\]: windowsAutopilotSyncStatus
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

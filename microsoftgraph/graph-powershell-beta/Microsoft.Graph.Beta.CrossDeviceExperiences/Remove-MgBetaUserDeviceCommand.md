@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdevicecommand
@@ -15,14 +15,14 @@ Delete navigation property commands for users
 ### Delete (Default)
 ```
 Remove-MgBetaUserDeviceCommand -CommandId <String> -DeviceId <String> -UserId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,6 +30,16 @@ Remove-MgBetaUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity> [-
 Delete navigation property commands for users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -42,21 +52,6 @@ Parameter Sets: Delete
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -139,6 +134,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -163,6 +173,21 @@ Parameter Sets: Delete
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -201,41 +226,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
-  - `[ActivityHistoryItemId <String>]`: The unique identifier of activityHistoryItem
-  - `[CommandId <String>]`: The unique identifier of command
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceTemplateId <String>]`: The unique identifier of deviceTemplate
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[UsageRightId <String>]`: The unique identifier of usageRight
-  - `[UserActivityId <String>]`: The unique identifier of userActivity
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
+  \[ActivityHistoryItemId \<String\>\]: The unique identifier of activityHistoryItem
+  \[CommandId \<String\>\]: The unique identifier of command
+  \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceTemplateId \<String\>\]: The unique identifier of deviceTemplate
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[UsageRightId \<String\>\]: The unique identifier of usageRight
+  \[UserActivityId \<String\>\]: The unique identifier of userActivity
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdevicecommand](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdevicecommand)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

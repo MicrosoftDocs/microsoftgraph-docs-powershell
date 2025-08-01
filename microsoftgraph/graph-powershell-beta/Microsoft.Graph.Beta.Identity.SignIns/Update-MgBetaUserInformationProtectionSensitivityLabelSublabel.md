@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotectionsensitivitylabelsublabel
@@ -15,39 +15,43 @@ Update the navigation property sublabels in users
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserInformationProtectionSensitivityLabelSublabel -SensitivityLabelId <String>
- -SensitivityLabelId1 <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ -SensitivityLabelId1 <String> -UserId <String> [-ResponseHeadersVariable <String>] [-ActionSource <String>]
  [-AdditionalProperties <Hashtable>] [-ApplicableTo <String>] [-ApplicationMode <String>]
  [-AssignedPolicies <IMicrosoftGraphLabelPolicy[]>] [-AutoLabeling <IMicrosoftGraphAutoLabeling>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsDefault] [-IsEndpointProtectionEnabled]
- [-LabelActions <IMicrosoftGraphLabelActionBase[]>] [-Name <String>] [-Priority <Int32>]
- [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AutoTooltip <String>] [-Color <String>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-IsDefault] [-IsEnabled] [-IsEndpointProtectionEnabled] [-IsScopedToUser]
+ [-LabelActions <IMicrosoftGraphLabelActionBase[]>] [-Locale <String>] [-Name <String>] [-Priority <Int32>]
+ [-Rights <IMicrosoftGraphUsageRightsIncluded>] [-Sublabels <IMicrosoftGraphSensitivityLabel[]>]
+ [-ToolTip <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserInformationProtectionSensitivityLabelSublabel -SensitivityLabelId <String>
  -SensitivityLabelId1 <String> -UserId <String> -BodyParameter <IMicrosoftGraphSensitivityLabel>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserInformationProtectionSensitivityLabelSublabel -InputObject <IIdentitySignInsIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ApplicableTo <String>]
- [-ApplicationMode <String>] [-AssignedPolicies <IMicrosoftGraphLabelPolicy[]>]
- [-AutoLabeling <IMicrosoftGraphAutoLabeling>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsDefault] [-IsEndpointProtectionEnabled] [-LabelActions <IMicrosoftGraphLabelActionBase[]>]
- [-Name <String>] [-Priority <Int32>] [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-ActionSource <String>] [-AdditionalProperties <Hashtable>]
+ [-ApplicableTo <String>] [-ApplicationMode <String>] [-AssignedPolicies <IMicrosoftGraphLabelPolicy[]>]
+ [-AutoLabeling <IMicrosoftGraphAutoLabeling>] [-AutoTooltip <String>] [-Color <String>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsDefault] [-IsEnabled]
+ [-IsEndpointProtectionEnabled] [-IsScopedToUser] [-LabelActions <IMicrosoftGraphLabelActionBase[]>]
+ [-Locale <String>] [-Name <String>] [-Priority <Int32>] [-Rights <IMicrosoftGraphUsageRightsIncluded>]
+ [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserInformationProtectionSensitivityLabelSublabel -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphSensitivityLabel> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +59,32 @@ Update the navigation property sublabels in users
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
+
+### -ActionSource
+labelActionSource
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -AdditionalProperties
 Additional Parameters
@@ -103,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignedPolicies
-
+.
 To construct, see NOTES section for ASSIGNEDPOLICIES properties and create a hash table.
 
 ```yaml
@@ -134,6 +163,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AutoTooltip
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -BodyParameter
 sensitivityLabel
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
@@ -150,13 +194,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Color
+.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -166,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-
+.
 
 ```yaml
 Type: String
@@ -181,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-
+.
 
 ```yaml
 Type: String
@@ -243,7 +287,22 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefault
+.
 
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsEnabled
+.
 
 ```yaml
 Type: SwitchParameter
@@ -258,7 +317,22 @@ Accept wildcard characters: False
 ```
 
 ### -IsEndpointProtectionEnabled
+.
 
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsScopedToUser
+.
 
 ```yaml
 Type: SwitchParameter
@@ -273,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabelActions
-
+.
 To construct, see NOTES section for LABELACTIONS properties and create a hash table.
 
 ```yaml
@@ -288,8 +362,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Name
+### -Locale
+.
 
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+.
 
 ```yaml
 Type: String
@@ -304,7 +393,7 @@ Accept wildcard characters: False
 ```
 
 ### -Priority
-
+.
 
 ```yaml
 Type: Int32
@@ -318,6 +407,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -325,6 +429,22 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Rights
+usageRightsIncluded
+To construct, see NOTES section for RIGHTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUsageRightsIncluded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -364,7 +484,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sublabels
-
+.
 To construct, see NOTES section for SUBLABELS properties and create a hash table.
 
 ```yaml
@@ -380,7 +500,7 @@ Accept wildcard characters: False
 ```
 
 ### -ToolTip
-
+.
 
 ```yaml
 Type: String
@@ -403,6 +523,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -442,172 +577,183 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNEDPOLICIES `<IMicrosoftGraphLabelPolicy- `[]`>`: .
-  - `[Id <String>]`: 
-  - `[Name <String>]`: 
+ASSIGNEDPOLICIES \<IMicrosoftGraphLabelPolicy\[\]\>: .
+  \[Id \<String\>\]: The unique identifier of the label policy.
+  \[Name \<String\>\]: The display name of the label policy.
 
-AUTOLABELING `<IMicrosoftGraphAutoLabeling>`: autoLabeling
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Message <String>]`: 
-  - `[SensitiveTypeIds <String- `[]`>]`: 
+AUTOLABELING \<IMicrosoftGraphAutoLabeling\>: autoLabeling
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Message \<String\>\]: The message displayed to the user when the label is applied automatically.
+  \[SensitiveTypeIds \<String\[\]\>\]: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
 
-BODYPARAMETER `<IMicrosoftGraphSensitivityLabel>`: sensitivityLabel
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphSensitivityLabel\>: sensitivityLabel
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ApplicableTo <String>]`: sensitivityLabelTarget
-  - `[ApplicationMode <String>]`: applicationMode
-  - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
-    - `[Id <String>]`: 
-    - `[Name <String>]`: 
-  - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Message <String>]`: 
-    - `[SensitiveTypeIds <String- `[]`>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[IsDefault <Boolean?>]`: 
-  - `[IsEndpointProtectionEnabled <Boolean?>]`: 
-  - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
-    - `[Name <String>]`: 
-  - `[Name <String>]`: 
-  - `[Priority <Int32?>]`: 
-  - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-  - `[ToolTip <String>]`: 
-
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
-  - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
-  - `[AuthenticationConditionApplicationAppId <String>]`: The unique identifier of authenticationConditionApplication
-  - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
-  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
-  - `[AuthenticationEventsFlowId <String>]`: The unique identifier of authenticationEventsFlow
-  - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
-  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
-  - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
-  - `[AuthenticationMethodModes <String- `[]`>]`: Usage: authenticationMethodModes={authenticationMethodModes}
-  - `[AuthenticationStrengthPolicyId <String>]`: The unique identifier of authenticationStrengthPolicy
-  - `[AuthorizationPolicyId <String>]`: The unique identifier of authorizationPolicy
-  - `[B2CIdentityUserFlowId <String>]`: The unique identifier of b2cIdentityUserFlow
-  - `[B2XIdentityUserFlowId <String>]`: The unique identifier of b2xIdentityUserFlow
-  - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
-  - `[CertificateBasedAuthConfigurationId <String>]`: The unique identifier of certificateBasedAuthConfiguration
-  - `[ChangeItemBaseId <String>]`: The unique identifier of changeItemBase
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
-  - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
-  - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
-  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
-  - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
-  - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
-  - `[DefaultUserRoleOverrideId <String>]`: The unique identifier of defaultUserRoleOverride
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
-  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
-  - `[Fido2AuthenticationMethodId <String>]`: The unique identifier of fido2AuthenticationMethod
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HardwareOathAuthenticationMethodId <String>]`: The unique identifier of hardwareOathAuthenticationMethod
-  - `[HardwareOathTokenAuthenticationMethodDeviceId <String>]`: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[IdentityApiConnectorId <String>]`: The unique identifier of identityApiConnector
-  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[IdentityProviderId <String>]`: The unique identifier of identityProvider
-  - `[IdentityUserFlowAttributeAssignmentId <String>]`: The unique identifier of identityUserFlowAttributeAssignment
-  - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
-  - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
-  - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
-  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
-  - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
-  - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
-  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
-  - `[NamedLocationId <String>]`: The unique identifier of namedLocation
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OrganizationId <String>]`: The unique identifier of organization
-  - `[PasswordAuthenticationMethodId <String>]`: The unique identifier of passwordAuthenticationMethod
-  - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
-  - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
-  - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
-  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
-  - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
-  - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
-  - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal
-  - `[RiskyUserHistoryItemId <String>]`: The unique identifier of riskyUserHistoryItem
-  - `[RiskyUserId <String>]`: The unique identifier of riskyUser
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
-  - `[ServicePrincipalCreationConditionSetId <String>]`: The unique identifier of servicePrincipalCreationConditionSet
-  - `[ServicePrincipalCreationPolicyId <String>]`: The unique identifier of servicePrincipalCreationPolicy
-  - `[ServicePrincipalRiskDetectionId <String>]`: The unique identifier of servicePrincipalRiskDetection
-  - `[SoftwareOathAuthenticationMethodId <String>]`: The unique identifier of softwareOathAuthenticationMethod
-  - `[TemporaryAccessPassAuthenticationMethodId <String>]`: The unique identifier of temporaryAccessPassAuthenticationMethod
-  - `[ThreatAssessmentRequestId <String>]`: The unique identifier of threatAssessmentRequest
-  - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
-  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
-  - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
-  - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
-  - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
-  - `[UnifiedRoleManagementPolicyRuleId <String>]`: The unique identifier of unifiedRoleManagementPolicyRule
-  - `[UserFlowLanguageConfigurationId <String>]`: The unique identifier of userFlowLanguageConfiguration
-  - `[UserFlowLanguagePageId <String>]`: The unique identifier of userFlowLanguagePage
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
-
-LABELACTIONS `<IMicrosoftGraphLabelActionBase- `[]`>`: .
-  - `[Name <String>]`: 
-
-SUBLABELS `<IMicrosoftGraphSensitivityLabel- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[ActionSource \<String\>\]: labelActionSource
+  \[ApplicableTo \<String\>\]: sensitivityLabelTarget
+  \[ApplicationMode \<String\>\]: applicationMode
+  \[AssignedPolicies \<IMicrosoftGraphLabelPolicy\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier of the label policy.
+    \[Name \<String\>\]: The display name of the label policy.
+  \[AutoLabeling \<IMicrosoftGraphAutoLabeling\>\]: autoLabeling
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Message \<String\>\]: The message displayed to the user when the label is applied automatically.
+    \[SensitiveTypeIds \<String\[\]\>\]: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
+  \[AutoTooltip \<String\>\]: 
+  \[Color \<String\>\]: 
+  \[Description \<String\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[IsDefault \<Boolean?\>\]: 
+  \[IsEnabled \<Boolean?\>\]: 
+  \[IsEndpointProtectionEnabled \<Boolean?\>\]: 
+  \[IsScopedToUser \<Boolean?\>\]: 
+  \[LabelActions \<IMicrosoftGraphLabelActionBase\[\]\>\]: 
+    \[Name \<String\>\]: The name of the action (for example, 'Encrypt', 'AddHeader').
+  \[Locale \<String\>\]: 
+  \[Name \<String\>\]: 
+  \[Priority \<Int32?\>\]: 
+  \[Rights \<IMicrosoftGraphUsageRightsIncluded\>\]: usageRightsIncluded
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ApplicableTo <String>]`: sensitivityLabelTarget
-  - `[ApplicationMode <String>]`: applicationMode
-  - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
-    - `[Id <String>]`: 
-    - `[Name <String>]`: 
-  - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Message <String>]`: 
-    - `[SensitiveTypeIds <String- `[]`>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[IsDefault <Boolean?>]`: 
-  - `[IsEndpointProtectionEnabled <Boolean?>]`: 
-  - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
-    - `[Name <String>]`: 
-  - `[Name <String>]`: 
-  - `[Priority <Int32?>]`: 
-  - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-  - `[ToolTip <String>]`:
+    \[OwnerEmail \<String\>\]: The email of owner label rights.
+    \[UserEmail \<String\>\]: The email of user with label user rights.
+    \[Value \<String\>\]: usageRights
+  \[Sublabels \<IMicrosoftGraphSensitivityLabel\[\]\>\]: 
+  \[ToolTip \<String\>\]: 
+
+INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
+  \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
+  \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
+  \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
+  \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
+  \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
+  \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow
+  \[AuthenticationMethodConfigurationId \<String\>\]: The unique identifier of authenticationMethodConfiguration
+  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
+  \[AuthenticationMethodModeDetailId \<String\>\]: The unique identifier of authenticationMethodModeDetail
+  \[AuthenticationMethodModes \<String\[\]\>\]: Usage: authenticationMethodModes={authenticationMethodModes}
+  \[AuthenticationStrengthPolicyId \<String\>\]: The unique identifier of authenticationStrengthPolicy
+  \[AuthorizationPolicyId \<String\>\]: The unique identifier of authorizationPolicy
+  \[B2CIdentityUserFlowId \<String\>\]: The unique identifier of b2cIdentityUserFlow
+  \[B2XIdentityUserFlowId \<String\>\]: The unique identifier of b2xIdentityUserFlow
+  \[BitlockerRecoveryKeyId \<String\>\]: The unique identifier of bitlockerRecoveryKey
+  \[CertificateBasedAuthConfigurationId \<String\>\]: The unique identifier of certificateBasedAuthConfiguration
+  \[ClaimsMappingPolicyId \<String\>\]: The unique identifier of claimsMappingPolicy
+  \[ConditionalAccessTemplateId \<String\>\]: The unique identifier of conditionalAccessTemplate
+  \[ContentFormats \<String\[\]\>\]: Usage: contentFormats={contentFormats}
+  \[CrossTenantAccessPolicyConfigurationPartnerTenantId \<String\>\]: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  \[CustomAuthenticationExtensionId \<String\>\]: The unique identifier of customAuthenticationExtension
+  \[DataLossPreventionPolicyId \<String\>\]: The unique identifier of dataLossPreventionPolicy
+  \[DataPolicyOperationId \<String\>\]: The unique identifier of dataPolicyOperation
+  \[DefaultUserRoleOverrideId \<String\>\]: The unique identifier of defaultUserRoleOverride
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[EmailAuthenticationMethodId \<String\>\]: The unique identifier of emailAuthenticationMethod
+  \[FeatureRolloutPolicyId \<String\>\]: The unique identifier of featureRolloutPolicy
+  \[Fido2AuthenticationMethodId \<String\>\]: The unique identifier of fido2AuthenticationMethod
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[HardwareOathAuthenticationMethodId \<String\>\]: The unique identifier of hardwareOathAuthenticationMethod
+  \[HardwareOathTokenAuthenticationMethodDeviceId \<String\>\]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
+  \[HomeRealmDiscoveryPolicyId \<String\>\]: The unique identifier of homeRealmDiscoveryPolicy
+  \[IdentityApiConnectorId \<String\>\]: The unique identifier of identityApiConnector
+  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
+  \[IdentityProviderId \<String\>\]: The unique identifier of identityProvider
+  \[IdentityUserFlowAttributeAssignmentId \<String\>\]: The unique identifier of identityUserFlowAttributeAssignment
+  \[IdentityUserFlowAttributeId \<String\>\]: The unique identifier of identityUserFlowAttribute
+  \[IdentityUserFlowId \<String\>\]: The unique identifier of identityUserFlow
+  \[InformationProtectionLabelId \<String\>\]: The unique identifier of informationProtectionLabel
+  \[LabelIds \<String\[\]\>\]: Usage: labelIds={labelIds}
+  \[Locale \<String\>\]: Usage: locale='{locale}'
+  \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[MicrosoftAuthenticatorAuthenticationMethodId \<String\>\]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  \[MobilityManagementPolicyId \<String\>\]: The unique identifier of mobilityManagementPolicy
+  \[MultiTenantOrganizationMemberId \<String\>\]: The unique identifier of multiTenantOrganizationMember
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OrganizationId \<String\>\]: The unique identifier of organization
+  \[PasswordAuthenticationMethodId \<String\>\]: The unique identifier of passwordAuthenticationMethod
+  \[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId \<String\>\]: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
+  \[PermissionGrantConditionSetId \<String\>\]: The unique identifier of permissionGrantConditionSet
+  \[PermissionGrantPolicyId \<String\>\]: The unique identifier of permissionGrantPolicy
+  \[PermissionGrantPreApprovalPolicyId \<String\>\]: The unique identifier of permissionGrantPreApprovalPolicy
+  \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
+  \[PlatformCredentialAuthenticationMethodId \<String\>\]: The unique identifier of platformCredentialAuthenticationMethod
+  \[RiskDetectionId \<String\>\]: The unique identifier of riskDetection
+  \[RiskyServicePrincipalHistoryItemId \<String\>\]: The unique identifier of riskyServicePrincipalHistoryItem
+  \[RiskyServicePrincipalId \<String\>\]: The unique identifier of riskyServicePrincipal
+  \[RiskyUserHistoryItemId \<String\>\]: The unique identifier of riskyUserHistoryItem
+  \[RiskyUserId \<String\>\]: The unique identifier of riskyUser
+  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
+  \[SensitivityLabelId1 \<String\>\]: The unique identifier of sensitivityLabel
+  \[ServicePrincipalCreationConditionSetId \<String\>\]: The unique identifier of servicePrincipalCreationConditionSet
+  \[ServicePrincipalCreationPolicyId \<String\>\]: The unique identifier of servicePrincipalCreationPolicy
+  \[ServicePrincipalRiskDetectionId \<String\>\]: The unique identifier of servicePrincipalRiskDetection
+  \[SoftwareOathAuthenticationMethodId \<String\>\]: The unique identifier of softwareOathAuthenticationMethod
+  \[TemporaryAccessPassAuthenticationMethodId \<String\>\]: The unique identifier of temporaryAccessPassAuthenticationMethod
+  \[ThreatAssessmentRequestId \<String\>\]: The unique identifier of threatAssessmentRequest
+  \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
+  \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
+  \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
+  \[TrustFrameworkKeySetId \<String\>\]: The unique identifier of trustFrameworkKeySet
+  \[TrustFrameworkKeyV2Kid \<String\>\]: The unique identifier of trustFrameworkKey_v2
+  \[TrustFrameworkPolicyId \<String\>\]: The unique identifier of trustFrameworkPolicy
+  \[UnifiedRoleManagementPolicyAssignmentId \<String\>\]: The unique identifier of unifiedRoleManagementPolicyAssignment
+  \[UnifiedRoleManagementPolicyId \<String\>\]: The unique identifier of unifiedRoleManagementPolicy
+  \[UnifiedRoleManagementPolicyRuleId \<String\>\]: The unique identifier of unifiedRoleManagementPolicyRule
+  \[UserFlowLanguageConfigurationId \<String\>\]: The unique identifier of userFlowLanguageConfiguration
+  \[UserFlowLanguagePageId \<String\>\]: The unique identifier of userFlowLanguagePage
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
+
+LABELACTIONS \<IMicrosoftGraphLabelActionBase\[\]\>: .
+  \[Name \<String\>\]: The name of the action (for example, 'Encrypt', 'AddHeader').
+
+RIGHTS \<IMicrosoftGraphUsageRightsIncluded\>: usageRightsIncluded
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[OwnerEmail \<String\>\]: The email of owner label rights.
+  \[UserEmail \<String\>\]: The email of user with label user rights.
+  \[Value \<String\>\]: usageRights
+
+SUBLABELS \<IMicrosoftGraphSensitivityLabel\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ActionSource \<String\>\]: labelActionSource
+  \[ApplicableTo \<String\>\]: sensitivityLabelTarget
+  \[ApplicationMode \<String\>\]: applicationMode
+  \[AssignedPolicies \<IMicrosoftGraphLabelPolicy\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier of the label policy.
+    \[Name \<String\>\]: The display name of the label policy.
+  \[AutoLabeling \<IMicrosoftGraphAutoLabeling\>\]: autoLabeling
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Message \<String\>\]: The message displayed to the user when the label is applied automatically.
+    \[SensitiveTypeIds \<String\[\]\>\]: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
+  \[AutoTooltip \<String\>\]: 
+  \[Color \<String\>\]: 
+  \[Description \<String\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[IsDefault \<Boolean?\>\]: 
+  \[IsEnabled \<Boolean?\>\]: 
+  \[IsEndpointProtectionEnabled \<Boolean?\>\]: 
+  \[IsScopedToUser \<Boolean?\>\]: 
+  \[LabelActions \<IMicrosoftGraphLabelActionBase\[\]\>\]: 
+    \[Name \<String\>\]: The name of the action (for example, 'Encrypt', 'AddHeader').
+  \[Locale \<String\>\]: 
+  \[Name \<String\>\]: 
+  \[Priority \<Int32?\>\]: 
+  \[Rights \<IMicrosoftGraphUsageRightsIncluded\>\]: usageRightsIncluded
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[OwnerEmail \<String\>\]: The email of owner label rights.
+    \[UserEmail \<String\>\]: The email of user with label user rights.
+    \[Value \<String\>\]: usageRights
+  \[Sublabels \<IMicrosoftGraphSensitivityLabel\[\]\>\]: 
+  \[ToolTip \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotectionsensitivitylabelsublabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotectionsensitivitylabelsublabel)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementremoteassistancepartner
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to remoteAssistancePartners for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementRemoteAssistancePartner?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,28 +18,30 @@ New-MgBetaDeviceManagementRemoteAssistancePartner [-ResponseHeadersVariable <Str
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-LastConnectionDateTime <DateTime>] [-OnboardingRequestExpiryDateTime <DateTime>]
  [-OnboardingStatus <RemoteAssistanceOnboardingStatus>] [-OnboardingUrl <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementRemoteAssistancePartner -BodyParameter <IMicrosoftGraphRemoteAssistancePartner>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to remoteAssistancePartners for deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -74,21 +73,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -198,6 +182,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -205,6 +204,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -245,40 +259,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRemoteAssistancePartner>`: RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphRemoteAssistancePartner\>: RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: Display name of the partner.
-  - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
-  - `[OnboardingRequestExpiryDateTime <DateTime?>]`: When the OnboardingStatus is Onboarding, This is the date time when the onboarding request expires.
-  - `[OnboardingStatus <RemoteAssistanceOnboardingStatus?>]`: The current TeamViewer connector status
-  - `[OnboardingUrl <String>]`: URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
+  \[DisplayName \<String\>\]: Display name of the partner.
+  \[LastConnectionDateTime \<DateTime?\>\]: Timestamp of the last request sent to Intune by the TEM partner.
+  \[OnboardingRequestExpiryDateTime \<DateTime?\>\]: When the OnboardingStatus is Onboarding, This is the date time when the onboarding request expires.
+  \[OnboardingStatus \<RemoteAssistanceOnboardingStatus?\>\]: The current TeamViewer connector status
+  \[OnboardingUrl \<String\>\]: URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementremoteassistancepartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementremoteassistancepartner)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

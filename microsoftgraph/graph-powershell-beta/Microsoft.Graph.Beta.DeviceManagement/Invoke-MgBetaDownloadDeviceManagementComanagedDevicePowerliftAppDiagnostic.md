@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetadownloaddevicemanagementcomanageddevicepowerliftappdiagnostic
@@ -17,14 +17,14 @@ Invoke action downloadPowerliftAppDiagnostic
 Invoke-MgBetaDownloadDeviceManagementComanagedDevicePowerliftAppDiagnostic -OutFile <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Request <IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Download
 ```
 Invoke-MgBetaDownloadDeviceManagementComanagedDevicePowerliftAppDiagnostic -OutFile <String>
  -Body <IPathsR8E038DevicemanagementComanageddevicesMicrosoftGraphDownloadpowerliftappdiagnosticPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,6 +32,16 @@ Invoke-MgBetaDownloadDeviceManagementComanagedDevicePowerliftAppDiagnostic -OutF
 Invoke action downloadPowerliftAppDiagnostic
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -51,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Body
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -63,21 +73,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -126,6 +121,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Request
 This type contains request details to download app diagnostic files.
 To construct, see NOTES section for REQUEST properties and create a hash table.
@@ -149,6 +159,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -189,42 +214,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPathsR8E038DevicemanagementComanageddevicesMicrosoftGraphDownloadpowerliftappdiagnosticPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Request <IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>]`: This type contains request details to download app diagnostic files.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Files <String- `[]`>]`: The list of files to download which is associated with the diagnostic.
-    - `[PowerliftId <String>]`: The unique id for the request that serves as an identifer for the diagnostic to be downloaded.
+BODY \<IPathsR8E038DevicemanagementComanageddevicesMicrosoftGraphDownloadpowerliftappdiagnosticPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Request \<IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest\>\]: This type contains request details to download app diagnostic files.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Files \<String\[\]\>\]: The list of files to download which is associated with the diagnostic.
+    \[PowerliftId \<String\>\]: The unique id for the request that serves as an identifer for the diagnostic to be downloaded.
 
-REQUEST `<IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>`: This type contains request details to download app diagnostic files.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Files <String- `[]`>]`: The list of files to download which is associated with the diagnostic.
-  - `[PowerliftId <String>]`: The unique id for the request that serves as an identifer for the diagnostic to be downloaded.
+REQUEST \<IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest\>: This type contains request details to download app diagnostic files.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Files \<String\[\]\>\]: The list of files to download which is associated with the diagnostic.
+  \[PowerliftId \<String\>\]: The unique id for the request that serves as an identifer for the diagnostic to be downloaded.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetadownloaddevicemanagementcomanageddevicepowerliftappdiagnostic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetadownloaddevicemanagementcomanageddevicepowerliftappdiagnostic)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

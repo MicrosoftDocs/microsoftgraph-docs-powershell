@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingandroiddeviceownerfullymanagedenrollmentstate
@@ -16,29 +16,31 @@ Sets the AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyMan
 ```
 Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingAndroidDeviceOwnerFullyManagedEnrollmentState
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Enabled] [-Headers <IDictionary>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingAndroidDeviceOwnerFullyManagedEnrollmentState
  -BodyParameter <IPaths1Wtan1TDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphSetandroiddeviceownerfullymanagedenrollmentstatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Sets the AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled to the given value.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -58,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -73,23 +75,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Enabled
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -133,6 +120,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -140,6 +142,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -180,34 +197,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Wtan1TDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphSetandroiddeviceownerfullymanagedenrollmentstatePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Enabled <Boolean?>]`:
+BODYPARAMETER \<IPaths1Wtan1TDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphSetandroiddeviceownerfullymanagedenrollmentstatePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Enabled \<Boolean?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingandroiddeviceownerfullymanagedenrollmentstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingandroiddeviceownerfullymanagedenrollmentstate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersettingassignment
@@ -10,16 +10,13 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to assignments for deviceManagement
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementVirtualEndpointUserSettingAssignment -CloudPcUserSettingId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-Id <String>] [-Target <Hashtable>] [-Headers <IDictionary>] [-WhatIf]
+ [-Id <String>] [-Target <Hashtable>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +24,7 @@ New-MgDeviceManagementVirtualEndpointUserSettingAssignment -CloudPcUserSettingId
 ```
 New-MgDeviceManagementVirtualEndpointUserSettingAssignment -CloudPcUserSettingId <String>
  -BodyParameter <IMicrosoftGraphCloudPcUserSettingAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -35,7 +32,7 @@ New-MgDeviceManagementVirtualEndpointUserSettingAssignment -CloudPcUserSettingId
 New-MgDeviceManagementVirtualEndpointUserSettingAssignment
  -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-Target <Hashtable>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -43,13 +40,23 @@ New-MgDeviceManagementVirtualEndpointUserSettingAssignment
 New-MgDeviceManagementVirtualEndpointUserSettingAssignment
  -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphCloudPcUserSettingAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to assignments for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -93,21 +100,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -178,6 +170,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -200,6 +207,21 @@ cloudPcManagementAssignmentTarget
 Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -241,69 +263,46 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcUserSettingAssignment>`: cloudPcUserSettingAssignment
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphCloudPcUserSettingAssignment\>: cloudPcUserSettingAssignment
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when this assignment was created.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when this assignment was created.
 The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  \[Target \<IMicrosoftGraphCloudPcManagementAssignmentTarget\>\]: cloudPcManagementAssignmentTarget
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
-  - `[AuditEventId <String>]`: The unique identifier of auditEvent
-  - `[Category <String>]`: Usage: category='{category}'
-  - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
-  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
-  - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
-  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
-  - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
-  - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment
-  - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
-  - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
-  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
-  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
-  - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
-  - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
-  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
-  - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
-  - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
-  - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
-  - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
-  - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
-  - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
-  - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserPrincipalName <String>]`: Alternate key of user
+INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
+  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
+  \[Category \<String\>\]: Usage: category='{category}'
+  \[CloudPcAuditEventId \<String\>\]: The unique identifier of cloudPcAuditEvent
+  \[CloudPcDeviceImageId \<String\>\]: The unique identifier of cloudPcDeviceImage
+  \[CloudPcGalleryImageId \<String\>\]: The unique identifier of cloudPcGalleryImage
+  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
+  \[CloudPcOnPremisesConnectionId \<String\>\]: The unique identifier of cloudPcOnPremisesConnection
+  \[CloudPcProvisioningPolicyAssignmentId \<String\>\]: The unique identifier of cloudPcProvisioningPolicyAssignment
+  \[CloudPcProvisioningPolicyId \<String\>\]: The unique identifier of cloudPcProvisioningPolicy
+  \[CloudPcUserSettingAssignmentId \<String\>\]: The unique identifier of cloudPcUserSettingAssignment
+  \[CloudPcUserSettingId \<String\>\]: The unique identifier of cloudPcUserSetting
+  \[ComplianceManagementPartnerId \<String\>\]: The unique identifier of complianceManagementPartner
+  \[DeviceAndAppManagementRoleAssignmentId \<String\>\]: The unique identifier of deviceAndAppManagementRoleAssignment
+  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
+  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
+  \[IosUpdateDeviceStatusId \<String\>\]: The unique identifier of iosUpdateDeviceStatus
+  \[MobileThreatDefenseConnectorId \<String\>\]: The unique identifier of mobileThreatDefenseConnector
+  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
+  \[ResourceOperationId \<String\>\]: The unique identifier of resourceOperation
+  \[RoleAssignmentId \<String\>\]: The unique identifier of roleAssignment
+  \[RoleDefinitionId \<String\>\]: The unique identifier of roleDefinition
+  \[TelecomExpenseManagementPartnerId \<String\>\]: The unique identifier of telecomExpenseManagementPartner
+  \[TermsAndConditionsAcceptanceStatusId \<String\>\]: The unique identifier of termsAndConditionsAcceptanceStatus
+  \[TermsAndConditionsAssignmentId \<String\>\]: The unique identifier of termsAndConditionsAssignment
+  \[TermsAndConditionsId \<String\>\]: The unique identifier of termsAndConditions
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserPrincipalName \<String\>\]: Alternate key of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersettingassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersettingassignment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

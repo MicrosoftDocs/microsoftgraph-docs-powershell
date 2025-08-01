@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasroomlistworkspace
@@ -15,14 +15,14 @@ Delete navigation property workspaces for places
 ### Delete (Default)
 ```
 Remove-MgBetaPlaceAsRoomListWorkspace -PlaceId <String> -WorkspaceId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaPlaceAsRoomListWorkspace -InputObject <ICalendarIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,22 +31,17 @@ Delete navigation property workspaces for places
 
 ## EXAMPLES
 
-## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### EXAMPLE 1
 ```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+## PARAMETERS
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -124,6 +119,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -131,6 +141,36 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WorkspaceId
+The unique identifier of workspace
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -155,21 +195,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceId
-The unique identifier of workspace
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -186,46 +211,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[EventId2 <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlaceId <String>]`: The unique identifier of place
-  - `[RoomId <String>]`: The unique identifier of room
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WorkspaceId <String>]`: The unique identifier of workspace
+INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
+  \[EventId \<String\>\]: The unique identifier of event
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
+  \[User \<String\>\]: Usage: User='{User}'
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasroomlistworkspace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasroomlistworkspace)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

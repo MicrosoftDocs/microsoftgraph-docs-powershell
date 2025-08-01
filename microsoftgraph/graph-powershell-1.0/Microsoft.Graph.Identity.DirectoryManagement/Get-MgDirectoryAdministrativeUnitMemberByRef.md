@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmemberbyref
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryAdministrativeUnitMemberByRef
@@ -11,41 +10,26 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Use this API to get the members list (users, groups, or devices) in an administrative unit.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
 Get-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId <String> [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Use this API to get the members list (users, groups, or devices) in an administrative unit.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AdministrativeUnit.Read.All, Directory.ReadWrite.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AdministrativeUnit.Read.All, Directory.ReadWrite.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: List member references
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId
-
-```
-This example will list member references
-
 
 ## PARAMETERS
 
@@ -156,6 +140,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -182,21 +181,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -231,6 +215,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -247,26 +246,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmemberbyref)
 
 [https://learn.microsoft.com/graph/api/administrativeunit-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-list-members?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

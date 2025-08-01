@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.BusinessScenario-help.xml
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannerplanconfiguration
 schema: 2.0.0
-ms.subservice: business-scenarios
 ---
 
 # Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration
@@ -21,14 +20,14 @@ Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration -BusinessScenarioI
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DefaultLanguage <String>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId <String>
  -BodyParameter <IMicrosoftGraphPlannerPlanConfiguration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,33 +38,25 @@ Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration -InputObject <IBus
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DefaultLanguage <String>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration -InputObject <IBusinessScenarioIdentity>
  -BodyParameter <IMicrosoftGraphPlannerPlanConfiguration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a plannerPlanConfiguration object and its plannerPlanConfigurationLocalization collection for a businessScenario.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BusinessScenarioConfig.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.BusinessScenario
+```
 
 $params = @{
 	defaultLanguage = "en-us"
@@ -135,10 +126,6 @@ $params = @{
 
 Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
 
-```
-This example shows how to use the Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -197,21 +184,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -362,6 +334,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -369,6 +356,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -410,104 +412,82 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlanConfiguration>`: plannerPlanConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPlannerPlanConfiguration\>: plannerPlanConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition- `[]`>]`: List the buckets that should be created in the plan.
-    - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  \[Buckets \<IMicrosoftGraphPlannerPlanConfigurationBucketDefinition\[\]\>\]: List the buckets that should be created in the plan.
+    \[ExternalBucketId \<String\>\]: Application-specified identifier of the bucket.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the plan configuration was created.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when the plan configuration was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[DefaultLanguage <String>]`: The language code for the default language to be used for the names of the objects created for the plan.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the plan configuration was last modified.
+  \[DefaultLanguage \<String\>\]: The language code for the default language to be used for the names of the objects created for the plan.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the plan configuration was last modified.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization- `[]`>]`: Localized names for the plan configuration.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Localizations \<IMicrosoftGraphPlannerPlanConfigurationLocalization\[\]\>\]: Localized names for the plan configuration.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization- `[]`>]`: Localized names for configured buckets in the plan configuration.
-      - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
-      - `[Name <String>]`: Name of the bucket.
-    - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
-    - `[PlanTitle <String>]`: Localized title of the plan.
+    \[Buckets \<IMicrosoftGraphPlannerPlanConfigurationBucketLocalization\[\]\>\]: Localized names for configured buckets in the plan configuration.
+      \[ExternalBucketId \<String\>\]: Application-specified identifier of the bucket.
+      \[Name \<String\>\]: Name of the bucket.
+    \[LanguageTag \<String\>\]: The language code associated with the localized names in this object.
+    \[PlanTitle \<String\>\]: Localized title of the plan.
 
-BUCKETS `<IMicrosoftGraphPlannerPlanConfigurationBucketDefinition- `[]`>`: List the buckets that should be created in the plan.
-  - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
+BUCKETS \<IMicrosoftGraphPlannerPlanConfigurationBucketDefinition\[\]\>: List the buckets that should be created in the plan.
+  \[ExternalBucketId \<String\>\]: Application-specified identifier of the bucket.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
-  - `[UniqueName <String>]`: Alternate key of businessScenario
+INPUTOBJECT \<IBusinessScenarioIdentity\>: Identity Parameter
+  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
+  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-LOCALIZATIONS `<IMicrosoftGraphPlannerPlanConfigurationLocalization- `[]`>`: Localized names for the plan configuration.
-  - `[Id <String>]`: The unique identifier for an entity.
+LOCALIZATIONS \<IMicrosoftGraphPlannerPlanConfigurationLocalization\[\]\>: Localized names for the plan configuration.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization- `[]`>]`: Localized names for configured buckets in the plan configuration.
-    - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
-    - `[Name <String>]`: Name of the bucket.
-  - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
-  - `[PlanTitle <String>]`: Localized title of the plan.
+  \[Buckets \<IMicrosoftGraphPlannerPlanConfigurationBucketLocalization\[\]\>\]: Localized names for configured buckets in the plan configuration.
+    \[ExternalBucketId \<String\>\]: Application-specified identifier of the bucket.
+    \[Name \<String\>\]: Name of the bucket.
+  \[LanguageTag \<String\>\]: The language code associated with the localized names in this object.
+  \[PlanTitle \<String\>\]: Localized title of the plan.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannerplanconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannerplanconfiguration)
 
 [https://learn.microsoft.com/graph/api/plannerplanconfiguration-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerplanconfiguration-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

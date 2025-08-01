@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmoduleresource
 schema: 2.0.0
-ms.subservice: education
 ---
 
 # New-MgEducationClassModuleResource
@@ -13,16 +12,13 @@ Create a resource in a module.
 Only teachers can perform this operation.
 You can create the following types of module resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgEducationClassModuleResource -EducationClassId <String> -EducationModuleId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Resource <IMicrosoftGraphEducationResource>] [-Headers <IDictionary>]
+ [-Resource <IMicrosoftGraphEducationResource>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,21 +26,21 @@ New-MgEducationClassModuleResource -EducationClassId <String> -EducationModuleId
 ```
 New-MgEducationClassModuleResource -EducationClassId <String> -EducationModuleId <String>
  -BodyParameter <IMicrosoftGraphEducationModuleResource> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgEducationClassModuleResource -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgEducationClassModuleResource -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationModuleResource> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,20 +48,12 @@ Create a resource in a module.
 Only teachers can perform this operation.
 You can create the following types of module resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduCurricula.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduCurricula.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	resource = @{
@@ -77,14 +65,10 @@ $params = @{
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	resource = @{
@@ -98,14 +82,10 @@ $params = @{
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	resource = @{
@@ -119,14 +99,10 @@ $params = @{
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	resource = @{
@@ -140,14 +116,10 @@ $params = @{
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
-### Example 5: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	resource = @{
@@ -159,14 +131,10 @@ $params = @{
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
+### EXAMPLE 6
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
-### Example 6: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	resource = @{
@@ -178,14 +146,10 @@ $params = @{
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
+### EXAMPLE 7
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
-### Example 7: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	resource = @{
@@ -197,14 +161,10 @@ $params = @{
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
+### EXAMPLE 8
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
-### Example 8: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	resource = @{
@@ -215,10 +175,6 @@ $params = @{
 }
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
-
-```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
 
 ## PARAMETERS
 
@@ -250,21 +206,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -345,6 +286,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Resource
 educationResource
 To construct, see NOTES section for RESOURCE properties and create a hash table.
@@ -368,6 +324,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -409,80 +380,58 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationModuleResource>`: educationModuleResource
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphEducationModuleResource\>: educationModuleResource
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+  \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity or actor.
+        \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[DisplayName <String>]`: Display name of resource.
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[DisplayName \<String\>\]: Display name of resource.
+    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
-  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
-  - `[EducationClassId <String>]`: The unique identifier of educationClass
-  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
-  - `[EducationModuleId <String>]`: The unique identifier of educationModule
-  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
-  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
-  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
-  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
-  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationUserId <String>]`: The unique identifier of educationUser
+INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
+  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
+  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
+  \[EducationClassId \<String\>\]: The unique identifier of educationClass
+  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
+  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
+  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
+  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
+  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
+  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
+  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
+  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
-RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+RESOURCE \<IMicrosoftGraphEducationResource\>: educationResource
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
+      \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[DisplayName <String>]`: Display name of resource.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[DisplayName \<String\>\]: Display name of resource.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmoduleresource)
 
 [https://learn.microsoft.com/graph/api/educationmodule-post-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-post-resources?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

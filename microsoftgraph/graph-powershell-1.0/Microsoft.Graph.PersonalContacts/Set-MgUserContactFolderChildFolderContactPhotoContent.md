@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/set-mgusercontactfolderchildfoldercontactphotocontent
@@ -11,16 +11,13 @@ schema: 2.0.0
 Optional contact picture.
 You can get or set a photo for a contact.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserContactFolderChildFolderContactPhotoContent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Set-MgBetaUserContactFolderChildFolderContactPhotoContent?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Set (Default)
 ```
 Set-MgUserContactFolderChildFolderContactPhotoContent -ContactFolderId <String> -ContactFolderId1 <String>
  -ContactId <String> -UserId <String> [-Data <Stream>] [-ResponseHeadersVariable <String>] -InFile <String>
- [-ContentType <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-ContentType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +25,7 @@ Set-MgUserContactFolderChildFolderContactPhotoContent -ContactFolderId <String> 
 ```
 Set-MgUserContactFolderChildFolderContactPhotoContent -InputObject <IPersonalContactsIdentity> [-Data <Stream>]
  [-ResponseHeadersVariable <String>] -InFile <String> [-ContentType <String>] [-Headers <IDictionary>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,22 +34,17 @@ You can get or set a photo for a contact.
 
 ## EXAMPLES
 
-## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### EXAMPLE 1
 ```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+## PARAMETERS
 
 ### -ContactFolderId
 The unique identifier of contactFolder
@@ -115,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Data
-
+.
 
 ```yaml
 Type: Stream
@@ -192,6 +184,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -216,6 +223,21 @@ Parameter Sets: Set
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -256,37 +278,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
-  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
-  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
-  - `[ContactId <String>]`: The unique identifier of contact
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
+  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
+  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
+  \[ContactId \<String\>\]: The unique identifier of contact
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/set-mgusercontactfolderchildfoldercontactphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/set-mgusercontactfolderchildfoldercontactphotocontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

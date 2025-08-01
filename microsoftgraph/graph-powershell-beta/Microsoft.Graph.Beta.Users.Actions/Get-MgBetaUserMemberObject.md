@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermemberobject
@@ -10,23 +10,20 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getMemberObjects
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMemberObject](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserMemberObject?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
 Get-MgBetaUserMemberObject -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaUserMemberObject -UserId <String>
  -BodyParameter <IPaths5Y1AzfUsersUserIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,31 +31,24 @@ Get-MgBetaUserMemberObject -UserId <String>
 ```
 Get-MgBetaUserMemberObject -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaUserMemberObject -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths5Y1AzfUsersUserIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action getMemberObjects
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, User.ReadWrite.All, User.Read, User.Read.All, Application.ReadWrite.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, Application.ReadWrite.All, User.Read.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, User.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserMemberObject Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	SecurityEnabledOnly = $true
@@ -66,8 +56,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMemberObject -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Get-MgBetaUserMemberObject Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -87,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -99,21 +87,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -148,6 +121,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -164,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityEnabledOnly
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -187,6 +175,21 @@ Parameter Sets: GetExpanded, Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -226,36 +229,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths5Y1AzfUsersUserIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SecurityEnabledOnly <Boolean?>]`: 
+BODYPARAMETER \<IPaths5Y1AzfUsersUserIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[SecurityEnabledOnly \<Boolean?\>\]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermemberobject)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

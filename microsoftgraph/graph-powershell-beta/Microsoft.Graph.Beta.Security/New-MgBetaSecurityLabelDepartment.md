@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment
 schema: 2.0.0
-ms.subservice: security
 ---
 
 # New-MgBetaSecurityLabelDepartment
@@ -11,33 +10,30 @@ ms.subservice: security
 ## SYNOPSIS
 Create a new departmentTemplate object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelDepartment?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaSecurityLabelDepartment [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityLabelDepartment -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new departmentTemplate object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.departmentTemplate"
@@ -45,10 +41,6 @@ $params = @{
 }
 
 New-MgBetaSecurityLabelDepartment -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityLabelDepartment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -79,21 +71,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -175,6 +152,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -182,6 +174,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -222,42 +229,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-post-departments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-labelsroot-post-departments?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

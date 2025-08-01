@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssetting
@@ -19,13 +19,13 @@ Update-MgBetaNetworkAccessSetting [-ResponseHeadersVariable <String>] [-Addition
  [-CrossTenantAccess <IMicrosoftGraphNetworkaccessCrossTenantAccessSettings>]
  [-EnrichedAuditLogs <IMicrosoftGraphNetworkaccessEnrichedAuditLogs>]
  [-ForwardingOptions <IMicrosoftGraphNetworkaccessForwardingOptions>] [-Id <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaNetworkAccessSetting -BodyParameter <IMicrosoftGraphNetworkaccessSettings>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,6 +33,16 @@ Update-MgBetaNetworkAccessSetting -BodyParameter <IMicrosoftGraphNetworkaccessSe
 Update the navigation property settings in networkAccess
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -75,21 +85,6 @@ To construct, see NOTES section for CONDITIONALACCESS properties and create a ha
 Type: IMicrosoftGraphNetworkaccessConditionalAccessSettings
 Parameter Sets: UpdateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -177,6 +172,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -184,6 +194,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -224,87 +249,64 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessSettings>`: settings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphNetworkaccessSettings\>: settings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ConditionalAccess <IMicrosoftGraphNetworkaccessConditionalAccessSettings>]`: conditionalAccessSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[ConditionalAccess \<IMicrosoftGraphNetworkaccessConditionalAccessSettings\>\]: conditionalAccessSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[SignalingStatus <String>]`: status
-  - `[CrossTenantAccess <IMicrosoftGraphNetworkaccessCrossTenantAccessSettings>]`: crossTenantAccessSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[SignalingStatus \<String\>\]: status
+  \[CrossTenantAccess \<IMicrosoftGraphNetworkaccessCrossTenantAccessSettings\>\]: crossTenantAccessSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[NetworkPacketTaggingStatus <String>]`: status
-  - `[EnrichedAuditLogs <IMicrosoftGraphNetworkaccessEnrichedAuditLogs>]`: enrichedAuditLogs
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[NetworkPacketTaggingStatus \<String\>\]: status
+  \[EnrichedAuditLogs \<IMicrosoftGraphNetworkaccessEnrichedAuditLogs\>\]: enrichedAuditLogs
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Exchange <IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>]`: enrichedAuditLogsSettings
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Status <String>]`: status
-    - `[Sharepoint <IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>]`: enrichedAuditLogsSettings
-    - `[Teams <IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>]`: enrichedAuditLogsSettings
-  - `[ForwardingOptions <IMicrosoftGraphNetworkaccessForwardingOptions>]`: forwardingOptions
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Exchange \<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings\>\]: enrichedAuditLogsSettings
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Status \<String\>\]: status
+    \[Sharepoint \<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings\>\]: enrichedAuditLogsSettings
+    \[Teams \<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings\>\]: enrichedAuditLogsSettings
+  \[ForwardingOptions \<IMicrosoftGraphNetworkaccessForwardingOptions\>\]: forwardingOptions
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[SkipDnsLookupState <String>]`: status
+    \[SkipDnsLookupState \<String\>\]: status
 
-CONDITIONALACCESS `<IMicrosoftGraphNetworkaccessConditionalAccessSettings>`: conditionalAccessSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+CONDITIONALACCESS \<IMicrosoftGraphNetworkaccessConditionalAccessSettings\>: conditionalAccessSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[SignalingStatus <String>]`: status
+  \[SignalingStatus \<String\>\]: status
 
-CROSSTENANTACCESS `<IMicrosoftGraphNetworkaccessCrossTenantAccessSettings>`: crossTenantAccessSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+CROSSTENANTACCESS \<IMicrosoftGraphNetworkaccessCrossTenantAccessSettings\>: crossTenantAccessSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[NetworkPacketTaggingStatus <String>]`: status
+  \[NetworkPacketTaggingStatus \<String\>\]: status
 
-ENRICHEDAUDITLOGS `<IMicrosoftGraphNetworkaccessEnrichedAuditLogs>`: enrichedAuditLogs
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+ENRICHEDAUDITLOGS \<IMicrosoftGraphNetworkaccessEnrichedAuditLogs\>: enrichedAuditLogs
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Exchange <IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>]`: enrichedAuditLogsSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Status <String>]`: status
-  - `[Sharepoint <IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>]`: enrichedAuditLogsSettings
-  - `[Teams <IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>]`: enrichedAuditLogsSettings
+  \[Exchange \<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings\>\]: enrichedAuditLogsSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Status \<String\>\]: status
+  \[Sharepoint \<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings\>\]: enrichedAuditLogsSettings
+  \[Teams \<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings\>\]: enrichedAuditLogsSettings
 
-FORWARDINGOPTIONS `<IMicrosoftGraphNetworkaccessForwardingOptions>`: forwardingOptions
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+FORWARDINGOPTIONS \<IMicrosoftGraphNetworkaccessForwardingOptions\>: forwardingOptions
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[SkipDnsLookupState <String>]`: status
+  \[SkipDnsLookupState \<String\>\]: status
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

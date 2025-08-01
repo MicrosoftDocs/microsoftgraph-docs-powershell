@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotesectionpage
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action onenotePatchContent
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteSectionPage?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### PatchExpanded (Default)
@@ -20,14 +17,14 @@ Invoke action onenotePatchContent
 Update-MgUserOnenoteSectionPage -OnenotePageId <String> -OnenoteSectionId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Patch
 ```
 Update-MgUserOnenoteSectionPage -OnenotePageId <String> -OnenoteSectionId <String> -UserId <String>
  -BodyParameter <IPaths17C2FocUsersUserIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +32,7 @@ Update-MgUserOnenoteSectionPage -OnenotePageId <String> -OnenoteSectionId <Strin
 ```
 Update-MgUserOnenoteSectionPage -InputObject <INotesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -43,7 +40,7 @@ Update-MgUserOnenoteSectionPage -InputObject <INotesIdentity> [-ResponseHeadersV
 ```
 Update-MgUserOnenoteSectionPage -InputObject <INotesIdentity>
  -BodyParameter <IPaths17C2FocUsersUserIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -51,6 +48,16 @@ Update-MgUserOnenoteSectionPage -InputObject <INotesIdentity>
 Invoke action onenotePatchContent
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -70,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -86,28 +93,13 @@ Accept wildcard characters: False
 ```
 
 ### -Commands
-
+.
 To construct, see NOTES section for COMMANDS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnenotePatchContentCommand[]
 Parameter Sets: PatchExpanded, PatchViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -192,6 +184,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -216,6 +223,21 @@ Parameter Sets: PatchExpanded, Patch
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -255,62 +277,39 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths17C2FocUsersUserIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Commands <IMicrosoftGraphOnenotePatchContentCommand- `[]`>]`:
-    - `[Action <String>]`: onenotePatchActionType
-    - `[Content <String>]`: A string of well-formed HTML to add to the page, and any image or file binary data.
+BODYPARAMETER \<IPaths17C2FocUsersUserIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Commands \<IMicrosoftGraphOnenotePatchContentCommand\[\]\>\]: 
+    \[Action \<String\>\]: onenotePatchActionType
+    \[Content \<String\>\]: A string of well-formed HTML to add to the page, and any image or file binary data.
 If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
-    - `[Position <String>]`: onenotePatchInsertPosition
-    - `[Target <String>]`: The element to update.
-Must be the #`<data-id>` or the generated `<id>` of the element, or the body or title keyword.
+    \[Position \<String\>\]: onenotePatchInsertPosition
+    \[Target \<String\>\]: The element to update.
+Must be the #\<data-id\> or the generated \<id\> of the element, or the body or title keyword.
 
-COMMANDS `<IMicrosoftGraphOnenotePatchContentCommand- `[]`>`: .
-  - `[Action <String>]`: onenotePatchActionType
-  - `[Content <String>]`: A string of well-formed HTML to add to the page, and any image or file binary data.
+COMMANDS \<IMicrosoftGraphOnenotePatchContentCommand\[\]\>: .
+  \[Action \<String\>\]: onenotePatchActionType
+  \[Content \<String\>\]: A string of well-formed HTML to add to the page, and any image or file binary data.
 If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
-  - `[Position <String>]`: onenotePatchInsertPosition
-  - `[Target <String>]`: The element to update.
-Must be the #`<data-id>` or the generated `<id>` of the element, or the body or title keyword.
+  \[Position \<String\>\]: onenotePatchInsertPosition
+  \[Target \<String\>\]: The element to update.
+Must be the #\<data-id\> or the generated \<id\> of the element, or the body or title keyword.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
-  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<INotesIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
+  \[SectionGroupId1 \<String\>\]: The unique identifier of sectionGroup
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotesectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotesectionpage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

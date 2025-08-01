@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationshipoperation
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property operations in tenantRelationships
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,7 +18,7 @@ Update-MgTenantRelationshipDelegatedAdminRelationshipOperation -DelegatedAdminRe
  -DelegatedAdminRelationshipOperationId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Data <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-OperationType <String>] [-Status <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -29,7 +26,7 @@ Update-MgTenantRelationshipDelegatedAdminRelationshipOperation -DelegatedAdminRe
 Update-MgTenantRelationshipDelegatedAdminRelationshipOperation -DelegatedAdminRelationshipId <String>
  -DelegatedAdminRelationshipOperationId <String>
  -BodyParameter <IMicrosoftGraphDelegatedAdminRelationshipOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,7 +34,7 @@ Update-MgTenantRelationshipDelegatedAdminRelationshipOperation -DelegatedAdminRe
 Update-MgTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <IIdentityPartnerIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Data <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-OperationType <String>]
- [-Status <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -45,13 +42,23 @@ Update-MgTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <IId
 ```
 Update-MgTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <IIdentityPartnerIdentity>
  -BodyParameter <IMicrosoftGraphDelegatedAdminRelationshipOperation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property operations in tenantRelationships
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -83,21 +90,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -241,6 +233,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -263,6 +270,21 @@ longRunningOperationStatus
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -304,51 +326,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDelegatedAdminRelationshipOperation>`: delegatedAdminRelationshipOperation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDelegatedAdminRelationshipOperation\>: delegatedAdminRelationshipOperation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The time in ISO 8601 format and in UTC time when the long-running operation was created.
+  \[CreatedDateTime \<DateTime?\>\]: The time in ISO 8601 format and in UTC time when the long-running operation was created.
 Read-only.
-  - `[Data <String>]`: The data (payload) for the operation.
+  \[Data \<String\>\]: The data (payload) for the operation.
 Read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: The time in ISO 8601 format and in UTC time when the long-running operation was last modified.
+  \[LastModifiedDateTime \<DateTime?\>\]: The time in ISO 8601 format and in UTC time when the long-running operation was last modified.
 Read-only.
-  - `[OperationType <String>]`: delegatedAdminRelationshipOperationType
-  - `[Status <String>]`: longRunningOperationStatus
+  \[OperationType \<String\>\]: delegatedAdminRelationshipOperationType
+  \[Status \<String\>\]: longRunningOperationStatus
 
-INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
-  - `[DelegatedAdminAccessAssignmentId <String>]`: The unique identifier of delegatedAdminAccessAssignment
-  - `[DelegatedAdminCustomerId <String>]`: The unique identifier of delegatedAdminCustomer
-  - `[DelegatedAdminRelationshipId <String>]`: The unique identifier of delegatedAdminRelationship
-  - `[DelegatedAdminRelationshipOperationId <String>]`: The unique identifier of delegatedAdminRelationshipOperation
-  - `[DelegatedAdminRelationshipRequestId <String>]`: The unique identifier of delegatedAdminRelationshipRequest
-  - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
+INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
+  \[DelegatedAdminAccessAssignmentId \<String\>\]: The unique identifier of delegatedAdminAccessAssignment
+  \[DelegatedAdminCustomerId \<String\>\]: The unique identifier of delegatedAdminCustomer
+  \[DelegatedAdminRelationshipId \<String\>\]: The unique identifier of delegatedAdminRelationship
+  \[DelegatedAdminRelationshipOperationId \<String\>\]: The unique identifier of delegatedAdminRelationshipOperation
+  \[DelegatedAdminRelationshipRequestId \<String\>\]: The unique identifier of delegatedAdminRelationshipRequest
+  \[DelegatedAdminServiceManagementDetailId \<String\>\]: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationshipoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationshipoperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

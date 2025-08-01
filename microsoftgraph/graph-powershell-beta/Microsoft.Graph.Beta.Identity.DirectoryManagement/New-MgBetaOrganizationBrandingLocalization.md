@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandinglocalization
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaOrganizationBrandingLocalization
@@ -14,9 +13,6 @@ This creates a localized branding and at the same time, the default branding if 
 The default branding is created only once.
 It's loaded when a localized branding isn't configured for the user's browser language.
 To retrieve the default branding, see Get branding.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgOrganizationBrandingLocalization?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,13 +32,13 @@ New-MgBetaOrganizationBrandingLocalization -OrganizationId <String> [-ResponseHe
  [-LoginPageTextVisibilitySettings <IMicrosoftGraphLoginPageTextVisibilitySettings>] [-SignInPageText <String>]
  [-SquareLogoDarkInputFile <String>] [-SquareLogoDarkRelativeUrl <String>] [-SquareLogoInputFile <String>]
  [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaOrganizationBrandingLocalization -OrganizationId <String> -BodyParameter <Hashtable>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -63,14 +59,14 @@ New-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManag
  [-LoginPageTextVisibilitySettings <IMicrosoftGraphLoginPageTextVisibilitySettings>] [-SignInPageText <String>]
  [-SquareLogoDarkInputFile <String>] [-SquareLogoDarkRelativeUrl <String>] [-SquareLogoInputFile <String>]
  [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -80,20 +76,12 @@ The default branding is created only once.
 It's loaded when a localized branding isn't configured for the user's browser language.
 To retrieve the default branding, see Get branding.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 $params = @{
 	backgroundColor = "#00000F"
@@ -102,10 +90,6 @@ $params = @{
 }
 
 New-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaOrganizationBrandingLocalization Cmdlet.
-
 
 ## PARAMETERS
 
@@ -231,21 +215,6 @@ Read-only.
 Type: String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -622,6 +591,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -736,6 +720,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -769,107 +768,88 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-CONTENTCUSTOMIZATION `<IMicrosoftGraphContentCustomization>`: contentCustomization
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttributeCollection <IMicrosoftGraphKeyValue- `[]`>]`: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-    - `[Key <String>]`: Key.
-    - `[Value <String>]`: Value.
-  - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
-  - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
-  - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.
+CONTENTCUSTOMIZATION \<IMicrosoftGraphContentCustomization\>: contentCustomization
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AttributeCollection \<IMicrosoftGraphKeyValue\[\]\>\]: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
+    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+    \[Value \<String\>\]: Contains the corresponding value for the specified key.
+  \[AttributeCollectionRelativeUrl \<String\>\]: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
+  \[RegistrationCampaign \<IMicrosoftGraphKeyValue\[\]\>\]: Represents content options to customize during MFA proofup interruptions.
+  \[RegistrationCampaignRelativeUrl \<String\>\]: The relative URL of the content options to customize during MFA proofup interruptions.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
-  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
-  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
-  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
-  - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
-  - `[CertificateAuthorityDetailId <String>]`: The unique identifier of certificateAuthorityDetail
-  - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
-  - `[CertificateBasedAuthPkiId <String>]`: The unique identifier of certificateBasedAuthPki
-  - `[CommandId <String>]`: The unique identifier of command
-  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
-  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
-  - `[ContractId <String>]`: The unique identifier of contract
-  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
-  - `[DeviceTemplateId <String>]`: The unique identifier of deviceTemplate
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
-  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
-  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
-  - `[DirectorySettingTemplateId <String>]`: The unique identifier of directorySettingTemplate
-  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
-  - `[DomainId <String>]`: The unique identifier of domain
-  - `[DomainName <String>]`: Usage: domainName='{domainName}'
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[ExternalUserProfileId <String>]`: The unique identifier of externalUserProfile
-  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
-  - `[HardwareOathTokenAuthenticationMethodDeviceId <String>]`: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
-  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
-  - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
-  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
-  - `[MutualTlsOauthConfigurationId <String>]`: The unique identifier of mutualTlsOauthConfiguration
-  - `[OcpSubscriptionId <String>]`: Alternate key of companySubscription
-  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
-  - `[OrgContactId <String>]`: The unique identifier of orgContact
-  - `[OrganizationId <String>]`: The unique identifier of organization
-  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
-  - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
-  - `[PendingExternalUserProfileId <String>]`: The unique identifier of pendingExternalUserProfile
-  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
-  - `[RecommendationId <String>]`: The unique identifier of recommendation
-  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
-  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
-  - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
-  - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
-  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
-  - `[TenantId <String>]`: Usage: tenantId='{tenantId}'
-  - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
-  - `[UsageRightId <String>]`: The unique identifier of usageRight
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
+  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
+  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
+  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
+  \[CertificateAuthorityAsEntityId \<String\>\]: The unique identifier of certificateAuthorityAsEntity
+  \[CertificateAuthorityDetailId \<String\>\]: The unique identifier of certificateAuthorityDetail
+  \[CertificateBasedApplicationConfigurationId \<String\>\]: The unique identifier of certificateBasedApplicationConfiguration
+  \[CertificateBasedAuthPkiId \<String\>\]: The unique identifier of certificateBasedAuthPki
+  \[CommandId \<String\>\]: The unique identifier of command
+  \[CommerceSubscriptionId \<String\>\]: Alternate key of companySubscription
+  \[CompanySubscriptionId \<String\>\]: The unique identifier of companySubscription
+  \[ContractId \<String\>\]: The unique identifier of contract
+  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
+  \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
+  \[DeviceTemplateId \<String\>\]: The unique identifier of deviceTemplate
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
+  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
+  \[DirectorySettingId \<String\>\]: The unique identifier of directorySetting
+  \[DirectorySettingTemplateId \<String\>\]: The unique identifier of directorySettingTemplate
+  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
+  \[DomainId \<String\>\]: The unique identifier of domain
+  \[DomainName \<String\>\]: Usage: domainName='{domainName}'
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[ExternalUserProfileId \<String\>\]: The unique identifier of externalUserProfile
+  \[FeatureRolloutPolicyId \<String\>\]: The unique identifier of featureRolloutPolicy
+  \[HardwareOathTokenAuthenticationMethodDeviceId \<String\>\]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
+  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
+  \[ImpactedResourceId \<String\>\]: The unique identifier of impactedResource
+  \[InboundSharedUserProfileUserId \<String\>\]: The unique identifier of inboundSharedUserProfile
+  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
+  \[MutualTlsOauthConfigurationId \<String\>\]: The unique identifier of mutualTlsOauthConfiguration
+  \[OcpSubscriptionId \<String\>\]: Alternate key of companySubscription
+  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
+  \[OrgContactId \<String\>\]: The unique identifier of orgContact
+  \[OrganizationId \<String\>\]: The unique identifier of organization
+  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
+  \[OutboundSharedUserProfileUserId \<String\>\]: The unique identifier of outboundSharedUserProfile
+  \[PendingExternalUserProfileId \<String\>\]: The unique identifier of pendingExternalUserProfile
+  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
+  \[ProfilePropertySettingId \<String\>\]: The unique identifier of profilePropertySetting
+  \[ProfileSourceId \<String\>\]: The unique identifier of profileSource
+  \[RecommendationId \<String\>\]: The unique identifier of recommendation
+  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
+  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
+  \[SharedEmailDomainId \<String\>\]: The unique identifier of sharedEmailDomain
+  \[SharedEmailDomainInvitationId \<String\>\]: The unique identifier of sharedEmailDomainInvitation
+  \[SourceId \<String\>\]: Alternate key of profileSource
+  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
+  \[TenantId \<String\>\]: Usage: tenantId='{tenantId}'
+  \[TenantReferenceTenantId \<String\>\]: The unique identifier of tenantReference
+  \[UsageRightId \<String\>\]: The unique identifier of usageRight
+  \[UserId \<String\>\]: The unique identifier of user
 
-LOGINPAGELAYOUTCONFIGURATION `<IMicrosoftGraphLoginPageLayoutConfiguration>`: loginPageLayoutConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsFooterShown <Boolean?>]`: Option to show the footer on the sign-in page.
-  - `[IsHeaderShown <Boolean?>]`: Option to show the header on the sign-in page.
-  - `[LayoutTemplateType <String>]`: layoutTemplateType
+LOGINPAGELAYOUTCONFIGURATION \<IMicrosoftGraphLoginPageLayoutConfiguration\>: loginPageLayoutConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IsFooterShown \<Boolean?\>\]: Option to show the footer on the sign-in page.
+  \[IsHeaderShown \<Boolean?\>\]: Option to show the header on the sign-in page.
+  \[LayoutTemplateType \<String\>\]: layoutTemplateType
 
-LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings>`: loginPageTextVisibilitySettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[HideAccountResetCredentials <Boolean?>]`: Option to hide the self-service password reset (SSPR) hyperlinks such as 'Can't access your account?', 'Forgot my password' and 'Reset it now' on the sign-in form.
-  - `[HideCannotAccessYourAccount <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'Can't access your account?' hyperlink on the sign-in form.
-  - `[HideForgotMyPassword <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'Forgot my password' hyperlink on the sign-in form.
-  - `[HidePrivacyAndCookies <Boolean?>]`: Option to hide the 'Privacy & Cookies' hyperlink in the footer.
-  - `[HideResetItNow <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'reset it now' hyperlink on the sign-in form.
-  - `[HideTermsOfUse <Boolean?>]`: Option to hide the 'Terms of Use' hyperlink in the footer.
+LOGINPAGETEXTVISIBILITYSETTINGS \<IMicrosoftGraphLoginPageTextVisibilitySettings\>: loginPageTextVisibilitySettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[HideAccountResetCredentials \<Boolean?\>\]: Option to hide the self-service password reset (SSPR) hyperlinks such as 'Can't access your account?', 'Forgot my password' and 'Reset it now' on the sign-in form.
+  \[HideCannotAccessYourAccount \<Boolean?\>\]: Option to hide the self-service password reset (SSPR) 'Can't access your account?' hyperlink on the sign-in form.
+  \[HideForgotMyPassword \<Boolean?\>\]: Option to hide the self-service password reset (SSPR) 'Forgot my password' hyperlink on the sign-in form.
+  \[HidePrivacyAndCookies \<Boolean?\>\]: Option to hide the 'Privacy & Cookies' hyperlink in the footer.
+  \[HideResetItNow \<Boolean?\>\]: Option to hide the self-service password reset (SSPR) 'reset it now' hyperlink on the sign-in form.
+  \[HideTermsOfUse \<Boolean?\>\]: Option to hide the 'Terms of Use' hyperlink in the footer.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandinglocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandinglocalization)
 
 [https://learn.microsoft.com/graph/api/organizationalbranding-post-localizations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/organizationalbranding-post-localizations?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

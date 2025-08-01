@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgdatapolicyoperation
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to dataPolicyOperations
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaDataPolicyOperation?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,13 +17,13 @@ Add new entity to dataPolicyOperations
 New-MgDataPolicyOperation [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CompletedDateTime <DateTime>] [-Id <String>] [-Progress <Double>] [-Status <String>]
  [-StorageLocation <String>] [-SubmittedDateTime <DateTime>] [-UserId <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDataPolicyOperation -BodyParameter <IMicrosoftGraphDataPolicyOperation>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,6 +31,16 @@ New-MgDataPolicyOperation -BodyParameter <IMicrosoftGraphDataPolicyOperation>
 Add new entity to dataPolicyOperations
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -85,21 +92,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -142,6 +134,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -222,6 +229,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -254,44 +276,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDataPolicyOperation>`: dataPolicyOperation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDataPolicyOperation\>: dataPolicyOperation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CompletedDateTime <DateTime?>]`: Represents when the request for this data policy operation was completed, in UTC time, using the ISO 8601 format.
+  \[CompletedDateTime \<DateTime?\>\]: Represents when the request for this data policy operation was completed, in UTC time, using the ISO 8601 format.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Null until the operation completes.
-  - `[Progress <Double?>]`: Specifies the progress of an operation.
-  - `[Status <String>]`: dataPolicyOperationStatus
-  - `[StorageLocation <String>]`: The URL location to where data is being exported for export requests.
-  - `[SubmittedDateTime <DateTime?>]`: Represents when the request for this data operation was submitted, in UTC time, using the ISO 8601 format.
+  \[Progress \<Double?\>\]: Specifies the progress of an operation.
+  \[Status \<String\>\]: dataPolicyOperationStatus
+  \[StorageLocation \<String\>\]: The URL location to where data is being exported for export requests.
+  \[SubmittedDateTime \<DateTime?\>\]: Represents when the request for this data operation was submitted, in UTC time, using the ISO 8601 format.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[UserId <String>]`: The id for the user on whom the operation is performed.
+  \[UserId \<String\>\]: The id for the user on whom the operation is performed.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgdatapolicyoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgdatapolicyoperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessageattachment
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to attachments for users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderMessageAttachment?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,14 +17,14 @@ Create new navigation property to attachments for users
 New-MgBetaUserMailFolderMessageAttachment -MailFolderId <String> -MessageId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-Id <String>]
  [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserMailFolderMessageAttachment -MailFolderId <String> -MessageId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphAttachment> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -35,28 +32,30 @@ New-MgBetaUserMailFolderMessageAttachment -MailFolderId <String> -MessageId <Str
 New-MgBetaUserMailFolderMessageAttachment -InputObject <IMailIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-Id <String>] [-IsInline]
  [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserMailFolderMessageAttachment -InputObject <IMailIdentity>
  -BodyParameter <IMicrosoftGraphAttachment> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to attachments for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadWrite,  |
-| Delegated (personal Microsoft account) | Mail.ReadWrite,  |
-| Application | Mail.ReadWrite,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -88,21 +87,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -245,6 +229,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -290,6 +289,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -323,55 +337,32 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAttachment>`: attachment
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAttachment\>: attachment
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ContentType <String>]`: The MIME type.
-  - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  \[ContentType \<String\>\]: The MIME type.
+  \[IsInline \<Boolean?\>\]: true if the attachment is an inline attachment; otherwise, false.
+  \[LastModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Name <String>]`: The display name of the attachment.
+  \[Name \<String\>\]: The display name of the attachment.
 This does not need to be the actual file name.
-  - `[Size <Int32?>]`: The length of the attachment in bytes.
+  \[Size \<Int32?\>\]: The length of the attachment in bytes.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MailFolderOperationId <String>]`: The unique identifier of mailFolderOperation
-  - `[MentionId <String>]`: The unique identifier of mention
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IMailIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderOperationId \<String\>\]: The unique identifier of mailFolderOperation
+  \[MentionId \<String\>\]: The unique identifier of mention
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
+  \[UserConfigurationId \<String\>\]: The unique identifier of userConfiguration
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessageattachment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

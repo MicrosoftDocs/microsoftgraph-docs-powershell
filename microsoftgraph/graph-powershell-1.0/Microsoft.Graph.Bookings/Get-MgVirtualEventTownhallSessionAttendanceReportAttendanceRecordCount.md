@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallsessionattendancereportattendancerecordcount
@@ -10,16 +10,13 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecordCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecordCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecordCount -MeetingAttendanceReportId <String>
  -VirtualEventSessionId <String> -VirtualEventTownhallId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -27,13 +24,23 @@ Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecordCount -MeetingA
 ```
 Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecordCount -InputObject <IBookingsIdentity>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -92,6 +99,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -174,51 +196,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
-  - `[Email <String>]`: Alternate key of virtualEventRegistration
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventRegistrationQuestionBaseId <String>]`: The unique identifier of virtualEventRegistrationQuestionBase
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
+  \[Email \<String\>\]: Alternate key of virtualEventRegistration
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventRegistrationQuestionBaseId \<String\>\]: The unique identifier of virtualEventRegistrationQuestionBase
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallsessionattendancereportattendancerecordcount](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallsessionattendancereportattendancerecordcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

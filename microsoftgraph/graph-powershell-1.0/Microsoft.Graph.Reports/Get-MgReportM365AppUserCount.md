@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appusercount
 schema: 2.0.0
-ms.subservice: reports
 ---
 
 # Get-MgReportM365AppUserCount
@@ -11,21 +10,18 @@ ms.subservice: reports
 ## SYNOPSIS
 Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportM365AppUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportM365AppUserCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgReportM365AppUserCount -Period <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportM365AppUserCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -33,28 +29,20 @@ Get-MgReportM365AppUserCount -InputObject <IReportsIdentity> -OutFile <String>
 Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
 
 ## EXAMPLES
-### Example 1: CSV output
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Reports
+```
 
 Get-MgReportM365AppUserCount -Format "text/csv"  -Period $periodId
 
+### EXAMPLE 2
 ```
-This example will csv output
-
-### Example 2: JSON output
-
-```powershell
-
 Import-Module Microsoft.Graph.Reports
+```
 
 Get-MgReportM365AppUserCount -Format "application/json"  -Period $periodId
-
-```
-This example will json output
-
 
 ## PARAMETERS
 
@@ -134,6 +122,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -165,55 +168,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[Date <DateTime?>]`: Usage: date={date}
-  - `[DeviceManagementExportJobId <String>]`: The unique identifier of deviceManagementExportJob
-  - `[DirectoryAuditId <String>]`: The unique identifier of directoryAudit
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
-  - `[Filter <String>]`: Usage: filter='{filter}'
-  - `[GroupId <String>]`: Usage: groupId='{groupId}'
-  - `[IncludedUserRoles <String>]`: Usage: includedUserRoles='{includedUserRoles}'
-  - `[IncludedUserTypes <String>]`: Usage: includedUserTypes='{includedUserTypes}'
-  - `[ManifestId <String>]`: The unique identifier of manifest
-  - `[OperationId <String>]`: The unique identifier of operation
-  - `[Period <String>]`: Usage: period='{period}'
-  - `[PrintUsageByPrinterId <String>]`: The unique identifier of printUsageByPrinter
-  - `[PrintUsageByUserId <String>]`: The unique identifier of printUsageByUser
-  - `[PrinterId <String>]`: Usage: printerId='{printerId}'
-  - `[ProvisioningObjectSummaryId <String>]`: The unique identifier of provisioningObjectSummary
-  - `[SignInId <String>]`: The unique identifier of signIn
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
+INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
+  \[Date \<DateTime?\>\]: Usage: date={date}
+  \[DeviceManagementExportJobId \<String\>\]: The unique identifier of deviceManagementExportJob
+  \[DirectoryAuditId \<String\>\]: The unique identifier of directoryAudit
+  \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[Filter \<String\>\]: Usage: filter='{filter}'
+  \[GroupId \<String\>\]: Usage: groupId='{groupId}'
+  \[IncludedUserRoles \<String\>\]: Usage: includedUserRoles='{includedUserRoles}'
+  \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
+  \[ManifestId \<String\>\]: The unique identifier of manifest
+  \[OperationId \<String\>\]: The unique identifier of operation
+  \[Period \<String\>\]: Usage: period='{period}'
+  \[PrintUsageByPrinterId \<String\>\]: The unique identifier of printUsageByPrinter
+  \[PrintUsageByUserId \<String\>\]: The unique identifier of printUsageByUser
+  \[PrinterId \<String\>\]: Usage: printerId='{printerId}'
+  \[ProvisioningObjectSummaryId \<String\>\]: The unique identifier of provisioningObjectSummary
+  \[SignInId \<String\>\]: The unique identifier of signIn
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[SkipToken \<String\>\]: Usage: skipToken='{skipToken}'
+  \[StartDateTime \<DateTime?\>\]: Usage: startDateTime={startDateTime}
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[UserRegistrationDetailsId \<String\>\]: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getm365appusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getm365appusercounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

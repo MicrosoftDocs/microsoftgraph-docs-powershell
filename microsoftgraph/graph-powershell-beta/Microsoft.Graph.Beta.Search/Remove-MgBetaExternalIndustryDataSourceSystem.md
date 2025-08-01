@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatasourcesystem
 schema: 2.0.0
-ms.subservice: industry-data-etl
 ---
 
 # Remove-MgBetaExternalIndustryDataSourceSystem
@@ -16,57 +15,30 @@ Delete a sourceSystemDefinition object.
 ### Delete (Default)
 ```
 Remove-MgBetaExternalIndustryDataSourceSystem -SourceSystemDefinitionId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete a sourceSystemDefinition object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IndustryData-SourceSystem.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IndustryData-SourceSystem.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
+```
 
 Remove-MgBetaExternalIndustryDataSourceSystem -SourceSystemDefinitionId $sourceSystemDefinitionId
 
-```
-This example shows how to use the Remove-MgBetaExternalIndustryDataSourceSystem Cmdlet.
-
-
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -129,6 +101,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -153,6 +140,21 @@ Parameter Sets: Delete
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -191,54 +193,32 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
-  - `[AcronymId <String>]`: The unique identifier of acronym
-  - `[AuthorizationSystemId <String>]`: The unique identifier of authorizationSystem
-  - `[BookmarkId <String>]`: The unique identifier of bookmark
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
-  - `[InboundFlowId <String>]`: The unique identifier of inboundFlow
-  - `[IndustryDataConnectorId <String>]`: The unique identifier of industryDataConnector
-  - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
-  - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
-  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
-  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
-  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
-  - `[QnaId <String>]`: The unique identifier of qna
-  - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
-  - `[RoleGroupId <String>]`: The unique identifier of roleGroup
-  - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
-  - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[AcronymId \<String\>\]: The unique identifier of acronym
+  \[AuthorizationSystemId \<String\>\]: The unique identifier of authorizationSystem
+  \[BookmarkId \<String\>\]: The unique identifier of bookmark
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
+  \[InboundFlowId \<String\>\]: The unique identifier of inboundFlow
+  \[IndustryDataConnectorId \<String\>\]: The unique identifier of industryDataConnector
+  \[IndustryDataRunActivityId \<String\>\]: The unique identifier of industryDataRunActivity
+  \[IndustryDataRunId \<String\>\]: The unique identifier of industryDataRun
+  \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[OutboundProvisioningFlowSetId \<String\>\]: The unique identifier of outboundProvisioningFlowSet
+  \[ProvisioningFlowId \<String\>\]: The unique identifier of provisioningFlow
+  \[QnaId \<String\>\]: The unique identifier of qna
+  \[ReferenceDefinitionId \<String\>\]: The unique identifier of referenceDefinition
+  \[RoleGroupId \<String\>\]: The unique identifier of roleGroup
+  \[SourceSystemDefinitionId \<String\>\]: The unique identifier of sourceSystemDefinition
+  \[YearTimePeriodDefinitionId \<String\>\]: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatasourcesystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatasourcesystem)
 
 [https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

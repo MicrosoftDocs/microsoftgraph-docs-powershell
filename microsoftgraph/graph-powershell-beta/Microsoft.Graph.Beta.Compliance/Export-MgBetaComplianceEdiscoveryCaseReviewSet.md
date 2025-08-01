@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset
 schema: 2.0.0
-ms.subservice: ediscovery
 ---
 
 # Export-MgBetaComplianceEdiscoveryCaseReviewSet
@@ -19,7 +18,7 @@ For details, see Export documents from a review set in Advanced eDiscovery.
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId <String> -ReviewSetId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AzureBlobContainer <String>]
  [-AzureBlobToken <String>] [-Description <String>] [-ExportOptions <String>] [-ExportStructure <String>]
- [-OutputName <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-OutputName <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +26,7 @@ Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId <String> -ReviewSetId <St
 ```
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId <String> -ReviewSetId <String>
  -BodyParameter <IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +35,7 @@ Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId <String> -ReviewSetId <St
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AzureBlobContainer <String>]
  [-AzureBlobToken <String>] [-Description <String>] [-ExportOptions <String>] [-ExportStructure <String>]
- [-OutputName <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-OutputName <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,7 +43,7 @@ Export-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity
 ```
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
  -BodyParameter <IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -52,20 +51,12 @@ Export-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity
 Initiate an export from a reviewSet.
 For details, see Export documents from a review set in Advanced eDiscovery.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
+```
 
 $params = @{
 	outputName = "2020-12-06 Contoso investigation export"
@@ -75,10 +66,6 @@ $params = @{
 }
 
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params
-
-```
-This example shows how to use the Export-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet.
-
 
 ## PARAMETERS
 
@@ -98,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureBlobContainer
-
+.
 
 ```yaml
 Type: String
@@ -113,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureBlobToken
-
+.
 
 ```yaml
 Type: String
@@ -128,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -158,23 +145,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Description
-
+.
 
 ```yaml
 Type: String
@@ -250,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputName
-
+.
 
 ```yaml
 Type: String
@@ -279,6 +251,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -303,6 +290,21 @@ Parameter Sets: ExportExpanded, Export
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -342,60 +344,38 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AzureBlobContainer <String>]`: 
-  - `[AzureBlobToken <String>]`: 
-  - `[Description <String>]`: 
-  - `[ExportOptions <String>]`: exportOptions
-  - `[ExportStructure <String>]`: exportFileStructure
-  - `[OutputName <String>]`: 
+BODYPARAMETER \<IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AzureBlobContainer \<String\>\]: 
+  \[AzureBlobToken \<String\>\]: 
+  \[Description \<String\>\]: 
+  \[ExportOptions \<String\>\]: exportOptions
+  \[ExportStructure \<String\>\]: exportFileStructure
+  \[OutputName \<String\>\]: 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[CaseId <String>]`: The unique identifier of case
-  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
-  - `[CustodianId <String>]`: The unique identifier of custodian
-  - `[DataSourceId <String>]`: The unique identifier of dataSource
-  - `[LegalHoldId <String>]`: The unique identifier of legalHold
-  - `[NoncustodialDataSourceId <String>]`: The unique identifier of noncustodialDataSource
-  - `[ReviewSetId <String>]`: The unique identifier of reviewSet
-  - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
-  - `[SiteSourceId <String>]`: The unique identifier of siteSource
-  - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[TagId <String>]`: The unique identifier of tag
-  - `[TagId1 <String>]`: The unique identifier of tag
-  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserPrincipalName <String>]`: Alternate key of user
-  - `[UserSourceId <String>]`: The unique identifier of userSource
+INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
+  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
+  \[CaseId \<String\>\]: The unique identifier of case
+  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
+  \[CustodianId \<String\>\]: The unique identifier of custodian
+  \[DataSourceId \<String\>\]: The unique identifier of dataSource
+  \[LegalHoldId \<String\>\]: The unique identifier of legalHold
+  \[NoncustodialDataSourceId \<String\>\]: The unique identifier of noncustodialDataSource
+  \[ReviewSetId \<String\>\]: The unique identifier of reviewSet
+  \[ReviewSetQueryId \<String\>\]: The unique identifier of reviewSetQuery
+  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
+  \[SourceCollectionId \<String\>\]: The unique identifier of sourceCollection
+  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
+  \[TagId \<String\>\]: The unique identifier of tag
+  \[TagId1 \<String\>\]: The unique identifier of tag
+  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserPrincipalName \<String\>\]: Alternate key of user
+  \[UserSourceId \<String\>\]: The unique identifier of userSource
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset)
 
 [https://learn.microsoft.com/graph/api/ediscovery-reviewset-export?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-reviewset-export?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

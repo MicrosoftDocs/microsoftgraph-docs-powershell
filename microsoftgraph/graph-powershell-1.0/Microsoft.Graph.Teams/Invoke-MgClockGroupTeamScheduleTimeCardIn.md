@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockgroupteamscheduletimecardin
 schema: 2.0.0
-ms.subservice: teams
 ---
 
 # Invoke-MgClockGroupTeamScheduleTimeCardIn
@@ -11,23 +10,21 @@ ms.subservice: teams
 ## SYNOPSIS
 Clock in to start a timeCard.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaClockGroupTeamScheduleTimeCardIn](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaClockGroupTeamScheduleTimeCardIn?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### ClockExpanded (Default)
 ```
 Invoke-MgClockGroupTeamScheduleTimeCardIn -GroupId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-IsAtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OnBehalfOfUserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Clock
 ```
 Invoke-MgClockGroupTeamScheduleTimeCardIn -GroupId <String>
  -BodyParameter <IPaths13Pwpp3GroupsGroupIdTeamScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,14 +32,15 @@ Invoke-MgClockGroupTeamScheduleTimeCardIn -GroupId <String>
 ```
 Invoke-MgClockGroupTeamScheduleTimeCardIn -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-IsAtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OnBehalfOfUserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ClockViaIdentity
 ```
 Invoke-MgClockGroupTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths13Pwpp3GroupsGroupIdTeamScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -50,6 +48,16 @@ Invoke-MgClockGroupTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
 Clock in to start a timeCard.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -69,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -81,21 +89,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -146,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsAtApprovedLocation
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -176,6 +169,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -OnBehalfOfUserId
+.
+
+```yaml
+Type: String
+Parameter Sets: ClockExpanded, ClockViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -183,6 +206,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -224,82 +262,60 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths13Pwpp3GroupsGroupIdTeamScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsAtApprovedLocation <Boolean?>]`:
-  - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
+BODYPARAMETER \<IPaths13Pwpp3GroupsGroupIdTeamScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IsAtApprovedLocation \<Boolean?\>\]: 
+  \[Notes \<IMicrosoftGraphItemBody\>\]: itemBody
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Content \<String\>\]: The content of the item.
+    \[ContentType \<String\>\]: bodyType
+  \[OnBehalfOfUserId \<String\>\]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
-  - `[ChannelId <String>]`: The unique identifier of channel
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageHostedContentId <String>]`: The unique identifier of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
-  - `[DayNoteId <String>]`: The unique identifier of dayNote
-  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
-  - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: The unique identifier of openShift
-  - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: The unique identifier of shift
-  - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
-  - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
-  - `[TeamsAppId <String>]`: The unique identifier of teamsApp
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeCardId <String>]`: The unique identifier of timeCard
-  - `[TimeOffId <String>]`: The unique identifier of timeOff
-  - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
-  - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
+INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
+  \[AssociatedTeamInfoId \<String\>\]: The unique identifier of associatedTeamInfo
+  \[ChannelId \<String\>\]: The unique identifier of channel
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageHostedContentId \<String\>\]: The unique identifier of chatMessageHostedContent
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
+  \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
+  \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[OfferShiftRequestId \<String\>\]: The unique identifier of offerShiftRequest
+  \[OpenShiftChangeRequestId \<String\>\]: The unique identifier of openShiftChangeRequest
+  \[OpenShiftId \<String\>\]: The unique identifier of openShift
+  \[PinnedChatMessageInfoId \<String\>\]: The unique identifier of pinnedChatMessageInfo
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
+  \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
+  \[ShiftId \<String\>\]: The unique identifier of shift
+  \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
+  \[TeamId \<String\>\]: The unique identifier of team
+  \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
+  \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TeamsAsyncOperationId \<String\>\]: The unique identifier of teamsAsyncOperation
+  \[TeamsTabId \<String\>\]: The unique identifier of teamsTab
+  \[TeamworkTagId \<String\>\]: The unique identifier of teamworkTag
+  \[TeamworkTagMemberId \<String\>\]: The unique identifier of teamworkTagMember
+  \[TimeCardId \<String\>\]: The unique identifier of timeCard
+  \[TimeOffId \<String\>\]: The unique identifier of timeOff
+  \[TimeOffReasonId \<String\>\]: The unique identifier of timeOffReason
+  \[TimeOffRequestId \<String\>\]: The unique identifier of timeOffRequest
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserScopeTeamsAppInstallationId \<String\>\]: The unique identifier of userScopeTeamsAppInstallation
+  \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`: The content of the item.
-  - `[ContentType <String>]`: bodyType
+NOTES \<IMicrosoftGraphItemBody\>: itemBody
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Content \<String\>\]: The content of the item.
+  \[ContentType \<String\>\]: bodyType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockgroupteamscheduletimecardin](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockgroupteamscheduletimecardin)
 
 [https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
