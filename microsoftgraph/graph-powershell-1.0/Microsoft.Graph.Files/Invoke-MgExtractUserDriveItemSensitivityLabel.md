@@ -31,18 +31,6 @@ Invoke-MgExtractUserDriveItemSensitivityLabel -InputObject <IFilesIdentity> [-Re
 ## DESCRIPTION
 Invoke action extractSensitivityLabels
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -227,6 +215,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgextractuserdriveitemsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgextractuserdriveitemsensitivitylabel)
+
 
 
 

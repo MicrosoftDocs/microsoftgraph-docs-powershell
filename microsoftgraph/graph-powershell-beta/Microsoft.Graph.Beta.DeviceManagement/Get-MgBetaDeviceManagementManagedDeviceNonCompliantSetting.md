@@ -29,18 +29,6 @@ Get-MgBetaDeviceManagementManagedDeviceNonCompliantSetting -InputObject <IDevice
 ## DESCRIPTION
 Invoke function getNonCompliantSettings
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -322,6 +310,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmanageddevicenoncompliantsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmanageddevicenoncompliantsetting)
+
 
 
 

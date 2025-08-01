@@ -39,18 +39,6 @@ Create new navigation property to enterpriseCodeSigningCertificates for deviceAp
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -374,6 +362,7 @@ $Search is not supported.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagemententerprisecodesigningcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagemententerprisecodesigningcertificate)
+
 
 
 

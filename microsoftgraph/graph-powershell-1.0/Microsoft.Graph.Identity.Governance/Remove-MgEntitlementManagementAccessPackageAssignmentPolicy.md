@@ -32,18 +32,6 @@ Remove-MgEntitlementManagementAccessPackageAssignmentPolicy -InputObject <IIdent
 ## DESCRIPTION
 Delete navigation property assignmentPolicies for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId
@@ -286,6 +274,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementaccesspackageassignmentpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementaccesspackageassignmentpolicy)
+
 
 
 

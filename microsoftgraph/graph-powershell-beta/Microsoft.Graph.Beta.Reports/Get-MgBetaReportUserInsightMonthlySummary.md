@@ -37,18 +37,6 @@ Get-MgBetaReportUserInsightMonthlySummary -InputObject <IReportsIdentity> [-Expa
 ## DESCRIPTION
 Summary of all usage insights on apps registered in the tenant for a specified period.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -349,6 +337,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlysummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlysummary)
 
 [https://learn.microsoft.com/graph/api/monthlyuserinsightmetricsroot-list-summary?view=graph-rest-beta](https://learn.microsoft.com/graph/api/monthlyuserinsightmetricsroot-list-summary?view=graph-rest-beta)
+
 
 
 

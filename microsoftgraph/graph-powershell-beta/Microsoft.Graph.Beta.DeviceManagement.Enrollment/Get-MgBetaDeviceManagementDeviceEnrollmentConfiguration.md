@@ -48,18 +48,6 @@ The list of device enrollment configurations
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -337,6 +325,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementdeviceenrollmentconfiguration)
+
 
 
 

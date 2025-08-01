@@ -33,18 +33,6 @@ Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy -InputObject <IBackupRe
 ## DESCRIPTION
 Deactivate a protectionPolicyBase.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -204,6 +192,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/invoke-mgdeactivatesolutionbackuprestoreprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/invoke-mgdeactivatesolutionbackuprestoreprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/protectionpolicybase-deactivate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/protectionpolicybase-deactivate?view=graph-rest-1.0)
+
 
 
 

@@ -20,18 +20,6 @@ Remove-MgBetaDirectoryTemplate [-IfMatch <String>] [-ResponseHeadersVariable <St
 ## DESCRIPTION
 Delete navigation property templates for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -154,6 +142,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorytemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorytemplate)
+
 
 
 

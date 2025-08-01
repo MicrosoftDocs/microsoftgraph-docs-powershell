@@ -40,18 +40,6 @@ Get-MgBetaSolutionBackupRestoreDriveInclusionRule -InputObject <IBackupRestoreId
 ## DESCRIPTION
 The list of drive inclusion rules applied to the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -329,6 +317,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoredriveinclusionrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoredriveinclusionrule)
+
 
 
 

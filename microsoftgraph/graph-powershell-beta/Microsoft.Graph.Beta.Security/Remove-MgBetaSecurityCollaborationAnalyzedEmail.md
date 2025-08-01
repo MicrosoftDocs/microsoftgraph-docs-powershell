@@ -29,18 +29,6 @@ Remove-MgBetaSecurityCollaborationAnalyzedEmail -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Delete navigation property analyzedEmails for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AnalyzedEmailId
@@ -295,6 +283,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycollaborationanalyzedemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycollaborationanalyzedemail)
+
 
 
 

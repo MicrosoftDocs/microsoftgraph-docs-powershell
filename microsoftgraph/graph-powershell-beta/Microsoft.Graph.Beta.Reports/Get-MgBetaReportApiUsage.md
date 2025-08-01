@@ -21,18 +21,6 @@ Get-MgBetaReportApiUsage [-AppId <String>] [-Period <String>] [-ServiceArea <Str
 ## DESCRIPTION
 Get the tenant and app API usage for Microsoft Graph services.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppId
@@ -169,6 +157,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportapiusage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportapiusage)
+
 
 
 

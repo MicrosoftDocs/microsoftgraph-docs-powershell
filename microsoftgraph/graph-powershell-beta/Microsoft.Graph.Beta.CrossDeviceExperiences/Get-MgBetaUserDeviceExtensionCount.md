@@ -29,18 +29,6 @@ Get-MgBetaUserDeviceExtensionCount -InputObject <ICrossDeviceExperiencesIdentity
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -194,6 +182,7 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceextensioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceextensioncount)
+
 
 
 

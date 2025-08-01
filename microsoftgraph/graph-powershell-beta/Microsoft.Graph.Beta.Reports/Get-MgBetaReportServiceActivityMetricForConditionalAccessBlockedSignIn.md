@@ -32,18 +32,6 @@ Get-MgBetaReportServiceActivityMetricForConditionalAccessBlockedSignIn -InputObj
 ## DESCRIPTION
 Retrieve the number of user sign-in attempts that were blocked by a Conditional Access policy during a specific period.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AggregationIntervalInMinutes
@@ -298,6 +286,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccessblockedsignin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccessblockedsignin)
 
 [https://learn.microsoft.com/graph/api/serviceactivity-getmetricsforconditionalaccessblockedsignin?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceactivity-getmetricsforconditionalaccessblockedsignin?view=graph-rest-beta)
+
 
 
 

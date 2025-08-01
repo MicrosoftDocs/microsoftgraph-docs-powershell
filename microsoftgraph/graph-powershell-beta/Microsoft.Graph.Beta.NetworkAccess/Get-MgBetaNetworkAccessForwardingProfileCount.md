@@ -29,18 +29,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -132,6 +120,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessforwardingprofilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessforwardingprofilecount)
+
 
 
 

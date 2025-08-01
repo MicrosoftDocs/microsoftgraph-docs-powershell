@@ -33,18 +33,6 @@ Set-MgBetaApplicationSynchronizationJobBulkUploadContent -InputObject <IApplicat
 ## DESCRIPTION
 The bulk upload operation for the job.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -289,6 +277,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationsynchronizationjobbulkuploadcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationsynchronizationjobbulkuploadcontent)
+
 
 
 

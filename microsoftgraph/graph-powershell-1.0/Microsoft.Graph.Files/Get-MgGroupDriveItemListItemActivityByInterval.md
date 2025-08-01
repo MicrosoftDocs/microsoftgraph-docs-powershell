@@ -51,18 +51,6 @@ Get-MgGroupDriveItemListItemActivityByInterval -InputObject <IFilesIdentity> [-C
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -381,6 +369,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemlistitemactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemlistitemactivitybyinterval)
+
 
 
 

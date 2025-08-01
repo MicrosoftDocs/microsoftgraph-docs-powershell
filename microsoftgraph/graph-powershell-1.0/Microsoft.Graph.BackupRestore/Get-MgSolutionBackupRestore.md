@@ -25,18 +25,6 @@ Get-MgSolutionBackupRestore [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Get the serviceStatus of the Microsoft 365 Backup Storage service in a tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -130,6 +118,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestore](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestore)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/backuprestoreroot-get?view=graph-rest-1.0)
+
 
 
 

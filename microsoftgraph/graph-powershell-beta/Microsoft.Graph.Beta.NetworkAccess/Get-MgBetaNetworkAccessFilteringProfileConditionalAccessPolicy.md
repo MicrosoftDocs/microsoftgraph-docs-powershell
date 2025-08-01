@@ -40,18 +40,6 @@ Get-MgBetaNetworkAccessFilteringProfileConditionalAccessPolicy -InputObject <INe
 A set of associated policies defined to regulate access to resources or systems based on specific conditions.
 Automatically expanded.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -338,6 +326,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringprofileconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringprofileconditionalaccesspolicy)
+
 
 
 

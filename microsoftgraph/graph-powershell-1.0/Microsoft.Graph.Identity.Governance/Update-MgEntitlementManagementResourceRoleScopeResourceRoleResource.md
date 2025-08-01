@@ -68,18 +68,6 @@ Update-MgEntitlementManagementResourceRoleScopeResourceRoleResource -InputObject
 ## DESCRIPTION
 Invoke action refresh
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageResourceRoleId
@@ -808,6 +796,7 @@ Supports $expand.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerolescoperesourceroleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerolescoperesourceroleresource)
+
 
 
 

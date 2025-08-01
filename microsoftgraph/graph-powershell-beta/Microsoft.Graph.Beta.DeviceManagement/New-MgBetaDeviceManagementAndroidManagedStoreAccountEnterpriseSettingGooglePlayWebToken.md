@@ -38,18 +38,6 @@ Generates a web token that is used in an embeddable component.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -197,6 +185,7 @@ BODYPARAMETER `<IPathsIaia9DDevicemanagementAndroidmanagedstoreaccountenterprise
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettinggoogleplaywebtoken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettinggoogleplaywebtoken)
+
 
 
 
