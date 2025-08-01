@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatadiscovery
@@ -198,69 +198,91 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSecurityDataDiscoveryRoot\>: dataDiscoveryRoot
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSecurityDataDiscoveryRoot>`: dataDiscoveryRoot
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CloudAppDiscovery \<IMicrosoftGraphSecurityDataDiscoveryReport\>\]: dataDiscoveryReport
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[CloudAppDiscovery <IMicrosoftGraphSecurityDataDiscoveryReport>]`: dataDiscoveryReport
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[UploadedStreams \<IMicrosoftGraphSecurityCloudAppDiscoveryReport\[\]\>\]: A collection of streams available for generating cloud discovery report.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[UploadedStreams <IMicrosoftGraphSecurityCloudAppDiscoveryReport- `[]`>]`: A collection of streams available for generating cloud discovery report.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[AnonymizeMachineData \<Boolean?\>\]: Use 1 if the machine information is anonymized; otherwise use 0.
-      \[AnonymizeUserData \<Boolean?\>\]: Use 1 if the user information is anonymized; otherwise use 0.
-      \[CreatedDateTime \<DateTime?\>\]: The date in the format specified.
+      - `[AnonymizeMachineData <Boolean?>]`: Use 1 if the machine information is anonymized; otherwise use 0.
+      - `[AnonymizeUserData <Boolean?>]`: Use 1 if the user information is anonymized; otherwise use 0.
+      - `[CreatedDateTime <DateTime?>]`: The date in the format specified.
 The Timestamp represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      \[Description \<String\>\]: A comment or description for the report.
-      \[DisplayName \<String\>\]: The display name of the continuous report.
-      \[IsSnapshotReport \<Boolean?\>\]: Use 1 for a snapshot report; otherwise use 0.
-      \[LastDataReceivedDateTime \<DateTime?\>\]: The date when the data was last received.
+      - `[Description <String>]`: A comment or description for the report.
+      - `[DisplayName <String>]`: The display name of the continuous report.
+      - `[IsSnapshotReport <Boolean?>]`: Use 1 for a snapshot report; otherwise use 0.
+      - `[LastDataReceivedDateTime <DateTime?>]`: The date when the data was last received.
 The Timestamp represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      \[LastModifiedDateTime \<DateTime?\>\]: The date when the continuous report was last modified.
+      - `[LastModifiedDateTime <DateTime?>]`: The date when the continuous report was last modified.
 The Timestamp represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      \[LogDataProvider \<String\>\]: logDataProvider
-      \[LogFileCount \<Int32?\>\]: The count of log files history.
-      \[ReceiverProtocol \<String\>\]: receiverProtocol
-      \[SupportedEntityTypes \<String\[\]\>\]: The supported entity type.
+      - `[LogDataProvider <String>]`: logDataProvider
+      - `[LogFileCount <Int32?>]`: The count of log files history.
+      - `[ReceiverProtocol <String>]`: receiverProtocol
+      - `[SupportedEntityTypes <String- `[]`>]`: The supported entity type.
 Possible values are: userName, ipAddress, machineName, other, unknown, unknownFutureValue.
-      \[SupportedTrafficTypes \<String\[\]\>\]: The supported traffic type.
+      - `[SupportedTrafficTypes <String- `[]`>]`: The supported traffic type.
 Possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureValue.
 
-CLOUDAPPDISCOVERY \<IMicrosoftGraphSecurityDataDiscoveryReport\>: dataDiscoveryReport
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+CLOUDAPPDISCOVERY `<IMicrosoftGraphSecurityDataDiscoveryReport>`: dataDiscoveryReport
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[UploadedStreams \<IMicrosoftGraphSecurityCloudAppDiscoveryReport\[\]\>\]: A collection of streams available for generating cloud discovery report.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[UploadedStreams <IMicrosoftGraphSecurityCloudAppDiscoveryReport- `[]`>]`: A collection of streams available for generating cloud discovery report.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AnonymizeMachineData \<Boolean?\>\]: Use 1 if the machine information is anonymized; otherwise use 0.
-    \[AnonymizeUserData \<Boolean?\>\]: Use 1 if the user information is anonymized; otherwise use 0.
-    \[CreatedDateTime \<DateTime?\>\]: The date in the format specified.
+    - `[AnonymizeMachineData <Boolean?>]`: Use 1 if the machine information is anonymized; otherwise use 0.
+    - `[AnonymizeUserData <Boolean?>]`: Use 1 if the user information is anonymized; otherwise use 0.
+    - `[CreatedDateTime <DateTime?>]`: The date in the format specified.
 The Timestamp represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    \[Description \<String\>\]: A comment or description for the report.
-    \[DisplayName \<String\>\]: The display name of the continuous report.
-    \[IsSnapshotReport \<Boolean?\>\]: Use 1 for a snapshot report; otherwise use 0.
-    \[LastDataReceivedDateTime \<DateTime?\>\]: The date when the data was last received.
+    - `[Description <String>]`: A comment or description for the report.
+    - `[DisplayName <String>]`: The display name of the continuous report.
+    - `[IsSnapshotReport <Boolean?>]`: Use 1 for a snapshot report; otherwise use 0.
+    - `[LastDataReceivedDateTime <DateTime?>]`: The date when the data was last received.
 The Timestamp represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    \[LastModifiedDateTime \<DateTime?\>\]: The date when the continuous report was last modified.
+    - `[LastModifiedDateTime <DateTime?>]`: The date when the continuous report was last modified.
 The Timestamp represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    \[LogDataProvider \<String\>\]: logDataProvider
-    \[LogFileCount \<Int32?\>\]: The count of log files history.
-    \[ReceiverProtocol \<String\>\]: receiverProtocol
-    \[SupportedEntityTypes \<String\[\]\>\]: The supported entity type.
+    - `[LogDataProvider <String>]`: logDataProvider
+    - `[LogFileCount <Int32?>]`: The count of log files history.
+    - `[ReceiverProtocol <String>]`: receiverProtocol
+    - `[SupportedEntityTypes <String- `[]`>]`: The supported entity type.
 Possible values are: userName, ipAddress, machineName, other, unknown, unknownFutureValue.
-    \[SupportedTrafficTypes \<String\[\]\>\]: The supported traffic type.
+    - `[SupportedTrafficTypes <String- `[]`>]`: The supported traffic type.
 Possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureValue.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatadiscovery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatadiscovery)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

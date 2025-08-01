@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreserviceapp
@@ -325,74 +325,96 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLICATION \<IMicrosoftGraphIdentity\>: identity
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: The display name of the identity.
+APPLICATION `<IMicrosoftGraphIdentity>`: identity
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-  \[Id \<String\>\]: The identifier of the identity.
+  - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
 
-BODYPARAMETER \<IMicrosoftGraphServiceApp\>: serviceApp
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphServiceApp>`: serviceApp
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
+    - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  \[EffectiveDateTime \<DateTime?\>\]: Timestamp of the effective activation of the service app.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification of the entity.
-  \[RegistrationDateTime \<DateTime?\>\]: Timestamp of the creation of the service app entity.
-  \[Status \<String\>\]: serviceAppStatus
+  - `[EffectiveDateTime <DateTime?>]`: Timestamp of the effective activation of the service app.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of the entity.
+  - `[RegistrationDateTime <DateTime?>]`: Timestamp of the creation of the service app entity.
+  - `[Status <String>]`: serviceAppStatus
 
-INPUTOBJECT \<IBackupRestoreIdentity\>: Identity Parameter
-  \[DriveProtectionRuleId \<String\>\]: The unique identifier of driveProtectionRule
-  \[DriveProtectionUnitId \<String\>\]: The unique identifier of driveProtectionUnit
-  \[DriveProtectionUnitsBulkAdditionJobId \<String\>\]: The unique identifier of driveProtectionUnitsBulkAdditionJob
-  \[DriveRestoreArtifactId \<String\>\]: The unique identifier of driveRestoreArtifact
-  \[DriveRestoreArtifactsBulkAdditionRequestId \<String\>\]: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
-  \[ExchangeProtectionPolicyId \<String\>\]: The unique identifier of exchangeProtectionPolicy
-  \[ExchangeRestoreSessionId \<String\>\]: The unique identifier of exchangeRestoreSession
-  \[GranularMailboxRestoreArtifactId \<String\>\]: The unique identifier of granularMailboxRestoreArtifact
-  \[MailboxProtectionRuleId \<String\>\]: The unique identifier of mailboxProtectionRule
-  \[MailboxProtectionUnitId \<String\>\]: The unique identifier of mailboxProtectionUnit
-  \[MailboxProtectionUnitsBulkAdditionJobId \<String\>\]: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
-  \[MailboxRestoreArtifactId \<String\>\]: The unique identifier of mailboxRestoreArtifact
-  \[MailboxRestoreArtifactsBulkAdditionRequestId \<String\>\]: The unique identifier of mailboxRestoreArtifactsBulkAdditionRequest
-  \[OneDriveForBusinessProtectionPolicyId \<String\>\]: The unique identifier of oneDriveForBusinessProtectionPolicy
-  \[OneDriveForBusinessRestoreSessionId \<String\>\]: The unique identifier of oneDriveForBusinessRestoreSession
-  \[ProtectionPolicyBaseId \<String\>\]: The unique identifier of protectionPolicyBase
-  \[ProtectionUnitBaseId \<String\>\]: The unique identifier of protectionUnitBase
-  \[RestorePointId \<String\>\]: The unique identifier of restorePoint
-  \[RestoreSessionBaseId \<String\>\]: The unique identifier of restoreSessionBase
-  \[ServiceAppId \<String\>\]: The unique identifier of serviceApp
-  \[SharePointProtectionPolicyId \<String\>\]: The unique identifier of sharePointProtectionPolicy
-  \[SharePointRestoreSessionId \<String\>\]: The unique identifier of sharePointRestoreSession
-  \[SiteProtectionRuleId \<String\>\]: The unique identifier of siteProtectionRule
-  \[SiteProtectionUnitId \<String\>\]: The unique identifier of siteProtectionUnit
-  \[SiteProtectionUnitsBulkAdditionJobId \<String\>\]: The unique identifier of siteProtectionUnitsBulkAdditionJob
-  \[SiteRestoreArtifactId \<String\>\]: The unique identifier of siteRestoreArtifact
-  \[SiteRestoreArtifactsBulkAdditionRequestId \<String\>\]: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
+INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+  - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
+  - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
+  - `[DriveProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of driveProtectionUnitsBulkAdditionJob
+  - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
+  - `[DriveRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
+  - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
+  - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
+  - `[GranularMailboxRestoreArtifactId <String>]`: The unique identifier of granularMailboxRestoreArtifact
+  - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
+  - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
+  - `[MailboxProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
+  - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
+  - `[MailboxRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of mailboxRestoreArtifactsBulkAdditionRequest
+  - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
+  - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[ProtectionUnitBaseId <String>]`: The unique identifier of protectionUnitBase
+  - `[RestorePointId <String>]`: The unique identifier of restorePoint
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
+  - `[SharePointProtectionPolicyId <String>]`: The unique identifier of sharePointProtectionPolicy
+  - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
+  - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
+  - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
+  - `[SiteProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of siteProtectionUnitsBulkAdditionJob
+  - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
+  - `[SiteRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
-LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
+    - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreserviceapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreserviceapp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

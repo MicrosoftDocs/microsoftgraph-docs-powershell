@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreexchangerestoresession
@@ -344,291 +344,313 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphExchangeRestoreSession\>: exchangeRestoreSession
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CompletedDateTime \<DateTime?\>\]: The time of completion of the restore session.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
+BODYPARAMETER `<IMicrosoftGraphExchangeRestoreSession>`: exchangeRestoreSession
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CompletedDateTime <DateTime?>]`: The time of completion of the restore session.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity or actor.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[CreatedDateTime \<DateTime?\>\]: The time of creation of the restore session.
-  \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Code \<String\>\]: Represents the error code.
-    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
-      \[Code \<String\>\]: The error code.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Code \<String\>\]: The error code.
-      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[Message \<String\>\]: A non-localized message for the developer.
-    \[Target \<String\>\]: The target of the error.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification of the restore session.
-  \[Status \<String\>\]: restoreSessionStatus
-  \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time of creation of the restore session.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of the restore session.
+  - `[Status <String>]`: restoreSessionStatus
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[GranularMailboxRestoreArtifacts \<IMicrosoftGraphGranularMailboxRestoreArtifact\[\]\>\]: 
-    \[RestoredFolderId \<String\>\]: The new restored folder identifier for the user.
-    \[CompletionDateTime \<DateTime?\>\]: The time when restoration of restore artifact is completed.
-    \[DestinationType \<String\>\]: destinationType
-    \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[RestorePoint \<IMicrosoftGraphRestorePoint\>\]: restorePoint
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+  - `[GranularMailboxRestoreArtifacts <IMicrosoftGraphGranularMailboxRestoreArtifact- `[]`>]`: 
+    - `[RestoredFolderId <String>]`: The new restored folder identifier for the user.
+    - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
+    - `[DestinationType <String>]`: destinationType
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[RestorePoint <IMicrosoftGraphRestorePoint>]`: restorePoint
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[ExpirationDateTime \<DateTime?\>\]: Expiration date time of the restore point.
-      \[ProtectionDateTime \<DateTime?\>\]: Date time when the restore point was created.
-      \[ProtectionUnit \<IMicrosoftGraphProtectionUnitBase\>\]: protectionUnitBase
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Id \<String\>\]: The unique identifier for an entity.
+      - `[ExpirationDateTime <DateTime?>]`: Expiration date time of the restore point.
+      - `[ProtectionDateTime <DateTime?>]`: Date time when the restore point was created.
+      - `[ProtectionUnit <IMicrosoftGraphProtectionUnitBase>]`: protectionUnitBase
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-        \[CreatedDateTime \<DateTime?\>\]: The time of creation of the protection unit.
-        \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-        \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-        \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification of this protection unit.
-        \[PolicyId \<String\>\]: The unique identifier of the protection policy based on which protection unit was created.
-        \[Status \<String\>\]: protectionUnitStatus
-      \[Tags \<String\>\]: restorePointTags
-    \[StartDateTime \<DateTime?\>\]: The time when restoration of restore artifact is started.
-    \[Status \<String\>\]: artifactRestoreStatus
-    \[Id \<String\>\]: The unique identifier for an entity.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[CreatedDateTime <DateTime?>]`: The time of creation of the protection unit.
+        - `[Error <IMicrosoftGraphPublicError>]`: publicError
+        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+        - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
+        - `[Status <String>]`: protectionUnitStatus
+      - `[Tags <String>]`: restorePointTags
+    - `[StartDateTime <DateTime?>]`: The time when restoration of restore artifact is started.
+    - `[Status <String>]`: artifactRestoreStatus
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ArtifactCount \<Int32?\>\]: .
-    \[SearchResponseId \<String\>\]: .
-  \[MailboxRestoreArtifacts \<IMicrosoftGraphMailboxRestoreArtifact\[\]\>\]: A collection of restore points and destination details that can be used to restore Exchange mailboxes.
-    \[CompletionDateTime \<DateTime?\>\]: The time when restoration of restore artifact is completed.
-    \[DestinationType \<String\>\]: destinationType
-    \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[RestorePoint \<IMicrosoftGraphRestorePoint\>\]: restorePoint
-    \[StartDateTime \<DateTime?\>\]: The time when restoration of restore artifact is started.
-    \[Status \<String\>\]: artifactRestoreStatus
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[ArtifactCount <Int32?>]`: .
+    - `[SearchResponseId <String>]`: .
+  - `[MailboxRestoreArtifacts <IMicrosoftGraphMailboxRestoreArtifact- `[]`>]`: A collection of restore points and destination details that can be used to restore Exchange mailboxes.
+    - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
+    - `[DestinationType <String>]`: destinationType
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[RestorePoint <IMicrosoftGraphRestorePoint>]`: restorePoint
+    - `[StartDateTime <DateTime?>]`: The time when restoration of restore artifact is started.
+    - `[Status <String>]`: artifactRestoreStatus
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[RestoredFolderId \<String\>\]: The new restored folder identifier for the user.
-  \[MailboxRestoreArtifactsBulkAdditionRequests \<IMicrosoftGraphMailboxRestoreArtifactsBulkAdditionRequest\[\]\>\]: A collection of user mailboxes and destination details that can be used to restore Exchange mailboxes.
-    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[CreatedDateTime \<DateTime?\>\]: The time when the bulk request was created.
-    \[DestinationType \<String\>\]: destinationType
-    \[DisplayName \<String\>\]: Name of the addition request.
-    \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[LastModifiedDateTime \<DateTime?\>\]: Timestamp when this entity was last modified.
-    \[ProtectionTimePeriod \<IMicrosoftGraphTimePeriod\>\]: timePeriod
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[EndDateTime \<DateTime?\>\]: The date time of the end of the time period.
-      \[StartDateTime \<DateTime?\>\]: The date time of the start of the time period.
-    \[ProtectionUnitIds \<String\[\]\>\]: Indicates which protection units to restore.
+    - `[RestoredFolderId <String>]`: The new restored folder identifier for the user.
+  - `[MailboxRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphMailboxRestoreArtifactsBulkAdditionRequest- `[]`>]`: A collection of user mailboxes and destination details that can be used to restore Exchange mailboxes.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time when the bulk request was created.
+    - `[DestinationType <String>]`: destinationType
+    - `[DisplayName <String>]`: Name of the addition request.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp when this entity was last modified.
+    - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
+      - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+    - `[ProtectionUnitIds <String- `[]`>]`: Indicates which protection units to restore.
 This property isn't implemented yet.
 Future value; don't use.
-    \[RestorePointPreference \<String\>\]: restorePointPreference
-    \[Status \<String\>\]: restoreArtifactsBulkRequestStatus
-    \[Tags \<String\>\]: restorePointTags
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[RestorePointPreference <String>]`: restorePointPreference
+    - `[Status <String>]`: restoreArtifactsBulkRequestStatus
+    - `[Tags <String>]`: restorePointTags
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DirectoryObjectIds \<String\[\]\>\]: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
-    \[Mailboxes \<String\[\]\>\]: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
+    - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
+    - `[Mailboxes <String- `[]`>]`: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
 
-CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity or actor.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-ERROR \<IMicrosoftGraphPublicError\>: publicError
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Code \<String\>\]: Represents the error code.
-  \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
-    \[Code \<String\>\]: The error code.
-    \[Message \<String\>\]: The error message.
-    \[Target \<String\>\]: The target of the error.
-  \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Code \<String\>\]: The error code.
-    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
-    \[Message \<String\>\]: The error message.
-    \[Target \<String\>\]: The target of the error.
-  \[Message \<String\>\]: A non-localized message for the developer.
-  \[Target \<String\>\]: The target of the error.
+ERROR `<IMicrosoftGraphPublicError>`: publicError
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Code <String>]`: Represents the error code.
+  - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+    - `[Code <String>]`: The error code.
+    - `[Message <String>]`: The error message.
+    - `[Target <String>]`: The target of the error.
+  - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: The error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+    - `[Message <String>]`: The error message.
+    - `[Target <String>]`: The target of the error.
+  - `[Message <String>]`: A non-localized message for the developer.
+  - `[Target <String>]`: The target of the error.
 
-GRANULARMAILBOXRESTOREARTIFACTS \<IMicrosoftGraphGranularMailboxRestoreArtifact\[\]\>: .
-  \[RestoredFolderId \<String\>\]: The new restored folder identifier for the user.
-  \[CompletionDateTime \<DateTime?\>\]: The time when restoration of restore artifact is completed.
-  \[DestinationType \<String\>\]: destinationType
-  \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Code \<String\>\]: Represents the error code.
-    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
-      \[Code \<String\>\]: The error code.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Code \<String\>\]: The error code.
-      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[Message \<String\>\]: A non-localized message for the developer.
-    \[Target \<String\>\]: The target of the error.
-  \[RestorePoint \<IMicrosoftGraphRestorePoint\>\]: restorePoint
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+GRANULARMAILBOXRESTOREARTIFACTS `<IMicrosoftGraphGranularMailboxRestoreArtifact- `[]`>`: .
+  - `[RestoredFolderId <String>]`: The new restored folder identifier for the user.
+  - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
+  - `[DestinationType <String>]`: destinationType
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[RestorePoint <IMicrosoftGraphRestorePoint>]`: restorePoint
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ExpirationDateTime \<DateTime?\>\]: Expiration date time of the restore point.
-    \[ProtectionDateTime \<DateTime?\>\]: Date time when the restore point was created.
-    \[ProtectionUnit \<IMicrosoftGraphProtectionUnitBase\>\]: protectionUnitBase
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[ExpirationDateTime <DateTime?>]`: Expiration date time of the restore point.
+    - `[ProtectionDateTime <DateTime?>]`: Date time when the restore point was created.
+    - `[ProtectionUnit <IMicrosoftGraphProtectionUnitBase>]`: protectionUnitBase
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Application \<IMicrosoftGraphIdentity\>\]: identity
-          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Application <IMicrosoftGraphIdentity>]`: identity
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-          \[Id \<String\>\]: Unique identifier for the identity or actor.
+          - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-        \[Device \<IMicrosoftGraphIdentity\>\]: identity
-        \[User \<IMicrosoftGraphIdentity\>\]: identity
-      \[CreatedDateTime \<DateTime?\>\]: The time of creation of the protection unit.
-      \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification of this protection unit.
-      \[PolicyId \<String\>\]: The unique identifier of the protection policy based on which protection unit was created.
-      \[Status \<String\>\]: protectionUnitStatus
-    \[Tags \<String\>\]: restorePointTags
-  \[StartDateTime \<DateTime?\>\]: The time when restoration of restore artifact is started.
-  \[Status \<String\>\]: artifactRestoreStatus
-  \[Id \<String\>\]: The unique identifier for an entity.
+        - `[Device <IMicrosoftGraphIdentity>]`: identity
+        - `[User <IMicrosoftGraphIdentity>]`: identity
+      - `[CreatedDateTime <DateTime?>]`: The time of creation of the protection unit.
+      - `[Error <IMicrosoftGraphPublicError>]`: publicError
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+      - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
+      - `[Status <String>]`: protectionUnitStatus
+    - `[Tags <String>]`: restorePointTags
+  - `[StartDateTime <DateTime?>]`: The time when restoration of restore artifact is started.
+  - `[Status <String>]`: artifactRestoreStatus
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ArtifactCount \<Int32?\>\]: .
-  \[SearchResponseId \<String\>\]: .
+  - `[ArtifactCount <Int32?>]`: .
+  - `[SearchResponseId <String>]`: .
 
-LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity or actor.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-MAILBOXRESTOREARTIFACTS \<IMicrosoftGraphMailboxRestoreArtifact\[\]\>: A collection of restore points and destination details that can be used to restore Exchange mailboxes.
-  \[CompletionDateTime \<DateTime?\>\]: The time when restoration of restore artifact is completed.
-  \[DestinationType \<String\>\]: destinationType
-  \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Code \<String\>\]: Represents the error code.
-    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
-      \[Code \<String\>\]: The error code.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Code \<String\>\]: The error code.
-      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[Message \<String\>\]: A non-localized message for the developer.
-    \[Target \<String\>\]: The target of the error.
-  \[RestorePoint \<IMicrosoftGraphRestorePoint\>\]: restorePoint
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+MAILBOXRESTOREARTIFACTS `<IMicrosoftGraphMailboxRestoreArtifact- `[]`>`: A collection of restore points and destination details that can be used to restore Exchange mailboxes.
+  - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
+  - `[DestinationType <String>]`: destinationType
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[RestorePoint <IMicrosoftGraphRestorePoint>]`: restorePoint
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ExpirationDateTime \<DateTime?\>\]: Expiration date time of the restore point.
-    \[ProtectionDateTime \<DateTime?\>\]: Date time when the restore point was created.
-    \[ProtectionUnit \<IMicrosoftGraphProtectionUnitBase\>\]: protectionUnitBase
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[ExpirationDateTime <DateTime?>]`: Expiration date time of the restore point.
+    - `[ProtectionDateTime <DateTime?>]`: Date time when the restore point was created.
+    - `[ProtectionUnit <IMicrosoftGraphProtectionUnitBase>]`: protectionUnitBase
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Application \<IMicrosoftGraphIdentity\>\]: identity
-          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Application <IMicrosoftGraphIdentity>]`: identity
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-          \[Id \<String\>\]: Unique identifier for the identity or actor.
+          - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-        \[Device \<IMicrosoftGraphIdentity\>\]: identity
-        \[User \<IMicrosoftGraphIdentity\>\]: identity
-      \[CreatedDateTime \<DateTime?\>\]: The time of creation of the protection unit.
-      \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification of this protection unit.
-      \[PolicyId \<String\>\]: The unique identifier of the protection policy based on which protection unit was created.
-      \[Status \<String\>\]: protectionUnitStatus
-    \[Tags \<String\>\]: restorePointTags
-  \[StartDateTime \<DateTime?\>\]: The time when restoration of restore artifact is started.
-  \[Status \<String\>\]: artifactRestoreStatus
-  \[Id \<String\>\]: The unique identifier for an entity.
+        - `[Device <IMicrosoftGraphIdentity>]`: identity
+        - `[User <IMicrosoftGraphIdentity>]`: identity
+      - `[CreatedDateTime <DateTime?>]`: The time of creation of the protection unit.
+      - `[Error <IMicrosoftGraphPublicError>]`: publicError
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+      - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
+      - `[Status <String>]`: protectionUnitStatus
+    - `[Tags <String>]`: restorePointTags
+  - `[StartDateTime <DateTime?>]`: The time when restoration of restore artifact is started.
+  - `[Status <String>]`: artifactRestoreStatus
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[RestoredFolderId \<String\>\]: The new restored folder identifier for the user.
+  - `[RestoredFolderId <String>]`: The new restored folder identifier for the user.
 
-MAILBOXRESTOREARTIFACTSBULKADDITIONREQUESTS \<IMicrosoftGraphMailboxRestoreArtifactsBulkAdditionRequest\[\]\>: A collection of user mailboxes and destination details that can be used to restore Exchange mailboxes.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
+MAILBOXRESTOREARTIFACTSBULKADDITIONREQUESTS `<IMicrosoftGraphMailboxRestoreArtifactsBulkAdditionRequest- `[]`>`: A collection of user mailboxes and destination details that can be used to restore Exchange mailboxes.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity or actor.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[CreatedDateTime \<DateTime?\>\]: The time when the bulk request was created.
-  \[DestinationType \<String\>\]: destinationType
-  \[DisplayName \<String\>\]: Name of the addition request.
-  \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Code \<String\>\]: Represents the error code.
-    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
-      \[Code \<String\>\]: The error code.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Code \<String\>\]: The error code.
-      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[Message \<String\>\]: A non-localized message for the developer.
-    \[Target \<String\>\]: The target of the error.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp when this entity was last modified.
-  \[ProtectionTimePeriod \<IMicrosoftGraphTimePeriod\>\]: timePeriod
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[EndDateTime \<DateTime?\>\]: The date time of the end of the time period.
-    \[StartDateTime \<DateTime?\>\]: The date time of the start of the time period.
-  \[ProtectionUnitIds \<String\[\]\>\]: Indicates which protection units to restore.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time when the bulk request was created.
+  - `[DestinationType <String>]`: destinationType
+  - `[DisplayName <String>]`: Name of the addition request.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp when this entity was last modified.
+  - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
+    - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+  - `[ProtectionUnitIds <String- `[]`>]`: Indicates which protection units to restore.
 This property isn't implemented yet.
 Future value; don't use.
-  \[RestorePointPreference \<String\>\]: restorePointPreference
-  \[Status \<String\>\]: restoreArtifactsBulkRequestStatus
-  \[Tags \<String\>\]: restorePointTags
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[RestorePointPreference <String>]`: restorePointPreference
+  - `[Status <String>]`: restoreArtifactsBulkRequestStatus
+  - `[Tags <String>]`: restorePointTags
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DirectoryObjectIds \<String\[\]\>\]: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
-  \[Mailboxes \<String\[\]\>\]: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
+  - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
+  - `[Mailboxes <String- `[]`>]`: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreexchangerestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreexchangerestoresession)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
