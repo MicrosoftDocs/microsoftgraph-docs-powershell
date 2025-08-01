@@ -33,6 +33,14 @@ Confirm-MgRiskyServicePrincipalCompromised
 Confirm one or more riskyServicePrincipal objects as compromised.
 This action sets the targeted service principal account's risk level to high.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityRiskyServicePrincipal.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityRiskyServicePrincipal.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

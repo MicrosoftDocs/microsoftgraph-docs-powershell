@@ -52,6 +52,14 @@ New-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> -BodyParamet
 ## DESCRIPTION
 Create a new printJob for a printer.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrintJob.Create, PrintJob.ReadWriteBasic.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite.All, PrintJob.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

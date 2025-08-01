@@ -21,6 +21,14 @@ Get-MgReportDeviceConfigurationDeviceActivity -OutFile <String> [-ResponseHeader
 ## DESCRIPTION
 Metadata for the device configuration device activity report
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementConfiguration.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

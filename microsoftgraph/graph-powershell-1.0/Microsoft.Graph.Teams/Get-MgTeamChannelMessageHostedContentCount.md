@@ -29,6 +29,14 @@ Get-MgTeamChannelMessageHostedContentCount -InputObject <ITeamsIdentity> [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChannelMessage.Read.All, Group.ReadWrite.All, Group.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelMessage.Read.Group, Group.ReadWrite.All, Group.Read.All, ChannelMessage.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

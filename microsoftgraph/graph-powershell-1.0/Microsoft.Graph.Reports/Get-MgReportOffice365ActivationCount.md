@@ -21,6 +21,14 @@ Get-MgReportOffice365ActivationCount -OutFile <String> [-ResponseHeadersVariable
 ## DESCRIPTION
 Get the count of Microsoft 365 activations on desktops and devices.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Reports.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Reports.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

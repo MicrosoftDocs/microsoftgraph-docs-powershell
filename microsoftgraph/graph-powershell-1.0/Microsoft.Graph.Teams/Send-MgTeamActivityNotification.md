@@ -54,6 +54,14 @@ Send-MgTeamActivityNotification -InputObject <ITeamsIdentity>
 Send an activity feed notification in the scope of a team.
 For more information about sending notifications and the requirements for doing so, seesending Teams activity notifications.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsActivity.Send,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsActivity.Send.Group, TeamsActivity.Send,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

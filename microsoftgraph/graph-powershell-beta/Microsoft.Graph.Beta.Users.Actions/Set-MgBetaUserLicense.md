@@ -56,6 +56,14 @@ You can also enable and disable specific plans associated with a subscription.
 Direct user licensing is an alternative to group-based licensing.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | LicenseAssignment.ReadWrite.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LicenseAssignment.ReadWrite.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -43,6 +43,14 @@ Retrieve the properties and relationships of a serviceUpdateMessage object.
 This operation retrieves a specified service update message for the tenant.
 The operation returns an error if the message does not exist for the tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ServiceMessage.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ServiceMessage.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
