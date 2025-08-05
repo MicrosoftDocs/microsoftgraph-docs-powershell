@@ -4,7 +4,7 @@ description: "Learn how to use app-only authentication to enable non-interactive
 
 author: msewaweru
 manager: mwongerapk
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/28/2024
 ms.author: eunicewaweru
 
