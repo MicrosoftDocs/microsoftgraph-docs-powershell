@@ -19,7 +19,7 @@ Read-only.
 ### Set (Default)
 ```
 Set-MgUserPhotoContent -UserId <String> [-Data <Stream>] [-ResponseHeadersVariable <String>] -InFile <String>
- [-ContentType <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-ContentType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,21 +27,21 @@ Set-MgUserPhotoContent -UserId <String> [-Data <Stream>] [-ResponseHeadersVariab
 ```
 Set-MgUserPhotoContent -UserId <String> -ProfilePhotoId <String> [-Data <Stream>]
  [-ResponseHeadersVariable <String>] -InFile <String> [-ContentType <String>] [-Headers <IDictionary>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity1
 ```
 Set-MgUserPhotoContent -InputObject <IUsersIdentity> [-Data <Stream>] [-ResponseHeadersVariable <String>]
  -InFile <String> [-ContentType <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgUserPhotoContent -InputObject <IUsersIdentity> [-Data <Stream>] [-ResponseHeadersVariable <String>]
  -InFile <String> [-ContentType <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -67,21 +67,6 @@ Set-MgUserPhotoContent -UserId f38d9efd-2743-42c9-b1a8-3623c5aba666 -InFile "C:\
 This example sets the profile photo properties for the specified user.
 
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -ContentType
 ContentType Parameter
@@ -191,6 +176,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -215,6 +215,21 @@ Parameter Sets: Set, Set1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

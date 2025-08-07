@@ -17,7 +17,7 @@ Supports $expand.
 ```
 Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestTargetSchedule -RbacApplicationId <String>
  -UnifiedRoleEligibilityScheduleRequestId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -25,15 +25,13 @@ Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestTargetSchedul
 ```
 Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestTargetSchedule
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The schedule for a role eligibility that is referenced through the targetScheduleId property.
 Supports $expand.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -80,6 +78,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

@@ -8,11 +8,19 @@ schema: 2.0.0
 # Update-MgEntitlementManagementCatalogResourceScopeResourceRoleResource
 
 ## SYNOPSIS
-Update the navigation property resource in identityGovernance
+Invoke action refresh
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Refresh1 (Default)
+```
+Update-MgEntitlementManagementCatalogResourceScopeResourceRoleResource -AccessPackageCatalogId <String>
+ -AccessPackageResourceRoleId <String> -AccessPackageResourceScopeId <String>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded1
 ```
 Update-MgEntitlementManagementCatalogResourceScopeResourceRoleResource -AccessPackageCatalogId <String>
  -AccessPackageResourceRoleId <String> -AccessPackageResourceScopeId <String>
@@ -22,7 +30,7 @@ Update-MgEntitlementManagementCatalogResourceScopeResourceRoleResource -AccessPa
  [-Environment <IMicrosoftGraphAccessPackageResourceEnvironment>] [-Id <String>] [-ModifiedDateTime <DateTime>]
  [-OriginId <String>] [-OriginSystem <String>] [-Roles <IMicrosoftGraphAccessPackageResourceRole[]>]
  [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded
@@ -35,23 +43,31 @@ Update-MgEntitlementManagementCatalogResourceScopeResourceRoleResource -AccessPa
  [-Environment <IMicrosoftGraphAccessPackageResourceEnvironment>] [-Id <String>] [-ModifiedDateTime <DateTime>]
  [-OriginId <String>] [-OriginSystem <String>] [-Roles <IMicrosoftGraphAccessPackageResourceRole[]>]
  [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgEntitlementManagementCatalogResourceScopeResourceRoleResource -AccessPackageCatalogId <String>
  -AccessPackageResourceRoleId <String> -AccessPackageResourceScopeId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResource> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] -BodyParameter <IMicrosoftGraphAccessPackageResource>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEntitlementManagementCatalogResourceScopeResourceRoleResource -AccessPackageCatalogId <String>
  -AccessPackageResourceId <String> -AccessPackageResourceRoleId <String> -AccessPackageResourceScopeId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResource> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] -BodyParameter <IMicrosoftGraphAccessPackageResource>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Refresh
+```
+Update-MgEntitlementManagementCatalogResourceScopeResourceRoleResource -AccessPackageCatalogId <String>
+ -AccessPackageResourceId <String> -AccessPackageResourceRoleId <String> -AccessPackageResourceScopeId <String>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -63,7 +79,7 @@ Update-MgEntitlementManagementCatalogResourceScopeResourceRoleResource
  [-Environment <IMicrosoftGraphAccessPackageResourceEnvironment>] [-Id <String>] [-ModifiedDateTime <DateTime>]
  [-OriginId <String>] [-OriginSystem <String>] [-Roles <IMicrosoftGraphAccessPackageResourceRole[]>]
  [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -75,29 +91,41 @@ Update-MgEntitlementManagementCatalogResourceScopeResourceRoleResource
  [-Environment <IMicrosoftGraphAccessPackageResourceEnvironment>] [-Id <String>] [-ModifiedDateTime <DateTime>]
  [-OriginId <String>] [-OriginSystem <String>] [-Roles <IMicrosoftGraphAccessPackageResourceRole[]>]
  [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgEntitlementManagementCatalogResourceScopeResourceRoleResource
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessPackageResource>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResource> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgEntitlementManagementCatalogResourceScopeResourceRoleResource
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessPackageResource>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResource> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RefreshViaIdentity1
+```
+Update-MgEntitlementManagementCatalogResourceScopeResourceRoleResource
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RefreshViaIdentity
+```
+Update-MgEntitlementManagementCatalogResourceScopeResourceRoleResource
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property resource in identityGovernance
-
-## EXAMPLES
+Invoke action refresh
 
 ## PARAMETERS
 
@@ -106,7 +134,7 @@ The unique identifier of accessPackageCatalog
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateExpanded, Update1, Update
+Parameter Sets: Refresh1, UpdateExpanded1, UpdateExpanded, Update1, Update, Refresh
 Aliases:
 
 Required: True
@@ -121,7 +149,7 @@ The unique identifier of accessPackageResource
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded, Update, Refresh
 Aliases:
 
 Required: True
@@ -136,7 +164,7 @@ The unique identifier of accessPackageResourceRole
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateExpanded, Update1, Update
+Parameter Sets: Refresh1, UpdateExpanded1, UpdateExpanded, Update1, Update, Refresh
 Aliases:
 
 Required: True
@@ -151,7 +179,7 @@ The unique identifier of accessPackageResourceScope
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateExpanded, Update1, Update
+Parameter Sets: Refresh1, UpdateExpanded1, UpdateExpanded, Update1, Update, Refresh
 Aliases:
 
 Required: True
@@ -205,21 +233,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -323,7 +336,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity, RefreshViaIdentity1, RefreshViaIdentity
 Aliases:
 
 Required: True
@@ -373,6 +386,36 @@ The type of the resource in the origin system, such as SharePointOnline, AadAppl
 Type: String
 Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: Refresh1, Refresh, RefreshViaIdentity1, RefreshViaIdentity
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -432,6 +475,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -459,6 +517,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResource
+### System.Boolean
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -468,8 +527,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 ATTRIBUTES `<IMicrosoftGraphAccessPackageResourceAttribute- `[]`>`: Contains information about the attributes to be collected from the requestor and sent to the resource application.
   - `[Destination <IMicrosoftGraphAccessPackageResourceAttributeDestination>]`: accessPackageResourceAttributeDestination
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsEditable <Boolean?>]`:
-  - `[IsPersistedOnAssignmentRemoval <Boolean?>]`:
+  - `[IsEditable <Boolean?>]`: 
+  - `[IsPersistedOnAssignmentRemoval <Boolean?>]`: 
   - `[Name <String>]`: The name of the attribute in the end system.
 If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
   - `[Source <IMicrosoftGraphAccessPackageResourceAttributeSource>]`: accessPackageResourceAttributeSource
@@ -482,8 +541,8 @@ Read-only.
   - `[Attributes <IMicrosoftGraphAccessPackageResourceAttribute- `[]`>]`: Contains information about the attributes to be collected from the requestor and sent to the resource application.
     - `[Destination <IMicrosoftGraphAccessPackageResourceAttributeDestination>]`: accessPackageResourceAttributeDestination
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsEditable <Boolean?>]`:
-    - `[IsPersistedOnAssignmentRemoval <Boolean?>]`:
+    - `[IsEditable <Boolean?>]`: 
+    - `[IsPersistedOnAssignmentRemoval <Boolean?>]`: 
     - `[Name <String>]`: The name of the attribute in the end system.
 If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
     - `[Source <IMicrosoftGraphAccessPackageResourceAttributeSource>]`: accessPackageResourceAttributeSource
@@ -571,8 +630,8 @@ Read-only.
     - `[Attributes <IMicrosoftGraphAccessPackageResourceAttribute- `[]`>]`: Contains information about the attributes to be collected from the requestor and sent to the resource application.
       - `[Destination <IMicrosoftGraphAccessPackageResourceAttributeDestination>]`: accessPackageResourceAttributeDestination
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IsEditable <Boolean?>]`:
-      - `[IsPersistedOnAssignmentRemoval <Boolean?>]`:
+      - `[IsEditable <Boolean?>]`: 
+      - `[IsPersistedOnAssignmentRemoval <Boolean?>]`: 
       - `[Name <String>]`: The name of the attribute in the end system.
 If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
       - `[Source <IMicrosoftGraphAccessPackageResourceAttributeSource>]`: accessPackageResourceAttributeSource
@@ -698,8 +757,8 @@ Read-only.
     - `[Attributes <IMicrosoftGraphAccessPackageResourceAttribute- `[]`>]`: Contains information about the attributes to be collected from the requestor and sent to the resource application.
       - `[Destination <IMicrosoftGraphAccessPackageResourceAttributeDestination>]`: accessPackageResourceAttributeDestination
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IsEditable <Boolean?>]`:
-      - `[IsPersistedOnAssignmentRemoval <Boolean?>]`:
+      - `[IsEditable <Boolean?>]`: 
+      - `[IsPersistedOnAssignmentRemoval <Boolean?>]`: 
       - `[Name <String>]`: The name of the attribute in the end system.
 If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
       - `[Source <IMicrosoftGraphAccessPackageResourceAttributeSource>]`: accessPackageResourceAttributeSource
@@ -769,8 +828,8 @@ Read-only.
     - `[Attributes <IMicrosoftGraphAccessPackageResourceAttribute- `[]`>]`: Contains information about the attributes to be collected from the requestor and sent to the resource application.
       - `[Destination <IMicrosoftGraphAccessPackageResourceAttributeDestination>]`: accessPackageResourceAttributeDestination
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IsEditable <Boolean?>]`:
-      - `[IsPersistedOnAssignmentRemoval <Boolean?>]`:
+      - `[IsEditable <Boolean?>]`: 
+      - `[IsPersistedOnAssignmentRemoval <Boolean?>]`: 
       - `[Name <String>]`: The name of the attribute in the end system.
 If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
       - `[Source <IMicrosoftGraphAccessPackageResourceAttributeSource>]`: accessPackageResourceAttributeSource

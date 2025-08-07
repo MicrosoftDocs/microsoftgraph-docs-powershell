@@ -20,7 +20,7 @@ This API doesn't currently support group validation.
 Update-MgBetaReportHealthMonitoringAlertConfiguration -AlertConfigurationId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-EmailNotificationConfigurations <IMicrosoftGraphHealthMonitoringEmailNotificationConfiguration[]>]
- [-Id <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgBetaReportHealthMonitoringAlertConfiguration -AlertConfigurationId <Str
 ```
 Update-MgBetaReportHealthMonitoringAlertConfiguration -AlertConfigurationId <String>
  -BodyParameter <IMicrosoftGraphHealthMonitoringAlertConfiguration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,7 +36,7 @@ Update-MgBetaReportHealthMonitoringAlertConfiguration -AlertConfigurationId <Str
 Update-MgBetaReportHealthMonitoringAlertConfiguration -InputObject <IReportsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-EmailNotificationConfigurations <IMicrosoftGraphHealthMonitoringEmailNotificationConfiguration[]>]
- [-Id <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -44,7 +44,7 @@ Update-MgBetaReportHealthMonitoringAlertConfiguration -InputObject <IReportsIden
 ```
 Update-MgBetaReportHealthMonitoringAlertConfiguration -InputObject <IReportsIdentity>
  -BodyParameter <IMicrosoftGraphHealthMonitoringAlertConfiguration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -122,21 +122,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -EmailNotificationConfigurations
 Defines the recipients of email notifications for an alert type.
 Currently, only one email notification configuration is supported for an alert configuration, meaning only one group can receive notifications for an alert type.
@@ -201,6 +186,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -208,6 +208,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

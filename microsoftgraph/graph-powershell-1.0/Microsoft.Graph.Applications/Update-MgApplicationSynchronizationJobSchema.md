@@ -21,14 +21,14 @@ Update-MgApplicationSynchronizationJobSchema -ApplicationId <String> -Synchroniz
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
  [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgApplicationSynchronizationJobSchema -ApplicationId <String> -SynchronizationJobId <String>
  -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,20 +37,18 @@ Update-MgApplicationSynchronizationJobSchema -InputObject <IApplicationsIdentity
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
  [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgApplicationSynchronizationJobSchema -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property schema in applications
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,21 +95,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -178,6 +161,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -239,6 +237,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -291,7 +304,7 @@ Not nullable.
 Anchor attributes must have a unique value identifying an object, and must be immutable.
 Default is false.
 One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
-        - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`:
+        - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`: 
           - `[Key <String>]`: Key.
           - `[Value <String>]`: Value.
         - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
@@ -330,11 +343,11 @@ null if discovery hasn't yet occurred.
   - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule- `[]`>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
     - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IncludedContainers <String- `[]`>]`:
+      - `[IncludedContainers <String- `[]`>]`: 
     - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
     - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IncludedGroups <String- `[]`>]`:
+      - `[IncludedGroups <String- `[]`>]`: 
     - `[Id <String>]`: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -425,7 +438,7 @@ Not nullable.
 Anchor attributes must have a unique value identifying an object, and must be immutable.
 Default is false.
 One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
-      - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`:
+      - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair- `[]`>]`: 
         - `[Key <String>]`: Key.
         - `[Value <String>]`: Value.
       - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
@@ -491,11 +504,11 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 SYNCHRONIZATIONRULES `<IMicrosoftGraphSynchronizationRule- `[]`>`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
   - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IncludedContainers <String- `[]`>]`:
+    - `[IncludedContainers <String- `[]`>]`: 
   - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
   - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IncludedGroups <String- `[]`>]`:
+    - `[IncludedGroups <String- `[]`>]`: 
   - `[Id <String>]`: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.

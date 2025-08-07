@@ -29,13 +29,13 @@ When using Graph Explorer to update a schemaExtension resource, include the owne
 Update-MgSchemaExtension -SchemaExtensionId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-Id <String>] [-Owner <String>]
  [-Properties <IMicrosoftGraphExtensionSchemaProperty[]>] [-Status <String>] [-TargetTypes <String[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSchemaExtension -SchemaExtensionId <String> -BodyParameter <IMicrosoftGraphSchemaExtension>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,14 +44,14 @@ Update-MgSchemaExtension -SchemaExtensionId <String> -BodyParameter <IMicrosoftG
 Update-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-Id <String>] [-Owner <String>]
  [-Properties <IMicrosoftGraphExtensionSchemaProperty[]>] [-Status <String>] [-TargetTypes <String[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity>
  -BodyParameter <IMicrosoftGraphSchemaExtension> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -141,21 +141,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Description
 Description for the schema extension.
 
@@ -232,6 +217,21 @@ Supports $filter (eq).
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -321,6 +321,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -360,7 +375,7 @@ BODYPARAMETER `<IMicrosoftGraphSchemaExtension>`: schemaExtension
 Read-only.
   - `[Description <String>]`: Description for the schema extension.
   - `[Owner <String>]`: The appId of the application that is the owner of the schema extension.
-The owner of the schema definition must be explicitly specified during the Create and Update operations, or it will be implied and auto-assigned by Microsoft Entra ID as follows: In delegated access: The signed-in user must be the owner of the app that calls Microsoft Graph to create the schema extension definition.
+The owner of the schema definition must be explicitly specified during the Create and Update operations, or it will be implied and auto-assigned by Microsoft Entra ID as follows: In delegated access: The signed-in user must be the owner of the app that calls Microsoft Graph to create the schema extension definition. 
 If the signed-in user isn't the owner of the calling app, they must explicitly specify the owner property, and assign it the appId of an app that they own.
 In app-only access:  The owner property isn't required in the request body.
 Instead, the calling app is assigned ownership of the schema extension.
@@ -369,7 +384,7 @@ Once set, this property is read-only and cannot be changed.
 Supports $filter (eq).
   - `[Properties <IMicrosoftGraphExtensionSchemaProperty- `[]`>]`: The collection of property names and types that make up the schema extension definition.
     - `[Name <String>]`: The name of the strongly typed property defined as part of a schema extension.
-    - `[Type <String>]`: The type of the property that is defined as part of a schema extension.
+    - `[Type <String>]`: The type of the property that is defined as part of a schema extension. 
 Allowed values are Binary, Boolean, DateTime, Integer, or String.
 For more information, see Supported property data types.
   - `[Status <String>]`: The lifecycle state of the schema extension.
@@ -385,7 +400,7 @@ INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
 
 PROPERTIES `<IMicrosoftGraphExtensionSchemaProperty- `[]`>`: The collection of property names and types that make up the schema extension definition.
   - `[Name <String>]`: The name of the strongly typed property defined as part of a schema extension.
-  - `[Type <String>]`: The type of the property that is defined as part of a schema extension.
+  - `[Type <String>]`: The type of the property that is defined as part of a schema extension. 
 Allowed values are Binary, Boolean, DateTime, Integer, or String.
 For more information, see Supported property data types.
 

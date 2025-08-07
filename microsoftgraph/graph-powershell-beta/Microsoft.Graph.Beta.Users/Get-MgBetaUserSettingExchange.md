@@ -9,8 +9,8 @@ ms.subservice: outlook
 # Get-MgBetaUserSettingExchange
 
 ## SYNOPSIS
-Get a list of Exchange settings, including mailboxes that belong to a user.
-Currently, the mailbox types supported are the user's primary and in-place archive.
+Get a list of Exchange mailboxes that belong to a user.
+Currently, the mailbox types supported are the user's primary mailbox and shared mailboxes.
 To learn how to get a list of users in a tenant, see List users.
 
 ## SYNTAX
@@ -18,20 +18,20 @@ To learn how to get a list of users in a tenant, see List users.
 ### Get (Default)
 ```
 Get-MgBetaUserSettingExchange -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaUserSettingExchange -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get a list of Exchange settings, including mailboxes that belong to a user.
-Currently, the mailbox types supported are the user's primary and in-place archive.
+Get a list of Exchange mailboxes that belong to a user.
+Currently, the mailbox types supported are the user's primary mailbox and shared mailboxes.
 To learn how to get a list of users in a tenant, see List users.
 
 ## EXAMPLES
@@ -92,6 +92,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

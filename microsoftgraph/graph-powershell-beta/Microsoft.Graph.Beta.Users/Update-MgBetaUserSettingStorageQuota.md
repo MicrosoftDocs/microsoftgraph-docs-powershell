@@ -20,14 +20,14 @@ Update the navigation property quota in users
 Update-MgBetaUserSettingStorageQuota -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Deleted <Int64>] [-Id <String>] [-ManageWebUrl <String>]
  [-Remaining <Int64>] [-Services <IMicrosoftGraphServiceStorageQuotaBreakdown[]>] [-State <String>]
- [-Total <Int64>] [-Used <Int64>] [-Headers <IDictionary>] [-WhatIf]
+ [-Total <Int64>] [-Used <Int64>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserSettingStorageQuota -UserId <String> -BodyParameter <IMicrosoftGraphUnifiedStorageQuota>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Update-MgBetaUserSettingStorageQuota -UserId <String> -BodyParameter <IMicrosoft
 Update-MgBetaUserSettingStorageQuota -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Deleted <Int64>] [-Id <String>] [-ManageWebUrl <String>]
  [-Remaining <Int64>] [-Services <IMicrosoftGraphServiceStorageQuotaBreakdown[]>] [-State <String>]
- [-Total <Int64>] [-Used <Int64>] [-Headers <IDictionary>] [-WhatIf]
+ [-Total <Int64>] [-Used <Int64>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,13 +44,11 @@ Update-MgBetaUserSettingStorageQuota -InputObject <IUsersIdentity> [-ResponseHea
 ```
 Update-MgBetaUserSettingStorageQuota -InputObject <IUsersIdentity>
  -BodyParameter <IMicrosoftGraphUnifiedStorageQuota> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property quota in users
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -82,21 +80,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -170,6 +153,21 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -279,6 +277,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

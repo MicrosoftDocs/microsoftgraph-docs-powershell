@@ -18,7 +18,7 @@ Supports $expand for the directory provider.
 ```
 Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentDirectoryScope -RbacApplicationId <String>
  -UnifiedRoleAssignmentId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentDirectoryScope -Rba
 ```
 Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentDirectoryScope
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -34,8 +34,6 @@ Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentDirectoryScope
 The directory object that is the scope of the assignment.
 Read-only.
 Supports $expand for the directory provider.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -82,6 +80,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
