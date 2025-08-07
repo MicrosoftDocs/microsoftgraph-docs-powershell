@@ -22,7 +22,7 @@ It's performed on an accessPackageAssignmentRequest object whose requestStatus i
 ```
 Resume-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Data <Hashtable>] [-Source <String>]
- [-Type <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-Type <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Resume-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestI
 ```
 Resume-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String>
  -BodyParameter <IPathsQsyd4AIdentitygovernanceEntitlementmanagementAssignmentrequestsAccesspackageassignmentrequestIdMicrosoftGraphResumePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Resume-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestI
 ```
 Resume-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Data <Hashtable>] [-Source <String>]
- [-Type <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-Type <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ Resume-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanc
 ```
 Resume-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPathsQsyd4AIdentitygovernanceEntitlementmanagementAssignmentrequestsAccesspackageassignmentrequestIdMicrosoftGraphResumePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -127,21 +127,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Data
 customExtensionData
 
@@ -203,6 +188,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -248,6 +248,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -285,8 +300,8 @@ BODYPARAMETER `<IPathsQsyd4AIdentitygovernanceEntitlementmanagementAssignmentreq
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Data <IMicrosoftGraphCustomExtensionData>]`: customExtensionData
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Source <String>]`:
-  - `[Type <String>]`:
+  - `[Source <String>]`: 
+  - `[Type <String>]`: 
 
 INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment

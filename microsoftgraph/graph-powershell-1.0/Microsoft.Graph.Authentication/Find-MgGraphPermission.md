@@ -8,37 +8,29 @@ schema: 2.0.0
 # Find-MgGraphPermission
 
 ## SYNOPSIS
-Retrieves permissions that are applicable to a certain domain.
+The Microsoft Graph PowerShell SDK application requires users to have domain knowledge of both the semantics and syntax of Microsoft Graph API permissions used to authorize access to the API.
+This cmdlet helps to answer the following questions:  - How do I find the values to supply to the permission-related parameters of commands like New-MgApplication and other application and consent related commands?
+- What permissions are applicable to a certain domain, for example, application, directory?
+To use Microsoft Graph PowerShell SDK to access Microsoft Graph, users must sign in to an Azure AD application using the Connect-MgGraph command.
+Use the Find-MgGraphCommand to find which permissions to use for a specific cmdlet or API.-  Currently PowerShell commands and scripts, including those implemented with Microsoft Graph PowerShell SDK itself, have no way of validating user input that refers to permissions or providing "auto-complete" user experiences to help users accurately supply input to commands
 
 ## SYNTAX
 
 ### Search
 ```
 Find-MgGraphPermission [-SearchString] <String> [-ExactMatch] [-PermissionType <String>] [-Online]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### All
 ```
-Find-MgGraphPermission [-PermissionType <String>] [-Online] [-All]
+Find-MgGraphPermission [-PermissionType <String>] [-Online] [-All] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-
-The Microsoft Graph PowerShell SDK application requires users to have domain knowledge of both the
-semantics and syntax of Microsoft Graph API permissions used to authorize access to the API. This
-cmdlet helps to answer the following questions:
-
-- How do I find the values to supply to the permission-related parameters of commands like
-  New-MgApplication and other application and consent related commands?
-- What permissions are applicable to a certain domain, for example, application, directory? To use
-  Microsoft Graph PowerShell SDK to access Microsoft Graph, users must sign in to an Azure AD
-  application using the Connect-MgGraph command. Use the Find-MgGraphCommand to find which
-  permissions to use for a specific cmdlet or API.
-- Currently PowerShell commands and scripts, including those implemented with Microsoft Graph
-  PowerShell SDK itself, have no way of validating user input that refers to permissions or
-  providing "auto-complete" user experiences to help users accurately supply input to commands
+Retrieves permissions that are applicable to a certain domain.
+For example application, directory.
 
 ## EXAMPLES
 
@@ -159,6 +151,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+Treat this as a common parameter.
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SearchString
 The SearchString parameter allows you to specify a string such as 'user' or 'mail' that represents the subject or domain of the permission you're searching for.
 Since permissions usually have names such as 'User.Read' or 'Mail.ReadWrite', the command uses the SearchString parameter to return all permissions that contain the value specified for SearchString in the name of the permission.
@@ -180,27 +187,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### System.String
-
-You can pipe permission names in the form of strings.
-
+### You can pipe permission names in the form of strings to Find-MgGraphPermission.
 ## OUTPUTS
 
-### Microsoft.Graph.Authentication.Permission
-
-This command returns a collection of items with the following fields:
-* Name: The name of the permission as found in Microsoft Graph permissions reference documentation.
-  Names will typically have a form like 'User.Read.All', or 'Files.ReadWrite' for instance.
-* Description: Provides a description of what access is granted by the permission
-* Id: The unique identifier for the permission in the form of a Guid. The unique identifier is
-  required for using certain Microsoft Graph REST API resources or Microsoft Graph-based PowerShell
-  commands that manage application consent.
-* Consent: Denotes whether the specified permission requires administrator or user consent. The
-  valid values are 'Admin' and 'User'.
-* PermissionType: Valid values are 'Delegated' or 'Application' depending on whether the permission
-  is one that is delegated by the user to the application ('Delegated'), or is directly assigned to
-  the application without the consent of a user ('Application').
-
+### This command returns a collection of items with the following fields:
+### * Name: The name of the permission as found in Microsoft Graph permissions reference documentation. Names will typically
+### have a form like 'User.Read.All', or 'Files.ReadWrite' for instance.
+### * Description: Provides a description of what access is granted by the permission
+### * Id: The unique identifier for the permission in the form of a Guid. The unique identifier is required for using
+### certain Microsoft Graph REST API resources or Microsoft Graph-based PowerShell commands that manage application consent.
+### * Consent: Denotes whether the specified permission requires administrator or user consent. The valid values are 'Admin' and 'User'.
+### * PermissionType: Valid values are 'Delegated' or 'Application' depending on whether the permission is one that is delegated by
+### the user to the application ('Delegated'), or is directly assigned to the application without the consent of a user ('Application').
 ## NOTES
 
 ## RELATED LINKS

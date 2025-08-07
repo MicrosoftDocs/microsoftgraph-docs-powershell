@@ -21,7 +21,7 @@ Supports $expand.
 ```
 Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing
  -PrivilegedAccessGroupAssignmentScheduleId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsin
 ```
 Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -37,8 +37,6 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsin
 When the request activates an ownership or membership assignment in PIM for groups, this object represents the eligibility relationship.
 Otherwise, it's null.
 Supports $expand.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,6 +95,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -25,20 +25,18 @@ New-MgRoleManagementDirectoryRoleAssignmentSchedule [-ResponseHeadersVariable <S
  [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
  [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-Status <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgRoleManagementDirectoryRoleAssignmentSchedule
  -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentSchedule> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to roleAssignmentSchedules for roleManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -137,21 +135,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -315,6 +298,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -384,6 +382,21 @@ The status of the role assignment or eligibility request.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -464,7 +477,7 @@ Read-only.
 Read-only when isBuiltIn is true.
     - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-Required.
+Required. 
 Supports $filter (eq, in).
     - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition- `[]`>]`: Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles (isBuiltIn is true) support this attribute.
@@ -507,7 +520,7 @@ Supports $filter (eq, ne).
     - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations.
-For example, PT3H refers to three hours.
+For example, PT3H refers to three hours. 
 If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
       - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -520,13 +533,13 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required if type is absoluteMonthly or absoluteYearly.
         - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
         - `[FirstDayOfWeek <String>]`: dayOfWeek
         - `[Index <String>]`: weekIndex
         - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-        - `[Month <Int32?>]`: The month in which the event occurs.
+        - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
         - `[Type <String>]`: recurrencePatternType
       - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
@@ -596,7 +609,7 @@ Read-only.
 Read-only when isBuiltIn is true.
     - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-Required.
+Required. 
 Supports $filter (eq, in).
     - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition- `[]`>]`: Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles (isBuiltIn is true) support this attribute.
@@ -663,7 +676,7 @@ Supports $filter (eq, ne).
       - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations.
-For example, PT3H refers to three hours.
+For example, PT3H refers to three hours. 
 If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
         - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -676,13 +689,13 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required if type is absoluteMonthly or absoluteYearly.
           - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
           - `[FirstDayOfWeek <String>]`: dayOfWeek
           - `[Index <String>]`: weekIndex
           - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-          - `[Month <Int32?>]`: The month in which the event occurs.
+          - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
           - `[Type <String>]`: recurrencePatternType
         - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
@@ -731,7 +744,7 @@ Read-only.
 Read-only when isBuiltIn is true.
   - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-Required.
+Required. 
 Supports $filter (eq, in).
   - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition- `[]`>]`: Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles (isBuiltIn is true) support this attribute.
@@ -767,7 +780,7 @@ SCHEDULEINFO `<IMicrosoftGraphRequestSchedule>`: requestSchedule
   - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations.
-For example, PT3H refers to three hours.
+For example, PT3H refers to three hours. 
 If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
     - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -780,13 +793,13 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required if type is absoluteMonthly or absoluteYearly.
       - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
       - `[FirstDayOfWeek <String>]`: dayOfWeek
       - `[Index <String>]`: weekIndex
       - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-      - `[Month <Int32?>]`: The month in which the event occurs.
+      - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
       - `[Type <String>]`: recurrencePatternType
     - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange

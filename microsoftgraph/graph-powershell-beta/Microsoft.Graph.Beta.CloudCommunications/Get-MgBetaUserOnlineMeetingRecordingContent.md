@@ -11,6 +11,7 @@ ms.subservice: teams
 ## SYNOPSIS
 Get a callRecording object associated with a scheduled onlineMeeting.
 This API supports the retrieval of call recordings from private chat meetings and channel meetings.
+However, private channel meetings are not supported at this time.
 For a recording, this API returns the metadata of the single recording associated with the online meeting.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
 
@@ -23,19 +24,20 @@ For the content of a recording, this API returns the stream of bytes associated 
 ```
 Get-MgBetaUserOnlineMeetingRecordingContent -CallRecordingId <String> -OnlineMeetingId <String>
  -UserId <String> -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaUserOnlineMeetingRecordingContent -InputObject <ICloudCommunicationsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get a callRecording object associated with a scheduled onlineMeeting.
 This API supports the retrieval of call recordings from private chat meetings and channel meetings.
+However, private channel meetings are not supported at this time.
 For a recording, this API returns the metadata of the single recording associated with the online meeting.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
 
@@ -149,6 +151,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

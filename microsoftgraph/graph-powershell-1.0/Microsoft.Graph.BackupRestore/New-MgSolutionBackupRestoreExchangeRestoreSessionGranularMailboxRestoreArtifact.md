@@ -22,14 +22,14 @@ New-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact
  [-ArtifactCount <Int32>] [-CompletionDateTime <DateTime>] [-DestinationType <String>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-RestorePoint <IMicrosoftGraphRestorePoint>]
  [-RestoredFolderId <String>] [-SearchResponseId <String>] [-StartDateTime <DateTime>] [-Status <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact
  -ExchangeRestoreSessionId <String> -BodyParameter <IMicrosoftGraphGranularMailboxRestoreArtifact>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,21 +40,19 @@ New-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact
  [-ArtifactCount <Int32>] [-CompletionDateTime <DateTime>] [-DestinationType <String>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-RestorePoint <IMicrosoftGraphRestorePoint>]
  [-RestoredFolderId <String>] [-SearchResponseId <String>] [-StartDateTime <DateTime>] [-Status <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact
  -InputObject <IBackupRestoreIdentity> -BodyParameter <IMicrosoftGraphGranularMailboxRestoreArtifact>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to granularMailboxRestoreArtifacts for solutions
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -111,21 +109,6 @@ The time when restoration of restore artifact is completed.
 Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -227,6 +210,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -310,6 +308,21 @@ artifactRestoreStatus
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

@@ -18,7 +18,7 @@ Update-MgBetaDeviceManagementMonitoringAlertRecord -AlertRecordId <String> [-Res
  [-AdditionalProperties <Hashtable>] [-AlertImpact <IMicrosoftGraphDeviceManagementAlertImpact>]
  [-AlertRuleId <String>] [-AlertRuleTemplate <String>] [-DetectedDateTime <DateTime>] [-DisplayName <String>]
  [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-ResolvedDateTime <DateTime>] [-Severity <String>]
- [-Status <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Update-MgBetaDeviceManagementMonitoringAlertRecord -AlertRecordId <String> [-Res
 ```
 Update-MgBetaDeviceManagementMonitoringAlertRecord -AlertRecordId <String>
  -BodyParameter <IMicrosoftGraphDeviceManagementAlertRecord> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,20 +36,18 @@ Update-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManageme
  [-AlertImpact <IMicrosoftGraphDeviceManagementAlertImpact>] [-AlertRuleId <String>]
  [-AlertRuleTemplate <String>] [-DetectedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-LastUpdatedDateTime <DateTime>] [-ResolvedDateTime <DateTime>] [-Severity <String>] [-Status <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceManagementAlertRecord> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property alertRecords in deviceManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -142,21 +140,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -256,6 +239,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResolvedDateTime
 The date and time when the alert event was resolved.
 The Timestamp type represents date and time information using ISO 8601 format.
@@ -318,6 +316,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -356,8 +369,10 @@ ALERTIMPACT `<IMicrosoftGraphDeviceManagementAlertImpact>`: alertImpact
   - `[AggregationType <String>]`: aggregationType
   - `[AlertImpactDetails <IMicrosoftGraphKeyValuePair- `[]`>]`: The detail information of the impact.
 For example, if the Frontline Cloud PCs near concurrency limit alert is triggered, the details contain the impacted Frontline license SKU name, such as Windows 365 Frontline 2 vCPU/8GB/128GB, and the corresponding impacted value.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[Value <Int32?>]`: The number value of the impact.
 For the aggregation types of count and affectedCloudPcCount, the value indicates the number of affected instances.
 For example, 6 affectedCloudPcCount means that six Cloud PCs are affected.
@@ -373,8 +388,10 @@ Read-only.
     - `[AggregationType <String>]`: aggregationType
     - `[AlertImpactDetails <IMicrosoftGraphKeyValuePair- `[]`>]`: The detail information of the impact.
 For example, if the Frontline Cloud PCs near concurrency limit alert is triggered, the details contain the impacted Frontline license SKU name, such as Windows 365 Frontline 2 vCPU/8GB/128GB, and the corresponding impacted value.
-      - `[Name <String>]`: Name for this key-value pair
-      - `[Value <String>]`: Value for this key-value pair
+      - `[Name <String>]`: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+      - `[Value <String>]`: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
     - `[Value <Int32?>]`: The number value of the impact.
 For the aggregation types of count and affectedCloudPcCount, the value indicates the number of affected instances.
 For example, 6 affectedCloudPcCount means that six Cloud PCs are affected.

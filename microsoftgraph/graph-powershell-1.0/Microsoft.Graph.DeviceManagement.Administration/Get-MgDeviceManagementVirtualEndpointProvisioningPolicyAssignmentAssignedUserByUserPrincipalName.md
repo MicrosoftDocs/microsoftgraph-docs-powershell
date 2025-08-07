@@ -20,7 +20,7 @@ Supports$expand.
 Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserByUserPrincipalName
  -CloudPcProvisioningPolicyAssignmentId <String> -CloudPcProvisioningPolicyId <String>
  -UserPrincipalName <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserByU
 ```
 Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserByUserPrincipalName
  -InputObject <IDeviceManagementAdministrationIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -37,8 +37,6 @@ The assignment targeted users for the provisioning policy.
 This list of users is computed based on assignments, licenses, group memberships, and policies.
 Read-only.
 Supports$expand.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -115,6 +113,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

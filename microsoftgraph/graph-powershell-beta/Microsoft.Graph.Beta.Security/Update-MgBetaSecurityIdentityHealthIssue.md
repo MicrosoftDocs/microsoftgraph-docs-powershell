@@ -23,14 +23,14 @@ Update-MgBetaSecurityIdentityHealthIssue -HealthIssueId <String> [-ResponseHeade
  [-Description <String>] [-DisplayName <String>] [-DomainNames <String[]>] [-HealthIssueType <String>]
  [-Id <String>] [-IssueTypeId <String>] [-LastModifiedDateTime <DateTime>] [-Recommendations <String[]>]
  [-RecommendedActionCommands <String[]>] [-SensorDnsNames <String[]>] [-Severity <String>] [-Status <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityIdentityHealthIssue -HealthIssueId <String>
  -BodyParameter <IMicrosoftGraphSecurityHealthIssue> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,14 +40,14 @@ Update-MgBetaSecurityIdentityHealthIssue -InputObject <ISecurityIdentity> [-Resp
  [-Description <String>] [-DisplayName <String>] [-DomainNames <String[]>] [-HealthIssueType <String>]
  [-Id <String>] [-IssueTypeId <String>] [-LastModifiedDateTime <DateTime>] [-Recommendations <String[]>]
  [-RecommendedActionCommands <String[]>] [-SensorDnsNames <String[]>] [-Severity <String>] [-Status <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityIdentityHealthIssue -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityHealthIssue> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -123,21 +123,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -313,6 +298,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Recommendations
 A list of recommended actions that can be taken to resolve the issue effectively and efficiently.
 These actions might include instructions for further investigation and aren't limited to prewritten responses.
@@ -399,6 +399,21 @@ healthIssueStatus
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

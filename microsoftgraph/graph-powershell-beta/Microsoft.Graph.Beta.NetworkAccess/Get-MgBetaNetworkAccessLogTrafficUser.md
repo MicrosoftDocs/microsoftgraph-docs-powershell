@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaNetworkAccessLogTrafficUser
 
 ## SYNOPSIS
-Get user from networkAccess
+Represents the user associated with the network traffic, providing details about the individual or account initiating the transaction.
 
 ## SYNTAX
 
@@ -16,20 +16,18 @@ Get user from networkAccess
 ```
 Get-MgBetaNetworkAccessLogTrafficUser -NetworkAccessTrafficTransactionId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaNetworkAccessLogTrafficUser -InputObject <INetworkAccessIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get user from networkAccess
-
-## EXAMPLES
+Represents the user associated with the network traffic, providing details about the individual or account initiating the transaction.
 
 ## PARAMETERS
 
@@ -88,6 +86,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

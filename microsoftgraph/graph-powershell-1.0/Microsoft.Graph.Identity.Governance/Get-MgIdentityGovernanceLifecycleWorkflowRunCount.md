@@ -18,7 +18,7 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgIdentityGovernanceLifecycleWorkflowRunCount -WorkflowId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Get-MgIdentityGovernanceLifecycleWorkflowRunCount -WorkflowId <String> [-Filter 
 ```
 Get-MgIdentityGovernanceLifecycleWorkflowRunCount -InputObject <IIdentityGovernanceIdentity> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,8 +39,6 @@ Get the number of the resource
 | Delegated (work or school account) | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -87,6 +85,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

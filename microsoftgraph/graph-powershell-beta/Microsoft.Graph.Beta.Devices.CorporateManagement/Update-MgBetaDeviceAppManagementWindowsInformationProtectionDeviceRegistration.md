@@ -18,7 +18,7 @@ Update-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration
  -WindowsInformationProtectionDeviceRegistrationId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DeviceMacAddress <String>] [-DeviceName <String>]
  [-DeviceRegistrationId <String>] [-DeviceType <String>] [-Id <String>] [-LastCheckInDateTime <DateTime>]
- [-UserId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Update-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration
 Update-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration
  -WindowsInformationProtectionDeviceRegistrationId <String>
  -BodyParameter <IMicrosoftGraphWindowsInformationProtectionDeviceRegistration>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Update-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DeviceMacAddress <String>] [-DeviceName <String>]
  [-DeviceRegistrationId <String>] [-DeviceType <String>] [-Id <String>] [-LastCheckInDateTime <DateTime>]
- [-UserId <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ Update-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration
 Update-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphWindowsInformationProtectionDeviceRegistration>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -60,8 +60,6 @@ Update the navigation property windowsInformationProtectionDeviceRegistrations i
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -93,21 +91,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -233,6 +216,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -263,6 +261,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WindowsInformationProtectionDeviceRegistrationId
+The unique identifier of windowsInformationProtectionDeviceRegistration
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -273,21 +301,6 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsInformationProtectionDeviceRegistrationId
-The unique identifier of windowsInformationProtectionDeviceRegistration
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

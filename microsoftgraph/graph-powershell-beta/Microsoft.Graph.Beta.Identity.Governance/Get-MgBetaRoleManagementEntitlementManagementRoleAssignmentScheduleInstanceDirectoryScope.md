@@ -20,7 +20,7 @@ Read-only.
 ```
 Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceDirectoryScope
  -UnifiedRoleAssignmentScheduleInstanceId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -28,15 +28,13 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceDirec
 ```
 Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceDirectoryScope
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The directory object that is the scope of the assignment or role eligibility.
 Read-only.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -83,6 +81,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

@@ -18,7 +18,7 @@ Supports $expand and $select nested in $expand.
 ```
 Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceActivatedUsing -RbacApplicationId <String>
  -UnifiedRoleAssignmentScheduleInstanceId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceActivatedUsin
 ```
 Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceActivatedUsing
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -34,8 +34,6 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceActivatedUsin
 If the request is from an eligible administrator to activate a role, this parameter shows the related eligible assignment for that activation.
 Otherwise, it's null.
 Supports $expand and $select nested in $expand.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -82,6 +80,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

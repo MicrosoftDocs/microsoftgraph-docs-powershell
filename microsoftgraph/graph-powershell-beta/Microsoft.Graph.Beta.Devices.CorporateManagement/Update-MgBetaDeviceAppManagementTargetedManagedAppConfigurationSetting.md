@@ -19,7 +19,7 @@ Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
  [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -27,7 +27,7 @@ Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
 Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
  -DeviceManagementConfigurationSettingId <String> -TargetedManagedAppConfigurationId <String>
  -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,7 +37,7 @@ Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
  [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
  [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -45,7 +45,7 @@ Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
 Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,8 +58,6 @@ Update the navigation property settings in deviceAppManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -91,21 +89,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -168,6 +151,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -234,6 +232,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -283,14 +296,11 @@ Read-only.
       - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
       - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
     - `[BaseUri <String>]`: Base CSP Path
-    - `[CategoryId <String>]`: Specify category in which the setting is under.
-Support $filters.
-    - `[Description <String>]`: Description of the setting.
-    - `[DisplayName <String>]`: Name of the setting.
-For example: Allow Toast.
-    - `[HelpText <String>]`: Help text of the setting.
-Give more details of the setting.
-    - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at.
+    - `[CategoryId <String>]`: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
+    - `[Description <String>]`: Description of the item
+    - `[DisplayName <String>]`: Display name of the item
+    - `[HelpText <String>]`: Help text of the item
+    - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at
     - `[Keywords <String- `[]`>]`: Tokens which to search settings on
     - `[Name <String>]`: Name of the item
     - `[Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]`: deviceManagementConfigurationSettingOccurrence
@@ -301,9 +311,9 @@ A MinDeviceOccurrence of 0 means setting is optional
     - `[OffsetUri <String>]`: Offset CSP Path from Base
     - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
       - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
+Applicable for reusable setting.
     - `[RiskLevel <DeviceManagementConfigurationSettingRiskLevel?>]`: Setting RiskLevel
-    - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
+    - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
     - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
     - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
     - `[Version <String>]`: Item Version
@@ -401,14 +411,11 @@ Read-only.
     - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
     - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
   - `[BaseUri <String>]`: Base CSP Path
-  - `[CategoryId <String>]`: Specify category in which the setting is under.
-Support $filters.
-  - `[Description <String>]`: Description of the setting.
-  - `[DisplayName <String>]`: Name of the setting.
-For example: Allow Toast.
-  - `[HelpText <String>]`: Help text of the setting.
-Give more details of the setting.
-  - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at.
+  - `[CategoryId <String>]`: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
+  - `[Description <String>]`: Description of the item
+  - `[DisplayName <String>]`: Display name of the item
+  - `[HelpText <String>]`: Help text of the item
+  - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at
   - `[Keywords <String- `[]`>]`: Tokens which to search settings on
   - `[Name <String>]`: Name of the item
   - `[Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]`: deviceManagementConfigurationSettingOccurrence
@@ -419,9 +426,9 @@ A MinDeviceOccurrence of 0 means setting is optional
   - `[OffsetUri <String>]`: Offset CSP Path from Base
   - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
     - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
+Applicable for reusable setting.
   - `[RiskLevel <DeviceManagementConfigurationSettingRiskLevel?>]`: Setting RiskLevel
-  - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
+  - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
   - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
   - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
   - `[Version <String>]`: Item Version

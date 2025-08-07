@@ -18,7 +18,7 @@ Create a new device from a deviceTemplate.
 New-MgBetaDirectoryTemplateDeviceFromTemplate -DeviceTemplateId <String> [-ResponseHeadersVariable <String>]
  [-AccountEnabled] [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>]
  [-ExternalDeviceId <String>] [-ExternalSourceName <String>] [-KeyCredential <IMicrosoftGraphKeyCredential>]
- [-OperatingSystemVersion <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-OperatingSystemVersion <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ New-MgBetaDirectoryTemplateDeviceFromTemplate -DeviceTemplateId <String> [-Respo
 ```
 New-MgBetaDirectoryTemplateDeviceFromTemplate -DeviceTemplateId <String>
  -BodyParameter <IPaths13Urud7DirectoryTemplatesDevicetemplatesDevicetemplateIdMicrosoftGraphCreatedevicefromtemplatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,21 +36,19 @@ New-MgBetaDirectoryTemplateDeviceFromTemplate -InputObject <IIdentityDirectoryMa
  [-ResponseHeadersVariable <String>] [-AccountEnabled] [-AdditionalProperties <Hashtable>]
  [-AlternativeNames <String[]>] [-ExternalDeviceId <String>] [-ExternalSourceName <String>]
  [-KeyCredential <IMicrosoftGraphKeyCredential>] [-OperatingSystemVersion <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDirectoryTemplateDeviceFromTemplate -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths13Urud7DirectoryTemplatesDevicetemplatesDevicetemplateIdMicrosoftGraphCreatedevicefromtemplatePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new device from a deviceTemplate.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -112,21 +110,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -237,6 +220,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -244,6 +242,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

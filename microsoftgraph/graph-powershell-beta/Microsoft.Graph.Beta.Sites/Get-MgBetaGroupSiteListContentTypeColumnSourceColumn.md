@@ -19,7 +19,7 @@ The source column for content type column.
 ```
 Get-MgBetaGroupSiteListContentTypeColumnSourceColumn -ColumnDefinitionId <String> -ContentTypeId <String>
  -GroupId <String> -ListId <String> -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -27,13 +27,11 @@ Get-MgBetaGroupSiteListContentTypeColumnSourceColumn -ColumnDefinitionId <String
 ```
 Get-MgBetaGroupSiteListContentTypeColumnSourceColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The source column for content type column.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -137,6 +135,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

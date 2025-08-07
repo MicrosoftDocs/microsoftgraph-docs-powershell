@@ -21,14 +21,14 @@ New-MgEducationUserRubric -EducationUserId <String> [-ResponseHeadersVariable <S
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-Description <IMicrosoftGraphEducationItemBody>] [-DisplayName <String>] [-Grading <Hashtable>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Levels <IMicrosoftGraphRubricLevel[]>]
- [-Qualities <IMicrosoftGraphRubricQuality[]>] [-Headers <IDictionary>]
+ [-Qualities <IMicrosoftGraphRubricQuality[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEducationUserRubric -EducationUserId <String> -BodyParameter <IMicrosoftGraphEducationRubric>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,21 +38,19 @@ New-MgEducationUserRubric -InputObject <IEducationIdentity> [-ResponseHeadersVar
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-Description <IMicrosoftGraphEducationItemBody>] [-DisplayName <String>] [-Grading <Hashtable>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Levels <IMicrosoftGraphRubricLevel[]>]
- [-Qualities <IMicrosoftGraphRubricQuality[]>] [-Headers <IDictionary>]
+ [-Qualities <IMicrosoftGraphRubricQuality[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgEducationUserRubric -InputObject <IEducationIdentity> -BodyParameter <IMicrosoftGraphEducationRubric>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to rubrics for education
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -84,21 +82,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -258,6 +241,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Qualities
 The collection of qualities making up this rubric.
 To construct, see NOTES section for QUALITIES properties and create a hash table.
@@ -281,6 +279,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -338,7 +351,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`:
+    - `[Content <String>]`: 
     - `[ContentType <String>]`: bodyType
   - `[DisplayName <String>]`: The name of this rubric.
   - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
@@ -355,7 +368,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[DisplayName <String>]`: The name of this rubric quality.
     - `[QualityId <String>]`: The ID of this resource.
-    - `[Weight <Single?>]`: If present, a numerical weight for this quality.
+    - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
 Weights must add up to 100.
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
@@ -371,7 +384,7 @@ For example, in the access reviews decisions API, this property might record the
 
 DESCRIPTION `<IMicrosoftGraphEducationItemBody>`: educationItemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`:
+  - `[Content <String>]`: 
   - `[ContentType <String>]`: bodyType
 
 INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
@@ -403,7 +416,7 @@ For example, in the access reviews decisions API, this property might record the
 LEVELS `<IMicrosoftGraphRubricLevel- `[]`>`: The collection of levels making up this rubric.
   - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`:
+    - `[Content <String>]`: 
     - `[ContentType <String>]`: bodyType
   - `[DisplayName <String>]`: The name of this rubric level.
   - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
@@ -414,12 +427,12 @@ QUALITIES `<IMicrosoftGraphRubricQuality- `[]`>`: The collection of qualities ma
   - `[Criteria <IMicrosoftGraphRubricCriterion- `[]`>]`: The collection of criteria for this rubric quality.
     - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Content <String>]`:
+      - `[Content <String>]`: 
       - `[ContentType <String>]`: bodyType
   - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
   - `[DisplayName <String>]`: The name of this rubric quality.
   - `[QualityId <String>]`: The ID of this resource.
-  - `[Weight <Single?>]`: If present, a numerical weight for this quality.
+  - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
 Weights must add up to 100.
 
 ## RELATED LINKS

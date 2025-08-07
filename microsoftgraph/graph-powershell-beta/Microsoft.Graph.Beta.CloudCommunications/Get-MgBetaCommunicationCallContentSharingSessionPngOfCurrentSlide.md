@@ -16,20 +16,18 @@ Get pngOfCurrentSlide for the navigation property contentSharingSessions from co
 ```
 Get-MgBetaCommunicationCallContentSharingSessionPngOfCurrentSlide -CallId <String>
  -ContentSharingSessionId <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaCommunicationCallContentSharingSessionPngOfCurrentSlide -InputObject <ICloudCommunicationsIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get pngOfCurrentSlide for the navigation property contentSharingSessions from communications
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -120,6 +118,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

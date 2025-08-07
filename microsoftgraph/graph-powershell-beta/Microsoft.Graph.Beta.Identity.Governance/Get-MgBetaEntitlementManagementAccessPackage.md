@@ -10,9 +10,7 @@ ms.subservice: entra-id-governance
 # Get-MgBetaEntitlementManagementAccessPackage
 
 ## SYNOPSIS
-Retrieve an access package with a list of accessPackageResourceRoleScope objects.
-These objects represent the resource roles that an access package assigns to each subject.
-Each object links to an accessPackageResourceRole and an accessPackageResourceScope.
+Retrieve the properties and relationships of an accessPackage object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
@@ -22,21 +20,21 @@ Each object links to an accessPackageResourceRole and an accessPackageResourceSc
 ### ListAll (Default)
 ```
 Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Sort <String[]>] [-All] [<CommonParameters>]
+ [-Sort <String[]>] [-All] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaEntitlementManagementAccessPackage -AccessPackageId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### List
@@ -44,34 +42,32 @@ Get-MgBetaEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceId
 Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### ListByDisplayNameContains
 ```
 Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Sort <String[]>] [-Top <Int32>] -DisplayNameContains <String> [-All]
+ [-Sort <String[]>] [-Top <Int32>] -DisplayNameContains <String> [-All] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### ListByDisplayNameEq
 ```
 Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Sort <String[]>] [-Top <Int32>] -DisplayNameEq <String> [-All]
+ [-Sort <String[]>] [-Top <Int32>] -DisplayNameEq <String> [-All] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### ListByCatalogId
 ```
 Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Sort <String[]>] [-Top <Int32>] -CatalogId <String> [-All]
+ [-Sort <String[]>] [-Top <Int32>] -CatalogId <String> [-All] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Retrieve an access package with a list of accessPackageResourceRoleScope objects.
-These objects represent the resource roles that an access package assigns to each subject.
-Each object links to an accessPackageResourceRole and an accessPackageResourceScope.
+Retrieve the properties and relationships of an accessPackage object.
 
 **Permissions**
 
@@ -325,6 +321,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -370,21 +381,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -407,6 +403,21 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List, ListByDisplayNameContains, ListByDisplayNameEq, ListByCatalogId
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -537,7 +548,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackage)
 
-[https://learn.microsoft.com/graph/api/accesspackage-list-accesspackageresourcerolescopes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackage-list-accesspackageresourcerolescopes?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/accesspackage-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackage-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackages?view=graph-rest-beta)
 

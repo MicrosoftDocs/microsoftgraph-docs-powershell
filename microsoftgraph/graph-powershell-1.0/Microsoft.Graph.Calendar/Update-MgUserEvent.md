@@ -34,14 +34,14 @@ Update-MgUserEvent -EventId <String> -UserId <String> [-ResponseHeadersVariable 
  [-ResponseStatus <IMicrosoftGraphResponseStatus>] [-Sensitivity <String>] [-SeriesMasterId <String>]
  [-ShowAs <String>] [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-Start <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-TransactionId <String>] [-Type <String>]
- [-WebLink <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-WebLink <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserEvent -EventId <String> -UserId <String> -BodyParameter <IMicrosoftGraphEvent>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -64,14 +64,14 @@ Update-MgUserEvent -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <S
  [-ResponseStatus <IMicrosoftGraphResponseStatus>] [-Sensitivity <String>] [-SeriesMasterId <String>]
  [-ShowAs <String>] [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-Start <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-TransactionId <String>] [-Type <String>]
- [-WebLink <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-WebLink <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -276,21 +276,6 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -773,6 +758,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Recurrence
 patternedRecurrence
 To construct, see NOTES section for RECURRENCE properties and create a hash table.
@@ -1009,6 +1009,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -1215,7 +1230,7 @@ If true, regardless of whether it's a single-day or multi-day event, start, and 
 Set to false if all changes are sent, or if the event is an appointment without any attendees.
   - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
-Optional.
+Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
 Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
   - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
@@ -1257,9 +1272,9 @@ Nullable.
     - `[JoinUrl <String>]`: The external link that launches the online meeting.
 This is a URL that clients launch into a browser and will redirect the user to join the meeting.
     - `[Phones <IMicrosoftGraphPhone- `[]`>]`: All of the phone numbers associated with this conference.
-      - `[Language <String>]`:
+      - `[Language <String>]`: 
       - `[Number <String>]`: The phone number.
-      - `[Region <String>]`:
+      - `[Region <String>]`: 
       - `[Type <String>]`: phoneType
     - `[QuickDial <String>]`: The preformatted quick dial for this call.
     - `[TollFreeNumbers <String- `[]`>]`: The toll free numbers that can be used to join the conference.
@@ -1288,13 +1303,13 @@ A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was
 Required if type is absoluteMonthly or absoluteYearly.
       - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
       - `[FirstDayOfWeek <String>]`: dayOfWeek
       - `[Index <String>]`: weekIndex
       - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-      - `[Month <Int32?>]`: The month in which the event occurs.
+      - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
       - `[Type <String>]`: recurrencePatternType
     - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
@@ -1429,7 +1444,7 @@ If true, regardless of whether it's a single-day or multi-day event, start, and 
 Set to false if all changes are sent, or if the event is an appointment without any attendees.
     - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
-Optional.
+Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
 Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
     - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
@@ -1474,9 +1489,9 @@ Read-only.
       - `[JoinUrl <String>]`: The external link that launches the online meeting.
 This is a URL that clients launch into a browser and will redirect the user to join the meeting.
       - `[Phones <IMicrosoftGraphPhone- `[]`>]`: All of the phone numbers associated with this conference.
-        - `[Language <String>]`:
+        - `[Language <String>]`: 
         - `[Number <String>]`: The phone number.
-        - `[Region <String>]`:
+        - `[Region <String>]`: 
         - `[Type <String>]`: phoneType
       - `[QuickDial <String>]`: The preformatted quick dial for this call.
       - `[TollFreeNumbers <String- `[]`>]`: The toll free numbers that can be used to join the conference.
@@ -1505,13 +1520,13 @@ A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was
 Required if type is absoluteMonthly or absoluteYearly.
         - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
         - `[FirstDayOfWeek <String>]`: dayOfWeek
         - `[Index <String>]`: weekIndex
         - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-        - `[Month <Int32?>]`: The month in which the event occurs.
+        - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
         - `[Type <String>]`: recurrencePatternType
       - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
@@ -1744,7 +1759,7 @@ If true, regardless of whether it's a single-day or multi-day event, start, and 
 Set to false if all changes are sent, or if the event is an appointment without any attendees.
   - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
-Optional.
+Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
 Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
   - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
@@ -1786,9 +1801,9 @@ Nullable.
     - `[JoinUrl <String>]`: The external link that launches the online meeting.
 This is a URL that clients launch into a browser and will redirect the user to join the meeting.
     - `[Phones <IMicrosoftGraphPhone- `[]`>]`: All of the phone numbers associated with this conference.
-      - `[Language <String>]`:
+      - `[Language <String>]`: 
       - `[Number <String>]`: The phone number.
-      - `[Region <String>]`:
+      - `[Region <String>]`: 
       - `[Type <String>]`: phoneType
     - `[QuickDial <String>]`: The preformatted quick dial for this call.
     - `[TollFreeNumbers <String- `[]`>]`: The toll free numbers that can be used to join the conference.
@@ -1817,13 +1832,13 @@ A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was
 Required if type is absoluteMonthly or absoluteYearly.
       - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
       - `[FirstDayOfWeek <String>]`: dayOfWeek
       - `[Index <String>]`: weekIndex
       - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-      - `[Month <Int32?>]`: The month in which the event occurs.
+      - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
       - `[Type <String>]`: recurrencePatternType
     - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
@@ -1925,9 +1940,9 @@ ONLINEMEETING `<IMicrosoftGraphOnlineMeetingInfo>`: onlineMeetingInfo
   - `[JoinUrl <String>]`: The external link that launches the online meeting.
 This is a URL that clients launch into a browser and will redirect the user to join the meeting.
   - `[Phones <IMicrosoftGraphPhone- `[]`>]`: All of the phone numbers associated with this conference.
-    - `[Language <String>]`:
+    - `[Language <String>]`: 
     - `[Number <String>]`: The phone number.
-    - `[Region <String>]`:
+    - `[Region <String>]`: 
     - `[Type <String>]`: phoneType
   - `[QuickDial <String>]`: The preformatted quick dial for this call.
   - `[TollFreeNumbers <String- `[]`>]`: The toll free numbers that can be used to join the conference.
@@ -1948,13 +1963,13 @@ RECURRENCE `<IMicrosoftGraphPatternedRecurrence>`: patternedRecurrence
 Required if type is absoluteMonthly or absoluteYearly.
     - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
     - `[FirstDayOfWeek <String>]`: dayOfWeek
     - `[Index <String>]`: weekIndex
     - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-    - `[Month <Int32?>]`: The month in which the event occurs.
+    - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
     - `[Type <String>]`: recurrencePatternType
   - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange

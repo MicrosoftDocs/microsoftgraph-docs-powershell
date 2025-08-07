@@ -20,14 +20,14 @@ Update-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream -CloudAppDisco
  [-Id <String>] [-IsSnapshotReport] [-LastDataReceivedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>]
  [-LogDataProvider <String>] [-LogFileCount <Int32>] [-ReceiverProtocol <String>]
  [-SupportedEntityTypes <String[]>] [-SupportedTrafficTypes <String[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream -CloudAppDiscoveryReportId <String>
  -BodyParameter <IMicrosoftGraphSecurityCloudAppDiscoveryReport> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,20 +38,18 @@ Update-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream -InputObject <
  [-Id <String>] [-IsSnapshotReport] [-LastDataReceivedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>]
  [-LogDataProvider <String>] [-LogFileCount <Int32>] [-ReceiverProtocol <String>]
  [-SupportedEntityTypes <String[]>] [-SupportedTrafficTypes <String[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityCloudAppDiscoveryReport> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property uploadedStreams in security
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -125,21 +123,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -319,6 +302,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReceiverProtocol
 receiverProtocol
 
@@ -373,6 +371,21 @@ Possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureValue
 Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
