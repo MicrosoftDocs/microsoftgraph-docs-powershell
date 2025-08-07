@@ -19,7 +19,7 @@ The \[set\] in which the term is created.
 ```
 Get-MgGroupSiteTermStoreSetParentGroupSetChildSet -GroupId <String> -SetId <String> -SetId1 <String>
  -SiteId <String> -TermId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChildSet -GroupId <String> -SetId <Stri
 ```
 Get-MgGroupSiteTermStoreSetParentGroupSetChildSet -GroupId <String> -SetId <String> -SetId1 <String>
  -SiteId <String> -TermId <String> -StoreId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -36,14 +36,14 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChildSet -GroupId <String> -SetId <Stri
 Get-MgGroupSiteTermStoreSetParentGroupSetChildSet -GroupId <String> -SetId <String> -SetId1 <String>
  -SiteId <String> -TermId <String> -TermId1 <String> -StoreId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgGroupSiteTermStoreSetParentGroupSetChildSet -GroupId <String> -SetId <String> -SetId1 <String>
  -SiteId <String> -TermId <String> -TermId1 <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -51,34 +51,32 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChildSet -GroupId <String> -SetId <Stri
 ```
 Get-MgGroupSiteTermStoreSetParentGroupSetChildSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity2
 ```
 Get-MgGroupSiteTermStoreSetParentGroupSetChildSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgGroupSiteTermStoreSetParentGroupSetChildSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgGroupSiteTermStoreSetParentGroupSetChildSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The \[set\] in which the term is created.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -140,6 +138,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

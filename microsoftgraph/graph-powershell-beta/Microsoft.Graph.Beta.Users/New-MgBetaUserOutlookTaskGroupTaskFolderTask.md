@@ -25,14 +25,14 @@ New-MgBetaUserOutlookTaskGroupTaskFolderTask -OutlookTaskFolderId <String> -Outl
  [-ReminderDateTime <IMicrosoftGraphDateTimeZone>] [-Sensitivity <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Subject <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserOutlookTaskGroupTaskFolderTask -OutlookTaskFolderId <String> -OutlookTaskGroupId <String>
  -UserId <String> -BodyParameter <IMicrosoftGraphOutlookTask> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -48,14 +48,14 @@ New-MgBetaUserOutlookTaskGroupTaskFolderTask -InputObject <IUsersIdentity> [-Res
  [-ReminderDateTime <IMicrosoftGraphDateTimeZone>] [-Sensitivity <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Subject <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserOutlookTaskGroupTaskFolderTask -InputObject <IUsersIdentity>
  -BodyParameter <IMicrosoftGraphOutlookTask> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -68,8 +68,6 @@ Create new navigation property to tasks for users
 | Delegated (work or school account) | Tasks.ReadWrite,  |
 | Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
 | Application | Not supported |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -195,21 +193,6 @@ To construct, see NOTES section for COMPLETEDDATETIME properties and create a ha
 Type: IMicrosoftGraphDateTimeZone
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -436,6 +419,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Recurrence
 patternedRecurrence
 To construct, see NOTES section for RECURRENCE properties and create a hash table.
@@ -571,6 +569,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

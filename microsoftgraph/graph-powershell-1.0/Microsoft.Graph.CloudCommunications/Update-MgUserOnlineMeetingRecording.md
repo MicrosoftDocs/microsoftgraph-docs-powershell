@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property recordings in users
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaUserOnlineMeetingRecording?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -22,14 +19,14 @@ Update-MgUserOnlineMeetingRecording -CallRecordingId <String> -OnlineMeetingId <
  [-ContentCorrelationId <String>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>]
  [-EndDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
  [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-RecordingContentUrl <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserOnlineMeetingRecording -CallRecordingId <String> -OnlineMeetingId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphCallRecording> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,20 +36,18 @@ Update-MgUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
  [-ContentCorrelationId <String>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>]
  [-EndDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
  [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-RecordingContentUrl <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IMicrosoftGraphCallRecording> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property recordings in users
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -112,21 +107,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -295,6 +275,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RecordingContentUrl
 The URL that can be used to access the content of the recording.
 Read-only.
@@ -335,6 +330,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -22,14 +22,14 @@ New-MgIdentityB2XUserFlowUserAttributeAssignment -B2XIdentityUserFlowId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-IsOptional] [-RequiresVerification] [-UserAttribute <IMicrosoftGraphIdentityUserFlowAttribute>]
  [-UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem[]>] [-UserInputType <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgIdentityB2XUserFlowUserAttributeAssignment -B2XIdentityUserFlowId <String>
  -BodyParameter <IMicrosoftGraphIdentityUserFlowAttributeAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,14 +38,14 @@ New-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignInsI
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-IsOptional] [-RequiresVerification] [-UserAttribute <IMicrosoftGraphIdentityUserFlowAttribute>]
  [-UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem[]>] [-UserInputType <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphIdentityUserFlowAttributeAssignment> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -132,21 +132,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DisplayName
 The display name of the identityUserFlowAttribute within a user flow.
 
@@ -222,6 +207,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -304,6 +304,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -352,7 +367,7 @@ false means the user can't complete sign-up without providing a value.
 Read-only.
     - `[DataType <String>]`: identityUserFlowAttributeDataType
     - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
-    - `[DisplayName <String>]`: The display name of the user flow attribute.
+    - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
     - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
   - `[UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem- `[]`>]`: The input options for the user flow attribute.
@@ -403,6 +418,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal
@@ -429,7 +445,7 @@ USERATTRIBUTE `<IMicrosoftGraphIdentityUserFlowAttribute>`: identityUserFlowAttr
 Read-only.
   - `[DataType <String>]`: identityUserFlowAttributeDataType
   - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
-  - `[DisplayName <String>]`: The display name of the user flow attribute.
+  - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
 

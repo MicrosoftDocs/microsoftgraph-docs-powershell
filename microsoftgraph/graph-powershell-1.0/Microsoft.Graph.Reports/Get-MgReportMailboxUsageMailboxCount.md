@@ -20,13 +20,13 @@ A mailbox is considered active if the user sent or read any email.
 ### Get (Default)
 ```
 Get-MgReportMailboxUsageMailboxCount -Period <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportMailboxUsageMailboxCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ A mailbox is considered active if the user sent or read any email.
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportMailboxUsageMailboxCount -Period $periodId
+Get-MgReportMailboxUsageMailboxCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportMailboxUsageMailboxCount Cmdlet.
@@ -119,6 +119,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

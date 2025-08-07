@@ -19,13 +19,13 @@ Get the number of the resource
 ```
 Get-MgBetaUserMailFolderChildFolderCount -MailFolderId <String> -UserId <String> [-Filter <String>]
  [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaUserMailFolderChildFolderCount -InputObject <IMailIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -39,8 +39,6 @@ Get the number of the resource
 | Delegated (work or school account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
 | Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
 | Application | Mail.ReadBasic.All, Mail.ReadWrite, Mail.Read,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -99,6 +97,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

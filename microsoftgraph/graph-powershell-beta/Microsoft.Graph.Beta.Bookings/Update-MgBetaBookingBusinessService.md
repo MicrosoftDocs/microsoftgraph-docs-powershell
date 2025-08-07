@@ -27,7 +27,7 @@ Update-MgBetaBookingBusinessService -BookingBusinessId <String> -BookingServiceI
  [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-Notes <String>] [-PostBuffer <TimeSpan>]
  [-PreBuffer <TimeSpan>] [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]
  [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
@@ -42,21 +42,21 @@ Update-MgBetaBookingBusinessService -BookingBusinessId <String> -BookingServiceI
  [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-Notes <String>] [-PostBuffer <TimeSpan>]
  [-PreBuffer <TimeSpan>] [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]
  [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaBookingBusinessService -BookingBusinessId <String> -BookingServiceId <String>
  -BodyParameter <IMicrosoftGraphBookingService> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaBookingBusinessService -BookingBusinessId <String> -BookingServiceId <String>
  -BodyParameter <IMicrosoftGraphBookingService> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -70,7 +70,7 @@ Update-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-ResponseH
  [-IsLocationOnline] [-LanguageTag <String>] [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>]
  [-Notes <String>] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
  [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>] [-SmsNotificationsEnabled]
- [-StaffMemberIds <String[]>] [-Headers <IDictionary>] [-WhatIf]
+ [-StaffMemberIds <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -85,7 +85,7 @@ Update-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-ResponseH
  [-IsLocationOnline] [-LanguageTag <String>] [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>]
  [-Notes <String>] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
  [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>] [-SmsNotificationsEnabled]
- [-StaffMemberIds <String[]>] [-Headers <IDictionary>] [-WhatIf]
+ [-StaffMemberIds <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -93,14 +93,14 @@ Update-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-ResponseH
 ```
 Update-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphBookingService> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphBookingService> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -199,21 +199,6 @@ Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -562,6 +547,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -616,6 +616,21 @@ Represents those staff members who provide this service.
 Type: String[]
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

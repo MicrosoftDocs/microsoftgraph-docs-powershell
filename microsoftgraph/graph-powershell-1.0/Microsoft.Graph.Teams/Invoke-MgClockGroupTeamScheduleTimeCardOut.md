@@ -19,7 +19,7 @@ Invoke action clockOut
 ```
 Invoke-MgClockGroupTeamScheduleTimeCardOut -GroupId <String> -TimeCardId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-IsAtApprovedLocation]
- [-Notes <IMicrosoftGraphItemBody>] [-Headers <IDictionary>] [-WhatIf]
+ [-Notes <IMicrosoftGraphItemBody>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Invoke-MgClockGroupTeamScheduleTimeCardOut -GroupId <String> -TimeCardId <String
 ```
 Invoke-MgClockGroupTeamScheduleTimeCardOut -GroupId <String> -TimeCardId <String>
  -BodyParameter <IPaths5Qay4XGroupsGroupIdTeamScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,21 +35,19 @@ Invoke-MgClockGroupTeamScheduleTimeCardOut -GroupId <String> -TimeCardId <String
 ```
 Invoke-MgClockGroupTeamScheduleTimeCardOut -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-IsAtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ClockViaIdentity
 ```
 Invoke-MgClockGroupTeamScheduleTimeCardOut -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths5Qay4XGroupsGroupIdTeamScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action clockOut
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -81,21 +79,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -176,6 +159,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -200,6 +198,21 @@ Parameter Sets: ClockExpanded, Clock
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -241,7 +254,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths5Qay4XGroupsGroupIdTeamScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsAtApprovedLocation <Boolean?>]`:
+  - `[IsAtApprovedLocation <Boolean?>]`: 
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.

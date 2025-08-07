@@ -20,14 +20,14 @@ New-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink -RemoteNetworkId <Str
  [-IPAddress <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Name <String>]
  [-RedundancyConfiguration <IMicrosoftGraphNetworkaccessRedundancyConfiguration>]
  [-TunnelConfiguration <IMicrosoftGraphNetworkaccessTunnelConfiguration>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink -RemoteNetworkId <String>
  -BodyParameter <IMicrosoftGraphNetworkaccessDeviceLink> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,20 +38,18 @@ New-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink -InputObject <INetwor
  [-IPAddress <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Name <String>]
  [-RedundancyConfiguration <IMicrosoftGraphNetworkaccessRedundancyConfiguration>]
  [-TunnelConfiguration <IMicrosoftGraphNetworkaccessTunnelConfiguration>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink -InputObject <INetworkAccessIdentity>
  -BodyParameter <IMicrosoftGraphNetworkaccessDeviceLink> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceLinks for networkAccess
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -114,21 +112,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -239,6 +222,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RedundancyConfiguration
 redundancyConfiguration
 To construct, see NOTES section for REDUNDANCYCONFIGURATION properties and create a hash table.
@@ -293,6 +291,21 @@ To construct, see NOTES section for TUNNELCONFIGURATION properties and create a 
 Type: IMicrosoftGraphNetworkaccessTunnelConfiguration
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -372,6 +385,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[BranchSiteId <String>]`: The unique identifier of branchSite
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
+  - `[ConnectionId <String>]`: The unique identifier of connection
   - `[ConnectivityConfigurationLinkId <String>]`: The unique identifier of connectivityConfigurationLink
   - `[DeviceLinkId <String>]`: The unique identifier of deviceLink
   - `[DiscoveryPivotDateTime <DateTime?>]`: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
@@ -386,6 +400,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[RemoteNetworkHealthEventId <String>]`: The unique identifier of remoteNetworkHealthEvent
   - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+  - `[ThreatIntelligencePolicyId <String>]`: The unique identifier of threatIntelligencePolicy
 
 REDUNDANCYCONFIGURATION `<IMicrosoftGraphNetworkaccessRedundancyConfiguration>`: redundancyConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

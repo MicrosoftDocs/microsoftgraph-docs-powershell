@@ -22,7 +22,7 @@ Update-MgBetaUserManagedDeviceCompliancePolicyState -DeviceCompliancePolicyState
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>] [-State <String>] [-UserId1 <String>]
- [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>]
+ [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Update-MgBetaUserManagedDeviceCompliancePolicyState -DeviceCompliancePolicyState
 ```
 Update-MgBetaUserManagedDeviceCompliancePolicyState -DeviceCompliancePolicyStateId <String>
  -ManagedDeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ Update-MgBetaUserManagedDeviceCompliancePolicyState [-UserId <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>] [-State <String>]
- [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>]
+ [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,13 +49,11 @@ Update-MgBetaUserManagedDeviceCompliancePolicyState [-UserId <String>]
 ```
 Update-MgBetaUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deviceCompliancePolicyStates in users
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -87,21 +85,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -204,6 +187,21 @@ Supported platform types for policies.
 Type: PolicyPlatformType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -341,6 +339,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

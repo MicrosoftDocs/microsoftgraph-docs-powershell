@@ -21,7 +21,7 @@ Update-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BookingCustome
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Addresses <IMicrosoftGraphPhysicalAddress[]>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
  [-EmailAddress <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
@@ -30,21 +30,21 @@ Update-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BookingCustome
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Addresses <IMicrosoftGraphPhysicalAddress[]>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
  [-EmailAddress <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String>
  -BodyParameter <IMicrosoftGraphBookingCustomer> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String>
  -BodyParameter <IMicrosoftGraphBookingCustomer> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -53,7 +53,7 @@ Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-Response
  [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPhysicalAddress[]>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>]
  [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -62,21 +62,21 @@ Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-Response
  [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPhysicalAddress[]>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>]
  [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphBookingCustomer> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphBookingCustomer> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -176,21 +176,6 @@ Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -320,6 +305,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -327,6 +327,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

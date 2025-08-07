@@ -20,14 +20,14 @@ Types of conference sessions include IM, audio/video, application sharing, web, 
 ### Get (Default)
 ```
 Get-MgReportSkypeForBusinessParticipantActivityCount -Period <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportSkypeForBusinessParticipantActivityCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ Types of conference sessions include IM, audio/video, application sharing, web, 
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSkypeForBusinessParticipantActivityCount -Period $periodId
+Get-MgReportSkypeForBusinessParticipantActivityCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportSkypeForBusinessParticipantActivityCount Cmdlet.
@@ -120,6 +120,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

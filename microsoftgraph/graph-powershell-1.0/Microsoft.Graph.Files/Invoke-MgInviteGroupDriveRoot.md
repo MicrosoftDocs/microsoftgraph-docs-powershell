@@ -21,7 +21,7 @@ Sends a sharing invitation for a driveItem.A sharing invitation provides permiss
 Invoke-MgInviteGroupDriveRoot -DriveId <String> -GroupId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RequireSignIn] [-RetainInheritedPermissions]
- [-Roles <String[]>] [-SendInvitation] [-Headers <IDictionary>] [-WhatIf]
+ [-Roles <String[]>] [-SendInvitation] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Invoke-MgInviteGroupDriveRoot -DriveId <String> -GroupId <String> [-ResponseHead
 ```
 Invoke-MgInviteGroupDriveRoot -DriveId <String> -GroupId <String>
  -BodyParameter <IPaths18Lmc20GroupsGroupIdDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Invoke-MgInviteGroupDriveRoot -DriveId <String> -GroupId <String>
 Invoke-MgInviteGroupDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RequireSignIn] [-RetainInheritedPermissions]
- [-Roles <String[]>] [-SendInvitation] [-Headers <IDictionary>] [-WhatIf]
+ [-Roles <String[]>] [-SendInvitation] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,14 +46,12 @@ Invoke-MgInviteGroupDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVar
 ```
 Invoke-MgInviteGroupDriveRoot -InputObject <IFilesIdentity>
  -BodyParameter <IPaths18Lmc20GroupsGroupIdDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -85,21 +83,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -209,6 +192,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Recipients
 
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
@@ -300,6 +298,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -335,18 +348,18 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths18Lmc20GroupsGroupIdDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ExpirationDateTime <String>]`:
-  - `[Message <String>]`:
-  - `[Password <String>]`:
-  - `[Recipients <IMicrosoftGraphDriveRecipient- `[]`>]`:
+  - `[ExpirationDateTime <String>]`: 
+  - `[Message <String>]`: 
+  - `[Password <String>]`: 
+  - `[Recipients <IMicrosoftGraphDriveRecipient- `[]`>]`: 
     - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
 security groups).
     - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
     - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
-  - `[RequireSignIn <Boolean?>]`:
-  - `[RetainInheritedPermissions <Boolean?>]`:
-  - `[Roles <String- `[]`>]`:
-  - `[SendInvitation <Boolean?>]`:
+  - `[RequireSignIn <Boolean?>]`: 
+  - `[RetainInheritedPermissions <Boolean?>]`: 
+  - `[Roles <String- `[]`>]`: 
+  - `[SendInvitation <Boolean?>]`: 
 
 INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition

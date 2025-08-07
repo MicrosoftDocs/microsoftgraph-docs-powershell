@@ -19,7 +19,7 @@ Remove a conversationMember from a chat.
 ### RemoveExpanded (Default)
 ```
 Remove-MgChatMember -ChatId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
+ [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,13 +27,13 @@ Remove-MgChatMember -ChatId <String> [-ResponseHeadersVariable <String>] [-Addit
 ```
 Remove-MgChatMember -ChatId <String> [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsXh2D42ChatsChatIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete
 ```
 Remove-MgChatMember -ChatId <String> -ConversationMemberId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,20 +41,20 @@ Remove-MgChatMember -ChatId <String> -ConversationMemberId <String> [-IfMatch <S
 ```
 Remove-MgChatMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
 ```
 Remove-MgChatMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsXh2D42ChatsChatIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgChatMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -124,21 +124,6 @@ Parameter Sets: RemoveExpanded, Remove, Delete
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -221,6 +206,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -244,6 +244,21 @@ To construct, see NOTES section for VALUES properties and create a hash table.
 Type: IMicrosoftGraphConversationMember[]
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -288,7 +303,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPathsXh2D42ChatsChatIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Values <IMicrosoftGraphConversationMember- `[]`>]`:
+  - `[Values <IMicrosoftGraphConversationMember- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: The display name of the user.

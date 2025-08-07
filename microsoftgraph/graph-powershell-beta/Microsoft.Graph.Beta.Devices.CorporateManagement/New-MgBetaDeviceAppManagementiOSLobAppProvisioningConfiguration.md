@@ -22,7 +22,7 @@ New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration [-ResponseHeader
  [-GroupAssignments <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment[]>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-PayloadFileName <String>] [-PayloadInputFile <String>]
  [-RoleScopeTagIds <String[]>] [-UserStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus[]>]
- [-Version <Int32>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Version <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,13 +30,11 @@ New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration [-ResponseHeader
 ```
 New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
  -BodyParameter <IMicrosoftGraphIosLobAppProvisioningConfiguration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to iosLobAppProvisioningConfigurations for deviceAppManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -56,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -Assignments
-The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
+The associated group assignments for IosLobAppProvisioningConfiguration.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -84,21 +82,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -165,9 +148,6 @@ Accept wildcard characters: False
 
 ### -ExpirationDateTime
 Optional profile expiration date and time.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
-Returned by default.
 
 ```yaml
 Type: DateTime
@@ -274,6 +254,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -335,6 +330,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -367,7 +377,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS `<IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>`: The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
+ASSIGNMENTS `<IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>`: The associated group assignments for IosLobAppProvisioningConfiguration.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -379,7 +389,7 @@ BODYPARAMETER `<IMicrosoftGraphIosLobAppProvisioningConfiguration>`: This topic 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>]`: The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
+  - `[Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>]`: The associated group assignments for IosLobAppProvisioningConfiguration.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -401,9 +411,6 @@ Read-only.
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[DisplayName <String>]`: Admin provided name of the device configuration.
   - `[ExpirationDateTime <DateTime?>]`: Optional profile expiration date and time.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
-Returned by default.
   - `[GroupAssignments <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment- `[]`>]`: The associated group assignments.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.

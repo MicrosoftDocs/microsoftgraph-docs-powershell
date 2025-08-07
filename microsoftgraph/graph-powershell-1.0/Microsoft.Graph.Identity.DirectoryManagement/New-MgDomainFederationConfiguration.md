@@ -25,13 +25,13 @@ New-MgDomainFederationConfiguration -DomainId <String> [-ResponseHeadersVariable
  [-PassiveSignInUri <String>] [-PasswordResetUri <String>] [-PreferredAuthenticationProtocol <String>]
  [-PromptLoginBehavior <String>] [-SignOutUri <String>] [-SigningCertificate <String>]
  [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDomainFederationConfiguration -DomainId <String> -BodyParameter <IMicrosoftGraphInternalDomainFederation>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,14 +45,14 @@ New-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementId
  [-PreferredAuthenticationProtocol <String>] [-PromptLoginBehavior <String>] [-SignOutUri <String>]
  [-SigningCertificate <String>]
  [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -70,23 +70,23 @@ Create a new internalDomainFederation object.
 ### Example 1: Configure federation settings for a federated domain
 
 ```powershell
-New-MgDomainFederationConfiguration -DomainId "contoso.com" -ActiveSignInUri "https://sts.contoso.com/adfs/services/trust/2005/usernamemixed" -DisplayName "Contoso" -IssuerUri "http://contoso.com/adfs/services/trust/" -MetadataExchangeUri "https://sts.contoso.com/adfs/services/trust/mex" -NextSigningCertificate "MIIC3jCCAcagAwIBAgIQEt0T0G5GPZ9" -PassiveSignInUri "https://sts.contoso.com/adfs/ls/" -SignOutUri "https://sts.contoso.com/adfs/ls/" -SigningCertificate "MIIC3jCCAcagAwIBAgIQFsO0R8deG4h" -FederatedIdpMfaBehavior "rejectMfaByFederatedIdp" | Format-List
+New-MgDomainFederationConfiguration -DomainId "contoso.com" -ActiveSignInUri "https://sts.contoso.com/adfs/services/trust/2005/usernamemixed" -DisplayName "Contoso" -IssuerUri "http://contoso.com/adfs/services/trust/" -MetadataExchangeUri "https://sts.contoso.com/adfs/services/trust/mex" -NextSigningCertificate "MIIC3jCCAcagAwIBAgIQEt0T0G5GPZ9" -PassiveSignInUri "https://sts.contoso.com/adfs/ls/" -SignOutUri "https://sts.contoso.com/adfs/ls/" -SigningCertificate "MIIC3jCCAcagAwIBAgIQFsO0R8deG4h" -FederatedIdpMfaBehavior "rejectMfaByFederatedIdp" | Format-List 
 
-ActiveSignInUri                       : https://sts.deverett.info/adfs/services/trust/2005/usernamemixed
-DisplayName                           : Contoso
-FederatedIdpMfaBehavior               : rejectMfaByFederatedIdp
-Id                                    : 2a8ce608-bb34-473f-9e0f-f373ee4cbc5a
-IsSignedAuthenticationRequestRequired :
-IssuerUri                             : http://contoso.com/adfs/services/trust/
-MetadataExchangeUri                   : https://sts.contoso.com/adfs/services/trust/mex
-NextSigningCertificate                : MIIC3jCCAcagAwIBAgIQEt0T0G5GPZ9
-PassiveSignInUri                      : https://sts.contoso.com/adfs/ls/
-PreferredAuthenticationProtocol       : wsFed
-PromptLoginBehavior                   :
-SignOutUri                            : https://sts.deverett.info/adfs/ls/
-SigningCertificate                    : MIIC3jCCAcagAwIBAgIQFsO0R8deG4h
-SigningCertificateUpdateStatus        : Microsoft.Graph.PowerShell.Models.MicrosoftGraphSigningCertificateUpdateStatus
-AdditionalProperties                  : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains('contoso.com')/federationConfiguration/$entity]}
+ActiveSignInUri                       : https://sts.deverett.info/adfs/services/trust/2005/usernamemixed 
+DisplayName                           : Contoso 
+FederatedIdpMfaBehavior               : rejectMfaByFederatedIdp 
+Id                                    : 2a8ce608-bb34-473f-9e0f-f373ee4cbc5a 
+IsSignedAuthenticationRequestRequired : 
+IssuerUri                             : http://contoso.com/adfs/services/trust/ 
+MetadataExchangeUri                   : https://sts.contoso.com/adfs/services/trust/mex 
+NextSigningCertificate                : MIIC3jCCAcagAwIBAgIQEt0T0G5GPZ9 
+PassiveSignInUri                      : https://sts.contoso.com/adfs/ls/ 
+PreferredAuthenticationProtocol       : wsFed 
+PromptLoginBehavior                   :  
+SignOutUri                            : https://sts.deverett.info/adfs/ls/ 
+SigningCertificate                    : MIIC3jCCAcagAwIBAgIQFsO0R8deG4h 
+SigningCertificateUpdateStatus        : Microsoft.Graph.PowerShell.Models.MicrosoftGraphSigningCertificateUpdateStatus 
+AdditionalProperties                  : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains('contoso.com')/federationConfiguration/$entity]} 
 ```
 
 This examples creates new federation settings for the specified domain.
@@ -137,21 +137,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -356,6 +341,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PromptLoginBehavior
 promptLoginBehavior
 
@@ -437,6 +437,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -477,8 +492,8 @@ BODYPARAMETER `<IMicrosoftGraphInternalDomainFederation>`: internalDomainFederat
   - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Microsoft Entra services.
   - `[PreferredAuthenticationProtocol <String>]`: authenticationProtocol
   - `[SigningCertificate <String>]`: Current certificate used to sign tokens passed to the Microsoft identity platform.
-The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.
-This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
+The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class. 
+This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated. 
 Microsoft Entra ID updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate.
 If a new certificate isn't available, Microsoft Entra ID monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
   - `[DisplayName <String>]`: The display name of the identity provider.
@@ -493,7 +508,7 @@ If false (default), the SAML authentication requests sent to the federated IdP a
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
-  - `[PasswordResetUri <String>]`:
+  - `[PasswordResetUri <String>]`: 
   - `[PromptLoginBehavior <String>]`: promptLoginBehavior
   - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Microsoft Entra services.
 Corresponds to the LogOffUri property of the Set-EntraDomainFederationSettings PowerShell cmdlet.
@@ -509,6 +524,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CertificateAuthorityDetailId <String>]`: The unique identifier of certificateAuthorityDetail
+  - `[CertificateBasedAuthPkiId <String>]`: The unique identifier of certificateBasedAuthPki
   - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
   - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract

@@ -17,14 +17,14 @@ Update the navigation property appScopes in roleManagement
 Update-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope -AppScopeId <String>
  -UnifiedRoleAssignmentMultipleId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Type <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope -AppScopeId <String>
  -UnifiedRoleAssignmentMultipleId <String> -BodyParameter <IMicrosoftGraphAppScope>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,21 +33,19 @@ Update-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope -AppScopeId <S
 Update-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope
  -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Type <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope
  -InputObject <IDeviceManagementEnrollmentIdentity> -BodyParameter <IMicrosoftGraphAppScope>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property appScopes in roleManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,24 +95,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DisplayName
 Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
 
 ```yaml
@@ -176,6 +158,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -193,8 +190,7 @@ Accept wildcard characters: False
 
 ### -Type
 Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+Read-only.
 
 ```yaml
 Type: String
@@ -217,6 +213,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -261,11 +272,9 @@ BODYPARAMETER `<IMicrosoftGraphAppScope>`: appScope
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
   - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+Read-only.
 
 INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile

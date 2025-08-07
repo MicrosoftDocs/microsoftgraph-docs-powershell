@@ -19,14 +19,14 @@ New-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowEx
  [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-Description <String>]
  [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
  -AccessPackageCatalogId <String> -BodyParameter <IMicrosoftGraphCustomCalloutExtension>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,14 +37,14 @@ New-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowEx
  [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-Description <String>]
  [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
  -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphCustomCalloutExtension>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -58,8 +58,6 @@ Create new navigation property to accessPackageCustomWorkflowExtensions for iden
 | Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -132,21 +130,6 @@ To construct, see NOTES section for CLIENTCONFIGURATION properties and create a 
 Type: IMicrosoftGraphCustomExtensionClientConfiguration
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -247,6 +230,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -254,6 +252,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

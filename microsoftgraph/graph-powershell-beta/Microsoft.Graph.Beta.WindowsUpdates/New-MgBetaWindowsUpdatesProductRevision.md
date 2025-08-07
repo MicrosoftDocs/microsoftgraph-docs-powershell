@@ -20,14 +20,14 @@ New-MgBetaWindowsUpdatesProductRevision -ProductId <String> [-ResponseHeadersVar
  [-KnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]
  [-OSBuild <IMicrosoftGraphWindowsUpdatesBuildVersionDetails>] [-Product <String>]
  [-ReleaseDateTime <DateTime>] [-Version <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaWindowsUpdatesProductRevision -ProductId <String>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesProductRevision> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,20 +38,18 @@ New-MgBetaWindowsUpdatesProductRevision -InputObject <IWindowsUpdatesIdentity>
  [-IsHotpatchUpdate] [-KnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]
  [-OSBuild <IMicrosoftGraphWindowsUpdatesBuildVersionDetails>] [-Product <String>]
  [-ReleaseDateTime <DateTime>] [-Version <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaWindowsUpdatesProductRevision -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesProductRevision> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to revisions for admin
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -94,21 +92,6 @@ To construct, see NOTES section for CATALOGENTRY properties and create a hash ta
 Type: IMicrosoftGraphWindowsUpdatesCatalogEntry
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -261,6 +244,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReleaseDateTime
 The release date for the content.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -302,6 +300,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

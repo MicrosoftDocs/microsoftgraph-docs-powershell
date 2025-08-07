@@ -20,7 +20,7 @@ Delete user from shared Apple device
 ```
 Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice -ManagedDeviceId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-UserPrincipalName <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice -ManagedDeviceId
 ```
 Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice -ManagedDeviceId <String>
  -BodyParameter <IPaths5C9DebDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphDeleteuserfromsharedappledevicePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice -ManagedDeviceId
 ```
 Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-UserPrincipalName <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -44,7 +44,7 @@ Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice -InputObject <ID
 ```
 Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IPaths5C9DebDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphDeleteuserfromsharedappledevicePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -109,21 +109,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -185,6 +170,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -207,6 +207,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: DeleteExpanded, DeleteViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -250,7 +265,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths5C9DebDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphDeleteuserfromsharedappledevicePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[UserPrincipalName <String>]`:
+  - `[UserPrincipalName <String>]`: 
 
 INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest

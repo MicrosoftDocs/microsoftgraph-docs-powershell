@@ -19,7 +19,7 @@ Invoke action setReaction
 ```
 Set-MgTeamPrimaryChannelMessageReaction -ChatMessageId <String> -TeamId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ReactionType <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Set-MgTeamPrimaryChannelMessageReaction -ChatMessageId <String> -TeamId <String>
 ```
 Set-MgTeamPrimaryChannelMessageReaction -ChatMessageId <String> -TeamId <String>
  -BodyParameter <IPathsUiuaf2TeamsTeamIdPrimarychannelMessagesChatmessageIdMicrosoftGraphSetreactionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,21 +35,19 @@ Set-MgTeamPrimaryChannelMessageReaction -ChatMessageId <String> -TeamId <String>
 ```
 Set-MgTeamPrimaryChannelMessageReaction -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ReactionType <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgTeamPrimaryChannelMessageReaction -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsUiuaf2TeamsTeamIdPrimarychannelMessagesChatmessageIdMicrosoftGraphSetreactionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action setReaction
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -93,21 +91,6 @@ Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -160,6 +143,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReactionType
 
 
@@ -205,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -240,7 +253,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPathsUiuaf2TeamsTeamIdPrimarychannelMessagesChatmessageIdMicrosoftGraphSetreactionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ReactionType <String>]`:
+  - `[ReactionType <String>]`: 
 
 INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo

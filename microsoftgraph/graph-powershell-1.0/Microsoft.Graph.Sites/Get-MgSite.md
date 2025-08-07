@@ -21,20 +21,20 @@ Retrieve properties and relationships for a site resource.A site resource repres
 ```
 Get-MgSite [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgSite -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -56,7 +56,7 @@ Retrieve properties and relationships for a site resource.A site resource repres
 
 Import-Module Microsoft.Graph.Sites
 
-Get-MgSite -Property "siteCollection,webUrl" -Filter "siteCollection/root ne null"
+Get-MgSite -Property "siteCollection,webUrl" -Filter "siteCollection/root ne null" 
 
 ```
 This example will list sites using query parameters
@@ -182,6 +182,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -242,21 +257,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -279,6 +279,21 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -354,7 +369,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/site-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/site-search?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-search?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/site-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list?view=graph-rest-1.0)
 
 
 

@@ -17,7 +17,7 @@ Update the navigation property resourceScope in roleManagement
 Update-MgBetaRoleManagementDirectoryResourceNamespaceResourceActionResourceScope
  -UnifiedRbacResourceActionId <String> -UnifiedRbacResourceNamespaceId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-Scope <String>] [-Type <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-Scope <String>] [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Update-MgBetaRoleManagementDirectoryResourceNamespaceResourceActionResourceScope
 Update-MgBetaRoleManagementDirectoryResourceNamespaceResourceActionResourceScope
  -UnifiedRbacResourceActionId <String> -UnifiedRbacResourceNamespaceId <String>
  -BodyParameter <IMicrosoftGraphUnifiedRbacResourceScope> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,21 +34,19 @@ Update-MgBetaRoleManagementDirectoryResourceNamespaceResourceActionResourceScope
 Update-MgBetaRoleManagementDirectoryResourceNamespaceResourceActionResourceScope
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Scope <String>] [-Type <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaRoleManagementDirectoryResourceNamespaceResourceActionResourceScope
  -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphUnifiedRbacResourceScope>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property resourceScope in roleManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -80,21 +78,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -157,6 +140,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -229,6 +227,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

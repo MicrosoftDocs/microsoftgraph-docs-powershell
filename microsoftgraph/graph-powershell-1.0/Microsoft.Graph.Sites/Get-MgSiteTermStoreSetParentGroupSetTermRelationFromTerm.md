@@ -21,7 +21,7 @@ A null value would indicate the relation is directly with the \[set\].
 ```
 Get-MgSiteTermStoreSetParentGroupSetTermRelationFromTerm -RelationId <String> -SetId <String> -SetId1 <String>
  -SiteId <String> -TermId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Get-MgSiteTermStoreSetParentGroupSetTermRelationFromTerm -RelationId <String> -S
 ```
 Get-MgSiteTermStoreSetParentGroupSetTermRelationFromTerm -RelationId <String> -SetId <String> -SetId1 <String>
  -SiteId <String> -TermId <String> -StoreId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -37,22 +37,20 @@ Get-MgSiteTermStoreSetParentGroupSetTermRelationFromTerm -RelationId <String> -S
 ```
 Get-MgSiteTermStoreSetParentGroupSetTermRelationFromTerm -InputObject <ISitesIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgSiteTermStoreSetParentGroupSetTermRelationFromTerm -InputObject <ISitesIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The from \[term\] of the relation.
 The term from which the relationship is defined.
 A null value would indicate the relation is directly with the \[set\].
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -99,6 +97,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

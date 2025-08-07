@@ -19,7 +19,7 @@ Invoke action assignSensitivityLabel
 ```
 Set-MgDriveItemSensitivityLabel -DriveId <String> -DriveItemId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AssignmentMethod <String>] [-JustificationText <String>]
- [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru]
+ [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Set-MgDriveItemSensitivityLabel -DriveId <String> -DriveItemId <String> [-Respon
 ```
 Set-MgDriveItemSensitivityLabel -DriveId <String> -DriveItemId <String>
  -BodyParameter <IPaths1K1XfclDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Set-MgDriveItemSensitivityLabel -DriveId <String> -DriveItemId <String>
 ```
 Set-MgDriveItemSensitivityLabel -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AssignmentMethod <String>] [-JustificationText <String>]
- [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru]
+ [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,7 +43,7 @@ Set-MgDriveItemSensitivityLabel -InputObject <IFilesIdentity> [-ResponseHeadersV
 ```
 Set-MgDriveItemSensitivityLabel -InputObject <IFilesIdentity>
  -BodyParameter <IPaths1K1XfclDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -57,8 +57,6 @@ Invoke action assignSensitivityLabel
 | Delegated (work or school account) | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -105,21 +103,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -214,6 +197,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -236,6 +234,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -280,8 +293,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IPaths1K1XfclDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignmentMethod <String>]`: sensitivityLabelAssignmentMethod
-  - `[JustificationText <String>]`:
-  - `[SensitivityLabelId <String>]`:
+  - `[JustificationText <String>]`: 
+  - `[SensitivityLabelId <String>]`: 
 
 INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition

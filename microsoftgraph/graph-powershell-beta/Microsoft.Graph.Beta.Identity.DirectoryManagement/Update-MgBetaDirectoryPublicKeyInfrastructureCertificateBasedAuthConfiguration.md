@@ -19,7 +19,7 @@ Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
  -CertificateBasedAuthPkiId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CertificateAuthorities <IMicrosoftGraphCertificateAuthorityDetail[]>] [-DeletedDateTime <DateTime>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Status <String>]
- [-StatusDetails <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-StatusDetails <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
 ```
 Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
  -CertificateBasedAuthPkiId <String> -BodyParameter <IMicrosoftGraphCertificateBasedAuthPki>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
  -InputObject <IIdentityDirectoryManagementIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CertificateAuthorities <IMicrosoftGraphCertificateAuthorityDetail[]>]
  [-DeletedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Status <String>] [-StatusDetails <String>] [-Headers <IDictionary>]
+ [-Status <String>] [-StatusDetails <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,7 +45,7 @@ Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
 ```
 Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
  -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <IMicrosoftGraphCertificateBasedAuthPki>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -135,21 +135,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -250,6 +235,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -287,6 +287,21 @@ The status details of the upload/deleted operation of PKI (Public Key Infrastruc
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -422,11 +437,14 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
   - `[PendingExternalUserProfileId <String>]`: The unique identifier of pendingExternalUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
+  - `[ProfilePropertySettingId <String>]`: The unique identifier of profilePropertySetting
+  - `[ProfileSourceId <String>]`: The unique identifier of profileSource
   - `[RecommendationId <String>]`: The unique identifier of recommendation
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
+  - `[SourceId <String>]`: Alternate key of profileSource
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
   - `[TenantId <String>]`: Usage: tenantId='{tenantId}'
   - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference

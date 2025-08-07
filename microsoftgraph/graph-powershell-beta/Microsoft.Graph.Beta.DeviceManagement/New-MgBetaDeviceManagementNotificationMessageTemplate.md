@@ -22,14 +22,14 @@ New-MgBetaDeviceManagementNotificationMessageTemplate [-ResponseHeadersVariable 
  [-DefaultLocale <String>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>]
  [-LocalizedNotificationMessages <IMicrosoftGraphLocalizedNotificationMessage[]>] [-RoleScopeTagIds <String[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementNotificationMessageTemplate
  -BodyParameter <IMicrosoftGraphNotificationMessageTemplate> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,8 +42,6 @@ Create new navigation property to notificationMessageTemplates for deviceManagem
 | Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -88,21 +86,6 @@ Branding is defined in the Intune Admin Console.
 Type: NotificationTemplateBrandingOptions
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -218,6 +201,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -240,6 +238,21 @@ List of Scope Tags for this Entity instance.
 Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

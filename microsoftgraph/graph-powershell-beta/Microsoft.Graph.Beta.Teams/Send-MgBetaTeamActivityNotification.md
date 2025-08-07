@@ -20,10 +20,10 @@ For more information, see sending Teams activity notifications.
 ### SendExpanded (Default)
 ```
 Send-MgBetaTeamActivityNotification -TeamId <String> [-ResponseHeadersVariable <String>]
- [-ActivityType <String>] [-AdditionalProperties <Hashtable>] [-ChainId <Int64>]
+ [-ActivityType <String>] [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-IconId <String>]
  [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>] [-TeamsAppId <String>]
  [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,17 +31,17 @@ Send-MgBetaTeamActivityNotification -TeamId <String> [-ResponseHeadersVariable <
 ```
 Send-MgBetaTeamActivityNotification -TeamId <String>
  -BodyParameter <IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentityExpanded
 ```
 Send-MgBetaTeamActivityNotification -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
- [-ActivityType <String>] [-AdditionalProperties <Hashtable>] [-ChainId <Int64>]
+ [-ActivityType <String>] [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-IconId <String>]
  [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>] [-TeamsAppId <String>]
  [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -49,7 +49,7 @@ Send-MgBetaTeamActivityNotification -InputObject <ITeamsIdentity> [-ResponseHead
 ```
 Send-MgBetaTeamActivityNotification -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -332,21 +332,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -359,6 +344,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IconId
+
+
+```yaml
+Type: String
+Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -401,6 +401,21 @@ To construct, see NOTES section for PREVIEWTEXT properties and create a hash tab
 Type: IMicrosoftGraphItemBody
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -501,6 +516,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -538,6 +568,7 @@ BODYPARAMETER `<IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActivityType <String>]`: 
   - `[ChainId <Int64?>]`: 
+  - `[IconId <String>]`: 
   - `[PreviewText <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.

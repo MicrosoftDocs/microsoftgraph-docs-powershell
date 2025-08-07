@@ -16,20 +16,18 @@ Get gradingScheme from education
 ```
 Get-MgBetaEducationClassAssignmentGradingScheme -EducationAssignmentId <String> -EducationClassId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaEducationClassAssignmentGradingScheme -InputObject <IEducationIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get gradingScheme from education
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -109,6 +107,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -174,6 +187,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
   - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
   - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
+  - `[SpeakerAssignmentSubmissionId <String>]`: The unique identifier of speakerAssignmentSubmission
 
 ## RELATED LINKS
 

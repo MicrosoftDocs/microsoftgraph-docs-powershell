@@ -22,20 +22,18 @@ Update-MgBetaReportUserInsightMonthly [-ResponseHeadersVariable <String>]
  [-MfaCompletions <IMicrosoftGraphMfaCompletionMetric[]>]
  [-MfaRegisteredUsers <IMicrosoftGraphMfaUserCountMetric[]>] [-Requests <IMicrosoftGraphUserRequestsMetric[]>]
  [-SignUps <IMicrosoftGraphUserSignUpMetric[]>] [-Summary <IMicrosoftGraphInsightSummary[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaReportUserInsightMonthly -BodyParameter <IMicrosoftGraphMonthlyUserInsightMetricsRoot>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property monthly in reports
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -99,21 +97,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -212,6 +195,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Requests
 Insights for all user requests on apps registered in the tenant for a specified period.
 To construct, see NOTES section for REQUESTS properties and create a hash table.
@@ -267,6 +265,21 @@ To construct, see NOTES section for SUMMARY properties and create a hash table.
 Type: IMicrosoftGraphInsightSummary[]
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

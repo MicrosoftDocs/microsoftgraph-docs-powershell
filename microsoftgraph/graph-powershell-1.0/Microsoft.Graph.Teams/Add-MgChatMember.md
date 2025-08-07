@@ -20,7 +20,7 @@ The response provides details about which memberships could and couldn't be crea
 ### AddExpanded (Default)
 ```
 Add-MgChatMember -ChatId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
+ [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Add-MgChatMember -ChatId <String> [-ResponseHeadersVariable <String>] [-Addition
 ```
 Add-MgChatMember -ChatId <String>
  -BodyParameter <IPaths1Abk8N6ChatsChatIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,22 +36,20 @@ Add-MgChatMember -ChatId <String>
 ```
 Add-MgChatMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
 Add-MgChatMember -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Abk8N6ChatsChatIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -101,21 +99,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -147,6 +130,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -170,6 +168,21 @@ To construct, see NOTES section for VALUES properties and create a hash table.
 Type: IMicrosoftGraphConversationMember[]
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -213,7 +226,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1Abk8N6ChatsChatIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Values <IMicrosoftGraphConversationMember- `[]`>]`:
+  - `[Values <IMicrosoftGraphConversationMember- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: The display name of the user.

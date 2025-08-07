@@ -18,14 +18,14 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgBetaEducationClassSchoolCount -EducationClassId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaEducationClassSchoolCount -InputObject <IEducationIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -39,8 +39,6 @@ Get the number of the resource
 | Delegated (work or school account) | EduRoster.ReadBasic,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -102,6 +100,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -170,6 +183,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
   - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
   - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
+  - `[SpeakerAssignmentSubmissionId <String>]`: The unique identifier of speakerAssignmentSubmission
 
 ## RELATED LINKS
 

@@ -21,14 +21,14 @@ Update-MgBetaDeviceManagementMicrosoftTunnelConfiguration -MicrosoftTunnelConfig
  [-Ipv6Network <String>] [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>] [-Network <String>]
  [-RoleScopeTagIds <String[]>] [-RouteExcludes <String[]>] [-RouteIncludes <String[]>]
  [-RoutesExclude <String[]>] [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelConfiguration -MicrosoftTunnelConfigurationId <String>
  -BodyParameter <IMicrosoftGraphMicrosoftTunnelConfiguration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,14 +40,14 @@ Update-MgBetaDeviceManagementMicrosoftTunnelConfiguration -InputObject <IDeviceM
  [-Ipv6Network <String>] [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>] [-Network <String>]
  [-RoleScopeTagIds <String[]>] [-RouteExcludes <String[]>] [-RouteIncludes <String[]>]
  [-RoutesExclude <String[]>] [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelConfiguration -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphMicrosoftTunnelConfiguration> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -60,8 +60,6 @@ Update the navigation property microsoftTunnelConfigurations in deviceManagement
 | Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -109,21 +107,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -325,6 +308,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -424,6 +422,21 @@ The domains that will be resolved using the provided dns servers
 Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
