@@ -4,7 +4,7 @@ description: "The Microsoft Graph PowerShell SDK contains a large number of comm
 
 author: msewaweru
 manager: mwongerapk
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/12/2025
 ms.author: eunicewaweru
 #customer intent: As a user new to the Microsoft Graph PowerShell SDK, I want to find the right command for a specific task, so that I can effectively use Microsoft Graph PowerShell to interact with the Microsoft Graph API.
