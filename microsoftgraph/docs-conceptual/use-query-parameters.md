@@ -1,7 +1,7 @@
 ---
 title: "Use query parameters to customize PowerShell query outputs"
 description: "Learn how to use optional query parameters in Microsoft Graph PowerShell SDK to customize the output"
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/30/2024
 author: msewaweru
 manager: mwongerapk
