@@ -19,7 +19,7 @@ New-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionReques
  [-CompletedDateTime <DateTime>] [-Id <String>] [-ManagedAppRegistrationId1 <String>] [-RequestedBy <String>]
  [-RequestedByUserPrincipalName <String>] [-RequestedDateTime <DateTime>] [-Status <String>]
  [-UploadedLogs <IMicrosoftGraphManagedAppLogUpload[]>] [-UserLogUploadConsent <ManagedAppLogUploadConsent>]
- [-Version <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,14 +31,14 @@ New-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionReques
  [-Id <String>] [-RequestedBy <String>] [-RequestedByUserPrincipalName <String>]
  [-RequestedDateTime <DateTime>] [-Status <String>] [-UploadedLogs <IMicrosoftGraphManagedAppLogUpload[]>]
  [-UserLogUploadConsent <ManagedAppLogUploadConsent>] [-Version <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest
  -ManagedAppRegistrationId <String> -BodyParameter <IMicrosoftGraphManagedAppLogCollectionRequest>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,13 +47,11 @@ New-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionReques
 New-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphManagedAppLogCollectionRequest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to managedAppLogCollectionRequests for deviceAppManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -99,21 +97,6 @@ Read-only.
 Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -204,6 +187,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -334,6 +332,21 @@ Version of the entity.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

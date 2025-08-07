@@ -20,7 +20,7 @@ Search results are provided in the response.
 ### QueryExpanded (Default)
 ```
 Invoke-MgBetaQuerySearch [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Requests <IMicrosoftGraphSearchRequest[]>] [-Headers <IDictionary>]
+ [-Requests <IMicrosoftGraphSearchRequest[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Invoke-MgBetaQuerySearch [-ResponseHeadersVariable <String>] [-AdditionalPropert
 ```
 Invoke-MgBetaQuerySearch
  -Body <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -113,21 +113,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -140,6 +125,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -166,6 +166,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -253,7 +268,7 @@ Required.
 This numeric value must be a positive integer.
 Required.
     - `[ContentSources <String- `[]`>]`: Contains the connection to be targeted.
-Respects the following format : /external/connections/connectionid where connectionid is the ConnectionId defined in the Connectors Administration. 
+Respects the following format: /external/connections/connectionid where connectionid is the ConnectionId defined in the connectors administration. 
 Note: contentSource is only applicable when entityType=externalItem.
 Optional.
     - `[EnableTopResults <Boolean?>]`: This triggers hybrid sort for messages: the first 3 messages are the most relevant.
@@ -263,9 +278,9 @@ Optional.
 Possible values are: list, site, listItem, message, event, drive, driveItem, person, externalItem, acronym, bookmark, chatMessage.
 For details about combinations of two or more entity types that are supported in the same search request, see known limitations.
 Required.
-    - `[Fields <String- `[]`>]`: Contains the fields to be returned for each resource object specified in entityTypes, allowing customization of the fields returned by default otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in externalItem from content that Microsoft Graph connectors bring in.
+    - `[Fields <String- `[]`>]`: Contains the fields to be returned for each resource object specified in entityTypes, allowing customization of the fields returned by default otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in externalItem from content that Microsoft 365 Copilot connectors bring in.
 The fields property can be using the semantic labels applied to properties.
-For example, if a property is label as title, you can retrieve it using the following syntax : label_title.Optional.
+For example, if a property is labeled as title, you can retrieve it using the following syntax : label_title.Optional.
     - `[From <Int32?>]`: Specifies the offset for the search results.
 Offset 0 returns the very first result.
 Optional.
@@ -309,7 +324,7 @@ Optional.
 Required.
     - `[StoredFields <String- `[]`>]`: This is now replaced by the fields property.
     - `[TrimDuplicates <Boolean?>]`: Indicates whether to trim away the duplicate SharePoint files from search results.
-Default value is false.
+The default value is false.
 Optional.
 
 REQUESTS `<IMicrosoftGraphSearchRequest- `[]`>`: .
@@ -357,7 +372,7 @@ Required.
 This numeric value must be a positive integer.
 Required.
   - `[ContentSources <String- `[]`>]`: Contains the connection to be targeted.
-Respects the following format : /external/connections/connectionid where connectionid is the ConnectionId defined in the Connectors Administration. 
+Respects the following format: /external/connections/connectionid where connectionid is the ConnectionId defined in the connectors administration. 
 Note: contentSource is only applicable when entityType=externalItem.
 Optional.
   - `[EnableTopResults <Boolean?>]`: This triggers hybrid sort for messages: the first 3 messages are the most relevant.
@@ -367,9 +382,9 @@ Optional.
 Possible values are: list, site, listItem, message, event, drive, driveItem, person, externalItem, acronym, bookmark, chatMessage.
 For details about combinations of two or more entity types that are supported in the same search request, see known limitations.
 Required.
-  - `[Fields <String- `[]`>]`: Contains the fields to be returned for each resource object specified in entityTypes, allowing customization of the fields returned by default otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in externalItem from content that Microsoft Graph connectors bring in.
+  - `[Fields <String- `[]`>]`: Contains the fields to be returned for each resource object specified in entityTypes, allowing customization of the fields returned by default otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in externalItem from content that Microsoft 365 Copilot connectors bring in.
 The fields property can be using the semantic labels applied to properties.
-For example, if a property is label as title, you can retrieve it using the following syntax : label_title.Optional.
+For example, if a property is labeled as title, you can retrieve it using the following syntax : label_title.Optional.
   - `[From <Int32?>]`: Specifies the offset for the search results.
 Offset 0 returns the very first result.
 Optional.
@@ -413,7 +428,7 @@ Optional.
 Required.
   - `[StoredFields <String- `[]`>]`: This is now replaced by the fields property.
   - `[TrimDuplicates <Boolean?>]`: Indicates whether to trim away the duplicate SharePoint files from search results.
-Default value is false.
+The default value is false.
 Optional.
 
 ## RELATED LINKS

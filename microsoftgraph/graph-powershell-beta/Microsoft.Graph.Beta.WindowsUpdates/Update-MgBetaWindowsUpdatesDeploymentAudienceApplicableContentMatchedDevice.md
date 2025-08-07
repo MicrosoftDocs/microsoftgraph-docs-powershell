@@ -17,7 +17,7 @@ Update the navigation property matchedDevices in admin
 Update-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice
  -ApplicableContentCatalogEntryId <String> -ApplicableContentDeviceMatchDeviceId <String>
  -DeploymentId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-DeviceId <String>] [-RecommendedBy <String[]>] [-Headers <IDictionary>]
+ [-DeviceId <String>] [-RecommendedBy <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Update-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice
 Update-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice
  -ApplicableContentCatalogEntryId <String> -ApplicableContentDeviceMatchDeviceId <String>
  -DeploymentId <String> -BodyParameter <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Update-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice
 ```
 Update-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice
  -InputObject <IWindowsUpdatesIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-DeviceId <String>] [-RecommendedBy <String[]>] [-Headers <IDictionary>]
+ [-DeviceId <String>] [-RecommendedBy <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,13 +43,11 @@ Update-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice
 Update-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice
  -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property matchedDevices in admin
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -114,21 +112,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DeploymentId
 The unique identifier of deployment
 
@@ -190,6 +173,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RecommendedBy
 Collection of vendors who recommend the content.
 
@@ -212,6 +210,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

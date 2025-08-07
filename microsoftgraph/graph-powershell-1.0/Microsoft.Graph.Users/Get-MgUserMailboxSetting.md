@@ -20,14 +20,14 @@ Returned only on $select.
 ### Get (Default)
 ```
 Get-MgUserMailboxSetting -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgUserMailboxSetting -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -43,8 +43,6 @@ Returned only on $select.
 | Delegated (work or school account) | MailboxSettings.Read, MailboxSettings.ReadWrite,  |
 | Delegated (personal Microsoft account) | MailboxSettings.Read, MailboxSettings.ReadWrite,  |
 | Application | MailboxSettings.Read, MailboxSettings.ReadWrite,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -91,6 +89,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
