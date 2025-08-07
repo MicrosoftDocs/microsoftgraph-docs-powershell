@@ -20,7 +20,7 @@ Update-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionReq
  [-Id <String>] [-ManagedAppRegistrationId1 <String>] [-RequestedBy <String>]
  [-RequestedByUserPrincipalName <String>] [-RequestedDateTime <DateTime>] [-Status <String>]
  [-UploadedLogs <IMicrosoftGraphManagedAppLogUpload[]>] [-UserLogUploadConsent <ManagedAppLogUploadConsent>]
- [-Version <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionReq
 Update-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest
  -ManagedAppLogCollectionRequestId <String> -ManagedAppRegistrationId <String>
  -BodyParameter <IMicrosoftGraphManagedAppLogCollectionRequest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,7 +40,7 @@ Update-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionReq
  [-Id <String>] [-RequestedBy <String>] [-RequestedByUserPrincipalName <String>]
  [-RequestedDateTime <DateTime>] [-Status <String>] [-UploadedLogs <IMicrosoftGraphManagedAppLogUpload[]>]
  [-UserLogUploadConsent <ManagedAppLogUploadConsent>] [-Version <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -48,13 +48,11 @@ Update-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionReq
 Update-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphManagedAppLogCollectionRequest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property managedAppLogCollectionRequests in deviceAppManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -100,21 +98,6 @@ Read-only.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -220,6 +203,21 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -350,6 +348,21 @@ Version of the entity.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

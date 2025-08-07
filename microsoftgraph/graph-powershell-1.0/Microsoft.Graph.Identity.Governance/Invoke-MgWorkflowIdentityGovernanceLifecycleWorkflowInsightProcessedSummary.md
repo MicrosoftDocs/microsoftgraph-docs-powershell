@@ -21,14 +21,14 @@ Because the amount of results for listed workflows as returned by the List workf
 ```
 Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary -EndDateTime <DateTime>
  -StartDateTime <DateTime> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### WorkflowsViaIdentity
 ```
 Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -93,6 +93,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
