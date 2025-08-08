@@ -11,6 +11,9 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalByAppId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

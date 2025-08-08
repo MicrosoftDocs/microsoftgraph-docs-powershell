@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property timesOff for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleTimeOff?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

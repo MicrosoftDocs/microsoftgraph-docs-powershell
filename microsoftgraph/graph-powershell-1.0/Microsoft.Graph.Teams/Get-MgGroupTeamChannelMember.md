@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

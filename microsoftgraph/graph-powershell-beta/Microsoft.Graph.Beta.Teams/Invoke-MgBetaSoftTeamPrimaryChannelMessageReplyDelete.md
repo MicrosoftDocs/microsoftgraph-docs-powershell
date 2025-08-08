@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSoftTeamPrimaryChannelMessageReplyDelete](/powershell/module/Microsoft.Graph.Teams/Invoke-MgSoftTeamPrimaryChannelMessageReplyDelete?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Soft (Default)

@@ -13,6 +13,9 @@ ms.subservice: entra-directory-management
 Retrieve a list of recently deleted directory objects from deleted items.
 The following types are supported:- administrativeUnit- application- certificateBasedAuthPki- certificateAuthorityDetail- externalUserProfile- group- pendingExternalUserProfile- servicePrincipal- user
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryDeletedItemAsGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeletedItemAsGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

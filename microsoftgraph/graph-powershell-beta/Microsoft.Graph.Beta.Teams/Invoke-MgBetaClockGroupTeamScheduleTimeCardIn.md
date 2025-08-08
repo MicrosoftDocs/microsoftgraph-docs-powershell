@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Clock in to start a timeCard.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgClockGroupTeamScheduleTimeCardIn](/powershell/module/Microsoft.Graph.Teams/Invoke-MgClockGroupTeamScheduleTimeCardIn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ClockExpanded (Default)

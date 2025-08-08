@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Upgrade an app installation within a chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpgradeExpanded (Default)

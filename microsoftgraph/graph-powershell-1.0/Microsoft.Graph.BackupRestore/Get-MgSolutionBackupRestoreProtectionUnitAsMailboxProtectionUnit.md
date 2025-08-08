@@ -12,6 +12,9 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 Get a list of mailboxProtectionUnit objects.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreProtectionUnitAsMailboxProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreProtectionUnitAsMailboxProtectionUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

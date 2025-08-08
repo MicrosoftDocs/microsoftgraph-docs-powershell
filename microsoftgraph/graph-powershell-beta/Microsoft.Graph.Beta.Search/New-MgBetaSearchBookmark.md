@@ -11,6 +11,9 @@ ms.subservice: search
 ## SYNOPSIS
 Create a new bookmark object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/New-MgSearchBookmark?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
