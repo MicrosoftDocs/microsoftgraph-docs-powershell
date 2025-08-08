@@ -31,6 +31,14 @@ Get-MgUserContactFolderContactPhotoContent -InputObject <IPersonalContactsIdenti
 Optional contact picture.
 You can get or set a photo for a contact.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Contacts.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Contacts.Read,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

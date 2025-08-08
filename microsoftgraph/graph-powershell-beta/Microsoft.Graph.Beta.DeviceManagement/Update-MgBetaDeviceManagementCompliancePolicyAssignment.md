@@ -50,6 +50,14 @@ Update-MgBetaDeviceManagementCompliancePolicyAssignment -InputObject <IDeviceMan
 ## DESCRIPTION
 Update the navigation property assignments in deviceManagement
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

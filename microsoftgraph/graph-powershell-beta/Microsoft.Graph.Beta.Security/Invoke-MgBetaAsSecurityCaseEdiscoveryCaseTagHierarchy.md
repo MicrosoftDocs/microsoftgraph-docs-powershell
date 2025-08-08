@@ -32,6 +32,14 @@ Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy -InputObject <ISecurityIde
 ## DESCRIPTION
 List eDiscovery review tags with the tag hierarchy shown.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -51,6 +51,14 @@ New-MgSiteOnenoteSectionPage -InputObject <INotesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to pages for sites
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite,  |
+| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
+| Application | Notes.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

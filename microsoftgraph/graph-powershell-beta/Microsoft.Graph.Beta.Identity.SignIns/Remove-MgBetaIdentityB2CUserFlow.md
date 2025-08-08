@@ -30,6 +30,14 @@ Remove-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity> [-IfMat
 ## DESCRIPTION
 Delete a b2cIdentityUserFlow object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityUserFlow.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

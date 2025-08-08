@@ -30,6 +30,14 @@ Remove-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-IfMa
 ## DESCRIPTION
 Delete an industryDataConnector object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IndustryData-DataConnector.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IndustryData-DataConnector.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

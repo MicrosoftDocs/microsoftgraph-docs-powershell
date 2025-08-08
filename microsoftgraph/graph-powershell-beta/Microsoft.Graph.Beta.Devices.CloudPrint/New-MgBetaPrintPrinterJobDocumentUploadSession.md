@@ -55,6 +55,14 @@ As part of the response, this action returns an upload URL that can be used in s
 Request headers for each PUT operation can be used to specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrintJob.Create, PrintJob.ReadWrite.All, PrintJob.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PrintJob.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

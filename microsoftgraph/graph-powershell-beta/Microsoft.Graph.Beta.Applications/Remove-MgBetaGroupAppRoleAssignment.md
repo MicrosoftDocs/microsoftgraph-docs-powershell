@@ -30,6 +30,14 @@ Remove-MgBetaGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMat
 ## DESCRIPTION
 Delete an appRoleAssignment that a group has been granted.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AppRoleAssignment.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
