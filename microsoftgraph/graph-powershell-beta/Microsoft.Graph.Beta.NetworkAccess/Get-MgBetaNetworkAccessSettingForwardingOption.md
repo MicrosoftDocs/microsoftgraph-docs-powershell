@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingforwardingoption
 schema: 2.0.0
-ms.subservice: entra-global-secure-access
 ---
 
 # Get-MgBetaNetworkAccessSettingForwardingOption
@@ -16,7 +15,7 @@ This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 
 
 ```
 Get-MgBetaNetworkAccessSettingForwardingOption [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -25,17 +24,13 @@ Retrieve the forwarding options for the tenant, with a specific focus on the 'sk
 This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 traffic to be forwarded directly to the Front Door using the client-resolved destination.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.NetworkAccess
+```
 
 Get-MgBetaNetworkAccessSettingForwardingOption
-
-```
-This example shows how to use the Get-MgBetaNetworkAccessSettingForwardingOption Cmdlet.
-
 
 ## PARAMETERS
 
@@ -66,6 +61,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -115,26 +125,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingforwardingoption](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingforwardingoption)
 
 [https://learn.microsoft.com/graph/api/networkaccess-forwardingoptions-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-forwardingoptions-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

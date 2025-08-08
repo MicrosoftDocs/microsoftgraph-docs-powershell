@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Authentication.dll-Help.xml
 Module Name: Microsoft.Graph.Authentication
 online version: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgGraphRequest
 
 ## SYNOPSIS
-This command issues REST API requests.
+Invoke-MgGraphRequest issues REST API requests to the Graph API.
+It works for any Graph API if you know the REST URI, method, and optional body parameter.
+This command is especially useful for accessing APIs for which there isn't an equivalent cmdlet yet.
 
 ## SYNTAX
 
@@ -18,13 +20,11 @@ Invoke-MgGraphRequest [[-Method] <GraphRequestMethod>] [-Uri] <Uri> [[-Body] <Ob
  [-PassThru] [-SkipHeaderValidation] [[-ContentType] <String>] [[-SessionVariable] <String>]
  [[-ResponseHeadersVariable] <String>] [[-StatusCodeVariable] <String>] [-SkipHttpErrorCheck]
  [[-GraphRequestSession] <GraphRequestSession>] [[-UserAgent] <String>] [[-OutputType] <OutputType>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke-MgGraphRequest issues REST API requests to the Graph API. It works for any Graph API if you
-know the REST URI, method, and optional body parameter. This command is especially useful for
-accessing APIs for which there isn't an equivalent cmdlet yet.
+This command issues REST API requests.
 
 ## EXAMPLES
 
@@ -201,6 +201,21 @@ Aliases:
 Required: False
 Position: 8
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile
@@ -20,13 +20,13 @@ New-MgBetaSecurityIPSecurityProfile [-ResponseHeadersVariable <String>] [-Activi
  [-IPCategories <IMicrosoftGraphIPCategory[]>] [-IPReferenceData <IMicrosoftGraphIPReferenceData[]>]
  [-Id <String>] [-LastSeenDateTime <DateTime>] [-RiskScore <String>] [-Tags <String[]>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityIPSecurityProfile -BodyParameter <IMicrosoftGraphIPSecurityProfile>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,10 +35,20 @@ Create new navigation property to ipSecurityProfiles for security
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -ActivityGroupNames
-
+.
 
 ```yaml
 Type: String[]
@@ -68,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Address
-
+.
 
 ```yaml
 Type: String
@@ -83,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureSubscriptionId
-
+.
 
 ```yaml
 Type: String
@@ -98,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureTenantId
-
+.
 
 ```yaml
 Type: String
@@ -128,23 +138,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -CountHits
-
+.
 
 ```yaml
 Type: Int32
@@ -159,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -CountHosts
-
+.
 
 ```yaml
 Type: Int32
@@ -174,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirstSeenDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -220,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPCategories
-
+.
 To construct, see NOTES section for IPCATEGORIES properties and create a hash table.
 
 ```yaml
@@ -236,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPReferenceData
-
+.
 To construct, see NOTES section for IPREFERENCEDATA properties and create a hash table.
 
 ```yaml
@@ -252,12 +247,27 @@ Accept wildcard characters: False
 ```
 
 ### -LastSeenDateTime
-
+.
 
 ```yaml
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -282,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -RiskScore
-
+.
 
 ```yaml
 Type: String
@@ -297,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-
+.
 
 ```yaml
 Type: String[]
@@ -319,6 +329,21 @@ To construct, see NOTES section for VENDORINFORMATION properties and create a ha
 Type: IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -359,86 +384,63 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIPSecurityProfile>`: ipSecurityProfile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIPSecurityProfile\>: ipSecurityProfile
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActivityGroupNames <String- `[]`>]`: 
-  - `[Address <String>]`: 
-  - `[AzureSubscriptionId <String>]`: 
-  - `[AzureTenantId <String>]`: 
-  - `[CountHits <Int32?>]`: 
-  - `[CountHosts <Int32?>]`: 
-  - `[FirstSeenDateTime <DateTime?>]`: 
-  - `[IPCategories <IMicrosoftGraphIPCategory- `[]`>]`: 
-    - `[Description <String>]`: 
-    - `[Name <String>]`: 
-    - `[Vendor <String>]`: 
-  - `[IPReferenceData <IMicrosoftGraphIPReferenceData- `[]`>]`: 
-    - `[Asn <Int64?>]`: 
-    - `[City <String>]`: 
-    - `[CountryOrRegionCode <String>]`: 
-    - `[Organization <String>]`: 
-    - `[State <String>]`: 
-    - `[Vendor <String>]`: 
-  - `[LastSeenDateTime <DateTime?>]`: 
-  - `[RiskScore <String>]`: 
-  - `[Tags <String- `[]`>]`: 
-  - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+  \[ActivityGroupNames \<String\[\]\>\]: 
+  \[Address \<String\>\]: 
+  \[AzureSubscriptionId \<String\>\]: 
+  \[AzureTenantId \<String\>\]: 
+  \[CountHits \<Int32?\>\]: 
+  \[CountHosts \<Int32?\>\]: 
+  \[FirstSeenDateTime \<DateTime?\>\]: 
+  \[IPCategories \<IMicrosoftGraphIPCategory\[\]\>\]: 
+    \[Description \<String\>\]: 
+    \[Name \<String\>\]: 
+    \[Vendor \<String\>\]: 
+  \[IPReferenceData \<IMicrosoftGraphIPReferenceData\[\]\>\]: 
+    \[Asn \<Int64?\>\]: 
+    \[City \<String\>\]: 
+    \[CountryOrRegionCode \<String\>\]: 
+    \[Organization \<String\>\]: 
+    \[State \<String\>\]: 
+    \[Vendor \<String\>\]: 
+  \[LastSeenDateTime \<DateTime?\>\]: 
+  \[RiskScore \<String\>\]: 
+  \[Tags \<String\[\]\>\]: 
+  \[VendorInformation \<IMicrosoftGraphSecurityVendorInformation\>\]: securityVendorInformation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+    \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+    \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+    \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-IPCATEGORIES `<IMicrosoftGraphIPCategory- `[]`>`: .
-  - `[Description <String>]`: 
-  - `[Name <String>]`: 
-  - `[Vendor <String>]`: 
+IPCATEGORIES \<IMicrosoftGraphIPCategory\[\]\>: .
+  \[Description \<String\>\]: 
+  \[Name \<String\>\]: 
+  \[Vendor \<String\>\]: 
 
-IPREFERENCEDATA `<IMicrosoftGraphIPReferenceData- `[]`>`: .
-  - `[Asn <Int64?>]`: 
-  - `[City <String>]`: 
-  - `[CountryOrRegionCode <String>]`: 
-  - `[Organization <String>]`: 
-  - `[State <String>]`: 
-  - `[Vendor <String>]`: 
+IPREFERENCEDATA \<IMicrosoftGraphIPReferenceData\[\]\>: .
+  \[Asn \<Int64?\>\]: 
+  \[City \<String\>\]: 
+  \[CountryOrRegionCode \<String\>\]: 
+  \[Organization \<String\>\]: 
+  \[State \<String\>\]: 
+  \[Vendor \<String\>\]: 
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+VENDORINFORMATION \<IMicrosoftGraphSecurityVendorInformation\>: securityVendorInformation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+  \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-  - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+  \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+  \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

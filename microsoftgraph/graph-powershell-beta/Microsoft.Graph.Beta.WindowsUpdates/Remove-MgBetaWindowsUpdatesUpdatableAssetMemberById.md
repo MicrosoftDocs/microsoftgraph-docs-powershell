@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesupdatableassetmemberbyid
 schema: 2.0.0
-ms.subservice: windows-autopatch
 ---
 
 # Remove-MgBetaWindowsUpdatesUpdatableAssetMemberById
@@ -18,7 +17,7 @@ You can also use the method removeMembers to remove members.
 ```
 Remove-MgBetaWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
- [-MemberEntityType <String>] [-Headers <IDictionary>] [-PassThru]
+ [-MemberEntityType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,7 +25,7 @@ Remove-MgBetaWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId <String>
 ```
 Remove-MgBetaWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId <String>
  -BodyParameter <IPaths1Kqj7RfAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +33,7 @@ Remove-MgBetaWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId <String>
 ```
 Remove-MgBetaWindowsUpdatesUpdatableAssetMemberById -InputObject <IWindowsUpdatesIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
- [-MemberEntityType <String>] [-Headers <IDictionary>] [-PassThru]
+ [-MemberEntityType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,7 +41,7 @@ Remove-MgBetaWindowsUpdatesUpdatableAssetMemberById -InputObject <IWindowsUpdate
 ```
 Remove-MgBetaWindowsUpdatesUpdatableAssetMemberById -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IPaths1Kqj7RfAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -50,20 +49,12 @@ Remove-MgBetaWindowsUpdatesUpdatableAssetMemberById -InputObject <IWindowsUpdate
 Remove members of the same type from an updatableAssetGroup.
 You can also use the method removeMembers to remove members.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | WindowsUpdates.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
+```
 
 $params = @{
 	ids = @(
@@ -75,10 +66,6 @@ memberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice"
 }
 
 Remove-MgBetaWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId $updatableAssetId -BodyParameter $params
-
-```
-This example shows how to use the Remove-MgBetaWindowsUpdatesUpdatableAssetMemberById Cmdlet.
-
 
 ## PARAMETERS
 
@@ -98,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -110,21 +97,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -144,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ids
-
+.
 
 ```yaml
 Type: String[]
@@ -175,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberEntityType
-
+.
 
 ```yaml
 Type: String
@@ -204,6 +176,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -228,6 +215,21 @@ Parameter Sets: RemoveExpanded, Remove
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -267,53 +269,31 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Kqj7RfAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String- `[]`>]`: 
-  - `[MemberEntityType <String>]`: 
+BODYPARAMETER \<IPaths1Kqj7RfAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Ids \<String\[\]\>\]: 
+  \[MemberEntityType \<String\>\]: 
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
-  - `[ApplicableContentCatalogEntryId <String>]`: The unique identifier of applicableContent
-  - `[ApplicableContentDeviceMatchDeviceId <String>]`: The unique identifier of applicableContentDeviceMatch
-  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
-  - `[CatalogId <String>]`: Usage: catalogID='{catalogID}'
-  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
-  - `[DaysInPast <Int32?>]`: Usage: daysInPast={daysInPast}
-  - `[DeploymentId <String>]`: The unique identifier of deployment
-  - `[EditionId <String>]`: The unique identifier of edition
-  - `[KbNumber <Int32?>]`: Usage: kbNumber={kbNumber}
-  - `[KnownIssueId <String>]`: The unique identifier of knownIssue
-  - `[ProductId <String>]`: The unique identifier of product
-  - `[ProductRevisionId <String>]`: The unique identifier of productRevision
-  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
-  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
-  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
+INPUTOBJECT \<IWindowsUpdatesIdentity\>: Identity Parameter
+  \[ApplicableContentCatalogEntryId \<String\>\]: The unique identifier of applicableContent
+  \[ApplicableContentDeviceMatchDeviceId \<String\>\]: The unique identifier of applicableContentDeviceMatch
+  \[CatalogEntryId \<String\>\]: The unique identifier of catalogEntry
+  \[CatalogId \<String\>\]: Usage: catalogID='{catalogID}'
+  \[ComplianceChangeId \<String\>\]: The unique identifier of complianceChange
+  \[DaysInPast \<Int32?\>\]: Usage: daysInPast={daysInPast}
+  \[DeploymentId \<String\>\]: The unique identifier of deployment
+  \[EditionId \<String\>\]: The unique identifier of edition
+  \[KbNumber \<Int32?\>\]: Usage: kbNumber={kbNumber}
+  \[KnownIssueId \<String\>\]: The unique identifier of knownIssue
+  \[ProductId \<String\>\]: The unique identifier of product
+  \[ProductRevisionId \<String\>\]: The unique identifier of productRevision
+  \[ResourceConnectionId \<String\>\]: The unique identifier of resourceConnection
+  \[UpdatableAssetId \<String\>\]: The unique identifier of updatableAsset
+  \[UpdatePolicyId \<String\>\]: The unique identifier of updatePolicy
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesupdatableassetmemberbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesupdatableassetmemberbyid)
 
 [https://learn.microsoft.com/graph/api/windowsupdates-updatableassetgroup-removemembersbyid?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-updatableassetgroup-removemembersbyid?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

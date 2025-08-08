@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstenantstatus
 schema: 2.0.0
-ms.subservice: entra-global-secure-access
 ---
 
 # Get-MgBetaNetworkAccessTenantStatus
@@ -15,7 +14,7 @@ Retrieve the onboarding status of a specific tenant.
 
 ```
 Get-MgBetaNetworkAccessTenantStatus [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -23,17 +22,13 @@ Get-MgBetaNetworkAccessTenantStatus [-ExpandProperty <String[]>] [-Property <Str
 Retrieve the onboarding status of a specific tenant.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.NetworkAccess
+```
 
 Get-MgBetaNetworkAccessTenantStatus
-
-```
-This example shows how to use the Get-MgBetaNetworkAccessTenantStatus Cmdlet.
-
 
 ## PARAMETERS
 
@@ -64,6 +59,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -113,26 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstenantstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstenantstatus)
 
 [https://learn.microsoft.com/graph/api/networkaccess-tenantstatus-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-tenantstatus-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

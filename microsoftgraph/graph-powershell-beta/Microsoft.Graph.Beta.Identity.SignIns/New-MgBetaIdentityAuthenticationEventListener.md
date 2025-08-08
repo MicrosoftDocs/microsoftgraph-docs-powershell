@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaIdentityAuthenticationEventListener
@@ -12,9 +11,6 @@ ms.subservice: entra-sign-in
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityAuthenticationEventListener?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,13 +18,13 @@ You can create one of the following subtypes that are derived from authenticatio
 New-MgBetaIdentityAuthenticationEventListener [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AuthenticationEventsFlowId <String>]
  [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Id <String>] [-Priority <Int32>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaIdentityAuthenticationEventListener -BodyParameter <IMicrosoftGraphAuthenticationEventListener>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,20 +32,12 @@ New-MgBetaIdentityAuthenticationEventListener -BodyParameter <IMicrosoftGraphAut
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EventListener.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EventListener.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create an onTokenIssuanceStartListener object
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartListener"
@@ -74,14 +62,10 @@ $params = @{
 
 New-MgBetaIdentityAuthenticationEventListener -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create an ontokenissuancestartlistener object
-
-### Example 2: Create an onAttributeCollectionStartListener object
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onAttributeCollectionStartListener"
@@ -106,14 +90,10 @@ $params = @{
 
 New-MgBetaIdentityAuthenticationEventListener -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create an onattributecollectionstartlistener object
-
-### Example 3: Create an onAttributeCollectionSubmitListener object
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onAttributeCollectionSubmitListener"
@@ -137,10 +117,6 @@ $params = @{
 }
 
 New-MgBetaIdentityAuthenticationEventListener -BodyParameter $params
-
-```
-This example will create an onattributecollectionsubmitlistener object
-
 
 ## PARAMETERS
 
@@ -206,21 +182,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -268,6 +229,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -275,6 +251,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -315,56 +306,34 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationEventListener>`: authenticationEventListener
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAuthenticationEventListener\>: authenticationEventListener
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AuthenticationEventsFlowId <String>]`: The identifier of the authenticationEventsFlow object.
-  - `[Conditions <IMicrosoftGraphAuthenticationConditions>]`: authenticationConditions
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Applications <IMicrosoftGraphAuthenticationConditionsApplications>]`: authenticationConditionsApplications
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IncludeAllApplications <Boolean?>]`: Whether the custom authentication extension should trigger for all applications with appIds specified in the includeApplications relationship.
+  \[AuthenticationEventsFlowId \<String\>\]: The identifier of the authenticationEventsFlow object.
+  \[Conditions \<IMicrosoftGraphAuthenticationConditions\>\]: authenticationConditions
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Applications \<IMicrosoftGraphAuthenticationConditionsApplications\>\]: authenticationConditionsApplications
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[IncludeAllApplications \<Boolean?\>\]: Whether the custom authentication extension should trigger for all applications with appIds specified in the includeApplications relationship.
 This property must be set to false for listener of type onTokenIssuanceStartListener.
-      - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication- `[]`>]`: 
-        - `[AppId <String>]`: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
-  - `[Priority <Int32?>]`: The priority of this handler.
+      \[IncludeApplications \<IMicrosoftGraphAuthenticationConditionApplication\[\]\>\]: 
+        \[AppId \<String\>\]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
+  \[Priority \<Int32?\>\]: The priority of this handler.
 Between 0 (lower priority) and 1000 (higher priority).
 
-CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Applications <IMicrosoftGraphAuthenticationConditionsApplications>]`: authenticationConditionsApplications
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IncludeAllApplications <Boolean?>]`: Whether the custom authentication extension should trigger for all applications with appIds specified in the includeApplications relationship.
+CONDITIONS \<IMicrosoftGraphAuthenticationConditions\>: authenticationConditions
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Applications \<IMicrosoftGraphAuthenticationConditionsApplications\>\]: authenticationConditionsApplications
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IncludeAllApplications \<Boolean?\>\]: Whether the custom authentication extension should trigger for all applications with appIds specified in the includeApplications relationship.
 This property must be set to false for listener of type onTokenIssuanceStartListener.
-    - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication- `[]`>]`: 
-      - `[AppId <String>]`: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
+    \[IncludeApplications \<IMicrosoftGraphAuthenticationConditionApplication\[\]\>\]: 
+      \[AppId \<String\>\]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

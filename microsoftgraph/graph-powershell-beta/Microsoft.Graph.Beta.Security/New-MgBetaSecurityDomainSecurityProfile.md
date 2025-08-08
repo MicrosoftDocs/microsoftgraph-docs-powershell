@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydomainsecurityprofile
@@ -20,13 +20,13 @@ New-MgBetaSecurityDomainSecurityProfile [-ResponseHeadersVariable <String>] [-Ac
  [-DomainRegisteredDateTime <DateTime>] [-FirstSeenDateTime <DateTime>] [-Id <String>]
  [-LastSeenDateTime <DateTime>] [-Name <String>] [-Registrant <IMicrosoftGraphDomainRegistrant>]
  [-RiskScore <String>] [-Tags <String[]>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityDomainSecurityProfile -BodyParameter <IMicrosoftGraphDomainSecurityProfile>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,10 +35,20 @@ Create new navigation property to domainSecurityProfiles for security
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -ActivityGroupNames
-
+.
 
 ```yaml
 Type: String[]
@@ -68,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureSubscriptionId
-
+.
 
 ```yaml
 Type: String
@@ -83,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureTenantId
-
+.
 
 ```yaml
 Type: String
@@ -113,23 +123,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -CountHits
-
+.
 
 ```yaml
 Type: Int32
@@ -144,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -CountInOrg
-
+.
 
 ```yaml
 Type: Int32
@@ -159,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainCategories
-
+.
 To construct, see NOTES section for DOMAINCATEGORIES properties and create a hash table.
 
 ```yaml
@@ -175,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainRegisteredDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -190,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirstSeenDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -236,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastSeenDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -251,12 +246,27 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-
+.
 
 ```yaml
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -297,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -RiskScore
-
+.
 
 ```yaml
 Type: String
@@ -312,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-
+.
 
 ```yaml
 Type: String[]
@@ -334,6 +344,21 @@ To construct, see NOTES section for VENDORINFORMATION properties and create a ha
 Type: IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -374,85 +399,62 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDomainSecurityProfile>`: domainSecurityProfile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDomainSecurityProfile\>: domainSecurityProfile
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActivityGroupNames <String- `[]`>]`: 
-  - `[AzureSubscriptionId <String>]`: 
-  - `[AzureTenantId <String>]`: 
-  - `[CountHits <Int32?>]`: 
-  - `[CountInOrg <Int32?>]`: 
-  - `[DomainCategories <IMicrosoftGraphReputationCategory- `[]`>]`: 
-    - `[Description <String>]`: 
-    - `[Name <String>]`: 
-    - `[Vendor <String>]`: 
-  - `[DomainRegisteredDateTime <DateTime?>]`: 
-  - `[FirstSeenDateTime <DateTime?>]`: 
-  - `[LastSeenDateTime <DateTime?>]`: 
-  - `[Name <String>]`: 
-  - `[Registrant <IMicrosoftGraphDomainRegistrant>]`: domainRegistrant
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CountryOrRegionCode <String>]`: 
-    - `[Organization <String>]`: 
-    - `[Url <String>]`: 
-    - `[Vendor <String>]`: 
-  - `[RiskScore <String>]`: 
-  - `[Tags <String- `[]`>]`: 
-  - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+  \[ActivityGroupNames \<String\[\]\>\]: 
+  \[AzureSubscriptionId \<String\>\]: 
+  \[AzureTenantId \<String\>\]: 
+  \[CountHits \<Int32?\>\]: 
+  \[CountInOrg \<Int32?\>\]: 
+  \[DomainCategories \<IMicrosoftGraphReputationCategory\[\]\>\]: 
+    \[Description \<String\>\]: 
+    \[Name \<String\>\]: 
+    \[Vendor \<String\>\]: 
+  \[DomainRegisteredDateTime \<DateTime?\>\]: 
+  \[FirstSeenDateTime \<DateTime?\>\]: 
+  \[LastSeenDateTime \<DateTime?\>\]: 
+  \[Name \<String\>\]: 
+  \[Registrant \<IMicrosoftGraphDomainRegistrant\>\]: domainRegistrant
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CountryOrRegionCode \<String\>\]: 
+    \[Organization \<String\>\]: 
+    \[Url \<String\>\]: 
+    \[Vendor \<String\>\]: 
+  \[RiskScore \<String\>\]: 
+  \[Tags \<String\[\]\>\]: 
+  \[VendorInformation \<IMicrosoftGraphSecurityVendorInformation\>\]: securityVendorInformation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+    \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+    \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+    \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-DOMAINCATEGORIES `<IMicrosoftGraphReputationCategory- `[]`>`: .
-  - `[Description <String>]`: 
-  - `[Name <String>]`: 
-  - `[Vendor <String>]`: 
+DOMAINCATEGORIES \<IMicrosoftGraphReputationCategory\[\]\>: .
+  \[Description \<String\>\]: 
+  \[Name \<String\>\]: 
+  \[Vendor \<String\>\]: 
 
-REGISTRANT `<IMicrosoftGraphDomainRegistrant>`: domainRegistrant
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CountryOrRegionCode <String>]`: 
-  - `[Organization <String>]`: 
-  - `[Url <String>]`: 
-  - `[Vendor <String>]`: 
+REGISTRANT \<IMicrosoftGraphDomainRegistrant\>: domainRegistrant
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CountryOrRegionCode \<String\>\]: 
+  \[Organization \<String\>\]: 
+  \[Url \<String\>\]: 
+  \[Vendor \<String\>\]: 
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+VENDORINFORMATION \<IMicrosoftGraphSecurityVendorInformation\>: securityVendorInformation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+  \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-  - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+  \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+  \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydomainsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydomainsecurityprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdeviceappperformance
@@ -20,20 +20,30 @@ New-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance [-ResponseHeadersV
  [-DeviceName <String>] [-HealthStatus <String>] [-Id <String>] [-IsLatestUsedVersion <Int32>]
  [-IsMostUsedVersion <Int32>] [-LastUpdatedDateTime <DateTime>] [-TenantDisplayName <String>]
  [-TenantId <String>] [-TotalAppCrashCount <Int32>] [-TotalAppFreezeCount <Int32>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance
  -BodyParameter <IMicrosoftGraphManagedTenantsDeviceAppPerformance> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceAppPerformances for tenantRelationships
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -53,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppFriendlyName
-
+.
 
 ```yaml
 Type: String
@@ -68,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppName
-
+.
 
 ```yaml
 Type: String
@@ -83,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppPublisher
-
+.
 
 ```yaml
 Type: String
@@ -98,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppVersion
-
+.
 
 ```yaml
 Type: String
@@ -128,23 +138,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DeviceId
-
+.
 
 ```yaml
 Type: String
@@ -159,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceManufacturer
-
+.
 
 ```yaml
 Type: String
@@ -174,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceModel
-
+.
 
 ```yaml
 Type: String
@@ -189,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-
+.
 
 ```yaml
 Type: String
@@ -219,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthStatus
-
+.
 
 ```yaml
 Type: String
@@ -250,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsLatestUsedVersion
-
+.
 
 ```yaml
 Type: Int32
@@ -265,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsMostUsedVersion
-
+.
 
 ```yaml
 Type: Int32
@@ -280,12 +275,27 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedDateTime
-
+.
 
 ```yaml
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -310,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantDisplayName
-
+.
 
 ```yaml
 Type: String
@@ -325,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-
+.
 
 ```yaml
 Type: String
@@ -340,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalAppCrashCount
-
+.
 
 ```yaml
 Type: Int32
@@ -355,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalAppFreezeCount
-
+.
 
 ```yaml
 Type: Int32
@@ -365,6 +375,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -401,51 +426,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsDeviceAppPerformance>`: deviceAppPerformance
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsDeviceAppPerformance\>: deviceAppPerformance
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AppFriendlyName <String>]`: 
-  - `[AppName <String>]`: 
-  - `[AppPublisher <String>]`: 
-  - `[AppVersion <String>]`: 
-  - `[DeviceId <String>]`: 
-  - `[DeviceManufacturer <String>]`: 
-  - `[DeviceModel <String>]`: 
-  - `[DeviceName <String>]`: 
-  - `[HealthStatus <String>]`: 
-  - `[IsLatestUsedVersion <Int32?>]`: 
-  - `[IsMostUsedVersion <Int32?>]`: 
-  - `[LastUpdatedDateTime <DateTime?>]`: 
-  - `[TenantDisplayName <String>]`: 
-  - `[TenantId <String>]`: 
-  - `[TotalAppCrashCount <Int32?>]`: 
-  - `[TotalAppFreezeCount <Int32?>]`:
+  \[AppFriendlyName \<String\>\]: 
+  \[AppName \<String\>\]: 
+  \[AppPublisher \<String\>\]: 
+  \[AppVersion \<String\>\]: 
+  \[DeviceId \<String\>\]: 
+  \[DeviceManufacturer \<String\>\]: 
+  \[DeviceModel \<String\>\]: 
+  \[DeviceName \<String\>\]: 
+  \[HealthStatus \<String\>\]: 
+  \[IsLatestUsedVersion \<Int32?\>\]: 
+  \[IsMostUsedVersion \<Int32?\>\]: 
+  \[LastUpdatedDateTime \<DateTime?\>\]: 
+  \[TenantDisplayName \<String\>\]: 
+  \[TenantId \<String\>\]: 
+  \[TotalAppCrashCount \<Int32?\>\]: 
+  \[TotalAppFreezeCount \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdeviceappperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdeviceappperformance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportcloudpkileafcertificatesummaryreport
@@ -16,7 +16,7 @@ Invoke action retrieveCloudPkiLeafCertificateSummaryReport
 ```
 Get-MgBetaDeviceManagementReportCloudPkiLeafCertificateSummaryReport -OutFile <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CertificationAuthorityId <String>]
- [-Property <String[]>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-Property <String[]>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Get-MgBetaDeviceManagementReportCloudPkiLeafCertificateSummaryReport -OutFile <S
 ```
 Get-MgBetaDeviceManagementReportCloudPkiLeafCertificateSummaryReport -OutFile <String>
  -Body <IPaths6Kr53MDevicemanagementReportsMicrosoftGraphRetrievecloudpkileafcertificatesummaryreportPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,6 +32,16 @@ Get-MgBetaDeviceManagementReportCloudPkiLeafCertificateSummaryReport -OutFile <S
 Invoke action retrieveCloudPkiLeafCertificateSummaryReport
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -51,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Body
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -67,27 +77,12 @@ Accept wildcard characters: False
 ```
 
 ### -CertificationAuthorityId
-
+.
 
 ```yaml
 Type: String
 Parameter Sets: RetrieveExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -141,8 +136,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Property
+### -ProgressAction
+{{ Fill ProgressAction Description }}
 
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Property
+.
 
 ```yaml
 Type: String[]
@@ -163,6 +173,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -203,35 +228,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths6Kr53MDevicemanagementReportsMicrosoftGraphRetrievecloudpkileafcertificatesummaryreportPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CertificationAuthorityId <String>]`: 
-  - `[Select <String- `[]`>]`:
+BODY \<IPaths6Kr53MDevicemanagementReportsMicrosoftGraphRetrievecloudpkileafcertificatesummaryreportPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CertificationAuthorityId \<String\>\]: 
+  \[Select \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportcloudpkileafcertificatesummaryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportcloudpkileafcertificatesummaryreport)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

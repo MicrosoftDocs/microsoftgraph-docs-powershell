@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycloudappsecurityprofile
@@ -21,13 +21,13 @@ New-MgBetaSecurityCloudAppSecurityProfile [-ResponseHeadersVariable <String>]
  [-PermissionsRequired <String>] [-Platform <String>] [-PolicyName <String>] [-Publisher <String>]
  [-RiskScore <String>] [-Tags <String[]>] [-Type <String>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityCloudAppSecurityProfile -BodyParameter <IMicrosoftGraphCloudAppSecurityProfile>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,6 +35,16 @@ New-MgBetaSecurityCloudAppSecurityProfile -BodyParameter <IMicrosoftGraphCloudAp
 Create new navigation property to cloudAppSecurityProfiles for security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -54,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureSubscriptionId
-
+.
 
 ```yaml
 Type: String
@@ -69,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureTenantId
-
+.
 
 ```yaml
 Type: String
@@ -99,23 +109,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -CreatedDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -130,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeploymentPackageUrl
-
+.
 
 ```yaml
 Type: String
@@ -145,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationServiceName
-
+.
 
 ```yaml
 Type: String
@@ -191,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsSigned
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -206,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -221,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Manifest
-
+.
 
 ```yaml
 Type: String
@@ -236,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-
+.
 
 ```yaml
 Type: String
@@ -266,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -Platform
-
+.
 
 ```yaml
 Type: String
@@ -281,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyName
-
+.
 
 ```yaml
 Type: String
@@ -295,8 +290,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Publisher
+### -ProgressAction
+{{ Fill ProgressAction Description }}
 
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Publisher
+.
 
 ```yaml
 Type: String
@@ -326,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -RiskScore
-
+.
 
 ```yaml
 Type: String
@@ -341,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-
+.
 
 ```yaml
 Type: String[]
@@ -356,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-
+.
 
 ```yaml
 Type: String
@@ -378,6 +388,21 @@ To construct, see NOTES section for VENDORINFORMATION properties and create a ha
 Type: IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -418,68 +443,45 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudAppSecurityProfile>`: cloudAppSecurityProfile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphCloudAppSecurityProfile\>: cloudAppSecurityProfile
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AzureSubscriptionId <String>]`: 
-  - `[AzureTenantId <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DeploymentPackageUrl <String>]`: 
-  - `[DestinationServiceName <String>]`: 
-  - `[IsSigned <Boolean?>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[Manifest <String>]`: 
-  - `[Name <String>]`: 
-  - `[PermissionsRequired <String>]`: applicationPermissionsRequired
-  - `[Platform <String>]`: 
-  - `[PolicyName <String>]`: 
-  - `[Publisher <String>]`: 
-  - `[RiskScore <String>]`: 
-  - `[Tags <String- `[]`>]`: 
-  - `[Type <String>]`: 
-  - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+  \[AzureSubscriptionId \<String\>\]: 
+  \[AzureTenantId \<String\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[DeploymentPackageUrl \<String\>\]: 
+  \[DestinationServiceName \<String\>\]: 
+  \[IsSigned \<Boolean?\>\]: 
+  \[LastModifiedDateTime \<DateTime?\>\]: 
+  \[Manifest \<String\>\]: 
+  \[Name \<String\>\]: 
+  \[PermissionsRequired \<String\>\]: applicationPermissionsRequired
+  \[Platform \<String\>\]: 
+  \[PolicyName \<String\>\]: 
+  \[Publisher \<String\>\]: 
+  \[RiskScore \<String\>\]: 
+  \[Tags \<String\[\]\>\]: 
+  \[Type \<String\>\]: 
+  \[VendorInformation \<IMicrosoftGraphSecurityVendorInformation\>\]: securityVendorInformation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+    \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+    \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+    \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+VENDORINFORMATION \<IMicrosoftGraphSecurityVendorInformation\>: securityVendorInformation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+  \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-  - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+  \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+  \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycloudappsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycloudappsecurityprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

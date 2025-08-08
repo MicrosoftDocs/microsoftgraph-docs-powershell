@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessconnectivitybranchforwardingprofilepolicy
@@ -16,7 +16,7 @@ Delete navigation property policies for networkAccess
 ```
 Remove-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy -BranchSiteId <String>
  -ForwardingProfileId <String> -PolicyLinkId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,13 +24,23 @@ Remove-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy -BranchSiteI
 ```
 Remove-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy -InputObject <INetworkAccessIdentity>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property policies for networkAccess
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -43,21 +53,6 @@ Parameter Sets: Delete
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -155,6 +150,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -162,6 +172,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -202,51 +227,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
-  - `[ActivityPivotDateTime <DateTime?>]`: Usage: activityPivotDateTime={activityPivotDateTime}
-  - `[AggregatedBy <String>]`: Usage: aggregatedBy='{aggregatedBy}'
-  - `[AlertId <String>]`: The unique identifier of alert
-  - `[BranchSiteId <String>]`: The unique identifier of branchSite
-  - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
-  - `[ConnectivityConfigurationLinkId <String>]`: The unique identifier of connectivityConfigurationLink
-  - `[DeviceLinkId <String>]`: The unique identifier of deviceLink
-  - `[DiscoveryPivotDateTime <DateTime?>]`: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
-  - `[FilteringPolicyId <String>]`: The unique identifier of filteringPolicy
-  - `[FilteringProfileId <String>]`: The unique identifier of filteringProfile
-  - `[ForwardingPolicyId <String>]`: The unique identifier of forwardingPolicy
-  - `[ForwardingProfileId <String>]`: The unique identifier of forwardingProfile
-  - `[NetworkAccessTrafficTransactionId <String>]`: The unique identifier of networkAccessTraffic
-  - `[PolicyLinkId <String>]`: The unique identifier of policyLink
-  - `[PolicyRuleId <String>]`: The unique identifier of policyRule
-  - `[RemoteNetworkHealthEventId <String>]`: The unique identifier of remoteNetworkHealthEvent
-  - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+INPUTOBJECT \<INetworkAccessIdentity\>: Identity Parameter
+  \[ActivityPivotDateTime \<DateTime?\>\]: Usage: activityPivotDateTime={activityPivotDateTime}
+  \[AggregatedBy \<String\>\]: Usage: aggregatedBy='{aggregatedBy}'
+  \[AlertId \<String\>\]: The unique identifier of alert
+  \[BranchSiteId \<String\>\]: The unique identifier of branchSite
+  \[ConditionalAccessPolicyId \<String\>\]: The unique identifier of conditionalAccessPolicy
+  \[ConnectionId \<String\>\]: The unique identifier of connection
+  \[ConnectivityConfigurationLinkId \<String\>\]: The unique identifier of connectivityConfigurationLink
+  \[DeviceLinkId \<String\>\]: The unique identifier of deviceLink
+  \[DiscoveryPivotDateTime \<DateTime?\>\]: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
+  \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FilteringPolicyId \<String\>\]: The unique identifier of filteringPolicy
+  \[FilteringProfileId \<String\>\]: The unique identifier of filteringProfile
+  \[ForwardingPolicyId \<String\>\]: The unique identifier of forwardingPolicy
+  \[ForwardingProfileId \<String\>\]: The unique identifier of forwardingProfile
+  \[NetworkAccessTrafficTransactionId \<String\>\]: The unique identifier of networkAccessTraffic
+  \[PolicyLinkId \<String\>\]: The unique identifier of policyLink
+  \[PolicyRuleId \<String\>\]: The unique identifier of policyRule
+  \[RemoteNetworkHealthEventId \<String\>\]: The unique identifier of remoteNetworkHealthEvent
+  \[RemoteNetworkId \<String\>\]: The unique identifier of remoteNetwork
+  \[StartDateTime \<DateTime?\>\]: Usage: startDateTime={startDateTime}
+  \[ThreatIntelligencePolicyId \<String\>\]: The unique identifier of threatIntelligencePolicy
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessconnectivitybranchforwardingprofilepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessconnectivitybranchforwardingprofilepolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

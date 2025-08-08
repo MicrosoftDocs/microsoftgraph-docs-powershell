@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescore
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to secureScores for security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecuritySecureScore](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySecureScore?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,19 +19,29 @@ New-MgBetaSecuritySecureScore [-ResponseHeadersVariable <String>] [-ActiveUserCo
  [-AzureTenantId <String>] [-ControlScores <IMicrosoftGraphControlScore[]>] [-CreatedDateTime <DateTime>]
  [-CurrentScore <Double>] [-EnabledServices <String[]>] [-Id <String>] [-LicensedUserCount <Int32>]
  [-MaxScore <Double>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecuritySecureScore -BodyParameter <IMicrosoftGraphSecureScore> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to secureScores for security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -112,21 +119,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -252,6 +244,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -275,6 +282,21 @@ To construct, see NOTES section for VENDORINFORMATION properties and create a ha
 Type: IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -315,77 +337,54 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AVERAGECOMPARATIVESCORES `<IMicrosoftGraphAverageComparativeScore- `[]`>`: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
-  - `[AverageScore <Double?>]`: Average score within a specified basis.
-  - `[Basis <String>]`: Scope type (by AllTenants, TotalSeats, IndustryTypes).
+AVERAGECOMPARATIVESCORES \<IMicrosoftGraphAverageComparativeScore\[\]\>: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
+  \[AverageScore \<Double?\>\]: Average score within a specified basis.
+  \[Basis \<String\>\]: Scope type (by AllTenants, TotalSeats, IndustryTypes).
 
-BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphSecureScore\>: secureScore
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActiveUserCount <Int32?>]`: Active user count of the given tenant.
-  - `[AverageComparativeScores <IMicrosoftGraphAverageComparativeScore- `[]`>]`: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
-    - `[AverageScore <Double?>]`: Average score within a specified basis.
-    - `[Basis <String>]`: Scope type (by AllTenants, TotalSeats, IndustryTypes).
-  - `[AzureTenantId <String>]`: GUID string for tenant ID.
-  - `[ControlScores <IMicrosoftGraphControlScore- `[]`>]`: Contains tenant scores for a set of controls.
-    - `[ControlCategory <String>]`: Control action category (Identity, Data, Device, Apps, Infrastructure).
-    - `[ControlName <String>]`: Control unique name
-    - `[Description <String>]`: Description of the control.
-    - `[Score <Double?>]`: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
-  - `[CreatedDateTime <DateTime?>]`: When the report was created.
-  - `[CurrentScore <Double?>]`: Tenant current attained score on specified date.
-  - `[EnabledServices <String- `[]`>]`: Microsoft-provided services for the tenant (for example, Exchange online, Skype, SharePoint).
-  - `[LicensedUserCount <Int32?>]`: Licensed user count of the given tenant.
-  - `[MaxScore <Double?>]`: Tenant maximum possible score on specified date.
-  - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+  \[ActiveUserCount \<Int32?\>\]: Active user count of the given tenant.
+  \[AverageComparativeScores \<IMicrosoftGraphAverageComparativeScore\[\]\>\]: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
+    \[AverageScore \<Double?\>\]: Average score within a specified basis.
+    \[Basis \<String\>\]: Scope type (by AllTenants, TotalSeats, IndustryTypes).
+  \[AzureTenantId \<String\>\]: GUID string for tenant ID.
+  \[ControlScores \<IMicrosoftGraphControlScore\[\]\>\]: Contains tenant scores for a set of controls.
+    \[ControlCategory \<String\>\]: Control action category (Identity, Data, Device, Apps, Infrastructure).
+    \[ControlName \<String\>\]: Control unique name
+    \[Description \<String\>\]: Description of the control.
+    \[Score \<Double?\>\]: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
+  \[CreatedDateTime \<DateTime?\>\]: When the report was created.
+  \[CurrentScore \<Double?\>\]: Tenant current attained score on specified date.
+  \[EnabledServices \<String\[\]\>\]: Microsoft-provided services for the tenant (for example, Exchange online, Skype, SharePoint).
+  \[LicensedUserCount \<Int32?\>\]: Licensed user count of the given tenant.
+  \[MaxScore \<Double?\>\]: Tenant maximum possible score on specified date.
+  \[VendorInformation \<IMicrosoftGraphSecurityVendorInformation\>\]: securityVendorInformation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+    \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+    \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+    \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-CONTROLSCORES `<IMicrosoftGraphControlScore- `[]`>`: Contains tenant scores for a set of controls.
-  - `[ControlCategory <String>]`: Control action category (Identity, Data, Device, Apps, Infrastructure).
-  - `[ControlName <String>]`: Control unique name
-  - `[Description <String>]`: Description of the control.
-  - `[Score <Double?>]`: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
+CONTROLSCORES \<IMicrosoftGraphControlScore\[\]\>: Contains tenant scores for a set of controls.
+  \[ControlCategory \<String\>\]: Control action category (Identity, Data, Device, Apps, Infrastructure).
+  \[ControlName \<String\>\]: Control unique name
+  \[Description \<String\>\]: Description of the control.
+  \[Score \<Double?\>\]: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+VENDORINFORMATION \<IMicrosoftGraphSecurityVendorInformation\>: securityVendorInformation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+  \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-  - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+  \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+  \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescore)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

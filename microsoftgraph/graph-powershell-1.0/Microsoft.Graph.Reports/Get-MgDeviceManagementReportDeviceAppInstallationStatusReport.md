@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportdeviceappinstallationstatusreport
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action retrieveDeviceAppInstallationStatusReport
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportDeviceAppInstallationStatusReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportDeviceAppInstallationStatusReport?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### RetrieveExpanded (Default)
@@ -21,14 +18,14 @@ Get-MgDeviceManagementReportDeviceAppInstallationStatusReport -OutFile <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Filter <String>]
  [-GroupBy <String[]>] [-Name <String>] [-Property <String[]>] [-Search <String>] [-SessionId <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Retrieve
 ```
 Get-MgDeviceManagementReportDeviceAppInstallationStatusReport -OutFile <String>
  -Body <IPaths1Bog3HuDevicemanagementReportsMicrosoftGraphRetrievedeviceappinstallationstatusreportPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,6 +33,16 @@ Get-MgDeviceManagementReportDeviceAppInstallationStatusReport -OutFile <String>
 Invoke action retrieveDeviceAppInstallationStatusReport
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -55,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -Body
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -70,23 +77,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Filter
-
+.
 
 ```yaml
 Type: String
@@ -101,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupBy
-
+.
 
 ```yaml
 Type: String[]
@@ -131,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-
+.
 
 ```yaml
 Type: String
@@ -175,8 +167,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Property
+### -ProgressAction
+{{ Fill ProgressAction Description }}
 
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Property
+.
 
 ```yaml
 Type: String[]
@@ -206,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Search
-
+.
 
 ```yaml
 Type: String
@@ -221,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionId
-
+.
 
 ```yaml
 Type: String
@@ -235,23 +242,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-
-
-```yaml
-Type: Int32
-Parameter Sets: RetrieveExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
-
+.
 
 ```yaml
 Type: String[]
@@ -266,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-
+.
 
 ```yaml
 Type: Int32
@@ -276,6 +268,21 @@ Aliases: Limit
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -296,6 +303,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+.
+
+```yaml
+Type: Int32
+Parameter Sets: RetrieveExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -312,42 +334,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1Bog3HuDevicemanagementReportsMicrosoftGraphRetrievedeviceappinstallationstatusreportPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Filter <String>]`:
-  - `[GroupBy <String- `[]`>]`:
-  - `[Name <String>]`:
-  - `[OrderBy <String- `[]`>]`:
-  - `[Search <String>]`:
-  - `[Select <String- `[]`>]`:
-  - `[SessionId <String>]`:
-  - `[Skip <Int32?>]`:
-  - `[Top <Int32?>]`:
+BODY \<IPaths1Bog3HuDevicemanagementReportsMicrosoftGraphRetrievedeviceappinstallationstatusreportPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Filter \<String\>\]: 
+  \[GroupBy \<String\[\]\>\]: 
+  \[Name \<String\>\]: 
+  \[OrderBy \<String\[\]\>\]: 
+  \[Search \<String\>\]: 
+  \[Select \<String\[\]\>\]: 
+  \[SessionId \<String\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportdeviceappinstallationstatusreport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportdeviceappinstallationstatusreport)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
