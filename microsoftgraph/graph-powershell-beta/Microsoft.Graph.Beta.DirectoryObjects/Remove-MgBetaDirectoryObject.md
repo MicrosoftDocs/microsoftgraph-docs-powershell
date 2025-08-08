@@ -33,18 +33,6 @@ Remove-MgBetaDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete a directory object, for example, a group, user, application, or service principal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -210,6 +198,7 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/remove-mgbetadirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/remove-mgbetadirectoryobject)
 
 [https://learn.microsoft.com/graph/api/directoryobject-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-delete?view=graph-rest-beta)
+
 
 
 

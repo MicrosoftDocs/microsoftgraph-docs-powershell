@@ -62,11 +62,11 @@ Create a new localizedNotificationMessage object.
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.localizedNotificationMessage"
@@ -77,6 +77,10 @@ $params = @{
 }
 
 New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage -NotificationMessageTemplateId $notificationMessageTemplateId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage Cmdlet.
+
 
 ## PARAMETERS
 

@@ -56,18 +56,6 @@ For more information about item retention, see Configure deleted item retention 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Calendars.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CalendarId
@@ -241,6 +229,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendarpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendarpermanent)
 
 [https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-1.0)
+
 
 
 

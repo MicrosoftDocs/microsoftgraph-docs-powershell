@@ -33,18 +33,6 @@ Publish-MgGroupDriveListContentType -InputObject <IFilesIdentity> [-ResponseHead
 ## DESCRIPTION
 Publishes a contentType present in the content type hub site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -246,6 +234,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mggroupdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mggroupdrivelistcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
+
 
 
 

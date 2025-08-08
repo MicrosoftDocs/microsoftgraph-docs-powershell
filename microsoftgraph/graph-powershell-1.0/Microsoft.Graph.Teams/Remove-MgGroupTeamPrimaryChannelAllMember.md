@@ -51,18 +51,6 @@ Remove-MgGroupTeamPrimaryChannelAllMember -InputObject <ITeamsIdentity>
 Remove multiple members from a team in a single request.
 The response provides details about which memberships could and couldn't be removed.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -304,6 +292,7 @@ This property is settable only for members of a chat.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamprimarychannelallmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamprimarychannelallmember)
 
 [https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0)
+
 
 
 

@@ -33,18 +33,6 @@ Find-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject <
 ## DESCRIPTION
 Discover the latest schema definition for provisioning to an application.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryDefinitionId
@@ -242,6 +230,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaserviceprincipalsynchronizationtemplateschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaserviceprincipalsynchronizationtemplateschemadirectory)
 
 [https://learn.microsoft.com/graph/api/synchronization-directorydefinition-discover?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-directorydefinition-discover?view=graph-rest-beta)
+
 
 
 

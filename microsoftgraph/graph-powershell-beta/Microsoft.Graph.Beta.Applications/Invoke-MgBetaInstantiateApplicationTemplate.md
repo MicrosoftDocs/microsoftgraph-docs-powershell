@@ -61,17 +61,21 @@ For non-gallery apps, use an application template with one of the following IDs 
 | Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	displayName = "testProperties"
 }
 
 Invoke-MgBetaInstantiateApplicationTemplate -ApplicationTemplateId $applicationTemplateId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaInstantiateApplicationTemplate Cmdlet.
+
 
 ## PARAMETERS
 

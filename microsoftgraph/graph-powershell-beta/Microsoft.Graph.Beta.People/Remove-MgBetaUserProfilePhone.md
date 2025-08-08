@@ -39,13 +39,17 @@ Delete an itemPhone object from the user's profile.
 | Application | User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 Remove-MgBetaUserProfilePhone -UserId $userId -ItemPhoneId $itemPhoneId
+
+```
+This example shows how to use the Remove-MgBetaUserProfilePhone Cmdlet.
+
 
 ## PARAMETERS
 

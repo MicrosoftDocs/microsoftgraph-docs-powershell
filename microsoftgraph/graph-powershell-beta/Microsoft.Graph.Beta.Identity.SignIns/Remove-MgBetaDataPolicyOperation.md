@@ -32,18 +32,6 @@ Remove-MgBetaDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-IfMat
 ## DESCRIPTION
 Delete entity from dataPolicyOperations
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DataPolicyOperationId
@@ -285,6 +273,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetadatapolicyoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetadatapolicyoperation)
+
 
 
 

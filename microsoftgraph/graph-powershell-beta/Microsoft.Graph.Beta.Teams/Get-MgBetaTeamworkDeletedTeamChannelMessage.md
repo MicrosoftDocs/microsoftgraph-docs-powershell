@@ -58,18 +58,6 @@ Get-MgBetaTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity> [-Expa
 A collection of all the messages in the channel.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -427,6 +415,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessage)
 
 [https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-beta)
+
+
 
 
 

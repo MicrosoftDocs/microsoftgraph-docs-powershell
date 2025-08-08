@@ -51,18 +51,6 @@ Invoke-MgBetaMarkUserChatReadForUser -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Mark a chat as read for a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -354,6 +342,7 @@ This property is read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkuserchatreadforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkuserchatreadforuser)
 
 [https://learn.microsoft.com/graph/api/chat-markchatreadforuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-markchatreadforuser?view=graph-rest-beta)
+
 
 
 

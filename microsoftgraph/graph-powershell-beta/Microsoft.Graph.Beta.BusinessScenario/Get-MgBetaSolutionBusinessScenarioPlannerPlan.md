@@ -58,11 +58,11 @@ If a plannerPlan doesn't exist for the specified target at the time of the reque
 | Application | BusinessScenarioData.Read.OwnedBy, BusinessScenarioData.ReadWrite.OwnedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.BusinessScenario
-```
 
 $params = @{
 	target = @{
@@ -73,6 +73,10 @@ $params = @{
 }
 
 Get-MgBetaSolutionBusinessScenarioPlannerPlan -BusinessScenarioId $businessScenarioId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaSolutionBusinessScenarioPlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 

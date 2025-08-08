@@ -31,18 +31,6 @@ Invoke-MgFollowGroupDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVar
 ## DESCRIPTION
 Follow a driveItem.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -214,6 +202,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowgroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowgroupdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-1.0)
+
 
 
 

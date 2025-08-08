@@ -29,18 +29,6 @@ Remove-MgBetaDeviceManagementComanagedDeviceConfigurationState -InputObject <IDe
 ## DESCRIPTION
 Delete navigation property deviceConfigurationStates for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceConfigurationStateId
@@ -323,6 +311,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementcomanageddeviceconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementcomanageddeviceconfigurationstate)
+
 
 
 

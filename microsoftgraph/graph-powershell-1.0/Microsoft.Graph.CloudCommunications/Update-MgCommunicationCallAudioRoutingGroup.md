@@ -55,11 +55,11 @@ Modify sources and receivers of an audioRoutingGroup.
 | Application | Calls.JoinGroupCall.All, Calls.InitiateGroupCall.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	id = "oneToOne"
@@ -74,6 +74,10 @@ receivers = @(
 }
 
 Update-MgCommunicationCallAudioRoutingGroup -CallId $callId -AudioRoutingGroupId $audioRoutingGroupId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgCommunicationCallAudioRoutingGroup Cmdlet.
+
 
 ## PARAMETERS
 
