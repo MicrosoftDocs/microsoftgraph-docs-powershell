@@ -17,14 +17,14 @@ Trigger action on ConfigurationManager client
 Start-MgBetaDeviceManagementComanagedDeviceConfigurationManagerAction -ManagedDeviceId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ConfigurationManagerAction <IMicrosoftGraphConfigurationManagerAction>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Trigger
 ```
 Start-MgBetaDeviceManagementComanagedDeviceConfigurationManagerAction -ManagedDeviceId <String>
  -BodyParameter <IPathsD4Rzd2DevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,14 +33,14 @@ Start-MgBetaDeviceManagementComanagedDeviceConfigurationManagerAction -ManagedDe
 Start-MgBetaDeviceManagementComanagedDeviceConfigurationManagerAction -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ConfigurationManagerAction <IMicrosoftGraphConfigurationManagerAction>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TriggerViaIdentity
 ```
 Start-MgBetaDeviceManagementComanagedDeviceConfigurationManagerAction -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IPathsD4Rzd2DevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -54,8 +54,6 @@ Trigger action on ConfigurationManager client
 | Delegated (work or school account) | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -98,21 +96,6 @@ To construct, see NOTES section for CONFIGURATIONMANAGERACTION properties and cr
 Type: IMicrosoftGraphConfigurationManagerAction
 Parameter Sets: TriggerExpanded, TriggerViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -182,6 +165,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -189,6 +187,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

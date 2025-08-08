@@ -15,45 +15,62 @@ Create new navigation property to sensitivityLabels for groups
 ### CreateExpanded (Default)
 ```
 New-MgBetaGroupSiteInformationProtectionSensitivityLabel -GroupId <String> -SiteId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ApplicableTo <String>]
- [-ApplicationMode <String>] [-AssignedPolicies <IMicrosoftGraphLabelPolicy[]>]
- [-AutoLabeling <IMicrosoftGraphAutoLabeling>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsDefault] [-IsEndpointProtectionEnabled] [-LabelActions <IMicrosoftGraphLabelActionBase[]>]
- [-Name <String>] [-Priority <Int32>] [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-ActionSource <String>] [-AdditionalProperties <Hashtable>]
+ [-ApplicableTo <String>] [-ApplicationMode <String>] [-AssignedPolicies <IMicrosoftGraphLabelPolicy[]>]
+ [-AutoLabeling <IMicrosoftGraphAutoLabeling>] [-AutoTooltip <String>] [-Color <String>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsDefault] [-IsEnabled]
+ [-IsEndpointProtectionEnabled] [-IsScopedToUser] [-LabelActions <IMicrosoftGraphLabelActionBase[]>]
+ [-Locale <String>] [-Name <String>] [-Priority <Int32>] [-Rights <IMicrosoftGraphUsageRightsIncluded>]
+ [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupSiteInformationProtectionSensitivityLabel -GroupId <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphSensitivityLabel> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaGroupSiteInformationProtectionSensitivityLabel -InputObject <ISitesIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ApplicableTo <String>]
- [-ApplicationMode <String>] [-AssignedPolicies <IMicrosoftGraphLabelPolicy[]>]
- [-AutoLabeling <IMicrosoftGraphAutoLabeling>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsDefault] [-IsEndpointProtectionEnabled] [-LabelActions <IMicrosoftGraphLabelActionBase[]>]
- [-Name <String>] [-Priority <Int32>] [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-ActionSource <String>] [-AdditionalProperties <Hashtable>]
+ [-ApplicableTo <String>] [-ApplicationMode <String>] [-AssignedPolicies <IMicrosoftGraphLabelPolicy[]>]
+ [-AutoLabeling <IMicrosoftGraphAutoLabeling>] [-AutoTooltip <String>] [-Color <String>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsDefault] [-IsEnabled]
+ [-IsEndpointProtectionEnabled] [-IsScopedToUser] [-LabelActions <IMicrosoftGraphLabelActionBase[]>]
+ [-Locale <String>] [-Name <String>] [-Priority <Int32>] [-Rights <IMicrosoftGraphUsageRightsIncluded>]
+ [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupSiteInformationProtectionSensitivityLabel -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphSensitivityLabel> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to sensitivityLabels for groups
 
-## EXAMPLES
-
 ## PARAMETERS
+
+### -ActionSource
+labelActionSource
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -AdditionalProperties
 Additional Parameters
@@ -132,6 +149,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AutoTooltip
+
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -BodyParameter
 sensitivityLabel
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
@@ -148,13 +180,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Color
+
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -270,7 +302,37 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -IsEnabled
+
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -IsEndpointProtectionEnabled
+
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsScopedToUser
 
 
 ```yaml
@@ -291,6 +353,21 @@ To construct, see NOTES section for LABELACTIONS properties and create a hash ta
 
 ```yaml
 Type: IMicrosoftGraphLabelActionBase[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Locale
+
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -331,6 +408,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -338,6 +430,22 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Rights
+usageRightsIncluded
+To construct, see NOTES section for RIGHTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUsageRightsIncluded
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -392,6 +500,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -426,35 +549,48 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 ASSIGNEDPOLICIES `<IMicrosoftGraphLabelPolicy- `[]`>`: .
-  - `[Id <String>]`: 
-  - `[Name <String>]`: 
+  - `[Id <String>]`: The unique identifier of the label policy.
+  - `[Name <String>]`: The display name of the label policy.
 
 AUTOLABELING `<IMicrosoftGraphAutoLabeling>`: autoLabeling
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Message <String>]`: 
-  - `[SensitiveTypeIds <String- `[]`>]`: 
+  - `[Message <String>]`: The message displayed to the user when the label is applied automatically.
+  - `[SensitiveTypeIds <String- `[]`>]`: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
 
 BODYPARAMETER `<IMicrosoftGraphSensitivityLabel>`: sensitivityLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[ActionSource <String>]`: labelActionSource
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
   - `[ApplicationMode <String>]`: applicationMode
   - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
-    - `[Id <String>]`: 
-    - `[Name <String>]`: 
+    - `[Id <String>]`: The unique identifier of the label policy.
+    - `[Name <String>]`: The display name of the label policy.
   - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Message <String>]`: 
-    - `[SensitiveTypeIds <String- `[]`>]`: 
+    - `[Message <String>]`: The message displayed to the user when the label is applied automatically.
+    - `[SensitiveTypeIds <String- `[]`>]`: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
+  - `[AutoTooltip <String>]`: 
+  - `[Color <String>]`: 
   - `[Description <String>]`: 
   - `[DisplayName <String>]`: 
   - `[IsDefault <Boolean?>]`: 
+  - `[IsEnabled <Boolean?>]`: 
   - `[IsEndpointProtectionEnabled <Boolean?>]`: 
+  - `[IsScopedToUser <Boolean?>]`: 
   - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
-    - `[Name <String>]`: 
+    - `[Name <String>]`: The name of the action (for example, 'Encrypt', 'AddHeader').
+  - `[Locale <String>]`: 
   - `[Name <String>]`: 
   - `[Priority <Int32?>]`: 
+  - `[Rights <IMicrosoftGraphUsageRightsIncluded>]`: usageRightsIncluded
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[OwnerEmail <String>]`: The email of owner label rights.
+    - `[UserEmail <String>]`: The email of user with label user rights.
+    - `[Value <String>]`: usageRights
   - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
   - `[ToolTip <String>]`: 
 
@@ -464,6 +600,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+  - `[ContentFormats <String- `[]`>]`: Usage: contentFormats={contentFormats}
   - `[ContentModelId <String>]`: The unique identifier of contentModel
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ContentTypeId1 <String>]`: The unique identifier of contentType
@@ -482,9 +619,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[ItemActivityId <String>]`: The unique identifier of itemActivity
   - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
   - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
+  - `[LabelIds <String- `[]`>]`: Usage: labelIds={labelIds}
   - `[ListId <String>]`: The unique identifier of list
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[Locale <String>]`: Usage: locale='{locale}'
   - `[ModelName <String>]`: Usage: modelName='{modelName}'
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
@@ -516,28 +655,49 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 LABELACTIONS `<IMicrosoftGraphLabelActionBase- `[]`>`: .
-  - `[Name <String>]`: 
+  - `[Name <String>]`: The name of the action (for example, 'Encrypt', 'AddHeader').
+
+RIGHTS `<IMicrosoftGraphUsageRightsIncluded>`: usageRightsIncluded
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[OwnerEmail <String>]`: The email of owner label rights.
+  - `[UserEmail <String>]`: The email of user with label user rights.
+  - `[Value <String>]`: usageRights
 
 SUBLABELS `<IMicrosoftGraphSensitivityLabel- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[ActionSource <String>]`: labelActionSource
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
   - `[ApplicationMode <String>]`: applicationMode
   - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
-    - `[Id <String>]`: 
-    - `[Name <String>]`: 
+    - `[Id <String>]`: The unique identifier of the label policy.
+    - `[Name <String>]`: The display name of the label policy.
   - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Message <String>]`: 
-    - `[SensitiveTypeIds <String- `[]`>]`: 
+    - `[Message <String>]`: The message displayed to the user when the label is applied automatically.
+    - `[SensitiveTypeIds <String- `[]`>]`: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
+  - `[AutoTooltip <String>]`: 
+  - `[Color <String>]`: 
   - `[Description <String>]`: 
   - `[DisplayName <String>]`: 
   - `[IsDefault <Boolean?>]`: 
+  - `[IsEnabled <Boolean?>]`: 
   - `[IsEndpointProtectionEnabled <Boolean?>]`: 
+  - `[IsScopedToUser <Boolean?>]`: 
   - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
-    - `[Name <String>]`: 
+    - `[Name <String>]`: The name of the action (for example, 'Encrypt', 'AddHeader').
+  - `[Locale <String>]`: 
   - `[Name <String>]`: 
   - `[Priority <Int32?>]`: 
+  - `[Rights <IMicrosoftGraphUsageRightsIncluded>]`: usageRightsIncluded
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[OwnerEmail <String>]`: The email of owner label rights.
+    - `[UserEmail <String>]`: The email of user with label user rights.
+    - `[Value <String>]`: usageRights
   - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
   - `[ToolTip <String>]`:
 

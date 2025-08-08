@@ -19,21 +19,19 @@ Update-MgBetaSecurityPartnerSecurityScore [-ResponseHeadersVariable <String>]
  [-CustomerInsights <IMicrosoftGraphPartnerSecurityCustomerInsight[]>]
  [-History <IMicrosoftGraphPartnerSecurityScoreHistory[]>] [-Id <String>] [-LastRefreshDateTime <DateTime>]
  [-MaxScore <Single>] [-Requirements <IMicrosoftGraphPartnerSecurityRequirement[]>]
- [-UpdatedDateTime <DateTime>] [-Headers <IDictionary>] [-WhatIf]
+ [-UpdatedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityPartnerSecurityScore -BodyParameter <IMicrosoftGraphPartnerSecurityScore>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property securityScore in security
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -65,21 +63,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -191,6 +174,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Requirements
 Contains the list of security requirements that make up the score.
 To construct, see NOTES section for REQUIREMENTS properties and create a hash table.
@@ -229,6 +227,21 @@ The last time the security score or related properties changed.
 Type: DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

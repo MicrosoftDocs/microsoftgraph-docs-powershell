@@ -14,14 +14,12 @@ The available entities are IP addresses, devices, and users who access a cloud a
 
 ```
 Get-MgBetaSecurityDataDiscoveryCloudAppDiscovery [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The available entities are IP addresses, devices, and users who access a cloud app.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -52,6 +50,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
