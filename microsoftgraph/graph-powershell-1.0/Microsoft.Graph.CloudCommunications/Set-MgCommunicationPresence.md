@@ -51,7 +51,7 @@ Set the state of a user's presence session as an application.
 ## PARAMETERS
 
 ### -Activity
-.
+
 
 ```yaml
 Type: String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Availability
-.
+
 
 ```yaml
 Type: String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDuration
-.
+
 
 ```yaml
 Type: TimeSpan
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionId
-.
+
 
 ```yaml
 Type: String

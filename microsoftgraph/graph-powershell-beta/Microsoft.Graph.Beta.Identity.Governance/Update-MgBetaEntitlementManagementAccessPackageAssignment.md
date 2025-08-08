@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccessPackageAssignmentRequests
-.
+
 To construct, see NOTES section for ACCESSPACKAGEASSIGNMENTREQUESTS properties and create a hash table.
 
 ```yaml

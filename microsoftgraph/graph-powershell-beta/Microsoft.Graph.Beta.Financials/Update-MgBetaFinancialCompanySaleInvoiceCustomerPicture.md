@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentType
-.
+
 
 ```yaml
 Type: String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Height
-.
+
 
 ```yaml
 Type: Int32
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+
 
 ```yaml
 Type: String
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -Width
-.
+
 
 ```yaml
 Type: Int32

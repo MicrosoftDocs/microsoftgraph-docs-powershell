@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppliesTo
-.
+
 To construct, see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml

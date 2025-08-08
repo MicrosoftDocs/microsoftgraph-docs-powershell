@@ -55,7 +55,7 @@ Create new navigation property to resourceActions for roleManagement
 ## PARAMETERS
 
 ### -ActionVerb
-.
+
 
 ```yaml
 Type: String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthenticationContextId
-.
+
 
 ```yaml
 Type: String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+
 
 ```yaml
 Type: String
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsAuthenticationContextSettable
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-.
+
 
 ```yaml
 Type: String
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceScopeId
-.
+
 
 ```yaml
 Type: String

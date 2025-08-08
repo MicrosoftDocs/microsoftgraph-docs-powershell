@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Body
-.
+
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Requests
-.
+
 To construct, see NOTES section for REQUESTS properties and create a hash table.
 
 ```yaml

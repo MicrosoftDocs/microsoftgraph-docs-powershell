@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsAutoApplyEnabled
-.
+
 
 ```yaml
 Type: SwitchParameter

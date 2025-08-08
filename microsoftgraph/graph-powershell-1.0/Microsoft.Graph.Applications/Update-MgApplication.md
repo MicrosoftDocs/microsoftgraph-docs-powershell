@@ -339,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultRedirectUri
-.
+
 
 ```yaml
 Type: String
@@ -487,7 +487,7 @@ Accept wildcard characters: False
 ```
 
 ### -HomeRealmDiscoveryPolicies
-.
+
 To construct, see NOTES section for HOMEREALMDISCOVERYPOLICIES properties and create a hash table.
 
 ```yaml
@@ -669,7 +669,7 @@ Accept wildcard characters: False
 ```
 
 ### -Oauth2RequirePostResponse
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -991,7 +991,7 @@ Accept wildcard characters: False
 ```
 
 ### -TokenIssuancePolicies
-.
+
 To construct, see NOTES section for TOKENISSUANCEPOLICIES properties and create a hash table.
 
 ```yaml
@@ -1007,7 +1007,7 @@ Accept wildcard characters: False
 ```
 
 ### -TokenLifetimePolicies
-.
+
 To construct, see NOTES section for TOKENLIFETIMEPOLICIES properties and create a hash table.
 
 ```yaml
