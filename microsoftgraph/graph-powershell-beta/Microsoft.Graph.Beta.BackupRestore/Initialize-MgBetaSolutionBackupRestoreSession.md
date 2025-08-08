@@ -35,18 +35,6 @@ Initialize-MgBetaSolutionBackupRestoreSession -InputObject <IBackupRestoreIdenti
 Activate a draft restoreSessionBase object to restore a protection unit.
 The following points apply to restoring a protection unit:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -204,6 +192,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/initialize-mgbetasolutionbackuprestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/initialize-mgbetasolutionbackuprestoresession)
+
 
 
 

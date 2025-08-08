@@ -34,18 +34,6 @@ Initialize-MgSolutionBackupRestoreSession -InputObject <IBackupRestoreIdentity>
 Activate a draft restoreSessionBase object.
 The following points apply to restoring a protection unit:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -205,6 +193,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/initialize-mgsolutionbackuprestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/initialize-mgsolutionbackuprestoresession)
 
 [https://learn.microsoft.com/graph/api/restoresessionbase-activate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/restoresessionbase-activate?view=graph-rest-1.0)
+
 
 
 

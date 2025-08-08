@@ -32,18 +32,6 @@ Lock-MgBetaUserManagedDeviceRemote -InputObject <IDevicesCorporateManagementIden
 ## DESCRIPTION
 Remote lock
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -276,6 +264,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/lock-mgbetausermanageddeviceremote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/lock-mgbetausermanageddeviceremote)
+
 
 
 

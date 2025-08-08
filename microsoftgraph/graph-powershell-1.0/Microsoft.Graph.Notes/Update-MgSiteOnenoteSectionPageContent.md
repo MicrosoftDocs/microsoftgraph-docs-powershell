@@ -50,18 +50,6 @@ Update-MgSiteOnenoteSectionPageContent -InputObject <INotesIdentity>
 ## DESCRIPTION
 Invoke action onenotePatchContent
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -315,6 +303,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mgsiteonenotesectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mgsiteonenotesectionpagecontent)
+
 
 
 

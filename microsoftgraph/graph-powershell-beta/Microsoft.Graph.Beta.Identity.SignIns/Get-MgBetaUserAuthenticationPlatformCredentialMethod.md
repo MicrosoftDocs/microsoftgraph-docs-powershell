@@ -45,18 +45,6 @@ Represents a platform credential instance registered to a user on Mac OS.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -403,6 +391,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationplatformcredentialmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationplatformcredentialmethod)
+
 
 
 

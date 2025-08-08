@@ -33,18 +33,6 @@ Deletes user's qrCodePinAuthenticationMethod object.
 Once the object is deleted, it can't be retrieved.
 The user won't be able to sign-in with any QR codes associated with the deleted object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -288,6 +276,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationqrcodepinmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationqrcodepinmethod)
 
 [https://learn.microsoft.com/graph/api/authentication-delete-qrcodepinmethod?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authentication-delete-qrcodepinmethod?view=graph-rest-beta)
+
 
 
 

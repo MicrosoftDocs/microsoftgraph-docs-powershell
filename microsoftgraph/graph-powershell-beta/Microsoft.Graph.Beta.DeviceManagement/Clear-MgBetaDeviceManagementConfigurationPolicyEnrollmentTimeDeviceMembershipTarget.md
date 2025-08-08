@@ -29,18 +29,6 @@ Clear-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTar
 ## DESCRIPTION
 Invoke action clearEnrollmentTimeDeviceMembershipTarget
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementConfigurationPolicyId
@@ -278,6 +266,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/clear-mgbetadevicemanagementconfigurationpolicyenrollmenttimedevicemembershiptarget](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/clear-mgbetadevicemanagementconfigurationpolicyenrollmenttimedevicemembershiptarget)
+
 
 
 

@@ -29,18 +29,6 @@ Remove-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream -InputObject <
 ## DESCRIPTION
 Delete navigation property uploadedStreams for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudAppDiscoveryReportId
@@ -295,6 +283,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritydatadiscoverycloudappdiscoveryuploadedstream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritydatadiscoverycloudappdiscoveryuploadedstream)
+
 
 
 

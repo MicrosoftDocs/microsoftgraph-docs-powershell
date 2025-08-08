@@ -47,18 +47,6 @@ New-MgBetaWindowsUpdatesDeploymentAudienceApplicableContent -InputObject <IWindo
 ## DESCRIPTION
 Create new navigation property to applicableContent for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -323,6 +311,7 @@ MATCHEDDEVICES `<IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch- `[]`
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesdeploymentaudienceapplicablecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesdeploymentaudienceapplicablecontent)
+
 
 
 

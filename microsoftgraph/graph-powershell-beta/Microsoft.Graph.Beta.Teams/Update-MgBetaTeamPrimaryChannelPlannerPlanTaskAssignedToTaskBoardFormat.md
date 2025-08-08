@@ -48,18 +48,6 @@ Update-MgBetaTeamPrimaryChannelPlannerPlanTaskAssignedToTaskBoardFormat -InputOb
 ## DESCRIPTION
 Update the navigation property assignedToTaskBoardFormat in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -368,6 +356,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelplannerplantaskassignedtotaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelplannerplantaskassignedtotaskboardformat)
+
 
 
 
