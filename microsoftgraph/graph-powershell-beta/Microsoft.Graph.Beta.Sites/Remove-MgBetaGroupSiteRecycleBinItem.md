@@ -12,34 +12,62 @@ Delete navigation property items for groups
 
 ## SYNTAX
 
-### Delete (Default)
+### DeleteExpanded (Default)
+```
+Remove-MgBetaGroupSiteRecycleBinItem -GroupId <String> -SiteId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete1
+```
+Remove-MgBetaGroupSiteRecycleBinItem -GroupId <String> -SiteId <String> [-ResponseHeadersVariable <String>]
+ -BodyParameter <IPathsMjdiljGroupsGroupIdSitesSiteIdRecyclebinItemsMicrosoftGraphDeletePostRequestbodyContentApplicationJsonSchema>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Delete
 ```
 Remove-MgBetaGroupSiteRecycleBinItem -GroupId <String> -RecycleBinItemId <String> -SiteId <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentityExpanded
+```
+Remove-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ -BodyParameter <IPathsMjdiljGroupsGroupIdSitesSiteIdRecyclebinItemsMicrosoftGraphDeletePostRequestbodyContentApplicationJsonSchema>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property items for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: Hashtable
+Parameter Sets: DeleteExpanded, DeleteViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -48,12 +76,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -BodyParameter
+
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPathsMjdiljGroupsGroupIdSitesSiteIdRecyclebinItemsMicrosoftGraphDeletePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Delete1, DeleteViaIdentity1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -GroupId
 The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: DeleteExpanded, Delete1, Delete
 Aliases:
 
 Required: True
@@ -78,12 +122,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Ids
+
+
+```yaml
+Type: String[]
+Parameter Sets: DeleteExpanded, DeleteViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -IfMatch
 ETag
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Delete, DeleteViaIdentity
 Aliases:
 
 Required: False
@@ -99,7 +158,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentityExpanded, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -120,6 +179,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -159,10 +233,25 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: DeleteExpanded, Delete1, Delete
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -190,6 +279,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsMjdiljGroupsGroupIdSitesSiteIdRecyclebinItemsMicrosoftGraphDeletePostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 ### System.Collections.IDictionary
 ## OUTPUTS
@@ -201,12 +291,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER `<IPathsMjdiljGroupsGroupIdSitesSiteIdRecyclebinItemsMicrosoftGraphDeletePostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Ids <String- `[]`>]`: 
+
 INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+  - `[ContentFormats <String- `[]`>]`: Usage: contentFormats={contentFormats}
   - `[ContentModelId <String>]`: The unique identifier of contentModel
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ContentTypeId1 <String>]`: The unique identifier of contentType
@@ -225,9 +320,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[ItemActivityId <String>]`: The unique identifier of itemActivity
   - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
   - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
+  - `[LabelIds <String- `[]`>]`: Usage: labelIds={labelIds}
   - `[ListId <String>]`: The unique identifier of list
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[Locale <String>]`: Usage: locale='{locale}'
   - `[ModelName <String>]`: Usage: modelName='{modelName}'
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation

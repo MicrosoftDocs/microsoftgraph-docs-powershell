@@ -9,11 +9,8 @@ ms.subservice: entra-sign-in
 # Get-MgOrganizationBrandingLocalizationBannerLogo
 
 ## SYNOPSIS
-Retrieve the default organizational branding object, if the Accept-Language header is set to 0 or default.
-If no default organizational branding object exists, this method returns a 404 Not Found error.
-If the Accept-Language header is set to an existing locale identified by the value of its id, this method retrieves the branding for the specified locale.
-This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
-To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
+Read the properties and relationships of an organizationalBrandingLocalization object.
+To retrieve a localization branding object, specify the value of id in the URL.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalizationBannerLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationBannerLogo?view=graph-powershell-beta)
@@ -24,22 +21,19 @@ To retrieve Stream types of the default branding, for example, bannerLogo and ba
 ```
 Get-MgOrganizationBrandingLocalizationBannerLogo -OrganizationId <String>
  -OrganizationalBrandingLocalizationId <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgOrganizationBrandingLocalizationBannerLogo -InputObject <IIdentityDirectoryManagementIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Retrieve the default organizational branding object, if the Accept-Language header is set to 0 or default.
-If no default organizational branding object exists, this method returns a 404 Not Found error.
-If the Accept-Language header is set to an existing locale identified by the value of its id, this method retrieves the branding for the specified locale.
-This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
-To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
+Read the properties and relationships of an organizationalBrandingLocalization object.
+To retrieve a localization branding object, specify the value of id in the URL.
 
 **Permissions**
 
@@ -155,6 +149,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -190,6 +199,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CertificateAuthorityDetailId <String>]`: The unique identifier of certificateAuthorityDetail
+  - `[CertificateBasedAuthPkiId <String>]`: The unique identifier of certificateBasedAuthPki
   - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
   - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
@@ -220,7 +231,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationbannerlogo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationbannerlogo)
 
-[https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-1.0)
 
 
 

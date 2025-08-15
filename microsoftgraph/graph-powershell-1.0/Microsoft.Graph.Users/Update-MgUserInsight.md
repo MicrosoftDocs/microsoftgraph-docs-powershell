@@ -19,14 +19,14 @@ Update the navigation property insights in users
 ```
 Update-MgUserInsight -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-Shared <IMicrosoftGraphSharedInsight[]>] [-Trending <IMicrosoftGraphTrending[]>]
- [-Used <IMicrosoftGraphUsedInsight[]>] [-Headers <IDictionary>] [-WhatIf]
+ [-Used <IMicrosoftGraphUsedInsight[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserInsight -UserId <String> -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,20 +34,18 @@ Update-MgUserInsight -UserId <String> -BodyParameter <Hashtable> [-ResponseHeade
 Update-MgUserInsight -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Shared <IMicrosoftGraphSharedInsight[]>]
  [-Trending <IMicrosoftGraphTrending[]>] [-Used <IMicrosoftGraphUsedInsight[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserInsight -InputObject <IUsersIdentity> -BodyParameter <Hashtable>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property insights in users
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -78,21 +76,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -140,6 +123,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -220,6 +218,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -329,7 +342,7 @@ Not all Media Mime Types are supported.
     - `[Type <String>]`: The item's media type.
 Can be used for filtering for a specific file based on a specific type.
 See the section Type property values for supported types.
-  - `[SharingHistory <IMicrosoftGraphSharingDetail- `[]`>]`:
+  - `[SharingHistory <IMicrosoftGraphSharingDetail- `[]`>]`: 
 
 TRENDING `<IMicrosoftGraphTrending- `[]`>`: Calculated relationship that identifies documents trending around a user.
 Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for work or school and SharePoint.

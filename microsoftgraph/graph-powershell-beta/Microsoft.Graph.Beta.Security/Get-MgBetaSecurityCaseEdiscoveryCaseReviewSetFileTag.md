@@ -18,7 +18,7 @@ Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileTag -EdiscoveryCaseId <String> 
  -EdiscoveryReviewSetId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
@@ -26,14 +26,14 @@ Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileTag -EdiscoveryCaseId <String> 
 Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileTag -EdiscoveryCaseId <String> -EdiscoveryFileId <String>
  -EdiscoveryReviewSetId <String> -EdiscoveryReviewTagId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileTag -InputObject <ISecurityIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,8 +46,6 @@ Tags associated with the file.
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -218,6 +216,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -263,21 +276,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -300,6 +298,21 @@ Show only the first n items
 Type: Int32
 Parameter Sets: List
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -339,6 +352,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
   - `[CloudAppDiscoveryReportId <String>]`: The unique identifier of cloudAppDiscoveryReport
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
+  - `[ContentFormats <String- `[]`>]`: Usage: contentFormats={contentFormats}
   - `[CustomerInsightTenantId <String>]`: The unique identifier of customerInsight
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
@@ -376,8 +390,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[IncidentId <String>]`: The unique identifier of incident
   - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
   - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[LabelIds <String- `[]`>]`: Usage: labelIds={labelIds}
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
+  - `[Locale <String>]`: Usage: locale='{locale}'
   - `[LoginPageId <String>]`: The unique identifier of loginPage
   - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
@@ -392,6 +408,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecurityRequirementId <String>]`: The unique identifier of securityRequirement
   - `[SecurityScoreHistoryId <String>]`: The unique identifier of securityScoreHistory
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun

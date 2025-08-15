@@ -20,13 +20,13 @@ A file is considered active if it has been saved, synced, modified, or shared wi
 ### Get (Default)
 ```
 Get-MgReportOneDriveUsageFileCount -Period <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportOneDriveUsageFileCount -InputObject <IReportsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ A file is considered active if it has been saved, synced, modified, or shared wi
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportOneDriveUsageFileCount -Period $periodId
+Get-MgReportOneDriveUsageFileCount -Period $periodId 
 
 ```
 This example shows how to use the Get-MgReportOneDriveUsageFileCount Cmdlet.
@@ -119,6 +119,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

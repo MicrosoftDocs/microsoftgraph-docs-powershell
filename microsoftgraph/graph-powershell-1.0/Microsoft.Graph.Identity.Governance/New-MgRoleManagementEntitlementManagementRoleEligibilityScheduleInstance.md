@@ -23,20 +23,18 @@ New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance [-Respo
  [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
  [-RoleEligibilityScheduleId <String>] [-StartDateTime <DateTime>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance
  -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to roleEligibilityScheduleInstances for roleManagement
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -103,21 +101,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -251,6 +234,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -328,6 +326,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -365,9 +378,8 @@ APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
-Read-only.
-  - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+Read only.
+  - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
 Read-only.
 
 BODYPARAMETER `<IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>`: unifiedRoleEligibilityScheduleInstance
@@ -377,9 +389,8 @@ BODYPARAMETER `<IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>`: unified
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
-Read-only.
-    - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+Read only.
+    - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
 Read-only.
   - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment or role eligibility is scoped to an app.
 The scope of an assignment or role eligibility determines the set of resources for which the principal has been granted access.
@@ -407,7 +418,7 @@ Read-only.
 Read-only when isBuiltIn is true.
     - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-Required.
+Required. 
 Supports $filter (eq, in).
     - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition- `[]`>]`: Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles (isBuiltIn is true) support this attribute.
@@ -471,7 +482,7 @@ Read-only.
 Read-only when isBuiltIn is true.
   - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-Required.
+Required. 
 Supports $filter (eq, in).
   - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition- `[]`>]`: Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles (isBuiltIn is true) support this attribute.

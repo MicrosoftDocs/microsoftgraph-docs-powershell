@@ -23,14 +23,14 @@ Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId <String> -
  [-ResponseHeadersVariable <String>] [-AdditionalOptions <String>] [-AdditionalProperties <Hashtable>]
  [-CloudAttachmentVersion <String>] [-Description <String>] [-DisplayName <String>] [-DocumentVersion <String>]
  [-ExportCriteria <String>] [-ExportLocation <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Export
 ```
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId <String> -EdiscoverySearchId <String>
  -BodyParameter <IPaths1L5Hy36SecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityExportreportPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,14 +40,14 @@ Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -InputObject <ISecurityIdent
  [-ResponseHeadersVariable <String>] [-AdditionalOptions <String>] [-AdditionalProperties <Hashtable>]
  [-CloudAttachmentVersion <String>] [-Description <String>] [-DisplayName <String>] [-DocumentVersion <String>]
  [-ExportCriteria <String>] [-ExportLocation <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ExportViaIdentity
 ```
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -InputObject <ISecurityIdentity>
  -BodyParameter <IPaths1L5Hy36SecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityExportreportPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -219,21 +219,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Description
 
 
@@ -385,6 +370,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -392,6 +392,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -458,6 +473,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
   - `[CloudAppDiscoveryReportId <String>]`: The unique identifier of cloudAppDiscoveryReport
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
+  - `[ContentFormats <String- `[]`>]`: Usage: contentFormats={contentFormats}
   - `[CustomerInsightTenantId <String>]`: The unique identifier of customerInsight
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
@@ -495,8 +511,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[IncidentId <String>]`: The unique identifier of incident
   - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
   - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[LabelIds <String- `[]`>]`: Usage: labelIds={labelIds}
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
+  - `[Locale <String>]`: Usage: locale='{locale}'
   - `[LoginPageId <String>]`: The unique identifier of loginPage
   - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
@@ -511,6 +529,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecurityRequirementId <String>]`: The unique identifier of securityRequirement
   - `[SecurityScoreHistoryId <String>]`: The unique identifier of securityScoreHistory
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun

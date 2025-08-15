@@ -10,12 +10,10 @@ ms.subservice: teams
 
 ## SYNOPSIS
 Retrieve a callTranscript object associated with a scheduled onlineMeeting.
-This API doesn't support getting call transcripts from channel meetings.
+This API supports the retrieval of call transcripts from private chat meetings and channel meetings.
+However, private channel meetings are not supported at this time.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingTranscriptContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -23,19 +21,20 @@ Retrieving the content of the transcript returns the stream of text associated w
 ```
 Get-MgUserOnlineMeetingTranscriptContent -CallTranscriptId <String> -OnlineMeetingId <String> -UserId <String>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgUserOnlineMeetingTranscriptContent -InputObject <ICloudCommunicationsIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve a callTranscript object associated with a scheduled onlineMeeting.
-This API doesn't support getting call transcripts from channel meetings.
+This API supports the retrieval of call transcripts from private chat meetings and channel meetings.
+However, private channel meetings are not supported at this time.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
@@ -65,7 +64,7 @@ This example will get a calltranscript content
 
 Import-Module Microsoft.Graph.CloudCommunications
 
-Get-MgUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt"
+Get-MgUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt" 
 
 ```
 This example will get a calltranscript content specifying $format query param
@@ -160,6 +159,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

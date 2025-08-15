@@ -19,14 +19,14 @@ Update-MgBetaTenantRelationshipManagedTenantAuditEvent -AuditEventId <String>
  [-AdditionalProperties <Hashtable>] [-Category <String>] [-HttpVerb <String>] [-IPAddress <String>]
  [-Id <String>] [-InitiatedByAppId <String>] [-InitiatedByUpn <String>] [-InitiatedByUserId <String>]
  [-RequestBody <String>] [-RequestUrl <String>] [-TenantIds <String>] [-TenantNames <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantAuditEvent -AuditEventId <String>
  -BodyParameter <IMicrosoftGraphManagedTenantsAuditEvent> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,20 +36,18 @@ Update-MgBetaTenantRelationshipManagedTenantAuditEvent -InputObject <IManagedTen
  [-AdditionalProperties <Hashtable>] [-Category <String>] [-HttpVerb <String>] [-IPAddress <String>]
  [-Id <String>] [-InitiatedByAppId <String>] [-InitiatedByUpn <String>] [-InitiatedByUserId <String>]
  [-RequestBody <String>] [-RequestUrl <String>] [-TenantIds <String>] [-TenantNames <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantAuditEvent -InputObject <IManagedTenantsIdentity>
  -BodyParameter <IMicrosoftGraphManagedTenantsAuditEvent> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property auditEvents in tenantRelationships
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -159,21 +157,6 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -315,6 +298,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RequestBody
 The raw HTTP request body.
 Some sensitive information may be removed.
@@ -389,6 +387,21 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named

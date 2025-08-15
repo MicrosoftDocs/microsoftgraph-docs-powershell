@@ -11,7 +11,7 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 In Microsoft Entra entitlement management, return a collection of access package assignment approvals.
 The objects returned are those that are in scope for approval by the calling user.
-In PIM for groups, return a collection of assignment approvals.
+In PIM for Groups, return a collection of assignment approvals.
 The objects returned are those that are in scope for approval by the calling user.
 
 > [!NOTE]
@@ -24,7 +24,7 @@ The objects returned are those that are in scope for approval by the calling use
 Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser -On <String> [-Count]
  [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### FilterViaIdentity
@@ -32,14 +32,14 @@ Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurren
 Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser
  -InputObject <IIdentityGovernanceIdentity> [-Count] [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 In Microsoft Entra entitlement management, return a collection of access package assignment approvals.
 The objects returned are those that are in scope for approval by the calling user.
-In PIM for groups, return a collection of assignment approvals.
+In PIM for Groups, return a collection of assignment approvals.
 The objects returned are those that are in scope for approval by the calling user.
 
 ## EXAMPLES
@@ -49,7 +49,7 @@ The objects returned are those that are in scope for approval by the calling use
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser -On $onId
+Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser -On $onId 
 
 ```
 This example will retrieve the approval resources in pim for groups
@@ -148,6 +148,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -193,21 +208,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -230,6 +230,21 @@ Show only the first n items
 Type: Int32
 Parameter Sets: (All)
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named
