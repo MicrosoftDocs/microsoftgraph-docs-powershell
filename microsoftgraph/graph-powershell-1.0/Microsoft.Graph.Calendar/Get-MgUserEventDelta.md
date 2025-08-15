@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventdelta
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Get-MgUserEventDelta

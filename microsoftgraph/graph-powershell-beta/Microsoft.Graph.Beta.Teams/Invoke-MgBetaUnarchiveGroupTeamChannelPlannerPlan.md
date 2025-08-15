@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchivegroupteamchannelplannerplan
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # Invoke-MgBetaUnarchiveGroupTeamChannelPlannerPlan
