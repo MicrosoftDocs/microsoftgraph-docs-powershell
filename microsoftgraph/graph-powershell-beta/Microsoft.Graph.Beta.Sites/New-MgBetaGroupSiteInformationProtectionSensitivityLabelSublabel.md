@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteinformationprotectionsensitivitylabelsublabel
@@ -576,160 +576,182 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNEDPOLICIES \<IMicrosoftGraphLabelPolicy\[\]\>: .
-  \[Id \<String\>\]: The unique identifier of the label policy.
-  \[Name \<String\>\]: The display name of the label policy.
+ASSIGNEDPOLICIES `<IMicrosoftGraphLabelPolicy- `[]`>`: .
+  - `[Id <String>]`: The unique identifier of the label policy.
+  - `[Name <String>]`: The display name of the label policy.
 
-AUTOLABELING \<IMicrosoftGraphAutoLabeling\>: autoLabeling
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Message \<String\>\]: The message displayed to the user when the label is applied automatically.
-  \[SensitiveTypeIds \<String\[\]\>\]: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
+AUTOLABELING `<IMicrosoftGraphAutoLabeling>`: autoLabeling
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Message <String>]`: The message displayed to the user when the label is applied automatically.
+  - `[SensitiveTypeIds <String- `[]`>]`: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
 
-BODYPARAMETER \<IMicrosoftGraphSensitivityLabel\>: sensitivityLabel
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSensitivityLabel>`: sensitivityLabel
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ActionSource \<String\>\]: labelActionSource
-  \[ApplicableTo \<String\>\]: sensitivityLabelTarget
-  \[ApplicationMode \<String\>\]: applicationMode
-  \[AssignedPolicies \<IMicrosoftGraphLabelPolicy\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier of the label policy.
-    \[Name \<String\>\]: The display name of the label policy.
-  \[AutoLabeling \<IMicrosoftGraphAutoLabeling\>\]: autoLabeling
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Message \<String\>\]: The message displayed to the user when the label is applied automatically.
-    \[SensitiveTypeIds \<String\[\]\>\]: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
-  \[AutoTooltip \<String\>\]: 
-  \[Color \<String\>\]: 
-  \[Description \<String\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[IsDefault \<Boolean?\>\]: 
-  \[IsEnabled \<Boolean?\>\]: 
-  \[IsEndpointProtectionEnabled \<Boolean?\>\]: 
-  \[IsScopedToUser \<Boolean?\>\]: 
-  \[LabelActions \<IMicrosoftGraphLabelActionBase\[\]\>\]: 
-    \[Name \<String\>\]: The name of the action (for example, 'Encrypt', 'AddHeader').
-  \[Locale \<String\>\]: 
-  \[Name \<String\>\]: 
-  \[Priority \<Int32?\>\]: 
-  \[Rights \<IMicrosoftGraphUsageRightsIncluded\>\]: usageRightsIncluded
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ActionSource <String>]`: labelActionSource
+  - `[ApplicableTo <String>]`: sensitivityLabelTarget
+  - `[ApplicationMode <String>]`: applicationMode
+  - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier of the label policy.
+    - `[Name <String>]`: The display name of the label policy.
+  - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Message <String>]`: The message displayed to the user when the label is applied automatically.
+    - `[SensitiveTypeIds <String- `[]`>]`: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
+  - `[AutoTooltip <String>]`: 
+  - `[Color <String>]`: 
+  - `[Description <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[IsDefault <Boolean?>]`: 
+  - `[IsEnabled <Boolean?>]`: 
+  - `[IsEndpointProtectionEnabled <Boolean?>]`: 
+  - `[IsScopedToUser <Boolean?>]`: 
+  - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
+    - `[Name <String>]`: The name of the action (for example, 'Encrypt', 'AddHeader').
+  - `[Locale <String>]`: 
+  - `[Name <String>]`: 
+  - `[Priority <Int32?>]`: 
+  - `[Rights <IMicrosoftGraphUsageRightsIncluded>]`: usageRightsIncluded
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[OwnerEmail \<String\>\]: The email of owner label rights.
-    \[UserEmail \<String\>\]: The email of user with label user rights.
-    \[Value \<String\>\]: usageRights
-  \[Sublabels \<IMicrosoftGraphSensitivityLabel\[\]\>\]: 
-  \[ToolTip \<String\>\]: 
+    - `[OwnerEmail <String>]`: The email of owner label rights.
+    - `[UserEmail <String>]`: The email of user with label user rights.
+    - `[Value <String>]`: usageRights
+  - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+  - `[ToolTip <String>]`: 
 
-INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
-  \[BaseItemId \<String\>\]: The unique identifier of baseItem
-  \[BaseSitePageId \<String\>\]: The unique identifier of baseSitePage
-  \[BitlockerRecoveryKeyId \<String\>\]: The unique identifier of bitlockerRecoveryKey
-  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
-  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
-  \[ContentFormats \<String\[\]\>\]: Usage: contentFormats={contentFormats}
-  \[ContentModelId \<String\>\]: The unique identifier of contentModel
-  \[ContentTypeId \<String\>\]: The unique identifier of contentType
-  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
-  \[DataLossPreventionPolicyId \<String\>\]: The unique identifier of dataLossPreventionPolicy
-  \[DocumentProcessingJobId \<String\>\]: The unique identifier of documentProcessingJob
-  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
-  \[DriveId \<String\>\]: The unique identifier of drive
-  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[GroupId1 \<String\>\]: The unique identifier of group
-  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
-  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
-  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  \[InformationProtectionLabelId \<String\>\]: The unique identifier of informationProtectionLabel
-  \[Interval \<String\>\]: Usage: interval='{interval}'
-  \[ItemActivityId \<String\>\]: The unique identifier of itemActivity
-  \[ItemActivityOldId \<String\>\]: The unique identifier of itemActivityOLD
-  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
-  \[LabelIds \<String\[\]\>\]: Usage: labelIds={labelIds}
-  \[ListId \<String\>\]: The unique identifier of list
-  \[ListItemId \<String\>\]: The unique identifier of listItem
-  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
-  \[Locale \<String\>\]: Usage: locale='{locale}'
-  \[ModelName \<String\>\]: Usage: modelName='{modelName}'
-  \[NotebookId \<String\>\]: The unique identifier of notebook
-  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
-  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
-  \[PageTemplateId \<String\>\]: The unique identifier of pageTemplate
-  \[Path \<String\>\]: Usage: path='{path}'
-  \[PermissionId \<String\>\]: The unique identifier of permission
-  \[RecycleBinItemId \<String\>\]: The unique identifier of recycleBinItem
-  \[RelationId \<String\>\]: The unique identifier of relation
-  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
-  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
-  \[SectionGroupId1 \<String\>\]: The unique identifier of sectionGroup
-  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
-  \[SensitivityLabelId1 \<String\>\]: The unique identifier of sensitivityLabel
-  \[SetId \<String\>\]: The unique identifier of set
-  \[SetId1 \<String\>\]: The unique identifier of set
-  \[SiteId \<String\>\]: The unique identifier of site
-  \[SiteId1 \<String\>\]: The unique identifier of site
-  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
-  \[SubscriptionId \<String\>\]: The unique identifier of subscription
-  \[TermId \<String\>\]: The unique identifier of term
-  \[TermId1 \<String\>\]: The unique identifier of term
-  \[ThreatAssessmentRequestId \<String\>\]: The unique identifier of threatAssessmentRequest
-  \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
-  \[Token \<String\>\]: Usage: token='{token}'
-  \[UserId \<String\>\]: The unique identifier of user
-  \[WebPartId \<String\>\]: The unique identifier of webPart
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+  - `[BaseItemId <String>]`: The unique identifier of baseItem
+  - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
+  - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
+  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
+  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+  - `[ContentFormats <String- `[]`>]`: Usage: contentFormats={contentFormats}
+  - `[ContentModelId <String>]`: The unique identifier of contentModel
+  - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
+  - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
+  - `[DocumentProcessingJobId <String>]`: The unique identifier of documentProcessingJob
+  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
+  - `[DriveId <String>]`: The unique identifier of drive
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[GroupId1 <String>]`: The unique identifier of group
+  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
+  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
+  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
+  - `[LabelIds <String- `[]`>]`: Usage: labelIds={labelIds}
+  - `[ListId <String>]`: The unique identifier of list
+  - `[ListItemId <String>]`: The unique identifier of listItem
+  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[Locale <String>]`: Usage: locale='{locale}'
+  - `[ModelName <String>]`: Usage: modelName='{modelName}'
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[PageTemplateId <String>]`: The unique identifier of pageTemplate
+  - `[Path <String>]`: Usage: path='{path}'
+  - `[PermissionId <String>]`: The unique identifier of permission
+  - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem
+  - `[RelationId <String>]`: The unique identifier of relation
+  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
+  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
+  - `[SetId <String>]`: The unique identifier of set
+  - `[SetId1 <String>]`: The unique identifier of set
+  - `[SiteId <String>]`: The unique identifier of site
+  - `[SiteId1 <String>]`: The unique identifier of site
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
+  - `[TermId <String>]`: The unique identifier of term
+  - `[TermId1 <String>]`: The unique identifier of term
+  - `[ThreatAssessmentRequestId <String>]`: The unique identifier of threatAssessmentRequest
+  - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
+  - `[Token <String>]`: Usage: token='{token}'
+  - `[UserId <String>]`: The unique identifier of user
+  - `[WebPartId <String>]`: The unique identifier of webPart
 
-LABELACTIONS \<IMicrosoftGraphLabelActionBase\[\]\>: .
-  \[Name \<String\>\]: The name of the action (for example, 'Encrypt', 'AddHeader').
+LABELACTIONS `<IMicrosoftGraphLabelActionBase- `[]`>`: .
+  - `[Name <String>]`: The name of the action (for example, 'Encrypt', 'AddHeader').
 
-RIGHTS \<IMicrosoftGraphUsageRightsIncluded\>: usageRightsIncluded
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+RIGHTS `<IMicrosoftGraphUsageRightsIncluded>`: usageRightsIncluded
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[OwnerEmail \<String\>\]: The email of owner label rights.
-  \[UserEmail \<String\>\]: The email of user with label user rights.
-  \[Value \<String\>\]: usageRights
+  - `[OwnerEmail <String>]`: The email of owner label rights.
+  - `[UserEmail <String>]`: The email of user with label user rights.
+  - `[Value <String>]`: usageRights
 
-SUBLABELS \<IMicrosoftGraphSensitivityLabel\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+SUBLABELS `<IMicrosoftGraphSensitivityLabel- `[]`>`: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ActionSource \<String\>\]: labelActionSource
-  \[ApplicableTo \<String\>\]: sensitivityLabelTarget
-  \[ApplicationMode \<String\>\]: applicationMode
-  \[AssignedPolicies \<IMicrosoftGraphLabelPolicy\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier of the label policy.
-    \[Name \<String\>\]: The display name of the label policy.
-  \[AutoLabeling \<IMicrosoftGraphAutoLabeling\>\]: autoLabeling
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Message \<String\>\]: The message displayed to the user when the label is applied automatically.
-    \[SensitiveTypeIds \<String\[\]\>\]: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
-  \[AutoTooltip \<String\>\]: 
-  \[Color \<String\>\]: 
-  \[Description \<String\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[IsDefault \<Boolean?\>\]: 
-  \[IsEnabled \<Boolean?\>\]: 
-  \[IsEndpointProtectionEnabled \<Boolean?\>\]: 
-  \[IsScopedToUser \<Boolean?\>\]: 
-  \[LabelActions \<IMicrosoftGraphLabelActionBase\[\]\>\]: 
-    \[Name \<String\>\]: The name of the action (for example, 'Encrypt', 'AddHeader').
-  \[Locale \<String\>\]: 
-  \[Name \<String\>\]: 
-  \[Priority \<Int32?\>\]: 
-  \[Rights \<IMicrosoftGraphUsageRightsIncluded\>\]: usageRightsIncluded
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ActionSource <String>]`: labelActionSource
+  - `[ApplicableTo <String>]`: sensitivityLabelTarget
+  - `[ApplicationMode <String>]`: applicationMode
+  - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier of the label policy.
+    - `[Name <String>]`: The display name of the label policy.
+  - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Message <String>]`: The message displayed to the user when the label is applied automatically.
+    - `[SensitiveTypeIds <String- `[]`>]`: The list of sensitive information type (SIT) IDs that trigger the automatic application of this label.
+  - `[AutoTooltip <String>]`: 
+  - `[Color <String>]`: 
+  - `[Description <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[IsDefault <Boolean?>]`: 
+  - `[IsEnabled <Boolean?>]`: 
+  - `[IsEndpointProtectionEnabled <Boolean?>]`: 
+  - `[IsScopedToUser <Boolean?>]`: 
+  - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
+    - `[Name <String>]`: The name of the action (for example, 'Encrypt', 'AddHeader').
+  - `[Locale <String>]`: 
+  - `[Name <String>]`: 
+  - `[Priority <Int32?>]`: 
+  - `[Rights <IMicrosoftGraphUsageRightsIncluded>]`: usageRightsIncluded
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[OwnerEmail \<String\>\]: The email of owner label rights.
-    \[UserEmail \<String\>\]: The email of user with label user rights.
-    \[Value \<String\>\]: usageRights
-  \[Sublabels \<IMicrosoftGraphSensitivityLabel\[\]\>\]: 
-  \[ToolTip \<String\>\]:
+    - `[OwnerEmail <String>]`: The email of owner label rights.
+    - `[UserEmail <String>]`: The email of user with label user rights.
+    - `[Value <String>]`: usageRights
+  - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+  - `[ToolTip <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteinformationprotectionsensitivitylabelsublabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteinformationprotectionsensitivitylabelsublabel)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

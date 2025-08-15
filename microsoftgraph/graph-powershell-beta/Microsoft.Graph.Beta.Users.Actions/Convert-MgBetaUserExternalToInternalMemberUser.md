@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser
@@ -310,54 +310,54 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY \<IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Mail \<String\>\]: 
-  \[PasswordProfile \<IMicrosoftGraphPasswordProfile\>\]: passwordProfile
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ForceChangePasswordNextSignIn \<Boolean?\>\]: true if the user must change their password on the next sign-in; otherwise false.
+BODY `<IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Mail <String>]`: 
+  - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change their password on the next sign-in; otherwise false.
 If not set, default is false.
-    \[ForceChangePasswordNextSignInWithMfa \<Boolean?\>\]: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
+    - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
 The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multifactor authentication before password change.
 After a password change, this property will be automatically reset to false.
 If not set, default is false.
-    \[Password \<String\>\]: The password for the user.
+    - `[Password <String>]`: The password for the user.
 This property is required when a user is created.
 It can be updated, but the user will be required to change the password on the next sign-in.
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
-  \[UserPrincipalName \<String\>\]: 
+  - `[UserPrincipalName <String>]`: 
 
-BODYPARAMETER \<IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Mail \<String\>\]: 
-  \[PasswordProfile \<IMicrosoftGraphPasswordProfile\>\]: passwordProfile
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ForceChangePasswordNextSignIn \<Boolean?\>\]: true if the user must change their password on the next sign-in; otherwise false.
+BODYPARAMETER `<IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Mail <String>]`: 
+  - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change their password on the next sign-in; otherwise false.
 If not set, default is false.
-    \[ForceChangePasswordNextSignInWithMfa \<Boolean?\>\]: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
+    - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
 The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multifactor authentication before password change.
 After a password change, this property will be automatically reset to false.
 If not set, default is false.
-    \[Password \<String\>\]: The password for the user.
+    - `[Password <String>]`: The password for the user.
 This property is required when a user is created.
 It can be updated, but the user will be required to change the password on the next sign-in.
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
-  \[UserPrincipalName \<String\>\]: 
+  - `[UserPrincipalName <String>]`: 
 
-INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+  - `[UserId <String>]`: The unique identifier of user
 
-PASSWORDPROFILE \<IMicrosoftGraphPasswordProfile\>: passwordProfile
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ForceChangePasswordNextSignIn \<Boolean?\>\]: true if the user must change their password on the next sign-in; otherwise false.
+PASSWORDPROFILE `<IMicrosoftGraphPasswordProfile>`: passwordProfile
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change their password on the next sign-in; otherwise false.
 If not set, default is false.
-  \[ForceChangePasswordNextSignInWithMfa \<Boolean?\>\]: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
+  - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
 The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multifactor authentication before password change.
 After a password change, this property will be automatically reset to false.
 If not set, default is false.
-  \[Password \<String\>\]: The password for the user.
+  - `[Password <String>]`: The password for the user.
 This property is required when a user is created.
 It can be updated, but the user will be required to change the password on the next sign-in.
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
@@ -368,4 +368,26 @@ By default, a strong password is required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser)
 
 [https://learn.microsoft.com/graph/api/user-convertexternaltointernalmemberuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-convertexternaltointernalmemberuser?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
