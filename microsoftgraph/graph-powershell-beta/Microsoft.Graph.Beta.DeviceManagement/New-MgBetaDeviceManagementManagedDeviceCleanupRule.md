@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicecleanuprule
@@ -18,13 +18,13 @@ New-MgBetaDeviceManagementManagedDeviceCleanupRule [-ResponseHeadersVariable <St
  [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DeviceCleanupRulePlatformType <DeviceCleanupRulePlatformType>]
  [-DeviceInactivityBeforeRetirementInDays <Int32>] [-DisplayName <String>] [-Id <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementManagedDeviceCleanupRule -BodyParameter <IMicrosoftGraphManagedDeviceCleanupRule>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,6 +32,16 @@ New-MgBetaDeviceManagementManagedDeviceCleanupRule -BodyParameter <IMicrosoftGra
 Create new navigation property to managedDeviceCleanupRules for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -63,21 +73,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -173,6 +168,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -180,6 +190,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -220,40 +245,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedDeviceCleanupRule>`: Define the rule when the admin wants the devices to be cleaned up.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedDeviceCleanupRule\>: Define the rule when the admin wants the devices to be cleaned up.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: Indicates the description for the device clean up rule.
-  - `[DeviceCleanupRulePlatformType <DeviceCleanupRulePlatformType?>]`: Define the platform type for which the admin wants to create the device clean up rule
-  - `[DeviceInactivityBeforeRetirementInDays <Int32?>]`: Indicates the number of days when the device has not contacted Intune.
+  \[Description \<String\>\]: Indicates the description for the device clean up rule.
+  \[DeviceCleanupRulePlatformType \<DeviceCleanupRulePlatformType?\>\]: Define the platform type for which the admin wants to create the device clean up rule
+  \[DeviceInactivityBeforeRetirementInDays \<Int32?\>\]: Indicates the number of days when the device has not contacted Intune.
 Valid values 0 to 2147483647
-  - `[DisplayName <String>]`: Indicates the display name of the device cleanup rule.
+  \[DisplayName \<String\>\]: Indicates the display name of the device cleanup rule.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicecleanuprule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicecleanuprule)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

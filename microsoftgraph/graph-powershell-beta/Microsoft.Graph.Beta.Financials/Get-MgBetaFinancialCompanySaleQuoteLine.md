@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Financials-help.xml
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalequoteline
@@ -17,7 +17,7 @@ Get salesQuoteLines from financials
 Get-MgBetaFinancialCompanySaleQuoteLine -CompanyId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### List1
@@ -25,41 +25,51 @@ Get-MgBetaFinancialCompanySaleQuoteLine -CompanyId <String> [-ExpandProperty <St
 Get-MgBetaFinancialCompanySaleQuoteLine -CompanyId <String> -SalesQuoteId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgBetaFinancialCompanySaleQuoteLine -CompanyId <String> -SalesQuoteLineId <String> -SalesQuoteId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaFinancialCompanySaleQuoteLine -CompanyId <String> -SalesQuoteLineId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgBetaFinancialCompanySaleQuoteLine -InputObject <IFinancialsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaFinancialCompanySaleQuoteLine -InputObject <IFinancialsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get salesQuoteLines from financials
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -185,6 +195,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -260,21 +285,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List, List1
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -305,6 +315,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List, List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -321,69 +346,45 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
-  - `[AccountId <String>]`: The unique identifier of account
-  - `[AgedAccountsPayableId <String>]`: The unique identifier of agedAccountsPayable
-  - `[AgedAccountsReceivableId <String>]`: The unique identifier of agedAccountsReceivable
-  - `[CompanyId <String>]`: The unique identifier of company
-  - `[CompanyInformationId <String>]`: The unique identifier of companyInformation
-  - `[CountryRegionId <String>]`: The unique identifier of countryRegion
-  - `[CurrencyId <String>]`: The unique identifier of currency
-  - `[CustomerId <String>]`: The unique identifier of customer
-  - `[CustomerPaymentId <String>]`: The unique identifier of customerPayment
-  - `[CustomerPaymentJournalId <String>]`: The unique identifier of customerPaymentJournal
-  - `[DimensionId <String>]`: The unique identifier of dimension
-  - `[DimensionValueId <String>]`: The unique identifier of dimensionValue
-  - `[EmployeeId <String>]`: The unique identifier of employee
-  - `[GeneralLedgerEntryId <String>]`: The unique identifier of generalLedgerEntry
-  - `[ItemCategoryId <String>]`: The unique identifier of itemCategory
-  - `[ItemId <String>]`: The unique identifier of item
-  - `[JournalId <String>]`: The unique identifier of journal
-  - `[JournalLineId <String>]`: The unique identifier of journalLine
-  - `[PaymentMethodId <String>]`: The unique identifier of paymentMethod
-  - `[PaymentTermId <String>]`: The unique identifier of paymentTerm
-  - `[PictureId <String>]`: The unique identifier of picture
-  - `[PurchaseInvoiceId <String>]`: The unique identifier of purchaseInvoice
-  - `[PurchaseInvoiceLineId <String>]`: The unique identifier of purchaseInvoiceLine
-  - `[SalesCreditMemoId <String>]`: The unique identifier of salesCreditMemo
-  - `[SalesCreditMemoLineId <String>]`: The unique identifier of salesCreditMemoLine
-  - `[SalesInvoiceId <String>]`: The unique identifier of salesInvoice
-  - `[SalesInvoiceLineId <String>]`: The unique identifier of salesInvoiceLine
-  - `[SalesOrderId <String>]`: The unique identifier of salesOrder
-  - `[SalesOrderLineId <String>]`: The unique identifier of salesOrderLine
-  - `[SalesQuoteId <String>]`: The unique identifier of salesQuote
-  - `[SalesQuoteLineId <String>]`: The unique identifier of salesQuoteLine
-  - `[ShipmentMethodId <String>]`: The unique identifier of shipmentMethod
-  - `[TaxAreaId <String>]`: The unique identifier of taxArea
-  - `[TaxGroupId <String>]`: The unique identifier of taxGroup
-  - `[UnitOfMeasureId <String>]`: The unique identifier of unitOfMeasure
-  - `[VendorId <String>]`: The unique identifier of vendor
+INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
+  \[AccountId \<String\>\]: The unique identifier of account
+  \[AgedAccountsPayableId \<String\>\]: The unique identifier of agedAccountsPayable
+  \[AgedAccountsReceivableId \<String\>\]: The unique identifier of agedAccountsReceivable
+  \[CompanyId \<String\>\]: The unique identifier of company
+  \[CompanyInformationId \<String\>\]: The unique identifier of companyInformation
+  \[CountryRegionId \<String\>\]: The unique identifier of countryRegion
+  \[CurrencyId \<String\>\]: The unique identifier of currency
+  \[CustomerId \<String\>\]: The unique identifier of customer
+  \[CustomerPaymentId \<String\>\]: The unique identifier of customerPayment
+  \[CustomerPaymentJournalId \<String\>\]: The unique identifier of customerPaymentJournal
+  \[DimensionId \<String\>\]: The unique identifier of dimension
+  \[DimensionValueId \<String\>\]: The unique identifier of dimensionValue
+  \[EmployeeId \<String\>\]: The unique identifier of employee
+  \[GeneralLedgerEntryId \<String\>\]: The unique identifier of generalLedgerEntry
+  \[ItemCategoryId \<String\>\]: The unique identifier of itemCategory
+  \[ItemId \<String\>\]: The unique identifier of item
+  \[JournalId \<String\>\]: The unique identifier of journal
+  \[JournalLineId \<String\>\]: The unique identifier of journalLine
+  \[PaymentMethodId \<String\>\]: The unique identifier of paymentMethod
+  \[PaymentTermId \<String\>\]: The unique identifier of paymentTerm
+  \[PictureId \<String\>\]: The unique identifier of picture
+  \[PurchaseInvoiceId \<String\>\]: The unique identifier of purchaseInvoice
+  \[PurchaseInvoiceLineId \<String\>\]: The unique identifier of purchaseInvoiceLine
+  \[SalesCreditMemoId \<String\>\]: The unique identifier of salesCreditMemo
+  \[SalesCreditMemoLineId \<String\>\]: The unique identifier of salesCreditMemoLine
+  \[SalesInvoiceId \<String\>\]: The unique identifier of salesInvoice
+  \[SalesInvoiceLineId \<String\>\]: The unique identifier of salesInvoiceLine
+  \[SalesOrderId \<String\>\]: The unique identifier of salesOrder
+  \[SalesOrderLineId \<String\>\]: The unique identifier of salesOrderLine
+  \[SalesQuoteId \<String\>\]: The unique identifier of salesQuote
+  \[SalesQuoteLineId \<String\>\]: The unique identifier of salesQuoteLine
+  \[ShipmentMethodId \<String\>\]: The unique identifier of shipmentMethod
+  \[TaxAreaId \<String\>\]: The unique identifier of taxArea
+  \[TaxGroupId \<String\>\]: The unique identifier of taxGroup
+  \[UnitOfMeasureId \<String\>\]: The unique identifier of unitOfMeasure
+  \[VendorId \<String\>\]: The unique identifier of vendor
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalequoteline](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalequoteline)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

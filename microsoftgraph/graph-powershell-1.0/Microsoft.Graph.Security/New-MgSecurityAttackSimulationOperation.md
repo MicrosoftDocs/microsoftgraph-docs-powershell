@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationoperation
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for security
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationOperation?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,13 +17,13 @@ Create new navigation property to operations for security
 New-MgSecurityAttackSimulationOperation [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-LastActionDateTime <DateTime>] [-PercentageCompleted <Int32>]
  [-ResourceLocation <String>] [-Status <String>] [-StatusDetail <String>] [-TenantId <String>] [-Type <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityAttackSimulationOperation -BodyParameter <IMicrosoftGraphAttackSimulationOperation>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,6 +31,16 @@ New-MgSecurityAttackSimulationOperation -BodyParameter <IMicrosoftGraphAttackSim
 Create new navigation property to operations for security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -65,21 +72,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -159,6 +151,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -253,6 +260,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -285,47 +307,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAttackSimulationOperation>`: The status of a long-running operation.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
+BODYPARAMETER \<IMicrosoftGraphAttackSimulationOperation\>: The status of a long-running operation.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedDateTime \<DateTime?\>\]: The start time of the operation.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+  \[LastActionDateTime \<DateTime?\>\]: The time of the last action in the operation.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
-  - `[Status <String>]`: longRunningOperationStatus
-  - `[StatusDetail <String>]`: Details about the status of the operation.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[ResourceLocation \<String\>\]: URI of the resource that the operation is performed on.
+  \[Status \<String\>\]: longRunningOperationStatus
+  \[StatusDetail \<String\>\]: Details about the status of the operation.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[PercentageCompleted <Int32?>]`: Percentage of completion of the respective operation.
-  - `[TenantId <String>]`: Tenant identifier.
-  - `[Type <String>]`: attackSimulationOperationType
+  \[PercentageCompleted \<Int32?\>\]: Percentage of completion of the respective operation.
+  \[TenantId \<String\>\]: Tenant identifier.
+  \[Type \<String\>\]: attackSimulationOperationType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationoperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingmanifest
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property manifests in reports
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBillingManifest?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,14 +18,14 @@ Update-MgBetaReportPartnerBillingManifest -ManifestId <String> [-ResponseHeaders
  [-AdditionalProperties <Hashtable>] [-BlobCount <Int32>] [-Blobs <IMicrosoftGraphPartnersBillingBlob[]>]
  [-CreatedDateTime <DateTime>] [-DataFormat <String>] [-ETag <String>] [-Id <String>] [-PartitionType <String>]
  [-PartnerTenantId <String>] [-RootDirectory <String>] [-SasToken <String>] [-SchemaVersion <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaReportPartnerBillingManifest -ManifestId <String>
  -BodyParameter <IMicrosoftGraphPartnersBillingManifest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,20 +34,30 @@ Update-MgBetaReportPartnerBillingManifest -InputObject <IReportsIdentity> [-Resp
  [-AdditionalProperties <Hashtable>] [-BlobCount <Int32>] [-Blobs <IMicrosoftGraphPartnersBillingBlob[]>]
  [-CreatedDateTime <DateTime>] [-DataFormat <String>] [-ETag <String>] [-Id <String>] [-PartitionType <String>]
  [-PartnerTenantId <String>] [-RootDirectory <String>] [-SasToken <String>] [-SchemaVersion <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaReportPartnerBillingManifest -InputObject <IReportsIdentity>
  -BodyParameter <IMicrosoftGraphPartnersBillingManifest> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property manifests in reports
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -113,21 +120,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -276,6 +268,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -336,6 +343,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -369,111 +391,88 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BLOBS `<IMicrosoftGraphPartnersBillingBlob- `[]`>`: A collection of blob objects that contain details of all the files for the partner tenant ID.
-  - `[Name <String>]`: The blob name.
-  - `[PartitionValue <String>]`: The partition that contains the file.
+BLOBS \<IMicrosoftGraphPartnersBillingBlob\[\]\>: A collection of blob objects that contain details of all the files for the partner tenant ID.
+  \[Name \<String\>\]: The blob name.
+  \[PartitionValue \<String\>\]: The partition that contains the file.
 A large partition is split into multiple files, each with the same partitionValue.
 
-BODYPARAMETER `<IMicrosoftGraphPartnersBillingManifest>`: manifest
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPartnersBillingManifest\>: manifest
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[BlobCount <Int32?>]`: The total file count for this partner tenant ID.
-  - `[Blobs <IMicrosoftGraphPartnersBillingBlob- `[]`>]`: A collection of blob objects that contain details of all the files for the partner tenant ID.
-    - `[Name <String>]`: The blob name.
-    - `[PartitionValue <String>]`: The partition that contains the file.
+  \[BlobCount \<Int32?\>\]: The total file count for this partner tenant ID.
+  \[Blobs \<IMicrosoftGraphPartnersBillingBlob\[\]\>\]: A collection of blob objects that contain details of all the files for the partner tenant ID.
+    \[Name \<String\>\]: The blob name.
+    \[PartitionValue \<String\>\]: The partition that contains the file.
 A large partition is split into multiple files, each with the same partitionValue.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when a manifest resource was created.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when a manifest resource was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[DataFormat <String>]`: The billing data file format.
+  \[DataFormat \<String\>\]: The billing data file format.
 The possible value is: compressedJSONLines.
 Each blob is a compressed file and data in the file is in JSON lines format.
 Decompress the file to access the data.
-  - `[ETag <String>]`: Version of data represented by the manifest.
+  \[ETag \<String\>\]: Version of data represented by the manifest.
 Any change in eTag indicates a new data version.
-  - `[PartitionType <String>]`: Indicates the division of data.
+  \[PartitionType \<String\>\]: Indicates the division of data.
 If a given partition has more than the supported number, the data is split into multiple files, each file representing a specific partitionValue.
 By default, the data in the file is partitioned by the number of line items.
-  - `[PartnerTenantId <String>]`: The Microsoft Entra tenant ID of the partner.
-  - `[RootDirectory <String>]`: The root directory that contains all the files.
-  - `[SasToken <String>]`: The SAS token for accessing the directory or an individual file in the directory.
-  - `[SchemaVersion <String>]`: The version of the manifest schema.
+  \[PartnerTenantId \<String\>\]: The Microsoft Entra tenant ID of the partner.
+  \[RootDirectory \<String\>\]: The root directory that contains all the files.
+  \[SasToken \<String\>\]: The SAS token for accessing the directory or an individual file in the directory.
+  \[SchemaVersion \<String\>\]: The version of the manifest schema.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
-  - `[AlertConfigurationId <String>]`: The unique identifier of alertConfiguration
-  - `[AlertId <String>]`: The unique identifier of alert
-  - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
-  - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
-  - `[AuthenticationsMetricId <String>]`: The unique identifier of authenticationsMetric
-  - `[CredentialUserRegistrationDetailsId <String>]`: The unique identifier of credentialUserRegistrationDetails
-  - `[CustomSecurityAttributeAuditId <String>]`: The unique identifier of customSecurityAttributeAudit
-  - `[DailyInactiveUsersByApplicationMetricId <String>]`: The unique identifier of dailyInactiveUsersByApplicationMetric
-  - `[DailyInactiveUsersMetricId <String>]`: The unique identifier of dailyInactiveUsersMetric
-  - `[Date <DateTime?>]`: Usage: date={date}
-  - `[DeviceManagementCachedReportConfigurationId <String>]`: The unique identifier of deviceManagementCachedReportConfiguration
-  - `[DeviceManagementExportJobId <String>]`: The unique identifier of deviceManagementExportJob
-  - `[DirectoryAuditId <String>]`: The unique identifier of directoryAudit
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
-  - `[ExclusiveIntervalEndDateTime <DateTime?>]`: Usage: exclusiveIntervalEndDateTime={exclusiveIntervalEndDateTime}
-  - `[Filter <String>]`: Usage: filter='{filter}'
-  - `[GroupId <String>]`: Usage: groupId='{groupId}'
-  - `[IncludedUserRoles <String>]`: Usage: includedUserRoles='{includedUserRoles}'
-  - `[IncludedUserTypes <String>]`: Usage: includedUserTypes='{includedUserTypes}'
-  - `[InclusiveIntervalStartDateTime <DateTime?>]`: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
-  - `[InsightSummaryId <String>]`: The unique identifier of insightSummary
-  - `[ManifestId <String>]`: The unique identifier of manifest
-  - `[MfaCompletionMetricId <String>]`: The unique identifier of mfaCompletionMetric
-  - `[MfaTelecomFraudMetricId <String>]`: The unique identifier of mfaTelecomFraudMetric
-  - `[MfaUserCountMetricId <String>]`: The unique identifier of mfaUserCountMetric
-  - `[MonthlyInactiveUsersByApplicationMetricId <String>]`: The unique identifier of monthlyInactiveUsersByApplicationMetric
-  - `[MonthlyInactiveUsersMetricId <String>]`: The unique identifier of monthlyInactiveUsersMetric
-  - `[OperationId <String>]`: The unique identifier of operation
-  - `[Period <String>]`: Usage: period='{period}'
-  - `[PrintUsageByPrinterId <String>]`: The unique identifier of printUsageByPrinter
-  - `[PrintUsageByUserId <String>]`: The unique identifier of printUsageByUser
-  - `[PrintUsageId <String>]`: The unique identifier of printUsage
-  - `[PrinterId <String>]`: Usage: printerId='{printerId}'
-  - `[ProvisioningObjectSummaryId <String>]`: The unique identifier of provisioningObjectSummary
-  - `[SelfServiceSignUpId <String>]`: The unique identifier of selfServiceSignUp
-  - `[ServicePrincipalSignInActivityId <String>]`: The unique identifier of servicePrincipalSignInActivity
-  - `[SignInId <String>]`: The unique identifier of signIn
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[UserCountMetricId <String>]`: The unique identifier of userCountMetric
-  - `[UserCredentialUsageDetailsId <String>]`: The unique identifier of userCredentialUsageDetails
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
-  - `[UserRequestsMetricId <String>]`: The unique identifier of userRequestsMetric
-  - `[UserSignUpMetricId <String>]`: The unique identifier of userSignUpMetric
+INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
+  \[ActiveUsersMetricId \<String\>\]: The unique identifier of activeUsersMetric
+  \[AlertConfigurationId \<String\>\]: The unique identifier of alertConfiguration
+  \[AlertId \<String\>\]: The unique identifier of alert
+  \[AppCredentialSignInActivityId \<String\>\]: The unique identifier of appCredentialSignInActivity
+  \[ApplicationSignInDetailedSummaryId \<String\>\]: The unique identifier of applicationSignInDetailedSummary
+  \[AuthenticationsMetricId \<String\>\]: The unique identifier of authenticationsMetric
+  \[CredentialUserRegistrationDetailsId \<String\>\]: The unique identifier of credentialUserRegistrationDetails
+  \[CustomSecurityAttributeAuditId \<String\>\]: The unique identifier of customSecurityAttributeAudit
+  \[DailyInactiveUsersByApplicationMetricId \<String\>\]: The unique identifier of dailyInactiveUsersByApplicationMetric
+  \[DailyInactiveUsersMetricId \<String\>\]: The unique identifier of dailyInactiveUsersMetric
+  \[Date \<DateTime?\>\]: Usage: date={date}
+  \[DeviceManagementCachedReportConfigurationId \<String\>\]: The unique identifier of deviceManagementCachedReportConfiguration
+  \[DeviceManagementExportJobId \<String\>\]: The unique identifier of deviceManagementExportJob
+  \[DirectoryAuditId \<String\>\]: The unique identifier of directoryAudit
+  \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[ExclusiveIntervalEndDateTime \<DateTime?\>\]: Usage: exclusiveIntervalEndDateTime={exclusiveIntervalEndDateTime}
+  \[Filter \<String\>\]: Usage: filter='{filter}'
+  \[GroupId \<String\>\]: Usage: groupId='{groupId}'
+  \[IncludedUserRoles \<String\>\]: Usage: includedUserRoles='{includedUserRoles}'
+  \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
+  \[InclusiveIntervalStartDateTime \<DateTime?\>\]: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
+  \[InsightSummaryId \<String\>\]: The unique identifier of insightSummary
+  \[ManifestId \<String\>\]: The unique identifier of manifest
+  \[MfaCompletionMetricId \<String\>\]: The unique identifier of mfaCompletionMetric
+  \[MfaTelecomFraudMetricId \<String\>\]: The unique identifier of mfaTelecomFraudMetric
+  \[MfaUserCountMetricId \<String\>\]: The unique identifier of mfaUserCountMetric
+  \[MonthlyInactiveUsersByApplicationMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersByApplicationMetric
+  \[MonthlyInactiveUsersMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersMetric
+  \[OperationId \<String\>\]: The unique identifier of operation
+  \[Period \<String\>\]: Usage: period='{period}'
+  \[PrintUsageByPrinterId \<String\>\]: The unique identifier of printUsageByPrinter
+  \[PrintUsageByUserId \<String\>\]: The unique identifier of printUsageByUser
+  \[PrintUsageId \<String\>\]: The unique identifier of printUsage
+  \[PrinterId \<String\>\]: Usage: printerId='{printerId}'
+  \[ProvisioningObjectSummaryId \<String\>\]: The unique identifier of provisioningObjectSummary
+  \[SelfServiceSignUpId \<String\>\]: The unique identifier of selfServiceSignUp
+  \[ServicePrincipalSignInActivityId \<String\>\]: The unique identifier of servicePrincipalSignInActivity
+  \[SignInId \<String\>\]: The unique identifier of signIn
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[SkipToken \<String\>\]: Usage: skipToken='{skipToken}'
+  \[StartDateTime \<DateTime?\>\]: Usage: startDateTime={startDateTime}
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[UserCountMetricId \<String\>\]: The unique identifier of userCountMetric
+  \[UserCredentialUsageDetailsId \<String\>\]: The unique identifier of userCredentialUsageDetails
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[UserRegistrationDetailsId \<String\>\]: The unique identifier of userRegistrationDetails
+  \[UserRequestsMetricId \<String\>\]: The unique identifier of userRequestsMetric
+  \[UserSignUpMetricId \<String\>\]: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingmanifest)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

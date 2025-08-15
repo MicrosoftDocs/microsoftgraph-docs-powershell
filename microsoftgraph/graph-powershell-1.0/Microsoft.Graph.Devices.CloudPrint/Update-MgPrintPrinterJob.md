@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinterjob
 schema: 2.0.0
-ms.subservice: universal-print
 ---
 
 # Update-MgPrintPrinterJob
@@ -13,9 +12,6 @@ Update a print job.
 Only the configuration property can be updated.
 Updating a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinterJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,13 +23,13 @@ Update-MgPrintPrinterJob -PrintJobId <String> -PrinterId <String> [-ResponseHead
  [-CreatedDateTime <DateTime>] [-Documents <IMicrosoftGraphPrintDocument[]>] [-ErrorCode <Int32>]
  [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>] [-RedirectedTo <String>]
  [-Status <IMicrosoftGraphPrintJobStatus>] [-Tasks <IMicrosoftGraphPrintTask[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPrintPrinterJob -PrintJobId <String> -PrinterId <String> -BodyParameter <IMicrosoftGraphPrintJob>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,13 +41,13 @@ Update-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseHea
  [-CreatedDateTime <DateTime>] [-Documents <IMicrosoftGraphPrintDocument[]>] [-ErrorCode <Int32>]
  [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>] [-RedirectedTo <String>]
  [-Status <IMicrosoftGraphPrintJobStatus>] [-Tasks <IMicrosoftGraphPrintTask[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrintJob>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -61,20 +57,12 @@ Only the configuration property can be updated.
 Updating a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.CloudPrint
+```
 
 $params = @{
 	configuration = @{
@@ -111,10 +99,6 @@ $params = @{
 }
 
 Update-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgPrintPrinterJob Cmdlet.
-
 
 ## PARAMETERS
 
@@ -181,21 +165,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -CreatedBy
 userIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
@@ -229,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Documents
-
+.
 To construct, see NOTES section for DOCUMENTS properties and create a hash table.
 
 ```yaml
@@ -352,6 +321,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RedirectedFrom
 Contains the source job URL, if the job has been redirected from another printer.
 
@@ -429,6 +413,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -462,257 +461,235 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintJob>`: printJob
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPrintJob\>: printJob
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AcknowledgedDateTime <DateTime?>]`: The dateTimeOffset when the job was acknowledged.
+  \[AcknowledgedDateTime \<DateTime?\>\]: The dateTimeOffset when the job was acknowledged.
 Read-only.
-  - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Collate <Boolean?>]`: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
-    - `[ColorMode <String>]`: printColorMode
-    - `[Copies <Int32?>]`: The number of copies that should be printed.
+  \[Configuration \<IMicrosoftGraphPrintJobConfiguration\>\]: printJobConfiguration
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Collate \<Boolean?\>\]: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
+    \[ColorMode \<String\>\]: printColorMode
+    \[Copies \<Int32?\>\]: The number of copies that should be printed.
 Read-only.
-    - `[Dpi <Int32?>]`: The resolution to use when printing the job, expressed in dots per inch (DPI).
+    \[Dpi \<Int32?\>\]: The resolution to use when printing the job, expressed in dots per inch (DPI).
 Read-only.
-    - `[DuplexMode <String>]`: printDuplexMode
-    - `[FeedOrientation <String>]`: printerFeedOrientation
-    - `[Finishings <String- `[]`>]`: Finishing processes to use when printing.
-    - `[FitPdfToPage <Boolean?>]`: True to fit each page of a PDF document to a physical sheet of media; false to let the printer decide how to lay out impressions.
-    - `[InputBin <String>]`: The input bin (tray) to use when printing.
+    \[DuplexMode \<String\>\]: printDuplexMode
+    \[FeedOrientation \<String\>\]: printerFeedOrientation
+    \[Finishings \<String\[\]\>\]: Finishing processes to use when printing.
+    \[FitPdfToPage \<Boolean?\>\]: True to fit each page of a PDF document to a physical sheet of media; false to let the printer decide how to lay out impressions.
+    \[InputBin \<String\>\]: The input bin (tray) to use when printing.
 See the printer's capabilities for a list of supported input bins.
-    - `[Margin <IMicrosoftGraphPrintMargin>]`: printMargin
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Bottom <Int32?>]`: The margin in microns from the bottom edge.
-      - `[Left <Int32?>]`: The margin in microns from the left edge.
-      - `[Right <Int32?>]`: The margin in microns from the right edge.
-      - `[Top <Int32?>]`: The margin in microns from the top edge.
-    - `[MediaSize <String>]`: The media size to use when printing.
+    \[Margin \<IMicrosoftGraphPrintMargin\>\]: printMargin
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Bottom \<Int32?\>\]: The margin in microns from the bottom edge.
+      \[Left \<Int32?\>\]: The margin in microns from the left edge.
+      \[Right \<Int32?\>\]: The margin in microns from the right edge.
+      \[Top \<Int32?\>\]: The margin in microns from the top edge.
+    \[MediaSize \<String\>\]: The media size to use when printing.
 Supports standard size names for ISO and ANSI media sizes.
 Valid values listed in the printerCapabilities topic.
-    - `[MediaType <String>]`: The default media (such as paper) type to print the document on.
-    - `[MultipageLayout <String>]`: printMultipageLayout
-    - `[Orientation <String>]`: printOrientation
-    - `[OutputBin <String>]`: The output bin to place completed prints into.
+    \[MediaType \<String\>\]: The default media (such as paper) type to print the document on.
+    \[MultipageLayout \<String\>\]: printMultipageLayout
+    \[Orientation \<String\>\]: printOrientation
+    \[OutputBin \<String\>\]: The output bin to place completed prints into.
 See the printer's capabilities for a list of supported output bins.
-    - `[PageRanges <IMicrosoftGraphIntegerRange- `[]`>]`: The page ranges to print.
+    \[PageRanges \<IMicrosoftGraphIntegerRange\[\]\>\]: The page ranges to print.
 Read-only.
-      - `[End <Int64?>]`: The inclusive upper bound of the integer range.
-      - `[Start <Int64?>]`: The inclusive lower bound of the integer range.
-    - `[PagesPerSheet <Int32?>]`: The number of document pages to print on each sheet.
-    - `[Quality <String>]`: printQuality
-    - `[Scaling <String>]`: printScaling
-  - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+      \[End \<Int64?\>\]: The inclusive upper bound of the integer range.
+      \[Start \<Int64?\>\]: The inclusive lower bound of the integer range.
+    \[PagesPerSheet \<Int32?\>\]: The number of document pages to print on each sheet.
+    \[Quality \<String\>\]: printQuality
+    \[Scaling \<String\>\]: printScaling
+  \[CreatedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
+    \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
-    - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
-  - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created.
+    \[IPAddress \<String\>\]: Indicates the client IP address associated with the user performing the activity (audit log only).
+    \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
+  \[CreatedDateTime \<DateTime?\>\]: The DateTimeOffset when the job was created.
 Read-only.
-  - `[Documents <IMicrosoftGraphPrintDocument- `[]`>]`:
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Documents \<IMicrosoftGraphPrintDocument\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ContentType <String>]`: The document's content (MIME) type.
+    \[ContentType \<String\>\]: The document's content (MIME) type.
 Read-only.
-    - `[DisplayName <String>]`: The document's name.
+    \[DisplayName \<String\>\]: The document's name.
 Read-only.
-    - `[DownloadedDateTime <DateTime?>]`: The time the document was downloaded.
+    \[DownloadedDateTime \<DateTime?\>\]: The time the document was downloaded.
 Read-only
-    - `[Size <Int64?>]`: The document's size in bytes.
+    \[Size \<Int64?\>\]: The document's size in bytes.
 Read-only.
-    - `[UploadedDateTime <DateTime?>]`: The time the document was uploaded.
+    \[UploadedDateTime \<DateTime?\>\]: The time the document was uploaded.
 Read-only
-  - `[ErrorCode <Int32?>]`: The error code of the print job.
+  \[ErrorCode \<Int32?\>\]: The error code of the print job.
 Read-only.
-  - `[IsFetchable <Boolean?>]`: If true, document can be fetched by printer.
-  - `[RedirectedFrom <String>]`: Contains the source job URL, if the job has been redirected from another printer.
-  - `[RedirectedTo <String>]`: Contains the destination job URL, if the job has been redirected to another printer.
-  - `[Status <IMicrosoftGraphPrintJobStatus>]`: printJobStatus
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Description <String>]`: A human-readable description of the print job's current processing state.
+  \[IsFetchable \<Boolean?\>\]: If true, document can be fetched by printer.
+  \[RedirectedFrom \<String\>\]: Contains the source job URL, if the job has been redirected from another printer.
+  \[RedirectedTo \<String\>\]: Contains the destination job URL, if the job has been redirected to another printer.
+  \[Status \<IMicrosoftGraphPrintJobStatus\>\]: printJobStatus
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Description \<String\>\]: A human-readable description of the print job's current processing state.
 Read-only.
-    - `[Details <String- `[]`>]`: Additional details for print job state.
+    \[Details \<String\[\]\>\]: Additional details for print job state.
 Valid values are described in the following table.
 Read-only.
-    - `[IsAcquiredByPrinter <Boolean?>]`: True if the job was acknowledged by a printer; false otherwise.
+    \[IsAcquiredByPrinter \<Boolean?\>\]: True if the job was acknowledged by a printer; false otherwise.
 Read-only.
-    - `[State <String>]`: printJobProcessingState
-  - `[Tasks <IMicrosoftGraphPrintTask- `[]`>]`: A list of printTasks that were triggered by this print job.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[State \<String\>\]: printJobProcessingState
+  \[Tasks \<IMicrosoftGraphPrintTask\[\]\>\]: A list of printTasks that were triggered by this print job.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[Definition \<IMicrosoftGraphPrintTaskDefinition\>\]: printTaskDefinition
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AppId <String>]`: Refers to the unique ID representing application in Microsoft Entra ID.
-        - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
-        - `[ServicePrincipalId <String>]`: Refers to the unique ID for the service principal in Microsoft Entra ID.
-        - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
-      - `[DisplayName <String>]`: The name of the printTaskDefinition.
-      - `[Tasks <IMicrosoftGraphPrintTask- `[]`>]`: A list of tasks that have been created based on this definition.
+      \[CreatedBy \<IMicrosoftGraphAppIdentity\>\]: appIdentity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[AppId \<String\>\]: Refers to the unique ID representing application in Microsoft Entra ID.
+        \[DisplayName \<String\>\]: Refers to the application name displayed in the Microsoft Entra admin center.
+        \[ServicePrincipalId \<String\>\]: Refers to the unique ID for the service principal in Microsoft Entra ID.
+        \[ServicePrincipalName \<String\>\]: Refers to the Service Principal Name is the Application name in the tenant.
+      \[DisplayName \<String\>\]: The name of the printTaskDefinition.
+      \[Tasks \<IMicrosoftGraphPrintTask\[\]\>\]: A list of tasks that have been created based on this definition.
 The list includes currently running tasks and recently completed tasks.
 Read-only.
-    - `[ParentUrl <String>]`: The URL for the print entity that triggered this task.
+    \[ParentUrl \<String\>\]: The URL for the print entity that triggered this task.
 For example, https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{jobId}.
 Read-only.
-    - `[Status <IMicrosoftGraphPrintTaskStatus>]`: printTaskStatus
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Description <String>]`: A human-readable description of the current processing state of the printTask.
-      - `[State <String>]`: printTaskProcessingState
-    - `[Trigger <IMicrosoftGraphPrintTaskTrigger>]`: printTaskTrigger
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[Status \<IMicrosoftGraphPrintTaskStatus\>\]: printTaskStatus
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Description \<String\>\]: A human-readable description of the current processing state of the printTask.
+      \[State \<String\>\]: printTaskProcessingState
+    \[Trigger \<IMicrosoftGraphPrintTaskTrigger\>\]: printTaskTrigger
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
-      - `[Event <String>]`: printEvent
+      \[Definition \<IMicrosoftGraphPrintTaskDefinition\>\]: printTaskDefinition
+      \[Event \<String\>\]: printEvent
 
-CONFIGURATION `<IMicrosoftGraphPrintJobConfiguration>`: printJobConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Collate <Boolean?>]`: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
-  - `[ColorMode <String>]`: printColorMode
-  - `[Copies <Int32?>]`: The number of copies that should be printed.
+CONFIGURATION \<IMicrosoftGraphPrintJobConfiguration\>: printJobConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Collate \<Boolean?\>\]: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
+  \[ColorMode \<String\>\]: printColorMode
+  \[Copies \<Int32?\>\]: The number of copies that should be printed.
 Read-only.
-  - `[Dpi <Int32?>]`: The resolution to use when printing the job, expressed in dots per inch (DPI).
+  \[Dpi \<Int32?\>\]: The resolution to use when printing the job, expressed in dots per inch (DPI).
 Read-only.
-  - `[DuplexMode <String>]`: printDuplexMode
-  - `[FeedOrientation <String>]`: printerFeedOrientation
-  - `[Finishings <String- `[]`>]`: Finishing processes to use when printing.
-  - `[FitPdfToPage <Boolean?>]`: True to fit each page of a PDF document to a physical sheet of media; false to let the printer decide how to lay out impressions.
-  - `[InputBin <String>]`: The input bin (tray) to use when printing.
+  \[DuplexMode \<String\>\]: printDuplexMode
+  \[FeedOrientation \<String\>\]: printerFeedOrientation
+  \[Finishings \<String\[\]\>\]: Finishing processes to use when printing.
+  \[FitPdfToPage \<Boolean?\>\]: True to fit each page of a PDF document to a physical sheet of media; false to let the printer decide how to lay out impressions.
+  \[InputBin \<String\>\]: The input bin (tray) to use when printing.
 See the printer's capabilities for a list of supported input bins.
-  - `[Margin <IMicrosoftGraphPrintMargin>]`: printMargin
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Bottom <Int32?>]`: The margin in microns from the bottom edge.
-    - `[Left <Int32?>]`: The margin in microns from the left edge.
-    - `[Right <Int32?>]`: The margin in microns from the right edge.
-    - `[Top <Int32?>]`: The margin in microns from the top edge.
-  - `[MediaSize <String>]`: The media size to use when printing.
+  \[Margin \<IMicrosoftGraphPrintMargin\>\]: printMargin
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Bottom \<Int32?\>\]: The margin in microns from the bottom edge.
+    \[Left \<Int32?\>\]: The margin in microns from the left edge.
+    \[Right \<Int32?\>\]: The margin in microns from the right edge.
+    \[Top \<Int32?\>\]: The margin in microns from the top edge.
+  \[MediaSize \<String\>\]: The media size to use when printing.
 Supports standard size names for ISO and ANSI media sizes.
 Valid values listed in the printerCapabilities topic.
-  - `[MediaType <String>]`: The default media (such as paper) type to print the document on.
-  - `[MultipageLayout <String>]`: printMultipageLayout
-  - `[Orientation <String>]`: printOrientation
-  - `[OutputBin <String>]`: The output bin to place completed prints into.
+  \[MediaType \<String\>\]: The default media (such as paper) type to print the document on.
+  \[MultipageLayout \<String\>\]: printMultipageLayout
+  \[Orientation \<String\>\]: printOrientation
+  \[OutputBin \<String\>\]: The output bin to place completed prints into.
 See the printer's capabilities for a list of supported output bins.
-  - `[PageRanges <IMicrosoftGraphIntegerRange- `[]`>]`: The page ranges to print.
+  \[PageRanges \<IMicrosoftGraphIntegerRange\[\]\>\]: The page ranges to print.
 Read-only.
-    - `[End <Int64?>]`: The inclusive upper bound of the integer range.
-    - `[Start <Int64?>]`: The inclusive lower bound of the integer range.
-  - `[PagesPerSheet <Int32?>]`: The number of document pages to print on each sheet.
-  - `[Quality <String>]`: printQuality
-  - `[Scaling <String>]`: printScaling
+    \[End \<Int64?\>\]: The inclusive upper bound of the integer range.
+    \[Start \<Int64?\>\]: The inclusive lower bound of the integer range.
+  \[PagesPerSheet \<Int32?\>\]: The number of document pages to print on each sheet.
+  \[Quality \<String\>\]: printQuality
+  \[Scaling \<String\>\]: printScaling
 
-CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+CREATEDBY \<IMicrosoftGraphUserIdentity\>: userIdentity
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity or actor.
+  \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
-  - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
+  \[IPAddress \<String\>\]: Indicates the client IP address associated with the user performing the activity (audit log only).
+  \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
 
-DOCUMENTS `<IMicrosoftGraphPrintDocument- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+DOCUMENTS \<IMicrosoftGraphPrintDocument\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ContentType <String>]`: The document's content (MIME) type.
+  \[ContentType \<String\>\]: The document's content (MIME) type.
 Read-only.
-  - `[DisplayName <String>]`: The document's name.
+  \[DisplayName \<String\>\]: The document's name.
 Read-only.
-  - `[DownloadedDateTime <DateTime?>]`: The time the document was downloaded.
+  \[DownloadedDateTime \<DateTime?\>\]: The time the document was downloaded.
 Read-only
-  - `[Size <Int64?>]`: The document's size in bytes.
+  \[Size \<Int64?\>\]: The document's size in bytes.
 Read-only.
-  - `[UploadedDateTime <DateTime?>]`: The time the document was uploaded.
+  \[UploadedDateTime \<DateTime?\>\]: The time the document was uploaded.
 Read-only
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
-  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
-  - `[PrintJobId <String>]`: The unique identifier of printJob
-  - `[PrintOperationId <String>]`: The unique identifier of printOperation
-  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
-  - `[PrintServiceId <String>]`: The unique identifier of printService
-  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
-  - `[PrintTaskId <String>]`: The unique identifier of printTask
-  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
-  - `[PrinterId <String>]`: The unique identifier of printer
-  - `[PrinterShareId <String>]`: The unique identifier of printerShare
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PrintConnectorId \<String\>\]: The unique identifier of printConnector
+  \[PrintDocumentId \<String\>\]: The unique identifier of printDocument
+  \[PrintJobId \<String\>\]: The unique identifier of printJob
+  \[PrintOperationId \<String\>\]: The unique identifier of printOperation
+  \[PrintServiceEndpointId \<String\>\]: The unique identifier of printServiceEndpoint
+  \[PrintServiceId \<String\>\]: The unique identifier of printService
+  \[PrintTaskDefinitionId \<String\>\]: The unique identifier of printTaskDefinition
+  \[PrintTaskId \<String\>\]: The unique identifier of printTask
+  \[PrintTaskTriggerId \<String\>\]: The unique identifier of printTaskTrigger
+  \[PrinterId \<String\>\]: The unique identifier of printer
+  \[PrinterShareId \<String\>\]: The unique identifier of printerShare
+  \[UserId \<String\>\]: The unique identifier of user
 
-STATUS `<IMicrosoftGraphPrintJobStatus>`: printJobStatus
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: A human-readable description of the print job's current processing state.
+STATUS \<IMicrosoftGraphPrintJobStatus\>: printJobStatus
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Description \<String\>\]: A human-readable description of the print job's current processing state.
 Read-only.
-  - `[Details <String- `[]`>]`: Additional details for print job state.
+  \[Details \<String\[\]\>\]: Additional details for print job state.
 Valid values are described in the following table.
 Read-only.
-  - `[IsAcquiredByPrinter <Boolean?>]`: True if the job was acknowledged by a printer; false otherwise.
+  \[IsAcquiredByPrinter \<Boolean?\>\]: True if the job was acknowledged by a printer; false otherwise.
 Read-only.
-  - `[State <String>]`: printJobProcessingState
+  \[State \<String\>\]: printJobProcessingState
 
-TASKS `<IMicrosoftGraphPrintTask- `[]`>`: A list of printTasks that were triggered by this print job.
-  - `[Id <String>]`: The unique identifier for an entity.
+TASKS \<IMicrosoftGraphPrintTask\[\]\>: A list of printTasks that were triggered by this print job.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Definition \<IMicrosoftGraphPrintTaskDefinition\>\]: printTaskDefinition
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AppId <String>]`: Refers to the unique ID representing application in Microsoft Entra ID.
-      - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
-      - `[ServicePrincipalId <String>]`: Refers to the unique ID for the service principal in Microsoft Entra ID.
-      - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
-    - `[DisplayName <String>]`: The name of the printTaskDefinition.
-    - `[Tasks <IMicrosoftGraphPrintTask- `[]`>]`: A list of tasks that have been created based on this definition.
+    \[CreatedBy \<IMicrosoftGraphAppIdentity\>\]: appIdentity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[AppId \<String\>\]: Refers to the unique ID representing application in Microsoft Entra ID.
+      \[DisplayName \<String\>\]: Refers to the application name displayed in the Microsoft Entra admin center.
+      \[ServicePrincipalId \<String\>\]: Refers to the unique ID for the service principal in Microsoft Entra ID.
+      \[ServicePrincipalName \<String\>\]: Refers to the Service Principal Name is the Application name in the tenant.
+    \[DisplayName \<String\>\]: The name of the printTaskDefinition.
+    \[Tasks \<IMicrosoftGraphPrintTask\[\]\>\]: A list of tasks that have been created based on this definition.
 The list includes currently running tasks and recently completed tasks.
 Read-only.
-  - `[ParentUrl <String>]`: The URL for the print entity that triggered this task.
+  \[ParentUrl \<String\>\]: The URL for the print entity that triggered this task.
 For example, https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{jobId}.
 Read-only.
-  - `[Status <IMicrosoftGraphPrintTaskStatus>]`: printTaskStatus
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Description <String>]`: A human-readable description of the current processing state of the printTask.
-    - `[State <String>]`: printTaskProcessingState
-  - `[Trigger <IMicrosoftGraphPrintTaskTrigger>]`: printTaskTrigger
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Status \<IMicrosoftGraphPrintTaskStatus\>\]: printTaskStatus
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Description \<String\>\]: A human-readable description of the current processing state of the printTask.
+    \[State \<String\>\]: printTaskProcessingState
+  \[Trigger \<IMicrosoftGraphPrintTaskTrigger\>\]: printTaskTrigger
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
-    - `[Event <String>]`: printEvent
+    \[Definition \<IMicrosoftGraphPrintTaskDefinition\>\]: printTaskDefinition
+    \[Event \<String\>\]: printEvent
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinterjob)
 
 [https://learn.microsoft.com/graph/api/printjob-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printjob-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

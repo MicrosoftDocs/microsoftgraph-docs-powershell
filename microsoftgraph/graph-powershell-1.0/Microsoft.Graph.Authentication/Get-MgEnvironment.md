@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Authentication.dll-Help.xml
 Module Name: Microsoft.Graph.Authentication
 online version: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/get-mgenvironment
@@ -14,7 +14,7 @@ By default, Connect-MgGraph targets the global public cloud.
 ## SYNTAX
 
 ```
-Get-MgEnvironment [[-Name] <String>] [<CommonParameters>]
+Get-MgEnvironment [[-Name] <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,6 +50,21 @@ Required: False
 Position: 0
 Default value: None
 Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

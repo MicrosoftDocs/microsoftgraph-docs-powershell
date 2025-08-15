@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting
 schema: 2.0.0
-ms.subservice: teams
 ---
 
 # Update-MgBetaTeamworkTeamAppSetting
 
 ## SYNOPSIS
 Update the properties of a teamsAppSettings object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkTeamAppSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -21,13 +17,13 @@ Update the properties of a teamsAppSettings object.
 Update-MgBetaTeamworkTeamAppSetting [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AllowUserRequestsForAppAccess] [-CustomAppSettings <IMicrosoftGraphCustomAppSettings>] [-Id <String>]
  [-IsChatResourceSpecificConsentEnabled] [-IsUserPersonalScopeResourceSpecificConsentEnabled]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSettings>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,11 +31,11 @@ Update-MgBetaTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSetti
 Update the properties of a teamsAppSettings object.
 
 ## EXAMPLES
-### Example 1: Enable installation of apps that require resource-specific consent in chats/meetings.
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.teamsAppSettings"
@@ -48,14 +44,10 @@ $params = @{
 
 Update-MgBetaTeamworkTeamAppSetting -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will enable installation of apps that require resource-specific consent in chats/meetings.
-
-### Example 2: Allow Teams users to request admins for access to certain Teams Apps.
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.teamsAppSettings"
@@ -63,10 +55,6 @@ $params = @{
 }
 
 Update-MgBetaTeamworkTeamAppSetting -BodyParameter $params
-
-```
-This example will allow teams users to request admins for access to certain teams apps.
-
 
 ## PARAMETERS
 
@@ -113,21 +101,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -212,6 +185,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -219,6 +207,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -259,50 +262,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppSettings>`: teamsAppSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphTeamsAppSettings\>: teamsAppSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AllowUserRequestsForAppAccess <Boolean?>]`: Indicates whether users are allowed to request access to the unavailable Teams apps.
-  - `[CustomAppSettings <IMicrosoftGraphCustomAppSettings>]`: customAppSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeveloperToolsForShowingAppUsageMetrics <String>]`: appDevelopmentPlatforms
-  - `[IsChatResourceSpecificConsentEnabled <Boolean?>]`: Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant.
+  \[AllowUserRequestsForAppAccess \<Boolean?\>\]: Indicates whether users are allowed to request access to the unavailable Teams apps.
+  \[CustomAppSettings \<IMicrosoftGraphCustomAppSettings\>\]: customAppSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DeveloperToolsForShowingAppUsageMetrics \<String\>\]: appDevelopmentPlatforms
+  \[IsChatResourceSpecificConsentEnabled \<Boolean?\>\]: Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant.
 True indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings.
 False blocks the installation of any Teams app that requires resource-specific permissions in a chat or a meeting.
-  - `[IsUserPersonalScopeResourceSpecificConsentEnabled <Boolean?>]`: Indicates whether resource-specific consent for personal scope in Teams apps has been enabled for the tenant.
+  \[IsUserPersonalScopeResourceSpecificConsentEnabled \<Boolean?\>\]: Indicates whether resource-specific consent for personal scope in Teams apps has been enabled for the tenant.
 True indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed in the personal scope.
 False blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.
 
-CUSTOMAPPSETTINGS `<IMicrosoftGraphCustomAppSettings>`: customAppSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeveloperToolsForShowingAppUsageMetrics <String>]`: appDevelopmentPlatforms
+CUSTOMAPPSETTINGS \<IMicrosoftGraphCustomAppSettings\>: customAppSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeveloperToolsForShowingAppUsageMetrics \<String\>\]: appDevelopmentPlatforms
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting)
 
 [https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

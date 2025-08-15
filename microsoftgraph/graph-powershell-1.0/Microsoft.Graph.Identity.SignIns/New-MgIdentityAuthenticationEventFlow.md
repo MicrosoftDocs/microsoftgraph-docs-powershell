@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflow
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # New-MgIdentityAuthenticationEventFlow
 
 ## SYNOPSIS
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
-The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow object type.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlow?view=graph-powershell-beta)
+The following derived subtypes are supported:\n- externalUsersSelfServiceSignupEventsFlow object type.
 
 ## SYNTAX
 
@@ -21,35 +17,27 @@ The following derived subtypes are supported:- externalUsersSelfServiceSignupEve
 ```
 New-MgIdentityAuthenticationEventFlow [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Description <String>] [-DisplayName <String>]
- [-Id <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgIdentityAuthenticationEventFlow -BodyParameter <IMicrosoftGraphAuthenticationEventsFlow>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
-The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow object type.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EventListener.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EventListener.ReadWrite.All,  |
+The following derived subtypes are supported:\n- externalUsersSelfServiceSignupEventsFlow object type.
 
 ## EXAMPLES
-### Example 1: Create a basic External Identities sign-up and sign-in user flow in an external tenant
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow"
@@ -96,7 +84,7 @@ $params = @{
 							editable = $false
 							writeToDirectory = $true
 							required = $true
-							validationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
+							validationRegEx = "^\[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_\`{|}~-\]+@\[a-zA-Z0-9-\]+(?:.\[a-zA-Z0-9-\]+)*$"
 						}
 						@{
 							attribute = "displayName"
@@ -106,7 +94,7 @@ $params = @{
 							editable = $true
 							writeToDirectory = $true
 							required = $false
-							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
+							validationRegEx = "^\[a-zA-Z_\]\[0-9a-zA-Z_ \]*\[0-9a-zA-Z_\]+$"
 						}
 					)
 				}
@@ -117,14 +105,10 @@ $params = @{
 
 New-MgIdentityAuthenticationEventFlow -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create a basic external identities sign-up and sign-in user flow in an external tenant
-
-### Example 2: Create a basic external identities sign-up and sign-in user flow with an attached application in an external tenant
-
-```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow"
@@ -180,7 +164,7 @@ $params = @{
 							editable = $false
 							writeToDirectory = $true
 							required = $true
-							validationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
+							validationRegEx = "^\[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_\`{|}~-\]+@\[a-zA-Z0-9-\]+(?:.\[a-zA-Z0-9-\]+)*$"
 						}
 						@{
 							attribute = "displayName"
@@ -190,7 +174,7 @@ $params = @{
 							editable = $true
 							writeToDirectory = $true
 							required = $false
-							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
+							validationRegEx = "^\[a-zA-Z_\]\[0-9a-zA-Z_ \]*\[0-9a-zA-Z_\]+$"
 						}
 					)
 				}
@@ -201,14 +185,10 @@ $params = @{
 
 New-MgIdentityAuthenticationEventFlow -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create a basic external identities sign-up and sign-in user flow with an attached application in an external tenant
-
-### Example 3: Create an External Identities sign-up and sign-in user flow with social providers and a custom attribute
-
-```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow"
@@ -268,7 +248,7 @@ $params = @{
 							editable = $false
 							writeToDirectory = $true
 							required = $true
-							validationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
+							validationRegEx = "^\[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_\`{|}~-\]+@\[a-zA-Z0-9-\]+(?:.\[a-zA-Z0-9-\]+)*$"
 						}
 						@{
 							attribute = "displayName"
@@ -278,7 +258,7 @@ $params = @{
 							editable = $true
 							writeToDirectory = $true
 							required = $false
-							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
+							validationRegEx = "^\[a-zA-Z_\]\[0-9a-zA-Z_ \]*\[0-9a-zA-Z_\]+$"
 						}
 						@{
 							attribute = "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor"
@@ -288,7 +268,7 @@ $params = @{
 							editable = $true
 							writeToDirectory = $true
 							required = $false
-							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
+							validationRegEx = "^\[a-zA-Z_\]\[0-9a-zA-Z_ \]*\[0-9a-zA-Z_\]+$"
 						}
 					)
 				}
@@ -298,10 +278,6 @@ $params = @{
 }
 
 New-MgIdentityAuthenticationEventFlow -BodyParameter $params
-
-```
-This example will create an external identities sign-up and sign-in user flow with social providers and a custom attribute
-
 
 ## PARAMETERS
 
@@ -344,21 +320,6 @@ To construct, see NOTES section for CONDITIONS properties and create a hash tabl
 Type: IMicrosoftGraphAuthenticationConditions
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -429,6 +390,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -436,6 +412,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -476,52 +467,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationEventsFlow>`: authenticationEventsFlow
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAuthenticationEventsFlow\>: authenticationEventsFlow
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Conditions <IMicrosoftGraphAuthenticationConditions>]`: authenticationConditions
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Applications <IMicrosoftGraphAuthenticationConditionsApplications>]`: authenticationConditionsApplications
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication- `[]`>]`:
-        - `[AppId <String>]`: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
-  - `[Description <String>]`: The description of the events policy.
-  - `[DisplayName <String>]`: Required.
+  \[Conditions \<IMicrosoftGraphAuthenticationConditions\>\]: authenticationConditions
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Applications \<IMicrosoftGraphAuthenticationConditionsApplications\>\]: authenticationConditionsApplications
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[IncludeApplications \<IMicrosoftGraphAuthenticationConditionApplication\[\]\>\]: 
+        \[AppId \<String\>\]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
+  \[Description \<String\>\]: The description of the events policy.
+  \[DisplayName \<String\>\]: Required.
 The display name for the events policy.
 
-CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Applications <IMicrosoftGraphAuthenticationConditionsApplications>]`: authenticationConditionsApplications
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication- `[]`>]`:
-      - `[AppId <String>]`: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
+CONDITIONS \<IMicrosoftGraphAuthenticationConditions\>: authenticationConditions
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Applications \<IMicrosoftGraphAuthenticationConditionsApplications\>\]: authenticationConditionsApplications
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IncludeApplications \<IMicrosoftGraphAuthenticationConditionApplication\[\]\>\]: 
+      \[AppId \<String\>\]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflow)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventsflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventsflows?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
