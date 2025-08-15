@@ -39,18 +39,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Chat.ReadBasic.All, Chat.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -215,6 +203,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatcount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatcount)
+
 
 
 

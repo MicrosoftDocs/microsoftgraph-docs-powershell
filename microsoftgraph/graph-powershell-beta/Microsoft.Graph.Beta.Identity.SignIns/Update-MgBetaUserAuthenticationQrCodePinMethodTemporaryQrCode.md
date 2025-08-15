@@ -47,18 +47,6 @@ Update-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode -InputObject <IIde
 ## DESCRIPTION
 Update the navigation property temporaryQRCode in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -420,6 +408,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationqrcodepinmethodtemporaryqrcode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationqrcodepinmethodtemporaryqrcode)
+
 
 
 

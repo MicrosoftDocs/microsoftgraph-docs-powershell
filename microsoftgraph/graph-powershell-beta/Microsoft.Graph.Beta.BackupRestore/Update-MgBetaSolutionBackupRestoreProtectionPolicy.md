@@ -52,18 +52,6 @@ Update-MgBetaSolutionBackupRestoreProtectionPolicy -InputObject <IBackupRestoreI
 ## DESCRIPTION
 Update the navigation property protectionPolicies in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -426,6 +414,7 @@ RETENTIONSETTINGS `<IMicrosoftGraphRetentionSetting- `[]`>`: Contains the retent
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreprotectionpolicy)
+
 
 
 

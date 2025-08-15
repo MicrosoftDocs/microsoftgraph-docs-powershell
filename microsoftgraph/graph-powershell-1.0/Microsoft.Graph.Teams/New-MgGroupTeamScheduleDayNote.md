@@ -50,18 +50,6 @@ New-MgGroupTeamScheduleDayNote -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to dayNotes for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -408,6 +396,7 @@ SHAREDDAYNOTE `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduledaynote](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduledaynote)
+
 
 
 

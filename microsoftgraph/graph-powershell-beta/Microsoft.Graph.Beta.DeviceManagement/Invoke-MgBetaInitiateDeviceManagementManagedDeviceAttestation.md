@@ -29,18 +29,6 @@ Invoke-MgBetaInitiateDeviceManagementManagedDeviceAttestation -InputObject <IDev
 ## DESCRIPTION
 Perform Device Attestation
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -293,6 +281,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetainitiatedevicemanagementmanageddeviceattestation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetainitiatedevicemanagementmanageddeviceattestation)
+
 
 
 

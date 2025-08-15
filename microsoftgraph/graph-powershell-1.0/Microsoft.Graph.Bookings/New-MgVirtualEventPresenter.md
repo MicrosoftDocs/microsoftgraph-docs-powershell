@@ -48,18 +48,6 @@ New-MgVirtualEventPresenter -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create new navigation property to presenters for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -348,6 +336,7 @@ PRESENTERDETAILS `<IMicrosoftGraphVirtualEventPresenterDetails>`: virtualEventPr
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventpresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventpresenter)
+
 
 
 
