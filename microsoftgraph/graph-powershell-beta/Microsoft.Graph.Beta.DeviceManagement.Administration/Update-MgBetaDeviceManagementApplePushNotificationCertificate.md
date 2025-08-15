@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Certificate
-.
+
 
 ```yaml
 Type: String

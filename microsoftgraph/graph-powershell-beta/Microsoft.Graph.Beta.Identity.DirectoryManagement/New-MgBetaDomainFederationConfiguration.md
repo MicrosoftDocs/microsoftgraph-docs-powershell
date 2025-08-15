@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultInteractiveAuthenticationMethod
-.
+
 
 ```yaml
 Type: String
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -OpenIdConnectDiscoveryEndpoint
-.
+
 
 ```yaml
 Type: String
@@ -343,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordChangeUri
-.
+
 
 ```yaml
 Type: String

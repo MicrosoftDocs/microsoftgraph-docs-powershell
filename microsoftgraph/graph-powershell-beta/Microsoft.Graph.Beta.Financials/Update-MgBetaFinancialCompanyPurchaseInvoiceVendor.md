@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Balance
-.
+
 
 ```yaml
 Type: Decimal
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Blocked
-.
+
 
 ```yaml
 Type: String
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -CurrencyCode
-.
+
 
 ```yaml
 Type: String
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -CurrencyId
-.
+
 
 ```yaml
 Type: String
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Email
-.
+
 
 ```yaml
 Type: String
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+
 
 ```yaml
 Type: String
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -287,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -Number
-.
+
 
 ```yaml
 Type: String
@@ -318,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -PaymentMethodId
-.
+
 
 ```yaml
 Type: String
@@ -349,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### -PaymentTermsId
-.
+
 
 ```yaml
 Type: String
@@ -364,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -PhoneNumber
-.
+
 
 ```yaml
 Type: String
@@ -379,7 +379,7 @@ Accept wildcard characters: False
 ```
 
 ### -Picture
-.
+
 To construct, see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
@@ -440,7 +440,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaxLiable
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -455,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaxRegistrationNumber
-.
+
 
 ```yaml
 Type: String
@@ -470,7 +470,7 @@ Accept wildcard characters: False
 ```
 
 ### -Website
-.
+
 
 ```yaml
 Type: String

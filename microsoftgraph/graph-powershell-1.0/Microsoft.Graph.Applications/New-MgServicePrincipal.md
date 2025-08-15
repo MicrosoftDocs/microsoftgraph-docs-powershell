@@ -390,7 +390,7 @@ Accept wildcard characters: False
 ```
 
 ### -DelegatedPermissionClassifications
-.
+
 To construct, see NOTES section for DELEGATEDPERMISSIONCLASSIFICATIONS properties and create a hash table.
 
 ```yaml
@@ -473,7 +473,7 @@ Accept wildcard characters: False
 ```
 
 ### -Endpoints
-.
+
 To construct, see NOTES section for ENDPOINTS properties and create a hash table.
 
 ```yaml
@@ -1049,7 +1049,7 @@ Accept wildcard characters: False
 ```
 
 ### -TransitiveMemberOf
-.
+
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml

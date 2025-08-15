@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -KnownIssueHistories
-.
+
 To construct, see NOTES section for KNOWNISSUEHISTORIES properties and create a hash table.
 
 ```yaml
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -SafeguardHoldIds
-.
+
 
 ```yaml
 Type: Int32[]

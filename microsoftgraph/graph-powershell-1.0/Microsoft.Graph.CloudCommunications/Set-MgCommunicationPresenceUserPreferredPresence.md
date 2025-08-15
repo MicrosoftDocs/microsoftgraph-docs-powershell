@@ -61,7 +61,7 @@ For more details, see presence sessions and time-out and expiration.
 ## PARAMETERS
 
 ### -Activity
-.
+
 
 ```yaml
 Type: String
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Availability
-.
+
 
 ```yaml
 Type: String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDuration
-.
+
 
 ```yaml
 Type: TimeSpan

@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -CompleteStepsCount
-.
+
 
 ```yaml
 Type: Int32
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -CompleteUsersCount
-.
+
 
 ```yaml
 Type: Int32
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedByUserId
-.
+
 
 ```yaml
 Type: String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -DismissedStepsCount
-.
+
 
 ```yaml
 Type: Int32
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludedUsersCount
-.
+
 
 ```yaml
 Type: Int32
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludedUsersDistinctCount
-.
+
 
 ```yaml
 Type: Int32
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncompleteStepsCount
-.
+
 
 ```yaml
 Type: Int32
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncompleteUsersCount
-.
+
 
 ```yaml
 Type: Int32
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -IneligibleStepsCount
-.
+
 
 ```yaml
 Type: Int32
@@ -293,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsComplete
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastActionByUserId
-.
+
 
 ```yaml
 Type: String
@@ -323,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastActionDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementTemplateCollectionDisplayName
-.
+
 
 ```yaml
 Type: String
@@ -353,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementTemplateCollectionId
-.
+
 
 ```yaml
 Type: String
@@ -398,7 +398,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegressedStepsCount
-.
+
 
 ```yaml
 Type: Int32
@@ -413,7 +413,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegressedUsersCount
-.
+
 
 ```yaml
 Type: Int32
@@ -443,7 +443,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-.
+
 
 ```yaml
 Type: String
@@ -458,7 +458,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnlicensedUsersCount
-.
+
 
 ```yaml
 Type: Int32

@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApprovalDuration
-.
+
 
 ```yaml
 Type: TimeSpan
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApprovalType
-.
+
 
 ```yaml
 Type: String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApproverReason
-.
+
 
 ```yaml
 Type: String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestorReason
-.
+
 
 ```yaml
 Type: String
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleId
-.
+
 
 ```yaml
 Type: String
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -340,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-.
+
 
 ```yaml
 Type: String

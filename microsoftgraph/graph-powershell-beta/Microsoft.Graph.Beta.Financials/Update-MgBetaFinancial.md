@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -Companies
-.
+
 To construct, see NOTES section for COMPANIES properties and create a hash table.
 
 ```yaml
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+
 
 ```yaml
 Type: String

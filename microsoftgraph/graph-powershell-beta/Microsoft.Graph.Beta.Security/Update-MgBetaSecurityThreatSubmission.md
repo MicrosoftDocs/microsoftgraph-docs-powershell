@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailThreats
-.
+
 To construct, see NOTES section for EMAILTHREATS properties and create a hash table.
 
 ```yaml
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailThreatSubmissionPolicies
-.
+
 To construct, see NOTES section for EMAILTHREATSUBMISSIONPOLICIES properties and create a hash table.
 
 ```yaml
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileThreats
-.
+
 To construct, see NOTES section for FILETHREATS properties and create a hash table.
 
 ```yaml
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -UrlThreats
-.
+
 To construct, see NOTES section for URLTHREATS properties and create a hash table.
 
 ```yaml
