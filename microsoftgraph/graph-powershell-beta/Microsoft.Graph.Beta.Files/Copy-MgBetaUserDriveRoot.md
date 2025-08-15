@@ -14,6 +14,9 @@ You can optionally copy exclusively the child items, specify a new parent folder
 Once the request is accepted, the operation is queued and processed asynchronously.
 Use the monitor URL to track progress until the operation completes.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Files/Copy-MgUserDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

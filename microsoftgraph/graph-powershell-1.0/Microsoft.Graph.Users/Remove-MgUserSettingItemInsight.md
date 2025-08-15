@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property itemInsights for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserSettingItemInsight](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserSettingItemInsight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -11,6 +11,9 @@ ms.subservice: onedrive
 ## SYNOPSIS
 Update one or more tenant-level settings for SharePoint and OneDrive.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminSharepointSetting](/powershell/module/Microsoft.Graph.Sites/Update-MgAdminSharepointSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

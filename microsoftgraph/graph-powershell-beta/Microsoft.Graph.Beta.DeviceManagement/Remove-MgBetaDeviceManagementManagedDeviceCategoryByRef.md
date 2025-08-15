@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete ref of navigation property deviceCategory for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementManagedDeviceCategoryByRef](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementManagedDeviceCategoryByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

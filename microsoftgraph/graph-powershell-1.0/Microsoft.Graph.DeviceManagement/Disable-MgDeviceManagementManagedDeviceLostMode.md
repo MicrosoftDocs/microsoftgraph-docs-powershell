@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Disable lost mode
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Disable-MgBetaDeviceManagementManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Disable-MgBetaDeviceManagementManagedDeviceLostMode?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Disable (Default)

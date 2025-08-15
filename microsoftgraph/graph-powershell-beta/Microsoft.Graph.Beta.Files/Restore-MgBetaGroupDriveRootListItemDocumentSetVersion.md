@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Restore a document set version.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore (Default)

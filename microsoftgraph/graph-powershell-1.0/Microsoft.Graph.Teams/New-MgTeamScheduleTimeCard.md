@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Create a timeCard instance in a schedule.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeCard?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

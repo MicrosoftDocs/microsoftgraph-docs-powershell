@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 Passive DNS retrieval about this host.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostPassiveDns](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostPassiveDns?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
