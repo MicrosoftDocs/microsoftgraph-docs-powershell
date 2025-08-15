@@ -31,6 +31,14 @@ New-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration
 ## DESCRIPTION
 Create a mutualTlsOauthConfiguration resource that contains a specified certificate authority object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MutualTlsOauthConfiguration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | MutualTlsOauthConfiguration.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

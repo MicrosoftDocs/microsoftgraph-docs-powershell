@@ -56,6 +56,14 @@ New-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Create a new internalDomainFederation object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Domain.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

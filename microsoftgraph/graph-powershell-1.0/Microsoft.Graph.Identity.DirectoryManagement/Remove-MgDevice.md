@@ -30,6 +30,14 @@ Remove-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete a registered device.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.AccessAsUser.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Device.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

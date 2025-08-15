@@ -41,6 +41,14 @@ Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance
 ## DESCRIPTION
 Read the properties and relationships of a privilegedAccessGroupEligibilityScheduleInstance object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrivilegedEligibilitySchedule.Read.AzureADGroup, PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PrivilegedEligibilitySchedule.Read.AzureADGroup, PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

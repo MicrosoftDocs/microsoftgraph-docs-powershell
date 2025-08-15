@@ -29,6 +29,14 @@ Remove-MgBetaGroupPhoto -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property photo for groups
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ProfilePhoto.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ProfilePhoto.ReadWrite.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

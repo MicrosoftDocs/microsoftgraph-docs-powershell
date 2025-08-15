@@ -43,6 +43,14 @@ Update-MgBetaDriveItemExtension -InputObject <IFilesIdentity> -BodyParameter <Ha
 ## DESCRIPTION
 Update the navigation property extensions in drives
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All, Files.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Files.ReadWrite.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

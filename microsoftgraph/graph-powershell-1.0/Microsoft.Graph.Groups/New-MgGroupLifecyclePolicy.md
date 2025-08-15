@@ -63,6 +63,14 @@ New-MgGroupLifecyclePolicy -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy>
 Creates a new groupLifecyclePolicy.
 Only one policy exists in the tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
