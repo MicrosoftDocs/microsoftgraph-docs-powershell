@@ -37,18 +37,6 @@ Invoke-MgBetaGraphGroupDrive -InputObject <IFilesIdentity> [-Count] [-ExpandProp
 Get a list of driveItem objects shared with the owner of a drive.
 The driveItems returned from the sharedWithMe method always include the remoteItem facet that indicates they're items from a different drive.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -310,6 +298,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetagraphgroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetagraphgroupdrive)
 
 [https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-beta](https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-beta)
+
 
 
 

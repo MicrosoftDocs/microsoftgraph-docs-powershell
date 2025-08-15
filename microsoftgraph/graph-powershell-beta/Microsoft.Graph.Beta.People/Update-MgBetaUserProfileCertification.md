@@ -66,11 +66,11 @@ Update the properties of a personCertification object from a user's profile.
 | Application | User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	issuingAuthority = "International Academy of Marketing Excellence"
@@ -78,6 +78,10 @@ $params = @{
 }
 
 Update-MgBetaUserProfileCertification -UserId $userId -PersonCertificationId $personCertificationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfileCertification Cmdlet.
+
 
 ## PARAMETERS
 

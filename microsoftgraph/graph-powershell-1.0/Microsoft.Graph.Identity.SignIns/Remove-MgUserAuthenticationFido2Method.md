@@ -42,13 +42,17 @@ Deletes a user's FIDO2 Security Key Authentication Method object.
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgUserAuthenticationFido2Method -UserId $userId -Fido2AuthenticationMethodId $fido2AuthenticationMethodId
+
+```
+This example shows how to use the Remove-MgUserAuthenticationFido2Method Cmdlet.
+
 
 ## PARAMETERS
 

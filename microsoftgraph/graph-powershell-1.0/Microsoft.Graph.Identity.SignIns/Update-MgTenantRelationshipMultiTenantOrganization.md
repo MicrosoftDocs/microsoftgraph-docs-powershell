@@ -37,11 +37,11 @@ Update-MgTenantRelationshipMultiTenantOrganization -BodyParameter <IMicrosoftGra
 Update the properties of a multitenant organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Contoso organization"
@@ -49,6 +49,10 @@ $params = @{
 }
 
 Update-MgTenantRelationshipMultiTenantOrganization -BodyParameter $params
+
+```
+This example shows how to use the Update-MgTenantRelationshipMultiTenantOrganization Cmdlet.
+
 
 ## PARAMETERS
 

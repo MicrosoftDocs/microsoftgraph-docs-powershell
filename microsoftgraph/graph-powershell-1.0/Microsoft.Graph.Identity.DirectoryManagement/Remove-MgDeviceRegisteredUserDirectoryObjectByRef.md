@@ -34,13 +34,17 @@ Remove-MgDeviceRegisteredUserDirectoryObjectByRef -InputObject <IIdentityDirecto
 Remove a user as a registered user of the device.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgDeviceRegisteredUserDirectoryObjectByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgDeviceRegisteredUserDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 

@@ -38,18 +38,6 @@ Get-MgBetaUserDeviceEnrollmentConfigurationAssignment -InputObject <IDevicesCorp
 ## DESCRIPTION
 The list of group assignments for the device configuration profile
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -402,6 +390,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetauserdeviceenrollmentconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetauserdeviceenrollmentconfigurationassignment)
+
+
 
 
 

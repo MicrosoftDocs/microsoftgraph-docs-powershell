@@ -34,13 +34,17 @@ Invoke-MgRetryUserServiceProvisioning -InputObject <IUsersActionsIdentity> [-Res
 Retry the provisioning of a user object in Microsoft Entra ID.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 Invoke-MgRetryUserServiceProvisioning -UserId $userId
+
+```
+This example shows how to use the Invoke-MgRetryUserServiceProvisioning Cmdlet.
+
 
 ## PARAMETERS
 

@@ -44,11 +44,11 @@ Create a new notificationMessageTemplate object.
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.notificationMessageTemplate"
@@ -61,6 +61,10 @@ $params = @{
 }
 
 New-MgDeviceManagementNotificationMessageTemplate -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementNotificationMessageTemplate Cmdlet.
+
 
 ## PARAMETERS
 

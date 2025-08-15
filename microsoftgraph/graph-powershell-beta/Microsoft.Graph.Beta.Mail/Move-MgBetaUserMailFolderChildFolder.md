@@ -49,18 +49,6 @@ Move-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity>
 ## DESCRIPTION
 Move a mail folder and its contents to another mail folder.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -285,6 +273,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/move-mgbetausermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/move-mgbetausermailfolderchildfolder)
 
 [https://learn.microsoft.com/graph/api/mailfolder-move?view=graph-rest-beta](https://learn.microsoft.com/graph/api/mailfolder-move?view=graph-rest-beta)
+
 
 
 

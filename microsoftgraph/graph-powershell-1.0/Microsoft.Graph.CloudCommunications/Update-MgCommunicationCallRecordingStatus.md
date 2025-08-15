@@ -58,11 +58,11 @@ This requires the use of the Teams policy-based recording solution.
 | Application | Calls.AccessMedia.All, Calls.JoinGroupCall.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	clientContext = "clientContext-value"
@@ -70,6 +70,10 @@ $params = @{
 }
 
 Update-MgCommunicationCallRecordingStatus -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgCommunicationCallRecordingStatus Cmdlet.
+
 
 ## PARAMETERS
 

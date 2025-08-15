@@ -50,13 +50,17 @@ The collection of column definitions reusable across lists under this site.
 | Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteColumn -SiteId $siteId
+
+```
+This example shows how to use the Get-MgBetaSiteColumn Cmdlet.
+
 
 ## PARAMETERS
 

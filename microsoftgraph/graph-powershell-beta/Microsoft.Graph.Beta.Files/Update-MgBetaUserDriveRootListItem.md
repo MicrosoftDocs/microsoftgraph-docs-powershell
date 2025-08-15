@@ -64,18 +64,6 @@ Update-MgBetaUserDriveRootListItem -InputObject <IFilesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property listItem in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activities
@@ -51677,6 +51665,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootlistitem)
+
 
 
 

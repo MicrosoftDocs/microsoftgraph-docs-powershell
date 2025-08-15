@@ -53,18 +53,22 @@ After 30 days, the item is permanently deleted.
 | Application | User.DeleteRestore.All, User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Restore a deleted directory object
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId
 
-### EXAMPLE 2
 ```
+This example will restore a deleted directory object
+
+### Example 2: Restore a deleted user and remove conflicting proxy addresses
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	autoReconcileProxyConflict = $true
@@ -72,16 +76,24 @@ $params = @{
 
 Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will restore a deleted user and remove conflicting proxy addresses
+
+### Example 3: Restore a deleted user and assign them a new userPrincipalName
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	newUserPrincipalName = "johndoe@contoso.com"
 }
 
 Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example will restore a deleted user and assign them a new userprincipalname
+
 
 ## PARAMETERS
 

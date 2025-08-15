@@ -30,18 +30,6 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity> [
 ## DESCRIPTION
 Remove an ediscoveryCaseMember from an ediscoveryCase.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -313,6 +301,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasemember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasemember)
 
 [https://learn.microsoft.com/graph/api/security-ediscoverycasemember-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-delete?view=graph-rest-beta)
+
 
 
 

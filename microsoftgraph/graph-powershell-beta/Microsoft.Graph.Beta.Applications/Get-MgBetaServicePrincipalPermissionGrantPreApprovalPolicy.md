@@ -40,13 +40,17 @@ Get-MgBetaServicePrincipalPermissionGrantPreApprovalPolicy -InputObject <IApplic
 Retrieve the permissionGrantPreApprovalPolicy object for the servicePrincipal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Get-MgBetaServicePrincipalPermissionGrantPreApprovalPolicy -ServicePrincipalId $servicePrincipalId -PermissionGrantPreApprovalPolicyId $permissionGrantPreApprovalPolicyId
+
+```
+This example shows how to use the Get-MgBetaServicePrincipalPermissionGrantPreApprovalPolicy Cmdlet.
+
 
 ## PARAMETERS
 

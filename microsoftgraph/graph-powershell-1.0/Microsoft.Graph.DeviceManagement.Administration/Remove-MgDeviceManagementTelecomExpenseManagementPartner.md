@@ -42,13 +42,17 @@ Deletes a telecomExpenseManagementPartner.
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Remove-MgDeviceManagementTelecomExpenseManagementPartner -TelecomExpenseManagementPartnerId $telecomExpenseManagementPartnerId
+
+```
+This example shows how to use the Remove-MgDeviceManagementTelecomExpenseManagementPartner Cmdlet.
+
 
 ## PARAMETERS
 
