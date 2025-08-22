@@ -77,18 +77,6 @@ Update-MgBetaSecurityCollaborationAnalyzedEmail -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property analyzedEmails in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1205,6 +1193,7 @@ This is full URL string, including query parameters.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycollaborationanalyzedemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycollaborationanalyzedemail)
+
 
 
 

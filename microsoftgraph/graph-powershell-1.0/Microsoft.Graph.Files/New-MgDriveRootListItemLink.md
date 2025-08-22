@@ -52,18 +52,6 @@ New-MgDriveRootListItemLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action createLink
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -390,6 +378,7 @@ RECIPIENTS `<IMicrosoftGraphDriveRecipient- `[]`>`: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlistitemlink)
+
 
 
 

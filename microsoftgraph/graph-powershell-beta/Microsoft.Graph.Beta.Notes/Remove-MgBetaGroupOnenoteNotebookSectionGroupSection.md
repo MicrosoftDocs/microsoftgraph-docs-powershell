@@ -33,18 +33,6 @@ Remove-MgBetaGroupOnenoteNotebookSectionGroupSection -InputObject <INotesIdentit
 ## DESCRIPTION
 Delete navigation property sections for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -262,6 +250,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetagrouponenotenotebooksectiongroupsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetagrouponenotenotebooksectiongroupsection)
+
 
 
 

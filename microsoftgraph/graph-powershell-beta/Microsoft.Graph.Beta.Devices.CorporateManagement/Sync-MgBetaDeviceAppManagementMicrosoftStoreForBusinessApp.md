@@ -32,18 +32,6 @@ Syncs Intune account with Microsoft Store For Business
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -151,6 +139,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/sync-mgbetadeviceappmanagementmicrosoftstoreforbusinessapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/sync-mgbetadeviceappmanagementmicrosoftstoreforbusinessapp)
+
 
 
 

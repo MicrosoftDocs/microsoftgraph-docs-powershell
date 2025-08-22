@@ -31,18 +31,6 @@ Remove-MgBetaNetworkAccessFilteringProfilePolicy -InputObject <INetworkAccessIde
 Delete a tlsInspectionPolicyLink object.
 Used to unlink a tlsInspectionPolicy from a filtering profile.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -FilteringProfileId
@@ -243,6 +231,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessfilteringprofilepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessfilteringprofilepolicy)
 
 [https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicylink-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicylink-delete?view=graph-rest-beta)
+
 
 
 

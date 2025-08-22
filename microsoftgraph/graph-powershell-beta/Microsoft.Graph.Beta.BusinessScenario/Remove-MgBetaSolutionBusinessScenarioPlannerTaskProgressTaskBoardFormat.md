@@ -31,18 +31,6 @@ Remove-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat
 ## DESCRIPTION
 Delete navigation property progressTaskBoardFormat for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -222,6 +210,7 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertaskprogresstaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertaskprogresstaskboardformat)
+
 
 
 

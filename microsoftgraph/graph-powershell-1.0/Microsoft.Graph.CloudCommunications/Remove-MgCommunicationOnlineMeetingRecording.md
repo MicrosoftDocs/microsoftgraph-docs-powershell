@@ -29,18 +29,6 @@ Remove-MgCommunicationOnlineMeetingRecording -InputObject <ICloudCommunicationsI
 ## DESCRIPTION
 Delete navigation property recordings for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallRecordingId
@@ -230,6 +218,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationonlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationonlinemeetingrecording)
+
 
 
 

@@ -48,18 +48,6 @@ Update-MgSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> -BodyPa
 ## DESCRIPTION
 Update the navigation property filePlanReferences in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -362,6 +350,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelfileplanreference)
+
 
 
 

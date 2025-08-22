@@ -29,18 +29,6 @@ Remove-MgBetaGroupSiteGetByPathInformationProtection -InputObject <ISitesIdentit
 ## DESCRIPTION
 Delete navigation property informationProtection for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -290,6 +278,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitegetbypathinformationprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitegetbypathinformationprotection)
+
 
 
 

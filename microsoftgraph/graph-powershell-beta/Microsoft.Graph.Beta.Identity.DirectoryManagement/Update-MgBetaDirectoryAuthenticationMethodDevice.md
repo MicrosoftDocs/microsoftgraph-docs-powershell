@@ -30,18 +30,6 @@ Update-MgBetaDirectoryAuthenticationMethodDevice -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property authenticationMethodDevices in directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -17200,6 +17188,7 @@ Supports $filter (eq).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryauthenticationmethoddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryauthenticationmethoddevice)
+
 
 
 

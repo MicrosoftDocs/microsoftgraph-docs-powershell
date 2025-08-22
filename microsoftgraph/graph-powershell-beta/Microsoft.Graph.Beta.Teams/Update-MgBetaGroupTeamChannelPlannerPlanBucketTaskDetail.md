@@ -53,18 +53,6 @@ Update-MgBetaGroupTeamChannelPlannerPlanBucketTaskDetail -InputObject <ITeamsIde
 ## DESCRIPTION
 Update the navigation property details in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -542,6 +530,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchannelplannerplanbuckettaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchannelplannerplanbuckettaskdetail)
+
 
 
 

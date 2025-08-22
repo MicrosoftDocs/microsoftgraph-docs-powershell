@@ -71,18 +71,6 @@ Update-MgBetaTeamPrimaryChannelPlannerPlanTask -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property tasks in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActiveChecklistItemCount
@@ -1248,6 +1236,7 @@ A GUID-based value that serves as the unique identifier for a series.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelplannerplantask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelplannerplantask)
+
 
 
 

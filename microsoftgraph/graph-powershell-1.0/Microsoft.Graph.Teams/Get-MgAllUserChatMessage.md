@@ -66,18 +66,6 @@ Nullable.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChatMessage.Read.Chat, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite.All, Chat.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -425,6 +413,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgalluserchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgalluserchatmessage)
 
 [https://learn.microsoft.com/graph/api/chats-getallmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chats-getallmessages?view=graph-rest-1.0)
+
 
 
 

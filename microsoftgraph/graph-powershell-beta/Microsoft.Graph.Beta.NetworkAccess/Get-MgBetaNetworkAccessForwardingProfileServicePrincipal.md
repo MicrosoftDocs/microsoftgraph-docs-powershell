@@ -29,18 +29,6 @@ Get-MgBetaNetworkAccessForwardingProfileServicePrincipal -InputObject <INetworkA
 ## DESCRIPTION
 Get servicePrincipal from networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -193,6 +181,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessforwardingprofileserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessforwardingprofileserviceprincipal)
+
 
 
 

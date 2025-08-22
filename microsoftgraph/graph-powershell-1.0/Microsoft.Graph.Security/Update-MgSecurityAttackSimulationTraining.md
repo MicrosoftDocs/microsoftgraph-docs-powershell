@@ -54,18 +54,6 @@ Update-MgSecurityAttackSimulationTraining -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property trainings in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -612,6 +600,7 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationtraining](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationtraining)
+
 
 
 

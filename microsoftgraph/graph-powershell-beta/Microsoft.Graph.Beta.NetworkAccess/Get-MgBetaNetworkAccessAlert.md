@@ -37,18 +37,6 @@ Get-MgBetaNetworkAccessAlert -InputObject <INetworkAccessIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get alerts from networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AlertId
@@ -324,6 +312,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessalert)
 
 [https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-list-alerts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-list-alerts?view=graph-rest-beta)
+
 
 
 

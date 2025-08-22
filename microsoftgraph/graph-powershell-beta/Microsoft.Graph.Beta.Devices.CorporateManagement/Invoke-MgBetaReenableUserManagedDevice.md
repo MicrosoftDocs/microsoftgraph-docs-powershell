@@ -29,18 +29,6 @@ Invoke-MgBetaReenableUserManagedDevice -InputObject <IDevicesCorporateManagement
 ## DESCRIPTION
 Invoke action reenable
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -273,6 +261,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetareenableusermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetareenableusermanageddevice)
+
 
 
 

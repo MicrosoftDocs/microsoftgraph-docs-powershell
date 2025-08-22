@@ -48,18 +48,6 @@ Invoke-MgBetaBufferUserInformationProtectionDecrypt -InputObject <IIdentitySignI
 ## DESCRIPTION
 Invoke action decryptBuffer
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -390,6 +378,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferuserinformationprotectiondecrypt](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferuserinformationprotectiondecrypt)
+
 
 
 

@@ -59,18 +59,6 @@ New-MgBetaGroupSiteGetByPathContentType -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to contentTypes for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1875,6 +1863,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitegetbypathcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitegetbypathcontenttype)
+
 
 
 

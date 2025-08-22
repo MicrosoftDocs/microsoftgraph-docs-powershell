@@ -40,18 +40,6 @@ Get-MgSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecurityIden
 ## DESCRIPTION
 Get the language details about an attack simulation training for a tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -387,6 +375,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationtraininglanguagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationtraininglanguagedetail)
 
 [https://learn.microsoft.com/graph/api/traininglanguagedetail-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/traininglanguagedetail-get?view=graph-rest-1.0)
+
 
 
 

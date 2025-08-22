@@ -31,18 +31,6 @@ Stop-MgVirtualEvent -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <
 ## DESCRIPTION
 Invoke action cancel
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -207,6 +195,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgvirtualevent](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgvirtualevent)
+
 
 
 

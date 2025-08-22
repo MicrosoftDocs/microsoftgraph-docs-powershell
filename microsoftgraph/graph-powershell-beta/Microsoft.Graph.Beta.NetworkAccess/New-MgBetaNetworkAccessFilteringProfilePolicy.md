@@ -47,18 +47,6 @@ New-MgBetaNetworkAccessFilteringProfilePolicy -InputObject <INetworkAccessIdenti
 Create a new tlsInspectionPolicyLink to connect a filtering profile with a tlsInspectionPolicy.
 One 1 tlsInspectionPolicy is allowed for every filtering profile.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -338,6 +326,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessfilteringprofilepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessfilteringprofilepolicy)
 
 [https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicylink-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicylink-post?view=graph-rest-beta)
+
 
 
 

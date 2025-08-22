@@ -60,18 +60,6 @@ Invoke action createLink
 | Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -447,6 +435,7 @@ RECIPIENTS `<IMicrosoftGraphDriveRecipient- `[]`>`: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistitemlink)
+
 
 
 

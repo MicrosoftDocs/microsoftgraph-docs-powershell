@@ -35,18 +35,6 @@ Get-MgSecuritySubjectRightsRequestApproverByUserPrincipalName -InputObject <ISec
 Collection of users who can approve the request.
 Currently only supported for requests of type delete.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -259,6 +247,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestapproverbyuserprincipalname](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestapproverbyuserprincipalname)
+
 
 
 

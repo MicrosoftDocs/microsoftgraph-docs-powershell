@@ -49,18 +49,6 @@ Add-MgExternalConnectionItemActivity -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Append additional instances of externalActivity objects on an externalItem.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activities
@@ -293,6 +281,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/add-mgexternalconnectionitemactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/add-mgexternalconnectionitemactivity)
 
 [https://learn.microsoft.com/graph/api/externalconnectors-externalitem-addactivities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-addactivities?view=graph-rest-1.0)
+
 
 
 

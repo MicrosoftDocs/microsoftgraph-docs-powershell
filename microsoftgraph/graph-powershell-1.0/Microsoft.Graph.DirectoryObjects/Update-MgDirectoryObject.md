@@ -46,18 +46,6 @@ Update-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity>
 ## DESCRIPTION
 Update entity in directoryObjects
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -262,6 +250,7 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/update-mgdirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/update-mgdirectoryobject)
+
 
 
 

@@ -31,18 +31,6 @@ Invoke-MgBetaPreviewGroupSiteOnenotePage -InputObject <ISitesIdentity> [-Respons
 ## DESCRIPTION
 Invoke function preview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -231,6 +219,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetapreviewgroupsiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetapreviewgroupsiteonenotepage)
+
 
 
 

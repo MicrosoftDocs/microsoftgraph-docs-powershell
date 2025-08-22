@@ -29,18 +29,6 @@ Invoke-MgBetaReportNetworkAccessReportDevice -InputObject <INetworkAccessIdentit
 ## DESCRIPTION
 Invoke function deviceReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -253,6 +241,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetareportnetworkaccessreportdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetareportnetworkaccessreportdevice)
+
 
 
 

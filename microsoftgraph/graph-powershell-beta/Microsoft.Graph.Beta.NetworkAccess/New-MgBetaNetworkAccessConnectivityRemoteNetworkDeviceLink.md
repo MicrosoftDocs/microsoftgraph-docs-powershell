@@ -51,18 +51,6 @@ New-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink -InputObject <INetwor
 ## DESCRIPTION
 Create new navigation property to deviceLinks for networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -430,6 +418,7 @@ Required only when you select zoneRedundancy redindancyTier when creating a devi
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetworkdevicelink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetworkdevicelink)
+
 
 
 

@@ -45,18 +45,6 @@ Update-MgBetaNetworkAccessFilteringProfilePolicy -InputObject <INetworkAccessIde
 ## DESCRIPTION
 Update the properties of a tlsInspectionPolicyLink object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -351,6 +339,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofilepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofilepolicy)
 
 [https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicylink-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicylink-update?view=graph-rest-beta)
+
 
 
 

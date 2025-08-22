@@ -35,18 +35,6 @@ Get-MgDeviceManagementReportDeviceAppInstallationStatusReport -OutFile <String>
 ## DESCRIPTION
 Invoke action retrieveDeviceAppInstallationStatusReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -352,6 +340,7 @@ BODY `<IPaths1Bog3HuDevicemanagementReportsMicrosoftGraphRetrievedeviceappinstal
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportdeviceappinstallationstatusreport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportdeviceappinstallationstatusreport)
+
 
 
 

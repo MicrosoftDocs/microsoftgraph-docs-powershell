@@ -32,18 +32,6 @@ New-MgUserManagedDeviceLogCollectionRequestDownloadUrl -InputObject <IDevicesCor
 ## DESCRIPTION
 Invoke action createDownloadUrl
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceLogCollectionResponseId
@@ -240,6 +228,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermanageddevicelogcollectionrequestdownloadurl](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermanageddevicelogcollectionrequestdownloadurl)
+
 
 
 

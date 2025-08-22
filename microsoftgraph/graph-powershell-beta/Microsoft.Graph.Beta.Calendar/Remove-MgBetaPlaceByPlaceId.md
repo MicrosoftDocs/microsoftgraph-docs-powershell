@@ -31,18 +31,6 @@ Remove-MgBetaPlaceByPlaceId -InputObject <ICalendarIdentity> [-IfMatch <String>]
 Delete a place object.
 You can also use this method to delete the following child object types: building, floor, section, or desk.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -217,6 +205,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplacebyplaceid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplacebyplaceid)
 
 [https://learn.microsoft.com/graph/api/place-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/place-delete?view=graph-rest-beta)
+
 
 
 

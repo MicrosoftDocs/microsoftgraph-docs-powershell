@@ -29,18 +29,6 @@ Remove-MgBetaUserAuthenticationHardwareOathMethodDevice -InputObject <IIdentityS
 ## DESCRIPTION
 Delete navigation property device for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -HardwareOathAuthenticationMethodId
@@ -298,6 +286,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationhardwareoathmethoddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationhardwareoathmethoddevice)
+
 
 
 
