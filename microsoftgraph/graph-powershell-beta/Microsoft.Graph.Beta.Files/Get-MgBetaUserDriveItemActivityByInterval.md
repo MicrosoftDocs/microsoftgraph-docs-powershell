@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemactivitybyinterval
 schema: 2.0.0
+ms.subservice: onedrive
 ---
 
 # Get-MgBetaUserDriveItemActivityByInterval
