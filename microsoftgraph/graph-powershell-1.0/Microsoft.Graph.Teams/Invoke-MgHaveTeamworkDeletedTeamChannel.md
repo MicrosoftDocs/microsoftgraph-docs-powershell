@@ -33,18 +33,6 @@ Invoke-MgHaveTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-TenantId
 ## DESCRIPTION
 Determine whether a user has access to a shared channel.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -241,6 +229,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghaveteamworkdeletedteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghaveteamworkdeletedteamchannel)
 
 [https://learn.microsoft.com/graph/api/channel-doesuserhaveaccess?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-doesuserhaveaccess?view=graph-rest-1.0)
+
 
 
 

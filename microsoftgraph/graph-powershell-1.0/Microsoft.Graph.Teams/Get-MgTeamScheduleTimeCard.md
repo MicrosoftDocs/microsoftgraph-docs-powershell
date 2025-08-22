@@ -49,15 +49,6 @@ The time cards in the schedule.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.Read.All, Schedule.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Teams
-```
-
-Get-MgTeamScheduleTimeCard -TeamId $teamId
-
 ## PARAMETERS
 
 ### -All
@@ -360,6 +351,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimecard)
 
 [https://learn.microsoft.com/graph/api/schedule-list-timecards?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-list-timecards?view=graph-rest-1.0)
+
+
 
 
 

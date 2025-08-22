@@ -48,42 +48,26 @@ Create a new windowsPhone81GeneralConfiguration object.
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.macOSGeneralDeviceConfiguration"
+	"@odata.type" = "#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration"
 	description = "Description value"
 	displayName = "Display Name value"
 	version = 7
-	compliantAppsList = @(
-		@{
-			"@odata.type" = "microsoft.graph.appListItem"
-			name = "Name value"
-			publisher = "Publisher value"
-			appStoreUrl = "https://example.com/appStoreUrl/"
-			appId = "App Id value"
-		}
-	)
-	compliantAppListType = "appsInListCompliant"
-	emailInDomainSuffixes = @(
-	"Email In Domain Suffixes value"
-)
-passwordBlockSimple = $true
-passwordExpirationDays = 
-passwordMinimumCharacterSetCount = 
-passwordMinimumLength = 
-passwordMinutesOfInactivityBeforeLock = 
-passwordMinutesOfInactivityBeforeScreenTimeout = 
-passwordPreviousPasswordBlockCount = 
-passwordRequiredType = "alphanumeric"
-passwordRequired = $true
+	allowSampleSharing = $true
+	enableExpeditedTelemetryReporting = $true
 }
 
 New-MgDeviceManagementDeviceConfiguration -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

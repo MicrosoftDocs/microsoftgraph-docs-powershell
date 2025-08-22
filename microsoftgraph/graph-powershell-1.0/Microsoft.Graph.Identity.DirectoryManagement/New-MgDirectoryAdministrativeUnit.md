@@ -46,11 +46,11 @@ Create a new administrativeUnit.
 | Application | AdministrativeUnit.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	displayName = "Seattle District Technical Schools"
@@ -63,18 +63,9 @@ $params = @{
 
 New-MgDirectoryAdministrativeUnit -BodyParameter $params
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
+This example shows how to use the New-MgDirectoryAdministrativeUnit Cmdlet.
 
-$params = @{
-	displayName = "Executive Division"
-	description = "Executive division administration"
-	isMemberManagementRestricted = $true
-}
-
-New-MgDirectoryAdministrativeUnit -BodyParameter $params
 
 ## PARAMETERS
 

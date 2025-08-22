@@ -41,15 +41,6 @@ Delete a timeCard instance in a schedule.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Teams
-```
-
-Remove-MgTeamScheduleTimeCard -TeamId $teamId -TimeCardId $timeCardId
-
 ## PARAMETERS
 
 ### -Headers
@@ -262,6 +253,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimecard)
 
 [https://learn.microsoft.com/graph/api/schedule-delete-timecards?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-delete-timecards?view=graph-rest-1.0)
+
 
 
 

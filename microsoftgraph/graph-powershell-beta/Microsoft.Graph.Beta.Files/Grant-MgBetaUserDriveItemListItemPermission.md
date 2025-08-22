@@ -48,18 +48,6 @@ Grant-MgBetaUserDriveItemListItemPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Grant users access to a link represented by a permission.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -338,6 +326,7 @@ RECIPIENTS `<IMicrosoftGraphDriveRecipient- `[]`>`: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetauserdriveitemlistitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetauserdriveitemlistitempermission)
 
 [https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)
+
 
 
 

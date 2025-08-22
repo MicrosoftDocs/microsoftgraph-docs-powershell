@@ -33,15 +33,6 @@ Remove-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete a directory object, for example, a group, user, application, or service principal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.DirectoryObjects
-```
-
-Remove-MgDirectoryObject -DirectoryObjectId $directoryObjectId
-
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -207,6 +198,7 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/remove-mgdirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/remove-mgdirectoryobject)
 
 [https://learn.microsoft.com/graph/api/directoryobject-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-delete?view=graph-rest-1.0)
+
 
 
 

@@ -65,84 +65,6 @@ For details, see Manage a collection estimate.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Security
-```
-
-$params = @{
-	displayName = "Export 1 - simple PST"
-	exportCriteria = "searchHits"
-	additionalOptions = "htmlTranscripts, splitSource, includeFolderAndPath, condensePaths, friendlyName"
-	exportFormat = "pst"
-}
-
-Export-MgSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Security
-```
-
-$params = @{
-	displayName = "Export 2"
-	exportCriteria = "searchHits, partiallyIndexed"
-	exportLocation = "responsiveLocations, nonresponsiveLocations"
-	additionalOptions = "splitSource"
-	exportFormat = "pst"
-}
-
-Export-MgSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Security
-```
-
-$params = @{
-	displayName = "Export 3"
-	exportCriteria = "searchHits, partiallyIndexed"
-	exportLocation = "responsiveLocations"
-	additionalOptions = "none"
-	exportFormat = "msg"
-}
-
-Export-MgSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
-
-### EXAMPLE 4
-```
-Import-Module Microsoft.Graph.Security
-```
-
-$params = @{
-	displayName = "Export 4"
-	exportCriteria = "partiallyIndexed"
-	exportLocation = "responsiveLocations, nonresponsiveLocations"
-	additionalOptions = "advancedIndexing, subfolderContents, allItemsInFolder, listAttachments, teamsAndYammerConversations, htmlTranscripts, cloudAttachments, includeFolderAndPath, splitSource, condensePaths, friendlyName, includeReport"
-	exportFormat = "eml"
-}
-
-Export-MgSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
-
-### EXAMPLE 5
-```
-Import-Module Microsoft.Graph.Security
-```
-
-$params = @{
-	displayName = "Export 5"
-	exportCriteria = "partiallyIndexed"
-	exportLocation = "responsiveLocations"
-	additionalOptions = "splitSource, includeFolderAndPath, condensePaths, friendlyName"
-	exportFormat = "eml"
-	cloudAttachmentVersion = "all"
-	documentVersion = "recent100"
-}
-
-Export-MgSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalOptions
@@ -552,6 +474,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasesearchresult](https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasesearchresult)
 
 [https://learn.microsoft.com/graph/api/security-ediscoverysearch-exportresult?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverysearch-exportresult?view=graph-rest-1.0)
+
 
 
 

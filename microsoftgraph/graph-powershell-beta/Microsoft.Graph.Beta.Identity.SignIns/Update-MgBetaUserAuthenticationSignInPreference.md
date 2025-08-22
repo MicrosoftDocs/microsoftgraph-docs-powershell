@@ -49,17 +49,21 @@ Update the properties of a user's authentication method states.
 Use this API to update the following information:
 
 ## EXAMPLES
+### Example 1: Update a user's system-preferred MFA method
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	userPreferredMethodForSecondaryAuthentication = "oath"
 }
 
 Update-MgBetaUserAuthenticationSignInPreference -UserId $userId -BodyParameter $params
+
+```
+This example will update a user's system-preferred mfa method
+
 
 ## PARAMETERS
 

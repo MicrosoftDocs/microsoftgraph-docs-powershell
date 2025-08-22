@@ -34,18 +34,6 @@ Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskDelta -InputObject <ITeamsIdenti
 Get newly created, updated, or deleted tasks in either a Planner plan or assigned to the signed-in user without having to perform a full read of the entire resource collection.
 For details, see Use delta query to track changes in Microsoft Graph data.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -373,6 +361,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelplannerplantaskdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelplannerplantaskdelta)
 
 [https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta)
+
 
 
 

@@ -59,11 +59,11 @@ Not yet documented
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	assignments = @(
@@ -79,6 +79,10 @@ $params = @{
 }
 
 Set-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId $deviceConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgDeviceManagementDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

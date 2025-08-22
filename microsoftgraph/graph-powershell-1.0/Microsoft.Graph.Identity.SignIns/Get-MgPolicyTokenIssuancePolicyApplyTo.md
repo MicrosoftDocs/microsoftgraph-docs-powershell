@@ -42,13 +42,17 @@ Get-MgPolicyTokenIssuancePolicyApplyTo -InputObject <IIdentitySignInsIdentity> [
 Get appliesTo from policies
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyTokenIssuancePolicyApplyTo -TokenIssuancePolicyId $tokenIssuancePolicyId
+
+```
+This example shows how to use the Get-MgPolicyTokenIssuancePolicyApplyTo Cmdlet.
+
 
 ## PARAMETERS
 

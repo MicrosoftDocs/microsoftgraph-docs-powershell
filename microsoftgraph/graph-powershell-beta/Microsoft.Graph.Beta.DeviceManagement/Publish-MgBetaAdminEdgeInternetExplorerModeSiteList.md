@@ -59,43 +59,6 @@ Publish the specified browserSiteList for devices to download.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BrowserSiteLists.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.DeviceManagement
-```
-
-$params = @{
-	revision = "1.0"
-}
-
-Publish-MgBetaAdminEdgeInternetExplorerModeSiteList -BrowserSiteListId $browserSiteListId -BodyParameter $params
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.DeviceManagement
-```
-
-$params = @{
-	revision = "1.0"
-	sites = @(
-		@{
-			id = "53e5f971-fc7b-4cd3-a1bf-34d7c0416882"
-		}
-		@{
-			id = "2e27cc86-3662-447e-b751-274fb9f869ea"
-		}
-	)
-	sharedCookies = @(
-		@{
-			id = "7f639835-23ab-4793-b1e6-1a06fad127a2"
-		}
-	)
-}
-
-Publish-MgBetaAdminEdgeInternetExplorerModeSiteList -BrowserSiteListId $browserSiteListId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -541,6 +504,7 @@ This property is read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/publish-mgbetaadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/publish-mgbetaadminedgeinternetexplorermodesitelist)
 
 [https://learn.microsoft.com/graph/api/browsersitelist-publish?view=graph-rest-beta](https://learn.microsoft.com/graph/api/browsersitelist-publish?view=graph-rest-beta)
+
 
 
 

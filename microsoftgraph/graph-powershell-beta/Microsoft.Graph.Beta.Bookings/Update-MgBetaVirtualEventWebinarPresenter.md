@@ -54,11 +54,11 @@ Update the properties of a virtualEventPresenter object.
 Currently the supported virtual event type is virtualEventWebinar.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	presenterDetails = @{
@@ -74,6 +74,10 @@ $params = @{
 }
 
 Update-MgBetaVirtualEventWebinarPresenter -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventPresenterId $virtualEventPresenterId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaVirtualEventWebinarPresenter Cmdlet.
+
 
 ## PARAMETERS
 

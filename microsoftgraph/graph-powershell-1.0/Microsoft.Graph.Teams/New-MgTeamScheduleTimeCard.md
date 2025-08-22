@@ -63,31 +63,6 @@ Create a timeCard instance in a schedule.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Teams
-```
-
-$params = @{
-	userId = "d56f3e8a-2b0f-42b1-88b9-e2dbd12a34d2"
-	clockInEvent = @{
-		dateTime = \[System.DateTime\]::Parse("2025-01-07T21:00:00.000Z")
-		isAtApprovedLocation = $true
-		notes = @{
-			content = "Started late due to traffic in CA 237"
-			contentType = "text"
-		}
-	}
-	clockOutEvent = @{
-		dateTime = \[System.DateTime\]::Parse("2025-01-07T21:30:00.000Z")
-		isAtApprovedLocation = $true
-	}
-}
-
-New-MgTeamScheduleTimeCard -TeamId $teamId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -574,6 +549,7 @@ ORIGINALENTRY `<IMicrosoftGraphTimeCardEntry>`: timeCardEntry
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimecard)
 
 [https://learn.microsoft.com/graph/api/schedule-post-timecards?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-post-timecards?view=graph-rest-1.0)
+
 
 
 

@@ -64,11 +64,11 @@ The following derived subtypes are supported:- externalUsersSelfServiceSignupEve
 | Application | EventListener.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update the display name and priority of an authenticationEventsFlow
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow"
@@ -78,10 +78,14 @@ $params = @{
 
 Update-MgBetaIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will update the display name and priority of an authenticationeventsflow
+
+### Example 2: Update the onAttributeCollection event of a self-service sign up user flow
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow"
@@ -103,7 +107,7 @@ $params = @{
 							editable = $false
 							writeToDirectory = $true
 							required = $true
-							validationRegEx = "^\[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_\`{|}~-\]+@\[a-zA-Z0-9-\]+(?:.\[a-zA-Z0-9-\]+)*$"
+							validationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
 							options = @(
 							)
 						}
@@ -116,7 +120,7 @@ $params = @{
 							editable = $true
 							writeToDirectory = $true
 							required = $false
-							validationRegEx = "^\[a-zA-Z_\]\[0-9a-zA-Z_ \]*\[0-9a-zA-Z_\]+$"
+							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
 							options = @(
 							)
 						}
@@ -129,7 +133,7 @@ $params = @{
 							editable = $true
 							writeToDirectory = $true
 							required = $false
-							validationRegEx = "^\[a-zA-Z_\]\[0-9a-zA-Z_ \]*\[0-9a-zA-Z_\]+$"
+							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
 							options = @(
 							)
 						}
@@ -155,10 +159,14 @@ $params = @{
 
 Update-MgBetaIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will update the onattributecollection event of a self-service sign up user flow
+
+### Example 3: Remove an attribute collected during a self-service sign up user flow
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow"
@@ -180,7 +188,7 @@ $params = @{
 							editable = $false
 							writeToDirectory = $true
 							required = $true
-							validationRegEx = "^\[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_\`{|}~-\]+@\[a-zA-Z0-9-\]+(?:.\[a-zA-Z0-9-\]+)*$"
+							validationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
 							options = @(
 							)
 						}
@@ -193,7 +201,7 @@ $params = @{
 							editable = $true
 							writeToDirectory = $true
 							required = $false
-							validationRegEx = "^\[a-zA-Z_\]\[0-9a-zA-Z_ \]*\[0-9a-zA-Z_\]+$"
+							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
 							options = @(
 							)
 						}
@@ -218,6 +226,10 @@ $params = @{
 }
 
 Update-MgBetaIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+
+```
+This example will remove an attribute collected during a self-service sign up user flow
+
 
 ## PARAMETERS
 

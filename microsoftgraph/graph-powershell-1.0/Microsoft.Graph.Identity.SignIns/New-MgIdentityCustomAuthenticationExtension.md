@@ -46,11 +46,11 @@ The following derived types are currently supported.
 | Application | CustomAuthenticationExtension.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartCustomExtension"
@@ -80,83 +80,9 @@ $params = @{
 
 New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Identity.SignIns
-```
+This example shows how to use the New-MgIdentityCustomAuthenticationExtension Cmdlet.
 
-$params = @{
-	"@odata.type" = "#microsoft.graph.onAttributeCollectionStartCustomExtension"
-	displayName = "attributeCollectionStartName"
-	description = "example description"
-	authenticationConfiguration = @{
-		"@odata.type" = "#microsoft.graph.azureAdTokenAuthentication"
-		resourceId = "api://contoso.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
-	}
-	endpointConfiguration = @{
-		"@odata.type" = "#microsoft.graph.httpRequestEndpoint"
-		targetUrl = "https://contoso.com"
-	}
-	clientConfiguration = @{
-		timeoutInMilliseconds = 2000
-		maximumRetries = 1
-	}
-}
-
-New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Identity.SignIns
-```
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.onAttributeCollectionSubmitCustomExtension"
-	displayName = "attributeCollectionSubmitName"
-	description = "example description"
-	authenticationConfiguration = @{
-		"@odata.type" = "#microsoft.graph.azureAdTokenAuthentication"
-		resourceId = "api://contoso.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
-	}
-	endpointConfiguration = @{
-		"@odata.type" = "#microsoft.graph.httpRequestEndpoint"
-		targetUrl = "https://contoso.com"
-	}
-	clientConfiguration = @{
-		timeoutInMilliseconds = 2000
-		maximumRetries = 1
-	}
-}
-
-New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
-
-### EXAMPLE 4
-```
-Import-Module Microsoft.Graph.Identity.SignIns
-```
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.onOtpSendCustomExtension"
-	authenticationConfiguration = @{
-		"@odata.type" = "#microsoft.graph.azureAdTokenAuthentication"
-		resourceId = "api://onotpsendcustomextension.b2c.expert/fb96de85-2abe-4b02-b45f-64ba122c509e"
-	}
-	clientConfiguration = @{
-		timeoutInMilliseconds = 2000
-		maximumRetries = 1
-	}
-	description = "Use an external Email provider to send OTP Codes."
-	displayName = "onEmailOtpSendCustomExtension"
-	endpointConfiguration = @{
-		"@odata.type" = "#microsoft.graph.httpRequestEndpoint"
-		targetUrl = "https://onotpsendcustomextension.b2c.expert/api/OnOTPCodeSendToTeamsDemo"
-	}
-	behaviorOnError = @{
-		"@odata.type" = "microsoft.graph.customExtensionBehaviorOnError"
-	}
-}
-
-New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
 
 ## PARAMETERS
 

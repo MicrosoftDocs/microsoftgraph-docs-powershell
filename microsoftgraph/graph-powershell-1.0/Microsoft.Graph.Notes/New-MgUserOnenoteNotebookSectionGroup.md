@@ -65,11 +65,11 @@ Create new navigation property to sectionGroups for users
 | Application | Notes.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Notes
-```
 
 $params = @{
 	displayName = "Section group name"
@@ -77,6 +77,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnenoteNotebookSectionGroup -UserId $userId -NotebookId $notebookId -BodyParameter $params
+
+```
+This example shows how to use the New-MgUserOnenoteNotebookSectionGroup Cmdlet.
+
 
 ## PARAMETERS
 

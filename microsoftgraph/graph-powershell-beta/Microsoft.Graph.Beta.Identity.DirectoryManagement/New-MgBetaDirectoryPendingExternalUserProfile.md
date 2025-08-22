@@ -41,11 +41,11 @@ Create a new pendingExternalUserProfile object.
 | Application | PendingExternalUserProfile.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	phoneNumber = "+15555555555"
@@ -53,6 +53,10 @@ $params = @{
 }
 
 New-MgBetaDirectoryPendingExternalUserProfile -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDirectoryPendingExternalUserProfile Cmdlet.
+
 
 ## PARAMETERS
 

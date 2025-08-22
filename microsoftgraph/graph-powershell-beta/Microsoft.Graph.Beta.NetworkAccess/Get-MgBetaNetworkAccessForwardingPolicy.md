@@ -48,13 +48,17 @@ Retrieve information about a specific forwarding policy.
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 Get-MgBetaNetworkAccessForwardingPolicy -ForwardingPolicyId $forwardingPolicyId
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessForwardingPolicy Cmdlet.
+
 
 ## PARAMETERS
 

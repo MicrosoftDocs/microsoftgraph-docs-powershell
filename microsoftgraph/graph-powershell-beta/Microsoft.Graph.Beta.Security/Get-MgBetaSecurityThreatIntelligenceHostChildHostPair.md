@@ -42,13 +42,17 @@ Get-MgBetaSecurityThreatIntelligenceHostChildHostPair -InputObject <ISecurityIde
 The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityThreatIntelligenceHostChildHostPair -HostId $hostId
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHostChildHostPair Cmdlet.
+
 
 ## PARAMETERS
 

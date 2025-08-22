@@ -65,11 +65,11 @@ Update the properties of a partnerSecurityAlert object.
 | Application | PartnerSecurity.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	status = "resolved"
@@ -77,6 +77,10 @@ $params = @{
 }
 
 Update-MgBetaSecurityPartnerSecurityAlert -PartnerSecurityAlertId $partnerSecurityAlertId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityPartnerSecurityAlert Cmdlet.
+
 
 ## PARAMETERS
 

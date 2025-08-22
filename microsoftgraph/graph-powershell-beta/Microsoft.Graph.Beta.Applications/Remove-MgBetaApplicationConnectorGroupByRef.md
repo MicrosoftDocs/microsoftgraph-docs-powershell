@@ -29,18 +29,6 @@ Remove-MgBetaApplicationConnectorGroupByRef -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Delete ref of navigation property connectorGroup for applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -236,6 +224,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationconnectorgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationconnectorgroupbyref)
+
 
 
 

@@ -65,11 +65,11 @@ Create a new sitePage in the site pages list in a site.
 | Application | Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.newsLinkPage"
@@ -78,6 +78,10 @@ $params = @{
 }
 
 New-MgBetaSitePage -SiteId $siteId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSitePage Cmdlet.
+
 
 ## PARAMETERS
 

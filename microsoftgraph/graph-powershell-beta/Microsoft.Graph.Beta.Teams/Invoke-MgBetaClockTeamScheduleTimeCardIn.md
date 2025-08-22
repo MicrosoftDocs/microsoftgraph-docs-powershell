@@ -60,11 +60,11 @@ Clock in to start a timeCard.
 | Application | Schedule.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	isAtApprovedLocation = $true
@@ -76,17 +76,9 @@ $params = @{
 
 Invoke-MgBetaClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Teams
-```
+This example shows how to use the Invoke-MgBetaClockTeamScheduleTimeCardIn Cmdlet.
 
-$params = @{
-	isAtApprovedLocation = $true
-	onBehalfOfUserId = "3f29c8e7-7a41-4d8e-99d6-2b1f76c9421e"
-}
-
-Invoke-MgBetaClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
 
 ## PARAMETERS
 

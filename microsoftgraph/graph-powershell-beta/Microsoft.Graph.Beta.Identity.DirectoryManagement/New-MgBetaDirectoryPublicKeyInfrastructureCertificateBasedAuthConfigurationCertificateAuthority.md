@@ -64,17 +64,21 @@ Create a new certificateAuthorityDetail object.
 | Application | PublicKeyInfrastructure.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	certificateAuthorityType = "intermediate"
 }
 
 New-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority -CertificateBasedAuthPkiId $certificateBasedAuthPkiId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority Cmdlet.
+
 
 ## PARAMETERS
 

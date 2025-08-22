@@ -39,13 +39,17 @@ Get-MgBetaReportUserInsightDailySignUp -InputObject <IReportsIdentity> [-ExpandP
 Total sign-ups on apps registered in the tenant for a specified period.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportUserInsightDailySignUp
+
+```
+This example shows how to use the Get-MgBetaReportUserInsightDailySignUp Cmdlet.
+
 
 ## PARAMETERS
 

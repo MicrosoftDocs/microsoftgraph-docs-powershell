@@ -31,18 +31,6 @@ Get-MgBetaGroupSiteContentModelAppliedDrive -InputObject <ISitesIdentity> [-Coun
 ## DESCRIPTION
 List all the contentModelUsage information related to a contentModel applied to a SharePoint document library.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentModelId
@@ -308,6 +296,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontentmodelapplieddrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontentmodelapplieddrive)
 
 [https://learn.microsoft.com/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta)
+
 
 
 

@@ -52,18 +52,6 @@ Update-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property openShifts in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -507,6 +495,7 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleopenshift)
+
 
 
 

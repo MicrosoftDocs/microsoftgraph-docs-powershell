@@ -33,13 +33,17 @@ Get-MgReportOffice365ServiceUserCount -InputObject <IReportsIdentity> -OutFile <
 Get the count of users by activity type and service.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportOffice365ServiceUserCount -Period $periodId
+Get-MgReportOffice365ServiceUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOffice365ServiceUserCount Cmdlet.
+
 
 ## PARAMETERS
 

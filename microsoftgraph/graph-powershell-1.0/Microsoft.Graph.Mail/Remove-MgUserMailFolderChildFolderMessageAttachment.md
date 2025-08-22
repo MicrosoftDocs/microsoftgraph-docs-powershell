@@ -33,18 +33,6 @@ Remove-MgUserMailFolderChildFolderMessageAttachment -InputObject <IMailIdentity>
 ## DESCRIPTION
 Delete navigation property attachments for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AttachmentId
@@ -273,6 +261,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolderchildfoldermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolderchildfoldermessageattachment)
+
 
 
 

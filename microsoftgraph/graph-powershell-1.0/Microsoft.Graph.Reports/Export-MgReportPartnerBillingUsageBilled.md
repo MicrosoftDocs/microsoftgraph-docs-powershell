@@ -43,11 +43,11 @@ Export the billed Azure usage data.
 | Application | PartnerBilling.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 $params = @{
 	invoiceId = "G016907411"
@@ -55,6 +55,10 @@ $params = @{
 }
 
 Export-MgReportPartnerBillingUsageBilled -BodyParameter $params
+
+```
+This example shows how to use the Export-MgReportPartnerBillingUsageBilled Cmdlet.
+
 
 ## PARAMETERS
 

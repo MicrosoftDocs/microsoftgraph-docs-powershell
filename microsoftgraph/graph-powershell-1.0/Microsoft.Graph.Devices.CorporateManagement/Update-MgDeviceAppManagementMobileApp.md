@@ -65,21 +65,21 @@ Update the properties of a managedIOSStoreApp object.
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.iosVppApp"
+	"@odata.type" = "#microsoft.graph.win32LobApp"
 	displayName = "Display Name value"
 	description = "Description value"
 	publisher = "Publisher value"
 	largeIcon = @{
 		"@odata.type" = "microsoft.graph.mimeContent"
 		type = "Type value"
-		value = \[System.Text.Encoding\]::ASCII.GetBytes("dmFsdWU=")
+		value = [System.Text.Encoding]::ASCII.GetBytes("dmFsdWU=")
 	}
 	isFeatured = $true
 	privacyInformationUrl = "https://example.com/privacyInformationUrl/"
@@ -88,27 +88,59 @@ $params = @{
 	developer = "Developer value"
 	notes = "Notes value"
 	publishingState = "processing"
-	usedLicenseCount = 
-	totalLicenseCount = 
-	releaseDateTime = "2017-01-01T00:01:34.7470482-08:00"
-	appStoreUrl = "https://example.com/appStoreUrl/"
-	licensingType = @{
-		"@odata.type" = "microsoft.graph.vppLicensingType"
-		supportsUserLicensing = $true
-		supportsDeviceLicensing = $true
+	committedContentVersion = "Committed Content Version value"
+	fileName = "File Name value"
+	size = 
+	installCommandLine = "Install Command Line value"
+	uninstallCommandLine = "Uninstall Command Line value"
+	applicableArchitectures = "x86"
+	minimumFreeDiskSpaceInMB = 
+	minimumMemoryInMB = 
+	minimumNumberOfProcessors = 
+	minimumCpuSpeedInMHz = 
+	rules = @(
+		@{
+			"@odata.type" = "microsoft.graph.win32LobAppRegistryRule"
+			ruleType = "requirement"
+			check32BitOn64System = $true
+			keyPath = "Key Path value"
+			valueName = "Value Name value"
+			operationType = "exists"
+			operator = "equal"
+			comparisonValue = "Comparison Value value"
+		}
+	)
+	installExperience = @{
+		"@odata.type" = "microsoft.graph.win32LobAppInstallExperience"
+		runAsAccount = "user"
+		deviceRestartBehavior = "allow"
 	}
-	applicableDeviceType = @{
-		"@odata.type" = "microsoft.graph.iosDeviceType"
-		iPad = $true
-		iPhoneAndIPod = $true
+	returnCodes = @(
+		@{
+			"@odata.type" = "microsoft.graph.win32LobAppReturnCode"
+			returnCode = 
+			type = "success"
+		}
+	)
+	msiInformation = @{
+		"@odata.type" = "microsoft.graph.win32LobAppMsiInformation"
+		productCode = "Product Code value"
+		productVersion = "Product Version value"
+		upgradeCode = "Upgrade Code value"
+		requiresReboot = $true
+		packageType = "perUser"
+		productName = "Product Name value"
+		publisher = "Publisher value"
 	}
-	vppTokenOrganizationName = "Vpp Token Organization Name value"
-	vppTokenAccountType = "education"
-	vppTokenAppleId = "Vpp Token Apple Id value"
-	bundleId = "Bundle Id value"
+	setupFilePath = "Setup File Path value"
+	minimumSupportedWindowsRelease = "Minimum Supported Windows Release value"
 }
 
 Update-MgDeviceAppManagementMobileApp -MobileAppId $mobileAppId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementMobileApp Cmdlet.
+
 
 ## PARAMETERS
 

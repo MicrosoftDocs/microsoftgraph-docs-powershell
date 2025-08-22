@@ -53,64 +53,11 @@ Update the properties of place object that can be a building, floor, section, de
 You can identify the place by specifying the id property.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
-```
-
-$params = @{
-	"@odata.type" = "microsoft.graph.building"
-	tags = @(
-	"most popular building"
-)
-}
-
-Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.Calendar
-```
-
-$params = @{
-	"@odata.type" = "microsoft.graph.floor"
-	isWheelChairAccessible = $true
-	sortOrder = 
-}
-
-Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.Calendar
-```
-
-$params = @{
-	"@odata.type" = "microsoft.graph.section"
-	label = "discuss area"
-}
-
-Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
-
-### EXAMPLE 4
-```
-Import-Module Microsoft.Graph.Beta.Calendar
-```
-
-$params = @{
-	"@odata.type" = "microsoft.graph.desk"
-	mode = @{
-		"@odata.type" = "microsoft.graph.dropInPlaceMode"
-	}
-}
-
-Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
-
-### EXAMPLE 5
-```
-Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.room"
@@ -123,10 +70,14 @@ $params = @{
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
 
-### EXAMPLE 6
 ```
+This example shows how to use the Update-MgBetaPlace Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.workspace"
@@ -138,6 +89,10 @@ $params = @{
 }
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPlace Cmdlet.
+
 
 ## PARAMETERS
 

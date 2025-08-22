@@ -48,18 +48,6 @@ Remove-MgBetaSiteContentModelGetByNameFromDrive -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Remove a contentModel from a SharePoint document library.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -332,6 +320,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontentmodelgetbynamefromdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontentmodelgetbynamefromdrive)
 
 [https://learn.microsoft.com/graph/api/contentmodel-removefromdrive?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contentmodel-removefromdrive?view=graph-rest-beta)
+
 
 
 

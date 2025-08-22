@@ -56,56 +56,6 @@ The ediscoveryCaseMember can be one of two types: a user or a role group.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Security
-```
-
-$params = @{
-	recipientType = "user"
-	smtpAddress = "johnadams@microsoft.com"
-}
-
-New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.Security
-```
-
-$params = @{
-	recipientType = "roleGroup"
-	displayName = "Security Administrator"
-}
-
-New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.Security
-```
-
-$params = @{
-	recipientType = "user"
-	id = "c4af6f9d-37f6-43f9-9e17-601544234146"
-}
-
-New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-
-### EXAMPLE 4
-```
-Import-Module Microsoft.Graph.Beta.Security
-```
-
-$params = @{
-	recipientType = "roleGroup"
-	id = "b9fb4f22-5f90-47a0-b309-44fe96a959fd"
-}
-
-New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -440,6 +390,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasemember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasemember)
 
 [https://learn.microsoft.com/graph/api/security-ediscoverycasemember-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-post?view=graph-rest-beta)
+
 
 
 

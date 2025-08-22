@@ -60,11 +60,11 @@ Update the properties of a managedDeviceMobileAppConfigurationAssignment object.
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment"
@@ -74,6 +74,10 @@ $params = @{
 }
 
 Update-MgDeviceAppManagementMobileAppConfigurationAssignment -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -ManagedDeviceMobileAppConfigurationAssignmentId $managedDeviceMobileAppConfigurationAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementMobileAppConfigurationAssignment Cmdlet.
+
 
 ## PARAMETERS
 

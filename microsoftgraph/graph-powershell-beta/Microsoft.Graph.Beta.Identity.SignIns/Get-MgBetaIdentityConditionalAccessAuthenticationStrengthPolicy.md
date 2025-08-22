@@ -37,18 +37,6 @@ Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy -InputObject <II
 ## DESCRIPTION
 A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -381,6 +369,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationstrengthpolicy)
+
+
 
 
 

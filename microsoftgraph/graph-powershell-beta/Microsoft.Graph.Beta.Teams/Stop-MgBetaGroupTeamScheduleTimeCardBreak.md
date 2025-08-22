@@ -51,18 +51,6 @@ Stop-MgBetaGroupTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 End the open break in a specific timeCard.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -347,6 +335,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/stop-mgbetagroupteamscheduletimecardbreak](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/stop-mgbetagroupteamscheduletimecardbreak)
 
 [https://learn.microsoft.com/graph/api/timecard-endbreak?view=graph-rest-beta](https://learn.microsoft.com/graph/api/timecard-endbreak?view=graph-rest-beta)
+
 
 
 

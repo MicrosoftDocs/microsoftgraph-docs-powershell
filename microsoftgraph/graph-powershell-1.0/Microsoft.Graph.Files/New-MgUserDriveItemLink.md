@@ -57,18 +57,6 @@ Create a link to share a driveItem driveItem.
 The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link is returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -427,6 +415,7 @@ RECIPIENTS `<IMicrosoftGraphDriveRecipient- `[]`>`: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemlink)
 
 [https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0)
+
 
 
 

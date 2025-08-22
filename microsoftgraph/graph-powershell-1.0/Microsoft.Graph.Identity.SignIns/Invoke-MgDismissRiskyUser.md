@@ -45,11 +45,11 @@ This action sets the targeted user's risk level to none.
 | Application | IdentityRiskyUser.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	userIds = @(
@@ -59,6 +59,10 @@ $params = @{
 }
 
 Invoke-MgDismissRiskyUser -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgDismissRiskyUser Cmdlet.
+
 
 ## PARAMETERS
 

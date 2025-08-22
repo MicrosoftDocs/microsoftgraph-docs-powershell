@@ -29,13 +29,17 @@ List the tokenLifetimePolicy objects that are assigned to a servicePrincipal.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to a service principal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgServicePrincipalTokenLifetimePolicy -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgServicePrincipalTokenLifetimePolicy Cmdlet.
+
 
 ## PARAMETERS
 

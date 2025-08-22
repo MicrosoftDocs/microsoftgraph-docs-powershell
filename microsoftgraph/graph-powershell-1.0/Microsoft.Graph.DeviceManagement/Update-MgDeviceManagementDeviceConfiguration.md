@@ -68,23 +68,32 @@ Update the properties of a windows10TeamGeneralConfiguration object.
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.macOSCustomConfiguration"
+	"@odata.type" = "#microsoft.graph.windows10CustomConfiguration"
 	description = "Description value"
 	displayName = "Display Name value"
 	version = 7
-	payloadName = "Payload Name value"
-	payloadFileName = "Payload File Name value"
-	payload = "cGF5bG9hZA=="
+	omaSettings = @(
+		@{
+			"@odata.type" = "microsoft.graph.omaSetting"
+			displayName = "Display Name value"
+			description = "Description value"
+			omaUri = "Oma Uri value"
+		}
+	)
 }
 
 Update-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId $deviceConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

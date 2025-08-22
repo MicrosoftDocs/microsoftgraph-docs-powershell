@@ -51,18 +51,6 @@ Invoke-MgBetaClockGroupTeamScheduleTimeCardOut -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Clock out to end an open timeCard.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -347,6 +335,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockgroupteamscheduletimecardout](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockgroupteamscheduletimecardout)
 
 [https://learn.microsoft.com/graph/api/timecard-clockout?view=graph-rest-beta](https://learn.microsoft.com/graph/api/timecard-clockout?view=graph-rest-beta)
+
 
 
 

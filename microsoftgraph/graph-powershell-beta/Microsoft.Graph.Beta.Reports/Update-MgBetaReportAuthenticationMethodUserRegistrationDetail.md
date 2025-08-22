@@ -56,18 +56,6 @@ Update-MgBetaReportAuthenticationMethodUserRegistrationDetail -InputObject <IRep
 ## DESCRIPTION
 Update the navigation property userRegistrationDetails in reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -598,6 +586,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportauthenticationmethoduserregistrationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportauthenticationmethoduserregistrationdetail)
+
 
 
 

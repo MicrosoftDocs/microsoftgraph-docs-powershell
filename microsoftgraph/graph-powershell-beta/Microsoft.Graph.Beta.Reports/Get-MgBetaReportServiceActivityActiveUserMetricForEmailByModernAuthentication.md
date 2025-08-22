@@ -34,13 +34,17 @@ Get-MgBetaReportServiceActivityActiveUserMetricForEmailByModernAuthentication -I
 Get all the active usage based on the number of users who signed in with modern authentication across all email apps.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportServiceActivityActiveUserMetricForEmailByModernAuthentication
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityActiveUserMetricForEmailByModernAuthentication Cmdlet.
+
 
 ## PARAMETERS
 

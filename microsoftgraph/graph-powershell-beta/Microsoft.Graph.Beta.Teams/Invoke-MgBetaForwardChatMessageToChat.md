@@ -48,29 +48,6 @@ Invoke-MgBetaForwardChatMessageToChat -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Forward a chat message, a channel message, or a channel message reply to a chat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Teams
-```
-
-$params = @{
-	targetChatIds = @(
-	"19:e2ed97baac8e4bffbb91299a38996790@thread.v2"
-)
-messageIds = @(
-"1728088338580"
-)
-additionalMessage = @{
-body = @{
-	content = "Hello World"
-}
-}
-}
-
-Invoke-MgBetaForwardChatMessageToChat -ChatId $chatId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalMessage
@@ -596,6 +573,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaforwardchatmessagetochat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaforwardchatmessagetochat)
 
 [https://learn.microsoft.com/graph/api/chatmessage-forwardtochat?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chatmessage-forwardtochat?view=graph-rest-beta)
+
 
 
 

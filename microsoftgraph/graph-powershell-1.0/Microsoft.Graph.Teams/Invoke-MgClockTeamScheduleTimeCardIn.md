@@ -59,35 +59,6 @@ Clock in to start a timeCard.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Teams
-```
-
-$params = @{
-	isAtApprovedLocation = $true
-	notes = @{
-		content = "Started late due to traffic"
-		contentType = "text"
-	}
-}
-
-Invoke-MgClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Teams
-```
-
-$params = @{
-	isAtApprovedLocation = $true
-	onBehalfOfUserId = "3f29c8e7-7a41-4d8e-99d6-2b1f76c9421e"
-}
-
-Invoke-MgClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -347,6 +318,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockteamscheduletimecardin](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockteamscheduletimecardin)
 
 [https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-1.0)
+
 
 
 

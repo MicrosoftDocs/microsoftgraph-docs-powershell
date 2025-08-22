@@ -45,26 +45,6 @@ Invoke-MgBetaGraphChatMessage -InputObject <ITeamsIdentity> [-ResponseHeadersVar
 ## DESCRIPTION
 Reply with quote to a single chat message or multiple chat messages in a chat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Teams
-```
-
-$params = @{
-	messageIds = @(
-	"1728088338580"
-)
-replyMessage = @{
-	body = @{
-		content = "Hello World"
-	}
-}
-}
-
-Invoke-MgBetaGraphChatMessage -ChatId $chatId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -726,6 +706,7 @@ Link to the message in Microsoft Teams.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphchatmessage)
 
 [https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-beta)
+
 
 
 

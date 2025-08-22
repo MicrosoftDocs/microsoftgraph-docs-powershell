@@ -42,13 +42,17 @@ Delete the specified bookingCustomer object.
 | Application | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Read.All, Bookings.Manage.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Remove-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerBaseId $bookingCustomerBaseId
+
+```
+This example shows how to use the Remove-MgBookingBusinessCustomer Cmdlet.
+
 
 ## PARAMETERS
 

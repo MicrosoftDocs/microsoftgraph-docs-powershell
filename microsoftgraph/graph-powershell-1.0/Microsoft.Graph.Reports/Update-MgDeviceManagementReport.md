@@ -42,17 +42,21 @@ Update the properties of a deviceManagementReports object.
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceManagementReports"
 }
 
 Update-MgDeviceManagementReport -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementReport Cmdlet.
+
 
 ## PARAMETERS
 

@@ -40,13 +40,17 @@ Get-MgBetaNetworkAccessFilteringPolicy -InputObject <INetworkAccessIdentity> [-E
 Get a filteringPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 Get-MgBetaNetworkAccessFilteringPolicy
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessFilteringPolicy Cmdlet.
+
 
 ## PARAMETERS
 

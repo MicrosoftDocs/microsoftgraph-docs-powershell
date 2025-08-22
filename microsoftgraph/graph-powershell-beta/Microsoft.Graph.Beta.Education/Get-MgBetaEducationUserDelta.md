@@ -37,13 +37,17 @@ See Use delta query for details.
 | Application | EduRoster.ReadBasic.All, EduRoster.WriteWrite.All, EduRoster.ReadWrite.All, EduRoster.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationUserDelta
+
+```
+This example shows how to use the Get-MgBetaEducationUserDelta Cmdlet.
+
 
 ## PARAMETERS
 

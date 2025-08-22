@@ -33,18 +33,6 @@ Invoke-MgRetireUserManagedDevice -InputObject <IDevicesCorporateManagementIdenti
 ## DESCRIPTION
 Retire a device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -243,6 +231,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgretireusermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgretireusermanageddevice)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-retire?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-retire?view=graph-rest-1.0)
+
 
 
 

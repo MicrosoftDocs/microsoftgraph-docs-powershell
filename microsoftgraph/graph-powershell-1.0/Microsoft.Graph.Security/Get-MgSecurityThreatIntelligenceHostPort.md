@@ -64,13 +64,17 @@ Get-MgSecurityThreatIntelligenceHostPort -InputObject <ISecurityIdentity> [-Expa
 Read the properties and relationships of a hostPort object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityThreatIntelligenceHostPort -HostPortId $hostPortId
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceHostPort Cmdlet.
+
 
 ## PARAMETERS
 

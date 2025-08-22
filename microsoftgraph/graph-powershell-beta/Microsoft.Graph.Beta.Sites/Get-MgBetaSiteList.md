@@ -51,13 +51,17 @@ Return the metadata for a list.
 | Application | Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteList -SiteId $siteId
+
+```
+This example shows how to use the Get-MgBetaSiteList Cmdlet.
+
 
 ## PARAMETERS
 

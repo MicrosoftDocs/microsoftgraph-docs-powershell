@@ -33,13 +33,17 @@ Get-MgBetaReportServiceActivityAudioStreamOverUdpMetricForTeam -InputObject <IRe
 Get metrics based on the percentage of audio streams that were established over User Datagram Protocol.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportServiceActivityAudioStreamOverUdpMetricForTeam
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityAudioStreamOverUdpMetricForTeam Cmdlet.
+
 
 ## PARAMETERS
 

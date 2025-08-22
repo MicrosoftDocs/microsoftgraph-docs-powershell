@@ -38,20 +38,6 @@ Update the properties of a namePronunciationSettings object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PeopleSettings.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.namePronunciationSettings"
-	isEnabledInOrganization = $true
-}
-
-Update-MgBetaAdminPeopleNamePronunciation -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -221,6 +207,7 @@ The default value is false.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplenamepronunciation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplenamepronunciation)
 
 [https://learn.microsoft.com/graph/api/namepronunciationsettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/namepronunciationsettings-update?view=graph-rest-beta)
+
 
 
 

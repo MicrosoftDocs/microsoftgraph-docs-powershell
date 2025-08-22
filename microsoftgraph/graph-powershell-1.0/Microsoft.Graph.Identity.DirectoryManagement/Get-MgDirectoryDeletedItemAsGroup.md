@@ -49,20 +49,28 @@ Retrieve a list of recently deleted directory objects from deleted items.
 The following types are supported:- administrativeUnit- application- certificateBasedAuthPki- certificateAuthorityDetail- group- servicePrincipal- user
 
 ## EXAMPLES
+### Example 1: Retrieve deleted groups
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectoryDeletedItemAsGroup
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
+This example will retrieve deleted groups
 
-Get-MgDirectoryDeletedItemAsGroup -CountVariable CountVar -Sort "deletedDateTime asc" -Property "id,DisplayName,deletedDateTime"
+### Example 2: Retrieve the count of deleted user objects and order the results by the deletedDateTime property
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgDirectoryDeletedItemAsGroup -CountVariable CountVar -Sort "deletedDateTime asc" -Property "id,DisplayName,deletedDateTime" 
+
+```
+This example will retrieve the count of deleted user objects and order the results by the deleteddatetime property
+
 
 ## PARAMETERS
 

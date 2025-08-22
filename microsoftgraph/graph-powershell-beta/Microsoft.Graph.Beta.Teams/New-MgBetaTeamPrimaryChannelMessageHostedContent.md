@@ -48,18 +48,6 @@ New-MgBetaTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> -
 ## DESCRIPTION
 Create new navigation property to hostedContents for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -329,6 +317,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelmessagehostedcontent)
+
 
 
 
