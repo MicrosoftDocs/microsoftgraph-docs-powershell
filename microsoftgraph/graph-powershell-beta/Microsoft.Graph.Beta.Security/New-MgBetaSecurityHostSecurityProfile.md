@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityhostsecurityprofile
@@ -21,13 +21,13 @@ New-MgBetaSecurityHostSecurityProfile [-ResponseHeadersVariable <String>] [-Addi
  [-NetworkInterfaces <IMicrosoftGraphNetworkInterface[]>] [-OS <String>] [-OSVersion <String>]
  [-ParentHost <String>] [-RelatedHostIds <String[]>] [-RiskScore <String>] [-Tags <String[]>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityHostSecurityProfile -BodyParameter <IMicrosoftGraphHostSecurityProfile>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,6 +35,16 @@ New-MgBetaSecurityHostSecurityProfile -BodyParameter <IMicrosoftGraphHostSecurit
 Create new navigation property to hostSecurityProfiles for security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -54,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureSubscriptionId
-
+.
 
 ```yaml
 Type: String
@@ -69,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureTenantId
-
+.
 
 ```yaml
 Type: String
@@ -99,23 +109,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -FirstSeenDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -130,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fqdn
-
+.
 
 ```yaml
 Type: String
@@ -176,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsAzureAdJoined
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -191,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsAzureAdRegistered
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -206,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsHybridAzureDomainJoined
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -221,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastSeenDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -236,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogonUsers
-
+.
 To construct, see NOTES section for LOGONUSERS properties and create a hash table.
 
 ```yaml
@@ -252,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetBiosName
-
+.
 
 ```yaml
 Type: String
@@ -267,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInterfaces
-
+.
 To construct, see NOTES section for NETWORKINTERFACES properties and create a hash table.
 
 ```yaml
@@ -283,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -OS
-
+.
 
 ```yaml
 Type: String
@@ -298,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSVersion
-
+.
 
 ```yaml
 Type: String
@@ -313,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentHost
-
+.
 
 ```yaml
 Type: String
@@ -327,8 +322,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RelatedHostIds
+### -ProgressAction
+{{ Fill ProgressAction Description }}
 
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RelatedHostIds
+.
 
 ```yaml
 Type: String[]
@@ -358,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### -RiskScore
-
+.
 
 ```yaml
 Type: String
@@ -373,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-
+.
 
 ```yaml
 Type: String[]
@@ -395,6 +405,21 @@ To construct, see NOTES section for VENDORINFORMATION properties and create a ha
 Type: IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -435,107 +460,84 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphHostSecurityProfile>`: hostSecurityProfile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphHostSecurityProfile\>: hostSecurityProfile
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AzureSubscriptionId <String>]`: 
-  - `[AzureTenantId <String>]`: 
-  - `[FirstSeenDateTime <DateTime?>]`: 
-  - `[Fqdn <String>]`: 
-  - `[IsAzureAdJoined <Boolean?>]`: 
-  - `[IsAzureAdRegistered <Boolean?>]`: 
-  - `[IsHybridAzureDomainJoined <Boolean?>]`: 
-  - `[LastSeenDateTime <DateTime?>]`: 
-  - `[LogonUsers <IMicrosoftGraphLogonUser- `[]`>]`: 
-    - `[AccountDomain <String>]`: Domain of user account used to logon.
-    - `[AccountName <String>]`: Account name of user account used to logon.
-    - `[AccountType <String>]`: userAccountSecurityType
-    - `[FirstSeenDateTime <DateTime?>]`: DateTime at which the earliest logon by this user account occurred (provider-determined period).
+  \[AzureSubscriptionId \<String\>\]: 
+  \[AzureTenantId \<String\>\]: 
+  \[FirstSeenDateTime \<DateTime?\>\]: 
+  \[Fqdn \<String\>\]: 
+  \[IsAzureAdJoined \<Boolean?\>\]: 
+  \[IsAzureAdRegistered \<Boolean?\>\]: 
+  \[IsHybridAzureDomainJoined \<Boolean?\>\]: 
+  \[LastSeenDateTime \<DateTime?\>\]: 
+  \[LogonUsers \<IMicrosoftGraphLogonUser\[\]\>\]: 
+    \[AccountDomain \<String\>\]: Domain of user account used to logon.
+    \[AccountName \<String\>\]: Account name of user account used to logon.
+    \[AccountType \<String\>\]: userAccountSecurityType
+    \[FirstSeenDateTime \<DateTime?\>\]: DateTime at which the earliest logon by this user account occurred (provider-determined period).
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[LastSeenDateTime <DateTime?>]`: DateTime at which the latest logon by this user account occurred.
+    \[LastSeenDateTime \<DateTime?\>\]: DateTime at which the latest logon by this user account occurred.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[LogonId <String>]`: User logon ID.
-    - `[LogonTypes <String- `[]`>]`: Collection of the logon types observed for the logged on user from when first to last seen.
+    \[LogonId \<String\>\]: User logon ID.
+    \[LogonTypes \<String\[\]\>\]: Collection of the logon types observed for the logged on user from when first to last seen.
 Possible values are: unknown, interactive, remoteInteractive, network, batch, service.
-  - `[NetBiosName <String>]`: 
-  - `[NetworkInterfaces <IMicrosoftGraphNetworkInterface- `[]`>]`: 
-    - `[Description <String>]`: Description of the NIC (for example, Ethernet adapter, Wireless LAN adapter Local Area Connection, and so on).
-    - `[IPV4Address <String>]`: Last IPv4 address associated with this NIC.
-    - `[IPV6Address <String>]`: Last Public (also known as global) IPv6 address associated with this NIC.
-    - `[LocalIPV6Address <String>]`: Last local (link-local or site-local) IPv6 address associated with this NIC.
-    - `[MacAddress <String>]`: MAC address of the NIC on this host.
-  - `[OS <String>]`: 
-  - `[OSVersion <String>]`: 
-  - `[ParentHost <String>]`: 
-  - `[RelatedHostIds <String- `[]`>]`: 
-  - `[RiskScore <String>]`: 
-  - `[Tags <String- `[]`>]`: 
-  - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+  \[NetBiosName \<String\>\]: 
+  \[NetworkInterfaces \<IMicrosoftGraphNetworkInterface\[\]\>\]: 
+    \[Description \<String\>\]: Description of the NIC (for example, Ethernet adapter, Wireless LAN adapter Local Area Connection, and so on).
+    \[IPV4Address \<String\>\]: Last IPv4 address associated with this NIC.
+    \[IPV6Address \<String\>\]: Last Public (also known as global) IPv6 address associated with this NIC.
+    \[LocalIPV6Address \<String\>\]: Last local (link-local or site-local) IPv6 address associated with this NIC.
+    \[MacAddress \<String\>\]: MAC address of the NIC on this host.
+  \[OS \<String\>\]: 
+  \[OSVersion \<String\>\]: 
+  \[ParentHost \<String\>\]: 
+  \[RelatedHostIds \<String\[\]\>\]: 
+  \[RiskScore \<String\>\]: 
+  \[Tags \<String\[\]\>\]: 
+  \[VendorInformation \<IMicrosoftGraphSecurityVendorInformation\>\]: securityVendorInformation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+    \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+    \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+    \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-LOGONUSERS `<IMicrosoftGraphLogonUser- `[]`>`: .
-  - `[AccountDomain <String>]`: Domain of user account used to logon.
-  - `[AccountName <String>]`: Account name of user account used to logon.
-  - `[AccountType <String>]`: userAccountSecurityType
-  - `[FirstSeenDateTime <DateTime?>]`: DateTime at which the earliest logon by this user account occurred (provider-determined period).
+LOGONUSERS \<IMicrosoftGraphLogonUser\[\]\>: .
+  \[AccountDomain \<String\>\]: Domain of user account used to logon.
+  \[AccountName \<String\>\]: Account name of user account used to logon.
+  \[AccountType \<String\>\]: userAccountSecurityType
+  \[FirstSeenDateTime \<DateTime?\>\]: DateTime at which the earliest logon by this user account occurred (provider-determined period).
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[LastSeenDateTime <DateTime?>]`: DateTime at which the latest logon by this user account occurred.
+  \[LastSeenDateTime \<DateTime?\>\]: DateTime at which the latest logon by this user account occurred.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[LogonId <String>]`: User logon ID.
-  - `[LogonTypes <String- `[]`>]`: Collection of the logon types observed for the logged on user from when first to last seen.
+  \[LogonId \<String\>\]: User logon ID.
+  \[LogonTypes \<String\[\]\>\]: Collection of the logon types observed for the logged on user from when first to last seen.
 Possible values are: unknown, interactive, remoteInteractive, network, batch, service.
 
-NETWORKINTERFACES `<IMicrosoftGraphNetworkInterface- `[]`>`: .
-  - `[Description <String>]`: Description of the NIC (for example, Ethernet adapter, Wireless LAN adapter Local Area Connection, and so on).
-  - `[IPV4Address <String>]`: Last IPv4 address associated with this NIC.
-  - `[IPV6Address <String>]`: Last Public (also known as global) IPv6 address associated with this NIC.
-  - `[LocalIPV6Address <String>]`: Last local (link-local or site-local) IPv6 address associated with this NIC.
-  - `[MacAddress <String>]`: MAC address of the NIC on this host.
+NETWORKINTERFACES \<IMicrosoftGraphNetworkInterface\[\]\>: .
+  \[Description \<String\>\]: Description of the NIC (for example, Ethernet adapter, Wireless LAN adapter Local Area Connection, and so on).
+  \[IPV4Address \<String\>\]: Last IPv4 address associated with this NIC.
+  \[IPV6Address \<String\>\]: Last Public (also known as global) IPv6 address associated with this NIC.
+  \[LocalIPV6Address \<String\>\]: Last local (link-local or site-local) IPv6 address associated with this NIC.
+  \[MacAddress \<String\>\]: MAC address of the NIC on this host.
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+VENDORINFORMATION \<IMicrosoftGraphSecurityVendorInformation\>: securityVendorInformation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+  \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-  - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+  \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+  \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityhostsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityhostsecurityprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

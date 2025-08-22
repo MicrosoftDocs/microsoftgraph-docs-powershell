@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgallsite
 schema: 2.0.0
-ms.subservice: sharepoint
 ---
 
 # Get-MgAllSite
@@ -13,15 +12,12 @@ List sites across geographies in an organization.
 This API can also be used to enumerate all sites in a non-multi-geo tenant.
 For more information, see Best practices for discovering files and detecting changes at scale.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAllSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAllSite?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
 Get-MgAllSite [-Count] [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,37 +25,21 @@ List sites across geographies in an organization.
 This API can also be used to enumerate all sites in a non-multi-geo tenant.
 For more information, see Best practices for discovering files and detecting changes at scale.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Read.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Initial request
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 Get-MgAllSite
 
+### EXAMPLE 2
 ```
-This example will initial request
-
-### Example 2: Subsequent request
-
-```powershell
-
 Import-Module Microsoft.Graph.Sites
+```
 
 Get-MgAllSite -Skiptoken "U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ"
-
-```
-This example will subsequent request
-
 
 ## PARAMETERS
 
@@ -123,6 +103,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -168,21 +163,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -213,6 +193,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -229,26 +224,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgallsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgallsite)
 
 [https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

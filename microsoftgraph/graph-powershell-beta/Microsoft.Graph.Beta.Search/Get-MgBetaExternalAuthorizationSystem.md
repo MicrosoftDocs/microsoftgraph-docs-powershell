@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalauthorizationsystem
 schema: 2.0.0
-ms.subservice: entra-permissions-management
 ---
 
 # Get-MgBetaExternalAuthorizationSystem
@@ -18,49 +17,41 @@ Represents an onboarded Amazon Web Services (AWS) account, Azure subscription, o
 Get-MgBetaExternalAuthorizationSystem [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaExternalAuthorizationSystem -AuthorizationSystemId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaExternalAuthorizationSystem -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Represents an onboarded Amazon Web Services (AWS) account, Azure subscription, or Google Cloud Platform (GCP) project that Microsoft Entra Permissions Management collects and analyzes permissions and actions on.
 
 ## EXAMPLES
-### Example 1: List authorization systems onboarded to Permissions Management
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
+```
 
 Get-MgBetaExternalAuthorizationSystem
 
+### EXAMPLE 2
 ```
-This example will list authorization systems onboarded to permissions management
-
-### Example 2: Identify all the authorization systems that are online and have permissions modification capability enabled
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Search
-
-Get-MgBetaExternalAuthorizationSystem -Filter "dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/permissionsModificationCapability eq 'enabled' and dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/status eq 'online'" 
-
 ```
-This example will identify all the authorization systems that are online and have permissions modification capability enabled
 
+Get-MgBetaExternalAuthorizationSystem -Filter "dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/permissionsModificationCapability eq 'enabled' and dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/status eq 'online'"
 
 ## PARAMETERS
 
@@ -186,6 +177,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -231,21 +237,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -276,6 +267,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -292,54 +298,32 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
-  - `[AcronymId <String>]`: The unique identifier of acronym
-  - `[AuthorizationSystemId <String>]`: The unique identifier of authorizationSystem
-  - `[BookmarkId <String>]`: The unique identifier of bookmark
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
-  - `[InboundFlowId <String>]`: The unique identifier of inboundFlow
-  - `[IndustryDataConnectorId <String>]`: The unique identifier of industryDataConnector
-  - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
-  - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
-  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
-  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
-  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
-  - `[QnaId <String>]`: The unique identifier of qna
-  - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
-  - `[RoleGroupId <String>]`: The unique identifier of roleGroup
-  - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
-  - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[AcronymId \<String\>\]: The unique identifier of acronym
+  \[AuthorizationSystemId \<String\>\]: The unique identifier of authorizationSystem
+  \[BookmarkId \<String\>\]: The unique identifier of bookmark
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
+  \[InboundFlowId \<String\>\]: The unique identifier of inboundFlow
+  \[IndustryDataConnectorId \<String\>\]: The unique identifier of industryDataConnector
+  \[IndustryDataRunActivityId \<String\>\]: The unique identifier of industryDataRunActivity
+  \[IndustryDataRunId \<String\>\]: The unique identifier of industryDataRun
+  \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[OutboundProvisioningFlowSetId \<String\>\]: The unique identifier of outboundProvisioningFlowSet
+  \[ProvisioningFlowId \<String\>\]: The unique identifier of provisioningFlow
+  \[QnaId \<String\>\]: The unique identifier of qna
+  \[ReferenceDefinitionId \<String\>\]: The unique identifier of referenceDefinition
+  \[RoleGroupId \<String\>\]: The unique identifier of roleGroup
+  \[SourceSystemDefinitionId \<String\>\]: The unique identifier of sourceSystemDefinition
+  \[YearTimePeriodDefinitionId \<String\>\]: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalauthorizationsystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalauthorizationsystem)
 
 [https://learn.microsoft.com/graph/api/externalconnectors-external-list-authorizationsystems?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-external-list-authorizationsystems?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

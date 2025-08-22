@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityprovider
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaIdentityProvider
@@ -13,22 +12,19 @@ Create an identity provider object that is of the type specified in the request 
 Among the types of providers derived from identityProviderBase, in Microsoft Entra, this operation can create a socialIdentityProvider, appleManagedIdentityProvider (external tenant only), or an oidcIdentityProvider (external tenant only) resource.
 In Azure AD B2C, this operation can create a socialIdentityProvider, appleManagedIdentityProvider, builtinIdentityProvider, or an openIdConnectIdentityProvider resource.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityProvider?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaIdentityProvider [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-DisplayName <String>] [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,20 +33,12 @@ Create an identity provider object that is of the type specified in the request 
 Among the types of providers derived from identityProviderBase, in Microsoft Entra, this operation can create a socialIdentityProvider, appleManagedIdentityProvider (external tenant only), or an oidcIdentityProvider (external tenant only) resource.
 In Azure AD B2C, this operation can create a socialIdentityProvider, appleManagedIdentityProvider, builtinIdentityProvider, or an openIdConnectIdentityProvider resource.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityProvider.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityProvider.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create a specific **social identity provider** (Microsoft Entra ID and Azure AD B2C)
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.socialIdentityProvider"
@@ -62,14 +50,10 @@ $params = @{
 
 New-MgBetaIdentityProvider -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create a specific **social identity provider** (microsoft entra id and azure ad b2c)
-
-### Example 2: Create a specific **OpenID Connect identity provider** (only for Azure AD B2C)
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.openIdConnectIdentityProvider"
@@ -92,14 +76,10 @@ $params = @{
 
 New-MgBetaIdentityProvider -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create a specific **openid connect identity provider** (only for azure ad b2c)
-
-### Example 3: Retrieves Apple identity provider (only for Azure AD B2C)
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.appleManagedIdentityProvider"
@@ -111,10 +91,6 @@ $params = @{
 }
 
 New-MgBetaIdentityProvider -BodyParameter $params
-
-```
-This example retrieves apple identity provider (only for azure ad b2c)
-
 
 ## PARAMETERS
 
@@ -146,21 +122,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -210,6 +171,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -217,6 +193,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -257,37 +248,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityProviderBase>`: identityProviderBase
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIdentityProviderBase\>: identityProviderBase
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The display name of the identity provider.
+  \[DisplayName \<String\>\]: The display name of the identity provider.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityprovider)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-post-identityproviders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitycontainer-post-identityproviders?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

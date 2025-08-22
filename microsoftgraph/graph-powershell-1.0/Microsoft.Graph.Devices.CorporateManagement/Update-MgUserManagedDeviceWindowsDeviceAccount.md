@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicewindowsdeviceaccount
 schema: 2.0.0
-ms.subservice: intune
 ---
 
 # Update-MgUserManagedDeviceWindowsDeviceAccount
 
 ## SYNOPSIS
 Not yet documented
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -21,7 +17,7 @@ Not yet documented
 Update-MgUserManagedDeviceWindowsDeviceAccount -ManagedDeviceId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-UpdateWindowsDeviceAccountActionParameter <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,7 +25,7 @@ Update-MgUserManagedDeviceWindowsDeviceAccount -ManagedDeviceId <String> -UserId
 ```
 Update-MgUserManagedDeviceWindowsDeviceAccount -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IPaths1Q6DqpaUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +34,7 @@ Update-MgUserManagedDeviceWindowsDeviceAccount -ManagedDeviceId <String> -UserId
 Update-MgUserManagedDeviceWindowsDeviceAccount -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-UpdateWindowsDeviceAccountActionParameter <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -46,7 +42,7 @@ Update-MgUserManagedDeviceWindowsDeviceAccount -InputObject <IDevicesCorporateMa
 ```
 Update-MgUserManagedDeviceWindowsDeviceAccount -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPaths1Q6DqpaUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -54,6 +50,16 @@ Update-MgUserManagedDeviceWindowsDeviceAccount -InputObject <IDevicesCorporateMa
 Not yet documented
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -73,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -85,21 +91,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -164,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -210,6 +216,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -243,93 +264,71 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Q6DqpaUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[UpdateWindowsDeviceAccountActionParameter <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>]`: updateWindowsDeviceAccountActionParameter
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CalendarSyncEnabled <Boolean?>]`: Not yet documented
-    - `[DeviceAccount <IMicrosoftGraphWindowsDeviceAccount>]`: windowsDeviceAccount
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Password <String>]`: Not yet documented
-    - `[DeviceAccountEmail <String>]`: Not yet documented
-    - `[ExchangeServer <String>]`: Not yet documented
-    - `[PasswordRotationEnabled <Boolean?>]`: Not yet documented
-    - `[SessionInitiationProtocalAddress <String>]`: Not yet documented
+BODYPARAMETER \<IPaths1Q6DqpaUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[UpdateWindowsDeviceAccountActionParameter \<IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter\>\]: updateWindowsDeviceAccountActionParameter
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CalendarSyncEnabled \<Boolean?\>\]: Not yet documented
+    \[DeviceAccount \<IMicrosoftGraphWindowsDeviceAccount\>\]: windowsDeviceAccount
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Password \<String\>\]: Not yet documented
+    \[DeviceAccountEmail \<String\>\]: Not yet documented
+    \[ExchangeServer \<String\>\]: Not yet documented
+    \[PasswordRotationEnabled \<Boolean?\>\]: Not yet documented
+    \[SessionInitiationProtocalAddress \<String\>\]: Not yet documented
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
-  - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
-  - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
-  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
-  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
-  - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
-  - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
-  - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
-  - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
-  - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
-  - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
-  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
-  - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
-  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
-  - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
-  - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
-  - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
-  - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
-  - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
-  - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
-  - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
-  - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent
-  - `[MobileAppId <String>]`: The unique identifier of mobileApp
-  - `[MobileContainedAppId <String>]`: The unique identifier of mobileContainedApp
-  - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
-  - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
-  - `[VppTokenId <String>]`: The unique identifier of vppToken
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
-  - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
+INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
+  \[AndroidManagedAppProtectionId \<String\>\]: The unique identifier of androidManagedAppProtection
+  \[DefaultManagedAppProtectionId \<String\>\]: The unique identifier of defaultManagedAppProtection
+  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
+  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
+  \[DeviceInstallStateId \<String\>\]: The unique identifier of deviceInstallState
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
+  \[IosManagedAppProtectionId \<String\>\]: The unique identifier of iosManagedAppProtection
+  \[ManagedAppOperationId \<String\>\]: The unique identifier of managedAppOperation
+  \[ManagedAppPolicyId \<String\>\]: The unique identifier of managedAppPolicy
+  \[ManagedAppRegistrationId \<String\>\]: The unique identifier of managedAppRegistration
+  \[ManagedAppStatusId \<String\>\]: The unique identifier of managedAppStatus
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[ManagedDeviceMobileAppConfigurationAssignmentId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+  \[ManagedDeviceMobileAppConfigurationDeviceStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+  \[ManagedDeviceMobileAppConfigurationId \<String\>\]: The unique identifier of managedDeviceMobileAppConfiguration
+  \[ManagedDeviceMobileAppConfigurationUserStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+  \[ManagedEBookAssignmentId \<String\>\]: The unique identifier of managedEBookAssignment
+  \[ManagedEBookId \<String\>\]: The unique identifier of managedEBook
+  \[ManagedMobileAppId \<String\>\]: The unique identifier of managedMobileApp
+  \[MdmWindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of mdmWindowsInformationProtectionPolicy
+  \[MobileAppAssignmentId \<String\>\]: The unique identifier of mobileAppAssignment
+  \[MobileAppCategoryId \<String\>\]: The unique identifier of mobileAppCategory
+  \[MobileAppContentFileId \<String\>\]: The unique identifier of mobileAppContentFile
+  \[MobileAppContentId \<String\>\]: The unique identifier of mobileAppContent
+  \[MobileAppId \<String\>\]: The unique identifier of mobileApp
+  \[MobileAppRelationshipId \<String\>\]: The unique identifier of mobileAppRelationship
+  \[MobileContainedAppId \<String\>\]: The unique identifier of mobileContainedApp
+  \[TargetedManagedAppConfigurationId \<String\>\]: The unique identifier of targetedManagedAppConfiguration
+  \[TargetedManagedAppPolicyAssignmentId \<String\>\]: The unique identifier of targetedManagedAppPolicyAssignment
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserInstallStateSummaryId \<String\>\]: The unique identifier of userInstallStateSummary
+  \[VppTokenId \<String\>\]: The unique identifier of vppToken
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsInformationProtectionAppLockerFileId \<String\>\]: The unique identifier of windowsInformationProtectionAppLockerFile
+  \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
 
-UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER `<IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>`: updateWindowsDeviceAccountActionParameter
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CalendarSyncEnabled <Boolean?>]`: Not yet documented
-  - `[DeviceAccount <IMicrosoftGraphWindowsDeviceAccount>]`: windowsDeviceAccount
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Password <String>]`: Not yet documented
-  - `[DeviceAccountEmail <String>]`: Not yet documented
-  - `[ExchangeServer <String>]`: Not yet documented
-  - `[PasswordRotationEnabled <Boolean?>]`: Not yet documented
-  - `[SessionInitiationProtocalAddress <String>]`: Not yet documented
+UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER \<IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter\>: updateWindowsDeviceAccountActionParameter
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CalendarSyncEnabled \<Boolean?\>\]: Not yet documented
+  \[DeviceAccount \<IMicrosoftGraphWindowsDeviceAccount\>\]: windowsDeviceAccount
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Password \<String\>\]: Not yet documented
+  \[DeviceAccountEmail \<String\>\]: Not yet documented
+  \[ExchangeServer \<String\>\]: Not yet documented
+  \[PasswordRotationEnabled \<Boolean?\>\]: Not yet documented
+  \[SessionInitiationProtocalAddress \<String\>\]: Not yet documented
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicewindowsdeviceaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicewindowsdeviceaccount)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-updatewindowsdeviceaccount?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-updatewindowsdeviceaccount?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

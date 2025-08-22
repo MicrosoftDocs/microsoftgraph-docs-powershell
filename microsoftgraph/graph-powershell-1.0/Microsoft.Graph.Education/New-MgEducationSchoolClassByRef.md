@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschoolclassbyref
 schema: 2.0.0
-ms.subservice: education
 ---
 
 # New-MgEducationSchoolClassByRef
@@ -11,22 +10,19 @@ ms.subservice: education
 ## SYNOPSIS
 Add a class to a school.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgEducationSchoolClassByRef -EducationSchoolId <String> [-ResponseHeadersVariable <String>]
  -OdataId <String> [-AdditionalProperties <Hashtable>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEducationSchoolClassByRef -EducationSchoolId <String> -BodyParameter <IReferenceCreate>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,13 +30,13 @@ New-MgEducationSchoolClassByRef -EducationSchoolId <String> -BodyParameter <IRef
 ```
 New-MgEducationSchoolClassByRef -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>]
  -OdataId <String> [-AdditionalProperties <Hashtable>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgEducationSchoolClassByRef -InputObject <IEducationIdentity> -BodyParameter <IReferenceCreate>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,21 +44,17 @@ New-MgEducationSchoolClassByRef -InputObject <IEducationIdentity> -BodyParameter
 Add a class to a school.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/education/classes/11006"
 }
 
 New-MgEducationSchoolClassByRef -EducationSchoolId $educationSchoolId -BodyParameter $params
-
-```
-This example shows how to use the New-MgEducationSchoolClassByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -82,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -94,21 +86,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -189,6 +166,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -196,6 +188,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -237,51 +244,31 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+BODYPARAMETER \<IReferenceCreate\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  OdataId \<String\>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
-  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
-  - `[EducationClassId <String>]`: The unique identifier of educationClass
-  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
-  - `[EducationModuleId <String>]`: The unique identifier of educationModule
-  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
-  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
-  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
-  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
-  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationUserId <String>]`: The unique identifier of educationUser
+INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
+  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
+  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
+  \[EducationClassId \<String\>\]: The unique identifier of educationClass
+  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
+  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
+  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
+  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
+  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
+  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
+  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
+  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationUserId \<String\>\]: The unique identifier of educationUser
+  \[ReadingAssignmentSubmissionId \<String\>\]: The unique identifier of readingAssignmentSubmission
+  \[ReflectCheckInResponseId \<String\>\]: The unique identifier of reflectCheckInResponse
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschoolclassbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschoolclassbyref)
 
 [https://learn.microsoft.com/graph/api/educationschool-post-classes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-post-classes?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

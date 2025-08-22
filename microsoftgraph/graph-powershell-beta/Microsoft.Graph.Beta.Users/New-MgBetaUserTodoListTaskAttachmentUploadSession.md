@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskattachmentuploadsession
 schema: 2.0.0
-ms.subservice: outlook
 ---
 
 # New-MgBetaUserTodoListTaskAttachmentUploadSession
@@ -15,9 +14,6 @@ The request headers for each PUT operation let you specify the exact range of by
 This allows the transfer to be resumed, in case the network connection is dropped during the upload.
 The following are the steps to attach a file to a Microsoft To Do task using an upload session: For an example that describes the end-to-end attachment process, see attach files to a To Do task.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserTodoListTaskAttachmentUploadSession](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTaskAttachmentUploadSession?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -25,7 +21,7 @@ The following are the steps to attach a file to a Microsoft To Do task using an 
 New-MgBetaUserTodoListTaskAttachmentUploadSession -TodoTaskId <String> -TodoTaskListId <String>
  -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AttachmentInfo <IMicrosoftGraphAttachmentInfo>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -33,7 +29,7 @@ New-MgBetaUserTodoListTaskAttachmentUploadSession -TodoTaskId <String> -TodoTask
 New-MgBetaUserTodoListTaskAttachmentUploadSession -TodoTaskId <String> -TodoTaskListId <String>
  -UserId <String>
  -BodyParameter <IPaths4768B9UsersUserIdTodoListsTodotasklistIdTasksTodotaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,14 +38,14 @@ New-MgBetaUserTodoListTaskAttachmentUploadSession -TodoTaskId <String> -TodoTask
 New-MgBetaUserTodoListTaskAttachmentUploadSession -InputObject <IUsersIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AttachmentInfo <IMicrosoftGraphAttachmentInfo>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserTodoListTaskAttachmentUploadSession -InputObject <IUsersIdentity>
  -BodyParameter <IPaths4768B9UsersUserIdTodoListsTodotasklistIdTasksTodotaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -60,20 +56,12 @@ The request headers for each PUT operation let you specify the exact range of by
 This allows the transfer to be resumed, in case the network connection is dropped during the upload.
 The following are the steps to attach a file to a Microsoft To Do task using an upload session: For an example that describes the end-to-end attachment process, see attach files to a To Do task.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
+```
 
 $params = @{
 	attachmentInfo = @{
@@ -85,10 +73,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserTodoListTaskAttachmentUploadSession -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaUserTodoListTaskAttachmentUploadSession Cmdlet.
-
 
 ## PARAMETERS
 
@@ -124,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -136,21 +120,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -182,6 +151,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -245,6 +229,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -278,85 +277,63 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTACHMENTINFO `<IMicrosoftGraphAttachmentInfo>`: attachmentInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttachmentType <String>]`: attachmentType
-  - `[ContentType <String>]`: The nature of the data in the attachment.
+ATTACHMENTINFO \<IMicrosoftGraphAttachmentInfo\>: attachmentInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AttachmentType \<String\>\]: attachmentType
+  \[ContentType \<String\>\]: The nature of the data in the attachment.
 Optional.
-  - `[Name <String>]`: The display name of the attachment.
+  \[Name \<String\>\]: The display name of the attachment.
 This can be a descriptive string and doesn't have to be the actual file name.
 Required.
-  - `[Size <Int64?>]`: The length of the attachment in bytes.
+  \[Size \<Int64?\>\]: The length of the attachment in bytes.
 Required.
 
-BODYPARAMETER `<IPaths4768B9UsersUserIdTodoListsTodotasklistIdTasksTodotaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttachmentInfo <IMicrosoftGraphAttachmentInfo>]`: attachmentInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AttachmentType <String>]`: attachmentType
-    - `[ContentType <String>]`: The nature of the data in the attachment.
+BODYPARAMETER \<IPaths4768B9UsersUserIdTodoListsTodotasklistIdTasksTodotaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AttachmentInfo \<IMicrosoftGraphAttachmentInfo\>\]: attachmentInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[AttachmentType \<String\>\]: attachmentType
+    \[ContentType \<String\>\]: The nature of the data in the attachment.
 Optional.
-    - `[Name <String>]`: The display name of the attachment.
+    \[Name \<String\>\]: The display name of the attachment.
 This can be a descriptive string and doesn't have to be the actual file name.
 Required.
-    - `[Size <Int64?>]`: The length of the attachment in bytes.
+    \[Size \<Int64?\>\]: The length of the attachment in bytes.
 Required.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
-  - `[AppId <String>]`: Alternate key of servicePrincipal
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[NotificationId <String>]`: The unique identifier of notification
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[ServiceStorageQuotaBreakdownId <String>]`: The unique identifier of serviceStorageQuotaBreakdown
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
-  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserPrincipalName <String>]`: Alternate key of user
-  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
-  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of servicePrincipal
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[NotificationId \<String\>\]: The unique identifier of notification
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
+  \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
+  \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
+  \[ServiceStorageQuotaBreakdownId \<String\>\]: The unique identifier of serviceStorageQuotaBreakdown
+  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
+  \[TimeZoneStandard \<String\>\]: Usage: TimeZoneStandard='{TimeZoneStandard}'
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[TrendingId \<String\>\]: The unique identifier of trending
+  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserPrincipalName \<String\>\]: Alternate key of user
+  \[WindowsSettingId \<String\>\]: The unique identifier of windowsSetting
+  \[WindowsSettingInstanceId \<String\>\]: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskattachmentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskattachmentuploadsession)
 
 [https://learn.microsoft.com/graph/api/taskfileattachment-createuploadsession?view=graph-rest-beta](https://learn.microsoft.com/graph/api/taskfileattachment-createuploadsession?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

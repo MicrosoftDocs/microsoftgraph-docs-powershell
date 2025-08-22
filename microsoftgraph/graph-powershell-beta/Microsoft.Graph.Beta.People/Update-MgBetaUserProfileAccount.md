@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaccount
@@ -19,16 +19,17 @@ Update-MgBetaUserProfileAccount -UserAccountInformationId <String> -UserId <Stri
  [-AllowedAudiences <String>] [-CountryCode <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-PreferredLanguageTag <IMicrosoftGraphLocaleInfo>] [-Source <IMicrosoftGraphPersonDataSources>]
- [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OriginTenantInfo <IMicrosoftGraphOriginTenantInfo>] [-PreferredLanguageTag <IMicrosoftGraphLocaleInfo>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>]
+ [-UserPersona <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserProfileAccount -UserAccountInformationId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphUserAccountInformation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,36 +38,28 @@ Update-MgBetaUserProfileAccount -InputObject <IPeopleIdentity> [-ResponseHeaders
  [-AdditionalProperties <Hashtable>] [-AgeGroup <String>] [-AllowedAudiences <String>] [-CountryCode <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-PreferredLanguageTag <IMicrosoftGraphLocaleInfo>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-OriginTenantInfo <IMicrosoftGraphOriginTenantInfo>]
+ [-PreferredLanguageTag <IMicrosoftGraphLocaleInfo>] [-Source <IMicrosoftGraphPersonDataSources>]
+ [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-UserPersona <String>] [-UserPrincipalName <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserProfileAccount -InputObject <IPeopleIdentity>
  -BodyParameter <IMicrosoftGraphUserAccountInformation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property account in users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | User.ReadWrite,  |
-| Application | User.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
+```
 
 $params = @{
 	countryCode = "NO"
@@ -74,10 +67,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileAccount -UserId $userId -UserAccountInformationId $userAccountInformationId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaUserProfileAccount Cmdlet.
-
 
 ## PARAMETERS
 
@@ -140,21 +129,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -268,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsSearchable
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -313,6 +287,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -OriginTenantInfo
+originTenantInfo
+To construct, see NOTES section for ORIGINTENANTINFO properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphOriginTenantInfo
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PreferredLanguageTag
 localeInfo
 To construct, see NOTES section for PREFERREDLANGUAGETAG properties and create a hash table.
@@ -321,6 +311,21 @@ To construct, see NOTES section for PREFERREDLANGUAGETAG properties and create a
 Type: IMicrosoftGraphLocaleInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -406,6 +411,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -UserPersona
+userPersona
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserPrincipalName
 The user principal name (UPN) of the user associated with the account.
 
@@ -413,6 +433,21 @@ The user principal name (UPN) of the user associated with the account.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -454,137 +489,125 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserAccountInformation>`: userAccountInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AllowedAudiences <String>]`: allowedAudiences
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+BODYPARAMETER \<IMicrosoftGraphUserAccountInformation\>: userAccountInformation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AllowedAudiences \<String\>\]: allowedAudiences
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
-  - `[Inference <IMicrosoftGraphInferenceData>]`: inferenceData
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
-    - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
-  - `[IsSearchable <Boolean?>]`: 
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
-  - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Type <String- `[]`>]`: 
-  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
-    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
-    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
-    - `[SourceId <String>]`: 
-  - `[Id <String>]`: The unique identifier for an entity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: Provides the dateTimeOffset for when the entity was created.
+  \[Inference \<IMicrosoftGraphInferenceData\>\]: inferenceData
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ConfidenceScore \<Double?\>\]: Confidence score reflecting the accuracy of the data inferred about the user.
+    \[UserHasVerifiedAccuracy \<Boolean?\>\]: Records if the user has confirmed this inference as being True or False.
+  \[IsSearchable \<Boolean?\>\]: 
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[LastModifiedDateTime \<DateTime?\>\]: Provides the dateTimeOffset for when the entity was created.
+  \[Source \<IMicrosoftGraphPersonDataSources\>\]: personDataSources
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Type \<String\[\]\>\]: 
+  \[Sources \<IMicrosoftGraphProfileSourceAnnotation\[\]\>\]: Where the values within an entity originated if synced from another source.
+    \[IsDefaultSource \<Boolean?\>\]: Indicates whether the source is the default one.
+    \[Properties \<String\[\]\>\]: Names of properties that have data from this source.
+    \[SourceId \<String\>\]: 
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AgeGroup <String>]`: Shows the age group of user.
+  \[AgeGroup \<String\>\]: Shows the age group of user.
 Allowed values null, minor, notAdult and adult are generated by the directory and can't be changed.
-  - `[CountryCode <String>]`: Contains the two-character country code associated with the users' account.
-  - `[PreferredLanguageTag <IMicrosoftGraphLocaleInfo>]`: localeInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
-    - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region.
+  \[CountryCode \<String\>\]: Contains the two-character country code associated with the users' account.
+  \[OriginTenantInfo \<IMicrosoftGraphOriginTenantInfo\>\]: originTenantInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[OriginTenantId \<String\>\]: The identifier of the tenant where the user account was originally provisioned.
+    \[OriginUserId \<String\>\]: The identifier of the user in the origin tenant.
+  \[PreferredLanguageTag \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: A name representing the user's locale in natural language, for example, 'English (United States)'.
+    \[Locale \<String\>\]: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
-  - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user associated with the account.
+  \[UserPersona \<String\>\]: userPersona
+  \[UserPrincipalName \<String\>\]: The user principal name (UPN) of the user associated with the account.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
-  - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
+INFERENCE \<IMicrosoftGraphInferenceData\>: inferenceData
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ConfidenceScore \<Double?\>\]: Confidence score reflecting the accuracy of the data inferred about the user.
+  \[UserHasVerifiedAccuracy \<Boolean?\>\]: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
-  - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
-  - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
-  - `[ItemAddressId <String>]`: The unique identifier of itemAddress
-  - `[ItemEmailId <String>]`: The unique identifier of itemEmail
-  - `[ItemPatentId <String>]`: The unique identifier of itemPatent
-  - `[ItemPhoneId <String>]`: The unique identifier of itemPhone
-  - `[ItemPublicationId <String>]`: The unique identifier of itemPublication
-  - `[LanguageProficiencyId <String>]`: The unique identifier of languageProficiency
-  - `[PersonAnnotationId <String>]`: The unique identifier of personAnnotation
-  - `[PersonAnnualEventId <String>]`: The unique identifier of personAnnualEvent
-  - `[PersonAwardId <String>]`: The unique identifier of personAward
-  - `[PersonCertificationId <String>]`: The unique identifier of personCertification
-  - `[PersonId <String>]`: The unique identifier of person
-  - `[PersonInterestId <String>]`: The unique identifier of personInterest
-  - `[PersonNameId <String>]`: The unique identifier of personName
-  - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
-  - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
-  - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
-  - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WebAccountId <String>]`: The unique identifier of webAccount
-  - `[WorkPositionId <String>]`: The unique identifier of workPosition
+INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
+  \[ActivityStatisticsId \<String\>\]: The unique identifier of activityStatistics
+  \[EducationalActivityId \<String\>\]: The unique identifier of educationalActivity
+  \[ItemAddressId \<String\>\]: The unique identifier of itemAddress
+  \[ItemEmailId \<String\>\]: The unique identifier of itemEmail
+  \[ItemPatentId \<String\>\]: The unique identifier of itemPatent
+  \[ItemPhoneId \<String\>\]: The unique identifier of itemPhone
+  \[ItemPublicationId \<String\>\]: The unique identifier of itemPublication
+  \[LanguageProficiencyId \<String\>\]: The unique identifier of languageProficiency
+  \[PersonAnnotationId \<String\>\]: The unique identifier of personAnnotation
+  \[PersonAnnualEventId \<String\>\]: The unique identifier of personAnnualEvent
+  \[PersonAwardId \<String\>\]: The unique identifier of personAward
+  \[PersonCertificationId \<String\>\]: The unique identifier of personCertification
+  \[PersonId \<String\>\]: The unique identifier of person
+  \[PersonInterestId \<String\>\]: The unique identifier of personInterest
+  \[PersonNameId \<String\>\]: The unique identifier of personName
+  \[PersonWebsiteId \<String\>\]: The unique identifier of personWebsite
+  \[ProjectParticipationId \<String\>\]: The unique identifier of projectParticipation
+  \[SkillProficiencyId \<String\>\]: The unique identifier of skillProficiency
+  \[UserAccountInformationId \<String\>\]: The unique identifier of userAccountInformation
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WebAccountId \<String\>\]: The unique identifier of webAccount
+  \[WorkPositionId \<String\>\]: The unique identifier of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-PREFERREDLANGUAGETAG `<IMicrosoftGraphLocaleInfo>`: localeInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
-  - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region.
+ORIGINTENANTINFO \<IMicrosoftGraphOriginTenantInfo\>: originTenantInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[OriginTenantId \<String\>\]: The identifier of the tenant where the user account was originally provisioned.
+  \[OriginUserId \<String\>\]: The identifier of the user in the origin tenant.
+
+PREFERREDLANGUAGETAG \<IMicrosoftGraphLocaleInfo\>: localeInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: A name representing the user's locale in natural language, for example, 'English (United States)'.
+  \[Locale \<String\>\]: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String- `[]`>]`: 
+SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Type \<String\[\]\>\]: 
 
-SOURCES `<IMicrosoftGraphProfileSourceAnnotation- `[]`>`: Where the values within an entity originated if synced from another source.
-  - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
-  - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
-  - `[SourceId <String>]`:
+SOURCES \<IMicrosoftGraphProfileSourceAnnotation\[\]\>: Where the values within an entity originated if synced from another source.
+  \[IsDefaultSource \<Boolean?\>\]: Indicates whether the source is the default one.
+  \[Properties \<String\[\]\>\]: Names of properties that have data from this source.
+  \[SourceId \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaccount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

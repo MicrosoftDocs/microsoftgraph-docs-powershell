@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestore
 schema: 2.0.0
-ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaSolutionBackupRestore
@@ -11,14 +10,11 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 Get the serviceStatus of the Microsoft 365 Backup Storage service in a tenant.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestore](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestore?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
 Get-MgBetaSolutionBackupRestore [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -26,6 +22,16 @@ Get-MgBetaSolutionBackupRestore [-ExpandProperty <String[]>] [-Property <String[
 Get the serviceStatus of the Microsoft 365 Backup Storage service in a tenant.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -56,6 +62,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -105,27 +126,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestore)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomer
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to customers for bookingBusinesses
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessCustomer?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,7 +18,7 @@ New-MgBetaBookingBusinessCustomer -BookingBusinessId <String> [-ResponseHeadersV
  [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPhysicalAddress[]>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>]
  [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded1
@@ -30,20 +27,20 @@ New-MgBetaBookingBusinessCustomer -BookingBusinessId <String> [-ResponseHeadersV
  [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPhysicalAddress[]>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>]
  [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BodyParameter <IMicrosoftGraphBookingCustomer>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BodyParameter <IMicrosoftGraphBookingCustomer>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -53,7 +50,7 @@ New-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-ResponseHea
  [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPhysicalAddress[]>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>]
  [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -62,37 +59,30 @@ New-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-ResponseHea
  [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPhysicalAddress[]>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>]
  [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
 New-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphBookingCustomer> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphBookingCustomer> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to customers for bookingBusinesses
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaBookingBusinessCustomer Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	DisplayName = "Joni Sherman"
@@ -130,8 +120,6 @@ $params = @{
 }
 New-MgBetaBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaBookingBusinessCustomer Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -191,21 +179,6 @@ Parameter Sets: CreateExpanded, CreateExpanded1, Create1, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -335,6 +308,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -342,6 +330,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -383,86 +386,64 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESSES `<IMicrosoftGraphPhysicalAddress- `[]`>`: Addresses associated with the customer, including home, business and other addresses.
-  - `[City <String>]`: The city.
-  - `[CountryOrRegion <String>]`: The country or region.
+ADDRESSES \<IMicrosoftGraphPhysicalAddress\[\]\>: Addresses associated with the customer, including home, business and other addresses.
+  \[City \<String\>\]: The city.
+  \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-  - `[PostOfficeBox <String>]`: The post office box number.
-  - `[PostalCode <String>]`: The postal code.
-  - `[State <String>]`: The state.
-  - `[Street <String>]`: The street.
-  - `[Type <String>]`: physicalAddressType
+  \[PostOfficeBox \<String\>\]: The post office box number.
+  \[PostalCode \<String\>\]: The postal code.
+  \[State \<String\>\]: The state.
+  \[Street \<String\>\]: The street.
+  \[Type \<String\>\]: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphBookingCustomer>`: Represents a customer of the business.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EmailAddress <String>]`: The email address of the person.
-  - `[DisplayName <String>]`: A name for the derived entity, which interfaces with customers.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphBookingCustomer\>: Represents a customer of the business.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[EmailAddress \<String\>\]: The email address of the person.
+  \[DisplayName \<String\>\]: A name for the derived entity, which interfaces with customers.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Addresses <IMicrosoftGraphPhysicalAddress- `[]`>]`: Addresses associated with the customer, including home, business and other addresses.
-    - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region.
+  \[Addresses \<IMicrosoftGraphPhysicalAddress\[\]\>\]: Addresses associated with the customer, including home, business and other addresses.
+    \[City \<String\>\]: The city.
+    \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-    - `[PostOfficeBox <String>]`: The post office box number.
-    - `[PostalCode <String>]`: The postal code.
-    - `[State <String>]`: The state.
-    - `[Street <String>]`: The street.
-    - `[Type <String>]`: physicalAddressType
-  - `[CreatedDateTime <DateTime?>]`: The date, time, and timezone when the customer was created.
-  - `[LastUpdatedDateTime <DateTime?>]`: The date, time, and timezone when the customer was last updated.
-  - `[Phones <IMicrosoftGraphPhone- `[]`>]`: Phone numbers associated with the customer, including home, business and mobile numbers.
-    - `[Number <String>]`: The phone number.
-    - `[Type <String>]`: phoneType
+    \[PostOfficeBox \<String\>\]: The post office box number.
+    \[PostalCode \<String\>\]: The postal code.
+    \[State \<String\>\]: The state.
+    \[Street \<String\>\]: The street.
+    \[Type \<String\>\]: physicalAddressType
+  \[CreatedDateTime \<DateTime?\>\]: The date, time, and timezone when the customer was created.
+  \[LastUpdatedDateTime \<DateTime?\>\]: The date, time, and timezone when the customer was last updated.
+  \[Phones \<IMicrosoftGraphPhone\[\]\>\]: Phone numbers associated with the customer, including home, business and mobile numbers.
+    \[Number \<String\>\]: The phone number.
+    \[Type \<String\>\]: phoneType
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[Email <String>]`: Alternate key of virtualEventRegistration
-  - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[UserId <String>]`: Alternate key of virtualEventRegistration
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventRegistrationQuestionBaseId <String>]`: The unique identifier of virtualEventRegistrationQuestionBase
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerId \<String\>\]: The unique identifier of bookingCustomer
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
+  \[Email \<String\>\]: Alternate key of virtualEventRegistration
+  \[JoinWebUrl \<String\>\]: Alternate key of virtualEventSession
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UserId \<String\>\]: Alternate key of virtualEventRegistration
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventRegistrationQuestionBaseId \<String\>\]: The unique identifier of virtualEventRegistrationQuestionBase
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
-PHONES `<IMicrosoftGraphPhone- `[]`>`: Phone numbers associated with the customer, including home, business and mobile numbers.
-  - `[Number <String>]`: The phone number.
-  - `[Type <String>]`: phoneType
+PHONES \<IMicrosoftGraphPhone\[\]\>: Phone numbers associated with the customer, including home, business and mobile numbers.
+  \[Number \<String\>\]: The phone number.
+  \[Type \<String\>\]: phoneType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomer)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

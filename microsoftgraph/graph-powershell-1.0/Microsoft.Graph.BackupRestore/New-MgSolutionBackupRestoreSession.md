@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoresession
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to restoreSessions for solutions
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestoreSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestoreSession?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,14 +17,15 @@ Create new navigation property to restoreSessions for solutions
 New-MgSolutionBackupRestoreSession [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-RestoreJobType <String>]
+ [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSolutionBackupRestoreSession -BodyParameter <IMicrosoftGraphRestoreSessionBase>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,6 +33,16 @@ New-MgSolutionBackupRestoreSession -BodyParameter <IMicrosoftGraphRestoreSession
 Create new navigation property to restoreSessions for solutions
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -76,21 +84,6 @@ The time of completion of the restore session.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -208,6 +201,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -223,6 +231,37 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RestoreJobType
+restoreJobType
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RestoreSessionArtifactCount
+restoreSessionArtifactCount
+To construct, see NOTES section for RESTORESESSIONARTIFACTCOUNT properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRestoreSessionArtifactCount
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 restoreSessionStatus
 
@@ -230,6 +269,21 @@ restoreSessionStatus
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -270,103 +324,94 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRestoreSessionBase>`: restoreSessionBase
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphRestoreSessionBase\>: restoreSessionBase
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CompletedDateTime <DateTime?>]`: The time of completion of the restore session.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+  \[CompletedDateTime \<DateTime?\>\]: The time of completion of the restore session.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
+      \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The time of creation of the restore session.
-  - `[Error <IMicrosoftGraphPublicError>]`: publicError
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <String>]`: Represents the error code.
-    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
-      - `[Code <String>]`: The error code.
-      - `[Message <String>]`: The error message.
-      - `[Target <String>]`: The target of the error.
-    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <String>]`: The error code.
-      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
-      - `[Message <String>]`: The error message.
-      - `[Target <String>]`: The target of the error.
-    - `[Message <String>]`: A non-localized message for the developer.
-    - `[Target <String>]`: The target of the error.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of the restore session.
-  - `[Status <String>]`: restoreSessionStatus
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: The time of creation of the restore session.
+  \[Error \<IMicrosoftGraphPublicError\>\]: publicError
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: Represents the error code.
+    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
+      \[Code \<String\>\]: The error code.
+      \[Message \<String\>\]: The error message.
+      \[Target \<String\>\]: The target of the error.
+    \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Code \<String\>\]: The error code.
+      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
+      \[Message \<String\>\]: The error message.
+      \[Target \<String\>\]: The target of the error.
+    \[Message \<String\>\]: A non-localized message for the developer.
+    \[Target \<String\>\]: The target of the error.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification of the restore session.
+  \[RestoreJobType \<String\>\]: restoreJobType
+  \[RestoreSessionArtifactCount \<IMicrosoftGraphRestoreSessionArtifactCount\>\]: restoreSessionArtifactCount
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Completed \<Int32?\>\]: The number of artifacts whose restoration completed.
+    \[Failed \<Int32?\>\]: The number of artifacts whose restoration failed.
+    \[InProgress \<Int32?\>\]: The number of artifacts whose restoration is in progress.
+    \[Total \<Int32?\>\]: The number of artifacts present in the restore session.
+  \[Status \<String\>\]: restoreSessionStatus
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
+    \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Code <String>]`: Represents the error code.
-  - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
-    - `[Code <String>]`: The error code.
-    - `[Message <String>]`: The error message.
-    - `[Target <String>]`: The target of the error.
-  - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <String>]`: The error code.
-    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
-    - `[Message <String>]`: The error message.
-    - `[Target <String>]`: The target of the error.
-  - `[Message <String>]`: A non-localized message for the developer.
-  - `[Target <String>]`: The target of the error.
+ERROR \<IMicrosoftGraphPublicError\>: publicError
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Code \<String\>\]: Represents the error code.
+  \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
+    \[Code \<String\>\]: The error code.
+    \[Message \<String\>\]: The error message.
+    \[Target \<String\>\]: The target of the error.
+  \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: The error code.
+    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
+    \[Message \<String\>\]: The error message.
+    \[Target \<String\>\]: The target of the error.
+  \[Message \<String\>\]: A non-localized message for the developer.
+  \[Target \<String\>\]: The target of the error.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
+    \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
+
+RESTORESESSIONARTIFACTCOUNT \<IMicrosoftGraphRestoreSessionArtifactCount\>: restoreSessionArtifactCount
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Completed \<Int32?\>\]: The number of artifacts whose restoration completed.
+  \[Failed \<Int32?\>\]: The number of artifacts whose restoration failed.
+  \[InProgress \<Int32?\>\]: The number of artifacts whose restoration is in progress.
+  \[Total \<Int32?\>\]: The number of artifacts present in the restore session.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoresession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

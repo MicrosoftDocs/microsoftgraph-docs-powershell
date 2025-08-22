@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivityperformedby
@@ -10,16 +10,13 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents an identity used to identify who is responsible for the activity.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionItemActivityPerformedBy](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItemActivityPerformedBy?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgExternalConnectionItemActivityPerformedBy -ExternalActivityId <String> -ExternalConnectionId <String>
  -ExternalItemId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -27,13 +24,23 @@ Get-MgExternalConnectionItemActivityPerformedBy -ExternalActivityId <String> -Ex
 ```
 Get-MgExternalConnectionItemActivityPerformedBy -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Represents an identity used to identify who is responsible for the activity.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -128,6 +135,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -174,41 +196,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
-  - `[AcronymId <String>]`: The unique identifier of acronym
-  - `[BookmarkId <String>]`: The unique identifier of bookmark
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
-  - `[QnaId <String>]`: The unique identifier of qna
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[AcronymId \<String\>\]: The unique identifier of acronym
+  \[BookmarkId \<String\>\]: The unique identifier of bookmark
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
+  \[QnaId \<String\>\]: The unique identifier of qna
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivityperformedby](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivityperformedby)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

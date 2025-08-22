@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgforcedomaindelete
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Invoke-MgForceDomainDelete
@@ -14,23 +13,20 @@ Before performing this operation, you must update or remove any references to Ex
 The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain return an HTTP 404 status code.
 To verify deletion of a domain, you can perform a get domain operation.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaForceDomainDelete](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaForceDomainDelete?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### ForceExpanded (Default)
 ```
 Invoke-MgForceDomainDelete -DomainId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisableUserAccounts] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Force
 ```
 Invoke-MgForceDomainDelete -DomainId <String>
  -BodyParameter <IPathsUasdopDomainsDomainIdMicrosoftGraphForcedeletePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +34,7 @@ Invoke-MgForceDomainDelete -DomainId <String>
 ```
 Invoke-MgForceDomainDelete -InputObject <IIdentityDirectoryManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisableUserAccounts]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -46,7 +42,7 @@ Invoke-MgForceDomainDelete -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 Invoke-MgForceDomainDelete -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPathsUasdopDomainsDomainIdMicrosoftGraphForcedeletePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -56,30 +52,18 @@ Before performing this operation, you must update or remove any references to Ex
 The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain return an HTTP 404 status code.
 To verify deletion of a domain, you can perform a get domain operation.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Domain.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Domain.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 $params = @{
 	disableUserAccounts = $true
 }
 
 Invoke-MgForceDomainDelete -DomainId $domainId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgForceDomainDelete Cmdlet.
-
 
 ## PARAMETERS
 
@@ -99,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -114,23 +98,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DisableUserAccounts
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -205,6 +174,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -212,6 +196,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -253,65 +252,45 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsUasdopDomainsDomainIdMicrosoftGraphForcedeletePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisableUserAccounts <Boolean?>]`:
+BODYPARAMETER \<IPathsUasdopDomainsDomainIdMicrosoftGraphForcedeletePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisableUserAccounts \<Boolean?\>\]: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
-  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
-  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
-  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
-  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
-  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
-  - `[ContractId <String>]`: The unique identifier of contract
-  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
-  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
-  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
-  - `[DomainId <String>]`: The unique identifier of domain
-  - `[DomainName <String>]`: Usage: domainName='{domainName}'
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
-  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
-  - `[OrgContactId <String>]`: The unique identifier of orgContact
-  - `[OrganizationId <String>]`: The unique identifier of organization
-  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
-  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
-  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
-  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
-  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
-  - `[TenantId <String>]`: Usage: tenantId='{tenantId}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
+  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
+  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
+  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
+  \[CertificateAuthorityDetailId \<String\>\]: The unique identifier of certificateAuthorityDetail
+  \[CertificateBasedAuthPkiId \<String\>\]: The unique identifier of certificateBasedAuthPki
+  \[CommerceSubscriptionId \<String\>\]: Alternate key of companySubscription
+  \[CompanySubscriptionId \<String\>\]: The unique identifier of companySubscription
+  \[ContractId \<String\>\]: The unique identifier of contract
+  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
+  \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
+  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
+  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
+  \[DomainId \<String\>\]: The unique identifier of domain
+  \[DomainName \<String\>\]: Usage: domainName='{domainName}'
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
+  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
+  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
+  \[OrgContactId \<String\>\]: The unique identifier of orgContact
+  \[OrganizationId \<String\>\]: The unique identifier of organization
+  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
+  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
+  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
+  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
+  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
+  \[TenantId \<String\>\]: Usage: tenantId='{tenantId}'
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgforcedomaindelete](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgforcedomaindelete)
 
 [https://learn.microsoft.com/graph/api/domain-forcedelete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-forcedelete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

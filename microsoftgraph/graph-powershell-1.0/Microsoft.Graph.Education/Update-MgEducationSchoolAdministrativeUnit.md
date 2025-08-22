@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschooladministrativeunit
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property administrativeUnit in education
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -23,14 +20,14 @@ Update-MgEducationSchoolAdministrativeUnit -EducationSchoolId <String> [-Respons
  [-IsMemberManagementRestricted] [-Members <IMicrosoftGraphDirectoryObject[]>] [-MembershipRule <String>]
  [-MembershipRuleProcessingState <String>] [-MembershipType <String>]
  [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Visibility <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEducationSchoolAdministrativeUnit -EducationSchoolId <String>
  -BodyParameter <IMicrosoftGraphAdministrativeUnit> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,20 +38,30 @@ Update-MgEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity>
  [-IsMemberManagementRestricted] [-Members <IMicrosoftGraphDirectoryObject[]>] [-MembershipRule <String>]
  [-MembershipRuleProcessingState <String>] [-MembershipType <String>]
  [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Visibility <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphAdministrativeUnit> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property administrativeUnit in education
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -86,21 +93,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -233,7 +225,11 @@ Accept wildcard characters: False
 ```
 
 ### -IsMemberManagementRestricted
-
+true if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage.
+If not set, the default value is null and the default behavior is false.
+Use this property to define administrative units with roles that don't inherit from tenant-level administrators, and where the management of individual member objects is limited to administrators scoped to a restricted management administrative unit.
+This property is immutable and can't be changed later.
+For more information on how to work with restricted management administrative units, see Restricted management administrative units in Microsoft Entra ID.
 
 ```yaml
 Type: SwitchParameter
@@ -313,6 +309,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -362,6 +373,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -395,114 +421,97 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAdministrativeUnit>`: administrativeUnit
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+BODYPARAMETER \<IMicrosoftGraphAdministrativeUnit\>: administrativeUnit
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: An optional description for the administrative unit.
+  \[Description \<String\>\]: An optional description for the administrative unit.
 Supports $filter (eq, ne, in, startsWith), $search.
-  - `[DisplayName <String>]`: Display name for the administrative unit.
+  \[DisplayName \<String\>\]: Display name for the administrative unit.
 Maximum length is 256 characters.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
-  - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for this administrative unit.
+  \[Extensions \<IMicrosoftGraphExtension\[\]\>\]: The collection of open extensions defined for this administrative unit.
 Nullable.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsMemberManagementRestricted <Boolean?>]`:
-  - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
+  \[IsMemberManagementRestricted \<Boolean?\>\]: true if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage.
+If not set, the default value is null and the default behavior is false.
+Use this property to define administrative units with roles that don't inherit from tenant-level administrators, and where the management of individual member objects is limited to administrators scoped to a restricted management administrative unit.
+This property is immutable and can't be changed later. 
+For more information on how to work with restricted management administrative units, see Restricted management administrative units in Microsoft Entra ID.
+  \[Members \<IMicrosoftGraphDirectoryObject\[\]\>\]: Users and groups that are members of this administrative unit.
 Supports $expand.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[MembershipRule <String>]`: The dynamic membership rule for the administrative unit.
+  \[MembershipRule \<String\>\]: The dynamic membership rule for the administrative unit.
 For more information about the rules you can use for dynamic administrative units and dynamic groups, see Manage rules for dynamic membership groups in Microsoft Entra ID.
-  - `[MembershipRuleProcessingState <String>]`: Controls whether the dynamic membership rule is actively processed.
+  \[MembershipRuleProcessingState \<String\>\]: Controls whether the dynamic membership rule is actively processed.
 Set to On to activate the dynamic membership rule, or Paused to stop updating membership dynamically.
-  - `[MembershipType <String>]`: Indicates the membership type for the administrative unit.
+  \[MembershipType \<String\>\]: Indicates the membership type for the administrative unit.
 The possible values are: dynamic, assigned.
 If not set, the default value is null and the default behavior is assigned.
-  - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[ScopedRoleMembers \<IMicrosoftGraphScopedRoleMembership\[\]\>\]: Scoped-role members of this administrative unit.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
-    - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
-    - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+    \[AdministrativeUnitId \<String\>\]: Unique identifier for the administrative unit that the directory role is scoped to
+    \[RoleId \<String\>\]: Unique identifier for the directory role that the member is in.
+    \[RoleMemberInfo \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
+      \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public.
+  \[Visibility \<String\>\]: Controls whether the administrative unit and its members are hidden or public.
 Can be set to HiddenMembership.
 If not set, the default value is null and the default behavior is public.
 When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
-EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for this administrative unit.
+EXTENSIONS \<IMicrosoftGraphExtension\[\]\>: The collection of open extensions defined for this administrative unit.
 Nullable.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
-  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
-  - `[EducationClassId <String>]`: The unique identifier of educationClass
-  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
-  - `[EducationModuleId <String>]`: The unique identifier of educationModule
-  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
-  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
-  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
-  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
-  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationUserId <String>]`: The unique identifier of educationUser
+INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
+  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
+  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
+  \[EducationClassId \<String\>\]: The unique identifier of educationClass
+  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
+  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
+  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
+  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
+  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
+  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
+  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
+  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationUserId \<String\>\]: The unique identifier of educationUser
+  \[ReadingAssignmentSubmissionId \<String\>\]: The unique identifier of readingAssignmentSubmission
+  \[ReflectCheckInResponseId \<String\>\]: The unique identifier of reflectCheckInResponse
 
-MEMBERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Users and groups that are members of this administrative unit.
+MEMBERS \<IMicrosoftGraphDirectoryObject\[\]\>: Users and groups that are members of this administrative unit.
 Supports $expand.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-SCOPEDROLEMEMBERS `<IMicrosoftGraphScopedRoleMembership- `[]`>`: Scoped-role members of this administrative unit.
-  - `[Id <String>]`: The unique identifier for an entity.
+SCOPEDROLEMEMBERS \<IMicrosoftGraphScopedRoleMembership\[\]\>: Scoped-role members of this administrative unit.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
-  - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
-  - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+  \[AdministrativeUnitId \<String\>\]: Unique identifier for the administrative unit that the directory role is scoped to
+  \[RoleId \<String\>\]: Unique identifier for the directory role that the member is in.
+  \[RoleMemberInfo \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
+    \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschooladministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschooladministrativeunit)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

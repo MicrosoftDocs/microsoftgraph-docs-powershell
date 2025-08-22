@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableasset
@@ -19,7 +19,7 @@ You can also use the method enrollAssetsById to enroll assets.
 ```
 Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
- [-UpdateCategory <String>] [-Headers <IDictionary>] [-PassThru] [-WhatIf]
+ [-UpdateCategory <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset [-ResponseHeadersVariable <Strin
 ```
 Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset
  -Body <IPaths1T34IjjAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesEnrollassetsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,15 +37,17 @@ You can enroll an azureADDevice resource in update management, but may not enrol
 Enrolling a Microsoft Entra device in update management automatically creates an azureADDevice object if it does not already exist.
 You can also use the method enrollAssetsById to enroll assets.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | WindowsUpdates.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -65,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Assets
-
+.
 To construct, see NOTES section for ASSETS properties and create a hash table.
 
 ```yaml
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Body
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -93,21 +95,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -141,6 +128,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -163,6 +165,21 @@ updateCategory
 Type: String
 Parameter Sets: EnrollExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -203,41 +220,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSETS `<IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+ASSETS \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
 
-BODY `<IPaths1T34IjjAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesEnrollassetsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+BODY \<IPaths1T34IjjAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesEnrollassetsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Assets \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[UpdateCategory <String>]`: updateCategory
+  \[UpdateCategory \<String\>\]: updateCategory
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableasset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableasset)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

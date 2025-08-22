@@ -1,23 +1,19 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty
 schema: 2.0.0
-ms.subservice: entra-groups
 ---
 
 # Test-MgBetaGroupProperty
 
 ## SYNOPSIS
-Validate if a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use the API to determine if a display name or mail nickname is valid before trying to update a Microsoft 365 group.
+Validate if a Microsoft 365 Group's display name or mail nickname complies with naming policies.
+Clients can use the API to determine if a display name or mail nickname is valid before trying to update a Microsoft 365 Group.
 For validating properties before creating a group, use the validateProperties function for directory objects.
 The following validations are performed for the display name and mail nickname properties: This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
-However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgGroupProperty](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupProperty?view=graph-powershell-1.0)
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
 
 ## SYNTAX
 
@@ -25,7 +21,7 @@ However, you can validate both the mail nickname and the display name and receiv
 ```
 Test-MgBetaGroupProperty -GroupId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-MailNickname <String>]
- [-OnBehalfOfUserId <String>] [-Headers <IDictionary>] [-PassThru]
+ [-OnBehalfOfUserId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +29,7 @@ Test-MgBetaGroupProperty -GroupId <String> [-ResponseHeadersVariable <String>]
 ```
 Test-MgBetaGroupProperty -GroupId <String>
  -BodyParameter <IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -41,7 +37,7 @@ Test-MgBetaGroupProperty -GroupId <String>
 ```
 Test-MgBetaGroupProperty -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-MailNickname <String>]
- [-OnBehalfOfUserId <String>] [-Headers <IDictionary>] [-PassThru]
+ [-OnBehalfOfUserId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,32 +45,24 @@ Test-MgBetaGroupProperty -InputObject <IGroupsIdentity> [-ResponseHeadersVariabl
 ```
 Test-MgBetaGroupProperty -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Validate if a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use the API to determine if a display name or mail nickname is valid before trying to update a Microsoft 365 group.
+Validate if a Microsoft 365 Group's display name or mail nickname complies with naming policies.
+Clients can use the API to determine if a display name or mail nickname is valid before trying to update a Microsoft 365 Group.
 For validating properties before creating a group, use the validateProperties function for directory objects.
 The following validations are performed for the display name and mail nickname properties: This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
-However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group.Read.All, Group.ReadWrite.All,  |
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 $params = @{
 	displayName = "Myprefix_test_mysuffix"
@@ -83,10 +71,6 @@ $params = @{
 }
 
 Test-MgBetaGroupProperty -GroupId $groupId -BodyParameter $params
-
-```
-This example shows how to use the Test-MgBetaGroupProperty Cmdlet.
-
 
 ## PARAMETERS
 
@@ -106,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -121,23 +105,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DisplayName
-
+.
 
 ```yaml
 Type: String
@@ -198,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -MailNickname
-
+.
 
 ```yaml
 Type: String
@@ -213,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnBehalfOfUserId
-
+.
 
 ```yaml
 Type: String
@@ -242,6 +211,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -249,6 +233,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -290,61 +289,39 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: 
-  - `[MailNickname <String>]`: 
-  - `[OnBehalfOfUserId <String>]`: 
+BODYPARAMETER \<IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: 
+  \[MailNickname \<String\>\]: 
+  \[OnBehalfOfUserId \<String\>\]: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ConversationId <String>]`: The unique identifier of conversation
-  - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListId <String>]`: Usage: listId='{listId}'
-  - `[MentionId <String>]`: The unique identifier of mention
-  - `[ModelName <String>]`: Usage: modelName='{modelName}'
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[PostId <String>]`: The unique identifier of post
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[UniqueName <String>]`: Alternate key of group
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ConversationId \<String\>\]: The unique identifier of conversation
+  \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DirectorySettingId \<String\>\]: The unique identifier of directorySetting
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[EndpointId \<String\>\]: The unique identifier of endpoint
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListId \<String\>\]: Usage: listId='{listId}'
+  \[MentionId \<String\>\]: The unique identifier of mention
+  \[ModelName \<String\>\]: Usage: modelName='{modelName}'
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[PostId \<String\>\]: The unique identifier of post
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[UniqueName \<String\>\]: Alternate key of group
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty)
 
 [https://learn.microsoft.com/graph/api/group-validateproperties?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-validateproperties?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventpresenter
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to presenters for solutions
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventPresenter?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,13 +17,13 @@ Create new navigation property to presenters for solutions
 New-MgVirtualEventPresenter -VirtualEventId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Email <String>] [-Id <String>] [-Identity <IMicrosoftGraphIdentity>]
  [-PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgVirtualEventPresenter -VirtualEventId <String> -BodyParameter <IMicrosoftGraphVirtualEventPresenter>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,20 +32,30 @@ New-MgVirtualEventPresenter -VirtualEventId <String> -BodyParameter <IMicrosoftG
 New-MgVirtualEventPresenter -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Email <String>] [-Id <String>] [-Identity <IMicrosoftGraphIdentity>]
  [-PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgVirtualEventPresenter -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphVirtualEventPresenter> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to presenters for solutions
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -80,21 +87,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -192,6 +184,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -216,6 +223,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -255,95 +277,72 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVirtualEventPresenter>`: virtualEventPresenter
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphVirtualEventPresenter\>: virtualEventPresenter
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Email <String>]`: Email address of the presenter.
-  - `[Identity <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+  \[Email \<String\>\]: Email address of the presenter.
+  \[Identity \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
+    \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Bio <IMicrosoftGraphItemBody>]`: itemBody
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Content <String>]`: The content of the item.
-      - `[ContentType <String>]`: bodyType
-    - `[Company <String>]`: The presenter's company name.
-    - `[JobTitle <String>]`: The presenter's job title.
-    - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
-    - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
-    - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
-    - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
+  \[PresenterDetails \<IMicrosoftGraphVirtualEventPresenterDetails\>\]: virtualEventPresenterDetails
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Bio \<IMicrosoftGraphItemBody\>\]: itemBody
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Content \<String\>\]: The content of the item.
+      \[ContentType \<String\>\]: bodyType
+    \[Company \<String\>\]: The presenter's company name.
+    \[JobTitle \<String\>\]: The presenter's job title.
+    \[LinkedInProfileWebUrl \<String\>\]: The presenter's LinkedIn profile URL.
+    \[PersonalSiteWebUrl \<String\>\]: The presenter's personal website URL.
+    \[Photo \<Byte\[\]\>\]: The content stream of the presenter's photo.
+    \[TwitterProfileWebUrl \<String\>\]: The presenter's Twitter profile URL.
 
-IDENTITY `<IMicrosoftGraphIdentity>`: identity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+IDENTITY \<IMicrosoftGraphIdentity\>: identity
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity or actor.
+  \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
-  - `[Email <String>]`: Alternate key of virtualEventRegistration
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventRegistrationQuestionBaseId <String>]`: The unique identifier of virtualEventRegistrationQuestionBase
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
+  \[Email \<String\>\]: Alternate key of virtualEventRegistration
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventRegistrationQuestionBaseId \<String\>\]: The unique identifier of virtualEventRegistrationQuestionBase
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
-PRESENTERDETAILS `<IMicrosoftGraphVirtualEventPresenterDetails>`: virtualEventPresenterDetails
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Bio <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[Company <String>]`: The presenter's company name.
-  - `[JobTitle <String>]`: The presenter's job title.
-  - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
-  - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
-  - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
-  - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
+PRESENTERDETAILS \<IMicrosoftGraphVirtualEventPresenterDetails\>: virtualEventPresenterDetails
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Bio \<IMicrosoftGraphItemBody\>\]: itemBody
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Content \<String\>\]: The content of the item.
+    \[ContentType \<String\>\]: bodyType
+  \[Company \<String\>\]: The presenter's company name.
+  \[JobTitle \<String\>\]: The presenter's job title.
+  \[LinkedInProfileWebUrl \<String\>\]: The presenter's LinkedIn profile URL.
+  \[PersonalSiteWebUrl \<String\>\]: The presenter's personal website URL.
+  \[Photo \<Byte\[\]\>\]: The content stream of the presenter's photo.
+  \[TwitterProfileWebUrl \<String\>\]: The presenter's Twitter profile URL.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventpresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventpresenter)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

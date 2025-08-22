@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-Module Guid: af411cce-3496-4239-a6fd-889fe6511d56
+Module Guid: ca8ae4b6-1cbe-49cd-b5e8-e079b854c249
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.managedtenants/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -512,23 +512,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState](Update-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState.md)
 
 ### [Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState](Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

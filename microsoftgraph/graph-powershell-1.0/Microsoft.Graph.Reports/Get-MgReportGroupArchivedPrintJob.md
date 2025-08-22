@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportgrouparchivedprintjob
 schema: 2.0.0
-ms.subservice: universal-print
 ---
 
 # Get-MgReportGroupArchivedPrintJob
@@ -11,40 +10,33 @@ ms.subservice: universal-print
 ## SYNOPSIS
 Get a list of archived print jobs for a particular group.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportGroupArchivedPrintJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportGroupArchivedPrintJob?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgReportGroupArchivedPrintJob -EndDateTime <DateTime> -GroupId <String> -StartDateTime <DateTime> [-Count]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgReportGroupArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get a list of archived print jobs for a particular group.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Reports
+```
 
 Get-MgReportGroupArchivedPrintJob
-
-```
-This example shows how to use the Get-MgReportGroupArchivedPrintJob Cmdlet.
-
 
 ## PARAMETERS
 
@@ -139,6 +131,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -165,21 +172,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -214,6 +206,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -230,55 +237,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[Date <DateTime?>]`: Usage: date={date}
-  - `[DeviceManagementExportJobId <String>]`: The unique identifier of deviceManagementExportJob
-  - `[DirectoryAuditId <String>]`: The unique identifier of directoryAudit
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
-  - `[Filter <String>]`: Usage: filter='{filter}'
-  - `[GroupId <String>]`: Usage: groupId='{groupId}'
-  - `[IncludedUserRoles <String>]`: Usage: includedUserRoles='{includedUserRoles}'
-  - `[IncludedUserTypes <String>]`: Usage: includedUserTypes='{includedUserTypes}'
-  - `[ManifestId <String>]`: The unique identifier of manifest
-  - `[OperationId <String>]`: The unique identifier of operation
-  - `[Period <String>]`: Usage: period='{period}'
-  - `[PrintUsageByPrinterId <String>]`: The unique identifier of printUsageByPrinter
-  - `[PrintUsageByUserId <String>]`: The unique identifier of printUsageByUser
-  - `[PrinterId <String>]`: Usage: printerId='{printerId}'
-  - `[ProvisioningObjectSummaryId <String>]`: The unique identifier of provisioningObjectSummary
-  - `[SignInId <String>]`: The unique identifier of signIn
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
+INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
+  \[Date \<DateTime?\>\]: Usage: date={date}
+  \[DeviceManagementExportJobId \<String\>\]: The unique identifier of deviceManagementExportJob
+  \[DirectoryAuditId \<String\>\]: The unique identifier of directoryAudit
+  \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[Filter \<String\>\]: Usage: filter='{filter}'
+  \[GroupId \<String\>\]: Usage: groupId='{groupId}'
+  \[IncludedUserRoles \<String\>\]: Usage: includedUserRoles='{includedUserRoles}'
+  \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
+  \[ManifestId \<String\>\]: The unique identifier of manifest
+  \[OperationId \<String\>\]: The unique identifier of operation
+  \[Period \<String\>\]: Usage: period='{period}'
+  \[PrintUsageByPrinterId \<String\>\]: The unique identifier of printUsageByPrinter
+  \[PrintUsageByUserId \<String\>\]: The unique identifier of printUsageByUser
+  \[PrinterId \<String\>\]: Usage: printerId='{printerId}'
+  \[ProvisioningObjectSummaryId \<String\>\]: The unique identifier of provisioningObjectSummary
+  \[SignInId \<String\>\]: The unique identifier of signIn
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[SkipToken \<String\>\]: Usage: skipToken='{skipToken}'
+  \[StartDateTime \<DateTime?\>\]: Usage: startDateTime={startDateTime}
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[UserRegistrationDetailsId \<String\>\]: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportgrouparchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportgrouparchivedprintjob)
 
 [https://learn.microsoft.com/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

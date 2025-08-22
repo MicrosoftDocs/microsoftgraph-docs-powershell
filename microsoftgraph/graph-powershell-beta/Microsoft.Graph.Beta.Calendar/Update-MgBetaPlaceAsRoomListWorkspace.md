@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistworkspace
@@ -16,42 +16,54 @@ Update the navigation property workspaces in places
 ```
 Update-MgBetaPlaceAsRoomListWorkspace -PlaceId <String> -WorkspaceId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <String>] [-Capacity <Int32>] [-DisplayName <String>]
- [-EmailAddress <String>] [-FloorLabel <String>] [-FloorNumber <Int32>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsWheelChairAccessible]
- [-Label <String>] [-Nickname <String>] [-Phone <String>] [-PlaceId1 <String>] [-Tags <String[]>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <String>] [-Capacity <Int32>]
+ [-DisplayDeviceName <String>] [-DisplayName <String>] [-EmailAddress <String>] [-FloorLabel <String>]
+ [-FloorNumber <Int32>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>]
+ [-IsWheelChairAccessible] [-Label <String>] [-Mode <Hashtable>] [-Nickname <String>] [-ParentId <String>]
+ [-Phone <String>] [-PlaceId1 <String>] [-Tags <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaPlaceAsRoomListWorkspace [-PlaceId <String>] -InputObject <ICalendarIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <String>] [-Capacity <Int32>] [-DisplayName <String>]
- [-EmailAddress <String>] [-FloorLabel <String>] [-FloorNumber <Int32>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsWheelChairAccessible]
- [-Label <String>] [-Nickname <String>] [-Phone <String>] [-Tags <String[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <String>] [-Capacity <Int32>]
+ [-DisplayDeviceName <String>] [-DisplayName <String>] [-EmailAddress <String>] [-FloorLabel <String>]
+ [-FloorNumber <Int32>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>]
+ [-IsWheelChairAccessible] [-Label <String>] [-Mode <Hashtable>] [-Nickname <String>] [-ParentId <String>]
+ [-Phone <String>] [-Tags <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPlaceAsRoomListWorkspace -PlaceId <String> -WorkspaceId <String>
  -BodyParameter <IMicrosoftGraphWorkspace> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPlaceAsRoomListWorkspace -InputObject <ICalendarIdentity>
  -BodyParameter <IMicrosoftGraphWorkspace> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property workspaces in places
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -103,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Building
-Specifies the building name or building number that the workspace is in.
+The name or identifier of the building where the workspace is located.
 
 ```yaml
 Type: String
@@ -118,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Capacity
-Specifies the capacity of the workspace.
+The maximum number of individual desks within a workspace.
 
 ```yaml
 Type: Int32
@@ -132,13 +144,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -DisplayDeviceName
+The name of the display device (for example, monitor or projector) that is available in the workspace.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -148,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The name associated with the place.
+The name that is associated with the place.
 
 ```yaml
 Type: String
@@ -163,7 +175,8 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAddress
-Email address of the workspace.
+The email address that is associated with the workspace.
+This email address is used for booking.
 
 ```yaml
 Type: String
@@ -178,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -FloorLabel
-Specifies a descriptive label for the floor, for example, P.
+A human-readable label for the floor; for example, Ground Floor.
 
 ```yaml
 Type: String
@@ -193,7 +206,8 @@ Accept wildcard characters: False
 ```
 
 ### -FloorNumber
-Specifies the floor number that the workspace is on.
+The numeric floor level within the building.
+For example, 1 for first floor, 2 for second floor, and so on.
 
 ```yaml
 Type: Int32
@@ -271,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsWheelChairAccessible
-Specifies whether the workspace is wheelchair accessible.
+Indicates whether the place is wheelchair accessible.
 
 ```yaml
 Type: SwitchParameter
@@ -286,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -Label
-Specifies a descriptive label for the workspace, for example, a number or name.
+User-defined description of the place.
 
 ```yaml
 Type: String
@@ -300,8 +314,38 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Mode
+placeMode
+
+```yaml
+Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Nickname
-Specifies a nickname for the workspace, for example, 'quiet workspace'.
+A short, friendly name for the workspace, often used for easier identification or display in the UI.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ParentId
+The ID of a parent place.
 
 ```yaml
 Type: String
@@ -358,14 +402,28 @@ Accept wildcard characters: False
 ```
 
 ### -PlaceId1
-A unique, immutable identifier for the place.
+An alternate immutable unique identifier of the place.
 Read-only.
-The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet.
 
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -390,12 +448,42 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-Specifies other features of the workspace; for example, the type of view or furniture type.
+Custom tags that are associated with the place for categorization or filtering.
 
 ```yaml
 Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WorkspaceId
+The unique identifier of workspace
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -420,21 +508,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceId
-The unique identifier of workspace
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -452,103 +525,83 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[City <String>]`: The city.
-  - `[CountryOrRegion <String>]`: The country or region.
+ADDRESS \<IMicrosoftGraphPhysicalAddress\>: physicalAddress
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[City \<String\>\]: The city.
+  \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-  - `[PostOfficeBox <String>]`: The post office box number.
-  - `[PostalCode <String>]`: The postal code.
-  - `[State <String>]`: The state.
-  - `[Street <String>]`: The street.
-  - `[Type <String>]`: physicalAddressType
+  \[PostOfficeBox \<String\>\]: The post office box number.
+  \[PostalCode \<String\>\]: The postal code.
+  \[State \<String\>\]: The state.
+  \[Street \<String\>\]: The street.
+  \[Type \<String\>\]: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphWorkspace>`: workspace
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region.
+BODYPARAMETER \<IMicrosoftGraphWorkspace\>: workspace
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Address \<IMicrosoftGraphPhysicalAddress\>\]: physicalAddress
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[City \<String\>\]: The city.
+    \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-    - `[PostOfficeBox <String>]`: The post office box number.
-    - `[PostalCode <String>]`: The postal code.
-    - `[State <String>]`: The state.
-    - `[Street <String>]`: The street.
-    - `[Type <String>]`: physicalAddressType
-  - `[DisplayName <String>]`: The name associated with the place.
-  - `[GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude.
+    \[PostOfficeBox \<String\>\]: The post office box number.
+    \[PostalCode \<String\>\]: The postal code.
+    \[State \<String\>\]: The state.
+    \[Street \<String\>\]: The street.
+    \[Type \<String\>\]: physicalAddressType
+  \[DisplayName \<String\>\]: The name that is associated with the place.
+  \[GeoCoordinates \<IMicrosoftGraphOutlookGeoCoordinates\>\]: outlookGeoCoordinates
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-    - `[Altitude <Double?>]`: The altitude of the location.
-    - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-    - `[Latitude <Double?>]`: The latitude of the location.
-    - `[Longitude <Double?>]`: The longitude of the location.
-  - `[Phone <String>]`: The phone number of the place.
-  - `[PlaceId <String>]`: A unique, immutable identifier for the place.
+    \[Altitude \<Double?\>\]: The altitude of the location.
+    \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
+    \[Latitude \<Double?\>\]: The latitude of the location.
+    \[Longitude \<Double?\>\]: The longitude of the location.
+  \[IsWheelChairAccessible \<Boolean?\>\]: Indicates whether the place is wheelchair accessible.
+  \[Label \<String\>\]: User-defined description of the place.
+  \[ParentId \<String\>\]: The ID of a parent place.
+  \[Phone \<String\>\]: The phone number of the place.
+  \[PlaceId \<String\>\]: An alternate immutable unique identifier of the place.
 Read-only.
-The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Tags \<String\[\]\>\]: Custom tags that are associated with the place for categorization or filtering.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Building <String>]`: Specifies the building name or building number that the workspace is in.
-  - `[Capacity <Int32?>]`: Specifies the capacity of the workspace.
-  - `[EmailAddress <String>]`: Email address of the workspace.
-  - `[FloorLabel <String>]`: Specifies a descriptive label for the floor, for example, P.
-  - `[FloorNumber <Int32?>]`: Specifies the floor number that the workspace is on.
-  - `[IsWheelChairAccessible <Boolean?>]`: Specifies whether the workspace is wheelchair accessible.
-  - `[Label <String>]`: Specifies a descriptive label for the workspace, for example, a number or name.
-  - `[Nickname <String>]`: Specifies a nickname for the workspace, for example, 'quiet workspace'.
-  - `[Tags <String- `[]`>]`: Specifies other features of the workspace; for example, the type of view or furniture type.
+  \[Building \<String\>\]: The name or identifier of the building where the workspace is located.
+  \[Capacity \<Int32?\>\]: The maximum number of individual desks within a workspace.
+  \[DisplayDeviceName \<String\>\]: The name of the display device (for example, monitor or projector) that is available in the workspace.
+  \[EmailAddress \<String\>\]: The email address that is associated with the workspace.
+This email address is used for booking.
+  \[FloorLabel \<String\>\]: A human-readable label for the floor; for example, Ground Floor.
+  \[FloorNumber \<Int32?\>\]: The numeric floor level within the building.
+For example, 1 for first floor, 2 for second floor, and so on.
+  \[Mode \<IMicrosoftGraphPlaceMode\>\]: placeMode
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Nickname \<String\>\]: A short, friendly name for the workspace, often used for easier identification or display in the UI.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude.
+GEOCOORDINATES \<IMicrosoftGraphOutlookGeoCoordinates\>: outlookGeoCoordinates
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-  - `[Altitude <Double?>]`: The altitude of the location.
-  - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-  - `[Latitude <Double?>]`: The latitude of the location.
-  - `[Longitude <Double?>]`: The longitude of the location.
+  \[Altitude \<Double?\>\]: The altitude of the location.
+  \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
+  \[Latitude \<Double?\>\]: The latitude of the location.
+  \[Longitude \<Double?\>\]: The longitude of the location.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[EventId2 <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlaceId <String>]`: The unique identifier of place
-  - `[RoomId <String>]`: The unique identifier of room
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WorkspaceId <String>]`: The unique identifier of workspace
+INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
+  \[EventId \<String\>\]: The unique identifier of event
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
+  \[User \<String\>\]: Usage: User='{User}'
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistworkspace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistworkspace)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

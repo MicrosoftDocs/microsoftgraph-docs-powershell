@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementioupdatestatus
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to iosUpdateStatuses for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementIoUpdateStatus?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,28 +19,30 @@ New-MgBetaDeviceManagementIoUpdateStatus [-ResponseHeadersVariable <String>]
  [-DeviceDisplayName <String>] [-DeviceId <String>] [-DeviceModel <String>] [-Id <String>]
  [-InstallStatus <String>] [-LastReportedDateTime <DateTime>] [-OSVersion <String>] [-Platform <Int32>]
  [-Status <String>] [-UserId <String>] [-UserName <String>] [-UserPrincipalName <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementIoUpdateStatus -BodyParameter <IMicrosoftGraphIosUpdateDeviceStatus>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to iosUpdateStatuses for deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -85,21 +84,6 @@ The DateTime when device compliance grace period expires
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -244,6 +228,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -319,6 +318,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -351,47 +365,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIosUpdateDeviceStatus>`: iosUpdateDeviceStatus
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIosUpdateDeviceStatus\>: iosUpdateDeviceStatus
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
-  - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
-  - `[DeviceId <String>]`: The device id that is being reported.
-  - `[DeviceModel <String>]`: The device model that is being reported
-  - `[InstallStatus <String>]`: iosUpdatesInstallStatus
-  - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
-  - `[OSVersion <String>]`: The device version that is being reported.
-  - `[Platform <Int32?>]`: Platform of the device that is being reported
-  - `[Status <String>]`: complianceStatus
-  - `[UserId <String>]`: The User id that is being reported.
-  - `[UserName <String>]`: The User Name that is being reported
-  - `[UserPrincipalName <String>]`: UserPrincipalName.
+  \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
+  \[DeviceDisplayName \<String\>\]: Device name of the DevicePolicyStatus.
+  \[DeviceId \<String\>\]: The device id that is being reported.
+  \[DeviceModel \<String\>\]: The device model that is being reported
+  \[InstallStatus \<String\>\]: iosUpdatesInstallStatus
+  \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
+  \[OSVersion \<String\>\]: The device version that is being reported.
+  \[Platform \<Int32?\>\]: Platform of the device that is being reported
+  \[Status \<String\>\]: complianceStatus
+  \[UserId \<String\>\]: The User id that is being reported.
+  \[UserName \<String\>\]: The User Name that is being reported
+  \[UserPrincipalName \<String\>\]: UserPrincipalName.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementioupdatestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementioupdatestatus)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

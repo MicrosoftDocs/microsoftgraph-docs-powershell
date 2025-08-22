@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointprovisioningpolicyassignmentassignedusermailboxsetting
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update property mailboxSettings value.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -23,7 +20,7 @@ Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +29,7 @@ Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser
 Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting
  -CloudPcProvisioningPolicyAssignmentId <String> -CloudPcProvisioningPolicyId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphMailboxSettings> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,7 +40,7 @@ Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -51,7 +48,7 @@ Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser
 ```
 Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting
  -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <IMicrosoftGraphMailboxSettings>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -59,6 +56,16 @@ Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser
 Update property mailboxSettings value.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -154,21 +161,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DateFormat
 The date format for the user's mailbox.
 
@@ -238,6 +230,21 @@ To construct, see NOTES section for LANGUAGE properties and create a hash table.
 Type: IMicrosoftGraphLocaleInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -321,22 +328,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WorkingHours
 workingHours
 To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
@@ -345,6 +336,37 @@ To construct, see NOTES section for WORKINGHOURS properties and create a hash ta
 Type: IMicrosoftGraphWorkingHours
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
 
 Required: False
 Position: Named
@@ -370,125 +392,102 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTOMATICREPLIESSETTING `<IMicrosoftGraphAutomaticRepliesSetting>`: automaticRepliesSetting
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ExternalAudience <String>]`: externalAudienceScope
-  - `[ExternalReplyMessage <String>]`: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
-  - `[InternalReplyMessage <String>]`: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
-  - `[ScheduledEndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
+AUTOMATICREPLIESSETTING \<IMicrosoftGraphAutomaticRepliesSetting\>: automaticRepliesSetting
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ExternalAudience \<String\>\]: externalAudienceScope
+  \[ExternalReplyMessage \<String\>\]: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
+  \[InternalReplyMessage \<String\>\]: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
+  \[ScheduledEndDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+    \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-  - `[ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Status <String>]`: automaticRepliesStatus
+  \[ScheduledStartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+  \[Status \<String\>\]: automaticRepliesStatus
 
-BODYPARAMETER `<IMicrosoftGraphMailboxSettings>`: mailboxSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user.
-  - `[AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]`: automaticRepliesSetting
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ExternalAudience <String>]`: externalAudienceScope
-    - `[ExternalReplyMessage <String>]`: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
-    - `[InternalReplyMessage <String>]`: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
-    - `[ScheduledEndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
+BODYPARAMETER \<IMicrosoftGraphMailboxSettings\>: mailboxSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ArchiveFolder \<String\>\]: Folder ID of an archive folder for the user.
+  \[AutomaticRepliesSetting \<IMicrosoftGraphAutomaticRepliesSetting\>\]: automaticRepliesSetting
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ExternalAudience \<String\>\]: externalAudienceScope
+    \[ExternalReplyMessage \<String\>\]: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
+    \[InternalReplyMessage \<String\>\]: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
+    \[ScheduledEndDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+      \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-    - `[ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[Status <String>]`: automaticRepliesStatus
-  - `[DateFormat <String>]`: The date format for the user's mailbox.
-  - `[DelegateMeetingMessageDeliveryOptions <String>]`: delegateMeetingMessageDeliveryOptions
-  - `[Language <IMicrosoftGraphLocaleInfo>]`: localeInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
-    - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region.
+    \[ScheduledStartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+    \[Status \<String\>\]: automaticRepliesStatus
+  \[DateFormat \<String\>\]: The date format for the user's mailbox.
+  \[DelegateMeetingMessageDeliveryOptions \<String\>\]: delegateMeetingMessageDeliveryOptions
+  \[Language \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: A name representing the user's locale in natural language, for example, 'English (United States)'.
+    \[Locale \<String\>\]: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
-  - `[TimeFormat <String>]`: The time format for the user's mailbox.
-  - `[TimeZone <String>]`: The default time zone for the user's mailbox.
-  - `[UserPurpose <String>]`: userPurpose
-  - `[WorkingHours <IMicrosoftGraphWorkingHours>]`: workingHours
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DaysOfWeek <String- `[]`>]`: The days of the week on which the user works.
-    - `[EndTime <String>]`: The time of the day that the user stops working.
-    - `[StartTime <String>]`: The time of the day that the user starts working.
-    - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Name <String>]`: The name of a time zone.
+  \[TimeFormat \<String\>\]: The time format for the user's mailbox.
+  \[TimeZone \<String\>\]: The default time zone for the user's mailbox.
+  \[UserPurpose \<String\>\]: userPurpose
+  \[WorkingHours \<IMicrosoftGraphWorkingHours\>\]: workingHours
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DaysOfWeek \<String\[\]\>\]: The days of the week on which the user works.
+    \[EndTime \<String\>\]: The time of the day that the user stops working.
+    \[StartTime \<String\>\]: The time of the day that the user starts working.
+    \[TimeZone \<IMicrosoftGraphTimeZoneBase\>\]: timeZoneBase
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Name \<String\>\]: The name of a time zone.
 It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
-  - `[AuditEventId <String>]`: The unique identifier of auditEvent
-  - `[Category <String>]`: Usage: category='{category}'
-  - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
-  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
-  - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
-  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
-  - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
-  - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment
-  - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
-  - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
-  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
-  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
-  - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
-  - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
-  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
-  - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
-  - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
-  - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
-  - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
-  - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
-  - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
-  - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserPrincipalName <String>]`: Alternate key of user
+INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
+  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
+  \[Category \<String\>\]: Usage: category='{category}'
+  \[CloudPcAuditEventId \<String\>\]: The unique identifier of cloudPcAuditEvent
+  \[CloudPcDeviceImageId \<String\>\]: The unique identifier of cloudPcDeviceImage
+  \[CloudPcGalleryImageId \<String\>\]: The unique identifier of cloudPcGalleryImage
+  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
+  \[CloudPcOnPremisesConnectionId \<String\>\]: The unique identifier of cloudPcOnPremisesConnection
+  \[CloudPcProvisioningPolicyAssignmentId \<String\>\]: The unique identifier of cloudPcProvisioningPolicyAssignment
+  \[CloudPcProvisioningPolicyId \<String\>\]: The unique identifier of cloudPcProvisioningPolicy
+  \[CloudPcUserSettingAssignmentId \<String\>\]: The unique identifier of cloudPcUserSettingAssignment
+  \[CloudPcUserSettingId \<String\>\]: The unique identifier of cloudPcUserSetting
+  \[ComplianceManagementPartnerId \<String\>\]: The unique identifier of complianceManagementPartner
+  \[DeviceAndAppManagementRoleAssignmentId \<String\>\]: The unique identifier of deviceAndAppManagementRoleAssignment
+  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
+  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
+  \[IosUpdateDeviceStatusId \<String\>\]: The unique identifier of iosUpdateDeviceStatus
+  \[MobileThreatDefenseConnectorId \<String\>\]: The unique identifier of mobileThreatDefenseConnector
+  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
+  \[ResourceOperationId \<String\>\]: The unique identifier of resourceOperation
+  \[RoleAssignmentId \<String\>\]: The unique identifier of roleAssignment
+  \[RoleDefinitionId \<String\>\]: The unique identifier of roleDefinition
+  \[TelecomExpenseManagementPartnerId \<String\>\]: The unique identifier of telecomExpenseManagementPartner
+  \[TermsAndConditionsAcceptanceStatusId \<String\>\]: The unique identifier of termsAndConditionsAcceptanceStatus
+  \[TermsAndConditionsAssignmentId \<String\>\]: The unique identifier of termsAndConditionsAssignment
+  \[TermsAndConditionsId \<String\>\]: The unique identifier of termsAndConditions
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserPrincipalName \<String\>\]: Alternate key of user
 
-LANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
-  - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region.
+LANGUAGE \<IMicrosoftGraphLocaleInfo\>: localeInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: A name representing the user's locale in natural language, for example, 'English (United States)'.
+  \[Locale \<String\>\]: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-WORKINGHOURS `<IMicrosoftGraphWorkingHours>`: workingHours
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DaysOfWeek <String- `[]`>]`: The days of the week on which the user works.
-  - `[EndTime <String>]`: The time of the day that the user stops working.
-  - `[StartTime <String>]`: The time of the day that the user starts working.
-  - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Name <String>]`: The name of a time zone.
+WORKINGHOURS \<IMicrosoftGraphWorkingHours\>: workingHours
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DaysOfWeek \<String\[\]\>\]: The days of the week on which the user works.
+  \[EndTime \<String\>\]: The time of the day that the user stops working.
+  \[StartTime \<String\>\]: The time of the day that the user starts working.
+  \[TimeZone \<IMicrosoftGraphTimeZoneBase\>\]: timeZoneBase
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Name \<String\>\]: The name of a time zone.
 It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointprovisioningpolicyassignmentassignedusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointprovisioningpolicyassignmentassignedusermailboxsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

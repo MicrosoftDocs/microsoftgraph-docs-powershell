@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappasandroidlobappcontentversioncontainedapp
@@ -10,23 +10,20 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to containedApps for deviceAppManagement
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp -MobileAppContentId <String>
  -MobileAppId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp -MobileAppContentId <String>
  -MobileAppId <String> -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -34,14 +31,14 @@ New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp -Mob
 New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp
  -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,6 +46,16 @@ New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp
 Create new navigation property to containedApps for deviceAppManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -79,21 +86,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -174,6 +166,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -181,6 +188,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -222,67 +244,45 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
-  - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
-  - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
-  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
-  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
-  - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
-  - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
-  - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
-  - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
-  - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
-  - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
-  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
-  - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
-  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
-  - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
-  - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
-  - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
-  - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
-  - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
-  - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
-  - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
-  - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent
-  - `[MobileAppId <String>]`: The unique identifier of mobileApp
-  - `[MobileContainedAppId <String>]`: The unique identifier of mobileContainedApp
-  - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
-  - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
-  - `[VppTokenId <String>]`: The unique identifier of vppToken
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
-  - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
+INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
+  \[AndroidManagedAppProtectionId \<String\>\]: The unique identifier of androidManagedAppProtection
+  \[DefaultManagedAppProtectionId \<String\>\]: The unique identifier of defaultManagedAppProtection
+  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
+  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
+  \[DeviceInstallStateId \<String\>\]: The unique identifier of deviceInstallState
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
+  \[IosManagedAppProtectionId \<String\>\]: The unique identifier of iosManagedAppProtection
+  \[ManagedAppOperationId \<String\>\]: The unique identifier of managedAppOperation
+  \[ManagedAppPolicyId \<String\>\]: The unique identifier of managedAppPolicy
+  \[ManagedAppRegistrationId \<String\>\]: The unique identifier of managedAppRegistration
+  \[ManagedAppStatusId \<String\>\]: The unique identifier of managedAppStatus
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[ManagedDeviceMobileAppConfigurationAssignmentId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+  \[ManagedDeviceMobileAppConfigurationDeviceStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+  \[ManagedDeviceMobileAppConfigurationId \<String\>\]: The unique identifier of managedDeviceMobileAppConfiguration
+  \[ManagedDeviceMobileAppConfigurationUserStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+  \[ManagedEBookAssignmentId \<String\>\]: The unique identifier of managedEBookAssignment
+  \[ManagedEBookId \<String\>\]: The unique identifier of managedEBook
+  \[ManagedMobileAppId \<String\>\]: The unique identifier of managedMobileApp
+  \[MdmWindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of mdmWindowsInformationProtectionPolicy
+  \[MobileAppAssignmentId \<String\>\]: The unique identifier of mobileAppAssignment
+  \[MobileAppCategoryId \<String\>\]: The unique identifier of mobileAppCategory
+  \[MobileAppContentFileId \<String\>\]: The unique identifier of mobileAppContentFile
+  \[MobileAppContentId \<String\>\]: The unique identifier of mobileAppContent
+  \[MobileAppId \<String\>\]: The unique identifier of mobileApp
+  \[MobileAppRelationshipId \<String\>\]: The unique identifier of mobileAppRelationship
+  \[MobileContainedAppId \<String\>\]: The unique identifier of mobileContainedApp
+  \[TargetedManagedAppConfigurationId \<String\>\]: The unique identifier of targetedManagedAppConfiguration
+  \[TargetedManagedAppPolicyAssignmentId \<String\>\]: The unique identifier of targetedManagedAppPolicyAssignment
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserInstallStateSummaryId \<String\>\]: The unique identifier of userInstallStateSummary
+  \[VppTokenId \<String\>\]: The unique identifier of vppToken
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsInformationProtectionAppLockerFileId \<String\>\]: The unique identifier of windowsInformationProtectionAppLockerFile
+  \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappasandroidlobappcontentversioncontainedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappasandroidlobappcontentversioncontainedapp)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

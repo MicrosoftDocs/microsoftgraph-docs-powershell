@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainviteuserdriveitem
 schema: 2.0.0
-ms.subservice: sharepoint
 ---
 
 # Invoke-MgBetaInviteUserDriveItem
 
 ## SYNOPSIS
-Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgInviteUserDriveItem](/powershell/module/Microsoft.Graph.Files/Invoke-MgInviteUserDriveItem?view=graph-powershell-1.0)
+Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ## SYNTAX
 
@@ -22,14 +18,14 @@ Invoke-MgBetaInviteUserDriveItem -DriveId <String> -DriveItemId <String> -UserId
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <String>]
  [-Message <String>] [-Password <String>] [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RequireSignIn]
  [-RetainInheritedPermissions] [-Roles <String[]>] [-SendInvitation] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Invite
 ```
 Invoke-MgBetaInviteUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
  -BodyParameter <IPaths1F3Q2E6UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +34,7 @@ Invoke-MgBetaInviteUserDriveItem -DriveId <String> -DriveItemId <String> -UserId
 Invoke-MgBetaInviteUserDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RequireSignIn] [-RetainInheritedPermissions]
- [-Roles <String[]>] [-SendInvitation] [-Headers <IDictionary>] [-WhatIf]
+ [-Roles <String[]>] [-SendInvitation] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,14 +42,24 @@ Invoke-MgBetaInviteUserDriveItem -InputObject <IFilesIdentity> [-ResponseHeaders
 ```
 Invoke-MgBetaInviteUserDriveItem -InputObject <IFilesIdentity>
  -BodyParameter <IPaths1F3Q2E6UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -73,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -85,21 +91,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -134,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDateTime
-
+.
 
 ```yaml
 Type: String
@@ -180,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Message
-
+.
 
 ```yaml
 Type: String
@@ -195,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-
+.
 
 ```yaml
 Type: String
@@ -209,8 +200,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Recipients
+### -ProgressAction
+{{ Fill ProgressAction Description }}
 
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Recipients
+.
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -226,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequireSignIn
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -256,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetainInheritedPermissions
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -271,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -Roles
-
+.
 
 ```yaml
 Type: String[]
@@ -286,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendInvitation
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -309,6 +315,21 @@ Parameter Sets: InviteExpanded, Invite
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -348,80 +369,55 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1F3Q2E6UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ExpirationDateTime <String>]`: 
-  - `[Message <String>]`: 
-  - `[Password <String>]`: 
-  - `[Recipients <IMicrosoftGraphDriveRecipient- `[]`>]`: 
-    - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
-security groups).
-    - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
-    - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
-  - `[RequireSignIn <Boolean?>]`: 
-  - `[RetainInheritedPermissions <Boolean?>]`: 
-  - `[Roles <String- `[]`>]`: 
-  - `[SendInvitation <Boolean?>]`: 
+BODYPARAMETER \<IPaths1F3Q2E6UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ExpirationDateTime \<String\>\]: 
+  \[Message \<String\>\]: 
+  \[Password \<String\>\]: 
+  \[Recipients \<IMicrosoftGraphDriveRecipient\[\]\>\]: 
+    \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (for example, security groups).
+    \[Email \<String\>\]: The email address for the recipient, if the recipient has an associated email address.
+    \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
+  \[RequireSignIn \<Boolean?\>\]: 
+  \[RetainInheritedPermissions \<Boolean?\>\]: 
+  \[Roles \<String\[\]\>\]: 
+  \[SendInvitation \<Boolean?\>\]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
-  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemId1 <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
-  - `[SharedDriveItemId <String>]`: The unique identifier of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[ThumbnailSetId <String>]`: The unique identifier of thumbnailSet
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
+  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
+  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemId1 \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
+  \[SharedDriveItemId \<String\>\]: The unique identifier of sharedDriveItem
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[ThumbnailSetId \<String\>\]: The unique identifier of thumbnailSet
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[UserId \<String\>\]: The unique identifier of user
 
-RECIPIENTS `<IMicrosoftGraphDriveRecipient- `[]`>`: .
-  - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
-security groups).
-  - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
-  - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
+RECIPIENTS \<IMicrosoftGraphDriveRecipient\[\]\>: .
+  \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (for example, security groups).
+  \[Email \<String\>\]: The email address for the recipient, if the recipient has an associated email address.
+  \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainviteuserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainviteuserdriveitem)
 
 [https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

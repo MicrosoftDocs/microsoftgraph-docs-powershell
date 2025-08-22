@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.PersonalContacts
-Module Guid: 63ea8126-87b1-4dbf-a4c8-879771b3f5f6
+Module Guid: 5167771f-8837-4eb2-8752-ee191c2229d9
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.personalcontacts/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -156,23 +156,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserContactFolderContactPhoto](Update-MgBetaUserContactFolderContactPhoto.md)
 
 ### [Update-MgBetaUserContactPhoto](Update-MgBetaUserContactPhoto.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

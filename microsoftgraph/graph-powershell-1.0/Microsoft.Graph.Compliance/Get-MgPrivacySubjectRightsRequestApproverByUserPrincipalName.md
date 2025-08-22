@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestapproverbyuserprincipalname
@@ -11,16 +11,13 @@ schema: 2.0.0
 Collection of users who can approve the request.
 Currently only supported for requests of type delete.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestApproverByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestApproverByUserPrincipalName?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgPrivacySubjectRightsRequestApproverByUserPrincipalName -SubjectRightsRequestId <String>
  -UserPrincipalName <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -28,7 +25,7 @@ Get-MgPrivacySubjectRightsRequestApproverByUserPrincipalName -SubjectRightsReque
 ```
 Get-MgPrivacySubjectRightsRequestApproverByUserPrincipalName -InputObject <IComplianceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,6 +33,16 @@ Collection of users who can approve the request.
 Currently only supported for requests of type delete.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -82,6 +89,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -161,36 +183,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserPrincipalName <String>]`: Alternate key of user
+INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
+  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
+  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserPrincipalName \<String\>\]: Alternate key of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestapproverbyuserprincipalname](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestapproverbyuserprincipalname)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

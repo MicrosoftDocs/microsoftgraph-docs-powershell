@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationfederatedidentitycredentialbyname
 schema: 2.0.0
-ms.subservice: entra-applications
 ---
 
 # Update-MgApplicationFederatedIdentityCredentialByName
@@ -13,9 +12,6 @@ Create a new federatedIdentityCredential object for an application if it doesn't
 By configuring a trust relationship between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
 Maximum of 20 objects can be added to an application.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaApplicationFederatedIdentityCredentialByName](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationFederatedIdentityCredentialByName?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -23,14 +19,14 @@ Maximum of 20 objects can be added to an application.
 Update-MgApplicationFederatedIdentityCredentialByName -ApplicationId <String> -Name <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Audiences <String[]>]
  [-Description <String>] [-Id <String>] [-Issuer <String>] [-Name1 <String>] [-Subject <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgApplicationFederatedIdentityCredentialByName -ApplicationId <String> -Name <String>
  -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,14 +34,14 @@ Update-MgApplicationFederatedIdentityCredentialByName -ApplicationId <String> -N
 Update-MgApplicationFederatedIdentityCredentialByName [-Name <String>] -InputObject <IApplicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Audiences <String[]>]
  [-Description <String>] [-Id <String>] [-Issuer <String>] [-Subject <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgApplicationFederatedIdentityCredentialByName -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,6 +50,16 @@ By configuring a trust relationship between your Microsoft Entra application reg
 Maximum of 20 objects can be added to an application.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -120,21 +126,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -267,6 +258,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -295,6 +301,21 @@ Supports $filter (eq).
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -336,30 +357,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphFederatedIdentityCredential>`: federatedIdentityCredential
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphFederatedIdentityCredential\>: federatedIdentityCredential
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Audiences <String- `[]`>]`: The audience that can appear in the external token.
+  \[Audiences \<String\[\]\>\]: The audience that can appear in the external token.
 This field is mandatory and should be set to api://AzureADTokenExchange for Microsoft Entra ID.
 It says what Microsoft identity platform should accept in the aud claim in the incoming token.
 This value represents Microsoft Entra ID in your external identity provider and has no fixed value across identity providers - you might need to create a new application registration in your identity provider to serve as the audience of this token.
 This field can only accept a single value and has a limit of 600 characters.
 Required.
-  - `[Description <String>]`: The unvalidated description of the federated identity credential, provided by the user.
+  \[Description \<String\>\]: The unvalidated description of the federated identity credential, provided by the user.
 It has a limit of 600 characters.
 Optional.
-  - `[Issuer <String>]`: The URL of the external identity provider, which must match the issuer claim of the external token being exchanged.
+  \[Issuer \<String\>\]: The URL of the external identity provider, which must match the issuer claim of the external token being exchanged.
 The combination of the values of issuer and subject must be unique within the app.
 It has a limit of 600 characters.
 Required.
-  - `[Name <String>]`: The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
+  \[Name \<String\>\]: The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
 The string is immutable after it's created.
 Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
-  - `[Subject <String>]`: Required.
+  \[Subject \<String\>\]: Required.
 The identifier of the external software workload within the external identity provider.
 Like the audience value, it has no fixed format; each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings.
 The value here must match the sub claim within the token presented to Microsoft Entra ID.
@@ -367,58 +388,35 @@ The combination of issuer and subject must be unique within the app.
 It has a limit of 600 characters.
 Supports $filter (eq).
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
-  - `[AppId <String>]`: Alternate key of application
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
-  - `[ApplicationId <String>]`: The unique identifier of application
-  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
-  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[Name <String>]`: Alternate key of federatedIdentityCredential
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
-  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UniqueName <String>]`: Alternate key of application
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of application
+  \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
+  \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
+  \[ApplicationId \<String\>\]: The unique identifier of application
+  \[ApplicationTemplateId \<String\>\]: The unique identifier of applicationTemplate
+  \[ClaimsMappingPolicyId \<String\>\]: The unique identifier of claimsMappingPolicy
+  \[DelegatedPermissionClassificationId \<String\>\]: The unique identifier of delegatedPermissionClassification
+  \[DirectoryDefinitionId \<String\>\]: The unique identifier of directoryDefinition
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[EndpointId \<String\>\]: The unique identifier of endpoint
+  \[ExtensionPropertyId \<String\>\]: The unique identifier of extensionProperty
+  \[FederatedIdentityCredentialId \<String\>\]: The unique identifier of federatedIdentityCredential
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[HomeRealmDiscoveryPolicyId \<String\>\]: The unique identifier of homeRealmDiscoveryPolicy
+  \[Name \<String\>\]: Alternate key of federatedIdentityCredential
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
+  \[SynchronizationJobId \<String\>\]: The unique identifier of synchronizationJob
+  \[SynchronizationTemplateId \<String\>\]: The unique identifier of synchronizationTemplate
+  \[TargetDeviceGroupId \<String\>\]: The unique identifier of targetDeviceGroup
+  \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
+  \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
+  \[UniqueName \<String\>\]: Alternate key of application
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationfederatedidentitycredentialbyname](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationfederatedidentitycredentialbyname)
 
 [https://learn.microsoft.com/graph/api/federatedidentitycredential-upsert?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/federatedidentitycredential-upsert?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

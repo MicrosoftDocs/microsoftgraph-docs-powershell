@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation
@@ -18,7 +18,7 @@ New-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation [-ResponseHe
  [-AdditionalProperties <Hashtable>] [-DeviceConfigurationId <String>] [-DeviceConfigurationName <String>]
  [-DeviceName <String>] [-Id <String>] [-ManagedDeviceId <String>] [-PlatformType <PolicyPlatformType>]
  [-RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp[]>] [-RestrictedAppsState <RestrictedAppsState>]
- [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>]
+ [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,21 +26,23 @@ New-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation [-ResponseHe
 ```
 New-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation
  -BodyParameter <IMicrosoftGraphRestrictedAppsViolation> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceConfigurationRestrictedAppsViolations for deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -72,21 +74,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -196,6 +183,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -272,6 +274,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -304,48 +321,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRestrictedAppsViolation>`: Violation of restricted apps configuration profile per device per user
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphRestrictedAppsViolation\>: Violation of restricted apps configuration profile per device per user
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeviceConfigurationId <String>]`: Device configuration profile unique identifier, must be Guid
-  - `[DeviceConfigurationName <String>]`: Device configuration profile name
-  - `[DeviceName <String>]`: Device name
-  - `[ManagedDeviceId <String>]`: Managed device unique identifier, must be Guid
-  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
-  - `[RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp- `[]`>]`: List of violated restricted apps
-    - `[AppId <String>]`: The application or bundle identifier of the application
-  - `[RestrictedAppsState <RestrictedAppsState?>]`: Restricted apps state
-  - `[UserId <String>]`: User unique identifier, must be Guid
-  - `[UserName <String>]`: User name
+  \[DeviceConfigurationId \<String\>\]: Device configuration profile unique identifier, must be Guid
+  \[DeviceConfigurationName \<String\>\]: Device configuration profile name
+  \[DeviceName \<String\>\]: Device name
+  \[ManagedDeviceId \<String\>\]: Managed device unique identifier, must be Guid
+  \[PlatformType \<PolicyPlatformType?\>\]: Supported platform types for policies.
+  \[RestrictedApps \<IMicrosoftGraphManagedDeviceReportedApp\[\]\>\]: List of violated restricted apps
+    \[AppId \<String\>\]: The application or bundle identifier of the application
+  \[RestrictedAppsState \<RestrictedAppsState?\>\]: Restricted apps state
+  \[UserId \<String\>\]: User unique identifier, must be Guid
+  \[UserName \<String\>\]: User name
 
-RESTRICTEDAPPS `<IMicrosoftGraphManagedDeviceReportedApp- `[]`>`: List of violated restricted apps
-  - `[AppId <String>]`: The application or bundle identifier of the application
+RESTRICTEDAPPS \<IMicrosoftGraphManagedDeviceReportedApp\[\]\>: List of violated restricted apps
+  \[AppId \<String\>\]: The application or bundle identifier of the application
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

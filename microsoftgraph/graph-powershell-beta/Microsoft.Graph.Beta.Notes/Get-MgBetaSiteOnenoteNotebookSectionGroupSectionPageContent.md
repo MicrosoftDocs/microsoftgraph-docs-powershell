@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebooksectiongroupsectionpagecontent
@@ -10,23 +10,20 @@ schema: 2.0.0
 ## SYNOPSIS
 The page's HTML content.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteNotebookSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteNotebookSectionGroupSectionPageContent?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgBetaSiteOnenoteNotebookSectionGroupSectionPageContent -NotebookId <String> -OnenotePageId <String>
  -OnenoteSectionId <String> -SectionGroupId <String> -SiteId <String> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaSiteOnenoteNotebookSectionGroupSectionPageContent -InputObject <INotesIdentity> -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -34,6 +31,16 @@ Get-MgBetaSiteOnenoteNotebookSectionGroupSectionPageContent -InputObject <INotes
 The page's HTML content.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -143,6 +150,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -204,44 +226,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
-  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<INotesIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
+  \[SectionGroupId1 \<String\>\]: The unique identifier of sectionGroup
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebooksectiongroupsectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebooksectiongroupsectionpagecontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

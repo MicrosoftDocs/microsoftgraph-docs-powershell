@@ -1,16 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementdevicemanagementroleassignment
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaRoleManagementDeviceManagementRoleAssignment
 
 ## SYNOPSIS
 Create a new unifiedRoleAssignmentMultiple object for an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
+The following RBAC providers are currently supported:\n- Cloud PC \n- device management (Intune)\n- Defender (Microsoft Defender XDR) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
 
 ## SYNTAX
 
@@ -22,34 +21,26 @@ New-MgBetaRoleManagementDeviceManagementRoleAssignment [-ResponseHeadersVariable
  [-DirectoryScopes <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>] [-Id <String>]
  [-PrincipalIds <String[]>] [-Principals <IMicrosoftGraphDirectoryObject[]>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaRoleManagementDeviceManagementRoleAssignment
  -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentMultiple> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new unifiedRoleAssignmentMultiple object for an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
+The following RBAC providers are currently supported:\n- Cloud PC \n- device management (Intune)\n- Defender (Microsoft Defender XDR) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
 
 ## EXAMPLES
-### Example 1: Create a role assignment in Intune over two scope groups (which are Microsoft Entra objects)
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleAssignmentMultiple"
@@ -67,14 +58,10 @@ directoryScopeIds = @(
 
 New-MgBetaRoleManagementDeviceManagementRoleAssignment -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create a role assignment in intune over two scope groups (which are microsoft entra objects)
-
-### Example 2: Create a role assignment in Intune at Intune-specific scope of "all Devices"
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleAssignmentMultiple"
@@ -90,10 +77,6 @@ appScopeIds = @(
 }
 
 New-MgBetaRoleManagementDeviceManagementRoleAssignment -BodyParameter $params
-
-```
-This example will create a role assignment in intune at intune-specific scope of "all devices"
-
 
 ## PARAMETERS
 
@@ -166,27 +149,12 @@ Accept wildcard characters: False
 ```
 
 ### -Condition
-
+.
 
 ```yaml
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -329,6 +297,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -375,6 +358,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -407,163 +405,159 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPSCOPES `<IMicrosoftGraphAppScope- `[]`>`: Read-only collection with details of the app specific scopes when the assignment scopes are app specific.
+APPSCOPES \<IMicrosoftGraphAppScope\[\]\>: Read-only collection with details of the app specific scopes when the assignment scopes are app specific.
 Containment entity.
 Read-only.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
+  \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
 Read only.
-  - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+  \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope.
+Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentMultiple>`: unifiedRoleAssignmentMultiple
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUnifiedRoleAssignmentMultiple\>: unifiedRoleAssignmentMultiple
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AppScopeIds <String- `[]`>]`: Ids of the app specific scopes when the assignment scopes are app specific.
+  \[AppScopeIds \<String\[\]\>\]: Ids of the app specific scopes when the assignment scopes are app specific.
 The scopes of an assignment determine the set of resources for which the principal has access.
 Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
 Use / for tenant-wide scope.
 App scopes are scopes that are defined and understood by this application only.
-  - `[AppScopes <IMicrosoftGraphAppScope- `[]`>]`: Read-only collection with details of the app specific scopes when the assignment scopes are app specific.
+  \[AppScopes \<IMicrosoftGraphAppScope\[\]\>\]: Read-only collection with details of the app specific scopes when the assignment scopes are app specific.
 Containment entity.
 Read-only.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
+    \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
 Read only.
-    - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
-  - `[Condition <String>]`: 
-  - `[Description <String>]`: Description of the role assignment.
-  - `[DirectoryScopeIds <String- `[]`>]`: Ids of the directory objects that represent the scopes of the assignment.
+    \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope.
+Read-only.
+  \[Condition \<String\>\]: 
+  \[Description \<String\>\]: Description of the role assignment.
+  \[DirectoryScopeIds \<String\[\]\>\]: Ids of the directory objects that represent the scopes of the assignment.
 The scopes of an assignment determine the set of resources for which the principals have been granted access.
 Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
 App scopes are scopes that are defined and understood by this application only.
-  - `[DirectoryScopes <IMicrosoftGraphDirectoryObject- `[]`>]`: Read-only collection that references the directory objects that are scope of the assignment.
+  \[DirectoryScopes \<IMicrosoftGraphDirectoryObject\[\]\>\]: Read-only collection that references the directory objects that are scope of the assignment.
 Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
 Read-only.
 Supports $expand.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[DisplayName <String>]`: Name of the role assignment.
+  \[DisplayName \<String\>\]: Name of the role assignment.
 Required.
-  - `[PrincipalIds <String- `[]`>]`: Identifiers of the principals to which the assignment is granted.
+  \[PrincipalIds \<String\[\]\>\]: Identifiers of the principals to which the assignment is granted.
 Supports $filter (any operator only).
-  - `[Principals <IMicrosoftGraphDirectoryObject- `[]`>]`: Read-only collection that references the assigned principals.
+  \[Principals \<IMicrosoftGraphDirectoryObject\[\]\>\]: Read-only collection that references the assigned principals.
 Provided so that callers can get the principals using $expand at the same time as getting the role assignment.
 Read-only.
 Supports $expand.
-  - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[RoleDefinition \<IMicrosoftGraphUnifiedRoleDefinition\>\]: unifiedRoleDefinition
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
-    - `[Description <String>]`: The description for the unifiedRoleDefinition.
+    \[AllowedPrincipalTypes \<String\>\]: allowedRolePrincipalTypes
+    \[Description \<String\>\]: The description for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-    - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition.
+    \[DisplayName \<String\>\]: The display name for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
-    - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition- `[]`>]`: Read-only collection of role definitions that the given role definition inherits from.
+    \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles support this attribute.
-    - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
+    \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
-    - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment.
+    \[IsEnabled \<Boolean?\>\]: Flag indicating if the role is enabled for assignment.
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
-    - `[IsPrivileged <Boolean?>]`: Flag indicating if the role is privileged.
+    \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
 Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
-    - `[ResourceScopes <String- `[]`>]`: List of scopes permissions granted by the role definition apply to.
+    \[ResourceScopes \<String\[\]\>\]: List of scopes permissions granted by the role definition apply to.
 Currently only / is supported.
 Read-only when isBuiltIn is true.
 DO NOT USE.
 This will be deprecated soon.
 Attach scope to role assignment.
-    - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission- `[]`>]`: List of permissions included in the role.
+    \[RolePermissions \<IMicrosoftGraphUnifiedRolePermission\[\]\>\]: List of permissions included in the role.
 Read-only when isBuiltIn is true.
 Required.
-      - `[AllowedResourceActions <String- `[]`>]`: Set of tasks that can be performed on a resource.
-      - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
+      \[AllowedResourceActions \<String\[\]\>\]: Set of tasks that can be performed on a resource.
+      \[Condition \<String\>\]: Optional constraints that must be met for the permission to be effective.
 Not supported for custom roles.
-      - `[ExcludedResourceActions <String- `[]`>]`: 
-    - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false.
+      \[ExcludedResourceActions \<String\[\]\>\]: 
+    \[TemplateId \<String\>\]: Custom template identifier that can be set when isBuiltIn is false.
 This identifier is typically used if one needs an identifier to be the same across different directories.
 Read-only when isBuiltIn is true.
-    - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object.
+    \[Version \<String\>\]: Indicates the version of the unifiedRoleDefinition object.
 Read-only when isBuiltIn is true.
-  - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
+  \[RoleDefinitionId \<String\>\]: Identifier of the unifiedRoleDefinition the assignment is for.
 
-DIRECTORYSCOPES `<IMicrosoftGraphDirectoryObject- `[]`>`: Read-only collection that references the directory objects that are scope of the assignment.
+DIRECTORYSCOPES \<IMicrosoftGraphDirectoryObject\[\]\>: Read-only collection that references the directory objects that are scope of the assignment.
 Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
 Read-only.
 Supports $expand.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-PRINCIPALS `<IMicrosoftGraphDirectoryObject- `[]`>`: Read-only collection that references the assigned principals.
+PRINCIPALS \<IMicrosoftGraphDirectoryObject\[\]\>: Read-only collection that references the assigned principals.
 Provided so that callers can get the principals using $expand at the same time as getting the role assignment.
 Read-only.
 Supports $expand.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+ROLEDEFINITION \<IMicrosoftGraphUnifiedRoleDefinition\>: unifiedRoleDefinition
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
-  - `[Description <String>]`: The description for the unifiedRoleDefinition.
+  \[AllowedPrincipalTypes \<String\>\]: allowedRolePrincipalTypes
+  \[Description \<String\>\]: The description for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-  - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition.
+  \[DisplayName \<String\>\]: The display name for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
-  - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition- `[]`>]`: Read-only collection of role definitions that the given role definition inherits from.
+  \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles support this attribute.
-  - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
+  \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
-  - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment.
+  \[IsEnabled \<Boolean?\>\]: Flag indicating if the role is enabled for assignment.
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
-  - `[IsPrivileged <Boolean?>]`: Flag indicating if the role is privileged.
+  \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
 Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
-  - `[ResourceScopes <String- `[]`>]`: List of scopes permissions granted by the role definition apply to.
+  \[ResourceScopes \<String\[\]\>\]: List of scopes permissions granted by the role definition apply to.
 Currently only / is supported.
 Read-only when isBuiltIn is true.
 DO NOT USE.
 This will be deprecated soon.
 Attach scope to role assignment.
-  - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission- `[]`>]`: List of permissions included in the role.
+  \[RolePermissions \<IMicrosoftGraphUnifiedRolePermission\[\]\>\]: List of permissions included in the role.
 Read-only when isBuiltIn is true.
 Required.
-    - `[AllowedResourceActions <String- `[]`>]`: Set of tasks that can be performed on a resource.
-    - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
+    \[AllowedResourceActions \<String\[\]\>\]: Set of tasks that can be performed on a resource.
+    \[Condition \<String\>\]: Optional constraints that must be met for the permission to be effective.
 Not supported for custom roles.
-    - `[ExcludedResourceActions <String- `[]`>]`: 
-  - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false.
+    \[ExcludedResourceActions \<String\[\]\>\]: 
+  \[TemplateId \<String\>\]: Custom template identifier that can be set when isBuiltIn is false.
 This identifier is typically used if one needs an identifier to be the same across different directories.
 Read-only when isBuiltIn is true.
-  - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object.
+  \[Version \<String\>\]: Indicates the version of the unifiedRoleDefinition object.
 Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
@@ -571,26 +565,4 @@ Read-only when isBuiltIn is true.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementdevicemanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementdevicemanagementroleassignment)
 
 [https://learn.microsoft.com/graph/api/rbacapplicationmultiple-post-roleassignments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplicationmultiple-post-roleassignments?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

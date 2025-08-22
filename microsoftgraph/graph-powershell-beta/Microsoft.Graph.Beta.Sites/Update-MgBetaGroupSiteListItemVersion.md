@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitelistitemversion
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property versions in groups
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListItemVersion?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,7 +18,7 @@ Update-MgBetaGroupSiteListItemVersion -GroupId <String> -ListId <String> -ListIt
  -ListItemVersionId <String> -SiteId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Fields <Hashtable>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Publication <IMicrosoftGraphPublicationFacet>] [-Headers <IDictionary>]
+ [-Publication <IMicrosoftGraphPublicationFacet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +26,7 @@ Update-MgBetaGroupSiteListItemVersion -GroupId <String> -ListId <String> -ListIt
 ```
 Update-MgBetaGroupSiteListItemVersion -GroupId <String> -ListId <String> -ListItemId <String>
  -ListItemVersionId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphListItemVersion>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +35,7 @@ Update-MgBetaGroupSiteListItemVersion -GroupId <String> -ListId <String> -ListIt
 Update-MgBetaGroupSiteListItemVersion -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Fields <Hashtable>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Publication <IMicrosoftGraphPublicationFacet>] [-Headers <IDictionary>]
+ [-Publication <IMicrosoftGraphPublicationFacet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,13 +43,23 @@ Update-MgBetaGroupSiteListItemVersion -InputObject <ISitesIdentity> [-ResponseHe
 ```
 Update-MgBetaGroupSiteListItemVersion -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphListItemVersion> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property versions in groups
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -84,21 +91,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -256,6 +248,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Publication
 publicationFacet
 To construct, see NOTES section for PUBLICATION properties and create a hash table.
@@ -302,6 +309,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -335,145 +357,126 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphListItemVersion>`: listItemVersion
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+BODYPARAMETER \<IMicrosoftGraphListItemVersion\>: listItemVersion
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the version was last modified.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[LastModifiedDateTime \<DateTime?\>\]: Date and time when the version was last modified.
 Read-only.
-  - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CheckedOutBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[Level <String>]`: The state of publication for this document.
+  \[Publication \<IMicrosoftGraphPublicationFacet\>\]: publicationFacet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CheckedOutBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[Level \<String\>\]: The state of publication for this document.
 Either published or checkout.
 Read-only.
-    - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller.
+    \[VersionId \<String\>\]: The unique identifier for the version that is visible to the current caller.
 Read-only.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Fields \<IMicrosoftGraphFieldValueSet\>\]: fieldValueSet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
-  - `[BaseItemId <String>]`: The unique identifier of baseItem
-  - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
-  - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
-  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
-  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
-  - `[ContentModelId <String>]`: The unique identifier of contentModel
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
-  - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
-  - `[DocumentProcessingJobId <String>]`: The unique identifier of documentProcessingJob
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[GroupId1 <String>]`: The unique identifier of group
-  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
-  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
-  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
-  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
-  - `[ListId <String>]`: The unique identifier of list
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[ModelName <String>]`: Usage: modelName='{modelName}'
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[PageTemplateId <String>]`: The unique identifier of pageTemplate
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem
-  - `[RelationId <String>]`: The unique identifier of relation
-  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
-  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
-  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
-  - `[SetId <String>]`: The unique identifier of set
-  - `[SetId1 <String>]`: The unique identifier of set
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[SiteId1 <String>]`: The unique identifier of site
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[TermId <String>]`: The unique identifier of term
-  - `[TermId1 <String>]`: The unique identifier of term
-  - `[ThreatAssessmentRequestId <String>]`: The unique identifier of threatAssessmentRequest
-  - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WebPartId <String>]`: The unique identifier of webPart
+INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
+  \[BaseItemId \<String\>\]: The unique identifier of baseItem
+  \[BaseSitePageId \<String\>\]: The unique identifier of baseSitePage
+  \[BitlockerRecoveryKeyId \<String\>\]: The unique identifier of bitlockerRecoveryKey
+  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
+  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
+  \[ContentFormats \<String\[\]\>\]: Usage: contentFormats={contentFormats}
+  \[ContentModelId \<String\>\]: The unique identifier of contentModel
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
+  \[DataLossPreventionPolicyId \<String\>\]: The unique identifier of dataLossPreventionPolicy
+  \[DocumentProcessingJobId \<String\>\]: The unique identifier of documentProcessingJob
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[GroupId1 \<String\>\]: The unique identifier of group
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[InformationProtectionLabelId \<String\>\]: The unique identifier of informationProtectionLabel
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ItemActivityId \<String\>\]: The unique identifier of itemActivity
+  \[ItemActivityOldId \<String\>\]: The unique identifier of itemActivityOLD
+  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
+  \[LabelIds \<String\[\]\>\]: Usage: labelIds={labelIds}
+  \[ListId \<String\>\]: The unique identifier of list
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[Locale \<String\>\]: Usage: locale='{locale}'
+  \[ModelName \<String\>\]: Usage: modelName='{modelName}'
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[PageTemplateId \<String\>\]: The unique identifier of pageTemplate
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[RecycleBinItemId \<String\>\]: The unique identifier of recycleBinItem
+  \[RelationId \<String\>\]: The unique identifier of relation
+  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
+  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
+  \[SectionGroupId1 \<String\>\]: The unique identifier of sectionGroup
+  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
+  \[SensitivityLabelId1 \<String\>\]: The unique identifier of sensitivityLabel
+  \[SetId \<String\>\]: The unique identifier of set
+  \[SetId1 \<String\>\]: The unique identifier of set
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[SiteId1 \<String\>\]: The unique identifier of site
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[TermId \<String\>\]: The unique identifier of term
+  \[TermId1 \<String\>\]: The unique identifier of term
+  \[ThreatAssessmentRequestId \<String\>\]: The unique identifier of threatAssessmentRequest
+  \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-PUBLICATION `<IMicrosoftGraphPublicationFacet>`: publicationFacet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CheckedOutBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+PUBLICATION \<IMicrosoftGraphPublicationFacet\>: publicationFacet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CheckedOutBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Level <String>]`: The state of publication for this document.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[Level \<String\>\]: The state of publication for this document.
 Either published or checkout.
 Read-only.
-  - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller.
+  \[VersionId \<String\>\]: The unique identifier for the version that is visible to the current caller.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitelistitemversion)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

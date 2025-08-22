@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementaction
@@ -18,20 +18,30 @@ New-MgBetaTenantRelationshipManagedTenantManagementAction [-ResponseHeadersVaria
  [-AdditionalProperties <Hashtable>] [-Category <String>] [-Description <String>] [-DisplayName <String>]
  [-Id <String>] [-ReferenceTemplateId <String>] [-ReferenceTemplateVersion <Int32>]
  [-WorkloadActions <IMicrosoftGraphManagedTenantsWorkloadAction[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementAction
  -BodyParameter <IMicrosoftGraphManagedTenantsManagementAction> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to managementActions for tenantRelationships
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -73,21 +83,6 @@ managementCategory
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -161,6 +156,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReferenceTemplateId
 The reference for the management template used to generate the management action.
 Required.
@@ -179,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReferenceTemplateVersion
-
+.
 
 ```yaml
 Type: Int32
@@ -208,22 +218,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WorkloadActions
 The collection of workload actions associated with the management action.
 Required.
@@ -234,6 +228,37 @@ To construct, see NOTES section for WORKLOADACTIONS properties and create a hash
 Type: IMicrosoftGraphManagedTenantsWorkloadAction[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
 
 Required: False
 Position: Named
@@ -258,109 +283,86 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagementAction>`: managementAction
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsManagementAction\>: managementAction
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Category <String>]`: managementCategory
-  - `[Description <String>]`: The description for the management action.
+  \[Category \<String\>\]: managementCategory
+  \[Description \<String\>\]: The description for the management action.
 Optional.
 Read-only.
-  - `[DisplayName <String>]`: The display name for the management action.
+  \[DisplayName \<String\>\]: The display name for the management action.
 Optional.
 Read-only.
-  - `[ReferenceTemplateId <String>]`: The reference for the management template used to generate the management action.
+  \[ReferenceTemplateId \<String\>\]: The reference for the management template used to generate the management action.
 Required.
 Read-only.
-  - `[ReferenceTemplateVersion <Int32?>]`: 
-  - `[WorkloadActions <IMicrosoftGraphManagedTenantsWorkloadAction- `[]`>]`: The collection of workload actions associated with the management action.
+  \[ReferenceTemplateVersion \<Int32?\>\]: 
+  \[WorkloadActions \<IMicrosoftGraphManagedTenantsWorkloadAction\[\]\>\]: The collection of workload actions associated with the management action.
 Required.
 Read-only.
-    - `[ActionId <String>]`: The unique identifier for the workload action.
+    \[ActionId \<String\>\]: The unique identifier for the workload action.
 Required.
 Read-only.
-    - `[Category <String>]`: workloadActionCategory
-    - `[Description <String>]`: The description for the workload action.
+    \[Category \<String\>\]: workloadActionCategory
+    \[Description \<String\>\]: The description for the workload action.
 Optional.
 Read-only.
-    - `[DisplayName <String>]`: The display name for the workload action.
+    \[DisplayName \<String\>\]: The display name for the workload action.
 Optional.
 Read-only.
-    - `[Licenses <String- `[]`>]`: 
-    - `[Service <String>]`: The service associated with workload action.
+    \[Licenses \<String\[\]\>\]: 
+    \[Service \<String\>\]: The service associated with workload action.
 Optional.
 Read-only.
-    - `[Settings <IMicrosoftGraphManagedTenantsSetting- `[]`>]`: The collection of settings associated with the workload action.
+    \[Settings \<IMicrosoftGraphManagedTenantsSetting\[\]\>\]: The collection of settings associated with the workload action.
 Optional.
 Read-only.
-      - `[DisplayName <String>]`: The display name for the setting.
+      \[DisplayName \<String\>\]: The display name for the setting.
 Required.
 Read-only.
-      - `[JsonValue <String>]`: The value for the setting serialized as string of JSON.
+      \[JsonValue \<String\>\]: The value for the setting serialized as string of JSON.
 Required.
 Read-only.
-      - `[OverwriteAllowed <Boolean?>]`: A flag indicating whether the setting can be override existing configurations when applied.
+      \[OverwriteAllowed \<Boolean?\>\]: A flag indicating whether the setting can be override existing configurations when applied.
 Required.
 Read-only.
-      - `[SettingId <String>]`: 
-      - `[ValueType <String>]`: managementParameterValueType
+      \[SettingId \<String\>\]: 
+      \[ValueType \<String\>\]: managementParameterValueType
 
-WORKLOADACTIONS `<IMicrosoftGraphManagedTenantsWorkloadAction- `[]`>`: The collection of workload actions associated with the management action.
+WORKLOADACTIONS \<IMicrosoftGraphManagedTenantsWorkloadAction\[\]\>: The collection of workload actions associated with the management action.
 Required.
 Read-only.
-  - `[ActionId <String>]`: The unique identifier for the workload action.
+  \[ActionId \<String\>\]: The unique identifier for the workload action.
 Required.
 Read-only.
-  - `[Category <String>]`: workloadActionCategory
-  - `[Description <String>]`: The description for the workload action.
+  \[Category \<String\>\]: workloadActionCategory
+  \[Description \<String\>\]: The description for the workload action.
 Optional.
 Read-only.
-  - `[DisplayName <String>]`: The display name for the workload action.
+  \[DisplayName \<String\>\]: The display name for the workload action.
 Optional.
 Read-only.
-  - `[Licenses <String- `[]`>]`: 
-  - `[Service <String>]`: The service associated with workload action.
+  \[Licenses \<String\[\]\>\]: 
+  \[Service \<String\>\]: The service associated with workload action.
 Optional.
 Read-only.
-  - `[Settings <IMicrosoftGraphManagedTenantsSetting- `[]`>]`: The collection of settings associated with the workload action.
+  \[Settings \<IMicrosoftGraphManagedTenantsSetting\[\]\>\]: The collection of settings associated with the workload action.
 Optional.
 Read-only.
-    - `[DisplayName <String>]`: The display name for the setting.
+    \[DisplayName \<String\>\]: The display name for the setting.
 Required.
 Read-only.
-    - `[JsonValue <String>]`: The value for the setting serialized as string of JSON.
+    \[JsonValue \<String\>\]: The value for the setting serialized as string of JSON.
 Required.
 Read-only.
-    - `[OverwriteAllowed <Boolean?>]`: A flag indicating whether the setting can be override existing configurations when applied.
+    \[OverwriteAllowed \<Boolean?\>\]: A flag indicating whether the setting can be override existing configurations when applied.
 Required.
 Read-only.
-    - `[SettingId <String>]`: 
-    - `[ValueType <String>]`: managementParameterValueType
+    \[SettingId \<String\>\]: 
+    \[ValueType \<String\>\]: managementParameterValueType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementaction)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypublickeyinfrastructurecertificatebasedauthconfiguration
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
@@ -18,7 +17,7 @@ Create a new certificateBasedAuthPki object.
 New-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CertificateAuthorities <IMicrosoftGraphCertificateAuthorityDetail[]>]
  [-DeletedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Status <String>] [-StatusDetails <String>] [-Headers <IDictionary>]
+ [-Status <String>] [-StatusDetails <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,36 +25,24 @@ New-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration [-Re
 ```
 New-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
  -BodyParameter <IMicrosoftGraphCertificateBasedAuthPki> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new certificateBasedAuthPki object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PublicKeyInfrastructure.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PublicKeyInfrastructure.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 $params = @{
 	displayName = "Contoso PKI"
 }
 
 New-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -98,21 +85,6 @@ To construct, see NOTES section for CERTIFICATEAUTHORITIES properties and create
 Type: IMicrosoftGraphCertificateAuthorityDetail[]
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -199,6 +171,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -244,6 +231,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -276,57 +278,57 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCertificateBasedAuthPki>`: certificateBasedAuthPki
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+BODYPARAMETER \<IMicrosoftGraphCertificateBasedAuthPki\>: certificateBasedAuthPki
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CertificateAuthorities <IMicrosoftGraphCertificateAuthorityDetail- `[]`>]`: The collection of certificate authorities contained in this public key infrastructure resource.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[CertificateAuthorities \<IMicrosoftGraphCertificateAuthorityDetail\[\]\>\]: The collection of certificate authorities contained in this public key infrastructure resource.
+    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Certificate <Byte- `[]`>]`: The public key of the certificate authority.
-    - `[CertificateAuthorityType <String>]`: certificateAuthorityType
-    - `[CertificateRevocationListUrl <String>]`: The URL to check if the certificate is revoked.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the certificate authority was created.
-    - `[DeltaCertificateRevocationListUrl <String>]`: 
-    - `[DisplayName <String>]`: The display name of the certificate authority.
-    - `[ExpirationDateTime <DateTime?>]`: The date and time when the certificate authority expires.
+    \[Certificate \<Byte\[\]\>\]: The public key of the certificate authority.
+    \[CertificateAuthorityType \<String\>\]: certificateAuthorityType
+    \[CertificateRevocationListUrl \<String\>\]: The URL to check if the certificate is revoked.
+    \[CreatedDateTime \<DateTime?\>\]: The date and time when the certificate authority was created.
+    \[DeltaCertificateRevocationListUrl \<String\>\]: 
+    \[DisplayName \<String\>\]: The display name of the certificate authority.
+    \[ExpirationDateTime \<DateTime?\>\]: The date and time when the certificate authority expires.
 Supports $filter (eq) and $orderby.
-    - `[IsIssuerHintEnabled <Boolean?>]`: Indicates whether the certificate picker presents the certificate authority to the user to use for authentication.
+    \[IsIssuerHintEnabled \<Boolean?\>\]: Indicates whether the certificate picker presents the certificate authority to the user to use for authentication.
 Default value is false.
 Optional.
-    - `[Issuer <String>]`: The issuer of the certificate authority.
-    - `[IssuerSubjectKeyIdentifier <String>]`: The subject key identifier of certificate authority.
-    - `[Thumbprint <String>]`: The thumbprint of certificate authority certificate.
+    \[Issuer \<String\>\]: The issuer of the certificate authority.
+    \[IssuerSubjectKeyIdentifier \<String\>\]: The subject key identifier of certificate authority.
+    \[Thumbprint \<String\>\]: The thumbprint of certificate authority certificate.
 Supports $filter (eq, startswith).
-  - `[DisplayName <String>]`: The name of the object.
+  \[DisplayName \<String\>\]: The name of the object.
 Maximum length is 256 characters.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the object was created or last modified.
-  - `[Status <String>]`: The status of any asynchronous jobs runs on the object which can be upload or delete.
-  - `[StatusDetails <String>]`: The status details of the upload/deleted operation of PKI (Public Key Infrastructure).
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the object was created or last modified.
+  \[Status \<String\>\]: The status of any asynchronous jobs runs on the object which can be upload or delete.
+  \[StatusDetails \<String\>\]: The status details of the upload/deleted operation of PKI (Public Key Infrastructure).
 
-CERTIFICATEAUTHORITIES `<IMicrosoftGraphCertificateAuthorityDetail- `[]`>`: The collection of certificate authorities contained in this public key infrastructure resource.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+CERTIFICATEAUTHORITIES \<IMicrosoftGraphCertificateAuthorityDetail\[\]\>: The collection of certificate authorities contained in this public key infrastructure resource.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Certificate <Byte- `[]`>]`: The public key of the certificate authority.
-  - `[CertificateAuthorityType <String>]`: certificateAuthorityType
-  - `[CertificateRevocationListUrl <String>]`: The URL to check if the certificate is revoked.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the certificate authority was created.
-  - `[DeltaCertificateRevocationListUrl <String>]`: 
-  - `[DisplayName <String>]`: The display name of the certificate authority.
-  - `[ExpirationDateTime <DateTime?>]`: The date and time when the certificate authority expires.
+  \[Certificate \<Byte\[\]\>\]: The public key of the certificate authority.
+  \[CertificateAuthorityType \<String\>\]: certificateAuthorityType
+  \[CertificateRevocationListUrl \<String\>\]: The URL to check if the certificate is revoked.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when the certificate authority was created.
+  \[DeltaCertificateRevocationListUrl \<String\>\]: 
+  \[DisplayName \<String\>\]: The display name of the certificate authority.
+  \[ExpirationDateTime \<DateTime?\>\]: The date and time when the certificate authority expires.
 Supports $filter (eq) and $orderby.
-  - `[IsIssuerHintEnabled <Boolean?>]`: Indicates whether the certificate picker presents the certificate authority to the user to use for authentication.
+  \[IsIssuerHintEnabled \<Boolean?\>\]: Indicates whether the certificate picker presents the certificate authority to the user to use for authentication.
 Default value is false.
 Optional.
-  - `[Issuer <String>]`: The issuer of the certificate authority.
-  - `[IssuerSubjectKeyIdentifier <String>]`: The subject key identifier of certificate authority.
-  - `[Thumbprint <String>]`: The thumbprint of certificate authority certificate.
+  \[Issuer \<String\>\]: The issuer of the certificate authority.
+  \[IssuerSubjectKeyIdentifier \<String\>\]: The subject key identifier of certificate authority.
+  \[Thumbprint \<String\>\]: The thumbprint of certificate authority certificate.
 Supports $filter (eq, startswith).
 
 ## RELATED LINKS
@@ -334,26 +336,4 @@ Supports $filter (eq, startswith).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypublickeyinfrastructurecertificatebasedauthconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypublickeyinfrastructurecertificatebasedauthconfiguration)
 
 [https://learn.microsoft.com/graph/api/publickeyinfrastructureroot-post-certificatebasedauthconfigurations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/publickeyinfrastructureroot-post-certificatebasedauthconfigurations?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantconditionalaccesspolicycoverage
@@ -17,14 +17,14 @@ Create new navigation property to conditionalAccessPolicyCoverages for tenantRel
 New-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ConditionalAccessPolicyState <String>] [-Id <String>]
  [-LatestPolicyModifiedDateTime <DateTime>] [-RequiresDeviceCompliance] [-TenantDisplayName <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
  -BodyParameter <IMicrosoftGraphManagedTenantsConditionalAccessPolicyCoverage>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,6 +32,16 @@ New-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
 Create new navigation property to conditionalAccessPolicyCoverages for tenantRelationships
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -84,21 +94,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -139,6 +134,21 @@ Read-only.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -196,6 +206,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -228,48 +253,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsConditionalAccessPolicyCoverage>`: conditionalAccessPolicyCoverage
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsConditionalAccessPolicyCoverage\>: conditionalAccessPolicyCoverage
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ConditionalAccessPolicyState <String>]`: The state for the conditional access policy.
+  \[ConditionalAccessPolicyState \<String\>\]: The state for the conditional access policy.
 Possible values are: enabled, disabled, enabledForReportingButNotEnforced.
 Required.
 Read-only.
-  - `[LatestPolicyModifiedDateTime <DateTime?>]`: The date and time the conditional access policy was last modified.
+  \[LatestPolicyModifiedDateTime \<DateTime?\>\]: The date and time the conditional access policy was last modified.
 Required.
 Read-only.
-  - `[RequiresDeviceCompliance <Boolean?>]`: A flag indicating whether the conditional access policy requires device compliance.
+  \[RequiresDeviceCompliance \<Boolean?\>\]: A flag indicating whether the conditional access policy requires device compliance.
 Required.
 Read-only.
-  - `[TenantDisplayName <String>]`: The display name for the managed tenant.
+  \[TenantDisplayName \<String\>\]: The display name for the managed tenant.
 Required.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantconditionalaccesspolicycoverage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantconditionalaccesspolicycoverage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

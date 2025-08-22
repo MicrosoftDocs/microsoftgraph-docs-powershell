@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople
@@ -17,14 +17,17 @@ Update the navigation property people in admin
 Update-MgBetaAdminPeople [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-ItemInsights <IMicrosoftGraphInsightsSettings>]
  [-NamePronunciation <IMicrosoftGraphNamePronunciationSettings>]
- [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-Pronouns <IMicrosoftGraphPronounsSettings>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PhotoUpdateSettings <IMicrosoftGraphPhotoUpdateSettings>]
+ [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>]
+ [-ProfilePropertySettings <IMicrosoftGraphProfilePropertySetting[]>]
+ [-ProfileSources <IMicrosoftGraphProfileSource[]>] [-Pronouns <IMicrosoftGraphPronounsSettings>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaAdminPeople -BodyParameter <IMicrosoftGraphPeopleAdminSettings>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,6 +35,16 @@ Update-MgBetaAdminPeople -BodyParameter <IMicrosoftGraphPeopleAdminSettings>
 Update the navigation property people in admin
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -63,21 +76,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -144,6 +142,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PhotoUpdateSettings
+photoUpdateSettings
+To construct, see NOTES section for PHOTOUPDATESETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPhotoUpdateSettings
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProfileCardProperties
 A collection of the properties an administrator defined as visible on the Microsoft 365 profile card.
 To construct, see NOTES section for PROFILECARDPROPERTIES properties and create a hash table.
@@ -152,6 +166,53 @@ To construct, see NOTES section for PROFILECARDPROPERTIES properties and create 
 Type: IMicrosoftGraphProfileCardProperty[]
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProfilePropertySettings
+A collection of profile property configuration settings defined by an administrator for an organization.
+To construct, see NOTES section for PROFILEPROPERTYSETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphProfilePropertySetting[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProfileSources
+A collection of profile source settings configured by an administrator in an organization.
+To construct, see NOTES section for PROFILESOURCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphProfileSource[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -183,6 +244,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -223,109 +299,137 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPeopleAdminSettings>`: peopleAdminSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPeopleAdminSettings\>: peopleAdminSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ItemInsights <IMicrosoftGraphInsightsSettings>]`: insightsSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[ItemInsights \<IMicrosoftGraphInsightsSettings\>\]: insightsSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DisabledForGroup <String>]`: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
+    \[DisabledForGroup \<String\>\]: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
 The default value is null.
 Optional.
-    - `[IsEnabledInOrganization <Boolean?>]`: true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
+    \[IsEnabledInOrganization \<Boolean?\>\]: true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
 The default value is true.
 Optional.
-  - `[NamePronunciation <IMicrosoftGraphNamePronunciationSettings>]`: namePronunciationSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[NamePronunciation \<IMicrosoftGraphNamePronunciationSettings\>\]: namePronunciationSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[IsEnabledInOrganization <Boolean?>]`: true to enable name pronunciation in the organization; otherwise, false.
+    \[IsEnabledInOrganization \<Boolean?\>\]: true to enable name pronunciation in the organization; otherwise, false.
 The default value is false.
-  - `[ProfileCardProperties <IMicrosoftGraphProfileCardProperty- `[]`>]`: A collection of the properties an administrator defined as visible on the Microsoft 365 profile card.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[PhotoUpdateSettings \<IMicrosoftGraphPhotoUpdateSettings\>\]: photoUpdateSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Annotations <IMicrosoftGraphProfileCardAnnotation- `[]`>]`: Allows an administrator to set a custom display label for the directory property and localize it for the users in their tenant.
-      - `[DisplayName <String>]`: If present, the value of this field is used by the profile card as the default property label in the experience (for example, 'Cost Center').
-      - `[Localizations <IMicrosoftGraphDisplayNameLocalization- `[]`>]`: Each resource in this collection represents the localized value of the attribute name for a given language, used as the default label for that locale.
+    \[AllowedRoles \<String\[\]\>\]: Contains a list of roles to perform edit operations in the cloud.
+Optional.
+  \[ProfileCardProperties \<IMicrosoftGraphProfileCardProperty\[\]\>\]: A collection of the properties an administrator defined as visible on the Microsoft 365 profile card.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[Annotations \<IMicrosoftGraphProfileCardAnnotation\[\]\>\]: Allows an administrator to set a custom display label for the directory property and localize it for the users in their tenant.
+      \[DisplayName \<String\>\]: If present, the value of this field is used by the profile card as the default property label in the experience (for example, 'Cost Center').
+      \[Localizations \<IMicrosoftGraphDisplayNameLocalization\[\]\>\]: Each resource in this collection represents the localized value of the attribute name for a given language, used as the default label for that locale.
 For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute label, rather than 'Cost Center.'
-        - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
-        - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
-    - `[DirectoryPropertyName <String>]`: Identifies a profileCardProperty resource in Get, Update, or Delete operations.
+        \[DisplayName \<String\>\]: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
+        \[LanguageTag \<String\>\]: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
+    \[DirectoryPropertyName \<String\>\]: Identifies a profileCardProperty resource in Get, Update, or Delete operations.
 Allows an administrator to surface hidden Microsoft Entra ID properties on the Microsoft 365 profile card within their tenant.
 When present, the Microsoft Entra ID field referenced in this property is visible to all users in your tenant on the contact pane of the profile card.
 Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
-  - `[Pronouns <IMicrosoftGraphPronounsSettings>]`: pronounsSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[ProfilePropertySettings \<IMicrosoftGraphProfilePropertySetting\[\]\>\]: A collection of profile property configuration settings defined by an administrator for an organization.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[IsEnabledInOrganization <Boolean?>]`: true to enable pronouns in the organization; otherwise, false.
+    \[AllowedAudiences \<String\>\]: organizationAllowedAudiences
+    \[IsUserOverrideForAudienceEnabled \<Boolean?\>\]: Defines whether a user is allowed to override the tenant admin privacy setting.
+    \[Name \<String\>\]: Name of the property-level setting.
+    \[PrioritizedSourceUrls \<String\[\]\>\]: A collection of prioritized profile source URLs ordered by data precedence within an organization.
+  \[ProfileSources \<IMicrosoftGraphProfileSource\[\]\>\]: A collection of profile source settings configured by an administrator in an organization.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[DisplayName \<String\>\]: Name of the profile source intended to inform users about the profile source name.
+    \[Kind \<String\>\]: Type of the profile source.
+    \[Localizations \<IMicrosoftGraphProfileSourceLocalization\[\]\>\]: Alternative localized labels specified by an administrator.
+      \[DisplayName \<String\>\]: Localized display name.
+      \[LanguageTag \<String\>\]: Language locale.
+      \[WebUrl \<String\>\]: Localized profile source URL.
+    \[SourceId \<String\>\]: Profile source identifier used as an alternate key.
+    \[WebUrl \<String\>\]: Web URL of the profile source that directs users to the page view of profile data.
+  \[Pronouns \<IMicrosoftGraphPronounsSettings\>\]: pronounsSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[IsEnabledInOrganization \<Boolean?\>\]: true to enable pronouns in the organization; otherwise, false.
 The default value is false, and pronouns are disabled.
 
-ITEMINSIGHTS `<IMicrosoftGraphInsightsSettings>`: insightsSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+ITEMINSIGHTS \<IMicrosoftGraphInsightsSettings\>: insightsSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisabledForGroup <String>]`: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
+  \[DisabledForGroup \<String\>\]: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
 The default value is null.
 Optional.
-  - `[IsEnabledInOrganization <Boolean?>]`: true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
+  \[IsEnabledInOrganization \<Boolean?\>\]: true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
 The default value is true.
 Optional.
 
-NAMEPRONUNCIATION `<IMicrosoftGraphNamePronunciationSettings>`: namePronunciationSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+NAMEPRONUNCIATION \<IMicrosoftGraphNamePronunciationSettings\>: namePronunciationSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsEnabledInOrganization <Boolean?>]`: true to enable name pronunciation in the organization; otherwise, false.
+  \[IsEnabledInOrganization \<Boolean?\>\]: true to enable name pronunciation in the organization; otherwise, false.
 The default value is false.
 
-PROFILECARDPROPERTIES `<IMicrosoftGraphProfileCardProperty- `[]`>`: A collection of the properties an administrator defined as visible on the Microsoft 365 profile card.
-  - `[Id <String>]`: The unique identifier for an entity.
+PHOTOUPDATESETTINGS \<IMicrosoftGraphPhotoUpdateSettings\>: photoUpdateSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Annotations <IMicrosoftGraphProfileCardAnnotation- `[]`>]`: Allows an administrator to set a custom display label for the directory property and localize it for the users in their tenant.
-    - `[DisplayName <String>]`: If present, the value of this field is used by the profile card as the default property label in the experience (for example, 'Cost Center').
-    - `[Localizations <IMicrosoftGraphDisplayNameLocalization- `[]`>]`: Each resource in this collection represents the localized value of the attribute name for a given language, used as the default label for that locale.
+  \[AllowedRoles \<String\[\]\>\]: Contains a list of roles to perform edit operations in the cloud.
+Optional.
+
+PROFILECARDPROPERTIES \<IMicrosoftGraphProfileCardProperty\[\]\>: A collection of the properties an administrator defined as visible on the Microsoft 365 profile card.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Annotations \<IMicrosoftGraphProfileCardAnnotation\[\]\>\]: Allows an administrator to set a custom display label for the directory property and localize it for the users in their tenant.
+    \[DisplayName \<String\>\]: If present, the value of this field is used by the profile card as the default property label in the experience (for example, 'Cost Center').
+    \[Localizations \<IMicrosoftGraphDisplayNameLocalization\[\]\>\]: Each resource in this collection represents the localized value of the attribute name for a given language, used as the default label for that locale.
 For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute label, rather than 'Cost Center.'
-      - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
-      - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
-  - `[DirectoryPropertyName <String>]`: Identifies a profileCardProperty resource in Get, Update, or Delete operations.
+      \[DisplayName \<String\>\]: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
+      \[LanguageTag \<String\>\]: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
+  \[DirectoryPropertyName \<String\>\]: Identifies a profileCardProperty resource in Get, Update, or Delete operations.
 Allows an administrator to surface hidden Microsoft Entra ID properties on the Microsoft 365 profile card within their tenant.
 When present, the Microsoft Entra ID field referenced in this property is visible to all users in your tenant on the contact pane of the profile card.
 Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
 
-PRONOUNS `<IMicrosoftGraphPronounsSettings>`: pronounsSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+PROFILEPROPERTYSETTINGS \<IMicrosoftGraphProfilePropertySetting\[\]\>: A collection of profile property configuration settings defined by an administrator for an organization.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsEnabledInOrganization <Boolean?>]`: true to enable pronouns in the organization; otherwise, false.
+  \[AllowedAudiences \<String\>\]: organizationAllowedAudiences
+  \[IsUserOverrideForAudienceEnabled \<Boolean?\>\]: Defines whether a user is allowed to override the tenant admin privacy setting.
+  \[Name \<String\>\]: Name of the property-level setting.
+  \[PrioritizedSourceUrls \<String\[\]\>\]: A collection of prioritized profile source URLs ordered by data precedence within an organization.
+
+PROFILESOURCES \<IMicrosoftGraphProfileSource\[\]\>: A collection of profile source settings configured by an administrator in an organization.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DisplayName \<String\>\]: Name of the profile source intended to inform users about the profile source name.
+  \[Kind \<String\>\]: Type of the profile source.
+  \[Localizations \<IMicrosoftGraphProfileSourceLocalization\[\]\>\]: Alternative localized labels specified by an administrator.
+    \[DisplayName \<String\>\]: Localized display name.
+    \[LanguageTag \<String\>\]: Language locale.
+    \[WebUrl \<String\>\]: Localized profile source URL.
+  \[SourceId \<String\>\]: Profile source identifier used as an alternate key.
+  \[WebUrl \<String\>\]: Web URL of the profile source that directs users to the page view of profile data.
+
+PRONOUNS \<IMicrosoftGraphPronounsSettings\>: pronounsSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[IsEnabledInOrganization \<Boolean?\>\]: true to enable pronouns in the organization; otherwise, false.
 The default value is false, and pronouns are disabled.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

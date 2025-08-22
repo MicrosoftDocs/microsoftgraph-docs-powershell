@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/remove-mgbetadirectoryobject
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Remove-MgBetaDirectoryObject
@@ -11,22 +10,19 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Delete a directory object, for example, a group, user, application, or service principal.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Remove-MgDirectoryObject?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
 Remove-MgBetaDirectoryObject -DirectoryObjectId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,22 +31,14 @@ Delete a directory object, for example, a group, user, application, or service p
 
 ## EXAMPLES
 
-## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### EXAMPLE 1
 ```
+Import-Module Microsoft.Graph.Beta.DirectoryObjects
+```
+
+Remove-MgBetaDirectoryObject -DirectoryObjectId $directoryObjectId
+
+## PARAMETERS
 
 ### -DirectoryObjectId
 The unique identifier of directoryObject
@@ -128,6 +116,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -135,6 +138,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -175,37 +193,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
-  - `[CertificateAuthorityDetailId <String>]`: The unique identifier of certificateAuthorityDetail
-  - `[CertificateBasedAuthPkiId <String>]`: The unique identifier of certificateBasedAuthPki
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+INPUTOBJECT \<IDirectoryObjectsIdentity\>: Identity Parameter
+  \[CertificateAuthorityDetailId \<String\>\]: The unique identifier of certificateAuthorityDetail
+  \[CertificateBasedAuthPkiId \<String\>\]: The unique identifier of certificateBasedAuthPki
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/remove-mgbetadirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/remove-mgbetadirectoryobject)
 
 [https://learn.microsoft.com/graph/api/directoryobject-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

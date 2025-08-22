@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageattachmentuploadsession
 schema: 2.0.0
-ms.subservice: outlook
 ---
 
 # New-MgBetaUserMessageAttachmentUploadSession
@@ -18,9 +17,6 @@ Request headers for each PUT operation let you specify the exact range of bytes 
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessageAttachmentUploadSession?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -28,14 +24,14 @@ The following are the steps to attach a file to an Outlook item using an upload 
 New-MgBetaUserMessageAttachmentUploadSession -MessageId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserMessageAttachmentUploadSession -MessageId <String> -UserId <String>
  -BodyParameter <IPaths1C56La0UsersUserIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,14 +39,14 @@ New-MgBetaUserMessageAttachmentUploadSession -MessageId <String> -UserId <String
 ```
 New-MgBetaUserMessageAttachmentUploadSession -InputObject <IMailIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserMessageAttachmentUploadSession -InputObject <IMailIdentity>
  -BodyParameter <IPaths1C56La0UsersUserIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -64,20 +60,12 @@ Request headers for each PUT operation let you specify the exact range of bytes 
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadWrite, Mail.ReadWrite,  |
-| Delegated (personal Microsoft account) | Calendars.ReadWrite, Mail.ReadWrite,  |
-| Application | Calendars.ReadWrite, Mail.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Create an upload session to add a large attachment to a draft message
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 $params = @{
 	AttachmentItem = @{
@@ -90,14 +78,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create an upload session to add a large attachment to a draft message
-
-### Example 2: Create an upload session to add a large in-line attachment to a draft message
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 $params = @{
 	AttachmentItem = @{
@@ -111,10 +95,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
-
-```
-This example will create an upload session to add a large in-line attachment to a draft message
-
 
 ## PARAMETERS
 
@@ -150,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -162,21 +142,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -226,6 +191,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -250,6 +230,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -289,76 +284,54 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTACHMENTITEM `<IMicrosoftGraphAttachmentItem>`: attachmentItem
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttachmentType <String>]`: attachmentType
-  - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages.
+ATTACHMENTITEM \<IMicrosoftGraphAttachmentItem\>: attachmentItem
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AttachmentType \<String\>\]: attachmentType
+  \[ContentId \<String\>\]: The CID or Content-Id of the attachment for referencing in case of in-line attachments using \<img src='cid:contentId'\> tag in HTML messages.
 Optional.
-  - `[ContentType <String>]`: The nature of the data in the attachment.
+  \[ContentType \<String\>\]: The nature of the data in the attachment.
 Optional.
-  - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
+  \[IsInline \<Boolean?\>\]: true if the attachment is an inline attachment; otherwise, false.
 Optional.
-  - `[Name <String>]`: The display name of the attachment.
+  \[Name \<String\>\]: The display name of the attachment.
 This can be a descriptive string and doesn't have to be the actual file name.
 Required.
-  - `[Size <Int64?>]`: The length of the attachment in bytes.
+  \[Size \<Int64?\>\]: The length of the attachment in bytes.
 Required.
 
-BODYPARAMETER `<IPaths1C56La0UsersUserIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttachmentItem <IMicrosoftGraphAttachmentItem>]`: attachmentItem
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AttachmentType <String>]`: attachmentType
-    - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages.
+BODYPARAMETER \<IPaths1C56La0UsersUserIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AttachmentItem \<IMicrosoftGraphAttachmentItem\>\]: attachmentItem
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[AttachmentType \<String\>\]: attachmentType
+    \[ContentId \<String\>\]: The CID or Content-Id of the attachment for referencing in case of in-line attachments using \<img src='cid:contentId'\> tag in HTML messages.
 Optional.
-    - `[ContentType <String>]`: The nature of the data in the attachment.
+    \[ContentType \<String\>\]: The nature of the data in the attachment.
 Optional.
-    - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
+    \[IsInline \<Boolean?\>\]: true if the attachment is an inline attachment; otherwise, false.
 Optional.
-    - `[Name <String>]`: The display name of the attachment.
+    \[Name \<String\>\]: The display name of the attachment.
 This can be a descriptive string and doesn't have to be the actual file name.
 Required.
-    - `[Size <Int64?>]`: The length of the attachment in bytes.
+    \[Size \<Int64?\>\]: The length of the attachment in bytes.
 Required.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MailFolderOperationId <String>]`: The unique identifier of mailFolderOperation
-  - `[MentionId <String>]`: The unique identifier of mention
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IMailIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderOperationId \<String\>\]: The unique identifier of mailFolderOperation
+  \[MentionId \<String\>\]: The unique identifier of mention
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
+  \[UserConfigurationId \<String\>\]: The unique identifier of userConfiguration
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageattachmentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageattachmentuploadsession)
 
 [https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-beta](https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitemactivity
@@ -11,23 +11,20 @@ schema: 2.0.0
 Optional.
 NavigationProperty/Containment; navigation property to the associated activity.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserActivityHistoryItemActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivityHistoryItemActivity?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgUserActivityHistoryItemActivity -ActivityHistoryItemId <String> -UserActivityId <String> -UserId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgUserActivityHistoryItemActivity -InputObject <ICrossDeviceExperiencesIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,6 +32,16 @@ Optional.
 NavigationProperty/Containment; navigation property to the associated activity.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -96,6 +103,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -175,35 +197,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
-  - `[ActivityHistoryItemId <String>]`: The unique identifier of activityHistoryItem
-  - `[UserActivityId <String>]`: The unique identifier of userActivity
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
+  \[ActivityHistoryItemId \<String\>\]: The unique identifier of activityHistoryItem
+  \[UserActivityId \<String\>\]: The unique identifier of userActivity
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitemactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitemactivity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

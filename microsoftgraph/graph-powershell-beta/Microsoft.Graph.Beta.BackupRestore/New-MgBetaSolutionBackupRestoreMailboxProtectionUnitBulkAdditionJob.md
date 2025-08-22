@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoremailboxprotectionunitbulkadditionjob
@@ -18,7 +18,7 @@ New-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob [-ResponseHe
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DirectoryObjectIds <String[]>] [-DisplayName <String>] [-Error <IMicrosoftGraphPublicError>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Mailboxes <String[]>]
- [-Status <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -26,13 +26,23 @@ New-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob [-ResponseHe
 ```
 New-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob
  -BodyParameter <IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to mailboxProtectionUnitsBulkAdditionJobs for solutions
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -64,21 +74,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -236,6 +231,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -258,6 +268,21 @@ protectionUnitsBulkJobStatus
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -298,105 +323,82 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob>`: mailboxProtectionUnitsBulkAdditionJob
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+BODYPARAMETER \<IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob\>: mailboxProtectionUnitsBulkAdditionJob
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
-  - `[DisplayName <String>]`: The name of the protection units bulk addition job.
-  - `[Error <IMicrosoftGraphPublicError>]`: publicError
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <String>]`: Represents the error code.
-    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
-      - `[Code <String>]`: The error code.
-      - `[Message <String>]`: The error message.
-      - `[Target <String>]`: The target of the error.
-    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <String>]`: The error code.
-      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
-      - `[Message <String>]`: The error message.
-      - `[Target <String>]`: The target of the error.
-    - `[Message <String>]`: A non-localized message for the developer.
-    - `[Target <String>]`: The target of the error.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
-  - `[Status <String>]`: protectionUnitsBulkJobStatus
-  - `[Id <String>]`: The unique identifier for an entity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: The time of creation of the job.
+  \[DisplayName \<String\>\]: The name of the protection units bulk addition job.
+  \[Error \<IMicrosoftGraphPublicError\>\]: publicError
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: Represents the error code.
+    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
+      \[Code \<String\>\]: The error code.
+      \[Message \<String\>\]: The error message.
+      \[Target \<String\>\]: The target of the error.
+    \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Code \<String\>\]: The error code.
+      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
+      \[Message \<String\>\]: The error message.
+      \[Target \<String\>\]: The target of the error.
+    \[Message \<String\>\]: A non-localized message for the developer.
+    \[Target \<String\>\]: The target of the error.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification made to the job.
+  \[Status \<String\>\]: protectionUnitsBulkJobStatus
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DirectoryObjectIds <String- `[]`>]`: The list of Exchange directoryObjectIds to add to the Exchange protection policy.
-  - `[Mailboxes <String- `[]`>]`: The list of Exchange email addresses to add to the Exchange protection policy.
+  \[DirectoryObjectIds \<String\[\]\>\]: The list of Exchange directoryObjectIds to add to the Exchange protection policy.
+  \[Mailboxes \<String\[\]\>\]: The list of Exchange email addresses to add to the Exchange protection policy.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Code <String>]`: Represents the error code.
-  - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
-    - `[Code <String>]`: The error code.
-    - `[Message <String>]`: The error message.
-    - `[Target <String>]`: The target of the error.
-  - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <String>]`: The error code.
-    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
-    - `[Message <String>]`: The error message.
-    - `[Target <String>]`: The target of the error.
-  - `[Message <String>]`: A non-localized message for the developer.
-  - `[Target <String>]`: The target of the error.
+ERROR \<IMicrosoftGraphPublicError\>: publicError
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Code \<String\>\]: Represents the error code.
+  \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
+    \[Code \<String\>\]: The error code.
+    \[Message \<String\>\]: The error message.
+    \[Target \<String\>\]: The target of the error.
+  \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: The error code.
+    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
+    \[Message \<String\>\]: The error message.
+    \[Target \<String\>\]: The target of the error.
+  \[Message \<String\>\]: A non-localized message for the developer.
+  \[Target \<String\>\]: The target of the error.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoremailboxprotectionunitbulkadditionjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoremailboxprotectionunitbulkadditionjob)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

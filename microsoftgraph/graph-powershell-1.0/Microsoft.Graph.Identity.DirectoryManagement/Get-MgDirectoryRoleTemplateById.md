@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplatebyid
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryRoleTemplateById
@@ -13,15 +12,12 @@ Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleTemplateById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleTemplateById?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
 Get-MgDirectoryRoleTemplateById [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Ids <String[]>] [-Types <String[]>] [-Headers <IDictionary>] [-WhatIf]
+ [-Ids <String[]>] [-Types <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +25,7 @@ Get-MgDirectoryRoleTemplateById [-ResponseHeadersVariable <String>] [-Additional
 ```
 Get-MgDirectoryRoleTemplateById
  -BodyParameter <IPaths6Ovq2LDirectoryroletemplatesMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,6 +35,16 @@ Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -58,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -70,21 +76,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -104,12 +95,27 @@ Accept wildcard characters: False
 ```
 
 ### -Ids
-
+.
 
 ```yaml
 Type: String[]
 Parameter Sets: GetExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -134,12 +140,27 @@ Accept wildcard characters: False
 ```
 
 ### -Types
-
+.
 
 ```yaml
 Type: String[]
 Parameter Sets: GetExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -180,37 +201,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths6Ovq2LDirectoryroletemplatesMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String- `[]`>]`:
-  - `[Types <String- `[]`>]`:
+BODYPARAMETER \<IPaths6Ovq2LDirectoryroletemplatesMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Ids \<String\[\]\>\]: 
+  \[Types \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplatebyid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplatebyid)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

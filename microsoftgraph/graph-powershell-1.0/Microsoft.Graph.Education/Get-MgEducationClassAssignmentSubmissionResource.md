@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmissionresource
 schema: 2.0.0
-ms.subservice: education
-ms.subservice: education
 ---
 
 # Get-MgEducationClassAssignmentSubmissionResource
@@ -15,9 +13,6 @@ Only teachers, students, and applications with application permissions can perfo
 This resource is in the 'working' resource list and should be considered work in process by a student.
 This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -26,7 +21,7 @@ Get-MgEducationClassAssignmentSubmissionResource -EducationAssignmentId <String>
  -EducationSubmissionId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
@@ -34,14 +29,14 @@ Get-MgEducationClassAssignmentSubmissionResource -EducationAssignmentId <String>
 Get-MgEducationClassAssignmentSubmissionResource -EducationAssignmentId <String> -EducationClassId <String>
  -EducationSubmissionId <String> -EducationSubmissionResourceId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgEducationClassAssignmentSubmissionResource -InputObject <IEducationIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,81 +45,49 @@ Only teachers, students, and applications with application permissions can perfo
 This resource is in the 'working' resource list and should be considered work in process by a student.
 This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite, EduAssignments.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All, EduAssignments.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get an educationWordResource
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
+### EXAMPLE 2
 ```
-This example will get an educationwordresource
-
-### Example 2: Get an educationFileResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
+### EXAMPLE 3
 ```
-This example will get an educationfileresource
-
-### Example 3: Get an educationExcelResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
+### EXAMPLE 4
 ```
-This example will get an educationexcelresource
-
-### Example 4: Get an educationPowerPointResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
+### EXAMPLE 5
 ```
-This example will get an educationpowerpointresource
-
-### Example 5: Get an educationLinkResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
+### EXAMPLE 6
 ```
-This example will get an educationlinkresource
-
-### Example 6: Get an educationMediaResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
-
-```
-This example will get an educationmediaresource
-
 
 ## PARAMETERS
 
@@ -295,6 +258,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -340,21 +318,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -385,6 +348,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -401,20 +379,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
-  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
-  - `[EducationClassId <String>]`: The unique identifier of educationClass
-  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
-  - `[EducationModuleId <String>]`: The unique identifier of educationModule
-  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
-  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
-  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
-  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
-  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationUserId <String>]`: The unique identifier of educationUser
+INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
+  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
+  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
+  \[EducationClassId \<String\>\]: The unique identifier of educationClass
+  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
+  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
+  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
+  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
+  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
+  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
+  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
+  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationUserId \<String\>\]: The unique identifier of educationUser
+  \[ReadingAssignmentSubmissionId \<String\>\]: The unique identifier of readingAssignmentSubmission
+  \[ReflectCheckInResponseId \<String\>\]: The unique identifier of reflectCheckInResponse
 
 ## RELATED LINKS
 
@@ -423,26 +403,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/educationsubmissionresource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmissionresource-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/educationsubmission-list-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-list-resources?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

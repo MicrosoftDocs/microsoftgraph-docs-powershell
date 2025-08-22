@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccesspolicy
 schema: 2.0.0
-ms.subservice: entra-sign-in
-ms.subservice: entra-sign-in
 ---
 
 # Get-MgIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a conditionalAccessPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -22,40 +17,33 @@ Retrieve the properties and relationships of a conditionalAccessPolicy object.
 Get-MgIdentityConditionalAccessPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a conditionalAccessPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get a list of all conditional access policies in Azure AD.
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgGraph -Scopes 'Policy.Read.All'
 Get-MgIdentityConditionalAccessPolicy |Format-List
+```
 
 Conditions           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessConditionSet
 CreatedDateTime      : 1/13/2022 6:35:35 AM
@@ -78,16 +66,13 @@ ModifiedDateTime     : 7/29/2022 9:08:39 AM
 SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessSessionControls
 State                : enabled
 AdditionalProperties : {}
+
+### EXAMPLE 2
+```
+Connect-MgGraph -Scopes 'Policy.Read.All'
 ```
 
-This example retrieves all the conditional access policies in Azure AD.
-
-### Example 2: Get a conditional access policy by Id
-
-```powershell
-Connect-MgGraph -Scopes 'Policy.Read.All'
-
-Get-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '5e7615b8-dbe4-4cc1-810c-26adb77a3518' |
+Get-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '5e7615b8-dbe4-4cc1-810c-26adb77a3518' | 
   Format-List
 
 Conditions           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessConditionSet
@@ -99,10 +84,7 @@ Id                   : 5e7615b8-dbe4-4cc1-810c-26adb77a3518
 ModifiedDateTime     : 7/29/2022 9:08:10 AM
 SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessSessionControls
 State                : enabled
-AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity]}
-```
-
-This command retrieves the conditional access by Id.
+AdditionalProperties : {\[@odata.context, https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity\]}
 
 ## PARAMETERS
 
@@ -228,6 +210,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -273,21 +270,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -318,6 +300,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -334,66 +331,67 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
-  - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
-  - `[AuthenticationConditionApplicationAppId <String>]`: The unique identifier of authenticationConditionApplication
-  - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
-  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
-  - `[AuthenticationEventsFlowId <String>]`: The unique identifier of authenticationEventsFlow
-  - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
-  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
-  - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
-  - `[AuthenticationStrengthPolicyId <String>]`: The unique identifier of authenticationStrengthPolicy
-  - `[B2XIdentityUserFlowId <String>]`: The unique identifier of b2xIdentityUserFlow
-  - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
-  - `[CertificateBasedAuthConfigurationId <String>]`: The unique identifier of certificateBasedAuthConfiguration
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
-  - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
-  - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
-  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
-  - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
-  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
-  - `[Fido2AuthenticationMethodId <String>]`: The unique identifier of fido2AuthenticationMethod
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[IdentityApiConnectorId <String>]`: The unique identifier of identityApiConnector
-  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[IdentityProviderId <String>]`: The unique identifier of identityProvider
-  - `[IdentityUserFlowAttributeAssignmentId <String>]`: The unique identifier of identityUserFlowAttributeAssignment
-  - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
-  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
-  - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
-  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
-  - `[NamedLocationId <String>]`: The unique identifier of namedLocation
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OrganizationId <String>]`: The unique identifier of organization
-  - `[PasswordAuthenticationMethodId <String>]`: The unique identifier of passwordAuthenticationMethod
-  - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
-  - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
-  - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
-  - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal
-  - `[RiskyUserHistoryItemId <String>]`: The unique identifier of riskyUserHistoryItem
-  - `[RiskyUserId <String>]`: The unique identifier of riskyUser
-  - `[ServicePrincipalRiskDetectionId <String>]`: The unique identifier of servicePrincipalRiskDetection
-  - `[SoftwareOathAuthenticationMethodId <String>]`: The unique identifier of softwareOathAuthenticationMethod
-  - `[TemporaryAccessPassAuthenticationMethodId <String>]`: The unique identifier of temporaryAccessPassAuthenticationMethod
-  - `[ThreatAssessmentRequestId <String>]`: The unique identifier of threatAssessmentRequest
-  - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
-  - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
-  - `[UnifiedRoleManagementPolicyRuleId <String>]`: The unique identifier of unifiedRoleManagementPolicyRule
-  - `[UserFlowLanguageConfigurationId <String>]`: The unique identifier of userFlowLanguageConfiguration
-  - `[UserFlowLanguagePageId <String>]`: The unique identifier of userFlowLanguagePage
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
+INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
+  \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
+  \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
+  \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
+  \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
+  \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
+  \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow
+  \[AuthenticationMethodConfigurationId \<String\>\]: The unique identifier of authenticationMethodConfiguration
+  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
+  \[AuthenticationMethodModeDetailId \<String\>\]: The unique identifier of authenticationMethodModeDetail
+  \[AuthenticationStrengthPolicyId \<String\>\]: The unique identifier of authenticationStrengthPolicy
+  \[B2XIdentityUserFlowId \<String\>\]: The unique identifier of b2xIdentityUserFlow
+  \[BitlockerRecoveryKeyId \<String\>\]: The unique identifier of bitlockerRecoveryKey
+  \[CertificateBasedAuthConfigurationId \<String\>\]: The unique identifier of certificateBasedAuthConfiguration
+  \[ClaimsMappingPolicyId \<String\>\]: The unique identifier of claimsMappingPolicy
+  \[ConditionalAccessPolicyId \<String\>\]: The unique identifier of conditionalAccessPolicy
+  \[ConditionalAccessTemplateId \<String\>\]: The unique identifier of conditionalAccessTemplate
+  \[CrossTenantAccessPolicyConfigurationPartnerTenantId \<String\>\]: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  \[CustomAuthenticationExtensionId \<String\>\]: The unique identifier of customAuthenticationExtension
+  \[DataPolicyOperationId \<String\>\]: The unique identifier of dataPolicyOperation
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[EmailAuthenticationMethodId \<String\>\]: The unique identifier of emailAuthenticationMethod
+  \[FeatureRolloutPolicyId \<String\>\]: The unique identifier of featureRolloutPolicy
+  \[Fido2AuthenticationMethodId \<String\>\]: The unique identifier of fido2AuthenticationMethod
+  \[HomeRealmDiscoveryPolicyId \<String\>\]: The unique identifier of homeRealmDiscoveryPolicy
+  \[IdentityApiConnectorId \<String\>\]: The unique identifier of identityApiConnector
+  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
+  \[IdentityProviderId \<String\>\]: The unique identifier of identityProvider
+  \[IdentityUserFlowAttributeAssignmentId \<String\>\]: The unique identifier of identityUserFlowAttributeAssignment
+  \[IdentityUserFlowAttributeId \<String\>\]: The unique identifier of identityUserFlowAttribute
+  \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[MicrosoftAuthenticatorAuthenticationMethodId \<String\>\]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  \[MultiTenantOrganizationMemberId \<String\>\]: The unique identifier of multiTenantOrganizationMember
+  \[NamedLocationId \<String\>\]: The unique identifier of namedLocation
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OrganizationId \<String\>\]: The unique identifier of organization
+  \[PasswordAuthenticationMethodId \<String\>\]: The unique identifier of passwordAuthenticationMethod
+  \[PermissionGrantConditionSetId \<String\>\]: The unique identifier of permissionGrantConditionSet
+  \[PermissionGrantPolicyId \<String\>\]: The unique identifier of permissionGrantPolicy
+  \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
+  \[PlatformCredentialAuthenticationMethodId \<String\>\]: The unique identifier of platformCredentialAuthenticationMethod
+  \[RiskDetectionId \<String\>\]: The unique identifier of riskDetection
+  \[RiskyServicePrincipalHistoryItemId \<String\>\]: The unique identifier of riskyServicePrincipalHistoryItem
+  \[RiskyServicePrincipalId \<String\>\]: The unique identifier of riskyServicePrincipal
+  \[RiskyUserHistoryItemId \<String\>\]: The unique identifier of riskyUserHistoryItem
+  \[RiskyUserId \<String\>\]: The unique identifier of riskyUser
+  \[ServicePrincipalRiskDetectionId \<String\>\]: The unique identifier of servicePrincipalRiskDetection
+  \[SoftwareOathAuthenticationMethodId \<String\>\]: The unique identifier of softwareOathAuthenticationMethod
+  \[TemporaryAccessPassAuthenticationMethodId \<String\>\]: The unique identifier of temporaryAccessPassAuthenticationMethod
+  \[ThreatAssessmentRequestId \<String\>\]: The unique identifier of threatAssessmentRequest
+  \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
+  \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
+  \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
+  \[UnifiedRoleManagementPolicyAssignmentId \<String\>\]: The unique identifier of unifiedRoleManagementPolicyAssignment
+  \[UnifiedRoleManagementPolicyId \<String\>\]: The unique identifier of unifiedRoleManagementPolicy
+  \[UnifiedRoleManagementPolicyRuleId \<String\>\]: The unique identifier of unifiedRoleManagementPolicyRule
+  \[UserFlowLanguageConfigurationId \<String\>\]: The unique identifier of userFlowLanguageConfiguration
+  \[UserFlowLanguagePageId \<String\>\]: The unique identifier of userFlowLanguagePage
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
 
@@ -402,26 +400,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/conditionalaccesspolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/conditionalaccessroot-list-policies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-policies?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

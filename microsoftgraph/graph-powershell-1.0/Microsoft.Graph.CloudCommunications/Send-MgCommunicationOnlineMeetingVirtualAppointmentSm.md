@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationonlinemeetingvirtualappointmentsm
 schema: 2.0.0
-ms.subservice: cloud-communications
 ---
 
 # Send-MgCommunicationOnlineMeetingVirtualAppointmentSm
@@ -13,9 +12,6 @@ Send an SMS notification to external attendees when a Teams virtual appointment 
 This feature requires Teams premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### SendExpanded (Default)
@@ -23,14 +19,14 @@ Attendees must have a valid United States phone number to receive these SMS noti
 Send-MgCommunicationOnlineMeetingVirtualAppointmentSm -OnlineMeetingId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Attendees <IMicrosoftGraphAttendeeNotificationInfo[]>] [-MessageType <String>] [-Headers <IDictionary>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgCommunicationOnlineMeetingVirtualAppointmentSm -OnlineMeetingId <String>
  -BodyParameter <IPaths17Lqpb4CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,14 +35,14 @@ Send-MgCommunicationOnlineMeetingVirtualAppointmentSm -OnlineMeetingId <String>
 Send-MgCommunicationOnlineMeetingVirtualAppointmentSm -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Attendees <IMicrosoftGraphAttendeeNotificationInfo[]>] [-MessageType <String>] [-Headers <IDictionary>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
 Send-MgCommunicationOnlineMeetingVirtualAppointmentSm -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths17Lqpb4CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -56,6 +52,16 @@ This feature requires Teams premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -75,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Attendees
-
+.
 To construct, see NOTES section for ATTENDEES properties and create a hash table.
 
 ```yaml
@@ -91,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -103,21 +109,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -197,6 +188,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -204,6 +210,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -245,65 +266,42 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTENDEES `<IMicrosoftGraphAttendeeNotificationInfo- `[]`>`: .
-  - `[PhoneNumber <String>]`: The phone number of the external attendee.
+ATTENDEES \<IMicrosoftGraphAttendeeNotificationInfo\[\]\>: .
+  \[PhoneNumber \<String\>\]: The phone number of the external attendee.
 Required.
-  - `[TimeZone <String>]`: The time zone of the external attendee.
+  \[TimeZone \<String\>\]: The time zone of the external attendee.
 The timeZone property can be set to any of the time zones currently supported by Windows.
 Required.
 
-BODYPARAMETER `<IPaths17Lqpb4CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Attendees <IMicrosoftGraphAttendeeNotificationInfo- `[]`>]`:
-    - `[PhoneNumber <String>]`: The phone number of the external attendee.
+BODYPARAMETER \<IPaths17Lqpb4CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Attendees \<IMicrosoftGraphAttendeeNotificationInfo\[\]\>\]: 
+    \[PhoneNumber \<String\>\]: The phone number of the external attendee.
 Required.
-    - `[TimeZone <String>]`: The time zone of the external attendee.
+    \[TimeZone \<String\>\]: The time zone of the external attendee.
 The timeZone property can be set to any of the time zones currently supported by Windows.
 Required.
-  - `[MessageType <String>]`: virtualAppointmentMessageType
+  \[MessageType \<String\>\]: virtualAppointmentMessageType
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
-  - `[CallId <String>]`: The unique identifier of call
-  - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallRecordingId <String>]`: The unique identifier of callRecording
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
-  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
-  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[ParticipantId <String>]`: The unique identifier of participant
-  - `[PresenceId <String>]`: The unique identifier of presence
-  - `[SessionId <String>]`: The unique identifier of session
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
+  \[CallId \<String\>\]: The unique identifier of call
+  \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
+  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
+  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
+  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[ParticipantId \<String\>\]: The unique identifier of participant
+  \[PresenceId \<String\>\]: The unique identifier of presence
+  \[SessionId \<String\>\]: The unique identifier of session
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationonlinemeetingvirtualappointmentsm](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationonlinemeetingvirtualappointmentsm)
 
 [https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

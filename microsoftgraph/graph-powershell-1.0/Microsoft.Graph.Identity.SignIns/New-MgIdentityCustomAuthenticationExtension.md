@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # New-MgIdentityCustomAuthenticationExtension
@@ -12,44 +11,34 @@ ms.subservice: entra-sign-in
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityCustomAuthenticationExtension?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgIdentityCustomAuthenticationExtension [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
+ [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>] [-BehaviorOnError <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-Description <String>]
  [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgIdentityCustomAuthenticationExtension -BodyParameter <IMicrosoftGraphCustomAuthenticationExtension>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CustomAuthenticationExtension.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CustomAuthenticationExtension.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartCustomExtension"
@@ -79,9 +68,83 @@ $params = @{
 
 New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgIdentityCustomAuthenticationExtension Cmdlet.
+Import-Module Microsoft.Graph.Identity.SignIns
+```
 
+$params = @{
+	"@odata.type" = "#microsoft.graph.onAttributeCollectionStartCustomExtension"
+	displayName = "attributeCollectionStartName"
+	description = "example description"
+	authenticationConfiguration = @{
+		"@odata.type" = "#microsoft.graph.azureAdTokenAuthentication"
+		resourceId = "api://contoso.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
+	}
+	endpointConfiguration = @{
+		"@odata.type" = "#microsoft.graph.httpRequestEndpoint"
+		targetUrl = "https://contoso.com"
+	}
+	clientConfiguration = @{
+		timeoutInMilliseconds = 2000
+		maximumRetries = 1
+	}
+}
+
+New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
+
+### EXAMPLE 3
+```
+Import-Module Microsoft.Graph.Identity.SignIns
+```
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onAttributeCollectionSubmitCustomExtension"
+	displayName = "attributeCollectionSubmitName"
+	description = "example description"
+	authenticationConfiguration = @{
+		"@odata.type" = "#microsoft.graph.azureAdTokenAuthentication"
+		resourceId = "api://contoso.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
+	}
+	endpointConfiguration = @{
+		"@odata.type" = "#microsoft.graph.httpRequestEndpoint"
+		targetUrl = "https://contoso.com"
+	}
+	clientConfiguration = @{
+		timeoutInMilliseconds = 2000
+		maximumRetries = 1
+	}
+}
+
+New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
+
+### EXAMPLE 4
+```
+Import-Module Microsoft.Graph.Identity.SignIns
+```
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onOtpSendCustomExtension"
+	authenticationConfiguration = @{
+		"@odata.type" = "#microsoft.graph.azureAdTokenAuthentication"
+		resourceId = "api://onotpsendcustomextension.b2c.expert/fb96de85-2abe-4b02-b45f-64ba122c509e"
+	}
+	clientConfiguration = @{
+		timeoutInMilliseconds = 2000
+		maximumRetries = 1
+	}
+	description = "Use an external Email provider to send OTP Codes."
+	displayName = "onEmailOtpSendCustomExtension"
+	endpointConfiguration = @{
+		"@odata.type" = "#microsoft.graph.httpRequestEndpoint"
+		targetUrl = "https://onotpsendcustomextension.b2c.expert/api/OnOTPCodeSendToTeamsDemo"
+	}
+	behaviorOnError = @{
+		"@odata.type" = "microsoft.graph.customExtensionBehaviorOnError"
+	}
+}
+
+New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
 
 ## PARAMETERS
 
@@ -115,11 +178,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-customAuthenticationExtension
+### -BehaviorOnError
+customExtensionBehaviorOnError
 
 ```yaml
 Type: Hashtable
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+customAuthenticationExtension
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomAuthenticationExtension
 Parameter Sets: Create
 Aliases:
 
@@ -138,21 +217,6 @@ To construct, see NOTES section for CLIENTCONFIGURATION properties and create a 
 Type: IMicrosoftGraphCustomExtensionClientConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -237,6 +301,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -244,6 +323,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -273,7 +367,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### System.Collections.Hashtable
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomAuthenticationExtension
 ### System.Collections.IDictionary
 ## OUTPUTS
 
@@ -284,12 +378,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-CLIENTCONFIGURATION `<IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MaximumRetries <Int32?>]`: The max number of retries that Microsoft Entra ID makes to the external API.
+BODYPARAMETER \<IMicrosoftGraphCustomAuthenticationExtension\>: customAuthenticationExtension
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AuthenticationConfiguration \<IMicrosoftGraphCustomExtensionAuthenticationConfiguration\>\]: customExtensionAuthenticationConfiguration
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ClientConfiguration \<IMicrosoftGraphCustomExtensionClientConfiguration\>\]: customExtensionClientConfiguration
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[MaximumRetries \<Int32?\>\]: The max number of retries that Microsoft Entra ID makes to the external API.
 Values of 0 or 1 are supported.
 If null, the default for the service applies.
-  - `[TimeoutInMilliseconds <Int32?>]`: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
+    \[TimeoutInMilliseconds \<Int32?\>\]: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
+The valid range is between 200 and 2000 milliseconds.
+Default duration is 1000.
+  \[Description \<String\>\]: Description for the customCalloutExtension object.
+  \[DisplayName \<String\>\]: Display name for the customCalloutExtension object.
+  \[EndpointConfiguration \<IMicrosoftGraphCustomExtensionEndpointConfiguration\>\]: customExtensionEndpointConfiguration
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[BehaviorOnError \<IMicrosoftGraphCustomExtensionBehaviorOnError\>\]: customExtensionBehaviorOnError
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+
+CLIENTCONFIGURATION \<IMicrosoftGraphCustomExtensionClientConfiguration\>: customExtensionClientConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[MaximumRetries \<Int32?\>\]: The max number of retries that Microsoft Entra ID makes to the external API.
+Values of 0 or 1 are supported.
+If null, the default for the service applies.
+  \[TimeoutInMilliseconds \<Int32?\>\]: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
 The valid range is between 200 and 2000 milliseconds.
 Default duration is 1000.
 
@@ -298,26 +413,4 @@ Default duration is 1000.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

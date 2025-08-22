@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmember
 schema: 2.0.0
-ms.subservice: entra-groups
 ---
 
 # Get-MgGroupMember
@@ -13,16 +12,13 @@ Get a list of the group's direct members.
 A group can have users, organizational contacts, devices, service principals and other groups as members.
 This operation is not transitive.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupMember](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMember?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
 Get-MgGroupMember -GroupId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,19 +26,12 @@ Get a list of the group's direct members.
 A group can have users, organizational contacts, devices, service principals and other groups as members.
 This operation is not transitive.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupMember.ReadWrite.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | GroupMember.ReadWrite.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get members of a group
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgGroupMember -GroupId '7b7be3ab-d2b3-441c-8111-2e89b8493fff'
+```
 
 Id                                   DeletedDateTime
 --                                   ---------------
@@ -50,9 +39,6 @@ Id                                   DeletedDateTime
 0107d1b2-0402-4ef9-a58c-eb0661c5d596
 f9f1bd4f-16ca-4404-925e-5b08b6a3832f
 5441e919-583c-4292-aa3f-98250d8d217b
-```
-
-This examples gets the members of the specified group.
 
 ## PARAMETERS
 
@@ -178,6 +164,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -223,21 +224,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -268,6 +254,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -284,26 +285,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmember)
 
 [https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointorganizationsetting
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
@@ -17,33 +16,21 @@ A tenant has only one cloudPcOrganizationSettings object.
 ```
 Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Read the properties and relationships of the cloudPcOrganizationSettings from the current tenant.
 A tenant has only one cloudPcOrganizationSettings object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All, CloudPC.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All, CloudPC.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+```
 
 Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
-
-```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -74,6 +61,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -123,26 +125,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointorganizationsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointorganizationsetting)
 
 [https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

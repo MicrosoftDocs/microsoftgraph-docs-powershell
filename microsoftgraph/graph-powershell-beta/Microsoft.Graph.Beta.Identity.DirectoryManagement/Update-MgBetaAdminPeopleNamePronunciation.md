@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplenamepronunciation
 schema: 2.0.0
-ms.subservice: people
 ---
 
 # Update-MgBetaAdminPeopleNamePronunciation
@@ -17,28 +16,32 @@ Update the properties of a namePronunciationSettings object.
 ```
 Update-MgBetaAdminPeopleNamePronunciation [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsEnabledInOrganization] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaAdminPeopleNamePronunciation -BodyParameter <IMicrosoftGraphNamePronunciationSettings>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a namePronunciationSettings object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PeopleSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PeopleSettings.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.namePronunciationSettings"
+	isEnabledInOrganization = $true
+}
+
+Update-MgBetaAdminPeopleNamePronunciation -BodyParameter $params
 
 ## PARAMETERS
 
@@ -70,21 +73,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -135,6 +123,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -142,6 +145,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -182,11 +200,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNamePronunciationSettings>`: namePronunciationSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphNamePronunciationSettings\>: namePronunciationSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsEnabledInOrganization <Boolean?>]`: true to enable name pronunciation in the organization; otherwise, false.
+  \[IsEnabledInOrganization \<Boolean?\>\]: true to enable name pronunciation in the organization; otherwise, false.
 The default value is false.
 
 ## RELATED LINKS
@@ -194,27 +212,4 @@ The default value is false.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplenamepronunciation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplenamepronunciation)
 
 [https://learn.microsoft.com/graph/api/namepronunciationsettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/namepronunciationsettings-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

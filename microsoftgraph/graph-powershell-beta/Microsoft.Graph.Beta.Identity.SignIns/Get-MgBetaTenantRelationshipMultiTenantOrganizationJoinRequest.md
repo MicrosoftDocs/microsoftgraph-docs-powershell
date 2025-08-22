@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganizationjoinrequest
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest
@@ -11,40 +10,25 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Get the status of a tenant joining a multi-tenant organization.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipMultiTenantOrganizationJoinRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTenantRelationshipMultiTenantOrganizationJoinRequest?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
 Get-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the status of a tenant joining a multi-tenant organization.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest
-
-```
-This example shows how to use the Get-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest Cmdlet.
-
 
 ## PARAMETERS
 
@@ -75,6 +59,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -124,26 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganizationjoinrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganizationjoinrequest)
 
 [https://learn.microsoft.com/graph/api/multitenantorganizationjoinrequestrecord-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/multitenantorganizationjoinrequestrecord-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

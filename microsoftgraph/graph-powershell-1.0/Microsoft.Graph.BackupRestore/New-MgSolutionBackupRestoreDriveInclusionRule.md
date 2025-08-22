@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoredriveinclusionrule
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to driveInclusionRules for solutions
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestoreDriveInclusionRule](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestoreDriveInclusionRule?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,13 +18,13 @@ New-MgSolutionBackupRestoreDriveInclusionRule [-ResponseHeadersVariable <String>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DriveExpression <String>] [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-IsAutoApplyEnabled]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Status <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSolutionBackupRestoreDriveInclusionRule -BodyParameter <IMicrosoftGraphDriveProtectionRule>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,6 +32,16 @@ New-MgSolutionBackupRestoreDriveInclusionRule -BodyParameter <IMicrosoftGraphDri
 Create new navigation property to driveInclusionRules for solutions
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -66,21 +73,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -179,8 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsAutoApplyEnabled
-true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
+.
 
 ```yaml
 Type: SwitchParameter
@@ -225,6 +216,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -247,6 +253,21 @@ protectionRuleStatus
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -287,106 +308,82 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDriveProtectionRule>`: driveProtectionRule
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+BODYPARAMETER \<IMicrosoftGraphDriveProtectionRule\>: driveProtectionRule
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
+      \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The time of creation of the rule.
-  - `[Error <IMicrosoftGraphPublicError>]`: publicError
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <String>]`: Represents the error code.
-    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
-      - `[Code <String>]`: The error code.
-      - `[Message <String>]`: The error message.
-      - `[Target <String>]`: The target of the error.
-    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <String>]`: The error code.
-      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
-      - `[Message <String>]`: The error message.
-      - `[Target <String>]`: The target of the error.
-    - `[Message <String>]`: A non-localized message for the developer.
-    - `[Target <String>]`: The target of the error.
-  - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
-Currently, only static rules are supported.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
-  - `[Status <String>]`: protectionRuleStatus
-  - `[Id <String>]`: The unique identifier for an entity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: The time of creation of the rule.
+  \[Error \<IMicrosoftGraphPublicError\>\]: publicError
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: Represents the error code.
+    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
+      \[Code \<String\>\]: The error code.
+      \[Message \<String\>\]: The error message.
+      \[Target \<String\>\]: The target of the error.
+    \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Code \<String\>\]: The error code.
+      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
+      \[Message \<String\>\]: The error message.
+      \[Target \<String\>\]: The target of the error.
+    \[Message \<String\>\]: A non-localized message for the developer.
+    \[Target \<String\>\]: The target of the error.
+  \[IsAutoApplyEnabled \<Boolean?\>\]: 
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification made to the rule.
+  \[Status \<String\>\]: protectionRuleStatus
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DriveExpression <String>]`: Contains a drive expression.
+  \[DriveExpression \<String\>\]: Contains a drive expression.
 For examples, see driveExpression examples.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
+    \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Code <String>]`: Represents the error code.
-  - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
-    - `[Code <String>]`: The error code.
-    - `[Message <String>]`: The error message.
-    - `[Target <String>]`: The target of the error.
-  - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <String>]`: The error code.
-    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
-    - `[Message <String>]`: The error message.
-    - `[Target <String>]`: The target of the error.
-  - `[Message <String>]`: A non-localized message for the developer.
-  - `[Target <String>]`: The target of the error.
+ERROR \<IMicrosoftGraphPublicError\>: publicError
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Code \<String\>\]: Represents the error code.
+  \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
+    \[Code \<String\>\]: The error code.
+    \[Message \<String\>\]: The error message.
+    \[Target \<String\>\]: The target of the error.
+  \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: The error code.
+    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
+    \[Message \<String\>\]: The error message.
+    \[Target \<String\>\]: The target of the error.
+  \[Message \<String\>\]: A non-localized message for the developer.
+  \[Target \<String\>\]: The target of the error.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
+    \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoredriveinclusionrule](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoredriveinclusionrule)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

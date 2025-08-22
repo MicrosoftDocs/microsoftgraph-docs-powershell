@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-Module Guid: ef9e342b-95c7-49a5-9686-1b64eb9ec364
+Module Guid: 97e5be3b-ac4c-4be3-94b1-bfbdac9441a4
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devicemanagement.administration/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -830,23 +830,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaDeviceManagementVirtualEndpointUserSetting](Update-MgBetaDeviceManagementVirtualEndpointUserSetting.md)
 
 ### [Update-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment](Update-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

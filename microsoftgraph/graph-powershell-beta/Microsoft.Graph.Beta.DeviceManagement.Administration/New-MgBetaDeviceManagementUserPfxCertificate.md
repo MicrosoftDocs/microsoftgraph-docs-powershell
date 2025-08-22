@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementuserpfxcertificate
@@ -20,28 +20,30 @@ New-MgBetaDeviceManagementUserPfxCertificate [-ResponseHeadersVariable <String>]
  [-IntendedPurpose <UserPfxIntendedPurpose>] [-KeyName <String>] [-LastModifiedDateTime <DateTime>]
  [-PaddingScheme <UserPfxPaddingScheme>] [-ProviderName <String>] [-StartDateTime <DateTime>]
  [-Thumbprint <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserPfxCertificate -BodyParameter <IMicrosoftGraphUserPfxCertificate>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userPfxCertificates for deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -73,21 +75,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -242,6 +229,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProviderName
 Crypto provider used to encrypt this blob.
 
@@ -317,6 +319,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -349,47 +366,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserPfxCertificate>`: Entity that encapsulates all information required for a user's PFX certificates.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserPfxCertificate\>: Entity that encapsulates all information required for a user's PFX certificates.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: Date/time when this PFX certificate was imported.
-  - `[EncryptedPfxBlob <Byte- `[]`>]`: Encrypted PFX blob.
-  - `[EncryptedPfxPassword <String>]`: Encrypted PFX password.
-  - `[ExpirationDateTime <DateTime?>]`: Certificate's validity expiration date/time.
-  - `[IntendedPurpose <UserPfxIntendedPurpose?>]`: Supported values for the intended purpose of a user PFX certificate.
-  - `[KeyName <String>]`: Name of the key (within the provider) used to encrypt the blob.
-  - `[LastModifiedDateTime <DateTime?>]`: Date/time when this PFX certificate was last modified.
-  - `[PaddingScheme <UserPfxPaddingScheme?>]`: Supported values for the padding scheme used by encryption provider.
-  - `[ProviderName <String>]`: Crypto provider used to encrypt this blob.
-  - `[StartDateTime <DateTime?>]`: Certificate's validity start date/time.
-  - `[Thumbprint <String>]`: SHA-1 thumbprint of the PFX certificate.
-  - `[UserPrincipalName <String>]`: User Principal Name of the PFX certificate.
+  \[CreatedDateTime \<DateTime?\>\]: Date/time when this PFX certificate was imported.
+  \[EncryptedPfxBlob \<Byte\[\]\>\]: Encrypted PFX blob.
+  \[EncryptedPfxPassword \<String\>\]: Encrypted PFX password.
+  \[ExpirationDateTime \<DateTime?\>\]: Certificate's validity expiration date/time.
+  \[IntendedPurpose \<UserPfxIntendedPurpose?\>\]: Supported values for the intended purpose of a user PFX certificate.
+  \[KeyName \<String\>\]: Name of the key (within the provider) used to encrypt the blob.
+  \[LastModifiedDateTime \<DateTime?\>\]: Date/time when this PFX certificate was last modified.
+  \[PaddingScheme \<UserPfxPaddingScheme?\>\]: Supported values for the padding scheme used by encryption provider.
+  \[ProviderName \<String\>\]: Crypto provider used to encrypt this blob.
+  \[StartDateTime \<DateTime?\>\]: Certificate's validity start date/time.
+  \[Thumbprint \<String\>\]: SHA-1 thumbprint of the PFX certificate.
+  \[UserPrincipalName \<String\>\]: User Principal Name of the PFX certificate.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementuserpfxcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementuserpfxcertificate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription
 schema: 2.0.0
-ms.subservice: change-notifications
 ---
 
 # Remove-MgSubscription
@@ -12,22 +11,19 @@ ms.subservice: change-notifications
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Remove-MgBetaSubscription?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
 Remove-MgSubscription -SubscriptionId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgSubscription -InputObject <IChangeNotificationsIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,34 +32,15 @@ Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.ChangeNotifications
+```
 
 Remove-MgSubscription -SubscriptionId $subscriptionId
 
-```
-This example shows how to use the Remove-MgSubscription Cmdlet.
-
-
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -126,6 +103,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -150,6 +142,21 @@ Parameter Sets: Delete
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -188,34 +195,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
+INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription)
 
 [https://learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

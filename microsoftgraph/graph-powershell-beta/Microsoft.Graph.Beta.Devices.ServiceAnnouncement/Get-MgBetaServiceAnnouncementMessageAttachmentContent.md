@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachmentcontent
 schema: 2.0.0
-ms.subservice: service-communications
 ---
 
 # Get-MgBetaServiceAnnouncementMessageAttachmentContent
@@ -11,40 +10,33 @@ ms.subservice: service-communications
 ## SYNOPSIS
 Read the properties and relationships of a serviceAnnouncementAttachment object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementMessageAttachmentContent](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentContent?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgBetaServiceAnnouncementMessageAttachmentContent -ServiceAnnouncementAttachmentId <String>
  -ServiceUpdateMessageId <String> -OutFile <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServiceAnnouncementIdentity>
  -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Read the properties and relationships of a serviceAnnouncementAttachment object.
 
 ## EXAMPLES
-### Example 1: Return a file stream of an attachment content for a message
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+```
 
 Get-MgBetaServiceAnnouncementMessageAttachmentContent -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
-
-```
-This example will return a file stream of an attachment content for a message
-
 
 ## PARAMETERS
 
@@ -105,6 +97,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -170,37 +177,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
-  - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
-  - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
-  - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
-  - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
+INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
+  \[ServiceAnnouncementAttachmentId \<String\>\]: The unique identifier of serviceAnnouncementAttachment
+  \[ServiceHealthId \<String\>\]: The unique identifier of serviceHealth
+  \[ServiceHealthIssueId \<String\>\]: The unique identifier of serviceHealthIssue
+  \[ServiceUpdateMessageId \<String\>\]: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachmentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachmentcontent)
 
 [https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

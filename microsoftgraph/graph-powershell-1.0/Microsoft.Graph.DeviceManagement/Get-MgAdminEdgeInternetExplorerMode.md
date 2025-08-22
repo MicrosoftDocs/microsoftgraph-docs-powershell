@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedgeinternetexplorermode
@@ -10,14 +10,11 @@ schema: 2.0.0
 ## SYNOPSIS
 A container for Internet Explorer mode resources.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAdminEdgeInternetExplorerMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerMode?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
 Get-MgAdminEdgeInternetExplorerMode [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -25,6 +22,16 @@ Get-MgAdminEdgeInternetExplorerMode [-ExpandProperty <String[]>] [-Property <Str
 A container for Internet Explorer mode resources.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -55,6 +62,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -102,27 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedgeinternetexplorermode](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedgeinternetexplorermode)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

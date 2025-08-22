@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetamarkusermessageasnotjunk
 schema: 2.0.0
-ms.subservice: outlook
 ---
 
 # Invoke-MgBetaMarkUserMessageAsNotJunk
@@ -18,14 +17,14 @@ This API removes the sender from the list of blocked senders and moves the messa
 ```
 Invoke-MgBetaMarkUserMessageAsNotJunk -MessageId <String> -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-MoveToInbox] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Mark
 ```
 Invoke-MgBetaMarkUserMessageAsNotJunk -MessageId <String> -UserId <String>
  -BodyParameter <IPathsRi779ZUsersUserIdMessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,14 +32,14 @@ Invoke-MgBetaMarkUserMessageAsNotJunk -MessageId <String> -UserId <String>
 ```
 Invoke-MgBetaMarkUserMessageAsNotJunk -InputObject <IMailIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-MoveToInbox] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MarkViaIdentity
 ```
 Invoke-MgBetaMarkUserMessageAsNotJunk -InputObject <IMailIdentity>
  -BodyParameter <IPathsRi779ZUsersUserIdMessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,11 +48,11 @@ Mark a message as not junk.
 This API removes the sender from the list of blocked senders and moves the message to the Inbox folder, when moveToInbox is true.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 $params = @{
 	moveToInbox = $true
@@ -61,10 +60,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaMarkUserMessageAsNotJunk -UserId $userId -MessageId $messageId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaMarkUserMessageAsNotJunk Cmdlet.
-
 
 ## PARAMETERS
 
@@ -84,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -96,21 +91,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -161,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveToInbox
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -171,6 +151,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -199,6 +194,21 @@ Parameter Sets: MarkExpanded, Mark
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -238,48 +248,26 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsRi779ZUsersUserIdMessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MoveToInbox <Boolean?>]`: 
+BODYPARAMETER \<IPathsRi779ZUsersUserIdMessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[MoveToInbox \<Boolean?\>\]: 
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MailFolderOperationId <String>]`: The unique identifier of mailFolderOperation
-  - `[MentionId <String>]`: The unique identifier of mention
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IMailIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderOperationId \<String\>\]: The unique identifier of mailFolderOperation
+  \[MentionId \<String\>\]: The unique identifier of mention
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
+  \[UserConfigurationId \<String\>\]: The unique identifier of userConfiguration
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetamarkusermessageasnotjunk](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetamarkusermessageasnotjunk)
 
 [https://learn.microsoft.com/graph/api/message-markasnotjunk?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-markasnotjunk?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

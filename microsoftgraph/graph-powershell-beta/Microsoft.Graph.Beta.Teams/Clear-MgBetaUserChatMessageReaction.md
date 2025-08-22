@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetauserchatmessagereaction
@@ -10,16 +10,13 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action unsetReaction
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Clear-MgUserChatMessageReaction](/powershell/module/Microsoft.Graph.Teams/Clear-MgUserChatMessageReaction?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UnsetExpanded (Default)
 ```
 Clear-MgBetaUserChatMessageReaction -ChatId <String> -ChatMessageId <String> -UserId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ReactionType <String>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -27,7 +24,7 @@ Clear-MgBetaUserChatMessageReaction -ChatId <String> -ChatMessageId <String> -Us
 ```
 Clear-MgBetaUserChatMessageReaction -ChatId <String> -ChatMessageId <String> -UserId <String>
  -BodyParameter <IPaths1By85LjUsersUserIdChatsChatIdMessagesChatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,29 +32,31 @@ Clear-MgBetaUserChatMessageReaction -ChatId <String> -ChatMessageId <String> -Us
 ```
 Clear-MgBetaUserChatMessageReaction -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ReactionType <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UnsetViaIdentity
 ```
 Clear-MgBetaUserChatMessageReaction -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1By85LjUsersUserIdChatsChatIdMessagesChatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action unsetReaction
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChatMessage.Send, Chat.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -77,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -116,21 +115,6 @@ Parameter Sets: UnsetExpanded, Unset
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -183,8 +167,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ReactionType
+### -ProgressAction
+{{ Fill ProgressAction Description }}
 
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ReactionType
+.
 
 ```yaml
 Type: String
@@ -228,6 +227,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -261,81 +275,58 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1By85LjUsersUserIdChatsChatIdMessagesChatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ReactionType <String>]`: 
+BODYPARAMETER \<IPaths1By85LjUsersUserIdChatsChatIdMessagesChatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ReactionType \<String\>\]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
-  - `[ChannelId <String>]`: The unique identifier of channel
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageHostedContentId <String>]`: The unique identifier of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
-  - `[DayNoteId <String>]`: The unique identifier of dayNote
-  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
-  - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: The unique identifier of openShift
-  - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: The unique identifier of shift
-  - `[ShiftsRoleDefinitionId <String>]`: The unique identifier of shiftsRoleDefinition
-  - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
-  - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
-  - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
-  - `[TeamsAppDashboardCardDefinitionId <String>]`: The unique identifier of teamsAppDashboardCardDefinition
-  - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
-  - `[TeamsAppId <String>]`: The unique identifier of teamsApp
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
-  - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeCardId <String>]`: The unique identifier of timeCard
-  - `[TimeOffId <String>]`: The unique identifier of timeOff
-  - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
-  - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserPrincipalName <String>]`: Alternate key of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
+INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
+  \[AssociatedTeamInfoId \<String\>\]: The unique identifier of associatedTeamInfo
+  \[ChannelId \<String\>\]: The unique identifier of channel
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageHostedContentId \<String\>\]: The unique identifier of chatMessageHostedContent
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
+  \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
+  \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[OfferShiftRequestId \<String\>\]: The unique identifier of offerShiftRequest
+  \[OpenShiftChangeRequestId \<String\>\]: The unique identifier of openShiftChangeRequest
+  \[OpenShiftId \<String\>\]: The unique identifier of openShift
+  \[PinnedChatMessageInfoId \<String\>\]: The unique identifier of pinnedChatMessageInfo
+  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
+  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
+  \[PlannerTaskId \<String\>\]: The unique identifier of plannerTask
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
+  \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
+  \[ShiftId \<String\>\]: The unique identifier of shift
+  \[ShiftsRoleDefinitionId \<String\>\]: The unique identifier of shiftsRoleDefinition
+  \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
+  \[TeamId \<String\>\]: The unique identifier of team
+  \[TeamTemplateDefinitionId \<String\>\]: The unique identifier of teamTemplateDefinition
+  \[TeamTemplateId \<String\>\]: The unique identifier of teamTemplate
+  \[TeamsAppDashboardCardDefinitionId \<String\>\]: The unique identifier of teamsAppDashboardCardDefinition
+  \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
+  \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TeamsAsyncOperationId \<String\>\]: The unique identifier of teamsAsyncOperation
+  \[TeamsTabId \<String\>\]: The unique identifier of teamsTab
+  \[TeamworkDeviceId \<String\>\]: The unique identifier of teamworkDevice
+  \[TeamworkDeviceOperationId \<String\>\]: The unique identifier of teamworkDeviceOperation
+  \[TeamworkTagId \<String\>\]: The unique identifier of teamworkTag
+  \[TeamworkTagMemberId \<String\>\]: The unique identifier of teamworkTagMember
+  \[TimeCardId \<String\>\]: The unique identifier of timeCard
+  \[TimeOffId \<String\>\]: The unique identifier of timeOff
+  \[TimeOffReasonId \<String\>\]: The unique identifier of timeOffReason
+  \[TimeOffRequestId \<String\>\]: The unique identifier of timeOffRequest
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserPrincipalName \<String\>\]: Alternate key of user
+  \[UserScopeTeamsAppInstallationId \<String\>\]: The unique identifier of userScopeTeamsAppInstallation
+  \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetauserchatmessagereaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetauserchatmessagereaction)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

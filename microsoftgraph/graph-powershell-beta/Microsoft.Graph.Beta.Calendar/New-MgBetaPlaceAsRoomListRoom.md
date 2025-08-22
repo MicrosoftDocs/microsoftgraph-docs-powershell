@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasroomlistroom
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to rooms for places
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Calendar/New-MgPlaceAsRoomListRoom?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,10 +18,10 @@ New-MgBetaPlaceAsRoomListRoom -PlaceId <String> [-ResponseHeadersVariable <Strin
  [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>] [-AudioDeviceName <String>]
  [-BookingType <String>] [-Building <String>] [-Capacity <Int32>] [-DisplayDeviceName <String>]
  [-DisplayName <String>] [-EmailAddress <String>] [-FloorLabel <String>] [-FloorNumber <Int32>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsWheelChairAccessible]
- [-Label <String>] [-Nickname <String>] [-Phone <String>] [-PlaceId1 <String>] [-Tags <String[]>]
- [-VideoDeviceName <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsTeamsEnabled]
+ [-IsWheelChairAccessible] [-Label <String>] [-Nickname <String>] [-ParentId <String>] [-Phone <String>]
+ [-PlaceId1 <String>] [-Tags <String[]>] [-VideoDeviceName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -34,22 +31,23 @@ New-MgBetaPlaceAsRoomListRoom [-PlaceId <String>] -InputObject <ICalendarIdentit
  [-Address <IMicrosoftGraphPhysicalAddress>] [-AudioDeviceName <String>] [-BookingType <String>]
  [-Building <String>] [-Capacity <Int32>] [-DisplayDeviceName <String>] [-DisplayName <String>]
  [-EmailAddress <String>] [-FloorLabel <String>] [-FloorNumber <Int32>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsWheelChairAccessible]
- [-Label <String>] [-Nickname <String>] [-Phone <String>] [-Tags <String[]>] [-VideoDeviceName <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsTeamsEnabled]
+ [-IsWheelChairAccessible] [-Label <String>] [-Nickname <String>] [-ParentId <String>] [-Phone <String>]
+ [-Tags <String[]>] [-VideoDeviceName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaPlaceAsRoomListRoom -PlaceId <String> -BodyParameter <IMicrosoftGraphRoom>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaPlaceAsRoomListRoom -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphRoom>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -57,6 +55,16 @@ New-MgBetaPlaceAsRoomListRoom -InputObject <ICalendarIdentity> -BodyParameter <I
 Create new navigation property to rooms for places
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -92,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -AudioDeviceName
-Specifies the name of the audio device in the room.
+The name of the audio device that is available in the room.
 
 ```yaml
 Type: String
@@ -138,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Building
-Specifies the building name or building number that the room is in.
+The name or identifier of the building where the room is located.
 
 ```yaml
 Type: String
@@ -153,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Capacity
-Specifies the capacity of the room.
+The maximum number of people the room can accommodate.
 
 ```yaml
 Type: Int32
@@ -167,23 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DisplayDeviceName
-Specifies the name of the display device in the room.
+The name of the display device (for example, monitor or projector) that is available in the room.
 
 ```yaml
 Type: String
@@ -198,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The name associated with the place.
+The name that is associated with the place.
 
 ```yaml
 Type: String
@@ -213,7 +206,8 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAddress
-Email address of the room.
+The email address associated with the room.
+This email address is used for booking.
 
 ```yaml
 Type: String
@@ -228,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -FloorLabel
-Specifies a descriptive label for the floor, for example, P.
+A human-readable label for the floor; for example, Ground Floor.
 
 ```yaml
 Type: String
@@ -243,7 +237,8 @@ Accept wildcard characters: False
 ```
 
 ### -FloorNumber
-Specifies the floor number that the room is on.
+The numeric floor level within the building.
+For example, 1 for first floor, 2 for second floor, and so on.
 
 ```yaml
 Type: Int32
@@ -320,8 +315,23 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -IsTeamsEnabled
+Indicates whether the room is configured with the Microsoft Teams Rooms system.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -IsWheelChairAccessible
-Specifies whether the room is wheelchair accessible.
+Indicates whether the place is wheelchair accessible.
 
 ```yaml
 Type: SwitchParameter
@@ -336,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -Label
-Specifies a descriptive label for the room, for example, a number or name.
+User-defined description of the place.
 
 ```yaml
 Type: String
@@ -351,7 +361,22 @@ Accept wildcard characters: False
 ```
 
 ### -Nickname
-Specifies a nickname for the room, for example, 'conf room'.
+A short, friendly name for the room, often used for easier identification or display in UI.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ParentId
+The ID of a parent place.
 
 ```yaml
 Type: String
@@ -408,14 +433,28 @@ Accept wildcard characters: False
 ```
 
 ### -PlaceId1
-A unique, immutable identifier for the place.
+An alternate immutable unique identifier of the place.
 Read-only.
-The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet.
 
 ```yaml
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -440,7 +479,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-Specifies other features of the room; for example, the type of view or furniture type.
+Custom tags that are associated with the place for categorization or filtering.
 
 ```yaml
 Type: String[]
@@ -455,12 +494,27 @@ Accept wildcard characters: False
 ```
 
 ### -VideoDeviceName
-Specifies the name of the video device in the room.
+The name of the video device that is available in the room.
 
 ```yaml
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -502,107 +556,85 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[City <String>]`: The city.
-  - `[CountryOrRegion <String>]`: The country or region.
+ADDRESS \<IMicrosoftGraphPhysicalAddress\>: physicalAddress
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[City \<String\>\]: The city.
+  \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-  - `[PostOfficeBox <String>]`: The post office box number.
-  - `[PostalCode <String>]`: The postal code.
-  - `[State <String>]`: The state.
-  - `[Street <String>]`: The street.
-  - `[Type <String>]`: physicalAddressType
+  \[PostOfficeBox \<String\>\]: The post office box number.
+  \[PostalCode \<String\>\]: The postal code.
+  \[State \<String\>\]: The state.
+  \[Street \<String\>\]: The street.
+  \[Type \<String\>\]: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphRoom>`: room
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region.
+BODYPARAMETER \<IMicrosoftGraphRoom\>: room
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Address \<IMicrosoftGraphPhysicalAddress\>\]: physicalAddress
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[City \<String\>\]: The city.
+    \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-    - `[PostOfficeBox <String>]`: The post office box number.
-    - `[PostalCode <String>]`: The postal code.
-    - `[State <String>]`: The state.
-    - `[Street <String>]`: The street.
-    - `[Type <String>]`: physicalAddressType
-  - `[DisplayName <String>]`: The name associated with the place.
-  - `[GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude.
+    \[PostOfficeBox \<String\>\]: The post office box number.
+    \[PostalCode \<String\>\]: The postal code.
+    \[State \<String\>\]: The state.
+    \[Street \<String\>\]: The street.
+    \[Type \<String\>\]: physicalAddressType
+  \[DisplayName \<String\>\]: The name that is associated with the place.
+  \[GeoCoordinates \<IMicrosoftGraphOutlookGeoCoordinates\>\]: outlookGeoCoordinates
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-    - `[Altitude <Double?>]`: The altitude of the location.
-    - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-    - `[Latitude <Double?>]`: The latitude of the location.
-    - `[Longitude <Double?>]`: The longitude of the location.
-  - `[Phone <String>]`: The phone number of the place.
-  - `[PlaceId <String>]`: A unique, immutable identifier for the place.
+    \[Altitude \<Double?\>\]: The altitude of the location.
+    \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
+    \[Latitude \<Double?\>\]: The latitude of the location.
+    \[Longitude \<Double?\>\]: The longitude of the location.
+  \[IsWheelChairAccessible \<Boolean?\>\]: Indicates whether the place is wheelchair accessible.
+  \[Label \<String\>\]: User-defined description of the place.
+  \[ParentId \<String\>\]: The ID of a parent place.
+  \[Phone \<String\>\]: The phone number of the place.
+  \[PlaceId \<String\>\]: An alternate immutable unique identifier of the place.
 Read-only.
-The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Tags \<String\[\]\>\]: Custom tags that are associated with the place for categorization or filtering.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AudioDeviceName <String>]`: Specifies the name of the audio device in the room.
-  - `[BookingType <String>]`: bookingType
-  - `[Building <String>]`: Specifies the building name or building number that the room is in.
-  - `[Capacity <Int32?>]`: Specifies the capacity of the room.
-  - `[DisplayDeviceName <String>]`: Specifies the name of the display device in the room.
-  - `[EmailAddress <String>]`: Email address of the room.
-  - `[FloorLabel <String>]`: Specifies a descriptive label for the floor, for example, P.
-  - `[FloorNumber <Int32?>]`: Specifies the floor number that the room is on.
-  - `[IsWheelChairAccessible <Boolean?>]`: Specifies whether the room is wheelchair accessible.
-  - `[Label <String>]`: Specifies a descriptive label for the room, for example, a number or name.
-  - `[Nickname <String>]`: Specifies a nickname for the room, for example, 'conf room'.
-  - `[Tags <String- `[]`>]`: Specifies other features of the room; for example, the type of view or furniture type.
-  - `[VideoDeviceName <String>]`: Specifies the name of the video device in the room.
+  \[AudioDeviceName \<String\>\]: The name of the audio device that is available in the room.
+  \[BookingType \<String\>\]: bookingType
+  \[Building \<String\>\]: The name or identifier of the building where the room is located.
+  \[Capacity \<Int32?\>\]: The maximum number of people the room can accommodate.
+  \[DisplayDeviceName \<String\>\]: The name of the display device (for example, monitor or projector) that is available in the room.
+  \[EmailAddress \<String\>\]: The email address associated with the room.
+This email address is used for booking.
+  \[FloorLabel \<String\>\]: A human-readable label for the floor; for example, Ground Floor.
+  \[FloorNumber \<Int32?\>\]: The numeric floor level within the building.
+For example, 1 for first floor, 2 for second floor, and so on.
+  \[IsTeamsEnabled \<Boolean?\>\]: Indicates whether the room is configured with the Microsoft Teams Rooms system.
+  \[Nickname \<String\>\]: A short, friendly name for the room, often used for easier identification or display in UI.
+  \[VideoDeviceName \<String\>\]: The name of the video device that is available in the room.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude.
+GEOCOORDINATES \<IMicrosoftGraphOutlookGeoCoordinates\>: outlookGeoCoordinates
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-  - `[Altitude <Double?>]`: The altitude of the location.
-  - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-  - `[Latitude <Double?>]`: The latitude of the location.
-  - `[Longitude <Double?>]`: The longitude of the location.
+  \[Altitude \<Double?\>\]: The altitude of the location.
+  \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
+  \[Latitude \<Double?\>\]: The latitude of the location.
+  \[Longitude \<Double?\>\]: The longitude of the location.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[EventId2 <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlaceId <String>]`: The unique identifier of place
-  - `[RoomId <String>]`: The unique identifier of room
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WorkspaceId <String>]`: The unique identifier of workspace
+INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
+  \[EventId \<String\>\]: The unique identifier of event
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
+  \[User \<String\>\]: Usage: User='{User}'
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasroomlistroom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasroomlistroom)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

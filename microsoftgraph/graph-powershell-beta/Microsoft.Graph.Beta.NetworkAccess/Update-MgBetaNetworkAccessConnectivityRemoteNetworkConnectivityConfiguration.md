@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfiguration
@@ -17,7 +17,7 @@ Update the navigation property connectivityConfiguration in networkAccess
 Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration -RemoteNetworkId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Links <IMicrosoftGraphNetworkaccessConnectivityConfigurationLink[]>] [-RemoteNetworkId1 <String>]
- [-RemoteNetworkName <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-RemoteNetworkName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,14 +26,14 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration -Re
 Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration [-RemoteNetworkId <String>]
  -InputObject <INetworkAccessIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Links <IMicrosoftGraphNetworkaccessConnectivityConfigurationLink[]>] [-RemoteNetworkName <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration -RemoteNetworkId <String>
  -BodyParameter <IMicrosoftGraphNetworkaccessRemoteNetworkConnectivityConfiguration>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration -Re
 Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration
  -InputObject <INetworkAccessIdentity>
  -BodyParameter <IMicrosoftGraphNetworkaccessRemoteNetworkConnectivityConfiguration>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -50,6 +50,16 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration
 Update the navigation property connectivityConfiguration in networkAccess
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -81,21 +91,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -138,6 +133,21 @@ To construct, see NOTES section for LINKS properties and create a hash table.
 Type: IMicrosoftGraphNetworkaccessConnectivityConfigurationLink[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -219,6 +229,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -252,86 +277,67 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessRemoteNetworkConnectivityConfiguration>`: remoteNetworkConnectivityConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Links <IMicrosoftGraphNetworkaccessConnectivityConfigurationLink- `[]`>]`: List of connectivity configurations for deviceLink objects.
-    - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphNetworkaccessRemoteNetworkConnectivityConfiguration\>: remoteNetworkConnectivityConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Links \<IMicrosoftGraphNetworkaccessConnectivityConfigurationLink\[\]\>\]: List of connectivity configurations for deviceLink objects.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DisplayName <String>]`: Specifies the name of the link.
-    - `[LocalConfigurations <IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration- `[]`>]`: Specifies Microsoft's end of the tunnel configuration for a device link.
-      - `[Asn <Int32?>]`: Specifies ASN of one end of IPSec tunnel (local or peer).
-      - `[BgpAddress <String>]`: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
-      - `[Endpoint <String>]`: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
-      - `[Region <String>]`: region
-    - `[PeerConfiguration <IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration>]`: peerConnectivityConfiguration
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Asn <Int32?>]`: Specifies ASN of one end of IPSec tunnel (local or peer).
-      - `[BgpAddress <String>]`: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
-      - `[Endpoint <String>]`: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
-  - `[RemoteNetworkId <String>]`: Unique identifier or a specific reference assigned to a branchSite.
+    \[DisplayName \<String\>\]: Specifies the name of the link.
+    \[LocalConfigurations \<IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration\[\]\>\]: Specifies Microsoft's end of the tunnel configuration for a device link.
+      \[Asn \<Int32?\>\]: Specifies ASN of one end of IPSec tunnel (local or peer).
+      \[BgpAddress \<String\>\]: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
+      \[Endpoint \<String\>\]: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
+      \[Region \<String\>\]: region
+    \[PeerConfiguration \<IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration\>\]: peerConnectivityConfiguration
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Asn \<Int32?\>\]: Specifies ASN of one end of IPSec tunnel (local or peer).
+      \[BgpAddress \<String\>\]: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
+      \[Endpoint \<String\>\]: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
+  \[RemoteNetworkId \<String\>\]: Unique identifier or a specific reference assigned to a branchSite.
 Key.
-  - `[RemoteNetworkName <String>]`: Display name assigned to a branchSite.
+  \[RemoteNetworkName \<String\>\]: Display name assigned to a branchSite.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
-  - `[ActivityPivotDateTime <DateTime?>]`: Usage: activityPivotDateTime={activityPivotDateTime}
-  - `[AggregatedBy <String>]`: Usage: aggregatedBy='{aggregatedBy}'
-  - `[AlertId <String>]`: The unique identifier of alert
-  - `[BranchSiteId <String>]`: The unique identifier of branchSite
-  - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
-  - `[ConnectivityConfigurationLinkId <String>]`: The unique identifier of connectivityConfigurationLink
-  - `[DeviceLinkId <String>]`: The unique identifier of deviceLink
-  - `[DiscoveryPivotDateTime <DateTime?>]`: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
-  - `[FilteringPolicyId <String>]`: The unique identifier of filteringPolicy
-  - `[FilteringProfileId <String>]`: The unique identifier of filteringProfile
-  - `[ForwardingPolicyId <String>]`: The unique identifier of forwardingPolicy
-  - `[ForwardingProfileId <String>]`: The unique identifier of forwardingProfile
-  - `[NetworkAccessTrafficTransactionId <String>]`: The unique identifier of networkAccessTraffic
-  - `[PolicyLinkId <String>]`: The unique identifier of policyLink
-  - `[PolicyRuleId <String>]`: The unique identifier of policyRule
-  - `[RemoteNetworkHealthEventId <String>]`: The unique identifier of remoteNetworkHealthEvent
-  - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+INPUTOBJECT \<INetworkAccessIdentity\>: Identity Parameter
+  \[ActivityPivotDateTime \<DateTime?\>\]: Usage: activityPivotDateTime={activityPivotDateTime}
+  \[AggregatedBy \<String\>\]: Usage: aggregatedBy='{aggregatedBy}'
+  \[AlertId \<String\>\]: The unique identifier of alert
+  \[BranchSiteId \<String\>\]: The unique identifier of branchSite
+  \[ConditionalAccessPolicyId \<String\>\]: The unique identifier of conditionalAccessPolicy
+  \[ConnectionId \<String\>\]: The unique identifier of connection
+  \[ConnectivityConfigurationLinkId \<String\>\]: The unique identifier of connectivityConfigurationLink
+  \[DeviceLinkId \<String\>\]: The unique identifier of deviceLink
+  \[DiscoveryPivotDateTime \<DateTime?\>\]: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
+  \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[ExternalCertificateAuthorityCertificateId \<String\>\]: The unique identifier of externalCertificateAuthorityCertificate
+  \[FilteringPolicyId \<String\>\]: The unique identifier of filteringPolicy
+  \[FilteringProfileId \<String\>\]: The unique identifier of filteringProfile
+  \[ForwardingPolicyId \<String\>\]: The unique identifier of forwardingPolicy
+  \[ForwardingProfileId \<String\>\]: The unique identifier of forwardingProfile
+  \[NetworkAccessTrafficTransactionId \<String\>\]: The unique identifier of networkAccessTraffic
+  \[PolicyLinkId \<String\>\]: The unique identifier of policyLink
+  \[PolicyRuleId \<String\>\]: The unique identifier of policyRule
+  \[RemoteNetworkHealthEventId \<String\>\]: The unique identifier of remoteNetworkHealthEvent
+  \[RemoteNetworkId \<String\>\]: The unique identifier of remoteNetwork
+  \[StartDateTime \<DateTime?\>\]: Usage: startDateTime={startDateTime}
+  \[ThreatIntelligencePolicyId \<String\>\]: The unique identifier of threatIntelligencePolicy
+  \[TlsInspectionPolicyId \<String\>\]: The unique identifier of tlsInspectionPolicy
 
-LINKS `<IMicrosoftGraphNetworkaccessConnectivityConfigurationLink- `[]`>`: List of connectivity configurations for deviceLink objects.
-  - `[Id <String>]`: The unique identifier for an entity.
+LINKS \<IMicrosoftGraphNetworkaccessConnectivityConfigurationLink\[\]\>: List of connectivity configurations for deviceLink objects.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: Specifies the name of the link.
-  - `[LocalConfigurations <IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration- `[]`>]`: Specifies Microsoft's end of the tunnel configuration for a device link.
-    - `[Asn <Int32?>]`: Specifies ASN of one end of IPSec tunnel (local or peer).
-    - `[BgpAddress <String>]`: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
-    - `[Endpoint <String>]`: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
-    - `[Region <String>]`: region
-  - `[PeerConfiguration <IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration>]`: peerConnectivityConfiguration
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Asn <Int32?>]`: Specifies ASN of one end of IPSec tunnel (local or peer).
-    - `[BgpAddress <String>]`: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
-    - `[Endpoint <String>]`: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
+  \[DisplayName \<String\>\]: Specifies the name of the link.
+  \[LocalConfigurations \<IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration\[\]\>\]: Specifies Microsoft's end of the tunnel configuration for a device link.
+    \[Asn \<Int32?\>\]: Specifies ASN of one end of IPSec tunnel (local or peer).
+    \[BgpAddress \<String\>\]: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
+    \[Endpoint \<String\>\]: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
+    \[Region \<String\>\]: region
+  \[PeerConfiguration \<IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration\>\]: peerConnectivityConfiguration
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Asn \<Int32?\>\]: Specifies ASN of one end of IPSec tunnel (local or peer).
+    \[BgpAddress \<String\>\]: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
+    \[Endpoint \<String\>\]: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
