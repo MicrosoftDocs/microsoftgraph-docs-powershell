@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointprotectionpolicy
@@ -364,219 +364,241 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSharePointProtectionPolicy\>: sharePointProtectionPolicy
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[BillingPolicyId \<String\>\]: 
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+BODYPARAMETER `<IMicrosoftGraphSharePointProtectionPolicy>`: sharePointProtectionPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[BillingPolicyId <String>]`: 
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
+      - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[CreatedDateTime \<DateTime?\>\]: The time of creation of the policy.
-  \[DisplayName \<String\>\]: The name of the policy to be created.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[LastModifiedDateTime \<DateTime?\>\]: The timestamp of the last modification of the policy.
-  \[RetentionSettings \<IMicrosoftGraphRetentionSetting\[\]\>\]: Contains the retention setting details for the policy.
-    \[Interval \<String\>\]: The frequency of the backup.
-    \[Period \<TimeSpan?\>\]: The period of time to retain the protected data for a single Microsoft 365 service.
-  \[Status \<String\>\]: protectionPolicyStatus
-  \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time of creation of the policy.
+  - `[DisplayName <String>]`: The name of the policy to be created.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: The timestamp of the last modification of the policy.
+  - `[RetentionSettings <IMicrosoftGraphRetentionSetting- `[]`>]`: Contains the retention setting details for the policy.
+    - `[Interval <String>]`: The frequency of the backup.
+    - `[Period <TimeSpan?>]`: The period of time to retain the protected data for a single Microsoft 365 service.
+  - `[Status <String>]`: protectionPolicyStatus
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[SiteInclusionRules \<IMicrosoftGraphSiteProtectionRule\[\]\>\]: The rules associated with the SharePoint Protection policy.
-    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[CreatedDateTime \<DateTime?\>\]: The time of creation of the rule.
-    \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Code \<String\>\]: Represents the error code.
-      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
-        \[Code \<String\>\]: The error code.
-        \[Message \<String\>\]: The error message.
-        \[Target \<String\>\]: The target of the error.
-      \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Code \<String\>\]: The error code.
-        \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
-        \[Message \<String\>\]: The error message.
-        \[Target \<String\>\]: The target of the error.
-      \[Message \<String\>\]: A non-localized message for the developer.
-      \[Target \<String\>\]: The target of the error.
-    \[IsAutoApplyEnabled \<Boolean?\>\]: true indicates that the protection rule is dynamic; false that it's static.
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification made to the rule.
-    \[Status \<String\>\]: protectionRuleStatus
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[SiteInclusionRules <IMicrosoftGraphSiteProtectionRule- `[]`>]`: The rules associated with the SharePoint Protection policy.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time of creation of the rule.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: Represents the error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+        - `[Code <String>]`: The error code.
+        - `[Message <String>]`: The error message.
+        - `[Target <String>]`: The target of the error.
+      - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Code <String>]`: The error code.
+        - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+        - `[Message <String>]`: The error message.
+        - `[Target <String>]`: The target of the error.
+      - `[Message <String>]`: A non-localized message for the developer.
+      - `[Target <String>]`: The target of the error.
+    - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
+    - `[Status <String>]`: protectionRuleStatus
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[SiteExpression \<String\>\]: Contains a site expression.
+    - `[SiteExpression <String>]`: Contains a site expression.
 For examples, see siteExpression example.
-  \[SiteProtectionUnits \<IMicrosoftGraphSiteProtectionUnit\[\]\>\]: The protection units (sites) that are protected under the site protection policy.
-    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[CreatedDateTime \<DateTime?\>\]: The time of creation of the protection unit.
-    \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification of this protection unit.
-    \[OffboardRequestedDateTime \<DateTime?\>\]: The time when protection unit offboard was requested.
-    \[PolicyId \<String\>\]: The unique identifier of the protection policy based on which protection unit was created.
-    \[ProtectionSources \<String\>\]: protectionSource
-    \[Status \<String\>\]: protectionUnitStatus
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit- `[]`>]`: The protection units (sites) that are protected under the site protection policy.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time of creation of the protection unit.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+    - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
+    - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
+    - `[ProtectionSources <String>]`: protectionSource
+    - `[Status <String>]`: protectionUnitStatus
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[SiteId \<String\>\]: Unique identifier of the SharePoint site.
-  \[SiteProtectionUnitsBulkAdditionJobs \<IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob\[\]\>\]: 
-    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[CreatedDateTime \<DateTime?\>\]: The time of creation of the job.
-    \[DisplayName \<String\>\]: The name of the protection units bulk addition job.
-    \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification made to the job.
-    \[Status \<String\>\]: protectionUnitsBulkJobStatus
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[SiteId <String>]`: Unique identifier of the SharePoint site.
+  - `[SiteProtectionUnitsBulkAdditionJobs <IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob- `[]`>]`: 
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+    - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+    - `[Status <String>]`: protectionUnitsBulkJobStatus
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[SiteIds \<String\[\]\>\]: The list of SharePoint site IDs to add to the SharePoint protection policy.
-    \[SiteWebUrls \<String\[\]\>\]: The list of SharePoint site URLs to add to the SharePoint protection policy.
+    - `[SiteIds <String- `[]`>]`: The list of SharePoint site IDs to add to the SharePoint protection policy.
+    - `[SiteWebUrls <String- `[]`>]`: The list of SharePoint site URLs to add to the SharePoint protection policy.
 
-CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
+    - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
+    - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RETENTIONSETTINGS \<IMicrosoftGraphRetentionSetting\[\]\>: Contains the retention setting details for the policy.
-  \[Interval \<String\>\]: The frequency of the backup.
-  \[Period \<TimeSpan?\>\]: The period of time to retain the protected data for a single Microsoft 365 service.
+RETENTIONSETTINGS `<IMicrosoftGraphRetentionSetting- `[]`>`: Contains the retention setting details for the policy.
+  - `[Interval <String>]`: The frequency of the backup.
+  - `[Period <TimeSpan?>]`: The period of time to retain the protected data for a single Microsoft 365 service.
 
-SITEINCLUSIONRULES \<IMicrosoftGraphSiteProtectionRule\[\]\>: The rules associated with the SharePoint Protection policy.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+SITEINCLUSIONRULES `<IMicrosoftGraphSiteProtectionRule- `[]`>`: The rules associated with the SharePoint Protection policy.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
+      - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[CreatedDateTime \<DateTime?\>\]: The time of creation of the rule.
-  \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Code \<String\>\]: Represents the error code.
-    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
-      \[Code \<String\>\]: The error code.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Code \<String\>\]: The error code.
-      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[Message \<String\>\]: A non-localized message for the developer.
-    \[Target \<String\>\]: The target of the error.
-  \[IsAutoApplyEnabled \<Boolean?\>\]: true indicates that the protection rule is dynamic; false that it's static.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification made to the rule.
-  \[Status \<String\>\]: protectionRuleStatus
-  \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time of creation of the rule.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
+  - `[Status <String>]`: protectionRuleStatus
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[SiteExpression \<String\>\]: Contains a site expression.
+  - `[SiteExpression <String>]`: Contains a site expression.
 For examples, see siteExpression example.
 
-SITEPROTECTIONUNITS \<IMicrosoftGraphSiteProtectionUnit\[\]\>: The protection units (sites) that are protected under the site protection policy.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+SITEPROTECTIONUNITS `<IMicrosoftGraphSiteProtectionUnit- `[]`>`: The protection units (sites) that are protected under the site protection policy.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
+      - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[CreatedDateTime \<DateTime?\>\]: The time of creation of the protection unit.
-  \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Code \<String\>\]: Represents the error code.
-    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
-      \[Code \<String\>\]: The error code.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Code \<String\>\]: The error code.
-      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[Message \<String\>\]: A non-localized message for the developer.
-    \[Target \<String\>\]: The target of the error.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification of this protection unit.
-  \[OffboardRequestedDateTime \<DateTime?\>\]: The time when protection unit offboard was requested.
-  \[PolicyId \<String\>\]: The unique identifier of the protection policy based on which protection unit was created.
-  \[ProtectionSources \<String\>\]: protectionSource
-  \[Status \<String\>\]: protectionUnitStatus
-  \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time of creation of the protection unit.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+  - `[OffboardRequestedDateTime <DateTime?>]`: The time when protection unit offboard was requested.
+  - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
+  - `[ProtectionSources <String>]`: protectionSource
+  - `[Status <String>]`: protectionUnitStatus
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[SiteId \<String\>\]: Unique identifier of the SharePoint site.
+  - `[SiteId <String>]`: Unique identifier of the SharePoint site.
 
-SITEPROTECTIONUNITSBULKADDITIONJOBS \<IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob\[\]\>: .
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+SITEPROTECTIONUNITSBULKADDITIONJOBS `<IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob- `[]`>`: .
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
+      - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[CreatedDateTime \<DateTime?\>\]: The time of creation of the job.
-  \[DisplayName \<String\>\]: The name of the protection units bulk addition job.
-  \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Code \<String\>\]: Represents the error code.
-    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
-      \[Code \<String\>\]: The error code.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Code \<String\>\]: The error code.
-      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[Message \<String\>\]: A non-localized message for the developer.
-    \[Target \<String\>\]: The target of the error.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification made to the job.
-  \[Status \<String\>\]: protectionUnitsBulkJobStatus
-  \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+  - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+  - `[Status <String>]`: protectionUnitsBulkJobStatus
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[SiteIds \<String\[\]\>\]: The list of SharePoint site IDs to add to the SharePoint protection policy.
-  \[SiteWebUrls \<String\[\]\>\]: The list of SharePoint site URLs to add to the SharePoint protection policy.
+  - `[SiteIds <String- `[]`>]`: The list of SharePoint site IDs to add to the SharePoint protection policy.
+  - `[SiteWebUrls <String- `[]`>]`: The list of SharePoint site URLs to add to the SharePoint protection policy.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointprotectionpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointprotectionpolicies?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

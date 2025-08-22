@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistworkspace
@@ -525,83 +525,105 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS \<IMicrosoftGraphPhysicalAddress\>: physicalAddress
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[City \<String\>\]: The city.
-  \[CountryOrRegion \<String\>\]: The country or region.
+ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[City <String>]`: The city.
+  - `[CountryOrRegion <String>]`: The country or region.
 It's a free-format string value, for example, 'United States'.
-  \[PostOfficeBox \<String\>\]: The post office box number.
-  \[PostalCode \<String\>\]: The postal code.
-  \[State \<String\>\]: The state.
-  \[Street \<String\>\]: The street.
-  \[Type \<String\>\]: physicalAddressType
+  - `[PostOfficeBox <String>]`: The post office box number.
+  - `[PostalCode <String>]`: The postal code.
+  - `[State <String>]`: The state.
+  - `[Street <String>]`: The street.
+  - `[Type <String>]`: physicalAddressType
 
-BODYPARAMETER \<IMicrosoftGraphWorkspace\>: workspace
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Address \<IMicrosoftGraphPhysicalAddress\>\]: physicalAddress
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[City \<String\>\]: The city.
-    \[CountryOrRegion \<String\>\]: The country or region.
+BODYPARAMETER `<IMicrosoftGraphWorkspace>`: workspace
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[City <String>]`: The city.
+    - `[CountryOrRegion <String>]`: The country or region.
 It's a free-format string value, for example, 'United States'.
-    \[PostOfficeBox \<String\>\]: The post office box number.
-    \[PostalCode \<String\>\]: The postal code.
-    \[State \<String\>\]: The state.
-    \[Street \<String\>\]: The street.
-    \[Type \<String\>\]: physicalAddressType
-  \[DisplayName \<String\>\]: The name that is associated with the place.
-  \[GeoCoordinates \<IMicrosoftGraphOutlookGeoCoordinates\>\]: outlookGeoCoordinates
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
+    - `[PostOfficeBox <String>]`: The post office box number.
+    - `[PostalCode <String>]`: The postal code.
+    - `[State <String>]`: The state.
+    - `[Street <String>]`: The street.
+    - `[Type <String>]`: physicalAddressType
+  - `[DisplayName <String>]`: The name that is associated with the place.
+  - `[GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-    \[Altitude \<Double?\>\]: The altitude of the location.
-    \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
-    \[Latitude \<Double?\>\]: The latitude of the location.
-    \[Longitude \<Double?\>\]: The longitude of the location.
-  \[IsWheelChairAccessible \<Boolean?\>\]: Indicates whether the place is wheelchair accessible.
-  \[Label \<String\>\]: User-defined description of the place.
-  \[ParentId \<String\>\]: The ID of a parent place.
-  \[Phone \<String\>\]: The phone number of the place.
-  \[PlaceId \<String\>\]: An alternate immutable unique identifier of the place.
+    - `[Altitude <Double?>]`: The altitude of the location.
+    - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
+    - `[Latitude <Double?>]`: The latitude of the location.
+    - `[Longitude <Double?>]`: The longitude of the location.
+  - `[IsWheelChairAccessible <Boolean?>]`: Indicates whether the place is wheelchair accessible.
+  - `[Label <String>]`: User-defined description of the place.
+  - `[ParentId <String>]`: The ID of a parent place.
+  - `[Phone <String>]`: The phone number of the place.
+  - `[PlaceId <String>]`: An alternate immutable unique identifier of the place.
 Read-only.
-  \[Tags \<String\[\]\>\]: Custom tags that are associated with the place for categorization or filtering.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Tags <String- `[]`>]`: Custom tags that are associated with the place for categorization or filtering.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Building \<String\>\]: The name or identifier of the building where the workspace is located.
-  \[Capacity \<Int32?\>\]: The maximum number of individual desks within a workspace.
-  \[DisplayDeviceName \<String\>\]: The name of the display device (for example, monitor or projector) that is available in the workspace.
-  \[EmailAddress \<String\>\]: The email address that is associated with the workspace.
+  - `[Building <String>]`: The name or identifier of the building where the workspace is located.
+  - `[Capacity <Int32?>]`: The maximum number of individual desks within a workspace.
+  - `[DisplayDeviceName <String>]`: The name of the display device (for example, monitor or projector) that is available in the workspace.
+  - `[EmailAddress <String>]`: The email address that is associated with the workspace.
 This email address is used for booking.
-  \[FloorLabel \<String\>\]: A human-readable label for the floor; for example, Ground Floor.
-  \[FloorNumber \<Int32?\>\]: The numeric floor level within the building.
+  - `[FloorLabel <String>]`: A human-readable label for the floor; for example, Ground Floor.
+  - `[FloorNumber <Int32?>]`: The numeric floor level within the building.
 For example, 1 for first floor, 2 for second floor, and so on.
-  \[Mode \<IMicrosoftGraphPlaceMode\>\]: placeMode
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Nickname \<String\>\]: A short, friendly name for the workspace, often used for easier identification or display in the UI.
+  - `[Mode <IMicrosoftGraphPlaceMode>]`: placeMode
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Nickname <String>]`: A short, friendly name for the workspace, often used for easier identification or display in the UI.
 
-GEOCOORDINATES \<IMicrosoftGraphOutlookGeoCoordinates\>: outlookGeoCoordinates
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
+GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-  \[Altitude \<Double?\>\]: The altitude of the location.
-  \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
-  \[Latitude \<Double?\>\]: The latitude of the location.
-  \[Longitude \<Double?\>\]: The longitude of the location.
+  - `[Altitude <Double?>]`: The altitude of the location.
+  - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
+  - `[Latitude <Double?>]`: The latitude of the location.
+  - `[Longitude <Double?>]`: The longitude of the location.
 
-INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
-  \[CalendarId \<String\>\]: The unique identifier of calendar
-  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
-  \[EventId \<String\>\]: The unique identifier of event
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[PlaceId \<String\>\]: The unique identifier of place
-  \[RoomId \<String\>\]: The unique identifier of room
-  \[User \<String\>\]: Usage: User='{User}'
-  \[UserId \<String\>\]: The unique identifier of user
-  \[WorkspaceId \<String\>\]: The unique identifier of workspace
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
+  - `[EventId <String>]`: The unique identifier of event
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PlaceId <String>]`: The unique identifier of place
+  - `[RoomId <String>]`: The unique identifier of room
+  - `[User <String>]`: Usage: User='{User}'
+  - `[UserId <String>]`: The unique identifier of user
+  - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistworkspace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistworkspace)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

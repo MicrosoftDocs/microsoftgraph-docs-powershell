@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessalert
@@ -529,95 +529,117 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIONS \<IMicrosoftGraphNetworkaccessAlertAction\[\]\>: List of possible action items to take based on the alert (if applicable).
-  \[ActionLink \<String\>\]: A link to more information or to perform the action (if applicable).
-  \[ActionText \<String\>\]: Text describing the action.
+ACTIONS `<IMicrosoftGraphNetworkaccessAlertAction- `[]`>`: List of possible action items to take based on the alert (if applicable).
+  - `[ActionLink <String>]`: A link to more information or to perform the action (if applicable).
+  - `[ActionText <String>]`: Text describing the action.
 Required.
 
-BODYPARAMETER \<IMicrosoftGraphNetworkaccessAlert\>: alert
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphNetworkaccessAlert>`: alert
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Actions \<IMicrosoftGraphNetworkaccessAlertAction\[\]\>\]: List of possible action items to take based on the alert (if applicable).
-    \[ActionLink \<String\>\]: A link to more information or to perform the action (if applicable).
-    \[ActionText \<String\>\]: Text describing the action.
+  - `[Actions <IMicrosoftGraphNetworkaccessAlertAction- `[]`>]`: List of possible action items to take based on the alert (if applicable).
+    - `[ActionLink <String>]`: A link to more information or to perform the action (if applicable).
+    - `[ActionText <String>]`: Text describing the action.
 Required.
-  \[AlertType \<String\>\]: alertType
-  \[Categories \<String\[\]\>\]: Categories associated with the alert.
-  \[ComponentName \<String\>\]: Component name related to the alert.
-  \[CreationDateTime \<DateTime?\>\]: The time the alert was created in the system.
+  - `[AlertType <String>]`: alertType
+  - `[Categories <String- `[]`>]`: Categories associated with the alert.
+  - `[ComponentName <String>]`: Component name related to the alert.
+  - `[CreationDateTime <DateTime?>]`: The time the alert was created in the system.
 Required.
-  \[Description \<String\>\]: Text description explaining the alert.
-  \[DetectionTechnology \<String\>\]: Alert detection technology.
-  \[DisplayName \<String\>\]: The display name of the alert.
+  - `[Description <String>]`: Text description explaining the alert.
+  - `[DetectionTechnology <String>]`: Alert detection technology.
+  - `[DisplayName <String>]`: The display name of the alert.
 Required.
-  \[ExtendedProperties \<IMicrosoftGraphNetworkaccessExtendedProperties\>\]: extendedProperties
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[FirstActivityDateTime \<DateTime?\>\]: The time of the first activity related to the alert.
-  \[IsPreview \<Boolean?\>\]: Indicates if the alert is a preview.
-  \[LastActivityDateTime \<DateTime?\>\]: The time of the last activity related to the alert.
-  \[Policy \<IMicrosoftGraphNetworkaccessFilteringPolicy\>\]: filteringPolicy
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Description \<String\>\]: Description.
-    \[Name \<String\>\]: Policy name.
-    \[PolicyRules \<IMicrosoftGraphNetworkaccessPolicyRule\[\]\>\]: Represents the definition of the policy ruleset that makes up the core definition of a policy.
-      \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ExtendedProperties <IMicrosoftGraphNetworkaccessExtendedProperties>]`: extendedProperties
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[FirstActivityDateTime <DateTime?>]`: The time of the first activity related to the alert.
+  - `[IsPreview <Boolean?>]`: Indicates if the alert is a preview.
+  - `[LastActivityDateTime <DateTime?>]`: The time of the last activity related to the alert.
+  - `[Policy <IMicrosoftGraphNetworkaccessFilteringPolicy>]`: filteringPolicy
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Description <String>]`: Description.
+    - `[Name <String>]`: Policy name.
+    - `[PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule- `[]`>]`: Represents the definition of the policy ruleset that makes up the core definition of a policy.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[Name \<String\>\]: Name.
-    \[Version \<String\>\]: Version.
-    \[Id \<String\>\]: The unique identifier for an entity.
+      - `[Name <String>]`: Name.
+    - `[Version <String>]`: Version.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Action \<String\>\]: filteringPolicyAction
-    \[CreatedDateTime \<DateTime?\>\]: The date and time when the filtering Policy was originally created.
-    \[LastModifiedDateTime \<DateTime?\>\]: The date and time when a particular profile was last modified or updated.
-  \[ProductName \<String\>\]: The name of the product that raised the alert.
-  \[RelatedResources \<IMicrosoftGraphNetworkaccessRelatedResource\[\]\>\]: List of related resources to the alert (if applicable).
-  \[Severity \<String\>\]: alertSeverity
-  \[SubTechniques \<String\[\]\>\]: Sub-techniques associated with the alert.
-  \[Techniques \<String\[\]\>\]: Techniques associated with the alert.
-  \[VendorName \<String\>\]: The name of the vendor that raised the alert.
+    - `[Action <String>]`: filteringPolicyAction
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the filtering Policy was originally created.
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time when a particular profile was last modified or updated.
+  - `[ProductName <String>]`: The name of the product that raised the alert.
+  - `[RelatedResources <IMicrosoftGraphNetworkaccessRelatedResource- `[]`>]`: List of related resources to the alert (if applicable).
+  - `[Severity <String>]`: alertSeverity
+  - `[SubTechniques <String- `[]`>]`: Sub-techniques associated with the alert.
+  - `[Techniques <String- `[]`>]`: Techniques associated with the alert.
+  - `[VendorName <String>]`: The name of the vendor that raised the alert.
 
-INPUTOBJECT \<INetworkAccessIdentity\>: Identity Parameter
-  \[ActivityPivotDateTime \<DateTime?\>\]: Usage: activityPivotDateTime={activityPivotDateTime}
-  \[AggregatedBy \<String\>\]: Usage: aggregatedBy='{aggregatedBy}'
-  \[AlertId \<String\>\]: The unique identifier of alert
-  \[BranchSiteId \<String\>\]: The unique identifier of branchSite
-  \[ConditionalAccessPolicyId \<String\>\]: The unique identifier of conditionalAccessPolicy
-  \[ConnectionId \<String\>\]: The unique identifier of connection
-  \[ConnectivityConfigurationLinkId \<String\>\]: The unique identifier of connectivityConfigurationLink
-  \[DeviceLinkId \<String\>\]: The unique identifier of deviceLink
-  \[DiscoveryPivotDateTime \<DateTime?\>\]: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
-  \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
-  \[ExternalCertificateAuthorityCertificateId \<String\>\]: The unique identifier of externalCertificateAuthorityCertificate
-  \[FilteringPolicyId \<String\>\]: The unique identifier of filteringPolicy
-  \[FilteringProfileId \<String\>\]: The unique identifier of filteringProfile
-  \[ForwardingPolicyId \<String\>\]: The unique identifier of forwardingPolicy
-  \[ForwardingProfileId \<String\>\]: The unique identifier of forwardingProfile
-  \[NetworkAccessTrafficTransactionId \<String\>\]: The unique identifier of networkAccessTraffic
-  \[PolicyLinkId \<String\>\]: The unique identifier of policyLink
-  \[PolicyRuleId \<String\>\]: The unique identifier of policyRule
-  \[RemoteNetworkHealthEventId \<String\>\]: The unique identifier of remoteNetworkHealthEvent
-  \[RemoteNetworkId \<String\>\]: The unique identifier of remoteNetwork
-  \[StartDateTime \<DateTime?\>\]: Usage: startDateTime={startDateTime}
-  \[ThreatIntelligencePolicyId \<String\>\]: The unique identifier of threatIntelligencePolicy
-  \[TlsInspectionPolicyId \<String\>\]: The unique identifier of tlsInspectionPolicy
+INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+  - `[ActivityPivotDateTime <DateTime?>]`: Usage: activityPivotDateTime={activityPivotDateTime}
+  - `[AggregatedBy <String>]`: Usage: aggregatedBy='{aggregatedBy}'
+  - `[AlertId <String>]`: The unique identifier of alert
+  - `[BranchSiteId <String>]`: The unique identifier of branchSite
+  - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
+  - `[ConnectionId <String>]`: The unique identifier of connection
+  - `[ConnectivityConfigurationLinkId <String>]`: The unique identifier of connectivityConfigurationLink
+  - `[DeviceLinkId <String>]`: The unique identifier of deviceLink
+  - `[DiscoveryPivotDateTime <DateTime?>]`: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
+  - `[ExternalCertificateAuthorityCertificateId <String>]`: The unique identifier of externalCertificateAuthorityCertificate
+  - `[FilteringPolicyId <String>]`: The unique identifier of filteringPolicy
+  - `[FilteringProfileId <String>]`: The unique identifier of filteringProfile
+  - `[ForwardingPolicyId <String>]`: The unique identifier of forwardingPolicy
+  - `[ForwardingProfileId <String>]`: The unique identifier of forwardingProfile
+  - `[NetworkAccessTrafficTransactionId <String>]`: The unique identifier of networkAccessTraffic
+  - `[PolicyLinkId <String>]`: The unique identifier of policyLink
+  - `[PolicyRuleId <String>]`: The unique identifier of policyRule
+  - `[RemoteNetworkHealthEventId <String>]`: The unique identifier of remoteNetworkHealthEvent
+  - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+  - `[ThreatIntelligencePolicyId <String>]`: The unique identifier of threatIntelligencePolicy
+  - `[TlsInspectionPolicyId <String>]`: The unique identifier of tlsInspectionPolicy
 
-POLICY \<IMicrosoftGraphNetworkaccessFilteringPolicy\>: filteringPolicy
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Description \<String\>\]: Description.
-  \[Name \<String\>\]: Policy name.
-  \[PolicyRules \<IMicrosoftGraphNetworkaccessPolicyRule\[\]\>\]: Represents the definition of the policy ruleset that makes up the core definition of a policy.
-    \[Id \<String\>\]: The unique identifier for an entity.
+POLICY `<IMicrosoftGraphNetworkaccessFilteringPolicy>`: filteringPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Description <String>]`: Description.
+  - `[Name <String>]`: Policy name.
+  - `[PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule- `[]`>]`: Represents the definition of the policy ruleset that makes up the core definition of a policy.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Name \<String\>\]: Name.
-  \[Version \<String\>\]: Version.
-  \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Name <String>]`: Name.
+  - `[Version <String>]`: Version.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Action \<String\>\]: filteringPolicyAction
-  \[CreatedDateTime \<DateTime?\>\]: The date and time when the filtering Policy was originally created.
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when a particular profile was last modified or updated.
+  - `[Action <String>]`: filteringPolicyAction
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the filtering Policy was originally created.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time when a particular profile was last modified or updated.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessalert)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

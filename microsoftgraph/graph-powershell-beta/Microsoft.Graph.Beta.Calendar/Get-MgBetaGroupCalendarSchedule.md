@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarschedule
@@ -278,44 +278,44 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsB1HbbpGroupsGroupIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AvailabilityViewInterval \<Int32?\>\]: 
-  \[EndTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}).
+BODYPARAMETER `<IPathsB1HbbpGroupsGroupIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AvailabilityViewInterval <Int32?>]`: 
+  - `[EndTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
-    \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
-  \[Schedules \<String\[\]\>\]: 
-  \[StartTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+  - `[Schedules <String- `[]`>]`: 
+  - `[StartTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-ENDTIME \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}).
+ENDTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
-  \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
-  \[CalendarId \<String\>\]: The unique identifier of calendar
-  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
-  \[EventId \<String\>\]: The unique identifier of event
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[PlaceId \<String\>\]: The unique identifier of place
-  \[RoomId \<String\>\]: The unique identifier of room
-  \[User \<String\>\]: Usage: User='{User}'
-  \[UserId \<String\>\]: The unique identifier of user
-  \[WorkspaceId \<String\>\]: The unique identifier of workspace
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
+  - `[EventId <String>]`: The unique identifier of event
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PlaceId <String>]`: The unique identifier of place
+  - `[RoomId <String>]`: The unique identifier of room
+  - `[User <String>]`: Usage: User='{User}'
+  - `[UserId <String>]`: The unique identifier of user
+  - `[WorkspaceId <String>]`: The unique identifier of workspace
 
-STARTTIME \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}).
+STARTTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
-  \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
 ## RELATED LINKS
@@ -323,4 +323,26 @@ See below for possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarschedule)
 
 [https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-beta](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

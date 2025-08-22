@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessforwardingpolicyrule
@@ -243,38 +243,60 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphNetworkaccessPolicyRule\>: policyRule
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphNetworkaccessPolicyRule>`: policyRule
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Name \<String\>\]: Name.
+  - `[Name <String>]`: Name.
 
-INPUTOBJECT \<INetworkAccessIdentity\>: Identity Parameter
-  \[ActivityPivotDateTime \<DateTime?\>\]: Usage: activityPivotDateTime={activityPivotDateTime}
-  \[AggregatedBy \<String\>\]: Usage: aggregatedBy='{aggregatedBy}'
-  \[AlertId \<String\>\]: The unique identifier of alert
-  \[BranchSiteId \<String\>\]: The unique identifier of branchSite
-  \[ConditionalAccessPolicyId \<String\>\]: The unique identifier of conditionalAccessPolicy
-  \[ConnectionId \<String\>\]: The unique identifier of connection
-  \[ConnectivityConfigurationLinkId \<String\>\]: The unique identifier of connectivityConfigurationLink
-  \[DeviceLinkId \<String\>\]: The unique identifier of deviceLink
-  \[DiscoveryPivotDateTime \<DateTime?\>\]: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
-  \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
-  \[ExternalCertificateAuthorityCertificateId \<String\>\]: The unique identifier of externalCertificateAuthorityCertificate
-  \[FilteringPolicyId \<String\>\]: The unique identifier of filteringPolicy
-  \[FilteringProfileId \<String\>\]: The unique identifier of filteringProfile
-  \[ForwardingPolicyId \<String\>\]: The unique identifier of forwardingPolicy
-  \[ForwardingProfileId \<String\>\]: The unique identifier of forwardingProfile
-  \[NetworkAccessTrafficTransactionId \<String\>\]: The unique identifier of networkAccessTraffic
-  \[PolicyLinkId \<String\>\]: The unique identifier of policyLink
-  \[PolicyRuleId \<String\>\]: The unique identifier of policyRule
-  \[RemoteNetworkHealthEventId \<String\>\]: The unique identifier of remoteNetworkHealthEvent
-  \[RemoteNetworkId \<String\>\]: The unique identifier of remoteNetwork
-  \[StartDateTime \<DateTime?\>\]: Usage: startDateTime={startDateTime}
-  \[ThreatIntelligencePolicyId \<String\>\]: The unique identifier of threatIntelligencePolicy
-  \[TlsInspectionPolicyId \<String\>\]: The unique identifier of tlsInspectionPolicy
+INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+  - `[ActivityPivotDateTime <DateTime?>]`: Usage: activityPivotDateTime={activityPivotDateTime}
+  - `[AggregatedBy <String>]`: Usage: aggregatedBy='{aggregatedBy}'
+  - `[AlertId <String>]`: The unique identifier of alert
+  - `[BranchSiteId <String>]`: The unique identifier of branchSite
+  - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
+  - `[ConnectionId <String>]`: The unique identifier of connection
+  - `[ConnectivityConfigurationLinkId <String>]`: The unique identifier of connectivityConfigurationLink
+  - `[DeviceLinkId <String>]`: The unique identifier of deviceLink
+  - `[DiscoveryPivotDateTime <DateTime?>]`: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
+  - `[ExternalCertificateAuthorityCertificateId <String>]`: The unique identifier of externalCertificateAuthorityCertificate
+  - `[FilteringPolicyId <String>]`: The unique identifier of filteringPolicy
+  - `[FilteringProfileId <String>]`: The unique identifier of filteringProfile
+  - `[ForwardingPolicyId <String>]`: The unique identifier of forwardingPolicy
+  - `[ForwardingProfileId <String>]`: The unique identifier of forwardingProfile
+  - `[NetworkAccessTrafficTransactionId <String>]`: The unique identifier of networkAccessTraffic
+  - `[PolicyLinkId <String>]`: The unique identifier of policyLink
+  - `[PolicyRuleId <String>]`: The unique identifier of policyRule
+  - `[RemoteNetworkHealthEventId <String>]`: The unique identifier of remoteNetworkHealthEvent
+  - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+  - `[ThreatIntelligencePolicyId <String>]`: The unique identifier of threatIntelligencePolicy
+  - `[TlsInspectionPolicyId <String>]`: The unique identifier of tlsInspectionPolicy
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessforwardingpolicyrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessforwardingpolicyrule)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguserpresence
@@ -296,66 +296,88 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPresence\>: presence
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPresence>`: presence
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Activity \<String\>\]: The supplemental information to a user's availability.
+  - `[Activity <String>]`: The supplemental information to a user's availability.
 Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
-  \[Availability \<String\>\]: The base presence information for a user.
+  - `[Availability <String>]`: The base presence information for a user.
 Possible values are Available, availableIdle,  Away, beRightBack, Busy, busyIdle, DoNotDisturb, Offline, presenceUnknown.
-  \[OutOfOfficeSettings \<IMicrosoftGraphOutOfOfficeSettings\>\]: outOfOfficeSettings
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[IsOutOfOffice \<Boolean?\>\]: If true, either of the following is met:The current time falls within the out-of-office window configured in Outlook or Teams.An event marked as 'Show as Out of Office' appears on the user's calendar.Otherwise, false.
-    \[Message \<String\>\]: The out-of-office message configured by the user in the Outlook client (Automatic replies) or the Teams client (Schedule out of office).
-  \[StatusMessage \<IMicrosoftGraphPresenceStatusMessage\>\]: presenceStatusMessage
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ExpiryDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-      \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+  - `[OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]`: outOfOfficeSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsOutOfOffice <Boolean?>]`: If true, either of the following is met:The current time falls within the out-of-office window configured in Outlook or Teams.An event marked as 'Show as Out of Office' appears on the user's calendar.Otherwise, false.
+    - `[Message <String>]`: The out-of-office message configured by the user in the Outlook client (Automatic replies) or the Teams client (Schedule out of office).
+  - `[StatusMessage <IMicrosoftGraphPresenceStatusMessage>]`: presenceStatusMessage
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ExpiryDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-    \[Message \<IMicrosoftGraphItemBody\>\]: itemBody
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Content \<String\>\]: The content of the item.
-      \[ContentType \<String\>\]: bodyType
-    \[PublishedDateTime \<DateTime?\>\]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
+    - `[Message <IMicrosoftGraphItemBody>]`: itemBody
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Content <String>]`: The content of the item.
+      - `[ContentType <String>]`: bodyType
+    - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
-INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
-  \[CallId \<String\>\]: The unique identifier of call
-  \[CallRecordId \<String\>\]: The unique identifier of callRecord
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
-  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
-  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[ParticipantId \<String\>\]: The unique identifier of participant
-  \[PresenceId \<String\>\]: The unique identifier of presence
-  \[SessionId \<String\>\]: The unique identifier of session
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallRecordingId <String>]`: The unique identifier of callRecording
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[UserId <String>]`: The unique identifier of user
 
-OUTOFOFFICESETTINGS \<IMicrosoftGraphOutOfOfficeSettings\>: outOfOfficeSettings
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[IsOutOfOffice \<Boolean?\>\]: If true, either of the following is met:The current time falls within the out-of-office window configured in Outlook or Teams.An event marked as 'Show as Out of Office' appears on the user's calendar.Otherwise, false.
-  \[Message \<String\>\]: The out-of-office message configured by the user in the Outlook client (Automatic replies) or the Teams client (Schedule out of office).
+OUTOFOFFICESETTINGS `<IMicrosoftGraphOutOfOfficeSettings>`: outOfOfficeSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsOutOfOffice <Boolean?>]`: If true, either of the following is met:The current time falls within the out-of-office window configured in Outlook or Teams.An event marked as 'Show as Out of Office' appears on the user's calendar.Otherwise, false.
+  - `[Message <String>]`: The out-of-office message configured by the user in the Outlook client (Automatic replies) or the Teams client (Schedule out of office).
 
-STATUSMESSAGE \<IMicrosoftGraphPresenceStatusMessage\>: presenceStatusMessage
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ExpiryDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-    \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+STATUSMESSAGE `<IMicrosoftGraphPresenceStatusMessage>`: presenceStatusMessage
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ExpiryDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-  \[Message \<IMicrosoftGraphItemBody\>\]: itemBody
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Content \<String\>\]: The content of the item.
-    \[ContentType \<String\>\]: bodyType
-  \[PublishedDateTime \<DateTime?\>\]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
+  - `[Message <IMicrosoftGraphItemBody>]`: itemBody
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: The content of the item.
+    - `[ContentType <String>]`: bodyType
+  - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguserpresence)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the signed-in user's password.
-Any user can update their password without belonging to any administrator role.\nTo update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
+Any user can update their password without belonging to any administrator role.To update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
 See Example 3: Update the passwordProfile of a user and reset their password.
 
 ## SYNTAX
@@ -48,7 +48,7 @@ Update-MgBetaUserPassword -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Update the signed-in user's password.
-Any user can update their password without belonging to any administrator role.\nTo update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
+Any user can update their password without belonging to any administrator role.To update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
 See Example 3: Update the passwordProfile of a user and reset their password.
 
 ## EXAMPLES
@@ -268,17 +268,39 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CurrentPassword \<String\>\]: 
-  \[NewPassword \<String\>\]: 
+BODYPARAMETER `<IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CurrentPassword <String>]`: 
+  - `[NewPassword <String>]`: 
 
-INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword)
 
 [https://learn.microsoft.com/graph/api/user-changepassword?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-changepassword?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
