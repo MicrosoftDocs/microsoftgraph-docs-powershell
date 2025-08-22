@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrantVideoOnDemandWebUrl
-.
+
 
 ```yaml
 Type: String

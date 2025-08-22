@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -Values
-.
+
 To construct, see NOTES section for VALUES properties and create a hash table.
 
 ```yaml

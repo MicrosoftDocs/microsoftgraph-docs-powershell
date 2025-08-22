@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApprovalOnElevation
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApproverIds
-.
+
 
 ```yaml
 Type: String[]
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ElevationDuration
-.
+
 
 ```yaml
 Type: TimeSpan
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsMfaOnElevationConfigurable
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastGlobalAdmin
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxElavationDuration
-.
+
 
 ```yaml
 Type: TimeSpan
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -MfaOnElevation
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinElevationDuration
-.
+
 
 ```yaml
 Type: TimeSpan
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationToUserOnElevation
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -310,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -TicketingInfoOnElevation
-.
+
 
 ```yaml
 Type: SwitchParameter

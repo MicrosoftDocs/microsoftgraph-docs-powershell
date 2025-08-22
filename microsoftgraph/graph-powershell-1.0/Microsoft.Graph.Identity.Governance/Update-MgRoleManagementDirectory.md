@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceNamespaces
-.
+
 To construct, see NOTES section for RESOURCENAMESPACES properties and create a hash table.
 
 ```yaml

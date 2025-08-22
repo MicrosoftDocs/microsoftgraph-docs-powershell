@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllotmentLicensesCount
-.
+
 
 ```yaml
 Type: Int32

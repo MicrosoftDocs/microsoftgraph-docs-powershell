@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientContext
-.
+
 
 ```yaml
 Type: String
@@ -309,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -Participants
-.
+
 To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml

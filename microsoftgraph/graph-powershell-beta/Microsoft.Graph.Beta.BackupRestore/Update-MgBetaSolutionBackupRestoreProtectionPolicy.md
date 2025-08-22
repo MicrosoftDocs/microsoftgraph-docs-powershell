@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingPolicyId
-.
+
 
 ```yaml
 Type: String

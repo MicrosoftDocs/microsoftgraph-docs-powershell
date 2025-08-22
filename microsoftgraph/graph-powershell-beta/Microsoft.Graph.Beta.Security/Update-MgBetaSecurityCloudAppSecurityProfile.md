@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureSubscriptionId
-.
+
 
 ```yaml
 Type: String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureTenantId
-.
+
 
 ```yaml
 Type: String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeploymentPackageUrl
-.
+
 
 ```yaml
 Type: String
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationServiceName
-.
+
 
 ```yaml
 Type: String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsSigned
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -Manifest
-.
+
 
 ```yaml
 Type: String
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-.
+
 
 ```yaml
 Type: String
@@ -299,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### -Platform
-.
+
 
 ```yaml
 Type: String
@@ -314,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyName
-.
+
 
 ```yaml
 Type: String
@@ -344,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-.
+
 
 ```yaml
 Type: String
@@ -374,7 +374,7 @@ Accept wildcard characters: False
 ```
 
 ### -RiskScore
-.
+
 
 ```yaml
 Type: String
@@ -389,7 +389,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-.
+
 
 ```yaml
 Type: String[]
@@ -404,7 +404,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-.
+
 
 ```yaml
 Type: String

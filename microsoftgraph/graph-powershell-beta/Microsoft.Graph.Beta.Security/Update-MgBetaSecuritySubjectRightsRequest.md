@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Approvers
-.
+
 To construct, see NOTES section for APPROVERS properties and create a hash table.
 
 ```yaml
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Collaborators
-.
+
 To construct, see NOTES section for COLLABORATORS properties and create a hash table.
 
 ```yaml

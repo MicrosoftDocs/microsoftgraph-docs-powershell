@@ -471,7 +471,7 @@ Accept wildcard characters: False
 ```
 
 ### -HomeRealmDiscoveryPolicies
-.
+
 To construct, see NOTES section for HOMEREALMDISCOVERYPOLICIES properties and create a hash table.
 
 ```yaml
@@ -977,7 +977,7 @@ Accept wildcard characters: False
 ```
 
 ### -TokenIssuancePolicies
-.
+
 To construct, see NOTES section for TOKENISSUANCEPOLICIES properties and create a hash table.
 
 ```yaml

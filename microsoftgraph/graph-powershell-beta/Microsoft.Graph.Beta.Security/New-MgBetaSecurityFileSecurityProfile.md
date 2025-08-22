@@ -38,7 +38,7 @@ Create new navigation property to fileSecurityProfiles for security
 ## PARAMETERS
 
 ### -ActivityGroupNames
-.
+
 
 ```yaml
 Type: String[]
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureSubscriptionId
-.
+
 
 ```yaml
 Type: String
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureTenantId
-.
+
 
 ```yaml
 Type: String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateThumbprint
-.
+
 
 ```yaml
 Type: String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Extensions
-.
+
 
 ```yaml
 Type: String[]
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileType
-.
+
 
 ```yaml
 Type: String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirstSeenDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Hashes
-.
+
 To construct, see NOTES section for HASHES properties and create a hash table.
 
 ```yaml
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastSeenDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -MalwareStates
-.
+
 To construct, see NOTES section for MALWARESTATES properties and create a hash table.
 
 ```yaml
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -Names
-.
+
 
 ```yaml
 Type: String[]
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -RiskScore
-.
+
 
 ```yaml
 Type: String
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -Size
-.
+
 
 ```yaml
 Type: Int64
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-.
+
 
 ```yaml
 Type: String[]
@@ -358,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### -VulnerabilityStates
-.
+
 To construct, see NOTES section for VULNERABILITYSTATES properties and create a hash table.
 
 ```yaml

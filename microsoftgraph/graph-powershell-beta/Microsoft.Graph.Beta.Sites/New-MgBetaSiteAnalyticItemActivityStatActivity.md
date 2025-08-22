@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -ActivityDateTime
-.
+
 
 ```yaml
 Type: DateTime

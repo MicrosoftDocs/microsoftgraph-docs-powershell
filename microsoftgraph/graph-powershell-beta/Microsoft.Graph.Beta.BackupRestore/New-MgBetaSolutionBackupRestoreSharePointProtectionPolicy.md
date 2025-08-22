@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingPolicyId
-.
+
 
 ```yaml
 Type: String
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -SiteProtectionUnitsBulkAdditionJobs
-.
+
 To construct, see NOTES section for SITEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml

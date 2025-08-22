@@ -507,7 +507,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsEndToEndEncryptionEnabled
-.
+
 
 ```yaml
 Type: SwitchParameter

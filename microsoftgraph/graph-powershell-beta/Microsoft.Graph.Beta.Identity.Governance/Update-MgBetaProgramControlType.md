@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -ControlTypeGroupId
-.
+
 
 ```yaml
 Type: String

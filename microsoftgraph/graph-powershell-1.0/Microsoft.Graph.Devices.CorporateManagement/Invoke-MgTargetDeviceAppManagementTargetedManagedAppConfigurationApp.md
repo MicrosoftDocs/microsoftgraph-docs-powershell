@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Apps
-.
+
 To construct, see NOTES section for APPS properties and create a hash table.
 
 ```yaml
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml

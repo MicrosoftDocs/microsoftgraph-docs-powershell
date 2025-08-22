@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnterpriseApps
-.
+
 To construct, see NOTES section for ENTERPRISEAPPS properties and create a hash table.
 
 ```yaml

@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppServiceName
-.
+
 
 ```yaml
 Type: String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Error
-.
+
 
 ```yaml
 Type: String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -PackageFamilyName
-.
+
 
 ```yaml
 Type: String
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionTicket
-.
+
 
 ```yaml
 Type: String
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -PostBackUri
-.
+
 
 ```yaml
 Type: String
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-.
+
 
 ```yaml
 Type: String
@@ -309,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-.
+
 
 ```yaml
 Type: String

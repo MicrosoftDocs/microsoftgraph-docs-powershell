@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -AttachmentSessions
-.
+
 To construct, see NOTES section for ATTACHMENTSESSIONS properties and create a hash table.
 
 ```yaml
@@ -483,7 +483,7 @@ Accept wildcard characters: False
 ```
 
 ### -SingleValueExtendedProperties
-.
+
 To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml

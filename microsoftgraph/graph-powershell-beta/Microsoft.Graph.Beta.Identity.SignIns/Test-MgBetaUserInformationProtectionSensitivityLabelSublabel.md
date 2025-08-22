@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiscoveredSensitiveTypes
-.
+
 To construct, see NOTES section for DISCOVEREDSENSITIVETYPES properties and create a hash table.
 
 ```yaml

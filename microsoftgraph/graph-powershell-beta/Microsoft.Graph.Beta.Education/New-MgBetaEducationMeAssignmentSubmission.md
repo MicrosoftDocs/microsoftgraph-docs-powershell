@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -Outcomes
-.
+
 To construct, see NOTES section for OUTCOMES properties and create a hash table.
 
 ```yaml
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -Resources
-.
+
 To construct, see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
@@ -326,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubmittedResources
-.
+
 To construct, see NOTES section for SUBMITTEDRESOURCES properties and create a hash table.
 
 ```yaml

@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deleted
-.
+
 
 ```yaml
 Type: Int64

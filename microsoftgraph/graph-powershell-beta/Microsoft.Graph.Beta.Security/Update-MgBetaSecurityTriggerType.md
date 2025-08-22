@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionEventTypes
-.
+
 To construct, see NOTES section for RETENTIONEVENTTYPES properties and create a hash table.
 
 ```yaml

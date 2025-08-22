@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -FeatureRolloutPolicies
-.
+
 To construct, see NOTES section for FEATUREROLLOUTPOLICIES properties and create a hash table.
 
 ```yaml
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImpactedResources
-.
+
 To construct, see NOTES section for IMPACTEDRESOURCES properties and create a hash table.
 
 ```yaml
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutboundSharedUserProfiles
-.
+
 To construct, see NOTES section for OUTBOUNDSHAREDUSERPROFILES properties and create a hash table.
 
 ```yaml
@@ -435,7 +435,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharedEmailDomains
-.
+
 To construct, see NOTES section for SHAREDEMAILDOMAINS properties and create a hash table.
 
 ```yaml

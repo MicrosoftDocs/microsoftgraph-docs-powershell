@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+
 
 ```yaml
 Type: String

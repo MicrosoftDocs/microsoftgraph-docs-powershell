@@ -345,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -Manufacturer
-.
+
 
 ```yaml
 Type: String
@@ -360,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -Model
-.
+
 
 ```yaml
 Type: String
