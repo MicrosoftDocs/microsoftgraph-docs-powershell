@@ -12,6 +12,9 @@ ms.subservice: ediscovery
 Start the process of applying hold on eDiscovery custodians.
 After the operation is created, you can use Get ediscoveryCustodian to retrieve the status of an ediscoveryCustodian.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold](/powershell/module/Microsoft.Graph.Beta.Security/Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ApplyExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Sets a new value for the collection of alertComment.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaSecurityIncidentAlertComment](/powershell/module/Microsoft.Graph.Beta.Security/Set-MgBetaSecurityIncidentAlertComment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetViaIdentity (Default)

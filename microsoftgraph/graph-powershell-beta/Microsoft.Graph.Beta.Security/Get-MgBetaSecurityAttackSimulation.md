@@ -12,6 +12,9 @@ ms.subservice: security
 ## SYNOPSIS
 Get an attack simulation campaign for a tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

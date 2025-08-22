@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Specifies a unique alpha-numeric identifier for an organization's retention schedule.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -12,6 +12,9 @@ ms.subservice: edge-browser-management
 ## SYNOPSIS
 Get a browserSiteList that contains browserSite and browserSharedCookie resources.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

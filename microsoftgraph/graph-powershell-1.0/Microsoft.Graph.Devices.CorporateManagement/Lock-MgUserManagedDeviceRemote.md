@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Remote lock
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Lock-MgBetaUserManagedDeviceRemote](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Lock-MgBetaUserManagedDeviceRemote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Lock (Default)

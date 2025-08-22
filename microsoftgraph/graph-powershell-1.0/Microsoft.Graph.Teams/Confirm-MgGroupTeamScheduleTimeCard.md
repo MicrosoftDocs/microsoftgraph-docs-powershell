@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Confirm a timeCard.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaGroupTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Beta.Teams/Confirm-MgBetaGroupTeamScheduleTimeCard?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Confirm (Default)

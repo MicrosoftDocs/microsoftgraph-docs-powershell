@@ -12,6 +12,9 @@ ms.subservice: security
 ## SYNOPSIS
 Read the properties and relationships of a sensor object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentitySensor](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentitySensor?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

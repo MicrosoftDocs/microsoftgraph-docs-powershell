@@ -12,6 +12,9 @@ ms.subservice: entra-sign-in
 Delete a customAuthenticationExtension object.
 The following derived types are currently supported.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityCustomAuthenticationExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -12,6 +12,9 @@ ms.subservice: entra-applications
 List the tokenLifetimePolicy objects that are assigned to a servicePrincipal.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to a service principal.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTokenLifetimePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

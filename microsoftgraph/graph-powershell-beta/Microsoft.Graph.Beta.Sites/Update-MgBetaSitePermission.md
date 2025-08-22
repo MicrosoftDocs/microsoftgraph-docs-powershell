@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Update the permission object on a site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

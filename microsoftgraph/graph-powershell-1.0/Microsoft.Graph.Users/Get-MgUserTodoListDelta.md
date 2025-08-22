@@ -13,6 +13,9 @@ Get a set of todoTaskList resources that have been added, deleted, or removed in
 A delta function call for todoTaskList is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the todoTaskList.
 This allows you to maintain and synchronize a local store of a user's todoTaskList without having to fetch all the todoTaskList from the server every time.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoListDelta](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoListDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

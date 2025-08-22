@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Analytics about the view activities that took place on this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathAnalytic?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

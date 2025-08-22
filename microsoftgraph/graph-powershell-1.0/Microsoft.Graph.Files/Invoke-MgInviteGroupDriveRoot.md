@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaInviteGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaInviteGroupDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### InviteExpanded (Default)

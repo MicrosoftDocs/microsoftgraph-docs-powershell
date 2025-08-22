@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Create a new sitePage in the site pages list in a site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSitePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

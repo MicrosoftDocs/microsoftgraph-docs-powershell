@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Invoke action copy
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Copy-MgBetaGroupDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
