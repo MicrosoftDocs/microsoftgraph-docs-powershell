@@ -22,6 +22,14 @@ Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy [-ExpandProperty <Strin
 ## DESCRIPTION
 Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.SecurityDefaults,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.SecurityDefaults,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

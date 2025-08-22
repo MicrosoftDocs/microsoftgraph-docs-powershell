@@ -30,6 +30,14 @@ Remove-MgBetaTrustFrameworkPolicyContent -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Delete an existing trustFrameworkPolicy object from an Microsoft Entra B2C tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.TrustFramework,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.TrustFramework,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

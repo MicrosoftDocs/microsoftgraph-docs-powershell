@@ -32,6 +32,14 @@ Restart-MgBetaTeamworkDevice -InputObject <ITeamsIdentity> [-ResponseHeadersVari
 Restart the specified Microsoft Teams-enabled device asynchronously.
 A device is restarted after the async operation completes successfully, which might occur subsequent to a response from this API.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkDevice.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkDevice.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

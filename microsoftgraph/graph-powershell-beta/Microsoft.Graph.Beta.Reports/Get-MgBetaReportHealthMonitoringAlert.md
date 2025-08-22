@@ -41,6 +41,14 @@ Get-MgBetaReportHealthMonitoringAlert -InputObject <IReportsIdentity> [-ExpandPr
 Read the properties and relationships of a Microsoft Entra health monitoring alert object.
 The returned alert object contains information about the state, type, date, and impact of each alert that fired within your tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | HealthMonitoringAlert.Read.All, HealthMonitoringAlert.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | HealthMonitoringAlert.Read.All, HealthMonitoringAlert.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

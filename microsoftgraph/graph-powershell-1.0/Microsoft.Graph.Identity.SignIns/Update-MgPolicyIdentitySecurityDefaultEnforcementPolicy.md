@@ -31,6 +31,14 @@ Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy
 ## DESCRIPTION
 Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.SecurityDefaults, Policy.ReadWrite.ConditionalAccess,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.SecurityDefaults, Policy.ReadWrite.ConditionalAccess,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

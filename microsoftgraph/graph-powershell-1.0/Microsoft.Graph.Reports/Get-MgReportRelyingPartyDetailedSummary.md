@@ -32,6 +32,14 @@ Get-MgReportRelyingPartyDetailedSummary -InputObject <IReportsIdentity> [-Count]
 ## DESCRIPTION
 Get a summary of AD FS relying parties information.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Reports.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Reports.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

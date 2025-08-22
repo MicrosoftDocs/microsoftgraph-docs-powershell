@@ -48,6 +48,14 @@ Set-MgBetaUserAuthenticationHardwareOathMethodAndActivateBySerialNumber -InputOb
 ## DESCRIPTION
 Assign and activate a hardware token at the same time by hardware token serial number.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -41,6 +41,14 @@ Get-MgBetaEducationMeRubric -InputObject <IEducationIdentity> [-ExpandProperty <
 Retrieve the properties and relationships of an educationRubric object.
 Only teachers and students can perform this operation.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite, EduAssignments.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

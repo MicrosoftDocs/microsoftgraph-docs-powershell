@@ -55,6 +55,14 @@ Get-MgBetaAllUserChatMessage -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 A collection of all the messages in the chat.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.Read, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatMessage.Read.Chat, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite.All, Chat.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

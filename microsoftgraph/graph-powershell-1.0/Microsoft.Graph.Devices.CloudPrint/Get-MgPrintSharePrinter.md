@@ -29,6 +29,14 @@ Get-MgPrintSharePrinter -InputObject <IDevicesCloudPrintIdentity> [-ExpandProper
 ## DESCRIPTION
 The printer that this printer share is related to.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Printer.Read.All, Printer.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

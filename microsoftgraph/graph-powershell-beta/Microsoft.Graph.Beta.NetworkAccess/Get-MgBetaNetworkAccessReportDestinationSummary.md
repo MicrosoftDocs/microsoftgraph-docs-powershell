@@ -30,6 +30,14 @@ Get-MgBetaNetworkAccessReportDestinationSummary -InputObject <INetworkAccessIden
 ## DESCRIPTION
 Get counts of the visits to the top destination aggregations.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | NetworkAccess-Reports.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | NetworkAccess-Reports.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

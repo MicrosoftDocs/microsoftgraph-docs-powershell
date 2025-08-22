@@ -29,6 +29,14 @@ Get-MgBetaUserTeamworkAssociatedTeamCount -InputObject <ITeamsIdentity> [-Filter
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.ReadWrite.All, TeamSettings.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Team.ReadBasic.All, TeamSettings.ReadWrite.All, TeamSettings.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

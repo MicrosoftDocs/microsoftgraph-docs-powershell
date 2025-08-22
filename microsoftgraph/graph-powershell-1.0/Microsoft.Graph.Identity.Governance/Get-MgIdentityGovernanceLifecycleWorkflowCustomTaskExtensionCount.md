@@ -21,6 +21,14 @@ Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCount [-Filter <Stri
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | LifecycleWorkflows-CustomExt.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows-CustomExt.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LifecycleWorkflows-CustomExt.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows-CustomExt.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

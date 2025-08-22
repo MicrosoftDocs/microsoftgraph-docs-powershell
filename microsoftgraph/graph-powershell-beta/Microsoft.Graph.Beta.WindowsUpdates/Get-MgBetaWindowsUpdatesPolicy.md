@@ -39,6 +39,14 @@ Get-MgBetaWindowsUpdatesPolicy -InputObject <IWindowsUpdatesIdentity> [-ExpandPr
 ## DESCRIPTION
 Read the properties and relationships of an updatePolicy object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | WindowsUpdates.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

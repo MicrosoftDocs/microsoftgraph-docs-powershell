@@ -33,6 +33,14 @@ Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurren
 ## DESCRIPTION
 Get a list of the unifiedRoleEligibilityScheduleRequest objects and their properties associated with the currently signed in principal object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

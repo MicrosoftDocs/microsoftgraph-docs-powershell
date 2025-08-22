@@ -34,6 +34,14 @@ Get-MgBetaGroupTeamChannelRetainedMessage -InputObject <ITeamsIdentity> [-Count]
 Get all retained messages across all channels in a team.
 To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

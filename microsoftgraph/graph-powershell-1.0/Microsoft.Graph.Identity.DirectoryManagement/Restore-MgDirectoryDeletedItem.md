@@ -33,6 +33,14 @@ Restore a recently deleted application, group, servicePrincipal, administrative 
 Restore a recently deleted directory object from deleted items.
 The following types are supported:- administrativeUnit- application- certificateBasedAuthPki- certificateAuthorityDetail- group- servicePrincipal
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.DeleteRestore.All, User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.DeleteRestore.All, User.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
