@@ -24,27 +24,23 @@ function Set-Help {
     )
 
     $generationParams = @{
-        Command               = $Command
+        CommandInfo               = $Command
         OutputFolder          = $ModuleDocsPath
-        AlphabeticParamsOrder = $true
-        ExcludeDontShow       = $true
         Force                 = $true
         Encoding              = [System.Text.Encoding]::UTF8
     }
 
     if ($Module -eq "Microsoft.Graph.Authentication") {
         $generationParams = @{
-            Module                = $Module
+            ModuleInfo                = $Module
             OutputFolder          = $ModuleDocsPath
-            AlphabeticParamsOrder = $true
-            ExcludeDontShow       = $true
             WithModulePage        = $true
             Encoding              = [System.Text.Encoding]::UTF8
         }
         Import-Module $Module -Force -Global
     }
     try{
-        New-MarkdownHelp @generationParams
+        New-MarkdownCommandHelp @generationParams
     } catch {
         Write-Host "Error: $($_.Exception.Message)"
     }
