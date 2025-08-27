@@ -155,10 +155,7 @@ function Get-FolderByProfile {
    
 }
 # Install PlatyPS
-if (!(Get-Module -Name PlatyPS -ListAvailable)) {
-    Install-Module PlatyPS -Force
-}
-Import-Module PlatyPS -Force -Scope Global
+Install-Module -Name Microsoft.PowerShell.PlatyPS -Force -Scope Global
 # Errors in PlatyPS validation.
 $ErrorActionPreference = 'Continue'
 $LASTEXITCODE = $null
