@@ -24,7 +24,7 @@ function Set-Help {
     )
 
     $generationParams = @{
-        CommandInfo               = $Command
+        Command               = $Command
         OutputFolder          = $ModuleDocsPath
         Force                 = $true
         Encoding              = [System.Text.Encoding]::UTF8
@@ -32,7 +32,7 @@ function Set-Help {
 
     if ($Module -eq "Microsoft.Graph.Authentication") {
         $generationParams = @{
-            ModuleInfo                = $Module
+            Module                = $Module
             OutputFolder          = $ModuleDocsPath
             WithModulePage        = $true
             Encoding              = [System.Text.Encoding]::UTF8
