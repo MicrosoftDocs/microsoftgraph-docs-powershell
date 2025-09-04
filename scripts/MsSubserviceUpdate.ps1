@@ -27,8 +27,13 @@ function Start-Generator {
             try {
                 if (Test-Path $DestinationFile) {
                     if (![string]::IsNullOrEmpty($ExternalDocUrl)) {
-                        WebScrapping -GraphProfile $GraphProfile -ExternalDocUrl $ExternalDocUrl -Command $Command -File $DestinationFile
-                    }   
+                        if ($GraphProfile -in @('beta','v1.0')) {
+                            Write-Host "Processing $Command in $GraphProfile profile"
+                            WebScrapping -GraphProfile $GraphProfile -ExternalDocUrl $ExternalDocUrl -Command $Command -File $DestinationFile
+                        } else {
+                            Write-Host "Skipping non v1.0/beta profile '$GraphProfile' for command $Command"
+                        }
+                    }
                 }
             }
             catch {
@@ -115,13 +120,13 @@ function FetchStream {
     return ($ReadStream, $HttpWebResponse)
 }
 
-if (!(Get-Module "powershell-yaml" -ListAvailable -ErrorAction SilentlyContinue)) {
-    Install-Module "powershell-yaml" -AcceptLicense -Scope CurrentUser -Force
-}
-If (-not (Get-Module -ErrorAction Ignore -ListAvailable PowerHTML)) {
-    Write-Verbose "Installing PowerHTML module for the current user..."
-    Install-Module PowerHTML -ErrorAction Stop -Scope CurrentUser -Force
-}
+# if (!(Get-Module "powershell-yaml" -ListAvailable -ErrorAction SilentlyContinue)) {
+#     Install-Module "powershell-yaml" -AcceptLicense -Scope CurrentUser -Force
+# }
+# If (-not (Get-Module -ErrorAction Ignore -ListAvailable PowerHTML)) {
+#     Write-Verbose "Installing PowerHTML module for the current user..."
+#     Install-Module PowerHTML -ErrorAction Stop -Scope CurrentUser -Force
+# }
 Import-Module -ErrorAction Stop PowerHTML
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Generator
