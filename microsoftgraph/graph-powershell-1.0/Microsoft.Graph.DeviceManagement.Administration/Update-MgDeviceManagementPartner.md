@@ -15,6 +15,9 @@ title: Update-MgDeviceManagementPartner
 
 Update the properties of a deviceManagementPartner object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementPartner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

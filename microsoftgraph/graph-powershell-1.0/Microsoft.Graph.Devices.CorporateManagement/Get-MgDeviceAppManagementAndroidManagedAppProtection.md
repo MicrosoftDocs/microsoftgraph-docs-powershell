@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementAndroidManagedAppProtection
 
 Read properties and relationships of the androidManagedAppProtection object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

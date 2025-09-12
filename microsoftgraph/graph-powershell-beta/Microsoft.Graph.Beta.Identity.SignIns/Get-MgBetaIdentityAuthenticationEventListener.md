@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityAuthenticationEventListener
 
 Get authenticationEventListeners from identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityAuthenticationEventListener?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBookingCurrency
 
 Delete navigation property bookingCurrencies for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingCurrency?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

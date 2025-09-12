@@ -15,6 +15,9 @@ title: Update-MgDeviceAppManagementMobileAppConfigurationAssignment
 
 Update the properties of a managedDeviceMobileAppConfigurationAssignment object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfigurationAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

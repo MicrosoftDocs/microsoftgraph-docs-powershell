@@ -15,6 +15,9 @@ title: Remove-MgServicePrincipalByAppId
 
 Delete a servicePrincipal object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalByAppId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

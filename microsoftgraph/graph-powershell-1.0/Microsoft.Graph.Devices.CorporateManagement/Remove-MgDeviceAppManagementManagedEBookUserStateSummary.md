@@ -15,6 +15,9 @@ title: Remove-MgDeviceAppManagementManagedEBookUserStateSummary
 
 Deletes a userInstallStateSummary.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementManagedEBookUserStateSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedEBookUserStateSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

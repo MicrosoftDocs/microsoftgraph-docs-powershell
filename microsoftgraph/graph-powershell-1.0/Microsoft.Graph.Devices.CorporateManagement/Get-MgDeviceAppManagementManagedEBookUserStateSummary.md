@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementManagedEBookUserStateSummary
 
 Read properties and relationships of the userInstallStateSummary object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedEBookUserStateSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookUserStateSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

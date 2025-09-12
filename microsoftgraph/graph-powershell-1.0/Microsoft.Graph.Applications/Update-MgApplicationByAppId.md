@@ -15,6 +15,9 @@ title: Update-MgApplicationByAppId
 
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaApplicationByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationByAppId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

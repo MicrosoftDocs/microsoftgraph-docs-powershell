@@ -15,6 +15,9 @@ title: New-MgBetaPrintService
 
 Create new navigation property to services for print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrintService](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintService?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

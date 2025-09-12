@@ -15,6 +15,9 @@ title: Update-MgBetaVirtualEventTownhallSession
 
 Update the navigation property sessions in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventTownhallSession](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventTownhallSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

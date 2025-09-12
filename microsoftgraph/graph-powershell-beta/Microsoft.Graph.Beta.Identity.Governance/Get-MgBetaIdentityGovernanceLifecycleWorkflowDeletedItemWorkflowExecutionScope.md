@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecution
 
 The unique identifier of the Microsoft Entra identity that last modified the workflow object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

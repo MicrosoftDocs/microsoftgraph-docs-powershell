@@ -15,6 +15,9 @@ title: Update-MgGroupSiteListSubscription
 
 Update the navigation property subscriptions in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

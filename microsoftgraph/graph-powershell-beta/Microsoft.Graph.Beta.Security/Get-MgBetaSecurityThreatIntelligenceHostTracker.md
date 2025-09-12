@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityThreatIntelligenceHostTracker
 
 Read the properties and relationships of a hostTracker object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostTracker?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

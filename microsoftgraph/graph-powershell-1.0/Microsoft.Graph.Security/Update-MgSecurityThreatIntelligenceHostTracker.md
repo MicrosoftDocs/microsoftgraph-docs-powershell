@@ -15,6 +15,9 @@ title: Update-MgSecurityThreatIntelligenceHostTracker
 
 Update the navigation property hostTrackers in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostTracker?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

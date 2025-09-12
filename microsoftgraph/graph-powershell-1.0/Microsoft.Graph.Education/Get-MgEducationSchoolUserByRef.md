@@ -15,6 +15,9 @@ title: Get-MgEducationSchoolUserByRef
 
 Get the educationUser resources associated with an educationSchool.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

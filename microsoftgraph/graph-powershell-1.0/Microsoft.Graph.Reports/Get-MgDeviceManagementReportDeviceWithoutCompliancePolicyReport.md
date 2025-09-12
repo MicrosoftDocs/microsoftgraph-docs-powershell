@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport
 
 Not yet documented
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportDeviceWithoutCompliancePolicyReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportDeviceWithoutCompliancePolicyReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

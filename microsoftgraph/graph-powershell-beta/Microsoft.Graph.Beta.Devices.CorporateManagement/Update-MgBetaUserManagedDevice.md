@@ -15,6 +15,9 @@ title: Update-MgBetaUserManagedDevice
 
 Update the navigation property managedDevices in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Update1 (Default)

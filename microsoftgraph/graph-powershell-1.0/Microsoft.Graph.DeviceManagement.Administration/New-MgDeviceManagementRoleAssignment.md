@@ -15,6 +15,9 @@ title: New-MgDeviceManagementRoleAssignment
 
 Create a new deviceAndAppManagementRoleAssignment object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

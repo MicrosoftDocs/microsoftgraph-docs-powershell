@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowExecutionScope
 
 The unique identifier of the Microsoft Entra identity that last modified the workflow object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

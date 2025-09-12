@@ -15,6 +15,9 @@ title: Update-MgDeviceAppManagementManagedEBookAssignment
 
 Update the properties of a iosVppEBookAssignment object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedEBookAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBookAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

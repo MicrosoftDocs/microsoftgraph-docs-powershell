@@ -15,6 +15,9 @@ title: New-MgDeviceManagementTermAndConditionAcceptanceStatus
 
 Create a new termsAndConditionsAcceptanceStatus object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

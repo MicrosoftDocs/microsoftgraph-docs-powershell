@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamworkDeletedTeamChannelMessageHostedContent
 
 Delete navigation property hostedContents for teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgDirectorySubscription
 
 Get a specific commercial subscription that an organization acquired.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectorySubscription](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectorySubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

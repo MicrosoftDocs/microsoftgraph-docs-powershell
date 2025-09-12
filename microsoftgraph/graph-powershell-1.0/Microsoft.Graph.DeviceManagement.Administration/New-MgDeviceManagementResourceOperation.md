@@ -15,6 +15,9 @@ title: New-MgDeviceManagementResourceOperation
 
 Create a new resourceOperation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementResourceOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary
 
 Create a new windowsInformationProtectionNetworkLearningSummary object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementTargetedManagedAppConfiguration
 
 Read properties and relationships of the targetedManagedAppConfiguration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

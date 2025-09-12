@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementManagedAppRegistration
 
 Read properties and relationships of the iosManagedAppRegistration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

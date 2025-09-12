@@ -15,6 +15,9 @@ title: Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment
 
 Update the properties of a targetedManagedAppPolicyAssignment object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

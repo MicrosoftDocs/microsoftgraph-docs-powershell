@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssig
 
 The list of group assignments for this mobile app.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
 
 Update the user synchronization policy of a partner-specific configuration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgUserManagedDeviceWindowsDeviceAccount
 
 Not yet documented
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
