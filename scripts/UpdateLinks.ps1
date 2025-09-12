@@ -29,6 +29,10 @@ function Start-Update {
         Get-FilesByProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate -GraphProfile $GraphProfile
     }
 
+    git config --global user.email "GraphTooling@service.microsoft.com"
+    git config --global user.name "Microsoft Graph DevX Tooling"
+    git add .
+
     # Check for staged changes; commit only if any exist
     $pending = git status --porcelain
     if (-not [string]::IsNullOrWhiteSpace($pending)) {
