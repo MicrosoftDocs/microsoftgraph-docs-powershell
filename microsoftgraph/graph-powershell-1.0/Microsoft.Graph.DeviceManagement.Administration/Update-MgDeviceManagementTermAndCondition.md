@@ -86,8 +86,9 @@ Update the properties of a termsAndConditions object.
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -102,6 +103,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementTermAndCondition -TermsAndConditionsId $termsAndConditionsId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementTermAndCondition Cmdlet.
+
 
 ## PARAMETERS
 

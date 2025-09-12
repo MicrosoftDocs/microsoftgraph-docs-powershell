@@ -64,12 +64,17 @@ Read the properties and relationships of a yearTimePeriodDefinition object.
 | Application | IndustryData-TimePeriod.Read.All, IndustryData-TimePeriod.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
 Get-MgBetaExternalIndustryDataYear
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataYear Cmdlet.
+
 
 ## PARAMETERS
 

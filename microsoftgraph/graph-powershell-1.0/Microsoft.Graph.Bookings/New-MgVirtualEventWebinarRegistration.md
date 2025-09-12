@@ -84,8 +84,9 @@ Create a registration record for a registrant of a webinar.
 This method registers the person for the webinar.
 
 ## EXAMPLES
+### Example 1: Creating registration record with delegated permission
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -127,7 +128,12 @@ $params = @{
 
 New-MgVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows creating registration record with delegated permission
+
+### Example 2: Creating registration record with application permission
+
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -170,6 +176,10 @@ $params = @{
 }
 
 New-MgVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
+
+```
+This example shows creating registration record with application permission
+
 
 ## PARAMETERS
 

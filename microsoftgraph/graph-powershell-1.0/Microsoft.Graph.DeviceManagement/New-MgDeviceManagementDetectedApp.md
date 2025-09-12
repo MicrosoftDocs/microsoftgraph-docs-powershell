@@ -60,8 +60,9 @@ Create a new detectedApp object.
 | Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -76,6 +77,10 @@ $params = @{
 }
 
 New-MgDeviceManagementDetectedApp -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDetectedApp Cmdlet.
+
 
 ## PARAMETERS
 

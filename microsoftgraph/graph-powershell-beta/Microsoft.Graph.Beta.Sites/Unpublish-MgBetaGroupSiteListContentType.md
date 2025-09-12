@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Invoke action unpublish
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -497,6 +487,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/unpublish-mgbetagroupsitelistcontenttype)
 - [](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-beta)
+
 
 
 

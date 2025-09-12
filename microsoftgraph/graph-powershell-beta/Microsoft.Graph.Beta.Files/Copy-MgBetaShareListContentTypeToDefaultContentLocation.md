@@ -76,16 +76,6 @@ This cmdlet has the following aliases,
 
 Invoke action copyToDefaultContentLocation
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -641,6 +631,7 @@ For OneDrive, this property isn't populated.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetasharelistcontenttypetodefaultcontentlocation)
 - [](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-beta)
+
 
 
 

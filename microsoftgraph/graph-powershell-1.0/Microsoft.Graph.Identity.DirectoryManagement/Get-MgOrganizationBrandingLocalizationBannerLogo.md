@@ -59,12 +59,17 @@ To retrieve a localization branding object, specify the value of id in the URL.
 | Application | OrganizationalBranding.Read.All, OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All, Organization.Read.All,  |
 
 ## EXAMPLES
+### Example 2: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
+
+```
+This example shows how to use the Get-MgOrganizationBrandingLocalizationBannerLogo Cmdlet.
+
 
 ## PARAMETERS
 

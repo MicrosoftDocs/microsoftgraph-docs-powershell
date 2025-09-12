@@ -87,8 +87,9 @@ Update the properties of an itemPatent object.
 | Application | User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.People
 
@@ -98,6 +99,10 @@ $params = @{
 }
 
 Update-MgBetaUserProfilePatent -UserId $userId -ItemPatentId $itemPatentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfilePatent Cmdlet.
+
 
 ## PARAMETERS
 

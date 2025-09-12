@@ -83,8 +83,9 @@ As part of the request validation for this method, a proof of possession of an e
 | Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
@@ -94,6 +95,10 @@ $params = @{
 }
 
 Remove-MgServicePrincipalKey -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgServicePrincipalKey Cmdlet.
+
 
 ## PARAMETERS
 

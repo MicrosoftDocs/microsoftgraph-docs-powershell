@@ -73,16 +73,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property outcomes in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -636,6 +626,7 @@ This property is read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentsubmissionoutcome)
+
 
 
 

@@ -92,8 +92,9 @@ Update the properties of a windows10TeamGeneralConfiguration object.
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -108,6 +109,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId $deviceConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

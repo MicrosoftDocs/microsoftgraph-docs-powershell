@@ -61,16 +61,6 @@ For more information about item retention, see Configure Deleted Item retention 
 | Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -478,6 +468,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskgrouptaskfoldertaskpermanent)
 - [](https://learn.microsoft.com/graph/api/outlooktask-permanentdelete?view=graph-rest-beta)
+
 
 
 

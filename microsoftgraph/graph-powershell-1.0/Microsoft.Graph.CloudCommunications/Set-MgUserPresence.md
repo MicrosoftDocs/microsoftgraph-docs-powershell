@@ -79,8 +79,9 @@ Set the state of a user's presence session as an application.
 | Application | Presence.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -92,6 +93,10 @@ $params = @{
 }
 
 Set-MgUserPresence -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgUserPresence Cmdlet.
+
 
 ## PARAMETERS
 
