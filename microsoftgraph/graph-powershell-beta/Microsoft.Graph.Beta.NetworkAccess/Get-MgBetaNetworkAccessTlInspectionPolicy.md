@@ -65,16 +65,6 @@ Get a tlsInspectionPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -566,6 +556,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstlinspectionpolicy)
 - [](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicy-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-list-tlsinspectionpolicies?view=graph-rest-beta)
+
 
 
 

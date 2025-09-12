@@ -77,16 +77,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property deviceLinks in networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -792,6 +782,7 @@ Required only when you select zoneRedundancy redindancyTier when creating a devi
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkdevicelink)
+
 
 
 

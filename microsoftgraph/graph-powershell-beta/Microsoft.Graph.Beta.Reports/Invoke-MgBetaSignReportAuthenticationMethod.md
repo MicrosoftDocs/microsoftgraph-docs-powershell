@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Gets a list of the number of successful sign ins for each authentication method that is available.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -531,6 +521,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetasignreportauthenticationmethod)
 - [](https://learn.microsoft.com/graph/api/authenticationmethodsroot-usersigninsbyauthmethodsummary?view=graph-rest-beta)
+
 
 
 

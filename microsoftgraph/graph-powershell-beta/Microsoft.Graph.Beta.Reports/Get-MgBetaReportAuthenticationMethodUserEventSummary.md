@@ -57,16 +57,6 @@ This cmdlet has the following aliases,
 
 Represents a specific user MFA/SSPR registration or reset event, including whether the event was successful, which authentication method was targeted, and failure reason if any.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -585,6 +575,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethodusereventsummary)
 - [](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-usereventssummary?view=graph-rest-beta)
+
 
 
 
