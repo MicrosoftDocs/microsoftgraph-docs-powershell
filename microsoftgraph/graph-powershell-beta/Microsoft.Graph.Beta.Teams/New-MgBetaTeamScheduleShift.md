@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleshift
@@ -790,7 +790,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphShift>: shift
+BODYPARAMETER `<IMicrosoftGraphShift>`: shift
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -853,7 +853,7 @@ Required.
 Required.
     [UserId <String>]: ID of the user.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -864,7 +864,7 @@ This property is read-only.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DRAFTSHIFT <IMicrosoftGraphShiftItem>: shiftItem
+DRAFTSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: 
   [StartDateTime <DateTime?>]: 
@@ -890,7 +890,7 @@ Required.
   [DisplayName <String>]: The shift label of the shiftItem.
   [Notes <String>]: The shift notes for the shiftItem.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -937,7 +937,7 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -948,14 +948,14 @@ This property is read-only.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-SCHEDULINGGROUPINFO <IMicrosoftGraphSchedulingGroupInfo>: schedulingGroupInfo
+SCHEDULINGGROUPINFO `<IMicrosoftGraphSchedulingGroupInfo>`: schedulingGroupInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: The code for the schedulingGroup.
   [DisplayName <String>]: The display name for the schedulingGroup.
 Required.
   [SchedulingGroupId <String>]: ID of the schedulingGroup.
 
-SHAREDSHIFT <IMicrosoftGraphShiftItem>: shiftItem
+SHAREDSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: 
   [StartDateTime <DateTime?>]: 
@@ -981,13 +981,13 @@ Required.
   [DisplayName <String>]: The shift label of the shiftItem.
   [Notes <String>]: The shift notes for the shiftItem.
 
-TEAMINFO <IMicrosoftGraphShiftsTeamInfo>: shiftsTeamInfo
+TEAMINFO `<IMicrosoftGraphShiftsTeamInfo>`: shiftsTeamInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name for the team.
 Required.
   [TeamId <String>]: ID of the team.
 
-USERINFO <IMicrosoftGraphShiftsUserInfo>: shiftsUserInfo
+USERINFO `<IMicrosoftGraphShiftsUserInfo>`: shiftsUserInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name for the user.
 Required.
@@ -998,3 +998,25 @@ Required.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleshift)
 - [](https://learn.microsoft.com/graph/api/schedule-post-shifts?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchforwardingprofilepolicy
@@ -578,7 +578,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphNetworkaccessPolicyLink>: policyLink
+BODYPARAMETER `<IMicrosoftGraphNetworkaccessPolicyLink>`: policyLink
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -596,7 +596,7 @@ Read-only.
   [State <String>]: status
   [Version <String>]: Version.
 
-INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
+INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -621,7 +621,7 @@ INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ThreatIntelligencePolicyId <String>]: The unique identifier of threatIntelligencePolicy
   [TlsInspectionPolicyId <String>]: The unique identifier of tlsInspectionPolicy
 
-POLICY <IMicrosoftGraphNetworkaccessPolicy>: policy
+POLICY `<IMicrosoftGraphNetworkaccessPolicy>`: policy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -637,3 +637,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchforwardingprofilepolicy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

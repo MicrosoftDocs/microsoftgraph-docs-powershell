@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreemailnotificationsetting
@@ -431,7 +431,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphEmailNotificationsSetting>: emailNotificationsSetting
+BODYPARAMETER `<IMicrosoftGraphEmailNotificationsSetting>`: emailNotificationsSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -448,7 +448,7 @@ This property is read-only.
       [Email <String>]: Email address of the user.
     [Role <String>]: notificationRecipientsType
 
-RECIPIENTS <IMicrosoftGraphNotificationRecipients>: notificationRecipients
+RECIPIENTS `<IMicrosoftGraphNotificationRecipients>`: notificationRecipients
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomRecipients <IMicrosoftGraphEmailIdentity[]>]: A list of users or groups that receive notifications.
 Only specify this property when role is set to custom.
@@ -464,3 +464,25 @@ This property is read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreemailnotificationsetting)
 - [](https://learn.microsoft.com/graph/api/emailnotificationssetting-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

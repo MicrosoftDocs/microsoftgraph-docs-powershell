@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphchat
@@ -536,7 +536,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY <IPaths1Rz6UwqChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema>: .
+BODY `<IPaths1Rz6UwqChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TenantId <String>]: 
   [User <IMicrosoftGraphTeamworkUserIdentity>]: teamworkUserIdentity
@@ -548,7 +548,7 @@ This property is read-only.
     [UserIdentityType <String>]: teamworkUserIdentityType
     [UserPrincipalName <String>]: User principal name (UPN) of the user.
 
-BODYPARAMETER <IPaths1Rz6UwqChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1Rz6UwqChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TenantId <String>]: 
   [User <IMicrosoftGraphTeamworkUserIdentity>]: teamworkUserIdentity
@@ -560,7 +560,7 @@ This property is read-only.
     [UserIdentityType <String>]: teamworkUserIdentityType
     [UserPrincipalName <String>]: User principal name (UPN) of the user.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -607,7 +607,7 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-USER <IMicrosoftGraphTeamworkUserIdentity>: teamworkUserIdentity
+USER `<IMicrosoftGraphTeamworkUserIdentity>`: teamworkUserIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 This property is read-only.
@@ -621,3 +621,25 @@ This property is read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphchat)
 - [](https://learn.microsoft.com/graph/api/chat-unhideforuser?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofile
@@ -1181,7 +1181,7 @@ Read-only.
   [ThumbnailUrl <String>]: URL referencing a thumbnail of the award or honor.
   [WebUrl <String>]: URL referencing the award or honor.
 
-BODYPARAMETER <IMicrosoftGraphProfile>: profile
+BODYPARAMETER `<IMicrosoftGraphProfile>`: profile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1762,7 +1762,7 @@ Read-only.
   [DisplayName <String>]: The name or label a user has associated with a particular email address.
   [Type <String>]: emailType
 
-INPUTOBJECT <IPeopleIdentity>: Identity Parameter
+INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   [ActivityStatisticsId <String>]: The unique identifier of activityStatistics
   [EducationalActivityId <String>]: The unique identifier of educationalActivity
   [ItemAddressId <String>]: The unique identifier of itemAddress
@@ -2316,3 +2316,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
