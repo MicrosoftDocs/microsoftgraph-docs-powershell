@@ -413,7 +413,7 @@ HelpMessage: ''
 
 ### -Groups
 
-.
+
 To construct, see NOTES section for GROUPS properties and create a hash table.
 
 ```yaml
@@ -589,7 +589,7 @@ HelpMessage: ''
 
 ### -Items
 
-.
+
 To construct, see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
@@ -646,7 +646,7 @@ HelpMessage: ''
 
 ### -Operations
 
-.
+
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml

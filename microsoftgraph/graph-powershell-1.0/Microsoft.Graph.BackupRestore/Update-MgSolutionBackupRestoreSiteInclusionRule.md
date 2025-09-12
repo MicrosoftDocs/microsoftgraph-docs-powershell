@@ -381,7 +381,7 @@ HelpMessage: ''
 
 ### -IsAutoApplyEnabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

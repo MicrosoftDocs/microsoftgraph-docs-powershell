@@ -110,7 +110,7 @@ HelpMessage: ''
 
 ### -ArtifactCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -603,7 +603,7 @@ HelpMessage: ''
 
 ### -SearchResponseId
 
-.
+
 
 ```yaml
 Type: System.String

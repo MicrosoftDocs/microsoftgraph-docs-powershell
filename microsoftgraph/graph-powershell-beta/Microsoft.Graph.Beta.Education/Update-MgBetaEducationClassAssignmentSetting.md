@@ -317,7 +317,7 @@ HelpMessage: ''
 
 ### -GradingSchemes
 
-.
+
 To construct, see NOTES section for GRADINGSCHEMES properties and create a hash table.
 
 ```yaml

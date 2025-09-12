@@ -244,7 +244,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -342,7 +342,7 @@ HelpMessage: ''
 
 ### -Description
 
-.
+
 
 ```yaml
 Type: System.String
@@ -369,7 +369,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -558,7 +558,7 @@ HelpMessage: ''
 
 ### -ExportSingleItems
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

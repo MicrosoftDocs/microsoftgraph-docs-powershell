@@ -602,7 +602,7 @@ HelpMessage: ''
 
 ### -Windows
 
-.
+
 To construct, see NOTES section for WINDOWS properties and create a hash table.
 
 ```yaml
