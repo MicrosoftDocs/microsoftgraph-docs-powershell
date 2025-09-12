@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-Module Guid: 8417a676-1d3f-40ea-8ec8-c8409602b934
+Module Guid: bedb4df2-36d4-4eb5-a33b-ae6450e61dd4
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -289,6 +289,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Rename-MgDeviceManagementVirtualEndpointCloudPc](Rename-MgDeviceManagementVirtualEndpointCloudPc.md)
 
+### [Resize-MgDeviceManagementVirtualEndpointCloudPc](Resize-MgDeviceManagementVirtualEndpointCloudPc.md)
+
 ### [Restart-MgDeviceManagementVirtualEndpointCloudPc](Restart-MgDeviceManagementVirtualEndpointCloudPc.md)
 
 ### [Restore-MgDeviceManagementVirtualEndpointCloudPc](Restore-MgDeviceManagementVirtualEndpointCloudPc.md)
@@ -350,23 +352,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgDeviceManagementVirtualEndpointUserSetting](Update-MgDeviceManagementVirtualEndpointUserSetting.md)
 
 ### [Update-MgDeviceManagementVirtualEndpointUserSettingAssignment](Update-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
