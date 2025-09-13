@@ -1,14 +1,18 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+document type: cmdlet
+external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization
+Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization
-schema: 2.0.0
-ms.subservice: entra-sign-in
+ms.date: 09/12/2025
+PlatyPS schema version: 2024-05-01
+title: Update-MgBetaTenantRelationshipMultiTenantOrganization
 ---
 
 # Update-MgBetaTenantRelationshipMultiTenantOrganization
 
 ## SYNOPSIS
+
 Update the properties of a multi-tenant organization.
 
 > [!NOTE]
@@ -17,23 +21,35 @@ Update the properties of a multi-tenant organization.
 ## SYNTAX
 
 ### UpdateExpanded (Default)
+
 ```
-Update-MgBetaTenantRelationshipMultiTenantOrganization [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>]
- [-JoinRequest <IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord>] [-State <String>]
- [-Tenants <IMicrosoftGraphMultiTenantOrganizationMember[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaTenantRelationshipMultiTenantOrganization [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-CreatedDateTime <datetime>] [-Description <string>]
+ [-DisplayName <string>] [-Id <string>]
+ [-JoinRequest <IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord>] [-State <string>]
+ [-Tenants <IMicrosoftGraphMultiTenantOrganizationMember[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
+
 ```
-Update-MgBetaTenantRelationshipMultiTenantOrganization -BodyParameter <IMicrosoftGraphMultiTenantOrganization>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaTenantRelationshipMultiTenantOrganization
+ -BodyParameter <IMicrosoftGraphMultiTenantOrganization> [-ResponseHeadersVariable <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+## ALIASES
+
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
 ## DESCRIPTION
+
 Update the properties of a multi-tenant organization.
 
 ## EXAMPLES
@@ -57,318 +73,537 @@ This example shows how to use the Update-MgBetaTenantRelationshipMultiTenantOrga
 ## PARAMETERS
 
 ### -AdditionalProperties
+
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BodyParameter
+
 multiTenantOrganization
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiTenantOrganization
-Parameter Sets: Update
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganization
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confirm
+
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CreatedDateTime
+
 Date when multitenant organization was created.
 Read-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Description
+
 Description of the multitenant organization.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -DisplayName
+
 Display name of the multitenant organization.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Headers
+
 Optional headers that will be added to the request.
 
 ```yaml
-Type: IDictionary
-Parameter Sets: (All)
-Aliases:
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Id
+
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -JoinRequest
+
 multiTenantOrganizationJoinRequestRecord
 To construct, see NOTES section for JOINREQUEST properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord
-Parameter Sets: UpdateExpanded
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResponseHeadersVariable
+
 Optional Response Headers Variable.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -State
+
 multiTenantOrganizationState
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Tenants
+
 Defines tenants added to a multitenant organization.
 To construct, see NOTES section for TENANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiTenantOrganizationMember[]
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationMember[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganization
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganization
+
+{{ Fill in the Description }}
+
 ## NOTES
+
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphMultiTenantOrganization>`: multiTenantOrganization
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: Date when multitenant organization was created.
+  [CreatedDateTime <DateTime?>]: Date when multitenant organization was created.
 Read-only.
-  - `[Description <String>]`: Description of the multitenant organization.
-  - `[DisplayName <String>]`: Display name of the multitenant organization.
-  - `[JoinRequest <IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord>]`: multiTenantOrganizationJoinRequestRecord
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  [Description <String>]: Description of the multitenant organization.
+  [DisplayName <String>]: Display name of the multitenant organization.
+  [JoinRequest <IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord>]: multiTenantOrganizationJoinRequestRecord
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[AddedByTenantId <String>]`: Tenant ID of the Microsoft Entra tenant that added a tenant to the multi-tenant organization.
+    [AddedByTenantId <String>]: Tenant ID of the Microsoft Entra tenant that added a tenant to the multi-tenant organization.
 To reset a failed join request, set addedByTenantId to 00000000-0000-0000-0000-000000000000.
 Required.
-    - `[MemberState <String>]`: multiTenantOrganizationMemberState
-    - `[Role <String>]`: multiTenantOrganizationMemberRole
-    - `[TransitionDetails <IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails>]`: multiTenantOrganizationJoinRequestTransitionDetails
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DesiredMemberState <String>]`: multiTenantOrganizationMemberState
-      - `[Details <String>]`: Details that explain the processing status if any.
+    [MemberState <String>]: multiTenantOrganizationMemberState
+    [Role <String>]: multiTenantOrganizationMemberRole
+    [TransitionDetails <IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails>]: multiTenantOrganizationJoinRequestTransitionDetails
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DesiredMemberState <String>]: multiTenantOrganizationMemberState
+      [Details <String>]: Details that explain the processing status if any.
 Read-only.
-      - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
-  - `[State <String>]`: multiTenantOrganizationState
-  - `[Tenants <IMicrosoftGraphMultiTenantOrganizationMember- `[]`>]`: Defines tenants added to a multitenant organization.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+      [Status <String>]: multiTenantOrganizationMemberProcessingStatus
+  [State <String>]: multiTenantOrganizationState
+  [Tenants <IMicrosoftGraphMultiTenantOrganizationMember[]>]: Defines tenants added to a multitenant organization.
+    [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-    - `[Id <String>]`: The unique identifier for an entity.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[AddedByTenantId <String>]`: Tenant ID of the tenant that added the tenant to the multitenant organization.
+    [AddedByTenantId <String>]: Tenant ID of the tenant that added the tenant to the multitenant organization.
 Read-only.
-    - `[AddedDateTime <DateTime?>]`: Date and time when the tenant was added to the multitenant organization.
+    [AddedDateTime <DateTime?>]: Date and time when the tenant was added to the multitenant organization.
 Read-only.
-    - `[DisplayName <String>]`: Display name of the tenant added to the multitenant organization.
-    - `[JoinedDateTime <DateTime?>]`: Date and time when the tenant joined the multitenant organization.
+    [DisplayName <String>]: Display name of the tenant added to the multitenant organization.
+    [JoinedDateTime <DateTime?>]: Date and time when the tenant joined the multitenant organization.
 Read-only.
-    - `[Role <String>]`: multiTenantOrganizationMemberRole
-    - `[State <String>]`: multiTenantOrganizationMemberState
-    - `[TenantId <String>]`: Tenant ID of the Microsoft Entra tenant added to the multitenant organization.
+    [Role <String>]: multiTenantOrganizationMemberRole
+    [State <String>]: multiTenantOrganizationMemberState
+    [TenantId <String>]: Tenant ID of the Microsoft Entra tenant added to the multitenant organization.
 Set at the time tenant is added.Supports $filter.
 Key.
-    - `[TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>]`: multiTenantOrganizationMemberTransitionDetails
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DesiredRole <String>]`: multiTenantOrganizationMemberRole
-      - `[DesiredState <String>]`: multiTenantOrganizationMemberState
-      - `[Details <String>]`: Details that explain the processing status if any.
+    [TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>]: multiTenantOrganizationMemberTransitionDetails
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DesiredRole <String>]: multiTenantOrganizationMemberRole
+      [DesiredState <String>]: multiTenantOrganizationMemberState
+      [Details <String>]: Details that explain the processing status if any.
 Read-only.
-      - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
+      [Status <String>]: multiTenantOrganizationMemberProcessingStatus
 
 JOINREQUEST `<IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord>`: multiTenantOrganizationJoinRequestRecord
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[AddedByTenantId <String>]`: Tenant ID of the Microsoft Entra tenant that added a tenant to the multi-tenant organization.
+  [AddedByTenantId <String>]: Tenant ID of the Microsoft Entra tenant that added a tenant to the multi-tenant organization.
 To reset a failed join request, set addedByTenantId to 00000000-0000-0000-0000-000000000000.
 Required.
-  - `[MemberState <String>]`: multiTenantOrganizationMemberState
-  - `[Role <String>]`: multiTenantOrganizationMemberRole
-  - `[TransitionDetails <IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails>]`: multiTenantOrganizationJoinRequestTransitionDetails
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DesiredMemberState <String>]`: multiTenantOrganizationMemberState
-    - `[Details <String>]`: Details that explain the processing status if any.
+  [MemberState <String>]: multiTenantOrganizationMemberState
+  [Role <String>]: multiTenantOrganizationMemberRole
+  [TransitionDetails <IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails>]: multiTenantOrganizationJoinRequestTransitionDetails
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [DesiredMemberState <String>]: multiTenantOrganizationMemberState
+    [Details <String>]: Details that explain the processing status if any.
 Read-only.
-    - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
+    [Status <String>]: multiTenantOrganizationMemberProcessingStatus
 
-TENANTS `<IMicrosoftGraphMultiTenantOrganizationMember- `[]`>`: Defines tenants added to a multitenant organization.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+TENANTS <IMicrosoftGraphMultiTenantOrganizationMember[]>: Defines tenants added to a multitenant organization.
+  [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[AddedByTenantId <String>]`: Tenant ID of the tenant that added the tenant to the multitenant organization.
+  [AddedByTenantId <String>]: Tenant ID of the tenant that added the tenant to the multitenant organization.
 Read-only.
-  - `[AddedDateTime <DateTime?>]`: Date and time when the tenant was added to the multitenant organization.
+  [AddedDateTime <DateTime?>]: Date and time when the tenant was added to the multitenant organization.
 Read-only.
-  - `[DisplayName <String>]`: Display name of the tenant added to the multitenant organization.
-  - `[JoinedDateTime <DateTime?>]`: Date and time when the tenant joined the multitenant organization.
+  [DisplayName <String>]: Display name of the tenant added to the multitenant organization.
+  [JoinedDateTime <DateTime?>]: Date and time when the tenant joined the multitenant organization.
 Read-only.
-  - `[Role <String>]`: multiTenantOrganizationMemberRole
-  - `[State <String>]`: multiTenantOrganizationMemberState
-  - `[TenantId <String>]`: Tenant ID of the Microsoft Entra tenant added to the multitenant organization.
+  [Role <String>]: multiTenantOrganizationMemberRole
+  [State <String>]: multiTenantOrganizationMemberState
+  [TenantId <String>]: Tenant ID of the Microsoft Entra tenant added to the multitenant organization.
 Set at the time tenant is added.Supports $filter.
 Key.
-  - `[TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>]`: multiTenantOrganizationMemberTransitionDetails
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DesiredRole <String>]`: multiTenantOrganizationMemberRole
-    - `[DesiredState <String>]`: multiTenantOrganizationMemberState
-    - `[Details <String>]`: Details that explain the processing status if any.
+  [TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>]: multiTenantOrganizationMemberTransitionDetails
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [DesiredRole <String>]: multiTenantOrganizationMemberRole
+    [DesiredState <String>]: multiTenantOrganizationMemberState
+    [Details <String>]: Details that explain the processing status if any.
 Read-only.
-    - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
+    [Status <String>]: multiTenantOrganizationMemberProcessingStatus
+
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization)
-
-[https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-beta)
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization)
+- [](https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-beta)
 
 
 

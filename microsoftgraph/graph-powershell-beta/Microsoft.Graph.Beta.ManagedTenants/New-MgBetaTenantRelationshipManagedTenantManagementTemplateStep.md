@@ -1,894 +1,1179 @@
 ---
-external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
+document type: cmdlet
+external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatestep
+Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatestep
-schema: 2.0.0
+ms.date: 09/12/2025
+PlatyPS schema version: 2024-05-01
+title: New-MgBetaTenantRelationshipManagedTenantManagementTemplateStep
 ---
 
 # New-MgBetaTenantRelationshipManagedTenantManagementTemplateStep
 
 ## SYNOPSIS
+
 Create new navigation property to managementTemplateSteps for tenantRelationships
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
+
 ```
-New-MgBetaTenantRelationshipManagedTenantManagementTemplateStep [-ResponseHeadersVariable <String>]
+New-MgBetaTenantRelationshipManagedTenantManagementTemplateStep [-ResponseHeadersVariable <string>]
  [-AcceptedVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]
- [-AdditionalProperties <Hashtable>] [-Category <String>] [-CreatedByUserId <String>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-InformationLinks <IMicrosoftGraphActionUrl[]>] [-LastActionByUserId <String>]
- [-LastActionDateTime <DateTime>] [-ManagementTemplate <IMicrosoftGraphManagedTenantsManagementTemplate>]
- [-PortalLink <IMicrosoftGraphActionUrl>] [-Priority <Int32>] [-UserImpact <String>]
- [-Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <hashtable>] [-Category <string>] [-CreatedByUserId <string>]
+ [-CreatedDateTime <datetime>] [-Description <string>] [-DisplayName <string>] [-Id <string>]
+ [-InformationLinks <IMicrosoftGraphActionUrl[]>] [-LastActionByUserId <string>]
+ [-LastActionDateTime <datetime>]
+ [-ManagementTemplate <IMicrosoftGraphManagedTenantsManagementTemplate>]
+ [-PortalLink <IMicrosoftGraphActionUrl>] [-Priority <int>] [-UserImpact <string>]
+ [-Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion[]>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
+
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementTemplateStep
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStep> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStep>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Create new navigation property to managementTemplateSteps for tenantRelationships
+## ALIASES
 
-## EXAMPLES
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
+## DESCRIPTION
+
+Create new navigation property to managementTemplateSteps for tenantRelationships
 
 ## PARAMETERS
 
 ### -AcceptedVersion
+
 managementTemplateStepVersion
 To construct, see NOTES section for ACCEPTEDVERSION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsManagementTemplateStepVersion
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepVersion
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AdditionalProperties
+
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BodyParameter
+
 managementTemplateStep
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsManagementTemplateStep
-Parameter Sets: Create
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStep
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Category
+
 managementCategory
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confirm
+
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CreatedByUserId
 
 
-```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CreatedDateTime
 
 
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Description
 
 
-```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -DisplayName
 
 
-```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Headers
+
 Optional headers that will be added to the request.
 
 ```yaml
-Type: IDictionary
-Parameter Sets: (All)
-Aliases:
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Id
+
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -InformationLinks
 
+
 To construct, see NOTES section for INFORMATIONLINKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphActionUrl[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphActionUrl[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -LastActionByUserId
 
 
-```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -LastActionDateTime
 
 
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ManagementTemplate
+
 managementTemplate
 To construct, see NOTES section for MANAGEMENTTEMPLATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsManagementTemplate
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplate
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -PortalLink
+
 actionUrl
 To construct, see NOTES section for PORTALLINK properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphActionUrl
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphActionUrl
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Priority
 
 
-```yaml
-Type: Int32
-Parameter Sets: CreateExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResponseHeadersVariable
+
 Optional Response Headers Variable.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -UserImpact
 
 
-```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Versions
 
+
 To construct, see NOTES section for VERSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsManagementTemplateStepVersion[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepVersion[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStep
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStep
+
+{{ Fill in the Description }}
+
 ## NOTES
+
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 ACCEPTEDVERSION `<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>`: managementTemplateStepVersion
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[AcceptedFor <IMicrosoftGraphManagedTenantsManagementTemplateStep>]`: managementTemplateStep
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  [AcceptedFor <IMicrosoftGraphManagedTenantsManagementTemplateStep>]: managementTemplateStep
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[AcceptedVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]`: managementTemplateStepVersion
-    - `[Category <String>]`: managementCategory
-    - `[CreatedByUserId <String>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[InformationLinks <IMicrosoftGraphActionUrl- `[]`>]`: 
-      - `[DisplayName <String>]`: Brief title for the page that the links directs to.
-      - `[Url <String>]`: The URL to the documentation or Microsoft Entra admin center page.
-    - `[LastActionByUserId <String>]`: 
-    - `[LastActionDateTime <DateTime?>]`: 
-    - `[ManagementTemplate <IMicrosoftGraphManagedTenantsManagementTemplate>]`: managementTemplate
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+    [AcceptedVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]: managementTemplateStepVersion
+    [Category <String>]: managementCategory
+    [CreatedByUserId <String>]: 
+    [CreatedDateTime <DateTime?>]: 
+    [Description <String>]: 
+    [DisplayName <String>]: 
+    [InformationLinks <IMicrosoftGraphActionUrl[]>]: 
+      [DisplayName <String>]: Brief title for the page that the links directs to.
+      [Url <String>]: The URL to the documentation or Microsoft Entra admin center page.
+    [LastActionByUserId <String>]: 
+    [LastActionDateTime <DateTime?>]: 
+    [ManagementTemplate <IMicrosoftGraphManagedTenantsManagementTemplate>]: managementTemplate
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
 Read-only.
-      - `[Category <String>]`: managementCategory
-      - `[CreatedByUserId <String>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Description <String>]`: The description for the management template.
+      [Category <String>]: managementCategory
+      [CreatedByUserId <String>]: 
+      [CreatedDateTime <DateTime?>]: 
+      [Description <String>]: The description for the management template.
 Optional.
 Read-only.
-      - `[DisplayName <String>]`: The display name for the management template.
+      [DisplayName <String>]: The display name for the management template.
 Required.
 Read-only.
-      - `[InformationLinks <IMicrosoftGraphActionUrl- `[]`>]`: 
-      - `[LastActionByUserId <String>]`: 
-      - `[LastActionDateTime <DateTime?>]`: 
-      - `[ManagementTemplateCollections <IMicrosoftGraphManagedTenantsManagementTemplateCollection- `[]`>]`: 
-        - `[Id <String>]`: The unique identifier for an entity.
+      [InformationLinks <IMicrosoftGraphActionUrl[]>]: 
+      [LastActionByUserId <String>]: 
+      [LastActionDateTime <DateTime?>]: 
+      [ManagementTemplateCollections <IMicrosoftGraphManagedTenantsManagementTemplateCollection[]>]: 
+        [Id <String>]: The unique identifier for an entity.
 Read-only.
-        - `[CreatedByUserId <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[Description <String>]`: 
-        - `[DisplayName <String>]`: 
-        - `[LastActionByUserId <String>]`: 
-        - `[LastActionDateTime <DateTime?>]`: 
-        - `[ManagementTemplates <IMicrosoftGraphManagedTenantsManagementTemplate- `[]`>]`: 
-      - `[ManagementTemplateSteps <IMicrosoftGraphManagedTenantsManagementTemplateStep- `[]`>]`: 
-      - `[Parameters <IMicrosoftGraphManagedTenantsTemplateParameter- `[]`>]`: The collection of parameters used by the management template.
+        [CreatedByUserId <String>]: 
+        [CreatedDateTime <DateTime?>]: 
+        [Description <String>]: 
+        [DisplayName <String>]: 
+        [LastActionByUserId <String>]: 
+        [LastActionDateTime <DateTime?>]: 
+        [ManagementTemplates <IMicrosoftGraphManagedTenantsManagementTemplate[]>]: 
+      [ManagementTemplateSteps <IMicrosoftGraphManagedTenantsManagementTemplateStep[]>]: 
+      [Parameters <IMicrosoftGraphManagedTenantsTemplateParameter[]>]: The collection of parameters used by the management template.
 Optional.
 Read-only.
-        - `[Description <String>]`: The description for the template parameter.
+        [Description <String>]: The description for the template parameter.
 Optional.
 Read-only.
-        - `[DisplayName <String>]`: The display name for the template parameter.
+        [DisplayName <String>]: The display name for the template parameter.
 Required.
 Read-only.
-        - `[JsonAllowedValues <String>]`: The allowed values for the template parameter represented by a serialized string of JSON.
+        [JsonAllowedValues <String>]: The allowed values for the template parameter represented by a serialized string of JSON.
 Optional.
 Read-only.
-        - `[JsonDefaultValue <String>]`: The default value for the template parameter represented by a serialized string of JSON.
+        [JsonDefaultValue <String>]: The default value for the template parameter represented by a serialized string of JSON.
 Required.
 Read-only.
-        - `[ValueType <String>]`: managementParameterValueType
-      - `[Priority <Int32?>]`: 
-      - `[Provider <String>]`: managementProvider
-      - `[UserImpact <String>]`: 
-      - `[Version <Int32?>]`: 
-      - `[WorkloadActions <IMicrosoftGraphManagedTenantsWorkloadAction- `[]`>]`: The collection of workload actions associated with the management template.
+        [ValueType <String>]: managementParameterValueType
+      [Priority <Int32?>]: 
+      [Provider <String>]: managementProvider
+      [UserImpact <String>]: 
+      [Version <Int32?>]: 
+      [WorkloadActions <IMicrosoftGraphManagedTenantsWorkloadAction[]>]: The collection of workload actions associated with the management template.
 Optional.
 Read-only.
-        - `[ActionId <String>]`: The unique identifier for the workload action.
+        [ActionId <String>]: The unique identifier for the workload action.
 Required.
 Read-only.
-        - `[Category <String>]`: workloadActionCategory
-        - `[Description <String>]`: The description for the workload action.
+        [Category <String>]: workloadActionCategory
+        [Description <String>]: The description for the workload action.
 Optional.
 Read-only.
-        - `[DisplayName <String>]`: The display name for the workload action.
+        [DisplayName <String>]: The display name for the workload action.
 Optional.
 Read-only.
-        - `[Licenses <String- `[]`>]`: 
-        - `[Service <String>]`: The service associated with workload action.
+        [Licenses <String[]>]: 
+        [Service <String>]: The service associated with workload action.
 Optional.
 Read-only.
-        - `[Settings <IMicrosoftGraphManagedTenantsSetting- `[]`>]`: The collection of settings associated with the workload action.
+        [Settings <IMicrosoftGraphManagedTenantsSetting[]>]: The collection of settings associated with the workload action.
 Optional.
 Read-only.
-          - `[DisplayName <String>]`: The display name for the setting.
+          [DisplayName <String>]: The display name for the setting.
 Required.
 Read-only.
-          - `[JsonValue <String>]`: The value for the setting serialized as string of JSON.
+          [JsonValue <String>]: The value for the setting serialized as string of JSON.
 Required.
 Read-only.
-          - `[OverwriteAllowed <Boolean?>]`: A flag indicating whether the setting can be override existing configurations when applied.
+          [OverwriteAllowed <Boolean?>]: A flag indicating whether the setting can be override existing configurations when applied.
 Required.
 Read-only.
-          - `[SettingId <String>]`: 
-          - `[ValueType <String>]`: managementParameterValueType
-    - `[PortalLink <IMicrosoftGraphActionUrl>]`: actionUrl
-    - `[Priority <Int32?>]`: 
-    - `[UserImpact <String>]`: 
-    - `[Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion- `[]`>]`: 
-  - `[ContentMarkdown <String>]`: 
-  - `[CreatedByUserId <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Deployments <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+          [SettingId <String>]: 
+          [ValueType <String>]: managementParameterValueType
+    [PortalLink <IMicrosoftGraphActionUrl>]: actionUrl
+    [Priority <Int32?>]: 
+    [UserImpact <String>]: 
+    [Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion[]>]: 
+  [ContentMarkdown <String>]: 
+  [CreatedByUserId <String>]: 
+  [CreatedDateTime <DateTime?>]: 
+  [Deployments <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment[]>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[CreatedByUserId <String>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Error <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>]`: graphAPIErrorDetails
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <String>]`: 
-      - `[Message <String>]`: 
-    - `[LastActionByUserId <String>]`: 
-    - `[LastActionDateTime <DateTime?>]`: 
-    - `[Status <String>]`: managementTemplateDeploymentStatus
-    - `[TemplateStepVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]`: managementTemplateStepVersion
-    - `[TenantId <String>]`: 
-  - `[LastActionByUserId <String>]`: 
-  - `[LastActionDateTime <DateTime?>]`: 
-  - `[Name <String>]`: 
-  - `[TemplateStep <IMicrosoftGraphManagedTenantsManagementTemplateStep>]`: managementTemplateStep
-  - `[Version <Int32?>]`: 
-  - `[VersionInformation <String>]`: 
+    [CreatedByUserId <String>]: 
+    [CreatedDateTime <DateTime?>]: 
+    [Error <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>]: graphAPIErrorDetails
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Code <String>]: 
+      [Message <String>]: 
+    [LastActionByUserId <String>]: 
+    [LastActionDateTime <DateTime?>]: 
+    [Status <String>]: managementTemplateDeploymentStatus
+    [TemplateStepVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]: managementTemplateStepVersion
+    [TenantId <String>]: 
+  [LastActionByUserId <String>]: 
+  [LastActionDateTime <DateTime?>]: 
+  [Name <String>]: 
+  [TemplateStep <IMicrosoftGraphManagedTenantsManagementTemplateStep>]: managementTemplateStep
+  [Version <Int32?>]: 
+  [VersionInformation <String>]: 
 
 BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagementTemplateStep>`: managementTemplateStep
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[AcceptedVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]`: managementTemplateStepVersion
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  [AcceptedVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]: managementTemplateStepVersion
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[AcceptedFor <IMicrosoftGraphManagedTenantsManagementTemplateStep>]`: managementTemplateStep
-    - `[ContentMarkdown <String>]`: 
-    - `[CreatedByUserId <String>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Deployments <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment- `[]`>]`: 
-      - `[Id <String>]`: The unique identifier for an entity.
+    [AcceptedFor <IMicrosoftGraphManagedTenantsManagementTemplateStep>]: managementTemplateStep
+    [ContentMarkdown <String>]: 
+    [CreatedByUserId <String>]: 
+    [CreatedDateTime <DateTime?>]: 
+    [Deployments <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment[]>]: 
+      [Id <String>]: The unique identifier for an entity.
 Read-only.
-      - `[CreatedByUserId <String>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Error <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>]`: graphAPIErrorDetails
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Code <String>]`: 
-        - `[Message <String>]`: 
-      - `[LastActionByUserId <String>]`: 
-      - `[LastActionDateTime <DateTime?>]`: 
-      - `[Status <String>]`: managementTemplateDeploymentStatus
-      - `[TemplateStepVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]`: managementTemplateStepVersion
-      - `[TenantId <String>]`: 
-    - `[LastActionByUserId <String>]`: 
-    - `[LastActionDateTime <DateTime?>]`: 
-    - `[Name <String>]`: 
-    - `[TemplateStep <IMicrosoftGraphManagedTenantsManagementTemplateStep>]`: managementTemplateStep
-    - `[Version <Int32?>]`: 
-    - `[VersionInformation <String>]`: 
-  - `[Category <String>]`: managementCategory
-  - `[CreatedByUserId <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[InformationLinks <IMicrosoftGraphActionUrl- `[]`>]`: 
-    - `[DisplayName <String>]`: Brief title for the page that the links directs to.
-    - `[Url <String>]`: The URL to the documentation or Microsoft Entra admin center page.
-  - `[LastActionByUserId <String>]`: 
-  - `[LastActionDateTime <DateTime?>]`: 
-  - `[ManagementTemplate <IMicrosoftGraphManagedTenantsManagementTemplate>]`: managementTemplate
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+      [CreatedByUserId <String>]: 
+      [CreatedDateTime <DateTime?>]: 
+      [Error <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>]: graphAPIErrorDetails
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Code <String>]: 
+        [Message <String>]: 
+      [LastActionByUserId <String>]: 
+      [LastActionDateTime <DateTime?>]: 
+      [Status <String>]: managementTemplateDeploymentStatus
+      [TemplateStepVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]: managementTemplateStepVersion
+      [TenantId <String>]: 
+    [LastActionByUserId <String>]: 
+    [LastActionDateTime <DateTime?>]: 
+    [Name <String>]: 
+    [TemplateStep <IMicrosoftGraphManagedTenantsManagementTemplateStep>]: managementTemplateStep
+    [Version <Int32?>]: 
+    [VersionInformation <String>]: 
+  [Category <String>]: managementCategory
+  [CreatedByUserId <String>]: 
+  [CreatedDateTime <DateTime?>]: 
+  [Description <String>]: 
+  [DisplayName <String>]: 
+  [InformationLinks <IMicrosoftGraphActionUrl[]>]: 
+    [DisplayName <String>]: Brief title for the page that the links directs to.
+    [Url <String>]: The URL to the documentation or Microsoft Entra admin center page.
+  [LastActionByUserId <String>]: 
+  [LastActionDateTime <DateTime?>]: 
+  [ManagementTemplate <IMicrosoftGraphManagedTenantsManagementTemplate>]: managementTemplate
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[Category <String>]`: managementCategory
-    - `[CreatedByUserId <String>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Description <String>]`: The description for the management template.
+    [Category <String>]: managementCategory
+    [CreatedByUserId <String>]: 
+    [CreatedDateTime <DateTime?>]: 
+    [Description <String>]: The description for the management template.
 Optional.
 Read-only.
-    - `[DisplayName <String>]`: The display name for the management template.
+    [DisplayName <String>]: The display name for the management template.
 Required.
 Read-only.
-    - `[InformationLinks <IMicrosoftGraphActionUrl- `[]`>]`: 
-    - `[LastActionByUserId <String>]`: 
-    - `[LastActionDateTime <DateTime?>]`: 
-    - `[ManagementTemplateCollections <IMicrosoftGraphManagedTenantsManagementTemplateCollection- `[]`>]`: 
-      - `[Id <String>]`: The unique identifier for an entity.
+    [InformationLinks <IMicrosoftGraphActionUrl[]>]: 
+    [LastActionByUserId <String>]: 
+    [LastActionDateTime <DateTime?>]: 
+    [ManagementTemplateCollections <IMicrosoftGraphManagedTenantsManagementTemplateCollection[]>]: 
+      [Id <String>]: The unique identifier for an entity.
 Read-only.
-      - `[CreatedByUserId <String>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Description <String>]`: 
-      - `[DisplayName <String>]`: 
-      - `[LastActionByUserId <String>]`: 
-      - `[LastActionDateTime <DateTime?>]`: 
-      - `[ManagementTemplates <IMicrosoftGraphManagedTenantsManagementTemplate- `[]`>]`: 
-    - `[ManagementTemplateSteps <IMicrosoftGraphManagedTenantsManagementTemplateStep- `[]`>]`: 
-    - `[Parameters <IMicrosoftGraphManagedTenantsTemplateParameter- `[]`>]`: The collection of parameters used by the management template.
+      [CreatedByUserId <String>]: 
+      [CreatedDateTime <DateTime?>]: 
+      [Description <String>]: 
+      [DisplayName <String>]: 
+      [LastActionByUserId <String>]: 
+      [LastActionDateTime <DateTime?>]: 
+      [ManagementTemplates <IMicrosoftGraphManagedTenantsManagementTemplate[]>]: 
+    [ManagementTemplateSteps <IMicrosoftGraphManagedTenantsManagementTemplateStep[]>]: 
+    [Parameters <IMicrosoftGraphManagedTenantsTemplateParameter[]>]: The collection of parameters used by the management template.
 Optional.
 Read-only.
-      - `[Description <String>]`: The description for the template parameter.
+      [Description <String>]: The description for the template parameter.
 Optional.
 Read-only.
-      - `[DisplayName <String>]`: The display name for the template parameter.
+      [DisplayName <String>]: The display name for the template parameter.
 Required.
 Read-only.
-      - `[JsonAllowedValues <String>]`: The allowed values for the template parameter represented by a serialized string of JSON.
+      [JsonAllowedValues <String>]: The allowed values for the template parameter represented by a serialized string of JSON.
 Optional.
 Read-only.
-      - `[JsonDefaultValue <String>]`: The default value for the template parameter represented by a serialized string of JSON.
+      [JsonDefaultValue <String>]: The default value for the template parameter represented by a serialized string of JSON.
 Required.
 Read-only.
-      - `[ValueType <String>]`: managementParameterValueType
-    - `[Priority <Int32?>]`: 
-    - `[Provider <String>]`: managementProvider
-    - `[UserImpact <String>]`: 
-    - `[Version <Int32?>]`: 
-    - `[WorkloadActions <IMicrosoftGraphManagedTenantsWorkloadAction- `[]`>]`: The collection of workload actions associated with the management template.
+      [ValueType <String>]: managementParameterValueType
+    [Priority <Int32?>]: 
+    [Provider <String>]: managementProvider
+    [UserImpact <String>]: 
+    [Version <Int32?>]: 
+    [WorkloadActions <IMicrosoftGraphManagedTenantsWorkloadAction[]>]: The collection of workload actions associated with the management template.
 Optional.
 Read-only.
-      - `[ActionId <String>]`: The unique identifier for the workload action.
+      [ActionId <String>]: The unique identifier for the workload action.
 Required.
 Read-only.
-      - `[Category <String>]`: workloadActionCategory
-      - `[Description <String>]`: The description for the workload action.
+      [Category <String>]: workloadActionCategory
+      [Description <String>]: The description for the workload action.
 Optional.
 Read-only.
-      - `[DisplayName <String>]`: The display name for the workload action.
+      [DisplayName <String>]: The display name for the workload action.
 Optional.
 Read-only.
-      - `[Licenses <String- `[]`>]`: 
-      - `[Service <String>]`: The service associated with workload action.
+      [Licenses <String[]>]: 
+      [Service <String>]: The service associated with workload action.
 Optional.
 Read-only.
-      - `[Settings <IMicrosoftGraphManagedTenantsSetting- `[]`>]`: The collection of settings associated with the workload action.
+      [Settings <IMicrosoftGraphManagedTenantsSetting[]>]: The collection of settings associated with the workload action.
 Optional.
 Read-only.
-        - `[DisplayName <String>]`: The display name for the setting.
+        [DisplayName <String>]: The display name for the setting.
 Required.
 Read-only.
-        - `[JsonValue <String>]`: The value for the setting serialized as string of JSON.
+        [JsonValue <String>]: The value for the setting serialized as string of JSON.
 Required.
 Read-only.
-        - `[OverwriteAllowed <Boolean?>]`: A flag indicating whether the setting can be override existing configurations when applied.
+        [OverwriteAllowed <Boolean?>]: A flag indicating whether the setting can be override existing configurations when applied.
 Required.
 Read-only.
-        - `[SettingId <String>]`: 
-        - `[ValueType <String>]`: managementParameterValueType
-  - `[PortalLink <IMicrosoftGraphActionUrl>]`: actionUrl
-  - `[Priority <Int32?>]`: 
-  - `[UserImpact <String>]`: 
-  - `[Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion- `[]`>]`: 
+        [SettingId <String>]: 
+        [ValueType <String>]: managementParameterValueType
+  [PortalLink <IMicrosoftGraphActionUrl>]: actionUrl
+  [Priority <Int32?>]: 
+  [UserImpact <String>]: 
+  [Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion[]>]: 
 
-INFORMATIONLINKS `<IMicrosoftGraphActionUrl- `[]`>`: .
-  - `[DisplayName <String>]`: Brief title for the page that the links directs to.
-  - `[Url <String>]`: The URL to the documentation or Microsoft Entra admin center page.
+INFORMATIONLINKS <IMicrosoftGraphActionUrl[]>: .
+  [DisplayName <String>]: Brief title for the page that the links directs to.
+  [Url <String>]: The URL to the documentation or Microsoft Entra admin center page.
 
 MANAGEMENTTEMPLATE `<IMicrosoftGraphManagedTenantsManagementTemplate>`: managementTemplate
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[Category <String>]`: managementCategory
-  - `[CreatedByUserId <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: The description for the management template.
+  [Category <String>]: managementCategory
+  [CreatedByUserId <String>]: 
+  [CreatedDateTime <DateTime?>]: 
+  [Description <String>]: The description for the management template.
 Optional.
 Read-only.
-  - `[DisplayName <String>]`: The display name for the management template.
+  [DisplayName <String>]: The display name for the management template.
 Required.
 Read-only.
-  - `[InformationLinks <IMicrosoftGraphActionUrl- `[]`>]`: 
-    - `[DisplayName <String>]`: Brief title for the page that the links directs to.
-    - `[Url <String>]`: The URL to the documentation or Microsoft Entra admin center page.
-  - `[LastActionByUserId <String>]`: 
-  - `[LastActionDateTime <DateTime?>]`: 
-  - `[ManagementTemplateCollections <IMicrosoftGraphManagedTenantsManagementTemplateCollection- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  [InformationLinks <IMicrosoftGraphActionUrl[]>]: 
+    [DisplayName <String>]: Brief title for the page that the links directs to.
+    [Url <String>]: The URL to the documentation or Microsoft Entra admin center page.
+  [LastActionByUserId <String>]: 
+  [LastActionDateTime <DateTime?>]: 
+  [ManagementTemplateCollections <IMicrosoftGraphManagedTenantsManagementTemplateCollection[]>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[CreatedByUserId <String>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[LastActionByUserId <String>]`: 
-    - `[LastActionDateTime <DateTime?>]`: 
-    - `[ManagementTemplates <IMicrosoftGraphManagedTenantsManagementTemplate- `[]`>]`: 
-  - `[ManagementTemplateSteps <IMicrosoftGraphManagedTenantsManagementTemplateStep- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+    [CreatedByUserId <String>]: 
+    [CreatedDateTime <DateTime?>]: 
+    [Description <String>]: 
+    [DisplayName <String>]: 
+    [LastActionByUserId <String>]: 
+    [LastActionDateTime <DateTime?>]: 
+    [ManagementTemplates <IMicrosoftGraphManagedTenantsManagementTemplate[]>]: 
+  [ManagementTemplateSteps <IMicrosoftGraphManagedTenantsManagementTemplateStep[]>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[AcceptedVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]`: managementTemplateStepVersion
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+    [AcceptedVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]: managementTemplateStepVersion
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
 Read-only.
-      - `[AcceptedFor <IMicrosoftGraphManagedTenantsManagementTemplateStep>]`: managementTemplateStep
-      - `[ContentMarkdown <String>]`: 
-      - `[CreatedByUserId <String>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Deployments <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment- `[]`>]`: 
-        - `[Id <String>]`: The unique identifier for an entity.
+      [AcceptedFor <IMicrosoftGraphManagedTenantsManagementTemplateStep>]: managementTemplateStep
+      [ContentMarkdown <String>]: 
+      [CreatedByUserId <String>]: 
+      [CreatedDateTime <DateTime?>]: 
+      [Deployments <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment[]>]: 
+        [Id <String>]: The unique identifier for an entity.
 Read-only.
-        - `[CreatedByUserId <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[Error <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>]`: graphAPIErrorDetails
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Code <String>]`: 
-          - `[Message <String>]`: 
-        - `[LastActionByUserId <String>]`: 
-        - `[LastActionDateTime <DateTime?>]`: 
-        - `[Status <String>]`: managementTemplateDeploymentStatus
-        - `[TemplateStepVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]`: managementTemplateStepVersion
-        - `[TenantId <String>]`: 
-      - `[LastActionByUserId <String>]`: 
-      - `[LastActionDateTime <DateTime?>]`: 
-      - `[Name <String>]`: 
-      - `[TemplateStep <IMicrosoftGraphManagedTenantsManagementTemplateStep>]`: managementTemplateStep
-      - `[Version <Int32?>]`: 
-      - `[VersionInformation <String>]`: 
-    - `[Category <String>]`: managementCategory
-    - `[CreatedByUserId <String>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[InformationLinks <IMicrosoftGraphActionUrl- `[]`>]`: 
-    - `[LastActionByUserId <String>]`: 
-    - `[LastActionDateTime <DateTime?>]`: 
-    - `[ManagementTemplate <IMicrosoftGraphManagedTenantsManagementTemplate>]`: managementTemplate
-    - `[PortalLink <IMicrosoftGraphActionUrl>]`: actionUrl
-    - `[Priority <Int32?>]`: 
-    - `[UserImpact <String>]`: 
-    - `[Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion- `[]`>]`: 
-  - `[Parameters <IMicrosoftGraphManagedTenantsTemplateParameter- `[]`>]`: The collection of parameters used by the management template.
+        [CreatedByUserId <String>]: 
+        [CreatedDateTime <DateTime?>]: 
+        [Error <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>]: graphAPIErrorDetails
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [Code <String>]: 
+          [Message <String>]: 
+        [LastActionByUserId <String>]: 
+        [LastActionDateTime <DateTime?>]: 
+        [Status <String>]: managementTemplateDeploymentStatus
+        [TemplateStepVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]: managementTemplateStepVersion
+        [TenantId <String>]: 
+      [LastActionByUserId <String>]: 
+      [LastActionDateTime <DateTime?>]: 
+      [Name <String>]: 
+      [TemplateStep <IMicrosoftGraphManagedTenantsManagementTemplateStep>]: managementTemplateStep
+      [Version <Int32?>]: 
+      [VersionInformation <String>]: 
+    [Category <String>]: managementCategory
+    [CreatedByUserId <String>]: 
+    [CreatedDateTime <DateTime?>]: 
+    [Description <String>]: 
+    [DisplayName <String>]: 
+    [InformationLinks <IMicrosoftGraphActionUrl[]>]: 
+    [LastActionByUserId <String>]: 
+    [LastActionDateTime <DateTime?>]: 
+    [ManagementTemplate <IMicrosoftGraphManagedTenantsManagementTemplate>]: managementTemplate
+    [PortalLink <IMicrosoftGraphActionUrl>]: actionUrl
+    [Priority <Int32?>]: 
+    [UserImpact <String>]: 
+    [Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion[]>]: 
+  [Parameters <IMicrosoftGraphManagedTenantsTemplateParameter[]>]: The collection of parameters used by the management template.
 Optional.
 Read-only.
-    - `[Description <String>]`: The description for the template parameter.
+    [Description <String>]: The description for the template parameter.
 Optional.
 Read-only.
-    - `[DisplayName <String>]`: The display name for the template parameter.
+    [DisplayName <String>]: The display name for the template parameter.
 Required.
 Read-only.
-    - `[JsonAllowedValues <String>]`: The allowed values for the template parameter represented by a serialized string of JSON.
+    [JsonAllowedValues <String>]: The allowed values for the template parameter represented by a serialized string of JSON.
 Optional.
 Read-only.
-    - `[JsonDefaultValue <String>]`: The default value for the template parameter represented by a serialized string of JSON.
+    [JsonDefaultValue <String>]: The default value for the template parameter represented by a serialized string of JSON.
 Required.
 Read-only.
-    - `[ValueType <String>]`: managementParameterValueType
-  - `[Priority <Int32?>]`: 
-  - `[Provider <String>]`: managementProvider
-  - `[UserImpact <String>]`: 
-  - `[Version <Int32?>]`: 
-  - `[WorkloadActions <IMicrosoftGraphManagedTenantsWorkloadAction- `[]`>]`: The collection of workload actions associated with the management template.
+    [ValueType <String>]: managementParameterValueType
+  [Priority <Int32?>]: 
+  [Provider <String>]: managementProvider
+  [UserImpact <String>]: 
+  [Version <Int32?>]: 
+  [WorkloadActions <IMicrosoftGraphManagedTenantsWorkloadAction[]>]: The collection of workload actions associated with the management template.
 Optional.
 Read-only.
-    - `[ActionId <String>]`: The unique identifier for the workload action.
+    [ActionId <String>]: The unique identifier for the workload action.
 Required.
 Read-only.
-    - `[Category <String>]`: workloadActionCategory
-    - `[Description <String>]`: The description for the workload action.
+    [Category <String>]: workloadActionCategory
+    [Description <String>]: The description for the workload action.
 Optional.
 Read-only.
-    - `[DisplayName <String>]`: The display name for the workload action.
+    [DisplayName <String>]: The display name for the workload action.
 Optional.
 Read-only.
-    - `[Licenses <String- `[]`>]`: 
-    - `[Service <String>]`: The service associated with workload action.
+    [Licenses <String[]>]: 
+    [Service <String>]: The service associated with workload action.
 Optional.
 Read-only.
-    - `[Settings <IMicrosoftGraphManagedTenantsSetting- `[]`>]`: The collection of settings associated with the workload action.
+    [Settings <IMicrosoftGraphManagedTenantsSetting[]>]: The collection of settings associated with the workload action.
 Optional.
 Read-only.
-      - `[DisplayName <String>]`: The display name for the setting.
+      [DisplayName <String>]: The display name for the setting.
 Required.
 Read-only.
-      - `[JsonValue <String>]`: The value for the setting serialized as string of JSON.
+      [JsonValue <String>]: The value for the setting serialized as string of JSON.
 Required.
 Read-only.
-      - `[OverwriteAllowed <Boolean?>]`: A flag indicating whether the setting can be override existing configurations when applied.
+      [OverwriteAllowed <Boolean?>]: A flag indicating whether the setting can be override existing configurations when applied.
 Required.
 Read-only.
-      - `[SettingId <String>]`: 
-      - `[ValueType <String>]`: managementParameterValueType
+      [SettingId <String>]: 
+      [ValueType <String>]: managementParameterValueType
 
 PORTALLINK `<IMicrosoftGraphActionUrl>`: actionUrl
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: Brief title for the page that the links directs to.
-  - `[Url <String>]`: The URL to the documentation or Microsoft Entra admin center page.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [DisplayName <String>]: Brief title for the page that the links directs to.
+  [Url <String>]: The URL to the documentation or Microsoft Entra admin center page.
 
-VERSIONS `<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+VERSIONS <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion[]>: .
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[AcceptedFor <IMicrosoftGraphManagedTenantsManagementTemplateStep>]`: managementTemplateStep
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  [AcceptedFor <IMicrosoftGraphManagedTenantsManagementTemplateStep>]: managementTemplateStep
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[AcceptedVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]`: managementTemplateStepVersion
-    - `[Category <String>]`: managementCategory
-    - `[CreatedByUserId <String>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[InformationLinks <IMicrosoftGraphActionUrl- `[]`>]`: 
-      - `[DisplayName <String>]`: Brief title for the page that the links directs to.
-      - `[Url <String>]`: The URL to the documentation or Microsoft Entra admin center page.
-    - `[LastActionByUserId <String>]`: 
-    - `[LastActionDateTime <DateTime?>]`: 
-    - `[ManagementTemplate <IMicrosoftGraphManagedTenantsManagementTemplate>]`: managementTemplate
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+    [AcceptedVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]: managementTemplateStepVersion
+    [Category <String>]: managementCategory
+    [CreatedByUserId <String>]: 
+    [CreatedDateTime <DateTime?>]: 
+    [Description <String>]: 
+    [DisplayName <String>]: 
+    [InformationLinks <IMicrosoftGraphActionUrl[]>]: 
+      [DisplayName <String>]: Brief title for the page that the links directs to.
+      [Url <String>]: The URL to the documentation or Microsoft Entra admin center page.
+    [LastActionByUserId <String>]: 
+    [LastActionDateTime <DateTime?>]: 
+    [ManagementTemplate <IMicrosoftGraphManagedTenantsManagementTemplate>]: managementTemplate
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
 Read-only.
-      - `[Category <String>]`: managementCategory
-      - `[CreatedByUserId <String>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Description <String>]`: The description for the management template.
+      [Category <String>]: managementCategory
+      [CreatedByUserId <String>]: 
+      [CreatedDateTime <DateTime?>]: 
+      [Description <String>]: The description for the management template.
 Optional.
 Read-only.
-      - `[DisplayName <String>]`: The display name for the management template.
+      [DisplayName <String>]: The display name for the management template.
 Required.
 Read-only.
-      - `[InformationLinks <IMicrosoftGraphActionUrl- `[]`>]`: 
-      - `[LastActionByUserId <String>]`: 
-      - `[LastActionDateTime <DateTime?>]`: 
-      - `[ManagementTemplateCollections <IMicrosoftGraphManagedTenantsManagementTemplateCollection- `[]`>]`: 
-        - `[Id <String>]`: The unique identifier for an entity.
+      [InformationLinks <IMicrosoftGraphActionUrl[]>]: 
+      [LastActionByUserId <String>]: 
+      [LastActionDateTime <DateTime?>]: 
+      [ManagementTemplateCollections <IMicrosoftGraphManagedTenantsManagementTemplateCollection[]>]: 
+        [Id <String>]: The unique identifier for an entity.
 Read-only.
-        - `[CreatedByUserId <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[Description <String>]`: 
-        - `[DisplayName <String>]`: 
-        - `[LastActionByUserId <String>]`: 
-        - `[LastActionDateTime <DateTime?>]`: 
-        - `[ManagementTemplates <IMicrosoftGraphManagedTenantsManagementTemplate- `[]`>]`: 
-      - `[ManagementTemplateSteps <IMicrosoftGraphManagedTenantsManagementTemplateStep- `[]`>]`: 
-      - `[Parameters <IMicrosoftGraphManagedTenantsTemplateParameter- `[]`>]`: The collection of parameters used by the management template.
+        [CreatedByUserId <String>]: 
+        [CreatedDateTime <DateTime?>]: 
+        [Description <String>]: 
+        [DisplayName <String>]: 
+        [LastActionByUserId <String>]: 
+        [LastActionDateTime <DateTime?>]: 
+        [ManagementTemplates <IMicrosoftGraphManagedTenantsManagementTemplate[]>]: 
+      [ManagementTemplateSteps <IMicrosoftGraphManagedTenantsManagementTemplateStep[]>]: 
+      [Parameters <IMicrosoftGraphManagedTenantsTemplateParameter[]>]: The collection of parameters used by the management template.
 Optional.
 Read-only.
-        - `[Description <String>]`: The description for the template parameter.
+        [Description <String>]: The description for the template parameter.
 Optional.
 Read-only.
-        - `[DisplayName <String>]`: The display name for the template parameter.
+        [DisplayName <String>]: The display name for the template parameter.
 Required.
 Read-only.
-        - `[JsonAllowedValues <String>]`: The allowed values for the template parameter represented by a serialized string of JSON.
+        [JsonAllowedValues <String>]: The allowed values for the template parameter represented by a serialized string of JSON.
 Optional.
 Read-only.
-        - `[JsonDefaultValue <String>]`: The default value for the template parameter represented by a serialized string of JSON.
+        [JsonDefaultValue <String>]: The default value for the template parameter represented by a serialized string of JSON.
 Required.
 Read-only.
-        - `[ValueType <String>]`: managementParameterValueType
-      - `[Priority <Int32?>]`: 
-      - `[Provider <String>]`: managementProvider
-      - `[UserImpact <String>]`: 
-      - `[Version <Int32?>]`: 
-      - `[WorkloadActions <IMicrosoftGraphManagedTenantsWorkloadAction- `[]`>]`: The collection of workload actions associated with the management template.
+        [ValueType <String>]: managementParameterValueType
+      [Priority <Int32?>]: 
+      [Provider <String>]: managementProvider
+      [UserImpact <String>]: 
+      [Version <Int32?>]: 
+      [WorkloadActions <IMicrosoftGraphManagedTenantsWorkloadAction[]>]: The collection of workload actions associated with the management template.
 Optional.
 Read-only.
-        - `[ActionId <String>]`: The unique identifier for the workload action.
+        [ActionId <String>]: The unique identifier for the workload action.
 Required.
 Read-only.
-        - `[Category <String>]`: workloadActionCategory
-        - `[Description <String>]`: The description for the workload action.
+        [Category <String>]: workloadActionCategory
+        [Description <String>]: The description for the workload action.
 Optional.
 Read-only.
-        - `[DisplayName <String>]`: The display name for the workload action.
+        [DisplayName <String>]: The display name for the workload action.
 Optional.
 Read-only.
-        - `[Licenses <String- `[]`>]`: 
-        - `[Service <String>]`: The service associated with workload action.
+        [Licenses <String[]>]: 
+        [Service <String>]: The service associated with workload action.
 Optional.
 Read-only.
-        - `[Settings <IMicrosoftGraphManagedTenantsSetting- `[]`>]`: The collection of settings associated with the workload action.
+        [Settings <IMicrosoftGraphManagedTenantsSetting[]>]: The collection of settings associated with the workload action.
 Optional.
 Read-only.
-          - `[DisplayName <String>]`: The display name for the setting.
+          [DisplayName <String>]: The display name for the setting.
 Required.
 Read-only.
-          - `[JsonValue <String>]`: The value for the setting serialized as string of JSON.
+          [JsonValue <String>]: The value for the setting serialized as string of JSON.
 Required.
 Read-only.
-          - `[OverwriteAllowed <Boolean?>]`: A flag indicating whether the setting can be override existing configurations when applied.
+          [OverwriteAllowed <Boolean?>]: A flag indicating whether the setting can be override existing configurations when applied.
 Required.
 Read-only.
-          - `[SettingId <String>]`: 
-          - `[ValueType <String>]`: managementParameterValueType
-    - `[PortalLink <IMicrosoftGraphActionUrl>]`: actionUrl
-    - `[Priority <Int32?>]`: 
-    - `[UserImpact <String>]`: 
-    - `[Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion- `[]`>]`: 
-  - `[ContentMarkdown <String>]`: 
-  - `[CreatedByUserId <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Deployments <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+          [SettingId <String>]: 
+          [ValueType <String>]: managementParameterValueType
+    [PortalLink <IMicrosoftGraphActionUrl>]: actionUrl
+    [Priority <Int32?>]: 
+    [UserImpact <String>]: 
+    [Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion[]>]: 
+  [ContentMarkdown <String>]: 
+  [CreatedByUserId <String>]: 
+  [CreatedDateTime <DateTime?>]: 
+  [Deployments <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment[]>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[CreatedByUserId <String>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Error <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>]`: graphAPIErrorDetails
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <String>]`: 
-      - `[Message <String>]`: 
-    - `[LastActionByUserId <String>]`: 
-    - `[LastActionDateTime <DateTime?>]`: 
-    - `[Status <String>]`: managementTemplateDeploymentStatus
-    - `[TemplateStepVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]`: managementTemplateStepVersion
-    - `[TenantId <String>]`: 
-  - `[LastActionByUserId <String>]`: 
-  - `[LastActionDateTime <DateTime?>]`: 
-  - `[Name <String>]`: 
-  - `[TemplateStep <IMicrosoftGraphManagedTenantsManagementTemplateStep>]`: managementTemplateStep
-  - `[Version <Int32?>]`: 
-  - `[VersionInformation <String>]`:
+    [CreatedByUserId <String>]: 
+    [CreatedDateTime <DateTime?>]: 
+    [Error <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>]: graphAPIErrorDetails
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Code <String>]: 
+      [Message <String>]: 
+    [LastActionByUserId <String>]: 
+    [LastActionDateTime <DateTime?>]: 
+    [Status <String>]: managementTemplateDeploymentStatus
+    [TemplateStepVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]: managementTemplateStepVersion
+    [TenantId <String>]: 
+  [LastActionByUserId <String>]: 
+  [LastActionDateTime <DateTime?>]: 
+  [Name <String>]: 
+  [TemplateStep <IMicrosoftGraphManagedTenantsManagementTemplateStep>]: managementTemplateStep
+  [Version <Int32?>]: 
+  [VersionInformation <String>]:
+
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatestep](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatestep)
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatestep)
 
 
 

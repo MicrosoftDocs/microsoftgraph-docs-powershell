@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Teams
-Module Guid: e75cdbeb-9b5e-40db-a843-2b2e544a1731
+Module Guid: 268b47f6-3817-4da1-afef-00899c17ea62
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.teams/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -87,7 +87,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Confirm-MgBetaGroupTeamScheduleTimeCard](Confirm-MgBetaGroupTeamScheduleTimeCard.md)
 
+### [Confirm-MgBetaGroupTeamScheduleTimeCardForUser](Confirm-MgBetaGroupTeamScheduleTimeCardForUser.md)
+
 ### [Confirm-MgBetaTeamScheduleTimeCard](Confirm-MgBetaTeamScheduleTimeCard.md)
+
+### [Confirm-MgBetaTeamScheduleTimeCardForUser](Confirm-MgBetaTeamScheduleTimeCardForUser.md)
 
 ### [Copy-MgBetaGroupTeam](Copy-MgBetaGroupTeam.md)
 
@@ -1312,6 +1316,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBetaClockTeamScheduleTimeCardIn](Invoke-MgBetaClockTeamScheduleTimeCardIn.md)
 
 ### [Invoke-MgBetaClockTeamScheduleTimeCardOut](Invoke-MgBetaClockTeamScheduleTimeCardOut.md)
+
+### [Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed](Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed.md)
 
 ### [Invoke-MgBetaForwardChatMessageReplyToChat](Invoke-MgBetaForwardChatMessageReplyToChat.md)
 
