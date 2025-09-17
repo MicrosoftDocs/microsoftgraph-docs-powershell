@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Reports
-Module Guid: 64070408-fc17-4539-864c-d48c6ecbe1f3
+Module Guid: 64410e56-5b1a-4505-98b3-d319d84ecf7b
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.reports/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,7 +11,13 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Reports Cmdlets
+### [Confirm-MgAuditLogSignInCompromised](Confirm-MgAuditLogSignInCompromised.md)
+
+### [Confirm-MgAuditLogSignInSafe](Confirm-MgAuditLogSignInSafe.md)
+
 ### [Export-MgReportPartnerBillingReconciliationBilled](Export-MgReportPartnerBillingReconciliationBilled.md)
+
+### [Export-MgReportPartnerBillingReconciliationUnbilled](Export-MgReportPartnerBillingReconciliationUnbilled.md)
 
 ### [Export-MgReportPartnerBillingUsageBilled](Export-MgReportPartnerBillingUsageBilled.md)
 
@@ -209,6 +215,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgReportPartnerBillingReconciliationBilled](Get-MgReportPartnerBillingReconciliationBilled.md)
 
+### [Get-MgReportPartnerBillingReconciliationUnbilled](Get-MgReportPartnerBillingReconciliationUnbilled.md)
+
 ### [Get-MgReportPartnerBillingUsage](Get-MgReportPartnerBillingUsage.md)
 
 ### [Get-MgReportPartnerBillingUsageBilled](Get-MgReportPartnerBillingUsageBilled.md)
@@ -315,6 +323,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgReportYammerGroupActivityGroupCount](Get-MgReportYammerGroupActivityGroupCount.md)
 
+### [Invoke-MgDismissAuditLogSignIn](Invoke-MgDismissAuditLogSignIn.md)
+
 ### [Invoke-MgGraphReportAuthenticationMethod](Invoke-MgGraphReportAuthenticationMethod.md)
 
 ### [New-MgReportAuthenticationMethodUserRegistrationDetail](New-MgReportAuthenticationMethodUserRegistrationDetail.md)
@@ -339,6 +349,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgReportPartnerBillingReconciliationBilled](Remove-MgReportPartnerBillingReconciliationBilled.md)
 
+### [Remove-MgReportPartnerBillingReconciliationUnbilled](Remove-MgReportPartnerBillingReconciliationUnbilled.md)
+
 ### [Remove-MgReportPartnerBillingUsage](Remove-MgReportPartnerBillingUsage.md)
 
 ### [Remove-MgReportPartnerBillingUsageBilled](Remove-MgReportPartnerBillingUsageBilled.md)
@@ -360,6 +372,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgReportPartnerBillingReconciliation](Update-MgReportPartnerBillingReconciliation.md)
 
 ### [Update-MgReportPartnerBillingReconciliationBilled](Update-MgReportPartnerBillingReconciliationBilled.md)
+
+### [Update-MgReportPartnerBillingReconciliationUnbilled](Update-MgReportPartnerBillingReconciliationUnbilled.md)
 
 ### [Update-MgReportPartnerBillingUsage](Update-MgReportPartnerBillingUsage.md)
 

@@ -1,13 +1,18 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+document type: cmdlet
+external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedule
+Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedule
-schema: 2.0.0
+ms.date: 09/12/2025
+PlatyPS schema version: 2024-05-01
+title: New-MgBetaRoleManagementDirectoryRoleAssignmentSchedule
 ---
 
 # New-MgBetaRoleManagementDirectoryRoleAssignmentSchedule
 
 ## SYNOPSIS
+
 Create new navigation property to roleAssignmentSchedules for roleManagement
 
 > [!NOTE]
@@ -16,80 +21,109 @@ Create new navigation property to roleAssignmentSchedules for roleManagement
 ## SYNTAX
 
 ### CreateExpanded (Default)
+
 ```
-New-MgBetaRoleManagementDirectoryRoleAssignmentSchedule [-ResponseHeadersVariable <String>]
- [-ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>] [-AdditionalProperties <Hashtable>]
- [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>] [-AssignmentType <String>]
- [-CreatedDateTime <DateTime>] [-CreatedUsing <String>] [-DirectoryScope <IMicrosoftGraphDirectoryObject>]
- [-DirectoryScopeId <String>] [-Id <String>] [-MemberType <String>] [-ModifiedDateTime <DateTime>]
- [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
- [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
- [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-Status <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaRoleManagementDirectoryRoleAssignmentSchedule [-ResponseHeadersVariable <string>]
+ [-ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]
+ [-AdditionalProperties <hashtable>] [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <string>]
+ [-AssignmentType <string>] [-CreatedDateTime <datetime>] [-CreatedUsing <string>]
+ [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <string>] [-Id <string>]
+ [-MemberType <string>] [-ModifiedDateTime <datetime>] [-Principal <IMicrosoftGraphDirectoryObject>]
+ [-PrincipalId <string>] [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]
+ [-RoleDefinitionId <string>] [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-Status <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
+
 ```
 New-MgBetaRoleManagementDirectoryRoleAssignmentSchedule
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentSchedule> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentSchedule> [-ResponseHeadersVariable <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Create new navigation property to roleAssignmentSchedules for roleManagement
+## ALIASES
 
-## EXAMPLES
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
+## DESCRIPTION
+
+Create new navigation property to roleAssignmentSchedules for roleManagement
 
 ## PARAMETERS
 
 ### -ActivatedUsing
+
 unifiedRoleEligibilitySchedule
 To construct, see NOTES section for ACTIVATEDUSING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleEligibilitySchedule
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilitySchedule
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AdditionalProperties
+
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AppScope
+
 appScope
 To construct, see NOTES section for APPSCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppScope
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppScope
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AppScopeId
+
 Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
 The scope of an assignment or eligibility determines the set of resources for which the principal has been granted access.
 App scopes are scopes that are defined and understood by this application only.
@@ -97,111 +131,175 @@ Use / for tenant-wide app scopes.
 Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AssignmentType
+
 The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BodyParameter
+
 unifiedRoleAssignmentSchedule
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleAssignmentSchedule
-Parameter Sets: Create
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentSchedule
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confirm
+
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CreatedDateTime
+
 When the schedule was created.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CreatedUsing
+
 Identifier of the object through which this schedule was created.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -DirectoryScope
+
 directoryObject
 To construct, see NOTES section for DIRECTORYSCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -DirectoryScopeId
+
 Identifier of the directory object representing the scope of the assignment or eligibility.
 The scope of an assignment or eligibility determines the set of resources for which the principal has been granted access.
 Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
@@ -209,626 +307,817 @@ Use / for tenant-wide scope.
 Use appScopeId to limit the scope to an application only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Headers
+
 Optional headers that will be added to the request.
 
 ```yaml
-Type: IDictionary
-Parameter Sets: (All)
-Aliases:
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Id
+
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -MemberType
+
 How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ModifiedDateTime
+
 When the schedule was last modified.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Principal
+
 directoryObject
 To construct, see NOTES section for PRINCIPAL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -PrincipalId
+
 Identifier of the principal that has been granted the role assignment or eligibility.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResponseHeadersVariable
+
 Optional Response Headers Variable.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -RoleDefinition
+
 unifiedRoleDefinition
 To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleDefinition
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -RoleDefinitionId
+
 Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that a principal is eligible for.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ScheduleInfo
+
 requestSchedule
 To construct, see NOTES section for SCHEDULEINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRequestSchedule
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRequestSchedule
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Status
+
 The status of the role assignment or eligibility request.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentSchedule
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentSchedule
+
+{{ Fill in the Description }}
+
 ## NOTES
+
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 ACTIVATEDUSING `<IMicrosoftGraphUnifiedRoleEligibilitySchedule>`: unifiedRoleEligibilitySchedule
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [AppScope <IMicrosoftGraphAppScope>]: appScope
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
+    [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
 Read only.
-    - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
-  - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
+    [Type <String>]: Describes the type of app-specific resource represented by the app scope.
+Read-only.
+  [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
 The scope of an assignment or eligibility determines the set of resources for which the principal has been granted access.
 App scopes are scopes that are defined and understood by this application only.
 Use / for tenant-wide app scopes.
 Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
-  - `[CreatedDateTime <DateTime?>]`: When the schedule was created.
-  - `[CreatedUsing <String>]`: Identifier of the object through which this schedule was created.
-  - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  [CreatedDateTime <DateTime?>]: When the schedule was created.
+  [CreatedUsing <String>]: Identifier of the object through which this schedule was created.
+  [DirectoryScope <IMicrosoftGraphDirectoryObject>]: directoryObject
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+    [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment or eligibility.
+  [DirectoryScopeId <String>]: Identifier of the directory object representing the scope of the assignment or eligibility.
 The scope of an assignment or eligibility determines the set of resources for which the principal has been granted access.
 Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
 Use / for tenant-wide scope.
 Use appScopeId to limit the scope to an application only.
-  - `[ModifiedDateTime <DateTime?>]`: When the schedule was last modified.
-  - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
-  - `[PrincipalId <String>]`: Identifier of the principal that has been granted the role assignment or eligibility.
-  - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  [ModifiedDateTime <DateTime?>]: When the schedule was last modified.
+  [Principal <IMicrosoftGraphDirectoryObject>]: directoryObject
+  [PrincipalId <String>]: Identifier of the principal that has been granted the role assignment or eligibility.
+  [RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]: unifiedRoleDefinition
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
-    - `[Description <String>]`: The description for the unifiedRoleDefinition.
+    [AllowedPrincipalTypes <String>]: allowedRolePrincipalTypes
+    [Description <String>]: The description for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-    - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition.
+    [DisplayName <String>]: The display name for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-Required. 
-Supports $filter (eq and startsWith).
-    - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition- `[]`>]`: Read-only collection of role definitions that the given role definition inherits from.
+Required.
+ Supports $filter (eq and startsWith).
+    [InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]: Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles support this attribute.
-    - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
-Read-only. 
-Supports $filter (eq).
-    - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment.
+    [IsBuiltIn <Boolean?>]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
+Read-only.
+ Supports $filter (eq).
+    [IsEnabled <Boolean?>]: Flag indicating if the role is enabled for assignment.
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
-    - `[IsPrivileged <Boolean?>]`: Flag indicating if the role is privileged.
+    [IsPrivileged <Boolean?>]: Flag indicating if the role is privileged.
 Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
-    - `[ResourceScopes <String- `[]`>]`: List of scopes permissions granted by the role definition apply to.
+    [ResourceScopes <String[]>]: List of scopes permissions granted by the role definition apply to.
 Currently only / is supported.
 Read-only when isBuiltIn is true.
 DO NOT USE.
 This will be deprecated soon.
 Attach scope to role assignment.
-    - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission- `[]`>]`: List of permissions included in the role.
+    [RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]: List of permissions included in the role.
 Read-only when isBuiltIn is true.
 Required.
-      - `[AllowedResourceActions <String- `[]`>]`: Set of tasks that can be performed on a resource.
-      - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
+      [AllowedResourceActions <String[]>]: Set of tasks that can be performed on a resource.
+      [Condition <String>]: Optional constraints that must be met for the permission to be effective.
 Not supported for custom roles.
-      - `[ExcludedResourceActions <String- `[]`>]`: 
-    - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false.
+      [ExcludedResourceActions <String[]>]: 
+    [TemplateId <String>]: Custom template identifier that can be set when isBuiltIn is false.
 This identifier is typically used if one needs an identifier to be the same across different directories.
 Read-only when isBuiltIn is true.
-    - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object.
+    [Version <String>]: Indicates the version of the unifiedRoleDefinition object.
 Read-only when isBuiltIn is true.
-  - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that a principal is eligible for.
-  - `[Status <String>]`: The status of the role assignment or eligibility request.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [RoleDefinitionId <String>]: Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that a principal is eligible for.
+  [Status <String>]: The status of the role assignment or eligibility request.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[MemberType <String>]`: Membership type of the eligible assignment.
+  [MemberType <String>]: Membership type of the eligible assignment.
 It can either be Inherited, Direct, or Group.
 Supports $filter (eq).
-  - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations.
-For example, PT3H refers to three hours. 
-If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
-      - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
+  [ScheduleInfo <IMicrosoftGraphRequestSchedule>]: requestSchedule
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Expiration <IMicrosoftGraphExpirationPattern>]: expirationPattern
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Duration <TimeSpan?>]: The requestor's desired duration of access represented in ISO 8601 format for durations.
+For example, PT3H refers to three hours.
+ If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
+      [EndDateTime <DateTime?>]: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
-      - `[Type <String>]`: expirationPatternType
-    - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs.
+      [Type <String>]: expirationPatternType
+    [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Pattern <IMicrosoftGraphRecurrencePattern>]: recurrencePattern
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DayOfMonth <Int32?>]: The day of the month on which the event occurs.
 Required if type is absoluteMonthly or absoluteYearly.
-        - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
+        [DaysOfWeek <String[]>]: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
-Required if type is weekly, relativeMonthly, or relativeYearly.
-        - `[FirstDayOfWeek <String>]`: dayOfWeek
-        - `[Index <String>]`: weekIndex
-        - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+ Required if type is weekly, relativeMonthly, or relativeYearly.
+        [FirstDayOfWeek <String>]: dayOfWeek
+        [Index <String>]: weekIndex
+        [Interval <Int32?>]: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-        - `[Month <Int32?>]`: The month in which the event occurs. 
-This is a number from 1 to 12.
-        - `[Type <String>]`: recurrencePatternType
-      - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern.
+        [Month <Int32?>]: The month in which the event occurs.
+ This is a number from 1 to 12.
+        [Type <String>]: recurrencePatternType
+      [Range <IMicrosoftGraphRecurrenceRange>]: recurrenceRange
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [EndDate <DateTime?>]: The date to stop applying the recurrence pattern.
 Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date.
 Required if type is endDate.
-        - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event.
+        [NumberOfOccurrences <Int32?>]: The number of times to repeat the event.
 Required and must be positive if type is numbered.
-        - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties.
+        [RecurrenceTimeZone <String>]: Time zone for the startDate and endDate properties.
 Optional.
 If not specified, the time zone of the event is used.
-        - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern.
+        [StartDate <DateTime?>]: The date to start applying the recurrence pattern.
 The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event.
 Must be the same value as the start property of the recurring event.
 Required.
-        - `[Type <String>]`: recurrenceRangeType
-    - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+        [Type <String>]: recurrenceRangeType
+    [StartDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 In PIM, when the  eligible or active assignment becomes active.
 
 APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
+  [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
 Read only.
-  - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
+  [Type <String>]: Describes the type of app-specific resource represented by the app scope.
+Read-only.
 
 BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentSchedule>`: unifiedRoleAssignmentSchedule
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [AppScope <IMicrosoftGraphAppScope>]: appScope
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
+    [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
 Read only.
-    - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
-For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-Read only.
-  - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
+    [Type <String>]: Describes the type of app-specific resource represented by the app scope.
+Read-only.
+  [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
 The scope of an assignment or eligibility determines the set of resources for which the principal has been granted access.
 App scopes are scopes that are defined and understood by this application only.
 Use / for tenant-wide app scopes.
 Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
-  - `[CreatedDateTime <DateTime?>]`: When the schedule was created.
-  - `[CreatedUsing <String>]`: Identifier of the object through which this schedule was created.
-  - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  [CreatedDateTime <DateTime?>]: When the schedule was created.
+  [CreatedUsing <String>]: Identifier of the object through which this schedule was created.
+  [DirectoryScope <IMicrosoftGraphDirectoryObject>]: directoryObject
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+    [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment or eligibility.
+  [DirectoryScopeId <String>]: Identifier of the directory object representing the scope of the assignment or eligibility.
 The scope of an assignment or eligibility determines the set of resources for which the principal has been granted access.
 Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
 Use / for tenant-wide scope.
 Use appScopeId to limit the scope to an application only.
-  - `[ModifiedDateTime <DateTime?>]`: When the schedule was last modified.
-  - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
-  - `[PrincipalId <String>]`: Identifier of the principal that has been granted the role assignment or eligibility.
-  - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  [ModifiedDateTime <DateTime?>]: When the schedule was last modified.
+  [Principal <IMicrosoftGraphDirectoryObject>]: directoryObject
+  [PrincipalId <String>]: Identifier of the principal that has been granted the role assignment or eligibility.
+  [RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]: unifiedRoleDefinition
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
-    - `[Description <String>]`: The description for the unifiedRoleDefinition.
+    [AllowedPrincipalTypes <String>]: allowedRolePrincipalTypes
+    [Description <String>]: The description for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-    - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition.
+    [DisplayName <String>]: The display name for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-Required. 
-Supports $filter (eq and startsWith).
-    - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition- `[]`>]`: Read-only collection of role definitions that the given role definition inherits from.
+Required.
+ Supports $filter (eq and startsWith).
+    [InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]: Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles support this attribute.
-    - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
-Read-only. 
-Supports $filter (eq).
-    - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment.
+    [IsBuiltIn <Boolean?>]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
+Read-only.
+ Supports $filter (eq).
+    [IsEnabled <Boolean?>]: Flag indicating if the role is enabled for assignment.
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
-    - `[IsPrivileged <Boolean?>]`: Flag indicating if the role is privileged.
+    [IsPrivileged <Boolean?>]: Flag indicating if the role is privileged.
 Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
-    - `[ResourceScopes <String- `[]`>]`: List of scopes permissions granted by the role definition apply to.
+    [ResourceScopes <String[]>]: List of scopes permissions granted by the role definition apply to.
 Currently only / is supported.
 Read-only when isBuiltIn is true.
 DO NOT USE.
 This will be deprecated soon.
 Attach scope to role assignment.
-    - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission- `[]`>]`: List of permissions included in the role.
+    [RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]: List of permissions included in the role.
 Read-only when isBuiltIn is true.
 Required.
-      - `[AllowedResourceActions <String- `[]`>]`: Set of tasks that can be performed on a resource.
-      - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
+      [AllowedResourceActions <String[]>]: Set of tasks that can be performed on a resource.
+      [Condition <String>]: Optional constraints that must be met for the permission to be effective.
 Not supported for custom roles.
-      - `[ExcludedResourceActions <String- `[]`>]`: 
-    - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false.
+      [ExcludedResourceActions <String[]>]: 
+    [TemplateId <String>]: Custom template identifier that can be set when isBuiltIn is false.
 This identifier is typically used if one needs an identifier to be the same across different directories.
 Read-only when isBuiltIn is true.
-    - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object.
+    [Version <String>]: Indicates the version of the unifiedRoleDefinition object.
 Read-only when isBuiltIn is true.
-  - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that a principal is eligible for.
-  - `[Status <String>]`: The status of the role assignment or eligibility request.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [RoleDefinitionId <String>]: Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that a principal is eligible for.
+  [Status <String>]: The status of the role assignment or eligibility request.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]`: unifiedRoleEligibilitySchedule
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-    - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
+  [ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]: unifiedRoleEligibilitySchedule
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AppScope <IMicrosoftGraphAppScope>]: appScope
+    [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
 The scope of an assignment or eligibility determines the set of resources for which the principal has been granted access.
 App scopes are scopes that are defined and understood by this application only.
 Use / for tenant-wide app scopes.
 Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
-    - `[CreatedDateTime <DateTime?>]`: When the schedule was created.
-    - `[CreatedUsing <String>]`: Identifier of the object through which this schedule was created.
-    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
-    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment or eligibility.
+    [CreatedDateTime <DateTime?>]: When the schedule was created.
+    [CreatedUsing <String>]: Identifier of the object through which this schedule was created.
+    [DirectoryScope <IMicrosoftGraphDirectoryObject>]: directoryObject
+    [DirectoryScopeId <String>]: Identifier of the directory object representing the scope of the assignment or eligibility.
 The scope of an assignment or eligibility determines the set of resources for which the principal has been granted access.
 Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
 Use / for tenant-wide scope.
 Use appScopeId to limit the scope to an application only.
-    - `[ModifiedDateTime <DateTime?>]`: When the schedule was last modified.
-    - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
-    - `[PrincipalId <String>]`: Identifier of the principal that has been granted the role assignment or eligibility.
-    - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-    - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that a principal is eligible for.
-    - `[Status <String>]`: The status of the role assignment or eligibility request.
-    - `[Id <String>]`: The unique identifier for an entity.
+    [ModifiedDateTime <DateTime?>]: When the schedule was last modified.
+    [Principal <IMicrosoftGraphDirectoryObject>]: directoryObject
+    [PrincipalId <String>]: Identifier of the principal that has been granted the role assignment or eligibility.
+    [RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]: unifiedRoleDefinition
+    [RoleDefinitionId <String>]: Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that a principal is eligible for.
+    [Status <String>]: The status of the role assignment or eligibility request.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[MemberType <String>]`: Membership type of the eligible assignment.
+    [MemberType <String>]: Membership type of the eligible assignment.
 It can either be Inherited, Direct, or Group.
 Supports $filter (eq).
-    - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations.
-For example, PT3H refers to three hours. 
-If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
-        - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
+    [ScheduleInfo <IMicrosoftGraphRequestSchedule>]: requestSchedule
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Expiration <IMicrosoftGraphExpirationPattern>]: expirationPattern
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Duration <TimeSpan?>]: The requestor's desired duration of access represented in ISO 8601 format for durations.
+For example, PT3H refers to three hours.
+ If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
+        [EndDateTime <DateTime?>]: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
-        - `[Type <String>]`: expirationPatternType
-      - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs.
+        [Type <String>]: expirationPatternType
+      [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Pattern <IMicrosoftGraphRecurrencePattern>]: recurrencePattern
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [DayOfMonth <Int32?>]: The day of the month on which the event occurs.
 Required if type is absoluteMonthly or absoluteYearly.
-          - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
+          [DaysOfWeek <String[]>]: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
-Required if type is weekly, relativeMonthly, or relativeYearly.
-          - `[FirstDayOfWeek <String>]`: dayOfWeek
-          - `[Index <String>]`: weekIndex
-          - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+ Required if type is weekly, relativeMonthly, or relativeYearly.
+          [FirstDayOfWeek <String>]: dayOfWeek
+          [Index <String>]: weekIndex
+          [Interval <Int32?>]: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-          - `[Month <Int32?>]`: The month in which the event occurs. 
-This is a number from 1 to 12.
-          - `[Type <String>]`: recurrencePatternType
-        - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern.
+          [Month <Int32?>]: The month in which the event occurs.
+ This is a number from 1 to 12.
+          [Type <String>]: recurrencePatternType
+        [Range <IMicrosoftGraphRecurrenceRange>]: recurrenceRange
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [EndDate <DateTime?>]: The date to stop applying the recurrence pattern.
 Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date.
 Required if type is endDate.
-          - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event.
+          [NumberOfOccurrences <Int32?>]: The number of times to repeat the event.
 Required and must be positive if type is numbered.
-          - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties.
+          [RecurrenceTimeZone <String>]: Time zone for the startDate and endDate properties.
 Optional.
 If not specified, the time zone of the event is used.
-          - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern.
+          [StartDate <DateTime?>]: The date to start applying the recurrence pattern.
 The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event.
 Must be the same value as the start property of the recurring event.
 Required.
-          - `[Type <String>]`: recurrenceRangeType
-      - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+          [Type <String>]: recurrenceRangeType
+      [StartDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 In PIM, when the  eligible or active assignment becomes active.
-  - `[AssignmentType <String>]`: The type of the assignment that can either be Assigned or Activated.
+  [AssignmentType <String>]: The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
-  - `[MemberType <String>]`: How the assignment is inherited.
+  [MemberType <String>]: How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).
-  - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
+  [ScheduleInfo <IMicrosoftGraphRequestSchedule>]: requestSchedule
 
 DIRECTORYSCOPE `<IMicrosoftGraphDirectoryObject>`: directoryObject
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 PRINCIPAL `<IMicrosoftGraphDirectoryObject>`: directoryObject
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
-  - `[Description <String>]`: The description for the unifiedRoleDefinition.
+  [AllowedPrincipalTypes <String>]: allowedRolePrincipalTypes
+  [Description <String>]: The description for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-  - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition.
+  [DisplayName <String>]: The display name for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-Required. 
-Supports $filter (eq and startsWith).
-  - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition- `[]`>]`: Read-only collection of role definitions that the given role definition inherits from.
+Required.
+ Supports $filter (eq and startsWith).
+  [InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]: Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles support this attribute.
-  - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
-Read-only. 
-Supports $filter (eq).
-  - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment.
+  [IsBuiltIn <Boolean?>]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
+Read-only.
+ Supports $filter (eq).
+  [IsEnabled <Boolean?>]: Flag indicating if the role is enabled for assignment.
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
-  - `[IsPrivileged <Boolean?>]`: Flag indicating if the role is privileged.
+  [IsPrivileged <Boolean?>]: Flag indicating if the role is privileged.
 Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
-  - `[ResourceScopes <String- `[]`>]`: List of scopes permissions granted by the role definition apply to.
+  [ResourceScopes <String[]>]: List of scopes permissions granted by the role definition apply to.
 Currently only / is supported.
 Read-only when isBuiltIn is true.
 DO NOT USE.
 This will be deprecated soon.
 Attach scope to role assignment.
-  - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission- `[]`>]`: List of permissions included in the role.
+  [RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]: List of permissions included in the role.
 Read-only when isBuiltIn is true.
 Required.
-    - `[AllowedResourceActions <String- `[]`>]`: Set of tasks that can be performed on a resource.
-    - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
+    [AllowedResourceActions <String[]>]: Set of tasks that can be performed on a resource.
+    [Condition <String>]: Optional constraints that must be met for the permission to be effective.
 Not supported for custom roles.
-    - `[ExcludedResourceActions <String- `[]`>]`: 
-  - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false.
+    [ExcludedResourceActions <String[]>]: 
+  [TemplateId <String>]: Custom template identifier that can be set when isBuiltIn is false.
 This identifier is typically used if one needs an identifier to be the same across different directories.
 Read-only when isBuiltIn is true.
-  - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object.
+  [Version <String>]: Indicates the version of the unifiedRoleDefinition object.
 Read-only when isBuiltIn is true.
 
 SCHEDULEINFO `<IMicrosoftGraphRequestSchedule>`: requestSchedule
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations.
-For example, PT3H refers to three hours. 
-If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
-    - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Expiration <IMicrosoftGraphExpirationPattern>]: expirationPattern
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Duration <TimeSpan?>]: The requestor's desired duration of access represented in ISO 8601 format for durations.
+For example, PT3H refers to three hours.
+ If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
+    [EndDateTime <DateTime?>]: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
-    - `[Type <String>]`: expirationPatternType
-  - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs.
+    [Type <String>]: expirationPatternType
+  [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Pattern <IMicrosoftGraphRecurrencePattern>]: recurrencePattern
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DayOfMonth <Int32?>]: The day of the month on which the event occurs.
 Required if type is absoluteMonthly or absoluteYearly.
-      - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
+      [DaysOfWeek <String[]>]: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
-Required if type is weekly, relativeMonthly, or relativeYearly.
-      - `[FirstDayOfWeek <String>]`: dayOfWeek
-      - `[Index <String>]`: weekIndex
-      - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+ Required if type is weekly, relativeMonthly, or relativeYearly.
+      [FirstDayOfWeek <String>]: dayOfWeek
+      [Index <String>]: weekIndex
+      [Interval <Int32?>]: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-      - `[Month <Int32?>]`: The month in which the event occurs. 
-This is a number from 1 to 12.
-      - `[Type <String>]`: recurrencePatternType
-    - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern.
+      [Month <Int32?>]: The month in which the event occurs.
+ This is a number from 1 to 12.
+      [Type <String>]: recurrencePatternType
+    [Range <IMicrosoftGraphRecurrenceRange>]: recurrenceRange
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [EndDate <DateTime?>]: The date to stop applying the recurrence pattern.
 Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date.
 Required if type is endDate.
-      - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event.
+      [NumberOfOccurrences <Int32?>]: The number of times to repeat the event.
 Required and must be positive if type is numbered.
-      - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties.
+      [RecurrenceTimeZone <String>]: Time zone for the startDate and endDate properties.
 Optional.
 If not specified, the time zone of the event is used.
-      - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern.
+      [StartDate <DateTime?>]: The date to start applying the recurrence pattern.
 The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event.
 Must be the same value as the start property of the recurring event.
 Required.
-      - `[Type <String>]`: recurrenceRangeType
-  - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+      [Type <String>]: recurrenceRangeType
+  [StartDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 In PIM, when the  eligible or active assignment becomes active.
 
+
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedule)
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedule)
 
 
 

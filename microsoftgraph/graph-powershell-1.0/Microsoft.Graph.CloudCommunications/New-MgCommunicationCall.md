@@ -1,46 +1,61 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+document type: cmdlet
+external help file: Microsoft.Graph.CloudCommunications-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
+Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
-schema: 2.0.0
-ms.subservice: cloud-communications
+ms.date: 09/12/2025
+PlatyPS schema version: 2024-05-01
+title: New-MgCommunicationCall
 ---
 
 # New-MgCommunicationCall
 
 ## SYNOPSIS
+
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
 You need to register the calling bot and go through the list of permissions needed.
 This API supports the following PSTN scenarios:
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
+
 ```
-New-MgCommunicationCall [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>] [-CallChainId <String>]
- [-CallOptions <IMicrosoftGraphCallOptions>] [-CallRoutes <IMicrosoftGraphCallRoute[]>] [-CallbackUri <String>]
- [-ChatInfo <IMicrosoftGraphChatInfo>] [-ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>]
- [-Direction <String>] [-Id <String>] [-IncomingContext <IMicrosoftGraphIncomingContext>]
- [-MediaConfig <Hashtable>] [-MediaState <IMicrosoftGraphCallMediaState>] [-MeetingInfo <Hashtable>]
- [-MyParticipantId <String>] [-Operations <IMicrosoftGraphCommsOperation[]>]
- [-Participants <IMicrosoftGraphParticipant[]>] [-RequestedModalities <String[]>]
- [-ResultInfo <IMicrosoftGraphResultInfo>] [-Source <IMicrosoftGraphParticipantInfo>] [-State <String>]
- [-Subject <String>] [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-TenantId <String>]
- [-ToneInfo <IMicrosoftGraphToneInfo>] [-Transcription <IMicrosoftGraphCallTranscriptionInfo>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgCommunicationCall [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>] [-CallChainId <string>]
+ [-CallOptions <IMicrosoftGraphCallOptions>] [-CallRoutes <IMicrosoftGraphCallRoute[]>]
+ [-CallbackUri <string>] [-ChatInfo <IMicrosoftGraphChatInfo>]
+ [-ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>] [-Direction <string>]
+ [-Id <string>] [-IncomingContext <IMicrosoftGraphIncomingContext>] [-MediaConfig <hashtable>]
+ [-MediaState <IMicrosoftGraphCallMediaState>] [-MeetingInfo <hashtable>]
+ [-MyParticipantId <string>] [-Operations <IMicrosoftGraphCommsOperation[]>]
+ [-Participants <IMicrosoftGraphParticipant[]>] [-RequestedModalities <string[]>]
+ [-ResultInfo <IMicrosoftGraphResultInfo>] [-Source <IMicrosoftGraphParticipantInfo>]
+ [-State <string>] [-Subject <string>] [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>]
+ [-TenantId <string>] [-ToneInfo <IMicrosoftGraphToneInfo>]
+ [-Transcription <IMicrosoftGraphCallTranscriptionInfo>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
+
 ```
-New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-ResponseHeadersVariable <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+## ALIASES
+
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
 ## DESCRIPTION
+
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
 You need to register the calling bot and go through the list of permissions needed.
 This API supports the following PSTN scenarios:
@@ -512,831 +527,1158 @@ This example will create peer-to-peer pstn call with application hosted media
 ## PARAMETERS
 
 ### -AdditionalProperties
+
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AudioRoutingGroups
 
+
 To construct, see NOTES section for AUDIOROUTINGGROUPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAudioRoutingGroup[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAudioRoutingGroup[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BodyParameter
+
 call
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCall
-Parameter Sets: Create
-Aliases:
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CallbackUri
+
 The callback URL on which callbacks are delivered.
 Must be an HTTPS URL.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CallChainId
+
 A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.
 This identifier must be copied over from Microsoft.Graph.Call.CallChainId.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CallOptions
+
 callOptions
 To construct, see NOTES section for CALLOPTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallOptions
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallOptions
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CallRoutes
+
 The routing information on how the call was retargeted.
 Read-only.
 To construct, see NOTES section for CALLROUTES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallRoute[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRoute[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ChatInfo
+
 chatInfo
 To construct, see NOTES section for CHATINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatInfo
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatInfo
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confirm
+
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ContentSharingSessions
 
+
 To construct, see NOTES section for CONTENTSHARINGSESSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentSharingSession[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentSharingSession[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Direction
+
 callDirection
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Headers
+
 Optional headers that will be added to the request.
 
 ```yaml
-Type: IDictionary
-Parameter Sets: (All)
-Aliases:
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Id
+
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -IncomingContext
+
 incomingContext
 To construct, see NOTES section for INCOMINGCONTEXT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIncomingContext
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIncomingContext
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -MediaConfig
+
 mediaConfig
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -MediaState
+
 callMediaState
 To construct, see NOTES section for MEDIASTATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallMediaState
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallMediaState
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -MeetingInfo
+
 meetingInfo
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -MyParticipantId
 
 
-```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Operations
 
+
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCommsOperation[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommsOperation[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Participants
 
+
 To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipant[]
-Parameter Sets: CreateExpanded
-Aliases:
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipant[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -RequestedModalities
+
 The list of requested modalities.
 Possible values are: unknown, audio, video, videoBasedScreenSharing, data.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResponseHeadersVariable
+
 Optional Response Headers Variable.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResultInfo
+
 resultInfo
 To construct, see NOTES section for RESULTINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResultInfo
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResultInfo
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Source
+
 participantInfo
 To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipantInfo
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipantInfo
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -State
+
 callState
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Subject
+
 The subject of the conversation.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Targets
+
 The targets of the call.
 Required information for creating peer to peer call.
 To construct, see NOTES section for TARGETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInvitationParticipantInfo[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInvitationParticipantInfo[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -TenantId
 
 
-```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ToneInfo
+
 toneInfo
 To construct, see NOTES section for TONEINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphToneInfo
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphToneInfo
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Transcription
+
 callTranscriptionInfo
 To construct, see NOTES section for TRANSCRIPTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallTranscriptionInfo
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallTranscriptionInfo
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall
+
+{{ Fill in the Description }}
+
 ## NOTES
+
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUDIOROUTINGGROUPS `<IMicrosoftGraphAudioRoutingGroup- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+AUDIOROUTINGGROUPS <IMicrosoftGraphAudioRoutingGroup[]>: .
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[Receivers <String- `[]`>]`: List of receiving participant ids.
-  - `[RoutingMode <String>]`: routingMode
-  - `[Sources <String- `[]`>]`: List of source participant ids.
+  [Receivers <String[]>]: List of receiving participant ids.
+  [RoutingMode <String>]: routingMode
+  [Sources <String[]>]: List of source participant ids.
 
 BODYPARAMETER `<IMicrosoftGraphCall>`: call
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup- `[]`>]`:
-    - `[Id <String>]`: The unique identifier for an entity.
+  [AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[Receivers <String- `[]`>]`: List of receiving participant ids.
-    - `[RoutingMode <String>]`: routingMode
-    - `[Sources <String- `[]`>]`: List of source participant ids.
-  - `[CallChainId <String>]`: A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.
-This identifier must be copied over from Microsoft.Graph.Call.CallChainId.
-  - `[CallOptions <IMicrosoftGraphCallOptions>]`: callOptions
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[HideBotAfterEscalation <Boolean?>]`: Indicates whether to hide the app after the call is escalated.
-    - `[IsContentSharingNotificationEnabled <Boolean?>]`: Indicates whether content sharing notifications should be enabled for the call.
-    - `[IsDeltaRosterEnabled <Boolean?>]`: Indicates whether delta roster is enabled for the call.
-  - `[CallRoutes <IMicrosoftGraphCallRoute- `[]`>]`: The routing information on how the call was retargeted.
+    [Receivers <String[]>]: List of receiving participant ids.
+    [RoutingMode <String>]: routingMode
+    [Sources <String[]>]: List of source participant ids.
+  [CallChainId <String>]: A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.
+ This identifier must be copied over from Microsoft.Graph.Call.CallChainId.
+  [CallOptions <IMicrosoftGraphCallOptions>]: callOptions
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [HideBotAfterEscalation <Boolean?>]: Indicates whether to hide the app after the call is escalated.
+    [IsContentSharingNotificationEnabled <Boolean?>]: Indicates whether content sharing notifications should be enabled for the call.
+    [IsDeltaRosterEnabled <Boolean?>]: Indicates whether delta roster is enabled for the call.
+  [CallRoutes <IMicrosoftGraphCallRoute[]>]: The routing information on how the call was retargeted.
 Read-only.
-    - `[Final <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+    [Final <IMicrosoftGraphIdentitySet>]: identitySet
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Application <IMicrosoftGraphIdentity>]: identity
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity or actor.
+        [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[Original <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[RoutingType <String>]`: routingType
-  - `[CallbackUri <String>]`: The callback URL on which callbacks are delivered.
+      [Device <IMicrosoftGraphIdentity>]: identity
+      [User <IMicrosoftGraphIdentity>]: identity
+    [Original <IMicrosoftGraphIdentitySet>]: identitySet
+    [RoutingType <String>]: routingType
+  [CallbackUri <String>]: The callback URL on which callbacks are delivered.
 Must be an HTTPS URL.
-  - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
-    - `[ReplyChainMessageId <String>]`: The ID of the reply message.
-    - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
-  - `[ContentSharingSessions <IMicrosoftGraphContentSharingSession- `[]`>]`:
-    - `[Id <String>]`: The unique identifier for an entity.
+  [ChatInfo <IMicrosoftGraphChatInfo>]: chatInfo
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [MessageId <String>]: The unique identifier of a message in a Microsoft Teams channel.
+    [ReplyChainMessageId <String>]: The ID of the reply message.
+    [ThreadId <String>]: The unique identifier for a thread in Microsoft Teams.
+  [ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[Direction <String>]`: callDirection
-  - `[IncomingContext <IMicrosoftGraphIncomingContext>]`: incomingContext
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ObservedParticipantId <String>]`: The ID of the participant that is under observation.
+  [Direction <String>]: callDirection
+  [IncomingContext <IMicrosoftGraphIncomingContext>]: incomingContext
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [ObservedParticipantId <String>]: The ID of the participant that is under observation.
 Read-only.
-    - `[OnBehalfOf <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[SourceParticipantId <String>]`: The ID of the participant that triggered the incoming call.
+    [OnBehalfOf <IMicrosoftGraphIdentitySet>]: identitySet
+    [SourceParticipantId <String>]: The ID of the participant that triggered the incoming call.
 Read-only.
-    - `[Transferor <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[MediaConfig <IMicrosoftGraphMediaConfig>]`: mediaConfig
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MediaState <IMicrosoftGraphCallMediaState>]`: callMediaState
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Audio <String>]`: mediaState
-  - `[MeetingInfo <IMicrosoftGraphMeetingInfo>]`: meetingInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MyParticipantId <String>]`:
-  - `[Operations <IMicrosoftGraphCommsOperation- `[]`>]`:
-    - `[Id <String>]`: The unique identifier for an entity.
+    [Transferor <IMicrosoftGraphIdentitySet>]: identitySet
+  [MediaConfig <IMicrosoftGraphMediaConfig>]: mediaConfig
+    [(Any) <Object>]: This indicates any property can be added to this object.
+  [MediaState <IMicrosoftGraphCallMediaState>]: callMediaState
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Audio <String>]: mediaState
+  [MeetingInfo <IMicrosoftGraphMeetingInfo>]: meetingInfo
+    [(Any) <Object>]: This indicates any property can be added to this object.
+  [MyParticipantId <String>]: 
+  [Operations <IMicrosoftGraphCommsOperation[]>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[ClientContext <String>]`: Unique Client Context string.
+    [ClientContext <String>]: Unique Client Context string.
 Max limit is 256 chars.
-    - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <Int32?>]`: The result code.
-      - `[Message <String>]`: The message.
-      - `[Subcode <Int32?>]`: The result subcode.
-    - `[Status <String>]`: operationStatus
-  - `[Participants <IMicrosoftGraphParticipant- `[]`>]`:
-    - `[Id <String>]`: The unique identifier for an entity.
+    [ResultInfo <IMicrosoftGraphResultInfo>]: resultInfo
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Code <Int32?>]: The result code.
+      [Message <String>]: The message.
+      [Subcode <Int32?>]: The result subcode.
+    [Status <String>]: operationStatus
+  [Participants <IMicrosoftGraphParticipant[]>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[Info <IMicrosoftGraphParticipantInfo>]`: participantInfo
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
+    [Info <IMicrosoftGraphParticipantInfo>]: participantInfo
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [CountryCode <String>]: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
 Read-only.
-      - `[EndpointType <String>]`: endpointType
-      - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LanguageId <String>]`: The language culture string.
+      [EndpointType <String>]: endpointType
+      [Identity <IMicrosoftGraphIdentitySet>]: identitySet
+      [LanguageId <String>]: The language culture string.
 Read-only.
-      - `[ParticipantId <String>]`: The participant ID of the participant.
+      [ParticipantId <String>]: The participant ID of the participant.
 Read-only.
-      - `[Region <String>]`: The home region of the participant.
+      [Region <String>]: The home region of the participant.
 This can be a country, a continent, or a larger geographic region.
 This doesn't change based on the participant's current physical location.
 Read-only.
-    - `[IsInLobby <Boolean?>]`: true if the participant is in lobby.
-    - `[IsMuted <Boolean?>]`: true if the participant is muted (client or server muted).
-    - `[MediaStreams <IMicrosoftGraphMediaStream- `[]`>]`: The list of media streams.
-      - `[Direction <String>]`: mediaDirection
-      - `[Label <String>]`: The media stream label.
-      - `[MediaType <String>]`: modality
-      - `[ServerMuted <Boolean?>]`: If the media is muted by the server.
-      - `[SourceId <String>]`: The source ID.
-    - `[Metadata <String>]`: A blob of data provided by the participant in the roster.
-    - `[RecordingInfo <IMicrosoftGraphRecordingInfo>]`: recordingInfo
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[RecordingStatus <String>]`: recordingStatus
-    - `[RemovedState <IMicrosoftGraphRemovedState>]`: removedState
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Reason <String>]`: The removal reason for the participant resource.
-    - `[RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]`: onlineMeetingRestricted
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
-      - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
-    - `[RosterSequenceNumber <Int64?>]`: Indicates the roster sequence number in which the participant was last updated.
-  - `[RequestedModalities <String- `[]`>]`: The list of requested modalities.
+    [IsInLobby <Boolean?>]: true if the participant is in lobby.
+    [IsMuted <Boolean?>]: true if the participant is muted (client or server muted).
+    [MediaStreams <IMicrosoftGraphMediaStream[]>]: The list of media streams.
+      [Direction <String>]: mediaDirection
+      [Label <String>]: The media stream label.
+      [MediaType <String>]: modality
+      [ServerMuted <Boolean?>]: If the media is muted by the server.
+      [SourceId <String>]: The source ID.
+    [Metadata <String>]: A blob of data provided by the participant in the roster.
+    [RecordingInfo <IMicrosoftGraphRecordingInfo>]: recordingInfo
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Initiator <IMicrosoftGraphIdentitySet>]: identitySet
+      [RecordingStatus <String>]: recordingStatus
+    [RemovedState <IMicrosoftGraphRemovedState>]: removedState
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Reason <String>]: The removal reason for the participant resource.
+    [RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]: onlineMeetingRestricted
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [ContentSharingDisabled <String>]: onlineMeetingContentSharingDisabledReason
+      [VideoDisabled <String>]: onlineMeetingVideoDisabledReason
+    [RosterSequenceNumber <Int64?>]: Indicates the roster sequence number in which the participant was last updated.
+  [RequestedModalities <String[]>]: The list of requested modalities.
 Possible values are: unknown, audio, video, videoBasedScreenSharing, data.
-  - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
-  - `[Source <IMicrosoftGraphParticipantInfo>]`: participantInfo
-  - `[State <String>]`: callState
-  - `[Subject <String>]`: The subject of the conversation.
-  - `[Targets <IMicrosoftGraphInvitationParticipantInfo- `[]`>]`: The targets of the call.
+  [ResultInfo <IMicrosoftGraphResultInfo>]: resultInfo
+  [Source <IMicrosoftGraphParticipantInfo>]: participantInfo
+  [State <String>]: callState
+  [Subject <String>]: The subject of the conversation.
+  [Targets <IMicrosoftGraphInvitationParticipantInfo[]>]: The targets of the call.
 Required information for creating peer to peer call.
-    - `[Hidden <Boolean?>]`: Optional.
+    [Hidden <Boolean?>]: Optional.
 Whether to hide the participant from the roster.
-    - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[ParticipantId <String>]`: Optional.
+    [Identity <IMicrosoftGraphIdentitySet>]: identitySet
+    [ParticipantId <String>]: Optional.
 The ID of the target participant.
-    - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: Optional.
+    [RemoveFromDefaultAudioRoutingGroup <Boolean?>]: Optional.
 Whether to remove them from the main mixer.
-    - `[ReplacesCallId <String>]`: Optional.
+    [ReplacesCallId <String>]: Optional.
 The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
-  - `[TenantId <String>]`:
-  - `[ToneInfo <IMicrosoftGraphToneInfo>]`: toneInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[SequenceId <Int64?>]`: An incremental identifier used for ordering DTMF events.
-    - `[Tone <String>]`: tone
-  - `[Transcription <IMicrosoftGraphCallTranscriptionInfo>]`: callTranscriptionInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[LastModifiedDateTime <DateTime?>]`: The state modified time in UTC.
-    - `[State <String>]`: callTranscriptionState
+  [TenantId <String>]: 
+  [ToneInfo <IMicrosoftGraphToneInfo>]: toneInfo
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [SequenceId <Int64?>]: An incremental identifier used for ordering DTMF events.
+    [Tone <String>]: tone
+  [Transcription <IMicrosoftGraphCallTranscriptionInfo>]: callTranscriptionInfo
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [LastModifiedDateTime <DateTime?>]: The state modified time in UTC.
+    [State <String>]: callTranscriptionState
 
 CALLOPTIONS `<IMicrosoftGraphCallOptions>`: callOptions
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[HideBotAfterEscalation <Boolean?>]`: Indicates whether to hide the app after the call is escalated.
-  - `[IsContentSharingNotificationEnabled <Boolean?>]`: Indicates whether content sharing notifications should be enabled for the call.
-  - `[IsDeltaRosterEnabled <Boolean?>]`: Indicates whether delta roster is enabled for the call.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [HideBotAfterEscalation <Boolean?>]: Indicates whether to hide the app after the call is escalated.
+  [IsContentSharingNotificationEnabled <Boolean?>]: Indicates whether content sharing notifications should be enabled for the call.
+  [IsDeltaRosterEnabled <Boolean?>]: Indicates whether delta roster is enabled for the call.
 
-CALLROUTES `<IMicrosoftGraphCallRoute- `[]`>`: The routing information on how the call was retargeted.
+CALLROUTES <IMicrosoftGraphCallRoute[]>: The routing information on how the call was retargeted.
 Read-only.
-  - `[Final <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+  [Final <IMicrosoftGraphIdentitySet>]: identitySet
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Application <IMicrosoftGraphIdentity>]: identity
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
+      [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Original <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[RoutingType <String>]`: routingType
+    [Device <IMicrosoftGraphIdentity>]: identity
+    [User <IMicrosoftGraphIdentity>]: identity
+  [Original <IMicrosoftGraphIdentitySet>]: identitySet
+  [RoutingType <String>]: routingType
 
 CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
-  - `[ReplyChainMessageId <String>]`: The ID of the reply message.
-  - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [MessageId <String>]: The unique identifier of a message in a Microsoft Teams channel.
+  [ReplyChainMessageId <String>]: The ID of the reply message.
+  [ThreadId <String>]: The unique identifier for a thread in Microsoft Teams.
 
-CONTENTSHARINGSESSIONS `<IMicrosoftGraphContentSharingSession- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+CONTENTSHARINGSESSIONS <IMicrosoftGraphContentSharingSession[]>: .
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
 
 INCOMINGCONTEXT `<IMicrosoftGraphIncomingContext>`: incomingContext
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ObservedParticipantId <String>]`: The ID of the participant that is under observation.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [ObservedParticipantId <String>]: The ID of the participant that is under observation.
 Read-only.
-  - `[OnBehalfOf <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+  [OnBehalfOf <IMicrosoftGraphIdentitySet>]: identitySet
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Application <IMicrosoftGraphIdentity>]: identity
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
+      [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[SourceParticipantId <String>]`: The ID of the participant that triggered the incoming call.
+    [Device <IMicrosoftGraphIdentity>]: identity
+    [User <IMicrosoftGraphIdentity>]: identity
+  [SourceParticipantId <String>]: The ID of the participant that triggered the incoming call.
 Read-only.
-  - `[Transferor <IMicrosoftGraphIdentitySet>]`: identitySet
+  [Transferor <IMicrosoftGraphIdentitySet>]: identitySet
 
 MEDIASTATE `<IMicrosoftGraphCallMediaState>`: callMediaState
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Audio <String>]`: mediaState
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Audio <String>]: mediaState
 
-OPERATIONS `<IMicrosoftGraphCommsOperation- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+OPERATIONS <IMicrosoftGraphCommsOperation[]>: .
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[ClientContext <String>]`: Unique Client Context string.
+  [ClientContext <String>]: Unique Client Context string.
 Max limit is 256 chars.
-  - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <Int32?>]`: The result code.
-    - `[Message <String>]`: The message.
-    - `[Subcode <Int32?>]`: The result subcode.
-  - `[Status <String>]`: operationStatus
+  [ResultInfo <IMicrosoftGraphResultInfo>]: resultInfo
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Code <Int32?>]: The result code.
+    [Message <String>]: The message.
+    [Subcode <Int32?>]: The result subcode.
+  [Status <String>]: operationStatus
 
-PARTICIPANTS `<IMicrosoftGraphParticipant- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+PARTICIPANTS <IMicrosoftGraphParticipant[]>: .
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[Info <IMicrosoftGraphParticipantInfo>]`: participantInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
+  [Info <IMicrosoftGraphParticipantInfo>]: participantInfo
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [CountryCode <String>]: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
 Read-only.
-    - `[EndpointType <String>]`: endpointType
-    - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+    [EndpointType <String>]: endpointType
+    [Identity <IMicrosoftGraphIdentitySet>]: identitySet
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Application <IMicrosoftGraphIdentity>]: identity
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity or actor.
+        [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[LanguageId <String>]`: The language culture string.
+      [Device <IMicrosoftGraphIdentity>]: identity
+      [User <IMicrosoftGraphIdentity>]: identity
+    [LanguageId <String>]: The language culture string.
 Read-only.
-    - `[ParticipantId <String>]`: The participant ID of the participant.
+    [ParticipantId <String>]: The participant ID of the participant.
 Read-only.
-    - `[Region <String>]`: The home region of the participant.
+    [Region <String>]: The home region of the participant.
 This can be a country, a continent, or a larger geographic region.
 This doesn't change based on the participant's current physical location.
 Read-only.
-  - `[IsInLobby <Boolean?>]`: true if the participant is in lobby.
-  - `[IsMuted <Boolean?>]`: true if the participant is muted (client or server muted).
-  - `[MediaStreams <IMicrosoftGraphMediaStream- `[]`>]`: The list of media streams.
-    - `[Direction <String>]`: mediaDirection
-    - `[Label <String>]`: The media stream label.
-    - `[MediaType <String>]`: modality
-    - `[ServerMuted <Boolean?>]`: If the media is muted by the server.
-    - `[SourceId <String>]`: The source ID.
-  - `[Metadata <String>]`: A blob of data provided by the participant in the roster.
-  - `[RecordingInfo <IMicrosoftGraphRecordingInfo>]`: recordingInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[RecordingStatus <String>]`: recordingStatus
-  - `[RemovedState <IMicrosoftGraphRemovedState>]`: removedState
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Reason <String>]`: The removal reason for the participant resource.
-  - `[RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]`: onlineMeetingRestricted
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
-    - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
-  - `[RosterSequenceNumber <Int64?>]`: Indicates the roster sequence number in which the participant was last updated.
+  [IsInLobby <Boolean?>]: true if the participant is in lobby.
+  [IsMuted <Boolean?>]: true if the participant is muted (client or server muted).
+  [MediaStreams <IMicrosoftGraphMediaStream[]>]: The list of media streams.
+    [Direction <String>]: mediaDirection
+    [Label <String>]: The media stream label.
+    [MediaType <String>]: modality
+    [ServerMuted <Boolean?>]: If the media is muted by the server.
+    [SourceId <String>]: The source ID.
+  [Metadata <String>]: A blob of data provided by the participant in the roster.
+  [RecordingInfo <IMicrosoftGraphRecordingInfo>]: recordingInfo
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Initiator <IMicrosoftGraphIdentitySet>]: identitySet
+    [RecordingStatus <String>]: recordingStatus
+  [RemovedState <IMicrosoftGraphRemovedState>]: removedState
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Reason <String>]: The removal reason for the participant resource.
+  [RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]: onlineMeetingRestricted
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [ContentSharingDisabled <String>]: onlineMeetingContentSharingDisabledReason
+    [VideoDisabled <String>]: onlineMeetingVideoDisabledReason
+  [RosterSequenceNumber <Int64?>]: Indicates the roster sequence number in which the participant was last updated.
 
 RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Code <Int32?>]`: The result code.
-  - `[Message <String>]`: The message.
-  - `[Subcode <Int32?>]`: The result subcode.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Code <Int32?>]: The result code.
+  [Message <String>]: The message.
+  [Subcode <Int32?>]: The result subcode.
 
 SOURCE `<IMicrosoftGraphParticipantInfo>`: participantInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [CountryCode <String>]: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
 Read-only.
-  - `[EndpointType <String>]`: endpointType
-  - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+  [EndpointType <String>]: endpointType
+  [Identity <IMicrosoftGraphIdentitySet>]: identitySet
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Application <IMicrosoftGraphIdentity>]: identity
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
+      [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LanguageId <String>]`: The language culture string.
+    [Device <IMicrosoftGraphIdentity>]: identity
+    [User <IMicrosoftGraphIdentity>]: identity
+  [LanguageId <String>]: The language culture string.
 Read-only.
-  - `[ParticipantId <String>]`: The participant ID of the participant.
+  [ParticipantId <String>]: The participant ID of the participant.
 Read-only.
-  - `[Region <String>]`: The home region of the participant.
+  [Region <String>]: The home region of the participant.
 This can be a country, a continent, or a larger geographic region.
 This doesn't change based on the participant's current physical location.
 Read-only.
 
-TARGETS `<IMicrosoftGraphInvitationParticipantInfo- `[]`>`: The targets of the call.
+TARGETS <IMicrosoftGraphInvitationParticipantInfo[]>: The targets of the call.
 Required information for creating peer to peer call.
-  - `[Hidden <Boolean?>]`: Optional.
+  [Hidden <Boolean?>]: Optional.
 Whether to hide the participant from the roster.
-  - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+  [Identity <IMicrosoftGraphIdentitySet>]: identitySet
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Application <IMicrosoftGraphIdentity>]: identity
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
+      [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[ParticipantId <String>]`: Optional.
+    [Device <IMicrosoftGraphIdentity>]: identity
+    [User <IMicrosoftGraphIdentity>]: identity
+  [ParticipantId <String>]: Optional.
 The ID of the target participant.
-  - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: Optional.
+  [RemoveFromDefaultAudioRoutingGroup <Boolean?>]: Optional.
 Whether to remove them from the main mixer.
-  - `[ReplacesCallId <String>]`: Optional.
+  [ReplacesCallId <String>]: Optional.
 The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 TONEINFO `<IMicrosoftGraphToneInfo>`: toneInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SequenceId <Int64?>]`: An incremental identifier used for ordering DTMF events.
-  - `[Tone <String>]`: tone
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [SequenceId <Int64?>]: An incremental identifier used for ordering DTMF events.
+  [Tone <String>]: tone
 
 TRANSCRIPTION `<IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[LastModifiedDateTime <DateTime?>]`: The state modified time in UTC.
-  - `[State <String>]`: callTranscriptionState
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [LastModifiedDateTime <DateTime?>]: The state modified time in UTC.
+  [State <String>]: callTranscriptionState
+
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall)
-
-[https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-1.0)
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall)
+- [](https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-1.0)
 
 
 

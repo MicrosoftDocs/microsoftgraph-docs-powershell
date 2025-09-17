@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Users
-Module Guid: a8bfa5f1-f4dd-43bf-a5dd-282433aef058
+Module Guid: 81692fbc-63b5-4878-b928-d6e953c5b071
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.users/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

@@ -1,13 +1,18 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+document type: cmdlet
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementauditevent
+Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementauditevent
-schema: 2.0.0
+ms.date: 09/12/2025
+PlatyPS schema version: 2024-05-01
+title: Update-MgBetaDeviceManagementAuditEvent
 ---
 
 # Update-MgBetaDeviceManagementAuditEvent
 
 ## SYNOPSIS
+
 Update the navigation property auditEvents in deviceManagement
 
 > [!NOTE]
@@ -16,41 +21,60 @@ Update the navigation property auditEvents in deviceManagement
 ## SYNTAX
 
 ### UpdateExpanded (Default)
+
 ```
-Update-MgBetaDeviceManagementAuditEvent -AuditEventId <String> [-ResponseHeadersVariable <String>]
- [-Activity <String>] [-ActivityDateTime <DateTime>] [-ActivityOperationType <String>]
- [-ActivityResult <String>] [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor>]
- [-AdditionalProperties <Hashtable>] [-Category <String>] [-ComponentName <String>] [-CorrelationId <String>]
- [-DisplayName <String>] [-Id <String>] [-Resources <IMicrosoftGraphAuditResource[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementAuditEvent -AuditEventId <string> [-ResponseHeadersVariable <string>]
+ [-Activity <string>] [-ActivityDateTime <datetime>] [-ActivityOperationType <string>]
+ [-ActivityResult <string>] [-ActivityType <string>] [-Actor <IMicrosoftGraphAuditActor>]
+ [-AdditionalProperties <hashtable>] [-Category <string>] [-ComponentName <string>]
+ [-CorrelationId <string>] [-DisplayName <string>] [-Id <string>]
+ [-Resources <IMicrosoftGraphAuditResource[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
+
 ```
-Update-MgBetaDeviceManagementAuditEvent -AuditEventId <String> -BodyParameter <IMicrosoftGraphAuditEvent>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementAuditEvent -AuditEventId <string>
+ -BodyParameter <IMicrosoftGraphAuditEvent> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
+
 ```
 Update-MgBetaDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
- [-ResponseHeadersVariable <String>] [-Activity <String>] [-ActivityDateTime <DateTime>]
- [-ActivityOperationType <String>] [-ActivityResult <String>] [-ActivityType <String>]
- [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>] [-Category <String>]
- [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>] [-Id <String>]
- [-Resources <IMicrosoftGraphAuditResource[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <string>] [-Activity <string>] [-ActivityDateTime <datetime>]
+ [-ActivityOperationType <string>] [-ActivityResult <string>] [-ActivityType <string>]
+ [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <hashtable>] [-Category <string>]
+ [-ComponentName <string>] [-CorrelationId <string>] [-DisplayName <string>] [-Id <string>]
+ [-Resources <IMicrosoftGraphAuditResource[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
+
 ```
 Update-MgBetaDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphAuditEvent> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuditEvent> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+## ALIASES
+
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
 ## DESCRIPTION
+
 Update the navigation property auditEvents in deviceManagement
 
 **Permissions**
@@ -61,461 +85,820 @@ Update the navigation property auditEvents in deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Activity
+
 Friendly name of the activity.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ActivityDateTime
+
 The date time in UTC when the activity was performed.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ActivityOperationType
+
 The HTTP operation type of the activity.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ActivityResult
+
 The result of the activity.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ActivityType
+
 The type of activity that was being performed.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Actor
+
 A class containing the properties for Audit Actor.
 To construct, see NOTES section for ACTOR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuditActor
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuditActor
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AdditionalProperties
+
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AuditEventId
+
 The unique identifier of auditEvent
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BodyParameter
+
 A class containing the properties for Audit Event.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuditEvent
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuditEvent
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Category
+
 Audit category.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ComponentName
+
 Component name.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confirm
+
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CorrelationId
+
 The client request Id that is used to correlate activity within the system.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -DisplayName
+
 Event display name.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Headers
+
 Optional headers that will be added to the request.
 
 ```yaml
-Type: IDictionary
-Parameter Sets: (All)
-Aliases:
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Id
+
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -InputObject
+
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Resources
+
 Resources being modified.
 To construct, see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuditResource[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuditResource[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResponseHeadersVariable
+
 Optional Response Headers Variable.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
+{{ Fill in the Description }}
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuditEvent
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuditEvent
+
+{{ Fill in the Description }}
+
 ## NOTES
+
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 ACTOR `<IMicrosoftGraphAuditActor>`: A class containing the properties for Audit Actor.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ApplicationDisplayName <String>]`: Name of the Application.
-  - `[ApplicationId <String>]`: AAD Application Id.
-  - `[AuditActorType <String>]`: Actor Type.
-  - `[IPAddress <String>]`: IPAddress.
-  - `[RemoteTenantId <String>]`: Remote Tenant Id
-  - `[RemoteUserId <String>]`: Remote User Id
-  - `[ServicePrincipalName <String>]`: Service Principal Name (SPN).
-  - `[Type <String>]`: Actor Type.
-  - `[UserId <String>]`: User Id.
-  - `[UserPermissions <String- `[]`>]`: List of user permissions when the audit was performed.
-  - `[UserPrincipalName <String>]`: User Principal Name (UPN).
-  - `[UserRoleScopeTags <IMicrosoftGraphRoleScopeTagInfo- `[]`>]`: List of user scope tags when the audit was performed.
-    - `[DisplayName <String>]`: Scope Tag Display name.
-    - `[RoleScopeTagId <String>]`: Scope Tag Id.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [ApplicationDisplayName <String>]: Name of the Application.
+  [ApplicationId <String>]: AAD Application Id.
+  [AuditActorType <String>]: Actor Type.
+  [IPAddress <String>]: IPAddress.
+  [RemoteTenantId <String>]: Remote Tenant Id
+  [RemoteUserId <String>]: Remote User Id
+  [ServicePrincipalName <String>]: Service Principal Name (SPN).
+  [Type <String>]: Actor Type.
+  [UserId <String>]: User Id.
+  [UserPermissions <String[]>]: List of user permissions when the audit was performed.
+  [UserPrincipalName <String>]: User Principal Name (UPN).
+  [UserRoleScopeTags <IMicrosoftGraphRoleScopeTagInfo[]>]: List of user scope tags when the audit was performed.
+    [DisplayName <String>]: Scope Tag Display name.
+    [RoleScopeTagId <String>]: Scope Tag Id.
 
 BODYPARAMETER `<IMicrosoftGraphAuditEvent>`: A class containing the properties for Audit Event.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[Activity <String>]`: Friendly name of the activity.
-  - `[ActivityDateTime <DateTime?>]`: The date time in UTC when the activity was performed.
-  - `[ActivityOperationType <String>]`: The HTTP operation type of the activity.
-  - `[ActivityResult <String>]`: The result of the activity.
-  - `[ActivityType <String>]`: The type of activity that was being performed.
-  - `[Actor <IMicrosoftGraphAuditActor>]`: A class containing the properties for Audit Actor.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ApplicationDisplayName <String>]`: Name of the Application.
-    - `[ApplicationId <String>]`: AAD Application Id.
-    - `[AuditActorType <String>]`: Actor Type.
-    - `[IPAddress <String>]`: IPAddress.
-    - `[RemoteTenantId <String>]`: Remote Tenant Id
-    - `[RemoteUserId <String>]`: Remote User Id
-    - `[ServicePrincipalName <String>]`: Service Principal Name (SPN).
-    - `[Type <String>]`: Actor Type.
-    - `[UserId <String>]`: User Id.
-    - `[UserPermissions <String- `[]`>]`: List of user permissions when the audit was performed.
-    - `[UserPrincipalName <String>]`: User Principal Name (UPN).
-    - `[UserRoleScopeTags <IMicrosoftGraphRoleScopeTagInfo- `[]`>]`: List of user scope tags when the audit was performed.
-      - `[DisplayName <String>]`: Scope Tag Display name.
-      - `[RoleScopeTagId <String>]`: Scope Tag Id.
-  - `[Category <String>]`: Audit category.
-  - `[ComponentName <String>]`: Component name.
-  - `[CorrelationId <String>]`: The client request Id that is used to correlate activity within the system.
-  - `[DisplayName <String>]`: Event display name.
-  - `[Resources <IMicrosoftGraphAuditResource- `[]`>]`: Resources being modified.
-    - `[AuditResourceType <String>]`: Audit resource's type.
-    - `[DisplayName <String>]`: Display name.
-    - `[ModifiedProperties <IMicrosoftGraphAuditProperty- `[]`>]`: List of modified properties.
-      - `[DisplayName <String>]`: Display name.
-      - `[NewValue <String>]`: New value.
-      - `[OldValue <String>]`: Old value.
-    - `[ResourceId <String>]`: Audit resource's Id.
-    - `[Type <String>]`: Audit resource's type.
+  [Activity <String>]: Friendly name of the activity.
+  [ActivityDateTime <DateTime?>]: The date time in UTC when the activity was performed.
+  [ActivityOperationType <String>]: The HTTP operation type of the activity.
+  [ActivityResult <String>]: The result of the activity.
+  [ActivityType <String>]: The type of activity that was being performed.
+  [Actor <IMicrosoftGraphAuditActor>]: A class containing the properties for Audit Actor.
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [ApplicationDisplayName <String>]: Name of the Application.
+    [ApplicationId <String>]: AAD Application Id.
+    [AuditActorType <String>]: Actor Type.
+    [IPAddress <String>]: IPAddress.
+    [RemoteTenantId <String>]: Remote Tenant Id
+    [RemoteUserId <String>]: Remote User Id
+    [ServicePrincipalName <String>]: Service Principal Name (SPN).
+    [Type <String>]: Actor Type.
+    [UserId <String>]: User Id.
+    [UserPermissions <String[]>]: List of user permissions when the audit was performed.
+    [UserPrincipalName <String>]: User Principal Name (UPN).
+    [UserRoleScopeTags <IMicrosoftGraphRoleScopeTagInfo[]>]: List of user scope tags when the audit was performed.
+      [DisplayName <String>]: Scope Tag Display name.
+      [RoleScopeTagId <String>]: Scope Tag Id.
+  [Category <String>]: Audit category.
+  [ComponentName <String>]: Component name.
+  [CorrelationId <String>]: The client request Id that is used to correlate activity within the system.
+  [DisplayName <String>]: Event display name.
+  [Resources <IMicrosoftGraphAuditResource[]>]: Resources being modified.
+    [AuditResourceType <String>]: Audit resource's type.
+    [DisplayName <String>]: Display name.
+    [ModifiedProperties <IMicrosoftGraphAuditProperty[]>]: List of modified properties.
+      [DisplayName <String>]: Display name.
+      [NewValue <String>]: New value.
+      [OldValue <String>]: Old value.
+    [ResourceId <String>]: Audit resource's Id.
+    [Type <String>]: Audit resource's type.
 
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
-  - `[AuditEventId <String>]`: The unique identifier of auditEvent
-  - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
-  - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
-  - `[CloudPcBulkActionId <String>]`: The unique identifier of cloudPcBulkAction
-  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
-  - `[CloudPcExportJobId <String>]`: The unique identifier of cloudPcExportJob
-  - `[CloudPcExternalPartnerSettingId <String>]`: The unique identifier of cloudPcExternalPartnerSetting
-  - `[CloudPcFrontLineServicePlanId <String>]`: The unique identifier of cloudPcFrontLineServicePlan
-  - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
-  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
-  - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
-  - `[CloudPcServicePlanId <String>]`: The unique identifier of cloudPcServicePlan
-  - `[CloudPcSnapshotId <String>]`: The unique identifier of cloudPcSnapshot
-  - `[CloudPcSupportedRegionId <String>]`: The unique identifier of cloudPcSupportedRegion
-  - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment
-  - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
-  - `[ComanagementEligibleDeviceId <String>]`: The unique identifier of comanagementEligibleDevice
-  - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
-  - `[DeviceManagementDomainJoinConnectorId <String>]`: The unique identifier of deviceManagementDomainJoinConnector
-  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
-  - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: The unique identifier of deviceManagementExchangeOnPremisesPolicy
-  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
-  - `[GroupPolicyCategoryId <String>]`: The unique identifier of groupPolicyCategory
-  - `[GroupPolicyCategoryId1 <String>]`: The unique identifier of groupPolicyCategory
-  - `[GroupPolicyDefinitionFileId <String>]`: The unique identifier of groupPolicyDefinitionFile
-  - `[GroupPolicyDefinitionId <String>]`: The unique identifier of groupPolicyDefinition
-  - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
-  - `[GroupPolicyObjectFileId <String>]`: The unique identifier of groupPolicyObjectFile
-  - `[GroupPolicyOperationId <String>]`: The unique identifier of groupPolicyOperation
-  - `[GroupPolicyPresentationId <String>]`: The unique identifier of groupPolicyPresentation
-  - `[GroupPolicySettingMappingId <String>]`: The unique identifier of groupPolicySettingMapping
-  - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
-  - `[IntuneBrandingProfileAssignmentId <String>]`: The unique identifier of intuneBrandingProfileAssignment
-  - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
-  - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
-  - `[ManagedAllDeviceCertificateStateId <String>]`: The unique identifier of managedAllDeviceCertificateState
-  - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
-  - `[NdesConnectorId <String>]`: The unique identifier of ndesConnector
-  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
-  - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
-  - `[RestrictedAppsViolationId <String>]`: The unique identifier of restrictedAppsViolation
-  - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
-  - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
-  - `[RoleScopeTagAutoAssignmentId <String>]`: The unique identifier of roleScopeTagAutoAssignment
-  - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
-  - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
-  - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
-  - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
-  - `[TermsAndConditionsGroupAssignmentId <String>]`: The unique identifier of termsAndConditionsGroupAssignment
-  - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
-  - `[UnsupportedGroupPolicyExtensionId <String>]`: The unique identifier of unsupportedGroupPolicyExtension
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
+  [AuditEventId <String>]: The unique identifier of auditEvent
+  [CartToClassAssociationId <String>]: The unique identifier of cartToClassAssociation
+  [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
+  [CloudPcBulkActionId <String>]: The unique identifier of cloudPcBulkAction
+  [CloudPcDeviceImageId <String>]: The unique identifier of cloudPcDeviceImage
+  [CloudPcExportJobId <String>]: The unique identifier of cloudPcExportJob
+  [CloudPcExternalPartnerSettingId <String>]: The unique identifier of cloudPcExternalPartnerSetting
+  [CloudPcFrontLineServicePlanId <String>]: The unique identifier of cloudPcFrontLineServicePlan
+  [CloudPcGalleryImageId <String>]: The unique identifier of cloudPcGalleryImage
+  [CloudPcId <String>]: The unique identifier of cloudPC
+  [CloudPcOnPremisesConnectionId <String>]: The unique identifier of cloudPcOnPremisesConnection
+  [CloudPcProvisioningPolicyAssignmentId <String>]: The unique identifier of cloudPcProvisioningPolicyAssignment
+  [CloudPcProvisioningPolicyId <String>]: The unique identifier of cloudPcProvisioningPolicy
+  [CloudPcServicePlanId <String>]: The unique identifier of cloudPcServicePlan
+  [CloudPcSnapshotId <String>]: The unique identifier of cloudPcSnapshot
+  [CloudPcSupportedRegionId <String>]: The unique identifier of cloudPcSupportedRegion
+  [CloudPcUserSettingAssignmentId <String>]: The unique identifier of cloudPcUserSettingAssignment
+  [CloudPcUserSettingId <String>]: The unique identifier of cloudPcUserSetting
+  [ComanagementEligibleDeviceId <String>]: The unique identifier of comanagementEligibleDevice
+  [ComplianceManagementPartnerId <String>]: The unique identifier of complianceManagementPartner
+  [DeviceAndAppManagementRoleAssignmentId <String>]: The unique identifier of deviceAndAppManagementRoleAssignment
+  [DeviceManagementDomainJoinConnectorId <String>]: The unique identifier of deviceManagementDomainJoinConnector
+  [DeviceManagementExchangeConnectorId <String>]: The unique identifier of deviceManagementExchangeConnector
+  [DeviceManagementExchangeOnPremisesPolicyId <String>]: The unique identifier of deviceManagementExchangeOnPremisesPolicy
+  [DeviceManagementPartnerId <String>]: The unique identifier of deviceManagementPartner
+  [GroupPolicyCategoryId <String>]: The unique identifier of groupPolicyCategory
+  [GroupPolicyCategoryId1 <String>]: The unique identifier of groupPolicyCategory
+  [GroupPolicyDefinitionFileId <String>]: The unique identifier of groupPolicyDefinitionFile
+  [GroupPolicyDefinitionId <String>]: The unique identifier of groupPolicyDefinition
+  [GroupPolicyMigrationReportId <String>]: The unique identifier of groupPolicyMigrationReport
+  [GroupPolicyObjectFileId <String>]: The unique identifier of groupPolicyObjectFile
+  [GroupPolicyOperationId <String>]: The unique identifier of groupPolicyOperation
+  [GroupPolicyPresentationId <String>]: The unique identifier of groupPolicyPresentation
+  [GroupPolicySettingMappingId <String>]: The unique identifier of groupPolicySettingMapping
+  [GroupPolicyUploadedDefinitionFileId <String>]: The unique identifier of groupPolicyUploadedDefinitionFile
+  [IntuneBrandingProfileAssignmentId <String>]: The unique identifier of intuneBrandingProfileAssignment
+  [IntuneBrandingProfileId <String>]: The unique identifier of intuneBrandingProfile
+  [IosUpdateDeviceStatusId <String>]: The unique identifier of iosUpdateDeviceStatus
+  [ManagedAllDeviceCertificateStateId <String>]: The unique identifier of managedAllDeviceCertificateState
+  [MobileThreatDefenseConnectorId <String>]: The unique identifier of mobileThreatDefenseConnector
+  [NdesConnectorId <String>]: The unique identifier of ndesConnector
+  [RemoteAssistancePartnerId <String>]: The unique identifier of remoteAssistancePartner
+  [ResourceOperationId <String>]: The unique identifier of resourceOperation
+  [RestrictedAppsViolationId <String>]: The unique identifier of restrictedAppsViolation
+  [RoleAssignmentId <String>]: The unique identifier of roleAssignment
+  [RoleDefinitionId <String>]: The unique identifier of roleDefinition
+  [RoleScopeTagAutoAssignmentId <String>]: The unique identifier of roleScopeTagAutoAssignment
+  [RoleScopeTagId <String>]: The unique identifier of roleScopeTag
+  [TelecomExpenseManagementPartnerId <String>]: The unique identifier of telecomExpenseManagementPartner
+  [TermsAndConditionsAcceptanceStatusId <String>]: The unique identifier of termsAndConditionsAcceptanceStatus
+  [TermsAndConditionsAssignmentId <String>]: The unique identifier of termsAndConditionsAssignment
+  [TermsAndConditionsGroupAssignmentId <String>]: The unique identifier of termsAndConditionsGroupAssignment
+  [TermsAndConditionsId <String>]: The unique identifier of termsAndConditions
+  [UnsupportedGroupPolicyExtensionId <String>]: The unique identifier of unsupportedGroupPolicyExtension
+  [UserId <String>]: The unique identifier of user
+  [UserPfxCertificateId <String>]: The unique identifier of userPFXCertificate
 
-RESOURCES `<IMicrosoftGraphAuditResource- `[]`>`: Resources being modified.
-  - `[AuditResourceType <String>]`: Audit resource's type.
-  - `[DisplayName <String>]`: Display name.
-  - `[ModifiedProperties <IMicrosoftGraphAuditProperty- `[]`>]`: List of modified properties.
-    - `[DisplayName <String>]`: Display name.
-    - `[NewValue <String>]`: New value.
-    - `[OldValue <String>]`: Old value.
-  - `[ResourceId <String>]`: Audit resource's Id.
-  - `[Type <String>]`: Audit resource's type.
+RESOURCES <IMicrosoftGraphAuditResource[]>: Resources being modified.
+  [AuditResourceType <String>]: Audit resource's type.
+  [DisplayName <String>]: Display name.
+  [ModifiedProperties <IMicrosoftGraphAuditProperty[]>]: List of modified properties.
+    [DisplayName <String>]: Display name.
+    [NewValue <String>]: New value.
+    [OldValue <String>]: Old value.
+  [ResourceId <String>]: Audit resource's Id.
+  [Type <String>]: Audit resource's type.
+
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementauditevent)
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementauditevent)
 
 
 
