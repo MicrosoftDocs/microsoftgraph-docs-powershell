@@ -55,16 +55,6 @@ This cmdlet has the following aliases,
 
 A collection of tasks associated with security incidents.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -629,6 +619,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityincidenttask)
 - [](https://learn.microsoft.com/graph/api/security-list-incidenttasks?view=graph-rest-beta)
+
 
 
 

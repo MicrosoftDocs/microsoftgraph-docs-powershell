@@ -68,16 +68,6 @@ Get a sensitivity label available for the entire tenant.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SensitivityLabel.Read, SensitivityLabels.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -614,6 +604,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritydatasecurityandgovernancesensitivitylabel)
 - [](https://learn.microsoft.com/graph/api/sensitivitylabel-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/tenantdatasecurityandgovernance-list-sensitivitylabels?view=graph-rest-1.0)
+
 
 
 

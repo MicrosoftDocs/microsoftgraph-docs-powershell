@@ -78,16 +78,6 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a threatIntelligencePolicyLink object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -629,6 +619,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicylink-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicylink-list-policy?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicylink-list?view=graph-rest-beta)
+
 
 
 

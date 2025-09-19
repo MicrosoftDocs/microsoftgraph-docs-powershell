@@ -85,16 +85,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property roleEligibilityScheduleInstances in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1035,6 +1025,7 @@ Read-only when isBuiltIn is true.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroleeligibilityscheduleinstance)
+
 
 
 
