@@ -15,6 +15,9 @@ title: Get-MgUser
 
 Read properties and relationships of the user object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

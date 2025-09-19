@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMobileAppConfigurationUserStatus
 
 Read properties and relationships of the managedDeviceMobileAppConfigurationUserStatus object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

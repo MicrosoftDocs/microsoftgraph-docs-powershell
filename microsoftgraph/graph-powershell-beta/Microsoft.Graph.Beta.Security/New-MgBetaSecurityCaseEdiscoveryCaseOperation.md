@@ -15,6 +15,9 @@ title: New-MgBetaSecurityCaseEdiscoveryCaseOperation
 
 Create new navigation property to operations for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

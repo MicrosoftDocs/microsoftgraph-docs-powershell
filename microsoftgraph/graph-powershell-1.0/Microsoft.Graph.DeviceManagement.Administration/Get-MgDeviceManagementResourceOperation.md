@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementResourceOperation
 
 Read properties and relationships of the resourceOperation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementResourceOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

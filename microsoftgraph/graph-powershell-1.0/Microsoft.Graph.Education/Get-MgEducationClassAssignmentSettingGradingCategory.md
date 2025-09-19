@@ -15,6 +15,9 @@ title: Get-MgEducationClassAssignmentSettingGradingCategory
 
 When set, enables users to weight assignments differently when computing a class average grade.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSettingGradingCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

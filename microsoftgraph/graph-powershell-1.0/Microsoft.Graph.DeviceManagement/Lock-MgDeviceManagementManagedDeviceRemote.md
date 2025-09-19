@@ -15,6 +15,9 @@ title: Lock-MgDeviceManagementManagedDeviceRemote
 
 Remote lock
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Lock-MgBetaDeviceManagementManagedDeviceRemote](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Lock-MgBetaDeviceManagementManagedDeviceRemote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Lock (Default)

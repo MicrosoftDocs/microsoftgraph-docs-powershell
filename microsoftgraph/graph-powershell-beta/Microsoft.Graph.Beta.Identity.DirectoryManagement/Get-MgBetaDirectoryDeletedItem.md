@@ -17,6 +17,9 @@ Recently deleted items.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeletedItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

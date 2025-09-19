@@ -15,6 +15,9 @@ title: Remove-MgUser
 
 Deletes a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

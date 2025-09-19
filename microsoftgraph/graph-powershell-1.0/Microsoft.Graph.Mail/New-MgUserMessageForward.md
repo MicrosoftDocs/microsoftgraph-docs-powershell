@@ -21,6 +21,9 @@ When using MIME format:- Provide the applicable Internet message headers and the
 Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMessageForward](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessageForward?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

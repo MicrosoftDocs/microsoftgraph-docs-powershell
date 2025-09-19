@@ -15,6 +15,9 @@ title: New-MgDeviceAppManagementManagedEBookDeviceState
 
 Create a new deviceInstallState object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedEBookDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedEBookDeviceState?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

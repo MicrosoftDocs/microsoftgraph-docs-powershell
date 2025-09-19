@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementTermAndCondition
 
 Read properties and relationships of the termsAndConditions object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTermAndCondition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

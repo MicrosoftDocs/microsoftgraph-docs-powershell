@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleSchedul
 
 Read properties and relationships of the deviceComplianceActionItem object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

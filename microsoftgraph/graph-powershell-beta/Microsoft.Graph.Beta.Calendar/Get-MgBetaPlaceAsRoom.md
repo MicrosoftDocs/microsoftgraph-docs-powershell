@@ -19,6 +19,9 @@ By default, this operation returns up to 100 rooms, workspaces, and room lists p
 Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
 For details about how they compare, see Using the places API.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlaceAsRoom](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsRoom?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

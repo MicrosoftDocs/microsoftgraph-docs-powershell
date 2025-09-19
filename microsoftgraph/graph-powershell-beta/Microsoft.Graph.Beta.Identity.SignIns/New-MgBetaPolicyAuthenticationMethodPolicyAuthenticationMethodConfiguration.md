@@ -15,6 +15,9 @@ title: New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfigurati
 
 Create new navigation property to authenticationMethodConfigurations for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

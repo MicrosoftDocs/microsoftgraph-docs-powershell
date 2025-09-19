@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedAppCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedAppCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

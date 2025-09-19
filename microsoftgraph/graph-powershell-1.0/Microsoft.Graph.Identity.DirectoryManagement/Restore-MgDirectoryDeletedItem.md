@@ -17,6 +17,9 @@ Restore a recently deleted application, group, servicePrincipal, administrative 
 Restore a recently deleted directory object from deleted items.
 The following types are supported:- administrativeUnit- application- certificateBasedAuthPki- certificateAuthorityDetail- group- servicePrincipal
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Restore-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)

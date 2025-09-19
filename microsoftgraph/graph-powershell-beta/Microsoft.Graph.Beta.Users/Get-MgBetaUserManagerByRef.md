@@ -16,6 +16,9 @@ title: Get-MgBetaUserManagerByRef
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Get-MgUserManagerByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
