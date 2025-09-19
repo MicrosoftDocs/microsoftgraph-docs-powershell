@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfoldercontactdelta
 Locale: en-US
 Module Name: Microsoft.Graph.PersonalContacts
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserContactFolderChildFolderContactDelta
 ---
@@ -14,11 +14,8 @@ title: Get-MgUserContactFolderChildFolderContactDelta
 ## SYNOPSIS
 
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
-A delta function call for contacts in a folder is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contacts in that folder.
-This allows you to maintain and synchronize a local store of a user's contacts without having to fetch the entire set of contacts from the server every time.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderChildFolderContactDelta](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderChildFolderContactDelta?view=graph-powershell-beta)
+A delta function call for contacts in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contacts in \nthat folder.
+This allows you to maintain and synchronize a local store of a user's contacts without \nhaving to fetch the entire set of contacts from the server every time.
 
 ## SYNTAX
 
@@ -53,16 +50,18 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
-A delta function call for contacts in a folder is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contacts in that folder.
-This allows you to maintain and synchronize a local store of a user's contacts without having to fetch the entire set of contacts from the server every time.
+A delta function call for contacts in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contacts in \nthat folder.
+This allows you to maintain and synchronize a local store of a user's contacts without \nhaving to fetch the entire set of contacts from the server every time.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Contacts.Read, Contacts.ReadWrite,  |
-| Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite,  |
-| Application | Contacts.Read, Contacts.ReadWrite,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -587,7 +586,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   [ContactFolderId <String>]: The unique identifier of contactFolder
   [ContactFolderId1 <String>]: The unique identifier of contactFolder
   [ContactId <String>]: The unique identifier of contact
@@ -599,26 +598,3 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfoldercontactdelta)
 - [](https://learn.microsoft.com/graph/api/contact-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

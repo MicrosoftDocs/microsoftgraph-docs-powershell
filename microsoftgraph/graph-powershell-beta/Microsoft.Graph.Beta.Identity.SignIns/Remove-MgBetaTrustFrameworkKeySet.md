@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatrustframeworkkeyset
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaTrustFrameworkKeySet
 ---
@@ -46,26 +46,13 @@ This cmdlet has the following aliases,
 
 Delete a trustFrameworkKeySet.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TrustFrameworkKeySet.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TrustFrameworkKeySet.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId $trustFrameworkKeySetId
-
-```
-This example shows how to use the Remove-MgBetaTrustFrameworkKeySet Cmdlet.
-
 
 ## PARAMETERS
 
@@ -397,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -486,25 +473,3 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatrustframeworkkeyset)
 - [](https://learn.microsoft.com/graph/api/trustframeworkkeyset-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

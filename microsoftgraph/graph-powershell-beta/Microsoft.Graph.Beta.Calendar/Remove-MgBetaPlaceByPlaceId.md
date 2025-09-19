@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplacebyplaceid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaPlaceByPlaceId
 ---
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 
 Delete a place object.
 You can also use this method to delete the following child object types: building, floor, section, or desk.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -378,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -397,26 +407,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplacebyplaceid)
 - [](https://learn.microsoft.com/graph/api/place-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

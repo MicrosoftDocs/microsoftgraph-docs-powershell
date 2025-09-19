@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicyscheduledactionforrulescheduledactionconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
 ---
@@ -14,9 +14,6 @@ title: Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleSche
 ## SYNOPSIS
 
 Deletes a deviceComplianceActionItem.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,26 +49,13 @@ This cmdlet has the following aliases,
 
 Deletes a deviceComplianceActionItem.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceComplianceScheduledActionForRuleId $deviceComplianceScheduledActionForRuleId -DeviceComplianceActionItemId $deviceComplianceActionItemId
-
-```
-This example shows how to use the Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -445,7 +429,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -485,25 +469,3 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicyscheduledactionforrulescheduledactionconfiguration)
 - [](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceactionitem-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmanagedappregistrationmanagedapplogcollectionrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest
 ---
@@ -77,6 +77,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property managedAppLogCollectionRequests in deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -750,7 +760,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedAppLogCollectionRequest>`: The Managed App log collection response
+BODYPARAMETER <IMicrosoftGraphManagedAppLogCollectionRequest>: The Managed App log collection response
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -787,7 +797,7 @@ Read-only.
   [UserLogUploadConsent <ManagedAppLogUploadConsent?>]: Represents the current consent status of the associated `managedAppLogCollectionRequest`.
   [Version <String>]: Version of the entity.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -878,26 +888,3 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmanagedappregistrationmanagedapplogcollectionrequest)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

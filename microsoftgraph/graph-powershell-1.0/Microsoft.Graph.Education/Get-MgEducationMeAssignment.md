@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationMeAssignment
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationMeAssignment
 ## SYNOPSIS
 
 Assignments belonging to the user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,17 +56,12 @@ This cmdlet has the following aliases,
 Assignments belonging to the user.
 
 ## EXAMPLES
-### Example 1: Get the assignments of the logged in user
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationMeAssignment
-
-```
-This example will get the assignments of the logged in user
-
 
 ## PARAMETERS
 
@@ -531,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationCategoryId <String>]: The unique identifier of educationCategory
@@ -553,25 +545,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignment)
 - [](https://learn.microsoft.com/graph/api/educationuser-list-assignments?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

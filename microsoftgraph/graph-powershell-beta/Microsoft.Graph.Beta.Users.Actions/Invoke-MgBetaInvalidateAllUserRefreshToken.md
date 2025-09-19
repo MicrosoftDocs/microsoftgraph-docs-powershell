@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainvalidatealluserrefreshtoken
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Actions
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaInvalidateAllUserRefreshToken
 ---
@@ -55,27 +55,14 @@ In fact, this operation would force the user to sign in again for all applicatio
 For developers, if the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application receives an error.
 If this happens, the application needs to acquire a new refresh token by making a request to the OAuth 2.0 /authorize endpoint, which forces the user to sign in.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.RevokeSessions.All, User.ReadWrite, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | User.ReadWrite,  |
-| Application | User.RevokeSessions.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaInvalidateAllUserRefreshToken -UserId $userId
-
-```
-This example shows how to use the Invoke-MgBetaInvalidateAllUserRefreshToken Cmdlet.
-
 
 ## PARAMETERS
 
@@ -365,7 +352,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
 
@@ -373,25 +360,3 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainvalidatealluserrefreshtoken)
 - [](https://learn.microsoft.com/graph/api/user-invalidateallrefreshtokens?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

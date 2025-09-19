@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroom
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlaceAsRoom
 ---
@@ -19,9 +19,6 @@ A place object can be one of the following types: Both room and roomList are der
 By default, this operation returns 100 places per page.
 Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
 See details for how they compare.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoom?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,17 +66,12 @@ Compared with the findRooms and findRoomLists functions, this operation returns 
 See details for how they compare.
 
 ## EXAMPLES
-### Example 1: List all the rooms defined in the tenant
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Calendar
 
 Get-MgPlaceAsRoom
-
-```
-This example will list all the rooms defined in the tenant
-
 
 ## PARAMETERS
 
@@ -541,7 +533,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -559,25 +551,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroom)
 - [](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

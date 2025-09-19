@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointgalleryimage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementVirtualEndpointGalleryImage
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaDeviceManagementVirtualEndpointGalleryImage
 ## SYNOPSIS
 
 Update the navigation property galleryImages in deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementVirtualEndpointGalleryImage](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointGalleryImage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property galleryImages in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -504,7 +511,7 @@ HelpMessage: ''
 
 ### -OSVersionNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -930,7 +937,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcGalleryImage>`: cloudPcGalleryImage
+BODYPARAMETER <IMicrosoftGraphCloudPcGalleryImage>: cloudPcGalleryImage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -983,7 +990,7 @@ For example, 2022-09-20.
 Read-only.
   [Status <String>]: cloudPcGalleryImageStatus
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [CartToClassAssociationId <String>]: The unique identifier of cartToClassAssociation
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -1045,26 +1052,3 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointgalleryimage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

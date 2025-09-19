@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetadownloadusermanageddevicepowerliftappdiagnostic
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaDownloadUserManagedDevicePowerliftAppDiagnostic
 ---
@@ -72,6 +72,16 @@ This cmdlet has the following aliases,
 
 Invoke action downloadPowerliftAppDiagnostic
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -103,7 +113,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -125,7 +135,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -517,21 +527,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1T1XobeUsersUserIdManageddevicesMicrosoftGraphDownloadpowerliftappdiagnosticPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1T1XobeUsersUserIdManageddevicesMicrosoftGraphDownloadpowerliftappdiagnosticPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Request <IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>]: This type contains request details to download app diagnostic files.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Files <String[]>]: The list of files to download which is associated with the diagnostic.
     [PowerliftId <String>]: The unique id for the request that serves as an identifer for the diagnostic to be downloaded.
 
-BODYPARAMETER `<IPaths1T1XobeUsersUserIdManageddevicesMicrosoftGraphDownloadpowerliftappdiagnosticPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1T1XobeUsersUserIdManageddevicesMicrosoftGraphDownloadpowerliftappdiagnosticPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Request <IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>]: This type contains request details to download app diagnostic files.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Files <String[]>]: The list of files to download which is associated with the diagnostic.
     [PowerliftId <String>]: The unique id for the request that serves as an identifer for the diagnostic to be downloaded.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -605,7 +615,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   [WindowsInformationProtectionWipeActionId <String>]: The unique identifier of windowsInformationProtectionWipeAction
   [WindowsManagedAppProtectionId <String>]: The unique identifier of windowsManagedAppProtection
 
-REQUEST `<IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>`: This type contains request details to download app diagnostic files.
+REQUEST <IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>: This type contains request details to download app diagnostic files.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Files <String[]>]: The list of files to download which is associated with the diagnostic.
   [PowerliftId <String>]: The unique id for the request that serves as an identifer for the diagnostic to be downloaded.
@@ -614,26 +624,3 @@ REQUEST `<IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>`: This type cont
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetadownloadusermanageddevicepowerliftappdiagnostic)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

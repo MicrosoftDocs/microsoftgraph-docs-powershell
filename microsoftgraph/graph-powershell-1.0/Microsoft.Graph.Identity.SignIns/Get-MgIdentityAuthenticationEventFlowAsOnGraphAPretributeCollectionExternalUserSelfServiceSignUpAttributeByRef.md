@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributebyref
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef
 ---
@@ -15,9 +15,6 @@ title: Get-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExtern
 
 Get an identityUserFlowAttribute collection associated with an external identities self-service user flow represented by an externalUsersSelfServiceSignupEventsFlow object.
 These attributes are collected from the user during the authentication experience defined by the user flow.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,6 +39,16 @@ This cmdlet has the following aliases,
 
 Get an identityUserFlowAttribute collection associated with an external identities self-service user flow represented by an externalUsersSelfServiceSignupEventsFlow object.
 These attributes are collected from the user during the authentication experience defined by the user flow.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -432,26 +439,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributebyref)
 - [](https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-list-attributes?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

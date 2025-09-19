@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataoutboundprovisioningflowset
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaExternalIndustryDataOutboundProvisioningFlowSet
 ---
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to outboundProvisioningFlowSets for external
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -422,7 +432,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataOutboundProvisioningFlowSet>`: outboundProvisioningFlowSet
+BODYPARAMETER <IMicrosoftGraphIndustryDataOutboundProvisioningFlowSet>: outboundProvisioningFlowSet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -443,26 +453,3 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataoutboundprovisioningflowset)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

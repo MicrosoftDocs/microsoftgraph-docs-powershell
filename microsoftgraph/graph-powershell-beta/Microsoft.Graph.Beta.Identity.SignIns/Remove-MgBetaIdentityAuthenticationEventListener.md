@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventlistener
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaIdentityAuthenticationEventListener
 ---
@@ -15,9 +15,6 @@ title: Remove-MgBetaIdentityAuthenticationEventListener
 
 Delete an authenticationEventListener object.
 The following derived types are currently supported.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityAuthenticationEventListener?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,26 +48,13 @@ This cmdlet has the following aliases,
 Delete an authenticationEventListener object.
 The following derived types are currently supported.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EventListener.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EventListener.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaIdentityAuthenticationEventListener -AuthenticationEventListenerId $authenticationEventListenerId
-
-```
-This example shows how to use the Remove-MgBetaIdentityAuthenticationEventListener Cmdlet.
-
 
 ## PARAMETERS
 
@@ -402,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -491,25 +475,3 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventlistener)
 - [](https://learn.microsoft.com/graph/api/authenticationeventlistener-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

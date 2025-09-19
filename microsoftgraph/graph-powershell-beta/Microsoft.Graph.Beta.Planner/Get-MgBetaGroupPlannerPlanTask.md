@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplantask
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupPlannerPlanTask
 ---
@@ -16,9 +16,6 @@ title: Get-MgBetaGroupPlannerPlanTask
 Collection of tasks in the plan.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupPlannerPlanTask](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanTask?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,6 +41,16 @@ This cmdlet has the following aliases,
 Collection of tasks in the plan.
 Read-only.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -498,26 +505,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplantask)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

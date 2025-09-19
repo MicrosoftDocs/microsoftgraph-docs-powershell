@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingforwardingoption
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaNetworkAccessSettingForwardingOption
 ---
@@ -38,17 +38,12 @@ Retrieve the forwarding options for the tenant, with a specific focus on the 'sk
 This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 traffic to be forwarded directly to the Front Door using the client-resolved destination.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Get-MgBetaNetworkAccessSettingForwardingOption
-
-```
-This example shows how to use the Get-MgBetaNetworkAccessSettingForwardingOption Cmdlet.
-
 
 ## PARAMETERS
 
@@ -290,25 +285,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingforwardingoption)
 - [](https://learn.microsoft.com/graph/api/networkaccess-forwardingoptions-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

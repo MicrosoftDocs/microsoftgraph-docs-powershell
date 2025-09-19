@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcalloperation
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgCommunicationCallOperation
 ---
@@ -67,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to operations for communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -538,7 +548,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCommsOperation>`: commsOperation
+BODYPARAMETER <IMicrosoftGraphCommsOperation>: commsOperation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -551,7 +561,7 @@ Max limit is 256 chars.
     [Subcode <Int32?>]: The result subcode.
   [Status <String>]: operationStatus
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
   [CallId <String>]: The unique identifier of call
@@ -567,7 +577,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [SessionId <String>]: The unique identifier of session
   [UserId <String>]: The unique identifier of user
 
-RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
+RESULTINFO <IMicrosoftGraphResultInfo>: resultInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <Int32?>]: The result code.
   [Message <String>]: The message.
@@ -577,26 +587,3 @@ RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcalloperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

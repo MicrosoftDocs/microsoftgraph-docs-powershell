@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserProfile
 ---
@@ -44,39 +44,21 @@ This cmdlet has the following aliases,
 
 Represents properties that are descriptive of a user in a tenant.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, User.ReadWrite.All, User.ReadWrite, User.ReadBasic.All, User.Read.All,  |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
-| Application | User.Read.All, User.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: GET a user's profile
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.People
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfile -UserId $userId
 
-```
-This example will get a user's profile
-
-### Example 2: Expand names and skills collection and select properties within the entities
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.People
 
 # A UPN can also be used as -UserId.
-Get-MgBetaUserProfile -UserId $userId -ExpandProperty "names(`$select=first,last),skills(`$select=displayName)" 
-
-```
-This example will expand names and skills collection and select properties within the entities
-
+Get-MgBetaUserProfile -UserId $userId -ExpandProperty "names(`$select=first,last),skills(`$select=displayName)"
 
 ## PARAMETERS
 
@@ -366,7 +348,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   [ActivityStatisticsId <String>]: The unique identifier of activityStatistics
   [EducationalActivityId <String>]: The unique identifier of educationalActivity
   [ItemAddressId <String>]: The unique identifier of itemAddress
@@ -394,25 +376,3 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

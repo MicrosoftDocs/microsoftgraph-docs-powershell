@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasroomlistroom
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgPlaceAsRoomListRoom
 ---
@@ -14,9 +14,6 @@ title: New-MgPlaceAsRoomListRoom
 ## SYNOPSIS
 
 Create new navigation property to rooms for places
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsRoomListRoom?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -80,6 +77,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to rooms for places
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -929,7 +936,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -938,7 +945,7 @@ It's a free-format string value, for example, 'United States'.
   [State <String>]: The state.
   [Street <String>]: The street.
 
-BODYPARAMETER `<IMicrosoftGraphRoom>`: room
+BODYPARAMETER <IMicrosoftGraphRoom>: room
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -974,7 +981,7 @@ Read-only.
   [Tags <String[]>]: Specifies other features of the room, for example, details like the type of view or furniture type.
   [VideoDeviceName <String>]: Specifies the name of the video device in the room.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Accuracy <Double?>]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
@@ -983,7 +990,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Latitude <Double?>]: The latitude of the location.
   [Longitude <Double?>]: The longitude of the location.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -1000,26 +1007,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasroomlistroom)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

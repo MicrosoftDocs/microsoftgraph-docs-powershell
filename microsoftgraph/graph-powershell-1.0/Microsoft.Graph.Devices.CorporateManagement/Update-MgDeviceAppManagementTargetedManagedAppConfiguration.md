@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementtargetedmanagedappconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceAppManagementTargetedManagedAppConfiguration
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceAppManagementTargetedManagedAppConfiguration
 ## SYNOPSIS
 
 Update the properties of a targetedManagedAppConfiguration object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -81,18 +78,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a targetedManagedAppConfiguration object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -113,10 +101,6 @@ $params = @{
 }
 
 Update-MgDeviceAppManagementTargetedManagedAppConfiguration -TargetedManagedAppConfigurationId $targetedManagedAppConfigurationId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceAppManagementTargetedManagedAppConfiguration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -819,7 +803,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphTargetedManagedAppConfiguration>`: Configuration used to deliver a set of custom settings as-is to all users in the targeted security group
+BODYPARAMETER <IMicrosoftGraphTargetedManagedAppConfiguration>: Configuration used to deliver a set of custom settings as-is to all users in the targeted security group
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomSettings <IMicrosoftGraphKeyValuePair[]>]: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service
     [Name <String>]: Name for this key-value pair
@@ -860,7 +844,7 @@ CUSTOMSETTINGS <IMicrosoftGraphKeyValuePair[]>: A set of string key and string v
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-DEPLOYMENTSUMMARY `<IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+DEPLOYMENTSUMMARY <IMicrosoftGraphManagedAppPolicyDeploymentSummary>: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -873,7 +857,7 @@ Read-only.
   [LastRefreshTime <DateTime?>]: Not yet documented
   [Version <String>]: Version of the entity.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -916,25 +900,3 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementtargetedmanagedappconfiguration)
 - [](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

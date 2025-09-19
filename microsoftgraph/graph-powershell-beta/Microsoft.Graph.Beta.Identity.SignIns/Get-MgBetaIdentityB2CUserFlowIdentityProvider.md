@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowidentityprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityB2CUserFlowIdentityProvider
 ---
@@ -71,17 +71,12 @@ This cmdlet has the following aliases,
 The identity providers included in the user flow.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityB2CUserFlowIdentityProvider -B2cIdentityUserFlowId $b2cIdentityUserFlowId
-
-```
-This example shows how to use the Get-MgBetaIdentityB2CUserFlowIdentityProvider Cmdlet.
-
 
 ## PARAMETERS
 
@@ -628,7 +623,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -717,25 +712,3 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowidentityprovider)
 - [](https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-identityproviders?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

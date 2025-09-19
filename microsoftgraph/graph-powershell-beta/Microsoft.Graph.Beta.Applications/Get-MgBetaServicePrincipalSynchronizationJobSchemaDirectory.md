@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobschemadirectory
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectory
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectory
 ## SYNOPSIS
 
 Contains the collection of directories and all of their objects.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,6 +57,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Contains the collection of directories and all of their objects.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -575,7 +582,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -616,27 +623,3 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobschemadirectory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

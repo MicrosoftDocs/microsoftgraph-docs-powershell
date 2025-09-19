@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategorysubcategory
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityLabelCategorySubcategory
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSecurityLabelCategorySubcategory
 ## SYNOPSIS
 
 Create a new subcategoryTemplate object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelCategorySubcategory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -72,9 +69,8 @@ This cmdlet has the following aliases,
 Create a new subcategoryTemplate object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -84,10 +80,6 @@ $params = @{
 }
 
 New-MgBetaSecurityLabelCategorySubcategory -CategoryTemplateId $categoryTemplateId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityLabelCategorySubcategory Cmdlet.
-
 
 ## PARAMETERS
 
@@ -558,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -570,7 +562,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -674,25 +666,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategorysubcategory)
 - [](https://learn.microsoft.com/graph/api/security-categorytemplate-post-subcategories?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

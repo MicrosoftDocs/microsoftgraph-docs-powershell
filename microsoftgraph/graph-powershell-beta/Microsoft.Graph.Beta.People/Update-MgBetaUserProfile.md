@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserProfile
 ---
@@ -86,11 +86,21 @@ This cmdlet has the following aliases,
 
 Update the navigation property profile in users
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -Account
 
-
+.
 To construct, see NOTES section for ACCOUNT properties and create a hash table.
 
 ```yaml
@@ -1171,7 +1181,7 @@ Read-only.
   [ThumbnailUrl <String>]: URL referencing a thumbnail of the award or honor.
   [WebUrl <String>]: URL referencing the award or honor.
 
-BODYPARAMETER `<IMicrosoftGraphProfile>`: profile
+BODYPARAMETER <IMicrosoftGraphProfile>: profile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1752,7 +1762,7 @@ Read-only.
   [DisplayName <String>]: The name or label a user has associated with a particular email address.
   [Type <String>]: emailType
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   [ActivityStatisticsId <String>]: The unique identifier of activityStatistics
   [EducationalActivityId <String>]: The unique identifier of educationalActivity
   [ItemAddressId <String>]: The unique identifier of itemAddress
@@ -2306,26 +2316,3 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

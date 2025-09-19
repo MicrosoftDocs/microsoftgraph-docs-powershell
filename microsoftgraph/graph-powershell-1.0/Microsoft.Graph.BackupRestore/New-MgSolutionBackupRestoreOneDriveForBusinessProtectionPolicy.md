@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreonedriveforbusinessprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
 ---
@@ -16,9 +16,6 @@ title: New-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
 Create a protection policy for the OneDrive service in Microsoft 365.
 When the policy is created, its state is set to inactive.
 Users can also provide a list of protection units under the policy.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,6 +56,16 @@ This cmdlet has the following aliases,
 Create a protection policy for the OneDrive service in Microsoft 365.
 When the policy is created, its state is set to inactive.
 Users can also provide a list of protection units under the policy.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -258,7 +265,7 @@ HelpMessage: ''
 
 ### -DriveProtectionUnitsBulkAdditionJobs
 
-
+.
 To construct, see NOTES section for DRIVEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -586,7 +593,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOneDriveForBusinessProtectionPolicy>`: oneDriveForBusinessProtectionPolicy
+BODYPARAMETER <IMicrosoftGraphOneDriveForBusinessProtectionPolicy>: oneDriveForBusinessProtectionPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -658,7 +665,7 @@ Read-only.
     [DirectoryObjectIds <String[]>]: The list of OneDrive directoryObjectIds to add to the OneDrive protection policy.
     [Drives <String[]>]: The list of email addresses to add to the OneDrive protection policy.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -776,7 +783,7 @@ Read-only.
   [DirectoryObjectIds <String[]>]: The list of OneDrive directoryObjectIds to add to the OneDrive protection policy.
   [Drives <String[]>]: The list of email addresses to add to the OneDrive protection policy.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -796,26 +803,3 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting[]>: Contains the retention se
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreonedriveforbusinessprotectionpolicy)
 - [](https://learn.microsoft.com/graph/api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

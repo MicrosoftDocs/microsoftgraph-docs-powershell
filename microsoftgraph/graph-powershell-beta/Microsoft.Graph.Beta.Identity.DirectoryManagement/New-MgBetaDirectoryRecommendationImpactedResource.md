@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendationimpactedresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryRecommendationImpactedResource
 ---
@@ -76,6 +76,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to impactedResources for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -850,7 +860,7 @@ ADDITIONALDETAILS <IMicrosoftGraphKeyValue[]>: Additional information unique to 
   [Key <String>]: Contains the name of the field that a value is associated with.
   [Value <String>]: Contains the corresponding value for the specified key.
 
-BODYPARAMETER `<IMicrosoftGraphImpactedResource>`: impactedResource
+BODYPARAMETER <IMicrosoftGraphImpactedResource>: impactedResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -874,7 +884,7 @@ Examples include user, application.
   [SubjectId <String>]: The related unique identifier, depending on the resourceType.
 For example, this property is set to the applicationId if the resourceType is an application.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -933,26 +943,3 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendationimpactedresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

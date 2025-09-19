@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupLifecyclePolicy
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaGroupLifecyclePolicy
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a groupLifecyclePolicies object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupLifecyclePolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -77,26 +74,13 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a groupLifecyclePolicies object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupLifecyclePolicy
-
-```
-This example shows how to use the Get-MgBetaGroupLifecyclePolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -591,7 +575,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -621,25 +605,3 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicy)
 - [](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

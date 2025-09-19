@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitscopedrolemember
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgDirectoryAdministrativeUnitScopedRoleMember
 ---
@@ -14,9 +14,6 @@ title: Remove-MgDirectoryAdministrativeUnitScopedRoleMember
 ## SYNOPSIS
 
 Remove a Microsoft Entra role assignment with administrative unit scope.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,26 +48,13 @@ This cmdlet has the following aliases,
 
 Remove a Microsoft Entra role assignment with administrative unit scope.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.ReadWrite.Directory,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.ReadWrite.Directory,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Remove-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -ScopedRoleMembershipId $scopedRoleMembershipId
-
-```
-This example shows how to use the Remove-MgDirectoryAdministrativeUnitScopedRoleMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -423,7 +407,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -460,25 +444,3 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitscopedrolemember)
 - [](https://learn.microsoft.com/graph/api/administrativeunit-delete-scopedrolemembers?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationfido2method
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserAuthenticationFido2Method
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaUserAuthenticationFido2Method
 ## SYNOPSIS
 
 Represents the FIDO2 security keys registered to a user for authentication.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationFido2Method?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,27 +57,14 @@ This cmdlet has the following aliases,
 
 Represents the FIDO2 security keys registered to a user for authentication.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.Read, UserAuthMethod-Passkey.ReadWrite.All, UserAuthMethod-Passkey.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthenticationMethod.Read.All, UserAuthMethod-Passkey.ReadWrite.All, UserAuthMethod-Passkey.Read.All, UserAuthenticationMethod.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserAuthenticationFido2Method -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserAuthenticationFido2Method Cmdlet.
-
 
 ## PARAMETERS
 
@@ -569,7 +553,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -657,25 +641,3 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationfido2method)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

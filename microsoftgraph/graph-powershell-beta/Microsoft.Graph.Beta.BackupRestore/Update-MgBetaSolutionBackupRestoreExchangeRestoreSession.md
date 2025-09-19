@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreexchangerestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreExchangeRestoreSession
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSolutionBackupRestoreExchangeRestoreSession
 ## SYNOPSIS
 
 Update the properties of an exchangeRestoreSession.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreExchangeRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreExchangeRestoreSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -84,6 +81,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of an exchangeRestoreSession.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -324,7 +331,7 @@ HelpMessage: ''
 
 ### -GranularMailboxRestoreArtifacts
 
-
+.
 To construct, see NOTES section for GRANULARMAILBOXRESTOREARTIFACTS properties and create a hash table.
 
 ```yaml
@@ -803,7 +810,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphExchangeRestoreSession>`: exchangeRestoreSession
+BODYPARAMETER <IMicrosoftGraphExchangeRestoreSession>: exchangeRestoreSession
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompletedDateTime <DateTime?>]: The time of completion of the restore session.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -910,7 +917,7 @@ Read-only.
     [DirectoryObjectIds <String[]>]: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
     [Mailboxes <String[]>]: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -921,7 +928,7 @@ This property is read-only.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -993,7 +1000,7 @@ Read-only.
   [ArtifactCount <Int32?>]: .
   [SearchResponseId <String>]: .
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -1022,7 +1029,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [SiteRestoreArtifactId <String>]: The unique identifier of siteRestoreArtifact
   [SiteRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1133,7 +1140,7 @@ Read-only.
   [DirectoryObjectIds <String[]>]: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
   [Mailboxes <String[]>]: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
 
-RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: restoreSessionArtifactCount
+RESTORESESSIONARTIFACTCOUNT <IMicrosoftGraphRestoreSessionArtifactCount>: restoreSessionArtifactCount
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Completed <Int32?>]: The number of artifacts whose restoration completed.
   [Failed <Int32?>]: The number of artifacts whose restoration failed.
@@ -1145,26 +1152,3 @@ RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: rest
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreexchangerestoresession)
 - [](https://learn.microsoft.com/graph/api/exchangerestoresession-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

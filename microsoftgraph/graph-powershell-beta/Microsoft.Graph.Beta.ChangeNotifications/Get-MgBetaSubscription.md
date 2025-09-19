@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.ChangeNotifications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/get-mgbetasubscription
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSubscription
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaSubscription
 
 Retrieve the properties and relationships of a subscription.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Get-MgSubscription?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,17 +58,12 @@ Retrieve the properties and relationships of a subscription.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
 
 Get-MgBetaSubscription
-
-```
-This example shows how to use the Get-MgBetaSubscription Cmdlet.
-
 
 ## PARAMETERS
 
@@ -533,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
+INPUTOBJECT <IChangeNotificationsIdentity>: Identity Parameter
   [SubscriptionId <String>]: The unique identifier of subscription
 
 
@@ -542,25 +534,3 @@ INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/get-mgbetasubscription)
 - [](https://learn.microsoft.com/graph/api/subscription-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/subscription-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

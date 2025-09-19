@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatiblegroup
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgEntitlementManagementAccessPackageIncompatibleGroup
 ---
@@ -14,9 +14,6 @@ title: Get-MgEntitlementManagementAccessPackageIncompatibleGroup
 ## SYNOPSIS
 
 Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,26 +38,13 @@ This cmdlet has the following aliases,
 
 Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId $accessPackageId
-
-```
-This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleGroup Cmdlet.
-
 
 ## PARAMETERS
 
@@ -495,25 +479,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatiblegroup)
 - [](https://learn.microsoft.com/graph/api/accesspackage-list-incompatiblegroups?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

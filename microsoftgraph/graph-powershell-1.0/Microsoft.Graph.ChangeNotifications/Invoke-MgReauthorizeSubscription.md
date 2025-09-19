@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.ChangeNotifications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription
 Locale: en-US
 Module Name: Microsoft.Graph.ChangeNotifications
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgReauthorizeSubscription
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgReauthorizeSubscription
 ## SYNOPSIS
 
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Invoke-MgBetaReauthorizeSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,17 +47,12 @@ This cmdlet has the following aliases,
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.ChangeNotifications
 
 Invoke-MgReauthorizeSubscription -SubscriptionId $subscriptionId
-
-```
-This example shows how to use the Invoke-MgReauthorizeSubscription Cmdlet.
-
 
 ## PARAMETERS
 
@@ -371,7 +363,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
+INPUTOBJECT <IChangeNotificationsIdentity>: Identity Parameter
   [SubscriptionId <String>]: The unique identifier of subscription
 
 
@@ -379,25 +371,3 @@ INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription)
 - [](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

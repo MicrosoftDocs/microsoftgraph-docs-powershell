@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedge
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgAdminEdge
 ---
@@ -15,9 +15,6 @@ title: Get-MgAdminEdge
 
 A container for Microsoft Edge resources.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdge?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,6 +36,16 @@ This cmdlet has the following aliases,
 
 A container for Microsoft Edge resources.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -279,26 +286,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedge)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

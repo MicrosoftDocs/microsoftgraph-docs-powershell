@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticawpermissioncreepindexdistribution
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution
 ---
@@ -61,17 +61,12 @@ Represents the Permissions Creep Index (PCI) for the authorization system.
 PCI distribution chart shows the classification of human and nonhuman identities based on the PCI score in three buckets (low, medium, high).
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution
-
-```
-This example shows how to use the Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution Cmdlet.
-
 
 ## PARAMETERS
 
@@ -533,7 +528,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -640,25 +635,3 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticawpermissioncreepindexdistribution)
 - [](https://learn.microsoft.com/graph/api/permissionsanalytics-list-permissionscreepindexdistributions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

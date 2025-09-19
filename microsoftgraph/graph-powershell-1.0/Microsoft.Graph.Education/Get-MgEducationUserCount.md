@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationusercount
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationUserCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationUserCount
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,13 +35,15 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -283,26 +282,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationusercount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

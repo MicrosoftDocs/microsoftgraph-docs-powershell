@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mguserpresencestatusmessage
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Set-MgUserPresenceStatusMessage
 ---
@@ -72,18 +72,9 @@ This cmdlet has the following aliases,
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Presence.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Presence.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Set status message with expiry date
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -102,12 +93,7 @@ $params = @{
 
 Set-MgUserPresenceStatusMessage -UserId $userId -BodyParameter $params
 
-```
-This example will set status message with expiry date
-
-### Example 2: Set status message of another user
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -121,10 +107,6 @@ $params = @{
 }
 
 Set-MgUserPresenceStatusMessage -UserId $userId -BodyParameter $params
-
-```
-This example will set status message of another user
-
 
 ## PARAMETERS
 
@@ -157,7 +139,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -534,7 +516,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsDovi6RUsersUserIdPresenceMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsDovi6RUsersUserIdPresenceMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [StatusMessage <IMicrosoftGraphPresenceStatusMessage>]: presenceStatusMessage
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -549,7 +531,7 @@ See below for more possible values.
       [ContentType <String>]: bodyType
     [PublishedDateTime <DateTime?>]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
   [CallId <String>]: The unique identifier of call
@@ -565,7 +547,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [SessionId <String>]: The unique identifier of session
   [UserId <String>]: The unique identifier of user
 
-STATUSMESSAGE `<IMicrosoftGraphPresenceStatusMessage>`: presenceStatusMessage
+STATUSMESSAGE <IMicrosoftGraphPresenceStatusMessage>: presenceStatusMessage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExpiryDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -583,25 +565,3 @@ See below for more possible values.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mguserpresencestatusmessage)
 - [](https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

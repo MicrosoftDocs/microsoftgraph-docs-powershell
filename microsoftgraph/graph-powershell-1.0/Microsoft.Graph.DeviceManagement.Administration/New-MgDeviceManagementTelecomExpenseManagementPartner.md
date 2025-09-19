@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtelecomexpensemanagementpartner
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementTelecomExpenseManagementPartner
 ---
@@ -14,9 +14,6 @@ title: New-MgDeviceManagementTelecomExpenseManagementPartner
 ## SYNOPSIS
 
 Create a new telecomExpenseManagementPartner object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,18 +47,9 @@ This cmdlet has the following aliases,
 
 Create a new telecomExpenseManagementPartner object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -75,10 +63,6 @@ $params = @{
 }
 
 New-MgDeviceManagementTelecomExpenseManagementPartner -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementTelecomExpenseManagementPartner Cmdlet.
-
 
 ## PARAMETERS
 
@@ -496,7 +480,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTelecomExpenseManagementPartner>`: telecomExpenseManagementPartner resources represent the metadata and status of a given TEM service.
+BODYPARAMETER <IMicrosoftGraphTelecomExpenseManagementPartner>: telecomExpenseManagementPartner resources represent the metadata and status of a given TEM service.
 Once your organization has onboarded with a partner, the partner can be enabled or disabled to switch TEM functionality on or off.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
@@ -512,25 +496,3 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtelecomexpensemanagementpartner)
 - [](https://learn.microsoft.com/graph/api/intune-tem-telecomexpensemanagementpartner-create?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

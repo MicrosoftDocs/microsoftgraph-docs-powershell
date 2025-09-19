@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccessmanageddevicesigninsuccess
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess
 ---
@@ -51,17 +51,12 @@ Get the number of user authentication requests, during a specific time period, t
 Managed devices are computers joined to and managed by your on-premises directory and hybrid devices joined to Microsoft Entra.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess
-
-```
-This example shows how to use the Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess Cmdlet.
-
 
 ## PARAMETERS
 
@@ -455,7 +450,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -513,25 +508,3 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccessmanageddevicesigninsuccess)
 - [](https://learn.microsoft.com/graph/api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

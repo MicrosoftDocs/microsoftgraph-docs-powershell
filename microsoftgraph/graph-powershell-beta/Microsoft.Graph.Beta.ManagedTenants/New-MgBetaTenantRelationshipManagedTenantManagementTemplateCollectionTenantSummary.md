@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatecollectiontenantsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
 ---
@@ -53,6 +53,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to managementTemplateCollectionTenantSummaries for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -122,7 +132,7 @@ HelpMessage: ''
 
 ### -CompleteStepsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -143,7 +153,7 @@ HelpMessage: ''
 
 ### -CompleteUsersCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -186,7 +196,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -207,7 +217,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -228,7 +238,7 @@ HelpMessage: ''
 
 ### -DismissedStepsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -249,7 +259,7 @@ HelpMessage: ''
 
 ### -ExcludedUsersCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -270,7 +280,7 @@ HelpMessage: ''
 
 ### -ExcludedUsersDistinctCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -376,7 +386,7 @@ HelpMessage: ''
 
 ### -IncompleteStepsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -397,7 +407,7 @@ HelpMessage: ''
 
 ### -IncompleteUsersCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -418,7 +428,7 @@ HelpMessage: ''
 
 ### -IneligibleStepsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -439,7 +449,7 @@ HelpMessage: ''
 
 ### -IsComplete
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -460,7 +470,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -481,7 +491,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -502,7 +512,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateCollectionDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -523,7 +533,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateCollectionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -607,7 +617,7 @@ HelpMessage: ''
 
 ### -RegressedStepsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -628,7 +638,7 @@ HelpMessage: ''
 
 ### -RegressedUsersCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -671,7 +681,7 @@ HelpMessage: ''
 
 ### -TenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -692,7 +702,7 @@ HelpMessage: ''
 
 ### -UnlicensedUsersCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -763,7 +773,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary>`: managementTemplateCollectionTenantSummary
+BODYPARAMETER <IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary>: managementTemplateCollectionTenantSummary
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -791,26 +801,3 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatecollectiontenantsummary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaquerydevicemanagementresourceaccessprofilebyplatformtype
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaQueryDeviceManagementResourceAccessProfileByPlatformType
 ---
@@ -48,13 +48,15 @@ This cmdlet has the following aliases,
 
 Invoke action queryByPlatformType
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -81,7 +83,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -365,7 +367,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyplatformtypePostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyplatformtypePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PlatformType <PolicyPlatformType?>]: Supported platform types for policies.
 
@@ -373,26 +375,3 @@ BODY `<IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyp
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaquerydevicemanagementresourceaccessprofilebyplatformtype)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

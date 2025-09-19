@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.SchemaExtensions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/get-mgschemaextension
 Locale: en-US
 Module Name: Microsoft.Graph.SchemaExtensions
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSchemaExtension
 ---
@@ -14,9 +14,6 @@ title: Get-MgSchemaExtension
 ## SYNOPSIS
 
 Get schemaExtension
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Get-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,26 +55,13 @@ This cmdlet has the following aliases,
 
 Get schemaExtension
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, Application.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.SchemaExtensions
 
-Get-MgSchemaExtension -Filter "id eq 'graphlearn_test'" 
-
-```
-This example shows how to use the Get-MgSchemaExtension Cmdlet.
-
+Get-MgSchemaExtension -Filter "id eq 'graphlearn_test'"
 
 ## PARAMETERS
 
@@ -539,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
+INPUTOBJECT <ISchemaExtensionsIdentity>: Identity Parameter
   [SchemaExtensionId <String>]: The unique identifier of schemaExtension
 
 
@@ -548,25 +532,3 @@ INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/get-mgschemaextension)
 - [](https://learn.microsoft.com/graph/api/schemaextension-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/schemaextension-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

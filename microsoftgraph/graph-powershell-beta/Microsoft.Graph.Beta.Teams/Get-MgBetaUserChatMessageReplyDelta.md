@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatmessagereplydelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserChatMessageReplyDelta
 ---
@@ -21,9 +21,6 @@ To proceed with a round of change tracking, copy and apply the @odata.nextLink o
 An @odata.deltaLink returned in a response signifies that the current round of change tracking is complete.
 You can save and use the @odata.deltaLink URL when you begin to retrieve more changes (messages changed or posted after you acquire @odata.deltaLink).
 For more information, see the delta query documentation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserChatMessageReplyDelta](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatMessageReplyDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -64,6 +61,16 @@ To proceed with a round of change tracking, copy and apply the @odata.nextLink o
 An @odata.deltaLink returned in a response signifies that the current round of change tracking is complete.
 You can save and use the @odata.deltaLink URL when you begin to retrieve more changes (messages changed or posted after you acquire @odata.deltaLink).
 For more information, see the delta query documentation.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -588,7 +595,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -640,26 +647,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatmessagereplydelta)
 - [](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

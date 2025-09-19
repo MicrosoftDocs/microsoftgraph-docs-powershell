@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/start-mgbetaserviceprincipalsynchronizationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Start-MgBetaServicePrincipalSynchronizationJob
 ---
@@ -18,9 +18,6 @@ If the job is in a paused state, it continues processing changes from the point 
 If the job is in quarantine, the quarantine status is cleared.
 Don't create scripts to call the start job continuously while it's running because that can cause the service to stop running.
 Use the start job only when the job is currently paused or in quarantine.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Start-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Start-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,26 +55,13 @@ If the job is in quarantine, the quarantine status is cleared.
 Don't create scripts to call the start job continuously while it's running because that can cause the service to stop running.
 Use the start job only when the job is currently paused or in quarantine.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Synchronization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Start-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
-
-```
-This example shows how to use the Start-MgBetaServicePrincipalSynchronizationJob Cmdlet.
-
 
 ## PARAMETERS
 
@@ -409,7 +393,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -451,25 +435,3 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/start-mgbetaserviceprincipalsynchronizationjob)
 - [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-start?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

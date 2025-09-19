@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionmanagementscheduledpermissionrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest
 ---
@@ -39,6 +39,16 @@ This cmdlet has the following aliases,
 
 Represents a permissions request that Permissions Management uses to manage permissions for an identity on resources in the authorization system.
 This request can be granted, rejected or canceled by identities in Permissions Management.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -451,26 +461,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionmanagementscheduledpermissionrequest)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

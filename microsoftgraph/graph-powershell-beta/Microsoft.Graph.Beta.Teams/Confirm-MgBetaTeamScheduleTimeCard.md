@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetateamscheduletimecard
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgBetaTeamScheduleTimeCard
 ---
@@ -14,9 +14,6 @@ title: Confirm-MgBetaTeamScheduleTimeCard
 ## SYNOPSIS
 
 Confirm a specific timeCard.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Confirm-MgTeamScheduleTimeCard?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,26 +45,13 @@ This cmdlet has the following aliases,
 
 Confirm a specific timeCard.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Schedule.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Schedule.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Confirm-MgBetaTeamScheduleTimeCard -TeamId $teamId -TimeCardId $timeCardId
-
-```
-This example shows how to use the Confirm-MgBetaTeamScheduleTimeCard Cmdlet.
-
 
 ## PARAMETERS
 
@@ -378,7 +362,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -430,25 +414,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetateamscheduletimecard)
 - [](https://learn.microsoft.com/graph/api/timecard-confirm?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

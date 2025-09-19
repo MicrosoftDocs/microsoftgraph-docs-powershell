@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetainitiatedevicemanagementmanageddeviceondemandproactiveremediation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaInitiateDeviceManagementManagedDeviceOnDemandProactiveRemediation
 ---
@@ -72,13 +72,15 @@ This cmdlet has the following aliases,
 
 Perform On Demand Proactive Remediation
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -111,7 +113,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -133,7 +135,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -422,7 +424,7 @@ HelpMessage: ''
 
 ### -ScriptPolicyId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -503,15 +505,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPathsUgs0LuDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPathsUgs0LuDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ScriptPolicyId <String>]: 
 
-BODYPARAMETER `<IPathsUgs0LuDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsUgs0LuDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ScriptPolicyId <String>]: 
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -624,26 +626,3 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetainitiatedevicemanagementmanageddeviceondemandproactiveremediation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatasourcesystem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaExternalIndustryDataSourceSystem
 ---
@@ -46,26 +46,13 @@ This cmdlet has the following aliases,
 
 Delete a sourceSystemDefinition object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IndustryData-SourceSystem.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IndustryData-SourceSystem.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Search
 
 Remove-MgBetaExternalIndustryDataSourceSystem -SourceSystemDefinitionId $sourceSystemDefinitionId
-
-```
-This example shows how to use the Remove-MgBetaExternalIndustryDataSourceSystem Cmdlet.
-
 
 ## PARAMETERS
 
@@ -397,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [AuthorizationSystemId <String>]: The unique identifier of authorizationSystem
   [BookmarkId <String>]: The unique identifier of bookmark
@@ -425,25 +412,3 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatasourcesystem)
 - [](https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

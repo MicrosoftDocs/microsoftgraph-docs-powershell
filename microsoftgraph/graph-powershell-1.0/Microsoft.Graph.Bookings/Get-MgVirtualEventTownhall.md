@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhall
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgVirtualEventTownhall
 ---
@@ -15,9 +15,6 @@ title: Get-MgVirtualEventTownhall
 
 Read the properties and relationships of a virtualEventTownhall object.
 All roles can get the details of a townhall event.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhall](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhall?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,17 +58,12 @@ Read the properties and relationships of a virtualEventTownhall object.
 All roles can get the details of a townhall event.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgVirtualEventTownhall -VirtualEventTownhallId $virtualEventTownhallId
-
-```
-This example shows how to use the Get-MgVirtualEventTownhall Cmdlet.
-
 
 ## PARAMETERS
 
@@ -533,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -559,25 +551,3 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhall)
 - [](https://learn.microsoft.com/graph/api/virtualeventtownhall-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

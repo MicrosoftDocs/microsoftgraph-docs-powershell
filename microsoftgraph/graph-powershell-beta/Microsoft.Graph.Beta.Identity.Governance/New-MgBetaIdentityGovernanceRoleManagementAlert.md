@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalert
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernanceRoleManagementAlert
 ---
@@ -51,6 +51,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to alerts for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -582,7 +592,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALERTCONFIGURATION `<IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>`: unifiedRoleManagementAlertConfiguration
+ALERTCONFIGURATION <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>: unifiedRoleManagementAlertConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -616,7 +626,7 @@ Supports $filter (eq, ne).
   [ScopeType <String>]: The type of scope where the alert is created.
 DirectoryRole is the only currently supported scope type for Microsoft Entra roles.
 
-ALERTDEFINITION `<IMicrosoftGraphUnifiedRoleManagementAlertDefinition>`: unifiedRoleManagementAlertDefinition
+ALERTDEFINITION <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>: unifiedRoleManagementAlertDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -642,7 +652,7 @@ Supports $expand.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleManagementAlert>`: unifiedRoleManagementAlert
+BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementAlert>: unifiedRoleManagementAlert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -702,26 +712,3 @@ DirectoryRole is the only currently supported scope type for Microsoft Entra rol
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalert)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

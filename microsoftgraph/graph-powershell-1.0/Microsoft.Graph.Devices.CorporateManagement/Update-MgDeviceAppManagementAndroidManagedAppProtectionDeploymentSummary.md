@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementandroidmanagedappprotectiondeploymentsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary
 ## SYNOPSIS
 
 Update the navigation property deploymentSummary in deviceAppManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -79,13 +76,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property deploymentSummary in deviceAppManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -610,7 +609,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+BODYPARAMETER <IMicrosoftGraphManagedAppPolicyDeploymentSummary>: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -628,7 +627,7 @@ CONFIGURATIONDEPLOYMENTSUMMARYPERAPP <IMicrosoftGraphManagedAppPolicyDeploymentS
   [MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]: The identifier for a mobile app.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -670,26 +669,3 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementandroidmanagedappprotectiondeploymentsummary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

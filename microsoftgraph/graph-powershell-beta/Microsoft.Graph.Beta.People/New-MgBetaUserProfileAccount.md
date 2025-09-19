@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaccount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserProfileAccount
 ---
@@ -80,18 +80,9 @@ This cmdlet has the following aliases,
 
 Create new navigation property to account for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | User.ReadWrite,  |
-| Application | User.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.People
 
@@ -102,10 +93,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileAccount -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaUserProfileAccount Cmdlet.
-
 
 ## PARAMETERS
 
@@ -493,7 +480,7 @@ HelpMessage: ''
 
 ### -IsSearchable
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -907,7 +894,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserAccountInformation>`: userAccountInformation
+BODYPARAMETER <IMicrosoftGraphUserAccountInformation>: userAccountInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedAudiences <String>]: allowedAudiences
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -953,7 +940,7 @@ The language component follows 2-letter codes as defined in ISO 639-1, and the c
   [UserPersona <String>]: userPersona
   [UserPrincipalName <String>]: The user principal name (UPN) of the user associated with the account.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -964,12 +951,12 @@ This property is read-only.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConfidenceScore <Double?>]: Confidence score reflecting the accuracy of the data inferred about the user.
   [UserHasVerifiedAccuracy <Boolean?>]: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   [ActivityStatisticsId <String>]: The unique identifier of activityStatistics
   [EducationalActivityId <String>]: The unique identifier of educationalActivity
   [ItemAddressId <String>]: The unique identifier of itemAddress
@@ -993,7 +980,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   [WebAccountId <String>]: The unique identifier of webAccount
   [WorkPositionId <String>]: The unique identifier of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1004,19 +991,19 @@ This property is read-only.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-ORIGINTENANTINFO `<IMicrosoftGraphOriginTenantInfo>`: originTenantInfo
+ORIGINTENANTINFO <IMicrosoftGraphOriginTenantInfo>: originTenantInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [OriginTenantId <String>]: The identifier of the tenant where the user account was originally provisioned.
   [OriginUserId <String>]: The identifier of the user in the origin tenant.
 
-PREFERREDLANGUAGETAG `<IMicrosoftGraphLocaleInfo>`: localeInfo
+PREFERREDLANGUAGETAG <IMicrosoftGraphLocaleInfo>: localeInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: A name representing the user's locale in natural language, for example, 'English (United States)'.
   [Locale <String>]: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String[]>]: 
 
@@ -1029,25 +1016,3 @@ SOURCES <IMicrosoftGraphProfileSourceAnnotation[]>: Where the values within an e
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaccount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

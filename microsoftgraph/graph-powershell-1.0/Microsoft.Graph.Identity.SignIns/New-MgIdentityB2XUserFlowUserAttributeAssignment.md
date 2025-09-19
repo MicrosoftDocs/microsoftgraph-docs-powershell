@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflowuserattributeassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityB2XUserFlowUserAttributeAssignment
 ---
@@ -14,9 +14,6 @@ title: New-MgIdentityB2XUserFlowUserAttributeAssignment
 ## SYNOPSIS
 
 Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ This cmdlet has the following aliases,
 
 Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityUserFlow.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -105,10 +93,6 @@ $params = @{
 }
 
 New-MgIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -BodyParameter $params
-
-```
-This example shows how to use the New-MgIdentityB2XUserFlowUserAttributeAssignment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -664,7 +648,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityUserFlowAttributeAssignment>`: identityUserFlowAttributeAssignment
+BODYPARAMETER <IMicrosoftGraphIdentityUserFlowAttributeAssignment>: identityUserFlowAttributeAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -689,7 +673,7 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
     [Value <String>]: The value that is set when this item is selected.
   [UserInputType <String>]: identityUserFlowAttributeInputType
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -751,7 +735,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-USERATTRIBUTE `<IMicrosoftGraphIdentityUserFlowAttribute>`: identityUserFlowAttribute
+USERATTRIBUTE <IMicrosoftGraphIdentityUserFlowAttribute>: identityUserFlowAttribute
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -772,25 +756,3 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflowuserattributeassignment)
 - [](https://learn.microsoft.com/graph/api/b2xidentityuserflow-post-userattributeassignments?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

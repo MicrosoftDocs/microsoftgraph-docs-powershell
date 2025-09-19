@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/publish-mgsecuritycaseediscoverycasenoncustodialdatasource
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Publish-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource
 ---
@@ -14,9 +14,6 @@ title: Publish-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource
 ## SYNOPSIS
 
 Release the non-custodial data source from the case.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Publish-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Beta.Security/Publish-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,26 +47,13 @@ This cmdlet has the following aliases,
 
 Release the non-custodial data source from the case.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
 Publish-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
-
-```
-This example shows how to use the Publish-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
-
 
 ## PARAMETERS
 
@@ -401,7 +385,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -476,25 +460,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/publish-mgsecuritycaseediscoverycasenoncustodialdatasource)
 - [](https://learn.microsoft.com/graph/api/security-ediscoverynoncustodialdatasource-release?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

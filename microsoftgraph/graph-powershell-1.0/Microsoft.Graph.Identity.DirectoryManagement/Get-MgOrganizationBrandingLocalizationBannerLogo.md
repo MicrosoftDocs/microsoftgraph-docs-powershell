@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationbannerlogo
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgOrganizationBrandingLocalizationBannerLogo
 ---
@@ -15,9 +15,6 @@ title: Get-MgOrganizationBrandingLocalizationBannerLogo
 
 Read the properties and relationships of an organizationalBrandingLocalization object.
 To retrieve a localization branding object, specify the value of id in the URL.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalizationBannerLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationBannerLogo?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,26 +47,13 @@ This cmdlet has the following aliases,
 Read the properties and relationships of an organizationalBrandingLocalization object.
 To retrieve a localization branding object, specify the value of id in the URL.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OrganizationalBranding.Read.All, OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All, Organization.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OrganizationalBranding.Read.All, OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All, Organization.Read.All,  |
-
 ## EXAMPLES
-### Example 2: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
-
-```
-This example shows how to use the Get-MgOrganizationBrandingLocalizationBannerLogo Cmdlet.
-
 
 ## PARAMETERS
 
@@ -378,7 +362,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -415,25 +399,3 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationbannerlogo)
 - [](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

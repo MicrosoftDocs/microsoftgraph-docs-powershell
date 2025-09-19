@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaacceptidentitygovernanceaccessreviewdefinitioninstancerecommendation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation
 ---
@@ -16,9 +16,6 @@ title: Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecomm
 Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that haven't been reviewed for an accessReviewInstance object for which the calling user is a reviewer.
 Recommendations are generated if recommendationsEnabled is true on the accessReviewScheduleDefinition object.
 If there isn't a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,17 +53,12 @@ Recommendations are generated if recommendationsEnabled is true on the accessRev
 If there isn't a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
-```
-This example shows how to use the Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -398,7 +390,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -505,25 +497,3 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaacceptidentitygovernanceaccessreviewdefinitioninstancerecommendation)
 - [](https://learn.microsoft.com/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

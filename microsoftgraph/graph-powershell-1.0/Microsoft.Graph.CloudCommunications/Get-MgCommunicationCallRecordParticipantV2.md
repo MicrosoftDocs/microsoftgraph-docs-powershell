@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecordparticipantv2
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgCommunicationCallRecordParticipantV2
 ---
@@ -58,17 +58,12 @@ This cmdlet has the following aliases,
 List of distinct participants in the call.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationCallRecordParticipantV2 -CallRecordId $callRecordId
-
-```
-This example shows how to use the Get-MgCommunicationCallRecordParticipantV2 Cmdlet.
-
 
 ## PARAMETERS
 
@@ -557,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
   [CallId <String>]: The unique identifier of call
@@ -578,25 +573,3 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecordparticipantv2)
 - [](https://learn.microsoft.com/graph/api/callrecords-callrecord-list-participants_v2?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

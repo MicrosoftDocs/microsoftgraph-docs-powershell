@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementauditeventauditcategory
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementAuditEventAuditCategory
 ---
@@ -35,26 +35,13 @@ This cmdlet has the following aliases,
 
 Not yet documented
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Get-MgDeviceManagementAuditEventAuditCategory
-
-```
-This example shows how to use the Get-MgDeviceManagementAuditEventAuditCategory Cmdlet.
-
 
 ## PARAMETERS
 
@@ -358,25 +345,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementauditeventauditcategory)
 - [](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-getauditcategories?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

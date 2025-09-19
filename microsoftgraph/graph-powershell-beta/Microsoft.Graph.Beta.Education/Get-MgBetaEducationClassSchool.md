@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassschool
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationClassSchool
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaEducationClassSchool
 
 All schools that this class is associated with.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassSchool](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassSchool?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -62,17 +59,12 @@ All schools that this class is associated with.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassSchool -EducationClassId $educationClassId
-
-```
-This example shows how to use the Get-MgBetaEducationClassSchool Cmdlet.
-
 
 ## PARAMETERS
 
@@ -561,7 +553,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -588,25 +580,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassschool)
 - [](https://learn.microsoft.com/graph/api/educationclass-list-schools?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

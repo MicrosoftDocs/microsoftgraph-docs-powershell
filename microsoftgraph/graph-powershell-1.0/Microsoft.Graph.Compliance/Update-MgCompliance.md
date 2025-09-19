@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgcompliance
 Locale: en-US
 Module Name: Microsoft.Graph.Compliance
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgCompliance
 ---
@@ -14,9 +14,6 @@ title: Update-MgCompliance
 ## SYNOPSIS
 
 Update compliance
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgBetaCompliance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update compliance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -332,26 +339,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgcompliance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

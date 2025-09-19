@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinitioninstance
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance
 ## SYNOPSIS
 
 Create new navigation property to instances for identityGovernance
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -84,6 +81,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to instances for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -799,7 +806,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewInstance>`: accessReviewInstance
+BODYPARAMETER <IMicrosoftGraphAccessReviewInstance>: accessReviewInstance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1421,7 +1428,7 @@ Read-only.
   [Target <IMicrosoftGraphAccessReviewInstanceDecisionItemTarget>]: accessReviewInstanceDecisionItemTarget
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-DEFINITION `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewScheduleDefinition
+DEFINITION <IMicrosoftGraphAccessReviewScheduleDefinition>: accessReviewScheduleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1742,7 +1749,7 @@ Possible value: decisions.
   [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -2166,26 +2173,3 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinitioninstance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

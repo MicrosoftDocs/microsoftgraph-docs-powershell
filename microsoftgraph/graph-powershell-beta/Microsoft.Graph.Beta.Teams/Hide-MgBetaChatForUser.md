@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/hide-mgbetachatforuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Hide-MgBetaChatForUser
 ---
@@ -14,9 +14,6 @@ title: Hide-MgBetaChatForUser
 ## SYNOPSIS
 
 Hide a chat for a user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Hide-MgChatForUser](/powershell/module/Microsoft.Graph.Teams/Hide-MgChatForUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,9 +71,8 @@ This cmdlet has the following aliases,
 Hide a chat for a user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -88,10 +84,6 @@ $params = @{
 }
 
 Hide-MgBetaChatForUser -ChatId $chatId -BodyParameter $params
-
-```
-This example shows how to use the Hide-MgBetaChatForUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -124,7 +116,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -419,7 +411,7 @@ HelpMessage: ''
 
 ### -TenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -528,7 +520,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TenantId <String>]: 
   [User <IMicrosoftGraphTeamworkUserIdentity>]: teamworkUserIdentity
@@ -540,7 +532,7 @@ This property is read-only.
     [UserIdentityType <String>]: teamworkUserIdentityType
     [UserPrincipalName <String>]: User principal name (UPN) of the user.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -587,7 +579,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-USER `<IMicrosoftGraphTeamworkUserIdentity>`: teamworkUserIdentity
+USER <IMicrosoftGraphTeamworkUserIdentity>: teamworkUserIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 This property is read-only.
@@ -601,25 +593,3 @@ This property is read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/hide-mgbetachatforuser)
 - [](https://learn.microsoft.com/graph/api/chat-hideforuser?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

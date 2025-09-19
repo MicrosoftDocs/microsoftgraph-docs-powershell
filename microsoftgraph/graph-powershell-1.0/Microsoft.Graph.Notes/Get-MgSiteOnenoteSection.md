@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesection
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteOnenoteSection
 ---
@@ -16,9 +16,6 @@ title: Get-MgSiteOnenoteSection
 The sections in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,13 +59,15 @@ The sections in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite, Notes.Read.All, Notes.Read,  |
-| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
-| Application | Notes.Read.All, Notes.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -557,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -575,27 +574,3 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

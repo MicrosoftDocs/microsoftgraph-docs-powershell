@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupcalendarpermanent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaGroupCalendarPermanent
 ---
@@ -15,9 +15,6 @@ title: Remove-MgBetaGroupCalendarPermanent
 
 Permanently delete a calendar folder and the events that it contains and remove them from the mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupCalendarPermanent](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupCalendarPermanent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 
 Permanently delete a calendar folder and the events that it contains and remove them from the mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -360,7 +367,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -379,26 +386,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupcalendarpermanent)
 - [](https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaOrganizationSetting
 ---
@@ -47,22 +47,12 @@ This cmdlet has the following aliases,
 Retrieve the properties and relationships of organizationSettings object.
 Nullable.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, User.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaOrganizationSetting Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSetting -OrganizationId $organizationId
-```
-This example shows how to use the Get-MgBetaOrganizationSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -352,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -411,25 +401,3 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

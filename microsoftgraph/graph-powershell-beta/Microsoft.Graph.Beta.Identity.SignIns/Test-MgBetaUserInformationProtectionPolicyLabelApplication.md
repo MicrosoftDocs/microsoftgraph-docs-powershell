@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetauserinformationprotectionpolicylabelapplication
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaUserInformationProtectionPolicyLabelApplication
 ---
@@ -74,13 +74,15 @@ Compute the information protection label that should be applied and return the s
 This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
 Given contentInfo, which includes existing content metadata key/value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | InformationProtectionPolicy.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | InformationProtectionPolicy.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -113,7 +115,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -497,7 +499,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsUqg0TfUsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsUqg0TfUsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentInfo <IMicrosoftGraphContentInfo>]: contentInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -518,7 +520,7 @@ The message appears in administrative logs.
     [ExtendedProperties <IMicrosoftGraphKeyValuePair[]>]: Extended properties will be parsed and returned in the standard MIP labeled metadata format as part of the label information.
     [LabelId <String>]: The GUID of the label that should be applied to the information.
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
+CONTENTINFO <IMicrosoftGraphContentInfo>: contentInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Format <String>]: contentFormat
   [Identifier <String>]: Identifier used for Azure Information Protection Analytics.
@@ -527,7 +529,7 @@ CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
     [Value <String>]: Value for this key-value pair
   [State <String>]: contentState
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -611,7 +613,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-LABELINGOPTIONS `<IMicrosoftGraphLabelingOptions>`: labelingOptions
+LABELINGOPTIONS <IMicrosoftGraphLabelingOptions>: labelingOptions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AssignmentMethod <String>]: assignmentMethod
   [DowngradeJustification <IMicrosoftGraphDowngradeJustification>]: downgradeJustification
@@ -629,26 +631,3 @@ The message appears in administrative logs.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetauserinformationprotectionpolicylabelapplication)
 - [](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessageextension
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserMailFolderMessageExtension
 ---
@@ -14,9 +14,6 @@ title: Remove-MgUserMailFolderMessageExtension
 ## SYNOPSIS
 
 Delete navigation property extensions for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolderMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderMessageExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property extensions for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -443,7 +450,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -457,26 +464,3 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessageextension)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

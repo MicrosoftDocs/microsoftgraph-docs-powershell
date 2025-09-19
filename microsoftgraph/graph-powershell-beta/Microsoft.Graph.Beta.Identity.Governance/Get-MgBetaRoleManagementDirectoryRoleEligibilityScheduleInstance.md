@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleeligibilityscheduleinstance
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance
 ## SYNOPSIS
 
 Read the properties and relationships of an unifiedRoleEligibilityScheduleInstance object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,26 +57,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of an unifiedRoleEligibilityScheduleInstance object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleEligibilitySchedule.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleEligibilitySchedule.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance
-
-```
-This example shows how to use the Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance Cmdlet.
-
 
 ## PARAMETERS
 
@@ -541,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -649,25 +633,3 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleeligibilityscheduleinstance)
 - [](https://learn.microsoft.com/graph/api/unifiedroleeligibilityscheduleinstance-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/rbacapplication-list-roleeligibilityscheduleinstances?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

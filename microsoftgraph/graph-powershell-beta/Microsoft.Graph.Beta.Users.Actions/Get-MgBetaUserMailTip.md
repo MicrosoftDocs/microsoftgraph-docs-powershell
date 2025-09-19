@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermailtip
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Actions
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserMailTip
 ---
@@ -14,11 +14,8 @@ title: Get-MgBetaUserMailTip
 ## SYNOPSIS
 
 Get the MailTips of one or more recipients as available to the signed-in user.
-Note that by making a POST call to the getMailTips action, you can request specific types of MailTips tobe returned for more than one recipient at one time.
+Note that by making a POST call to the getMailTips action, you can request specific types of MailTips to\nbe returned for more than one recipient at one time.
 The requested MailTips are returned in a mailTips collection.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMailTip](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserMailTip?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -72,21 +69,12 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the MailTips of one or more recipients as available to the signed-in user.
-Note that by making a POST call to the getMailTips action, you can request specific types of MailTips tobe returned for more than one recipient at one time.
+Note that by making a POST call to the getMailTips action, you can request specific types of MailTips to\nbe returned for more than one recipient at one time.
 The requested MailTips are returned in a mailTips collection.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.Read, Mail.Read.Shared,  |
-| Delegated (personal Microsoft account) | Mail.Read,  |
-| Application | Mail.Read,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
@@ -100,10 +88,6 @@ MailTipsOptions = "automaticReplies, mailboxFullStatus"
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailTip -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Get-MgBetaUserMailTip Cmdlet.
-
 
 ## PARAMETERS
 
@@ -136,7 +120,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -207,7 +191,7 @@ HelpMessage: ''
 
 ### -EmailAddresses
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -518,12 +502,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IComponentsM2Vn8QRequestbodiesGetmailtipsrequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponentsM2Vn8QRequestbodiesGetmailtipsrequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EmailAddresses <String[]>]: 
   [MailTipsOptions <String>]: mailTipsType
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
 
@@ -531,25 +515,3 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermailtip)
 - [](https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

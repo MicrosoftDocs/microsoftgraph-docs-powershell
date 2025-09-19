@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehosttrackerhost
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityThreatIntelligenceHostTrackerHost
 ---
@@ -15,9 +15,6 @@ title: Get-MgSecurityThreatIntelligenceHostTrackerHost
 
 The host related to this hostTracker.
 When navigating to a hostTracker from a host, this should be assumed to be a return reference.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostTrackerHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostTrackerHost?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,6 +46,16 @@ This cmdlet has the following aliases,
 
 The host related to this hostTracker.
 When navigating to a hostTracker from a host, this should be assumed to be a return reference.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -338,7 +345,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -412,26 +419,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehosttrackerhost)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

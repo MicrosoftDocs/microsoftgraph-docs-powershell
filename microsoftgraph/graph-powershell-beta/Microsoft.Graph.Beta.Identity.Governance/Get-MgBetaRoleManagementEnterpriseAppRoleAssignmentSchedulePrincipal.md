@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleassignmentscheduleprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedulePrincipal
 ---
@@ -45,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The principal that's getting a role assignment or that's eligible for a role through the request.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -355,7 +365,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -461,26 +471,3 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleassignmentscheduleprincipal)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

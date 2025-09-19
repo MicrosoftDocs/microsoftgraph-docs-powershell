@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementgrouppolicyuploadeddefinitionfilegrouppolicyoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
 ---
@@ -58,6 +58,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The list of operations on the uploaded ADMX file.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -546,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [CartToClassAssociationId <String>]: The unique identifier of cartToClassAssociation
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -608,27 +618,3 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementgrouppolicyuploadeddefinitionfilegrouppolicyoperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

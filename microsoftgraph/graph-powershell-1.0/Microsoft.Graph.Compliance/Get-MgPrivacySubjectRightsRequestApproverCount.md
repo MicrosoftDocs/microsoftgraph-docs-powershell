@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestapprovercount
 Locale: en-US
 Module Name: Microsoft.Graph.Compliance
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgPrivacySubjectRightsRequestApproverCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgPrivacySubjectRightsRequestApproverCount
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestApproverCount](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestApproverCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -333,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [SubjectRightsRequestId <String>]: The unique identifier of subjectRightsRequest
   [UserId <String>]: The unique identifier of user
@@ -343,26 +350,3 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestapprovercount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

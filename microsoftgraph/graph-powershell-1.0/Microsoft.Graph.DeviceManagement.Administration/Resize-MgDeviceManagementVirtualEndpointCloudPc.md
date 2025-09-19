@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/resize-mgdevicemanagementvirtualendpointcloudpc
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Resize-MgDeviceManagementVirtualEndpointCloudPc
 ---
@@ -72,6 +72,16 @@ This cmdlet has the following aliases,
 
 Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -103,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -398,7 +408,7 @@ HelpMessage: ''
 
 ### -TargetServicePlanId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -479,11 +489,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths11UdgezDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphResizePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths11UdgezDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphResizePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TargetServicePlanId <String>]: 
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -517,26 +527,3 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/resize-mgdevicemanagementvirtualendpointcloudpc)
 - [](https://learn.microsoft.com/graph/api/cloudpc-resize?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

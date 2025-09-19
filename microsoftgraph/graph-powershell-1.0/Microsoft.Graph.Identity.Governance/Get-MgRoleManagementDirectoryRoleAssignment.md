@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgRoleManagementDirectoryRoleAssignment
 ---
@@ -14,9 +14,6 @@ title: Get-MgRoleManagementDirectoryRoleAssignment
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,37 +57,19 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1 : Get the details of a role assignment
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
 
-```
-This example will get the details of a role assignment
-
-### Example 2: Get the details of a role assignment and expand the relationships
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId -ExpandProperty "roleDefinition" 
-
-```
-This example will get the details of a role assignment and expand the relationships
-
+Get-MgRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId -ExpandProperty "roleDefinition"
 
 ## PARAMETERS
 
@@ -552,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -627,25 +606,3 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleassignment)
 - [](https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

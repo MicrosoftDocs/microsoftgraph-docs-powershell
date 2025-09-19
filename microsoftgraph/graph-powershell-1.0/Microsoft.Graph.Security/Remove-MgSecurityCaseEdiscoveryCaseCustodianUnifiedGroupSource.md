@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasecustodianunifiedgroupsource
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource
 ---
@@ -14,9 +14,6 @@ title: Remove-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource
 ## SYNOPSIS
 
 Delete a unifiedGroupSource object associated with an ediscoveryCustodian.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,17 +48,12 @@ This cmdlet has the following aliases,
 Delete a unifiedGroupSource object associated with an ediscoveryCustodian.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
 Remove-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -UnifiedGroupSourceId $unifiedGroupSourceId
-
-```
-This example shows how to use the Remove-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet.
-
 
 ## PARAMETERS
 
@@ -435,7 +427,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -510,25 +502,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasecustodianunifiedgroupsource)
 - [](https://learn.microsoft.com/graph/api/security-unifiedgroupsource-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

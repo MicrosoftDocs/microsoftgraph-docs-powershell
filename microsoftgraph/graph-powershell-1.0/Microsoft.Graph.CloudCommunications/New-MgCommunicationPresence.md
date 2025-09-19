@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationpresence
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgCommunicationPresence
 ---
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to presences for communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -446,7 +456,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPresence>`: presence
+BODYPARAMETER <IMicrosoftGraphPresence>: presence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -471,12 +481,12 @@ See below for more possible values.
       [ContentType <String>]: bodyType
     [PublishedDateTime <DateTime?>]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
-OUTOFOFFICESETTINGS `<IMicrosoftGraphOutOfOfficeSettings>`: outOfOfficeSettings
+OUTOFOFFICESETTINGS <IMicrosoftGraphOutOfOfficeSettings>: outOfOfficeSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsOutOfOffice <Boolean?>]: If true, either of the following is met:The current time falls within the out-of-office window configured in Outlook or Teams.An event marked as 'Show as Out of Office' appears on the user's calendar.Otherwise, false.
   [Message <String>]: The out-of-office message configured by the user in the Outlook client (Automatic replies) or the Teams client (Schedule out of office).
 
-STATUSMESSAGE `<IMicrosoftGraphPresenceStatusMessage>`: presenceStatusMessage
+STATUSMESSAGE <IMicrosoftGraphPresenceStatusMessage>: presenceStatusMessage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExpiryDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -493,26 +503,3 @@ See below for more possible values.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationpresence)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/clear-mgsecuritycaseediscoverycasesearchdata
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Clear-MgSecurityCaseEdiscoveryCaseSearchData
 ---
@@ -14,13 +14,10 @@ title: Clear-MgSecurityCaseEdiscoveryCaseSearchData
 ## SYNOPSIS
 
 Delete Exchange mailbox items or Microsoft Teams messages contained in an eDiscovery search.
-You can collect and purge the following categories of Teams content:- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
-Teams 1:1 chats are also called *conversations*.- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
-Also called *1:N* chats or *group conversations*.- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.- Private channels - Message posts, replies, and attachments shared in a private Teams channel.- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
-For more information about purging Teams messages, see:- eDiscovery solution series: Data spillage scenario - Search and purge- eDiscovery (Premium) workflow for content in Microsoft Teams
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData](/powershell/module/Microsoft.Graph.Beta.Security/Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData?view=graph-powershell-beta)
+You can collect and purge the following categories of Teams content:\n- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
+Teams 1:1 chats are also called *conversations*.\n- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
+Also called *1:N* chats or *group conversations*.\n- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.\n- Private channels - Message posts, replies, and attachments shared in a private Teams channel.\n- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
+For more information about purging Teams messages, see:\n- eDiscovery solution series: Data spillage scenario - Search and purge\n- eDiscovery (Premium) workflow for content in Microsoft Teams
 
 ## SYNTAX
 
@@ -76,23 +73,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete Exchange mailbox items or Microsoft Teams messages contained in an eDiscovery search.
-You can collect and purge the following categories of Teams content:- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
-Teams 1:1 chats are also called *conversations*.- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
-Also called *1:N* chats or *group conversations*.- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.- Private channels - Message posts, replies, and attachments shared in a private Teams channel.- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
-For more information about purging Teams messages, see:- eDiscovery solution series: Data spillage scenario - Search and purge- eDiscovery (Premium) workflow for content in Microsoft Teams
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.ReadWrite.All,  |
+You can collect and purge the following categories of Teams content:\n- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
+Teams 1:1 chats are also called *conversations*.\n- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
+Also called *1:N* chats or *group conversations*.\n- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.\n- Private channels - Message posts, replies, and attachments shared in a private Teams channel.\n- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
+For more information about purging Teams messages, see:\n- eDiscovery solution series: Data spillage scenario - Search and purge\n- eDiscovery (Premium) workflow for content in Microsoft Teams
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -102,10 +90,6 @@ $params = @{
 }
 
 Clear-MgSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
-
-```
-This example shows how to use the Clear-MgSecurityCaseEdiscoveryCaseSearchData Cmdlet.
-
 
 ## PARAMETERS
 
@@ -138,7 +122,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -568,12 +552,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsMs4I8WSecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityPurgedataPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsMs4I8WSecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityPurgedataPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PurgeAreas <String>]: purgeAreas
   [PurgeType <String>]: purgeType
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -648,25 +632,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/clear-mgsecuritycaseediscoverycasesearchdata)
 - [](https://learn.microsoft.com/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

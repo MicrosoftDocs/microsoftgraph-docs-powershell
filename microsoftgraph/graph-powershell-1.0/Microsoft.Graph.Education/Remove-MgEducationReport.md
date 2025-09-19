@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationreport
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgEducationReport
 ---
@@ -14,9 +14,6 @@ title: Remove-MgEducationReport
 ## SYNOPSIS
 
 Delete navigation property reports for education
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaEducationReport](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationReport?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,6 +35,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property reports for education
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -320,26 +327,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationreport)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

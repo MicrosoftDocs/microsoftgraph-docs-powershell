@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteapplicablecontenttypeforlist
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSiteApplicableContentTypeForList
 ---
@@ -14,9 +14,6 @@ title: Get-MgGroupSiteApplicableContentTypeForList
 ## SYNOPSIS
 
 Get site contentTypes that can be added to a list.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteApplicableContentTypeForList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteApplicableContentTypeForList?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get site contentTypes that can be added to a list.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -509,7 +516,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -559,26 +566,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteapplicablecontenttypeforlist)
 - [](https://learn.microsoft.com/graph/api/site-getapplicablecontenttypesforlist?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

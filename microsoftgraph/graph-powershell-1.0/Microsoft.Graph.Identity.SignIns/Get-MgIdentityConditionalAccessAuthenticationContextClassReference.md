@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccessauthenticationcontextclassreference
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityConditionalAccessAuthenticationContextClassReference
 ---
@@ -14,9 +14,6 @@ title: Get-MgIdentityConditionalAccessAuthenticationContextClassReference
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a authenticationContextClassReference object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,26 +57,13 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a authenticationContextClassReference object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AuthenticationContext.Read.All, Policy.Read.ConditionalAccess, AuthenticationContext.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AuthenticationContext.Read.All, Policy.Read.ConditionalAccess, AuthenticationContext.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityConditionalAccessAuthenticationContextClassReference
-
-```
-This example shows how to use the Get-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
-
 
 ## PARAMETERS
 
@@ -541,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -609,25 +593,3 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccessauthenticationcontextclassreference)
 - [](https://learn.microsoft.com/graph/api/authenticationcontextclassreference-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-authenticationcontextclassreferences?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

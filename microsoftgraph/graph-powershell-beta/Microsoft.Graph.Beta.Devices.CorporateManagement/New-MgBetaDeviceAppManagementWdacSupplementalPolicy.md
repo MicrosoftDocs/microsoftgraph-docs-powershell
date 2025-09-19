@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwdacsupplementalpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceAppManagementWdacSupplementalPolicy
 ---
@@ -54,13 +54,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to wdacSupplementalPolicies for deviceAppManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -614,7 +616,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy>`: windowsDefenderApplicationControlSupplementalPolicy
+BODYPARAMETER <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy>: windowsDefenderApplicationControlSupplementalPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -653,7 +655,7 @@ Read-only.
   [RoleScopeTagIds <String[]>]: List of Scope Tags for the Windows Defender Application Control Supplemental Policy entity.
   [Version <String>]: Indicates the Windows Defender Application Control Supplemental Policy's version.
 
-DEPLOYSUMMARY `<IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentSummary>`: Contains properties for the deployment summary of a WindowsDefenderApplicationControl supplemental policy.
+DEPLOYSUMMARY <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentSummary>: Contains properties for the deployment summary of a WindowsDefenderApplicationControl supplemental policy.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -703,26 +705,3 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwdacsupplementalpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

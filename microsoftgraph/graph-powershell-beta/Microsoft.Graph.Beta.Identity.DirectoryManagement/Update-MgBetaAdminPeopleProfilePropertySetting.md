@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilepropertysetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminPeopleProfilePropertySetting
 ---
@@ -70,18 +70,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a profilePropertySetting object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PeopleSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PeopleSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -94,10 +85,6 @@ $params = @{
 }
 
 Update-MgBetaAdminPeopleProfilePropertySetting -ProfilePropertySettingId $profilePropertySettingId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaAdminPeopleProfilePropertySetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -594,7 +581,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphProfilePropertySetting>`: profilePropertySetting
+BODYPARAMETER <IMicrosoftGraphProfilePropertySetting>: profilePropertySetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -603,7 +590,7 @@ Read-only.
   [Name <String>]: Name of the property-level setting.
   [PrioritizedSourceUrls <String[]>]: A collection of prioritized profile source URLs ordered by data precedence within an organization.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -663,25 +650,3 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilepropertysetting)
 - [](https://learn.microsoft.com/graph/api/profilepropertysetting-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

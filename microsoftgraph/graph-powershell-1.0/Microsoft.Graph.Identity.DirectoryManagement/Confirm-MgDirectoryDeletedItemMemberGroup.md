@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdirectorydeleteditemmembergroup
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgDirectoryDeletedItemMemberGroup
 ---
@@ -14,13 +14,10 @@ title: Confirm-MgDirectoryDeletedItemMemberGroup
 ## SYNOPSIS
 
 Check for membership in a specified list of group IDs, and return from that list the IDs of groups where a specified object is a member.
-The specified object can be of one of the following types:- user- group- service principal- organizational contact- device- directory object This function is transitive.
+The specified object can be of one of the following types:\n- user\n- group\n- service principal\n- organizational contact\n- device\n- directory object This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaDirectoryDeletedItemMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaDirectoryDeletedItemMemberGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -74,10 +71,20 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Check for membership in a specified list of group IDs, and return from that list the IDs of groups where a specified object is a member.
-The specified object can be of one of the following types:- user- group- service principal- organizational contact- device- directory object This function is transitive.
+The specified object can be of one of the following types:\n- user\n- group\n- service principal\n- organizational contact\n- device\n- directory object This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -110,7 +117,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -208,7 +215,7 @@ HelpMessage: ''
 
 ### -GroupIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -465,11 +472,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths741T6WDirectoryDeleteditemsDirectoryobjectIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths741T6WDirectoryDeleteditemsDirectoryobjectIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GroupIds <String[]>]: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -506,26 +513,3 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdirectorydeleteditemmembergroup)
 - [](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

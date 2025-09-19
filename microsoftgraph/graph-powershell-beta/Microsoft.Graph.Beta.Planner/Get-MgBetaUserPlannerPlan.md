@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerplan
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserPlannerPlan
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaUserPlannerPlan
 ## SYNOPSIS
 
 Get plans from users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerPlan?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,27 +37,14 @@ This cmdlet has the following aliases,
 
 Get plans from users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.ReadWrite.All, Group.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPlannerPlan -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserPlannerPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -494,25 +478,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerplan)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyassignment
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementDeviceCompliancePolicyAssignment
 ---
@@ -14,9 +14,6 @@ title: New-MgDeviceManagementDeviceCompliancePolicyAssignment
 ## SYNOPSIS
 
 Create a new deviceCompliancePolicyAssignment object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -71,18 +68,9 @@ This cmdlet has the following aliases,
 
 Create a new deviceCompliancePolicyAssignment object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -95,10 +83,6 @@ $params = @{
 }
 
 New-MgDeviceManagementDeviceCompliancePolicyAssignment -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementDeviceCompliancePolicyAssignment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -514,14 +498,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicyAssignment>`: Device compliance policy assignment.
+BODYPARAMETER <IMicrosoftGraphDeviceCompliancePolicyAssignment>: Device compliance policy assignment.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -561,25 +545,3 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyassignment)
 - [](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-create?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

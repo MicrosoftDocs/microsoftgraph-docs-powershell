@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationtokenissuancepolicytokenissuancepolicybyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef
 ## SYNOPSIS
 
 Remove a tokenIssuancePolicy from an application.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,26 +48,13 @@ This cmdlet has the following aliases,
 
 Remove a tokenIssuancePolicy from an application.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef -ApplicationId $applicationId -TokenIssuancePolicyId $tokenIssuancePolicyId
-
-```
-This example shows how to use the Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -424,7 +408,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -466,25 +450,3 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationtokenissuancepolicytokenissuancepolicybyref)
 - [](https://learn.microsoft.com/graph/api/application-delete-tokenissuancepolicies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

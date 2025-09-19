@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpoint
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupEndpoint
 ---
@@ -55,26 +55,13 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a specific endpoint object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group.Read.All, Group.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupEndpoint -GroupId $groupId
-
-```
-This example shows how to use the Get-MgBetaGroupEndpoint Cmdlet.
-
 
 ## PARAMETERS
 
@@ -563,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -593,25 +580,3 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpoint)
 - [](https://learn.microsoft.com/graph/api/endpoint-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/group-list-endpoints?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

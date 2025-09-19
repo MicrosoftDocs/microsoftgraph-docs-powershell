@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationClassDelta
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaEducationClassDelta
 
 Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection.
 See Use delta query for details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,26 +39,13 @@ This cmdlet has the following aliases,
 Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection.
 See Use delta query for details.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.ReadWrite, EduRoster.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.ReadBasic.All, EduRoster.ReadWrite.All, EduRoster.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassDelta
-
-```
-This example shows how to use the Get-MgBetaEducationClassDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -475,25 +459,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassdelta)
 - [](https://learn.microsoft.com/graph/api/educationclass-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

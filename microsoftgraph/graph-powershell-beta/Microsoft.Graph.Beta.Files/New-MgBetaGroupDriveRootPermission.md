@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriverootpermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupDriveRootPermission
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaGroupDriveRootPermission
 ## SYNOPSIS
 
 Create new navigation property to permissions for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -79,6 +76,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to permissions for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -809,7 +816,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPermission>`: permission
+BODYPARAMETER <IMicrosoftGraphPermission>: permission
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -901,7 +908,7 @@ Read-only.
   [ShareId <String>]: A unique token that can be used to access this shared item via the shares API.
 Read-only.
 
-GRANTEDTO `<IMicrosoftGraphIdentitySet>`: identitySet
+GRANTEDTO <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -943,7 +950,7 @@ This property is read-only.
     [LoginName <String>]: The sign in name of the SharePoint identity.
   [SiteUser <IMicrosoftGraphSharePointIdentity>]: sharePointIdentity
 
-GRANTEDTOV2 `<IMicrosoftGraphSharePointIdentitySet>`: sharePointIdentitySet
+GRANTEDTOV2 <IMicrosoftGraphSharePointIdentitySet>: sharePointIdentitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -963,7 +970,7 @@ This property is read-only.
     [LoginName <String>]: The sign in name of the SharePoint identity.
   [SiteUser <IMicrosoftGraphSharePointIdentity>]: sharePointIdentity
 
-INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
+INHERITEDFROM <IMicrosoftGraphItemReference>: itemReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DriveId <String>]: Unique identifier of the drive instance that contains the driveItem.
 Only returned if the item is located in a drive.
@@ -992,7 +999,7 @@ The value is the same as the id property of that site resource.
 It's an opaque string that consists of three identifiers of the site.
 For OneDrive, this property isn't populated.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -1019,7 +1026,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [Token <String>]: Usage: token='{token}'
   [UserId <String>]: The unique identifier of user
 
-INVITATION `<IMicrosoftGraphSharingInvitation>`: sharingInvitation
+INVITATION <IMicrosoftGraphSharingInvitation>: sharingInvitation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Email <String>]: The email address provided for the recipient of the sharing invitation.
 Read-only.
@@ -1037,7 +1044,7 @@ This property is read-only.
   [SignInRequired <Boolean?>]: If true the recipient of the invitation needs to sign in in order to access the shared item.
 Read-only.
 
-LINK `<IMicrosoftGraphSharingLink>`: sharingLink
+LINK <IMicrosoftGraphSharingLink>: sharingLink
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1058,26 +1065,3 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriverootpermission)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

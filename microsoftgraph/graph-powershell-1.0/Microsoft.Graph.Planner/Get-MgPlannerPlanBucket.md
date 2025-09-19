@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplanbucket
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlannerPlanBucket
 ---
@@ -14,9 +14,6 @@ title: Get-MgPlannerPlanBucket
 ## SYNOPSIS
 
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlannerPlanBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanBucket?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,26 +37,13 @@ This cmdlet has the following aliases,
 
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.ReadWrite.All, Group.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Planner
 
 Get-MgPlannerPlanBucket -PlannerPlanId $plannerPlanId
-
-```
-This example shows how to use the Get-MgPlannerPlanBucket Cmdlet.
-
 
 ## PARAMETERS
 
@@ -494,25 +478,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplanbucket)
 - [](https://learn.microsoft.com/graph/api/plannerplan-list-buckets?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

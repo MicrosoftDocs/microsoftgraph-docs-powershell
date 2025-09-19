@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicyallowedcombination
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination
 ---
@@ -15,9 +15,6 @@ title: Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination
 
 Update the allowedCombinations property of an authenticationStrengthPolicy object.
 To update other properties of an authenticationStrengthPolicy object, use the Update authenticationStrengthPolicy method.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ This cmdlet has the following aliases,
 Update the allowedCombinations property of an authenticationStrengthPolicy object.
 To update other properties of an authenticationStrengthPolicy object, use the Update authenticationStrengthPolicy method.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -99,10 +87,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination Cmdlet.
-
 
 ## PARAMETERS
 
@@ -135,7 +119,7 @@ HelpMessage: ''
 
 ### -AllowedCombinations
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -189,7 +173,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -490,11 +474,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Uurx0PoliciesAuthenticationstrengthpoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Uurx0PoliciesAuthenticationstrengthpoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedCombinations <String[]>]: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -583,25 +567,3 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicyallowedcombination)
 - [](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-updateallowedcombinations?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

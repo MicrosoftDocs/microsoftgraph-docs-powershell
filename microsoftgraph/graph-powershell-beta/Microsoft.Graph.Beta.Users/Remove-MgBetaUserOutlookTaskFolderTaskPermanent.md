@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskfoldertaskpermanent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserOutlookTaskFolderTaskPermanent
 ---
@@ -52,6 +52,16 @@ Permanently delete an Outlook task and place it in the Purges folder in the user
 Email clients such as Outlook or the Outlook on the web can't access permanently deleted items.
 Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -404,7 +414,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -439,26 +449,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskfoldertaskpermanent)
 - [](https://learn.microsoft.com/graph/api/outlooktask-permanentdelete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

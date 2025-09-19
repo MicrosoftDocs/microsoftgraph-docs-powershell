@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplephotoupdatesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAdminPeoplePhotoUpdateSetting
 ---
@@ -35,13 +35,15 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a photoUpdateSettings object.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -283,26 +285,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplephotoupdatesetting)
 - [](https://learn.microsoft.com/graph/api/photoupdatesettings-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

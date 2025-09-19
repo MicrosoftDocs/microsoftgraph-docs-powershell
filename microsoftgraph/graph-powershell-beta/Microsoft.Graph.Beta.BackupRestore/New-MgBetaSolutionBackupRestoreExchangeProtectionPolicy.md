@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreexchangeprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreExchangeProtectionPolicy
 ---
@@ -16,9 +16,6 @@ title: New-MgBetaSolutionBackupRestoreExchangeProtectionPolicy
 Create a protection policy for the Exchange service in a Microsoft 365 tenant.
 The policy is set to inactive when it is created.
 Users can also provide a list of protection units under the policy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreExchangeProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreExchangeProtectionPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,6 +56,16 @@ Create a protection policy for the Exchange service in a Microsoft 365 tenant.
 The policy is set to inactive when it is created.
 Users can also provide a list of protection units under the policy.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -84,7 +91,7 @@ HelpMessage: ''
 
 ### -BillingPolicyId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -406,7 +413,7 @@ HelpMessage: ''
 
 ### -MailboxProtectionUnitsBulkAdditionJobs
 
-
+.
 To construct, see NOTES section for MAILBOXPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -606,7 +613,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphExchangeProtectionPolicy>`: exchangeProtectionPolicy
+BODYPARAMETER <IMicrosoftGraphExchangeProtectionPolicy>: exchangeProtectionPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BillingPolicyId <String>]: 
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -682,7 +689,7 @@ Read-only.
     [DirectoryObjectIds <String[]>]: The list of Exchange directoryObjectIds to add to the Exchange protection policy.
     [Mailboxes <String[]>]: The list of Exchange email addresses to add to the Exchange protection policy.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -693,7 +700,7 @@ This property is read-only.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -823,26 +830,3 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting[]>: Contains the retention se
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreexchangeprotectionpolicy)
 - [](https://learn.microsoft.com/graph/api/backuprestoreroot-post-exchangeprotectionpolicies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

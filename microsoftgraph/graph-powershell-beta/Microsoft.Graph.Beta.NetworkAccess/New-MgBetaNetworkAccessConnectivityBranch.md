@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranch
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessConnectivityBranch
 ---
@@ -51,18 +51,9 @@ This cmdlet has the following aliases,
 
 Create a new branch.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | NetworkAccess.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -74,10 +65,6 @@ $params = @{
 }
 
 New-MgBetaNetworkAccessConnectivityBranch -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaNetworkAccessConnectivityBranch Cmdlet.
-
 
 ## PARAMETERS
 
@@ -606,7 +593,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessBranchSite>`: branchSite
+BODYPARAMETER <IMicrosoftGraphNetworkaccessBranchSite>: branchSite
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -832,8 +819,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -1161,8 +1148,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -1501,7 +1488,7 @@ Read-only.
   [Region <String>]: region
   [Version <String>]: The branch version.
 
-CONNECTIVITYCONFIGURATION `<IMicrosoftGraphNetworkaccessBranchConnectivityConfiguration>`: branchConnectivityConfiguration
+CONNECTIVITYCONFIGURATION <IMicrosoftGraphNetworkaccessBranchConnectivityConfiguration>: branchConnectivityConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BranchId <String>]: Unique identifier or a specific reference assigned to a branchSite.
 Key.
@@ -1720,8 +1707,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -2049,8 +2036,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
       [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -2390,25 +2377,3 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranch)
 - [](https://learn.microsoft.com/graph/api/networkaccess-connectivity-post-branches?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

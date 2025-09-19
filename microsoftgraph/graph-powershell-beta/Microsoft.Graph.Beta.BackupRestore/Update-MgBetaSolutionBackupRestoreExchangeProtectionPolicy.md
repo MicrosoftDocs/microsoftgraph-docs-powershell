@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreexchangeprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy
 ---
@@ -15,9 +15,6 @@ title: Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy
 
 Update an Exchange protection policy.
 This method adds a mailboxprotectionunit to or removes it from the protection policy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreExchangeProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreExchangeProtectionPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -83,6 +80,16 @@ This cmdlet has the following aliases,
 Update an Exchange protection policy.
 This method adds a mailboxprotectionunit to or removes it from the protection policy.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -114,7 +121,7 @@ HelpMessage: ''
 
 ### -BillingPolicyId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -551,7 +558,7 @@ HelpMessage: ''
 
 ### -MailboxProtectionUnitsBulkAdditionJobs
 
-
+.
 To construct, see NOTES section for MAILBOXPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -773,7 +780,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphExchangeProtectionPolicy>`: exchangeProtectionPolicy
+BODYPARAMETER <IMicrosoftGraphExchangeProtectionPolicy>: exchangeProtectionPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BillingPolicyId <String>]: 
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -849,7 +856,7 @@ Read-only.
     [DirectoryObjectIds <String[]>]: The list of Exchange directoryObjectIds to add to the Exchange protection policy.
     [Mailboxes <String[]>]: The list of Exchange email addresses to add to the Exchange protection policy.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -860,7 +867,7 @@ This property is read-only.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -889,7 +896,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [SiteRestoreArtifactId <String>]: The unique identifier of siteRestoreArtifact
   [SiteRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1019,26 +1026,3 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting[]>: Contains the retention se
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreexchangeprotectionpolicy)
 - [](https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

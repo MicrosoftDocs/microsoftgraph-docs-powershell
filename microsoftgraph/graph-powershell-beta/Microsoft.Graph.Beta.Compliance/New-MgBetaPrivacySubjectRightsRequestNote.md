@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequestnote
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPrivacySubjectRightsRequestNote
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaPrivacySubjectRightsRequestNote
 ## SYNOPSIS
 
 Create a new authoredNote object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/New-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,9 +71,8 @@ This cmdlet has the following aliases,
 Create a new authoredNote object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
@@ -88,10 +84,6 @@ $params = @{
 }
 
 New-MgBetaPrivacySubjectRightsRequestNote -SubjectRightsRequestId $subjectRightsRequestId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPrivacySubjectRightsRequestNote Cmdlet.
-
 
 ## PARAMETERS
 
@@ -565,14 +557,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHOR `<IMicrosoftGraphIdentity>`: identity
+AUTHOR <IMicrosoftGraphIdentity>: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 This property is read-only.
   [Id <String>]: The identifier of the identity.
 This property is read-only.
 
-BODYPARAMETER `<IMicrosoftGraphAuthoredNote>`: authoredNote
+BODYPARAMETER <IMicrosoftGraphAuthoredNote>: authoredNote
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -590,12 +582,12 @@ This property is read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-CONTENT `<IMicrosoftGraphItemBody>`: itemBody
+CONTENT <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [CaseId <String>]: The unique identifier of case
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -620,25 +612,3 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequestnote)
 - [](https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyserviceprincipalhistory
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgRiskyServicePrincipalHistory
 ---
@@ -14,9 +14,6 @@ title: Get-MgRiskyServicePrincipalHistory
 ## SYNOPSIS
 
 Represents the risk history of Microsoft Entra service principals.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,17 +58,12 @@ This cmdlet has the following aliases,
 Represents the risk history of Microsoft Entra service principals.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgRiskyServicePrincipalHistory -RiskyServicePrincipalId $riskyServicePrincipalId
-
-```
-This example shows how to use the Get-MgRiskyServicePrincipalHistory Cmdlet.
-
 
 ## PARAMETERS
 
@@ -560,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -627,25 +619,3 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyserviceprincipalhistory)
 - [](https://learn.microsoft.com/graph/api/riskyserviceprincipal-list-history?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamessageuserchat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaMessageUserChat
 ---
@@ -46,13 +46,15 @@ This cmdlet has the following aliases,
 
 Invoke function allMessages
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ReadBasic, Chat.ReadWrite, Chat.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.ReadBasic.WhereInstalled, ChatSettings.ReadWrite.Chat, ChatSettings.Read.Chat, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -470,7 +472,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -521,26 +523,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamessageuserchat)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

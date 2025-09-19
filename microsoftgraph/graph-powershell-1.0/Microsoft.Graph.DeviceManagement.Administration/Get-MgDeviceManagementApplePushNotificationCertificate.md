@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementapplepushnotificationcertificate
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementApplePushNotificationCertificate
 ---
@@ -14,9 +14,6 @@ title: Get-MgDeviceManagementApplePushNotificationCertificate
 ## SYNOPSIS
 
 Read properties and relationships of the applePushNotificationCertificate object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementApplePushNotificationCertificate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,26 +35,13 @@ This cmdlet has the following aliases,
 
 Read properties and relationships of the applePushNotificationCertificate object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Get-MgDeviceManagementApplePushNotificationCertificate
-
-```
-This example shows how to use the Get-MgDeviceManagementApplePushNotificationCertificate Cmdlet.
-
 
 ## PARAMETERS
 
@@ -299,25 +283,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementapplepushnotificationcertificate)
 - [](https://learn.microsoft.com/graph/api/intune-devices-applepushnotificationcertificate-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmeassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgEducationMeAssignment
 ---
@@ -14,9 +14,6 @@ title: New-MgEducationMeAssignment
 ## SYNOPSIS
 
 Create new navigation property to assignments for education
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,6 +54,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to assignments for education
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -833,7 +840,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationAssignment>`: educationAssignment
+BODYPARAMETER <IMicrosoftGraphEducationAssignment>: educationAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -958,7 +965,7 @@ Nullable.
 Read-only.
   [DisplayName <String>]: Unique identifier for the category.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -969,19 +976,19 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-GRADINGCATEGORY `<IMicrosoftGraphEducationGradingCategory>`: educationGradingCategory
+GRADINGCATEGORY <IMicrosoftGraphEducationGradingCategory>: educationGradingCategory
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DisplayName <String>]: The name of the grading category.
   [PercentageWeight <Int32?>]: The weight of the category; an integer between 0 and 100.
 
-INSTRUCTIONS `<IMicrosoftGraphEducationItemBody>`: educationItemBody
+INSTRUCTIONS <IMicrosoftGraphEducationItemBody>: educationItemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: 
   [ContentType <String>]: bodyType
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1014,7 +1021,7 @@ For example, in the access reviews decisions API, this property might record the
     [DisplayName <String>]: Display name of resource.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
 
-RUBRIC `<IMicrosoftGraphEducationRubric>`: educationRubric
+RUBRIC <IMicrosoftGraphEducationRubric>: educationRubric
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1095,26 +1102,3 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmeassignment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

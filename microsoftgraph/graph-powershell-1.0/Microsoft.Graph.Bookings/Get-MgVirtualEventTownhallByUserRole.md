@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallbyuserrole
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgVirtualEventTownhallByUserRole
 ---
@@ -14,9 +14,6 @@ title: Get-MgVirtualEventTownhallByUserRole
 ## SYNOPSIS
 
 Get a list of virtualEventTownhall objects where the signed-in user is either the organizer or a coorganizer.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhallByUserRole](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhallByUserRole?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a list of virtualEventTownhall objects where the signed-in user is either the organizer or a coorganizer.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -466,7 +473,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -492,26 +499,3 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallbyuserrole)
 - [](https://learn.microsoft.com/graph/api/virtualeventtownhall-getbyuserrole?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

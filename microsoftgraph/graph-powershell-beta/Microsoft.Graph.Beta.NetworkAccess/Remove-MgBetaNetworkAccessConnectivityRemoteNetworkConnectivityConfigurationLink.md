@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfigurationlink
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
 ---
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property links for networkAccess
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -399,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -428,26 +438,3 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfigurationlink)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

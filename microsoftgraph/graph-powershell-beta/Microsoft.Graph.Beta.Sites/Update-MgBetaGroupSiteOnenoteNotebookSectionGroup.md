@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteonenotenotebooksectiongroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaGroupSiteOnenoteNotebookSectionGroup
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaGroupSiteOnenoteNotebookSectionGroup
 ## SYNOPSIS
 
 Update the navigation property sectionGroups in groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -80,6 +77,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property sectionGroups in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -211,7 +218,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -238,7 +245,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -439,7 +446,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -777,7 +784,7 @@ HelpMessage: ''
 
 ### -Self
 
-
+.
 
 ```yaml
 Type: System.String
@@ -885,7 +892,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSectionGroup>`: sectionGroup
+BODYPARAMETER <IMicrosoftGraphSectionGroup>: sectionGroup
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -994,7 +1001,7 @@ Nullable.
   [SectionsUrl <String>]: The URL for the sections navigation property, which returns all the sections in the section group.
 Read-only.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1005,7 +1012,7 @@ This property is read-only.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -1066,7 +1073,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WebPartId <String>]: The unique identifier of webPart
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1077,7 +1084,7 @@ This property is read-only.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-PARENTNOTEBOOK `<IMicrosoftGraphNotebook>`: notebook
+PARENTNOTEBOOK <IMicrosoftGraphNotebook>: notebook
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1185,7 +1192,7 @@ Nullable.
 Read-only.
   [UserRole <String>]: onenoteUserRole
 
-PARENTSECTIONGROUP `<IMicrosoftGraphSectionGroup>`: sectionGroup
+PARENTSECTIONGROUP <IMicrosoftGraphSectionGroup>: sectionGroup
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1518,26 +1525,3 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteonenotenotebooksectiongroup)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

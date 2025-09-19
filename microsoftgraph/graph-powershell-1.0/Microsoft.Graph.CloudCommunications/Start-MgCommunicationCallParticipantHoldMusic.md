@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/start-mgcommunicationcallparticipantholdmusic
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Start-MgCommunicationCallParticipantHoldMusic
 ---
@@ -70,18 +70,9 @@ This cmdlet has the following aliases,
 
 Put a participant on hold and play music in the background.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Calls.JoinGroupCallasGuest.All, Calls.JoinGroupCall.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -97,10 +88,6 @@ $params = @{
 }
 
 Start-MgCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params
-
-```
-This example shows how to use the Start-MgCommunicationCallParticipantHoldMusic Cmdlet.
-
 
 ## PARAMETERS
 
@@ -133,7 +120,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -209,7 +196,7 @@ HelpMessage: ''
 
 ### -ClientContext
 
-
+.
 
 ```yaml
 Type: System.String
@@ -542,13 +529,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsKtcw9WCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStartholdmusicPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsKtcw9WCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStartholdmusicPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ClientContext <String>]: 
   [CustomPrompt <IMicrosoftGraphPrompt>]: prompt
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
   [CallId <String>]: The unique identifier of call
@@ -569,25 +556,3 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/start-mgcommunicationcallparticipantholdmusic)
 - [](https://learn.microsoft.com/graph/api/participant-startholdmusic?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

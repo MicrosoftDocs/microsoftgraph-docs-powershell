@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider
 ---
@@ -14,9 +14,6 @@ title: Get-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExt
 ## SYNOPSIS
 
 Get the identity providers that are defined for an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object type.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,17 +39,12 @@ This cmdlet has the following aliases,
 Get the identity providers that are defined for an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object type.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider -AuthenticationEventsFlowId $authenticationEventsFlowId
-
-```
-This example shows how to use the Get-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider Cmdlet.
-
 
 ## PARAMETERS
 
@@ -487,25 +479,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityprovider)
 - [](https://learn.microsoft.com/graph/api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostinreplytoextension
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupConversationThreadPostInReplyToExtension
 ---
@@ -14,9 +14,6 @@ title: New-MgGroupConversationThreadPostInReplyToExtension
 ## SYNOPSIS
 
 Create new navigation property to extensions for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupConversationThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThreadPostInReplyToExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -70,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to extensions for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -538,7 +545,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -563,26 +570,3 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostinreplytoextension)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

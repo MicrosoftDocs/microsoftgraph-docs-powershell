@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenlifetimepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgApplicationTokenLifetimePolicy
 ---
@@ -15,9 +15,6 @@ title: Get-MgApplicationTokenLifetimePolicy
 
 List the tokenLifetimePolicy objects that are assigned to an application.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenLifetimePolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,26 +39,13 @@ This cmdlet has the following aliases,
 List the tokenLifetimePolicy objects that are assigned to an application.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
 Get-MgApplicationTokenLifetimePolicy -ApplicationId $applicationId
-
-```
-This example shows how to use the Get-MgApplicationTokenLifetimePolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -497,25 +481,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenlifetimepolicy)
 - [](https://learn.microsoft.com/graph/api/application-list-tokenlifetimepolicies?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

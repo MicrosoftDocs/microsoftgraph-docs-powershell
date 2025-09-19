@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementmobilethreatdefenseconnector
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementMobileThreatDefenseConnector
 ---
@@ -14,9 +14,6 @@ title: Get-MgDeviceManagementMobileThreatDefenseConnector
 ## SYNOPSIS
 
 Read properties and relationships of the mobileThreatDefenseConnector object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,26 +57,13 @@ This cmdlet has the following aliases,
 
 Read properties and relationships of the mobileThreatDefenseConnector object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Get-MgDeviceManagementMobileThreatDefenseConnector
-
-```
-This example shows how to use the Get-MgDeviceManagementMobileThreatDefenseConnector Cmdlet.
-
 
 ## PARAMETERS
 
@@ -541,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -576,25 +560,3 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementmobilethreatdefenseconnector)
 - [](https://learn.microsoft.com/graph/api/intune-onboarding-mobilethreatdefenseconnector-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/intune-onboarding-mobilethreatdefenseconnector-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

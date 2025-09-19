@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyrolemanagementpolicyrule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyRoleManagementPolicyRule
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaPolicyRoleManagementPolicyRule
 
 Retrieve a rule defined for a role management policy.
 The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object:
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyRoleManagementPolicyRule](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyRule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -63,37 +60,19 @@ This cmdlet has the following aliases,
 Retrieve a rule defined for a role management policy.
 The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object:
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagementPolicy.Read.Directory, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Retrieve a rule defined for a policy in PIM for Azure AD roles
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId
-
-```
-This example will retrieve a rule defined for a policy in pim for azure ad roles
-
-### Example 2: Retrieve a rule defined for a policy in PIM for groups
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId
 
-```
-This example will retrieve a rule defined for a policy in pim for groups
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId
 
 ## PARAMETERS
 
@@ -582,7 +561,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -672,25 +651,3 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyrolemanagementpolicyrule)
 - [](https://learn.microsoft.com/graph/api/unifiedrolemanagementpolicyrule-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/unifiedrolemanagementpolicy-list-rules?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

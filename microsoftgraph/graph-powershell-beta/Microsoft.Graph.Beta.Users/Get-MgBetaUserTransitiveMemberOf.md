@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivememberof
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserTransitiveMemberOf
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaUserTransitiveMemberOf
 
 The groups, including nested groups and directory roles that a user is a member of.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTransitiveMemberOf](/powershell/module/Microsoft.Graph.Users/Get-MgUserTransitiveMemberOf?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -64,17 +61,12 @@ The groups, including nested groups and directory roles that a user is a member 
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users
 
 Get-MgBetaUserTransitiveMemberOf -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserTransitiveMemberOf Cmdlet.
-
 
 ## PARAMETERS
 
@@ -585,7 +577,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -620,25 +612,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivememberof)
 - [](https://learn.microsoft.com/graph/api/user-list-transitivememberof?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

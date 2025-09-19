@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserteamwork
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserTeamwork
 ---
@@ -14,9 +14,6 @@ title: Update-MgUserTeamwork
 ## SYNOPSIS
 
 Update the navigation property teamwork in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserTeamwork?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -70,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property teamwork in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1410,7 +1417,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -4695,8 +4702,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -5606,7 +5613,7 @@ This URL should be treated as an opaque blob, and not parsed.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphUserTeamwork>`: userTeamwork
+BODYPARAMETER <IMicrosoftGraphUserTeamwork>: userTeamwork
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -6446,7 +6453,7 @@ Always set to en-us.
                 [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                   [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                   [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                   [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -9712,8 +9719,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -10638,7 +10645,7 @@ For users with multigeo licenses, the property contains the user's region (if av
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
 The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -10823,7 +10830,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -10942,26 +10949,3 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserteamwork)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

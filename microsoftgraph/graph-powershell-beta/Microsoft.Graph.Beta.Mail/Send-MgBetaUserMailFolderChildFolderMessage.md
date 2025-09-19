@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/send-mgbetausermailfolderchildfoldermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Send-MgBetaUserMailFolderChildFolderMessage
 ---
@@ -17,9 +17,6 @@ Send an existing draft message.
 The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft.
 This method saves the message in the Sent Items folder.
 Alternatively, send a new message in a single operation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Send-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Mail/Send-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -55,6 +52,16 @@ Send an existing draft message.
 The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft.
 This method saves the message in the Sent Items folder.
 Alternatively, send a new message in a single operation.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -428,7 +435,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -446,26 +453,3 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/send-mgbetausermailfolderchildfoldermessage)
 - [](https://learn.microsoft.com/graph/api/message-send?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

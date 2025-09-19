@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/restore-mgdirectorydeleteditem
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Restore-MgDirectoryDeletedItem
 ---
@@ -15,10 +15,7 @@ title: Restore-MgDirectoryDeletedItem
 
 Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 Restore a recently deleted directory object from deleted items.
-The following types are supported:- administrativeUnit- application- certificateBasedAuthPki- certificateAuthorityDetail- group- servicePrincipal
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Restore-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
+The following types are supported:\n- administrativeUnit\n- application\n- certificateBasedAuthPki\n- certificateAuthorityDetail\n- group\n- servicePrincipal
 
 ## SYNTAX
 
@@ -50,31 +47,17 @@ This cmdlet has the following aliases,
 
 Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 Restore a recently deleted directory object from deleted items.
-The following types are supported:- administrativeUnit- application- certificateBasedAuthPki- certificateAuthorityDetail- group- servicePrincipal
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.DeleteRestore.All, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.DeleteRestore.All, User.ReadWrite.CrossCloud, User.ReadWrite.All,  |
+The following types are supported:\n- administrativeUnit\n- application\n- certificateBasedAuthPki\n- certificateAuthorityDetail\n- group\n- servicePrincipal
 
 ## EXAMPLES
-### Example 1: Restore a deleted item
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Restore-MgDirectoryDeletedItem -DirectoryObjectId $directoryObjectId
 
-```
-This example will restore a deleted item
-
-### Example 2: Restore a deleted item and remove any conflicting proxy addresses
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -83,10 +66,6 @@ $params = @{
 }
 
 Restore-MgDirectoryDeletedItem -DirectoryObjectId $directoryObjectId -BodyParameter $params
-
-```
-This example will restore a deleted item and remove any conflicting proxy addresses
-
 
 ## PARAMETERS
 
@@ -376,7 +355,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -413,25 +392,3 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/restore-mgdirectorydeleteditem)
 - [](https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

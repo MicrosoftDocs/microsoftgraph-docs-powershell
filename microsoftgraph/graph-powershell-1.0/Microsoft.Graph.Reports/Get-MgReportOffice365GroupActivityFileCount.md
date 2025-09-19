@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivityfilecount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportOffice365GroupActivityFileCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgReportOffice365GroupActivityFileCount
 ## SYNOPSIS
 
 Get the total number of files and how many of them were active across all group sites associated with a Microsoft 365 group.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365GroupActivityFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityFileCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,17 +45,12 @@ This cmdlet has the following aliases,
 Get the total number of files and how many of them were active across all group sites associated with a Microsoft 365 group.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportOffice365GroupActivityFileCount -Period $periodId 
-
-```
-This example shows how to use the Get-MgReportOffice365GroupActivityFileCount Cmdlet.
-
+Get-MgReportOffice365GroupActivityFileCount -Period $periodId
 
 ## PARAMETERS
 
@@ -346,7 +338,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -375,25 +367,3 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivityfilecount)
 - [](https://learn.microsoft.com/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

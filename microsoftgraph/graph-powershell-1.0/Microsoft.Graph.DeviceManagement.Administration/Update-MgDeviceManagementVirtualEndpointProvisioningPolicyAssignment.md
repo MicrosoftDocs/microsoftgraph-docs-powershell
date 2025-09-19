@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointprovisioningpolicyassignment
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment
 ## SYNOPSIS
 
 Update the navigation property assignments in deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,6 +72,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property assignments in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1366,7 +1373,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -5571,8 +5578,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -5582,7 +5589,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for members and guests, see What are the default user permissions in Microsoft Entra ID?
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicyAssignment>`: cloudPcProvisioningPolicyAssignment
+BODYPARAMETER <IMicrosoftGraphCloudPcProvisioningPolicyAssignment>: cloudPcProvisioningPolicyAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -6404,7 +6411,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -10609,8 +10616,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -10622,7 +10629,7 @@ NOTE: For more information about the permissions for members and guests, see Wha
   [Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]: cloudPcManagementAssignmentTarget
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -10655,26 +10662,3 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointprovisioningpolicyassignment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

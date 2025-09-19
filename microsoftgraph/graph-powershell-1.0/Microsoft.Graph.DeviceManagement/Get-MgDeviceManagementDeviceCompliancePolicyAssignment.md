@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicyassignment
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementDeviceCompliancePolicyAssignment
 ---
@@ -14,9 +14,6 @@ title: Get-MgDeviceManagementDeviceCompliancePolicyAssignment
 ## SYNOPSIS
 
 Read properties and relationships of the deviceCompliancePolicyAssignment object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,26 +58,13 @@ This cmdlet has the following aliases,
 
 Read properties and relationships of the deviceCompliancePolicyAssignment object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Get-MgDeviceManagementDeviceCompliancePolicyAssignment -DeviceCompliancePolicyId $deviceCompliancePolicyId
-
-```
-This example shows how to use the Get-MgDeviceManagementDeviceCompliancePolicyAssignment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -569,7 +553,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -610,25 +594,3 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicyassignment)
 - [](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

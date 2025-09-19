@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianunifiedgroupsourcegroupserviceprovisioningerror
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningError
 ---
@@ -37,6 +37,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -512,26 +522,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianunifiedgroupsourcegroupserviceprovisioningerror)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

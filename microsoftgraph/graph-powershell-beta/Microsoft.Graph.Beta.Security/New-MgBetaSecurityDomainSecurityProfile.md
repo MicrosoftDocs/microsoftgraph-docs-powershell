@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydomainsecurityprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityDomainSecurityProfile
 ---
@@ -51,11 +51,21 @@ This cmdlet has the following aliases,
 
 Create new navigation property to domainSecurityProfiles for security
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -ActivityGroupNames
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -97,7 +107,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -118,7 +128,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -204,7 +214,7 @@ HelpMessage: ''
 
 ### -CountHits
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -225,7 +235,7 @@ HelpMessage: ''
 
 ### -CountInOrg
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -246,7 +256,7 @@ HelpMessage: ''
 
 ### -DomainCategories
 
-
+.
 To construct, see NOTES section for DOMAINCATEGORIES properties and create a hash table.
 
 ```yaml
@@ -268,7 +278,7 @@ HelpMessage: ''
 
 ### -DomainRegisteredDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -289,7 +299,7 @@ HelpMessage: ''
 
 ### -FirstSeenDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -395,7 +405,7 @@ HelpMessage: ''
 
 ### -LastSeenDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -416,7 +426,7 @@ HelpMessage: ''
 
 ### -Name
 
-
+.
 
 ```yaml
 Type: System.String
@@ -544,7 +554,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-
+.
 
 ```yaml
 Type: System.String
@@ -565,7 +575,7 @@ HelpMessage: ''
 
 ### -Tags
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -658,7 +668,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDomainSecurityProfile>`: domainSecurityProfile
+BODYPARAMETER <IMicrosoftGraphDomainSecurityProfile>: domainSecurityProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -697,14 +707,14 @@ DOMAINCATEGORIES <IMicrosoftGraphReputationCategory[]>: .
   [Name <String>]: 
   [Vendor <String>]: 
 
-REGISTRANT `<IMicrosoftGraphDomainRegistrant>`: domainRegistrant
+REGISTRANT <IMicrosoftGraphDomainRegistrant>: domainRegistrant
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CountryOrRegionCode <String>]: 
   [Organization <String>]: 
   [Url <String>]: 
   [Vendor <String>]: 
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -717,26 +727,3 @@ Required
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydomainsecurityprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

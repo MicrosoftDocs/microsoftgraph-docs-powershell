@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethoduserpasswordresetandchangesummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary
 ---
@@ -58,6 +58,16 @@ This cmdlet has the following aliases,
 
 Represents the summary of password resets and changes for a specific day.
 This includes the number of password resets that were self-service and those triggered by an administrator.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -519,7 +529,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -577,26 +587,3 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethoduserpasswordresetandchangesummary)
 - [](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-userpasswordresetsandchangessummary?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

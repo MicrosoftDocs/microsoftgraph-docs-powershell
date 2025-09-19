@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/test-mgidentityconditionalaccess
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Test-MgIdentityConditionalAccess
 ---
@@ -49,13 +49,15 @@ This cmdlet has the following aliases,
 
 Evaluates the applicability of Conditional Access Policies in your tenant based on the provided sign-in properties.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -82,7 +84,7 @@ HelpMessage: ''
 
 ### -AppliedPoliciesOnly
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +105,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -430,7 +432,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsDqhne3IdentityConditionalaccessMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsDqhne3IdentityConditionalaccessMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppliedPoliciesOnly <Boolean?>]: 
   [SignInConditions <IMicrosoftGraphSignInConditions>]: signInConditions
@@ -484,7 +486,7 @@ This property is set by Intune.
   [SignInIdentity <IMicrosoftGraphSignInIdentity>]: signInIdentity
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-SIGNINCONDITIONS `<IMicrosoftGraphSignInConditions>`: signInConditions
+SIGNINCONDITIONS <IMicrosoftGraphSignInConditions>: signInConditions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthenticationFlow <IMicrosoftGraphAuthenticationFlow>]: authenticationFlow
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -536,26 +538,3 @@ This property is set by Intune.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/test-mgidentityconditionalaccess)
 - [](https://learn.microsoft.com/graph/api/conditionalaccessroot-evaluate?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

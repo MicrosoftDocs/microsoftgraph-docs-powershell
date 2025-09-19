@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorypublickeyinfrastructure
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgDirectoryPublicKeyInfrastructure
 ---
@@ -14,9 +14,6 @@ title: Get-MgDirectoryPublicKeyInfrastructure
 ## SYNOPSIS
 
 The collection of public key infrastructure instances for the certificate-based authentication feature for users in a Microsoft Entra tenant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryPublicKeyInfrastructure](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryPublicKeyInfrastructure?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The collection of public key infrastructure instances for the certificate-based authentication feature for users in a Microsoft Entra tenant.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -277,26 +284,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorypublickeyinfrastructure)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

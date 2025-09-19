@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileanniversary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserProfileAnniversary
 ---
@@ -74,18 +74,9 @@ This cmdlet has the following aliases,
 
 Create new navigation property to anniversaries for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | User.ReadWrite,  |
-| Application | User.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.People
 
@@ -96,10 +87,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileAnniversary -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaUserProfileAnniversary Cmdlet.
-
 
 ## PARAMETERS
 
@@ -285,7 +272,7 @@ HelpMessage: ''
 
 ### -Date
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -312,7 +299,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -486,7 +473,7 @@ HelpMessage: ''
 
 ### -IsSearchable
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -817,7 +804,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPersonAnnualEvent>`: personAnnualEvent
+BODYPARAMETER <IMicrosoftGraphPersonAnnualEvent>: personAnnualEvent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedAudiences <String>]: allowedAudiences
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -851,7 +838,7 @@ Read-only.
   [DisplayName <String>]: 
   [Type <String>]: personAnnualEventType
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -862,12 +849,12 @@ This property is read-only.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConfidenceScore <Double?>]: Confidence score reflecting the accuracy of the data inferred about the user.
   [UserHasVerifiedAccuracy <Boolean?>]: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   [ActivityStatisticsId <String>]: The unique identifier of activityStatistics
   [EducationalActivityId <String>]: The unique identifier of educationalActivity
   [ItemAddressId <String>]: The unique identifier of itemAddress
@@ -891,7 +878,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   [WebAccountId <String>]: The unique identifier of webAccount
   [WorkPositionId <String>]: The unique identifier of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -902,7 +889,7 @@ This property is read-only.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String[]>]: 
 
@@ -915,25 +902,3 @@ SOURCES <IMicrosoftGraphProfileSourceAnnotation[]>: Where the values within an e
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileanniversary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

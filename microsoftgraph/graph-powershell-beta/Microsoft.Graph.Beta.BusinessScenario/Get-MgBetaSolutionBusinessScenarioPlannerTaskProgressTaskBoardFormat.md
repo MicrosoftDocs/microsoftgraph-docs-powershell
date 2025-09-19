@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskprogresstaskboardformat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat
 ---
@@ -49,6 +49,16 @@ This cmdlet has the following aliases,
 Read-only.
 Nullable.
 Used to render the task correctly in the task board view when grouped by progress.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -359,7 +369,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
+INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
   [BusinessScenarioTaskId <String>]: The unique identifier of businessScenarioTask
   [PlannerPlanConfigurationLocalizationId <String>]: The unique identifier of plannerPlanConfigurationLocalization
@@ -369,26 +379,3 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskprogresstaskboardformat)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

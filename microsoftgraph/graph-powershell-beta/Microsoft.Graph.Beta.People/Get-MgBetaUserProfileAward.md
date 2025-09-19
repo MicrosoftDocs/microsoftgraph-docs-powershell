@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaward
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserProfileAward
 ---
@@ -55,27 +55,14 @@ This cmdlet has the following aliases,
 
 Represents the details of awards or honors associated with a person.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, User.ReadWrite.All, User.ReadWrite, User.ReadBasic.All, User.Read.All,  |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
-| Application | User.Read.All, User.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.People
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileAward -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserProfileAward Cmdlet.
-
 
 ## PARAMETERS
 
@@ -564,7 +551,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   [ActivityStatisticsId <String>]: The unique identifier of activityStatistics
   [EducationalActivityId <String>]: The unique identifier of educationalActivity
   [ItemAddressId <String>]: The unique identifier of itemAddress
@@ -592,25 +579,3 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaward)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

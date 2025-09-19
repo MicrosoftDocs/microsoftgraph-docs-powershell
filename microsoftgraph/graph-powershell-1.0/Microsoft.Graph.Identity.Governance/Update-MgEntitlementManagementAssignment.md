@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgEntitlementManagementAssignment
 ---
@@ -102,26 +102,13 @@ In Microsoft Entra entitlement management, callers can automatically reevaluate 
 The state of the access package assignment must be Delivered for the administrator to reprocess the user's assignment.
 Only admins with the Access Package Assignment Manager role, or higher, in Microsoft Entra entitlement management can perform this action.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Update-MgEntitlementManagementAssignment -AccessPackageAssignmentId $accessPackageAssignmentId
-
-```
-This example shows how to use the Update-MgEntitlementManagementAssignment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -778,7 +765,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
+ACCESSPACKAGE <IMicrosoftGraphAccessPackage>: accessPackage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1933,7 +1920,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -5737,8 +5724,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -6033,7 +6020,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     [Role <IMicrosoftGraphAccessPackageResourceRole>]: accessPackageResourceRole
     [Scope <IMicrosoftGraphAccessPackageResourceScope>]: accessPackageResourceScope
 
-ASSIGNMENTPOLICY `<IMicrosoftGraphAccessPackageAssignmentPolicy>`: accessPackageAssignmentPolicy
+ASSIGNMENTPOLICY <IMicrosoftGraphAccessPackageAssignmentPolicy>: accessPackageAssignmentPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -7101,7 +7088,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -10905,8 +10892,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -11289,7 +11276,7 @@ The default value is true.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>]: The principals that can be assigned access from an access package through this policy.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignment>`: accessPackageAssignment
+BODYPARAMETER <IMicrosoftGraphAccessPackageAssignment>: accessPackageAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -12448,7 +12435,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -16252,8 +16239,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -16601,7 +16588,7 @@ CUSTOMEXTENSIONCALLOUTINSTANCES <IMicrosoftGraphCustomExtensionCalloutInstance[]
 Read-only.
   [Status <String>]: customExtensionCalloutInstanceStatus
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -16670,7 +16657,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-SCHEDULE `<IMicrosoftGraphEntitlementManagementSchedule>`: entitlementManagementSchedule
+SCHEDULE <IMicrosoftGraphEntitlementManagementSchedule>: entitlementManagementSchedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Expiration <IMicrosoftGraphExpirationPattern>]: expirationPattern
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -16715,7 +16702,7 @@ Required.
   [StartDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-TARGET `<IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
+TARGET <IMicrosoftGraphAccessPackageSubject>: accessPackageSubject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -16754,25 +16741,3 @@ null if the subject isn't yet a user in the tenant.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignment)
 - [](https://learn.microsoft.com/graph/api/accesspackageassignment-reprocess?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

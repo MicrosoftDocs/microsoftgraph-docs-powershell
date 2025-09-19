@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventsession
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgVirtualEventSession
 ---
@@ -14,9 +14,6 @@ title: Update-MgVirtualEventSession
 ## SYNOPSIS
 
 Update the navigation property sessions in solutions
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -96,6 +93,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property sessions in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -810,7 +817,7 @@ HelpMessage: ''
 
 ### -IsEndToEndEncryptionEnabled
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -1407,7 +1414,7 @@ Read-only.
   [TotalParticipantCount <Int32?>]: Total number of participants.
 Read-only.
 
-AUDIOCONFERENCING `<IMicrosoftGraphAudioConferencing>`: audioConferencing
+AUDIOCONFERENCING <IMicrosoftGraphAudioConferencing>: audioConferencing
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConferenceId <String>]: The conference id of the online meeting.
   [DialinUrl <String>]: A URL to the externally-accessible web page that contains dial-in information.
@@ -1416,7 +1423,7 @@ AUDIOCONFERENCING `<IMicrosoftGraphAudioConferencing>`: audioConferencing
   [TollNumber <String>]: The toll number that connects to the Audio Conference Provider.
   [TollNumbers <String[]>]: List of toll numbers that are displayed in the meeting invite.
 
-BODYPARAMETER `<IMicrosoftGraphVirtualEventSession>`: virtualEventSession
+BODYPARAMETER <IMicrosoftGraphVirtualEventSession>: virtualEventSession
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
   [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
@@ -1535,24 +1542,24 @@ See below for more possible values.
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [VideoOnDemandWebUrl <String>]: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
 
-CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
+CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MessageId <String>]: The unique identifier of a message in a Microsoft Teams channel.
   [ReplyChainMessageId <String>]: The ID of the reply message.
   [ThreadId <String>]: The unique identifier for a thread in Microsoft Teams.
 
-CHATRESTRICTIONS `<IMicrosoftGraphChatRestrictions>`: chatRestrictions
+CHATRESTRICTIONS <IMicrosoftGraphChatRestrictions>: chatRestrictions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
 
-ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+ENDDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -1573,12 +1580,12 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   [VirtualEventTownhallId <String>]: The unique identifier of virtualEventTownhall
   [VirtualEventWebinarId <String>]: The unique identifier of virtualEventWebinar
 
-JOININFORMATION `<IMicrosoftGraphItemBody>`: itemBody
+JOININFORMATION <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-JOINMEETINGIDSETTINGS `<IMicrosoftGraphJoinMeetingIdSettings>`: joinMeetingIdSettings
+JOINMEETINGIDSETTINGS <IMicrosoftGraphJoinMeetingIdSettings>: joinMeetingIdSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsPasscodeRequired <Boolean?>]: Indicates whether a passcode is required to join a meeting when using joinMeetingId.
 Optional.
@@ -1589,19 +1596,19 @@ Read-only.
  Optional.
 Read-only.
 
-LOBBYBYPASSSETTINGS `<IMicrosoftGraphLobbyBypassSettings>`: lobbyBypassSettings
+LOBBYBYPASSSETTINGS <IMicrosoftGraphLobbyBypassSettings>: lobbyBypassSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
   [Scope <String>]: lobbyBypassScope
 
-STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+STARTDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProtectionValues
+WATERMARKPROTECTION <IMicrosoftGraphWatermarkProtectionValues>: watermarkProtectionValues
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabledForContentSharing <Boolean?>]: Indicates whether to apply a watermark to any shared content.
   [IsEnabledForVideo <Boolean?>]: Indicates whether to apply a watermark to everyone's video feed.
@@ -1610,26 +1617,3 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventsession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
