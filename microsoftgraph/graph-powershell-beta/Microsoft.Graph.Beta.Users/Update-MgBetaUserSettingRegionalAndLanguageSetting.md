@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting
@@ -692,7 +692,7 @@ Not nullable.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-BODYPARAMETER <IMicrosoftGraphRegionalAndLanguageSettings>: regionalAndLanguageSettings
+BODYPARAMETER `<IMicrosoftGraphRegionalAndLanguageSettings>`: regionalAndLanguageSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -729,35 +729,35 @@ For example, it would specify 'fr' for the neutral French culture, but not 'fr-F
 Returned by default.
 Read only.
 
-DEFAULTDISPLAYLANGUAGE <IMicrosoftGraphLocaleInfo>: localeInfo
+DEFAULTDISPLAYLANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: A name representing the user's locale in natural language, for example, 'English (United States)'.
   [Locale <String>]: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-DEFAULTREGIONALFORMAT <IMicrosoftGraphLocaleInfo>: localeInfo
+DEFAULTREGIONALFORMAT `<IMicrosoftGraphLocaleInfo>`: localeInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: A name representing the user's locale in natural language, for example, 'English (United States)'.
   [Locale <String>]: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-DEFAULTSPEECHINPUTLANGUAGE <IMicrosoftGraphLocaleInfo>: localeInfo
+DEFAULTSPEECHINPUTLANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: A name representing the user's locale in natural language, for example, 'English (United States)'.
   [Locale <String>]: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-DEFAULTTRANSLATIONLANGUAGE <IMicrosoftGraphLocaleInfo>: localeInfo
+DEFAULTTRANSLATIONLANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: A name representing the user's locale in natural language, for example, 'English (United States)'.
   [Locale <String>]: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -787,7 +787,7 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [WindowsSettingId <String>]: The unique identifier of windowsSetting
   [WindowsSettingInstanceId <String>]: The unique identifier of windowsSettingInstance
 
-REGIONALFORMATOVERRIDES <IMicrosoftGraphRegionalFormatOverrides>: regionalFormatOverrides
+REGIONALFORMATOVERRIDES `<IMicrosoftGraphRegionalFormatOverrides>`: regionalFormatOverrides
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Calendar <String>]: The calendar to use; for example, Gregorian Calendar.Returned by default.
   [FirstDayOfWeek <String>]: The first day of the week to use; for example, Sunday.Returned by default.
@@ -797,7 +797,7 @@ REGIONALFORMATOVERRIDES <IMicrosoftGraphRegionalFormatOverrides>: regionalFormat
   [ShortTimeFormat <String>]: The short time format to be used for displaying time.Returned by default.
   [TimeZone <String>]: The timezone to be used for displaying time.Returned by default.
 
-TRANSLATIONPREFERENCES <IMicrosoftGraphTranslationPreferences>: translationPreferences
+TRANSLATIONPREFERENCES `<IMicrosoftGraphTranslationPreferences>`: translationPreferences
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LanguageOverrides <IMicrosoftGraphTranslationLanguageOverride[]>]: Translation override behavior for languages, if any.Returned by default.
     [LanguageTag <String>]: The language to apply the override.Returned by default.
@@ -815,3 +815,25 @@ Read only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

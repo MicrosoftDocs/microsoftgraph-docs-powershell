@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainviteuserdriveroot
@@ -13,7 +13,7 @@ title: Invoke-MgBetaInviteUserDriveRoot
 
 ## SYNOPSIS
 
-Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ## SYNTAX
 
@@ -71,7 +71,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ## EXAMPLES
 
@@ -686,7 +686,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPathsG30D32UsersUserIdDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsG30D32UsersUserIdDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExpirationDateTime <String>]: 
   [Message <String>]: 
@@ -700,7 +700,7 @@ BODYPARAMETER <IPathsG30D32UsersUserIdDrivesDriveIdRootMicrosoftGraphInvitePostR
   [Roles <String[]>]: 
   [SendInvitation <Boolean?>]: 
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -737,3 +737,25 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainviteuserdriveroot)
 - [](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

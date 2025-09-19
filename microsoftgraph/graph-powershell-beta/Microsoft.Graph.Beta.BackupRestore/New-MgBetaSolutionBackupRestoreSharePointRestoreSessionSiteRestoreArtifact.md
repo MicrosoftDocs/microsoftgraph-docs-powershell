@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresessionsiterestoreartifact
@@ -662,7 +662,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSiteRestoreArtifact>: siteRestoreArtifact
+BODYPARAMETER `<IMicrosoftGraphSiteRestoreArtifact>`: siteRestoreArtifact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
   [DestinationType <String>]: destinationType
@@ -716,7 +716,7 @@ This property is read-only.
 Read-only.
   [RestoredSiteId <String>]: The new site identifier if the value of the destinationType property is new, and the existing site ID if the value is inPlace.
 
-ERROR <IMicrosoftGraphPublicError>: publicError
+ERROR `<IMicrosoftGraphPublicError>`: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -732,7 +732,7 @@ ERROR <IMicrosoftGraphPublicError>: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
-INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
+INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -761,7 +761,7 @@ INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [SiteRestoreArtifactId <String>]: The unique identifier of siteRestoreArtifact
   [SiteRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
-RESTOREPOINT <IMicrosoftGraphRestorePoint>: restorePoint
+RESTOREPOINT `<IMicrosoftGraphRestorePoint>`: restorePoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -809,3 +809,25 @@ This property is read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresessionsiterestoreartifact)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

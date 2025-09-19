@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreserviceapp
@@ -496,14 +496,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLICATION <IMicrosoftGraphIdentity>: identity
+APPLICATION `<IMicrosoftGraphIdentity>`: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 This property is read-only.
   [Id <String>]: The identifier of the identity.
 This property is read-only.
 
-BODYPARAMETER <IMicrosoftGraphServiceApp>: serviceApp
+BODYPARAMETER `<IMicrosoftGraphServiceApp>`: serviceApp
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -523,7 +523,7 @@ This property is read-only.
   [RegistrationDateTime <DateTime?>]: Timestamp of the creation of the service app entity.
   [Status <String>]: serviceAppStatus
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -539,3 +539,25 @@ This property is read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreserviceapp)
 - [](https://learn.microsoft.com/graph/api/backuprestoreroot-post-serviceapps?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

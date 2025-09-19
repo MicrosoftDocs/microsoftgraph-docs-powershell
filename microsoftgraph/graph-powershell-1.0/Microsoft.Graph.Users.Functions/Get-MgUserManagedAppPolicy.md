@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Users.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedapppolicy
@@ -471,7 +471,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   [EndDateTime <String>]: Usage: EndDateTime='{EndDateTime}'
   [Skip <Int32?>]: Usage: skip={skip}
   [StartDateTime <String>]: Usage: StartDateTime='{StartDateTime}'
@@ -483,3 +483,25 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedapppolicy)
 - [](https://learn.microsoft.com/graph/api/intune-mam-user-getmanagedapppolicies?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
