@@ -1830,7 +1830,7 @@ HelpMessage: ''
 
 ### -PermissionGrants
 
-.
+
 To construct, see NOTES section for PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml

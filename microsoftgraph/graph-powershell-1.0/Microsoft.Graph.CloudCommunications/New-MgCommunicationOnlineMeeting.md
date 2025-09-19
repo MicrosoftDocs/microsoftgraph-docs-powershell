@@ -731,7 +731,7 @@ HelpMessage: ''
 
 ### -IsEndToEndEncryptionEnabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

@@ -134,7 +134,7 @@ HelpMessage: ''
 
 ### -ApprovedClientApps
 
-.
+
 To construct, see NOTES section for APPROVEDCLIENTAPPS properties and create a hash table.
 
 ```yaml
