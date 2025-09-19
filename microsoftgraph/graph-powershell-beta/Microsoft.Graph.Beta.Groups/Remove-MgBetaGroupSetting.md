@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Delete navigation property settings for groups
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | GroupSettings.ReadWrite.All, Policy.ReadWrite.Authorization, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | GroupSettings.ReadWrite.All, Policy.ReadWrite.Authorization, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
