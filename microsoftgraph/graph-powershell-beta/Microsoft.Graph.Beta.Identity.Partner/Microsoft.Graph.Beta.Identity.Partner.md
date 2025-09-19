@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.Partner
-Module Guid: aabc6cba-d299-40db-b3d8-68899e24bfdb
+Module Guid: 009a174f-2ad4-4060-8f2e-ec8329fe54fc
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.partner/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

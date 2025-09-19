@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetausermembergroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Actions
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgBetaUserMemberGroup
 ---

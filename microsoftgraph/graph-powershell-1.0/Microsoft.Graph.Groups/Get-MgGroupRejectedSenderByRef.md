@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupRejectedSenderByRef
 ---
