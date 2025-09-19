@@ -69,12 +69,17 @@ Read properties and relationships of the mobileAppTroubleshootingEvent object.
 | Application | DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Get-MgDeviceManagementMobileAppTroubleshootingEvent
+
+```
+This example shows how to use the Get-MgDeviceManagementMobileAppTroubleshootingEvent Cmdlet.
+
 
 ## PARAMETERS
 

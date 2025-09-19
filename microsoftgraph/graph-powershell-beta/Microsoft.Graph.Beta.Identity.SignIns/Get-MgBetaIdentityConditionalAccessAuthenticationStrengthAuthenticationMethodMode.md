@@ -58,16 +58,6 @@ This cmdlet has the following aliases,
 
 Names and descriptions of all valid authentication method modes in the system.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -616,6 +606,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationstrengthauthenticationmethodmode)
+
+
 
 
 

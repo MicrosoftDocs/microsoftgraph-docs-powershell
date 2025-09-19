@@ -59,12 +59,17 @@ Deletes a deviceConfigurationDeviceStatus.
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Remove-MgDeviceManagementDeviceConfigurationDeviceStatus -DeviceConfigurationId $deviceConfigurationId -DeviceConfigurationDeviceStatusId $deviceConfigurationDeviceStatusId
+
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceConfigurationDeviceStatus Cmdlet.
+
 
 ## PARAMETERS
 

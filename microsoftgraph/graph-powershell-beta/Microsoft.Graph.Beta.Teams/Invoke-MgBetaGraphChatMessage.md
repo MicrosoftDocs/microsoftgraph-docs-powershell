@@ -71,8 +71,9 @@ This cmdlet has the following aliases,
 Reply with quote to a single chat message or multiple chat messages in a chat.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -88,6 +89,10 @@ replyMessage = @{
 }
 
 Invoke-MgBetaGraphChatMessage -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaGraphChatMessage Cmdlet.
+
 
 ## PARAMETERS
 

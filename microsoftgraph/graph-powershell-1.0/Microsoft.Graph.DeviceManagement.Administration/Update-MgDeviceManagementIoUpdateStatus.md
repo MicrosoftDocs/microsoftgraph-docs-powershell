@@ -86,8 +86,9 @@ Update the properties of a iosUpdateDeviceStatus object.
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -107,6 +108,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementIoUpdateStatus -IosUpdateDeviceStatusId $iosUpdateDeviceStatusId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementIoUpdateStatus Cmdlet.
+
 
 ## PARAMETERS
 

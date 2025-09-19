@@ -62,12 +62,17 @@ Read the properties and relationships of a virtualEventSession object.
 Currently, the following virtual event types are supported: virtualEventTownhall and virtualEventWebinar.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
 Get-MgBetaVirtualEventWebinarSession -VirtualEventWebinarId $virtualEventWebinarId
+
+```
+This example shows how to use the Get-MgBetaVirtualEventWebinarSession Cmdlet.
+
 
 ## PARAMETERS
 

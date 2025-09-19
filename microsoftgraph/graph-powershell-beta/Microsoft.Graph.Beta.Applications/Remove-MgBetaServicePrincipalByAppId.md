@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Delete a servicePrincipal object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AppId
@@ -431,6 +421,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalbyappid)
 - [](https://learn.microsoft.com/graph/api/serviceprincipal-delete?view=graph-rest-beta)
+
 
 
 

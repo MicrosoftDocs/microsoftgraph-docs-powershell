@@ -86,8 +86,9 @@ Update the properties of a deviceInstallState object.
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -104,6 +105,10 @@ $params = @{
 }
 
 Update-MgDeviceAppManagementManagedEBookDeviceState -ManagedEBookId $managedEBookId -DeviceInstallStateId $deviceInstallStateId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementManagedEBookDeviceState Cmdlet.
+
 
 ## PARAMETERS
 

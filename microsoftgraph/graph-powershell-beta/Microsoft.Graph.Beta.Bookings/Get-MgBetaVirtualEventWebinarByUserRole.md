@@ -51,12 +51,17 @@ This cmdlet has the following aliases,
 Get a list of virtualEventWebinar objects where the signed-in user is either the organizer or a coorganizer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
-Get-MgBetaVirtualEventWebinarByUserRole -Role $roleId
+Get-MgBetaVirtualEventWebinarByUserRole -Role $roleId 
+
+```
+This example shows how to use the Get-MgBetaVirtualEventWebinarByUserRole Cmdlet.
+
 
 ## PARAMETERS
 

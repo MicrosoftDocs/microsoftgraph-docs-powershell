@@ -82,8 +82,9 @@ Update the properties of a telecomExpenseManagementPartner object.
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -97,6 +98,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementTelecomExpenseManagementPartner -TelecomExpenseManagementPartnerId $telecomExpenseManagementPartnerId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementTelecomExpenseManagementPartner Cmdlet.
+
 
 ## PARAMETERS
 
