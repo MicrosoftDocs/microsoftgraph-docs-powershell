@@ -24,27 +24,23 @@ function Set-Help {
     )
 
     $generationParams = @{
-        Command               = $Command
+        Command               = (Get-Command $Command)
         OutputFolder          = $ModuleDocsPath
-        AlphabeticParamsOrder = $true
-        ExcludeDontShow       = $true
         Force                 = $true
         Encoding              = [System.Text.Encoding]::UTF8
     }
 
     if ($Module -eq "Microsoft.Graph.Authentication") {
         $generationParams = @{
-            Module                = $Module
+            Module                = (Get-Module $Module)
             OutputFolder          = $ModuleDocsPath
-            AlphabeticParamsOrder = $true
-            ExcludeDontShow       = $true
             WithModulePage        = $true
             Encoding              = [System.Text.Encoding]::UTF8
         }
         Import-Module $Module -Force -Global
     }
     try{
-        New-MarkdownHelp @generationParams
+        New-MarkdownCommandHelp @generationParams
     } catch {
         Write-Host "Error: $($_.Exception.Message)"
     }
@@ -71,8 +67,8 @@ function Start-GraphHelp {
             $profilePath = "graph-powershell-beta"
         }
 
-        $AuthenticationDocsPath = Join-Path $PSScriptRoot "..\microsoftgraph\graph-powershell-1.0\Microsoft.Graph.Authentication"
-        Set-Help -ModuleDocsPath $AuthenticationDocsPath -Command "AuthCommands" -Module "Microsoft.Graph.Authentication" 
+        $AuthenticationDocsPath = Join-Path $PSScriptRoot "..\microsoftgraph\graph-powershell-1.0"
+        Set-Help -ModuleDocsPath $AuthenticationDocsPath -Command "Connect-MgGraph" -Module "Microsoft.Graph.Authentication" 
          Get-FolderByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
     git config --global user.email "GraphTooling@service.microsoft.com"
@@ -104,6 +100,7 @@ function Get-FolderByProfile {
             $ModName = "Beta.$ModuleName"
         }
         $Destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
+        $DocsDestination = Join-Path $WorkLoadDocsPath $GraphProfilePath
         if (-not(Test-Path $Destination)) {
             New-Item -Path $Destination -ItemType Directory
         }
@@ -137,7 +134,7 @@ function Get-FolderByProfile {
             $CmdletDocsPath = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path "$Command.md"
             if (-not(Test-Path $CmdletDocsPath)) {
                 if (Get-Command -Name $Command -ErrorAction SilentlyContinue) {
-                    Set-Help -ModuleDocsPath $Destination -Command $Command -Module $Path
+                    Set-Help -ModuleDocsPath $DocsDestination -Command $Command -Module $Path
                 } else {
                     Write-Warning "Cmdlet $Command is not available."
                 }
@@ -155,10 +152,8 @@ function Get-FolderByProfile {
    
 }
 # Install PlatyPS
-if (!(Get-Module -Name PlatyPS -ListAvailable)) {
-    Install-Module PlatyPS -Force
-}
-Import-Module PlatyPS -Force -Scope Global
+Install-Module -Name Microsoft.PowerShell.PlatyPS -Force
+Import-Module Microsoft.PowerShell.PlatyPS -Force -Scope Global
 # Errors in PlatyPS validation.
 $ErrorActionPreference = 'Continue'
 $LASTEXITCODE = $null

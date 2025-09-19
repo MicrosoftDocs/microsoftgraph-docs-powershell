@@ -1,600 +1,1109 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+document type: cmdlet
+external help file: Microsoft.Graph.Beta.Education-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationreportreadingassignmentsubmission
+Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationreportreadingassignmentsubmission
-schema: 2.0.0
+ms.date: 09/12/2025
+PlatyPS schema version: 2024-05-01
+title: Update-MgBetaEducationReportReadingAssignmentSubmission
 ---
 
 # Update-MgBetaEducationReportReadingAssignmentSubmission
 
 ## SYNOPSIS
+
 Update the navigation property readingAssignmentSubmissions in education
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationReportReadingAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Update-MgEducationReportReadingAssignmentSubmission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
+
 ```
-Update-MgBetaEducationReportReadingAssignmentSubmission -ReadingAssignmentSubmissionId <String>
- [-ResponseHeadersVariable <String>] [-AccuracyScore <Double>] [-Action <String>]
- [-AdditionalProperties <Hashtable>] [-AssignmentId <String>]
- [-ChallengingWords <IMicrosoftGraphChallengingWord[]>] [-ClassId <String>] [-Id <String>]
- [-Insertions <Int64>] [-Mispronunciations <Int64>] [-MissedExclamationMarks <Int64>] [-MissedPeriods <Int64>]
- [-MissedQuestionMarks <Int64>] [-MissedShorts <Int64>] [-MonotoneScore <Double>] [-Omissions <Int64>]
- [-Repetitions <Int64>] [-SelfCorrections <Int64>] [-StudentId <String>] [-SubmissionDateTime <DateTime>]
- [-SubmissionId <String>] [-UnexpectedPauses <Int64>] [-WordCount <Int64>] [-WordsPerMinute <Double>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaEducationReportReadingAssignmentSubmission -ReadingAssignmentSubmissionId <string>
+ [-ResponseHeadersVariable <string>] [-AccuracyScore <double>] [-Action <string>]
+ [-AdditionalProperties <hashtable>] [-AssignmentId <string>]
+ [-ChallengingWords <IMicrosoftGraphChallengingWord[]>] [-ClassId <string>] [-Id <string>]
+ [-Insertions <long>] [-Mispronunciations <long>] [-MissedExclamationMarks <long>]
+ [-MissedPeriods <long>] [-MissedQuestionMarks <long>] [-MissedShorts <long>]
+ [-MonotoneScore <double>] [-Omissions <long>] [-Repetitions <long>] [-SelfCorrections <long>]
+ [-StudentId <string>] [-SubmissionDateTime <datetime>] [-SubmissionId <string>]
+ [-UnexpectedPauses <long>] [-WordCount <long>] [-WordsPerMinute <double>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
+
 ```
-Update-MgBetaEducationReportReadingAssignmentSubmission -ReadingAssignmentSubmissionId <String>
- -BodyParameter <IMicrosoftGraphReadingAssignmentSubmission> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaEducationReportReadingAssignmentSubmission -ReadingAssignmentSubmissionId <string>
+ -BodyParameter <IMicrosoftGraphReadingAssignmentSubmission> [-ResponseHeadersVariable <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
+
 ```
 Update-MgBetaEducationReportReadingAssignmentSubmission -InputObject <IEducationIdentity>
- [-ResponseHeadersVariable <String>] [-AccuracyScore <Double>] [-Action <String>]
- [-AdditionalProperties <Hashtable>] [-AssignmentId <String>]
- [-ChallengingWords <IMicrosoftGraphChallengingWord[]>] [-ClassId <String>] [-Id <String>]
- [-Insertions <Int64>] [-Mispronunciations <Int64>] [-MissedExclamationMarks <Int64>] [-MissedPeriods <Int64>]
- [-MissedQuestionMarks <Int64>] [-MissedShorts <Int64>] [-MonotoneScore <Double>] [-Omissions <Int64>]
- [-Repetitions <Int64>] [-SelfCorrections <Int64>] [-StudentId <String>] [-SubmissionDateTime <DateTime>]
- [-SubmissionId <String>] [-UnexpectedPauses <Int64>] [-WordCount <Int64>] [-WordsPerMinute <Double>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <string>] [-AccuracyScore <double>] [-Action <string>]
+ [-AdditionalProperties <hashtable>] [-AssignmentId <string>]
+ [-ChallengingWords <IMicrosoftGraphChallengingWord[]>] [-ClassId <string>] [-Id <string>]
+ [-Insertions <long>] [-Mispronunciations <long>] [-MissedExclamationMarks <long>]
+ [-MissedPeriods <long>] [-MissedQuestionMarks <long>] [-MissedShorts <long>]
+ [-MonotoneScore <double>] [-Omissions <long>] [-Repetitions <long>] [-SelfCorrections <long>]
+ [-StudentId <string>] [-SubmissionDateTime <datetime>] [-SubmissionId <string>]
+ [-UnexpectedPauses <long>] [-WordCount <long>] [-WordsPerMinute <double>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
+
 ```
 Update-MgBetaEducationReportReadingAssignmentSubmission -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphReadingAssignmentSubmission> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphReadingAssignmentSubmission> [-ResponseHeadersVariable <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Update the navigation property readingAssignmentSubmissions in education
+## ALIASES
 
-## EXAMPLES
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
+## DESCRIPTION
+
+Update the navigation property readingAssignmentSubmissions in education
 
 ## PARAMETERS
 
 ### -AccuracyScore
+
 Accuracy score of the reading progress.
 
 ```yaml
-Type: Double
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Double
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Action
+
 Indicates whether the submission is an attempt by the student or a miscue edit done by the educator.
 The possible values are Attempt and EditMiscue.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AdditionalProperties
+
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AssignmentId
+
 ID of the assignment with which this submission is associated.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BodyParameter
+
 readingAssignmentSubmission
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphReadingAssignmentSubmission
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphReadingAssignmentSubmission
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ChallengingWords
+
 List of words that the student found challenging during the reading session.
 To construct, see NOTES section for CHALLENGINGWORDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChallengingWord[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChallengingWord[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ClassId
+
 ID of the class this reading progress is associated with.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confirm
+
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Headers
+
 Optional headers that will be added to the request.
 
 ```yaml
-Type: IDictionary
-Parameter Sets: (All)
-Aliases:
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Id
+
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -InputObject
+
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Insertions
+
 Insertions of the reading progress.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Int64
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Mispronunciations
+
 Mispronunciations of the reading progress.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Int64
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -MissedExclamationMarks
+
 Number of exclamation marks missed in the reading passage.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Int64
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -MissedPeriods
+
 Number of periods missed in the reading passage.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Int64
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -MissedQuestionMarks
+
 Number of question marks missed in the reading passage.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Int64
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -MissedShorts
+
 Number of short words missed during the reading session.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Int64
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -MonotoneScore
+
 Score that reflects the student's use of intonation and expression.
 Lower scores indicate more monotone reading.
 
 ```yaml
-Type: Double
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Double
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Omissions
+
 Omissions of the reading progress.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Type: System.Int64
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ReadingAssignmentSubmissionId
+
 The unique identifier of readingAssignmentSubmission
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Repetitions
+
 Number of times the student repeated words or phrases during the reading session.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Int64
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResponseHeadersVariable
+
 Optional Response Headers Variable.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -SelfCorrections
+
 Number of times the student self-corrected their reading errors.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Int64
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -StudentId
+
 ID of the user this reading progress is associated with.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -SubmissionDateTime
+
 Date and time of the submission this reading progress is associated with.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -SubmissionId
+
 ID of the submission this reading progress is associated with.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -UnexpectedPauses
+
 Number of unexpected pauses made during the reading session.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Int64
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WordCount
+
 Words count of the reading progress.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Int64
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WordsPerMinute
+
 Words per minute of the reading progress.
 
 ```yaml
-Type: Double
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Double
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
+{{ Fill in the Description }}
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphReadingAssignmentSubmission
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphReadingAssignmentSubmission
+
+{{ Fill in the Description }}
+
 ## NOTES
+
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphReadingAssignmentSubmission>`: readingAssignmentSubmission
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[AccuracyScore <Double?>]`: Accuracy score of the reading progress.
-  - `[Action <String>]`: Indicates whether the submission is an attempt by the student or a miscue edit done by the educator.
+  [AccuracyScore <Double?>]: Accuracy score of the reading progress.
+  [Action <String>]: Indicates whether the submission is an attempt by the student or a miscue edit done by the educator.
 The possible values are Attempt and EditMiscue.
-  - `[AssignmentId <String>]`: ID of the assignment with which this submission is associated.
-  - `[ChallengingWords <IMicrosoftGraphChallengingWord- `[]`>]`: List of words that the student found challenging during the reading session.
-    - `[Count <Int64?>]`: Number of times the word was found challenging by the student during the reading session.
-    - `[Word <String>]`: The specific word that the student found challenging during the reading session.
-  - `[ClassId <String>]`: ID of the class this reading progress is associated with.
-  - `[Insertions <Int64?>]`: Insertions of the reading progress.
-  - `[Mispronunciations <Int64?>]`: Mispronunciations of the reading progress.
-  - `[MissedExclamationMarks <Int64?>]`: Number of exclamation marks missed in the reading passage.
-  - `[MissedPeriods <Int64?>]`: Number of periods missed in the reading passage.
-  - `[MissedQuestionMarks <Int64?>]`: Number of question marks missed in the reading passage.
-  - `[MissedShorts <Int64?>]`: Number of short words missed during the reading session.
-  - `[MonotoneScore <Double?>]`: Score that reflects the student's use of intonation and expression.
+  [AssignmentId <String>]: ID of the assignment with which this submission is associated.
+  [ChallengingWords <IMicrosoftGraphChallengingWord[]>]: List of words that the student found challenging during the reading session.
+    [Count <Int64?>]: Number of times the word was found challenging by the student during the reading session.
+    [Word <String>]: The specific word that the student found challenging during the reading session.
+  [ClassId <String>]: ID of the class this reading progress is associated with.
+  [Insertions <Int64?>]: Insertions of the reading progress.
+  [Mispronunciations <Int64?>]: Mispronunciations of the reading progress.
+  [MissedExclamationMarks <Int64?>]: Number of exclamation marks missed in the reading passage.
+  [MissedPeriods <Int64?>]: Number of periods missed in the reading passage.
+  [MissedQuestionMarks <Int64?>]: Number of question marks missed in the reading passage.
+  [MissedShorts <Int64?>]: Number of short words missed during the reading session.
+  [MonotoneScore <Double?>]: Score that reflects the student's use of intonation and expression.
 Lower scores indicate more monotone reading.
-  - `[Omissions <Int64?>]`: Omissions of the reading progress.
-  - `[Repetitions <Int64?>]`: Number of times the student repeated words or phrases during the reading session.
-  - `[SelfCorrections <Int64?>]`: Number of times the student self-corrected their reading errors.
-  - `[StudentId <String>]`: ID of the user this reading progress is associated with.
-  - `[SubmissionDateTime <DateTime?>]`: Date and time of the submission this reading progress is associated with.
+  [Omissions <Int64?>]: Omissions of the reading progress.
+  [Repetitions <Int64?>]: Number of times the student repeated words or phrases during the reading session.
+  [SelfCorrections <Int64?>]: Number of times the student self-corrected their reading errors.
+  [StudentId <String>]: ID of the user this reading progress is associated with.
+  [SubmissionDateTime <DateTime?>]: Date and time of the submission this reading progress is associated with.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[SubmissionId <String>]`: ID of the submission this reading progress is associated with.
-  - `[UnexpectedPauses <Int64?>]`: Number of unexpected pauses made during the reading session.
-  - `[WordCount <Int64?>]`: Words count of the reading progress.
-  - `[WordsPerMinute <Double?>]`: Words per minute of the reading progress.
+  [SubmissionId <String>]: ID of the submission this reading progress is associated with.
+  [UnexpectedPauses <Int64?>]: Number of unexpected pauses made during the reading session.
+  [WordCount <Int64?>]: Words count of the reading progress.
+  [WordsPerMinute <Double?>]: Words per minute of the reading progress.
 
-CHALLENGINGWORDS `<IMicrosoftGraphChallengingWord- `[]`>`: List of words that the student found challenging during the reading session.
-  - `[Count <Int64?>]`: Number of times the word was found challenging by the student during the reading session.
-  - `[Word <String>]`: The specific word that the student found challenging during the reading session.
+CHALLENGINGWORDS <IMicrosoftGraphChallengingWord[]>: List of words that the student found challenging during the reading session.
+  [Count <Int64?>]: Number of times the word was found challenging by the student during the reading session.
+  [Word <String>]: The specific word that the student found challenging during the reading session.
 
 INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
-  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationAssignmentResourceId1 <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
-  - `[EducationClassId <String>]`: The unique identifier of educationClass
-  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
-  - `[EducationGradingSchemeId <String>]`: The unique identifier of educationGradingScheme
-  - `[EducationModuleId <String>]`: The unique identifier of educationModule
-  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
-  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
-  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
-  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
-  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSubmissionResourceId1 <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationUserId <String>]`: The unique identifier of educationUser
-  - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
-  - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
+  [EducationAssignmentId <String>]: The unique identifier of educationAssignment
+  [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
+  [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
+  [EducationCategoryId <String>]: The unique identifier of educationCategory
+  [EducationClassId <String>]: The unique identifier of educationClass
+  [EducationGradingCategoryId <String>]: The unique identifier of educationGradingCategory
+  [EducationGradingSchemeId <String>]: The unique identifier of educationGradingScheme
+  [EducationModuleId <String>]: The unique identifier of educationModule
+  [EducationModuleResourceId <String>]: The unique identifier of educationModuleResource
+  [EducationOutcomeId <String>]: The unique identifier of educationOutcome
+  [EducationRubricId <String>]: The unique identifier of educationRubric
+  [EducationSchoolId <String>]: The unique identifier of educationSchool
+  [EducationSubmissionId <String>]: The unique identifier of educationSubmission
+  [EducationSubmissionResourceId <String>]: The unique identifier of educationSubmissionResource
+  [EducationSubmissionResourceId1 <String>]: The unique identifier of educationSubmissionResource
+  [EducationUserId <String>]: The unique identifier of educationUser
+  [ReadingAssignmentSubmissionId <String>]: The unique identifier of readingAssignmentSubmission
+  [ReadingCoachPassageId <String>]: The unique identifier of readingCoachPassage
+  [ReflectCheckInResponseId <String>]: The unique identifier of reflectCheckInResponse
+  [SpeakerAssignmentSubmissionId <String>]: The unique identifier of speakerAssignmentSubmission
+
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationreportreadingassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationreportreadingassignmentsubmission)
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationreportreadingassignmentsubmission)
 
 
 

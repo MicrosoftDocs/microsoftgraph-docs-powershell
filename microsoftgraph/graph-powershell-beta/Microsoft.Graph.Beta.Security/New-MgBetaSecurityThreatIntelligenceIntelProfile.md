@@ -1,13 +1,18 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+document type: cmdlet
+external help file: Microsoft.Graph.Beta.Security-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceintelprofile
+Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceintelprofile
-schema: 2.0.0
+ms.date: 09/12/2025
+PlatyPS schema version: 2024-05-01
+title: New-MgBetaSecurityThreatIntelligenceIntelProfile
 ---
 
 # New-MgBetaSecurityThreatIntelligenceIntelProfile
 
 ## SYNOPSIS
+
 Create new navigation property to intelProfiles for security
 
 > [!NOTE]
@@ -16,377 +21,631 @@ Create new navigation property to intelProfiles for security
 ## SYNTAX
 
 ### CreateExpanded (Default)
+
 ```
-New-MgBetaSecurityThreatIntelligenceIntelProfile [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Aliases <String[]>]
+New-MgBetaSecurityThreatIntelligenceIntelProfile [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-Aliases <string[]>]
  [-CountriesOrRegionsOfOrigin <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>]
- [-Description <IMicrosoftGraphSecurityFormattedContent>] [-FirstActiveDateTime <DateTime>] [-Id <String>]
- [-Indicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>] [-Kind <String>]
- [-Summary <IMicrosoftGraphSecurityFormattedContent>] [-Targets <String[]>] [-Title <String>]
- [-Tradecraft <IMicrosoftGraphSecurityFormattedContent>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Description <IMicrosoftGraphSecurityFormattedContent>] [-FirstActiveDateTime <datetime>]
+ [-Id <string>] [-Indicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>]
+ [-Kind <string>] [-Summary <IMicrosoftGraphSecurityFormattedContent>] [-Targets <string[]>]
+ [-Title <string>] [-Tradecraft <IMicrosoftGraphSecurityFormattedContent>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
+
 ```
-New-MgBetaSecurityThreatIntelligenceIntelProfile -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfile>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityThreatIntelligenceIntelProfile
+ -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfile> [-ResponseHeadersVariable <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
+
+## ALIASES
+
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
 
 ## DESCRIPTION
-Create new navigation property to intelProfiles for security
 
-## EXAMPLES
+Create new navigation property to intelProfiles for security
 
 ## PARAMETERS
 
 ### -AdditionalProperties
+
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Aliases
+
 A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BodyParameter
+
 intelligenceProfile
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityIntelligenceProfile
-Parameter Sets: Create
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confirm
+
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CountriesOrRegionsOfOrigin
+
 The country/region of origin for the given actor or threat associated with this intelligenceProfile.
 To construct, see NOTES section for COUNTRIESORREGIONSOFORIGIN properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Description
+
 formattedContent
 To construct, see NOTES section for DESCRIPTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityFormattedContent
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFormattedContent
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -FirstActiveDateTime
+
 The date and time when this intelligenceProfile was first active.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Headers
+
 Optional headers that will be added to the request.
 
 ```yaml
-Type: IDictionary
-Parameter Sets: (All)
-Aliases:
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Id
+
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Indicators
+
 Includes an assemblage of high-fidelity network indicators of compromise.
 To construct, see NOTES section for INDICATORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityIntelligenceProfileIndicator[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfileIndicator[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Kind
+
 intelligenceProfileKind
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResponseHeadersVariable
+
 Optional Response Headers Variable.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Summary
+
 formattedContent
 To construct, see NOTES section for SUMMARY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityFormattedContent
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFormattedContent
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Targets
+
 Known targets related to this intelligenceProfile.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Title
+
 The title of this intelligenceProfile.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Tradecraft
+
 formattedContent
 To construct, see NOTES section for TRADECRAFT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityFormattedContent
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFormattedContent
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile
+
+{{ Fill in the Description }}
+
 ## NOTES
+
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphSecurityIntelligenceProfile>`: intelligenceProfile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[Aliases <String- `[]`>]`: A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
-  - `[CountriesOrRegionsOfOrigin <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin- `[]`>]`: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
-    - `[Code <String>]`: A codified representation for this country/region of origin.
-    - `[Label <String>]`: A display label for this ountry/region of origin.
-  - `[Description <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of this formattedContent.
-    - `[Format <String>]`: contentFormat
-  - `[FirstActiveDateTime <DateTime?>]`: The date and time when this intelligenceProfile was first active. 
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  [Aliases <String[]>]: A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
+  [CountriesOrRegionsOfOrigin <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>]: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
+    [Code <String>]: A codified representation for this country/region of origin.
+    [Label <String>]: A display label for this ountry/region of origin.
+  [Description <IMicrosoftGraphSecurityFormattedContent>]: formattedContent
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Content <String>]: The content of this formattedContent.
+    [Format <String>]: contentFormat
+  [FirstActiveDateTime <DateTime?>]: The date and time when this intelligenceProfile was first active.
+ The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Indicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator- `[]`>]`: Includes an assemblage of high-fidelity network indicators of compromise.
-    - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+  [Indicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>]: Includes an assemblage of high-fidelity network indicators of compromise.
+    [Artifact <IMicrosoftGraphSecurityArtifact>]: artifact
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[Source <String>]`: indicatorSource
-    - `[Id <String>]`: The unique identifier for an entity.
+    [Source <String>]: indicatorSource
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[FirstSeenDateTime <DateTime?>]`: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
-    - `[LastSeenDateTime <DateTime?>]`: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
-  - `[Kind <String>]`: intelligenceProfileKind
-  - `[Summary <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
-  - `[Targets <String- `[]`>]`: Known targets related to this intelligenceProfile.
-  - `[Title <String>]`: The title of this intelligenceProfile.
-  - `[Tradecraft <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
+    [FirstSeenDateTime <DateTime?>]: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
+    [LastSeenDateTime <DateTime?>]: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
+  [Kind <String>]: intelligenceProfileKind
+  [Summary <IMicrosoftGraphSecurityFormattedContent>]: formattedContent
+  [Targets <String[]>]: Known targets related to this intelligenceProfile.
+  [Title <String>]: The title of this intelligenceProfile.
+  [Tradecraft <IMicrosoftGraphSecurityFormattedContent>]: formattedContent
 
-COUNTRIESORREGIONSOFORIGIN `<IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin- `[]`>`: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
-  - `[Code <String>]`: A codified representation for this country/region of origin.
-  - `[Label <String>]`: A display label for this ountry/region of origin.
+COUNTRIESORREGIONSOFORIGIN <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
+  [Code <String>]: A codified representation for this country/region of origin.
+  [Label <String>]: A display label for this ountry/region of origin.
 
 DESCRIPTION `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`: The content of this formattedContent.
-  - `[Format <String>]`: contentFormat
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Content <String>]: The content of this formattedContent.
+  [Format <String>]: contentFormat
 
-INDICATORS `<IMicrosoftGraphSecurityIntelligenceProfileIndicator- `[]`>`: Includes an assemblage of high-fidelity network indicators of compromise.
-  - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+INDICATORS <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>: Includes an assemblage of high-fidelity network indicators of compromise.
+  [Artifact <IMicrosoftGraphSecurityArtifact>]: artifact
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[Source <String>]`: indicatorSource
-  - `[Id <String>]`: The unique identifier for an entity.
+  [Source <String>]: indicatorSource
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[FirstSeenDateTime <DateTime?>]`: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
-  - `[LastSeenDateTime <DateTime?>]`: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
+  [FirstSeenDateTime <DateTime?>]: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
+  [LastSeenDateTime <DateTime?>]: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
 
 SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`: The content of this formattedContent.
-  - `[Format <String>]`: contentFormat
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Content <String>]: The content of this formattedContent.
+  [Format <String>]: contentFormat
 
 TRADECRAFT `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`: The content of this formattedContent.
-  - `[Format <String>]`: contentFormat
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Content <String>]: The content of this formattedContent.
+  [Format <String>]: contentFormat
+
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceintelprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceintelprofile)
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceintelprofile)
 
 
 

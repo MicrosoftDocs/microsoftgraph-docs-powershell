@@ -1,14 +1,18 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+document type: cmdlet
+external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset
+Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset
-schema: 2.0.0
-ms.subservice: entra-sign-in
+ms.date: 09/12/2025
+PlatyPS schema version: 2024-05-01
+title: Update-MgBetaTrustFrameworkKeySet
 ---
 
 # Update-MgBetaTrustFrameworkKeySet
 
 ## SYNOPSIS
+
 Update the properties of a trustFrameworkKeyset.
 This operation will replace the content of an existing keyset.
 Specifying the ID in the request payload is optional.
@@ -16,36 +20,54 @@ Specifying the ID in the request payload is optional.
 ## SYNTAX
 
 ### UpdateExpanded (Default)
+
 ```
-Update-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId <String> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Keys <IMicrosoftGraphTrustFrameworkKey[]>]
- [-KeysV2 <IMicrosoftGraphTrustFrameworkKeyV2[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId <string>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
+ [-Keys <IMicrosoftGraphTrustFrameworkKey[]>] [-KeysV2 <IMicrosoftGraphTrustFrameworkKeyV2[]>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
+
 ```
-Update-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId <String>
- -BodyParameter <IMicrosoftGraphTrustFrameworkKeySet> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId <string>
+ -BodyParameter <IMicrosoftGraphTrustFrameworkKeySet> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
+
 ```
-Update-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Keys <IMicrosoftGraphTrustFrameworkKey[]>]
- [-KeysV2 <IMicrosoftGraphTrustFrameworkKeyV2[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
+ [-Keys <IMicrosoftGraphTrustFrameworkKey[]>] [-KeysV2 <IMicrosoftGraphTrustFrameworkKeyV2[]>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
+
 ```
 Update-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphTrustFrameworkKeySet> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTrustFrameworkKeySet> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+## ALIASES
+
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
 ## DESCRIPTION
+
 Update the properties of a trustFrameworkKeyset.
 This operation will replace the content of an existing keyset.
 Specifying the ID in the request payload is optional.
@@ -58,424 +80,675 @@ Specifying the ID in the request payload is optional.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TrustFrameworkKeySet.ReadWrite.All,  |
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
+
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BodyParameter
+
 trustFrameworkKeySet
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrustFrameworkKeySet
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrustFrameworkKeySet
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confirm
+
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Headers
+
 Optional headers that will be added to the request.
 
 ```yaml
-Type: IDictionary
-Parameter Sets: (All)
-Aliases:
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Id
+
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -InputObject
+
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Keys
+
 A collection of the keys.
 To construct, see NOTES section for KEYS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrustFrameworkKey[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrustFrameworkKey[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -KeysV2
+
 A collection of the keys.
 To construct, see NOTES section for KEYSV2 properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrustFrameworkKeyV2[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrustFrameworkKeyV2[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResponseHeadersVariable
+
 Optional Response Headers Variable.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -TrustFrameworkKeySetId
+
 The unique identifier of trustFrameworkKeySet
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
+{{ Fill in the Description }}
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrustFrameworkKeySet
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrustFrameworkKeySet
+
+{{ Fill in the Description }}
+
 ## NOTES
+
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphTrustFrameworkKeySet>`: trustFrameworkKeySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[Keys <IMicrosoftGraphTrustFrameworkKey- `[]`>]`: A collection of the keys.
-    - `[D <String>]`: RSA Key - private exponent.
+  [Keys <IMicrosoftGraphTrustFrameworkKey[]>]: A collection of the keys.
+    [D <String>]: RSA Key - private exponent.
 The field isn't readable.
-    - `[Dp <String>]`: RSA Key - first exponent.
+    [Dp <String>]: RSA Key - first exponent.
 The field isn't readable.
-    - `[Dq <String>]`: RSA Key - second exponent.
+    [Dq <String>]: RSA Key - second exponent.
 The field isn't readable.
-    - `[E <String>]`: RSA Key - public exponent.
-    - `[Exp <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+    [E <String>]: RSA Key - public exponent.
+    [Exp <Int64?>]: This value is a NumericDate as defined in RFC 7519.
 That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
-    - `[K <String>]`: Symmetric Key for oct key type.
+    [K <String>]: Symmetric Key for oct key type.
 The field isn't readable.
-    - `[Kid <String>]`: The unique identifier for the key.
-    - `[Kty <String>]`: The kty (key type) parameter identifies the cryptographic algorithm family used with the key.
+    [Kid <String>]: The unique identifier for the key.
+    [Kty <String>]: The kty (key type) parameter identifies the cryptographic algorithm family used with the key.
 The valid values are rsa, oct.
-    - `[N <String>]`: RSA Key - modulus.
-    - `[Nbf <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+    [N <String>]: RSA Key - modulus.
+    [Nbf <Int64?>]: This value is a NumericDate as defined in RFC 7519.
 That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
-    - `[P <String>]`: RSA Key - first prime.
+    [P <String>]: RSA Key - first prime.
 The field isn't readable.
-    - `[Q <String>]`: RSA Key - second prime.
+    [Q <String>]: RSA Key - second prime.
 The field isn't readable.
-    - `[Qi <String>]`: RSA Key - Coefficient.
+    [Qi <String>]: RSA Key - Coefficient.
 The field isn't readable.
-    - `[Status <String>]`: trustFrameworkKeyStatus
-    - `[Use <String>]`: The use (public key use) parameter identifies the intended use of the public key.
+    [Status <String>]: trustFrameworkKeyStatus
+    [Use <String>]: The use (public key use) parameter identifies the intended use of the public key.
 The use parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data.
 Possible values are: sig (signature), enc (encryption).
-    - `[X5C <String- `[]`>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
+    [X5C <String[]>]: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
 For more information, see RFC 5280.
-    - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
+    [X5T <String>]: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
 For more information, see RFC 5280.
-  - `[KeysV2 <IMicrosoftGraphTrustFrameworkKeyV2- `[]`>]`: A collection of the keys.
-    - `[D <String>]`: RSA Key - private exponent.
+  [KeysV2 <IMicrosoftGraphTrustFrameworkKeyV2[]>]: A collection of the keys.
+    [D <String>]: RSA Key - private exponent.
 The field isn't readable.
-    - `[Dp <String>]`: RSA Key - first exponent.
+    [Dp <String>]: RSA Key - first exponent.
 The field isn't readable.
-    - `[Dq <String>]`: RSA Key - second exponent.
+    [Dq <String>]: RSA Key - second exponent.
 The field isn't readable.
-    - `[E <String>]`: RSA Key - public exponent.
-    - `[Exp <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+    [E <String>]: RSA Key - public exponent.
+    [Exp <Int64?>]: This value is a NumericDate as defined in RFC 7519.
 That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
-    - `[K <String>]`: Symmetric Key for oct key type.
+    [K <String>]: Symmetric Key for oct key type.
 The field isn't readable.
-    - `[Kid <String>]`: The unique identifier for the key.
+    [Kid <String>]: The unique identifier for the key.
 Primary key.
-    - `[Kty <String>]`: The kty (key type) parameter identifies the cryptographic algorithm family used with the key.
+    [Kty <String>]: The kty (key type) parameter identifies the cryptographic algorithm family used with the key.
 The valid values are rsa, oct.
-    - `[N <String>]`: RSA Key - modulus.
-    - `[Nbf <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+    [N <String>]: RSA Key - modulus.
+    [Nbf <Int64?>]: This value is a NumericDate as defined in RFC 7519.
 That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
-    - `[P <String>]`: RSA Key - first prime.
+    [P <String>]: RSA Key - first prime.
 The field isn't readable.
-    - `[Q <String>]`: RSA Key - second prime.
+    [Q <String>]: RSA Key - second prime.
 The field isn't readable.
-    - `[Qi <String>]`: RSA Key - Coefficient.
+    [Qi <String>]: RSA Key - Coefficient.
 The field isn't readable.
-    - `[Status <String>]`: trustFrameworkKeyStatus
-    - `[Use <String>]`: The use (public key use) parameter identifies the intended use of the public key.
+    [Status <String>]: trustFrameworkKeyStatus
+    [Use <String>]: The use (public key use) parameter identifies the intended use of the public key.
 The use parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data.
 Possible values are: sig (signature), enc (encryption).
-    - `[X5C <String- `[]`>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
+    [X5C <String[]>]: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
 For more information, see RFC 5280.
-    - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
+    [X5T <String>]: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
 For more information, see RFC 5280.
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
-  - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
-  - `[AuthenticationConditionApplicationAppId <String>]`: The unique identifier of authenticationConditionApplication
-  - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
-  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
-  - `[AuthenticationEventsFlowId <String>]`: The unique identifier of authenticationEventsFlow
-  - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
-  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
-  - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
-  - `[AuthenticationMethodModes <String- `[]`>]`: Usage: authenticationMethodModes={authenticationMethodModes}
-  - `[AuthenticationStrengthPolicyId <String>]`: The unique identifier of authenticationStrengthPolicy
-  - `[AuthorizationPolicyId <String>]`: The unique identifier of authorizationPolicy
-  - `[B2CIdentityUserFlowId <String>]`: The unique identifier of b2cIdentityUserFlow
-  - `[B2XIdentityUserFlowId <String>]`: The unique identifier of b2xIdentityUserFlow
-  - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
-  - `[CertificateBasedAuthConfigurationId <String>]`: The unique identifier of certificateBasedAuthConfiguration
-  - `[ChangeItemBaseId <String>]`: The unique identifier of changeItemBase
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
-  - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
-  - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
-  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
-  - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
-  - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
-  - `[DefaultUserRoleOverrideId <String>]`: The unique identifier of defaultUserRoleOverride
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
-  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
-  - `[Fido2AuthenticationMethodId <String>]`: The unique identifier of fido2AuthenticationMethod
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HardwareOathAuthenticationMethodId <String>]`: The unique identifier of hardwareOathAuthenticationMethod
-  - `[HardwareOathTokenAuthenticationMethodDeviceId <String>]`: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[IdentityApiConnectorId <String>]`: The unique identifier of identityApiConnector
-  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[IdentityProviderId <String>]`: The unique identifier of identityProvider
-  - `[IdentityUserFlowAttributeAssignmentId <String>]`: The unique identifier of identityUserFlowAttributeAssignment
-  - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
-  - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
-  - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
-  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
-  - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
-  - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
-  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
-  - `[NamedLocationId <String>]`: The unique identifier of namedLocation
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OrganizationId <String>]`: The unique identifier of organization
-  - `[PasswordAuthenticationMethodId <String>]`: The unique identifier of passwordAuthenticationMethod
-  - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
-  - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
-  - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
-  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
-  - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
-  - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
-  - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal
-  - `[RiskyUserHistoryItemId <String>]`: The unique identifier of riskyUserHistoryItem
-  - `[RiskyUserId <String>]`: The unique identifier of riskyUser
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
-  - `[ServicePrincipalCreationConditionSetId <String>]`: The unique identifier of servicePrincipalCreationConditionSet
-  - `[ServicePrincipalCreationPolicyId <String>]`: The unique identifier of servicePrincipalCreationPolicy
-  - `[ServicePrincipalRiskDetectionId <String>]`: The unique identifier of servicePrincipalRiskDetection
-  - `[SoftwareOathAuthenticationMethodId <String>]`: The unique identifier of softwareOathAuthenticationMethod
-  - `[TemporaryAccessPassAuthenticationMethodId <String>]`: The unique identifier of temporaryAccessPassAuthenticationMethod
-  - `[ThreatAssessmentRequestId <String>]`: The unique identifier of threatAssessmentRequest
-  - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
-  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
-  - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
-  - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
-  - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
-  - `[UnifiedRoleManagementPolicyRuleId <String>]`: The unique identifier of unifiedRoleManagementPolicyRule
-  - `[UserFlowLanguageConfigurationId <String>]`: The unique identifier of userFlowLanguageConfiguration
-  - `[UserFlowLanguagePageId <String>]`: The unique identifier of userFlowLanguagePage
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
+  [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
+  [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
+  [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
+  [AuthenticationConditionApplicationAppId <String>]: The unique identifier of authenticationConditionApplication
+  [AuthenticationContextClassReferenceId <String>]: The unique identifier of authenticationContextClassReference
+  [AuthenticationEventListenerId <String>]: The unique identifier of authenticationEventListener
+  [AuthenticationEventsFlowId <String>]: The unique identifier of authenticationEventsFlow
+  [AuthenticationMethodConfigurationId <String>]: The unique identifier of authenticationMethodConfiguration
+  [AuthenticationMethodId <String>]: The unique identifier of authenticationMethod
+  [AuthenticationMethodModeDetailId <String>]: The unique identifier of authenticationMethodModeDetail
+  [AuthenticationMethodModes <String[]>]: Usage: authenticationMethodModes={authenticationMethodModes}
+  [AuthenticationStrengthPolicyId <String>]: The unique identifier of authenticationStrengthPolicy
+  [AuthorizationPolicyId <String>]: The unique identifier of authorizationPolicy
+  [B2CIdentityUserFlowId <String>]: The unique identifier of b2cIdentityUserFlow
+  [B2XIdentityUserFlowId <String>]: The unique identifier of b2xIdentityUserFlow
+  [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
+  [CertificateBasedAuthConfigurationId <String>]: The unique identifier of certificateBasedAuthConfiguration
+  [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
+  [ConditionalAccessTemplateId <String>]: The unique identifier of conditionalAccessTemplate
+  [ContentFormats <String[]>]: Usage: contentFormats={contentFormats}
+  [CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  [CustomAuthenticationExtensionId <String>]: The unique identifier of customAuthenticationExtension
+  [DataLossPreventionPolicyId <String>]: The unique identifier of dataLossPreventionPolicy
+  [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
+  [DefaultUserRoleOverrideId <String>]: The unique identifier of defaultUserRoleOverride
+  [DirectoryObjectId <String>]: The unique identifier of directoryObject
+  [EmailAuthenticationMethodId <String>]: The unique identifier of emailAuthenticationMethod
+  [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
+  [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
+  [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
+  [GroupId <String>]: The unique identifier of group
+  [HardwareOathAuthenticationMethodId <String>]: The unique identifier of hardwareOathAuthenticationMethod
+  [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
+  [HomeRealmDiscoveryPolicyId <String>]: The unique identifier of homeRealmDiscoveryPolicy
+  [IdentityApiConnectorId <String>]: The unique identifier of identityApiConnector
+  [IdentityProviderBaseId <String>]: The unique identifier of identityProviderBase
+  [IdentityProviderId <String>]: The unique identifier of identityProvider
+  [IdentityUserFlowAttributeAssignmentId <String>]: The unique identifier of identityUserFlowAttributeAssignment
+  [IdentityUserFlowAttributeId <String>]: The unique identifier of identityUserFlowAttribute
+  [IdentityUserFlowId <String>]: The unique identifier of identityUserFlow
+  [InformationProtectionLabelId <String>]: The unique identifier of informationProtectionLabel
+  [LabelIds <String[]>]: Usage: labelIds={labelIds}
+  [Locale <String>]: Usage: locale='{locale}'
+  [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  [MobilityManagementPolicyId <String>]: The unique identifier of mobilityManagementPolicy
+  [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
+  [OAuth2PermissionGrantId <String>]: The unique identifier of oAuth2PermissionGrant
+  [OrganizationId <String>]: The unique identifier of organization
+  [PasswordAuthenticationMethodId <String>]: The unique identifier of passwordAuthenticationMethod
+  [PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
+  [PermissionGrantConditionSetId <String>]: The unique identifier of permissionGrantConditionSet
+  [PermissionGrantPolicyId <String>]: The unique identifier of permissionGrantPolicy
+  [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
+  [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [RiskDetectionId <String>]: The unique identifier of riskDetection
+  [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
+  [RiskyServicePrincipalId <String>]: The unique identifier of riskyServicePrincipal
+  [RiskyUserHistoryItemId <String>]: The unique identifier of riskyUserHistoryItem
+  [RiskyUserId <String>]: The unique identifier of riskyUser
+  [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
+  [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [ServicePrincipalCreationConditionSetId <String>]: The unique identifier of servicePrincipalCreationConditionSet
+  [ServicePrincipalCreationPolicyId <String>]: The unique identifier of servicePrincipalCreationPolicy
+  [ServicePrincipalRiskDetectionId <String>]: The unique identifier of servicePrincipalRiskDetection
+  [SoftwareOathAuthenticationMethodId <String>]: The unique identifier of softwareOathAuthenticationMethod
+  [TemporaryAccessPassAuthenticationMethodId <String>]: The unique identifier of temporaryAccessPassAuthenticationMethod
+  [ThreatAssessmentRequestId <String>]: The unique identifier of threatAssessmentRequest
+  [ThreatAssessmentResultId <String>]: The unique identifier of threatAssessmentResult
+  [TokenIssuancePolicyId <String>]: The unique identifier of tokenIssuancePolicy
+  [TokenLifetimePolicyId <String>]: The unique identifier of tokenLifetimePolicy
+  [TrustFrameworkKeySetId <String>]: The unique identifier of trustFrameworkKeySet
+  [TrustFrameworkKeyV2Kid <String>]: The unique identifier of trustFrameworkKey_v2
+  [TrustFrameworkPolicyId <String>]: The unique identifier of trustFrameworkPolicy
+  [UnifiedRoleManagementPolicyAssignmentId <String>]: The unique identifier of unifiedRoleManagementPolicyAssignment
+  [UnifiedRoleManagementPolicyId <String>]: The unique identifier of unifiedRoleManagementPolicy
+  [UnifiedRoleManagementPolicyRuleId <String>]: The unique identifier of unifiedRoleManagementPolicyRule
+  [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
+  [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
+  [UserId <String>]: The unique identifier of user
+  [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-KEYS `<IMicrosoftGraphTrustFrameworkKey- `[]`>`: A collection of the keys.
-  - `[D <String>]`: RSA Key - private exponent.
+KEYS <IMicrosoftGraphTrustFrameworkKey[]>: A collection of the keys.
+  [D <String>]: RSA Key - private exponent.
 The field isn't readable.
-  - `[Dp <String>]`: RSA Key - first exponent.
+  [Dp <String>]: RSA Key - first exponent.
 The field isn't readable.
-  - `[Dq <String>]`: RSA Key - second exponent.
+  [Dq <String>]: RSA Key - second exponent.
 The field isn't readable.
-  - `[E <String>]`: RSA Key - public exponent.
-  - `[Exp <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+  [E <String>]: RSA Key - public exponent.
+  [Exp <Int64?>]: This value is a NumericDate as defined in RFC 7519.
 That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
-  - `[K <String>]`: Symmetric Key for oct key type.
+  [K <String>]: Symmetric Key for oct key type.
 The field isn't readable.
-  - `[Kid <String>]`: The unique identifier for the key.
-  - `[Kty <String>]`: The kty (key type) parameter identifies the cryptographic algorithm family used with the key.
+  [Kid <String>]: The unique identifier for the key.
+  [Kty <String>]: The kty (key type) parameter identifies the cryptographic algorithm family used with the key.
 The valid values are rsa, oct.
-  - `[N <String>]`: RSA Key - modulus.
-  - `[Nbf <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+  [N <String>]: RSA Key - modulus.
+  [Nbf <Int64?>]: This value is a NumericDate as defined in RFC 7519.
 That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
-  - `[P <String>]`: RSA Key - first prime.
+  [P <String>]: RSA Key - first prime.
 The field isn't readable.
-  - `[Q <String>]`: RSA Key - second prime.
+  [Q <String>]: RSA Key - second prime.
 The field isn't readable.
-  - `[Qi <String>]`: RSA Key - Coefficient.
+  [Qi <String>]: RSA Key - Coefficient.
 The field isn't readable.
-  - `[Status <String>]`: trustFrameworkKeyStatus
-  - `[Use <String>]`: The use (public key use) parameter identifies the intended use of the public key.
+  [Status <String>]: trustFrameworkKeyStatus
+  [Use <String>]: The use (public key use) parameter identifies the intended use of the public key.
 The use parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data.
 Possible values are: sig (signature), enc (encryption).
-  - `[X5C <String- `[]`>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
+  [X5C <String[]>]: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
 For more information, see RFC 5280.
-  - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
+  [X5T <String>]: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
 For more information, see RFC 5280.
 
-KEYSV2 `<IMicrosoftGraphTrustFrameworkKeyV2- `[]`>`: A collection of the keys.
-  - `[D <String>]`: RSA Key - private exponent.
+KEYSV2 <IMicrosoftGraphTrustFrameworkKeyV2[]>: A collection of the keys.
+  [D <String>]: RSA Key - private exponent.
 The field isn't readable.
-  - `[Dp <String>]`: RSA Key - first exponent.
+  [Dp <String>]: RSA Key - first exponent.
 The field isn't readable.
-  - `[Dq <String>]`: RSA Key - second exponent.
+  [Dq <String>]: RSA Key - second exponent.
 The field isn't readable.
-  - `[E <String>]`: RSA Key - public exponent.
-  - `[Exp <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+  [E <String>]: RSA Key - public exponent.
+  [Exp <Int64?>]: This value is a NumericDate as defined in RFC 7519.
 That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
-  - `[K <String>]`: Symmetric Key for oct key type.
+  [K <String>]: Symmetric Key for oct key type.
 The field isn't readable.
-  - `[Kid <String>]`: The unique identifier for the key.
+  [Kid <String>]: The unique identifier for the key.
 Primary key.
-  - `[Kty <String>]`: The kty (key type) parameter identifies the cryptographic algorithm family used with the key.
+  [Kty <String>]: The kty (key type) parameter identifies the cryptographic algorithm family used with the key.
 The valid values are rsa, oct.
-  - `[N <String>]`: RSA Key - modulus.
-  - `[Nbf <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+  [N <String>]: RSA Key - modulus.
+  [Nbf <Int64?>]: This value is a NumericDate as defined in RFC 7519.
 That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
-  - `[P <String>]`: RSA Key - first prime.
+  [P <String>]: RSA Key - first prime.
 The field isn't readable.
-  - `[Q <String>]`: RSA Key - second prime.
+  [Q <String>]: RSA Key - second prime.
 The field isn't readable.
-  - `[Qi <String>]`: RSA Key - Coefficient.
+  [Qi <String>]: RSA Key - Coefficient.
 The field isn't readable.
-  - `[Status <String>]`: trustFrameworkKeyStatus
-  - `[Use <String>]`: The use (public key use) parameter identifies the intended use of the public key.
+  [Status <String>]: trustFrameworkKeyStatus
+  [Use <String>]: The use (public key use) parameter identifies the intended use of the public key.
 The use parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data.
 Possible values are: sig (signature), enc (encryption).
-  - `[X5C <String- `[]`>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
+  [X5C <String[]>]: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
 For more information, see RFC 5280.
-  - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
+  [X5T <String>]: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
 For more information, see RFC 5280.
+
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset)
-
-[https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-beta)
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset)
+- [](https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-beta)
 
 
 

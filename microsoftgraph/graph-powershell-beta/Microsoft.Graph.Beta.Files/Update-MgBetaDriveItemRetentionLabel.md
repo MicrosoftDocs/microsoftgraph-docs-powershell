@@ -1,19 +1,21 @@
 ---
-external help file: Microsoft.Graph.Beta.Files-help.xml
+document type: cmdlet
+external help file: Microsoft.Graph.Beta.Files-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel
+Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel
-schema: 2.0.0
-ms.subservice: onedrive
+ms.date: 09/12/2025
+PlatyPS schema version: 2024-05-01
+title: Update-MgBetaDriveItemRetentionLabel
 ---
 
 # Update-MgBetaDriveItemRetentionLabel
 
 ## SYNOPSIS
-Apply (set) a retention label on a driveItem (files and folders).
-Retention labels don't need to be published in a retention label policy to be applied using this method.
-When a retention label is applied to a folder, all the items in the folder are tagged with the same retention label.
-For information about conflict resolution for retention labels, see Will an existing label be overridden or removed.
+
+Lock or unlock a retention label on a driveItem that classifies content as records.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
+For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItemRetentionLabel?view=graph-powershell-1.0)
@@ -21,43 +23,61 @@ For information about retention labels from an administrator's perspective, see 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
+
 ```
-Update-MgBetaDriveItemRetentionLabel -DriveId <String> -DriveItemId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-IsLabelAppliedExplicitly] [-LabelAppliedBy <IMicrosoftGraphIdentitySet>] [-LabelAppliedDateTime <DateTime>]
- [-Name <String>] [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDriveItemRetentionLabel -DriveId <string> -DriveItemId <string>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
+ [-IsLabelAppliedExplicitly] [-LabelAppliedBy <IMicrosoftGraphIdentitySet>]
+ [-LabelAppliedDateTime <datetime>] [-Name <string>]
+ [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
+
 ```
-Update-MgBetaDriveItemRetentionLabel -DriveId <String> -DriveItemId <String>
- -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDriveItemRetentionLabel -DriveId <string> -DriveItemId <string>
+ -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
+
 ```
-Update-MgBetaDriveItemRetentionLabel -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsLabelAppliedExplicitly]
- [-LabelAppliedBy <IMicrosoftGraphIdentitySet>] [-LabelAppliedDateTime <DateTime>] [-Name <String>]
- [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDriveItemRetentionLabel -InputObject <IFilesIdentity>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
+ [-IsLabelAppliedExplicitly] [-LabelAppliedBy <IMicrosoftGraphIdentitySet>]
+ [-LabelAppliedDateTime <datetime>] [-Name <string>]
+ [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
+
 ```
 Update-MgBetaDriveItemRetentionLabel -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+## ALIASES
+
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
 ## DESCRIPTION
-Apply (set) a retention label on a driveItem (files and folders).
-Retention labels don't need to be published in a retention label policy to be applied using this method.
-When a retention label is applied to a folder, all the items in the folder are tagged with the same retention label.
-For information about conflict resolution for retention labels, see Will an existing label be overridden or removed.
+
+Lock or unlock a retention label on a driveItem that classifies content as records.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
+For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -67,7 +87,9 @@ For information about retention labels from an administrator's perspective, see 
 Import-Module Microsoft.Graph.Beta.Files
 
 $params = @{
-	name = "Retention label for Contracts"
+	retentionSettings = @{
+		isRecordLocked = $true
+	}
 }
 
 Update-MgBetaDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
@@ -79,354 +101,654 @@ This example shows how to use the Update-MgBetaDriveItemRetentionLabel Cmdlet.
 ## PARAMETERS
 
 ### -AdditionalProperties
+
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BodyParameter
+
 itemRetentionLabel
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemRetentionLabel
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemRetentionLabel
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confirm
+
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -DriveId
+
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -DriveItemId
+
 The unique identifier of driveItem
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Headers
+
 Optional headers that will be added to the request.
 
 ```yaml
-Type: IDictionary
-Parameter Sets: (All)
-Aliases:
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Id
+
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -InputObject
+
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -IsLabelAppliedExplicitly
+
 Specifies whether the label is applied explicitly on the item.
 True indicates that the label is applied explicitly; otherwise, the label is inherited from its parent.
 Read-only.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -LabelAppliedBy
+
 identitySet
 To construct, see NOTES section for LABELAPPLIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -LabelAppliedDateTime
+
 The date and time when the label was applied on the item.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Name
+
 The retention label on the document.
 Read-write.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResponseHeadersVariable
+
 Optional Response Headers Variable.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -RetentionSettings
+
 retentionLabelSettings
 To construct, see NOTES section for RETENTIONSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRetentionLabelSettings
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRetentionLabelSettings
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
+{{ Fill in the Description }}
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemRetentionLabel
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemRetentionLabel
+
+{{ Fill in the Description }}
+
 ## NOTES
+
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphItemRetentionLabel>`: itemRetentionLabel
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[IsLabelAppliedExplicitly <Boolean?>]`: Specifies whether the label is applied explicitly on the item.
+  [IsLabelAppliedExplicitly <Boolean?>]: Specifies whether the label is applied explicitly on the item.
 True indicates that the label is applied explicitly; otherwise, the label is inherited from its parent.
 Read-only.
-  - `[LabelAppliedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  [LabelAppliedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Application <IMicrosoftGraphIdentity>]: identity
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      [Id <String>]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LabelAppliedDateTime <DateTime?>]`: The date and time when the label was applied on the item.
+    [Device <IMicrosoftGraphIdentity>]: identity
+    [User <IMicrosoftGraphIdentity>]: identity
+  [LabelAppliedDateTime <DateTime?>]: The date and time when the label was applied on the item.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[Name <String>]`: The retention label on the document.
+  [Name <String>]: The retention label on the document.
 Read-write.
-  - `[RetentionSettings <IMicrosoftGraphRetentionLabelSettings>]`: retentionLabelSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[BehaviorDuringRetentionPeriod <String>]`: behaviorDuringRetentionPeriod
-    - `[IsContentUpdateAllowed <Boolean?>]`: Specifies whether updates to document content are allowed.
+  [RetentionSettings <IMicrosoftGraphRetentionLabelSettings>]: retentionLabelSettings
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [BehaviorDuringRetentionPeriod <String>]: behaviorDuringRetentionPeriod
+    [IsContentUpdateAllowed <Boolean?>]: Specifies whether updates to document content are allowed.
 Read-only.
-    - `[IsDeleteAllowed <Boolean?>]`: Specifies whether the document deletion is allowed.
+    [IsDeleteAllowed <Boolean?>]: Specifies whether the document deletion is allowed.
 Read-only.
-    - `[IsLabelUpdateAllowed <Boolean?>]`: Specifies whether you're allowed to change the retention label on the document.
+    [IsLabelUpdateAllowed <Boolean?>]: Specifies whether you're allowed to change the retention label on the document.
 Read-only.
-    - `[IsMetadataUpdateAllowed <Boolean?>]`: Specifies whether updates to the item metadata (for example, the Title field) are blocked.
+    [IsMetadataUpdateAllowed <Boolean?>]: Specifies whether updates to the item metadata (for example, the Title field) are blocked.
 Read-only.
-    - `[IsRecordLocked <Boolean?>]`: Specifies whether the item is locked.
+    [IsRecordLocked <Boolean?>]: Specifies whether the item is locked.
 Read-write.
 
 INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
-  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemId1 <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
-  - `[SharedDriveItemId <String>]`: The unique identifier of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[ThumbnailSetId <String>]`: The unique identifier of thumbnailSet
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: The unique identifier of user
+  [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
+  [ColumnLinkId <String>]: The unique identifier of columnLink
+  [ContentTypeId <String>]: The unique identifier of contentType
+  [ContentTypeId1 <String>]: The unique identifier of contentType
+  [DocumentSetVersionId <String>]: The unique identifier of documentSetVersion
+  [DriveId <String>]: The unique identifier of drive
+  [DriveItemId <String>]: The unique identifier of driveItem
+  [DriveItemId1 <String>]: The unique identifier of driveItem
+  [DriveItemVersionId <String>]: The unique identifier of driveItemVersion
+  [EndDateTime <String>]: Usage: endDateTime='{endDateTime}'
+  [ExtensionId <String>]: The unique identifier of extension
+  [GroupId <String>]: The unique identifier of group
+  [Interval <String>]: Usage: interval='{interval}'
+  [ItemActivityStatId <String>]: The unique identifier of itemActivityStat
+  [ListItemId <String>]: The unique identifier of listItem
+  [ListItemVersionId <String>]: The unique identifier of listItemVersion
+  [PermissionId <String>]: The unique identifier of permission
+  [Q <String>]: Usage: q='{q}'
+  [RichLongRunningOperationId <String>]: The unique identifier of richLongRunningOperation
+  [SharedDriveItemId <String>]: The unique identifier of sharedDriveItem
+  [StartDateTime <String>]: Usage: startDateTime='{startDateTime}'
+  [SubscriptionId <String>]: The unique identifier of subscription
+  [ThumbnailSetId <String>]: The unique identifier of thumbnailSet
+  [Token <String>]: Usage: token='{token}'
+  [UserId <String>]: The unique identifier of user
 
 LABELAPPLIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Application <IMicrosoftGraphIdentity>]: identity
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [DisplayName <String>]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    [Id <String>]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  [Device <IMicrosoftGraphIdentity>]: identity
+  [User <IMicrosoftGraphIdentity>]: identity
 
 RETENTIONSETTINGS `<IMicrosoftGraphRetentionLabelSettings>`: retentionLabelSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[BehaviorDuringRetentionPeriod <String>]`: behaviorDuringRetentionPeriod
-  - `[IsContentUpdateAllowed <Boolean?>]`: Specifies whether updates to document content are allowed.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [BehaviorDuringRetentionPeriod <String>]: behaviorDuringRetentionPeriod
+  [IsContentUpdateAllowed <Boolean?>]: Specifies whether updates to document content are allowed.
 Read-only.
-  - `[IsDeleteAllowed <Boolean?>]`: Specifies whether the document deletion is allowed.
+  [IsDeleteAllowed <Boolean?>]: Specifies whether the document deletion is allowed.
 Read-only.
-  - `[IsLabelUpdateAllowed <Boolean?>]`: Specifies whether you're allowed to change the retention label on the document.
+  [IsLabelUpdateAllowed <Boolean?>]: Specifies whether you're allowed to change the retention label on the document.
 Read-only.
-  - `[IsMetadataUpdateAllowed <Boolean?>]`: Specifies whether updates to the item metadata (for example, the Title field) are blocked.
+  [IsMetadataUpdateAllowed <Boolean?>]: Specifies whether updates to the item metadata (for example, the Title field) are blocked.
 Read-only.
-  - `[IsRecordLocked <Boolean?>]`: Specifies whether the item is locked.
+  [IsRecordLocked <Boolean?>]: Specifies whether the item is locked.
 Read-write.
+
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel)
-
-[https://learn.microsoft.com/graph/api/driveitem-setretentionlabel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-setretentionlabel?view=graph-rest-beta)
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel)
+- [](https://learn.microsoft.com/graph/api/driveitem-lockorunlockrecord?view=graph-rest-beta)
 
 
 

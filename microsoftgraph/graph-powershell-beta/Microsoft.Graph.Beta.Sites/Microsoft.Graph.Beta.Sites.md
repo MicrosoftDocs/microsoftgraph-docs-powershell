@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Sites
-Module Guid: c006920d-53da-48a8-8430-75c79f5c3557
+Module Guid: 6f92b353-7b79-4a3a-886c-cfb7f643cdc1
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.sites/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -195,6 +195,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteDriveCount](Get-MgBetaGroupSiteDriveCount.md)
 
+### [Get-MgBetaGroupSiteExtension](Get-MgBetaGroupSiteExtension.md)
+
+### [Get-MgBetaGroupSiteExtension](Get-MgBetaGroupSiteExtension.md)
+
+### [Get-MgBetaGroupSiteExtensionCount](Get-MgBetaGroupSiteExtensionCount.md)
+
 ### [Get-MgBetaGroupSiteExternalColumn](Get-MgBetaGroupSiteExternalColumn.md)
 
 ### [Get-MgBetaGroupSiteExternalColumn](Get-MgBetaGroupSiteExternalColumn.md)
@@ -216,6 +222,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupSiteGetByPathDrive](Get-MgBetaGroupSiteGetByPathDrive.md)
 
 ### [Get-MgBetaGroupSiteGetByPathDrive](Get-MgBetaGroupSiteGetByPathDrive.md)
+
+### [Get-MgBetaGroupSiteGetByPathExtension](Get-MgBetaGroupSiteGetByPathExtension.md)
 
 ### [Get-MgBetaGroupSiteGetByPathExternalColumn](Get-MgBetaGroupSiteGetByPathExternalColumn.md)
 
@@ -273,11 +281,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteInformationProtectionSensitivityLabelCount](Get-MgBetaGroupSiteInformationProtectionSensitivityLabelCount.md)
 
+### [Get-MgBetaGroupSiteInformationProtectionSensitivityLabelRight](Get-MgBetaGroupSiteInformationProtectionSensitivityLabelRight.md)
+
 ### [Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel](Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel.md)
 
 ### [Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel](Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel.md)
 
 ### [Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabelCount](Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabelCount.md)
+
+### [Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabelRight](Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabelRight.md)
 
 ### [Get-MgBetaGroupSiteInformationProtectionSensitivityPolicySetting](Get-MgBetaGroupSiteInformationProtectionSensitivityPolicySetting.md)
 
@@ -448,6 +460,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupSiteListSubscription](Get-MgBetaGroupSiteListSubscription.md)
 
 ### [Get-MgBetaGroupSiteListSubscriptionCount](Get-MgBetaGroupSiteListSubscriptionCount.md)
+
+### [Get-MgBetaGroupSiteListSubscriptionVapidPublicKey](Get-MgBetaGroupSiteListSubscriptionVapidPublicKey.md)
 
 ### [Get-MgBetaGroupSiteOnenote](Get-MgBetaGroupSiteOnenote.md)
 
@@ -1321,6 +1335,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteListSubscriptionCount](Get-MgBetaSiteListSubscriptionCount.md)
 
+### [Get-MgBetaSiteListSubscriptionVapidPublicKey](Get-MgBetaSiteListSubscriptionVapidPublicKey.md)
+
 ### [Get-MgBetaSiteOperation](Get-MgBetaSiteOperation.md)
 
 ### [Get-MgBetaSiteOperation](Get-MgBetaSiteOperation.md)
@@ -1687,6 +1703,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Grant-MgBetaSitePermission](Grant-MgBetaSitePermission.md)
 
+### [Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabel](Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabel.md)
+
+### [Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabelSublabel](Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabelSublabel.md)
+
 ### [Invoke-MgBetaArchiveGroupSite](Invoke-MgBetaArchiveGroupSite.md)
 
 ### [Invoke-MgBetaArchiveSite](Invoke-MgBetaArchiveSite.md)
@@ -1696,6 +1716,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBetaBufferGroupSiteInformationProtectionDecrypt](Invoke-MgBetaBufferGroupSiteInformationProtectionDecrypt.md)
 
 ### [Invoke-MgBetaBufferGroupSiteInformationProtectionEncrypt](Invoke-MgBetaBufferGroupSiteInformationProtectionEncrypt.md)
+
+### [Invoke-MgBetaComputeGroupSiteInformationProtectionSensitivityLabelInheritance](Invoke-MgBetaComputeGroupSiteInformationProtectionSensitivityLabelInheritance.md)
+
+### [Invoke-MgBetaComputeGroupSiteInformationProtectionSensitivityLabelSublabelInheritance](Invoke-MgBetaComputeGroupSiteInformationProtectionSensitivityLabelSublabelInheritance.md)
 
 ### [Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel](Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel.md)
 
@@ -1745,6 +1769,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaGroupSiteDocumentProcessingJob](New-MgBetaGroupSiteDocumentProcessingJob.md)
 
+### [New-MgBetaGroupSiteExtension](New-MgBetaGroupSiteExtension.md)
+
 ### [New-MgBetaGroupSiteGetByPathColumn](New-MgBetaGroupSiteGetByPathColumn.md)
 
 ### [New-MgBetaGroupSiteGetByPathContentModel](New-MgBetaGroupSiteGetByPathContentModel.md)
@@ -1752,6 +1778,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaGroupSiteGetByPathContentType](New-MgBetaGroupSiteGetByPathContentType.md)
 
 ### [New-MgBetaGroupSiteGetByPathDocumentProcessingJob](New-MgBetaGroupSiteGetByPathDocumentProcessingJob.md)
+
+### [New-MgBetaGroupSiteGetByPathExtension](New-MgBetaGroupSiteGetByPathExtension.md)
 
 ### [New-MgBetaGroupSiteGetByPathList](New-MgBetaGroupSiteGetByPathList.md)
 
@@ -2070,6 +2098,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaGroupSiteContentTypeColumnLink](Remove-MgBetaGroupSiteContentTypeColumnLink.md)
 
 ### [Remove-MgBetaGroupSiteDocumentProcessingJob](Remove-MgBetaGroupSiteDocumentProcessingJob.md)
+
+### [Remove-MgBetaGroupSiteExtension](Remove-MgBetaGroupSiteExtension.md)
 
 ### [Remove-MgBetaGroupSiteGetByPathAnalytic](Remove-MgBetaGroupSiteGetByPathAnalytic.md)
 
@@ -2411,6 +2441,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Restore-MgBetaGroupSiteListItemVersion](Restore-MgBetaGroupSiteListItemVersion.md)
 
+### [Restore-MgBetaGroupSiteRecycleBinItem](Restore-MgBetaGroupSiteRecycleBinItem.md)
+
 ### [Restore-MgBetaSiteListItemDocumentSetVersion](Restore-MgBetaSiteListItemDocumentSetVersion.md)
 
 ### [Restore-MgBetaSiteListItemVersion](Restore-MgBetaSiteListItemVersion.md)
@@ -2516,6 +2548,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaGroupSiteCreatedByUserMailboxSetting](Update-MgBetaGroupSiteCreatedByUserMailboxSetting.md)
 
 ### [Update-MgBetaGroupSiteDocumentProcessingJob](Update-MgBetaGroupSiteDocumentProcessingJob.md)
+
+### [Update-MgBetaGroupSiteExtension](Update-MgBetaGroupSiteExtension.md)
 
 ### [Update-MgBetaGroupSiteGetByPathAnalytic](Update-MgBetaGroupSiteGetByPathAnalytic.md)
 

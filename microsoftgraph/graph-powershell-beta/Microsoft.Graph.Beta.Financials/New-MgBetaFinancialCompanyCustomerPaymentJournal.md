@@ -1,550 +1,887 @@
 ---
-external help file: Microsoft.Graph.Beta.Financials-help.xml
+document type: cmdlet
+external help file: Microsoft.Graph.Beta.Financials-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpaymentjournal
+Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpaymentjournal
-schema: 2.0.0
+ms.date: 09/12/2025
+PlatyPS schema version: 2024-05-01
+title: New-MgBetaFinancialCompanyCustomerPaymentJournal
 ---
 
 # New-MgBetaFinancialCompanyCustomerPaymentJournal
 
 ## SYNOPSIS
+
 Create new navigation property to customerPaymentJournals for financials
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
+
 ```
-New-MgBetaFinancialCompanyCustomerPaymentJournal -CompanyId <String> [-ResponseHeadersVariable <String>]
- [-Account <IMicrosoftGraphAccount>] [-AdditionalProperties <Hashtable>] [-BalancingAccountId <String>]
- [-BalancingAccountNumber <String>] [-Code <String>] [-CustomerPayments <IMicrosoftGraphCustomerPayment[]>]
- [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaFinancialCompanyCustomerPaymentJournal -CompanyId <string>
+ [-ResponseHeadersVariable <string>] [-Account <IMicrosoftGraphAccount>]
+ [-AdditionalProperties <hashtable>] [-BalancingAccountId <string>]
+ [-BalancingAccountNumber <string>] [-Code <string>]
+ [-CustomerPayments <IMicrosoftGraphCustomerPayment[]>] [-DisplayName <string>] [-Id <string>]
+ [-LastModifiedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
+
 ```
-New-MgBetaFinancialCompanyCustomerPaymentJournal -CompanyId <String>
- -BodyParameter <IMicrosoftGraphCustomerPaymentJournal> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaFinancialCompanyCustomerPaymentJournal -CompanyId <string>
+ -BodyParameter <IMicrosoftGraphCustomerPaymentJournal> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
+
 ```
 New-MgBetaFinancialCompanyCustomerPaymentJournal -InputObject <IFinancialsIdentity>
- [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AdditionalProperties <Hashtable>]
- [-BalancingAccountId <String>] [-BalancingAccountNumber <String>] [-Code <String>]
- [-CustomerPayments <IMicrosoftGraphCustomerPayment[]>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <string>] [-Account <IMicrosoftGraphAccount>]
+ [-AdditionalProperties <hashtable>] [-BalancingAccountId <string>]
+ [-BalancingAccountNumber <string>] [-Code <string>]
+ [-CustomerPayments <IMicrosoftGraphCustomerPayment[]>] [-DisplayName <string>] [-Id <string>]
+ [-LastModifiedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
+
 ```
 New-MgBetaFinancialCompanyCustomerPaymentJournal -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphCustomerPaymentJournal> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCustomerPaymentJournal> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Create new navigation property to customerPaymentJournals for financials
+## ALIASES
 
-## EXAMPLES
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
+## DESCRIPTION
+
+Create new navigation property to customerPaymentJournals for financials
 
 ## PARAMETERS
 
 ### -Account
+
 account
 To construct, see NOTES section for ACCOUNT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccount
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccount
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AdditionalProperties
+
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BalancingAccountId
 
 
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BalancingAccountNumber
 
 
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BodyParameter
+
 customerPaymentJournal
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomerPaymentJournal
-Parameter Sets: Create, CreateViaIdentity
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomerPaymentJournal
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Code
 
 
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CompanyId
+
 The unique identifier of company
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confirm
+
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CustomerPayments
 
+
 To construct, see NOTES section for CUSTOMERPAYMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomerPayment[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomerPayment[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -DisplayName
 
 
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Headers
+
 Optional headers that will be added to the request.
 
 ```yaml
-Type: IDictionary
-Parameter Sets: (All)
-Aliases:
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Id
 
 
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -InputObject
+
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -LastModifiedDateTime
 
 
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResponseHeadersVariable
+
 Optional Response Headers Variable.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+
+{{ Fill in the Description }}
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomerPaymentJournal
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomerPaymentJournal
+
+{{ Fill in the Description }}
+
 ## NOTES
+
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 ACCOUNT `<IMicrosoftGraphAccount>`: account
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Blocked <Boolean?>]`: 
-  - `[Category <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[Id <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[Number <String>]`: 
-  - `[SubCategory <String>]`: 
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Blocked <Boolean?>]: 
+  [Category <String>]: 
+  [DisplayName <String>]: 
+  [Id <String>]: 
+  [LastModifiedDateTime <DateTime?>]: 
+  [Number <String>]: 
+  [SubCategory <String>]: 
 
 BODYPARAMETER `<IMicrosoftGraphCustomerPaymentJournal>`: customerPaymentJournal
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Account <IMicrosoftGraphAccount>]`: account
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Blocked <Boolean?>]`: 
-    - `[Category <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[Id <String>]`: 
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[Number <String>]`: 
-    - `[SubCategory <String>]`: 
-  - `[BalancingAccountId <String>]`: 
-  - `[BalancingAccountNumber <String>]`: 
-  - `[Code <String>]`: 
-  - `[CustomerPayments <IMicrosoftGraphCustomerPayment- `[]`>]`: 
-    - `[Amount <Decimal?>]`: 
-    - `[AppliesToInvoiceId <String>]`: 
-    - `[AppliesToInvoiceNumber <String>]`: 
-    - `[Comment <String>]`: 
-    - `[ContactId <String>]`: 
-    - `[Customer <IMicrosoftGraphCustomer>]`: customer
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[City <String>]`: 
-        - `[CountryLetterCode <String>]`: 
-        - `[PostalCode <String>]`: 
-        - `[State <String>]`: 
-        - `[Street <String>]`: 
-      - `[Blocked <String>]`: 
-      - `[Currency <IMicrosoftGraphCurrency>]`: currency
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AmountDecimalPlaces <String>]`: 
-        - `[AmountRoundingPrecision <Decimal?>]`: 
-        - `[Code <String>]`: 
-        - `[DisplayName <String>]`: 
-        - `[Id <String>]`: 
-        - `[LastModifiedDateTime <DateTime?>]`: 
-        - `[Symbol <String>]`: 
-      - `[CurrencyCode <String>]`: 
-      - `[CurrencyId <String>]`: 
-      - `[DisplayName <String>]`: 
-      - `[Email <String>]`: 
-      - `[Id <String>]`: 
-      - `[LastModifiedDateTime <DateTime?>]`: 
-      - `[Number <String>]`: 
-      - `[PaymentMethod <IMicrosoftGraphPaymentMethod>]`: paymentMethod
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Code <String>]`: 
-        - `[DisplayName <String>]`: 
-        - `[Id <String>]`: 
-        - `[LastModifiedDateTime <DateTime?>]`: 
-      - `[PaymentMethodId <String>]`: 
-      - `[PaymentTerm <IMicrosoftGraphPaymentTerm>]`: paymentTerm
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
-        - `[Code <String>]`: 
-        - `[DiscountDateCalculation <String>]`: 
-        - `[DiscountPercent <Decimal?>]`: 
-        - `[DisplayName <String>]`: 
-        - `[DueDateCalculation <String>]`: 
-        - `[Id <String>]`: 
-        - `[LastModifiedDateTime <DateTime?>]`: 
-      - `[PaymentTermsId <String>]`: 
-      - `[PhoneNumber <String>]`: 
-      - `[Picture <IMicrosoftGraphPicture- `[]`>]`: 
-        - `[Content <Byte- `[]`>]`: 
-        - `[ContentType <String>]`: 
-        - `[Height <Int32?>]`: 
-        - `[Id <String>]`: 
-        - `[Width <Int32?>]`: 
-      - `[ShipmentMethod <IMicrosoftGraphShipmentMethod>]`: shipmentMethod
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Code <String>]`: 
-        - `[DisplayName <String>]`: 
-        - `[Id <String>]`: 
-        - `[LastModifiedDateTime <DateTime?>]`: 
-      - `[ShipmentMethodId <String>]`: 
-      - `[TaxAreaDisplayName <String>]`: 
-      - `[TaxAreaId <String>]`: 
-      - `[TaxLiable <Boolean?>]`: 
-      - `[TaxRegistrationNumber <String>]`: 
-      - `[Type <String>]`: 
-      - `[Website <String>]`: 
-    - `[CustomerId <String>]`: 
-    - `[CustomerNumber <String>]`: 
-    - `[Description <String>]`: 
-    - `[DocumentNumber <String>]`: 
-    - `[ExternalDocumentNumber <String>]`: 
-    - `[Id <String>]`: 
-    - `[JournalDisplayName <String>]`: 
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[LineNumber <Int32?>]`: 
-    - `[PostingDate <DateTime?>]`: 
-  - `[DisplayName <String>]`: 
-  - `[Id <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Account <IMicrosoftGraphAccount>]: account
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Blocked <Boolean?>]: 
+    [Category <String>]: 
+    [DisplayName <String>]: 
+    [Id <String>]: 
+    [LastModifiedDateTime <DateTime?>]: 
+    [Number <String>]: 
+    [SubCategory <String>]: 
+  [BalancingAccountId <String>]: 
+  [BalancingAccountNumber <String>]: 
+  [Code <String>]: 
+  [CustomerPayments <IMicrosoftGraphCustomerPayment[]>]: 
+    [Amount <Decimal?>]: 
+    [AppliesToInvoiceId <String>]: 
+    [AppliesToInvoiceNumber <String>]: 
+    [Comment <String>]: 
+    [ContactId <String>]: 
+    [Customer <IMicrosoftGraphCustomer>]: customer
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Address <IMicrosoftGraphPostalAddressType>]: postalAddressType
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [City <String>]: 
+        [CountryLetterCode <String>]: 
+        [PostalCode <String>]: 
+        [State <String>]: 
+        [Street <String>]: 
+      [Blocked <String>]: 
+      [Currency <IMicrosoftGraphCurrency>]: currency
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [AmountDecimalPlaces <String>]: 
+        [AmountRoundingPrecision <Decimal?>]: 
+        [Code <String>]: 
+        [DisplayName <String>]: 
+        [Id <String>]: 
+        [LastModifiedDateTime <DateTime?>]: 
+        [Symbol <String>]: 
+      [CurrencyCode <String>]: 
+      [CurrencyId <String>]: 
+      [DisplayName <String>]: 
+      [Email <String>]: 
+      [Id <String>]: 
+      [LastModifiedDateTime <DateTime?>]: 
+      [Number <String>]: 
+      [PaymentMethod <IMicrosoftGraphPaymentMethod>]: paymentMethod
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Code <String>]: 
+        [DisplayName <String>]: 
+        [Id <String>]: 
+        [LastModifiedDateTime <DateTime?>]: 
+      [PaymentMethodId <String>]: 
+      [PaymentTerm <IMicrosoftGraphPaymentTerm>]: paymentTerm
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [CalculateDiscountOnCreditMemos <Boolean?>]: 
+        [Code <String>]: 
+        [DiscountDateCalculation <String>]: 
+        [DiscountPercent <Decimal?>]: 
+        [DisplayName <String>]: 
+        [DueDateCalculation <String>]: 
+        [Id <String>]: 
+        [LastModifiedDateTime <DateTime?>]: 
+      [PaymentTermsId <String>]: 
+      [PhoneNumber <String>]: 
+      [Picture <IMicrosoftGraphPicture[]>]: 
+        [Content <Byte[]>]: 
+        [ContentType <String>]: 
+        [Height <Int32?>]: 
+        [Id <String>]: 
+        [Width <Int32?>]: 
+      [ShipmentMethod <IMicrosoftGraphShipmentMethod>]: shipmentMethod
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Code <String>]: 
+        [DisplayName <String>]: 
+        [Id <String>]: 
+        [LastModifiedDateTime <DateTime?>]: 
+      [ShipmentMethodId <String>]: 
+      [TaxAreaDisplayName <String>]: 
+      [TaxAreaId <String>]: 
+      [TaxLiable <Boolean?>]: 
+      [TaxRegistrationNumber <String>]: 
+      [Type <String>]: 
+      [Website <String>]: 
+    [CustomerId <String>]: 
+    [CustomerNumber <String>]: 
+    [Description <String>]: 
+    [DocumentNumber <String>]: 
+    [ExternalDocumentNumber <String>]: 
+    [Id <String>]: 
+    [JournalDisplayName <String>]: 
+    [LastModifiedDateTime <DateTime?>]: 
+    [LineNumber <Int32?>]: 
+    [PostingDate <DateTime?>]: 
+  [DisplayName <String>]: 
+  [Id <String>]: 
+  [LastModifiedDateTime <DateTime?>]: 
 
-CUSTOMERPAYMENTS `<IMicrosoftGraphCustomerPayment- `[]`>`: .
-  - `[Amount <Decimal?>]`: 
-  - `[AppliesToInvoiceId <String>]`: 
-  - `[AppliesToInvoiceNumber <String>]`: 
-  - `[Comment <String>]`: 
-  - `[ContactId <String>]`: 
-  - `[Customer <IMicrosoftGraphCustomer>]`: customer
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[City <String>]`: 
-      - `[CountryLetterCode <String>]`: 
-      - `[PostalCode <String>]`: 
-      - `[State <String>]`: 
-      - `[Street <String>]`: 
-    - `[Blocked <String>]`: 
-    - `[Currency <IMicrosoftGraphCurrency>]`: currency
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AmountDecimalPlaces <String>]`: 
-      - `[AmountRoundingPrecision <Decimal?>]`: 
-      - `[Code <String>]`: 
-      - `[DisplayName <String>]`: 
-      - `[Id <String>]`: 
-      - `[LastModifiedDateTime <DateTime?>]`: 
-      - `[Symbol <String>]`: 
-    - `[CurrencyCode <String>]`: 
-    - `[CurrencyId <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[Email <String>]`: 
-    - `[Id <String>]`: 
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[Number <String>]`: 
-    - `[PaymentMethod <IMicrosoftGraphPaymentMethod>]`: paymentMethod
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <String>]`: 
-      - `[DisplayName <String>]`: 
-      - `[Id <String>]`: 
-      - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[PaymentMethodId <String>]`: 
-    - `[PaymentTerm <IMicrosoftGraphPaymentTerm>]`: paymentTerm
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
-      - `[Code <String>]`: 
-      - `[DiscountDateCalculation <String>]`: 
-      - `[DiscountPercent <Decimal?>]`: 
-      - `[DisplayName <String>]`: 
-      - `[DueDateCalculation <String>]`: 
-      - `[Id <String>]`: 
-      - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[PaymentTermsId <String>]`: 
-    - `[PhoneNumber <String>]`: 
-    - `[Picture <IMicrosoftGraphPicture- `[]`>]`: 
-      - `[Content <Byte- `[]`>]`: 
-      - `[ContentType <String>]`: 
-      - `[Height <Int32?>]`: 
-      - `[Id <String>]`: 
-      - `[Width <Int32?>]`: 
-    - `[ShipmentMethod <IMicrosoftGraphShipmentMethod>]`: shipmentMethod
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <String>]`: 
-      - `[DisplayName <String>]`: 
-      - `[Id <String>]`: 
-      - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[ShipmentMethodId <String>]`: 
-    - `[TaxAreaDisplayName <String>]`: 
-    - `[TaxAreaId <String>]`: 
-    - `[TaxLiable <Boolean?>]`: 
-    - `[TaxRegistrationNumber <String>]`: 
-    - `[Type <String>]`: 
-    - `[Website <String>]`: 
-  - `[CustomerId <String>]`: 
-  - `[CustomerNumber <String>]`: 
-  - `[Description <String>]`: 
-  - `[DocumentNumber <String>]`: 
-  - `[ExternalDocumentNumber <String>]`: 
-  - `[Id <String>]`: 
-  - `[JournalDisplayName <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[LineNumber <Int32?>]`: 
-  - `[PostingDate <DateTime?>]`: 
+CUSTOMERPAYMENTS <IMicrosoftGraphCustomerPayment[]>: .
+  [Amount <Decimal?>]: 
+  [AppliesToInvoiceId <String>]: 
+  [AppliesToInvoiceNumber <String>]: 
+  [Comment <String>]: 
+  [ContactId <String>]: 
+  [Customer <IMicrosoftGraphCustomer>]: customer
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Address <IMicrosoftGraphPostalAddressType>]: postalAddressType
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [City <String>]: 
+      [CountryLetterCode <String>]: 
+      [PostalCode <String>]: 
+      [State <String>]: 
+      [Street <String>]: 
+    [Blocked <String>]: 
+    [Currency <IMicrosoftGraphCurrency>]: currency
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [AmountDecimalPlaces <String>]: 
+      [AmountRoundingPrecision <Decimal?>]: 
+      [Code <String>]: 
+      [DisplayName <String>]: 
+      [Id <String>]: 
+      [LastModifiedDateTime <DateTime?>]: 
+      [Symbol <String>]: 
+    [CurrencyCode <String>]: 
+    [CurrencyId <String>]: 
+    [DisplayName <String>]: 
+    [Email <String>]: 
+    [Id <String>]: 
+    [LastModifiedDateTime <DateTime?>]: 
+    [Number <String>]: 
+    [PaymentMethod <IMicrosoftGraphPaymentMethod>]: paymentMethod
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Code <String>]: 
+      [DisplayName <String>]: 
+      [Id <String>]: 
+      [LastModifiedDateTime <DateTime?>]: 
+    [PaymentMethodId <String>]: 
+    [PaymentTerm <IMicrosoftGraphPaymentTerm>]: paymentTerm
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [CalculateDiscountOnCreditMemos <Boolean?>]: 
+      [Code <String>]: 
+      [DiscountDateCalculation <String>]: 
+      [DiscountPercent <Decimal?>]: 
+      [DisplayName <String>]: 
+      [DueDateCalculation <String>]: 
+      [Id <String>]: 
+      [LastModifiedDateTime <DateTime?>]: 
+    [PaymentTermsId <String>]: 
+    [PhoneNumber <String>]: 
+    [Picture <IMicrosoftGraphPicture[]>]: 
+      [Content <Byte[]>]: 
+      [ContentType <String>]: 
+      [Height <Int32?>]: 
+      [Id <String>]: 
+      [Width <Int32?>]: 
+    [ShipmentMethod <IMicrosoftGraphShipmentMethod>]: shipmentMethod
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Code <String>]: 
+      [DisplayName <String>]: 
+      [Id <String>]: 
+      [LastModifiedDateTime <DateTime?>]: 
+    [ShipmentMethodId <String>]: 
+    [TaxAreaDisplayName <String>]: 
+    [TaxAreaId <String>]: 
+    [TaxLiable <Boolean?>]: 
+    [TaxRegistrationNumber <String>]: 
+    [Type <String>]: 
+    [Website <String>]: 
+  [CustomerId <String>]: 
+  [CustomerNumber <String>]: 
+  [Description <String>]: 
+  [DocumentNumber <String>]: 
+  [ExternalDocumentNumber <String>]: 
+  [Id <String>]: 
+  [JournalDisplayName <String>]: 
+  [LastModifiedDateTime <DateTime?>]: 
+  [LineNumber <Int32?>]: 
+  [PostingDate <DateTime?>]: 
 
 INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
-  - `[AccountId <String>]`: The unique identifier of account
-  - `[AgedAccountsPayableId <String>]`: The unique identifier of agedAccountsPayable
-  - `[AgedAccountsReceivableId <String>]`: The unique identifier of agedAccountsReceivable
-  - `[CompanyId <String>]`: The unique identifier of company
-  - `[CompanyInformationId <String>]`: The unique identifier of companyInformation
-  - `[CountryRegionId <String>]`: The unique identifier of countryRegion
-  - `[CurrencyId <String>]`: The unique identifier of currency
-  - `[CustomerId <String>]`: The unique identifier of customer
-  - `[CustomerPaymentId <String>]`: The unique identifier of customerPayment
-  - `[CustomerPaymentJournalId <String>]`: The unique identifier of customerPaymentJournal
-  - `[DimensionId <String>]`: The unique identifier of dimension
-  - `[DimensionValueId <String>]`: The unique identifier of dimensionValue
-  - `[EmployeeId <String>]`: The unique identifier of employee
-  - `[GeneralLedgerEntryId <String>]`: The unique identifier of generalLedgerEntry
-  - `[ItemCategoryId <String>]`: The unique identifier of itemCategory
-  - `[ItemId <String>]`: The unique identifier of item
-  - `[JournalId <String>]`: The unique identifier of journal
-  - `[JournalLineId <String>]`: The unique identifier of journalLine
-  - `[PaymentMethodId <String>]`: The unique identifier of paymentMethod
-  - `[PaymentTermId <String>]`: The unique identifier of paymentTerm
-  - `[PictureId <String>]`: The unique identifier of picture
-  - `[PurchaseInvoiceId <String>]`: The unique identifier of purchaseInvoice
-  - `[PurchaseInvoiceLineId <String>]`: The unique identifier of purchaseInvoiceLine
-  - `[SalesCreditMemoId <String>]`: The unique identifier of salesCreditMemo
-  - `[SalesCreditMemoLineId <String>]`: The unique identifier of salesCreditMemoLine
-  - `[SalesInvoiceId <String>]`: The unique identifier of salesInvoice
-  - `[SalesInvoiceLineId <String>]`: The unique identifier of salesInvoiceLine
-  - `[SalesOrderId <String>]`: The unique identifier of salesOrder
-  - `[SalesOrderLineId <String>]`: The unique identifier of salesOrderLine
-  - `[SalesQuoteId <String>]`: The unique identifier of salesQuote
-  - `[SalesQuoteLineId <String>]`: The unique identifier of salesQuoteLine
-  - `[ShipmentMethodId <String>]`: The unique identifier of shipmentMethod
-  - `[TaxAreaId <String>]`: The unique identifier of taxArea
-  - `[TaxGroupId <String>]`: The unique identifier of taxGroup
-  - `[UnitOfMeasureId <String>]`: The unique identifier of unitOfMeasure
-  - `[VendorId <String>]`: The unique identifier of vendor
+  [AccountId <String>]: The unique identifier of account
+  [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
+  [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
+  [CompanyId <String>]: The unique identifier of company
+  [CompanyInformationId <String>]: The unique identifier of companyInformation
+  [CountryRegionId <String>]: The unique identifier of countryRegion
+  [CurrencyId <String>]: The unique identifier of currency
+  [CustomerId <String>]: The unique identifier of customer
+  [CustomerPaymentId <String>]: The unique identifier of customerPayment
+  [CustomerPaymentJournalId <String>]: The unique identifier of customerPaymentJournal
+  [DimensionId <String>]: The unique identifier of dimension
+  [DimensionValueId <String>]: The unique identifier of dimensionValue
+  [EmployeeId <String>]: The unique identifier of employee
+  [GeneralLedgerEntryId <String>]: The unique identifier of generalLedgerEntry
+  [ItemCategoryId <String>]: The unique identifier of itemCategory
+  [ItemId <String>]: The unique identifier of item
+  [JournalId <String>]: The unique identifier of journal
+  [JournalLineId <String>]: The unique identifier of journalLine
+  [PaymentMethodId <String>]: The unique identifier of paymentMethod
+  [PaymentTermId <String>]: The unique identifier of paymentTerm
+  [PictureId <String>]: The unique identifier of picture
+  [PurchaseInvoiceId <String>]: The unique identifier of purchaseInvoice
+  [PurchaseInvoiceLineId <String>]: The unique identifier of purchaseInvoiceLine
+  [SalesCreditMemoId <String>]: The unique identifier of salesCreditMemo
+  [SalesCreditMemoLineId <String>]: The unique identifier of salesCreditMemoLine
+  [SalesInvoiceId <String>]: The unique identifier of salesInvoice
+  [SalesInvoiceLineId <String>]: The unique identifier of salesInvoiceLine
+  [SalesOrderId <String>]: The unique identifier of salesOrder
+  [SalesOrderLineId <String>]: The unique identifier of salesOrderLine
+  [SalesQuoteId <String>]: The unique identifier of salesQuote
+  [SalesQuoteLineId <String>]: The unique identifier of salesQuoteLine
+  [ShipmentMethodId <String>]: The unique identifier of shipmentMethod
+  [TaxAreaId <String>]: The unique identifier of taxArea
+  [TaxGroupId <String>]: The unique identifier of taxGroup
+  [UnitOfMeasureId <String>]: The unique identifier of unitOfMeasure
+  [VendorId <String>]: The unique identifier of vendor
+
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpaymentjournal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpaymentjournal)
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpaymentjournal)
 
 
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Security
-Module Guid: dda5078f-c7d6-4b25-ac61-f1c4db5cb156
+Module Guid: dde9f7c6-9f58-4a3b-9c79-22988fa84627
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.security/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -226,6 +226,26 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSecurityCaseEdiscoveryCaseTagCount](Get-MgSecurityCaseEdiscoveryCaseTagCount.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseTagParent](Get-MgSecurityCaseEdiscoveryCaseTagParent.md)
+
+### [Get-MgSecurityDataSecurityAndGovernance](Get-MgSecurityDataSecurityAndGovernance.md)
+
+### [Get-MgSecurityDataSecurityAndGovernanceProtectionScope](Get-MgSecurityDataSecurityAndGovernanceProtectionScope.md)
+
+### [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel](Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel.md)
+
+### [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel](Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel.md)
+
+### [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelCount](Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelCount.md)
+
+### [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelRight](Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelRight.md)
+
+### [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel.md)
+
+### [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel.md)
+
+### [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabelCount](Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabelCount.md)
+
+### [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabelRight](Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabelRight.md)
 
 ### [Get-MgSecurityIdentity](Get-MgSecurityIdentity.md)
 
@@ -605,11 +625,23 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Initialize-MgSecurityCaseEdiscoveryCaseCustodian](Initialize-MgSecurityCaseEdiscoveryCaseCustodian.md)
 
+### [Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel](Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel.md)
+
+### [Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel.md)
+
 ### [Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy](Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy.md)
 
 ### [Invoke-MgCommentSecurityAlert](Invoke-MgCommentSecurityAlert.md)
 
+### [Invoke-MgComputeSecurityDataSecurityAndGovernanceProtectionScope](Invoke-MgComputeSecurityDataSecurityAndGovernanceProtectionScope.md)
+
+### [Invoke-MgComputeSecurityDataSecurityAndGovernanceSensitivityLabelInheritance](Invoke-MgComputeSecurityDataSecurityAndGovernanceSensitivityLabelInheritance.md)
+
+### [Invoke-MgComputeSecurityDataSecurityAndGovernanceSensitivityLabelSublabelInheritance](Invoke-MgComputeSecurityDataSecurityAndGovernanceSensitivityLabelSublabelInheritance.md)
+
 ### [Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics](Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics.md)
+
+### [Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync](Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync.md)
 
 ### [Invoke-MgReopenSecurityCaseEdiscoveryCase](Invoke-MgReopenSecurityCaseEdiscoveryCase.md)
 
@@ -664,6 +696,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource.md)
 
 ### [New-MgSecurityCaseEdiscoveryCaseTag](New-MgSecurityCaseEdiscoveryCaseTag.md)
+
+### [New-MgSecurityDataSecurityAndGovernanceSensitivityLabel](New-MgSecurityDataSecurityAndGovernanceSensitivityLabel.md)
+
+### [New-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](New-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel.md)
 
 ### [New-MgSecurityIdentityHealthIssue](New-MgSecurityIdentityHealthIssue.md)
 
@@ -798,6 +834,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgSecurityCaseEdiscoveryCaseSetting](Remove-MgSecurityCaseEdiscoveryCaseSetting.md)
 
 ### [Remove-MgSecurityCaseEdiscoveryCaseTag](Remove-MgSecurityCaseEdiscoveryCaseTag.md)
+
+### [Remove-MgSecurityDataSecurityAndGovernance](Remove-MgSecurityDataSecurityAndGovernance.md)
+
+### [Remove-MgSecurityDataSecurityAndGovernanceProtectionScope](Remove-MgSecurityDataSecurityAndGovernanceProtectionScope.md)
+
+### [Remove-MgSecurityDataSecurityAndGovernanceSensitivityLabel](Remove-MgSecurityDataSecurityAndGovernanceSensitivityLabel.md)
+
+### [Remove-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](Remove-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel.md)
 
 ### [Remove-MgSecurityIdentity](Remove-MgSecurityIdentity.md)
 
@@ -948,6 +992,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSecurityCaseEdiscoveryCaseSetting](Update-MgSecurityCaseEdiscoveryCaseSetting.md)
 
 ### [Update-MgSecurityCaseEdiscoveryCaseTag](Update-MgSecurityCaseEdiscoveryCaseTag.md)
+
+### [Update-MgSecurityDataSecurityAndGovernance](Update-MgSecurityDataSecurityAndGovernance.md)
+
+### [Update-MgSecurityDataSecurityAndGovernanceProtectionScope](Update-MgSecurityDataSecurityAndGovernanceProtectionScope.md)
+
+### [Update-MgSecurityDataSecurityAndGovernanceSensitivityLabel](Update-MgSecurityDataSecurityAndGovernanceSensitivityLabel.md)
+
+### [Update-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](Update-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel.md)
 
 ### [Update-MgSecurityIdentity](Update-MgSecurityIdentity.md)
 

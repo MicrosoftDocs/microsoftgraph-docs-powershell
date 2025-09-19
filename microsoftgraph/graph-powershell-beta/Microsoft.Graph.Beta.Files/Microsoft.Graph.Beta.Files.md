@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Files
-Module Guid: 5fb49ce1-582a-4738-9d13-7aa151ae9136
+Module Guid: a36abf80-0f4f-4d4c-8717-46bbe455c7be
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.files/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -219,6 +219,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveItemSubscriptionCount](Get-MgBetaDriveItemSubscriptionCount.md)
 
+### [Get-MgBetaDriveItemSubscriptionVapidPublicKey](Get-MgBetaDriveItemSubscriptionVapidPublicKey.md)
+
 ### [Get-MgBetaDriveItemThumbnail](Get-MgBetaDriveItemThumbnail.md)
 
 ### [Get-MgBetaDriveItemThumbnail](Get-MgBetaDriveItemThumbnail.md)
@@ -361,6 +363,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveListSubscriptionCount](Get-MgBetaDriveListSubscriptionCount.md)
 
+### [Get-MgBetaDriveListSubscriptionVapidPublicKey](Get-MgBetaDriveListSubscriptionVapidPublicKey.md)
+
 ### [Get-MgBetaDriveRoot](Get-MgBetaDriveRoot.md)
 
 ### [Get-MgBetaDriveRootActivity](Get-MgBetaDriveRootActivity.md)
@@ -486,6 +490,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDriveRootSubscription](Get-MgBetaDriveRootSubscription.md)
 
 ### [Get-MgBetaDriveRootSubscriptionCount](Get-MgBetaDriveRootSubscriptionCount.md)
+
+### [Get-MgBetaDriveRootSubscriptionVapidPublicKey](Get-MgBetaDriveRootSubscriptionVapidPublicKey.md)
 
 ### [Get-MgBetaDriveRootThumbnail](Get-MgBetaDriveRootThumbnail.md)
 
@@ -687,6 +693,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveItemSubscriptionCount](Get-MgBetaGroupDriveItemSubscriptionCount.md)
 
+### [Get-MgBetaGroupDriveItemSubscriptionVapidPublicKey](Get-MgBetaGroupDriveItemSubscriptionVapidPublicKey.md)
+
 ### [Get-MgBetaGroupDriveItemThumbnail](Get-MgBetaGroupDriveItemThumbnail.md)
 
 ### [Get-MgBetaGroupDriveItemThumbnail](Get-MgBetaGroupDriveItemThumbnail.md)
@@ -827,6 +835,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveListSubscriptionCount](Get-MgBetaGroupDriveListSubscriptionCount.md)
 
+### [Get-MgBetaGroupDriveListSubscriptionVapidPublicKey](Get-MgBetaGroupDriveListSubscriptionVapidPublicKey.md)
+
 ### [Get-MgBetaGroupDriveRoot](Get-MgBetaGroupDriveRoot.md)
 
 ### [Get-MgBetaGroupDriveRootActivity](Get-MgBetaGroupDriveRootActivity.md)
@@ -952,6 +962,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupDriveRootSubscription](Get-MgBetaGroupDriveRootSubscription.md)
 
 ### [Get-MgBetaGroupDriveRootSubscriptionCount](Get-MgBetaGroupDriveRootSubscriptionCount.md)
+
+### [Get-MgBetaGroupDriveRootSubscriptionVapidPublicKey](Get-MgBetaGroupDriveRootSubscriptionVapidPublicKey.md)
 
 ### [Get-MgBetaGroupDriveRootThumbnail](Get-MgBetaGroupDriveRootThumbnail.md)
 
@@ -1145,6 +1157,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaShareListSubscriptionCount](Get-MgBetaShareListSubscriptionCount.md)
 
+### [Get-MgBetaShareListSubscriptionVapidPublicKey](Get-MgBetaShareListSubscriptionVapidPublicKey.md)
+
 ### [Get-MgBetaSharePermission](Get-MgBetaSharePermission.md)
 
 ### [Get-MgBetaShareRoot](Get-MgBetaShareRoot.md)
@@ -1335,6 +1349,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveItemSubscriptionCount](Get-MgBetaUserDriveItemSubscriptionCount.md)
 
+### [Get-MgBetaUserDriveItemSubscriptionVapidPublicKey](Get-MgBetaUserDriveItemSubscriptionVapidPublicKey.md)
+
 ### [Get-MgBetaUserDriveItemThumbnail](Get-MgBetaUserDriveItemThumbnail.md)
 
 ### [Get-MgBetaUserDriveItemThumbnail](Get-MgBetaUserDriveItemThumbnail.md)
@@ -1475,6 +1491,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveListSubscriptionCount](Get-MgBetaUserDriveListSubscriptionCount.md)
 
+### [Get-MgBetaUserDriveListSubscriptionVapidPublicKey](Get-MgBetaUserDriveListSubscriptionVapidPublicKey.md)
+
 ### [Get-MgBetaUserDriveRoot](Get-MgBetaUserDriveRoot.md)
 
 ### [Get-MgBetaUserDriveRootActivity](Get-MgBetaUserDriveRootActivity.md)
@@ -1600,6 +1618,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserDriveRootSubscription](Get-MgBetaUserDriveRootSubscription.md)
 
 ### [Get-MgBetaUserDriveRootSubscriptionCount](Get-MgBetaUserDriveRootSubscriptionCount.md)
+
+### [Get-MgBetaUserDriveRootSubscriptionVapidPublicKey](Get-MgBetaUserDriveRootSubscriptionVapidPublicKey.md)
 
 ### [Get-MgBetaUserDriveRootThumbnail](Get-MgBetaUserDriveRootThumbnail.md)
 

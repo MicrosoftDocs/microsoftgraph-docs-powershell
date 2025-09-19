@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.BackupRestore
-Module Guid: 5d544ecd-b0ef-45eb-949b-9f93942875e2
+Module Guid: 56394fbc-373c-4825-98d7-799dcdf94a79
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.backuprestore/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -32,6 +32,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJobCount](Get-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJobCount.md)
 
 ### [Get-MgBetaSolutionBackupRestoreDriveProtectionUnitCount](Get-MgBetaSolutionBackupRestoreDriveProtectionUnitCount.md)
+
+### [Get-MgBetaSolutionBackupRestoreEmailNotificationSetting](Get-MgBetaSolutionBackupRestoreEmailNotificationSetting.md)
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicy](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicy.md)
 
@@ -269,6 +271,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp](Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp.md)
 
+### [Invoke-MgBetaOffboardSolutionBackupRestoreProtectionUnit](Invoke-MgBetaOffboardSolutionBackupRestoreProtectionUnit.md)
+
 ### [New-MgBetaSolutionBackupRestoreDriveInclusionRule](New-MgBetaSolutionBackupRestoreDriveInclusionRule.md)
 
 ### [New-MgBetaSolutionBackupRestoreDriveProtectionUnit](New-MgBetaSolutionBackupRestoreDriveProtectionUnit.md)
@@ -329,6 +333,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob](Remove-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob.md)
 
+### [Remove-MgBetaSolutionBackupRestoreEmailNotificationSetting](Remove-MgBetaSolutionBackupRestoreEmailNotificationSetting.md)
+
 ### [Remove-MgBetaSolutionBackupRestoreExchangeProtectionPolicy](Remove-MgBetaSolutionBackupRestoreExchangeProtectionPolicy.md)
 
 ### [Remove-MgBetaSolutionBackupRestoreExchangeRestoreSession](Remove-MgBetaSolutionBackupRestoreExchangeRestoreSession.md)
@@ -377,6 +383,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Search-MgBetaSolutionBackupRestorePoint](Search-MgBetaSolutionBackupRestorePoint.md)
 
+### [Stop-MgBetaSolutionBackupRestoreProtectionUnitOffboard](Stop-MgBetaSolutionBackupRestoreProtectionUnitOffboard.md)
+
 ### [Update-MgBetaSolutionBackupRestore](Update-MgBetaSolutionBackupRestore.md)
 
 ### [Update-MgBetaSolutionBackupRestoreDriveInclusionRule](Update-MgBetaSolutionBackupRestoreDriveInclusionRule.md)
@@ -384,6 +392,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaSolutionBackupRestoreDriveProtectionUnit](Update-MgBetaSolutionBackupRestoreDriveProtectionUnit.md)
 
 ### [Update-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob](Update-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob.md)
+
+### [Update-MgBetaSolutionBackupRestoreEmailNotificationSetting](Update-MgBetaSolutionBackupRestoreEmailNotificationSetting.md)
 
 ### [Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy](Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy.md)
 

@@ -1,14 +1,18 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+document type: cmdlet
+external help file: Microsoft.Graph.Security-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert
+Locale: en-US
 Module Name: Microsoft.Graph.Security
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert
-schema: 2.0.0
-ms.subservice: security
+ms.date: 09/12/2025
+PlatyPS schema version: 2024-05-01
+title: Update-MgSecurityAlert
 ---
 
 # Update-MgSecurityAlert
 
 ## SYNOPSIS
+
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
 
@@ -18,69 +22,94 @@ This method updates any solution that has a record of the referenced alert ID.
 ## SYNTAX
 
 ### UpdateExpanded (Default)
+
 ```
-Update-MgSecurityAlert -AlertId <String> [-ResponseHeadersVariable <String>] [-ActivityGroupName <String>]
- [-AdditionalProperties <Hashtable>] [-AlertDetections <IMicrosoftGraphAlertDetection[]>]
- [-AssignedTo <String>] [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-Category <String>]
- [-ClosedDateTime <DateTime>] [-CloudAppStates <IMicrosoftGraphCloudAppSecurityState[]>] [-Comments <String[]>]
- [-Confidence <Int32>] [-CreatedDateTime <DateTime>] [-Description <String>] [-DetectionIds <String[]>]
- [-EventDateTime <DateTime>] [-Feedback <String>] [-FileStates <IMicrosoftGraphFileSecurityState[]>]
- [-HistoryStates <IMicrosoftGraphAlertHistoryState[]>] [-HostStates <IMicrosoftGraphHostSecurityState[]>]
- [-Id <String>] [-IncidentIds <String[]>]
- [-InvestigationSecurityStates <IMicrosoftGraphInvestigationSecurityState[]>] [-LastEventDateTime <DateTime>]
- [-LastModifiedDateTime <DateTime>] [-MalwareStates <IMicrosoftGraphMalwareState[]>]
+Update-MgSecurityAlert -AlertId <string> [-ResponseHeadersVariable <string>]
+ [-ActivityGroupName <string>] [-AdditionalProperties <hashtable>]
+ [-AlertDetections <IMicrosoftGraphAlertDetection[]>] [-AssignedTo <string>]
+ [-AzureSubscriptionId <string>] [-AzureTenantId <string>] [-Category <string>]
+ [-ClosedDateTime <datetime>] [-CloudAppStates <IMicrosoftGraphCloudAppSecurityState[]>]
+ [-Comments <string[]>] [-Confidence <int>] [-CreatedDateTime <datetime>] [-Description <string>]
+ [-DetectionIds <string[]>] [-EventDateTime <datetime>] [-Feedback <string>]
+ [-FileStates <IMicrosoftGraphFileSecurityState[]>]
+ [-HistoryStates <IMicrosoftGraphAlertHistoryState[]>]
+ [-HostStates <IMicrosoftGraphHostSecurityState[]>] [-Id <string>] [-IncidentIds <string[]>]
+ [-InvestigationSecurityStates <IMicrosoftGraphInvestigationSecurityState[]>]
+ [-LastEventDateTime <datetime>] [-LastModifiedDateTime <datetime>]
+ [-MalwareStates <IMicrosoftGraphMalwareState[]>]
  [-MessageSecurityStates <IMicrosoftGraphMessageSecurityState[]>]
  [-NetworkConnections <IMicrosoftGraphNetworkConnection[]>] [-Processes <IMicrosoftGraphProcess[]>]
- [-RecommendedActions <String[]>] [-RegistryKeyStates <IMicrosoftGraphRegistryKeyState[]>]
- [-SecurityResources <IMicrosoftGraphSecurityResource[]>] [-Severity <String>] [-SourceMaterials <String[]>]
- [-Status <String>] [-Tags <String[]>] [-Title <String>] [-Triggers <IMicrosoftGraphAlertTrigger[]>]
+ [-RecommendedActions <string[]>] [-RegistryKeyStates <IMicrosoftGraphRegistryKeyState[]>]
+ [-SecurityResources <IMicrosoftGraphSecurityResource[]>] [-Severity <string>]
+ [-SourceMaterials <string[]>] [-Status <string>] [-Tags <string[]>] [-Title <string>]
+ [-Triggers <IMicrosoftGraphAlertTrigger[]>]
  [-UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]
  [-UserStates <IMicrosoftGraphUserSecurityState[]>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
+
 ```
-Update-MgSecurityAlert -AlertId <String> -BodyParameter <IMicrosoftGraphAlert>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgSecurityAlert -AlertId <string> -BodyParameter <IMicrosoftGraphAlert>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
+
 ```
-Update-MgSecurityAlert -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
- [-ActivityGroupName <String>] [-AdditionalProperties <Hashtable>]
- [-AlertDetections <IMicrosoftGraphAlertDetection[]>] [-AssignedTo <String>] [-AzureSubscriptionId <String>]
- [-AzureTenantId <String>] [-Category <String>] [-ClosedDateTime <DateTime>]
- [-CloudAppStates <IMicrosoftGraphCloudAppSecurityState[]>] [-Comments <String[]>] [-Confidence <Int32>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DetectionIds <String[]>] [-EventDateTime <DateTime>]
- [-Feedback <String>] [-FileStates <IMicrosoftGraphFileSecurityState[]>]
- [-HistoryStates <IMicrosoftGraphAlertHistoryState[]>] [-HostStates <IMicrosoftGraphHostSecurityState[]>]
- [-Id <String>] [-IncidentIds <String[]>]
- [-InvestigationSecurityStates <IMicrosoftGraphInvestigationSecurityState[]>] [-LastEventDateTime <DateTime>]
- [-LastModifiedDateTime <DateTime>] [-MalwareStates <IMicrosoftGraphMalwareState[]>]
+Update-MgSecurityAlert -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <string>]
+ [-ActivityGroupName <string>] [-AdditionalProperties <hashtable>]
+ [-AlertDetections <IMicrosoftGraphAlertDetection[]>] [-AssignedTo <string>]
+ [-AzureSubscriptionId <string>] [-AzureTenantId <string>] [-Category <string>]
+ [-ClosedDateTime <datetime>] [-CloudAppStates <IMicrosoftGraphCloudAppSecurityState[]>]
+ [-Comments <string[]>] [-Confidence <int>] [-CreatedDateTime <datetime>] [-Description <string>]
+ [-DetectionIds <string[]>] [-EventDateTime <datetime>] [-Feedback <string>]
+ [-FileStates <IMicrosoftGraphFileSecurityState[]>]
+ [-HistoryStates <IMicrosoftGraphAlertHistoryState[]>]
+ [-HostStates <IMicrosoftGraphHostSecurityState[]>] [-Id <string>] [-IncidentIds <string[]>]
+ [-InvestigationSecurityStates <IMicrosoftGraphInvestigationSecurityState[]>]
+ [-LastEventDateTime <datetime>] [-LastModifiedDateTime <datetime>]
+ [-MalwareStates <IMicrosoftGraphMalwareState[]>]
  [-MessageSecurityStates <IMicrosoftGraphMessageSecurityState[]>]
  [-NetworkConnections <IMicrosoftGraphNetworkConnection[]>] [-Processes <IMicrosoftGraphProcess[]>]
- [-RecommendedActions <String[]>] [-RegistryKeyStates <IMicrosoftGraphRegistryKeyState[]>]
- [-SecurityResources <IMicrosoftGraphSecurityResource[]>] [-Severity <String>] [-SourceMaterials <String[]>]
- [-Status <String>] [-Tags <String[]>] [-Title <String>] [-Triggers <IMicrosoftGraphAlertTrigger[]>]
+ [-RecommendedActions <string[]>] [-RegistryKeyStates <IMicrosoftGraphRegistryKeyState[]>]
+ [-SecurityResources <IMicrosoftGraphSecurityResource[]>] [-Severity <string>]
+ [-SourceMaterials <string[]>] [-Status <string>] [-Tags <string[]>] [-Title <string>]
+ [-Triggers <IMicrosoftGraphAlertTrigger[]>]
  [-UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]
  [-UserStates <IMicrosoftGraphUserSecurityState[]>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
+
 ```
 Update-MgSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphAlert>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
+## ALIASES
+
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
 ## DESCRIPTION
+
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
 
@@ -153,1244 +182,1945 @@ This example will request with prefer header
 ## PARAMETERS
 
 ### -ActivityGroupName
+
 Name or alias of the activity group (attacker) this alert is attributed to.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AdditionalProperties
+
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AlertDetections
 
+
 To construct, see NOTES section for ALERTDETECTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAlertDetection[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlertDetection[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AlertId
+
 The unique identifier of alert
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AssignedTo
+
 Name of the analyst the alert is assigned to for triage, investigation, or remediation (supports update).
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AzureSubscriptionId
+
 Azure subscription ID, present if this alert is related to an Azure resource.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -AzureTenantId
+
 Microsoft Entra tenant ID.
 Required.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BodyParameter
+
 alert
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAlert
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Category
+
 Category of the alert (for example, credentialTheft, ransomware).
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ClosedDateTime
+
 Time at which the alert was closed.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z (supports update).
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CloudAppStates
+
 Security-related stateful information generated by the provider about the cloud application/s related to this alert.
 To construct, see NOTES section for CLOUDAPPSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudAppSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudAppSecurityState[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Comments
+
 Customer-provided comments on alert (for customer alert management) (supports update).
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confidence
+
 Confidence of the detection logic (percentage between 1-100).
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confirm
+
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CreatedDateTime
+
 Time at which the alert was created by the alert provider.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Description
+
 Alert description.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -DetectionIds
+
 Set of alerts related to this alert entity (each alert is pushed to the SIEM as a separate record).
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -EventDateTime
+
 Time at which the event or events that served as the trigger to generate the alert occurred.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Feedback
+
 alertFeedback
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -FileStates
+
 Security-related stateful information generated by the provider about the file(s) related to this alert.
 To construct, see NOTES section for FILESTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFileSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFileSecurityState[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Headers
+
 Optional headers that will be added to the request.
 
 ```yaml
-Type: IDictionary
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -HistoryStates
 
+
 To construct, see NOTES section for HISTORYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAlertHistoryState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlertHistoryState[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -HostStates
+
 Security-related stateful information generated by the provider about the host(s) related to this alert.
 To construct, see NOTES section for HOSTSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphHostSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHostSecurityState[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Id
+
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -IncidentIds
+
 IDs of incidents related to current alert.
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -InputObject
+
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -InvestigationSecurityStates
 
+
 To construct, see NOTES section for INVESTIGATIONSECURITYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInvestigationSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInvestigationSecurityState[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -LastEventDateTime
 
 
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -LastModifiedDateTime
+
 Time at which the alert entity was last modified.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -MalwareStates
+
 Threat Intelligence pertaining to malware related to this alert.
 To construct, see NOTES section for MALWARESTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMalwareState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMalwareState[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -MessageSecurityStates
 
+
 To construct, see NOTES section for MESSAGESECURITYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessageSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageSecurityState[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -NetworkConnections
+
 Security-related stateful information generated by the provider about the network connection(s) related to this alert.
 To construct, see NOTES section for NETWORKCONNECTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphNetworkConnection[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNetworkConnection[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Processes
+
 Security-related stateful information generated by the provider about the process or processes related to this alert.
 To construct, see NOTES section for PROCESSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProcess[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProcess[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -RecommendedActions
+
 Vendor/provider recommended action(s) to take as a result of the alert (for example, isolate machine, enforce2FA, reimage host).
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -RegistryKeyStates
+
 Security-related stateful information generated by the provider about the registry keys related to this alert.
 To construct, see NOTES section for REGISTRYKEYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRegistryKeyState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRegistryKeyState[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResponseHeadersVariable
+
 Optional Response Headers Variable.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -SecurityResources
+
 Resources related to current alert.
 For example, for some alerts this can have the Azure Resource value.
 To construct, see NOTES section for SECURITYRESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityResource[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityResource[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Severity
+
 alertSeverity
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -SourceMaterials
+
 Hyperlinks (URIs) to the source material related to the alert, for example, provider's user interface for alerts or log search.
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Status
+
 alertStatus
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Tags
+
 User-definable labels that can be applied to an alert and can serve as filter conditions (for example 'HVA', 'SAW') (supports update).
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Title
+
 Alert title.
 Required.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Triggers
+
 Security-related information about the specific properties that triggered the alert (properties appearing in the alert).
 Alerts might contain information about multiple users, hosts, files, ip addresses.
 This field indicates which properties triggered the alert generation.
 To construct, see NOTES section for TRIGGERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAlertTrigger[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlertTrigger[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -UriClickSecurityStates
 
+
 To construct, see NOTES section for URICLICKSECURITYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUriClickSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUriClickSecurityState[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -UserStates
+
 Security-related stateful information generated by the provider about the user accounts related to this alert.
 To construct, see NOTES section for USERSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserSecurityState[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -VendorInformation
+
 securityVendorInformation
 To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityVendorInformation
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityVendorInformation
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -VulnerabilityStates
+
 Threat intelligence pertaining to one or more vulnerabilities related to this alert.
 To construct, see NOTES section for VULNERABILITYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVulnerabilityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVulnerabilityState[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
+
+{{ Fill in the Description }}
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
+
+{{ Fill in the Description }}
+
 ## NOTES
+
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALERTDETECTIONS `<IMicrosoftGraphAlertDetection- `[]`>`: .
-  - `[DetectionType <String>]`:
-  - `[Method <String>]`:
-  - `[Name <String>]`:
+ALERTDETECTIONS <IMicrosoftGraphAlertDetection[]>: .
+  [DetectionType <String>]: 
+  [Method <String>]: 
+  [Name <String>]: 
 
 BODYPARAMETER `<IMicrosoftGraphAlert>`: alert
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[ActivityGroupName <String>]`: Name or alias of the activity group (attacker) this alert is attributed to.
-  - `[AlertDetections <IMicrosoftGraphAlertDetection- `[]`>]`:
-    - `[DetectionType <String>]`:
-    - `[Method <String>]`:
-    - `[Name <String>]`:
-  - `[AssignedTo <String>]`: Name of the analyst the alert is assigned to for triage, investigation, or remediation (supports update).
-  - `[AzureSubscriptionId <String>]`: Azure subscription ID, present if this alert is related to an Azure resource.
-  - `[AzureTenantId <String>]`: Microsoft Entra tenant ID.
+  [ActivityGroupName <String>]: Name or alias of the activity group (attacker) this alert is attributed to.
+  [AlertDetections <IMicrosoftGraphAlertDetection[]>]: 
+    [DetectionType <String>]: 
+    [Method <String>]: 
+    [Name <String>]: 
+  [AssignedTo <String>]: Name of the analyst the alert is assigned to for triage, investigation, or remediation (supports update).
+  [AzureSubscriptionId <String>]: Azure subscription ID, present if this alert is related to an Azure resource.
+  [AzureTenantId <String>]: Microsoft Entra tenant ID.
 Required.
-  - `[Category <String>]`: Category of the alert (for example, credentialTheft, ransomware).
-  - `[ClosedDateTime <DateTime?>]`: Time at which the alert was closed.
+  [Category <String>]: Category of the alert (for example, credentialTheft, ransomware).
+  [ClosedDateTime <DateTime?>]: Time at which the alert was closed.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z (supports update).
-  - `[CloudAppStates <IMicrosoftGraphCloudAppSecurityState- `[]`>]`: Security-related stateful information generated by the provider about the cloud application/s related to this alert.
-    - `[DestinationServiceIP <String>]`: Destination IP Address of the connection to the cloud application/service.
-    - `[DestinationServiceName <String>]`: Cloud application/service name (for example 'Salesforce', 'DropBox', etc.).
-    - `[RiskScore <String>]`: Provider-generated/calculated risk score of the Cloud Application/Service.
+  [CloudAppStates <IMicrosoftGraphCloudAppSecurityState[]>]: Security-related stateful information generated by the provider about the cloud application/s related to this alert.
+    [DestinationServiceIP <String>]: Destination IP Address of the connection to the cloud application/service.
+    [DestinationServiceName <String>]: Cloud application/service name (for example 'Salesforce', 'DropBox', etc.).
+    [RiskScore <String>]: Provider-generated/calculated risk score of the Cloud Application/Service.
 Recommended value range of 0-1, which equates to a percentage.
-  - `[Comments <String- `[]`>]`: Customer-provided comments on alert (for customer alert management) (supports update).
-  - `[Confidence <Int32?>]`: Confidence of the detection logic (percentage between 1-100).
-  - `[CreatedDateTime <DateTime?>]`: Time at which the alert was created by the alert provider.
+  [Comments <String[]>]: Customer-provided comments on alert (for customer alert management) (supports update).
+  [Confidence <Int32?>]: Confidence of the detection logic (percentage between 1-100).
+  [CreatedDateTime <DateTime?>]: Time at which the alert was created by the alert provider.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
-  - `[Description <String>]`: Alert description.
-  - `[DetectionIds <String- `[]`>]`: Set of alerts related to this alert entity (each alert is pushed to the SIEM as a separate record).
-  - `[EventDateTime <DateTime?>]`: Time at which the event or events that served as the trigger to generate the alert occurred.
+  [Description <String>]: Alert description.
+  [DetectionIds <String[]>]: Set of alerts related to this alert entity (each alert is pushed to the SIEM as a separate record).
+  [EventDateTime <DateTime?>]: Time at which the event or events that served as the trigger to generate the alert occurred.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
-  - `[Feedback <String>]`: alertFeedback
-  - `[FileStates <IMicrosoftGraphFileSecurityState- `[]`>]`: Security-related stateful information generated by the provider about the file(s) related to this alert.
-    - `[FileHash <IMicrosoftGraphFileHash>]`: fileHash
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[HashType <String>]`: fileHashType
-      - `[HashValue <String>]`: Value of the file hash.
-    - `[Name <String>]`: File name (without path).
-    - `[Path <String>]`: Full file path of the file/imageFile.
-    - `[RiskScore <String>]`: Provider generated/calculated risk score of the alert file.
+  [Feedback <String>]: alertFeedback
+  [FileStates <IMicrosoftGraphFileSecurityState[]>]: Security-related stateful information generated by the provider about the file(s) related to this alert.
+    [FileHash <IMicrosoftGraphFileHash>]: fileHash
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [HashType <String>]: fileHashType
+      [HashValue <String>]: Value of the file hash.
+    [Name <String>]: File name (without path).
+    [Path <String>]: Full file path of the file/imageFile.
+    [RiskScore <String>]: Provider generated/calculated risk score of the alert file.
 Recommended value range of 0-1, which equates to a percentage.
-  - `[HistoryStates <IMicrosoftGraphAlertHistoryState- `[]`>]`:
-    - `[AppId <String>]`:
-    - `[AssignedTo <String>]`:
-    - `[Comments <String- `[]`>]`:
-    - `[Feedback <String>]`: alertFeedback
-    - `[Status <String>]`: alertStatus
-    - `[UpdatedDateTime <DateTime?>]`:
-    - `[User <String>]`:
-  - `[HostStates <IMicrosoftGraphHostSecurityState- `[]`>]`: Security-related stateful information generated by the provider about the host(s) related to this alert.
-    - `[Fqdn <String>]`: Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
-    - `[IsAzureAdJoined <Boolean?>]`:
-    - `[IsAzureAdRegistered <Boolean?>]`:
-    - `[IsHybridAzureDomainJoined <Boolean?>]`: True if the host is domain joined to an on-premises Active Directory domain.
-    - `[NetBiosName <String>]`: The local host name, without the DNS domain name.
-    - `[OS <String>]`: Host Operating System.
+  [HistoryStates <IMicrosoftGraphAlertHistoryState[]>]: 
+    [AppId <String>]: 
+    [AssignedTo <String>]: 
+    [Comments <String[]>]: 
+    [Feedback <String>]: alertFeedback
+    [Status <String>]: alertStatus
+    [UpdatedDateTime <DateTime?>]: 
+    [User <String>]: 
+  [HostStates <IMicrosoftGraphHostSecurityState[]>]: Security-related stateful information generated by the provider about the host(s) related to this alert.
+    [Fqdn <String>]: Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
+    [IsAzureAdJoined <Boolean?>]: 
+    [IsAzureAdRegistered <Boolean?>]: 
+    [IsHybridAzureDomainJoined <Boolean?>]: True if the host is domain joined to an on-premises Active Directory domain.
+    [NetBiosName <String>]: The local host name, without the DNS domain name.
+    [OS <String>]: Host Operating System.
 (For example, Windows 10, macOS, RHEL, etc.).
-    - `[PrivateIPAddress <String>]`: Private (not routable) IPv4 or IPv6 address (see RFC 1918) at the time of the alert.
-    - `[PublicIPAddress <String>]`: Publicly routable IPv4 or IPv6 address (see RFC 1918) at time of the alert.
-    - `[RiskScore <String>]`: Provider-generated/calculated risk score of the host.
-Recommended value range of 0-1, which equates to a percentage.
-  - `[IncidentIds <String- `[]`>]`: IDs of incidents related to current alert.
-  - `[InvestigationSecurityStates <IMicrosoftGraphInvestigationSecurityState- `[]`>]`:
-    - `[Name <String>]`:
-    - `[Status <String>]`:
-  - `[LastEventDateTime <DateTime?>]`:
-  - `[LastModifiedDateTime <DateTime?>]`: Time at which the alert entity was last modified.
+    [PrivateIPAddress <String>]: Private (not routable) IPv4 or IPv6 address (see RFC 1918) at the time of the alert.
+    [PublicIPAddress <String>]: Publicly routable IPv4 or IPv6 address (see RFC 1918) at time of the alert.
+    [RiskScore <String>]: Provider-generated/calculated risk score of the host.
+ Recommended value range of 0-1, which equates to a percentage.
+  [IncidentIds <String[]>]: IDs of incidents related to current alert.
+  [InvestigationSecurityStates <IMicrosoftGraphInvestigationSecurityState[]>]: 
+    [Name <String>]: 
+    [Status <String>]: 
+  [LastEventDateTime <DateTime?>]: 
+  [LastModifiedDateTime <DateTime?>]: Time at which the alert entity was last modified.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[MalwareStates <IMicrosoftGraphMalwareState- `[]`>]`: Threat Intelligence pertaining to malware related to this alert.
-    - `[Category <String>]`: Provider-generated malware category (for example, trojan, ransomware, etc.).
-    - `[Family <String>]`: Provider-generated malware family (for example, 'wannacry,' 'notpetya,' etc.).
-    - `[Name <String>]`: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
-    - `[Severity <String>]`: Provider-determined severity of this malware.
-    - `[WasRunning <Boolean?>]`: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
-  - `[MessageSecurityStates <IMicrosoftGraphMessageSecurityState- `[]`>]`:
-    - `[ConnectingIP <String>]`:
-    - `[DeliveryAction <String>]`:
-    - `[DeliveryLocation <String>]`:
-    - `[Directionality <String>]`:
-    - `[InternetMessageId <String>]`:
-    - `[MessageFingerprint <String>]`:
-    - `[MessageReceivedDateTime <DateTime?>]`:
-    - `[MessageSubject <String>]`:
-    - `[NetworkMessageId <String>]`:
-  - `[NetworkConnections <IMicrosoftGraphNetworkConnection- `[]`>]`: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
-    - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook or SMTP).
-    - `[DestinationAddress <String>]`: Destination IP address (of the network connection).
-    - `[DestinationDomain <String>]`: Destination domain portion of the destination URL.
+  [MalwareStates <IMicrosoftGraphMalwareState[]>]: Threat Intelligence pertaining to malware related to this alert.
+    [Category <String>]: Provider-generated malware category (for example, trojan, ransomware, etc.).
+    [Family <String>]: Provider-generated malware family (for example, 'wannacry,' 'notpetya,' etc.).
+    [Name <String>]: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
+    [Severity <String>]: Provider-determined severity of this malware.
+    [WasRunning <Boolean?>]: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
+  [MessageSecurityStates <IMicrosoftGraphMessageSecurityState[]>]: 
+    [ConnectingIP <String>]: 
+    [DeliveryAction <String>]: 
+    [DeliveryLocation <String>]: 
+    [Directionality <String>]: 
+    [InternetMessageId <String>]: 
+    [MessageFingerprint <String>]: 
+    [MessageReceivedDateTime <DateTime?>]: 
+    [MessageSubject <String>]: 
+    [NetworkMessageId <String>]: 
+  [NetworkConnections <IMicrosoftGraphNetworkConnection[]>]: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
+    [ApplicationName <String>]: Name of the application managing the network connection (for example, Facebook or SMTP).
+    [DestinationAddress <String>]: Destination IP address (of the network connection).
+    [DestinationDomain <String>]: Destination domain portion of the destination URL.
 (for example 'www.contoso.com').
-    - `[DestinationLocation <String>]`: Location (by IP address mapping) associated with the destination of a network connection.
-    - `[DestinationPort <String>]`: Destination port (of the network connection).
-    - `[DestinationUrl <String>]`: Network connection URL/URI string - excluding parameters.
+    [DestinationLocation <String>]: Location (by IP address mapping) associated with the destination of a network connection.
+    [DestinationPort <String>]: Destination port (of the network connection).
+    [DestinationUrl <String>]: Network connection URL/URI string - excluding parameters.
 (for example 'www.contoso.com/products/default.html')
-    - `[Direction <String>]`: connectionDirection
-    - `[DomainRegisteredDateTime <DateTime?>]`: Date when the destination domain was registered.
+    [Direction <String>]: connectionDirection
+    [DomainRegisteredDateTime <DateTime?>]: Date when the destination domain was registered.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LocalDnsName <String>]`: The local DNS name resolution as it appears in the host's local DNS cache (for example, in case the 'hosts' file was tampered with).
-    - `[NatDestinationAddress <String>]`: Network Address Translation destination IP address.
-    - `[NatDestinationPort <String>]`: Network Address Translation destination port.
-    - `[NatSourceAddress <String>]`: Network Address Translation source IP address.
-    - `[NatSourcePort <String>]`: Network Address Translation source port.
-    - `[Protocol <String>]`: securityNetworkProtocol
-    - `[RiskScore <String>]`: Provider generated/calculated risk score of the network connection.
+    [LocalDnsName <String>]: The local DNS name resolution as it appears in the host's local DNS cache (for example, in case the 'hosts' file was tampered with).
+    [NatDestinationAddress <String>]: Network Address Translation destination IP address.
+    [NatDestinationPort <String>]: Network Address Translation destination port.
+    [NatSourceAddress <String>]: Network Address Translation source IP address.
+    [NatSourcePort <String>]: Network Address Translation source port.
+    [Protocol <String>]: securityNetworkProtocol
+    [RiskScore <String>]: Provider generated/calculated risk score of the network connection.
 Recommended value range of 0-1, which equates to a percentage.
-    - `[SourceAddress <String>]`: Source (i.e.
+    [SourceAddress <String>]: Source (i.e.
 origin) IP address (of the network connection).
-    - `[SourceLocation <String>]`: Location (by IP address mapping) associated with the source of a network connection.
-    - `[SourcePort <String>]`: Source (i.e.
+    [SourceLocation <String>]: Location (by IP address mapping) associated with the source of a network connection.
+    [SourcePort <String>]: Source (i.e.
 origin) IP port (of the network connection).
-    - `[Status <String>]`: connectionStatus
-    - `[UrlParameters <String>]`: Parameters (suffix) of the destination URL.
-  - `[Processes <IMicrosoftGraphProcess- `[]`>]`: Security-related stateful information generated by the provider about the process or processes related to this alert.
-    - `[AccountName <String>]`: User account identifier (user account context the process ran under) for example, AccountName, SID, and so on.
-    - `[CommandLine <String>]`: The full process invocation commandline including all parameters.
-    - `[CreatedDateTime <DateTime?>]`: Time at which the process was started.
+    [Status <String>]: connectionStatus
+    [UrlParameters <String>]: Parameters (suffix) of the destination URL.
+  [Processes <IMicrosoftGraphProcess[]>]: Security-related stateful information generated by the provider about the process or processes related to this alert.
+    [AccountName <String>]: User account identifier (user account context the process ran under) for example, AccountName, SID, and so on.
+    [CommandLine <String>]: The full process invocation commandline including all parameters.
+    [CreatedDateTime <DateTime?>]: Time at which the process was started.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[FileHash <IMicrosoftGraphFileHash>]`: fileHash
-    - `[IntegrityLevel <String>]`: processIntegrityLevel
-    - `[IsElevated <Boolean?>]`: True if the process is elevated.
-    - `[Name <String>]`: The name of the process' Image file.
-    - `[ParentProcessCreatedDateTime <DateTime?>]`: DateTime at which the parent process was started.
+    [FileHash <IMicrosoftGraphFileHash>]: fileHash
+    [IntegrityLevel <String>]: processIntegrityLevel
+    [IsElevated <Boolean?>]: True if the process is elevated.
+    [Name <String>]: The name of the process' Image file.
+    [ParentProcessCreatedDateTime <DateTime?>]: DateTime at which the parent process was started.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[ParentProcessId <Int32?>]`: The Process ID (PID) of the parent process.
-    - `[ParentProcessName <String>]`: The name of the image file of the parent process.
-    - `[Path <String>]`: Full path, including filename.
-    - `[ProcessId <Int32?>]`: The Process ID (PID) of the process.
-  - `[RecommendedActions <String- `[]`>]`: Vendor/provider recommended action(s) to take as a result of the alert (for example, isolate machine, enforce2FA, reimage host).
-  - `[RegistryKeyStates <IMicrosoftGraphRegistryKeyState- `[]`>]`: Security-related stateful information generated by the provider about the registry keys related to this alert.
-    - `[Hive <String>]`: registryHive
-    - `[Key <String>]`: Current (i.e.
+    [ParentProcessId <Int32?>]: The Process ID (PID) of the parent process.
+    [ParentProcessName <String>]: The name of the image file of the parent process.
+    [Path <String>]: Full path, including filename.
+    [ProcessId <Int32?>]: The Process ID (PID) of the process.
+  [RecommendedActions <String[]>]: Vendor/provider recommended action(s) to take as a result of the alert (for example, isolate machine, enforce2FA, reimage host).
+  [RegistryKeyStates <IMicrosoftGraphRegistryKeyState[]>]: Security-related stateful information generated by the provider about the registry keys related to this alert.
+    [Hive <String>]: registryHive
+    [Key <String>]: Current (i.e.
 changed) registry key (excludes HIVE).
-    - `[OldKey <String>]`: Previous (i.e.
+    [OldKey <String>]: Previous (i.e.
 before changed) registry key (excludes HIVE).
-    - `[OldValueData <String>]`: Previous (i.e.
+    [OldValueData <String>]: Previous (i.e.
 before changed) registry key value data (contents).
-    - `[OldValueName <String>]`: Previous (i.e.
+    [OldValueName <String>]: Previous (i.e.
 before changed) registry key value name.
-    - `[Operation <String>]`: registryOperation
-    - `[ProcessId <Int32?>]`: Process ID (PID) of the process that modified the registry key (process details will appear in the alert 'processes' collection).
-    - `[ValueData <String>]`: Current (i.e.
+    [Operation <String>]: registryOperation
+    [ProcessId <Int32?>]: Process ID (PID) of the process that modified the registry key (process details will appear in the alert 'processes' collection).
+    [ValueData <String>]: Current (i.e.
 changed) registry key value data (contents).
-    - `[ValueName <String>]`: Current (i.e.
+    [ValueName <String>]: Current (i.e.
 changed) registry key value name
-    - `[ValueType <String>]`: registryValueType
-  - `[SecurityResources <IMicrosoftGraphSecurityResource- `[]`>]`: Resources related to current alert.
+    [ValueType <String>]: registryValueType
+  [SecurityResources <IMicrosoftGraphSecurityResource[]>]: Resources related to current alert.
 For example, for some alerts this can have the Azure Resource value.
-    - `[Resource <String>]`: Name of the resource that is related to current alert.
+    [Resource <String>]: Name of the resource that is related to current alert.
 Required.
-    - `[ResourceType <String>]`: securityResourceType
-  - `[Severity <String>]`: alertSeverity
-  - `[SourceMaterials <String- `[]`>]`: Hyperlinks (URIs) to the source material related to the alert, for example, provider's user interface for alerts or log search.
-  - `[Status <String>]`: alertStatus
-  - `[Tags <String- `[]`>]`: User-definable labels that can be applied to an alert and can serve as filter conditions (for example 'HVA', 'SAW') (supports update).
-  - `[Title <String>]`: Alert title.
+    [ResourceType <String>]: securityResourceType
+  [Severity <String>]: alertSeverity
+  [SourceMaterials <String[]>]: Hyperlinks (URIs) to the source material related to the alert, for example, provider's user interface for alerts or log search.
+  [Status <String>]: alertStatus
+  [Tags <String[]>]: User-definable labels that can be applied to an alert and can serve as filter conditions (for example 'HVA', 'SAW') (supports update).
+  [Title <String>]: Alert title.
 Required.
-  - `[Triggers <IMicrosoftGraphAlertTrigger- `[]`>]`: Security-related information about the specific properties that triggered the alert (properties appearing in the alert).
+  [Triggers <IMicrosoftGraphAlertTrigger[]>]: Security-related information about the specific properties that triggered the alert (properties appearing in the alert).
 Alerts might contain information about multiple users, hosts, files, ip addresses.
 This field indicates which properties triggered the alert generation.
-    - `[Name <String>]`: Name of the property serving as a detection trigger.
-    - `[Type <String>]`: Type of the property in the key:value pair for interpretation.
+    [Name <String>]: Name of the property serving as a detection trigger.
+    [Type <String>]: Type of the property in the key:value pair for interpretation.
 For example, String, Boolean etc.
-    - `[Value <String>]`: Value of the property serving as a detection trigger.
-  - `[UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState- `[]`>]`:
-    - `[ClickAction <String>]`:
-    - `[ClickDateTime <DateTime?>]`:
-    - `[Id <String>]`:
-    - `[SourceId <String>]`:
-    - `[UriDomain <String>]`:
-    - `[Verdict <String>]`:
-  - `[UserStates <IMicrosoftGraphUserSecurityState- `[]`>]`: Security-related stateful information generated by the provider about the user accounts related to this alert.
-    - `[AadUserId <String>]`: AAD User object identifier (GUID) - represents the physical/multi-account user entity.
-    - `[AccountName <String>]`: Account name of user account (without Active Directory domain or DNS domain) - (also called mailNickName).
-    - `[DomainName <String>]`: NetBIOS/Active Directory domain of user account (that is, domain/account format).
-    - `[EmailRole <String>]`: emailRole
-    - `[IsVpn <Boolean?>]`: Indicates whether the user logged on through a VPN.
-    - `[LogonDateTime <DateTime?>]`: Time at which the sign-in occurred.
+    [Value <String>]: Value of the property serving as a detection trigger.
+  [UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]: 
+    [ClickAction <String>]: 
+    [ClickDateTime <DateTime?>]: 
+    [Id <String>]: 
+    [SourceId <String>]: 
+    [UriDomain <String>]: 
+    [Verdict <String>]: 
+  [UserStates <IMicrosoftGraphUserSecurityState[]>]: Security-related stateful information generated by the provider about the user accounts related to this alert.
+    [AadUserId <String>]: AAD User object identifier (GUID) - represents the physical/multi-account user entity.
+    [AccountName <String>]: Account name of user account (without Active Directory domain or DNS domain) - (also called mailNickName).
+    [DomainName <String>]: NetBIOS/Active Directory domain of user account (that is, domain/account format).
+    [EmailRole <String>]: emailRole
+    [IsVpn <Boolean?>]: Indicates whether the user logged on through a VPN.
+    [LogonDateTime <DateTime?>]: Time at which the sign-in occurred.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[LogonIP <String>]`: IP Address the sign-in request originated from.
-    - `[LogonId <String>]`: User sign-in ID.
-    - `[LogonLocation <String>]`: Location (by IP address mapping) associated with a user sign-in event by this user.
-    - `[LogonType <String>]`: logonType
-    - `[OnPremisesSecurityIdentifier <String>]`: Active Directory (on-premises) Security Identifier (SID) of the user.
-    - `[RiskScore <String>]`: Provider-generated/calculated risk score of the user account.
+    [LogonIP <String>]: IP Address the sign-in request originated from.
+    [LogonId <String>]: User sign-in ID.
+    [LogonLocation <String>]: Location (by IP address mapping) associated with a user sign-in event by this user.
+    [LogonType <String>]: logonType
+    [OnPremisesSecurityIdentifier <String>]: Active Directory (on-premises) Security Identifier (SID) of the user.
+    [RiskScore <String>]: Provider-generated/calculated risk score of the user account.
 Recommended value range of 0-1, which equates to a percentage.
-    - `[UserAccountType <String>]`: userAccountSecurityType
-    - `[UserPrincipalName <String>]`: User sign-in name - internet format: (user account name)@(user account DNS domain name).
-  - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+    [UserAccountType <String>]: userAccountSecurityType
+    [UserPrincipalName <String>]: User sign-in name - internet format: (user account name)@(user account DNS domain name).
+  [VendorInformation <IMicrosoftGraphSecurityVendorInformation>]: securityVendorInformation
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+    [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+    [SubProvider <String>]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+    [Vendor <String>]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
-  - `[VulnerabilityStates <IMicrosoftGraphVulnerabilityState- `[]`>]`: Threat intelligence pertaining to one or more vulnerabilities related to this alert.
-    - `[Cve <String>]`: Common Vulnerabilities and Exposures (CVE) for the vulnerability.
-    - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
-    - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
+  [VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>]: Threat intelligence pertaining to one or more vulnerabilities related to this alert.
+    [Cve <String>]: Common Vulnerabilities and Exposures (CVE) for the vulnerability.
+    [Severity <String>]: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
+    [WasRunning <Boolean?>]: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
-CLOUDAPPSTATES `<IMicrosoftGraphCloudAppSecurityState- `[]`>`: Security-related stateful information generated by the provider about the cloud application/s related to this alert.
-  - `[DestinationServiceIP <String>]`: Destination IP Address of the connection to the cloud application/service.
-  - `[DestinationServiceName <String>]`: Cloud application/service name (for example 'Salesforce', 'DropBox', etc.).
-  - `[RiskScore <String>]`: Provider-generated/calculated risk score of the Cloud Application/Service.
+CLOUDAPPSTATES <IMicrosoftGraphCloudAppSecurityState[]>: Security-related stateful information generated by the provider about the cloud application/s related to this alert.
+  [DestinationServiceIP <String>]: Destination IP Address of the connection to the cloud application/service.
+  [DestinationServiceName <String>]: Cloud application/service name (for example 'Salesforce', 'DropBox', etc.).
+  [RiskScore <String>]: Provider-generated/calculated risk score of the Cloud Application/Service.
 Recommended value range of 0-1, which equates to a percentage.
 
-FILESTATES `<IMicrosoftGraphFileSecurityState- `[]`>`: Security-related stateful information generated by the provider about the file(s) related to this alert.
-  - `[FileHash <IMicrosoftGraphFileHash>]`: fileHash
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[HashType <String>]`: fileHashType
-    - `[HashValue <String>]`: Value of the file hash.
-  - `[Name <String>]`: File name (without path).
-  - `[Path <String>]`: Full file path of the file/imageFile.
-  - `[RiskScore <String>]`: Provider generated/calculated risk score of the alert file.
+FILESTATES <IMicrosoftGraphFileSecurityState[]>: Security-related stateful information generated by the provider about the file(s) related to this alert.
+  [FileHash <IMicrosoftGraphFileHash>]: fileHash
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [HashType <String>]: fileHashType
+    [HashValue <String>]: Value of the file hash.
+  [Name <String>]: File name (without path).
+  [Path <String>]: Full file path of the file/imageFile.
+  [RiskScore <String>]: Provider generated/calculated risk score of the alert file.
 Recommended value range of 0-1, which equates to a percentage.
 
-HISTORYSTATES `<IMicrosoftGraphAlertHistoryState- `[]`>`: .
-  - `[AppId <String>]`:
-  - `[AssignedTo <String>]`:
-  - `[Comments <String- `[]`>]`:
-  - `[Feedback <String>]`: alertFeedback
-  - `[Status <String>]`: alertStatus
-  - `[UpdatedDateTime <DateTime?>]`:
-  - `[User <String>]`:
+HISTORYSTATES <IMicrosoftGraphAlertHistoryState[]>: .
+  [AppId <String>]: 
+  [AssignedTo <String>]: 
+  [Comments <String[]>]: 
+  [Feedback <String>]: alertFeedback
+  [Status <String>]: alertStatus
+  [UpdatedDateTime <DateTime?>]: 
+  [User <String>]: 
 
-HOSTSTATES `<IMicrosoftGraphHostSecurityState- `[]`>`: Security-related stateful information generated by the provider about the host(s) related to this alert.
-  - `[Fqdn <String>]`: Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
-  - `[IsAzureAdJoined <Boolean?>]`:
-  - `[IsAzureAdRegistered <Boolean?>]`:
-  - `[IsHybridAzureDomainJoined <Boolean?>]`: True if the host is domain joined to an on-premises Active Directory domain.
-  - `[NetBiosName <String>]`: The local host name, without the DNS domain name.
-  - `[OS <String>]`: Host Operating System.
+HOSTSTATES <IMicrosoftGraphHostSecurityState[]>: Security-related stateful information generated by the provider about the host(s) related to this alert.
+  [Fqdn <String>]: Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
+  [IsAzureAdJoined <Boolean?>]: 
+  [IsAzureAdRegistered <Boolean?>]: 
+  [IsHybridAzureDomainJoined <Boolean?>]: True if the host is domain joined to an on-premises Active Directory domain.
+  [NetBiosName <String>]: The local host name, without the DNS domain name.
+  [OS <String>]: Host Operating System.
 (For example, Windows 10, macOS, RHEL, etc.).
-  - `[PrivateIPAddress <String>]`: Private (not routable) IPv4 or IPv6 address (see RFC 1918) at the time of the alert.
-  - `[PublicIPAddress <String>]`: Publicly routable IPv4 or IPv6 address (see RFC 1918) at time of the alert.
-  - `[RiskScore <String>]`: Provider-generated/calculated risk score of the host.
-Recommended value range of 0-1, which equates to a percentage.
+  [PrivateIPAddress <String>]: Private (not routable) IPv4 or IPv6 address (see RFC 1918) at the time of the alert.
+  [PublicIPAddress <String>]: Publicly routable IPv4 or IPv6 address (see RFC 1918) at time of the alert.
+  [RiskScore <String>]: Provider-generated/calculated risk score of the host.
+ Recommended value range of 0-1, which equates to a percentage.
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
-  - `[AlertId <String>]`: The unique identifier of alert
-  - `[ArticleId <String>]`: The unique identifier of article
-  - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
-  - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[AuthorityTemplateId <String>]`: The unique identifier of authorityTemplate
-  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
-  - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
-  - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
-  - `[DataSourceId <String>]`: The unique identifier of dataSource
-  - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
-  - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
-  - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
-  - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
-  - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
-  - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
-  - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
-  - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
-  - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
-  - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
-  - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
-  - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
-  - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
-  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
-  - `[HostComponentId <String>]`: The unique identifier of hostComponent
-  - `[HostCookieId <String>]`: The unique identifier of hostCookie
-  - `[HostId <String>]`: The unique identifier of host
-  - `[HostPairId <String>]`: The unique identifier of hostPair
-  - `[HostPortId <String>]`: The unique identifier of hostPort
-  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
-  - `[HostTrackerId <String>]`: The unique identifier of hostTracker
-  - `[IncidentId <String>]`: The unique identifier of incident
-  - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
-  - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
-  - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
-  - `[LandingPageId <String>]`: The unique identifier of landingPage
-  - `[LoginPageId <String>]`: The unique identifier of loginPage
-  - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
-  - `[PayloadId <String>]`: The unique identifier of payload
-  - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
-  - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
-  - `[RetentionLabelId <String>]`: The unique identifier of retentionLabel
-  - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
-  - `[SecureScoreId <String>]`: The unique identifier of secureScore
-  - `[SensorId <String>]`: The unique identifier of sensor
-  - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
-  - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
-  - `[SimulationId <String>]`: The unique identifier of simulation
-  - `[SiteSourceId <String>]`: The unique identifier of siteSource
-  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
-  - `[SubcategoryTemplateId <String>]`: The unique identifier of subcategoryTemplate
-  - `[SubdomainId <String>]`: The unique identifier of subdomain
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[TrainingId <String>]`: The unique identifier of training
-  - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
-  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserPrincipalName <String>]`: Alternate key of user
-  - `[UserSourceId <String>]`: The unique identifier of userSource
-  - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
-  - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
-  - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
-  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
+  [AlertId <String>]: The unique identifier of alert
+  [ArticleId <String>]: The unique identifier of article
+  [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
+  [AttackSimulationOperationId <String>]: The unique identifier of attackSimulationOperation
+  [AuthoredNoteId <String>]: The unique identifier of authoredNote
+  [AuthorityTemplateId <String>]: The unique identifier of authorityTemplate
+  [CaseOperationId <String>]: The unique identifier of caseOperation
+  [CategoryTemplateId <String>]: The unique identifier of categoryTemplate
+  [CitationTemplateId <String>]: The unique identifier of citationTemplate
+  [ContentFormats <String[]>]: Usage: contentFormats={contentFormats}
+  [DataSourceId <String>]: The unique identifier of dataSource
+  [DepartmentTemplateId <String>]: The unique identifier of departmentTemplate
+  [DispositionReviewStageNumber <String>]: The unique identifier of dispositionReviewStage
+  [EdiscoveryCaseId <String>]: The unique identifier of ediscoveryCase
+  [EdiscoveryCustodianId <String>]: The unique identifier of ediscoveryCustodian
+  [EdiscoveryNoncustodialDataSourceId <String>]: The unique identifier of ediscoveryNoncustodialDataSource
+  [EdiscoveryReviewSetId <String>]: The unique identifier of ediscoveryReviewSet
+  [EdiscoveryReviewSetQueryId <String>]: The unique identifier of ediscoveryReviewSetQuery
+  [EdiscoveryReviewTagId <String>]: The unique identifier of ediscoveryReviewTag
+  [EdiscoveryReviewTagId1 <String>]: The unique identifier of ediscoveryReviewTag
+  [EdiscoverySearchId <String>]: The unique identifier of ediscoverySearch
+  [EndUserNotificationDetailId <String>]: The unique identifier of endUserNotificationDetail
+  [EndUserNotificationId <String>]: The unique identifier of endUserNotification
+  [FilePlanReferenceTemplateId <String>]: The unique identifier of filePlanReferenceTemplate
+  [HealthIssueId <String>]: The unique identifier of healthIssue
+  [HostComponentId <String>]: The unique identifier of hostComponent
+  [HostCookieId <String>]: The unique identifier of hostCookie
+  [HostId <String>]: The unique identifier of host
+  [HostPairId <String>]: The unique identifier of hostPair
+  [HostPortId <String>]: The unique identifier of hostPort
+  [HostSslCertificateId <String>]: The unique identifier of hostSslCertificate
+  [HostTrackerId <String>]: The unique identifier of hostTracker
+  [IncidentId <String>]: The unique identifier of incident
+  [IntelligenceProfileId <String>]: The unique identifier of intelligenceProfile
+  [IntelligenceProfileIndicatorId <String>]: The unique identifier of intelligenceProfileIndicator
+  [LabelIds <String[]>]: Usage: labelIds={labelIds}
+  [LandingPageDetailId <String>]: The unique identifier of landingPageDetail
+  [LandingPageId <String>]: The unique identifier of landingPage
+  [Locale <String>]: Usage: locale='{locale}'
+  [LoginPageId <String>]: The unique identifier of loginPage
+  [PassiveDnsRecordId <String>]: The unique identifier of passiveDnsRecord
+  [PayloadId <String>]: The unique identifier of payload
+  [RetentionEventId <String>]: The unique identifier of retentionEvent
+  [RetentionEventTypeId <String>]: The unique identifier of retentionEventType
+  [RetentionLabelId <String>]: The unique identifier of retentionLabel
+  [SecureScoreControlProfileId <String>]: The unique identifier of secureScoreControlProfile
+  [SecureScoreId <String>]: The unique identifier of secureScore
+  [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
+  [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [SensorId <String>]: The unique identifier of sensor
+  [SimulationAutomationId <String>]: The unique identifier of simulationAutomation
+  [SimulationAutomationRunId <String>]: The unique identifier of simulationAutomationRun
+  [SimulationId <String>]: The unique identifier of simulation
+  [SiteSourceId <String>]: The unique identifier of siteSource
+  [SslCertificateId <String>]: The unique identifier of sslCertificate
+  [SubcategoryTemplateId <String>]: The unique identifier of subcategoryTemplate
+  [SubdomainId <String>]: The unique identifier of subdomain
+  [SubjectRightsRequestId <String>]: The unique identifier of subjectRightsRequest
+  [TrainingId <String>]: The unique identifier of training
+  [TrainingLanguageDetailId <String>]: The unique identifier of trainingLanguageDetail
+  [UnifiedGroupSourceId <String>]: The unique identifier of unifiedGroupSource
+  [UserId <String>]: The unique identifier of user
+  [UserPrincipalName <String>]: Alternate key of user
+  [UserSourceId <String>]: The unique identifier of userSource
+  [VulnerabilityComponentId <String>]: The unique identifier of vulnerabilityComponent
+  [VulnerabilityId <String>]: The unique identifier of vulnerability
+  [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
+  [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-INVESTIGATIONSECURITYSTATES `<IMicrosoftGraphInvestigationSecurityState- `[]`>`: .
-  - `[Name <String>]`:
-  - `[Status <String>]`:
+INVESTIGATIONSECURITYSTATES <IMicrosoftGraphInvestigationSecurityState[]>: .
+  [Name <String>]: 
+  [Status <String>]: 
 
-MALWARESTATES `<IMicrosoftGraphMalwareState- `[]`>`: Threat Intelligence pertaining to malware related to this alert.
-  - `[Category <String>]`: Provider-generated malware category (for example, trojan, ransomware, etc.).
-  - `[Family <String>]`: Provider-generated malware family (for example, 'wannacry,' 'notpetya,' etc.).
-  - `[Name <String>]`: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
-  - `[Severity <String>]`: Provider-determined severity of this malware.
-  - `[WasRunning <Boolean?>]`: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
+MALWARESTATES <IMicrosoftGraphMalwareState[]>: Threat Intelligence pertaining to malware related to this alert.
+  [Category <String>]: Provider-generated malware category (for example, trojan, ransomware, etc.).
+  [Family <String>]: Provider-generated malware family (for example, 'wannacry,' 'notpetya,' etc.).
+  [Name <String>]: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
+  [Severity <String>]: Provider-determined severity of this malware.
+  [WasRunning <Boolean?>]: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
 
-MESSAGESECURITYSTATES `<IMicrosoftGraphMessageSecurityState- `[]`>`: .
-  - `[ConnectingIP <String>]`:
-  - `[DeliveryAction <String>]`:
-  - `[DeliveryLocation <String>]`:
-  - `[Directionality <String>]`:
-  - `[InternetMessageId <String>]`:
-  - `[MessageFingerprint <String>]`:
-  - `[MessageReceivedDateTime <DateTime?>]`:
-  - `[MessageSubject <String>]`:
-  - `[NetworkMessageId <String>]`:
+MESSAGESECURITYSTATES <IMicrosoftGraphMessageSecurityState[]>: .
+  [ConnectingIP <String>]: 
+  [DeliveryAction <String>]: 
+  [DeliveryLocation <String>]: 
+  [Directionality <String>]: 
+  [InternetMessageId <String>]: 
+  [MessageFingerprint <String>]: 
+  [MessageReceivedDateTime <DateTime?>]: 
+  [MessageSubject <String>]: 
+  [NetworkMessageId <String>]: 
 
-NETWORKCONNECTIONS `<IMicrosoftGraphNetworkConnection- `[]`>`: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
-  - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook or SMTP).
-  - `[DestinationAddress <String>]`: Destination IP address (of the network connection).
-  - `[DestinationDomain <String>]`: Destination domain portion of the destination URL.
+NETWORKCONNECTIONS <IMicrosoftGraphNetworkConnection[]>: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
+  [ApplicationName <String>]: Name of the application managing the network connection (for example, Facebook or SMTP).
+  [DestinationAddress <String>]: Destination IP address (of the network connection).
+  [DestinationDomain <String>]: Destination domain portion of the destination URL.
 (for example 'www.contoso.com').
-  - `[DestinationLocation <String>]`: Location (by IP address mapping) associated with the destination of a network connection.
-  - `[DestinationPort <String>]`: Destination port (of the network connection).
-  - `[DestinationUrl <String>]`: Network connection URL/URI string - excluding parameters.
+  [DestinationLocation <String>]: Location (by IP address mapping) associated with the destination of a network connection.
+  [DestinationPort <String>]: Destination port (of the network connection).
+  [DestinationUrl <String>]: Network connection URL/URI string - excluding parameters.
 (for example 'www.contoso.com/products/default.html')
-  - `[Direction <String>]`: connectionDirection
-  - `[DomainRegisteredDateTime <DateTime?>]`: Date when the destination domain was registered.
+  [Direction <String>]: connectionDirection
+  [DomainRegisteredDateTime <DateTime?>]: Date when the destination domain was registered.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LocalDnsName <String>]`: The local DNS name resolution as it appears in the host's local DNS cache (for example, in case the 'hosts' file was tampered with).
-  - `[NatDestinationAddress <String>]`: Network Address Translation destination IP address.
-  - `[NatDestinationPort <String>]`: Network Address Translation destination port.
-  - `[NatSourceAddress <String>]`: Network Address Translation source IP address.
-  - `[NatSourcePort <String>]`: Network Address Translation source port.
-  - `[Protocol <String>]`: securityNetworkProtocol
-  - `[RiskScore <String>]`: Provider generated/calculated risk score of the network connection.
+  [LocalDnsName <String>]: The local DNS name resolution as it appears in the host's local DNS cache (for example, in case the 'hosts' file was tampered with).
+  [NatDestinationAddress <String>]: Network Address Translation destination IP address.
+  [NatDestinationPort <String>]: Network Address Translation destination port.
+  [NatSourceAddress <String>]: Network Address Translation source IP address.
+  [NatSourcePort <String>]: Network Address Translation source port.
+  [Protocol <String>]: securityNetworkProtocol
+  [RiskScore <String>]: Provider generated/calculated risk score of the network connection.
 Recommended value range of 0-1, which equates to a percentage.
-  - `[SourceAddress <String>]`: Source (i.e.
+  [SourceAddress <String>]: Source (i.e.
 origin) IP address (of the network connection).
-  - `[SourceLocation <String>]`: Location (by IP address mapping) associated with the source of a network connection.
-  - `[SourcePort <String>]`: Source (i.e.
+  [SourceLocation <String>]: Location (by IP address mapping) associated with the source of a network connection.
+  [SourcePort <String>]: Source (i.e.
 origin) IP port (of the network connection).
-  - `[Status <String>]`: connectionStatus
-  - `[UrlParameters <String>]`: Parameters (suffix) of the destination URL.
+  [Status <String>]: connectionStatus
+  [UrlParameters <String>]: Parameters (suffix) of the destination URL.
 
-PROCESSES `<IMicrosoftGraphProcess- `[]`>`: Security-related stateful information generated by the provider about the process or processes related to this alert.
-  - `[AccountName <String>]`: User account identifier (user account context the process ran under) for example, AccountName, SID, and so on.
-  - `[CommandLine <String>]`: The full process invocation commandline including all parameters.
-  - `[CreatedDateTime <DateTime?>]`: Time at which the process was started.
+PROCESSES <IMicrosoftGraphProcess[]>: Security-related stateful information generated by the provider about the process or processes related to this alert.
+  [AccountName <String>]: User account identifier (user account context the process ran under) for example, AccountName, SID, and so on.
+  [CommandLine <String>]: The full process invocation commandline including all parameters.
+  [CreatedDateTime <DateTime?>]: Time at which the process was started.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[FileHash <IMicrosoftGraphFileHash>]`: fileHash
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[HashType <String>]`: fileHashType
-    - `[HashValue <String>]`: Value of the file hash.
-  - `[IntegrityLevel <String>]`: processIntegrityLevel
-  - `[IsElevated <Boolean?>]`: True if the process is elevated.
-  - `[Name <String>]`: The name of the process' Image file.
-  - `[ParentProcessCreatedDateTime <DateTime?>]`: DateTime at which the parent process was started.
+  [FileHash <IMicrosoftGraphFileHash>]: fileHash
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [HashType <String>]: fileHashType
+    [HashValue <String>]: Value of the file hash.
+  [IntegrityLevel <String>]: processIntegrityLevel
+  [IsElevated <Boolean?>]: True if the process is elevated.
+  [Name <String>]: The name of the process' Image file.
+  [ParentProcessCreatedDateTime <DateTime?>]: DateTime at which the parent process was started.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[ParentProcessId <Int32?>]`: The Process ID (PID) of the parent process.
-  - `[ParentProcessName <String>]`: The name of the image file of the parent process.
-  - `[Path <String>]`: Full path, including filename.
-  - `[ProcessId <Int32?>]`: The Process ID (PID) of the process.
+  [ParentProcessId <Int32?>]: The Process ID (PID) of the parent process.
+  [ParentProcessName <String>]: The name of the image file of the parent process.
+  [Path <String>]: Full path, including filename.
+  [ProcessId <Int32?>]: The Process ID (PID) of the process.
 
-REGISTRYKEYSTATES `<IMicrosoftGraphRegistryKeyState- `[]`>`: Security-related stateful information generated by the provider about the registry keys related to this alert.
-  - `[Hive <String>]`: registryHive
-  - `[Key <String>]`: Current (i.e.
+REGISTRYKEYSTATES <IMicrosoftGraphRegistryKeyState[]>: Security-related stateful information generated by the provider about the registry keys related to this alert.
+  [Hive <String>]: registryHive
+  [Key <String>]: Current (i.e.
 changed) registry key (excludes HIVE).
-  - `[OldKey <String>]`: Previous (i.e.
+  [OldKey <String>]: Previous (i.e.
 before changed) registry key (excludes HIVE).
-  - `[OldValueData <String>]`: Previous (i.e.
+  [OldValueData <String>]: Previous (i.e.
 before changed) registry key value data (contents).
-  - `[OldValueName <String>]`: Previous (i.e.
+  [OldValueName <String>]: Previous (i.e.
 before changed) registry key value name.
-  - `[Operation <String>]`: registryOperation
-  - `[ProcessId <Int32?>]`: Process ID (PID) of the process that modified the registry key (process details will appear in the alert 'processes' collection).
-  - `[ValueData <String>]`: Current (i.e.
+  [Operation <String>]: registryOperation
+  [ProcessId <Int32?>]: Process ID (PID) of the process that modified the registry key (process details will appear in the alert 'processes' collection).
+  [ValueData <String>]: Current (i.e.
 changed) registry key value data (contents).
-  - `[ValueName <String>]`: Current (i.e.
+  [ValueName <String>]: Current (i.e.
 changed) registry key value name
-  - `[ValueType <String>]`: registryValueType
+  [ValueType <String>]: registryValueType
 
-SECURITYRESOURCES `<IMicrosoftGraphSecurityResource- `[]`>`: Resources related to current alert.
+SECURITYRESOURCES <IMicrosoftGraphSecurityResource[]>: Resources related to current alert.
 For example, for some alerts this can have the Azure Resource value.
-  - `[Resource <String>]`: Name of the resource that is related to current alert.
+  [Resource <String>]: Name of the resource that is related to current alert.
 Required.
-  - `[ResourceType <String>]`: securityResourceType
+  [ResourceType <String>]: securityResourceType
 
-TRIGGERS `<IMicrosoftGraphAlertTrigger- `[]`>`: Security-related information about the specific properties that triggered the alert (properties appearing in the alert).
+TRIGGERS <IMicrosoftGraphAlertTrigger[]>: Security-related information about the specific properties that triggered the alert (properties appearing in the alert).
 Alerts might contain information about multiple users, hosts, files, ip addresses.
 This field indicates which properties triggered the alert generation.
-  - `[Name <String>]`: Name of the property serving as a detection trigger.
-  - `[Type <String>]`: Type of the property in the key:value pair for interpretation.
+  [Name <String>]: Name of the property serving as a detection trigger.
+  [Type <String>]: Type of the property in the key:value pair for interpretation.
 For example, String, Boolean etc.
-  - `[Value <String>]`: Value of the property serving as a detection trigger.
+  [Value <String>]: Value of the property serving as a detection trigger.
 
-URICLICKSECURITYSTATES `<IMicrosoftGraphUriClickSecurityState- `[]`>`: .
-  - `[ClickAction <String>]`:
-  - `[ClickDateTime <DateTime?>]`:
-  - `[Id <String>]`:
-  - `[SourceId <String>]`:
-  - `[UriDomain <String>]`:
-  - `[Verdict <String>]`:
+URICLICKSECURITYSTATES <IMicrosoftGraphUriClickSecurityState[]>: .
+  [ClickAction <String>]: 
+  [ClickDateTime <DateTime?>]: 
+  [Id <String>]: 
+  [SourceId <String>]: 
+  [UriDomain <String>]: 
+  [Verdict <String>]: 
 
-USERSTATES `<IMicrosoftGraphUserSecurityState- `[]`>`: Security-related stateful information generated by the provider about the user accounts related to this alert.
-  - `[AadUserId <String>]`: AAD User object identifier (GUID) - represents the physical/multi-account user entity.
-  - `[AccountName <String>]`: Account name of user account (without Active Directory domain or DNS domain) - (also called mailNickName).
-  - `[DomainName <String>]`: NetBIOS/Active Directory domain of user account (that is, domain/account format).
-  - `[EmailRole <String>]`: emailRole
-  - `[IsVpn <Boolean?>]`: Indicates whether the user logged on through a VPN.
-  - `[LogonDateTime <DateTime?>]`: Time at which the sign-in occurred.
+USERSTATES <IMicrosoftGraphUserSecurityState[]>: Security-related stateful information generated by the provider about the user accounts related to this alert.
+  [AadUserId <String>]: AAD User object identifier (GUID) - represents the physical/multi-account user entity.
+  [AccountName <String>]: Account name of user account (without Active Directory domain or DNS domain) - (also called mailNickName).
+  [DomainName <String>]: NetBIOS/Active Directory domain of user account (that is, domain/account format).
+  [EmailRole <String>]: emailRole
+  [IsVpn <Boolean?>]: Indicates whether the user logged on through a VPN.
+  [LogonDateTime <DateTime?>]: Time at which the sign-in occurred.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[LogonIP <String>]`: IP Address the sign-in request originated from.
-  - `[LogonId <String>]`: User sign-in ID.
-  - `[LogonLocation <String>]`: Location (by IP address mapping) associated with a user sign-in event by this user.
-  - `[LogonType <String>]`: logonType
-  - `[OnPremisesSecurityIdentifier <String>]`: Active Directory (on-premises) Security Identifier (SID) of the user.
-  - `[RiskScore <String>]`: Provider-generated/calculated risk score of the user account.
+  [LogonIP <String>]: IP Address the sign-in request originated from.
+  [LogonId <String>]: User sign-in ID.
+  [LogonLocation <String>]: Location (by IP address mapping) associated with a user sign-in event by this user.
+  [LogonType <String>]: logonType
+  [OnPremisesSecurityIdentifier <String>]: Active Directory (on-premises) Security Identifier (SID) of the user.
+  [RiskScore <String>]: Provider-generated/calculated risk score of the user account.
 Recommended value range of 0-1, which equates to a percentage.
-  - `[UserAccountType <String>]`: userAccountSecurityType
-  - `[UserPrincipalName <String>]`: User sign-in name - internet format: (user account name)@(user account DNS domain name).
+  [UserAccountType <String>]: userAccountSecurityType
+  [UserPrincipalName <String>]: User sign-in name - internet format: (user account name)@(user account DNS domain name).
 
 VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+  [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-  - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+  [SubProvider <String>]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+  [Vendor <String>]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-VULNERABILITYSTATES `<IMicrosoftGraphVulnerabilityState- `[]`>`: Threat intelligence pertaining to one or more vulnerabilities related to this alert.
-  - `[Cve <String>]`: Common Vulnerabilities and Exposures (CVE) for the vulnerability.
-  - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
-  - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
+VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState[]>: Threat intelligence pertaining to one or more vulnerabilities related to this alert.
+  [Cve <String>]: Common Vulnerabilities and Exposures (CVE) for the vulnerability.
+  [Severity <String>]: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
+  [WasRunning <Boolean?>]: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
+
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert)
-
-[https://learn.microsoft.com/graph/api/alert-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/alert-update?view=graph-rest-1.0)
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert)
+- [](https://learn.microsoft.com/graph/api/alert-update?view=graph-rest-1.0)
 
 
 
