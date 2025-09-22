@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: 027f4208-a608-4964-a795-4effe0932b6d
+Module Guid: 78ea8e1f-e57b-41d6-a92b-9a5888715341
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -705,6 +705,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsWindowsWebApp](Get-MgDeviceAppManagementMobileAppCountAsWindowsWebApp.md)
 
+### [Get-MgDeviceAppManagementMobileAppRelationship](Get-MgDeviceAppManagementMobileAppRelationship.md)
+
+### [Get-MgDeviceAppManagementMobileAppRelationship](Get-MgDeviceAppManagementMobileAppRelationship.md)
+
+### [Get-MgDeviceAppManagementMobileAppRelationshipCount](Get-MgDeviceAppManagementMobileAppRelationshipCount.md)
+
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfiguration](Get-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfiguration](Get-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
@@ -1029,6 +1035,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgDeviceAppManagementMobileAppConfigurationUserStatus](New-MgDeviceAppManagementMobileAppConfigurationUserStatus.md)
 
+### [New-MgDeviceAppManagementMobileAppRelationship](New-MgDeviceAppManagementMobileAppRelationship.md)
+
 ### [New-MgDeviceAppManagementTargetedManagedAppConfiguration](New-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
 
 ### [New-MgDeviceAppManagementTargetedManagedAppConfigurationApp](New-MgDeviceAppManagementTargetedManagedAppConfigurationApp.md)
@@ -1230,6 +1238,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgDeviceAppManagementMobileAppConfigurationUserStatus](Remove-MgDeviceAppManagementMobileAppConfigurationUserStatus.md)
 
 ### [Remove-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary](Remove-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
+
+### [Remove-MgDeviceAppManagementMobileAppRelationship](Remove-MgDeviceAppManagementMobileAppRelationship.md)
 
 ### [Remove-MgDeviceAppManagementTargetedManagedAppConfiguration](Remove-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
 
@@ -1468,6 +1478,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgDeviceAppManagementMobileAppConfigurationUserStatus](Update-MgDeviceAppManagementMobileAppConfigurationUserStatus.md)
 
 ### [Update-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary](Update-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
+
+### [Update-MgDeviceAppManagementMultipleMobileAppRelationship](Update-MgDeviceAppManagementMultipleMobileAppRelationship.md)
 
 ### [Update-MgDeviceAppManagementTargetedManagedAppConfiguration](Update-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
 

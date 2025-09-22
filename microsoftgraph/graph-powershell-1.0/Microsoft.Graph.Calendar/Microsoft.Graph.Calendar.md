@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Calendar
-Module Guid: f57fbe35-578f-4ce0-9631-f245a0012d84
+Module Guid: ec5f0fdc-4f9d-424e-8893-12522766447a
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -51,25 +51,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupEventInstance](Get-MgGroupEventInstance.md)
 
-### [Get-MgGroupEventInstance](Get-MgGroupEventInstance.md)
-
-### [Get-MgGroupEventInstanceAttachment](Get-MgGroupEventInstanceAttachment.md)
-
-### [Get-MgGroupEventInstanceAttachment](Get-MgGroupEventInstanceAttachment.md)
-
-### [Get-MgGroupEventInstanceAttachmentCount](Get-MgGroupEventInstanceAttachmentCount.md)
-
-### [Get-MgGroupEventInstanceCalendar](Get-MgGroupEventInstanceCalendar.md)
-
-### [Get-MgGroupEventInstanceCount](Get-MgGroupEventInstanceCount.md)
-
 ### [Get-MgGroupEventInstanceDelta](Get-MgGroupEventInstanceDelta.md)
-
-### [Get-MgGroupEventInstanceExtension](Get-MgGroupEventInstanceExtension.md)
-
-### [Get-MgGroupEventInstanceExtension](Get-MgGroupEventInstanceExtension.md)
-
-### [Get-MgGroupEventInstanceExtensionCount](Get-MgGroupEventInstanceExtensionCount.md)
 
 ### [Get-MgPlaceAsRoom](Get-MgPlaceAsRoom.md)
 
@@ -143,39 +125,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserEventInstance](Get-MgUserEventInstance.md)
 
-### [Get-MgUserEventInstance](Get-MgUserEventInstance.md)
-
-### [Get-MgUserEventInstanceAttachment](Get-MgUserEventInstanceAttachment.md)
-
-### [Get-MgUserEventInstanceAttachment](Get-MgUserEventInstanceAttachment.md)
-
-### [Get-MgUserEventInstanceAttachmentCount](Get-MgUserEventInstanceAttachmentCount.md)
-
-### [Get-MgUserEventInstanceCalendar](Get-MgUserEventInstanceCalendar.md)
-
-### [Get-MgUserEventInstanceCount](Get-MgUserEventInstanceCount.md)
-
 ### [Get-MgUserEventInstanceDelta](Get-MgUserEventInstanceDelta.md)
 
-### [Get-MgUserEventInstanceExtension](Get-MgUserEventInstanceExtension.md)
-
-### [Get-MgUserEventInstanceExtension](Get-MgUserEventInstanceExtension.md)
-
-### [Get-MgUserEventInstanceExtensionCount](Get-MgUserEventInstanceExtensionCount.md)
-
 ### [Invoke-MgAcceptGroupEvent](Invoke-MgAcceptGroupEvent.md)
-
-### [Invoke-MgAcceptGroupEventInstance](Invoke-MgAcceptGroupEventInstance.md)
-
-### [Invoke-MgAcceptGroupEventInstanceTentatively](Invoke-MgAcceptGroupEventInstanceTentatively.md)
 
 ### [Invoke-MgAcceptGroupEventTentatively](Invoke-MgAcceptGroupEventTentatively.md)
 
 ### [Invoke-MgAcceptUserEvent](Invoke-MgAcceptUserEvent.md)
-
-### [Invoke-MgAcceptUserEventInstance](Invoke-MgAcceptUserEventInstance.md)
-
-### [Invoke-MgAcceptUserEventInstanceTentatively](Invoke-MgAcceptUserEventInstanceTentatively.md)
 
 ### [Invoke-MgAcceptUserEventTentatively](Invoke-MgAcceptUserEventTentatively.md)
 
@@ -185,33 +141,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgDeclineGroupEvent](Invoke-MgDeclineGroupEvent.md)
 
-### [Invoke-MgDeclineGroupEventInstance](Invoke-MgDeclineGroupEventInstance.md)
-
 ### [Invoke-MgDeclineUserEvent](Invoke-MgDeclineUserEvent.md)
 
-### [Invoke-MgDeclineUserEventInstance](Invoke-MgDeclineUserEventInstance.md)
-
-### [Invoke-MgDismissGroupEventInstanceReminder](Invoke-MgDismissGroupEventInstanceReminder.md)
-
 ### [Invoke-MgDismissGroupEventReminder](Invoke-MgDismissGroupEventReminder.md)
-
-### [Invoke-MgDismissUserEventInstanceReminder](Invoke-MgDismissUserEventInstanceReminder.md)
 
 ### [Invoke-MgDismissUserEventReminder](Invoke-MgDismissUserEventReminder.md)
 
 ### [Invoke-MgForwardGroupEvent](Invoke-MgForwardGroupEvent.md)
 
-### [Invoke-MgForwardGroupEventInstance](Invoke-MgForwardGroupEventInstance.md)
-
 ### [Invoke-MgForwardUserEvent](Invoke-MgForwardUserEvent.md)
 
-### [Invoke-MgForwardUserEventInstance](Invoke-MgForwardUserEventInstance.md)
-
-### [Invoke-MgSnoozeGroupEventInstanceReminder](Invoke-MgSnoozeGroupEventInstanceReminder.md)
-
 ### [Invoke-MgSnoozeGroupEventReminder](Invoke-MgSnoozeGroupEventReminder.md)
-
-### [Invoke-MgSnoozeUserEventInstanceReminder](Invoke-MgSnoozeUserEventInstanceReminder.md)
 
 ### [Invoke-MgSnoozeUserEventReminder](Invoke-MgSnoozeUserEventReminder.md)
 
@@ -226,12 +166,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgGroupEventAttachmentUploadSession](New-MgGroupEventAttachmentUploadSession.md)
 
 ### [New-MgGroupEventExtension](New-MgGroupEventExtension.md)
-
-### [New-MgGroupEventInstanceAttachment](New-MgGroupEventInstanceAttachment.md)
-
-### [New-MgGroupEventInstanceAttachmentUploadSession](New-MgGroupEventInstanceAttachmentUploadSession.md)
-
-### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
 
 ### [New-MgPlaceAsRoomListRoom](New-MgPlaceAsRoomListRoom.md)
 
@@ -255,12 +189,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgUserEventExtension](New-MgUserEventExtension.md)
 
-### [New-MgUserEventInstanceAttachment](New-MgUserEventInstanceAttachment.md)
-
-### [New-MgUserEventInstanceAttachmentUploadSession](New-MgUserEventInstanceAttachmentUploadSession.md)
-
-### [New-MgUserEventInstanceExtension](New-MgUserEventInstanceExtension.md)
-
 ### [Remove-MgGroupCalendarEvent](Remove-MgGroupCalendarEvent.md)
 
 ### [Remove-MgGroupCalendarPermanent](Remove-MgGroupCalendarPermanent.md)
@@ -272,12 +200,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgGroupEventAttachment](Remove-MgGroupEventAttachment.md)
 
 ### [Remove-MgGroupEventExtension](Remove-MgGroupEventExtension.md)
-
-### [Remove-MgGroupEventInstanceAttachment](Remove-MgGroupEventInstanceAttachment.md)
-
-### [Remove-MgGroupEventInstanceExtension](Remove-MgGroupEventInstanceExtension.md)
-
-### [Remove-MgGroupEventInstancePermanent](Remove-MgGroupEventInstancePermanent.md)
 
 ### [Remove-MgGroupEventPermanent](Remove-MgGroupEventPermanent.md)
 
@@ -297,21 +219,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgUserEventExtension](Remove-MgUserEventExtension.md)
 
-### [Remove-MgUserEventInstanceAttachment](Remove-MgUserEventInstanceAttachment.md)
-
-### [Remove-MgUserEventInstanceExtension](Remove-MgUserEventInstanceExtension.md)
-
-### [Remove-MgUserEventInstancePermanent](Remove-MgUserEventInstancePermanent.md)
-
 ### [Remove-MgUserEventPermanent](Remove-MgUserEventPermanent.md)
 
 ### [Stop-MgGroupEvent](Stop-MgGroupEvent.md)
 
-### [Stop-MgGroupEventInstance](Stop-MgGroupEventInstance.md)
-
 ### [Stop-MgUserEvent](Stop-MgUserEvent.md)
-
-### [Stop-MgUserEventInstance](Stop-MgUserEventInstance.md)
 
 ### [Update-MgGroupCalendarEvent](Update-MgGroupCalendarEvent.md)
 
@@ -320,8 +232,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgGroupEvent](Update-MgGroupEvent.md)
 
 ### [Update-MgGroupEventExtension](Update-MgGroupEventExtension.md)
-
-### [Update-MgGroupEventInstanceExtension](Update-MgGroupEventInstanceExtension.md)
 
 ### [Update-MgPlace](Update-MgPlace.md)
 
@@ -334,8 +244,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserEvent](Update-MgUserEvent.md)
 
 ### [Update-MgUserEventExtension](Update-MgUserEventExtension.md)
-
-### [Update-MgUserEventInstanceExtension](Update-MgUserEventInstanceExtension.md)
 
 
 

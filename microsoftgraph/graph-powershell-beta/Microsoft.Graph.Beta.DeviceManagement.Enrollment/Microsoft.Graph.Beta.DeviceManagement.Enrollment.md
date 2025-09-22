@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-Module Guid: 0bdc7634-bbef-4b2c-8051-ee802afb3290
+Module Guid: 1250f8b7-504f-410d-a662-810660b755c3
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,6 +11,8 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Beta.DeviceManagement.Enrollment Cmdlets
+### [Clear-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileEnrollmentTimeDeviceMembershipTarget](Clear-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileEnrollmentTimeDeviceMembershipTarget.md)
+
 ### [Export-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig](Export-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig.md)
 
 ### [Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
@@ -18,6 +20,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
 
 ### [Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileCount](Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileCount.md)
+
+### [Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileEnrollmentTimeDeviceMembershipTarget](Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileEnrollmentTimeDeviceMembershipTarget.md)
 
 ### [Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile.md)
 
@@ -201,60 +205,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
 
-### [Get-MgBetaRoleManagementDefender](Get-MgBetaRoleManagementDefender.md)
-
-### [Get-MgBetaRoleManagementDefenderResourceNamespace](Get-MgBetaRoleManagementDefenderResourceNamespace.md)
-
-### [Get-MgBetaRoleManagementDefenderResourceNamespace](Get-MgBetaRoleManagementDefenderResourceNamespace.md)
-
-### [Get-MgBetaRoleManagementDefenderResourceNamespaceCount](Get-MgBetaRoleManagementDefenderResourceNamespaceCount.md)
-
-### [Get-MgBetaRoleManagementDefenderResourceNamespaceResourceAction](Get-MgBetaRoleManagementDefenderResourceNamespaceResourceAction.md)
-
-### [Get-MgBetaRoleManagementDefenderResourceNamespaceResourceAction](Get-MgBetaRoleManagementDefenderResourceNamespaceResourceAction.md)
-
-### [Get-MgBetaRoleManagementDefenderResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementDefenderResourceNamespaceResourceActionAuthenticationContext.md)
-
-### [Get-MgBetaRoleManagementDefenderResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementDefenderResourceNamespaceResourceActionCount.md)
-
-### [Get-MgBetaRoleManagementDefenderResourceNamespaceResourceActionResourceScope](Get-MgBetaRoleManagementDefenderResourceNamespaceResourceActionResourceScope.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleAssignment](Get-MgBetaRoleManagementDefenderRoleAssignment.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleAssignment](Get-MgBetaRoleManagementDefenderRoleAssignment.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleAssignmentAppScope](Get-MgBetaRoleManagementDefenderRoleAssignmentAppScope.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleAssignmentAppScope](Get-MgBetaRoleManagementDefenderRoleAssignmentAppScope.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleAssignmentAppScopeCount](Get-MgBetaRoleManagementDefenderRoleAssignmentAppScopeCount.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleAssignmentCount](Get-MgBetaRoleManagementDefenderRoleAssignmentCount.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementDefenderRoleAssignmentDirectoryScope.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementDefenderRoleAssignmentDirectoryScope.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleAssignmentDirectoryScopeCount](Get-MgBetaRoleManagementDefenderRoleAssignmentDirectoryScopeCount.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleAssignmentPrincipal](Get-MgBetaRoleManagementDefenderRoleAssignmentPrincipal.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleAssignmentPrincipal](Get-MgBetaRoleManagementDefenderRoleAssignmentPrincipal.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleAssignmentPrincipalCount](Get-MgBetaRoleManagementDefenderRoleAssignmentPrincipalCount.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleAssignmentRoleDefinition](Get-MgBetaRoleManagementDefenderRoleAssignmentRoleDefinition.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleDefinition](Get-MgBetaRoleManagementDefenderRoleDefinition.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleDefinition](Get-MgBetaRoleManagementDefenderRoleDefinition.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleDefinitionCount](Get-MgBetaRoleManagementDefenderRoleDefinitionCount.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom.md)
-
-### [Get-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom.md)
-
 ### [Get-MgBetaRoleManagementDeviceManagement](Get-MgBetaRoleManagementDeviceManagement.md)
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespace](Get-MgBetaRoleManagementDeviceManagementResourceNamespace.md)
@@ -379,8 +329,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Import-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](Import-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
 
-### [Import-MgBetaRoleManagementDefenderResourceNamespaceResourceAction](Import-MgBetaRoleManagementDefenderResourceNamespaceResourceAction.md)
-
 ### [Import-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](Import-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
 
 ### [Import-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](Import-MgBetaRoleManagementExchangeResourceNamespaceResourceAction.md)
@@ -394,8 +342,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeviceIdentityNextEnrollment](Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeviceIdentityNextEnrollment.md)
 
 ### [Invoke-MgBetaAssignedRoleManagementCloudPcRoleDefinitionPrincipal](Invoke-MgBetaAssignedRoleManagementCloudPcRoleDefinitionPrincipal.md)
-
-### [Invoke-MgBetaAssignedRoleManagementDefenderRoleDefinitionPrincipal](Invoke-MgBetaAssignedRoleManagementDefenderRoleDefinitionPrincipal.md)
 
 ### [Invoke-MgBetaAssignedRoleManagementDeviceManagementRoleDefinitionPrincipal](Invoke-MgBetaAssignedRoleManagementDeviceManagementRoleDefinitionPrincipal.md)
 
@@ -470,18 +416,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaRoleManagementCloudPcRoleDefinition](New-MgBetaRoleManagementCloudPcRoleDefinition.md)
 
 ### [New-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](New-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
-
-### [New-MgBetaRoleManagementDefenderResourceNamespace](New-MgBetaRoleManagementDefenderResourceNamespace.md)
-
-### [New-MgBetaRoleManagementDefenderResourceNamespaceResourceAction](New-MgBetaRoleManagementDefenderResourceNamespaceResourceAction.md)
-
-### [New-MgBetaRoleManagementDefenderRoleAssignment](New-MgBetaRoleManagementDefenderRoleAssignment.md)
-
-### [New-MgBetaRoleManagementDefenderRoleAssignmentAppScope](New-MgBetaRoleManagementDefenderRoleAssignmentAppScope.md)
-
-### [New-MgBetaRoleManagementDefenderRoleDefinition](New-MgBetaRoleManagementDefenderRoleDefinition.md)
-
-### [New-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom](New-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom.md)
 
 ### [New-MgBetaRoleManagementDeviceManagementResourceNamespace](New-MgBetaRoleManagementDeviceManagementResourceNamespace.md)
 
@@ -565,22 +499,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](Remove-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
 
-### [Remove-MgBetaRoleManagementDefender](Remove-MgBetaRoleManagementDefender.md)
-
-### [Remove-MgBetaRoleManagementDefenderResourceNamespace](Remove-MgBetaRoleManagementDefenderResourceNamespace.md)
-
-### [Remove-MgBetaRoleManagementDefenderResourceNamespaceResourceAction](Remove-MgBetaRoleManagementDefenderResourceNamespaceResourceAction.md)
-
-### [Remove-MgBetaRoleManagementDefenderResourceNamespaceResourceActionResourceScope](Remove-MgBetaRoleManagementDefenderResourceNamespaceResourceActionResourceScope.md)
-
-### [Remove-MgBetaRoleManagementDefenderRoleAssignment](Remove-MgBetaRoleManagementDefenderRoleAssignment.md)
-
-### [Remove-MgBetaRoleManagementDefenderRoleAssignmentAppScope](Remove-MgBetaRoleManagementDefenderRoleAssignmentAppScope.md)
-
-### [Remove-MgBetaRoleManagementDefenderRoleDefinition](Remove-MgBetaRoleManagementDefenderRoleDefinition.md)
-
-### [Remove-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom](Remove-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom.md)
-
 ### [Remove-MgBetaRoleManagementDeviceManagement](Remove-MgBetaRoleManagementDeviceManagement.md)
 
 ### [Remove-MgBetaRoleManagementDeviceManagementResourceNamespace](Remove-MgBetaRoleManagementDeviceManagementResourceNamespace.md)
@@ -624,6 +542,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Revoke-MgBetaDeviceManagementAndroidForWorkEnrollmentProfileToken](Revoke-MgBetaDeviceManagementAndroidForWorkEnrollmentProfileToken.md)
 
 ### [Search-MgBetaDeviceManagementImportedDeviceIdentityExistingIdentity](Search-MgBetaDeviceManagementImportedDeviceIdentityExistingIdentity.md)
+
+### [Set-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileEnrollmentTimeDeviceMembershipTarget](Set-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileEnrollmentTimeDeviceMembershipTarget.md)
 
 ### [Set-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfilePriority](Set-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfilePriority.md)
 
@@ -710,22 +630,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaRoleManagementCloudPcRoleDefinition](Update-MgBetaRoleManagementCloudPcRoleDefinition.md)
 
 ### [Update-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](Update-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
-
-### [Update-MgBetaRoleManagementDefender](Update-MgBetaRoleManagementDefender.md)
-
-### [Update-MgBetaRoleManagementDefenderResourceNamespace](Update-MgBetaRoleManagementDefenderResourceNamespace.md)
-
-### [Update-MgBetaRoleManagementDefenderResourceNamespaceResourceAction](Update-MgBetaRoleManagementDefenderResourceNamespaceResourceAction.md)
-
-### [Update-MgBetaRoleManagementDefenderResourceNamespaceResourceActionResourceScope](Update-MgBetaRoleManagementDefenderResourceNamespaceResourceActionResourceScope.md)
-
-### [Update-MgBetaRoleManagementDefenderRoleAssignment](Update-MgBetaRoleManagementDefenderRoleAssignment.md)
-
-### [Update-MgBetaRoleManagementDefenderRoleAssignmentAppScope](Update-MgBetaRoleManagementDefenderRoleAssignmentAppScope.md)
-
-### [Update-MgBetaRoleManagementDefenderRoleDefinition](Update-MgBetaRoleManagementDefenderRoleDefinition.md)
-
-### [Update-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom](Update-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom.md)
 
 ### [Update-MgBetaRoleManagementDeviceManagement](Update-MgBetaRoleManagementDeviceManagement.md)
 

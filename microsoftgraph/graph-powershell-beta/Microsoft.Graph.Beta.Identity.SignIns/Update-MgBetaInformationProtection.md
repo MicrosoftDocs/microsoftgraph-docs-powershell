@@ -1,13 +1,18 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+document type: cmdlet
+external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotection
+Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotection
-schema: 2.0.0
+ms.date: 09/12/2025
+PlatyPS schema version: 2024-05-01
+title: Update-MgBetaInformationProtection
 ---
 
 # Update-MgBetaInformationProtection
 
 ## SYNOPSIS
+
 Update informationProtection
 
 > [!NOTE]
@@ -16,464 +21,702 @@ Update informationProtection
 ## SYNTAX
 
 ### UpdateExpanded (Default)
+
 ```
-Update-MgBetaInformationProtection [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Bitlocker <IMicrosoftGraphBitlocker>]
- [-DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>] [-Id <String>]
+Update-MgBetaInformationProtection [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-Bitlocker <IMicrosoftGraphBitlocker>]
+ [-DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>] [-Id <string>]
  [-Policy <IMicrosoftGraphInformationProtectionPolicy>]
  [-SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]
  [-SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]
- [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
+
 ```
 Update-MgBetaInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Update informationProtection
+## ALIASES
 
-## EXAMPLES
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
+## DESCRIPTION
+
+Update informationProtection
 
 ## PARAMETERS
 
 ### -AdditionalProperties
+
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Bitlocker
+
 bitlocker
 To construct, see NOTES section for BITLOCKER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBitlocker
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBitlocker
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BodyParameter
+
 informationProtection
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationProtection
-Parameter Sets: Update
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtection
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confirm
+
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -DataLossPreventionPolicies
 
+
 To construct, see NOTES section for DATALOSSPREVENTIONPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDataLossPreventionPolicy[]
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDataLossPreventionPolicy[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Headers
+
 Optional headers that will be added to the request.
 
 ```yaml
-Type: IDictionary
-Parameter Sets: (All)
-Aliases:
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Id
+
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Policy
+
 informationProtectionPolicy
 To construct, see NOTES section for POLICY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationProtectionPolicy
-Parameter Sets: UpdateExpanded
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionPolicy
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResponseHeadersVariable
+
 Optional Response Headers Variable.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -SensitivityLabels
 
+
 To construct, see NOTES section for SENSITIVITYLABELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSensitivityLabel[]
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityLabel[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -SensitivityPolicySettings
+
 sensitivityPolicySettings
 To construct, see NOTES section for SENSITIVITYPOLICYSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSensitivityPolicySettings
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityPolicySettings
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ThreatAssessmentRequests
 
+
 To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphThreatAssessmentRequest[]
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphThreatAssessmentRequest[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtection
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtection
+
+{{ Fill in the Description }}
+
 ## NOTES
+
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 BITLOCKER `<IMicrosoftGraphBitlocker>`: bitlocker
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey- `[]`>]`: The recovery keys associated with the bitlocker entity.
-    - `[Id <String>]`: The unique identifier for an entity.
+  [RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]: The recovery keys associated with the bitlocker entity.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Microsoft Entra ID.
-    - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
-    - `[Key <String>]`: The BitLocker recovery key.
-    - `[VolumeType <String>]`: volumeType
+    [CreatedDateTime <DateTime?>]: The date and time when the key was originally backed up to Microsoft Entra ID.
+    [DeviceId <String>]: ID of the device the BitLocker key is originally backed up from.
+    [Key <String>]: The BitLocker recovery key.
+    [VolumeType <String>]: volumeType
 
 BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[Bitlocker <IMicrosoftGraphBitlocker>]`: bitlocker
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  [Bitlocker <IMicrosoftGraphBitlocker>]: bitlocker
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey- `[]`>]`: The recovery keys associated with the bitlocker entity.
-      - `[Id <String>]`: The unique identifier for an entity.
+    [RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]: The recovery keys associated with the bitlocker entity.
+      [Id <String>]: The unique identifier for an entity.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Microsoft Entra ID.
-      - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
-      - `[Key <String>]`: The BitLocker recovery key.
-      - `[VolumeType <String>]`: volumeType
-  - `[DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+      [CreatedDateTime <DateTime?>]: The date and time when the key was originally backed up to Microsoft Entra ID.
+      [DeviceId <String>]: ID of the device the BitLocker key is originally backed up from.
+      [Key <String>]: The BitLocker recovery key.
+      [VolumeType <String>]: volumeType
+  [DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[Name <String>]`: 
-  - `[Policy <IMicrosoftGraphInformationProtectionPolicy>]`: informationProtectionPolicy
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+    [Name <String>]: 
+  [Policy <IMicrosoftGraphInformationProtectionPolicy>]: informationProtectionPolicy
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[Labels <IMicrosoftGraphInformationProtectionLabel- `[]`>]`: 
-      - `[Id <String>]`: The unique identifier for an entity.
+    [Labels <IMicrosoftGraphInformationProtectionLabel[]>]: 
+      [Id <String>]: The unique identifier for an entity.
 Read-only.
-      - `[Color <String>]`: The color that the UI should display for the label, if configured.
-      - `[Description <String>]`: The admin-defined description for the label.
-      - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
+      [Color <String>]: The color that the UI should display for the label, if configured.
+      [Description <String>]: The admin-defined description for the label.
+      [IsActive <Boolean?>]: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in UI.
-      - `[Name <String>]`: The plaintext name of the label.
-      - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Color <String>]`: The color that the user interface should display for the label, if configured.
-        - `[Description <String>]`: The admin-defined description for the label.
-        - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
-        - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
+      [Name <String>]: The plaintext name of the label.
+      [Parent <IMicrosoftGraphParentLabelDetails>]: parentLabelDetails
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Color <String>]: The color that the user interface should display for the label, if configured.
+        [Description <String>]: The admin-defined description for the label.
+        [Id <String>]: The label ID is a globally unique identifier (GUID).
+        [IsActive <Boolean?>]: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in user interfaces.
-        - `[Name <String>]`: The plaintext name of the label.
-        - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-        - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
-        - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
-      - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
-      - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
-  - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+        [Name <String>]: The plaintext name of the label.
+        [Parent <IMicrosoftGraphParentLabelDetails>]: parentLabelDetails
+        [Sensitivity <Int32?>]: The sensitivity value of the label, where lower is less sensitive.
+        [Tooltip <String>]: The tooltip that should be displayed for the label in a user interface.
+      [Sensitivity <Int32?>]: The sensitivity value of the label, where lower is less sensitive.
+      [Tooltip <String>]: The tooltip that should be displayed for the label in a UI.
+  [SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[ApplicableTo <String>]`: sensitivityLabelTarget
-    - `[ApplicationMode <String>]`: applicationMode
-    - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
-      - `[Id <String>]`: 
-      - `[Name <String>]`: 
-    - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Message <String>]`: 
-      - `[SensitiveTypeIds <String- `[]`>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[IsDefault <Boolean?>]`: 
-    - `[IsEndpointProtectionEnabled <Boolean?>]`: 
-    - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
-      - `[Name <String>]`: 
-    - `[Name <String>]`: 
-    - `[Priority <Int32?>]`: 
-    - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-    - `[ToolTip <String>]`: 
-  - `[SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]`: sensitivityPolicySettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+    [ActionSource <String>]: labelActionSource
+    [ApplicableTo <String>]: sensitivityLabelTarget
+    [ApplicationMode <String>]: applicationMode
+    [AutoTooltip <String>]: 
+    [Color <String>]: 
+    [Description <String>]: 
+    [DisplayName <String>]: 
+    [IsDefault <Boolean?>]: 
+    [IsEnabled <Boolean?>]: 
+    [IsEndpointProtectionEnabled <Boolean?>]: 
+    [IsScopedToUser <Boolean?>]: 
+    [Locale <String>]: 
+    [Name <String>]: 
+    [Priority <Int32?>]: 
+    [Rights <IMicrosoftGraphUsageRightsIncluded>]: usageRightsIncluded
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[ApplicableTo <String>]`: sensitivityLabelTarget
-    - `[DowngradeSensitivityRequiresJustification <Boolean?>]`: 
-    - `[HelpWebUrl <String>]`: 
-    - `[IsMandatory <Boolean?>]`: 
-  - `[ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+      [OwnerEmail <String>]: The email of owner label rights.
+      [UserEmail <String>]: The email of user with label user rights.
+      [Value <String>]: usageRights
+    [Sublabels <IMicrosoftGraphSensitivityLabel[]>]: 
+    [ToolTip <String>]: 
+  [SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]: sensitivityPolicySettings
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[Category <String>]`: threatCategory
-    - `[ContentType <String>]`: threatAssessmentContentType
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
+    [ApplicableTo <String>]: sensitivityLabelTarget
+    [DowngradeSensitivityRequiresJustification <Boolean?>]: 
+    [HelpWebUrl <String>]: 
+    [IsMandatory <Boolean?>]: 
+  [ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Category <String>]: threatCategory
+    [ContentType <String>]: threatAssessmentContentType
+    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Application <IMicrosoftGraphIdentity>]: identity
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DisplayName <String>]: The display name of the identity.
 This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
+        [Id <String>]: The identifier of the identity.
 This property is read-only.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+      [Device <IMicrosoftGraphIdentity>]: identity
+      [User <IMicrosoftGraphIdentity>]: identity
+    [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[ExpectedAssessment <String>]`: threatExpectedAssessment
-    - `[RequestSource <String>]`: threatAssessmentRequestSource
-    - `[Results <IMicrosoftGraphThreatAssessmentResult- `[]`>]`: A collection of threat assessment results.
+    [ExpectedAssessment <String>]: threatExpectedAssessment
+    [RequestSource <String>]: threatAssessmentRequestSource
+    [Results <IMicrosoftGraphThreatAssessmentResult[]>]: A collection of threat assessment results.
 Read-only.
 By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
-      - `[Id <String>]`: The unique identifier for an entity.
+      [Id <String>]: The unique identifier for an entity.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+      [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      - `[Message <String>]`: The result message for each threat assessment.
-      - `[ResultType <String>]`: threatAssessmentResultType
-    - `[Status <String>]`: threatAssessmentStatus
+      [Message <String>]: The result message for each threat assessment.
+      [ResultType <String>]: threatAssessmentResultType
+    [Status <String>]: threatAssessmentStatus
 
-DATALOSSPREVENTIONPOLICIES `<IMicrosoftGraphDataLossPreventionPolicy- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+DATALOSSPREVENTIONPOLICIES <IMicrosoftGraphDataLossPreventionPolicy[]>: .
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[Name <String>]`: 
+  [Name <String>]: 
 
 POLICY `<IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[Labels <IMicrosoftGraphInformationProtectionLabel- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  [Labels <IMicrosoftGraphInformationProtectionLabel[]>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[Color <String>]`: The color that the UI should display for the label, if configured.
-    - `[Description <String>]`: The admin-defined description for the label.
-    - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
+    [Color <String>]: The color that the UI should display for the label, if configured.
+    [Description <String>]: The admin-defined description for the label.
+    [IsActive <Boolean?>]: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in UI.
-    - `[Name <String>]`: The plaintext name of the label.
-    - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Color <String>]`: The color that the user interface should display for the label, if configured.
-      - `[Description <String>]`: The admin-defined description for the label.
-      - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
-      - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
+    [Name <String>]: The plaintext name of the label.
+    [Parent <IMicrosoftGraphParentLabelDetails>]: parentLabelDetails
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Color <String>]: The color that the user interface should display for the label, if configured.
+      [Description <String>]: The admin-defined description for the label.
+      [Id <String>]: The label ID is a globally unique identifier (GUID).
+      [IsActive <Boolean?>]: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in user interfaces.
-      - `[Name <String>]`: The plaintext name of the label.
-      - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-      - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
-      - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
-    - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
-    - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
+      [Name <String>]: The plaintext name of the label.
+      [Parent <IMicrosoftGraphParentLabelDetails>]: parentLabelDetails
+      [Sensitivity <Int32?>]: The sensitivity value of the label, where lower is less sensitive.
+      [Tooltip <String>]: The tooltip that should be displayed for the label in a user interface.
+    [Sensitivity <Int32?>]: The sensitivity value of the label, where lower is less sensitive.
+    [Tooltip <String>]: The tooltip that should be displayed for the label in a UI.
 
-SENSITIVITYLABELS `<IMicrosoftGraphSensitivityLabel- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+SENSITIVITYLABELS <IMicrosoftGraphSensitivityLabel[]>: .
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[ApplicableTo <String>]`: sensitivityLabelTarget
-  - `[ApplicationMode <String>]`: applicationMode
-  - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
-    - `[Id <String>]`: 
-    - `[Name <String>]`: 
-  - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Message <String>]`: 
-    - `[SensitiveTypeIds <String- `[]`>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[IsDefault <Boolean?>]`: 
-  - `[IsEndpointProtectionEnabled <Boolean?>]`: 
-  - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
-    - `[Name <String>]`: 
-  - `[Name <String>]`: 
-  - `[Priority <Int32?>]`: 
-  - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
-  - `[ToolTip <String>]`: 
+  [ActionSource <String>]: labelActionSource
+  [ApplicableTo <String>]: sensitivityLabelTarget
+  [ApplicationMode <String>]: applicationMode
+  [AutoTooltip <String>]: 
+  [Color <String>]: 
+  [Description <String>]: 
+  [DisplayName <String>]: 
+  [IsDefault <Boolean?>]: 
+  [IsEnabled <Boolean?>]: 
+  [IsEndpointProtectionEnabled <Boolean?>]: 
+  [IsScopedToUser <Boolean?>]: 
+  [Locale <String>]: 
+  [Name <String>]: 
+  [Priority <Int32?>]: 
+  [Rights <IMicrosoftGraphUsageRightsIncluded>]: usageRightsIncluded
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [OwnerEmail <String>]: The email of owner label rights.
+    [UserEmail <String>]: The email of user with label user rights.
+    [Value <String>]: usageRights
+  [Sublabels <IMicrosoftGraphSensitivityLabel[]>]: 
+  [ToolTip <String>]: 
 
 SENSITIVITYPOLICYSETTINGS `<IMicrosoftGraphSensitivityPolicySettings>`: sensitivityPolicySettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[ApplicableTo <String>]`: sensitivityLabelTarget
-  - `[DowngradeSensitivityRequiresJustification <Boolean?>]`: 
-  - `[HelpWebUrl <String>]`: 
-  - `[IsMandatory <Boolean?>]`: 
+  [ApplicableTo <String>]: sensitivityLabelTarget
+  [DowngradeSensitivityRequiresJustification <Boolean?>]: 
+  [HelpWebUrl <String>]: 
+  [IsMandatory <Boolean?>]: 
 
-THREATASSESSMENTREQUESTS `<IMicrosoftGraphThreatAssessmentRequest- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest[]>: .
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[Category <String>]`: threatCategory
-  - `[ContentType <String>]`: threatAssessmentContentType
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  [Category <String>]: threatCategory
+  [ContentType <String>]: threatAssessmentContentType
+  [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Application <IMicrosoftGraphIdentity>]: identity
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      [Id <String>]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    [Device <IMicrosoftGraphIdentity>]: identity
+    [User <IMicrosoftGraphIdentity>]: identity
+  [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[ExpectedAssessment <String>]`: threatExpectedAssessment
-  - `[RequestSource <String>]`: threatAssessmentRequestSource
-  - `[Results <IMicrosoftGraphThreatAssessmentResult- `[]`>]`: A collection of threat assessment results.
+  [ExpectedAssessment <String>]: threatExpectedAssessment
+  [RequestSource <String>]: threatAssessmentRequestSource
+  [Results <IMicrosoftGraphThreatAssessmentResult[]>]: A collection of threat assessment results.
 Read-only.
 By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
-    - `[Id <String>]`: The unique identifier for an entity.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[Message <String>]`: The result message for each threat assessment.
-    - `[ResultType <String>]`: threatAssessmentResultType
-  - `[Status <String>]`: threatAssessmentStatus
+    [Message <String>]: The result message for each threat assessment.
+    [ResultType <String>]: threatAssessmentResultType
+  [Status <String>]: threatAssessmentStatus
+
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotection)
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotection)
 
 
 

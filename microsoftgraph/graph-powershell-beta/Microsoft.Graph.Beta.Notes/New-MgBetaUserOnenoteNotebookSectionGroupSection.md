@@ -1,13 +1,18 @@
 ---
-external help file: Microsoft.Graph.Beta.Notes-help.xml
+document type: cmdlet
+external help file: Microsoft.Graph.Beta.Notes-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotenotebooksectiongroupsection
+Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotenotebooksectiongroupsection
-schema: 2.0.0
+ms.date: 09/12/2025
+PlatyPS schema version: 2024-05-01
+title: New-MgBetaUserOnenoteNotebookSectionGroupSection
 ---
 
 # New-MgBetaUserOnenoteNotebookSectionGroupSection
 
 ## SYNOPSIS
+
 Create new navigation property to sections for users
 
 > [!NOTE]
@@ -16,909 +21,1322 @@ Create new navigation property to sections for users
 ## SYNTAX
 
 ### CreateExpanded (Default)
+
 ```
-New-MgBetaUserOnenoteNotebookSectionGroupSection -NotebookId <String> -SectionGroupId <String> -UserId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-IsDefault] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Links <IMicrosoftGraphSectionLinks>] [-Pages <IMicrosoftGraphOnenotePage[]>] [-PagesUrl <String>]
+New-MgBetaUserOnenoteNotebookSectionGroupSection -NotebookId <string> -SectionGroupId <string>
+ -UserId <string> [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>] [-DisplayName <string>]
+ [-Id <string>] [-IsDefault] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <datetime>] [-Links <IMicrosoftGraphSectionLinks>]
+ [-Pages <IMicrosoftGraphOnenotePage[]>] [-PagesUrl <string>]
  [-ParentNotebook <IMicrosoftGraphNotebook>] [-ParentSectionGroup <IMicrosoftGraphSectionGroup>]
- [-Self <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Self <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
+
 ```
-New-MgBetaUserOnenoteNotebookSectionGroupSection -NotebookId <String> -SectionGroupId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphOnenoteSection> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserOnenoteNotebookSectionGroupSection -NotebookId <string> -SectionGroupId <string>
+ -UserId <string> -BodyParameter <IMicrosoftGraphOnenoteSection> [-ResponseHeadersVariable <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
+
 ```
 New-MgBetaUserOnenoteNotebookSectionGroupSection -InputObject <INotesIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-IsDefault] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Links <IMicrosoftGraphSectionLinks>] [-Pages <IMicrosoftGraphOnenotePage[]>] [-PagesUrl <String>]
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>] [-DisplayName <string>]
+ [-Id <string>] [-IsDefault] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <datetime>] [-Links <IMicrosoftGraphSectionLinks>]
+ [-Pages <IMicrosoftGraphOnenotePage[]>] [-PagesUrl <string>]
  [-ParentNotebook <IMicrosoftGraphNotebook>] [-ParentSectionGroup <IMicrosoftGraphSectionGroup>]
- [-Self <String>] [-Headers <IDictionary>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Self <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
+
 ```
 New-MgBetaUserOnenoteNotebookSectionGroupSection -InputObject <INotesIdentity>
- -BodyParameter <IMicrosoftGraphOnenoteSection> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnenoteSection> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Create new navigation property to sections for users
+## ALIASES
 
-## EXAMPLES
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
+## DESCRIPTION
+
+Create new navigation property to sections for users
 
 ## PARAMETERS
 
 ### -AdditionalProperties
+
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -BodyParameter
+
 onenoteSection
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnenoteSection
-Parameter Sets: Create, CreateViaIdentity
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenoteSection
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confirm
+
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CreatedBy
+
 identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -CreatedDateTime
 
 
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -DisplayName
 
 
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Headers
+
 Optional headers that will be added to the request.
 
 ```yaml
-Type: IDictionary
-Parameter Sets: (All)
-Aliases:
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Id
+
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -InputObject
+
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: INotesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -IsDefault
+
 Indicates whether this is the user's default section.
 Read-only.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -LastModifiedBy
+
 identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -LastModifiedDateTime
 
 
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Links
+
 sectionLinks
 To construct, see NOTES section for LINKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSectionLinks
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSectionLinks
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -NotebookId
+
 The unique identifier of notebook
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Pages
+
 The collection of pages in the section.
 Read-only.
 Nullable.
 To construct, see NOTES section for PAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnenotePage[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenotePage[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -PagesUrl
+
 The pages endpoint where you can get details for all the pages in the section.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ParentNotebook
+
 notebook
 To construct, see NOTES section for PARENTNOTEBOOK properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphNotebook
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNotebook
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ParentSectionGroup
+
 sectionGroup
 To construct, see NOTES section for PARENTSECTIONGROUP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSectionGroup
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSectionGroup
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResponseHeadersVariable
+
 Optional Response Headers Variable.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -SectionGroupId
+
 The unique identifier of sectionGroup
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Self
 
 
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -UserId
+
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenoteSection
+
+{{ Fill in the Description }}
+
 ### Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenoteSection
+
+{{ Fill in the Description }}
+
 ## NOTES
+
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphOnenoteSection>`: onenoteSection
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Application <IMicrosoftGraphIdentity>]: identity
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      [Id <String>]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[DisplayName <String>]`: 
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Self <String>]`: 
-  - `[Id <String>]`: The unique identifier for an entity.
+    [Device <IMicrosoftGraphIdentity>]: identity
+    [User <IMicrosoftGraphIdentity>]: identity
+  [DisplayName <String>]: 
+  [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+  [LastModifiedDateTime <DateTime?>]: 
+  [CreatedDateTime <DateTime?>]: 
+  [Self <String>]: 
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default section.
+  [IsDefault <Boolean?>]: Indicates whether this is the user's default section.
 Read-only.
-  - `[Links <IMicrosoftGraphSectionLinks>]`: sectionLinks
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Href <String>]`: The URL of the link.
-    - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-  - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section. 
-Read-only.
+  [Links <IMicrosoftGraphSectionLinks>]: sectionLinks
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Href <String>]: The URL of the link.
+    [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
+  [Pages <IMicrosoftGraphOnenotePage[]>]: The collection of pages in the section.
+ Read-only.
 Nullable.
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Self <String>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+    [CreatedDateTime <DateTime?>]: 
+    [Self <String>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[Content <Byte- `[]`>]`: The page's HTML content.
-    - `[ContentUrl <String>]`: The URL for the page's HTML content. 
+    [Content <Byte[]>]: The page's HTML content.
+    [ContentUrl <String>]: The URL for the page's HTML content.
+ Read-only.
+    [CreatedByAppId <String>]: The unique identifier of the application that created the page.
 Read-only.
-    - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page.
-Read-only.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the page was last modified.
+    [LastModifiedDateTime <DateTime?>]: The date and time when the page was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[Level <Int32?>]`: The indentation level of the page.
+    [Level <Int32?>]: The indentation level of the page.
 Read-only.
-    - `[Links <IMicrosoftGraphPageLinks>]`: pageLinks
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-    - `[Order <Int32?>]`: The order of the page within its parent section.
+    [Links <IMicrosoftGraphPageLinks>]: pageLinks
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
+      [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
+    [Order <Int32?>]: The order of the page within its parent section.
 Read-only.
-    - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[DisplayName <String>]`: 
-      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedDateTime <DateTime?>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Self <String>]`: 
-      - `[Id <String>]`: The unique identifier for an entity.
+    [ParentNotebook <IMicrosoftGraphNotebook>]: notebook
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [DisplayName <String>]: 
+      [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [LastModifiedDateTime <DateTime?>]: 
+      [CreatedDateTime <DateTime?>]: 
+      [Self <String>]: 
+      [Id <String>]: The unique identifier for an entity.
 Read-only.
-      - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default notebook.
+      [IsDefault <Boolean?>]: Indicates whether this is the user's default notebook.
 Read-only.
-      - `[IsShared <Boolean?>]`: Indicates whether the notebook is shared.
+      [IsShared <Boolean?>]: Indicates whether the notebook is shared.
 If true, the contents of the notebook can be seen by people other than the owner.
 Read-only.
-      - `[Links <IMicrosoftGraphNotebookLinks>]`: notebookLinks
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in the notebook.
+      [Links <IMicrosoftGraphNotebookLinks>]: notebookLinks
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
+        [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
+      [SectionGroups <IMicrosoftGraphSectionGroup[]>]: The section groups in the notebook.
 Read-only.
 Nullable.
-        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[DisplayName <String>]`: 
-        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedDateTime <DateTime?>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[Self <String>]`: 
-        - `[Id <String>]`: The unique identifier for an entity.
+        [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+        [DisplayName <String>]: 
+        [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+        [LastModifiedDateTime <DateTime?>]: 
+        [CreatedDateTime <DateTime?>]: 
+        [Self <String>]: 
+        [Id <String>]: The unique identifier for an entity.
 Read-only.
-        - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-        - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-        - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in the section.
-Read-only.
-Nullable.
-        - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
-Read-only.
-        - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in the section group.
+        [ParentNotebook <IMicrosoftGraphNotebook>]: notebook
+        [ParentSectionGroup <IMicrosoftGraphSectionGroup>]: sectionGroup
+        [SectionGroups <IMicrosoftGraphSectionGroup[]>]: The section groups in the section.
 Read-only.
 Nullable.
-        - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group.
+        [SectionGroupsUrl <String>]: The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
 Read-only.
-      - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.
-Read-only.
-      - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in the notebook.
+        [Sections <IMicrosoftGraphOnenoteSection[]>]: The sections in the section group.
 Read-only.
 Nullable.
-      - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the notebook.
+        [SectionsUrl <String>]: The URL for the sections navigation property, which returns all the sections in the section group.
 Read-only.
-      - `[UserRole <String>]`: onenoteUserRole
-    - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
-    - `[Title <String>]`: The title of the page.
-    - `[UserTags <String- `[]`>]`: 
-  - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section.
+      [SectionGroupsUrl <String>]: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.
 Read-only.
-  - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-  - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
+      [Sections <IMicrosoftGraphOnenoteSection[]>]: The sections in the notebook.
+Read-only.
+Nullable.
+      [SectionsUrl <String>]: The URL for the sections navigation property, which returns all the sections in the notebook.
+Read-only.
+      [UserRole <String>]: onenoteUserRole
+    [ParentSection <IMicrosoftGraphOnenoteSection>]: onenoteSection
+    [Title <String>]: The title of the page.
+    [UserTags <String[]>]: 
+  [PagesUrl <String>]: The pages endpoint where you can get details for all the pages in the section.
+Read-only.
+  [ParentNotebook <IMicrosoftGraphNotebook>]: notebook
+  [ParentSectionGroup <IMicrosoftGraphSectionGroup>]: sectionGroup
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Application <IMicrosoftGraphIdentity>]: identity
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [DisplayName <String>]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    [Id <String>]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  [Device <IMicrosoftGraphIdentity>]: identity
+  [User <IMicrosoftGraphIdentity>]: identity
 
 INPUTOBJECT `<INotesIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
-  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[UserId <String>]`: The unique identifier of user
+  [GroupId <String>]: The unique identifier of group
+  [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  [NotebookId <String>]: The unique identifier of notebook
+  [OnenoteOperationId <String>]: The unique identifier of onenoteOperation
+  [OnenotePageId <String>]: The unique identifier of onenotePage
+  [OnenoteResourceId <String>]: The unique identifier of onenoteResource
+  [OnenoteSectionId <String>]: The unique identifier of onenoteSection
+  [Path <String>]: Usage: path='{path}'
+  [SectionGroupId <String>]: The unique identifier of sectionGroup
+  [SectionGroupId1 <String>]: The unique identifier of sectionGroup
+  [SiteId <String>]: The unique identifier of site
+  [UserId <String>]: The unique identifier of user
 
 LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Application <IMicrosoftGraphIdentity>]: identity
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [DisplayName <String>]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    [Id <String>]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  [Device <IMicrosoftGraphIdentity>]: identity
+  [User <IMicrosoftGraphIdentity>]: identity
 
 LINKS `<IMicrosoftGraphSectionLinks>`: sectionLinks
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Href <String>]`: The URL of the link.
-  - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Href <String>]: The URL of the link.
+  [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
 
-PAGES `<IMicrosoftGraphOnenotePage- `[]`>`: The collection of pages in the section.
+PAGES <IMicrosoftGraphOnenotePage[]>: The collection of pages in the section.
 Read-only.
 Nullable.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Self <String>]`: 
-  - `[Id <String>]`: The unique identifier for an entity.
+  [CreatedDateTime <DateTime?>]: 
+  [Self <String>]: 
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[Content <Byte- `[]`>]`: The page's HTML content.
-  - `[ContentUrl <String>]`: The URL for the page's HTML content. 
+  [Content <Byte[]>]: The page's HTML content.
+  [ContentUrl <String>]: The URL for the page's HTML content.
+ Read-only.
+  [CreatedByAppId <String>]: The unique identifier of the application that created the page.
 Read-only.
-  - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page.
-Read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the page was last modified.
+  [LastModifiedDateTime <DateTime?>]: The date and time when the page was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[Level <Int32?>]`: The indentation level of the page.
+  [Level <Int32?>]: The indentation level of the page.
 Read-only.
-  - `[Links <IMicrosoftGraphPageLinks>]`: pageLinks
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Href <String>]`: The URL of the link.
-    - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-  - `[Order <Int32?>]`: The order of the page within its parent section.
+  [Links <IMicrosoftGraphPageLinks>]: pageLinks
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Href <String>]: The URL of the link.
+    [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
+  [Order <Int32?>]: The order of the page within its parent section.
 Read-only.
-  - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
+  [ParentNotebook <IMicrosoftGraphNotebook>]: notebook
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Application <IMicrosoftGraphIdentity>]: identity
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DisplayName <String>]: The display name of the identity.
 This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
+        [Id <String>]: The identifier of the identity.
 This property is read-only.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[DisplayName <String>]`: 
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Self <String>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+      [Device <IMicrosoftGraphIdentity>]: identity
+      [User <IMicrosoftGraphIdentity>]: identity
+    [DisplayName <String>]: 
+    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [LastModifiedDateTime <DateTime?>]: 
+    [CreatedDateTime <DateTime?>]: 
+    [Self <String>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default notebook.
+    [IsDefault <Boolean?>]: Indicates whether this is the user's default notebook.
 Read-only.
-    - `[IsShared <Boolean?>]`: Indicates whether the notebook is shared.
+    [IsShared <Boolean?>]: Indicates whether the notebook is shared.
 If true, the contents of the notebook can be seen by people other than the owner.
 Read-only.
-    - `[Links <IMicrosoftGraphNotebookLinks>]`: notebookLinks
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-    - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in the notebook.
+    [Links <IMicrosoftGraphNotebookLinks>]: notebookLinks
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
+      [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
+    [SectionGroups <IMicrosoftGraphSectionGroup[]>]: The section groups in the notebook.
 Read-only.
 Nullable.
-      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[DisplayName <String>]`: 
-      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedDateTime <DateTime?>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Self <String>]`: 
-      - `[Id <String>]`: The unique identifier for an entity.
+      [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [DisplayName <String>]: 
+      [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [LastModifiedDateTime <DateTime?>]: 
+      [CreatedDateTime <DateTime?>]: 
+      [Self <String>]: 
+      [Id <String>]: The unique identifier for an entity.
 Read-only.
-      - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-      - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-      - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in the section.
-Read-only.
-Nullable.
-      - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
-Read-only.
-      - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in the section group.
+      [ParentNotebook <IMicrosoftGraphNotebook>]: notebook
+      [ParentSectionGroup <IMicrosoftGraphSectionGroup>]: sectionGroup
+      [SectionGroups <IMicrosoftGraphSectionGroup[]>]: The section groups in the section.
 Read-only.
 Nullable.
-        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[DisplayName <String>]`: 
-        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedDateTime <DateTime?>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[Self <String>]`: 
-        - `[Id <String>]`: The unique identifier for an entity.
+      [SectionGroupsUrl <String>]: The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
 Read-only.
-        - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default section.
-Read-only.
-        - `[Links <IMicrosoftGraphSectionLinks>]`: sectionLinks
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-          - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section. 
+      [Sections <IMicrosoftGraphOnenoteSection[]>]: The sections in the section group.
 Read-only.
 Nullable.
-        - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section.
+        [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+        [DisplayName <String>]: 
+        [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+        [LastModifiedDateTime <DateTime?>]: 
+        [CreatedDateTime <DateTime?>]: 
+        [Self <String>]: 
+        [Id <String>]: The unique identifier for an entity.
 Read-only.
-        - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-        - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-      - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group.
+        [IsDefault <Boolean?>]: Indicates whether this is the user's default section.
 Read-only.
-    - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.
+        [Links <IMicrosoftGraphSectionLinks>]: sectionLinks
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
+          [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
+        [Pages <IMicrosoftGraphOnenotePage[]>]: The collection of pages in the section.
+ Read-only.
+Nullable.
+        [PagesUrl <String>]: The pages endpoint where you can get details for all the pages in the section.
 Read-only.
-    - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in the notebook.
+        [ParentNotebook <IMicrosoftGraphNotebook>]: notebook
+        [ParentSectionGroup <IMicrosoftGraphSectionGroup>]: sectionGroup
+      [SectionsUrl <String>]: The URL for the sections navigation property, which returns all the sections in the section group.
+Read-only.
+    [SectionGroupsUrl <String>]: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.
+Read-only.
+    [Sections <IMicrosoftGraphOnenoteSection[]>]: The sections in the notebook.
 Read-only.
 Nullable.
-    - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the notebook.
+    [SectionsUrl <String>]: The URL for the sections navigation property, which returns all the sections in the notebook.
 Read-only.
-    - `[UserRole <String>]`: onenoteUserRole
-  - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
-  - `[Title <String>]`: The title of the page.
-  - `[UserTags <String- `[]`>]`: 
+    [UserRole <String>]: onenoteUserRole
+  [ParentSection <IMicrosoftGraphOnenoteSection>]: onenoteSection
+  [Title <String>]: The title of the page.
+  [UserTags <String[]>]: 
 
 PARENTNOTEBOOK `<IMicrosoftGraphNotebook>`: notebook
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Application <IMicrosoftGraphIdentity>]: identity
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      [Id <String>]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[DisplayName <String>]`: 
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Self <String>]`: 
-  - `[Id <String>]`: The unique identifier for an entity.
+    [Device <IMicrosoftGraphIdentity>]: identity
+    [User <IMicrosoftGraphIdentity>]: identity
+  [DisplayName <String>]: 
+  [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+  [LastModifiedDateTime <DateTime?>]: 
+  [CreatedDateTime <DateTime?>]: 
+  [Self <String>]: 
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default notebook.
+  [IsDefault <Boolean?>]: Indicates whether this is the user's default notebook.
 Read-only.
-  - `[IsShared <Boolean?>]`: Indicates whether the notebook is shared.
+  [IsShared <Boolean?>]: Indicates whether the notebook is shared.
 If true, the contents of the notebook can be seen by people other than the owner.
 Read-only.
-  - `[Links <IMicrosoftGraphNotebookLinks>]`: notebookLinks
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Href <String>]`: The URL of the link.
-    - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-  - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in the notebook.
+  [Links <IMicrosoftGraphNotebookLinks>]: notebookLinks
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Href <String>]: The URL of the link.
+    [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
+  [SectionGroups <IMicrosoftGraphSectionGroup[]>]: The section groups in the notebook.
 Read-only.
 Nullable.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[DisplayName <String>]`: 
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Self <String>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [DisplayName <String>]: 
+    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [LastModifiedDateTime <DateTime?>]: 
+    [CreatedDateTime <DateTime?>]: 
+    [Self <String>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-    - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-    - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in the section.
-Read-only.
-Nullable.
-    - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
-Read-only.
-    - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in the section group.
+    [ParentNotebook <IMicrosoftGraphNotebook>]: notebook
+    [ParentSectionGroup <IMicrosoftGraphSectionGroup>]: sectionGroup
+    [SectionGroups <IMicrosoftGraphSectionGroup[]>]: The section groups in the section.
 Read-only.
 Nullable.
-      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[DisplayName <String>]`: 
-      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedDateTime <DateTime?>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Self <String>]`: 
-      - `[Id <String>]`: The unique identifier for an entity.
+    [SectionGroupsUrl <String>]: The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
 Read-only.
-      - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default section.
-Read-only.
-      - `[Links <IMicrosoftGraphSectionLinks>]`: sectionLinks
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section. 
+    [Sections <IMicrosoftGraphOnenoteSection[]>]: The sections in the section group.
 Read-only.
 Nullable.
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[Self <String>]`: 
-        - `[Id <String>]`: The unique identifier for an entity.
+      [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [DisplayName <String>]: 
+      [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [LastModifiedDateTime <DateTime?>]: 
+      [CreatedDateTime <DateTime?>]: 
+      [Self <String>]: 
+      [Id <String>]: The unique identifier for an entity.
 Read-only.
-        - `[Content <Byte- `[]`>]`: The page's HTML content.
-        - `[ContentUrl <String>]`: The URL for the page's HTML content. 
+      [IsDefault <Boolean?>]: Indicates whether this is the user's default section.
 Read-only.
-        - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page.
+      [Links <IMicrosoftGraphSectionLinks>]: sectionLinks
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
+        [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
+      [Pages <IMicrosoftGraphOnenotePage[]>]: The collection of pages in the section.
+ Read-only.
+Nullable.
+        [CreatedDateTime <DateTime?>]: 
+        [Self <String>]: 
+        [Id <String>]: The unique identifier for an entity.
 Read-only.
-        - `[LastModifiedDateTime <DateTime?>]`: The date and time when the page was last modified.
+        [Content <Byte[]>]: The page's HTML content.
+        [ContentUrl <String>]: The URL for the page's HTML content.
+ Read-only.
+        [CreatedByAppId <String>]: The unique identifier of the application that created the page.
+Read-only.
+        [LastModifiedDateTime <DateTime?>]: The date and time when the page was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-        - `[Level <Int32?>]`: The indentation level of the page.
+        [Level <Int32?>]: The indentation level of the page.
 Read-only.
-        - `[Links <IMicrosoftGraphPageLinks>]`: pageLinks
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-          - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[Order <Int32?>]`: The order of the page within its parent section.
+        [Links <IMicrosoftGraphPageLinks>]: pageLinks
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
+          [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
+        [Order <Int32?>]: The order of the page within its parent section.
 Read-only.
-        - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-        - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
-        - `[Title <String>]`: The title of the page.
-        - `[UserTags <String- `[]`>]`: 
-      - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section.
+        [ParentNotebook <IMicrosoftGraphNotebook>]: notebook
+        [ParentSection <IMicrosoftGraphOnenoteSection>]: onenoteSection
+        [Title <String>]: The title of the page.
+        [UserTags <String[]>]: 
+      [PagesUrl <String>]: The pages endpoint where you can get details for all the pages in the section.
 Read-only.
-      - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-      - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-    - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group.
+      [ParentNotebook <IMicrosoftGraphNotebook>]: notebook
+      [ParentSectionGroup <IMicrosoftGraphSectionGroup>]: sectionGroup
+    [SectionsUrl <String>]: The URL for the sections navigation property, which returns all the sections in the section group.
 Read-only.
-  - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.
+  [SectionGroupsUrl <String>]: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.
 Read-only.
-  - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in the notebook.
+  [Sections <IMicrosoftGraphOnenoteSection[]>]: The sections in the notebook.
 Read-only.
 Nullable.
-  - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the notebook.
+  [SectionsUrl <String>]: The URL for the sections navigation property, which returns all the sections in the notebook.
 Read-only.
-  - `[UserRole <String>]`: onenoteUserRole
+  [UserRole <String>]: onenoteUserRole
 
 PARENTSECTIONGROUP `<IMicrosoftGraphSectionGroup>`: sectionGroup
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Application <IMicrosoftGraphIdentity>]: identity
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      [Id <String>]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[DisplayName <String>]`: 
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Self <String>]`: 
-  - `[Id <String>]`: The unique identifier for an entity.
+    [Device <IMicrosoftGraphIdentity>]: identity
+    [User <IMicrosoftGraphIdentity>]: identity
+  [DisplayName <String>]: 
+  [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+  [LastModifiedDateTime <DateTime?>]: 
+  [CreatedDateTime <DateTime?>]: 
+  [Self <String>]: 
+  [Id <String>]: The unique identifier for an entity.
 Read-only.
-  - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[DisplayName <String>]`: 
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Self <String>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  [ParentNotebook <IMicrosoftGraphNotebook>]: notebook
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [DisplayName <String>]: 
+    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [LastModifiedDateTime <DateTime?>]: 
+    [CreatedDateTime <DateTime?>]: 
+    [Self <String>]: 
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
-    - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default notebook.
+    [IsDefault <Boolean?>]: Indicates whether this is the user's default notebook.
 Read-only.
-    - `[IsShared <Boolean?>]`: Indicates whether the notebook is shared.
+    [IsShared <Boolean?>]: Indicates whether the notebook is shared.
 If true, the contents of the notebook can be seen by people other than the owner.
 Read-only.
-    - `[Links <IMicrosoftGraphNotebookLinks>]`: notebookLinks
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Href <String>]`: The URL of the link.
-      - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-    - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in the notebook.
+    [Links <IMicrosoftGraphNotebookLinks>]: notebookLinks
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Href <String>]: The URL of the link.
+      [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
+    [SectionGroups <IMicrosoftGraphSectionGroup[]>]: The section groups in the notebook.
 Read-only.
 Nullable.
-    - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.
+    [SectionGroupsUrl <String>]: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.
 Read-only.
-    - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in the notebook.
-Read-only.
-Nullable.
-      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[DisplayName <String>]`: 
-      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedDateTime <DateTime?>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Self <String>]`: 
-      - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-      - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default section.
-Read-only.
-      - `[Links <IMicrosoftGraphSectionLinks>]`: sectionLinks
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section. 
+    [Sections <IMicrosoftGraphOnenoteSection[]>]: The sections in the notebook.
 Read-only.
 Nullable.
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[Self <String>]`: 
-        - `[Id <String>]`: The unique identifier for an entity.
+      [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [DisplayName <String>]: 
+      [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [LastModifiedDateTime <DateTime?>]: 
+      [CreatedDateTime <DateTime?>]: 
+      [Self <String>]: 
+      [Id <String>]: The unique identifier for an entity.
 Read-only.
-        - `[Content <Byte- `[]`>]`: The page's HTML content.
-        - `[ContentUrl <String>]`: The URL for the page's HTML content. 
+      [IsDefault <Boolean?>]: Indicates whether this is the user's default section.
 Read-only.
-        - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page.
+      [Links <IMicrosoftGraphSectionLinks>]: sectionLinks
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
+        [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
+      [Pages <IMicrosoftGraphOnenotePage[]>]: The collection of pages in the section.
+ Read-only.
+Nullable.
+        [CreatedDateTime <DateTime?>]: 
+        [Self <String>]: 
+        [Id <String>]: The unique identifier for an entity.
 Read-only.
-        - `[LastModifiedDateTime <DateTime?>]`: The date and time when the page was last modified.
+        [Content <Byte[]>]: The page's HTML content.
+        [ContentUrl <String>]: The URL for the page's HTML content.
+ Read-only.
+        [CreatedByAppId <String>]: The unique identifier of the application that created the page.
+Read-only.
+        [LastModifiedDateTime <DateTime?>]: The date and time when the page was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-        - `[Level <Int32?>]`: The indentation level of the page.
+        [Level <Int32?>]: The indentation level of the page.
 Read-only.
-        - `[Links <IMicrosoftGraphPageLinks>]`: pageLinks
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-          - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[Order <Int32?>]`: The order of the page within its parent section.
+        [Links <IMicrosoftGraphPageLinks>]: pageLinks
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
+          [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
+        [Order <Int32?>]: The order of the page within its parent section.
 Read-only.
-        - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-        - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
-        - `[Title <String>]`: The title of the page.
-        - `[UserTags <String- `[]`>]`: 
-      - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section.
+        [ParentNotebook <IMicrosoftGraphNotebook>]: notebook
+        [ParentSection <IMicrosoftGraphOnenoteSection>]: onenoteSection
+        [Title <String>]: The title of the page.
+        [UserTags <String[]>]: 
+      [PagesUrl <String>]: The pages endpoint where you can get details for all the pages in the section.
 Read-only.
-      - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-      - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-    - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the notebook.
+      [ParentNotebook <IMicrosoftGraphNotebook>]: notebook
+      [ParentSectionGroup <IMicrosoftGraphSectionGroup>]: sectionGroup
+    [SectionsUrl <String>]: The URL for the sections navigation property, which returns all the sections in the notebook.
 Read-only.
-    - `[UserRole <String>]`: onenoteUserRole
-  - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-  - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in the section.
-Read-only.
-Nullable.
-  - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
-Read-only.
-  - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in the section group.
+    [UserRole <String>]: onenoteUserRole
+  [ParentSectionGroup <IMicrosoftGraphSectionGroup>]: sectionGroup
+  [SectionGroups <IMicrosoftGraphSectionGroup[]>]: The section groups in the section.
 Read-only.
 Nullable.
-  - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group.
+  [SectionGroupsUrl <String>]: The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
 Read-only.
+  [Sections <IMicrosoftGraphOnenoteSection[]>]: The sections in the section group.
+Read-only.
+Nullable.
+  [SectionsUrl <String>]: The URL for the sections navigation property, which returns all the sections in the section group.
+Read-only.
+
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotenotebooksectiongroupsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotenotebooksectiongroupsection)
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotenotebooksectiongroupsection)
 
 
 

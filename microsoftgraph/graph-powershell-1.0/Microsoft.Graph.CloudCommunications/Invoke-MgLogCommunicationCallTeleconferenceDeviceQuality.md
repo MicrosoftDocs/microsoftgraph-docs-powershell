@@ -1,14 +1,18 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+document type: cmdlet
+external help file: Microsoft.Graph.CloudCommunications-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality
+Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality
-schema: 2.0.0
-ms.subservice: cloud-communications
+ms.date: 09/12/2025
+PlatyPS schema version: 2024-05-01
+title: Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality
 ---
 
 # Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality
 
 ## SYNOPSIS
+
 Log video teleconferencing device quality data.
 The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.
 Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.
@@ -17,28 +21,37 @@ The other media leg is between the CVI bot and the VTC device.
 The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
 This method is only for the CVI partners to provide their media quality data.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### LogExpanded (Default)
+
 ```
-Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Quality <IMicrosoftGraphTeleconferenceDeviceQuality>]
- [-Headers <IDictionary>] [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-Quality <IMicrosoftGraphTeleconferenceDeviceQuality>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Log
+
 ```
 Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality
  -Body <IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
+## ALIASES
+
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
 ## DESCRIPTION
+
 Log video teleconferencing device quality data.
 The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.
 Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.
@@ -143,242 +156,431 @@ To learn about permissions for this resource, see the [permissions reference](/g
 ## PARAMETERS
 
 ### -AdditionalProperties
+
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: LogExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: LogExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Body
 
+
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Log
-Aliases:
+Type: Microsoft.Graph.PowerShell.Models.IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Log
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Confirm
+
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Headers
+
 Optional headers that will be added to the request.
 
 ```yaml
-Type: IDictionary
-Parameter Sets: (All)
-Aliases:
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -PassThru
+
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -Quality
+
 teleconferenceDeviceQuality
 To construct, see NOTES section for QUALITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeleconferenceDeviceQuality
-Parameter Sets: LogExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeleconferenceDeviceQuality
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: LogExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -ResponseHeadersVariable
+
 Optional Response Headers Variable.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: RHV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
 ## OUTPUTS
 
 ### System.Boolean
+
+{{ Fill in the Description }}
+
 ## NOTES
+
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODY `<IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Quality <IMicrosoftGraphTeleconferenceDeviceQuality>]`: teleconferenceDeviceQuality
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CallChainId <String>]`: A unique identifier for all  the participant calls in a conference or a unique identifier for two participant calls in P2P call.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Quality <IMicrosoftGraphTeleconferenceDeviceQuality>]: teleconferenceDeviceQuality
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [CallChainId <String>]: A unique identifier for all  the participant calls in a conference or a unique identifier for two participant calls in P2P call.
 This needs to be copied over from Microsoft.Graph.Call.CallChainId.
-    - `[CloudServiceDeploymentEnvironment <String>]`: A geo-region where the service is deployed, such as ProdNoam.
-    - `[CloudServiceDeploymentId <String>]`: A unique deployment identifier assigned by Azure.
-    - `[CloudServiceInstanceName <String>]`: The Azure deployed cloud service instance name, such as FrontEndIN3.
-    - `[CloudServiceName <String>]`: The Azure deployed cloud service name, such as contoso.cloudapp.net.
-    - `[DeviceDescription <String>]`: Any additional description, such as VTC Bldg 30/21.
-    - `[DeviceName <String>]`: The user media agent name, such as Cisco SX80.
-    - `[MediaLegId <String>]`: A unique identifier for a specific media leg of a participant in a conference.
-One participant can have multiple media leg identifiers if retargeting happens.
+    [CloudServiceDeploymentEnvironment <String>]: A geo-region where the service is deployed, such as ProdNoam.
+    [CloudServiceDeploymentId <String>]: A unique deployment identifier assigned by Azure.
+    [CloudServiceInstanceName <String>]: The Azure deployed cloud service instance name, such as FrontEndIN3.
+    [CloudServiceName <String>]: The Azure deployed cloud service name, such as contoso.cloudapp.net.
+    [DeviceDescription <String>]: Any additional description, such as VTC Bldg 30/21.
+    [DeviceName <String>]: The user media agent name, such as Cisco SX80.
+    [MediaLegId <String>]: A unique identifier for a specific media leg of a participant in a conference.
+ One participant can have multiple media leg identifiers if retargeting happens.
 CVI partner assigns this value.
-    - `[MediaQualityList <IMicrosoftGraphTeleconferenceDeviceMediaQuality- `[]`>]`: The list of media qualities in a media session (call), such as audio quality, video quality, and/or screen sharing quality.
-      - `[AverageInboundJitter <TimeSpan?>]`: The average inbound stream network jitter.
-      - `[AverageInboundPacketLossRateInPercentage <Double?>]`: The average inbound stream packet loss rate in percentage (0-100).
+    [MediaQualityList <IMicrosoftGraphTeleconferenceDeviceMediaQuality[]>]: The list of media qualities in a media session (call), such as audio quality, video quality, and/or screen sharing quality.
+      [AverageInboundJitter <TimeSpan?>]: The average inbound stream network jitter.
+      [AverageInboundPacketLossRateInPercentage <Double?>]: The average inbound stream packet loss rate in percentage (0-100).
 For example, 0.01 means 0.01%.
-      - `[AverageInboundRoundTripDelay <TimeSpan?>]`: The average inbound stream network round trip delay.
-      - `[AverageOutboundJitter <TimeSpan?>]`: The average outbound stream network jitter.
-      - `[AverageOutboundPacketLossRateInPercentage <Double?>]`: The average outbound stream packet loss rate in percentage (0-100).
+      [AverageInboundRoundTripDelay <TimeSpan?>]: The average inbound stream network round trip delay.
+      [AverageOutboundJitter <TimeSpan?>]: The average outbound stream network jitter.
+      [AverageOutboundPacketLossRateInPercentage <Double?>]: The average outbound stream packet loss rate in percentage (0-100).
 For example, 0.01 means 0.01%.
-      - `[AverageOutboundRoundTripDelay <TimeSpan?>]`: The average outbound stream network round trip delay.
-      - `[ChannelIndex <Int32?>]`: The channel index of media.
+      [AverageOutboundRoundTripDelay <TimeSpan?>]: The average outbound stream network round trip delay.
+      [ChannelIndex <Int32?>]: The channel index of media.
 Indexing begins with 1.
-If a media session contains 3 video modalities, channel indexes will be 1, 2, and 3.
-      - `[InboundPackets <Int64?>]`: The total number of the inbound packets.
-      - `[LocalIPAddress <String>]`: the local IP address for the media session.
-      - `[LocalPort <Int32?>]`: The local media port.
-      - `[MaximumInboundJitter <TimeSpan?>]`: The maximum inbound stream network jitter.
-      - `[MaximumInboundPacketLossRateInPercentage <Double?>]`: The maximum inbound stream packet loss rate in percentage (0-100).
+ If a media session contains 3 video modalities, channel indexes will be 1, 2, and 3.
+      [InboundPackets <Int64?>]: The total number of the inbound packets.
+      [LocalIPAddress <String>]: the local IP address for the media session.
+      [LocalPort <Int32?>]: The local media port.
+      [MaximumInboundJitter <TimeSpan?>]: The maximum inbound stream network jitter.
+      [MaximumInboundPacketLossRateInPercentage <Double?>]: The maximum inbound stream packet loss rate in percentage (0-100).
 For example, 0.01 means 0.01%.
-      - `[MaximumInboundRoundTripDelay <TimeSpan?>]`: The maximum inbound stream network round trip delay.
-      - `[MaximumOutboundJitter <TimeSpan?>]`: The maximum outbound stream network jitter.
-      - `[MaximumOutboundPacketLossRateInPercentage <Double?>]`: The maximum outbound stream packet loss rate in percentage (0-100).
+      [MaximumInboundRoundTripDelay <TimeSpan?>]: The maximum inbound stream network round trip delay.
+      [MaximumOutboundJitter <TimeSpan?>]: The maximum outbound stream network jitter.
+      [MaximumOutboundPacketLossRateInPercentage <Double?>]: The maximum outbound stream packet loss rate in percentage (0-100).
 For example, 0.01 means 0.01%.
-      - `[MaximumOutboundRoundTripDelay <TimeSpan?>]`: The maximum outbound stream network round trip delay.
-      - `[MediaDuration <TimeSpan?>]`: The total modality duration.
+      [MaximumOutboundRoundTripDelay <TimeSpan?>]: The maximum outbound stream network round trip delay.
+      [MediaDuration <TimeSpan?>]: The total modality duration.
 If the media enabled and disabled multiple times, MediaDuration will the summation of all of the durations.
-      - `[NetworkLinkSpeedInBytes <Int64?>]`: The network link speed in bytes
-      - `[OutboundPackets <Int64?>]`: The total number of the outbound packets.
-      - `[RemoteIPAddress <String>]`: The remote IP address for the media session.
-      - `[RemotePort <Int32?>]`: The remote media port.
-    - `[ParticipantId <String>]`: A unique identifier for a specific participant in a conference.
+      [NetworkLinkSpeedInBytes <Int64?>]: The network link speed in bytes
+      [OutboundPackets <Int64?>]: The total number of the outbound packets.
+      [RemoteIPAddress <String>]: The remote IP address for the media session.
+      [RemotePort <Int32?>]: The remote media port.
+    [ParticipantId <String>]: A unique identifier for a specific participant in a conference.
 The CVI partner needs to copy over Call.MyParticipantId to this property.
 
 QUALITY `<IMicrosoftGraphTeleconferenceDeviceQuality>`: teleconferenceDeviceQuality
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CallChainId <String>]`: A unique identifier for all  the participant calls in a conference or a unique identifier for two participant calls in P2P call.
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [CallChainId <String>]: A unique identifier for all  the participant calls in a conference or a unique identifier for two participant calls in P2P call.
 This needs to be copied over from Microsoft.Graph.Call.CallChainId.
-  - `[CloudServiceDeploymentEnvironment <String>]`: A geo-region where the service is deployed, such as ProdNoam.
-  - `[CloudServiceDeploymentId <String>]`: A unique deployment identifier assigned by Azure.
-  - `[CloudServiceInstanceName <String>]`: The Azure deployed cloud service instance name, such as FrontEndIN3.
-  - `[CloudServiceName <String>]`: The Azure deployed cloud service name, such as contoso.cloudapp.net.
-  - `[DeviceDescription <String>]`: Any additional description, such as VTC Bldg 30/21.
-  - `[DeviceName <String>]`: The user media agent name, such as Cisco SX80.
-  - `[MediaLegId <String>]`: A unique identifier for a specific media leg of a participant in a conference.
-One participant can have multiple media leg identifiers if retargeting happens.
+  [CloudServiceDeploymentEnvironment <String>]: A geo-region where the service is deployed, such as ProdNoam.
+  [CloudServiceDeploymentId <String>]: A unique deployment identifier assigned by Azure.
+  [CloudServiceInstanceName <String>]: The Azure deployed cloud service instance name, such as FrontEndIN3.
+  [CloudServiceName <String>]: The Azure deployed cloud service name, such as contoso.cloudapp.net.
+  [DeviceDescription <String>]: Any additional description, such as VTC Bldg 30/21.
+  [DeviceName <String>]: The user media agent name, such as Cisco SX80.
+  [MediaLegId <String>]: A unique identifier for a specific media leg of a participant in a conference.
+ One participant can have multiple media leg identifiers if retargeting happens.
 CVI partner assigns this value.
-  - `[MediaQualityList <IMicrosoftGraphTeleconferenceDeviceMediaQuality- `[]`>]`: The list of media qualities in a media session (call), such as audio quality, video quality, and/or screen sharing quality.
-    - `[AverageInboundJitter <TimeSpan?>]`: The average inbound stream network jitter.
-    - `[AverageInboundPacketLossRateInPercentage <Double?>]`: The average inbound stream packet loss rate in percentage (0-100).
+  [MediaQualityList <IMicrosoftGraphTeleconferenceDeviceMediaQuality[]>]: The list of media qualities in a media session (call), such as audio quality, video quality, and/or screen sharing quality.
+    [AverageInboundJitter <TimeSpan?>]: The average inbound stream network jitter.
+    [AverageInboundPacketLossRateInPercentage <Double?>]: The average inbound stream packet loss rate in percentage (0-100).
 For example, 0.01 means 0.01%.
-    - `[AverageInboundRoundTripDelay <TimeSpan?>]`: The average inbound stream network round trip delay.
-    - `[AverageOutboundJitter <TimeSpan?>]`: The average outbound stream network jitter.
-    - `[AverageOutboundPacketLossRateInPercentage <Double?>]`: The average outbound stream packet loss rate in percentage (0-100).
+    [AverageInboundRoundTripDelay <TimeSpan?>]: The average inbound stream network round trip delay.
+    [AverageOutboundJitter <TimeSpan?>]: The average outbound stream network jitter.
+    [AverageOutboundPacketLossRateInPercentage <Double?>]: The average outbound stream packet loss rate in percentage (0-100).
 For example, 0.01 means 0.01%.
-    - `[AverageOutboundRoundTripDelay <TimeSpan?>]`: The average outbound stream network round trip delay.
-    - `[ChannelIndex <Int32?>]`: The channel index of media.
+    [AverageOutboundRoundTripDelay <TimeSpan?>]: The average outbound stream network round trip delay.
+    [ChannelIndex <Int32?>]: The channel index of media.
 Indexing begins with 1.
-If a media session contains 3 video modalities, channel indexes will be 1, 2, and 3.
-    - `[InboundPackets <Int64?>]`: The total number of the inbound packets.
-    - `[LocalIPAddress <String>]`: the local IP address for the media session.
-    - `[LocalPort <Int32?>]`: The local media port.
-    - `[MaximumInboundJitter <TimeSpan?>]`: The maximum inbound stream network jitter.
-    - `[MaximumInboundPacketLossRateInPercentage <Double?>]`: The maximum inbound stream packet loss rate in percentage (0-100).
+ If a media session contains 3 video modalities, channel indexes will be 1, 2, and 3.
+    [InboundPackets <Int64?>]: The total number of the inbound packets.
+    [LocalIPAddress <String>]: the local IP address for the media session.
+    [LocalPort <Int32?>]: The local media port.
+    [MaximumInboundJitter <TimeSpan?>]: The maximum inbound stream network jitter.
+    [MaximumInboundPacketLossRateInPercentage <Double?>]: The maximum inbound stream packet loss rate in percentage (0-100).
 For example, 0.01 means 0.01%.
-    - `[MaximumInboundRoundTripDelay <TimeSpan?>]`: The maximum inbound stream network round trip delay.
-    - `[MaximumOutboundJitter <TimeSpan?>]`: The maximum outbound stream network jitter.
-    - `[MaximumOutboundPacketLossRateInPercentage <Double?>]`: The maximum outbound stream packet loss rate in percentage (0-100).
+    [MaximumInboundRoundTripDelay <TimeSpan?>]: The maximum inbound stream network round trip delay.
+    [MaximumOutboundJitter <TimeSpan?>]: The maximum outbound stream network jitter.
+    [MaximumOutboundPacketLossRateInPercentage <Double?>]: The maximum outbound stream packet loss rate in percentage (0-100).
 For example, 0.01 means 0.01%.
-    - `[MaximumOutboundRoundTripDelay <TimeSpan?>]`: The maximum outbound stream network round trip delay.
-    - `[MediaDuration <TimeSpan?>]`: The total modality duration.
+    [MaximumOutboundRoundTripDelay <TimeSpan?>]: The maximum outbound stream network round trip delay.
+    [MediaDuration <TimeSpan?>]: The total modality duration.
 If the media enabled and disabled multiple times, MediaDuration will the summation of all of the durations.
-    - `[NetworkLinkSpeedInBytes <Int64?>]`: The network link speed in bytes
-    - `[OutboundPackets <Int64?>]`: The total number of the outbound packets.
-    - `[RemoteIPAddress <String>]`: The remote IP address for the media session.
-    - `[RemotePort <Int32?>]`: The remote media port.
-  - `[ParticipantId <String>]`: A unique identifier for a specific participant in a conference.
+    [NetworkLinkSpeedInBytes <Int64?>]: The network link speed in bytes
+    [OutboundPackets <Int64?>]: The total number of the outbound packets.
+    [RemoteIPAddress <String>]: The remote IP address for the media session.
+    [RemotePort <Int32?>]: The remote media port.
+  [ParticipantId <String>]: A unique identifier for a specific participant in a conference.
 The CVI partner needs to copy over Call.MyParticipantId to this property.
+
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality)
-
-[https://learn.microsoft.com/graph/api/call-logteleconferencedevicequality?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-logteleconferencedevicequality?view=graph-rest-1.0)
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality)
+- [](https://learn.microsoft.com/graph/api/call-logteleconferencedevicequality?view=graph-rest-1.0)
 
 
 

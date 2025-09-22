@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-Module Guid: 97ab7c94-54c2-4959-894e-25c3dcd51c92
+Module Guid: 13c3c810-16a5-4683-9b29-13673ad36302
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devices.corporatemanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1199,10 +1199,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserManagedDeviceCategoryByRef](Get-MgBetaUserManagedDeviceCategoryByRef.md)
 
-### [Get-MgBetaUserManagedDeviceCloudPcRemoteActionResult](Get-MgBetaUserManagedDeviceCloudPcRemoteActionResult.md)
-
-### [Get-MgBetaUserManagedDeviceCloudPcReviewStatus](Get-MgBetaUserManagedDeviceCloudPcReviewStatus.md)
-
 ### [Get-MgBetaUserManagedDeviceCompliancePolicyState](Get-MgBetaUserManagedDeviceCompliancePolicyState.md)
 
 ### [Get-MgBetaUserManagedDeviceCompliancePolicyState](Get-MgBetaUserManagedDeviceCompliancePolicyState.md)
@@ -1236,6 +1232,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserManagedDeviceLogCollectionResponse](Get-MgBetaUserManagedDeviceLogCollectionResponse.md)
 
 ### [Get-MgBetaUserManagedDeviceLogCollectionResponse](Get-MgBetaUserManagedDeviceLogCollectionResponse.md)
+
+### [Get-MgBetaUserManagedDeviceMacOSManagedDeviceLocalAdminAccountDetail](Get-MgBetaUserManagedDeviceMacOSManagedDeviceLocalAdminAccountDetail.md)
 
 ### [Get-MgBetaUserManagedDeviceMobileAppConfigurationState](Get-MgBetaUserManagedDeviceMobileAppConfigurationState.md)
 
@@ -1296,12 +1294,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Initialize-MgBetaUserManagedDeviceEsim](Initialize-MgBetaUserManagedDeviceEsim.md)
 
 ### [Invoke-MgBetaAppUserManagedDeviceDiagnostic](Invoke-MgBetaAppUserManagedDeviceDiagnostic.md)
-
-### [Invoke-MgBetaBulkUserManagedDeviceReprovisionCloudPc](Invoke-MgBetaBulkUserManagedDeviceReprovisionCloudPc.md)
-
-### [Invoke-MgBetaBulkUserManagedDeviceRestoreCloudPc](Invoke-MgBetaBulkUserManagedDeviceRestoreCloudPc.md)
-
-### [Invoke-MgBetaBulkUserManagedDeviceSetCloudPcReviewStatus](Invoke-MgBetaBulkUserManagedDeviceSetCloudPcReviewStatus.md)
 
 ### [Invoke-MgBetaCleanUserManagedDeviceWindowsDevice](Invoke-MgBetaCleanUserManagedDeviceWindowsDevice.md)
 
@@ -2122,8 +2114,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Set-MgBetaUserDeviceEnrollmentConfigurationPriority](Set-MgBetaUserDeviceEnrollmentConfigurationPriority.md)
 
 ### [Set-MgBetaUserManagedDeviceCategoryByRef](Set-MgBetaUserManagedDeviceCategoryByRef.md)
-
-### [Set-MgBetaUserManagedDeviceCloudPcReviewStatus](Set-MgBetaUserManagedDeviceCloudPcReviewStatus.md)
 
 ### [Set-MgBetaUserManagedDeviceName](Set-MgBetaUserManagedDeviceName.md)
 
