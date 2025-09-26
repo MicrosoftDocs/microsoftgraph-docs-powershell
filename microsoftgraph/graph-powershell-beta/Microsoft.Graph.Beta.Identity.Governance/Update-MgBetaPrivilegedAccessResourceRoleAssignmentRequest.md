@@ -82,16 +82,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property roleAssignmentRequests in privilegedAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1470,6 +1460,7 @@ The value can be User, Group, and ServicePrincipal.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourceroleassignmentrequest)
+
 
 
 

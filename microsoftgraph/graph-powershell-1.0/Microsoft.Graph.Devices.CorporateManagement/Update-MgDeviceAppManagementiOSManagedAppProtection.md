@@ -118,8 +118,9 @@ Update the properties of a iosManagedAppProtection object.
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -166,6 +167,10 @@ customBrowserProtocol = "Custom Browser Protocol value"
 }
 
 Update-MgDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtectionId $iosManagedAppProtectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementiOSManagedAppProtection Cmdlet.
+
 
 ## PARAMETERS
 

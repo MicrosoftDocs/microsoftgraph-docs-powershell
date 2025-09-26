@@ -57,8 +57,9 @@ By default, the creator tenant becomes an owner tenant upon successful creation.
 Only owner tenants can manage a multitenant organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -68,6 +69,10 @@ $params = @{
 }
 
 Update-MgTenantRelationshipMultiTenantOrganization -BodyParameter $params
+
+```
+This example shows how to use the Update-MgTenantRelationshipMultiTenantOrganization Cmdlet.
+
 
 ## PARAMETERS
 

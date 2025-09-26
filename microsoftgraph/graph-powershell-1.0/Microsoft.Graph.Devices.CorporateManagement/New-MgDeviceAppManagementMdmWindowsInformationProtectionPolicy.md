@@ -80,8 +80,9 @@ Create a new mdmWindowsInformationProtectionPolicy object.
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -211,6 +212,10 @@ isAssigned = $true
 }
 
 New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 

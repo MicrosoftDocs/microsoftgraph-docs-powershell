@@ -74,16 +74,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property myDecisions in accessReviews
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessRecommendation
@@ -915,6 +905,7 @@ This property is read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaaccessreviewinstancemydecision)
+
 
 
 

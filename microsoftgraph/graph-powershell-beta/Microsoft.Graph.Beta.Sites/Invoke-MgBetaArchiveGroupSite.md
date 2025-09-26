@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Archive an active SharePoint site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -452,6 +442,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaarchivegroupsite)
 - [](https://learn.microsoft.com/graph/api/site-archive?view=graph-rest-beta)
+
 
 
 

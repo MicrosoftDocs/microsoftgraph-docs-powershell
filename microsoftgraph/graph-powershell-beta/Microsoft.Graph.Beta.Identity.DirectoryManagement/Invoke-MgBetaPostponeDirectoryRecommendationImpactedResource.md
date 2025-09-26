@@ -83,8 +83,9 @@ On the specified date and time, Microsoft Entra ID will automatically mark the s
 | Application | DirectoryRecommendations.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -93,6 +94,10 @@ $params = @{
 }
 
 Invoke-MgBetaPostponeDirectoryRecommendationImpactedResource -RecommendationId $recommendationId -ImpactedResourceId $impactedResourceId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaPostponeDirectoryRecommendationImpactedResource Cmdlet.
+
 
 ## PARAMETERS
 

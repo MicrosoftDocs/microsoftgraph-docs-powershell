@@ -100,12 +100,17 @@ Remove a conversationMember from a team.
 | Application | TeamMember.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamMember -TeamId $teamId -ConversationMemberId $conversationMemberId
+
+```
+This example shows how to use the Remove-MgBetaTeamMember Cmdlet.
+
 
 ## PARAMETERS
 

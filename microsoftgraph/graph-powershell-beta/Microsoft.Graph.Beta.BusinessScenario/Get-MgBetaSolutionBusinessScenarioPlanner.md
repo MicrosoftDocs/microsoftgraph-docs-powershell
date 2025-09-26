@@ -54,12 +54,17 @@ Read the properties and relationships of a businessScenarioPlanner object.
 | Application | BusinessScenarioConfig.Read.OwnedBy, BusinessScenarioConfig.ReadWrite.OwnedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.BusinessScenario
 
 Get-MgBetaSolutionBusinessScenarioPlanner -BusinessScenarioId $businessScenarioId
+
+```
+This example shows how to use the Get-MgBetaSolutionBusinessScenarioPlanner Cmdlet.
+
 
 ## PARAMETERS
 

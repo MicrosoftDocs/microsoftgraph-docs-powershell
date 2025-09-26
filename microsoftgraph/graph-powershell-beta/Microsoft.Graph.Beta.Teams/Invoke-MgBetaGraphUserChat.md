@@ -73,16 +73,6 @@ This cmdlet has the following aliases,
 
 Unhide a chat for a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -646,6 +636,7 @@ This property is read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphuserchat)
 - [](https://learn.microsoft.com/graph/api/chat-unhideforuser?view=graph-rest-beta)
+
 
 
 

@@ -70,12 +70,17 @@ Read the properties and relationships of a microsoftAuthenticatorAuthenticationM
 | Application | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgUserAuthenticationMicrosoftAuthenticatorMethod -UserId $userId
+
+```
+This example shows how to use the Get-MgUserAuthenticationMicrosoftAuthenticatorMethod Cmdlet.
+
 
 ## PARAMETERS
 

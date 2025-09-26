@@ -82,8 +82,9 @@ The corresponding app must already be installed in the chat.
 | Application | TeamsTab.Create, TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWrite.All, TeamsTab.Create.Chat,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -99,6 +100,10 @@ $params = @{
 }
 
 New-MgChatTab -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the New-MgChatTab Cmdlet.
+
 
 ## PARAMETERS
 

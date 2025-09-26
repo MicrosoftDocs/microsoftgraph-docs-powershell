@@ -74,16 +74,6 @@ This cmdlet has the following aliases,
 Update the properties of place object that can be a building, floor, section, desk, room, workspace, or roomList.
 You can identify the place by specifying the id property.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -787,6 +777,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplacebyplaceid)
 - [](https://learn.microsoft.com/graph/api/place-update?view=graph-rest-beta)
+
 
 
 

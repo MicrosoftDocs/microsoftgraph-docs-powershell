@@ -82,8 +82,9 @@ This can be used to configure the content of the tab.
 | Application | TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update the name of a tab in a chat
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -92,6 +93,10 @@ $params = @{
 }
 
 Update-MgChatTab -ChatId $chatId -TeamsTabId $teamsTabId -BodyParameter $params
+
+```
+This example will update the name of a tab in a chat
+
 
 ## PARAMETERS
 
