@@ -288,7 +288,7 @@ HelpMessage: ''
 
 ### -ReadingAssignmentSubmissions
 
-.
+
 To construct, see NOTES section for READINGASSIGNMENTSUBMISSIONS properties and create a hash table.
 
 ```yaml
@@ -310,7 +310,7 @@ HelpMessage: ''
 
 ### -ReflectCheckInResponses
 
-.
+
 To construct, see NOTES section for REFLECTCHECKINRESPONSES properties and create a hash table.
 
 ```yaml
