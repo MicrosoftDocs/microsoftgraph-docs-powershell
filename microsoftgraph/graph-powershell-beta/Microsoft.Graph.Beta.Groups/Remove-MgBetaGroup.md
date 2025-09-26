@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaGroup
 ---
@@ -18,9 +18,6 @@ When deleted, Microsoft 365 groups are moved to a temporary container and can be
 After that time, they are permanently deleted.
 This isn't applicable to Security groups and Distribution groups that are permanently deleted immediately.
 To learn more, see deletedItems.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroup](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,22 +54,11 @@ After that time, they are permanently deleted.
 This isn't applicable to Security groups and Distribution groups that are permanently deleted immediately.
 To learn more, see deletedItems.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Remove a group
 
-```powershell
+### EXAMPLE 1
+
 Remove-MgBetaGroup -GroupId 'f6b9791b-dfc1-40d6-9ab6-7b29126c534a'
-```
-
-This example deletes the specified group.
 
 ## PARAMETERS
 
@@ -404,7 +390,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -433,25 +419,3 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroup)
 - [](https://learn.microsoft.com/graph/api/group-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

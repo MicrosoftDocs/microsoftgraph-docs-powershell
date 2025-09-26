@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmyrole
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTenantRelationshipManagedTenantMyRole
 ---
@@ -45,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to myRoles for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -386,7 +396,7 @@ ASSIGNMENTS <IMicrosoftGraphManagedTenantsRoleAssignment[]>: A collection of rol
     [DisplayName <String>]: The display name for the role assignment.
     [TemplateId <String>]: The unique identifier for the template.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsMyRole>`: myRole
+BODYPARAMETER <IMicrosoftGraphManagedTenantsMyRole>: myRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Assignments <IMicrosoftGraphManagedTenantsRoleAssignment[]>]: A collection of role assignments for the managed tenant.
     [AssignmentType <String>]: delegatedPrivilegeStatus
@@ -402,26 +412,3 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmyrole)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

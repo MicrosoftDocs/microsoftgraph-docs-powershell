@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetagroupteamchannelmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Complete-MgBetaGroupTeamChannelMigration
 ---
@@ -17,9 +17,6 @@ Complete the message migration process by removing migration mode from a channel
 Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
 After a completeMigration request is made, you can't import more messages into the team.
 You can add members to the team after the request returns a successful response.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Complete-MgGroupTeamChannelMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgGroupTeamChannelMigration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,6 +51,16 @@ Complete the message migration process by removing migration mode from a channel
 Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
 After a completeMigration request is made, you can't import more messages into the team.
 You can add members to the team after the request returns a successful response.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -385,7 +392,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -437,26 +444,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetagroupteamchannelmigration)
 - [](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

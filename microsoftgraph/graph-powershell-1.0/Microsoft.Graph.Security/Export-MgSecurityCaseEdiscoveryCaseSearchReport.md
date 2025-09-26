@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasesearchreport
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Export-MgSecurityCaseEdiscoveryCaseSearchReport
 ---
@@ -15,9 +15,6 @@ title: Export-MgSecurityCaseEdiscoveryCaseSearchReport
 
 Export an item report from an estimated ediscoverySearch.
 For details, see Manage a collection estimate.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport](/powershell/module/Microsoft.Graph.Beta.Security/Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -80,18 +77,9 @@ This cmdlet has the following aliases,
 Export an item report from an estimated ediscoverySearch.
 For details, see Manage a collection estimate.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Export a report of items with search hits only, excluding partially indexed items, without additional options
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -103,12 +91,7 @@ $params = @{
 
 Export-MgSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
 
-```
-This example will export a report of items with search hits only, excluding partially indexed items, without additional options
-
-### Example 2: Export a report of items with search hits and partially indexed items in all targeted locations, without additional options
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Security
 
@@ -121,12 +104,7 @@ $params = @{
 
 Export-MgSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
 
-```
-This example will export a report of items with search hits and partially indexed items in all targeted locations, without additional options
-
-### Example 3: Export a report of items with search hits and partially indexed items in locations with search hits, without additional options
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Security
 
@@ -139,12 +117,7 @@ $params = @{
 
 Export-MgSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
 
-```
-This example will export a report of items with search hits and partially indexed items in locations with search hits, without additional options
-
-### Example 4: Export a report of partially indexed items in all targeted locations with all additional options selected
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Security
 
@@ -157,12 +130,7 @@ $params = @{
 
 Export-MgSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
 
-```
-This example will export a report of partially indexed items in all targeted locations with all additional options selected
-
-### Example 5: Export a report of partially indexed items in locations with search hits and cloud attachments
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Security
 
@@ -174,10 +142,6 @@ $params = @{
 }
 
 Export-MgSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
-
-```
-This example will export a report of partially indexed items in locations with search hits and cloud attachments
-
 
 ## PARAMETERS
 
@@ -237,7 +201,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -335,7 +299,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -362,7 +326,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -775,7 +739,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1L5Hy36SecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityExportreportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1L5Hy36SecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityExportreportPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdditionalOptions <String>]: additionalOptions
   [CloudAttachmentVersion <String>]: cloudAttachmentVersion
@@ -785,7 +749,7 @@ BODYPARAMETER `<IPaths1L5Hy36SecurityCasesEdiscoverycasesEdiscoverycaseIdSearche
   [ExportCriteria <String>]: exportCriteria
   [ExportLocation <String>]: exportLocation
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -860,25 +824,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasesearchreport)
 - [](https://learn.microsoft.com/graph/api/security-ediscoverysearch-exportreport?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

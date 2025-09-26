@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreview
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAccessReview
 ---
@@ -56,18 +56,9 @@ In the Microsoft Entra access reviews feature, create a new accessReview object.
 Before making this request, the caller must have previously retrieved the list of business flow templates, to have the value of businessFlowTemplateId to include in the request.
 After making this request, the caller should create a programControl, to link the access review to a program.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AccessReview.ReadWrite.Membership,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -110,10 +101,6 @@ $params = @{
 }
 
 New-MgBetaAccessReview -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaAccessReview Cmdlet.
-
 
 ## PARAMETERS
 
@@ -735,7 +722,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReview>`: accessReview
+BODYPARAMETER <IMicrosoftGraphAccessReview>: accessReview
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -819,7 +806,7 @@ This date can be in the future.
   [Status <String>]: This read-only field specifies the status of an accessReview.
 The typical states include Initializing, NotStarted, Starting,InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
 
-CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+CREATEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 This property is read-only.
@@ -951,7 +938,7 @@ This property is read-only.
   [ReviewedBy <IMicrosoftGraphUserIdentity>]: userIdentity
   [ReviewedDateTime <DateTime?>]: 
 
-REVIEWEDENTITY `<IMicrosoftGraphIdentity>`: identity
+REVIEWEDENTITY <IMicrosoftGraphIdentity>: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 This property is read-only.
@@ -965,7 +952,7 @@ Read-only.
   [DisplayName <String>]: Name of reviewer.
   [UserPrincipalName <String>]: User principal name of the user.
 
-SETTINGS `<IMicrosoftGraphAccessReviewSettings>`: accessReviewSettings
+SETTINGS <IMicrosoftGraphAccessReviewSettings>: accessReviewSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccessRecommendationsEnabled <Boolean?>]: Indicates whether showing recommendations to reviewers is enabled.
   [ActivityDurationInDays <Int32?>]: The number of days of user activities to show to reviewers.
@@ -1000,25 +987,3 @@ Possible values: onetime, weekly, monthly, quarterly, halfyearly or annual.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreview)
 - [](https://learn.microsoft.com/graph/api/accessreview-create?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorypublickeyinfrastructure
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaDirectoryPublicKeyInfrastructure
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaDirectoryPublicKeyInfrastructure
 ## SYNOPSIS
 
 Delete navigation property publicKeyInfrastructure for directory
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryPublicKeyInfrastructure](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryPublicKeyInfrastructure?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,6 +35,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property publicKeyInfrastructure for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -320,26 +327,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorypublickeyinfrastructure)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgcalendarusercalendarallowedcalendarsharingroles
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles
 ## SYNOPSIS
 
 Invoke function allowedCalendarSharingRoles
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -68,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke function allowedCalendarSharingRoles
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -479,7 +486,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -496,26 +503,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgcalendarusercalendarallowedcalendarsharingroles)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

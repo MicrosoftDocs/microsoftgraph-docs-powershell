@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgforwardusermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgForwardUserMessage
 ---
@@ -14,15 +14,12 @@ title: Invoke-MgForwardUserMessage
 ## SYNOPSIS
 
 Forward a message using either JSON or MIME format.
-When using JSON format, you can:- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+When using JSON format, you can:\n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
 Specifying both or specifying neither will return an HTTP 400 Bad Request error.
-When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to forward a message, and send it later.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaForwardUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Invoke-MgBetaForwardUserMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -78,25 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Forward a message using either JSON or MIME format.
-When using JSON format, you can:- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+When using JSON format, you can:\n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
 Specifying both or specifying neither will return an HTTP 400 Bad Request error.
-When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to forward a message, and send it later.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.Send,  |
-| Delegated (personal Microsoft account) | Mail.Send,  |
-| Application | Mail.Send,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Mail
 
@@ -114,10 +102,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgForwardUserMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -150,7 +134,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -199,7 +183,7 @@ HelpMessage: ''
 
 ### -Comment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -500,7 +484,7 @@ HelpMessage: ''
 
 ### -ToRecipients
 
-
+.
 To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -609,7 +593,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths3Ta6EnUsersUserIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths3Ta6EnUsersUserIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Comment <String>]: 
   [Message <IMicrosoftGraphMessage>]: message
@@ -709,7 +693,7 @@ If ispopout is set to 0, the browser shows the message in the Outlook on the web
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
   [ToRecipients <IMicrosoftGraphRecipient[]>]: 
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -719,7 +703,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   [MessageRuleId <String>]: The unique identifier of messageRule
   [UserId <String>]: The unique identifier of user
 
-MESSAGE `<IMicrosoftGraphMessage>`: message
+MESSAGE <IMicrosoftGraphMessage>: message
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item
   [ChangeKey <String>]: Identifies the version of the item.
@@ -826,25 +810,3 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgforwardusermessage)
 - [](https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

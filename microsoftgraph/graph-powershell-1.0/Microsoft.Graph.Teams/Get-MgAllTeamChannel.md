@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallteamchannel
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgAllTeamChannel
 ---
@@ -14,9 +14,6 @@ title: Get-MgAllTeamChannel
 ## SYNOPSIS
 
 List of channels either hosted in or shared with the team (incoming channels).
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAllTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAllTeamChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,28 +56,18 @@ This cmdlet has the following aliases,
 List of channels either hosted in or shared with the team (incoming channels).
 
 ## EXAMPLES
-### Example 1: List all channels
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgAllTeamChannel -TeamId $teamId
 
-```
-This example will list all channels
-
-### Example 2: List all shared channels
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgAllTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
-
-```
-This example will list all shared channels
-
+Get-MgAllTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
 
 ## PARAMETERS
 
@@ -569,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -611,25 +598,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallteamchannel)
 - [](https://learn.microsoft.com/graph/api/team-list-allchannels?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

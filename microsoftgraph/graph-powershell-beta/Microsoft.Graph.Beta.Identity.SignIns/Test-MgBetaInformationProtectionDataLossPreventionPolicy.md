@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectiondatalosspreventionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaInformationProtectionDataLossPreventionPolicy
 ---
@@ -48,6 +48,16 @@ This cmdlet has the following aliases,
 
 Invoke action evaluate
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -73,7 +83,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -330,7 +340,7 @@ HelpMessage: ''
 
 ### -Target
 
-
+.
 
 ```yaml
 Type: System.String
@@ -401,7 +411,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]: dlpEvaluationInput
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -421,7 +431,7 @@ BODYPARAMETER `<IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicr
     [Author <String>]: 
   [Target <String>]: 
 
-EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
+EVALUATIONINPUT <IMicrosoftGraphDlpEvaluationInput>: dlpEvaluationInput
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CurrentLabel <IMicrosoftGraphCurrentLabel>]: currentLabel
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -435,7 +445,7 @@ EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
     [Count <Int32?>]: 
     [Id <String>]: 
 
-NOTIFICATIONINFO `<IMicrosoftGraphDlpNotification>`: dlpNotification
+NOTIFICATIONINFO <IMicrosoftGraphDlpNotification>: dlpNotification
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Author <String>]:
 
@@ -443,26 +453,3 @@ NOTIFICATIONINFO `<IMicrosoftGraphDlpNotification>`: dlpNotification
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectiondatalosspreventionpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

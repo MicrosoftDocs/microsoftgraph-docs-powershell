@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinitionroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementRoleDefinitionRoleAssignment
 ---
@@ -14,9 +14,6 @@ title: New-MgDeviceManagementRoleDefinitionRoleAssignment
 ## SYNOPSIS
 
 Create a new roleAssignment object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -74,18 +71,9 @@ This cmdlet has the following aliases,
 
 Create a new roleAssignment object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -99,10 +87,6 @@ $params = @{
 }
 
 New-MgDeviceManagementRoleDefinitionRoleAssignment -RoleDefinitionId $roleDefinitionId -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementRoleDefinitionRoleAssignment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -610,7 +594,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRoleAssignment>`: The Role Assignment resource.
+BODYPARAMETER <IMicrosoftGraphRoleAssignment>: The Role Assignment resource.
 Role assignments tie together a role definition with members and scopes.
 There can be one or more role assignments per role.
 This applies to custom and built-in roles.
@@ -642,7 +626,7 @@ These must match the actionName that is defined as part of the rolePermission.
         [AllowedResourceActions <String[]>]: Allowed Actions
         [NotAllowedResourceActions <String[]>]: Not Allowed Actions.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -671,7 +655,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [UserPrincipalName <String>]: Alternate key of user
 
-ROLEDEFINITION `<IMicrosoftGraphRoleDefinition>`: The Role Definition resource.
+ROLEDEFINITION <IMicrosoftGraphRoleDefinition>: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
 There are two types of roles, built-in and custom.
@@ -710,25 +694,3 @@ These must match the actionName that is defined as part of the rolePermission.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinitionroleassignment)
 - [](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-create?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecordsession
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgCommunicationCallRecordSession
 ---
@@ -64,28 +64,18 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Get session list
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId
 
-```
-This example will get session list
-
-### Example 2: Get session list with segments
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.CloudCommunications
 
-Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments" 
-
-```
-This example will get session list with segments
-
+Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"
 
 ## PARAMETERS
 
@@ -574,7 +564,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
   [CallId <String>]: The unique identifier of call
@@ -595,25 +585,3 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecordsession)
 - [](https://learn.microsoft.com/graph/api/callrecords-callrecord-list-sessions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

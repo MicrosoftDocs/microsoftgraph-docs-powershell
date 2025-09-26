@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreexchangerestoresessiongranularmailboxrestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxResto
 ## SYNOPSIS
 
 Create new navigation property to granularMailboxRestoreArtifacts for solutions
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -79,6 +76,16 @@ This cmdlet has the following aliases,
 
 Create new navigation property to granularMailboxRestoreArtifacts for solutions
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -110,7 +117,7 @@ HelpMessage: ''
 
 ### -ArtifactCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -603,7 +610,7 @@ HelpMessage: ''
 
 ### -SearchResponseId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -738,7 +745,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphGranularMailboxRestoreArtifact>`: granularMailboxRestoreArtifact
+BODYPARAMETER <IMicrosoftGraphGranularMailboxRestoreArtifact>: granularMailboxRestoreArtifact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RestoredFolderId <String>]: The newly restored folder identifier for the user.
   [RestoredItemCount <Int32?>]: The number of items that are being restored in the folder.
@@ -795,7 +802,7 @@ Read-only.
   [ArtifactCount <Int32?>]: .
   [SearchResponseId <String>]: .
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -811,7 +818,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -840,7 +847,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [SiteRestoreArtifactId <String>]: The unique identifier of siteRestoreArtifact
   [SiteRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
-RESTOREPOINT `<IMicrosoftGraphRestorePoint>`: restorePoint
+RESTOREPOINT <IMicrosoftGraphRestorePoint>: restorePoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -888,26 +895,3 @@ This property is read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreexchangerestoresessiongranularmailboxrestoreartifact)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

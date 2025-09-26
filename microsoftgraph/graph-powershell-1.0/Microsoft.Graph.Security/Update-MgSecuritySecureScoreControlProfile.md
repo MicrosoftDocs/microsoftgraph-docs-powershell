@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecuritySecureScoreControlProfile
 ---
@@ -14,9 +14,6 @@ title: Update-MgSecuritySecureScoreControlProfile
 ## SYNOPSIS
 
 Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -83,41 +80,9 @@ This cmdlet has the following aliases,
 
 Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityEvents.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityEvents.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Request without Prefer header
 
-```powershell
-
-Import-Module Microsoft.Graph.Security
-
-$params = @{
-	assignedTo = ""
-	comment = "control is reviewed"
-	state = "Reviewed"
-	vendorInformation = @{
-		provider = "SecureScore"
-		providerVersion = $null
-		subProvider = $null
-		vendor = "Microsoft"
-	}
-}
-
-Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
-
-```
-This example will request without prefer header
-
-### Example 2: Request with Prefer header
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -135,9 +100,23 @@ $params = @{
 
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 
-```
-This example will request with prefer header
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	assignedTo = ""
+	comment = "control is reviewed"
+	state = "Reviewed"
+	vendorInformation = @{
+		provider = "SecureScore"
+		providerVersion = $null
+		subProvider = $null
+		vendor = "Microsoft"
+	}
+}
+
+Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -1045,7 +1024,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecureScoreControlProfile>`: secureScoreControlProfile
+BODYPARAMETER <IMicrosoftGraphSecureScoreControlProfile>: secureScoreControlProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1103,7 +1082,7 @@ CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate[]>: Flag to in
   [UpdatedBy <String>]: ID of the user who updated tenant state.
   [UpdatedDateTime <DateTime?>]: Time at which the control state was updated.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -1173,7 +1152,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -1187,25 +1166,3 @@ Required
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile)
 - [](https://learn.microsoft.com/graph/api/securescorecontrolprofile-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

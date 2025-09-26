@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostport
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityThreatIntelligenceHostPort
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSecurityThreatIntelligenceHostPort
 ## SYNOPSIS
 
 Update the navigation property hostPorts in security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligenceHostPort](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHostPort?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property hostPorts in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -784,7 +791,7 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   [ScanProtocol <String>]: The specific protocol used to scan the hostPort.
   [TimesObserved <Int32?>]: The total amount of times that Microsoft Defender Threat Intelligence has observed the hostPortBanner in all its scans.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityHostPort>`: hostPort
+BODYPARAMETER <IMicrosoftGraphSecurityHostPort>: hostPort
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1063,7 +1070,7 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   [Status <String>]: hostPortStatus
   [TimesObserved <Int32?>]: The total amount of times that Microsoft Defender Threat Intelligence has observed the hostPort in all its scans.
 
-HOST1 `<IMicrosoftGraphSecurityHost>`: host
+HOST1 <IMicrosoftGraphSecurityHost>: host
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1341,7 +1348,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -1440,7 +1447,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-MOSTRECENTSSLCERTIFICATE `<IMicrosoftGraphSecuritySslCertificate>`: sslCertificate
+MOSTRECENTSSLCERTIFICATE <IMicrosoftGraphSecuritySslCertificate>: sslCertificate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2000,26 +2007,3 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostport)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

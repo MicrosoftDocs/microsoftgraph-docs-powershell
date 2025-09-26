@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationreportreadingassignmentsubmission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEducationReportReadingAssignmentSubmission
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaEducationReportReadingAssignmentSubmission
 ## SYNOPSIS
 
 Create new navigation property to readingAssignmentSubmissions for education
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationReportReadingAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/New-MgEducationReportReadingAssignmentSubmission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,6 +51,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to readingAssignmentSubmissions for education
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -811,7 +818,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphReadingAssignmentSubmission>`: readingAssignmentSubmission
+BODYPARAMETER <IMicrosoftGraphReadingAssignmentSubmission>: readingAssignmentSubmission
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -851,26 +858,3 @@ CHALLENGINGWORDS <IMicrosoftGraphChallengingWord[]>: List of words that the stud
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationreportreadingassignmentsubmission)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

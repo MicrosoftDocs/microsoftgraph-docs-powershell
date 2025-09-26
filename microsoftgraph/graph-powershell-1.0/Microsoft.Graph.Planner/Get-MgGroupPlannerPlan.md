@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplan
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupPlannerPlan
 ---
@@ -16,9 +16,6 @@ title: Get-MgGroupPlannerPlan
 Read-only.
 Nullable.
 Returns the plannerPlans owned by the group.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlan?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -63,17 +60,12 @@ Nullable.
 Returns the plannerPlans owned by the group.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Planner
 
 Get-MgGroupPlannerPlan -GroupId $groupId
-
-```
-This example shows how to use the Get-MgGroupPlannerPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -562,7 +554,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
@@ -574,25 +566,3 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplan)
 - [](https://learn.microsoft.com/graph/api/plannergroup-list-plans?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

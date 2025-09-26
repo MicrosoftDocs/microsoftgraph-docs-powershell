@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgAnswerCommunicationCall
 ---
@@ -82,18 +82,9 @@ The bot is expected to answer, reject, or redirect the call before the call time
 The current timeout value is 15 seconds for regular scenarios and 5 seconds for policy-based recording scenarios.
 This API supports the following PSTN scenarios:
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All,  |
-
 ## EXAMPLES
-### Example 1: Answer a Peer-to-Peer VoIP call with service hosted media
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -115,12 +106,7 @@ $params = @{
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
-```
-This example will answer a peer-to-peer voip call with service hosted media
-
-### Example 2: Answer VOIP call with application hosted media
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -138,12 +124,7 @@ $params = @{
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
-```
-This example will answer voip call with application hosted media
-
-### Example 3: Answer a policy-based recording call
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -160,15 +141,11 @@ $params = @{
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
-```
-This example will answer a policy-based recording call
-
-
 ## PARAMETERS
 
 ### -AcceptedModalities
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -222,7 +199,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -271,7 +248,7 @@ HelpMessage: ''
 
 ### -CallbackUri
 
-
+.
 
 ```yaml
 Type: System.String
@@ -492,7 +469,7 @@ HelpMessage: ''
 
 ### -ParticipantCapacity
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -679,7 +656,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AcceptedModalities <String[]>]: 
   [CallOptions <IMicrosoftGraphIncomingCallOptions>]: incomingCallOptions
@@ -692,7 +669,7 @@ BODYPARAMETER `<IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostReq
     [(Any) <Object>]: This indicates any property can be added to this object.
   [ParticipantCapacity <Int32?>]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
   [CallId <String>]: The unique identifier of call
@@ -713,25 +690,3 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall)
 - [](https://learn.microsoft.com/graph/api/call-answer?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

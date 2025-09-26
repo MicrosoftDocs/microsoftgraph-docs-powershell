@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcategorysubcategory
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityLabelCategorySubcategory
 ---
@@ -14,9 +14,6 @@ title: Get-MgSecurityLabelCategorySubcategory
 ## SYNOPSIS
 
 Read the properties and relationships of a subcategoryTemplate object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelCategorySubcategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,17 +57,12 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a subcategoryTemplate object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityLabelCategorySubcategory -CategoryTemplateId $categoryTemplateId
-
-```
-This example shows how to use the Get-MgSecurityLabelCategorySubcategory Cmdlet.
-
 
 ## PARAMETERS
 
@@ -559,7 +551,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -635,25 +627,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcategorysubcategory)
 - [](https://learn.microsoft.com/graph/api/security-subcategorytemplate-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/security-categorytemplate-list-subcategories?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

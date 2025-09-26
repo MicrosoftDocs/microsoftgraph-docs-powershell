@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetagroupsitecontenttypecopy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Add-MgBetaGroupSiteContentTypeCopy
 ---
@@ -14,9 +14,6 @@ title: Add-MgBetaGroupSiteContentTypeCopy
 ## SYNOPSIS
 
 Invoke action addCopy
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgGroupSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Sites/Add-MgGroupSiteContentTypeCopy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -71,6 +68,16 @@ This cmdlet has the following aliases,
 
 Invoke action addCopy
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -102,7 +109,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -173,7 +180,7 @@ HelpMessage: ''
 
 ### -ContentType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -484,11 +491,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsVrsotcGroupsGroupIdSitesSiteIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsVrsotcGroupsGroupIdSitesSiteIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentType <String>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -554,26 +561,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetagroupsitecontenttypecopy)
 - [](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

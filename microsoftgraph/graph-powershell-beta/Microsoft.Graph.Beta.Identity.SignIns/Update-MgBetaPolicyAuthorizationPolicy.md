@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthorizationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyAuthorizationPolicy
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPolicyAuthorizationPolicy
 ## SYNOPSIS
 
 Update the navigation property authorizationPolicy in policies
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthorizationPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -82,6 +79,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property authorizationPolicy in policies
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -379,7 +386,7 @@ HelpMessage: ''
 
 ### -DefaultUserRoleOverrides
 
-
+.
 To construct, see NOTES section for DEFAULTUSERROLEOVERRIDES properties and create a hash table.
 
 ```yaml
@@ -862,7 +869,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthorizationPolicy>`: authorizationPolicy
+BODYPARAMETER <IMicrosoftGraphAuthorizationPolicy>: authorizationPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description for this policy.
 Required.
@@ -923,7 +930,7 @@ Read-only.
 Not supported for custom roles.
     [ExcludedResourceActions <String[]>]: 
 
-DEFAULTUSERROLEPERMISSIONS `<IMicrosoftGraphDefaultUserRolePermissions>`: defaultUserRolePermissions
+DEFAULTUSERROLEPERMISSIONS <IMicrosoftGraphDefaultUserRolePermissions>: defaultUserRolePermissions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedToCreateApps <Boolean?>]: Indicates whether the default user role can create applications.
 This setting corresponds to the Users can register applications setting in the User settings menu in the Microsoft Entra admin center.
@@ -937,7 +944,7 @@ When this setting is false, users assigned the Tenant Creator role can still cre
   [AllowedToReadOtherUsers <Boolean?>]: Indicates whether the default user role can read other users.
 DO NOT SET THIS VALUE TO false.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -1025,26 +1032,3 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthorizationpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

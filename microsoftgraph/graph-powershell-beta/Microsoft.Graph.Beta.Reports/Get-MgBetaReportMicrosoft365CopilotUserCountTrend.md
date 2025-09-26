@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoft365copilotusercounttrend
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportMicrosoft365CopilotUserCountTrend
 ---
@@ -45,28 +45,18 @@ This cmdlet has the following aliases,
 Get the trend in the daily number of active and enabled users of Microsoft 365 Copilot for a specified time period.
 
 ## EXAMPLES
-### Example 1: CSV output
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaReportMicrosoft365CopilotUserCountTrend -Format "text/csv"  -Period $periodId 
-
-```
-This example will csv output
-
-### Example 2: JSON output
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaReportMicrosoft365CopilotUserCountTrend -Format "application/json"  -Period $periodId 
+Get-MgBetaReportMicrosoft365CopilotUserCountTrend -Format "text/csv"  -Period $periodId
 
-```
-This example will json output
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportMicrosoft365CopilotUserCountTrend -Format "application/json"  -Period $periodId
 
 ## PARAMETERS
 
@@ -354,7 +344,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -412,25 +402,3 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoft365copilotusercounttrend)
 - [](https://learn.microsoft.com/graph/api/reportroot-getmicrosoft365copilotusercounttrend?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

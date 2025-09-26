@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagementdirectory
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaScheduleRoleManagementDirectory
 ---
@@ -38,26 +38,13 @@ This cmdlet has the following aliases,
 
 Retrieve both roleAssignmentScheduleInstances and roleEligibilityScheduleInstances.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PrivilegedAccess.Read.AzureAD,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Invoke-MgBetaScheduleRoleManagementDirectory -DirectoryScopeId $directoryScopeIdId -AppScopeId $appScopeIdId -PrincipalId $principalIdId -RoleDefinitionId $roleDefinitionIdId 
-
-```
-This example shows how to use the Invoke-MgBetaScheduleRoleManagementDirectory Cmdlet.
-
+Invoke-MgBetaScheduleRoleManagementDirectory -DirectoryScopeId $directoryScopeIdId -AppScopeId $appScopeIdId -PrincipalId $principalIdId -RoleDefinitionId $roleDefinitionIdId
 
 ## PARAMETERS
 
@@ -511,25 +498,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagementdirectory)
 - [](https://learn.microsoft.com/graph/api/rbacapplication-rolescheduleinstances?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

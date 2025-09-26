@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchiveteam
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaArchiveTeam
 ---
@@ -14,16 +14,13 @@ title: Invoke-MgBetaArchiveTeam
 ## SYNOPSIS
 
 Archive the specified team.
-When a team is archived, users can no longer make most changes to the team.
+\nWhen a team is archived, users can no longer make most changes to the team.
 For example, users can no longer: send or like messages on any channel in the team; edit the team's name or description; nor edit other settings.
 However, membership changes to the team continue to be allowed.
 Archiving is an async operation.
 A team is archived once the async operation completes successfully, which can occur subsequent to a response from this API.
 To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgArchiveTeam](/powershell/module/Microsoft.Graph.Teams/Invoke-MgArchiveTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -79,7 +76,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Archive the specified team.
-When a team is archived, users can no longer make most changes to the team.
+\nWhen a team is archived, users can no longer make most changes to the team.
 For example, users can no longer: send or like messages on any channel in the team; edit the team's name or description; nor edit other settings.
 However, membership changes to the team continue to be allowed.
 Archiving is an async operation.
@@ -87,18 +84,9 @@ A team is archived once the async operation completes successfully, which can oc
 To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamSettings.ReadWrite.Group, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -106,10 +94,6 @@ $params = @{
 }
 
 Invoke-MgBetaArchiveTeam -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaArchiveTeam Cmdlet.
-
 
 ## PARAMETERS
 
@@ -142,7 +126,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -410,7 +394,7 @@ HelpMessage: ''
 
 ### -ShouldSetSpoSiteReadOnlyForMembers
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -518,11 +502,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsBezc4TeamsTeamIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsBezc4TeamsTeamIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ShouldSetSpoSiteReadOnlyForMembers <Boolean?>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -574,25 +558,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchiveteam)
 - [](https://learn.microsoft.com/graph/api/team-archive?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

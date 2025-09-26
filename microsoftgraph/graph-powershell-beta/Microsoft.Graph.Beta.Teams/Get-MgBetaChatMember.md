@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaChatMember
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaChatMember
 ## SYNOPSIS
 
 Retrieve a conversationMember from a chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgChatMember](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,26 +55,13 @@ This cmdlet has the following aliases,
 
 Retrieve a conversationMember from a chat.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ReadBasic, ChatMember.ReadWrite, Chat.ReadWrite, ChatMember.Read, ChannelMember.Read.All, ChannelMember.ReadWrite, Chat.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMember.Read.All, Chat.Manage.Chat, TeamMember.Read.Group, ChatMember.Read.Chat, Chat.ReadWrite.All, ChatMember.ReadWrite.All, Chat.Read.All, ChannelMember.ReadWrite.All, Chat.ReadBasic.All, ChannelMember.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaChatMember -ChatId $chatId -ConversationMemberId $conversationMemberId
-
-```
-This example shows how to use the Get-MgBetaChatMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -566,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -618,25 +602,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmember)
 - [](https://learn.microsoft.com/graph/api/chat-get-members?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

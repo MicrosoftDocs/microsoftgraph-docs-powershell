@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsession
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgVirtualEventWebinarSession
 ---
@@ -14,10 +14,7 @@ title: Get-MgVirtualEventWebinarSession
 ## SYNOPSIS
 
 Read the properties and relationships of a virtualEventSession object.
-Currently, the following virtual event types are supported: - virtualEventTownhall- virtualEventWebinar
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarSession?view=graph-powershell-beta)
+Currently, the following virtual event types are supported: \n- virtualEventTownhall\n- virtualEventWebinar
 
 ## SYNTAX
 
@@ -59,20 +56,15 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Read the properties and relationships of a virtualEventSession object.
-Currently, the following virtual event types are supported: - virtualEventTownhall- virtualEventWebinar
+Currently, the following virtual event types are supported: \n- virtualEventTownhall\n- virtualEventWebinar
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgVirtualEventWebinarSession -VirtualEventWebinarId $virtualEventWebinarId
-
-```
-This example shows how to use the Get-MgVirtualEventWebinarSession Cmdlet.
-
 
 ## PARAMETERS
 
@@ -561,7 +553,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -588,25 +580,3 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsession)
 - [](https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/virtualevent-list-sessions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

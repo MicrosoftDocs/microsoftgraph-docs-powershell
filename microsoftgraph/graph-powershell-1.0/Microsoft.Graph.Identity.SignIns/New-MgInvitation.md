@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginvitation
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgInvitation
 ---
@@ -17,9 +17,6 @@ Use this API to create a new invitation or reset the redemption status for a gue
 The invitation adds the external user to the organization as part of B2B collaboration.
 B2B collaboration is supported in both Microsoft Entra External ID in workforce and external tenants.
 When creating a new invitation, you have several options available:
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInvitation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,50 +56,25 @@ The invitation adds the external user to the organization as part of B2B collabo
 B2B collaboration is supported in both Microsoft Entra External ID in workforce and external tenants.
 When creating a new invitation, you have several options available:
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Invite a user and send default invitation email
-```powershell
-PS C:\> New-MgInvitation -InvitedUserDisplayName "John Doe" -InvitedUserEmailAddress John@contoso.com -InviteRedirectUrl "https://myapplications.microsoft.com" -SendInvitationMessage:$true
+
+### EXAMPLE 1
+
+New-MgInvitation -InvitedUserDisplayName "John Doe" -InvitedUserEmailAddress John@contoso.com -InviteRedirectUrl "https://myapplications.microsoft.com" -SendInvitationMessage:$true
 
 Id                                   InviteRedeemUrl                                                                                                   
 --                                   ---------------                                                                                                   
 e4247160-a778-428a-8218-bcaf717870dd https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d094a...
-```
 
-Invite a guest user with the following:
-- Display name is John Doe
-- Invited email is John@contoso.com
-- Once the user redeems the invitation, the user will be redirected to https://myapplications.microsoft.com
-- The standard invitation email will be sent to the specified email
+### EXAMPLE 2
 
-### Example 2: Invite a user and set usertype to member
-```powershell
-PS C:\> New-MgInvitation -InvitedUserDisplayName "John Doe" -InvitedUserEmailAddress John@contoso.com -InviteRedirectUrl "https://myapplications.microsoft.com" -InvitedUserType Member
+New-MgInvitation -InvitedUserDisplayName "John Doe" -InvitedUserEmailAddress John@contoso.com -InviteRedirectUrl "https://myapplications.microsoft.com" -InvitedUserType Member
 
 Id                                   InviteRedeemUrl                                                                                                   
 --                                   ---------------                                                                                                   
 2fe815c1-aecc-4f66-b1d0-952a60df2409 https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d094a...
 
-```
-
-Invite a guest user with the following:
-- Display name is John Doe
-- Invited email is John@contoso.com
-- Once the user redeems the invitation, the user will be redirected to https://myapplications.microsoft.com
-- The usertype will be set to Member
-- SendInvitationMessage is not specified so by default an invitation email will NOT be sent 
-
-### Example 2: Send CC email for a new invited user.
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -118,8 +90,6 @@ $InvitedUserMessageInfo = @{
 }
 
 New-MgInvitation -InvitedUserDisplayName "User" -InvitedUserEmailAddress "user@logonaddress.com" -InviteRedirectUrl "https://myapplications.microsoft.com" -InvitedUserMessageInfo $InvitedUserMessageInfo -SendInvitationMessage -Debug
-```
-This example will send cc email to a new invited user
 
 ## PARAMETERS
 
@@ -677,7 +647,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphInvitation>`: invitation
+BODYPARAMETER <IMicrosoftGraphInvitation>: invitation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1501,7 +1471,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -5706,8 +5676,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -5744,7 +5714,7 @@ The default is false.
   [Status <String>]: The status of the invitation.
 Possible values are: PendingAcceptance, Completed, InProgress, and Error.
 
-INVITEDUSER `<IMicrosoftGraphUser>`: Represents a Microsoft Entra user account.
+INVITEDUSER <IMicrosoftGraphUser>: Represents a Microsoft Entra user account.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -6560,7 +6530,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -10765,8 +10735,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -10776,7 +10746,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for members and guests, see What are the default user permissions in Microsoft Entra ID?
 
-INVITEDUSERMESSAGEINFO `<IMicrosoftGraphInvitedUserMessageInfo>`: invitedUserMessageInfo
+INVITEDUSERMESSAGEINFO <IMicrosoftGraphInvitedUserMessageInfo>: invitedUserMessageInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CcRecipients <IMicrosoftGraphRecipient[]>]: Additional recipients the invitation message should be sent to.
 Currently only one additional recipient is supported.
@@ -10803,25 +10773,3 @@ Always null when the object hasn't been deleted.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginvitation)
 - [](https://learn.microsoft.com/graph/api/invitation-post?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

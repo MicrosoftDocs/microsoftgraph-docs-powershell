@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermail
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Actions
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Send-MgUserMail
 ---
@@ -18,9 +18,6 @@ When using JSON format, you can include a file attachment in the same sendMail a
 When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaUserMail](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserMail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -81,18 +78,9 @@ When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.Send,  |
-| Delegated (personal Microsoft account) | Mail.Send,  |
-| Application | Mail.Send,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users.Actions
 
@@ -124,12 +112,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgUserMail -UserId $userId -BodyParameter $params
 
-```
-This example shows how to use the Send-MgUserMail Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Users.Actions
 
@@ -163,12 +146,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgUserMail -UserId $userId -BodyParameter $params
 
-```
-This example shows how to use the Send-MgUserMail Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Users.Actions
 
@@ -199,10 +177,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Send-MgUserMail -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Send-MgUserMail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -235,7 +209,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -531,7 +505,7 @@ HelpMessage: ''
 
 ### -SaveToSentItems
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -639,7 +613,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Message <IMicrosoftGraphMessage>]: message
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -738,10 +712,10 @@ If ispopout is set to 0, the browser shows the message in the Outlook on the web
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
   [SaveToSentItems <Boolean?>]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
-MESSAGE `<IMicrosoftGraphMessage>`: message
+MESSAGE <IMicrosoftGraphMessage>: message
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item
   [ChangeKey <String>]: Identifies the version of the item.
@@ -842,25 +816,3 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermail)
 - [](https://learn.microsoft.com/graph/api/user-sendmail?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

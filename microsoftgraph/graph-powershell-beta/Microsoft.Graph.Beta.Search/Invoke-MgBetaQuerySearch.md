@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaQuerySearch
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaQuerySearch
 
 Run a specified search query.
 Search results are provided in the response.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgQuerySearch](/powershell/module/Microsoft.Graph.Search/Invoke-MgQuerySearch?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,18 +49,9 @@ This cmdlet has the following aliases,
 Run a specified search query.
 Search results are provided in the response.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.Read, Sites.Read.All, QnA.Read.All, Files.Read.All, ExternalItem.Read.All, Chat.Read, Calendars.Read, Bookmark.Read.All, Acronym.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Files.Read.All, Sites.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -92,10 +80,6 @@ $params = @{
 
 Invoke-MgBetaQuerySearch -BodyParameter $params
 
-```
-This example shows how to use the Invoke-MgBetaQuerySearch Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -121,7 +105,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -312,7 +296,7 @@ HelpMessage: ''
 
 ### -Requests
 
-
+.
 To construct, see NOTES section for REQUESTS properties and create a hash table.
 
 ```yaml
@@ -406,7 +390,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Requests <IMicrosoftGraphSearchRequest[]>]: 
     [AggregationFilters <String[]>]: Contains one or more filters to obtain search results aggregated and filtered to a specific value of a field.
@@ -621,25 +605,3 @@ Optional.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch)
 - [](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

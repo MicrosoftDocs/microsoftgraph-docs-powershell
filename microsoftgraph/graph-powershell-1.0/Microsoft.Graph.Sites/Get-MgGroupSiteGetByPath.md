@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypath
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 09/12/2025
+ms.date: 09/26/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSiteGetByPath
 ---
@@ -14,9 +14,6 @@ title: Get-MgGroupSiteGetByPath
 ## SYNOPSIS
 
 The collection of lists under this site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPath](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPath?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,6 +37,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The collection of lists under this site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -515,26 +522,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypath)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
