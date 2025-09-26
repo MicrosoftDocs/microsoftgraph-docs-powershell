@@ -57,16 +57,6 @@ This cmdlet has the following aliases,
 
 Details of practiced Reading Coach passages.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -554,6 +544,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationreportreadingcoachpassage)
 - [](https://learn.microsoft.com/graph/api/reportsroot-list-readingcoachpassages?view=graph-rest-beta)
+
 
 
 

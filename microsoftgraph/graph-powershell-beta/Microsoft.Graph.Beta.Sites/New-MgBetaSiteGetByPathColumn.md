@@ -95,16 +95,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to columns for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1936,6 +1926,7 @@ For examples, see Examples of common formulas in lists
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitegetbypathcolumn)
+
 
 
 

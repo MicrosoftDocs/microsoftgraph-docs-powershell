@@ -76,16 +76,6 @@ Update the properties of a tlsInspectionRule object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -563,6 +553,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesstlinspectionpolicyrule)
 - [](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionrule-update?view=graph-rest-beta)
+
 
 
 

@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 Represents the summary of password resets and changes for a specific day.
 This includes the number of password resets that were self-service and those triggered by an administrator.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -587,6 +577,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethoduserpasswordresetandchangesummary)
 - [](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-userpasswordresetsandchangessummary?view=graph-rest-beta)
+
 
 
 

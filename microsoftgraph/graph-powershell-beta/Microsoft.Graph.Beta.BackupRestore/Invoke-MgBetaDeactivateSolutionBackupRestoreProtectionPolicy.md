@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Deactivate a protectionPolicyBase.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -381,6 +371,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetadeactivatesolutionbackuprestoreprotectionpolicy)
 - [](https://learn.microsoft.com/graph/api/protectionpolicybase-deactivate?view=graph-rest-beta)
+
 
 
 

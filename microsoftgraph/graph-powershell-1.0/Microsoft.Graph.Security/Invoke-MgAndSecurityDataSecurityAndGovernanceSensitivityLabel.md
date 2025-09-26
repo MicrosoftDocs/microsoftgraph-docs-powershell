@@ -59,16 +59,6 @@ Computes the rights and inheritance for sensitivity labels based on the input co
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SensitivityLabel.Evaluate.All, SensitivityLabel.Evaluate,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -462,6 +452,7 @@ PROTECTEDCONTENTS <IMicrosoftGraphProtectedContent[]>: .
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgandsecuritydatasecurityandgovernancesensitivitylabel)
 - [](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-1.0)
+
 
 
 

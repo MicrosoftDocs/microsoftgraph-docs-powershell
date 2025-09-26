@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Get a list of the authentication methods and their corresponding number of successful and unsuccessful  registration and reset activities as defined in the userRegistrationActivity object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -532,6 +522,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetauserreportauthenticationmethodregistrationactivity)
 - [](https://learn.microsoft.com/graph/api/authenticationmethodsroot-userregistrationactivity?view=graph-rest-beta)
+
 
 
 
