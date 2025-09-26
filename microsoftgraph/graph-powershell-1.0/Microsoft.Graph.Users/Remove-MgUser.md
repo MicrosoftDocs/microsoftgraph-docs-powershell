@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Deletes a user.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.DeleteRestore.All, User.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.DeleteRestore.All, User.ReadWrite.CrossCloud, User.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

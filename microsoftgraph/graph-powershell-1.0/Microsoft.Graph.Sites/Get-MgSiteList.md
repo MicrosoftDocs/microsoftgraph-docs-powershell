@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 Get a list of rich long-running operations associated with a list.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.Read.All, Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

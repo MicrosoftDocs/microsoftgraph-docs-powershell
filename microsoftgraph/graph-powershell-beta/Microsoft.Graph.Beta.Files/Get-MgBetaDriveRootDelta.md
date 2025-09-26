@@ -76,6 +76,14 @@ After you finish receiving all the changes, you may apply them to your local st
 Deleted items are returned with the deleted facet.Items with this property set should be removed from your local state.
 Note: you should only delete a folder locally if it's empty after syncing all the changes.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Files.Read, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
+| Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
