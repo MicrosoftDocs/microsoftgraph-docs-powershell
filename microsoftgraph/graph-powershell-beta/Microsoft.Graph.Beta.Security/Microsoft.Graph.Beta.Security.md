@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Security
-Module Guid: 548f1ce5-91c0-4291-8eba-786237d99de3
+Module Guid: f1b0a7aa-ca9b-4ac9-8c6d-7de578f79b35
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.security/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Mail
-Module Guid: b48fef29-d8e4-4cc4-affe-69a7a2ec7455
+Module Guid: be4ce732-16c4-43cd-8a1b-9bb86afced68
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.mail/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
