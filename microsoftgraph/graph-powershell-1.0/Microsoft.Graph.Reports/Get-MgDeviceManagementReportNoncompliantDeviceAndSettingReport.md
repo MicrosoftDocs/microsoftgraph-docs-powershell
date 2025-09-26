@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport
 
 Not yet documented
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

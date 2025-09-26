@@ -15,6 +15,9 @@ title: Get-MgBetaServicePrincipal
 
 Retrieve the properties and relationships of a servicePrincipal object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

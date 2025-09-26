@@ -15,6 +15,9 @@ title: Remove-MgUserByUserPrincipalName
 
 Deletes a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserByUserPrincipalName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

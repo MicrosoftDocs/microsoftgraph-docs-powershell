@@ -15,6 +15,9 @@ title: Update-MgBetaAgreementAcceptance
 
 Update the navigation property acceptances in agreements
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAgreementAcceptance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementVppToken
 
 Read properties and relationships of the vppToken object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

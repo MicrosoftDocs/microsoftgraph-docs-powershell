@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary
 
 Read properties and relationships of the deviceCompliancePolicyDeviceStateSummary object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

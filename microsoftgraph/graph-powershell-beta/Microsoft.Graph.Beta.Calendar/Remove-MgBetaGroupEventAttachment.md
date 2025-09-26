@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupEventAttachment
 
 Delete navigation property attachments for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupEventAttachment](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEventAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

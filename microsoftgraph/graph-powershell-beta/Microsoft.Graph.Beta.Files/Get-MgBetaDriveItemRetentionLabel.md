@@ -16,6 +16,9 @@ title: Get-MgBetaDriveItemRetentionLabel
 Information about retention label and settings enforced on the driveItem.
 Read-write.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemRetentionLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

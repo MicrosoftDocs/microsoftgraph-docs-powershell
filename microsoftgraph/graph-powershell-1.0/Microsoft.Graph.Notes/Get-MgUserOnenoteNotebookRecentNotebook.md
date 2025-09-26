@@ -15,6 +15,9 @@ title: Get-MgUserOnenoteNotebookRecentNotebook
 
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteNotebookRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteNotebookRecentNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

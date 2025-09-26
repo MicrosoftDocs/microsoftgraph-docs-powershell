@@ -15,6 +15,9 @@ title: Get-MgBookingBusinessCustomQuestionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessCustomQuestionCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCustomQuestionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMobileAppConfiguration
 
 Read properties and relationships of the managedDeviceMobileAppConfiguration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

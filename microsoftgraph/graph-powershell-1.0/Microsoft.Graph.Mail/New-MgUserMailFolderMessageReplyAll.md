@@ -20,6 +20,9 @@ When using MIME format:- Provide the applicable Internet message headers and the
 Send the draft message in a subsequent operation.
 Alternatively, reply-all to a message in a single action.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessageReplyAll](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessageReplyAll?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)

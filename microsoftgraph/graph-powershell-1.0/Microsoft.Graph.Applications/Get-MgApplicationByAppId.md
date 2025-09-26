@@ -15,6 +15,9 @@ title: Get-MgApplicationByAppId
 
 Get the properties and relationships of an application object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationByAppId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

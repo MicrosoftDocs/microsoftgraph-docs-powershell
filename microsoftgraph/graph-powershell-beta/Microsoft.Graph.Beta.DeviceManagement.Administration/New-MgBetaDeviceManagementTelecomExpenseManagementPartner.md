@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementTelecomExpenseManagementPartner
 
 Create new navigation property to telecomExpenseManagementPartners for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

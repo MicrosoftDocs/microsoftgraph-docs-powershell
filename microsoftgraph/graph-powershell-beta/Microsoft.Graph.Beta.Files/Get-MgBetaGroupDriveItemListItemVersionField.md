@@ -15,6 +15,9 @@ title: Get-MgBetaGroupDriveItemListItemVersionField
 
 A collection of the fields and values for this version of the list item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItemListItemVersionField](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemListItemVersionField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

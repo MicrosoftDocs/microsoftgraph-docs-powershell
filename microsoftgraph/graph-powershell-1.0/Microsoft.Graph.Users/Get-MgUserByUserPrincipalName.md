@@ -15,6 +15,9 @@ title: Get-MgUserByUserPrincipalName
 
 Read properties and relationships of the user object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserByUserPrincipalName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

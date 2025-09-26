@@ -15,6 +15,9 @@ title: New-MgDeviceAppManagementVppToken
 
 Create a new vppToken object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

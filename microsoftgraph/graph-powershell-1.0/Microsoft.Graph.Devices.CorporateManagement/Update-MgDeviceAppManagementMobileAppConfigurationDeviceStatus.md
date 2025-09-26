@@ -15,6 +15,9 @@ title: Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatus
 
 Update the properties of a managedDeviceMobileAppConfigurationDeviceStatus object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementDeviceConfigurationDeviceStatus
 
 Read properties and relationships of the deviceConfigurationDeviceStatus object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

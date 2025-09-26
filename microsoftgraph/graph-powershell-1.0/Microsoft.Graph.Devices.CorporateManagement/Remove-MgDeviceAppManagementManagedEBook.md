@@ -15,6 +15,9 @@ title: Remove-MgDeviceAppManagementManagedEBook
 
 Deletes a iosVppEBook.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

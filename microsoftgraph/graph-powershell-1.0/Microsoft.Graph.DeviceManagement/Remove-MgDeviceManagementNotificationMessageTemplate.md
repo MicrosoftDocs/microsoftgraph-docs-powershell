@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementNotificationMessageTemplate
 
 Deletes a notificationMessageTemplate.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
