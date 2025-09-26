@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecord
@@ -14,7 +14,7 @@ title: Get-MgCommunicationCallRecord
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a callRecord object.
-You can get the id of a callRecord in two ways:\n* Subscribe to change notifications to the /communications/callRecords endpoint.\n* Use the callChainId property of a call.
+You can get the id of a callRecord in two ways:* Subscribe to change notifications to the /communications/callRecords endpoint.* Use the callChainId property of a call.
 The call record is available only after the associated call is completed.
 
 ## SYNTAX
@@ -46,7 +46,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve the properties and relationships of a callRecord object.
-You can get the id of a callRecord in two ways:\n* Subscribe to change notifications to the /communications/callRecords endpoint.\n* Use the callChainId property of a call.
+You can get the id of a callRecord in two ways:* Subscribe to change notifications to the /communications/callRecords endpoint.* Use the callChainId property of a call.
 The call record is available only after the associated call is completed.
 
 ## EXAMPLES
@@ -351,7 +351,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
   [CallId <String>]: The unique identifier of call
@@ -372,3 +372,25 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecord)
 - [](https://learn.microsoft.com/graph/api/callrecords-callrecord-get?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

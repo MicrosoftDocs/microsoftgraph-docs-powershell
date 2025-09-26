@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupthreadpostinreplyto
@@ -14,7 +14,7 @@ title: Invoke-MgForwardGroupThreadPostInReplyTo
 ## SYNOPSIS
 
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ## SYNTAX
 
@@ -71,7 +71,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ## EXAMPLES
 
@@ -572,7 +572,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1J2I8RdGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1J2I8RdGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Comment <String>]: 
   [ToRecipients <IMicrosoftGraphRecipient[]>]: 
@@ -581,7 +581,7 @@ BODYPARAMETER <IPaths1J2I8RdGroupsGroupIdThreadsConversationthreadIdPostsPostIdI
       [Address <String>]: The email address of the person or entity.
       [Name <String>]: The display name of the person or entity.
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -613,3 +613,25 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupthreadpostinreplyto)
 - [](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

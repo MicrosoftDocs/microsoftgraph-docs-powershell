@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplate
@@ -412,7 +412,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphPolicyTemplate>: policyTemplate
+BODYPARAMETER `<IMicrosoftGraphPolicyTemplate>`: policyTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -454,7 +454,7 @@ Read-only.
       [IsMfaAccepted <Boolean?>]: Specifies whether MFA from external Microsoft Entra organizations is trusted.
     [TemplateApplicationLevel <String>]: templateApplicationLevel
 
-MULTITENANTORGANIZATIONIDENTITYSYNCHRONIZATION <IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate>: multiTenantOrganizationIdentitySyncPolicyTemplate
+MULTITENANTORGANIZATIONIDENTITYSYNCHRONIZATION `<IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate>`: multiTenantOrganizationIdentitySyncPolicyTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -465,7 +465,7 @@ Read-only.
 false causes any current user synchronization from the source tenant to the target tenant to stop.
 This property has no impact on existing users who have already been synchronized.
 
-MULTITENANTORGANIZATIONPARTNERCONFIGURATION <IMicrosoftGraphMultiTenantOrganizationPartnerConfigurationTemplate>: multiTenantOrganizationPartnerConfigurationTemplate
+MULTITENANTORGANIZATIONPARTNERCONFIGURATION `<IMicrosoftGraphMultiTenantOrganizationPartnerConfigurationTemplate>`: multiTenantOrganizationPartnerConfigurationTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -497,3 +497,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

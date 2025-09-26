@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachattab
@@ -14,7 +14,7 @@ title: Update-MgBetaChatTab
 ## SYNOPSIS
 
 Update the properties of the specified tab in a chat.
-\nThis API can be used to configure the content of the tab.
+This API can be used to configure the content of the tab.
 
 ## SYNTAX
 
@@ -70,7 +70,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of the specified tab in a chat.
-\nThis API can be used to configure the content of the tab.
+This API can be used to configure the content of the tab.
 
 ## EXAMPLES
 
@@ -692,7 +692,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphTeamsTab>: teamsTab
+BODYPARAMETER `<IMicrosoftGraphTeamsTab>`: teamsTab
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -791,7 +791,7 @@ Because this property is deprecated, we recommend expanding teamsApp to retrieve
   [WebUrl <String>]: Deep link URL of the tab instance.
 Read only.
 
-CONFIGURATION <IMicrosoftGraphTeamsTabConfiguration>: teamsTabConfiguration
+CONFIGURATION `<IMicrosoftGraphTeamsTabConfiguration>`: teamsTabConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentUrl <String>]: Url used for rendering tab contents in Teams.
 Required.
@@ -799,7 +799,7 @@ Required.
   [RemoveUrl <String>]: Url called by Teams client when a Tab is removed using the Teams Client.
   [WebsiteUrl <String>]: Url for showing tab contents outside of Teams.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -846,7 +846,7 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-TEAMSAPP <IMicrosoftGraphTeamsApp>: teamsApp
+TEAMSAPP `<IMicrosoftGraphTeamsApp>`: teamsApp
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -931,3 +931,25 @@ Required.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachattab)
 - [](https://learn.microsoft.com/graph/api/chat-patch-tabs?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
