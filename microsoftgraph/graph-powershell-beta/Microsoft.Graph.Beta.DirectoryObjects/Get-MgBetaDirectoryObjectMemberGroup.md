@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DirectoryObjects-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectmembergroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
-ms.date: 09/12/2025
+ms.date: 09/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDirectoryObjectMemberGroup
 ---

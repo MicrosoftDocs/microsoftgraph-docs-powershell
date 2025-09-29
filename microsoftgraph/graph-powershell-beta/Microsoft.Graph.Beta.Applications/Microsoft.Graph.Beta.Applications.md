@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Applications
-Module Guid: 9688c0d0-8a4e-4dc9-89b5-afddae7ca830
+Module Guid: f593df09-0c13-4508-aa8b-09cc2e3d95d2
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.applications/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
