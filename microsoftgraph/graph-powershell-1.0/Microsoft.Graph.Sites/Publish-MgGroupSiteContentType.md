@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mggroupsitecontenttype
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Publish-MgGroupSiteContentType
 ---
@@ -448,8 +448,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mggroupsitecontenttype)
-- [](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
+- [Publish-MgGroupSiteContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mggroupsitecontenttype)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
 
 
 

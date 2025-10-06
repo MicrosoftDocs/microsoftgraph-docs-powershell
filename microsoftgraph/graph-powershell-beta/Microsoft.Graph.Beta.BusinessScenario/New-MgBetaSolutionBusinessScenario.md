@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenario
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBusinessScenario
 ---
@@ -1179,8 +1179,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenario)
-- [](https://learn.microsoft.com/graph/api/solutionsroot-post-businessscenarios?view=graph-rest-beta)
+- [New-MgBetaSolutionBusinessScenario](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenario)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/solutionsroot-post-businessscenarios?view=graph-rest-beta)
 
 
 

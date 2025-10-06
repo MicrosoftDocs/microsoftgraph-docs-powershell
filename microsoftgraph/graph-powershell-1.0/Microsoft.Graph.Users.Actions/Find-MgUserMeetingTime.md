@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermeetingtime
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Actions
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Find-MgUserMeetingTime
 ---
@@ -832,8 +832,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermeetingtime)
-- [](https://learn.microsoft.com/graph/api/user-findmeetingtimes?view=graph-rest-1.0)
+- [Find-MgUserMeetingTime](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermeetingtime)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-findmeetingtimes?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcalloperation
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgCommunicationCallOperation
 ---
@@ -576,7 +576,7 @@ RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcalloperation)
+- [New-MgCommunicationCallOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcalloperation)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalAppRoleAssignment
 ---
@@ -645,9 +645,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignment)
-- [](https://learn.microsoft.com/graph/api/approleassignment-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-list-approleassignments?view=graph-rest-beta)
+- [Get-MgBetaServicePrincipalAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/approleassignment-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-list-approleassignments?view=graph-rest-beta)
 
 
 

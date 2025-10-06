@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessalert
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaNetworkAccessAlert
 ---
@@ -54,6 +54,19 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get alerts from networkAccess
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+Get-MgBetaNetworkAccessAlert
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessAlert Cmdlet.
+
 
 ## PARAMETERS
 
@@ -543,9 +556,8 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessalert)
-- [](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-list-alerts?view=graph-rest-beta)
-
+- [Get-MgBetaNetworkAccessAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessalert)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-list-alerts?view=graph-rest-beta)
 
 
 

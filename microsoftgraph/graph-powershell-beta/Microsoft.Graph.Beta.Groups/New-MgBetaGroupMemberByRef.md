@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupmemberbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupMemberByRef
 ---
@@ -531,8 +531,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupmemberbyref)
-- [](https://learn.microsoft.com/graph/api/group-post-members?view=graph-rest-beta)
+- [New-MgBetaGroupMemberByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupmemberbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-members?view=graph-rest-beta)
 
 
 

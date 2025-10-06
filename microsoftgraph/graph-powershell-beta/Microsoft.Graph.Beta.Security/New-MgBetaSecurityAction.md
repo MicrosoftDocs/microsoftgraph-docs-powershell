@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityAction
 ---
@@ -782,8 +782,8 @@ Required
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction)
-- [](https://learn.microsoft.com/graph/api/securityactions-post?view=graph-rest-beta)
+- [New-MgBetaSecurityAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/securityactions-post?view=graph-rest-beta)
 
 
 

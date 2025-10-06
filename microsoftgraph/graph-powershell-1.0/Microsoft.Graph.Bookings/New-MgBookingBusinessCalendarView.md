@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscalendarview
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBookingBusinessCalendarView
 ---
@@ -1474,7 +1474,7 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscalendarview)
+- [New-MgBookingBusinessCalendarView](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscalendarview)
 
 
 

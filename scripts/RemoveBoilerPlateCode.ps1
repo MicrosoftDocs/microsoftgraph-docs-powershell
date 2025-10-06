@@ -3,7 +3,8 @@
 Param(
     $ModulesToGenerate = @(),
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
-    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph")
+    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
+    [string] $AuthLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Authentication")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -17,7 +18,16 @@ function Start-Repair {
     Param(
         $ModulesToGenerate = @()
     )
-
+    
+    #Cleanup Authentication Module first
+    $files = Get-ChildItem -Path $AuthLoadDocsPath -Filter *.md -Recurse
+    foreach ($file in $files) {
+        $content = Get-Content -Path $file.FullName
+        # Remove lines that contain '{{ Fill in the Description }}' or '### This' or '### *' or '### have' or '### certain' or '### the'
+        $cleanedContent = $content | Where-Object { $_ -notmatch '^\s*{{ Fill in the Description }}|^\s*### This|^\s*### \*|^\s*### have|^\s*### certain|^\s*### the' }
+        # Write the cleaned content back to the file
+        $cleanedContent | Set-Content -Path $file.FullName
+    }
     $ModulePrefix = "Microsoft.Graph"
     $GraphMapping = Get-GraphMapping 
     $GraphMapping.Keys | ForEach-Object {

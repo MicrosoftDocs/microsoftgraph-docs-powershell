@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyAuthorizationPolicy
 ---
@@ -774,8 +774,8 @@ An empty list indicates user consent to apps is disabled.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy)
-- [](https://learn.microsoft.com/graph/api/authorizationpolicy-update?view=graph-rest-1.0)
+- [Update-MgPolicyAuthorizationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authorizationpolicy-update?view=graph-rest-1.0)
 
 
 

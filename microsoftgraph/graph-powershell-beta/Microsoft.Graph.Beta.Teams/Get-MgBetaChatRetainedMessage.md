@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatretainedmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaChatRetainedMessage
 ---
@@ -415,8 +415,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatretainedmessage)
-- [](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-beta)
+- [Get-MgBetaChatRetainedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatretainedmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-beta)
 
 
 

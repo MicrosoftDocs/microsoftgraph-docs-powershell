@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicatormultiple
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityTiIndicatorMultiple
 ---
@@ -574,8 +574,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicatormultiple)
-- [](https://learn.microsoft.com/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta)
+- [Update-MgBetaSecurityTiIndicatorMultiple](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicatormultiple)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyrolemanagementpolicyeffectiverule
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyRoleManagementPolicyEffectiveRule
 ---
@@ -620,7 +620,7 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyrolemanagementpolicyeffectiverule)
+- [Update-MgPolicyRoleManagementPolicyEffectiveRule](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyrolemanagementpolicyeffectiverule)
 
 
 

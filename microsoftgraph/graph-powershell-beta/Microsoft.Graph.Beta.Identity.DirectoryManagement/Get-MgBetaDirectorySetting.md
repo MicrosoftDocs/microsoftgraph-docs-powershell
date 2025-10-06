@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDirectorySetting
 ---
@@ -595,9 +595,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysetting)
-- [](https://learn.microsoft.com/graph/api/directorysetting-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-beta)
+- [Get-MgBetaDirectorySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directorysetting-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaReplyGroupConversationThread
 ---
@@ -753,8 +753,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread)
-- [](https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-beta)
+- [Invoke-MgBetaReplyGroupConversationThread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-beta)
 
 
 

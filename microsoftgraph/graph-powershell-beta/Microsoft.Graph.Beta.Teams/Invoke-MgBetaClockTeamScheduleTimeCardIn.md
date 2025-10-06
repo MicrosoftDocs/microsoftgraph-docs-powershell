@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardin
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaClockTeamScheduleTimeCardIn
 ---
@@ -651,8 +651,8 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardin)
-- [](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-beta)
+- [Invoke-MgBetaClockTeamScheduleTimeCardIn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardin)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-beta)
 
 
 

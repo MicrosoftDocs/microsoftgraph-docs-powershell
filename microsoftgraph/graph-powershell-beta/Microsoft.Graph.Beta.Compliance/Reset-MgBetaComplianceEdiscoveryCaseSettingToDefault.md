@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/reset-mgbetacomplianceediscoverycasesettingtodefault
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault
 ---
@@ -399,8 +399,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/reset-mgbetacomplianceediscoverycasesettingtodefault)
-- [](https://learn.microsoft.com/graph/api/ediscovery-casesettings-resettodefault?view=graph-rest-beta)
+- [Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/reset-mgbetacomplianceediscoverycasesettingtodefault)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-casesettings-resettodefault?view=graph-rest-beta)
 
 
 

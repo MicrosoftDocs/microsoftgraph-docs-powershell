@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteListItem
 ---
@@ -653,9 +653,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem)
-- [](https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-1.0)
+- [Get-MgSiteListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschool
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgEducationSchool
 ---
@@ -412,8 +412,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschool)
-- [](https://learn.microsoft.com/graph/api/educationschool-delete?view=graph-rest-1.0)
+- [Remove-MgEducationSchool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschool)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationschool-delete?view=graph-rest-1.0)
 
 
 

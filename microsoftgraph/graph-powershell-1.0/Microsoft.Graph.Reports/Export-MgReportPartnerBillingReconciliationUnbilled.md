@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationunbilled
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Export-MgReportPartnerBillingReconciliationUnbilled
 ---
@@ -49,6 +49,25 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Export the unbilled invoice reconciliation data for a specific billing period and a given currency.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+$params = @{
+	attributeSet = "full"
+	billingPeriod = "current"
+	currencyCode = "USD"
+}
+
+Export-MgReportPartnerBillingReconciliationUnbilled -BodyParameter $params
+
+```
+This example shows how to use the Export-MgReportPartnerBillingReconciliationUnbilled Cmdlet.
+
 
 ## PARAMETERS
 
@@ -410,9 +429,8 @@ BODYPARAMETER `<IPathsFucohkReportsPartnersBillingReconciliationUnbilledMicrosof
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationunbilled)
-- [](https://learn.microsoft.com/graph/api/partners-billing-unbilledreconciliation-export?view=graph-rest-1.0)
-
+- [Export-MgReportPartnerBillingReconciliationUnbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationunbilled)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/partners-billing-unbilledreconciliation-export?view=graph-rest-1.0)
 
 
 

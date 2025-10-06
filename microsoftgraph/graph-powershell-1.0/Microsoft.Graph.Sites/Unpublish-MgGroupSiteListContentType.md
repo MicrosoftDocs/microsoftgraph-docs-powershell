@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mggroupsitelistcontenttype
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Unpublish-MgGroupSiteListContentType
 ---
@@ -469,8 +469,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mggroupsitelistcontenttype)
-- [](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
+- [Unpublish-MgGroupSiteListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mggroupsitelistcontenttype)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
 
 
 

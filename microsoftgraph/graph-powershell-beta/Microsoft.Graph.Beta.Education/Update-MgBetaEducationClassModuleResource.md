@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassmoduleresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaEducationClassModuleResource
 ---
@@ -631,8 +631,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassmoduleresource)
-- [](https://learn.microsoft.com/graph/api/educationmoduleresource-update?view=graph-rest-beta)
+- [Update-MgBetaEducationClassModuleResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassmoduleresource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmoduleresource-update?view=graph-rest-beta)
 
 
 

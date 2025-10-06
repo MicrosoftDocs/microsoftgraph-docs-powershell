@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingshiftpreference
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserSettingShiftPreference
 ---
@@ -382,8 +382,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingshiftpreference)
-- [](https://learn.microsoft.com/graph/api/shiftpreferences-get?view=graph-rest-1.0)
+- [Get-MgUserSettingShiftPreference](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingshiftpreference)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/shiftpreferences-get?view=graph-rest-1.0)
 
 
 

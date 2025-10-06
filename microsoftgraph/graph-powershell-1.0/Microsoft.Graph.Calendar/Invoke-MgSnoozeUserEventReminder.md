@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgsnoozeusereventreminder
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgSnoozeUserEventReminder
 ---
@@ -567,8 +567,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgsnoozeusereventreminder)
-- [](https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-1.0)
+- [Invoke-MgSnoozeUserEventReminder](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgsnoozeusereventreminder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-1.0)
 
 
 

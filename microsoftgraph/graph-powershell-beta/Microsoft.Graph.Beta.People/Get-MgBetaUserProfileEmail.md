@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileemail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserProfileEmail
 ---
@@ -590,8 +590,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileemail)
-- [](https://learn.microsoft.com/graph/api/itememail-get?view=graph-rest-beta)
+- [Get-MgBetaUserProfileEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileemail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/itememail-get?view=graph-rest-beta)
 
 
 

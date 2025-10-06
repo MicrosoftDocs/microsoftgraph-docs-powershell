@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamtag
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgTeamTag
 ---
@@ -461,8 +461,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamtag)
-- [](https://learn.microsoft.com/graph/api/teamworktag-delete?view=graph-rest-1.0)
+- [Remove-MgTeamTag](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamtag)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworktag-delete?view=graph-rest-1.0)
 
 
 

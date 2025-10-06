@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykey
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaInformationProtectionBitlockerRecoveryKey
 ---
@@ -647,9 +647,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykey)
-- [](https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-beta)
+- [Get-MgBetaInformationProtectionBitlockerRecoveryKey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykey)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-beta)
 
 
 

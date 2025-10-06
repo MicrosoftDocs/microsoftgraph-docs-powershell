@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackage
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgEntitlementManagementAccessPackage
 ---
@@ -32265,8 +32265,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackage)
-- [](https://learn.microsoft.com/graph/api/accesspackage-update?view=graph-rest-1.0)
+- [Update-MgEntitlementManagementAccessPackage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackage-update?view=graph-rest-1.0)
 
 
 

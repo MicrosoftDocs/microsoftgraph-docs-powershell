@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsight
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserInsight
 ---
@@ -695,7 +695,7 @@ See the section Type property values for supported types.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsight)
+- [Update-MgUserInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsight)
 
 
 

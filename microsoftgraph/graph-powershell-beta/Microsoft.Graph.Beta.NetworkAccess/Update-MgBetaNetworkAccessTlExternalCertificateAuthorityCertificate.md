@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesstlexternalcertificateauthoritycertificate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate
 ---
@@ -753,8 +753,8 @@ VALIDITY `<IMicrosoftGraphNetworkaccessValidityDate>`: validityDate
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesstlexternalcertificateauthoritycertificate)
-- [](https://learn.microsoft.com/graph/api/networkaccess-externalcertificateauthoritycertificate-update?view=graph-rest-beta)
+- [Update-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesstlexternalcertificateauthoritycertificate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-externalcertificateauthoritycertificate-update?view=graph-rest-beta)
 
 
 

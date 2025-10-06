@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/search-mgdriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Search-MgDriveItem
 ---
@@ -550,8 +550,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/search-mgdriveitem)
-- [](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-1.0)
+- [Search-MgDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/search-mgdriveitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-1.0)
 
 
 

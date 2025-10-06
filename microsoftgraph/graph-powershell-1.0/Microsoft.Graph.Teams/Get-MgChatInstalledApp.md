@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatinstalledapp
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgChatInstalledApp
 ---
@@ -618,9 +618,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatinstalledapp)
-- [](https://learn.microsoft.com/graph/api/chat-get-installedapps?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/chat-list-installedapps?view=graph-rest-1.0)
+- [Get-MgChatInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatinstalledapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-get-installedapps?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-list-installedapps?view=graph-rest-1.0)
 
 
 

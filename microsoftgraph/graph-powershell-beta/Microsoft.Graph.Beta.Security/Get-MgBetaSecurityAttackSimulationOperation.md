@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityAttackSimulationOperation
 ---
@@ -643,8 +643,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationoperation)
-- [](https://learn.microsoft.com/graph/api/attacksimulationoperation-get?view=graph-rest-beta)
+- [Get-MgBetaSecurityAttackSimulationOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationoperation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/attacksimulationoperation-get?view=graph-rest-beta)
 
 
 

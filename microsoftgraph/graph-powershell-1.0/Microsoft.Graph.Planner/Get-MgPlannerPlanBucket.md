@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplanbucket
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlannerPlanBucket
 ---
@@ -492,8 +492,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplanbucket)
-- [](https://learn.microsoft.com/graph/api/plannerplan-list-buckets?view=graph-rest-1.0)
+- [Get-MgPlannerPlanBucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplanbucket)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-list-buckets?view=graph-rest-1.0)
 
 
 

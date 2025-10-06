@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasetag
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityCaseEdiscoveryCaseTag
 ---
@@ -847,8 +847,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasetag)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-tags?view=graph-rest-1.0)
+- [New-MgSecurityCaseEdiscoveryCaseTag](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasetag)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-tags?view=graph-rest-1.0)
 
 
 

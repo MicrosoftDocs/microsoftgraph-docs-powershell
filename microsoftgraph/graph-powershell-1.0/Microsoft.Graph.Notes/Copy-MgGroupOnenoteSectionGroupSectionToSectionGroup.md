@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/copy-mggrouponenotesectiongroupsectiontosectiongroup
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Copy-MgGroupOnenoteSectionGroupSectionToSectionGroup
 ---
@@ -647,8 +647,8 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/copy-mggrouponenotesectiongroupsectiontosectiongroup)
-- [](https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-1.0)
+- [Copy-MgGroupOnenoteSectionGroupSectionToSectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/copy-mggrouponenotesectiongroupsectiontosectiongroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyusersafe
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgBetaRiskyUserSafe
 ---
@@ -418,8 +418,8 @@ BODYPARAMETER `<IPaths1Kyb54HIdentityprotectionRiskyusersMicrosoftGraphConfirmsa
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyusersafe)
-- [](https://learn.microsoft.com/graph/api/riskyuser-confirmsafe?view=graph-rest-beta)
+- [Confirm-MgBetaRiskyUserSafe](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyusersafe)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyuser-confirmsafe?view=graph-rest-beta)
 
 
 

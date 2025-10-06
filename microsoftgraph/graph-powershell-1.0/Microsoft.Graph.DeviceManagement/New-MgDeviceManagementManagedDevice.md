@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevice
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementManagedDevice
 ---
@@ -11129,8 +11129,8 @@ Defaults to setting on client device.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevice)
-- [](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-create?view=graph-rest-1.0)
+- [New-MgDeviceManagementManagedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevice)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-create?view=graph-rest-1.0)
 
 
 

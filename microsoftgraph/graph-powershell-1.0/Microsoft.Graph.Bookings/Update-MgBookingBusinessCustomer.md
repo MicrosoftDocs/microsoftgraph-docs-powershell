@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomer
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBookingBusinessCustomer
 ---
@@ -533,8 +533,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomer)
-- [](https://learn.microsoft.com/graph/api/bookingcustomer-update?view=graph-rest-1.0)
+- [Update-MgBookingBusinessCustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomer)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingcustomer-update?view=graph-rest-1.0)
 
 
 

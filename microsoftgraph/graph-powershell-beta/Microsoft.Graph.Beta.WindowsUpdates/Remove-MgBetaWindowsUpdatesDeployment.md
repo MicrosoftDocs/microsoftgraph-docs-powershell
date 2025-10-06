@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesdeployment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaWindowsUpdatesDeployment
 ---
@@ -417,8 +417,8 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesdeployment)
-- [](https://learn.microsoft.com/graph/api/windowsupdates-deployment-delete?view=graph-rest-beta)
+- [Remove-MgBetaWindowsUpdatesDeployment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesdeployment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-deployment-delete?view=graph-rest-beta)
 
 
 

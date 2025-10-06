@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerplan
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgPlannerPlan
 ---
@@ -411,8 +411,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerplan)
-- [](https://learn.microsoft.com/graph/api/plannerplan-delete?view=graph-rest-1.0)
+- [Remove-MgPlannerPlan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerplan)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-delete?view=graph-rest-1.0)
 
 
 

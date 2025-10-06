@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/add-mgcommunicationcalllargegalleryview
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Add-MgCommunicationCallLargeGalleryView
 ---
@@ -504,8 +504,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/add-mgcommunicationcalllargegalleryview)
-- [](https://learn.microsoft.com/graph/api/call-addlargegalleryview?view=graph-rest-1.0)
+- [Add-MgCommunicationCallLargeGalleryView](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/add-mgcommunicationcalllargegalleryview)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-addlargegalleryview?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcreatedbyuserserviceprovisioningerrorcount
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserDriveListCreatedByUserServiceProvisioningErrorCount
 ---
@@ -385,7 +385,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcreatedbyuserserviceprovisioningerrorcount)
+- [Get-MgUserDriveListCreatedByUserServiceProvisioningErrorCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcreatedbyuserserviceprovisioningerrorcount)
 
 
 

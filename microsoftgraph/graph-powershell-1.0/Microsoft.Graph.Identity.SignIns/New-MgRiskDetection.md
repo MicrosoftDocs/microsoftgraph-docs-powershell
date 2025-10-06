@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskdetection
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgRiskDetection
 ---
@@ -858,7 +858,7 @@ This is calculated using latitude/longitude information from the sign-in activit
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskdetection)
+- [New-MgRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskdetection)
 
 
 

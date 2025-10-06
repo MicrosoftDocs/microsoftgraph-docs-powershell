@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprogramcontrol
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaProgramControl
 ---
@@ -866,9 +866,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprogramcontrol)
-- [](https://learn.microsoft.com/graph/api/programcontrol-list?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/program-listcontrols?view=graph-rest-beta)
+- [Get-MgBetaProgramControl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprogramcontrol)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/programcontrol-list?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/program-listcontrols?view=graph-rest-beta)
 
 
 

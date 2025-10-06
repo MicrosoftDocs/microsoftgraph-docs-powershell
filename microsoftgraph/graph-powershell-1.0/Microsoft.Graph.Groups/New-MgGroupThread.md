@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupThread
 ---
@@ -948,8 +948,8 @@ Returned only on $select.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread)
-- [](https://learn.microsoft.com/graph/api/group-post-threads?view=graph-rest-1.0)
+- [New-MgGroupThread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-threads?view=graph-rest-1.0)
 
 
 

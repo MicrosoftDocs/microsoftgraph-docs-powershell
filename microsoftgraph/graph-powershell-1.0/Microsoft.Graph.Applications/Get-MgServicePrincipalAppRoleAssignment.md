@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgServicePrincipalAppRoleAssignment
 ---
@@ -634,9 +634,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignment)
-- [](https://learn.microsoft.com/graph/api/approleassignment-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-list-approleassignments?view=graph-rest-1.0)
+- [Get-MgServicePrincipalAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/approleassignment-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-list-approleassignments?view=graph-rest-1.0)
 
 
 

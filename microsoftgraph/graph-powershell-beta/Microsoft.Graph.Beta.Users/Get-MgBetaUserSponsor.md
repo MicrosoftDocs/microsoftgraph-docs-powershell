@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsor
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserSponsor
 ---
@@ -595,8 +595,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsor)
-- [](https://learn.microsoft.com/graph/api/user-list-sponsors?view=graph-rest-beta)
+- [Get-MgBetaUserSponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsor)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-list-sponsors?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetasupporteduseroutlooklanguage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaSupportedUserOutlookLanguage
 ---
@@ -458,8 +458,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetasupporteduseroutlooklanguage)
-- [](https://learn.microsoft.com/graph/api/outlookuser-supportedlanguages?view=graph-rest-beta)
+- [Invoke-MgBetaSupportedUserOutlookLanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetasupporteduseroutlooklanguage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/outlookuser-supportedlanguages?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgforwardgroupevent
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgForwardGroupEvent
 ---
@@ -578,8 +578,8 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgforwardgroupevent)
-- [](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0)
+- [Invoke-MgForwardGroupEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgforwardgroupevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0)
 
 
 

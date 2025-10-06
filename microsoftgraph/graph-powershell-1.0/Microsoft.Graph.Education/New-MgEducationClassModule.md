@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmodule
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgEducationClassModule
 ---
@@ -778,8 +778,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmodule)
-- [](https://learn.microsoft.com/graph/api/educationclass-post-module?view=graph-rest-1.0)
+- [New-MgEducationClassModule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmodule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-post-module?view=graph-rest-1.0)
 
 
 

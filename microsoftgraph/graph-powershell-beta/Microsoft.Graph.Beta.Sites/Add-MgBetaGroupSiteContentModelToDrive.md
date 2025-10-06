@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetagroupsitecontentmodeltodrive
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Add-MgBetaGroupSiteContentModelToDrive
 ---
@@ -578,8 +578,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetagroupsitecontentmodeltodrive)
-- [](https://learn.microsoft.com/graph/api/contentmodel-addtodrive?view=graph-rest-beta)
+- [Add-MgBetaGroupSiteContentModelToDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetagroupsitecontentmodeltodrive)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contentmodel-addtodrive?view=graph-rest-beta)
 
 
 

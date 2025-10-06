@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelist
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgShareList
 ---
@@ -26805,7 +26805,7 @@ See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelist)
+- [Update-MgShareList](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelist)
 
 
 

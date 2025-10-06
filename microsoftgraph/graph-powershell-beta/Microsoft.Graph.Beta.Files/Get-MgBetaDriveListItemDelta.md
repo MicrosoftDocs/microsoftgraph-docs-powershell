@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitemdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDriveListItemDelta
 ---
@@ -653,8 +653,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitemdelta)
-- [](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-beta)
+- [Get-MgBetaDriveListItemDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitemdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-beta)
 
 
 

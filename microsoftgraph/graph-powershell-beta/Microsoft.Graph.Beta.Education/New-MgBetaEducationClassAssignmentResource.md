@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEducationClassAssignmentResource
 ---
@@ -815,8 +815,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentresource)
-- [](https://learn.microsoft.com/graph/api/educationassignment-post-resources?view=graph-rest-beta)
+- [New-MgBetaEducationClassAssignmentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentresource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-post-resources?view=graph-rest-beta)
 
 
 

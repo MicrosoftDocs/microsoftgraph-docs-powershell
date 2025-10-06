@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsite
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgAdminEdgeInternetExplorerModeSiteListSite
 ---
@@ -929,8 +929,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsite)
-- [](https://learn.microsoft.com/graph/api/browsersitelist-post-sites?view=graph-rest-1.0)
+- [New-MgAdminEdgeInternetExplorerModeSiteListSite](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/browsersitelist-post-sites?view=graph-rest-1.0)
 
 
 

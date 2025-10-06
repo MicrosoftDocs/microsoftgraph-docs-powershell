@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementissue
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServiceAnnouncementIssue
 ---
@@ -553,9 +553,9 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementissue)
-- [](https://learn.microsoft.com/graph/api/servicehealthissue-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/serviceannouncement-list-issues?view=graph-rest-beta)
+- [Get-MgBetaServiceAnnouncementIssue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementissue)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/servicehealthissue-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceannouncement-list-issues?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycaseoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityCaseEdiscoveryCaseOperation
 ---
@@ -641,9 +641,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycaseoperation)
-- [](https://learn.microsoft.com/graph/api/security-caseoperation-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycase-list-operations?view=graph-rest-1.0)
+- [Get-MgSecurityCaseEdiscoveryCaseOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycaseoperation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-caseoperation-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycase-list-operations?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityProvider
 ---
@@ -630,9 +630,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityprovider)
-- [](https://learn.microsoft.com/graph/api/identityproviderbase-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/identitycontainer-list-identityproviders?view=graph-rest-1.0)
+- [Get-MgIdentityProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityprovider)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityproviderbase-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-list-identityproviders?view=graph-rest-1.0)
 
 
 

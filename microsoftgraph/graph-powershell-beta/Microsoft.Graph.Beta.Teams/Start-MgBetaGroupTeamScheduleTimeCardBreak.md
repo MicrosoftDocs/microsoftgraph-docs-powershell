@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetagroupteamscheduletimecardbreak
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Start-MgBetaGroupTeamScheduleTimeCardBreak
 ---
@@ -605,8 +605,8 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetagroupteamscheduletimecardbreak)
-- [](https://learn.microsoft.com/graph/api/timecard-startbreak?view=graph-rest-beta)
+- [Start-MgBetaGroupTeamScheduleTimeCardBreak](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetagroupteamscheduletimecardbreak)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-startbreak?view=graph-rest-beta)
 
 
 

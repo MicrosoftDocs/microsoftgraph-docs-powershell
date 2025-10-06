@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaOrganization
 ---
@@ -600,9 +600,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganization)
-- [](https://learn.microsoft.com/graph/api/organization-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/organization-list?view=graph-rest-beta)
+- [Get-MgBetaOrganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganization)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/organization-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/organization-list?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail
 ---
@@ -795,8 +795,8 @@ This is full URL string, including query parameters.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail)
-- [](https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-beta)
+- [Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-beta)
 
 
 

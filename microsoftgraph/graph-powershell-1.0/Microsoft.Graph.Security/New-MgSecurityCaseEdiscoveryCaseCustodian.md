@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodian
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityCaseEdiscoveryCaseCustodian
 ---
@@ -16084,8 +16084,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodian)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-custodians?view=graph-rest-1.0)
+- [New-MgSecurityCaseEdiscoveryCaseCustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodian)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-custodians?view=graph-rest-1.0)
 
 
 

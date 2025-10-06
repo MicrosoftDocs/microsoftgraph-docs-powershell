@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSolutionBackupRestoreSession
 ---
@@ -411,8 +411,8 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoresession)
-- [](https://learn.microsoft.com/graph/api/restoresessionbase-delete?view=graph-rest-1.0)
+- [Remove-MgSolutionBackupRestoreSession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoresession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/restoresessionbase-delete?view=graph-rest-1.0)
 
 
 

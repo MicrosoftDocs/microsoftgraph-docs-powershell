@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/send-mgbetausermailfoldermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Send-MgBetaUserMailFolderMessage
 ---
@@ -422,8 +422,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/send-mgbetausermailfoldermessage)
-- [](https://learn.microsoft.com/graph/api/message-send?view=graph-rest-beta)
+- [Send-MgBetaUserMailFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/send-mgbetausermailfoldermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-send?view=graph-rest-beta)
 
 
 

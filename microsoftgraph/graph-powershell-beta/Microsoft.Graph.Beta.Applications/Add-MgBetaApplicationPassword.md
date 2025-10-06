@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Add-MgBetaApplicationPassword
 ---
@@ -615,8 +615,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword)
-- [](https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-beta)
+- [Add-MgBetaApplicationPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-beta)
 
 
 

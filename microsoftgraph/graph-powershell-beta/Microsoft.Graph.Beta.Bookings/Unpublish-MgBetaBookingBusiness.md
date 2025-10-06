@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/unpublish-mgbetabookingbusiness
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Unpublish-MgBetaBookingBusiness
 ---
@@ -434,8 +434,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/unpublish-mgbetabookingbusiness)
-- [](https://learn.microsoft.com/graph/api/bookingbusiness-unpublish?view=graph-rest-beta)
+- [Unpublish-MgBetaBookingBusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/unpublish-mgbetabookingbusiness)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-unpublish?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mggroupplanner
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupPlanner
 ---
@@ -836,7 +836,7 @@ Title of the plan.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mggroupplanner)
+- [Update-MgGroupPlanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mggroupplanner)
 
 
 

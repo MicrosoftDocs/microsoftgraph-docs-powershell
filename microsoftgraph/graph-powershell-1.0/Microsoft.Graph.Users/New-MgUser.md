@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguser
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgUser
 ---
@@ -47603,8 +47603,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguser)
-- [](https://learn.microsoft.com/graph/api/intune-onboarding-user-create?view=graph-rest-1.0)
+- [New-MgUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-onboarding-user-create?view=graph-rest-1.0)
 
 
 

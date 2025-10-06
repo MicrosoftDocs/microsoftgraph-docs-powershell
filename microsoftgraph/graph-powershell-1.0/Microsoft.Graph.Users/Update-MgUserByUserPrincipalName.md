@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserbyuserprincipalname
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserByUserPrincipalName
 ---
@@ -48552,8 +48552,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserbyuserprincipalname)
-- [](https://learn.microsoft.com/graph/api/user-update?view=graph-rest-1.0)
+- [Update-MgUserByUserPrincipalName](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserbyuserprincipalname)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-update?view=graph-rest-1.0)
 
 
 

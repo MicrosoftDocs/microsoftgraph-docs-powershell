@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmember
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationClassMember
 ---
@@ -492,8 +492,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmember)
-- [](https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-1.0)
+- [Get-MgEducationClassMember](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-1.0)
 
 
 

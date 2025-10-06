@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycase
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityCaseEdiscoveryCase
 ---
@@ -44018,8 +44018,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycase)
-- [](https://learn.microsoft.com/graph/api/security-casesroot-post-ediscoverycases?view=graph-rest-beta)
+- [New-MgBetaSecurityCaseEdiscoveryCase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycase)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-casesroot-post-ediscoverycases?view=graph-rest-beta)
 
 
 

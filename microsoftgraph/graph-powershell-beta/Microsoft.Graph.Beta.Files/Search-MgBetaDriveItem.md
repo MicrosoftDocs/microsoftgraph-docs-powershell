@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Search-MgBetaDriveItem
 ---
@@ -551,8 +551,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadriveitem)
-- [](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta)
+- [Search-MgBetaDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadriveitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta)
 
 
 

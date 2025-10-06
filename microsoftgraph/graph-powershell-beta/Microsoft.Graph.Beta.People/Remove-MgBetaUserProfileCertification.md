@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilecertification
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserProfileCertification
 ---
@@ -445,8 +445,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilecertification)
-- [](https://learn.microsoft.com/graph/api/personcertification-delete?view=graph-rest-beta)
+- [Remove-MgBetaUserProfileCertification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilecertification)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/personcertification-delete?view=graph-rest-beta)
 
 
 

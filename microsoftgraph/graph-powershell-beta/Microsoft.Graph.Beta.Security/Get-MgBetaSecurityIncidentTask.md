@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityincidenttask
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityIncidentTask
 ---
@@ -54,6 +54,19 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 A collection of tasks associated with security incidents.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityIncidentTask
+
+```
+This example shows how to use the Get-MgBetaSecurityIncidentTask Cmdlet.
+
 
 ## PARAMETERS
 
@@ -617,9 +630,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityincidenttask)
-- [](https://learn.microsoft.com/graph/api/security-list-incidenttasks?view=graph-rest-beta)
-
+- [Get-MgBetaSecurityIncidentTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityincidenttask)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-list-incidenttasks?view=graph-rest-beta)
 
 
 

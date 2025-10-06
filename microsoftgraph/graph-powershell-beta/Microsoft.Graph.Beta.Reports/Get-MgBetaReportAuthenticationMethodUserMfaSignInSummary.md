@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethodusermfasigninsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportAuthenticationMethodUserMfaSignInSummary
 ---
@@ -56,6 +56,19 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Represents the total count of MFA vs non-MFA sign-in counts for a specified period.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportAuthenticationMethodUserMfaSignInSummary
+
+```
+This example shows how to use the Get-MgBetaReportAuthenticationMethodUserMfaSignInSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -573,9 +586,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethodusermfasigninsummary)
-- [](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-usermfasigninsummary?view=graph-rest-beta)
-
+- [Get-MgBetaReportAuthenticationMethodUserMfaSignInSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethodusermfasigninsummary)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-usermfasigninsummary?view=graph-rest-beta)
 
 
 

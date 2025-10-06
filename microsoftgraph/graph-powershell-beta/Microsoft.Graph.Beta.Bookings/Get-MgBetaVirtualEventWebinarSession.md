@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaVirtualEventWebinarSession
 ---
@@ -586,9 +586,9 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsession)
-- [](https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/virtualevent-list-sessions?view=graph-rest-beta)
+- [Get-MgBetaVirtualEventWebinarSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualevent-list-sessions?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaExternalIndustryDataConnector
 ---
@@ -563,9 +563,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataconnector)
-- [](https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-list?view=graph-rest-beta)
+- [Get-MgBetaExternalIndustryDataConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataconnector)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-list?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejobdocumentuploadsession
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgPrintShareJobDocumentUploadSession
 ---
@@ -561,8 +561,8 @@ PROPERTIES `<IMicrosoftGraphPrintDocumentUploadProperties>`: printDocumentUpload
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejobdocumentuploadsession)
-- [](https://learn.microsoft.com/graph/api/printdocument-createuploadsession?view=graph-rest-1.0)
+- [New-MgPrintShareJobDocumentUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejobdocumentuploadsession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printdocument-createuploadsession?view=graph-rest-1.0)
 
 
 

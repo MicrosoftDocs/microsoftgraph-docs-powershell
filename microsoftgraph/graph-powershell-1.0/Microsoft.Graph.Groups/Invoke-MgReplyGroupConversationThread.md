@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthread
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgReplyGroupConversationThread
 ---
@@ -702,8 +702,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthread)
-- [](https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-1.0)
+- [Invoke-MgReplyGroupConversationThread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthread)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-1.0)
 
 
 

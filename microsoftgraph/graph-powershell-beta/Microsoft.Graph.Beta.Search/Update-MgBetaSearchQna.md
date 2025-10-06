@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSearchQna
 ---
@@ -987,8 +987,8 @@ When users select this answer variation from the search results, they're directe
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna)
-- [](https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-beta)
+- [Update-MgBetaSearchQna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-beta)
 
 
 

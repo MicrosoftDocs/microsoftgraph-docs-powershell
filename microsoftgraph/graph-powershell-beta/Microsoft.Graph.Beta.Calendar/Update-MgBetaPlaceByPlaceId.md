@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplacebyplaceid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlaceByPlaceId
 ---
@@ -775,8 +775,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplacebyplaceid)
-- [](https://learn.microsoft.com/graph/api/place-update?view=graph-rest-beta)
+- [Update-MgBetaPlaceByPlaceId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplacebyplaceid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/place-update?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportconfigurationsettingnoncompliancereport
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementReportConfigurationSettingNonComplianceReport
 ---
@@ -629,8 +629,8 @@ BODYPARAMETER `<IPaths19DnnqbDevicemanagementReportsMicrosoftGraphGetconfigurati
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportconfigurationsettingnoncompliancereport)
-- [](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getconfigurationsettingnoncompliancereport?view=graph-rest-1.0)
+- [Get-MgDeviceManagementReportConfigurationSettingNonComplianceReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportconfigurationsettingnoncompliancereport)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getconfigurationsettingnoncompliancereport?view=graph-rest-1.0)
 
 
 

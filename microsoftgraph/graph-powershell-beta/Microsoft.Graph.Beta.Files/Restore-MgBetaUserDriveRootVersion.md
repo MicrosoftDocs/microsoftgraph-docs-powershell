@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetauserdriverootversion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Restore-MgBetaUserDriveRootVersion
 ---
@@ -432,8 +432,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetauserdriverootversion)
-- [](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-beta)
+- [Restore-MgBetaUserDriveRootVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetauserdriverootversion)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-beta)
 
 
 

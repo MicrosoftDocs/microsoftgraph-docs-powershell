@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgmarkserviceannouncementmessageread
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgMarkServiceAnnouncementMessageRead
 ---
@@ -386,8 +386,8 @@ BODYPARAMETER `<IPaths9Q4ErzAdminServiceannouncementMessagesMicrosoftGraphMarkre
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgmarkserviceannouncementmessageread)
-- [](https://learn.microsoft.com/graph/api/serviceupdatemessage-markread?view=graph-rest-1.0)
+- [Invoke-MgMarkServiceAnnouncementMessageRead](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgmarkserviceannouncementmessageread)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceupdatemessage-markread?view=graph-rest-1.0)
 
 
 

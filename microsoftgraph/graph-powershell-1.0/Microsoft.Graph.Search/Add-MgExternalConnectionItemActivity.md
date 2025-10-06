@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/add-mgexternalconnectionitemactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Add-MgExternalConnectionItemActivity
 ---
@@ -74,6 +74,33 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Append additional instances of externalActivity objects on an externalItem.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Search
+
+$params = @{
+	activities = @(
+		@{
+			"@odata.type" = "#microsoft.graph.externalConnectors.externalActivity"
+			type = "created"
+			startDateTime = [System.DateTime]::Parse("2021-04-06T18:04:31.033Z")
+			performedBy = @{
+				type = "user"
+				id = "1f0c997e-99f7-43f1-8cca-086f8d42be8d"
+			}
+		}
+	)
+}
+
+Add-MgExternalConnectionItemActivity -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgExternalConnectionItemActivity Cmdlet.
+
 
 ## PARAMETERS
 
@@ -531,9 +558,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/add-mgexternalconnectionitemactivity)
-- [](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-addactivities?view=graph-rest-1.0)
-
+- [Add-MgExternalConnectionItemActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/add-mgexternalconnectionitemactivity)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-addactivities?view=graph-rest-1.0)
 
 
 

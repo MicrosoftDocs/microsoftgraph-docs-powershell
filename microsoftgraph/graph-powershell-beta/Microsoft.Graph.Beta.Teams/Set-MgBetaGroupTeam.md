@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteam
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaGroupTeam
 ---
@@ -69846,8 +69846,8 @@ This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteam)
-- [](https://learn.microsoft.com/graph/api/team-put-teams?view=graph-rest-beta)
+- [Set-MgBetaGroupTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteam)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-put-teams?view=graph-rest-beta)
 
 
 

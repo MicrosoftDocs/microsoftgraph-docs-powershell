@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflow
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityB2CUserFlow
 ---
@@ -634,9 +634,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflow)
-- [](https://learn.microsoft.com/graph/api/b2cidentityuserflow-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/identitycontainer-list-b2cuserflows?view=graph-rest-beta)
+- [Get-MgBetaIdentityB2CUserFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/b2cidentityuserflow-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-list-b2cuserflows?view=graph-rest-beta)
 
 
 

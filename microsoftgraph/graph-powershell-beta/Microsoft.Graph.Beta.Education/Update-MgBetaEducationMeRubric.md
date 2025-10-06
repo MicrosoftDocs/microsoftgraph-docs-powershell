@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmerubric
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaEducationMeRubric
 ---
@@ -799,8 +799,8 @@ QUALITIES <IMicrosoftGraphRubricQuality[]>: The collection of qualities making u
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmerubric)
-- [](https://learn.microsoft.com/graph/api/educationrubric-update?view=graph-rest-beta)
+- [Update-MgBetaEducationMeRubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmerubric)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationrubric-update?view=graph-rest-beta)
 
 
 

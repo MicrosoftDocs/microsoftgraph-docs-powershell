@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhall
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaVirtualEventTownhall
 ---
@@ -1532,8 +1532,8 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhall)
-- [](https://learn.microsoft.com/graph/api/virtualeventtownhall-update?view=graph-rest-beta)
+- [Update-MgBetaVirtualEventTownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhall)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventtownhall-update?view=graph-rest-beta)
 
 
 

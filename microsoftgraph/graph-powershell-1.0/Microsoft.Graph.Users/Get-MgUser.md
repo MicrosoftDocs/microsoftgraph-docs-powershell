@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgUser
 ---
@@ -678,9 +678,9 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser)
-- [](https://learn.microsoft.com/graph/api/intune-onboarding-user-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/intune-mam-user-list?view=graph-rest-1.0)
+- [Get-MgUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-onboarding-user-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-mam-user-list?view=graph-rest-1.0)
 
 
 

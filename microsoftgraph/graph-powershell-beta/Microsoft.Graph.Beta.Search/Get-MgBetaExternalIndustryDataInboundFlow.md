@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaExternalIndustryDataInboundFlow
 ---
@@ -563,9 +563,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow)
-- [](https://learn.microsoft.com/graph/api/industrydata-inboundflow-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/industrydata-inboundflow-list?view=graph-rest-beta)
+- [Get-MgBetaExternalIndustryDataInboundFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-inboundflow-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-inboundflow-list?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgBetaAuditLogSignInCompromised
 ---
@@ -422,8 +422,8 @@ BODYPARAMETER `<IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPost
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised)
-- [](https://learn.microsoft.com/graph/api/signin-confirmcompromised?view=graph-rest-beta)
+- [Confirm-MgBetaAuditLogSignInCompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-confirmcompromised?view=graph-rest-beta)
 
 
 

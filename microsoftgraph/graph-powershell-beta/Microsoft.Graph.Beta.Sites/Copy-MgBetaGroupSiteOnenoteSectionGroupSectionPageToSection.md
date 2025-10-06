@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetagroupsiteonenotesectiongroupsectionpagetosection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Copy-MgBetaGroupSiteOnenoteSectionGroupSectionPageToSection
 ---
@@ -723,8 +723,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetagroupsiteonenotesectiongroupsectionpagetosection)
-- [](https://learn.microsoft.com/graph/api/page-copytosection?view=graph-rest-beta)
+- [Copy-MgBetaGroupSiteOnenoteSectionGroupSectionPageToSection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetagroupsiteonenotesectiongroupsectionpagetosection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/page-copytosection?view=graph-rest-beta)
 
 
 

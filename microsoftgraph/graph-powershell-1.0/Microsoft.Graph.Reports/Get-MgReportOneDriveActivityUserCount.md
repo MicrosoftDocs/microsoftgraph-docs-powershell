@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityusercount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportOneDriveActivityUserCount
 ---
@@ -373,8 +373,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityusercount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-1.0)
+- [Get-MgReportOneDriveActivityUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityusercount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-1.0)
 
 
 

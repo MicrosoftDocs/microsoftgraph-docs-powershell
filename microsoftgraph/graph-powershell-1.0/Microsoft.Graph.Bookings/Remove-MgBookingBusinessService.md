@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessservice
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBookingBusinessService
 ---
@@ -432,8 +432,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessservice)
-- [](https://learn.microsoft.com/graph/api/bookingservice-delete?view=graph-rest-1.0)
+- [Remove-MgBookingBusinessService](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessservice)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingservice-delete?view=graph-rest-1.0)
 
 
 

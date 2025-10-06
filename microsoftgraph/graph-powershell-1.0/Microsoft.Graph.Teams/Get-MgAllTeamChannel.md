@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallteamchannel
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgAllTeamChannel
 ---
@@ -609,8 +609,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallteamchannel)
-- [](https://learn.microsoft.com/graph/api/team-list-allchannels?view=graph-rest-1.0)
+- [Get-MgAllTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallteamchannel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-list-allchannels?view=graph-rest-1.0)
 
 
 

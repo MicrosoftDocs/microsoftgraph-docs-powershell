@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertask
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlannerTask
 ---
@@ -1392,8 +1392,8 @@ For details about the supported format, see Using order hints in Planner.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertask)
-- [](https://learn.microsoft.com/graph/api/plannertask-update?view=graph-rest-1.0)
+- [Update-MgPlannerTask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertask)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertask-update?view=graph-rest-1.0)
 
 
 

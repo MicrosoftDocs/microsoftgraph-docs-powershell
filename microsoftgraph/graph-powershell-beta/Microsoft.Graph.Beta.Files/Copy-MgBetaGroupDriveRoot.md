@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetagroupdriveroot
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Copy-MgBetaGroupDriveRoot
 ---
@@ -667,8 +667,8 @@ For OneDrive, this property isn't populated.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetagroupdriveroot)
-- [](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)
+- [Copy-MgBetaGroupDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetagroupdriveroot)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)
 
 
 

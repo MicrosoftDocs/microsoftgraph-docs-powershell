@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationUserAssignmentDelta
 ---
@@ -555,8 +555,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentdelta)
-- [](https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-1.0)
+- [Get-MgEducationUserAssignmentDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-1.0)
 
 
 

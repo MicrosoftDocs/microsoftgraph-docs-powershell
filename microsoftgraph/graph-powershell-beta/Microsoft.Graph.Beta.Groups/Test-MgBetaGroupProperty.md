@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaGroupProperty
 ---
@@ -604,8 +604,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty)
-- [](https://learn.microsoft.com/graph/api/group-validateproperties?view=graph-rest-beta)
+- [Test-MgBetaGroupProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-validateproperties?view=graph-rest-beta)
 
 
 

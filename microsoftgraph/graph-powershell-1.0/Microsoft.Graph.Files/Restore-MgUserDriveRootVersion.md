@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mguserdriverootversion
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Restore-MgUserDriveRootVersion
 ---
@@ -431,8 +431,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mguserdriverootversion)
-- [](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-1.0)
+- [Restore-MgUserDriveRootVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mguserdriverootversion)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-1.0)
 
 
 

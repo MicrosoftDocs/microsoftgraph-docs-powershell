@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetareplyusermailfolderchildfoldermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaReplyUserMailFolderChildFolderMessage
 ---
@@ -882,8 +882,8 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetareplyusermailfolderchildfoldermessage)
-- [](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-beta)
+- [Invoke-MgBetaReplyUserMailFolderChildFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetareplyusermailfolderchildfoldermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-beta)
 
 
 

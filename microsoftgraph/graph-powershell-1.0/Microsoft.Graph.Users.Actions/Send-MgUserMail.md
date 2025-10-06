@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermail
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Actions
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Send-MgUserMail
 ---
@@ -840,8 +840,8 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermail)
-- [](https://learn.microsoft.com/graph/api/user-sendmail?view=graph-rest-1.0)
+- [Send-MgUserMail](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-sendmail?view=graph-rest-1.0)
 
 
 

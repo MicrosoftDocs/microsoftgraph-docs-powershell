@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaandgroupsiteinformationprotectionsensitivitylabelsublabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabelSublabel
 ---
@@ -700,8 +700,8 @@ PROTECTEDCONTENTS <IMicrosoftGraphProtectedContent[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaandgroupsiteinformationprotectionsensitivitylabelsublabel)
-- [](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)
+- [Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabelSublabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaandgroupsiteinformationprotectionsensitivitylabelsublabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)
 
 
 

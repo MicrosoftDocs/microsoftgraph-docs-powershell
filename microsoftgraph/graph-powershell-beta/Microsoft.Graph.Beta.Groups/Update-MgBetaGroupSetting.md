@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaGroupSetting
 ---
@@ -620,7 +620,7 @@ VALUES <IMicrosoftGraphSettingValue[]>: Collection of name-value pairs correspon
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupsetting)
+- [Update-MgBetaGroupSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupsetting)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateammigration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Complete-MgBetaTeamMigration
 ---
@@ -427,8 +427,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateammigration)
-- [](https://learn.microsoft.com/graph/api/team-completemigration?view=graph-rest-beta)
+- [Complete-MgBetaTeamMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateammigration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-completemigration?view=graph-rest-beta)
 
 
 

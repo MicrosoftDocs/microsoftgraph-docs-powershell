@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarevent
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupCalendarEvent
 ---
@@ -3074,7 +3074,7 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarevent)
+- [New-MgGroupCalendarEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarevent)
 
 
 

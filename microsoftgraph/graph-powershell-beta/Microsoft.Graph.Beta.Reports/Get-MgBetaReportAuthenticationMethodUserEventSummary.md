@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethodusereventsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportAuthenticationMethodUserEventSummary
 ---
@@ -56,6 +56,19 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Represents a specific user MFA/SSPR registration or reset event, including whether the event was successful, which authentication method was targeted, and failure reason if any.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportAuthenticationMethodUserEventSummary
+
+```
+This example shows how to use the Get-MgBetaReportAuthenticationMethodUserEventSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -573,9 +586,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethodusereventsummary)
-- [](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-usereventssummary?view=graph-rest-beta)
-
+- [Get-MgBetaReportAuthenticationMethodUserEventSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethodusereventsummary)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-usereventssummary?view=graph-rest-beta)
 
 
 

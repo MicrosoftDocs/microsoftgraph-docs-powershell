@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinitionroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementRoleDefinitionRoleAssignment
 ---
@@ -736,8 +736,8 @@ These must match the actionName that is defined as part of the rolePermission.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinitionroleassignment)
-- [](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-update?view=graph-rest-1.0)
+- [Update-MgDeviceManagementRoleDefinitionRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinitionroleassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-update?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsender
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupRejectedSender
 ---
@@ -494,8 +494,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsender)
-- [](https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-1.0)
+- [Get-MgGroupRejectedSender](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsender)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-1.0)
 
 
 

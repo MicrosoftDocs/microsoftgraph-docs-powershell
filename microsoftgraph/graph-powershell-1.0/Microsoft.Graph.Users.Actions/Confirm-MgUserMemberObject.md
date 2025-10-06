@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/confirm-mgusermemberobject
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Actions
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgUserMemberObject
 ---
@@ -493,7 +493,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/confirm-mgusermemberobject)
+- [Confirm-MgUserMemberObject](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/confirm-mgusermemberobject)
 
 
 

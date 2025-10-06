@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaExternalConnectionQuota
 ---
@@ -371,8 +371,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota)
-- [](https://learn.microsoft.com/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta)
+- [Get-MgBetaExternalConnectionQuota](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta)
 
 
 

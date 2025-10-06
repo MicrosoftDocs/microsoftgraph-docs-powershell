@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthread
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaGroupThread
 ---
@@ -1016,8 +1016,8 @@ Returned only on $select.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthread)
-- [](https://learn.microsoft.com/graph/api/group-update-thread?view=graph-rest-beta)
+- [Update-MgBetaGroupThread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthread)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-update-thread?view=graph-rest-beta)
 
 
 

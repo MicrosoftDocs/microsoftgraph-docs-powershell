@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilepublication
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserProfilePublication
 ---
@@ -1028,8 +1028,8 @@ SOURCES <IMicrosoftGraphProfileSourceAnnotation[]>: Where the values within an e
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilepublication)
-- [](https://learn.microsoft.com/graph/api/itempublication-update?view=graph-rest-beta)
+- [Update-MgBetaUserProfilePublication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilepublication)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/itempublication-update?view=graph-rest-beta)
 
 
 

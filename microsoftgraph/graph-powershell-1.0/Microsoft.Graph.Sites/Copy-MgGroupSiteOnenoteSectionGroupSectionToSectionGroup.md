@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mggroupsiteonenotesectiongroupsectiontosectiongroup
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Copy-MgGroupSiteOnenoteSectionGroupSectionToSectionGroup
 ---
@@ -707,8 +707,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mggroupsiteonenotesectiongroupsectiontosectiongroup)
-- [](https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-1.0)
+- [Copy-MgGroupSiteOnenoteSectionGroupSectionToSectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mggroupsiteonenotesectiongroupsectiontosectiongroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-1.0)
 
 
 

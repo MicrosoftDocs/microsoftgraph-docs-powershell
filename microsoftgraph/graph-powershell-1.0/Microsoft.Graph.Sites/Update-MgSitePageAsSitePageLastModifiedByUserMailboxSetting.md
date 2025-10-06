@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepageassitepagelastmodifiedbyusermailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgSitePageAsSitePageLastModifiedByUserMailboxSetting
 ---
@@ -824,7 +824,7 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepageassitepagelastmodifiedbyusermailboxsetting)
+- [Update-MgSitePageAsSitePageLastModifiedByUserMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepageassitepagelastmodifiedbyusermailboxsetting)
 
 
 

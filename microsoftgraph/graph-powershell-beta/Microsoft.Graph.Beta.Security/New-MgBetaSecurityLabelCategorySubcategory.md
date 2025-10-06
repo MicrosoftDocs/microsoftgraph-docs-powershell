@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategorysubcategory
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityLabelCategorySubcategory
 ---
@@ -672,8 +672,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategorysubcategory)
-- [](https://learn.microsoft.com/graph/api/security-categorytemplate-post-subcategories?view=graph-rest-beta)
+- [New-MgBetaSecurityLabelCategorySubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategorysubcategory)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-categorytemplate-post-subcategories?view=graph-rest-beta)
 
 
 

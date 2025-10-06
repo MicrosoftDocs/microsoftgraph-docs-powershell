@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementiosmanagedappprotectionapp
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceAppManagementiOSManagedAppProtectionApp
 ---
@@ -620,8 +620,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementiosmanagedappprotectionapp)
-- [](https://learn.microsoft.com/graph/api/intune-mam-managedmobileapp-update?view=graph-rest-1.0)
+- [Update-MgDeviceAppManagementiOSManagedAppProtectionApp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementiosmanagedappprotectionapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-mam-managedmobileapp-update?view=graph-rest-1.0)
 
 
 

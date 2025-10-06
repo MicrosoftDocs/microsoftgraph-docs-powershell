@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinterjob
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgPrintPrinterJob
 ---
@@ -1057,8 +1057,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinterjob)
-- [](https://learn.microsoft.com/graph/api/printer-post-jobs?view=graph-rest-1.0)
+- [New-MgPrintPrinterJob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinterjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printer-post-jobs?view=graph-rest-1.0)
 
 
 

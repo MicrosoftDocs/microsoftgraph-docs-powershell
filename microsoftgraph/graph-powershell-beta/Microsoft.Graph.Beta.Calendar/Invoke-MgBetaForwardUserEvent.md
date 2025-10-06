@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetaforwarduserevent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaForwardUserEvent
 ---
@@ -605,8 +605,8 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetaforwarduserevent)
-- [](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-beta)
+- [Invoke-MgBetaForwardUserEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetaforwarduserevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-beta)
 
 
 

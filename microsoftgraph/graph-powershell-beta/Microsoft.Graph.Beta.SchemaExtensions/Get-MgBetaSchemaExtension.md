@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.SchemaExtensions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSchemaExtension
 ---
@@ -545,9 +545,9 @@ INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension)
-- [](https://learn.microsoft.com/graph/api/schemaextension-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/schemaextension-list?view=graph-rest-beta)
+- [Get-MgBetaSchemaExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schemaextension-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schemaextension-list?view=graph-rest-beta)
 
 
 

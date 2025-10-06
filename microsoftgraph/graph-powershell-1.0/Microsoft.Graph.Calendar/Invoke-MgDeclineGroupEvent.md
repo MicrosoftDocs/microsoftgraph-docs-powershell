@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdeclinegroupevent
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgDeclineGroupEvent
 ---
@@ -604,8 +604,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdeclinegroupevent)
-- [](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-1.0)
+- [Invoke-MgDeclineGroupEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdeclinegroupevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-1.0)
 
 
 

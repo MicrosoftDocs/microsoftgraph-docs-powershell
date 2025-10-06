@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetamarkusermessageasjunk
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaMarkUserMessageAsJunk
 ---
@@ -521,8 +521,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetamarkusermessageasjunk)
-- [](https://learn.microsoft.com/graph/api/message-markasjunk?view=graph-rest-beta)
+- [Invoke-MgBetaMarkUserMessageAsJunk](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetamarkusermessageasjunk)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-markasjunk?view=graph-rest-beta)
 
 
 

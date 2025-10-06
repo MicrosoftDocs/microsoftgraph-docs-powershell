@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaorganizationcertificatebasedauthconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaOrganizationCertificateBasedAuthConfiguration
 ---
@@ -656,9 +656,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaorganizationcertificatebasedauthconfiguration)
-- [](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-list?view=graph-rest-beta)
+- [Get-MgBetaOrganizationCertificateBasedAuthConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaorganizationcertificatebasedauthconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-list?view=graph-rest-beta)
 
 
 

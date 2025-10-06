@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTeamScheduleTimeOffRequest
 ---
@@ -835,8 +835,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffrequest)
-- [](https://learn.microsoft.com/graph/api/timeoffrequest-post?view=graph-rest-beta)
+- [New-MgBetaTeamScheduleTimeOffRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffrequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timeoffrequest-post?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetagrouponenotenotebook
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Copy-MgBetaGroupOnenoteNotebook
 ---
@@ -631,8 +631,8 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetagrouponenotenotebook)
-- [](https://learn.microsoft.com/graph/api/notebook-copynotebook?view=graph-rest-beta)
+- [Copy-MgBetaGroupOnenoteNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetagrouponenotenotebook)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/notebook-copynotebook?view=graph-rest-beta)
 
 
 

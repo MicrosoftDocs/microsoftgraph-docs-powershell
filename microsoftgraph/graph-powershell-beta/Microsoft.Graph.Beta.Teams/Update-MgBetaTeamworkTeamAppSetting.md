@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTeamworkTeamAppSetting
 ---
@@ -506,8 +506,8 @@ CUSTOMAPPSETTINGS `<IMicrosoftGraphCustomAppSettings>`: customAppSettings
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting)
-- [](https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-beta)
+- [Update-MgBetaTeamworkTeamAppSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-beta)
 
 
 

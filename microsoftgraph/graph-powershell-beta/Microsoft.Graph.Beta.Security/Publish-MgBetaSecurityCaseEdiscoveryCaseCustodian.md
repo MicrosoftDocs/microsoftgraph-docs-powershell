@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/publish-mgbetasecuritycaseediscoverycasecustodian
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Publish-MgBetaSecurityCaseEdiscoveryCaseCustodian
 ---
@@ -505,8 +505,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/publish-mgbetasecuritycaseediscoverycasecustodian)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-release?view=graph-rest-beta)
+- [Publish-MgBetaSecurityCaseEdiscoveryCaseCustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/publish-mgbetasecuritycaseediscoverycasecustodian)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-release?view=graph-rest-beta)
 
 
 

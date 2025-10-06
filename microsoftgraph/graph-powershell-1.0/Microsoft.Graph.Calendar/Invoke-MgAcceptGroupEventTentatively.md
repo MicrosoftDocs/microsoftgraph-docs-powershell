@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptgroupeventtentatively
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgAcceptGroupEventTentatively
 ---
@@ -604,8 +604,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptgroupeventtentatively)
-- [](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-1.0)
+- [Invoke-MgAcceptGroupEventTentatively](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptgroupeventtentatively)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-1.0)
 
 
 

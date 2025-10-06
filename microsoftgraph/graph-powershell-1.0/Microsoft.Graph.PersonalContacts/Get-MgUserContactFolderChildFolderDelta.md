@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfolderdelta
 Locale: en-US
 Module Name: Microsoft.Graph.PersonalContacts
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserContactFolderChildFolderDelta
 ---
@@ -568,8 +568,8 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfolderdelta)
-- [](https://learn.microsoft.com/graph/api/contactfolder-delta?view=graph-rest-1.0)
+- [Get-MgUserContactFolderChildFolderDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfolderdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contactfolder-delta?view=graph-rest-1.0)
 
 
 

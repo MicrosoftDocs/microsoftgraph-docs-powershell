@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguage
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityB2XUserFlowLanguage
 ---
@@ -637,9 +637,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguage)
-- [](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/b2xidentityuserflow-list-languages?view=graph-rest-1.0)
+- [Get-MgIdentityB2XUserFlowLanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/b2xidentityuserflow-list-languages?view=graph-rest-1.0)
 
 
 

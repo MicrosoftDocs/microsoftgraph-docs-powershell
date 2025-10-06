@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdevicestatussummarybycompliancepolicysettingreport
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementReportDeviceStatusSummaryByCompliancePolicySettingReport
 ---
@@ -572,7 +572,7 @@ BODYPARAMETER `<IPathsGai8B5DevicemanagementReportsMicrosoftGraphGetdevicestatus
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdevicestatussummarybycompliancepolicysettingreport)
+- [Get-MgBetaDeviceManagementReportDeviceStatusSummaryByCompliancePolicySettingReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdevicestatussummarybycompliancepolicysettingreport)
 
 
 

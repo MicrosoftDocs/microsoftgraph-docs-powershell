@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasecustodianusersource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaComplianceEdiscoveryCaseCustodianUserSource
 ---
@@ -757,8 +757,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasecustodianusersource)
-- [](https://learn.microsoft.com/graph/api/ediscovery-custodian-post-usersources?view=graph-rest-beta)
+- [New-MgBetaComplianceEdiscoveryCaseCustodianUserSource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasecustodianusersource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-custodian-post-usersources?view=graph-rest-beta)
 
 
 

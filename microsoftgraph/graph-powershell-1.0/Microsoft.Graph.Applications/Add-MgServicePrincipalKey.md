@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalkey
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Add-MgServicePrincipalKey
 ---
@@ -685,8 +685,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalkey)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-addkey?view=graph-rest-1.0)
+- [Add-MgServicePrincipalKey](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalkey)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-addkey?view=graph-rest-1.0)
 
 
 

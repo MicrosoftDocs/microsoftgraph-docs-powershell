@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecision
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 ---
@@ -731,9 +731,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecision)
-- [](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/accessreviewstage-list-decisions?view=graph-rest-beta)
+- [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecision)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewstage-list-decisions?view=graph-rest-beta)
 
 
 

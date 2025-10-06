@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyappmanagementpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyAppManagementPolicy
 ---
@@ -682,8 +682,8 @@ For existing applications, the enforcement date can be retroactively applied.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyappmanagementpolicy)
-- [](https://learn.microsoft.com/graph/api/appmanagementpolicy-post?view=graph-rest-beta)
+- [New-MgBetaPolicyAppManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyappmanagementpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/appmanagementpolicy-post?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstlexternalcertificateauthoritycertificate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate
 ---
@@ -64,6 +64,19 @@ Get a externalCertificateAuthorityCertificate object.
 | Delegated (work or school account) | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+Get-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate Cmdlet.
+
 
 ## PARAMETERS
 
@@ -553,10 +566,9 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstlexternalcertificateauthoritycertificate)
-- [](https://learn.microsoft.com/graph/api/networkaccess-externalcertificateauthoritycertificate-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/networkaccess-tlstermination-list-externalcertificateauthoritycertificates?view=graph-rest-beta)
-
+- [Get-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstlexternalcertificateauthoritycertificate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-externalcertificateauthoritycertificate-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-tlstermination-list-externalcertificateauthoritycertificates?view=graph-rest-beta)
 
 
 

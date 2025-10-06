@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/invoke-mgdismissauditlogsignin
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgDismissAuditLogSignIn
 ---
@@ -417,8 +417,8 @@ BODYPARAMETER `<IPaths1K0Im7HAuditlogsSigninsMicrosoftGraphDismissPostRequestbod
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/invoke-mgdismissauditlogsignin)
-- [](https://learn.microsoft.com/graph/api/signin-dismiss?view=graph-rest-1.0)
+- [Invoke-MgDismissAuditLogSignIn](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/invoke-mgdismissauditlogsignin)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-dismiss?view=graph-rest-1.0)
 
 
 

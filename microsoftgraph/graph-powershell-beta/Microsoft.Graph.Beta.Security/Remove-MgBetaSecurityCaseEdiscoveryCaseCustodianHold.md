@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasecustodianhold
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold
 ---
@@ -661,8 +661,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasecustodianhold)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-removehold?view=graph-rest-beta)
+- [Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasecustodianhold)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-removehold?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appplatformusercount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportM365AppPlatformUserCount
 ---
@@ -413,8 +413,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appplatformusercount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getm365appplatformusercounts?view=graph-rest-beta)
+- [Get-MgBetaReportM365AppPlatformUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appplatformusercount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getm365appplatformusercounts?view=graph-rest-beta)
 
 
 

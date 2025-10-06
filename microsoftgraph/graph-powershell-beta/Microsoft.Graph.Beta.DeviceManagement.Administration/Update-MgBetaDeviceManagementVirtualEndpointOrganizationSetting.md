@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 ---
@@ -526,8 +526,8 @@ The default value is en-US, which corresponds to English (United States).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting)
-- [](https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-update?view=graph-rest-beta)
+- [Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-update?view=graph-rest-beta)
 
 
 

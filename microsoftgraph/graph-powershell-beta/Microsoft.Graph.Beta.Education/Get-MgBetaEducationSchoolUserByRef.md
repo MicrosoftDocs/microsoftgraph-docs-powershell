@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooluserbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationSchoolUserByRef
 ---
@@ -435,8 +435,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooluserbyref)
-- [](https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-beta)
+- [Get-MgBetaEducationSchoolUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooluserbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-beta)
 
 
 

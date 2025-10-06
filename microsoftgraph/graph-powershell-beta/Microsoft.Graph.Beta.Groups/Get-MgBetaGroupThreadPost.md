@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpost
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupThreadPost
 ---
@@ -669,9 +669,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpost)
-- [](https://learn.microsoft.com/graph/api/post-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/conversationthread-list-posts?view=graph-rest-beta)
+- [Get-MgBetaGroupThreadPost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpost)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/post-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationthread-list-posts?view=graph-rest-beta)
 
 
 

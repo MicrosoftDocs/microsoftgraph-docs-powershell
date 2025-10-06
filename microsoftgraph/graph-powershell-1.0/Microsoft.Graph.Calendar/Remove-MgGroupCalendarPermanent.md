@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermanent
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgGroupCalendarPermanent
 ---
@@ -376,8 +376,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermanent)
-- [](https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-1.0)
+- [Remove-MgGroupCalendarPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermanent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-1.0)
 
 
 

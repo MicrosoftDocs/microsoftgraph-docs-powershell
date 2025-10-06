@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphchat
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgGraphChat
 ---
@@ -585,8 +585,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphchat)
-- [](https://learn.microsoft.com/graph/api/chat-unhideforuser?view=graph-rest-1.0)
+- [Invoke-MgGraphChat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphchat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-unhideforuser?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgrecentdrive
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgRecentDrive
 ---
@@ -507,8 +507,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgrecentdrive)
-- [](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-1.0)
+- [Invoke-MgRecentDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgrecentdrive)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaaccessreviewinstancereminder
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Send-MgBetaAccessReviewInstanceReminder
 ---
@@ -483,8 +483,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaaccessreviewinstancereminder)
-- [](https://learn.microsoft.com/graph/api/accessreview-sendreminder?view=graph-rest-beta)
+- [Send-MgBetaAccessReviewInstanceReminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaaccessreviewinstancereminder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreview-sendreminder?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusageunbilled
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Export-MgBetaReportPartnerBillingUsageUnbilled
 ---
@@ -437,8 +437,8 @@ BODYPARAMETER `<IPaths1Ajo9DhReportsPartnersBillingUsageUnbilledMicrosoftGraphPa
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusageunbilled)
-- [](https://learn.microsoft.com/graph/api/partners-billing-unbilledusage-export?view=graph-rest-beta)
+- [Export-MgBetaReportPartnerBillingUsageUnbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusageunbilled)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/partners-billing-unbilledusage-export?view=graph-rest-beta)
 
 
 

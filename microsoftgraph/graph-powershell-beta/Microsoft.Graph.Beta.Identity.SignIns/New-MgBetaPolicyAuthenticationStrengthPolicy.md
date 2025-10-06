@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyAuthenticationStrengthPolicy
 ---
@@ -604,8 +604,8 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicy)
-- [](https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-beta)
+- [New-MgBetaPolicyAuthenticationStrengthPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-beta)
 
 
 

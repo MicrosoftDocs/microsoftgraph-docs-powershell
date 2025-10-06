@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaGroupDynamicMembershipRule
 ---
@@ -403,8 +403,8 @@ BODYPARAMETER `<IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRe
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule)
-- [](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)
+- [Test-MgBetaGroupDynamicMembershipRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)
 
 
 

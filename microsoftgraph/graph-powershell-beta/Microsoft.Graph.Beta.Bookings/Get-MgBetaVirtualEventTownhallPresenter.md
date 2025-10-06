@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventtownhallpresenter
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaVirtualEventTownhallPresenter
 ---
@@ -588,9 +588,9 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventtownhallpresenter)
-- [](https://learn.microsoft.com/graph/api/virtualeventpresenter-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/virtualevent-list-presenters?view=graph-rest-beta)
+- [Get-MgBetaVirtualEventTownhallPresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventtownhallpresenter)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventpresenter-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualevent-list-presenters?view=graph-rest-beta)
 
 
 

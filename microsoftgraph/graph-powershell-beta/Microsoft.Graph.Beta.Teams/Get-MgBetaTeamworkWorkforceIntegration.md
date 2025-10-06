@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkworkforceintegration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTeamworkWorkforceIntegration
 ---
@@ -589,9 +589,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkworkforceintegration)
-- [](https://learn.microsoft.com/graph/api/workforceintegration-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/workforceintegration-list?view=graph-rest-beta)
+- [Get-MgBetaTeamworkWorkforceIntegration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkworkforceintegration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/workforceintegration-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/workforceintegration-list?view=graph-rest-beta)
 
 
 

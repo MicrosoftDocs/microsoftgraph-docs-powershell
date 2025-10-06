@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausercalendarpermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserCalendarPermission
 ---
@@ -882,8 +882,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausercalendarpermission)
-- [](https://learn.microsoft.com/graph/api/calendarpermission-update?view=graph-rest-beta)
+- [Update-MgBetaUserCalendarPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausercalendarpermission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/calendarpermission-update?view=graph-rest-beta)
 
 
 

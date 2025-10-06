@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateampermissiongrant
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTeamPermissionGrant
 ---
@@ -609,8 +609,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateampermissiongrant)
-- [](https://learn.microsoft.com/graph/api/team-list-permissiongrants?view=graph-rest-beta)
+- [Get-MgBetaTeamPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateampermissiongrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-list-permissiongrants?view=graph-rest-beta)
 
 
 

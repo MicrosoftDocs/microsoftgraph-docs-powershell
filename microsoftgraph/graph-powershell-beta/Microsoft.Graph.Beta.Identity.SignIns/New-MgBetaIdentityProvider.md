@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityProvider
 ---
@@ -472,8 +472,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityprovider)
-- [](https://learn.microsoft.com/graph/api/identitycontainer-post-identityproviders?view=graph-rest-beta)
+- [New-MgBetaIdentityProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityprovider)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-identityproviders?view=graph-rest-beta)
 
 
 

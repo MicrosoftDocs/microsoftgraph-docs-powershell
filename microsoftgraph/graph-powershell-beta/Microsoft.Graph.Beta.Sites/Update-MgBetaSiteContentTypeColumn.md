@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitecontenttypecolumn
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSiteContentTypeColumn
 ---
@@ -1980,8 +1980,8 @@ For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitecontenttypecolumn)
-- [](https://learn.microsoft.com/graph/api/columndefinition-update?view=graph-rest-beta)
+- [Update-MgBetaSiteContentTypeColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitecontenttypecolumn)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/columndefinition-update?view=graph-rest-beta)
 
 
 

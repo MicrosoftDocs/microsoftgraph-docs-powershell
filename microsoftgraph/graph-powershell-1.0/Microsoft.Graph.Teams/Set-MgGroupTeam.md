@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteam
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Set-MgGroupTeam
 ---
@@ -31940,8 +31940,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteam)
-- [](https://learn.microsoft.com/graph/api/team-put-teams?view=graph-rest-1.0)
+- [Set-MgGroupTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteam)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-put-teams?view=graph-rest-1.0)
 
 
 

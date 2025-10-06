@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplantask
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlannerPlanTask
 ---
@@ -492,8 +492,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplantask)
-- [](https://learn.microsoft.com/graph/api/plannerplan-list-tasks?view=graph-rest-1.0)
+- [Get-MgPlannerPlanTask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplantask)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-list-tasks?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/move-mgbetaplannerplantocontainer
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Move-MgBetaPlannerPlanToContainer
 ---
@@ -509,8 +509,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/move-mgbetaplannerplantocontainer)
-- [](https://learn.microsoft.com/graph/api/plannerplan-movetocontainer?view=graph-rest-beta)
+- [Move-MgBetaPlannerPlanToContainer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/move-mgbetaplannerplantocontainer)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-movetocontainer?view=graph-rest-beta)
 
 
 

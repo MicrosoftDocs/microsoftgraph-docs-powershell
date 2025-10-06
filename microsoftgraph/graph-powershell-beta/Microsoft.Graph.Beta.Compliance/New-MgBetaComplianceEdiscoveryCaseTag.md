@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasetag
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaComplianceEdiscoveryCaseTag
 ---
@@ -776,8 +776,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasetag)
-- [](https://learn.microsoft.com/graph/api/ediscovery-case-post-tags?view=graph-rest-beta)
+- [New-MgBetaComplianceEdiscoveryCaseTag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasetag)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-case-post-tags?view=graph-rest-beta)
 
 
 

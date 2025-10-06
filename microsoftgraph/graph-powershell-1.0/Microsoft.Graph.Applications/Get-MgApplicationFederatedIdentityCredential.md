@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgApplicationFederatedIdentityCredential
 ---
@@ -598,9 +598,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential)
-- [](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/application-list-federatedidentitycredentials?view=graph-rest-1.0)
+- [Get-MgApplicationFederatedIdentityCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-list-federatedidentitycredentials?view=graph-rest-1.0)
 
 
 

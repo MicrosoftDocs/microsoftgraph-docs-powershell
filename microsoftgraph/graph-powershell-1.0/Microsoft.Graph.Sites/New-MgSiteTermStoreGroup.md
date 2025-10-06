@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroup
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgSiteTermStoreGroup
 ---
@@ -992,8 +992,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroup)
-- [](https://learn.microsoft.com/graph/api/termstore-group-post?view=graph-rest-1.0)
+- [New-MgSiteTermStoreGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/termstore-group-post?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mggroupsitelistcontenttypecopy
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Add-MgGroupSiteListContentTypeCopy
 ---
@@ -563,8 +563,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mggroupsitelistcontenttypecopy)
-- [](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
+- [Add-MgGroupSiteListContentTypeCopy](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mggroupsitelistcontenttypecopy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
 
 
 

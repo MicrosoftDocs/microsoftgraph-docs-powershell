@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagereply
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserMailFolderMessageReply
 ---
@@ -840,8 +840,8 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagereply)
-- [](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-beta)
+- [New-MgBetaUserMailFolderMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-beta)
 
 
 

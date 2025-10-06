@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserProfileEmail
 ---
@@ -941,8 +941,8 @@ SOURCES <IMicrosoftGraphProfileSourceAnnotation[]>: Where the values within an e
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail)
-- [](https://learn.microsoft.com/graph/api/itememail-update?view=graph-rest-beta)
+- [Update-MgBetaUserProfileEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/itememail-update?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogbyuniquename
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaEntitlementManagementAccessPackageCatalogByUniqueName
 ---
@@ -18817,8 +18817,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogbyuniquename)
-- [](https://learn.microsoft.com/graph/api/accesspackagecatalog-update?view=graph-rest-beta)
+- [Update-MgBetaEntitlementManagementAccessPackageCatalogByUniqueName](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogbyuniquename)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackagecatalog-update?view=graph-rest-beta)
 
 
 

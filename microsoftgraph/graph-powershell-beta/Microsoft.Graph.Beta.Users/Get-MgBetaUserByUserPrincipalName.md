@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserbyuserprincipalname
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserByUserPrincipalName
 ---
@@ -386,8 +386,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserbyuserprincipalname)
-- [](https://learn.microsoft.com/graph/api/user-get?view=graph-rest-beta)
+- [Get-MgBetaUserByUserPrincipalName](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserbyuserprincipalname)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-get?view=graph-rest-beta)
 
 
 

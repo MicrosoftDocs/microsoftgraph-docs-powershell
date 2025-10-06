@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsor
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserSponsor
 ---
@@ -588,8 +588,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsor)
-- [](https://learn.microsoft.com/graph/api/user-list-sponsors?view=graph-rest-1.0)
+- [Get-MgUserSponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsor)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-list-sponsors?view=graph-rest-1.0)
 
 
 

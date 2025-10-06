@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupuserownedobject
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupUserOwnedObject
 ---
@@ -387,8 +387,8 @@ BODYPARAMETER `<IPaths16ZshinGroupsMicrosoftGraphGetuserownedobjectsPostRequestb
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupuserownedobject)
-- [](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)
+- [Get-MgBetaGroupUserOwnedObject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupuserownedobject)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)
 
 
 

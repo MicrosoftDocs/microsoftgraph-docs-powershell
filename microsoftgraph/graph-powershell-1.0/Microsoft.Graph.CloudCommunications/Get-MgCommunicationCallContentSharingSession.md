@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallcontentsharingsession
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgCommunicationCallContentSharingSession
 ---
@@ -588,9 +588,9 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallcontentsharingsession)
-- [](https://learn.microsoft.com/graph/api/contentsharingsession-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/call-list-contentsharingsessions?view=graph-rest-1.0)
+- [Get-MgCommunicationCallContentSharingSession](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallcontentsharingsession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contentsharingsession-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-list-contentsharingsessions?view=graph-rest-1.0)
 
 
 

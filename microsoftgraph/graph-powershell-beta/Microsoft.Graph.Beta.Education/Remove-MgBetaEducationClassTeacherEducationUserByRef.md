@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassteachereducationuserbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaEducationClassTeacherEducationUserByRef
 ---
@@ -426,8 +426,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassteachereducationuserbyref)
-- [](https://learn.microsoft.com/graph/api/educationclass-delete-teachers?view=graph-rest-beta)
+- [Remove-MgBetaEducationClassTeacherEducationUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassteachereducationuserbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-delete-teachers?view=graph-rest-beta)
 
 
 

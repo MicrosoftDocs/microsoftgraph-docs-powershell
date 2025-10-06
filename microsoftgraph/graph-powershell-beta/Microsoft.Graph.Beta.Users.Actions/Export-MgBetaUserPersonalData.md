@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/export-mgbetauserpersonaldata
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Actions
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Export-MgBetaUserPersonalData
 ---
@@ -518,8 +518,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/export-mgbetauserpersonaldata)
-- [](https://learn.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-beta)
+- [Export-MgBetaUserPersonalData](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/export-mgbetauserpersonaldata)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-beta)
 
 
 

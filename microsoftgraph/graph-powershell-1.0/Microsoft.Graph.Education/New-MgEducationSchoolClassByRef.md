@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschoolclassbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgEducationSchoolClassByRef
 ---
@@ -521,8 +521,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschoolclassbyref)
-- [](https://learn.microsoft.com/graph/api/educationschool-post-classes?view=graph-rest-1.0)
+- [New-MgEducationSchoolClassByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschoolclassbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationschool-post-classes?view=graph-rest-1.0)
 
 
 

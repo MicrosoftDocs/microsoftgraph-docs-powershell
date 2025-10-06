@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecolumn
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSiteColumn
 ---
@@ -1933,8 +1933,8 @@ For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecolumn)
-- [](https://learn.microsoft.com/graph/api/site-post-columns?view=graph-rest-beta)
+- [New-MgBetaSiteColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecolumn)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-post-columns?view=graph-rest-beta)
 
 
 

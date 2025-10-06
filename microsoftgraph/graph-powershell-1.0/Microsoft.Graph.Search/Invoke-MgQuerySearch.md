@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgQuerySearch
 ---
@@ -637,8 +637,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch)
-- [](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-1.0)
+- [Invoke-MgQuerySearch](https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-1.0)
 
 
 

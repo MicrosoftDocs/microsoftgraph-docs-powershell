@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/stop-mggroupevent
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Stop-MgGroupEvent
 ---
@@ -541,8 +541,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/stop-mggroupevent)
-- [](https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-1.0)
+- [Stop-MgGroupEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/stop-mggroupevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-1.0)
 
 
 

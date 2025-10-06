@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetauserteamworkactivitynotification
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Send-MgBetaUserTeamworkActivityNotification
 ---
@@ -808,8 +808,8 @@ Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetauserteamworkactivitynotification)
-- [](https://learn.microsoft.com/graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta)
+- [Send-MgBetaUserTeamworkActivityNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetauserteamworkactivitynotification)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta)
 
 
 

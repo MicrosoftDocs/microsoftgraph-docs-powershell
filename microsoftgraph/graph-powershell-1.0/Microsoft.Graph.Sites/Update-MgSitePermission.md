@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepermission
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgSitePermission
 ---
@@ -1091,8 +1091,8 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepermission)
-- [](https://learn.microsoft.com/graph/api/site-update-permission?view=graph-rest-1.0)
+- [Update-MgSitePermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepermission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-update-permission?view=graph-rest-1.0)
 
 
 

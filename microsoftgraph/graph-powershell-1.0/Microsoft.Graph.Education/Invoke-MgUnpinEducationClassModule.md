@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunpineducationclassmodule
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgUnpinEducationClassModule
 ---
@@ -403,8 +403,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunpineducationclassmodule)
-- [](https://learn.microsoft.com/graph/api/educationmodule-unpin?view=graph-rest-1.0)
+- [Invoke-MgUnpinEducationClassModule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunpineducationclassmodule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmodule-unpin?view=graph-rest-1.0)
 
 
 

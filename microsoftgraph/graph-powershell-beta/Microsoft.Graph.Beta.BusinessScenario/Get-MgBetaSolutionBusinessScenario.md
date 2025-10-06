@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenario
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSolutionBusinessScenario
 ---
@@ -546,9 +546,9 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenario)
-- [](https://learn.microsoft.com/graph/api/businessscenario-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/solutionsroot-list-businessscenarios?view=graph-rest-beta)
+- [Get-MgBetaSolutionBusinessScenario](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenario)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/businessscenario-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/solutionsroot-list-businessscenarios?view=graph-rest-beta)
 
 
 

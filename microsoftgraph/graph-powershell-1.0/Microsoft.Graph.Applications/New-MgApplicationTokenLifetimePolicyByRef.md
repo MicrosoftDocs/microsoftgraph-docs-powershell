@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenlifetimepolicybyref
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgApplicationTokenLifetimePolicyByRef
 ---
@@ -542,8 +542,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenlifetimepolicybyref)
-- [](https://learn.microsoft.com/graph/api/application-post-tokenlifetimepolicies?view=graph-rest-1.0)
+- [New-MgApplicationTokenLifetimePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenlifetimepolicybyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-post-tokenlifetimepolicies?view=graph-rest-1.0)
 
 
 

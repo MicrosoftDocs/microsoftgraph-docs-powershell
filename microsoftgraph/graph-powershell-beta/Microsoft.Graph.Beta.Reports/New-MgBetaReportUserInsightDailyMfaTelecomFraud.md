@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightdailymfatelecomfraud
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaReportUserInsightDailyMfaTelecomFraud
 ---
@@ -499,7 +499,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightdailymfatelecomfraud)
+- [New-MgBetaReportUserInsightDailyMfaTelecomFraud](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightdailymfatelecomfraud)
 
 
 

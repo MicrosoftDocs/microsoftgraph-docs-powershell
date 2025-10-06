@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucket
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPlannerBucket
 ---
@@ -552,9 +552,9 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucket)
-- [](https://learn.microsoft.com/graph/api/plannerbucket-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/planner-list-buckets?view=graph-rest-beta)
+- [Get-MgBetaPlannerBucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucket)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerbucket-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/planner-list-buckets?view=graph-rest-beta)
 
 
 

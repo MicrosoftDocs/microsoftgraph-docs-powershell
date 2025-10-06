@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/move-mgusermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Move-MgUserMessage
 ---
@@ -529,8 +529,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/move-mgusermessage)
-- [](https://learn.microsoft.com/graph/api/message-move?view=graph-rest-1.0)
+- [Move-MgUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/move-mgusermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-move?view=graph-rest-1.0)
 
 
 

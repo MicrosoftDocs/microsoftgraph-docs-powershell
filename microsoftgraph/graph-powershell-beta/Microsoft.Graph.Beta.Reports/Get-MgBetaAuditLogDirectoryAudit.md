@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogdirectoryaudit
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAuditLogDirectoryAudit
 ---
@@ -608,9 +608,9 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogdirectoryaudit)
-- [](https://learn.microsoft.com/graph/api/directoryaudit-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/directoryaudit-list?view=graph-rest-beta)
+- [Get-MgBetaAuditLogDirectoryAudit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogdirectoryaudit)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryaudit-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryaudit-list?view=graph-rest-beta)
 
 
 

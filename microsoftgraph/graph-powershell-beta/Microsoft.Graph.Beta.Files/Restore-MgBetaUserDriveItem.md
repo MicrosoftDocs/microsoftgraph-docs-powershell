@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetauserdriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Restore-MgBetaUserDriveItem
 ---
@@ -632,8 +632,8 @@ For OneDrive, this property isn't populated.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetauserdriveitem)
-- [](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-beta)
+- [Restore-MgBetaUserDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetauserdriveitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-beta)
 
 
 

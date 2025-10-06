@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mguseronenotenotebooksectiongroup
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserOnenoteNotebookSectionGroup
 ---
@@ -439,7 +439,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mguseronenotenotebooksectiongroup)
+- [Remove-MgUserOnenoteNotebookSectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mguseronenotenotebooksectiongroup)
 
 
 

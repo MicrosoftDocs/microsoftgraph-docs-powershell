@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmoduleresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationClassModuleResource
 ---
@@ -700,9 +700,9 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmoduleresource)
-- [](https://learn.microsoft.com/graph/api/educationmoduleresource-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/educationmodule-list-resources?view=graph-rest-beta)
+- [Get-MgBetaEducationClassModuleResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmoduleresource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmoduleresource-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmodule-list-resources?view=graph-rest-beta)
 
 
 

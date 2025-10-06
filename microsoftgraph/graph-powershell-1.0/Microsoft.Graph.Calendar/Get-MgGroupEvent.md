@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupevent
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupEvent
 ---
@@ -582,9 +582,9 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupevent)
-- [](https://learn.microsoft.com/graph/api/group-get-event?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/group-list-events?view=graph-rest-1.0)
+- [Get-MgGroupEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-get-event?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-events?view=graph-rest-1.0)
 
 
 

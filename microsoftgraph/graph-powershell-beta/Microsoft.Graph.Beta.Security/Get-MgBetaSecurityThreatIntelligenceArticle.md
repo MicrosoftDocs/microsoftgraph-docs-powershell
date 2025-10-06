@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticle
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityThreatIntelligenceArticle
 ---
@@ -642,9 +642,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticle)
-- [](https://learn.microsoft.com/graph/api/security-article-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/security-threatintelligence-list-articles?view=graph-rest-beta)
+- [Get-MgBetaSecurityThreatIntelligenceArticle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticle)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-article-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-threatintelligence-list-articles?view=graph-rest-beta)
 
 
 

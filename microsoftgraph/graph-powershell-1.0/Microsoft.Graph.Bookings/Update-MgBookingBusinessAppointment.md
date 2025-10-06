@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBookingBusinessAppointment
 ---
@@ -1501,8 +1501,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment)
-- [](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0)
+- [Update-MgBookingBusinessAppointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0)
 
 
 

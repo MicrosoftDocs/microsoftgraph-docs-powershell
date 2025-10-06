@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadeclinegroupevent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaDeclineGroupEvent
 ---
@@ -607,8 +607,8 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadeclinegroupevent)
-- [](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-beta)
+- [Invoke-MgBetaDeclineGroupEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadeclinegroupevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-beta)
 
 
 

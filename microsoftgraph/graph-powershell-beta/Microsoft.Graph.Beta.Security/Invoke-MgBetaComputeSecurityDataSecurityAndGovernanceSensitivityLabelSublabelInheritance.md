@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacomputesecuritydatasecurityandgovernancesensitivitylabelsublabelinheritance
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceSensitivityLabelSublabelInheritance
 ---
@@ -458,8 +458,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacomputesecuritydatasecurityandgovernancesensitivitylabelsublabelinheritance)
-- [](https://learn.microsoft.com/graph/api/sensitivitylabel-computeinheritance?view=graph-rest-beta)
+- [Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceSensitivityLabelSublabelInheritance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacomputesecuritydatasecurityandgovernancesensitivitylabelsublabelinheritance)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computeinheritance?view=graph-rest-beta)
 
 
 

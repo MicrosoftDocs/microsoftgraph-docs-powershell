@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintshare
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgPrintShare
 ---
@@ -21262,8 +21262,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintshare)
-- [](https://learn.microsoft.com/graph/api/printershare-update?view=graph-rest-1.0)
+- [Update-MgPrintShare](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintshare)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printershare-update?view=graph-rest-1.0)
 
 
 

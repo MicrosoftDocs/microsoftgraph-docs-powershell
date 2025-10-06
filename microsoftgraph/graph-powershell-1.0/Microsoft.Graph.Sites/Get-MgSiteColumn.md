@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecolumn
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteColumn
 ---
@@ -614,8 +614,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecolumn)
-- [](https://learn.microsoft.com/graph/api/site-list-columns?view=graph-rest-1.0)
+- [Get-MgSiteColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecolumn)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-list-columns?view=graph-rest-1.0)
 
 
 

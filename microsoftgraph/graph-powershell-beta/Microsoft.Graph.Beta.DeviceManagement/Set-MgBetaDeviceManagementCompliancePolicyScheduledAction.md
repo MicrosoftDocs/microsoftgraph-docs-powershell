@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementcompliancepolicyscheduledaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaDeviceManagementCompliancePolicyScheduledAction
 ---
@@ -611,7 +611,7 @@ This collection can contain a maximum of 100 elements.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementcompliancepolicyscheduledaction)
+- [Set-MgBetaDeviceManagementCompliancePolicyScheduledAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementcompliancepolicyscheduledaction)
 
 
 

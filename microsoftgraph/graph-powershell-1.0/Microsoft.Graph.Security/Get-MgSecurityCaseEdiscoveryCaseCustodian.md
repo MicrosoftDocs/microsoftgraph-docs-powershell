@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodian
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityCaseEdiscoveryCaseCustodian
 ---
@@ -641,9 +641,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodian)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycase-list-custodians?view=graph-rest-1.0)
+- [Get-MgSecurityCaseEdiscoveryCaseCustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodian)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycase-list-custodians?view=graph-rest-1.0)
 
 
 

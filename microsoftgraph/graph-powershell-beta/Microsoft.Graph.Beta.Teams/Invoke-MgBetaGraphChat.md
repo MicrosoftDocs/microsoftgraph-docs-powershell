@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphchat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaGraphChat
 ---
@@ -627,8 +627,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphchat)
-- [](https://learn.microsoft.com/graph/api/chat-unhideforuser?view=graph-rest-beta)
+- [Invoke-MgBetaGraphChat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphchat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-unhideforuser?view=graph-rest-beta)
 
 
 

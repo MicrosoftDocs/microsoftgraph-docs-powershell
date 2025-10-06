@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessagereply
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgUserMailFolderChildFolderMessageReply
 ---
@@ -787,8 +787,8 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessagereply)
-- [](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-1.0)
+- [New-MgUserMailFolderChildFolderMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-1.0)
 
 
 

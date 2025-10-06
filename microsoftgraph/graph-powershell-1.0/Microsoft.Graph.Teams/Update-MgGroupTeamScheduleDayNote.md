@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduledaynote
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupTeamScheduleDayNote
 ---
@@ -721,7 +721,7 @@ SHAREDDAYNOTE `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduledaynote)
+- [Update-MgGroupTeamScheduleDayNote](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduledaynote)
 
 
 

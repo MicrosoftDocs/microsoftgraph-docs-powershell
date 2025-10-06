@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcookie
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityThreatIntelligenceHostCookie
 ---
@@ -731,9 +731,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcookie)
-- [](https://learn.microsoft.com/graph/api/security-hostcookie-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/security-host-list-cookies?view=graph-rest-1.0)
+- [Get-MgSecurityThreatIntelligenceHostCookie](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcookie)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-hostcookie-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-host-list-cookies?view=graph-rest-1.0)
 
 
 

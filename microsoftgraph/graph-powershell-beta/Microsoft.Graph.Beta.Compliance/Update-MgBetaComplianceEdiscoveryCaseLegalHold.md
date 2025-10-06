@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaselegalhold
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaComplianceEdiscoveryCaseLegalHold
 ---
@@ -26458,8 +26458,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaselegalhold)
-- [](https://learn.microsoft.com/graph/api/ediscovery-legalhold-update?view=graph-rest-beta)
+- [Update-MgBetaComplianceEdiscoveryCaseLegalHold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaselegalhold)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-legalhold-update?view=graph-rest-beta)
 
 
 

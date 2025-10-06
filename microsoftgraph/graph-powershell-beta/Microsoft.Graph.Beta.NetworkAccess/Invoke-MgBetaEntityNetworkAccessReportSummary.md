@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetaentitynetworkaccessreportsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaEntityNetworkAccessReportSummary
 ---
@@ -466,8 +466,8 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetaentitynetworkaccessreportsummary)
-- [](https://learn.microsoft.com/graph/api/networkaccess-reports-entitiessummaries?view=graph-rest-beta)
+- [Invoke-MgBetaEntityNetworkAccessReportSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetaentitynetworkaccessreportsummary)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-reports-entitiessummaries?view=graph-rest-beta)
 
 
 

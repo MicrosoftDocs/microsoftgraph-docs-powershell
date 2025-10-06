@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcitation
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityLabelCitation
 ---
@@ -604,9 +604,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcitation)
-- [](https://learn.microsoft.com/graph/api/security-citationtemplate-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/security-labelsroot-list-citations?view=graph-rest-1.0)
+- [Get-MgSecurityLabelCitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcitation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-citationtemplate-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-list-citations?view=graph-rest-1.0)
 
 
 

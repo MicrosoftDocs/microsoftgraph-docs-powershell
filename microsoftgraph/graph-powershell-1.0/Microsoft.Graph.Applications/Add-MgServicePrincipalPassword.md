@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalpassword
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Add-MgServicePrincipalPassword
 ---
@@ -552,8 +552,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalpassword)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-addpassword?view=graph-rest-1.0)
+- [Add-MgServicePrincipalPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalpassword)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-addpassword?view=graph-rest-1.0)
 
 
 

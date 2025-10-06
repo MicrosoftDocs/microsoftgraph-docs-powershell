@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationreportreadingassignmentsubmission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEducationReportReadingAssignmentSubmission
 ---
@@ -850,7 +850,7 @@ CHALLENGINGWORDS <IMicrosoftGraphChallengingWord[]>: List of words that the stud
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationreportreadingassignmentsubmission)
+- [New-MgBetaEducationReportReadingAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationreportreadingassignmentsubmission)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/find-mgbetatenantrelationshiptenantinformationbytenantid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Find-MgBetaTenantRelationshipTenantInformationByTenantId
 ---
@@ -365,8 +365,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/find-mgbetatenantrelationshiptenantinformationbytenantid)
-- [](https://learn.microsoft.com/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-beta)
+- [Find-MgBetaTenantRelationshipTenantInformationByTenantId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/find-mgbetatenantrelationshiptenantinformationbytenantid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-beta)
 
 
 

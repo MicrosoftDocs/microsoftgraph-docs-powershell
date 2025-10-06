@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserbyuserprincipalname
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserByUserPrincipalName
 ---
@@ -105529,8 +105529,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserbyuserprincipalname)
-- [](https://learn.microsoft.com/graph/api/user-update?view=graph-rest-beta)
+- [Update-MgBetaUserByUserPrincipalName](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserbyuserprincipalname)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-update?view=graph-rest-beta)
 
 
 

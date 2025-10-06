@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/revoke-mgusersigninsession
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Actions
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Revoke-MgUserSignInSession
 ---
@@ -367,8 +367,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/revoke-mgusersigninsession)
-- [](https://learn.microsoft.com/graph/api/user-revokesigninsessions?view=graph-rest-1.0)
+- [Revoke-MgUserSignInSession](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/revoke-mgusersigninsession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-revokesigninsessions?view=graph-rest-1.0)
 
 
 

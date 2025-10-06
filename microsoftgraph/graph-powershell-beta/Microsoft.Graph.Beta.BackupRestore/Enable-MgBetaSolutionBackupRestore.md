@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/enable-mgbetasolutionbackuprestore
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Enable-MgBetaSolutionBackupRestore
 ---
@@ -366,8 +366,8 @@ BODYPARAMETER `<IPathsI0X7PjSolutionsBackuprestoreMicrosoftGraphEnablePostReques
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/enable-mgbetasolutionbackuprestore)
-- [](https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-beta)
+- [Enable-MgBetaSolutionBackupRestore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/enable-mgbetasolutionbackuprestore)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-beta)
 
 
 

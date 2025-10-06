@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingcurrency
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaBookingCurrency
 ---
@@ -656,9 +656,9 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingcurrency)
-- [](https://learn.microsoft.com/graph/api/bookingcurrency-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/bookingcurrency-list?view=graph-rest-beta)
+- [Get-MgBetaBookingCurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingcurrency)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingcurrency-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingcurrency-list?view=graph-rest-beta)
 
 
 

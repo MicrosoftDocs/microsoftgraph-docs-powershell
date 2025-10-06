@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/test-mgidentityconditionalaccess
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Test-MgIdentityConditionalAccess
 ---
@@ -534,8 +534,8 @@ This property is set by Intune.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/test-mgidentityconditionalaccess)
-- [](https://learn.microsoft.com/graph/api/conditionalaccessroot-evaluate?view=graph-rest-1.0)
+- [Test-MgIdentityConditionalAccess](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/test-mgidentityconditionalaccess)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccessroot-evaluate?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/stop-mgprintsharejob
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Stop-MgPrintShareJob
 ---
@@ -399,8 +399,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/stop-mgprintsharejob)
-- [](https://learn.microsoft.com/graph/api/printjob-cancel?view=graph-rest-1.0)
+- [Stop-MgPrintShareJob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/stop-mgprintsharejob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printjob-cancel?view=graph-rest-1.0)
 
 
 

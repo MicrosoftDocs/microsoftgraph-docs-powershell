@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionurlthreat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityThreatSubmissionUrlThreat
 ---
@@ -640,9 +640,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionurlthreat)
-- [](https://learn.microsoft.com/graph/api/security-urlthreatsubmission-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/security-urlthreatsubmission-list?view=graph-rest-beta)
+- [Get-MgBetaSecurityThreatSubmissionUrlThreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionurlthreat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-urlthreatsubmission-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-urlthreatsubmission-list?view=graph-rest-beta)
 
 
 

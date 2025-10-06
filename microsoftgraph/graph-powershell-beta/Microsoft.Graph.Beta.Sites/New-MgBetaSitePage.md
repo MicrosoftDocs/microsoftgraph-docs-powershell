@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSitePage
 ---
@@ -26471,8 +26471,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepage)
-- [](https://learn.microsoft.com/graph/api/sitepage-create?view=graph-rest-beta)
+- [New-MgBetaSitePage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sitepage-create?view=graph-rest-beta)
 
 
 

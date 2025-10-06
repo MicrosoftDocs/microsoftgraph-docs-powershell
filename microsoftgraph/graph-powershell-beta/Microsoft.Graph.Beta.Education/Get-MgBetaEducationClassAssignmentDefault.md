@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentdefault
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationClassAssignmentDefault
 ---
@@ -388,8 +388,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentdefault)
-- [](https://learn.microsoft.com/graph/api/educationassignmentdefaults-get?view=graph-rest-beta)
+- [Get-MgBetaEducationClassAssignmentDefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentdefault)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignmentdefaults-get?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityruledetectionrule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityRuleDetectionRule
 ---
@@ -638,8 +638,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityruledetectionrule)
-- [](https://learn.microsoft.com/graph/api/security-detectionrule-list?view=graph-rest-beta)
+- [Get-MgBetaSecurityRuleDetectionRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityruledetectionrule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-detectionrule-list?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleschedulinggroup
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupTeamScheduleSchedulingGroup
 ---
@@ -711,7 +711,7 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleschedulinggroup)
+- [Update-MgGroupTeamScheduleSchedulingGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleschedulinggroup)
 
 
 

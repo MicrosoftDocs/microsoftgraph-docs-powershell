@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfolderpermanent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserMailFolderChildFolderPermanent
 ---
@@ -418,8 +418,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfolderpermanent)
-- [](https://learn.microsoft.com/graph/api/mailfolder-permanentdelete?view=graph-rest-beta)
+- [Remove-MgBetaUserMailFolderChildFolderPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfolderpermanent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/mailfolder-permanentdelete?view=graph-rest-beta)
 
 
 

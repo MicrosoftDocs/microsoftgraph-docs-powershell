@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetaviewuserreminder
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Functions
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaViewUserReminder
 ---
@@ -452,8 +452,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetaviewuserreminder)
-- [](https://learn.microsoft.com/graph/api/user-reminderview?view=graph-rest-beta)
+- [Invoke-MgBetaViewUserReminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetaviewuserreminder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-reminderview?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemversion
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Restore-MgSiteListItemVersion
 ---
@@ -492,8 +492,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemversion)
-- [](https://learn.microsoft.com/graph/api/listitemversion-restore?view=graph-rest-1.0)
+- [Restore-MgSiteListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemversion)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/listitemversion-restore?view=graph-rest-1.0)
 
 
 

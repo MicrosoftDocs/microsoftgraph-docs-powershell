@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetagroupteamchannelmember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Add-MgBetaGroupTeamChannelMember
 ---
@@ -564,8 +564,8 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetagroupteamchannelmember)
-- [](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta)
+- [Add-MgBetaGroupTeamChannelMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetagroupteamchannelmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta)
 
 
 

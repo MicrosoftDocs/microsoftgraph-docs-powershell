@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetag
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaComplianceEdiscoveryCaseTag
 ---
@@ -587,9 +587,9 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetag)
-- [](https://learn.microsoft.com/graph/api/ediscovery-tag-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/ediscovery-case-list-tags?view=graph-rest-beta)
+- [Get-MgBetaComplianceEdiscoveryCaseTag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetag)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-tag-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-case-list-tags?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoresharepointprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgSolutionBackupRestoreSharePointProtectionPolicy
 ---
@@ -983,8 +983,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoresharepointprotectionpolicy)
-- [](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-update?view=graph-rest-1.0)
+- [Update-MgSolutionBackupRestoreSharePointProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoresharepointprotectionpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-update?view=graph-rest-1.0)
 
 
 

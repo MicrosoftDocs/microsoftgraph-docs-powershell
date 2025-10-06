@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationreportreadingassignmentsubmission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationReportReadingAssignmentSubmission
 ---
@@ -61,16 +61,27 @@ This cmdlet has the following aliases,
 Details of submitted reading assignments.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Get a list of reading assignment submissions from the last 24 hours
 
 ```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
-Get-MgBetaEducationReportReadingAssignmentSubmission -Filter "submitDateTime gt 2023-10-10T00:00:00.000Z" 
+Get-MgBetaEducationReportReadingAssignmentSubmission
 
 ```
-This example shows how to use the Get-MgBetaEducationReportReadingAssignmentSubmission Cmdlet.
+This example will get a list of reading assignment submissions from the last 24 hours
+
+### Example 2: Get a list of the reading assignment submissions for a specific date using $filter
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationReportReadingAssignmentSubmission -Filter "submissionDateTime gt 2023-10-10T00:00:00.000Z and submissionDateTime lt 2023-10-11T00:00:00Z" 
+
+```
+This example will get a list of the reading assignment submissions for a specific date using $filter
 
 
 ## PARAMETERS
@@ -558,8 +569,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationreportreadingassignmentsubmission)
-- [](https://learn.microsoft.com/graph/api/reportsroot-list-readingassignmentsubmissions?view=graph-rest-beta)
+- [Get-MgBetaEducationReportReadingAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationreportreadingassignmentsubmission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportsroot-list-readingassignmentsubmissions?view=graph-rest-beta)
 
 
 

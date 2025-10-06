@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSiteListItem
 ---
@@ -669,9 +669,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitem)
-- [](https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-beta)
+- [Get-MgBetaSiteListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-beta)
 
 
 

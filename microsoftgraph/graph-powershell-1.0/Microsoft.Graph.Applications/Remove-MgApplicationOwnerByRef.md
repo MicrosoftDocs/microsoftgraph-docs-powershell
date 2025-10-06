@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgApplicationOwnerByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgApplicationOwnerByRef
 ---
@@ -453,8 +453,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgApplicationOwnerByRef)
-- [](https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-1.0)
+- [Remove-MgApplicationOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgApplicationOwnerByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-1.0)
 
 
 

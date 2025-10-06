@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Functions
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgViewUserReminder
 ---
@@ -451,8 +451,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder)
-- [](https://learn.microsoft.com/graph/api/user-reminderview?view=graph-rest-1.0)
+- [Invoke-MgViewUserReminder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-reminderview?view=graph-rest-1.0)
 
 
 

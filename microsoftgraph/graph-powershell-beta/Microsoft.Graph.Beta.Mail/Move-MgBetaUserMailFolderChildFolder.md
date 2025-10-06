@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/move-mgbetausermailfolderchildfolder
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Move-MgBetaUserMailFolderChildFolder
 ---
@@ -531,8 +531,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/move-mgbetausermailfolderchildfolder)
-- [](https://learn.microsoft.com/graph/api/mailfolder-move?view=graph-rest-beta)
+- [Move-MgBetaUserMailFolderChildFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/move-mgbetausermailfolderchildfolder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/mailfolder-move?view=graph-rest-beta)
 
 
 

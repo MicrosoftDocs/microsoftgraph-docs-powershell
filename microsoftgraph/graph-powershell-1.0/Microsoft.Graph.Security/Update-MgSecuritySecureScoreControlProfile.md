@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecuritySecureScoreControlProfile
 ---
@@ -1185,8 +1185,8 @@ Required
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile)
-- [](https://learn.microsoft.com/graph/api/securescorecontrolprofile-update?view=graph-rest-1.0)
+- [Update-MgSecuritySecureScoreControlProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/securescorecontrolprofile-update?view=graph-rest-1.0)
 
 
 

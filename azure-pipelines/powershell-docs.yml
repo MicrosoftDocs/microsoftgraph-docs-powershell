@@ -152,6 +152,13 @@ extends:
             pwsh: true
             filePath: scripts/GenerateAliasedDocs.ps1
         - task: PowerShell@2
+          displayName: 'Correct related links section'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: scripts/CorrectRelatedLinks-AllFiles.ps1
+        - task: PowerShell@2
           displayName: Pushing to github
           env:
             GITHUB_TOKEN: $(GITHUB_TOKEN)

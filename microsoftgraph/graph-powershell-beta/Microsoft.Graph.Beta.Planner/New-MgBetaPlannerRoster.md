@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerroster
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlannerRoster
 ---
@@ -1053,8 +1053,8 @@ Title of the plan.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerroster)
-- [](https://learn.microsoft.com/graph/api/planner-post-rosters?view=graph-rest-beta)
+- [New-MgBetaPlannerRoster](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerroster)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/planner-post-rosters?view=graph-rest-beta)
 
 
 

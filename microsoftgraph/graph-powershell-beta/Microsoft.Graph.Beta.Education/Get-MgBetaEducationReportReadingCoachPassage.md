@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationreportreadingcoachpassage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationReportReadingCoachPassage
 ---
@@ -56,6 +56,30 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Details of practiced Reading Coach passages.
+
+## EXAMPLES
+### Example 1: Get a list of the Reading Coach passages from the last 24 hours
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationReportReadingCoachPassage
+
+```
+This example will get a list of the reading coach passages from the last 24 hours
+
+### Example 2: Get a list of the Reading Coach passages for a specific date using $filter
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationReportReadingCoachPassage -Filter "practicedAtDateTime gt 2025-06-22T00:00:00Z and practicedAtDateTime lt 2025-06-23T00:00:00Z" 
+
+```
+This example will get a list of the reading coach passages for a specific date using $filter
+
 
 ## PARAMETERS
 
@@ -542,9 +566,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationreportreadingcoachpassage)
-- [](https://learn.microsoft.com/graph/api/reportsroot-list-readingcoachpassages?view=graph-rest-beta)
-
+- [Get-MgBetaEducationReportReadingCoachPassage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationreportreadingcoachpassage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportsroot-list-readingcoachpassages?view=graph-rest-beta)
 
 
 

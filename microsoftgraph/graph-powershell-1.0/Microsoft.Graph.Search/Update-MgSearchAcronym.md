@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgSearchAcronym
 ---
@@ -725,8 +725,8 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym)
-- [](https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-1.0)
+- [Update-MgSearchAcronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-1.0)
 
 
 

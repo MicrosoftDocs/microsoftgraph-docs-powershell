@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityAttackSimulationTrainingCampaign
 ---
@@ -1241,8 +1241,8 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign)
-- [](https://learn.microsoft.com/graph/api/trainingcampaign-update?view=graph-rest-beta)
+- [Update-MgBetaSecurityAttackSimulationTrainingCampaign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/trainingcampaign-update?view=graph-rest-beta)
 
 
 

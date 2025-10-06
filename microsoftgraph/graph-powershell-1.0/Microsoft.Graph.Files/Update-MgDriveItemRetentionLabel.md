@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemretentionlabel
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgDriveItemRetentionLabel
 ---
@@ -749,8 +749,8 @@ Read-write.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemretentionlabel)
-- [](https://learn.microsoft.com/graph/api/driveitem-setretentionlabel?view=graph-rest-1.0)
+- [Update-MgDriveItemRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemretentionlabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-setretentionlabel?view=graph-rest-1.0)
 
 
 

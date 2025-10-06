@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgChatMessage
 ---
@@ -688,10 +688,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessage)
-- [](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/chats-getallmessages?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/chat-list-messages?view=graph-rest-1.0)
+- [Get-MgChatMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chats-getallmessages?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-list-messages?view=graph-rest-1.0)
 
 
 

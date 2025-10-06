@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/enable-mgsolutionbackuprestore
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Enable-MgSolutionBackupRestore
 ---
@@ -366,8 +366,8 @@ BODYPARAMETER `<IPathsI0X7PjSolutionsBackuprestoreMicrosoftGraphEnablePostReques
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/enable-mgsolutionbackuprestore)
-- [](https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-1.0)
+- [Enable-MgSolutionBackupRestore](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/enable-mgsolutionbackuprestore)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-1.0)
 
 
 

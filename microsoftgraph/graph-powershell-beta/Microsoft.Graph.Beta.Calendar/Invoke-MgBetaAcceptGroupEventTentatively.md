@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetaacceptgroupeventtentatively
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaAcceptGroupEventTentatively
 ---
@@ -607,8 +607,8 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetaacceptgroupeventtentatively)
-- [](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-beta)
+- [Invoke-MgBetaAcceptGroupEventTentatively](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetaacceptgroupeventtentatively)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-beta)
 
 
 

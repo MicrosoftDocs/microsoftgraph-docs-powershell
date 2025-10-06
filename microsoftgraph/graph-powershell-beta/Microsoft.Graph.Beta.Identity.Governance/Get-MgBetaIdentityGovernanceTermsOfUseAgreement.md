@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityGovernanceTermsOfUseAgreement
 ---
@@ -648,9 +648,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreement)
-- [](https://learn.microsoft.com/graph/api/agreement-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/termsofusecontainer-list-agreements?view=graph-rest-beta)
+- [Get-MgBetaIdentityGovernanceTermsOfUseAgreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreement)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agreement-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/termsofusecontainer-list-agreements?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaEducationUser
 ---
@@ -45612,8 +45612,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuser)
-- [](https://learn.microsoft.com/graph/api/educationuser-update?view=graph-rest-beta)
+- [Update-MgBetaEducationUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationuser-update?view=graph-rest-beta)
 
 
 

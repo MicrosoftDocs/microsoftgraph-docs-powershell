@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstlinspectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaNetworkAccessTlInspectionPolicy
 ---
@@ -64,6 +64,19 @@ Get a tlsInspectionPolicy object.
 | Delegated (work or school account) | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+Get-MgBetaNetworkAccessTlInspectionPolicy
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessTlInspectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -553,10 +566,9 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstlinspectionpolicy)
-- [](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicy-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-list-tlsinspectionpolicies?view=graph-rest-beta)
-
+- [Get-MgBetaNetworkAccessTlInspectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstlinspectionpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicy-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-list-tlsinspectionpolicies?view=graph-rest-beta)
 
 
 

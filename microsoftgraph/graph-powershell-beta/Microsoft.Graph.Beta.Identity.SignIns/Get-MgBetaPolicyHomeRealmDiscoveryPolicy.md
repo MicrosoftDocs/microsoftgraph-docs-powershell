@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyHomeRealmDiscoveryPolicy
 ---
@@ -628,9 +628,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicy)
-- [](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-list?view=graph-rest-beta)
+- [Get-MgBetaPolicyHomeRealmDiscoveryPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-list?view=graph-rest-beta)
 
 
 

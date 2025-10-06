@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusagebilled
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Export-MgReportPartnerBillingUsageBilled
 ---
@@ -414,8 +414,8 @@ BODYPARAMETER `<IPaths1Ij96IaReportsPartnersBillingUsageBilledMicrosoftGraphPart
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusagebilled)
-- [](https://learn.microsoft.com/graph/api/partners-billing-billedusage-export?view=graph-rest-1.0)
+- [Export-MgReportPartnerBillingUsageBilled](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusagebilled)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/partners-billing-billedusage-export?view=graph-rest-1.0)
 
 
 

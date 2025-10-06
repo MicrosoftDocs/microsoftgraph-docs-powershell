@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgUserMessage
 ---
@@ -1719,7 +1719,7 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessage)
+- [New-MgUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessage)
 
 
 

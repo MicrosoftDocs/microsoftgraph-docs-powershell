@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoremailboxprotectionunitbulkadditionjob
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob
 ---
@@ -552,7 +552,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoremailboxprotectionunitbulkadditionjob)
+- [Get-MgSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoremailboxprotectionunitbulkadditionjob)
 
 
 

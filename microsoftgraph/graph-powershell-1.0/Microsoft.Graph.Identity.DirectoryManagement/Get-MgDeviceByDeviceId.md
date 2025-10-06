@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicebydeviceid
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceByDeviceId
 ---
@@ -379,8 +379,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicebydeviceid)
-- [](https://learn.microsoft.com/graph/api/device-get?view=graph-rest-1.0)
+- [Get-MgDeviceByDeviceId](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicebydeviceid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/device-get?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetareplyusermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaReplyUserMessage
 ---
@@ -868,8 +868,8 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetareplyusermessage)
-- [](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-beta)
+- [Invoke-MgBetaReplyUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetareplyusermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-beta)
 
 
 

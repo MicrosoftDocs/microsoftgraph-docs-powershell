@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytemplatedevicetemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryTemplateDeviceTemplate
 ---
@@ -1038,8 +1038,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytemplatedevicetemplate)
-- [](https://learn.microsoft.com/graph/api/template-post-devicetemplates?view=graph-rest-beta)
+- [New-MgBetaDirectoryTemplateDeviceTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytemplatedevicetemplate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/template-post-devicetemplates?view=graph-rest-beta)
 
 
 

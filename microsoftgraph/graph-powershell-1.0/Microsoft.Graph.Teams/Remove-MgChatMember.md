@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchatmember
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgChatMember
 ---
@@ -656,9 +656,9 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchatmember)
-- [](https://learn.microsoft.com/graph/api/chat-delete-members?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0)
+- [Remove-MgChatMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchatmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-delete-members?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0)
 
 
 

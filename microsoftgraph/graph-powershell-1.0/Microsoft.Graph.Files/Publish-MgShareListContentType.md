@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgsharelistcontenttype
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Publish-MgShareListContentType
 ---
@@ -408,8 +408,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgsharelistcontenttype)
-- [](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
+- [Publish-MgShareListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgsharelistcontenttype)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
 
 
 

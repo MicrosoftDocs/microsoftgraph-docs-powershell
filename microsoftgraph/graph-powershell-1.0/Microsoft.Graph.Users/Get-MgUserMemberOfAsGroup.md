@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofasgroup
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserMemberOfAsGroup
 ---
@@ -612,8 +612,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofasgroup)
-- [](https://learn.microsoft.com/graph/api/user-list-memberof?view=graph-rest-1.0)
+- [Get-MgUserMemberOfAsGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofasgroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-list-memberof?view=graph-rest-1.0)
 
 
 

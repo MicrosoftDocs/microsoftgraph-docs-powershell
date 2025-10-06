@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgSearchQna
 ---
@@ -811,8 +811,8 @@ When users select this answer variation from the search results, they're directe
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna)
-- [](https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-1.0)
+- [New-MgSearchQna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-1.0)
 
 
 

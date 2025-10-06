@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethoduserpasswordresetandchangesummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary
 ---
@@ -58,6 +58,19 @@ This cmdlet has the following aliases,
 
 Represents the summary of password resets and changes for a specific day.
 This includes the number of password resets that were self-service and those triggered by an administrator.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary
+
+```
+This example shows how to use the Get-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -575,9 +588,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethoduserpasswordresetandchangesummary)
-- [](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-userpasswordresetsandchangessummary?view=graph-rest-beta)
-
+- [Get-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethoduserpasswordresetandchangesummary)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-userpasswordresetsandchangessummary?view=graph-rest-beta)
 
 
 

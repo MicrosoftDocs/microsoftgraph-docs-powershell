@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ChangeNotifications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/remove-mgbetasubscription
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSubscription
 ---
@@ -400,8 +400,8 @@ INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/remove-mgbetasubscription)
-- [](https://learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-beta)
+- [Remove-MgBetaSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/remove-mgbetasubscription)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessappointment
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBookingBusinessAppointment
 ---
@@ -593,9 +593,9 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessappointment)
-- [](https://learn.microsoft.com/graph/api/bookingappointment-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/bookingbusiness-list-appointments?view=graph-rest-1.0)
+- [Get-MgBookingBusinessAppointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessappointment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingappointment-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-list-appointments?view=graph-rest-1.0)
 
 
 

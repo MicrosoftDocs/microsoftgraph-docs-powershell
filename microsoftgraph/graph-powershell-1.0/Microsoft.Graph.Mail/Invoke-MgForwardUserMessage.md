@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgforwardusermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgForwardUserMessage
 ---
@@ -824,8 +824,8 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgforwardusermessage)
-- [](https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-1.0)
+- [Invoke-MgForwardUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgforwardusermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritydatasecurityandgovernancesensitivitylabelright
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelRight
 ---
@@ -460,8 +460,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritydatasecurityandgovernancesensitivitylabelright)
-- [](https://learn.microsoft.com/graph/api/usagerightsincluded-get?view=graph-rest-beta)
+- [Get-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelRight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritydatasecurityandgovernancesensitivitylabelright)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/usagerightsincluded-get?view=graph-rest-beta)
 
 
 

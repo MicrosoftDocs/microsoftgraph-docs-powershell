@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgPolicyPermissionGrantPolicy
 ---
@@ -641,9 +641,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicy)
-- [](https://learn.microsoft.com/graph/api/permissiongrantpolicy-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/permissiongrantpolicy-list?view=graph-rest-1.0)
+- [Get-MgPolicyPermissionGrantPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/permissiongrantpolicy-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/permissiongrantpolicy-list?view=graph-rest-1.0)
 
 
 
