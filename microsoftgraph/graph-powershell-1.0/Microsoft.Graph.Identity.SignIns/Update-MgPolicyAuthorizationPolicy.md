@@ -110,20 +110,20 @@ Update-MgPolicyAuthorizationPolicy -BodyParameter $params
 ```
 This example will disable default user role's permission to create applications
 
-### Example 4: Enable default user role to use Self-Serve Password Reset feature
+### Example 4: Disable administrator ability to use Self-Serve Password Reset feature
 
 ```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	allowedToUseSSPR = $true
+	allowedToUseSSPR = $false
 }
 
 Update-MgPolicyAuthorizationPolicy -BodyParameter $params
 
 ```
-This example will enable default user role to use self-serve password reset feature
+This example will disable administrator ability to use self-serve password reset feature
 
 ### Example 5: Disable user consent to apps for default user role
 
