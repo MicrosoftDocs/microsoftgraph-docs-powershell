@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofasdirectoryrole
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 10/03/2025
+ms.date: 10/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserTransitiveMemberOfAsDirectoryRole
 ---

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: c9e6c737-e484-478f-b67f-1fb629700dac
+Module Guid: e0a96efd-ef8a-46e1-aa1c-fabad8ff4a5d
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US

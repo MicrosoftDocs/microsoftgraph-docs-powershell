@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Reports
-Module Guid: 7480af7b-1ce7-454a-ab1d-09bf4dc3fc00
+Module Guid: 6e615f40-6233-4fd7-a6ff-7fa290e3c2aa
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.reports/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

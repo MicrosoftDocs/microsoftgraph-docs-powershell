@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportapiusage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 10/03/2025
+ms.date: 10/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportApiUsage
 ---

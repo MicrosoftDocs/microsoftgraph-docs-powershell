@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementuserroledetail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
-ms.date: 10/03/2025
+ms.date: 10/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementUserRoleDetail
 ---

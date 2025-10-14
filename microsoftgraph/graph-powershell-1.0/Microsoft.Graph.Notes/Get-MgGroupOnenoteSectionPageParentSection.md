@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotesectionpageparentsection
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 10/03/2025
+ms.date: 10/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupOnenoteSectionPageParentSection
 ---
