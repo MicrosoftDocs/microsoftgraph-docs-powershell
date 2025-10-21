@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskcount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 10/10/2025
+ms.date: 10/17/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPlannerTaskCount
 ---

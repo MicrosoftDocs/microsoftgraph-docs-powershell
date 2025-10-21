@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationtraininglanguagedetail
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 10/10/2025
+ms.date: 10/17/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityAttackSimulationTrainingLanguageDetail
 ---

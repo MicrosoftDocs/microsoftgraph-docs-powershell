@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootitemlastmodifiedbyuserserviceprovisioningerror
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 10/10/2025
+ms.date: 10/17/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupDriveRootItemLastModifiedByUserServiceProvisioningError
 ---
