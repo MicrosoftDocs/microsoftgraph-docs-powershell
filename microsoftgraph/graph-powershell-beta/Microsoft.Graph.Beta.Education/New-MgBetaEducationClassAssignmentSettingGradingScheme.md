@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingscheme
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEducationClassAssignmentSettingGradingScheme
 ---
@@ -13,7 +13,8 @@ title: New-MgBetaEducationClassAssignmentSettingGradingScheme
 
 ## SYNOPSIS
 
-Create a new educationGradingScheme object.
+Create a new educationGradingScheme on an educationClass.
+Only teachers can perform this operation.
 
 ## SYNTAX
 
@@ -66,7 +67,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new educationGradingScheme object.
+Create a new educationGradingScheme on an educationClass.
+Only teachers can perform this operation.
 
 **Permissions**
 
@@ -589,7 +591,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgBetaEducationClassAssignmentSettingGradingScheme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingscheme)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationgradingscheme-post?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignmentsettings-post-gradingschemes?view=graph-rest-beta)
 
 
 

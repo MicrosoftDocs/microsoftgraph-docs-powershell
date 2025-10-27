@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthread
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaGroupThread
 ---
@@ -13,7 +13,7 @@ title: Remove-MgBetaGroupThread
 
 ## SYNOPSIS
 
-Delete a thread object.
+Delete conversationThread.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThread?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a thread object.
+Delete conversationThread.
 
 **Permissions**
 
@@ -449,7 +449,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgBetaGroupThread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthread)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-thread?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationthread-delete?view=graph-rest-beta)
 
 
 

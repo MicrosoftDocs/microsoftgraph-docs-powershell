@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoicevendorpaymentmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaFinancialCompanyPurchaseInvoiceVendorPaymentMethod
 ---

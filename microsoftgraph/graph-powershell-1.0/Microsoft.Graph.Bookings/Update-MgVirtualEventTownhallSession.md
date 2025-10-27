@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventtownhallsession
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgVirtualEventTownhallSession
 ---
@@ -26,9 +26,9 @@ Update the navigation property sessions in solutions
 Update-MgVirtualEventTownhallSession -VirtualEventSessionId <string>
  -VirtualEventTownhallId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
- [-AllowBreakoutRooms] [-AllowLiveShare <string>] [-AllowMeetingChat <string>]
- [-AllowParticipantsToChangeName] [-AllowPowerPointSharing] [-AllowRecording]
- [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard]
+ [-AllowBreakoutRooms] [-AllowCopyingAndSharingMeetingContent] [-AllowLiveShare <string>]
+ [-AllowMeetingChat <string>] [-AllowParticipantsToChangeName] [-AllowPowerPointSharing]
+ [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard]
  [-AllowedLobbyAdmitters <string>] [-AllowedPresenters <string>]
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-ChatInfo <IMicrosoftGraphChatInfo>]
@@ -62,9 +62,10 @@ Update-MgVirtualEventTownhallSession -VirtualEventSessionId <string>
 Update-MgVirtualEventTownhallSession -InputObject <IBookingsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowBreakoutRooms]
- [-AllowLiveShare <string>] [-AllowMeetingChat <string>] [-AllowParticipantsToChangeName]
- [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription]
- [-AllowWhiteboard] [-AllowedLobbyAdmitters <string>] [-AllowedPresenters <string>]
+ [-AllowCopyingAndSharingMeetingContent] [-AllowLiveShare <string>] [-AllowMeetingChat <string>]
+ [-AllowParticipantsToChangeName] [-AllowPowerPointSharing] [-AllowRecording]
+ [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard]
+ [-AllowedLobbyAdmitters <string>] [-AllowedPresenters <string>]
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-ChatInfo <IMicrosoftGraphChatInfo>]
  [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
@@ -185,6 +186,33 @@ HelpMessage: ''
 ### -AllowBreakoutRooms
 
 Indicates whether breakout rooms are enabled for the meeting.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AllowCopyingAndSharingMeetingContent
+
+Indicates whether the ability to copy and share meeting content is enabled for the meeting.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -812,7 +840,7 @@ HelpMessage: ''
 
 ### -IsEndToEndEncryptionEnabled
 
-
+Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -1423,6 +1451,7 @@ BODYPARAMETER `<IMicrosoftGraphVirtualEventSession>`: virtualEventSession
   [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
   [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
   [AllowBreakoutRooms <Boolean?>]: Indicates whether breakout rooms are enabled for the meeting.
+  [AllowCopyingAndSharingMeetingContent <Boolean?>]: Indicates whether the ability to copy and share meeting content is enabled for the meeting.
   [AllowLiveShare <String>]: meetingLiveShareOptions
   [AllowMeetingChat <String>]: meetingChatMode
   [AllowParticipantsToChangeName <Boolean?>]: Specifies if participants are allowed to rename themselves in an instance of the meeting.
@@ -1495,7 +1524,7 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
-  [IsEndToEndEncryptionEnabled <Boolean?>]: 
+  [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
   [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
   [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
     [(Any) <Object>]: This indicates any property can be added to this object.

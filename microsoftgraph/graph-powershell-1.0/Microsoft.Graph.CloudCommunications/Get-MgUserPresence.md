@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguserpresence
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserPresence
 ---
@@ -13,8 +13,7 @@ title: Get-MgUserPresence
 
 ## SYNOPSIS
 
-Set a presence status message for a user.
-An optional expiration date and time can be supplied.
+Get a user's presence information.
 
 ## SYNTAX
 
@@ -43,8 +42,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Set a presence status message for a user.
-An optional expiration date and time can be supplied.
+Get a user's presence information.
 
 **Permissions**
 
@@ -387,7 +385,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserPresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguserpresence)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/presence-get?view=graph-rest-1.0)
 
 
 

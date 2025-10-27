@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmobileapptroubleshootingevent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementMobileAppTroubleshootingEvent
 ---
@@ -175,7 +175,7 @@ HelpMessage: ''
 
 ### -AppLogCollectionRequests
 
-Indicates collection of App Log Upload Request.
+The collection property of AppLogUploadRequest.
 To construct, see NOTES section for APPLOGCOLLECTIONREQUESTS properties and create a hash table.
 
 ```yaml
@@ -782,7 +782,7 @@ ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair[]>: A set of string key and s
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest[]>: Indicates collection of App Log Upload Request.
+APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest[]>: The collection property of AppLogUploadRequest.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [CompletedDateTime <DateTime?>]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -811,7 +811,7 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
       [Text <String>]: 
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: Indicates collection of App Log Upload Request.
+  [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: The collection property of AppLogUploadRequest.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [CompletedDateTime <DateTime?>]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.

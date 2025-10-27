@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmember
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgChatMember
 ---
@@ -13,7 +13,7 @@ title: Get-MgChatMember
 
 ## SYNOPSIS
 
-Retrieve a conversationMember from a chat or channel.
+Retrieve a conversationMember from a chat.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMember?view=graph-powershell-beta)
@@ -56,7 +56,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Retrieve a conversationMember from a chat or channel.
+Retrieve a conversationMember from a chat.
 
 **Permissions**
 
@@ -607,7 +607,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgChatMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-get-members?view=graph-rest-1.0)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-list?view=graph-rest-1.0)
 
 

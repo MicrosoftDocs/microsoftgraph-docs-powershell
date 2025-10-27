@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicycompliancechange
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaWindowsUpdatesPolicyComplianceChange
 ---
@@ -13,7 +13,7 @@ title: Remove-MgBetaWindowsUpdatesPolicyComplianceChange
 
 ## SYNOPSIS
 
-Delete a contentApproval object.
+Delete a complianceChange object.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a contentApproval object.
+Delete a complianceChange object.
 
 **Permissions**
 
@@ -440,7 +440,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgBetaWindowsUpdatesPolicyComplianceChange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicycompliancechange)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-contentapproval-delete?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-delete?view=graph-rest-beta)
 
 
 

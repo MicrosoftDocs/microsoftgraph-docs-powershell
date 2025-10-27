@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganization
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgTenantRelationshipMultiTenantOrganization
 ---
@@ -13,9 +13,7 @@ title: Update-MgTenantRelationshipMultiTenantOrganization
 
 ## SYNOPSIS
 
-Create a new multitenant organization.
-By default, the creator tenant becomes an owner tenant upon successful creation.
-Only owner tenants can manage a multitenant organization.
+Update the properties of a multitenant organization.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipMultiTenantOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaTenantRelationshipMultiTenantOrganization?view=graph-powershell-beta)
@@ -52,9 +50,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new multitenant organization.
-By default, the creator tenant becomes an owner tenant upon successful creation.
-Only owner tenants can manage a multitenant organization.
+Update the properties of a multitenant organization.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -607,7 +603,7 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgTenantRelationshipMultiTenantOrganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganization)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantrelationship-put-multitenantorganization?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-1.0)
 
 
 

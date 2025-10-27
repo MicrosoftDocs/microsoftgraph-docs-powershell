@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileapp
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceAppManagementMobileApp
 ---
@@ -13,7 +13,7 @@ title: Get-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
 
-Read properties and relationships of the macOSOfficeSuiteApp object.
+Read properties and relationships of the managedIOSLobApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -57,7 +57,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Read properties and relationships of the macOSOfficeSuiteApp object.
+Read properties and relationships of the managedIOSLobApp object.
 
 **Permissions**
 
@@ -582,8 +582,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgDeviceAppManagementMobileApp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-apps-macosofficesuiteapp-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-apps-managedapp-list?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-apps-managedioslobapp-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-apps-windowsmicrosoftedgeapp-list?view=graph-rest-1.0)
 
 
 

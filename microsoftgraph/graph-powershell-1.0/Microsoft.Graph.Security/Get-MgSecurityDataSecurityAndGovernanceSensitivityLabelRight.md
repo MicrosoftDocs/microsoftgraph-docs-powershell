@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritydatasecurityandgovernancesensitivitylabelright
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelRight
 ---
@@ -56,6 +56,14 @@ Get the usage rights granted to the calling user for a specific sensitivity labe
 | Delegated (work or school account) | SensitivityLabel.Read, SensitivityLabels.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SensitivityLabel.Read, SensitivityLabels.Read.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelRight -SensitivityLabelId $sensitivityLabelId -Owneremail "bob@contoso.com"
 
 ## PARAMETERS
 
@@ -420,7 +428,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelRight](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritydatasecurityandgovernancesensitivitylabelright)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/usagerightsincluded-get?view=graph-rest-1.0)
-
 
 
 

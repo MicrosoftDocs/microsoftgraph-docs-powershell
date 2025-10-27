@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaEducationClassAssignmentSetting
 ---
@@ -317,7 +317,7 @@ HelpMessage: ''
 
 ### -GradingSchemes
 
-
+The grading schemes that can be attached to assignments created in this class.
 To construct, see NOTES section for GRADINGSCHEMES properties and create a hash table.
 
 ```yaml
@@ -652,7 +652,7 @@ Indicates whether teachers can grade with points in addition to letter grades.
 Read-only.
     [DisplayName <String>]: The name of the grading category.
     [PercentageWeight <Int32?>]: The weight of the category; an integer between 0 and 100.
-  [GradingSchemes <IMicrosoftGraphEducationGradingScheme[]>]: 
+  [GradingSchemes <IMicrosoftGraphEducationGradingScheme[]>]: The grading schemes that can be attached to assignments created in this class.
   [SubmissionAnimationDisabled <Boolean?>]: Indicates whether turn-in celebration animation is shown.
 If true, the animation doesn't show.
 The default value is false.
@@ -675,7 +675,7 @@ Read-only.
   [DisplayName <String>]: The name of the grading category.
   [PercentageWeight <Int32?>]: The weight of the category; an integer between 0 and 100.
 
-GRADINGSCHEMES <IMicrosoftGraphEducationGradingScheme[]>: .
+GRADINGSCHEMES <IMicrosoftGraphEducationGradingScheme[]>: The grading schemes that can be attached to assignments created in this class.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DisplayName <String>]: The name of the grading scheme.

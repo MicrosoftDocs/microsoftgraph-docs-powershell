@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritydatasecurityandgovernancesensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel
 ---
@@ -67,6 +67,14 @@ Get a sensitivity label available for the entire tenant.
 | Delegated (work or school account) | SensitivityLabel.Read, SensitivityLabels.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SensitivityLabel.Read, SensitivityLabels.Read.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel -Filter "applicableTo has 'file' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')"
 
 ## PARAMETERS
 
@@ -604,7 +612,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 - [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritydatasecurityandgovernancesensitivitylabel)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-get?view=graph-rest-1.0)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/tenantdatasecurityandgovernance-list-sensitivitylabels?view=graph-rest-1.0)
-
 
 
 

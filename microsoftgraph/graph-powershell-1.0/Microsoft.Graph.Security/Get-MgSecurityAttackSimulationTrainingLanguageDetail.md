@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationtraininglanguagedetail
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityAttackSimulationTrainingLanguageDetail
 ---
@@ -60,6 +60,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the language details about an attack simulation training for a tenant.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityAttackSimulationTrainingLanguageDetail -TrainingId $trainingId -TrainingLanguageDetailId $trainingLanguageDetailId -Filter "locale eq 'en'"
 
 ## PARAMETERS
 
@@ -623,7 +631,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [Get-MgSecurityAttackSimulationTrainingLanguageDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationtraininglanguagedetail)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/traininglanguagedetail-get?view=graph-rest-1.0)
-
 
 
 

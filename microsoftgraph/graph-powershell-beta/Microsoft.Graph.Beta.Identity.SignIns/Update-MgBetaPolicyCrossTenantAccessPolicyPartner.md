@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicypartner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyCrossTenantAccessPolicyPartner
 ---
@@ -31,6 +31,7 @@ Update-MgBetaPolicyCrossTenantAccessPolicyPartner
  [-B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
+ [-DeletedDateTime <datetime>]
  [-IdentitySynchronization <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>]
  [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>] [-IsInMultiTenantOrganization]
  [-IsServiceProvider] [-TenantId <string>]
@@ -62,6 +63,7 @@ Update-MgBetaPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignIns
  [-B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
+ [-DeletedDateTime <datetime>]
  [-IdentitySynchronization <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>]
  [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>] [-IsInMultiTenantOrganization]
  [-IsServiceProvider] [-TenantId <string>]
@@ -431,6 +433,33 @@ ParameterSets:
 - Name: Update
   Position: Named
   IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DeletedDateTime
+
+Shows the last date and time the policy was deleted.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -889,6 +918,7 @@ B2BDIRECTCONNECTOUTBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: c
 
 BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner>`: crossTenantAccessPolicyConfigurationPartner
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
   [AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]: inboundOutboundPolicyConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
     [InboundAllowed <Boolean?>]: Defines whether external users coming inbound are allowed.
@@ -908,6 +938,7 @@ BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner>`: cr
   [B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]: crossTenantAccessPolicyB2BSetting
   [IdentitySynchronization <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>]: crossTenantIdentitySyncPolicyPartner
     [(Any) <Object>]: This indicates any property can be added to this object.
+    [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
     [DisplayName <String>]: Display name for the cross-tenant user synchronization policy.
 Use the name of the partner Microsoft Entra tenant to easily identify the policy.
 Optional.
@@ -941,6 +972,7 @@ For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 
 IDENTITYSYNCHRONIZATION `<IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>`: crossTenantIdentitySyncPolicyPartner
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
   [DisplayName <String>]: Display name for the cross-tenant user synchronization policy.
 Use the name of the partner Microsoft Entra tenant to easily identify the policy.
 Optional.
@@ -978,9 +1010,11 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
   [CertificateBasedAuthConfigurationId <String>]: The unique identifier of certificateBasedAuthConfiguration
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
+  [ConditionalAccessPolicyId <String>]: The unique identifier of conditionalAccessPolicy
   [ConditionalAccessTemplateId <String>]: The unique identifier of conditionalAccessTemplate
   [ContentFormats <String[]>]: Usage: contentFormats={contentFormats}
   [CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  [CrossTenantIdentitySyncPolicyPartnerTenantId <String>]: The unique identifier of crossTenantIdentitySyncPolicyPartner
   [CustomAuthenticationExtensionId <String>]: The unique identifier of customAuthenticationExtension
   [DataLossPreventionPolicyId <String>]: The unique identifier of dataLossPreventionPolicy
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
@@ -1005,8 +1039,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
-  [MobilityManagementPolicyId <String>]: The unique identifier of mobilityManagementPolicy
+  [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
+  [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
+  [NamedLocationId <String>]: The unique identifier of namedLocation
   [OAuth2PermissionGrantId <String>]: The unique identifier of oAuth2PermissionGrant
   [OrganizationId <String>]: The unique identifier of organization
   [PasswordAuthenticationMethodId <String>]: The unique identifier of passwordAuthenticationMethod

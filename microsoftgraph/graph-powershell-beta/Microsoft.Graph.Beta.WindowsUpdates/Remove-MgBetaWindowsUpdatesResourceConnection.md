@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesresourceconnection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaWindowsUpdatesResourceConnection
 ---
@@ -13,7 +13,7 @@ title: Remove-MgBetaWindowsUpdatesResourceConnection
 
 ## SYNOPSIS
 
-Delete a resourceConnection object.
+Delete an operationalInsightsConnection object.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a resourceConnection object.
+Delete an operationalInsightsConnection object.
 
 **Permissions**
 
@@ -418,7 +418,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgBetaWindowsUpdatesResourceConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesresourceconnection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-resourceconnection-delete?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-operationalinsightsconnection-delete?view=graph-rest-beta)
 
 
 

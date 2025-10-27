@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofilepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessFilteringProfilePolicy
 ---
@@ -13,7 +13,7 @@ title: Update-MgBetaNetworkAccessFilteringProfilePolicy
 
 ## SYNOPSIS
 
-Update the properties of a tlsInspectionPolicyLink object.
+Update the properties of a threatIntelligencePolicyLink object.
 
 ## SYNTAX
 
@@ -66,7 +66,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a tlsInspectionPolicyLink object.
+Update the properties of a threatIntelligencePolicyLink object.
 
 **Permissions**
 
@@ -614,6 +614,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
   [ThreatIntelligencePolicyId <String>]: The unique identifier of threatIntelligencePolicy
   [TlsInspectionPolicyId <String>]: The unique identifier of tlsInspectionPolicy
+  [Url <String>]: Usage: url='{url}'
 
 POLICY `<IMicrosoftGraphNetworkaccessPolicy>`: policy
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -631,7 +632,7 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgBetaNetworkAccessFilteringProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofilepolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicylink-update?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicylink-update?view=graph-rest-beta)
 
 
 

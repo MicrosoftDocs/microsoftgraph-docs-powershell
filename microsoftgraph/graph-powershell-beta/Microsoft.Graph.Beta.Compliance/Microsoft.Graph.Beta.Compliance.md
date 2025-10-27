@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Compliance
-Module Guid: b1778747-a9b4-43e0-8bd5-358917d4a71b
+Module Guid: 8630f42c-b642-4690-a64c-f2d4516203d6
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.compliance/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresence
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Set-MgCommunicationPresence
 ---
@@ -14,6 +14,7 @@ title: Set-MgCommunicationPresence
 ## SYNOPSIS
 
 Set the state of a user's presence session as an application.
+For more information about presence sessions, states permutations, and timeouts, see Manage presence state using the Microsoft Graph API.
 
 ## SYNTAX
 
@@ -70,6 +71,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Set the state of a user's presence session as an application.
+For more information about presence sessions, states permutations, and timeouts, see Manage presence state using the Microsoft Graph API.
 
 ## PARAMETERS
 

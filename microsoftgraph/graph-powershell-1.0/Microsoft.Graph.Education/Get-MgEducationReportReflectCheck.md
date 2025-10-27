@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreflectcheck
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationReportReflectCheck
 ---
@@ -13,7 +13,7 @@ title: Get-MgEducationReportReflectCheck
 
 ## SYNOPSIS
 
-Get reflectCheckInResponses from education
+Details of check-in responses.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationReportReflectCheck](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationReportReflectCheck?view=graph-powershell-beta)
@@ -56,7 +56,21 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get reflectCheckInResponses from education
+Details of check-in responses.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationReportReflectCheck
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationReportReflectCheck -Filter "submitDateTime gt 2025-06-11T00:00:00.000Z and submitDateTime lt 2025-06-12T00:00:00Z"
 
 ## PARAMETERS
 
@@ -540,7 +554,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [Get-MgEducationReportReflectCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreflectcheck)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/reportsroot-list-reflectcheckinresponses?view=graph-rest-1.0)
-
 
 
 

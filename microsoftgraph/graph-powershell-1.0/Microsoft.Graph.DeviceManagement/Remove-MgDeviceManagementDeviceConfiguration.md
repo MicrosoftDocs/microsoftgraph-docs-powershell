@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgDeviceManagementDeviceConfiguration
 ---
@@ -13,7 +13,7 @@ title: Remove-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
 
-Deletes a macOSDeviceFeaturesConfiguration.
+Deletes a windowsPhone81CustomConfiguration.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Deletes a macOSDeviceFeaturesConfiguration.
+Deletes a windowsPhone81CustomConfiguration.
 
 **Permissions**
 
@@ -439,7 +439,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgDeviceManagementDeviceConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfiguration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-deviceconfig-macosdevicefeaturesconfiguration-delete?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-deviceconfig-windowsphone81customconfiguration-delete?view=graph-rest-1.0)
 
 
 

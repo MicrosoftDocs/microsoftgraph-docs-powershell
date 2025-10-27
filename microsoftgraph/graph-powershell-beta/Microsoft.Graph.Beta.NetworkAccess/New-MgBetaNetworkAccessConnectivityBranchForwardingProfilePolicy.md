@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchforwardingprofilepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy
 ---
@@ -610,6 +610,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
   [ThreatIntelligencePolicyId <String>]: The unique identifier of threatIntelligencePolicy
   [TlsInspectionPolicyId <String>]: The unique identifier of tlsInspectionPolicy
+  [Url <String>]: Usage: url='{url}'
 
 POLICY `<IMicrosoftGraphNetworkaccessPolicy>`: policy
   [(Any) <Object>]: This indicates any property can be added to this object.

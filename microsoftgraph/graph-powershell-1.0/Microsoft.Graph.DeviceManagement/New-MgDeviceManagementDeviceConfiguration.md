@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementDeviceConfiguration
 ---
@@ -13,7 +13,7 @@ title: New-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
 
-Create a new windowsPhone81GeneralConfiguration object.
+Create a new androidWorkProfileGeneralDeviceConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new windowsPhone81GeneralConfiguration object.
+Create a new androidWorkProfileGeneralDeviceConfiguration object.
 
 **Permissions**
 
@@ -787,7 +787,7 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgDeviceManagementDeviceConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-deviceconfig-windowsphone81generalconfiguration-create?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-create?view=graph-rest-1.0)
 
 
 

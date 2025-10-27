@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicycompliancechange
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaWindowsUpdatesPolicyComplianceChange
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaWindowsUpdatesPolicyComplianceChange
 
 ## SYNOPSIS
 
-Read the properties and relationships of a complianceChange object.
+Read the properties and relationships of a contentApproval object.
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Read the properties and relationships of a complianceChange object.
+Read the properties and relationships of a contentApproval object.
 
 **Permissions**
 
@@ -586,7 +586,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgBetaWindowsUpdatesPolicyComplianceChange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicycompliancechange)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-contentapproval-get?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-updatepolicy-list-compliancechanges?view=graph-rest-beta)
 
 

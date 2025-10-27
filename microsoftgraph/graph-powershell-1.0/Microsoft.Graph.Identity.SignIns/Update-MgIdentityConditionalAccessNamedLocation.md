@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessnamedlocation
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityConditionalAccessNamedLocation
 ---
@@ -13,7 +13,7 @@ title: Update-MgIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
 
-Update the properties of an ipNamedLocation object.
+Update the properties of a countryNamedLocation object.
 
 ## SYNTAX
 
@@ -66,7 +66,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of an ipNamedLocation object.
+Update the properties of a countryNamedLocation object.
 
 **Permissions**
 
@@ -649,7 +649,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgIdentityConditionalAccessNamedLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessnamedlocation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/ipnamedlocation-update?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/countrynamedlocation-update?view=graph-rest-1.0)
 
 
 

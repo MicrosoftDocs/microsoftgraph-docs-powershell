@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreexchangerestoresessiongranularmailboxrestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact
 ---
@@ -110,7 +110,8 @@ HelpMessage: ''
 
 ### -ArtifactCount
 
-
+This property will be deprecated soon.
+Don't use.
 
 ```yaml
 Type: System.Int32
@@ -780,9 +781,13 @@ For example, in the access reviews decisions API, this property might record the
         [Device <IMicrosoftGraphIdentity>]: identity
         [User <IMicrosoftGraphIdentity>]: identity
       [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Error <IMicrosoftGraphPublicError>]: publicError
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
       [Status <String>]: protectionUnitStatus
     [Tags <String>]: restorePointTags
@@ -790,7 +795,8 @@ For example, in the access reviews decisions API, this property might record the
   [Status <String>]: artifactRestoreStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [ArtifactCount <Int32?>]: .
+  [ArtifactCount <Int32?>]: This property will be deprecated soon.
+Don't use.
   [SearchResponseId <String>]: .
 
 ERROR `<IMicrosoftGraphPublicError>`: publicError
@@ -859,6 +865,8 @@ For example, in the access reviews decisions API, this property might record the
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Error <IMicrosoftGraphPublicError>]: publicError
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Code <String>]: Represents the error code.
@@ -876,6 +884,8 @@ For example, in the access reviews decisions API, this property might record the
       [Target <String>]: The target of the error.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
     [Status <String>]: protectionUnitStatus
   [Tags <String>]: restorePointTags

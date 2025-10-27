@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessforwardingpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessForwardingPolicy
 ---
@@ -22,10 +22,11 @@ Create new navigation property to forwardingPolicies for networkAccess
 ```
 New-MgBetaNetworkAccessForwardingPolicy [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Description <string>] [-Id <string>] [-Name <string>]
- [-PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>] [-TrafficForwardingType <string>]
- [-Version <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>] [-PrivateAccessAppId <string>]
+ [-TrafficForwardingType <string>] [-Version <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -284,6 +285,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PrivateAccessAppId
+
+
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -474,6 +496,7 @@ Read-only.
   [Version <String>]: Version.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [PrivateAccessAppId <String>]: 
   [TrafficForwardingType <String>]: trafficForwardingType
 
 POLICYRULES <IMicrosoftGraphNetworkaccessPolicyRule[]>: Represents the definition of the policy ruleset that makes up the core definition of a policy.

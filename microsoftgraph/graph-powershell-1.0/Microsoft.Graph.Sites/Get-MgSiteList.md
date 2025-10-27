@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelist
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteList
 ---
@@ -13,7 +13,7 @@ title: Get-MgSiteList
 
 ## SYNOPSIS
 
-Get a list of rich long-running operations associated with a list.
+Returns the metadata for a list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteList?view=graph-powershell-beta)
@@ -56,7 +56,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get a list of rich long-running operations associated with a list.
+Returns the metadata for a list.
 
 **Permissions**
 
@@ -615,7 +615,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgSiteList](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelist)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/list-list-operations?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/list-get?view=graph-rest-1.0)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0)
 
 

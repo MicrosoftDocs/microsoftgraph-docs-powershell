@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadriveroot
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Copy-MgBetaDriveRoot
 ---
@@ -17,6 +17,8 @@ Create a copy of a driveItem asynchronously.
 You can optionally copy exclusively the child items, specify a new parent folder, or provide a new name.
 Once the request is accepted, the operation is queued and processed asynchronously.
 Use the monitor URL to track progress until the operation completes.
+The copy operation is restricted to 30,000 driveItems.
+For more information, see SharePoint limits.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Copy-MgDriveRoot?view=graph-powershell-1.0)
@@ -78,6 +80,8 @@ Create a copy of a driveItem asynchronously.
 You can optionally copy exclusively the child items, specify a new parent folder, or provide a new name.
 Once the request is accepted, the operation is queued and processed asynchronously.
 Use the monitor URL to track progress until the operation completes.
+The copy operation is restricted to 30,000 driveItems.
+For more information, see SharePoint limits.
 
 ## PARAMETERS
 

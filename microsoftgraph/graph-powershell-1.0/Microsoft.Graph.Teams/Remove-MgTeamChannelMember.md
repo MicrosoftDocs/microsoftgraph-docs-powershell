@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelmember
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgTeamChannelMember
 ---
@@ -750,7 +750,7 @@ This property is settable only for members of a chat.
 ## RELATED LINKS
 
 - [Remove-MgTeamChannelMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-delete?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-delete-members?view=graph-rest-1.0)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0)
 
 

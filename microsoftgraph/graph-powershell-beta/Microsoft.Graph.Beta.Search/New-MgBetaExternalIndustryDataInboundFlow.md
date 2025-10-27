@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaExternalIndustryDataInboundFlow
 ---
@@ -13,7 +13,7 @@ title: New-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
 
-Create a new inboundFileFlow object.
+Create a new inboundApiFlow object.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new inboundFileFlow object.
+Create a new inboundApiFlow object.
 
 **Permissions**
 
@@ -680,7 +680,7 @@ Must be unique within the referenceType.
 ## RELATED LINKS
 
 - [New-MgBetaExternalIndustryDataInboundFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-post?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-post?view=graph-rest-beta)
 
 
 

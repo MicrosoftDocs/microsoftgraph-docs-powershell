@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthread
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgGroupThread
 ---
@@ -446,7 +446,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgGroupThread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthread)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationthread-delete?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-thread?view=graph-rest-1.0)
 
 
 

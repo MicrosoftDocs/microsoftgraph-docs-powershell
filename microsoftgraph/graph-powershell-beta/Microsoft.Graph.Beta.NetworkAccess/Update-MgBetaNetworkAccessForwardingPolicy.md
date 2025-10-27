@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessForwardingPolicy
 ---
@@ -23,10 +23,10 @@ Update the navigation property forwardingPolicies in networkAccess
 Update-MgBetaNetworkAccessForwardingPolicy -ForwardingPolicyId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Description <string>]
  [-Id <string>] [-Name <string>] [-PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>]
- [-TrafficForwardingType <string>] [-Version <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PrivateAccessAppId <string>] [-TrafficForwardingType <string>] [-Version <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -45,10 +45,10 @@ Update-MgBetaNetworkAccessForwardingPolicy -ForwardingPolicyId <string>
 Update-MgBetaNetworkAccessForwardingPolicy -InputObject <INetworkAccessIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Description <string>]
  [-Id <string>] [-Name <string>] [-PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>]
- [-TrafficForwardingType <string>] [-Version <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PrivateAccessAppId <string>] [-TrafficForwardingType <string>] [-Version <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -398,6 +398,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PrivateAccessAppId
+
+
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -604,6 +631,7 @@ Read-only.
   [Version <String>]: Version.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [PrivateAccessAppId <String>]: 
   [TrafficForwardingType <String>]: trafficForwardingType
 
 INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
@@ -630,6 +658,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
   [ThreatIntelligencePolicyId <String>]: The unique identifier of threatIntelligencePolicy
   [TlsInspectionPolicyId <String>]: The unique identifier of tlsInspectionPolicy
+  [Url <String>]: Usage: url='{url}'
 
 POLICYRULES <IMicrosoftGraphNetworkaccessPolicyRule[]>: Represents the definition of the policy ruleset that makes up the core definition of a policy.
   [Id <String>]: The unique identifier for an entity.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgAnswerCommunicationCall
 ---
@@ -687,6 +687,7 @@ BODYPARAMETER `<IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostReq
     [HideBotAfterEscalation <Boolean?>]: Indicates whether to hide the app after the call is escalated.
     [IsContentSharingNotificationEnabled <Boolean?>]: Indicates whether content sharing notifications should be enabled for the call.
     [IsDeltaRosterEnabled <Boolean?>]: Indicates whether delta roster is enabled for the call.
+    [IsInteractiveRosterEnabled <Boolean?>]: Indicates whether delta roster filtering by participant interactivity is enabled.
   [CallbackUri <String>]: 
   [MediaConfig <IMicrosoftGraphMediaConfig>]: mediaConfig
     [(Any) <Object>]: This indicates any property can be added to this object.

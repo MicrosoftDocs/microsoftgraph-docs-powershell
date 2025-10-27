@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingrecording
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserOnlineMeetingRecording
 ---
@@ -14,7 +14,7 @@ title: Get-MgUserOnlineMeetingRecording
 ## SYNOPSIS
 
 Get a callRecording object associated with a scheduled onlineMeeting.
-This API supports the retrieval of call transcripts from private chat meetings and channel meetings.
+This API supports the retrieval of call recordings from private chat meetings and channel meetings.
 However, private channel meetings are not supported at this time.
 For a recording, this API returns the metadata of the single recording associated with the online meeting.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
@@ -85,7 +85,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a callRecording object associated with a scheduled onlineMeeting.
-This API supports the retrieval of call transcripts from private chat meetings and channel meetings.
+This API supports the retrieval of call recordings from private chat meetings and channel meetings.
 However, private channel meetings are not supported at this time.
 For a recording, this API returns the metadata of the single recording associated with the online meeting.
 For the content of a recording, this API returns the stream of bytes associated with the recording.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationemailmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserAuthenticationEmailMethod
 ---
@@ -26,10 +26,11 @@ Self-service operations aren't supported.
 ```
 Update-MgBetaUserAuthenticationEmailMethod -EmailAuthenticationMethodId <string> -UserId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-CreatedDateTime <datetime>] [-EmailAddress <string>] [-Id <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <datetime>] [-EmailAddress <string>] [-Id <string>]
+ [-LastUsedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -47,10 +48,11 @@ Update-MgBetaUserAuthenticationEmailMethod -EmailAuthenticationMethodId <string>
 ```
 Update-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-CreatedDateTime <datetime>] [-EmailAddress <string>] [-Id <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <datetime>] [-EmailAddress <string>] [-Id <string>]
+ [-LastUsedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -403,6 +405,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -LastUsedDateTime
+
+
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -579,6 +608,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [LastUsedDateTime <DateTime?>]: 
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [EmailAddress <String>]: The email address registered to this user.
@@ -602,9 +632,11 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
   [CertificateBasedAuthConfigurationId <String>]: The unique identifier of certificateBasedAuthConfiguration
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
+  [ConditionalAccessPolicyId <String>]: The unique identifier of conditionalAccessPolicy
   [ConditionalAccessTemplateId <String>]: The unique identifier of conditionalAccessTemplate
   [ContentFormats <String[]>]: Usage: contentFormats={contentFormats}
   [CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  [CrossTenantIdentitySyncPolicyPartnerTenantId <String>]: The unique identifier of crossTenantIdentitySyncPolicyPartner
   [CustomAuthenticationExtensionId <String>]: The unique identifier of customAuthenticationExtension
   [DataLossPreventionPolicyId <String>]: The unique identifier of dataLossPreventionPolicy
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
@@ -629,8 +661,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
-  [MobilityManagementPolicyId <String>]: The unique identifier of mobilityManagementPolicy
+  [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
+  [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
+  [NamedLocationId <String>]: The unique identifier of namedLocation
   [OAuth2PermissionGrantId <String>]: The unique identifier of oAuth2PermissionGrant
   [OrganizationId <String>]: The unique identifier of organization
   [PasswordAuthenticationMethodId <String>]: The unique identifier of passwordAuthenticationMethod

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationpolicytemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementConfigurationPolicyTemplate
 ---
@@ -22,7 +22,8 @@ Create new navigation property to configurationPolicyTemplates for deviceManagem
 ```
 New-MgBetaDeviceManagementConfigurationPolicyTemplate [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-AllowUnmanagedSettings] [-BaseId <string>]
- [-Description <string>] [-DisplayName <string>] [-DisplayVersion <string>] [-Id <string>]
+ [-Description <string>] [-DisableEntraGroupPolicyAssignment] [-DisplayName <string>]
+ [-DisplayVersion <string>] [-Id <string>]
  [-LifecycleState <DeviceManagementTemplateLifecycleState>]
  [-Platforms <DeviceManagementConfigurationPlatforms>]
  [-SettingTemplates <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>]
@@ -198,6 +199,27 @@ Template description
 ```yaml
 Type: System.String
 DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DisableEntraGroupPolicyAssignment
+
+Indicates whether assignments to Entra security groups is disabled
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -589,6 +611,7 @@ Read-only.
   [AllowUnmanagedSettings <Boolean?>]: Allow unmanaged setting templates
   [BaseId <String>]: Template base identifier
   [Description <String>]: Template description
+  [DisableEntraGroupPolicyAssignment <Boolean?>]: Indicates whether assignments to Entra security groups is disabled
   [DisplayName <String>]: Template display name
   [DisplayVersion <String>]: Description of template version
   [LifecycleState <DeviceManagementTemplateLifecycleState?>]: Describes current lifecycle state of a template

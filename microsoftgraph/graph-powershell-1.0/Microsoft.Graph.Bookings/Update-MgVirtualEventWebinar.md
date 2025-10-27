@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinar
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgVirtualEventWebinar
 ---
@@ -946,6 +946,7 @@ Read-only.
     [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
     [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
     [AllowBreakoutRooms <Boolean?>]: Indicates whether breakout rooms are enabled for the meeting.
+    [AllowCopyingAndSharingMeetingContent <Boolean?>]: Indicates whether the ability to copy and share meeting content is enabled for the meeting.
     [AllowLiveShare <String>]: meetingLiveShareOptions
     [AllowMeetingChat <String>]: meetingChatMode
     [AllowParticipantsToChangeName <Boolean?>]: Specifies if participants are allowed to rename themselves in an instance of the meeting.
@@ -1007,7 +1008,7 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
-    [IsEndToEndEncryptionEnabled <Boolean?>]: 
+    [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
     [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
     [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
     [JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]: joinMeetingIdSettings
@@ -1239,6 +1240,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
     [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
     [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
     [AllowBreakoutRooms <Boolean?>]: Indicates whether breakout rooms are enabled for the meeting.
+    [AllowCopyingAndSharingMeetingContent <Boolean?>]: Indicates whether the ability to copy and share meeting content is enabled for the meeting.
     [AllowLiveShare <String>]: meetingLiveShareOptions
     [AllowMeetingChat <String>]: meetingChatMode
     [AllowParticipantsToChangeName <Boolean?>]: Specifies if participants are allowed to rename themselves in an instance of the meeting.
@@ -1305,7 +1307,7 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
-    [IsEndToEndEncryptionEnabled <Boolean?>]: 
+    [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
     [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
     [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1354,6 +1356,7 @@ SESSIONS <IMicrosoftGraphVirtualEventSession[]>: The sessions for the virtual ev
   [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
   [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
   [AllowBreakoutRooms <Boolean?>]: Indicates whether breakout rooms are enabled for the meeting.
+  [AllowCopyingAndSharingMeetingContent <Boolean?>]: Indicates whether the ability to copy and share meeting content is enabled for the meeting.
   [AllowLiveShare <String>]: meetingLiveShareOptions
   [AllowMeetingChat <String>]: meetingChatMode
   [AllowParticipantsToChangeName <Boolean?>]: Specifies if participants are allowed to rename themselves in an instance of the meeting.
@@ -1426,7 +1429,7 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
-  [IsEndToEndEncryptionEnabled <Boolean?>]: 
+  [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
   [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
   [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
     [(Any) <Object>]: This indicates any property can be added to this object.

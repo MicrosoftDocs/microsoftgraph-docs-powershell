@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyCrossTenantAccessPolicy
 ---
@@ -628,6 +628,7 @@ If false, the default settings are customized.
         [Rule <String>]: Defines the rule to filter the devices.
 For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
   [Partners <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]>]: Defines partner-specific configurations for external Microsoft Entra organizations.
+    [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
     [AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]: inboundOutboundPolicyConfiguration
     [B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]: crossTenantAccessPolicyB2BSetting
     [B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]: crossTenantAccessPolicyB2BSetting
@@ -635,6 +636,7 @@ For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
     [B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]: crossTenantAccessPolicyB2BSetting
     [IdentitySynchronization <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>]: crossTenantIdentitySyncPolicyPartner
       [(Any) <Object>]: This indicates any property can be added to this object.
+      [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
       [DisplayName <String>]: Display name for the cross-tenant user synchronization policy.
 Use the name of the partner Microsoft Entra tenant to easily identify the policy.
 Optional.
@@ -719,6 +721,7 @@ If false, the default settings are customized.
 For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 
 PARTNERS <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]>: Defines partner-specific configurations for external Microsoft Entra organizations.
+  [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
   [AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]: inboundOutboundPolicyConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
     [InboundAllowed <Boolean?>]: Defines whether external users coming inbound are allowed.
@@ -738,6 +741,7 @@ PARTNERS <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]>: Defines
   [B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]: crossTenantAccessPolicyB2BSetting
   [IdentitySynchronization <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>]: crossTenantIdentitySyncPolicyPartner
     [(Any) <Object>]: This indicates any property can be added to this object.
+    [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
     [DisplayName <String>]: Display name for the cross-tenant user synchronization policy.
 Use the name of the partner Microsoft Entra tenant to easily identify the policy.
 Optional.

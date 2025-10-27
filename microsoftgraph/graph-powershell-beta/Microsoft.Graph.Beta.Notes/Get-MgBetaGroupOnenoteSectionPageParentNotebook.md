@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotesectionpageparentnotebook
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupOnenoteSectionPageParentNotebook
 ---

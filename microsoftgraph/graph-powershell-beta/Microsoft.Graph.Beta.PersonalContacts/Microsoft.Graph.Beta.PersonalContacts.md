@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.PersonalContacts
-Module Guid: d47d08aa-3d8c-40e7-8989-fb041f8b55cb
+Module Guid: 44aacd1d-13ad-414d-9a31-0faf3a5d5407
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.personalcontacts/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

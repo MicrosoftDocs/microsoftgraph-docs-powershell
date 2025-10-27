@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaOnPremisePublishingProfile
 ---
@@ -796,6 +796,7 @@ Read-only
 APPLICATIONSEGMENTS <IMicrosoftGraphIPApplicationSegment[]>: Represents the segment configurations that are allowed for an on-premises non-web application published through Microsoft Entra application proxy.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [Action <String>]: actionType
   [Application <IMicrosoftGraphApplication>]: application
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
@@ -940,7 +941,7 @@ Any other character, including the space character, aren't allowed.
 May not begin with ..
     [AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]: authenticationBehaviors
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [BlockAzureAdGraphAccess <Boolean?>]: If false, allows the app to have extended access to Azure AD Graph until June 30, 2025 when Azure AD Graph is fully retired.
+      [BlockAzureAdGraphAccess <Boolean?>]: If false, allows the app to have extended access to Azure AD Graph until August 31, 2025 when Azure AD Graph is fully retired.
 For more information on Azure AD retirement updates, see June 2024 update on Azure AD Graph API retirement.
       [RemoveUnverifiedEmailClaim <Boolean?>]: If true, removes the email claim from tokens sent to an application when the email address's domain can't be verified.
       [RequireClientServicePrincipal <Boolean?>]: If true, requires multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
@@ -1147,6 +1148,8 @@ For example, https://intranet/.
       [IsBackendCertificateValidationEnabled <Boolean?>]: Indicates whether backend SSL certificate validation is enabled for the application.
 For all new Application Proxy apps, the property is set to true by default.
 For all existing apps, the property is set to false.
+      [IsContinuousAccessEvaluationEnabled <Boolean?>]: Indicates whether continuous access evaluation is enabled for Application Proxy application.
+For all Application Proxy apps, the property is set to true by default.
       [IsDnsResolutionEnabled <Boolean?>]: Indicates Microsoft Entra Private Access should handle DNS resolution.
 false by default.
       [IsHttpOnlyCookieEnabled <Boolean?>]: Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers.
@@ -1689,6 +1692,7 @@ Nullable.
   [ApplicationSegments <IMicrosoftGraphIPApplicationSegment[]>]: Represents the segment configurations that are allowed for an on-premises non-web application published through Microsoft Entra application proxy.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [Action <String>]: actionType
     [Application <IMicrosoftGraphApplication>]: application
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
@@ -1833,7 +1837,7 @@ Any other character, including the space character, aren't allowed.
 May not begin with ..
       [AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]: authenticationBehaviors
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [BlockAzureAdGraphAccess <Boolean?>]: If false, allows the app to have extended access to Azure AD Graph until June 30, 2025 when Azure AD Graph is fully retired.
+        [BlockAzureAdGraphAccess <Boolean?>]: If false, allows the app to have extended access to Azure AD Graph until August 31, 2025 when Azure AD Graph is fully retired.
 For more information on Azure AD retirement updates, see June 2024 update on Azure AD Graph API retirement.
         [RemoveUnverifiedEmailClaim <Boolean?>]: If true, removes the email claim from tokens sent to an application when the email address's domain can't be verified.
         [RequireClientServicePrincipal <Boolean?>]: If true, requires multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
@@ -2040,6 +2044,8 @@ For example, https://intranet/.
         [IsBackendCertificateValidationEnabled <Boolean?>]: Indicates whether backend SSL certificate validation is enabled for the application.
 For all new Application Proxy apps, the property is set to true by default.
 For all existing apps, the property is set to false.
+        [IsContinuousAccessEvaluationEnabled <Boolean?>]: Indicates whether continuous access evaluation is enabled for Application Proxy application.
+For all Application Proxy apps, the property is set to true by default.
         [IsDnsResolutionEnabled <Boolean?>]: Indicates Microsoft Entra Private Access should handle DNS resolution.
 false by default.
         [IsHttpOnlyCookieEnabled <Boolean?>]: Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers.
@@ -2706,7 +2712,7 @@ Any other character, including the space character, aren't allowed.
 May not begin with ..
     [AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]: authenticationBehaviors
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [BlockAzureAdGraphAccess <Boolean?>]: If false, allows the app to have extended access to Azure AD Graph until June 30, 2025 when Azure AD Graph is fully retired.
+      [BlockAzureAdGraphAccess <Boolean?>]: If false, allows the app to have extended access to Azure AD Graph until August 31, 2025 when Azure AD Graph is fully retired.
 For more information on Azure AD retirement updates, see June 2024 update on Azure AD Graph API retirement.
       [RemoveUnverifiedEmailClaim <Boolean?>]: If true, removes the email claim from tokens sent to an application when the email address's domain can't be verified.
       [RequireClientServicePrincipal <Boolean?>]: If true, requires multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
@@ -2892,6 +2898,8 @@ For example, https://intranet/.
       [IsBackendCertificateValidationEnabled <Boolean?>]: Indicates whether backend SSL certificate validation is enabled for the application.
 For all new Application Proxy apps, the property is set to true by default.
 For all existing apps, the property is set to false.
+      [IsContinuousAccessEvaluationEnabled <Boolean?>]: Indicates whether continuous access evaluation is enabled for Application Proxy application.
+For all Application Proxy apps, the property is set to true by default.
       [IsDnsResolutionEnabled <Boolean?>]: Indicates Microsoft Entra Private Access should handle DNS resolution.
 false by default.
       [IsHttpOnlyCookieEnabled <Boolean?>]: Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers.
@@ -3556,7 +3564,7 @@ Any other character, including the space character, aren't allowed.
 May not begin with ..
       [AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]: authenticationBehaviors
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [BlockAzureAdGraphAccess <Boolean?>]: If false, allows the app to have extended access to Azure AD Graph until June 30, 2025 when Azure AD Graph is fully retired.
+        [BlockAzureAdGraphAccess <Boolean?>]: If false, allows the app to have extended access to Azure AD Graph until August 31, 2025 when Azure AD Graph is fully retired.
 For more information on Azure AD retirement updates, see June 2024 update on Azure AD Graph API retirement.
         [RemoveUnverifiedEmailClaim <Boolean?>]: If true, removes the email claim from tokens sent to an application when the email address's domain can't be verified.
         [RequireClientServicePrincipal <Boolean?>]: If true, requires multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
@@ -3742,6 +3750,8 @@ For example, https://intranet/.
         [IsBackendCertificateValidationEnabled <Boolean?>]: Indicates whether backend SSL certificate validation is enabled for the application.
 For all new Application Proxy apps, the property is set to true by default.
 For all existing apps, the property is set to false.
+        [IsContinuousAccessEvaluationEnabled <Boolean?>]: Indicates whether continuous access evaluation is enabled for Application Proxy application.
+For all Application Proxy apps, the property is set to true by default.
         [IsDnsResolutionEnabled <Boolean?>]: Indicates Microsoft Entra Private Access should handle DNS resolution.
 false by default.
         [IsHttpOnlyCookieEnabled <Boolean?>]: Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers.

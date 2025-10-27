@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetashareshareddriveitemshareddriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaShareSharedDriveItemSharedDriveItem
 ---
@@ -884,6 +884,59 @@ Must be a valid hex color
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+    [AdhocCalls <IMicrosoftGraphAdhocCall[]>]: Ad hoc calls associated with the user.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this recording.
+Read-only.
+        [Content <Byte[]>]: The content of the recording.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
+Read-only.
+      [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this transcript.
+Read-only.
+        [Content <Byte[]>]: The content of the transcript.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
+Read-only.
+        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
+Read-only.
     [AgeGroup <String>]: Sets the age group of the user.
 Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
@@ -1835,6 +1888,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [EmailAddress <String>]: The email address registered to this user.
@@ -1845,6 +1899,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
@@ -1856,6 +1911,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AaGuid <String>]: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
@@ -1879,6 +1935,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphHardwareOathTokenAuthenticationMethodDevice>]: hardwareOathTokenAuthenticationMethodDevice
@@ -1890,6 +1947,7 @@ Read-only.
           [AssignTo <IMicrosoftGraphUser>]: user
           [AssignedTo <IMicrosoftGraphIdentity>]: identity
           [HashFunction <String>]: hardwareOathTokenHashFunction
+          [LastUsedDateTime <DateTime?>]: 
           [Manufacturer <String>]: Manufacturer name of the hardware token.
 Supports $filter (eq).
           [Model <String>]: Model name of the hardware token.
@@ -1910,6 +1968,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
       [MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod[]>]: The details of the Microsoft Authenticator app registered to a user for authentication.
         [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -1917,6 +1976,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [ClientAppName <String>]: microsoftAuthenticatorAuthenticationMethodClientAppName
@@ -2142,6 +2202,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Password <String>]: For security, the password is always returned as null from a LIST or GET operation.
@@ -2152,6 +2213,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [CreationDateTime <DateTime?>]: The timestamp when this method was registered to the user.
@@ -2164,6 +2226,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -2179,6 +2242,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphDevice>]: device
@@ -2193,6 +2257,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Pin <IMicrosoftGraphQrPin>]: qrPin
@@ -2237,6 +2302,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [SecretKey <String>]: The secret key of the method.
@@ -2248,6 +2314,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [IsUsableOnce <Boolean?>]: Determines whether the pass is limited to a one-time use.
@@ -2264,6 +2331,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphDevice>]: device
@@ -2942,7 +3010,8 @@ Read-only.
 The default value is false.
       [ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]: cloudPcConnectionSettings
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [EnableSingleSignOn <Boolean?>]: 
+        [EnableSingleSignOn <Boolean?>]: Indicates whether single sign-on is enabled.
+The default value is false.
       [ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]: cloudPcConnectivityResult
         [(Any) <Object>]: This indicates any property can be added to this object.
         [FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]: A list of failed health check items.
@@ -2977,6 +3046,12 @@ Read-only.
 Required only if the status is inGracePeriod.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [GroupDetail <IMicrosoftGraphCloudPcEntraGroupDetail>]: cloudPcEntraGroupDetail
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [GroupDisplayName <String>]: The display name of the Microsoft Entra ID group.
+Read-only.
+        [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
+Read-only.
       [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
       [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
         [(Any) <Object>]: This indicates any property can be added to this object.
@@ -3051,6 +3126,12 @@ Example values, john.doe@contoso.onmicrosoft.com and .
       [StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]: cloudPcStatusDetail
       [StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]: cloudPcStatusDetails
       [UserAccountType <String>]: cloudPcUserAccountType
+      [UserDetail <IMicrosoftGraphCloudPcEntraUserDetail>]: cloudPcEntraUserDetail
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [UserDisplayName <String>]: The display name of the user.
+Read-only.
+        [UserId <String>]: The unique identifier (GUID) of the user.
+Read-only.
       [UserExperienceType <String>]: cloudPcUserExperienceType
       [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
     [CloudRealtimeCommunicationInfo <IMicrosoftGraphCloudRealtimeCommunicationInfo>]: cloudRealtimeCommunicationInfo
@@ -4021,18 +4102,20 @@ Read-only.
 Read-only.
               [CalculationMode <String>]: Returns the calculation mode used in the workbook.
 Possible values are: Automatic, AutomaticExceptTables, Manual.
-            [Comments <IMicrosoftGraphWorkbookComment[]>]: 
+            [Comments <IMicrosoftGraphWorkbookComment[]>]: Represents a collection of comments in a workbook.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [Content <String>]: The content of the comment.
+              [Content <String>]: The content of the comment that is the String displayed to end-users.
               [ContentType <String>]: The content type of the comment.
+Supported values are: plain, mention.
               [Replies <IMicrosoftGraphWorkbookCommentReply[]>]: The list of replies to the comment.
 Read-only.
 Nullable.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
-                [Content <String>]: The content of the reply.
+                [Content <String>]: The content of the reply that is the displayed to end-users.
                 [ContentType <String>]: The content type for the reply.
+Supported values are: plain, mention.
                 [Task <IMicrosoftGraphWorkbookDocumentTask>]: workbookDocumentTask
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [Id <String>]: The unique identifier for an entity.
@@ -5676,7 +5759,7 @@ Supports $filter (eq including on null values).
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [IsCloudManaged <Boolean?>]: Indicates the state of synchronization for an object between the cloud and on-premises Active Directory.
-If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
+If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the on-premises Active Directory can take over the object.
       [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -6714,8 +6797,6 @@ Returned by default.
 Read-only.
       [ManagedAppRegistrationId <String>]: The unique identifier of the app instance for which diagnostic logs were collected.
 Read-only.
-      [RequestedBy <String>]: The user principal name associated with the request for the managed application log collection.
-Read-only.
       [RequestedByUserPrincipalName <String>]: The user principal name associated with the request for the managed application log collection.
 Read-only.
       [RequestedDateTime <DateTime?>]: DateTime of when the log upload request was received.
@@ -6723,13 +6804,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-      [Status <String>]: Indicates the status for the app log collection request - pending, completed or failed.
-Default is pending.
       [UploadedLogs <IMicrosoftGraphManagedAppLogUpload[]>]: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
-Read-only.
-        [ManagedAppComponent <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
-Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
         [ManagedAppComponentDescription <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
@@ -7225,7 +7301,7 @@ It is an Optional field
       [TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]: Object containing detailed information about the error and its remediation.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: Indicates collection of App Log Upload Request.
+      [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: The collection property of AppLogUploadRequest.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [CompletedDateTime <DateTime?>]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -7486,27 +7562,6 @@ Optional.
 Read-only.
       [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of an online meeting.
 Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this recording.
-Read-only.
-        [Content <Byte[]>]: The content of the recording.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
-Read-only.
       [Registration <IMicrosoftGraphMeetingRegistration>]: meetingRegistration
         [(Any) <Object>]: This indicates any property can be added to this object.
         [AllowedRegistrant <String>]: meetingAudience
@@ -7539,29 +7594,6 @@ Read-only.
       [StartDateTime <DateTime?>]: The meeting start time in UTC.
 Required when you create an online meeting.
       [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of an online meeting.
-Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this transcript.
-Read-only.
-        [Content <Byte[]>]: The content of the transcript.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
-Read-only.
-        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
     [OtherMails <String[]>]: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
@@ -8029,9 +8061,9 @@ This attribute returns an empty string.Returned only on $select.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Activity <String>]: The supplemental information to a user's availability.
-Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
+Possible values are available, away, beRightBack, busy, doNotDisturb, offline, outOfOffice, presenceUnknown.
       [Availability <String>]: The base presence information for a user.
-Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown.
+Possible values are available, away, beRightBack, busy, doNotDisturb, focusing, inACall, inAMeeting, offline, presenting, presenceUnknown.
       [OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]: outOfOfficeSettings
         [(Any) <Object>]: This indicates any property can be added to this object.
         [IsOutOfOffice <Boolean?>]: True if either:It is currently in the out of office time window configured on the Outlook or Teams client.There is currently an event on the user's calendar that's marked as Show as Out of OfficeOtherwise, false.
@@ -9396,6 +9428,68 @@ Must be a valid hex color
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
       [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+  [AdhocCalls <IMicrosoftGraphAdhocCall[]>]: Ad hoc calls associated with the user.
+Read-only.
+Nullable.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of a call.
+Read-only.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CallId <String>]: The unique identifier for the call that is related to this recording.
+Read-only.
+      [Content <Byte[]>]: The content of the recording.
+Read-only.
+      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+      [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [EndDateTime <DateTime?>]: Date and time at which the recording ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Application <IMicrosoftGraphIdentity>]: identity
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [DisplayName <String>]: The display name of the identity.
+This property is read-only.
+          [Id <String>]: The identifier of the identity.
+This property is read-only.
+        [Device <IMicrosoftGraphIdentity>]: identity
+        [User <IMicrosoftGraphIdentity>]: identity
+      [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
+Read-only.
+    [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of a call.
+Read-only.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CallId <String>]: The unique identifier for the call that is related to this transcript.
+Read-only.
+      [Content <Byte[]>]: The content of the transcript.
+Read-only.
+      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+      [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
+Read-only.
+      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+      [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
+Read-only.
+      [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
+Read-only.
   [AgeGroup <String>]: Sets the age group of the user.
 Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
@@ -9471,15 +9565,6 @@ Supports $filter (eq).
       [ApprovalId <String>]: The identifier of the approval of the request.
       [CompletedDateTime <DateTime?>]: The request completion date time.
       [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [Application <IMicrosoftGraphIdentity>]: identity
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-          [Id <String>]: The identifier of the identity.
-This property is read-only.
-        [Device <IMicrosoftGraphIdentity>]: identity
-        [User <IMicrosoftGraphIdentity>]: identity
       [CreatedDateTime <DateTime?>]: The request creation date time.
       [CustomData <String>]: Free text field to define any custom data for the request.
 Not used.
@@ -10356,6 +10441,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [EmailAddress <String>]: The email address registered to this user.
@@ -10366,6 +10452,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
@@ -10377,6 +10464,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [AaGuid <String>]: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
@@ -10400,6 +10488,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Device <IMicrosoftGraphHardwareOathTokenAuthenticationMethodDevice>]: hardwareOathTokenAuthenticationMethodDevice
@@ -10411,6 +10500,7 @@ Read-only.
         [AssignTo <IMicrosoftGraphUser>]: user
         [AssignedTo <IMicrosoftGraphIdentity>]: identity
         [HashFunction <String>]: hardwareOathTokenHashFunction
+        [LastUsedDateTime <DateTime?>]: 
         [Manufacturer <String>]: Manufacturer name of the hardware token.
 Supports $filter (eq).
         [Model <String>]: Model name of the hardware token.
@@ -10431,6 +10521,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
     [MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod[]>]: The details of the Microsoft Authenticator app registered to a user for authentication.
       [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -10438,6 +10529,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [ClientAppName <String>]: microsoftAuthenticatorAuthenticationMethodClientAppName
@@ -10663,6 +10755,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Password <String>]: For security, the password is always returned as null from a LIST or GET operation.
@@ -10673,6 +10766,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [CreationDateTime <DateTime?>]: The timestamp when this method was registered to the user.
@@ -10685,6 +10779,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -10700,6 +10795,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Device <IMicrosoftGraphDevice>]: device
@@ -10714,6 +10810,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Pin <IMicrosoftGraphQrPin>]: qrPin
@@ -10758,6 +10855,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [SecretKey <String>]: The secret key of the method.
@@ -10769,6 +10867,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [IsUsableOnce <Boolean?>]: Determines whether the pass is limited to a one-time use.
@@ -10785,6 +10884,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Device <IMicrosoftGraphDevice>]: device
@@ -11463,7 +11563,8 @@ Read-only.
 The default value is false.
     [ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]: cloudPcConnectionSettings
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [EnableSingleSignOn <Boolean?>]: 
+      [EnableSingleSignOn <Boolean?>]: Indicates whether single sign-on is enabled.
+The default value is false.
     [ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]: cloudPcConnectivityResult
       [(Any) <Object>]: This indicates any property can be added to this object.
       [FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]: A list of failed health check items.
@@ -11498,6 +11599,12 @@ Read-only.
 Required only if the status is inGracePeriod.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [GroupDetail <IMicrosoftGraphCloudPcEntraGroupDetail>]: cloudPcEntraGroupDetail
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [GroupDisplayName <String>]: The display name of the Microsoft Entra ID group.
+Read-only.
+      [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
+Read-only.
     [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
     [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -11572,6 +11679,12 @@ Example values, john.doe@contoso.onmicrosoft.com and .
     [StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]: cloudPcStatusDetail
     [StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]: cloudPcStatusDetails
     [UserAccountType <String>]: cloudPcUserAccountType
+    [UserDetail <IMicrosoftGraphCloudPcEntraUserDetail>]: cloudPcEntraUserDetail
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [UserDisplayName <String>]: The display name of the user.
+Read-only.
+      [UserId <String>]: The unique identifier (GUID) of the user.
+Read-only.
     [UserExperienceType <String>]: cloudPcUserExperienceType
     [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
   [CloudRealtimeCommunicationInfo <IMicrosoftGraphCloudRealtimeCommunicationInfo>]: cloudRealtimeCommunicationInfo
@@ -12542,18 +12655,20 @@ Read-only.
 Read-only.
             [CalculationMode <String>]: Returns the calculation mode used in the workbook.
 Possible values are: Automatic, AutomaticExceptTables, Manual.
-          [Comments <IMicrosoftGraphWorkbookComment[]>]: 
+          [Comments <IMicrosoftGraphWorkbookComment[]>]: Represents a collection of comments in a workbook.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [Content <String>]: The content of the comment.
+            [Content <String>]: The content of the comment that is the String displayed to end-users.
             [ContentType <String>]: The content type of the comment.
+Supported values are: plain, mention.
             [Replies <IMicrosoftGraphWorkbookCommentReply[]>]: The list of replies to the comment.
 Read-only.
 Nullable.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [Content <String>]: The content of the reply.
+              [Content <String>]: The content of the reply that is the displayed to end-users.
               [ContentType <String>]: The content type for the reply.
+Supported values are: plain, mention.
               [Task <IMicrosoftGraphWorkbookDocumentTask>]: workbookDocumentTask
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [Id <String>]: The unique identifier for an entity.
@@ -14197,7 +14312,7 @@ Supports $filter (eq including on null values).
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [IsCloudManaged <Boolean?>]: Indicates the state of synchronization for an object between the cloud and on-premises Active Directory.
-If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
+If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the on-premises Active Directory can take over the object.
     [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -15235,8 +15350,6 @@ Returned by default.
 Read-only.
     [ManagedAppRegistrationId <String>]: The unique identifier of the app instance for which diagnostic logs were collected.
 Read-only.
-    [RequestedBy <String>]: The user principal name associated with the request for the managed application log collection.
-Read-only.
     [RequestedByUserPrincipalName <String>]: The user principal name associated with the request for the managed application log collection.
 Read-only.
     [RequestedDateTime <DateTime?>]: DateTime of when the log upload request was received.
@@ -15244,13 +15357,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-    [Status <String>]: Indicates the status for the app log collection request - pending, completed or failed.
-Default is pending.
     [UploadedLogs <IMicrosoftGraphManagedAppLogUpload[]>]: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
-Read-only.
-      [ManagedAppComponent <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
-Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
       [ManagedAppComponentDescription <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
@@ -15746,7 +15854,7 @@ It is an Optional field
     [TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]: Object containing detailed information about the error and its remediation.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: Indicates collection of App Log Upload Request.
+    [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: The collection property of AppLogUploadRequest.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [CompletedDateTime <DateTime?>]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -16007,27 +16115,6 @@ Optional.
 Read-only.
     [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of an online meeting.
 Read-only.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [CallId <String>]: The unique identifier for the call that is related to this recording.
-Read-only.
-      [Content <Byte[]>]: The content of the recording.
-Read-only.
-      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-      [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [EndDateTime <DateTime?>]: Date and time at which the recording ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
-Read-only.
-      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-      [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
-Read-only.
     [Registration <IMicrosoftGraphMeetingRegistration>]: meetingRegistration
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowedRegistrant <String>]: meetingAudience
@@ -16060,29 +16147,6 @@ Read-only.
     [StartDateTime <DateTime?>]: The meeting start time in UTC.
 Required when you create an online meeting.
     [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of an online meeting.
-Read-only.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [CallId <String>]: The unique identifier for the call that is related to this transcript.
-Read-only.
-      [Content <Byte[]>]: The content of the transcript.
-Read-only.
-      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-      [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
-Read-only.
-      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-      [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
-Read-only.
-      [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
   [OtherMails <String[]>]: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
@@ -16550,9 +16614,9 @@ This attribute returns an empty string.Returned only on $select.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [Activity <String>]: The supplemental information to a user's availability.
-Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
+Possible values are available, away, beRightBack, busy, doNotDisturb, offline, outOfOffice, presenceUnknown.
     [Availability <String>]: The base presence information for a user.
-Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown.
+Possible values are available, away, beRightBack, busy, doNotDisturb, focusing, inACall, inAMeeting, offline, presenting, presenceUnknown.
     [OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]: outOfOfficeSettings
       [(Any) <Object>]: This indicates any property can be added to this object.
       [IsOutOfOffice <Boolean?>]: True if either:It is currently in the out of office time window configured on the Outlook or Teams client.There is currently an event on the user's calendar that's marked as Show as Out of OfficeOtherwise, false.
@@ -17893,6 +17957,59 @@ Must be a valid hex color
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+    [AdhocCalls <IMicrosoftGraphAdhocCall[]>]: Ad hoc calls associated with the user.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this recording.
+Read-only.
+        [Content <Byte[]>]: The content of the recording.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
+Read-only.
+      [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this transcript.
+Read-only.
+        [Content <Byte[]>]: The content of the transcript.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
+Read-only.
+        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
+Read-only.
     [AgeGroup <String>]: Sets the age group of the user.
 Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
@@ -18844,6 +18961,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [EmailAddress <String>]: The email address registered to this user.
@@ -18854,6 +18972,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
@@ -18865,6 +18984,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AaGuid <String>]: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
@@ -18888,6 +19008,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphHardwareOathTokenAuthenticationMethodDevice>]: hardwareOathTokenAuthenticationMethodDevice
@@ -18899,6 +19020,7 @@ Read-only.
           [AssignTo <IMicrosoftGraphUser>]: user
           [AssignedTo <IMicrosoftGraphIdentity>]: identity
           [HashFunction <String>]: hardwareOathTokenHashFunction
+          [LastUsedDateTime <DateTime?>]: 
           [Manufacturer <String>]: Manufacturer name of the hardware token.
 Supports $filter (eq).
           [Model <String>]: Model name of the hardware token.
@@ -18919,6 +19041,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
       [MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod[]>]: The details of the Microsoft Authenticator app registered to a user for authentication.
         [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -18926,6 +19049,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [ClientAppName <String>]: microsoftAuthenticatorAuthenticationMethodClientAppName
@@ -19151,6 +19275,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Password <String>]: For security, the password is always returned as null from a LIST or GET operation.
@@ -19161,6 +19286,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [CreationDateTime <DateTime?>]: The timestamp when this method was registered to the user.
@@ -19173,6 +19299,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -19188,6 +19315,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphDevice>]: device
@@ -19202,6 +19330,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Pin <IMicrosoftGraphQrPin>]: qrPin
@@ -19246,6 +19375,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [SecretKey <String>]: The secret key of the method.
@@ -19257,6 +19387,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [IsUsableOnce <Boolean?>]: Determines whether the pass is limited to a one-time use.
@@ -19273,6 +19404,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphDevice>]: device
@@ -19951,7 +20083,8 @@ Read-only.
 The default value is false.
       [ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]: cloudPcConnectionSettings
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [EnableSingleSignOn <Boolean?>]: 
+        [EnableSingleSignOn <Boolean?>]: Indicates whether single sign-on is enabled.
+The default value is false.
       [ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]: cloudPcConnectivityResult
         [(Any) <Object>]: This indicates any property can be added to this object.
         [FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]: A list of failed health check items.
@@ -19986,6 +20119,12 @@ Read-only.
 Required only if the status is inGracePeriod.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [GroupDetail <IMicrosoftGraphCloudPcEntraGroupDetail>]: cloudPcEntraGroupDetail
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [GroupDisplayName <String>]: The display name of the Microsoft Entra ID group.
+Read-only.
+        [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
+Read-only.
       [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
       [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
         [(Any) <Object>]: This indicates any property can be added to this object.
@@ -20060,6 +20199,12 @@ Example values, john.doe@contoso.onmicrosoft.com and .
       [StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]: cloudPcStatusDetail
       [StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]: cloudPcStatusDetails
       [UserAccountType <String>]: cloudPcUserAccountType
+      [UserDetail <IMicrosoftGraphCloudPcEntraUserDetail>]: cloudPcEntraUserDetail
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [UserDisplayName <String>]: The display name of the user.
+Read-only.
+        [UserId <String>]: The unique identifier (GUID) of the user.
+Read-only.
       [UserExperienceType <String>]: cloudPcUserExperienceType
       [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
     [CloudRealtimeCommunicationInfo <IMicrosoftGraphCloudRealtimeCommunicationInfo>]: cloudRealtimeCommunicationInfo
@@ -21952,7 +22097,7 @@ Supports $filter (eq including on null values).
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [IsCloudManaged <Boolean?>]: Indicates the state of synchronization for an object between the cloud and on-premises Active Directory.
-If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
+If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the on-premises Active Directory can take over the object.
       [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -23000,8 +23145,6 @@ Returned by default.
 Read-only.
       [ManagedAppRegistrationId <String>]: The unique identifier of the app instance for which diagnostic logs were collected.
 Read-only.
-      [RequestedBy <String>]: The user principal name associated with the request for the managed application log collection.
-Read-only.
       [RequestedByUserPrincipalName <String>]: The user principal name associated with the request for the managed application log collection.
 Read-only.
       [RequestedDateTime <DateTime?>]: DateTime of when the log upload request was received.
@@ -23009,13 +23152,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-      [Status <String>]: Indicates the status for the app log collection request - pending, completed or failed.
-Default is pending.
       [UploadedLogs <IMicrosoftGraphManagedAppLogUpload[]>]: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
-Read-only.
-        [ManagedAppComponent <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
-Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
         [ManagedAppComponentDescription <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
@@ -23511,7 +23649,7 @@ It is an Optional field
       [TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]: Object containing detailed information about the error and its remediation.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: Indicates collection of App Log Upload Request.
+      [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: The collection property of AppLogUploadRequest.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [CompletedDateTime <DateTime?>]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -23772,27 +23910,6 @@ Optional.
 Read-only.
       [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of an online meeting.
 Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this recording.
-Read-only.
-        [Content <Byte[]>]: The content of the recording.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
-Read-only.
       [Registration <IMicrosoftGraphMeetingRegistration>]: meetingRegistration
         [(Any) <Object>]: This indicates any property can be added to this object.
         [AllowedRegistrant <String>]: meetingAudience
@@ -23825,29 +23942,6 @@ Read-only.
       [StartDateTime <DateTime?>]: The meeting start time in UTC.
 Required when you create an online meeting.
       [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of an online meeting.
-Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this transcript.
-Read-only.
-        [Content <Byte[]>]: The content of the transcript.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
-Read-only.
-        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
     [OtherMails <String[]>]: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
@@ -24315,9 +24409,9 @@ This attribute returns an empty string.Returned only on $select.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Activity <String>]: The supplemental information to a user's availability.
-Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
+Possible values are available, away, beRightBack, busy, doNotDisturb, offline, outOfOffice, presenceUnknown.
       [Availability <String>]: The base presence information for a user.
-Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown.
+Possible values are available, away, beRightBack, busy, doNotDisturb, focusing, inACall, inAMeeting, offline, presenting, presenceUnknown.
       [OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]: outOfOfficeSettings
         [(Any) <Object>]: This indicates any property can be added to this object.
         [IsOutOfOffice <Boolean?>]: True if either:It is currently in the out of office time window configured on the Outlook or Teams client.There is currently an event on the user's calendar that's marked as Show as Out of OfficeOtherwise, false.
@@ -25897,18 +25991,20 @@ Read-only.
 Read-only.
       [CalculationMode <String>]: Returns the calculation mode used in the workbook.
 Possible values are: Automatic, AutomaticExceptTables, Manual.
-    [Comments <IMicrosoftGraphWorkbookComment[]>]: 
+    [Comments <IMicrosoftGraphWorkbookComment[]>]: Represents a collection of comments in a workbook.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [Content <String>]: The content of the comment.
+      [Content <String>]: The content of the comment that is the String displayed to end-users.
       [ContentType <String>]: The content type of the comment.
+Supported values are: plain, mention.
       [Replies <IMicrosoftGraphWorkbookCommentReply[]>]: The list of replies to the comment.
 Read-only.
 Nullable.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [Content <String>]: The content of the reply.
+        [Content <String>]: The content of the reply that is the displayed to end-users.
         [ContentType <String>]: The content type for the reply.
+Supported values are: plain, mention.
         [Task <IMicrosoftGraphWorkbookDocumentTask>]: workbookDocumentTask
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -26378,6 +26474,59 @@ Must be a valid hex color
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+    [AdhocCalls <IMicrosoftGraphAdhocCall[]>]: Ad hoc calls associated with the user.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this recording.
+Read-only.
+        [Content <Byte[]>]: The content of the recording.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
+Read-only.
+      [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this transcript.
+Read-only.
+        [Content <Byte[]>]: The content of the transcript.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
+Read-only.
+        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
+Read-only.
     [AgeGroup <String>]: Sets the age group of the user.
 Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
@@ -27329,6 +27478,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [EmailAddress <String>]: The email address registered to this user.
@@ -27339,6 +27489,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
@@ -27350,6 +27501,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AaGuid <String>]: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
@@ -27373,6 +27525,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphHardwareOathTokenAuthenticationMethodDevice>]: hardwareOathTokenAuthenticationMethodDevice
@@ -27384,6 +27537,7 @@ Read-only.
           [AssignTo <IMicrosoftGraphUser>]: user
           [AssignedTo <IMicrosoftGraphIdentity>]: identity
           [HashFunction <String>]: hardwareOathTokenHashFunction
+          [LastUsedDateTime <DateTime?>]: 
           [Manufacturer <String>]: Manufacturer name of the hardware token.
 Supports $filter (eq).
           [Model <String>]: Model name of the hardware token.
@@ -27404,6 +27558,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
       [MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod[]>]: The details of the Microsoft Authenticator app registered to a user for authentication.
         [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -27411,6 +27566,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [ClientAppName <String>]: microsoftAuthenticatorAuthenticationMethodClientAppName
@@ -27636,6 +27792,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Password <String>]: For security, the password is always returned as null from a LIST or GET operation.
@@ -27646,6 +27803,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [CreationDateTime <DateTime?>]: The timestamp when this method was registered to the user.
@@ -27658,6 +27816,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -27673,6 +27832,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphDevice>]: device
@@ -27687,6 +27847,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Pin <IMicrosoftGraphQrPin>]: qrPin
@@ -27731,6 +27892,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [SecretKey <String>]: The secret key of the method.
@@ -27742,6 +27904,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [IsUsableOnce <Boolean?>]: Determines whether the pass is limited to a one-time use.
@@ -27758,6 +27921,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphDevice>]: device
@@ -28436,7 +28600,8 @@ Read-only.
 The default value is false.
       [ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]: cloudPcConnectionSettings
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [EnableSingleSignOn <Boolean?>]: 
+        [EnableSingleSignOn <Boolean?>]: Indicates whether single sign-on is enabled.
+The default value is false.
       [ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]: cloudPcConnectivityResult
         [(Any) <Object>]: This indicates any property can be added to this object.
         [FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]: A list of failed health check items.
@@ -28471,6 +28636,12 @@ Read-only.
 Required only if the status is inGracePeriod.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [GroupDetail <IMicrosoftGraphCloudPcEntraGroupDetail>]: cloudPcEntraGroupDetail
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [GroupDisplayName <String>]: The display name of the Microsoft Entra ID group.
+Read-only.
+        [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
+Read-only.
       [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
       [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
         [(Any) <Object>]: This indicates any property can be added to this object.
@@ -28545,6 +28716,12 @@ Example values, john.doe@contoso.onmicrosoft.com and .
       [StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]: cloudPcStatusDetail
       [StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]: cloudPcStatusDetails
       [UserAccountType <String>]: cloudPcUserAccountType
+      [UserDetail <IMicrosoftGraphCloudPcEntraUserDetail>]: cloudPcEntraUserDetail
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [UserDisplayName <String>]: The display name of the user.
+Read-only.
+        [UserId <String>]: The unique identifier (GUID) of the user.
+Read-only.
       [UserExperienceType <String>]: cloudPcUserExperienceType
       [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
     [CloudRealtimeCommunicationInfo <IMicrosoftGraphCloudRealtimeCommunicationInfo>]: cloudRealtimeCommunicationInfo
@@ -30437,7 +30614,7 @@ Supports $filter (eq including on null values).
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [IsCloudManaged <Boolean?>]: Indicates the state of synchronization for an object between the cloud and on-premises Active Directory.
-If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
+If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the on-premises Active Directory can take over the object.
       [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -31485,8 +31662,6 @@ Returned by default.
 Read-only.
       [ManagedAppRegistrationId <String>]: The unique identifier of the app instance for which diagnostic logs were collected.
 Read-only.
-      [RequestedBy <String>]: The user principal name associated with the request for the managed application log collection.
-Read-only.
       [RequestedByUserPrincipalName <String>]: The user principal name associated with the request for the managed application log collection.
 Read-only.
       [RequestedDateTime <DateTime?>]: DateTime of when the log upload request was received.
@@ -31494,13 +31669,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-      [Status <String>]: Indicates the status for the app log collection request - pending, completed or failed.
-Default is pending.
       [UploadedLogs <IMicrosoftGraphManagedAppLogUpload[]>]: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
-Read-only.
-        [ManagedAppComponent <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
-Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
         [ManagedAppComponentDescription <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
@@ -31996,7 +32166,7 @@ It is an Optional field
       [TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]: Object containing detailed information about the error and its remediation.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: Indicates collection of App Log Upload Request.
+      [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: The collection property of AppLogUploadRequest.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [CompletedDateTime <DateTime?>]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -32257,27 +32427,6 @@ Optional.
 Read-only.
       [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of an online meeting.
 Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this recording.
-Read-only.
-        [Content <Byte[]>]: The content of the recording.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
-Read-only.
       [Registration <IMicrosoftGraphMeetingRegistration>]: meetingRegistration
         [(Any) <Object>]: This indicates any property can be added to this object.
         [AllowedRegistrant <String>]: meetingAudience
@@ -32310,29 +32459,6 @@ Read-only.
       [StartDateTime <DateTime?>]: The meeting start time in UTC.
 Required when you create an online meeting.
       [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of an online meeting.
-Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this transcript.
-Read-only.
-        [Content <Byte[]>]: The content of the transcript.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
-Read-only.
-        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
     [OtherMails <String[]>]: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
@@ -32800,9 +32926,9 @@ This attribute returns an empty string.Returned only on $select.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Activity <String>]: The supplemental information to a user's availability.
-Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
+Possible values are available, away, beRightBack, busy, doNotDisturb, offline, outOfOffice, presenceUnknown.
       [Availability <String>]: The base presence information for a user.
-Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown.
+Possible values are available, away, beRightBack, busy, doNotDisturb, focusing, inACall, inAMeeting, offline, presenting, presenceUnknown.
       [OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]: outOfOfficeSettings
         [(Any) <Object>]: This indicates any property can be added to this object.
         [IsOutOfOffice <Boolean?>]: True if either:It is currently in the out of office time window configured on the Outlook or Teams client.There is currently an event on the user's calendar that's marked as Show as Out of OfficeOtherwise, false.
@@ -34382,18 +34508,20 @@ Read-only.
 Read-only.
       [CalculationMode <String>]: Returns the calculation mode used in the workbook.
 Possible values are: Automatic, AutomaticExceptTables, Manual.
-    [Comments <IMicrosoftGraphWorkbookComment[]>]: 
+    [Comments <IMicrosoftGraphWorkbookComment[]>]: Represents a collection of comments in a workbook.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [Content <String>]: The content of the comment.
+      [Content <String>]: The content of the comment that is the String displayed to end-users.
       [ContentType <String>]: The content type of the comment.
+Supported values are: plain, mention.
       [Replies <IMicrosoftGraphWorkbookCommentReply[]>]: The list of replies to the comment.
 Read-only.
 Nullable.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [Content <String>]: The content of the reply.
+        [Content <String>]: The content of the reply that is the displayed to end-users.
         [ContentType <String>]: The content type for the reply.
+Supported values are: plain, mention.
         [Task <IMicrosoftGraphWorkbookDocumentTask>]: workbookDocumentTask
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -34862,6 +34990,68 @@ Must be a valid hex color
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
       [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+  [AdhocCalls <IMicrosoftGraphAdhocCall[]>]: Ad hoc calls associated with the user.
+Read-only.
+Nullable.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of a call.
+Read-only.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CallId <String>]: The unique identifier for the call that is related to this recording.
+Read-only.
+      [Content <Byte[]>]: The content of the recording.
+Read-only.
+      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+      [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [EndDateTime <DateTime?>]: Date and time at which the recording ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Application <IMicrosoftGraphIdentity>]: identity
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [DisplayName <String>]: The display name of the identity.
+This property is read-only.
+          [Id <String>]: The identifier of the identity.
+This property is read-only.
+        [Device <IMicrosoftGraphIdentity>]: identity
+        [User <IMicrosoftGraphIdentity>]: identity
+      [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
+Read-only.
+    [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of a call.
+Read-only.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CallId <String>]: The unique identifier for the call that is related to this transcript.
+Read-only.
+      [Content <Byte[]>]: The content of the transcript.
+Read-only.
+      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+      [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
+Read-only.
+      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+      [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
+Read-only.
+      [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
+Read-only.
   [AgeGroup <String>]: Sets the age group of the user.
 Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
@@ -34937,15 +35127,6 @@ Supports $filter (eq).
       [ApprovalId <String>]: The identifier of the approval of the request.
       [CompletedDateTime <DateTime?>]: The request completion date time.
       [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [Application <IMicrosoftGraphIdentity>]: identity
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-          [Id <String>]: The identifier of the identity.
-This property is read-only.
-        [Device <IMicrosoftGraphIdentity>]: identity
-        [User <IMicrosoftGraphIdentity>]: identity
       [CreatedDateTime <DateTime?>]: The request creation date time.
       [CustomData <String>]: Free text field to define any custom data for the request.
 Not used.
@@ -35822,6 +36003,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [EmailAddress <String>]: The email address registered to this user.
@@ -35832,6 +36014,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
@@ -35843,6 +36026,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [AaGuid <String>]: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
@@ -35866,6 +36050,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Device <IMicrosoftGraphHardwareOathTokenAuthenticationMethodDevice>]: hardwareOathTokenAuthenticationMethodDevice
@@ -35877,6 +36062,7 @@ Read-only.
         [AssignTo <IMicrosoftGraphUser>]: user
         [AssignedTo <IMicrosoftGraphIdentity>]: identity
         [HashFunction <String>]: hardwareOathTokenHashFunction
+        [LastUsedDateTime <DateTime?>]: 
         [Manufacturer <String>]: Manufacturer name of the hardware token.
 Supports $filter (eq).
         [Model <String>]: Model name of the hardware token.
@@ -35897,6 +36083,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
     [MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod[]>]: The details of the Microsoft Authenticator app registered to a user for authentication.
       [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -35904,6 +36091,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [ClientAppName <String>]: microsoftAuthenticatorAuthenticationMethodClientAppName
@@ -36129,6 +36317,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Password <String>]: For security, the password is always returned as null from a LIST or GET operation.
@@ -36139,6 +36328,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [CreationDateTime <DateTime?>]: The timestamp when this method was registered to the user.
@@ -36151,6 +36341,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -36166,6 +36357,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Device <IMicrosoftGraphDevice>]: device
@@ -36180,6 +36372,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Pin <IMicrosoftGraphQrPin>]: qrPin
@@ -36224,6 +36417,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [SecretKey <String>]: The secret key of the method.
@@ -36235,6 +36429,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [IsUsableOnce <Boolean?>]: Determines whether the pass is limited to a one-time use.
@@ -36251,6 +36446,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [LastUsedDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Device <IMicrosoftGraphDevice>]: device
@@ -36929,7 +37125,8 @@ Read-only.
 The default value is false.
     [ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]: cloudPcConnectionSettings
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [EnableSingleSignOn <Boolean?>]: 
+      [EnableSingleSignOn <Boolean?>]: Indicates whether single sign-on is enabled.
+The default value is false.
     [ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]: cloudPcConnectivityResult
       [(Any) <Object>]: This indicates any property can be added to this object.
       [FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]: A list of failed health check items.
@@ -36964,6 +37161,12 @@ Read-only.
 Required only if the status is inGracePeriod.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [GroupDetail <IMicrosoftGraphCloudPcEntraGroupDetail>]: cloudPcEntraGroupDetail
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [GroupDisplayName <String>]: The display name of the Microsoft Entra ID group.
+Read-only.
+      [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
+Read-only.
     [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
     [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -37038,6 +37241,12 @@ Example values, john.doe@contoso.onmicrosoft.com and .
     [StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]: cloudPcStatusDetail
     [StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]: cloudPcStatusDetails
     [UserAccountType <String>]: cloudPcUserAccountType
+    [UserDetail <IMicrosoftGraphCloudPcEntraUserDetail>]: cloudPcEntraUserDetail
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [UserDisplayName <String>]: The display name of the user.
+Read-only.
+      [UserId <String>]: The unique identifier (GUID) of the user.
+Read-only.
     [UserExperienceType <String>]: cloudPcUserExperienceType
     [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
   [CloudRealtimeCommunicationInfo <IMicrosoftGraphCloudRealtimeCommunicationInfo>]: cloudRealtimeCommunicationInfo
@@ -38008,18 +38217,20 @@ Read-only.
 Read-only.
             [CalculationMode <String>]: Returns the calculation mode used in the workbook.
 Possible values are: Automatic, AutomaticExceptTables, Manual.
-          [Comments <IMicrosoftGraphWorkbookComment[]>]: 
+          [Comments <IMicrosoftGraphWorkbookComment[]>]: Represents a collection of comments in a workbook.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [Content <String>]: The content of the comment.
+            [Content <String>]: The content of the comment that is the String displayed to end-users.
             [ContentType <String>]: The content type of the comment.
+Supported values are: plain, mention.
             [Replies <IMicrosoftGraphWorkbookCommentReply[]>]: The list of replies to the comment.
 Read-only.
 Nullable.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [Content <String>]: The content of the reply.
+              [Content <String>]: The content of the reply that is the displayed to end-users.
               [ContentType <String>]: The content type for the reply.
+Supported values are: plain, mention.
               [Task <IMicrosoftGraphWorkbookDocumentTask>]: workbookDocumentTask
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [Id <String>]: The unique identifier for an entity.
@@ -39663,7 +39874,7 @@ Supports $filter (eq including on null values).
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [IsCloudManaged <Boolean?>]: Indicates the state of synchronization for an object between the cloud and on-premises Active Directory.
-If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
+If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the on-premises Active Directory can take over the object.
     [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -40701,8 +40912,6 @@ Returned by default.
 Read-only.
     [ManagedAppRegistrationId <String>]: The unique identifier of the app instance for which diagnostic logs were collected.
 Read-only.
-    [RequestedBy <String>]: The user principal name associated with the request for the managed application log collection.
-Read-only.
     [RequestedByUserPrincipalName <String>]: The user principal name associated with the request for the managed application log collection.
 Read-only.
     [RequestedDateTime <DateTime?>]: DateTime of when the log upload request was received.
@@ -40710,13 +40919,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-    [Status <String>]: Indicates the status for the app log collection request - pending, completed or failed.
-Default is pending.
     [UploadedLogs <IMicrosoftGraphManagedAppLogUpload[]>]: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
-Read-only.
-      [ManagedAppComponent <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
-Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
       [ManagedAppComponentDescription <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
@@ -41212,7 +41416,7 @@ It is an Optional field
     [TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]: Object containing detailed information about the error and its remediation.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: Indicates collection of App Log Upload Request.
+    [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: The collection property of AppLogUploadRequest.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [CompletedDateTime <DateTime?>]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -41473,27 +41677,6 @@ Optional.
 Read-only.
     [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of an online meeting.
 Read-only.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [CallId <String>]: The unique identifier for the call that is related to this recording.
-Read-only.
-      [Content <Byte[]>]: The content of the recording.
-Read-only.
-      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-      [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [EndDateTime <DateTime?>]: Date and time at which the recording ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
-Read-only.
-      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-      [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
-Read-only.
     [Registration <IMicrosoftGraphMeetingRegistration>]: meetingRegistration
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowedRegistrant <String>]: meetingAudience
@@ -41526,29 +41709,6 @@ Read-only.
     [StartDateTime <DateTime?>]: The meeting start time in UTC.
 Required when you create an online meeting.
     [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of an online meeting.
-Read-only.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [CallId <String>]: The unique identifier for the call that is related to this transcript.
-Read-only.
-      [Content <Byte[]>]: The content of the transcript.
-Read-only.
-      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-      [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
-Read-only.
-      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-      [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
-Read-only.
-      [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
   [OtherMails <String[]>]: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
@@ -42016,9 +42176,9 @@ This attribute returns an empty string.Returned only on $select.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [Activity <String>]: The supplemental information to a user's availability.
-Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
+Possible values are available, away, beRightBack, busy, doNotDisturb, offline, outOfOffice, presenceUnknown.
     [Availability <String>]: The base presence information for a user.
-Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown.
+Possible values are available, away, beRightBack, busy, doNotDisturb, focusing, inACall, inAMeeting, offline, presenting, presenceUnknown.
     [OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]: outOfOfficeSettings
       [(Any) <Object>]: This indicates any property can be added to this object.
       [IsOutOfOffice <Boolean?>]: True if either:It is currently in the out of office time window configured on the Outlook or Teams client.There is currently an event on the user's calendar that's marked as Show as Out of OfficeOtherwise, false.
@@ -43359,6 +43519,59 @@ Must be a valid hex color
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+    [AdhocCalls <IMicrosoftGraphAdhocCall[]>]: Ad hoc calls associated with the user.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this recording.
+Read-only.
+        [Content <Byte[]>]: The content of the recording.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
+Read-only.
+      [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this transcript.
+Read-only.
+        [Content <Byte[]>]: The content of the transcript.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
+Read-only.
+        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
+Read-only.
     [AgeGroup <String>]: Sets the age group of the user.
 Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
@@ -44310,6 +44523,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [EmailAddress <String>]: The email address registered to this user.
@@ -44320,6 +44534,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
@@ -44331,6 +44546,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AaGuid <String>]: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
@@ -44354,6 +44570,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphHardwareOathTokenAuthenticationMethodDevice>]: hardwareOathTokenAuthenticationMethodDevice
@@ -44365,6 +44582,7 @@ Read-only.
           [AssignTo <IMicrosoftGraphUser>]: user
           [AssignedTo <IMicrosoftGraphIdentity>]: identity
           [HashFunction <String>]: hardwareOathTokenHashFunction
+          [LastUsedDateTime <DateTime?>]: 
           [Manufacturer <String>]: Manufacturer name of the hardware token.
 Supports $filter (eq).
           [Model <String>]: Model name of the hardware token.
@@ -44385,6 +44603,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
       [MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod[]>]: The details of the Microsoft Authenticator app registered to a user for authentication.
         [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -44392,6 +44611,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [ClientAppName <String>]: microsoftAuthenticatorAuthenticationMethodClientAppName
@@ -44617,6 +44837,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Password <String>]: For security, the password is always returned as null from a LIST or GET operation.
@@ -44627,6 +44848,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [CreationDateTime <DateTime?>]: The timestamp when this method was registered to the user.
@@ -44639,6 +44861,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -44654,6 +44877,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphDevice>]: device
@@ -44668,6 +44892,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Pin <IMicrosoftGraphQrPin>]: qrPin
@@ -44712,6 +44937,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [SecretKey <String>]: The secret key of the method.
@@ -44723,6 +44949,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [IsUsableOnce <Boolean?>]: Determines whether the pass is limited to a one-time use.
@@ -44739,6 +44966,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphDevice>]: device
@@ -45417,7 +45645,8 @@ Read-only.
 The default value is false.
       [ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]: cloudPcConnectionSettings
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [EnableSingleSignOn <Boolean?>]: 
+        [EnableSingleSignOn <Boolean?>]: Indicates whether single sign-on is enabled.
+The default value is false.
       [ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]: cloudPcConnectivityResult
         [(Any) <Object>]: This indicates any property can be added to this object.
         [FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]: A list of failed health check items.
@@ -45452,6 +45681,12 @@ Read-only.
 Required only if the status is inGracePeriod.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [GroupDetail <IMicrosoftGraphCloudPcEntraGroupDetail>]: cloudPcEntraGroupDetail
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [GroupDisplayName <String>]: The display name of the Microsoft Entra ID group.
+Read-only.
+        [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
+Read-only.
       [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
       [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
         [(Any) <Object>]: This indicates any property can be added to this object.
@@ -45526,6 +45761,12 @@ Example values, john.doe@contoso.onmicrosoft.com and .
       [StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]: cloudPcStatusDetail
       [StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]: cloudPcStatusDetails
       [UserAccountType <String>]: cloudPcUserAccountType
+      [UserDetail <IMicrosoftGraphCloudPcEntraUserDetail>]: cloudPcEntraUserDetail
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [UserDisplayName <String>]: The display name of the user.
+Read-only.
+        [UserId <String>]: The unique identifier (GUID) of the user.
+Read-only.
       [UserExperienceType <String>]: cloudPcUserExperienceType
       [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
     [CloudRealtimeCommunicationInfo <IMicrosoftGraphCloudRealtimeCommunicationInfo>]: cloudRealtimeCommunicationInfo
@@ -46496,18 +46737,20 @@ Read-only.
 Read-only.
               [CalculationMode <String>]: Returns the calculation mode used in the workbook.
 Possible values are: Automatic, AutomaticExceptTables, Manual.
-            [Comments <IMicrosoftGraphWorkbookComment[]>]: 
+            [Comments <IMicrosoftGraphWorkbookComment[]>]: Represents a collection of comments in a workbook.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [Content <String>]: The content of the comment.
+              [Content <String>]: The content of the comment that is the String displayed to end-users.
               [ContentType <String>]: The content type of the comment.
+Supported values are: plain, mention.
               [Replies <IMicrosoftGraphWorkbookCommentReply[]>]: The list of replies to the comment.
 Read-only.
 Nullable.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
-                [Content <String>]: The content of the reply.
+                [Content <String>]: The content of the reply that is the displayed to end-users.
                 [ContentType <String>]: The content type for the reply.
+Supported values are: plain, mention.
                 [Task <IMicrosoftGraphWorkbookDocumentTask>]: workbookDocumentTask
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [Id <String>]: The unique identifier for an entity.
@@ -48113,7 +48356,7 @@ Supports $filter (eq including on null values).
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [IsCloudManaged <Boolean?>]: Indicates the state of synchronization for an object between the cloud and on-premises Active Directory.
-If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
+If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the on-premises Active Directory can take over the object.
       [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -49151,8 +49394,6 @@ Returned by default.
 Read-only.
       [ManagedAppRegistrationId <String>]: The unique identifier of the app instance for which diagnostic logs were collected.
 Read-only.
-      [RequestedBy <String>]: The user principal name associated with the request for the managed application log collection.
-Read-only.
       [RequestedByUserPrincipalName <String>]: The user principal name associated with the request for the managed application log collection.
 Read-only.
       [RequestedDateTime <DateTime?>]: DateTime of when the log upload request was received.
@@ -49160,13 +49401,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-      [Status <String>]: Indicates the status for the app log collection request - pending, completed or failed.
-Default is pending.
       [UploadedLogs <IMicrosoftGraphManagedAppLogUpload[]>]: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
-Read-only.
-        [ManagedAppComponent <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
-Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
         [ManagedAppComponentDescription <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
@@ -49662,7 +49898,7 @@ It is an Optional field
       [TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]: Object containing detailed information about the error and its remediation.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: Indicates collection of App Log Upload Request.
+      [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: The collection property of AppLogUploadRequest.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [CompletedDateTime <DateTime?>]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -49923,27 +50159,6 @@ Optional.
 Read-only.
       [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of an online meeting.
 Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this recording.
-Read-only.
-        [Content <Byte[]>]: The content of the recording.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
-Read-only.
       [Registration <IMicrosoftGraphMeetingRegistration>]: meetingRegistration
         [(Any) <Object>]: This indicates any property can be added to this object.
         [AllowedRegistrant <String>]: meetingAudience
@@ -49976,29 +50191,6 @@ Read-only.
       [StartDateTime <DateTime?>]: The meeting start time in UTC.
 Required when you create an online meeting.
       [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of an online meeting.
-Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this transcript.
-Read-only.
-        [Content <Byte[]>]: The content of the transcript.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
-Read-only.
-        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
     [OtherMails <String[]>]: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
@@ -50466,9 +50658,9 @@ This attribute returns an empty string.Returned only on $select.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Activity <String>]: The supplemental information to a user's availability.
-Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
+Possible values are available, away, beRightBack, busy, doNotDisturb, offline, outOfOffice, presenceUnknown.
       [Availability <String>]: The base presence information for a user.
-Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown.
+Possible values are available, away, beRightBack, busy, doNotDisturb, focusing, inACall, inAMeeting, offline, presenting, presenceUnknown.
       [OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]: outOfOfficeSettings
         [(Any) <Object>]: This indicates any property can be added to this object.
         [IsOutOfOffice <Boolean?>]: True if either:It is currently in the out of office time window configured on the Outlook or Teams client.There is currently an event on the user's calendar that's marked as Show as Out of OfficeOtherwise, false.
@@ -51844,6 +52036,59 @@ Must be a valid hex color
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+    [AdhocCalls <IMicrosoftGraphAdhocCall[]>]: Ad hoc calls associated with the user.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this recording.
+Read-only.
+        [Content <Byte[]>]: The content of the recording.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
+Read-only.
+      [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this transcript.
+Read-only.
+        [Content <Byte[]>]: The content of the transcript.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
+Read-only.
+        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
+Read-only.
     [AgeGroup <String>]: Sets the age group of the user.
 Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
@@ -52795,6 +53040,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [EmailAddress <String>]: The email address registered to this user.
@@ -52805,6 +53051,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
@@ -52816,6 +53063,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AaGuid <String>]: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
@@ -52839,6 +53087,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphHardwareOathTokenAuthenticationMethodDevice>]: hardwareOathTokenAuthenticationMethodDevice
@@ -52850,6 +53099,7 @@ Read-only.
           [AssignTo <IMicrosoftGraphUser>]: user
           [AssignedTo <IMicrosoftGraphIdentity>]: identity
           [HashFunction <String>]: hardwareOathTokenHashFunction
+          [LastUsedDateTime <DateTime?>]: 
           [Manufacturer <String>]: Manufacturer name of the hardware token.
 Supports $filter (eq).
           [Model <String>]: Model name of the hardware token.
@@ -52870,6 +53120,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
       [MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod[]>]: The details of the Microsoft Authenticator app registered to a user for authentication.
         [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -52877,6 +53128,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [ClientAppName <String>]: microsoftAuthenticatorAuthenticationMethodClientAppName
@@ -53102,6 +53354,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Password <String>]: For security, the password is always returned as null from a LIST or GET operation.
@@ -53112,6 +53365,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [CreationDateTime <DateTime?>]: The timestamp when this method was registered to the user.
@@ -53124,6 +53378,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -53139,6 +53394,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphDevice>]: device
@@ -53153,6 +53409,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Pin <IMicrosoftGraphQrPin>]: qrPin
@@ -53197,6 +53454,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [SecretKey <String>]: The secret key of the method.
@@ -53208,6 +53466,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [IsUsableOnce <Boolean?>]: Determines whether the pass is limited to a one-time use.
@@ -53224,6 +53483,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphDevice>]: device
@@ -53902,7 +54162,8 @@ Read-only.
 The default value is false.
       [ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]: cloudPcConnectionSettings
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [EnableSingleSignOn <Boolean?>]: 
+        [EnableSingleSignOn <Boolean?>]: Indicates whether single sign-on is enabled.
+The default value is false.
       [ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]: cloudPcConnectivityResult
         [(Any) <Object>]: This indicates any property can be added to this object.
         [FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]: A list of failed health check items.
@@ -53937,6 +54198,12 @@ Read-only.
 Required only if the status is inGracePeriod.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [GroupDetail <IMicrosoftGraphCloudPcEntraGroupDetail>]: cloudPcEntraGroupDetail
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [GroupDisplayName <String>]: The display name of the Microsoft Entra ID group.
+Read-only.
+        [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
+Read-only.
       [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
       [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
         [(Any) <Object>]: This indicates any property can be added to this object.
@@ -54011,6 +54278,12 @@ Example values, john.doe@contoso.onmicrosoft.com and .
       [StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]: cloudPcStatusDetail
       [StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]: cloudPcStatusDetails
       [UserAccountType <String>]: cloudPcUserAccountType
+      [UserDetail <IMicrosoftGraphCloudPcEntraUserDetail>]: cloudPcEntraUserDetail
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [UserDisplayName <String>]: The display name of the user.
+Read-only.
+        [UserId <String>]: The unique identifier (GUID) of the user.
+Read-only.
       [UserExperienceType <String>]: cloudPcUserExperienceType
       [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
     [CloudRealtimeCommunicationInfo <IMicrosoftGraphCloudRealtimeCommunicationInfo>]: cloudRealtimeCommunicationInfo
@@ -54921,18 +55194,20 @@ Read-only.
 Read-only.
               [CalculationMode <String>]: Returns the calculation mode used in the workbook.
 Possible values are: Automatic, AutomaticExceptTables, Manual.
-            [Comments <IMicrosoftGraphWorkbookComment[]>]: 
+            [Comments <IMicrosoftGraphWorkbookComment[]>]: Represents a collection of comments in a workbook.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [Content <String>]: The content of the comment.
+              [Content <String>]: The content of the comment that is the String displayed to end-users.
               [ContentType <String>]: The content type of the comment.
+Supported values are: plain, mention.
               [Replies <IMicrosoftGraphWorkbookCommentReply[]>]: The list of replies to the comment.
 Read-only.
 Nullable.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
-                [Content <String>]: The content of the reply.
+                [Content <String>]: The content of the reply that is the displayed to end-users.
                 [ContentType <String>]: The content type for the reply.
+Supported values are: plain, mention.
                 [Task <IMicrosoftGraphWorkbookDocumentTask>]: workbookDocumentTask
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [Id <String>]: The unique identifier for an entity.
@@ -56579,7 +56854,7 @@ Supports $filter (eq including on null values).
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [IsCloudManaged <Boolean?>]: Indicates the state of synchronization for an object between the cloud and on-premises Active Directory.
-If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
+If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the on-premises Active Directory can take over the object.
       [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -57617,8 +57892,6 @@ Returned by default.
 Read-only.
       [ManagedAppRegistrationId <String>]: The unique identifier of the app instance for which diagnostic logs were collected.
 Read-only.
-      [RequestedBy <String>]: The user principal name associated with the request for the managed application log collection.
-Read-only.
       [RequestedByUserPrincipalName <String>]: The user principal name associated with the request for the managed application log collection.
 Read-only.
       [RequestedDateTime <DateTime?>]: DateTime of when the log upload request was received.
@@ -57626,13 +57899,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-      [Status <String>]: Indicates the status for the app log collection request - pending, completed or failed.
-Default is pending.
       [UploadedLogs <IMicrosoftGraphManagedAppLogUpload[]>]: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
-Read-only.
-        [ManagedAppComponent <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
-Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
         [ManagedAppComponentDescription <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
@@ -58128,7 +58396,7 @@ It is an Optional field
       [TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]: Object containing detailed information about the error and its remediation.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: Indicates collection of App Log Upload Request.
+      [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: The collection property of AppLogUploadRequest.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [CompletedDateTime <DateTime?>]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -58389,27 +58657,6 @@ Optional.
 Read-only.
       [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of an online meeting.
 Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this recording.
-Read-only.
-        [Content <Byte[]>]: The content of the recording.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
-Read-only.
       [Registration <IMicrosoftGraphMeetingRegistration>]: meetingRegistration
         [(Any) <Object>]: This indicates any property can be added to this object.
         [AllowedRegistrant <String>]: meetingAudience
@@ -58442,29 +58689,6 @@ Read-only.
       [StartDateTime <DateTime?>]: The meeting start time in UTC.
 Required when you create an online meeting.
       [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of an online meeting.
-Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this transcript.
-Read-only.
-        [Content <Byte[]>]: The content of the transcript.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
-Read-only.
-        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
     [OtherMails <String[]>]: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
@@ -58932,9 +59156,9 @@ This attribute returns an empty string.Returned only on $select.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Activity <String>]: The supplemental information to a user's availability.
-Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
+Possible values are available, away, beRightBack, busy, doNotDisturb, offline, outOfOffice, presenceUnknown.
       [Availability <String>]: The base presence information for a user.
-Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown.
+Possible values are available, away, beRightBack, busy, doNotDisturb, focusing, inACall, inAMeeting, offline, presenting, presenceUnknown.
       [OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]: outOfOfficeSettings
         [(Any) <Object>]: This indicates any property can be added to this object.
         [IsOutOfOffice <Boolean?>]: True if either:It is currently in the out of office time window configured on the Outlook or Teams client.There is currently an event on the user's calendar that's marked as Show as Out of OfficeOtherwise, false.
@@ -60461,6 +60685,59 @@ Must be a valid hex color
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+    [AdhocCalls <IMicrosoftGraphAdhocCall[]>]: Ad hoc calls associated with the user.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this recording.
+Read-only.
+        [Content <Byte[]>]: The content of the recording.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
+Read-only.
+      [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this transcript.
+Read-only.
+        [Content <Byte[]>]: The content of the transcript.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
+Read-only.
+        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
+Read-only.
     [AgeGroup <String>]: Sets the age group of the user.
 Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
@@ -61412,6 +61689,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [EmailAddress <String>]: The email address registered to this user.
@@ -61422,6 +61700,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
@@ -61433,6 +61712,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AaGuid <String>]: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
@@ -61456,6 +61736,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphHardwareOathTokenAuthenticationMethodDevice>]: hardwareOathTokenAuthenticationMethodDevice
@@ -61467,6 +61748,7 @@ Read-only.
           [AssignTo <IMicrosoftGraphUser>]: user
           [AssignedTo <IMicrosoftGraphIdentity>]: identity
           [HashFunction <String>]: hardwareOathTokenHashFunction
+          [LastUsedDateTime <DateTime?>]: 
           [Manufacturer <String>]: Manufacturer name of the hardware token.
 Supports $filter (eq).
           [Model <String>]: Model name of the hardware token.
@@ -61487,6 +61769,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
       [MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod[]>]: The details of the Microsoft Authenticator app registered to a user for authentication.
         [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -61494,6 +61777,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [ClientAppName <String>]: microsoftAuthenticatorAuthenticationMethodClientAppName
@@ -61719,6 +62003,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Password <String>]: For security, the password is always returned as null from a LIST or GET operation.
@@ -61729,6 +62014,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [CreationDateTime <DateTime?>]: The timestamp when this method was registered to the user.
@@ -61741,6 +62027,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -61756,6 +62043,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphDevice>]: device
@@ -61770,6 +62058,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Pin <IMicrosoftGraphQrPin>]: qrPin
@@ -61814,6 +62103,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [SecretKey <String>]: The secret key of the method.
@@ -61825,6 +62115,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [IsUsableOnce <Boolean?>]: Determines whether the pass is limited to a one-time use.
@@ -61841,6 +62132,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphDevice>]: device
@@ -62519,7 +62811,8 @@ Read-only.
 The default value is false.
       [ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]: cloudPcConnectionSettings
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [EnableSingleSignOn <Boolean?>]: 
+        [EnableSingleSignOn <Boolean?>]: Indicates whether single sign-on is enabled.
+The default value is false.
       [ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]: cloudPcConnectivityResult
         [(Any) <Object>]: This indicates any property can be added to this object.
         [FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]: A list of failed health check items.
@@ -62554,6 +62847,12 @@ Read-only.
 Required only if the status is inGracePeriod.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [GroupDetail <IMicrosoftGraphCloudPcEntraGroupDetail>]: cloudPcEntraGroupDetail
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [GroupDisplayName <String>]: The display name of the Microsoft Entra ID group.
+Read-only.
+        [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
+Read-only.
       [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
       [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
         [(Any) <Object>]: This indicates any property can be added to this object.
@@ -62628,6 +62927,12 @@ Example values, john.doe@contoso.onmicrosoft.com and .
       [StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]: cloudPcStatusDetail
       [StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]: cloudPcStatusDetails
       [UserAccountType <String>]: cloudPcUserAccountType
+      [UserDetail <IMicrosoftGraphCloudPcEntraUserDetail>]: cloudPcEntraUserDetail
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [UserDisplayName <String>]: The display name of the user.
+Read-only.
+        [UserId <String>]: The unique identifier (GUID) of the user.
+Read-only.
       [UserExperienceType <String>]: cloudPcUserExperienceType
       [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
     [CloudRealtimeCommunicationInfo <IMicrosoftGraphCloudRealtimeCommunicationInfo>]: cloudRealtimeCommunicationInfo
@@ -64520,7 +64825,7 @@ Supports $filter (eq including on null values).
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [IsCloudManaged <Boolean?>]: Indicates the state of synchronization for an object between the cloud and on-premises Active Directory.
-If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
+If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the on-premises Active Directory can take over the object.
       [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -65568,8 +65873,6 @@ Returned by default.
 Read-only.
       [ManagedAppRegistrationId <String>]: The unique identifier of the app instance for which diagnostic logs were collected.
 Read-only.
-      [RequestedBy <String>]: The user principal name associated with the request for the managed application log collection.
-Read-only.
       [RequestedByUserPrincipalName <String>]: The user principal name associated with the request for the managed application log collection.
 Read-only.
       [RequestedDateTime <DateTime?>]: DateTime of when the log upload request was received.
@@ -65577,13 +65880,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-      [Status <String>]: Indicates the status for the app log collection request - pending, completed or failed.
-Default is pending.
       [UploadedLogs <IMicrosoftGraphManagedAppLogUpload[]>]: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
-Read-only.
-        [ManagedAppComponent <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
-Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
         [ManagedAppComponentDescription <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
@@ -66079,7 +66377,7 @@ It is an Optional field
       [TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]: Object containing detailed information about the error and its remediation.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: Indicates collection of App Log Upload Request.
+      [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: The collection property of AppLogUploadRequest.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [CompletedDateTime <DateTime?>]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -66340,27 +66638,6 @@ Optional.
 Read-only.
       [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of an online meeting.
 Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this recording.
-Read-only.
-        [Content <Byte[]>]: The content of the recording.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
-Read-only.
       [Registration <IMicrosoftGraphMeetingRegistration>]: meetingRegistration
         [(Any) <Object>]: This indicates any property can be added to this object.
         [AllowedRegistrant <String>]: meetingAudience
@@ -66393,29 +66670,6 @@ Read-only.
       [StartDateTime <DateTime?>]: The meeting start time in UTC.
 Required when you create an online meeting.
       [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of an online meeting.
-Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this transcript.
-Read-only.
-        [Content <Byte[]>]: The content of the transcript.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
-Read-only.
-        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
     [OtherMails <String[]>]: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
@@ -66883,9 +67137,9 @@ This attribute returns an empty string.Returned only on $select.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Activity <String>]: The supplemental information to a user's availability.
-Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
+Possible values are available, away, beRightBack, busy, doNotDisturb, offline, outOfOffice, presenceUnknown.
       [Availability <String>]: The base presence information for a user.
-Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown.
+Possible values are available, away, beRightBack, busy, doNotDisturb, focusing, inACall, inAMeeting, offline, presenting, presenceUnknown.
       [OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]: outOfOfficeSettings
         [(Any) <Object>]: This indicates any property can be added to this object.
         [IsOutOfOffice <Boolean?>]: True if either:It is currently in the out of office time window configured on the Outlook or Teams client.There is currently an event on the user's calendar that's marked as Show as Out of OfficeOtherwise, false.
@@ -68465,18 +68719,20 @@ Read-only.
 Read-only.
       [CalculationMode <String>]: Returns the calculation mode used in the workbook.
 Possible values are: Automatic, AutomaticExceptTables, Manual.
-    [Comments <IMicrosoftGraphWorkbookComment[]>]: 
+    [Comments <IMicrosoftGraphWorkbookComment[]>]: Represents a collection of comments in a workbook.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [Content <String>]: The content of the comment.
+      [Content <String>]: The content of the comment that is the String displayed to end-users.
       [ContentType <String>]: The content type of the comment.
+Supported values are: plain, mention.
       [Replies <IMicrosoftGraphWorkbookCommentReply[]>]: The list of replies to the comment.
 Read-only.
 Nullable.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [Content <String>]: The content of the reply.
+        [Content <String>]: The content of the reply that is the displayed to end-users.
         [ContentType <String>]: The content type for the reply.
+Supported values are: plain, mention.
         [Task <IMicrosoftGraphWorkbookDocumentTask>]: workbookDocumentTask
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -68946,6 +69202,59 @@ Must be a valid hex color
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+    [AdhocCalls <IMicrosoftGraphAdhocCall[]>]: Ad hoc calls associated with the user.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this recording.
+Read-only.
+        [Content <Byte[]>]: The content of the recording.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
+Read-only.
+      [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this transcript.
+Read-only.
+        [Content <Byte[]>]: The content of the transcript.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
+Read-only.
+        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
+Read-only.
     [AgeGroup <String>]: Sets the age group of the user.
 Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
@@ -69897,6 +70206,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [EmailAddress <String>]: The email address registered to this user.
@@ -69907,6 +70217,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
@@ -69918,6 +70229,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AaGuid <String>]: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
@@ -69941,6 +70253,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphHardwareOathTokenAuthenticationMethodDevice>]: hardwareOathTokenAuthenticationMethodDevice
@@ -69952,6 +70265,7 @@ Read-only.
           [AssignTo <IMicrosoftGraphUser>]: user
           [AssignedTo <IMicrosoftGraphIdentity>]: identity
           [HashFunction <String>]: hardwareOathTokenHashFunction
+          [LastUsedDateTime <DateTime?>]: 
           [Manufacturer <String>]: Manufacturer name of the hardware token.
 Supports $filter (eq).
           [Model <String>]: Model name of the hardware token.
@@ -69972,6 +70286,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
       [MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod[]>]: The details of the Microsoft Authenticator app registered to a user for authentication.
         [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -69979,6 +70294,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [ClientAppName <String>]: microsoftAuthenticatorAuthenticationMethodClientAppName
@@ -70204,6 +70520,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Password <String>]: For security, the password is always returned as null from a LIST or GET operation.
@@ -70214,6 +70531,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [CreationDateTime <DateTime?>]: The timestamp when this method was registered to the user.
@@ -70226,6 +70544,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -70241,6 +70560,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphDevice>]: device
@@ -70255,6 +70575,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Pin <IMicrosoftGraphQrPin>]: qrPin
@@ -70299,6 +70620,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [SecretKey <String>]: The secret key of the method.
@@ -70310,6 +70632,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [IsUsableOnce <Boolean?>]: Determines whether the pass is limited to a one-time use.
@@ -70326,6 +70649,7 @@ Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [LastUsedDateTime <DateTime?>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Device <IMicrosoftGraphDevice>]: device
@@ -71004,7 +71328,8 @@ Read-only.
 The default value is false.
       [ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]: cloudPcConnectionSettings
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [EnableSingleSignOn <Boolean?>]: 
+        [EnableSingleSignOn <Boolean?>]: Indicates whether single sign-on is enabled.
+The default value is false.
       [ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]: cloudPcConnectivityResult
         [(Any) <Object>]: This indicates any property can be added to this object.
         [FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]: A list of failed health check items.
@@ -71039,6 +71364,12 @@ Read-only.
 Required only if the status is inGracePeriod.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [GroupDetail <IMicrosoftGraphCloudPcEntraGroupDetail>]: cloudPcEntraGroupDetail
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [GroupDisplayName <String>]: The display name of the Microsoft Entra ID group.
+Read-only.
+        [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
+Read-only.
       [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
       [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
         [(Any) <Object>]: This indicates any property can be added to this object.
@@ -71113,6 +71444,12 @@ Example values, john.doe@contoso.onmicrosoft.com and .
       [StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]: cloudPcStatusDetail
       [StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]: cloudPcStatusDetails
       [UserAccountType <String>]: cloudPcUserAccountType
+      [UserDetail <IMicrosoftGraphCloudPcEntraUserDetail>]: cloudPcEntraUserDetail
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [UserDisplayName <String>]: The display name of the user.
+Read-only.
+        [UserId <String>]: The unique identifier (GUID) of the user.
+Read-only.
       [UserExperienceType <String>]: cloudPcUserExperienceType
       [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
     [CloudRealtimeCommunicationInfo <IMicrosoftGraphCloudRealtimeCommunicationInfo>]: cloudRealtimeCommunicationInfo
@@ -72083,18 +72420,20 @@ Read-only.
 Read-only.
               [CalculationMode <String>]: Returns the calculation mode used in the workbook.
 Possible values are: Automatic, AutomaticExceptTables, Manual.
-            [Comments <IMicrosoftGraphWorkbookComment[]>]: 
+            [Comments <IMicrosoftGraphWorkbookComment[]>]: Represents a collection of comments in a workbook.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [Content <String>]: The content of the comment.
+              [Content <String>]: The content of the comment that is the String displayed to end-users.
               [ContentType <String>]: The content type of the comment.
+Supported values are: plain, mention.
               [Replies <IMicrosoftGraphWorkbookCommentReply[]>]: The list of replies to the comment.
 Read-only.
 Nullable.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
-                [Content <String>]: The content of the reply.
+                [Content <String>]: The content of the reply that is the displayed to end-users.
                 [ContentType <String>]: The content type for the reply.
+Supported values are: plain, mention.
                 [Task <IMicrosoftGraphWorkbookDocumentTask>]: workbookDocumentTask
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [Id <String>]: The unique identifier for an entity.
@@ -73349,7 +73688,7 @@ Supports $filter (eq including on null values).
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [IsCloudManaged <Boolean?>]: Indicates the state of synchronization for an object between the cloud and on-premises Active Directory.
-If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
+If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the on-premises Active Directory can take over the object.
       [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -74524,8 +74863,6 @@ Returned by default.
 Read-only.
       [ManagedAppRegistrationId <String>]: The unique identifier of the app instance for which diagnostic logs were collected.
 Read-only.
-      [RequestedBy <String>]: The user principal name associated with the request for the managed application log collection.
-Read-only.
       [RequestedByUserPrincipalName <String>]: The user principal name associated with the request for the managed application log collection.
 Read-only.
       [RequestedDateTime <DateTime?>]: DateTime of when the log upload request was received.
@@ -74533,13 +74870,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-      [Status <String>]: Indicates the status for the app log collection request - pending, completed or failed.
-Default is pending.
       [UploadedLogs <IMicrosoftGraphManagedAppLogUpload[]>]: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
-Read-only.
-        [ManagedAppComponent <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
-Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
         [ManagedAppComponentDescription <String>]: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
@@ -75035,7 +75367,7 @@ It is an Optional field
       [TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]: Object containing detailed information about the error and its remediation.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: Indicates collection of App Log Upload Request.
+      [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: The collection property of AppLogUploadRequest.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [CompletedDateTime <DateTime?>]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -75296,27 +75628,6 @@ Optional.
 Read-only.
       [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of an online meeting.
 Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this recording.
-Read-only.
-        [Content <Byte[]>]: The content of the recording.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
-Read-only.
       [Registration <IMicrosoftGraphMeetingRegistration>]: meetingRegistration
         [(Any) <Object>]: This indicates any property can be added to this object.
         [AllowedRegistrant <String>]: meetingAudience
@@ -75349,29 +75660,6 @@ Read-only.
       [StartDateTime <DateTime?>]: The meeting start time in UTC.
 Required when you create an online meeting.
       [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of an online meeting.
-Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this transcript.
-Read-only.
-        [Content <Byte[]>]: The content of the transcript.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
-Read-only.
-        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
     [OtherMails <String[]>]: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
@@ -75839,9 +76127,9 @@ This attribute returns an empty string.Returned only on $select.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Activity <String>]: The supplemental information to a user's availability.
-Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
+Possible values are available, away, beRightBack, busy, doNotDisturb, offline, outOfOffice, presenceUnknown.
       [Availability <String>]: The base presence information for a user.
-Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown.
+Possible values are available, away, beRightBack, busy, doNotDisturb, focusing, inACall, inAMeeting, offline, presenting, presenceUnknown.
       [OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]: outOfOfficeSettings
         [(Any) <Object>]: This indicates any property can be added to this object.
         [IsOutOfOffice <Boolean?>]: True if either:It is currently in the out of office time window configured on the Outlook or Teams client.There is currently an event on the user's calendar that's marked as Show as Out of OfficeOtherwise, false.

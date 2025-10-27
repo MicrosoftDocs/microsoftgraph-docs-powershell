@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementConfigurationPolicy
 ---
@@ -23,9 +23,9 @@ Update the navigation property configurationPolicies in deviceManagement
 Update-MgBetaDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Assignments <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>]
- [-CreatedDateTime <datetime>] [-CreationSource <string>] [-Description <string>] [-Id <string>]
- [-LastModifiedDateTime <datetime>] [-Name <string>]
- [-Platforms <DeviceManagementConfigurationPlatforms>]
+ [-CreatedDateTime <datetime>] [-CreationSource <string>] [-Description <string>]
+ [-DisableEntraGroupPolicyAssignment] [-Id <string>] [-LastModifiedDateTime <datetime>]
+ [-Name <string>] [-Platforms <DeviceManagementConfigurationPlatforms>]
  [-PriorityMetaData <IMicrosoftGraphDeviceManagementPriorityMetaData>] [-RoleScopeTagIds <string[]>]
  [-SettingCount <int>] [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]
  [-Technologies <DeviceManagementConfigurationTechnologies>]
@@ -52,9 +52,9 @@ Update-MgBetaDeviceManagementConfigurationPolicy -DeviceManagementConfigurationP
 Update-MgBetaDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Assignments <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>]
- [-CreatedDateTime <datetime>] [-CreationSource <string>] [-Description <string>] [-Id <string>]
- [-LastModifiedDateTime <datetime>] [-Name <string>]
- [-Platforms <DeviceManagementConfigurationPlatforms>]
+ [-CreatedDateTime <datetime>] [-CreationSource <string>] [-Description <string>]
+ [-DisableEntraGroupPolicyAssignment] [-Id <string>] [-LastModifiedDateTime <datetime>]
+ [-Name <string>] [-Platforms <DeviceManagementConfigurationPlatforms>]
  [-PriorityMetaData <IMicrosoftGraphDeviceManagementPriorityMetaData>] [-RoleScopeTagIds <string[]>]
  [-SettingCount <int>] [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]
  [-Technologies <DeviceManagementConfigurationTechnologies>]
@@ -320,6 +320,33 @@ ParameterSets:
 - Name: Update
   Position: Named
   IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DisableEntraGroupPolicyAssignment
+
+Indicates whether Entra Group policy assignment is disabled
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -860,6 +887,7 @@ Read-only.
   [CreatedDateTime <DateTime?>]: Policy creation date and time
   [CreationSource <String>]: Policy creation source
   [Description <String>]: Policy description
+  [DisableEntraGroupPolicyAssignment <Boolean?>]: Indicates whether Entra Group policy assignment is disabled
   [LastModifiedDateTime <DateTime?>]: Policy last modification date and time
   [Name <String>]: Policy name
   [Platforms <DeviceManagementConfigurationPlatforms?>]: Supported platform types.

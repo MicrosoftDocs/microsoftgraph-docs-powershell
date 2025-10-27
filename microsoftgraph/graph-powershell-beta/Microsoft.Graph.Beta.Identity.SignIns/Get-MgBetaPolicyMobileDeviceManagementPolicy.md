@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobiledevicemanagementpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyMobileDeviceManagementPolicy
 ---
@@ -31,7 +31,7 @@ Get-MgBetaPolicyMobileDeviceManagementPolicy [-ExpandProperty <string[]>] [-Prop
 ### Get
 
 ```
-Get-MgBetaPolicyMobileDeviceManagementPolicy -MobilityManagementPolicyId <string>
+Get-MgBetaPolicyMobileDeviceManagementPolicy -MobileDeviceManagementPolicyId <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -273,9 +273,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -MobilityManagementPolicyId
+### -MobileDeviceManagementPolicyId
 
-The unique identifier of mobilityManagementPolicy
+The unique identifier of mobileDeviceManagementPolicy
 
 ```yaml
 Type: System.String
@@ -527,7 +527,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobilityManagementPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileDeviceManagementPolicy
 
 {{ Fill in the Description }}
 
@@ -557,9 +557,11 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
   [CertificateBasedAuthConfigurationId <String>]: The unique identifier of certificateBasedAuthConfiguration
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
+  [ConditionalAccessPolicyId <String>]: The unique identifier of conditionalAccessPolicy
   [ConditionalAccessTemplateId <String>]: The unique identifier of conditionalAccessTemplate
   [ContentFormats <String[]>]: Usage: contentFormats={contentFormats}
   [CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  [CrossTenantIdentitySyncPolicyPartnerTenantId <String>]: The unique identifier of crossTenantIdentitySyncPolicyPartner
   [CustomAuthenticationExtensionId <String>]: The unique identifier of customAuthenticationExtension
   [DataLossPreventionPolicyId <String>]: The unique identifier of dataLossPreventionPolicy
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
@@ -584,8 +586,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
-  [MobilityManagementPolicyId <String>]: The unique identifier of mobilityManagementPolicy
+  [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
+  [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
+  [NamedLocationId <String>]: The unique identifier of namedLocation
   [OAuth2PermissionGrantId <String>]: The unique identifier of oAuth2PermissionGrant
   [OrganizationId <String>]: The unique identifier of organization
   [PasswordAuthenticationMethodId <String>]: The unique identifier of passwordAuthenticationMethod

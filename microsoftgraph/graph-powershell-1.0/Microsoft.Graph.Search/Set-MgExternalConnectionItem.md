@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Set-MgExternalConnectionItem
 ---
@@ -13,7 +13,7 @@ title: Set-MgExternalConnectionItem
 
 ## SYNOPSIS
 
-Update the properties of an externalItem object.
+Create a new externalItem object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Set-MgBetaExternalConnectionItem?view=graph-powershell-beta)
@@ -73,7 +73,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of an externalItem object.
+Create a new externalItem object.
 
 **Permissions**
 
@@ -725,7 +725,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Set-MgExternalConnectionItem](https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-update?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-1.0)
 
 
 

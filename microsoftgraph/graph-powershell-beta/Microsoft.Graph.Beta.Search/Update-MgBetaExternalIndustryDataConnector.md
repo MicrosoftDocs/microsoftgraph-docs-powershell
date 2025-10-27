@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaExternalIndustryDataConnector
 ---
@@ -13,7 +13,7 @@ title: Update-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
 
-Update the properties of a oneRosterApiDataConnector object.
+Update the properties of an azureDataLakeConnector object.
 
 ## SYNTAX
 
@@ -66,7 +66,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a oneRosterApiDataConnector object.
+Update the properties of an azureDataLakeConnector object.
 
 **Permissions**
 
@@ -642,7 +642,7 @@ Maximum supported length is 100 characters.
 ## RELATED LINKS
 
 - [Update-MgBetaExternalIndustryDataConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataconnector)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-onerosterapidataconnector-update?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-azuredatalakeconnector-update?view=graph-rest-beta)
 
 
 

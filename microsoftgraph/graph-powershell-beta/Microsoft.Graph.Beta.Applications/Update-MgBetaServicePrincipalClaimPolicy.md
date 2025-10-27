@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalclaimpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaServicePrincipalClaimPolicy
 ---
@@ -13,7 +13,7 @@ title: Update-MgBetaServicePrincipalClaimPolicy
 
 ## SYNOPSIS
 
-Update a customClaimsPolicy object.
+Create a new customClaimsPolicy object if it doesn't exist, or replace an existing one.
 
 ## SYNTAX
 
@@ -68,7 +68,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update a customClaimsPolicy object.
+Create a new customClaimsPolicy object if it doesn't exist, or replace an existing one.
 
 **Permissions**
 
@@ -665,7 +665,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgBetaServicePrincipalClaimPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalclaimpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/customclaimspolicy-update?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-put-claimspolicy?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessagepermanent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserMessagePermanent
 ---

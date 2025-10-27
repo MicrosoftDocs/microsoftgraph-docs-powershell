@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchconnectivityconfigurationlink
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessConnectivityBranchConnectivityConfigurationLink
 ---
@@ -585,6 +585,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
   [ThreatIntelligencePolicyId <String>]: The unique identifier of threatIntelligencePolicy
   [TlsInspectionPolicyId <String>]: The unique identifier of tlsInspectionPolicy
+  [Url <String>]: Usage: url='{url}'
 
 LOCALCONFIGURATIONS <IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration[]>: Specifies Microsoft's end of the tunnel configuration for a device link.
   [Asn <Int32?>]: Specifies ASN of one end of IPSec tunnel (local or peer).

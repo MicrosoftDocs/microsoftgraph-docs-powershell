@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasroomlistworkspace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlaceAsRoomListWorkspace
 ---
@@ -22,8 +22,9 @@ Create new navigation property to workspaces for places
 ```
 New-MgBetaPlaceAsRoomListWorkspace -PlaceId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
- [-Building <string>] [-Capacity <int>] [-DisplayDeviceName <string>] [-DisplayName <string>]
- [-EmailAddress <string>] [-FloorLabel <string>] [-FloorNumber <int>]
+ [-Building <string>] [-Capacity <int>] [-CheckIns <IMicrosoftGraphCheckInClaim[]>]
+ [-DisplayDeviceName <string>] [-DisplayName <string>] [-EmailAddress <string>]
+ [-FloorLabel <string>] [-FloorNumber <int>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
  [-Label <string>] [-Mode <hashtable>] [-Nickname <string>] [-ParentId <string>] [-Phone <string>]
  [-PlaceId1 <string>] [-Tags <string[]>] [-Break] [-Headers <IDictionary>]
@@ -38,8 +39,8 @@ New-MgBetaPlaceAsRoomListWorkspace -PlaceId <string> [-ResponseHeadersVariable <
 New-MgBetaPlaceAsRoomListWorkspace -InputObject <ICalendarIdentity> [-PlaceId <string>]
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <string>] [-Capacity <int>]
- [-DisplayDeviceName <string>] [-DisplayName <string>] [-EmailAddress <string>]
- [-FloorLabel <string>] [-FloorNumber <int>]
+ [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-DisplayDeviceName <string>] [-DisplayName <string>]
+ [-EmailAddress <string>] [-FloorLabel <string>] [-FloorNumber <int>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
  [-Label <string>] [-Mode <hashtable>] [-Nickname <string>] [-ParentId <string>] [-Phone <string>]
  [-Tags <string[]>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
@@ -216,6 +217,34 @@ The maximum number of individual desks within a workspace.
 ```yaml
 Type: System.Int32
 DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CheckIns
+
+A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
+To construct, see NOTES section for CHECKINS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCheckInClaim[]
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -950,6 +979,13 @@ It's a free-format string value, for example, 'United States'.
     [State <String>]: The state.
     [Street <String>]: The street.
     [Type <String>]: physicalAddressType
+  [CheckIns <IMicrosoftGraphCheckInClaim[]>]: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
+    [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
+For more information, see the iCalUId property in event.
+    [CheckInMethod <String>]: checkInMethod
+    [CreatedDateTime <DateTime?>]: The date and time when the checkInClaim object was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -980,6 +1016,14 @@ For example, 1 for first floor, 2 for second floor, and so on.
     [(Any) <Object>]: This indicates any property can be added to this object.
   [Nickname <String>]: A short, friendly name for the workspace, often used for easier identification or display in the UI.
 
+CHECKINS <IMicrosoftGraphCheckInClaim[]>: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
+  [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
+For more information, see the iCalUId property in event.
+  [CheckInMethod <String>]: checkInMethod
+  [CreatedDateTime <DateTime?>]: The date and time when the checkInClaim object was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+
 GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Accuracy <Double?>]: The accuracy of the latitude and longitude.
@@ -994,6 +1038,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
   [CalendarPermissionId <String>]: The unique identifier of calendarPermission
+  [CheckInClaimCalendarEventId <String>]: The unique identifier of checkInClaim
   [EventId <String>]: The unique identifier of event
   [ExtensionId <String>]: The unique identifier of extension
   [GroupId <String>]: The unique identifier of group

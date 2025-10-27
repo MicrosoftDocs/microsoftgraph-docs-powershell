@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicymobileappmanagementpolicyincludedgroupbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef
 ---
@@ -20,7 +20,7 @@ Add groups to be included in a mobile app management policy.
 ### CreateExpanded (Default)
 
 ```
-New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId <string>
+New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobileAppManagementPolicyId <string>
  -OdataId <string> [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
@@ -31,7 +31,7 @@ New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobilityManagementP
 ### Create
 
 ```
-New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId <string>
+New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobileAppManagementPolicyId <string>
  -BodyParameter <IReferenceCreate> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
@@ -278,9 +278,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -MobilityManagementPolicyId
+### -MobileAppManagementPolicyId
 
-The unique identifier of mobilityManagementPolicy
+The unique identifier of mobileAppManagementPolicy
 
 ```yaml
 Type: System.String
@@ -519,9 +519,11 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
   [CertificateBasedAuthConfigurationId <String>]: The unique identifier of certificateBasedAuthConfiguration
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
+  [ConditionalAccessPolicyId <String>]: The unique identifier of conditionalAccessPolicy
   [ConditionalAccessTemplateId <String>]: The unique identifier of conditionalAccessTemplate
   [ContentFormats <String[]>]: Usage: contentFormats={contentFormats}
   [CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  [CrossTenantIdentitySyncPolicyPartnerTenantId <String>]: The unique identifier of crossTenantIdentitySyncPolicyPartner
   [CustomAuthenticationExtensionId <String>]: The unique identifier of customAuthenticationExtension
   [DataLossPreventionPolicyId <String>]: The unique identifier of dataLossPreventionPolicy
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
@@ -546,8 +548,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
-  [MobilityManagementPolicyId <String>]: The unique identifier of mobilityManagementPolicy
+  [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
+  [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
+  [NamedLocationId <String>]: The unique identifier of namedLocation
   [OAuth2PermissionGrantId <String>]: The unique identifier of oAuth2PermissionGrant
   [OrganizationId <String>]: The unique identifier of organization
   [PasswordAuthenticationMethodId <String>]: The unique identifier of passwordAuthenticationMethod

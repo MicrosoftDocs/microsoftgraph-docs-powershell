@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUser
 ---
@@ -13,7 +13,11 @@ title: Remove-MgUser
 
 ## SYNOPSIS
 
-Deletes a user.
+Delete a user object.
+ When deleted, user resources, including their mailbox and license assignments, are moved to a temporary container and if the user is restored within 30 days, these objects are restored to them.
+The user is also restored to any groups they were a member of.
+After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed.
+To manage the deleted user object, see deletedItems.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUser?view=graph-powershell-beta)
@@ -47,7 +51,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Deletes a user.
+Delete a user object.
+ When deleted, user resources, including their mailbox and license assignments, are moved to a temporary container and if the user is restored within 30 days, these objects are restored to them.
+The user is also restored to any groups they were a member of.
+After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed.
+To manage the deleted user object, see deletedItems.
 
 **Permissions**
 
@@ -431,7 +439,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-mam-user-delete?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0)
 
 
 

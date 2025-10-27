@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivitybranchconnectivityconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessConnectivityBranchConnectivityConfiguration
 ---
@@ -558,6 +558,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
   [ThreatIntelligencePolicyId <String>]: The unique identifier of threatIntelligencePolicy
   [TlsInspectionPolicyId <String>]: The unique identifier of tlsInspectionPolicy
+  [Url <String>]: Usage: url='{url}'
 
 LINKS <IMicrosoftGraphNetworkaccessConnectivityConfigurationLink[]>: List of connectivity configurations for deviceLink objects.
   [Id <String>]: The unique identifier for an entity.

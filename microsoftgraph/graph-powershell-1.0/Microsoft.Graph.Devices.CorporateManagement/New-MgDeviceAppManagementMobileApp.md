@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceAppManagementMobileApp
 ---
@@ -13,7 +13,7 @@ title: New-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
 
-Create a new win32LobApp object.
+Create a new microsoftStoreForBusinessApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -52,7 +52,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new win32LobApp object.
+Create a new microsoftStoreForBusinessApp object.
 
 **Permissions**
 
@@ -775,7 +775,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 ## RELATED LINKS
 
 - [New-MgDeviceAppManagementMobileApp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-apps-win32lobapp-create?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-apps-microsoftstoreforbusinessapp-create?view=graph-rest-1.0)
 
 
 

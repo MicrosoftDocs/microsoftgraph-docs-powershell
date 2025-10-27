@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaExternalConnectionSchema
 ---
@@ -13,7 +13,7 @@ title: Update-MgBetaExternalConnectionSchema
 
 ## SYNOPSIS
 
-Create a new or update an existing schema for a Microsoft Search connection.
+Update the properties of a schema for an externalConnection.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionSchema?view=graph-powershell-1.0)
@@ -69,7 +69,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new or update an existing schema for a Microsoft Search connection.
+Update the properties of a schema for an externalConnection.
 
 **Permissions**
 
@@ -674,7 +674,7 @@ For example, the property name may not contain control characters, whitespace, o
 ## RELATED LINKS
 
 - [Update-MgBetaExternalConnectionSchema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-patch-schema?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-schema-update?view=graph-rest-beta)
 
 
 

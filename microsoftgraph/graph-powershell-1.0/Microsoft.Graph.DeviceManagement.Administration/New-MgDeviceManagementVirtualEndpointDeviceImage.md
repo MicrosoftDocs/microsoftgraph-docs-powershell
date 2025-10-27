@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointdeviceimage
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementVirtualEndpointDeviceImage
 ---
@@ -347,7 +347,7 @@ HelpMessage: ''
 ### -OperatingSystem
 
 The operating system (OS) of the image.
-For example, Windows 10 Enterprise.
+For example, Windows 11 Enterprise.
 Read-only.
 
 ```yaml
@@ -634,7 +634,7 @@ For example, 1909.
 Read-only.
   [OSStatus <String>]: cloudPcDeviceImageOsStatus
   [OperatingSystem <String>]: The operating system (OS) of the image.
-For example, Windows 10 Enterprise.
+For example, Windows 11 Enterprise.
 Read-only.
   [SourceImageResourceId <String>]: The unique identifier (ID) of the source image resource on Azure.
 The required ID format is: '/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}'.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgCommunicationCall
 ---
@@ -1381,6 +1381,7 @@ Read-only.
     [HideBotAfterEscalation <Boolean?>]: Indicates whether to hide the app after the call is escalated.
     [IsContentSharingNotificationEnabled <Boolean?>]: Indicates whether content sharing notifications should be enabled for the call.
     [IsDeltaRosterEnabled <Boolean?>]: Indicates whether delta roster is enabled for the call.
+    [IsInteractiveRosterEnabled <Boolean?>]: Indicates whether delta roster filtering by participant interactivity is enabled.
   [CallRoutes <IMicrosoftGraphCallRoute[]>]: The routing information on how the call was retargeted.
 Read-only.
     [Final <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1504,6 +1505,7 @@ CALLOPTIONS `<IMicrosoftGraphCallOptions>`: callOptions
   [HideBotAfterEscalation <Boolean?>]: Indicates whether to hide the app after the call is escalated.
   [IsContentSharingNotificationEnabled <Boolean?>]: Indicates whether content sharing notifications should be enabled for the call.
   [IsDeltaRosterEnabled <Boolean?>]: Indicates whether delta roster is enabled for the call.
+  [IsInteractiveRosterEnabled <Boolean?>]: Indicates whether delta roster filtering by participant interactivity is enabled.
 
 CALLROUTES <IMicrosoftGraphCallRoute[]>: The routing information on how the call was retargeted.
 Read-only.

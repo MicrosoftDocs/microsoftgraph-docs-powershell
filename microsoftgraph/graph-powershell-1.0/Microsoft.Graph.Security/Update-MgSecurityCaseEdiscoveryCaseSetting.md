@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityCaseEdiscoveryCaseSetting
 ---
@@ -24,13 +24,13 @@ Update the properties of an ediscoveryCaseSettings object.
 
 ```
 Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <string>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
- [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-CaseType <string>]
+ [-Id <string>] [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphSecurityRedundancyDetectionSettings>]
- [-TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ReviewSetSettings <string>] [-TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -47,13 +47,13 @@ Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <string>
 
 ```
 Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
- [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-CaseType <string>]
+ [-Id <string>] [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphSecurityRedundancyDetectionSettings>]
- [-TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ReviewSetSettings <string>] [-TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -177,6 +177,33 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CaseType
+
+caseType
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -496,6 +523,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ReviewSetSettings
+
+reviewSetSettings
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -TopicModeling
 
 topicModelingSettings
@@ -584,6 +638,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCaseSettings>`: ediscoveryCaseS
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [CaseType <String>]: caseType
   [Ocr <IMicrosoftGraphSecurityOcrSettings>]: ocrSettings
     [(Any) <Object>]: This indicates any property can be added to this object.
     [IsEnabled <Boolean?>]: Indicates whether or not OCR is enabled for the case.
@@ -599,6 +654,7 @@ To learn more, see Minimum/maximum number of words.
 To learn more, see Minimum/maximum number of words.
     [SimilarityThreshold <Int32?>]: Specifies the similarity level for documents to be put in the same near duplicate set.
 To learn more, see Document and email similarity threshold.
+  [ReviewSetSettings <String>]: reviewSetSettings
   [TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>]: topicModelingSettings
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DynamicallyAdjustTopicCount <Boolean?>]: Indicates whether the themes model should dynamically optimize the number of generated topics.

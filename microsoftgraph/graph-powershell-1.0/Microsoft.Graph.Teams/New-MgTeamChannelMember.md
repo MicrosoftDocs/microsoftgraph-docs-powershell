@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmember
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgTeamChannelMember
 ---
@@ -795,7 +795,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgTeamChannelMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-add?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-post-members?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranch
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessConnectivityBranch
 ---
@@ -684,6 +684,7 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [Associations <IMicrosoftGraphNetworkaccessAssociation[]>]: Specifies the users, groups, devices, and remote networks whose traffic is associated with the given traffic forwarding profile.
+    [IsCustomProfile <Boolean?>]: 
     [Priority <Int32?>]: Profile priority.
     [ServicePrincipal <IMicrosoftGraphServicePrincipal>]: servicePrincipal
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1572,6 +1573,7 @@ Read-only.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Associations <IMicrosoftGraphNetworkaccessAssociation[]>]: Specifies the users, groups, devices, and remote networks whose traffic is associated with the given traffic forwarding profile.
+  [IsCustomProfile <Boolean?>]: 
   [Priority <Int32?>]: Profile priority.
   [ServicePrincipal <IMicrosoftGraphServicePrincipal>]: servicePrincipal
     [(Any) <Object>]: This indicates any property can be added to this object.

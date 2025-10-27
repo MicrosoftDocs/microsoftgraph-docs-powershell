@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappasmacospkgappcontentversion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion
 ---
@@ -23,7 +23,8 @@ Update the navigation property contentVersions in deviceAppManagement
 Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion -MobileAppContentId <string>
  -MobileAppId <string> [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <string>] [-Break] [-Headers <IDictionary>]
+ [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <string>]
+ [-Scripts <IMicrosoftGraphMobileAppContentScript[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -46,7 +47,8 @@ Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion -MobileAppC
 Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <string>] [-Break] [-Headers <IDictionary>]
+ [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <string>]
+ [-Scripts <IMicrosoftGraphMobileAppContentScript[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -487,6 +489,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Scripts
+
+The list of scripts for this app content version.
+To construct, see NOTES section for SCRIPTS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppContentScript[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -564,6 +594,14 @@ To be deprecated.
     [Size <Int64?>]: Indicates the original size of the file, in bytes.
     [SizeEncrypted <Int64?>]: Indicates the size of the file after encryption, in bytes.
     [UploadState <String>]: Contains properties for upload request states.
+  [Scripts <IMicrosoftGraphMobileAppContentScript[]>]: The list of scripts for this app content version.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Content <String>]: The content of the script.
+This is a Base64-encoded representation of the script's original content.
+The content has a maximum size limit of 100KB.
+    [DisplayName <String>]: The display name for the script.
+    [State <MobileAppContentScriptState?>]: A list of possible script lifecycle states.
 
 CONTAINEDAPPS <IMicrosoftGraphMobileContainedApp[]>: The collection of contained apps in a MobileLobApp acting as a package.
   [Id <String>]: The unique identifier for an entity.
@@ -628,6 +666,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   [MobileAppCategoryId <String>]: The unique identifier of mobileAppCategory
   [MobileAppContentFileId <String>]: The unique identifier of mobileAppContentFile
   [MobileAppContentId <String>]: The unique identifier of mobileAppContent
+  [MobileAppContentScriptId <String>]: The unique identifier of mobileAppContentScript
   [MobileAppId <String>]: The unique identifier of mobileApp
   [MobileAppIntentAndStateId <String>]: The unique identifier of mobileAppIntentAndState
   [MobileAppProvisioningConfigGroupAssignmentId <String>]: The unique identifier of mobileAppProvisioningConfigGroupAssignment
@@ -656,6 +695,15 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   [WindowsInformationProtectionPolicyId <String>]: The unique identifier of windowsInformationProtectionPolicy
   [WindowsInformationProtectionWipeActionId <String>]: The unique identifier of windowsInformationProtectionWipeAction
   [WindowsManagedAppProtectionId <String>]: The unique identifier of windowsManagedAppProtection
+
+SCRIPTS <IMicrosoftGraphMobileAppContentScript[]>: The list of scripts for this app content version.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Content <String>]: The content of the script.
+This is a Base64-encoded representation of the script's original content.
+The content has a maximum size limit of 100KB.
+  [DisplayName <String>]: The display name for the script.
+  [State <MobileAppContentScriptState?>]: A list of possible script lifecycle states.
 
 
 ## RELATED LINKS

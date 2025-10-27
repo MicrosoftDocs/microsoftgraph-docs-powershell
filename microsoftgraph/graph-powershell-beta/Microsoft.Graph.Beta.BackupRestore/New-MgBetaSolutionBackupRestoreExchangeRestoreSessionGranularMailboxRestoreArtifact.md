@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreexchangerestoresessiongranularmailboxrestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact
 ---
@@ -110,7 +110,8 @@ HelpMessage: ''
 
 ### -ArtifactCount
 
-
+This property will be deprecated soon.
+Don't use.
 
 ```yaml
 Type: System.Int32
@@ -792,7 +793,8 @@ This property is read-only.
   [Status <String>]: artifactRestoreStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [ArtifactCount <Int32?>]: .
+  [ArtifactCount <Int32?>]: This property will be deprecated soon.
+Don't use.
   [SearchResponseId <String>]: .
 
 ERROR `<IMicrosoftGraphPublicError>`: publicError

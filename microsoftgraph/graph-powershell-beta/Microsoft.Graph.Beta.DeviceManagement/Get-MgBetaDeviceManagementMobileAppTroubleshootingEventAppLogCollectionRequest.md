@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmobileapptroubleshootingeventapplogcollectionrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRe
 
 ## SYNOPSIS
 
-Indicates collection of App Log Upload Request.
+The collection property of AppLogUploadRequest.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-1.0)
@@ -60,7 +60,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Indicates collection of App Log Upload Request.
+The collection property of AppLogUploadRequest.
 
 **Permissions**
 

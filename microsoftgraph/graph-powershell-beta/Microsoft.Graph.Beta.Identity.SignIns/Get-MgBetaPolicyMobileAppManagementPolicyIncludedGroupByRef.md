@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroupbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef
 ---
@@ -20,7 +20,7 @@ Get the list of groups that are included in a mobile app management policy.
 ### List (Default)
 
 ```
-Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId <string>
+Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobileAppManagementPolicyId <string>
  [-Filter <string>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
@@ -196,9 +196,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -MobilityManagementPolicyId
+### -MobileAppManagementPolicyId
 
-The unique identifier of mobilityManagementPolicy
+The unique identifier of mobileAppManagementPolicy
 
 ```yaml
 Type: System.String

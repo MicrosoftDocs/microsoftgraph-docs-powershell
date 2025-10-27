@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ChangeNotifications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/get-mgbetasubscriptionvapidpublickey
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSubscriptionVapidPublicKey
 ---
@@ -34,6 +34,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the public key information required to validate push notifications according to RFC 8292 specifications.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.ChangeNotifications
+
+Get-MgBetaSubscriptionVapidPublicKey
 
 ## PARAMETERS
 
@@ -231,7 +239,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [Get-MgBetaSubscriptionVapidPublicKey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/get-mgbetasubscriptionvapidpublickey)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-getvapidpublickey?view=graph-rest-beta)
-
 
 
 

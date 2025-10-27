@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreexchangerestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreExchangeRestoreSession
 ---
@@ -697,7 +697,8 @@ Read-only.
     [Status <String>]: artifactRestoreStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [ArtifactCount <Int32?>]: .
+    [ArtifactCount <Int32?>]: This property will be deprecated soon.
+Don't use.
     [SearchResponseId <String>]: .
   [MailboxRestoreArtifacts <IMicrosoftGraphMailboxRestoreArtifact[]>]: A collection of restore points and destination details that can be used to restore Exchange mailboxes.
     [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
@@ -813,7 +814,8 @@ This property is read-only.
   [Status <String>]: artifactRestoreStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [ArtifactCount <Int32?>]: .
+  [ArtifactCount <Int32?>]: This property will be deprecated soon.
+Don't use.
   [SearchResponseId <String>]: .
 
 LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobiledevicemanagementpolicyincludedgroupbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef
 ---
@@ -20,12 +20,13 @@ Get the list of groups that are included in a mobile device management policy.
 ### List (Default)
 
 ```
-Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId <string>
- [-Filter <string>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef
+ -MobileDeviceManagementPolicyId <string> [-Filter <string>] [-Search <string>] [-Skip <int>]
+ [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -196,9 +197,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -MobilityManagementPolicyId
+### -MobileDeviceManagementPolicyId
 
-The unique identifier of mobilityManagementPolicy
+The unique identifier of mobileDeviceManagementPolicy
 
 ```yaml
 Type: System.String

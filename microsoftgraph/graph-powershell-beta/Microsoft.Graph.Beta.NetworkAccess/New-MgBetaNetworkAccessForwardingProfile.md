@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessforwardingprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessForwardingProfile
 ---
@@ -22,8 +22,8 @@ Create new navigation property to forwardingProfiles for networkAccess
 ```
 New-MgBetaNetworkAccessForwardingProfile [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Associations <IMicrosoftGraphNetworkaccessAssociation[]>]
- [-Description <string>] [-Id <string>] [-LastModifiedDateTime <datetime>] [-Name <string>]
- [-Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>] [-Priority <int>]
+ [-Description <string>] [-Id <string>] [-IsCustomProfile] [-LastModifiedDateTime <datetime>]
+ [-Name <string>] [-Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>] [-Priority <int>]
  [-ServicePrincipal <IMicrosoftGraphServicePrincipal>] [-State <string>]
  [-TrafficForwardingType <string>] [-Version <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
@@ -251,6 +251,27 @@ Read-only.
 ```yaml
 Type: System.String
 DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -IsCustomProfile
+
+
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -598,6 +619,7 @@ Read-only.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Associations <IMicrosoftGraphNetworkaccessAssociation[]>]: Specifies the users, groups, devices, and remote networks whose traffic is associated with the given traffic forwarding profile.
+  [IsCustomProfile <Boolean?>]: 
   [Priority <Int32?>]: Profile priority.
   [ServicePrincipal <IMicrosoftGraphServicePrincipal>]: servicePrincipal
     [(Any) <Object>]: This indicates any property can be added to this object.

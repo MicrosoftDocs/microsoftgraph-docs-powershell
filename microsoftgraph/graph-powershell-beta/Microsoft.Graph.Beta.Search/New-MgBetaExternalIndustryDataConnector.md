@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaExternalIndustryDataConnector
 ---
@@ -13,7 +13,7 @@ title: New-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
 
-Create a new oneRosterApiDataConnector object.
+Create a new azureDataLakeConnector object.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new oneRosterApiDataConnector object.
+Create a new azureDataLakeConnector object.
 
 **Permissions**
 
@@ -524,7 +524,7 @@ Maximum supported length is 100 characters.
 ## RELATED LINKS
 
 - [New-MgBetaExternalIndustryDataConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-onerosterapidataconnector-post?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-azuredatalakeconnector-post?view=graph-rest-beta)
 
 
 

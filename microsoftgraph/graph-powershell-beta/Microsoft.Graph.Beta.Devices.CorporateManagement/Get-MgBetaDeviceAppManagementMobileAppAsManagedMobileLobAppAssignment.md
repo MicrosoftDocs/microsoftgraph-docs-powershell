@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappasmanagedmobilelobappassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment
 ---
@@ -593,6 +593,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   [MobileAppCategoryId <String>]: The unique identifier of mobileAppCategory
   [MobileAppContentFileId <String>]: The unique identifier of mobileAppContentFile
   [MobileAppContentId <String>]: The unique identifier of mobileAppContent
+  [MobileAppContentScriptId <String>]: The unique identifier of mobileAppContentScript
   [MobileAppId <String>]: The unique identifier of mobileApp
   [MobileAppIntentAndStateId <String>]: The unique identifier of mobileAppIntentAndState
   [MobileAppProvisioningConfigGroupAssignmentId <String>]: The unique identifier of mobileAppProvisioningConfigGroupAssignment

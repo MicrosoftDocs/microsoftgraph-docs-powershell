@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/stop-mgbetasolutionbackuprestoreprotectionunitoffboard
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Stop-MgBetaSolutionBackupRestoreProtectionUnitOffboard
 ---
@@ -13,7 +13,7 @@ title: Stop-MgBetaSolutionBackupRestoreProtectionUnitOffboard
 
 ## SYNOPSIS
 
-Cancel offboard for a protectionUnitBase.
+Cancel the offboarding of a protectionUnitBase.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Cancel offboard for a protectionUnitBase.
+Cancel the offboarding of a protectionUnitBase.
 
 ## PARAMETERS
 

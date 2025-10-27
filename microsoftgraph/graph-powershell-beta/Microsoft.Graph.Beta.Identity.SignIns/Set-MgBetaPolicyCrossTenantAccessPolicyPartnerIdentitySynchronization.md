@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetapolicycrosstenantaccesspolicypartneridentitysynchronization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
 ---
@@ -25,7 +25,7 @@ Create a cross-tenant user synchronization policy for a partner-specific configu
 ```
 Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
  -CrossTenantAccessPolicyConfigurationPartnerTenantId <string> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-DisplayName <string>]
+ [-AdditionalProperties <hashtable>] [-DeletedDateTime <datetime>] [-DisplayName <string>]
  [-ExternalCloudAuthorizedApplicationId <string>] [-TenantId <string>]
  [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
@@ -50,7 +50,7 @@ Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
 ```
 Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
  -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-DisplayName <string>]
+ [-AdditionalProperties <hashtable>] [-DeletedDateTime <datetime>] [-DisplayName <string>]
  [-ExternalCloudAuthorizedApplicationId <string>] [-TenantId <string>]
  [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
@@ -226,6 +226,33 @@ ParameterSets:
 - Name: Set
   Position: Named
   IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DeletedDateTime
+
+Shows the last date and time the policy was deleted.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: SetViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: SetExpanded
+  Position: Named
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -580,6 +607,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>`: crossTenantIdentitySyncPolicyPartner
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
   [DisplayName <String>]: Display name for the cross-tenant user synchronization policy.
 Use the name of the partner Microsoft Entra tenant to easily identify the policy.
 Optional.
@@ -611,9 +639,11 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
   [CertificateBasedAuthConfigurationId <String>]: The unique identifier of certificateBasedAuthConfiguration
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
+  [ConditionalAccessPolicyId <String>]: The unique identifier of conditionalAccessPolicy
   [ConditionalAccessTemplateId <String>]: The unique identifier of conditionalAccessTemplate
   [ContentFormats <String[]>]: Usage: contentFormats={contentFormats}
   [CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  [CrossTenantIdentitySyncPolicyPartnerTenantId <String>]: The unique identifier of crossTenantIdentitySyncPolicyPartner
   [CustomAuthenticationExtensionId <String>]: The unique identifier of customAuthenticationExtension
   [DataLossPreventionPolicyId <String>]: The unique identifier of dataLossPreventionPolicy
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
@@ -638,8 +668,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
-  [MobilityManagementPolicyId <String>]: The unique identifier of mobilityManagementPolicy
+  [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
+  [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
+  [NamedLocationId <String>]: The unique identifier of namedLocation
   [OAuth2PermissionGrantId <String>]: The unique identifier of oAuth2PermissionGrant
   [OrganizationId <String>]: The unique identifier of organization
   [PasswordAuthenticationMethodId <String>]: The unique identifier of passwordAuthenticationMethod

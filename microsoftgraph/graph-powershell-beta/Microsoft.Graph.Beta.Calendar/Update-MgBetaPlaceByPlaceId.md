@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplacebyplaceid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 10/17/2025
+ms.date: 10/24/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlaceByPlaceId
 ---
@@ -23,12 +23,12 @@ You can identify the place by specifying the id property.
 ```
 Update-MgBetaPlaceByPlaceId -PlaceId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
- [-DisplayName <string>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>]
- [-IsWheelChairAccessible] [-Label <string>] [-ParentId <string>] [-Phone <string>]
- [-PlaceId1 <string>] [-Tags <string[]>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-DisplayName <string>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
+ [-Label <string>] [-ParentId <string>] [-Phone <string>] [-PlaceId1 <string>] [-Tags <string[]>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,10 +36,10 @@ Update-MgBetaPlaceByPlaceId -PlaceId <string> [-ResponseHeadersVariable <string>
 ```
 Update-MgBetaPlaceByPlaceId -InputObject <ICalendarIdentity> [-PlaceId <string>]
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress>] [-DisplayName <string>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
- [-Label <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-CheckIns <IMicrosoftGraphCheckInClaim[]>]
+ [-DisplayName <string>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>]
+ [-IsWheelChairAccessible] [-Label <string>] [-ParentId <string>] [-Phone <string>]
+ [-Tags <string[]>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -170,6 +170,34 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CheckIns
+
+A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
+To construct, see NOTES section for CHECKINS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCheckInClaim[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -732,6 +760,13 @@ It's a free-format string value, for example, 'United States'.
     [State <String>]: The state.
     [Street <String>]: The street.
     [Type <String>]: physicalAddressType
+  [CheckIns <IMicrosoftGraphCheckInClaim[]>]: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
+    [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
+For more information, see the iCalUId property in event.
+    [CheckInMethod <String>]: checkInMethod
+    [CreatedDateTime <DateTime?>]: The date and time when the checkInClaim object was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -749,6 +784,14 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 Read-only.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
+CHECKINS <IMicrosoftGraphCheckInClaim[]>: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
+  [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
+For more information, see the iCalUId property in event.
+  [CheckInMethod <String>]: checkInMethod
+  [CreatedDateTime <DateTime?>]: The date and time when the checkInClaim object was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+
 GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Accuracy <Double?>]: The accuracy of the latitude and longitude.
@@ -763,6 +806,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
   [CalendarPermissionId <String>]: The unique identifier of calendarPermission
+  [CheckInClaimCalendarEventId <String>]: The unique identifier of checkInClaim
   [EventId <String>]: The unique identifier of event
   [ExtensionId <String>]: The unique identifier of extension
   [GroupId <String>]: The unique identifier of group
