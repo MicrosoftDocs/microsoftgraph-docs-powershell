@@ -100,8 +100,9 @@ Assignments start in draft status, which means that students can't see the assig
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
@@ -124,6 +125,10 @@ $params = @{
 }
 
 New-MgEducationClassAssignment -EducationClassId $educationClassId -BodyParameter $params
+
+```
+This example shows how to use the New-MgEducationClassAssignment Cmdlet.
+
 
 ## PARAMETERS
 

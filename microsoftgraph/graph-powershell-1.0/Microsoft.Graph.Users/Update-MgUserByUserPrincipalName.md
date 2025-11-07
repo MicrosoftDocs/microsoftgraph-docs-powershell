@@ -202,16 +202,6 @@ This cmdlet has the following aliases,
 
 Update the properties of a user object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AboutMe
@@ -48573,6 +48563,7 @@ Always null when the object hasn't been deleted.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserbyuserprincipalname)
 - [](https://learn.microsoft.com/graph/api/intune-onboarding-user-update?view=graph-rest-1.0)
+
 
 
 

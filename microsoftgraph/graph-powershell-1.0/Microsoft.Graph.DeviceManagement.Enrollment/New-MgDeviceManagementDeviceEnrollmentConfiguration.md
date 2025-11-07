@@ -61,8 +61,9 @@ Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object.
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
 
@@ -87,6 +88,10 @@ $params = @{
 }
 
 New-MgDeviceManagementDeviceEnrollmentConfiguration -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceEnrollmentConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

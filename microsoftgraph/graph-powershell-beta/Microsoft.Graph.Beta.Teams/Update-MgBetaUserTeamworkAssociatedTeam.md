@@ -71,16 +71,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property associatedTeams in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9144,6 +9134,7 @@ This URL should be treated as an opaque blob, and not parsed.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserteamworkassociatedteam)
+
 
 
 

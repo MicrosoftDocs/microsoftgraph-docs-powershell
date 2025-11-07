@@ -69,12 +69,17 @@ The possible states of the long-running operation are notStarted, running, succe
 | Application | IndustryData.ReadBasic.All,  |
 
 ## EXAMPLES
+### Example 1: Retrieve a long-running operation from the industry data service
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
 Get-MgBetaExternalIndustryDataOperation -LongRunningOperationId $longRunningOperationId
+
+```
+This example will retrieve a long-running operation from the industry data service
+
 
 ## PARAMETERS
 

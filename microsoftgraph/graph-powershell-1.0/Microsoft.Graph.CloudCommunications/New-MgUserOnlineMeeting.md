@@ -110,8 +110,9 @@ Create new navigation property to onlineMeetings for users
 | Application | OnlineMeetings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create an online meeting with user token
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -124,7 +125,12 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create an online meeting with user token
+
+### Example 2: Create an online meeting that requires a passcode
+
+```powershell
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -140,7 +146,12 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create an online meeting that requires a passcode
+
+### Example 3: Create an online meeting that doesn't require a passcode
+
+```powershell
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -155,6 +166,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
+
+```
+This example will create an online meeting that doesn't require a passcode
+
 
 ## PARAMETERS
 

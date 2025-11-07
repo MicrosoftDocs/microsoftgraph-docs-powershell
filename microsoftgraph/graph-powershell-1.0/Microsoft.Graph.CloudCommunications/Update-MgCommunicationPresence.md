@@ -70,16 +70,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property presences in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -642,6 +632,7 @@ See below for more possible values.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationpresence)
+
 
 
 

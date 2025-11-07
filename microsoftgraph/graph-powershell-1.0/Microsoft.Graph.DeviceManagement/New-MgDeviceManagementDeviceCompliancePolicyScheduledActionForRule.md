@@ -86,8 +86,9 @@ Create a new deviceComplianceScheduledActionForRule object.
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -97,6 +98,10 @@ $params = @{
 }
 
 New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule Cmdlet.
+
 
 ## PARAMETERS
 

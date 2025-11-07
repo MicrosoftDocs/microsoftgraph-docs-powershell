@@ -85,8 +85,9 @@ Sends a sharing invitation for a driveItem.A sharing invitation provides permiss
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -107,6 +108,10 @@ expirationDateTime = "2018-07-15T14:00:00.000Z"
 }
 
 Invoke-MgBetaInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaInviteDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

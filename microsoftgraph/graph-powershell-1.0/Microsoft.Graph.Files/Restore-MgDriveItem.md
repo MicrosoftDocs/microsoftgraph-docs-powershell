@@ -74,8 +74,9 @@ This cmdlet has the following aliases,
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Files
 
@@ -87,6 +88,10 @@ $params = @{
 }
 
 Restore-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Restore-MgDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

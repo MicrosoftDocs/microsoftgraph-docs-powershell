@@ -80,8 +80,9 @@ Update the properties of a deviceConfigurationAssignment object.
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -94,6 +95,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementDeviceConfigurationAssignment -DeviceConfigurationId $deviceConfigurationId -DeviceConfigurationAssignmentId $deviceConfigurationAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceConfigurationAssignment Cmdlet.
+
 
 ## PARAMETERS
 

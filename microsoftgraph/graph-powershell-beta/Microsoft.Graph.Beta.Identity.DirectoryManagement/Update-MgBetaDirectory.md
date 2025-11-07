@@ -67,16 +67,6 @@ This cmdlet has the following aliases,
 
 Update directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -18965,6 +18955,7 @@ There can be a maximum of 100 owners on a device template.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectory)
+
 
 
 

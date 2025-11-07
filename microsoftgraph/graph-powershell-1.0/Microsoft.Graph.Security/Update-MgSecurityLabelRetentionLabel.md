@@ -87,16 +87,6 @@ This cmdlet has the following aliases,
 Update the properties of a retentionLabel object.
 To update a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ActionAfterRetentionPeriod
@@ -1265,6 +1255,7 @@ For example, in the access reviews decisions API, this property might record the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabel)
 - [](https://learn.microsoft.com/graph/api/security-retentionlabel-update?view=graph-rest-1.0)
+
 
 
 

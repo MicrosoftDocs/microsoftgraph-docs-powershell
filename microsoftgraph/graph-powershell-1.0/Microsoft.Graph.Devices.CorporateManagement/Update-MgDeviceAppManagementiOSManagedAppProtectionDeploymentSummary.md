@@ -88,8 +88,9 @@ Update the properties of a managedAppPolicyDeploymentSummary object.
 | Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -112,6 +113,10 @@ $params = @{
 }
 
 Update-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary -IosManagedAppProtectionId $iosManagedAppProtectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary Cmdlet.
+
 
 ## PARAMETERS
 

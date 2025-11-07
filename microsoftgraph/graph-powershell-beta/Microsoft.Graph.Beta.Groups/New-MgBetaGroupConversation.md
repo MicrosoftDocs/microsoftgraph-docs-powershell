@@ -86,8 +86,9 @@ The table in the Permissions section lists the resources that support open exten
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -121,6 +122,10 @@ $params = @{
 }
 
 New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaGroupConversation Cmdlet.
+
 
 ## PARAMETERS
 

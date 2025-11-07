@@ -61,8 +61,9 @@ The following derived subtypes are supported:- externalUsersSelfServiceSignupEve
 | Application | EventListener.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a basic External Identities sign-up and sign-in user flow in an external tenant
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -132,7 +133,12 @@ $params = @{
 
 New-MgIdentityAuthenticationEventFlow -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a basic external identities sign-up and sign-in user flow in an external tenant
+
+### Example 2: Create a basic external identities sign-up and sign-in user flow with an attached application in an external tenant
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -211,7 +217,12 @@ $params = @{
 
 New-MgIdentityAuthenticationEventFlow -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create a basic external identities sign-up and sign-in user flow with an attached application in an external tenant
+
+### Example 3: Create an External Identities sign-up and sign-in user flow with social providers and a custom attribute
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -303,6 +314,10 @@ $params = @{
 }
 
 New-MgIdentityAuthenticationEventFlow -BodyParameter $params
+
+```
+This example will create an external identities sign-up and sign-in user flow with social providers and a custom attribute
+
 
 ## PARAMETERS
 
