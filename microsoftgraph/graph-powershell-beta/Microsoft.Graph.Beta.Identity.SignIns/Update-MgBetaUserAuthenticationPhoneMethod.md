@@ -360,7 +360,7 @@ HelpMessage: ''
 
 ### -LastUsedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime

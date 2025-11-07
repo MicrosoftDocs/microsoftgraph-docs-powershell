@@ -498,7 +498,7 @@ HelpMessage: ''
 
 ### -AppConsentRequestsForApproval
 
-.
+
 To construct, see NOTES section for APPCONSENTREQUESTSFORAPPROVAL properties and create a hash table.
 
 ```yaml
@@ -526,7 +526,7 @@ HelpMessage: ''
 
 ### -AppRoleAssignedResources
 
-.
+
 To construct, see NOTES section for APPROLEASSIGNEDRESOURCES properties and create a hash table.
 
 ```yaml
@@ -583,7 +583,7 @@ HelpMessage: ''
 
 ### -Approvals
 
-.
+
 To construct, see NOTES section for APPROVALS properties and create a hash table.
 
 ```yaml
@@ -955,7 +955,7 @@ HelpMessage: ''
 
 ### -Chats
 
-.
+
 To construct, see NOTES section for CHATS properties and create a hash table.
 
 ```yaml
@@ -1068,7 +1068,7 @@ HelpMessage: ''
 
 ### -CloudPCs
 
-.
+
 To construct, see NOTES section for CLOUDPCS properties and create a hash table.
 
 ```yaml
@@ -1584,7 +1584,7 @@ HelpMessage: ''
 
 ### -DeviceKeys
 
-.
+
 To construct, see NOTES section for DEVICEKEYS properties and create a hash table.
 
 ```yaml
@@ -1640,7 +1640,7 @@ HelpMessage: ''
 
 ### -Devices
 
-.
+
 To construct, see NOTES section for DEVICES properties and create a hash table.
 
 ```yaml
@@ -2107,7 +2107,7 @@ HelpMessage: ''
 
 ### -FollowedSites
 
-.
+
 To construct, see NOTES section for FOLLOWEDSITES properties and create a hash table.
 
 ```yaml
@@ -2657,7 +2657,7 @@ HelpMessage: ''
 
 ### -JoinedGroups
 
-.
+
 To construct, see NOTES section for JOINEDGROUPS properties and create a hash table.
 
 ```yaml
@@ -2808,7 +2808,7 @@ HelpMessage: ''
 
 ### -LicenseDetails
 
-.
+
 To construct, see NOTES section for LICENSEDETAILS properties and create a hash table.
 
 ```yaml
@@ -3242,7 +3242,7 @@ HelpMessage: ''
 
 ### -Notifications
 
-.
+
 To construct, see NOTES section for NOTIFICATIONS properties and create a hash table.
 
 ```yaml
@@ -3270,7 +3270,7 @@ HelpMessage: ''
 
 ### -Oauth2PermissionGrants
 
-.
+
 To construct, see NOTES section for OAUTH2PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
