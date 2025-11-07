@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementTelecomExpenseManagementPartner
 
 Deletes a telecomExpenseManagementPartner.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

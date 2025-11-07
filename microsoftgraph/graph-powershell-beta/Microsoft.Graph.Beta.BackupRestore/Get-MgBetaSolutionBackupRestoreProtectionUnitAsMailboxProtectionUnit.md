@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreProtectionUnitAsMailboxProtectionUnit
 
 Get a list of mailboxProtectionUnit objects.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreProtectionUnitAsMailboxProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreProtectionUnitAsMailboxProtectionUnit?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

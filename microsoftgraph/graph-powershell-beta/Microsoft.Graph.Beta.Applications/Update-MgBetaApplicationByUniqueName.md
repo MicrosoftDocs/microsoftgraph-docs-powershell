@@ -15,6 +15,9 @@ title: Update-MgBetaApplicationByUniqueName
 
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgApplicationByUniqueName](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationByUniqueName?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaReportManagedDeviceEnrollmentFailureDetail
 
 Invoke function managedDeviceEnrollmentFailureDetails
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportManagedDeviceEnrollmentFailureDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportManagedDeviceEnrollmentFailureDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Detail (Default)

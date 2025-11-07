@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementDeviceCompliancePolicy
 
 Read properties and relationships of the windows10CompliancePolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

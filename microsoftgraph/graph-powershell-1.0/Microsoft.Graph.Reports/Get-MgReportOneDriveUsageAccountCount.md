@@ -16,6 +16,9 @@ title: Get-MgReportOneDriveUsageAccountCount
 Get the trend in the number of active OneDrive for Business sites.
 Any site on which users viewed, modified, uploaded, downloaded, shared, or synced files is considered an active site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageAccountCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageAccountCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgGroupDriveItemAnalyticItemActivityStat
 
 Get itemActivityStats from groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

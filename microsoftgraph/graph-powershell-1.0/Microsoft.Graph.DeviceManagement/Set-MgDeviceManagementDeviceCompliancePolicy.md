@@ -15,6 +15,9 @@ title: Set-MgDeviceManagementDeviceCompliancePolicy
 
 Not yet documented
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Set-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

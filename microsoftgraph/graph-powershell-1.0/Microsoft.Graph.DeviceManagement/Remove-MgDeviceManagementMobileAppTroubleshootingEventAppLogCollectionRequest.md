@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionReq
 
 Deletes a appLogCollectionRequest.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

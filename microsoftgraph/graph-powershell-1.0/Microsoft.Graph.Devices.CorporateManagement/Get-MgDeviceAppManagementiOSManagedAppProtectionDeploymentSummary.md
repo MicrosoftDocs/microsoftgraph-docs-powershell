@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 
 Read properties and relationships of the managedAppPolicyDeploymentSummary object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

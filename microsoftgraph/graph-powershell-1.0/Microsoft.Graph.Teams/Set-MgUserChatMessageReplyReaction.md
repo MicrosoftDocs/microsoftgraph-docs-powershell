@@ -15,6 +15,9 @@ title: Set-MgUserChatMessageReplyReaction
 
 Invoke action setReaction
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaUserChatMessageReplyReaction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

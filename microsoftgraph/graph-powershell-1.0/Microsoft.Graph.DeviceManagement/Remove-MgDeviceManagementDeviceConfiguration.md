@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementDeviceConfiguration
 
 Deletes a windowsPhone81CustomConfiguration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

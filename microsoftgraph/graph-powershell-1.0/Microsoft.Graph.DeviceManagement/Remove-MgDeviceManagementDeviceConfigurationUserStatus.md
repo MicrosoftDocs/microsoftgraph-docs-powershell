@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementDeviceConfigurationUserStatus
 
 Deletes a deviceConfigurationUserStatus.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceConfigurationUserStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationUserStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

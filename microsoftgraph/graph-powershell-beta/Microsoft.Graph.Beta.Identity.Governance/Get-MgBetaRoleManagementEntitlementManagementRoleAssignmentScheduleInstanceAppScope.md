@@ -16,6 +16,9 @@ title: Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstan
 Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceAppScope?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

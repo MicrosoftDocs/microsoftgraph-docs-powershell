@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementTelecomExpenseManagementPartnerCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementTelecomExpenseManagementPartnerCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementTelecomExpenseManagementPartnerCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

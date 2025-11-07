@@ -16,6 +16,9 @@ title: Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement
 In Microsoft Entra entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
 Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

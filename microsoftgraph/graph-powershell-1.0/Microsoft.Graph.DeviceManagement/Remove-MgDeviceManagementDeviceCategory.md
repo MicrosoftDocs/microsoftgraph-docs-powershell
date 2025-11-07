@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementDeviceCategory
 
 Deletes a deviceCategory.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

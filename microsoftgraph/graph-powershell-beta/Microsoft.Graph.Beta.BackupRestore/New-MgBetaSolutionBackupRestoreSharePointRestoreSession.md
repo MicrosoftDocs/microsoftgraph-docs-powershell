@@ -15,6 +15,9 @@ title: New-MgBetaSolutionBackupRestoreSharePointRestoreSession
 
 Create a new sharePointRestoreSession object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreSharePointRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreSharePointRestoreSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary
 
 Update the properties of a deviceConfigurationDeviceStateSummary object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

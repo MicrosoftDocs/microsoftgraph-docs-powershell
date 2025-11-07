@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMes
 
 Read properties and relationships of the localizedNotificationMessage object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

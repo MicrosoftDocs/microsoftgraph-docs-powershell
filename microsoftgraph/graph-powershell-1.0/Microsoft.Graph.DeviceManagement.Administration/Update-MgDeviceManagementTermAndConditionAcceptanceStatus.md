@@ -15,6 +15,9 @@ title: Update-MgDeviceManagementTermAndConditionAcceptanceStatus
 
 Update the properties of a termsAndConditionsAcceptanceStatus object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

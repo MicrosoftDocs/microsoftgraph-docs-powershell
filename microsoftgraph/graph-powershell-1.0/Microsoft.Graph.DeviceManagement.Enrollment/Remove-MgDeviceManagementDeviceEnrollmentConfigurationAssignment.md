@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
 
 Deletes a enrollmentConfigurationAssignment.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

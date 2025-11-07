@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementDeviceConfigurationAssignment
 
 Read properties and relationships of the deviceConfigurationAssignment object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

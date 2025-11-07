@@ -15,6 +15,9 @@ title: Set-MgUserDriveBundleContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserDriveBundleContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveBundleContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

@@ -15,6 +15,9 @@ title: New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
 
 Create a new importedWindowsAutopilotDeviceIdentity object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementDeviceConfiguration
 
 Read properties and relationships of the windowsPhone81GeneralConfiguration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

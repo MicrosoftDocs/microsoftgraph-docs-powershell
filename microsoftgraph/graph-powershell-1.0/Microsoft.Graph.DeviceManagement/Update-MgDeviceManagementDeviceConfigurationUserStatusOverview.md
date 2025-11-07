@@ -15,6 +15,9 @@ title: Update-MgDeviceManagementDeviceConfigurationUserStatusOverview
 
 Update the properties of a deviceConfigurationUserOverview object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

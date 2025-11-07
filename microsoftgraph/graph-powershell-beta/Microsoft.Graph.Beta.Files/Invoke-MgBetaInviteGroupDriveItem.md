@@ -15,6 +15,9 @@ title: Invoke-MgBetaInviteGroupDriveItem
 
 Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgInviteGroupDriveItem](/powershell/module/Microsoft.Graph.Files/Invoke-MgInviteGroupDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### InviteExpanded (Default)
