@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicyaudienceapplicablecontentmatcheddevice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDevice
 ---
@@ -72,6 +72,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to matchedDevices for admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -513,12 +523,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch>`: applicableContentDeviceMatch
+BODYPARAMETER <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch>: applicableContentDeviceMatch
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeviceId <String>]: Collection of vendors who recommend the content.
   [RecommendedBy <String[]>]: Collection of vendors who recommend the content.
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
+INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
   [ApplicableContentCatalogEntryId <String>]: The unique identifier of applicableContent
   [ApplicableContentDeviceMatchDeviceId <String>]: The unique identifier of applicableContentDeviceMatch
   [CatalogEntryId <String>]: The unique identifier of catalogEntry
@@ -538,27 +548,4 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicyaudienceapplicablecontentmatcheddevice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicyaudienceapplicablecontentmatcheddevice)

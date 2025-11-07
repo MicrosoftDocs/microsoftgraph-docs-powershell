@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroom
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPlaceAsRoom
 ---
@@ -14,13 +14,10 @@ title: Get-MgBetaPlaceAsRoom
 ## SYNOPSIS
 
 Get a collection of the specified type of place objects defined in a tenant.
-You can do the following for a given tenant:- List all buildings.- List all floors.- List all sections.- List all desks.- List all rooms.- List all workspaces.- List all room lists.- List rooms in a specific room list.- List workspaces in a specific room list.
+You can do the following for a given tenant:\n- List all buildings.\n- List all floors.\n- List all sections.\n- List all desks.\n- List all rooms.\n- List all workspaces.\n- List all room lists.\n- List rooms in a specific room list.\n- List workspaces in a specific room list.
 By default, this operation returns up to 100 rooms, workspaces, and room lists per page, and 1,000 buildings, floors, sections, and desks per page.
 Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
 For details about how they compare, see Using the places API.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPlaceAsRoom](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsRoom?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,23 +58,18 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a collection of the specified type of place objects defined in a tenant.
-You can do the following for a given tenant:- List all buildings.- List all floors.- List all sections.- List all desks.- List all rooms.- List all workspaces.- List all room lists.- List rooms in a specific room list.- List workspaces in a specific room list.
+You can do the following for a given tenant:\n- List all buildings.\n- List all floors.\n- List all sections.\n- List all desks.\n- List all rooms.\n- List all workspaces.\n- List all room lists.\n- List rooms in a specific room list.\n- List workspaces in a specific room list.
 By default, this operation returns up to 100 rooms, workspaces, and room lists per page, and 1,000 buildings, floors, sections, and desks per page.
 Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
 For details about how they compare, see Using the places API.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Get-MgBetaPlaceAsRoom
-
-```
-This example shows how to use the Get-MgBetaPlaceAsRoom Cmdlet.
-
 
 ## PARAMETERS
 
@@ -539,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -557,27 +549,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaPlaceAsRoom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroom)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroom)
+- [](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-beta)

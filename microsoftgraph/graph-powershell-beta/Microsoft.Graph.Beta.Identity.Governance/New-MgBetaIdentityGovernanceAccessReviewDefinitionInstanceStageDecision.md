@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecision
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 ## SYNOPSIS
 
 Create new navigation property to decisions for identityGovernance
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -88,6 +85,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to decisions for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1021,7 +1028,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+APPLIEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 This property is read-only.
@@ -1030,7 +1037,7 @@ This property is read-only.
   [IPAddress <String>]: Indicates the client IP address associated with the user performing the activity (audit log only).
   [UserPrincipalName <String>]: The userPrincipalName attribute of the user.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewInstanceDecisionItem>`: accessReviewInstanceDecisionItem
+BODYPARAMETER <IMicrosoftGraphAccessReviewInstanceDecisionItem>: accessReviewInstanceDecisionItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1337,7 +1344,7 @@ Read-only.
   [Target <IMicrosoftGraphAccessReviewInstanceDecisionItemTarget>]: accessReviewInstanceDecisionItemTarget
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1445,7 +1452,7 @@ There can be multiple insights associated with an accessReviewInstanceDecisionIt
 Read-only.
   [InsightCreatedDateTime <DateTime?>]: Indicates when the insight was created.
 
-INSTANCE `<IMicrosoftGraphAccessReviewInstance>`: accessReviewInstance
+INSTANCE <IMicrosoftGraphAccessReviewInstance>: accessReviewInstance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1751,25 +1758,25 @@ Possible values: Initializing, NotStarted, Starting, InProgress, Completing, Com
 Supports $select, $orderby, and $filter (eq only).
 Read-only.
 
-PRINCIPAL `<IMicrosoftGraphIdentity>`: identity
+PRINCIPAL <IMicrosoftGraphIdentity>: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 This property is read-only.
   [Id <String>]: The identifier of the identity.
 This property is read-only.
 
-PRINCIPALRESOURCEMEMBERSHIP `<IMicrosoftGraphDecisionItemPrincipalResourceMembership>`: decisionItemPrincipalResourceMembership
+PRINCIPALRESOURCEMEMBERSHIP <IMicrosoftGraphDecisionItemPrincipalResourceMembership>: decisionItemPrincipalResourceMembership
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MembershipType <String>]: decisionItemPrincipalResourceMembershipType
 
-RESOURCE `<IMicrosoftGraphAccessReviewInstanceDecisionItemResource>`: accessReviewInstanceDecisionItemResource
+RESOURCE <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>: accessReviewInstanceDecisionItemResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: Display name of the resource
   [Id <String>]: Resource ID
   [Type <String>]: Type of resource.
 Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy.
 
-REVIEWEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+REVIEWEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 This property is read-only.
@@ -1781,27 +1788,4 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecision)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecision)

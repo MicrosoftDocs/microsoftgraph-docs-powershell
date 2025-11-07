@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportpolicynoncompliancereport
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementReportPolicyNonComplianceReport
 ---
@@ -14,9 +14,6 @@ title: Get-MgDeviceManagementReportPolicyNonComplianceReport
 ## SYNOPSIS
 
 Not yet documented
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportPolicyNonComplianceReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportPolicyNonComplianceReport?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,18 +50,9 @@ This cmdlet has the following aliases,
 
 Not yet documented
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
@@ -87,10 +75,6 @@ filter = "Filter value"
 }
 
 Get-MgDeviceManagementReportPolicyNonComplianceReport -BodyParameter $params
-
-```
-This example shows how to use the Get-MgDeviceManagementReportPolicyNonComplianceReport Cmdlet.
-
 
 ## PARAMETERS
 
@@ -117,7 +101,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -182,7 +166,7 @@ HelpMessage: ''
 
 ### -Filter
 
-
+.
 
 ```yaml
 Type: System.String
@@ -203,7 +187,7 @@ HelpMessage: ''
 
 ### -GroupBy
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -287,7 +271,7 @@ HelpMessage: ''
 
 ### -Name
 
-
+.
 
 ```yaml
 Type: System.String
@@ -350,7 +334,7 @@ HelpMessage: ''
 
 ### -Property
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -457,7 +441,7 @@ HelpMessage: ''
 
 ### -Search
 
-
+.
 
 ```yaml
 Type: System.String
@@ -478,7 +462,7 @@ HelpMessage: ''
 
 ### -SessionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -499,7 +483,7 @@ HelpMessage: ''
 
 ### -Skip
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -520,7 +504,7 @@ HelpMessage: ''
 
 ### -Sort
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -542,7 +526,7 @@ HelpMessage: ''
 
 ### -Top
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -614,7 +598,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1KwwldyDevicemanagementReportsMicrosoftGraphGetpolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1KwwldyDevicemanagementReportsMicrosoftGraphGetpolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Filter <String>]: 
   [GroupBy <String[]>]: 
@@ -629,27 +613,5 @@ BODYPARAMETER `<IPaths1KwwldyDevicemanagementReportsMicrosoftGraphGetpolicynonco
 
 ## RELATED LINKS
 
-- [Get-MgDeviceManagementReportPolicyNonComplianceReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportpolicynoncompliancereport)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getpolicynoncompliancereport?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportpolicynoncompliancereport)
+- [](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getpolicynoncompliancereport?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentitycustomauthenticationextension
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgIdentityCustomAuthenticationExtension
 ---
@@ -15,9 +15,6 @@ title: Remove-MgIdentityCustomAuthenticationExtension
 
 Delete a customAuthenticationExtension object.
 The following derived types are currently supported.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityCustomAuthenticationExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,26 +48,13 @@ This cmdlet has the following aliases,
 Delete a customAuthenticationExtension object.
 The following derived types are currently supported.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CustomAuthenticationExtension.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CustomAuthenticationExtension.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId
-
-```
-This example shows how to use the Remove-MgIdentityCustomAuthenticationExtension Cmdlet.
-
 
 ## PARAMETERS
 
@@ -402,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -467,27 +451,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgIdentityCustomAuthenticationExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentitycustomauthenticationextension)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/customauthenticationextension-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentitycustomauthenticationextension)
+- [](https://learn.microsoft.com/graph/api/customauthenticationextension-delete?view=graph-rest-1.0)

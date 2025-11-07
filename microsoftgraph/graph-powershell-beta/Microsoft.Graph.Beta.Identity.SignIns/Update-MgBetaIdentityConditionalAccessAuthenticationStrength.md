@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrength
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityConditionalAccessAuthenticationStrength
 ---
@@ -48,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property authenticationStrengths in identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -160,7 +170,7 @@ HelpMessage: ''
 
 ### -Combinations
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -451,7 +461,7 @@ Read-only.
   [AuthenticationMethod <String>]: baseAuthenticationMethod
   [DisplayName <String>]: The display name of this mode
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthRoot>`: authenticationStrengthRoot
+BODYPARAMETER <IMicrosoftGraphAuthenticationStrengthRoot>: authenticationStrengthRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -501,27 +511,4 @@ Supports $filter (eq, ne, not , and in).
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityConditionalAccessAuthenticationStrength](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrength)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrength)

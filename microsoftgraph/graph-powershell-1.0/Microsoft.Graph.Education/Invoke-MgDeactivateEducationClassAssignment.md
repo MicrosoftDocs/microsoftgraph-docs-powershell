@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgdeactivateeducationclassassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgDeactivateEducationClassAssignment
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgDeactivateEducationClassAssignment
 
 Mark an assigned educationAssignment as inactive to signal that the assignment has no further action items for teachers and students.
 This action can only be performed by a teacher on assigned assignments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaDeactivateEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaDeactivateEducationClassAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,37 +48,19 @@ This cmdlet has the following aliases,
 Mark an assigned educationAssignment as inactive to signal that the assignment has no further action items for teachers and students.
 This action can only be performed by a teacher on assigned assignments.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Mark an assignment inactive without the optional Prefer header
 
-```powershell
-
-Import-Module Microsoft.Graph.Education
-
-Invoke-MgDeactivateEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
-
-```
-This example will mark an assignment inactive without the optional prefer header
-
-### Example 2: Mark an assignment inactive with the optional Prefer header
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Invoke-MgDeactivateEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 
-```
-This example will mark an assignment inactive with the optional prefer header
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Education
+
+Invoke-MgDeactivateEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 
 ## PARAMETERS
 
@@ -392,7 +371,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationCategoryId <String>]: The unique identifier of educationCategory
@@ -412,27 +391,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgDeactivateEducationClassAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgdeactivateeducationclassassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-deactivate?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgdeactivateeducationclassassignment)
+- [](https://learn.microsoft.com/graph/api/educationassignment-deactivate?view=graph-rest-1.0)

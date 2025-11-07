@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdeviceconfigurationdeviceactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportDeviceConfigurationDeviceActivity
 ---
@@ -14,9 +14,6 @@ title: Get-MgReportDeviceConfigurationDeviceActivity
 ## SYNOPSIS
 
 Metadata for the device configuration device activity report
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportDeviceConfigurationDeviceActivity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportDeviceConfigurationDeviceActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,26 +35,13 @@ This cmdlet has the following aliases,
 
 Metadata for the device configuration device activity report
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportDeviceConfigurationDeviceActivity
-
-```
-This example shows how to use the Get-MgReportDeviceConfigurationDeviceActivity Cmdlet.
-
 
 ## PARAMETERS
 
@@ -295,27 +279,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgReportDeviceConfigurationDeviceActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdeviceconfigurationdeviceactivity)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-deviceconfig-reportroot-deviceconfigurationdeviceactivity?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdeviceconfigurationdeviceactivity)
+- [](https://learn.microsoft.com/graph/api/intune-deviceconfig-reportroot-deviceconfigurationdeviceactivity?view=graph-rest-1.0)

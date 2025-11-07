@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mggroupsiteonenotenotebook
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Copy-MgGroupSiteOnenoteNotebook
 ---
@@ -14,9 +14,6 @@ title: Copy-MgGroupSiteOnenoteNotebook
 ## SYNOPSIS
 
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaGroupSiteOnenoteNotebook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -104,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -208,7 +215,7 @@ HelpMessage: ''
 
 ### -GroupId1
 
-
+.
 
 ```yaml
 Type: System.String
@@ -320,7 +327,7 @@ HelpMessage: ''
 
 ### -NotebookFolder
 
-
+.
 
 ```yaml
 Type: System.String
@@ -437,7 +444,7 @@ HelpMessage: ''
 
 ### -RenameAs
 
-
+.
 
 ```yaml
 Type: System.String
@@ -486,7 +493,7 @@ HelpMessage: ''
 
 ### -SiteCollectionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -546,7 +553,7 @@ HelpMessage: ''
 
 ### -SiteId1
 
-
+.
 
 ```yaml
 Type: System.String
@@ -621,7 +628,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsVl73P1GroupsGroupIdSitesSiteIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsVl73P1GroupsGroupIdSitesSiteIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GroupId <String>]: 
   [NotebookFolder <String>]: 
@@ -629,7 +636,7 @@ BODYPARAMETER `<IPathsVl73P1GroupsGroupIdSitesSiteIdOnenoteNotebooksNotebookIdMi
   [SiteCollectionId <String>]: 
   [SiteId <String>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -677,28 +684,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Copy-MgGroupSiteOnenoteNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mggroupsiteonenotenotebook)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/notebook-copynotebook?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mggroupsiteonenotenotebook)
+- [](https://learn.microsoft.com/graph/api/notebook-copynotebook?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementdefaultmanagedappprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceAppManagementDefaultManagedAppProtection
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceAppManagementDefaultManagedAppProtection
 ## SYNOPSIS
 
 Update the properties of a defaultManagedAppProtection object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -111,18 +108,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a defaultManagedAppProtection object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -179,10 +167,6 @@ faceIdBlocked = $true
 }
 
 Update-MgDeviceAppManagementDefaultManagedAppProtection -DefaultManagedAppProtectionId $defaultManagedAppProtectionId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceAppManagementDefaultManagedAppProtection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1776,7 +1760,7 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
   [Version <String>]: Version of the entity.
 
-BODYPARAMETER `<IMicrosoftGraphDefaultManagedAppProtection>`: Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy
+BODYPARAMETER <IMicrosoftGraphDefaultManagedAppProtection>: Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]: Data storage locations where a user may store managed data.
   [AllowedInboundDataTransferSources <ManagedAppDataTransferLevel?>]: Data can be transferred from/to these classes of apps
@@ -1853,7 +1837,7 @@ CUSTOMSETTINGS <IMicrosoftGraphKeyValuePair[]>: A set of string key and string v
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-DEPLOYMENTSUMMARY `<IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+DEPLOYMENTSUMMARY <IMicrosoftGraphManagedAppPolicyDeploymentSummary>: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1866,7 +1850,7 @@ Read-only.
   [LastRefreshTime <DateTime?>]: Not yet documented
   [Version <String>]: Version of the entity.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -1907,27 +1891,5 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgDeviceAppManagementDefaultManagedAppProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementdefaultmanagedappprotection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-mam-defaultmanagedappprotection-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementdefaultmanagedappprotection)
+- [](https://learn.microsoft.com/graph/api/intune-mam-defaultmanagedappprotection-update?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgVirtualEventWebinarRegistration
 ---
@@ -15,9 +15,6 @@ title: New-MgVirtualEventWebinarRegistration
 
 Create a registration record for a registrant of a webinar.
 This method registers the person for the webinar.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarRegistration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -84,9 +81,8 @@ Create a registration record for a registrant of a webinar.
 This method registers the person for the webinar.
 
 ## EXAMPLES
-### Example 1: Creating registration record with delegated permission
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -128,12 +124,7 @@ $params = @{
 
 New-MgVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
 
-```
-This example shows creating registration record with delegated permission
-
-### Example 2: Creating registration record with application permission
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -176,10 +167,6 @@ $params = @{
 }
 
 New-MgVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
-
-```
-This example shows creating registration record with application permission
-
 
 ## PARAMETERS
 
@@ -901,7 +888,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVirtualEventRegistration>`: virtualEventRegistration
+BODYPARAMETER <IMicrosoftGraphVirtualEventRegistration>: virtualEventRegistration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1049,7 +1036,7 @@ See below for more possible values.
   [UserId <String>]: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
 
-EXTERNALREGISTRATIONINFORMATION `<IMicrosoftGraphVirtualEventExternalRegistrationInformation>`: virtualEventExternalRegistrationInformation
+EXTERNALREGISTRATIONINFORMATION <IMicrosoftGraphVirtualEventExternalRegistrationInformation>: virtualEventExternalRegistrationInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
 Optional.
@@ -1057,7 +1044,7 @@ Optional.
 Optional.
 If set, the maximum supported length is 256 characters.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -1210,27 +1197,5 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [New-MgVirtualEventWebinarRegistration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration)
+- [](https://learn.microsoft.com/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-1.0)

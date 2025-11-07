@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaestimatesecuritycaseediscoverycasesearchstatistics
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics
 
 Run an estimate of the number of emails and documents in the eDiscovery search.
 To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics](/powershell/module/Microsoft.Graph.Security/Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,18 +48,9 @@ This cmdlet has the following aliases,
 Run an estimate of the number of emails and documents in the eDiscovery search.
 To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -71,10 +59,6 @@ $params = @{
 }
 
 Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics Cmdlet.
-
 
 ## PARAMETERS
 
@@ -406,7 +390,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -508,27 +492,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaestimatesecuritycaseediscoverycasesearchstatistics)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverysearch-estimatestatistics?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaestimatesecuritycaseediscoverycasesearchstatistics)
+- [](https://learn.microsoft.com/graph/api/security-ediscoverysearch-estimatestatistics?view=graph-rest-beta)

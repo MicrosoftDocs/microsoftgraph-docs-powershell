@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/restore-mgbetadirectorydeleteditem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Restore-MgBetaDirectoryDeletedItem
 ---
@@ -14,15 +14,12 @@ title: Restore-MgBetaDirectoryDeletedItem
 ## SYNOPSIS
 
 Restore a recently deleted directory object from deleted items.
-The following types are supported:- administrativeUnit- application- certificateBasedAuthPki- certificateAuthorityDetail- externalUserProfile- group- pendingExternalUserProfile- servicePrincipal- user If an item was accidentally deleted, you can fully restore the item.
+The following types are supported:\n- administrativeUnit\n- application\n- certificateBasedAuthPki\n- certificateAuthorityDetail\n- externalUserProfile\n- group\n- pendingExternalUserProfile\n- servicePrincipal\n- user If an item was accidentally deleted, you can fully restore the item.
 This isn't applicable to security groups, which are deleted permanently.
 Also, restoring an application doesn't restore the associated service principal automatically.
 You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
 After 30 days, the item is permanently deleted.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Restore-MgDirectoryDeletedItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,36 +50,22 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Restore a recently deleted directory object from deleted items.
-The following types are supported:- administrativeUnit- application- certificateBasedAuthPki- certificateAuthorityDetail- externalUserProfile- group- pendingExternalUserProfile- servicePrincipal- user If an item was accidentally deleted, you can fully restore the item.
+The following types are supported:\n- administrativeUnit\n- application\n- certificateBasedAuthPki\n- certificateAuthorityDetail\n- externalUserProfile\n- group\n- pendingExternalUserProfile\n- servicePrincipal\n- user If an item was accidentally deleted, you can fully restore the item.
 This isn't applicable to security groups, which are deleted permanently.
 Also, restoring an application doesn't restore the associated service principal automatically.
 You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
 After 30 days, the item is permanently deleted.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.DeleteRestore.All, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.DeleteRestore.All, User.ReadWrite.CrossCloud, User.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Restore a deleted directory object
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId
 
-```
-This example will restore a deleted directory object
-
-### Example 2: Restore a deleted user and remove conflicting proxy addresses
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -92,12 +75,7 @@ $params = @{
 
 Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId -BodyParameter $params
 
-```
-This example will restore a deleted user and remove conflicting proxy addresses
-
-### Example 3: Restore a deleted user and assign them a new userPrincipalName
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -106,10 +84,6 @@ $params = @{
 }
 
 Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId -BodyParameter $params
-
-```
-This example will restore a deleted user and assign them a new userprincipalname
-
 
 ## PARAMETERS
 
@@ -399,7 +373,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -457,27 +431,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Restore-MgBetaDirectoryDeletedItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/restore-mgbetadirectorydeleteditem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/restore-mgbetadirectorydeleteditem)
+- [](https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-beta)

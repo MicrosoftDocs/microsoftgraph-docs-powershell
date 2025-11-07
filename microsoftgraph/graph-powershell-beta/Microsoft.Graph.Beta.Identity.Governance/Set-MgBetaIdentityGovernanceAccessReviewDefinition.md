@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaidentitygovernanceaccessreviewdefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaIdentityGovernanceAccessReviewDefinition
 ---
@@ -14,9 +14,6 @@ title: Set-MgBetaIdentityGovernanceAccessReviewDefinition
 ## SYNOPSIS
 
 Update an existing accessReviewScheduleDefinition object to change one or more of its properties.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Set-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -87,18 +84,9 @@ This cmdlet has the following aliases,
 
 Update an existing accessReviewScheduleDefinition object to change one or more of its properties.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AccessReview.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AccessReview.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -142,10 +130,6 @@ $params = @{
 }
 
 Set-MgBetaIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -BodyParameter $params
-
-```
-This example shows how to use the Set-MgBetaIdentityGovernanceAccessReviewDefinition Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1027,7 +1011,7 @@ Possible value: decisions.
   [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewScheduleDefinition
+BODYPARAMETER <IMicrosoftGraphAccessReviewScheduleDefinition>: accessReviewScheduleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1332,7 +1316,7 @@ The typical states include Initializing, NotStarted, Starting, InProgress, Compl
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
 
-CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+CREATEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 This property is read-only.
@@ -1355,7 +1339,7 @@ Possible value: decisions.
   [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1776,7 +1760,7 @@ Possible value: decisions.
   [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
 
-SETTINGS `<IMicrosoftGraphAccessReviewScheduleSettings>`: accessReviewScheduleSettings
+SETTINGS <IMicrosoftGraphAccessReviewScheduleSettings>: accessReviewScheduleSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplyActions <IMicrosoftGraphAccessReviewApplyAction[]>]: Optional field.
 Describes the  actions to take once a review is complete.
@@ -1900,27 +1884,5 @@ Required.
 
 ## RELATED LINKS
 
-- [Set-MgBetaIdentityGovernanceAccessReviewDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaidentitygovernanceaccessreviewdefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaidentitygovernanceaccessreviewdefinition)
+- [](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-update?view=graph-rest-beta)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsharedcookie
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie
 ## SYNOPSIS
 
 Create a new browserSharedCookie object in a browserSiteList.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -79,18 +76,9 @@ This cmdlet has the following aliases,
 
 Create a new browserSharedCookie object in a browserSiteList.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BrowserSiteLists.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BrowserSiteLists.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement
 
@@ -105,10 +93,6 @@ $params = @{
 }
 
 New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie Cmdlet.
-
 
 ## PARAMETERS
 
@@ -823,7 +807,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBrowserSharedCookie>`: browserSharedCookie
+BODYPARAMETER <IMicrosoftGraphBrowserSharedCookie>: browserSharedCookie
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -876,7 +860,7 @@ This property is read-only.
   [PublishedDateTime <DateTime?>]: The date and time when the cookie was last published.
   [SourceEnvironment <BrowserSharedCookieSourceEnvironment?>]: browserSharedCookieSourceEnvironment
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -985,7 +969,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [WindowsQualityUpdateProfileAssignmentId <String>]: The unique identifier of windowsQualityUpdateProfileAssignment
   [WindowsQualityUpdateProfileId <String>]: The unique identifier of windowsQualityUpdateProfile
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -999,27 +983,5 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/browsersitelist-post-sharedcookies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
+- [](https://learn.microsoft.com/graph/api/browsersitelist-post-sharedcookies?view=graph-rest-beta)

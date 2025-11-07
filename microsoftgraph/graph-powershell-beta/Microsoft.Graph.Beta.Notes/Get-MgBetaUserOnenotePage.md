@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotepage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserOnenotePage
 ---
@@ -16,9 +16,6 @@ title: Get-MgBetaUserOnenotePage
 The pages in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnenotePage](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenotePage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -62,13 +59,15 @@ The pages in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.Read, Notes.ReadWrite.All, Notes.ReadWrite, Notes.Read.All,  |
-| Delegated (personal Microsoft account) | Notes.Read, Notes.ReadWrite,  |
-| Application | Notes.Read.All, Notes.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -557,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -574,28 +573,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserOnenotePage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotepage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotepage)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mguseronlinemeetingvirtualappointmentsm
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Send-MgUserOnlineMeetingVirtualAppointmentSm
 ---
@@ -76,18 +76,9 @@ Send an SMS notification to external attendees when a Teams virtual appointment 
 This feature requires Teams premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | VirtualAppointmentNotification.Send,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | VirtualAppointmentNotification.Send,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -107,10 +98,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Send-MgUserOnlineMeetingVirtualAppointmentSm -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
-
-```
-This example shows how to use the Send-MgUserOnlineMeetingVirtualAppointmentSm Cmdlet.
-
 
 ## PARAMETERS
 
@@ -143,7 +130,7 @@ HelpMessage: ''
 
 ### -Attendees
 
-
+.
 To construct, see NOTES section for ATTENDEES properties and create a hash table.
 
 ```yaml
@@ -171,7 +158,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -581,7 +568,7 @@ Required.
 The timeZone property can be set to any of the time zones currently supported by Windows.
 Required.
 
-BODYPARAMETER `<IPaths16Og72WUsersUserIdOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths16Og72WUsersUserIdOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Attendees <IMicrosoftGraphAttendeeNotificationInfo[]>]: 
     [PhoneNumber <String>]: The phone number of the external attendee.
@@ -591,7 +578,7 @@ The timeZone property can be set to any of the time zones currently supported by
 Required.
   [MessageType <String>]: virtualAppointmentMessageType
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
   [CallId <String>]: The unique identifier of call
@@ -610,27 +597,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Send-MgUserOnlineMeetingVirtualAppointmentSm](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mguseronlinemeetingvirtualappointmentsm)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mguseronlinemeetingvirtualappointmentsm)
+- [](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0)

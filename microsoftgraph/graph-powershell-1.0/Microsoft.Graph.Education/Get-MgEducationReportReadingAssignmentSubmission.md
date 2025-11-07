@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreadingassignmentsubmission
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationReportReadingAssignmentSubmission
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationReportReadingAssignmentSubmission
 ## SYNOPSIS
 
 Details of submitted reading assignments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationReportReadingAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationReportReadingAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -534,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationCategoryId <String>]: The unique identifier of educationCategory
@@ -554,27 +551,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationReportReadingAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreadingassignmentsubmission)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportsroot-list-readingassignmentsubmissions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreadingassignmentsubmission)
+- [](https://learn.microsoft.com/graph/api/reportsroot-list-readingassignmentsubmissions?view=graph-rest-1.0)

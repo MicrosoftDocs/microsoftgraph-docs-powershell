@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Files
-Module Guid: 06c6fa00-c4c0-4b1f-aa16-31c8df9432f1
+Module Guid: a3915172-bbf5-4e93-bcf8-4aaae033a16d
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.files/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -3308,23 +3308,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserDriveRootThumbnail](Update-MgBetaUserDriveRootThumbnail.md)
 
 ### [Update-MgBetaUserDriveRootVersion](Update-MgBetaUserDriveRootVersion.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

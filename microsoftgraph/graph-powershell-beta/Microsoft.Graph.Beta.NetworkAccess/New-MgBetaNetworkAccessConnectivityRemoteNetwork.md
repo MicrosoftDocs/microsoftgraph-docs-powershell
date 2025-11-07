@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetwork
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessConnectivityRemoteNetwork
 ---
@@ -51,9 +51,8 @@ This cmdlet has the following aliases,
 Create a new remote network.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -64,12 +63,7 @@ $params = @{
 
 New-MgBetaNetworkAccessConnectivityRemoteNetwork -BodyParameter $params
 
-```
-This example shows how to use the New-MgBetaNetworkAccessConnectivityRemoteNetwork Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -85,12 +79,7 @@ $params = @{
 
 New-MgBetaNetworkAccessConnectivityRemoteNetwork -BodyParameter $params
 
-```
-This example shows how to use the New-MgBetaNetworkAccessConnectivityRemoteNetwork Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -126,10 +115,6 @@ $params = @{
 }
 
 New-MgBetaNetworkAccessConnectivityRemoteNetwork -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaNetworkAccessConnectivityRemoteNetwork Cmdlet.
-
 
 ## PARAMETERS
 
@@ -593,7 +578,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessRemoteNetwork>`: remoteNetwork
+BODYPARAMETER <IMicrosoftGraphNetworkaccessRemoteNetwork>: remoteNetwork
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -815,8 +800,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -1144,8 +1129,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -1484,7 +1469,7 @@ Read-only.
   [Region <String>]: region
   [Version <String>]: Remote network version.
 
-CONNECTIVITYCONFIGURATION `<IMicrosoftGraphNetworkaccessRemoteNetworkConnectivityConfiguration>`: remoteNetworkConnectivityConfiguration
+CONNECTIVITYCONFIGURATION <IMicrosoftGraphNetworkaccessRemoteNetworkConnectivityConfiguration>: remoteNetworkConnectivityConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Links <IMicrosoftGraphNetworkaccessConnectivityConfigurationLink[]>]: List of connectivity configurations for deviceLink objects.
     [Id <String>]: The unique identifier for an entity.
@@ -1704,8 +1689,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -2033,8 +2018,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
       [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -2372,27 +2357,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaNetworkAccessConnectivityRemoteNetwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetwork)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-connectivity-post-remotenetworks?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetwork)
+- [](https://learn.microsoft.com/graph/api/networkaccess-connectivity-post-remotenetworks?view=graph-rest-beta)

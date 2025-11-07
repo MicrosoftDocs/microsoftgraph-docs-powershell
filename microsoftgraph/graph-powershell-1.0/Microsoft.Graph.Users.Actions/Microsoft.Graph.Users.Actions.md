@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: 99994add-53b1-48db-a9cb-0bea73eb451a
+Module Guid: d8d2bf6c-d47d-4b55-8c79-f7c293c32ee7
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -44,23 +44,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Test-MgUserProperty](Test-MgUserProperty.md)
 
 ### [Update-MgUserPassword](Update-MgUserPassword.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

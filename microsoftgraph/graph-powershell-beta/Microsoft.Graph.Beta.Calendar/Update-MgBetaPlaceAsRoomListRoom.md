@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistroom
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlaceAsRoomListRoom
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPlaceAsRoomListRoom
 ## SYNOPSIS
 
 Update the navigation property rooms in places
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Calendar/Update-MgPlaceAsRoomListRoom?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -82,6 +79,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property rooms in places
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1070,7 +1077,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -1081,7 +1088,7 @@ It's a free-format string value, for example, 'United States'.
   [Street <String>]: The street.
   [Type <String>]: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphRoom>`: room
+BODYPARAMETER <IMicrosoftGraphRoom>: room
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1140,7 +1147,7 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Accuracy <Double?>]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
@@ -1149,7 +1156,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Latitude <Double?>]: The latitude of the location.
   [Longitude <Double?>]: The longitude of the location.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -1167,27 +1174,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaPlaceAsRoomListRoom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistroom)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistroom)

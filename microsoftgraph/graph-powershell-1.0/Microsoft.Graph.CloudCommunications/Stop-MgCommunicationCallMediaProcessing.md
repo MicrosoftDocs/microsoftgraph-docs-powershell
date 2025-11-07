@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Stop-MgCommunicationCallMediaProcessing
 ---
@@ -76,18 +76,9 @@ The cancelMediaProcessing method cancels any operation that is in-process as wel
 For example, this method can be used to clean up the IVR operation queue for a new media operation.
 However, it will not cancel a subscribeToTone operation because it operates independent of any operation queue.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -96,10 +87,6 @@ $params = @{
 }
 
 Stop-MgCommunicationCallMediaProcessing -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Stop-MgCommunicationCallMediaProcessing Cmdlet.
-
 
 ## PARAMETERS
 
@@ -132,7 +119,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -208,7 +195,7 @@ HelpMessage: ''
 
 ### -ClientContext
 
-
+.
 
 ```yaml
 Type: System.String
@@ -487,11 +474,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsYp37FjCommunicationsCallsCallIdMicrosoftGraphCancelmediaprocessingPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsYp37FjCommunicationsCallsCallIdMicrosoftGraphCancelmediaprocessingPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ClientContext <String>]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
   [CallId <String>]: The unique identifier of call
@@ -510,27 +497,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Stop-MgCommunicationCallMediaProcessing](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/call-cancelmediaprocessing?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing)
+- [](https://learn.microsoft.com/graph/api/call-cancelmediaprocessing?view=graph-rest-1.0)

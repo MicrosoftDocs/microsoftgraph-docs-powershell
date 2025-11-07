@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 5e6c32e6-8fd4-428a-99e3-9a7f2cc43121
+Module Guid: cc7870dd-330e-4661-b98c-297414f352f1
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -902,23 +902,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSubscribedSku](Update-MgSubscribedSku.md)
 
 ### [Update-MgUserScopedRoleMemberOf](Update-MgUserScopedRoleMemberOf.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

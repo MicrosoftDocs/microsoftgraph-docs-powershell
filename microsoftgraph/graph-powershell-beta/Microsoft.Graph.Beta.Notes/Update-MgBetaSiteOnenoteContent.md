@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotecontent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSiteOnenoteContent
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSiteOnenoteContent
 ## SYNOPSIS
 
 Update the navigation property onenote in sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSiteOnenoteContent](/powershell/module/Microsoft.Graph.Notes/Update-MgSiteOnenoteContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property onenote in sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -644,7 +651,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnenote>`: onenote
+BODYPARAMETER <IMicrosoftGraphOnenote>: onenote
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -792,7 +799,7 @@ Nullable.
 Read-only.
 Nullable.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -1276,27 +1283,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSiteOnenoteContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotecontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotecontent)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightshared
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserInsightShared
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaUserInsightShared
 ## SYNOPSIS
 
 Create new navigation property to shared for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserInsightShared](/powershell/module/Microsoft.Graph.Users/New-MgUserInsightShared?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -76,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to shared for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -523,7 +530,7 @@ HelpMessage: ''
 
 ### -SharingHistory
 
-
+.
 To construct, see NOTES section for SHARINGHISTORY properties and create a hash table.
 
 ```yaml
@@ -632,7 +639,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSharedInsight>`: sharedInsight
+BODYPARAMETER <IMicrosoftGraphSharedInsight>: sharedInsight
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -678,7 +685,7 @@ Can be used for filtering for a specific file based on a specific type.
 See the Type property values section, for supported types.
   [SharingHistory <IMicrosoftGraphSharingDetail[]>]: 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -708,7 +715,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [WindowsSettingId <String>]: The unique identifier of windowsSetting
   [WindowsSettingInstanceId <String>]: The unique identifier of windowsSettingInstance
 
-LASTSHARED `<IMicrosoftGraphSharingDetail>`: sharingDetail
+LASTSHARED <IMicrosoftGraphSharingDetail>: sharingDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SharedBy <IMicrosoftGraphInsightIdentity>]: insightIdentity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -727,23 +734,23 @@ Read-only.
   [SharingSubject <String>]: The subject with which the document was shared.
   [SharingType <String>]: Determines the way the document was shared, can be by a 'Link', 'Attachment', 'Group', 'Site'.
 
-LASTSHAREDMETHOD `<IMicrosoftGraphEntity>`: entity
+LASTSHAREDMETHOD <IMicrosoftGraphEntity>: entity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-RESOURCE `<IMicrosoftGraphEntity>`: entity
+RESOURCE <IMicrosoftGraphEntity>: entity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-RESOURCEREFERENCE `<IMicrosoftGraphResourceReference>`: resourceReference
+RESOURCEREFERENCE <IMicrosoftGraphResourceReference>: resourceReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: 
   [Type <String>]: 
   [WebUrl <String>]: 
 
-RESOURCEVISUALIZATION `<IMicrosoftGraphResourceVisualization>`: resourceVisualization
+RESOURCEVISUALIZATION <IMicrosoftGraphResourceVisualization>: resourceVisualization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContainerDisplayName <String>]: A string describing where the item is stored.
 For example, the name of a SharePoint site or the user name identifying the owner of the OneDrive storing the item.
@@ -781,27 +788,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaUserInsightShared](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightshared)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightshared)

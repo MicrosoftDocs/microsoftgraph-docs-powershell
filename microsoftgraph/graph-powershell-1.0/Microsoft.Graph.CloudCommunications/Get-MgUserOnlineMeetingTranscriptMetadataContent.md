@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingtranscriptmetadatacontent
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserOnlineMeetingTranscriptMetadataContent
 ---
@@ -53,26 +53,13 @@ However, private channel meetings are not supported at this time.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OnlineMeetingTranscript.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat,  |
-
 ## EXAMPLES
-### Example 1: Get a callTranscript metadataContent
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgUserOnlineMeetingTranscriptMetadataContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
-
-```
-This example will get a calltranscript metadatacontent
-
 
 ## PARAMETERS
 
@@ -402,7 +389,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
   [CallId <String>]: The unique identifier of call
@@ -421,27 +408,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserOnlineMeetingTranscriptMetadataContent](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingtranscriptmetadatacontent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingtranscriptmetadatacontent)
+- [](https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-1.0)

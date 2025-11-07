@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserAuthenticationMethod
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaUserAuthenticationMethod
 ## SYNOPSIS
 
 Represents all authentication methods registered to a user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationMethod?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,27 +57,14 @@ This cmdlet has the following aliases,
 
 Represents all authentication methods registered to a user.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserAuthenticationMethod -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserAuthenticationMethod Cmdlet.
-
 
 ## PARAMETERS
 
@@ -569,7 +553,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -660,26 +644,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserAuthenticationMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmethod)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmethod)

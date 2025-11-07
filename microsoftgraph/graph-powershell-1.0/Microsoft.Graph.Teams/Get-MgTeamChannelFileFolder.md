@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelfilefolder
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgTeamChannelFileFolder
 ---
@@ -14,9 +14,6 @@ title: Get-MgTeamChannelFileFolder
 ## SYNOPSIS
 
 Get the metadata for the location where the files of a channel are stored.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelFileFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,26 +44,13 @@ This cmdlet has the following aliases,
 
 Get the metadata for the location where the files of a channel are stored.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.Read.All, Sites.ReadWrite.All, Group.ReadWrite.All, Sites.Read.All, Files.Read, Files.ReadWrite, Files.ReadWrite.All, Group.Read.All,  |
-| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Files.Read.All,  |
-| Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All, File.Read.Group,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
-
-```
-This example shows how to use the Get-MgTeamChannelFileFolder Cmdlet.
-
 
 ## PARAMETERS
 
@@ -377,7 +361,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -417,27 +401,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgTeamChannelFileFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelfilefolder)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-get-filesfolder?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelfilefolder)
+- [](https://learn.microsoft.com/graph/api/channel-get-filesfolder?view=graph-rest-1.0)

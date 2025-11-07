@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgEducationUserAssignmentResource
 ---
@@ -14,9 +14,6 @@ title: New-MgEducationUserAssignmentResource
 ## SYNOPSIS
 
 Create new navigation property to resources for education
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -70,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to resources for education
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -541,7 +548,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationAssignmentResource>`: educationAssignmentResource
+BODYPARAMETER <IMicrosoftGraphEducationAssignmentResource>: educationAssignmentResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -562,7 +569,7 @@ For example, in the access reviews decisions API, this property might record the
     [DisplayName <String>]: Display name of resource.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationCategoryId <String>]: The unique identifier of educationCategory
@@ -579,7 +586,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   [ReadingAssignmentSubmissionId <String>]: The unique identifier of readingAssignmentSubmission
   [ReflectCheckInResponseId <String>]: The unique identifier of reflectCheckInResponse
 
-RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
+RESOURCE <IMicrosoftGraphEducationResource>: educationResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -597,27 +604,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgEducationUserAssignmentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentresource)

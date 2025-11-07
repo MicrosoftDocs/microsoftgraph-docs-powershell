@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSolutionBackupRestoreProtectionPolicy
 ---
@@ -15,9 +15,6 @@ title: Remove-MgSolutionBackupRestoreProtectionPolicy
 
 Delete a protection policy.
 Read the properties and relationships of a protectionPolicyBase object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreProtectionPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 
 Delete a protection policy.
 Read the properties and relationships of a protectionPolicyBase object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -381,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -413,28 +420,5 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgSolutionBackupRestoreProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreprotectionpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/protectionpolicybase-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreprotectionpolicy)
+- [](https://learn.microsoft.com/graph/api/protectionpolicybase-delete?view=graph-rest-1.0)

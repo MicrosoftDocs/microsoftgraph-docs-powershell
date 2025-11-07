@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/start-mgbetausermanageddeviceconfigurationmanageraction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: Start-MgBetaUserManagedDeviceConfigurationManagerAction
 ---
@@ -74,6 +74,16 @@ This cmdlet has the following aliases,
 
 Trigger action on ConfigurationManager client
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -105,7 +115,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -509,17 +519,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsA6Tcp7UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsA6Tcp7UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConfigurationManagerAction <IMicrosoftGraphConfigurationManagerAction>]: Parameter for action triggerConfigurationManagerAction
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Action <ConfigurationManagerActionType?>]: Action type on Configuration Manager client
 
-CONFIGURATIONMANAGERACTION `<IMicrosoftGraphConfigurationManagerAction>`: Parameter for action triggerConfigurationManagerAction
+CONFIGURATIONMANAGERACTION <IMicrosoftGraphConfigurationManagerAction>: Parameter for action triggerConfigurationManagerAction
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Action <ConfigurationManagerActionType?>]: Action type on Configuration Manager client
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -597,27 +607,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Start-MgBetaUserManagedDeviceConfigurationManagerAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/start-mgbetausermanageddeviceconfigurationmanageraction)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/start-mgbetausermanageddeviceconfigurationmanageraction)

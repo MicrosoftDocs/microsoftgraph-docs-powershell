@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestorepoint
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgSolutionBackupRestorePoint
 ---
@@ -14,9 +14,6 @@ title: New-MgSolutionBackupRestorePoint
 ## SYNOPSIS
 
 Create new navigation property to restorePoints for solutions
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestorePoint](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestorePoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to restorePoints for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -445,7 +452,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRestorePoint>`: restorePoint
+BODYPARAMETER <IMicrosoftGraphRestorePoint>: restorePoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -491,7 +498,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Status <String>]: protectionUnitStatus
   [Tags <String>]: restorePointTags
 
-PROTECTIONUNIT `<IMicrosoftGraphProtectionUnitBase>`: protectionUnitBase
+PROTECTIONUNIT <IMicrosoftGraphProtectionUnitBase>: protectionUnitBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -533,27 +540,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [New-MgSolutionBackupRestorePoint](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestorepoint)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestorepoint)

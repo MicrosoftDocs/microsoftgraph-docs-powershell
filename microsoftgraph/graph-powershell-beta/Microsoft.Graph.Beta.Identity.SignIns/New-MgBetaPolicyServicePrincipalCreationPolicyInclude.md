@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyserviceprincipalcreationpolicyinclude
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 10/31/2025
+ms.date: 11/07/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyServicePrincipalCreationPolicyInclude
 ---
@@ -74,6 +74,16 @@ This cmdlet has the following aliases,
 
 Create new navigation property to includes for policies
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -105,7 +115,7 @@ HelpMessage: ''
 
 ### -ApplicationIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -132,7 +142,7 @@ HelpMessage: ''
 
 ### -ApplicationPublisherIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -159,7 +169,7 @@ HelpMessage: ''
 
 ### -ApplicationsFromVerifiedPublisherOnly
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +196,7 @@ HelpMessage: ''
 
 ### -ApplicationTenantIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -262,7 +272,7 @@ HelpMessage: ''
 
 ### -CertifiedApplicationsOnly
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -596,7 +606,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphServicePrincipalCreationConditionSet>`: servicePrincipalCreationConditionSet
+BODYPARAMETER <IMicrosoftGraphServicePrincipalCreationConditionSet>: servicePrincipalCreationConditionSet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -606,7 +616,7 @@ Read-only.
   [ApplicationsFromVerifiedPublisherOnly <Boolean?>]: 
   [CertifiedApplicationsOnly <Boolean?>]: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -697,27 +707,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaPolicyServicePrincipalCreationPolicyInclude](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyserviceprincipalcreationpolicyinclude)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyserviceprincipalcreationpolicyinclude)
