@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 Get the root domain of a subdomain.The API returns a single object which is the root domain of the specified subdomain.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

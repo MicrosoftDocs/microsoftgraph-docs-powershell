@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a manifest object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PartnerBilling.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PartnerBilling.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

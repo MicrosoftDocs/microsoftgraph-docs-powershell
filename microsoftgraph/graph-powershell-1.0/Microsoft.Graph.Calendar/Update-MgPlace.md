@@ -70,6 +70,14 @@ This cmdlet has the following aliases,
 Update the properties of place object, which can be a room or roomList.
 You can identify the room or roomList by specifying the id or emailAddress property.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Place.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Place.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 Retrieve creation options required to generate and register a Microsoft Entra ID-compatible passkey.
 Self-service operations aren't supported.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All, UserAuthMethod-Passkey.Read.All, UserAuthenticationMethod.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All, UserAuthMethod-Passkey.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
