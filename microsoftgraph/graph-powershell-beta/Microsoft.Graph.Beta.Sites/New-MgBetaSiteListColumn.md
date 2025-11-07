@@ -103,20 +103,6 @@ Create columnDefinition
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-{{ Add output here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1949,6 +1935,7 @@ For examples, see Examples of common formulas in lists
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistcolumn)
 - [](https://learn.microsoft.com/graph/api/list-post-columns?view=graph-rest-beta)
+
 
 
 

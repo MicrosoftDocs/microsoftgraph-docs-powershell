@@ -80,16 +80,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property inheritsPermissionsFrom in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -930,6 +920,7 @@ Not yet supported.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroledefinitioninheritpermissionfrom)
+
 
 
 

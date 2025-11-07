@@ -87,16 +87,6 @@ This cmdlet has the following aliases,
 Update a SharePoint protection policy.
 This method adds a siteprotectionunit to or removes it from the protection policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1108,6 +1098,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointprotectionpolicy)
 - [](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-update?view=graph-rest-beta)
+
 
 
 
