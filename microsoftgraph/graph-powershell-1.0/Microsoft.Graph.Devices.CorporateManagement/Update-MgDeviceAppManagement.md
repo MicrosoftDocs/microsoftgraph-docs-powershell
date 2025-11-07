@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement
@@ -872,7 +872,7 @@ Read-only.
   [MinimumWarningPatchVersion <String>]: Define the oldest recommended Android security patch level a user can have for secure access to the app.
   [ScreenCaptureBlocked <Boolean?>]: Indicates whether a managed user can take screen captures of managed apps
 
-BODYPARAMETER <IMicrosoftGraphDeviceAppManagement>: Singleton entity that acts as a container for all device app management functionality.
+BODYPARAMETER `<IMicrosoftGraphDeviceAppManagement>`: Singleton entity that acts as a container for all device app management functionality.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1996,3 +1996,25 @@ The largest number you can configure must be less than the number configured in 
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement)
 - [](https://learn.microsoft.com/graph/api/intune-apps-deviceappmanagement-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

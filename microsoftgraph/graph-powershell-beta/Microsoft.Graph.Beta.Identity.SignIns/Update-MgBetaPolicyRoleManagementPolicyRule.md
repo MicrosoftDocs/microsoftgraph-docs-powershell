@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyrule
@@ -14,7 +14,7 @@ title: Update-MgBetaPolicyRoleManagementPolicyRule
 ## SYNOPSIS
 
 Update a rule defined for a role management policy.
-The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object: For more information about rules for Microsoft Entra roles and examples of updating rules, see the following articles:\n+ Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph\n+ Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules
+The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object: For more information about rules for Microsoft Entra roles and examples of updating rules, see the following articles:+ Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph+ Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules
 
 ## SYNTAX
 
@@ -70,7 +70,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update a rule defined for a role management policy.
-The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object: For more information about rules for Microsoft Entra roles and examples of updating rules, see the following articles:\n+ Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph\n+ Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules
+The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object: For more information about rules for Microsoft Entra roles and examples of updating rules, see the following articles:+ Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph+ Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules
 
 ## EXAMPLES
 
@@ -565,7 +565,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementPolicyRule>: unifiedRoleManagementPolicyRule
+BODYPARAMETER `<IMicrosoftGraphUnifiedRoleManagementPolicyRule>`: unifiedRoleManagementPolicyRule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -587,7 +587,7 @@ Read-only.
       [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -675,7 +675,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-TARGET <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>: unifiedRoleManagementPolicyRuleTarget
+TARGET `<IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>`: unifiedRoleManagementPolicyRuleTarget
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Caller <String>]: The type of caller that's the target of the policy rule.
 Allowed values are: None, Admin, EndUser.
@@ -698,3 +698,25 @@ Always null when the object hasn't been deleted.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyrule)
 - [](https://learn.microsoft.com/graph/api/unifiedrolemanagementpolicyrule-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

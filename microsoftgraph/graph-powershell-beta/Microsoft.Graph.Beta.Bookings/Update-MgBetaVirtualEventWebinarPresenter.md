@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarpresenter
@@ -622,7 +622,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphVirtualEventPresenter>: virtualEventPresenter
+BODYPARAMETER `<IMicrosoftGraphVirtualEventPresenter>`: virtualEventPresenter
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -795,14 +795,14 @@ Only appears when the registrant is registered in Microsoft Entra ID.
     [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [VideoOnDemandWebUrl <String>]: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
 
-IDENTITY <IMicrosoftGraphIdentity>: identity
+IDENTITY `<IMicrosoftGraphIdentity>`: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 This property is read-only.
   [Id <String>]: The identifier of the identity.
 This property is read-only.
 
-INPUTOBJECT <IBookingsIdentity>: Identity Parameter
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -824,7 +824,7 @@ INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [VirtualEventTownhallId <String>]: The unique identifier of virtualEventTownhall
   [VirtualEventWebinarId <String>]: The unique identifier of virtualEventWebinar
 
-PRESENTERDETAILS <IMicrosoftGraphVirtualEventPresenterDetails>: virtualEventPresenterDetails
+PRESENTERDETAILS `<IMicrosoftGraphVirtualEventPresenterDetails>`: virtualEventPresenterDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Bio <IMicrosoftGraphItemBody>]: itemBody
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1014,3 +1014,25 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarpresenter)
 - [](https://learn.microsoft.com/graph/api/virtualeventpresenter-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgpolicycrosstenantaccesspolicypartneridentitysynchronization
@@ -533,7 +533,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>: crossTenantIdentitySyncPolicyPartner
+BODYPARAMETER `<IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>`: crossTenantIdentitySyncPolicyPartner
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: Display name for the cross-tenant user synchronization policy.
 Use the name of the partner Microsoft Entra tenant to easily identify the policy.
@@ -546,7 +546,7 @@ Read-only.
 false causes any current user synchronization from the source tenant to the target tenant to stop.
 This property has no impact on existing users who have already been synchronized.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -608,7 +608,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-USERSYNCINBOUND <IMicrosoftGraphCrossTenantUserSyncInbound>: crossTenantUserSyncInbound
+USERSYNCINBOUND `<IMicrosoftGraphCrossTenantUserSyncInbound>`: crossTenantUserSyncInbound
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsSyncAllowed <Boolean?>]: Defines whether user objects should be synchronized from the partner tenant.
 false causes any current user synchronization from the source tenant to the target tenant to stop.
@@ -619,3 +619,25 @@ This property has no impact on existing users who have already been synchronized
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgpolicycrosstenantaccesspolicypartneridentitysynchronization)
 - [](https://learn.microsoft.com/graph/api/crosstenantidentitysyncpolicypartner-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

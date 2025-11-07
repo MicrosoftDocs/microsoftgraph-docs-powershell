@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp
@@ -711,7 +711,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER <IMicrosoftGraphMobileApp>: An abstract class containing the base properties for Intune mobile apps.
+BODYPARAMETER `<IMicrosoftGraphMobileApp>`: An abstract class containing the base properties for Intune mobile apps.
 Note: Listing mobile apps with `$expand=assignments` has been deprecated.
 Instead get the list of apps without the `$expand` query on `assignments`.
 Then, perform the expansion on individual applications.
@@ -750,7 +750,7 @@ CATEGORIES <IMicrosoftGraphMobileAppCategory[]>: The list of categories for this
 Read-only.
   [DisplayName <String>]: The name of the app category.
 
-LARGEICON <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
+LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: Indicates the content mime type.
   [Value <Byte[]>]: The byte array that contains the actual content.
@@ -760,3 +760,25 @@ LARGEICON <IMicrosoftGraphMimeContent>: Contains properties for a generic mime c
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp)
 - [](https://learn.microsoft.com/graph/api/intune-apps-microsoftstoreforbusinessapp-create?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

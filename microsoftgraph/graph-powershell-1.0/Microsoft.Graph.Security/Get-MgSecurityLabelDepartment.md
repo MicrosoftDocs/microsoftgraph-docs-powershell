@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabeldepartment
@@ -523,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -599,3 +599,25 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabeldepartment)
 - [](https://learn.microsoft.com/graph/api/security-departmenttemplate-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/security-labelsroot-list-departments?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

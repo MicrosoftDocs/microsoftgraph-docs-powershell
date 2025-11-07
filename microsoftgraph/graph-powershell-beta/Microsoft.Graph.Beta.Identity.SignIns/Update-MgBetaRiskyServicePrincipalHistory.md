@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskyserviceprincipalhistory
@@ -888,13 +888,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITY <IMicrosoftGraphRiskServicePrincipalActivity>: riskServicePrincipalActivity
+ACTIVITY `<IMicrosoftGraphRiskServicePrincipalActivity>`: riskServicePrincipalActivity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Detail <String>]: riskDetail
   [RiskEventTypes <String[]>]: The type of risk event detected.
 The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, anomalousServicePrincipalActivity, maliciousApplication, suspiciousApplication.
 
-BODYPARAMETER <IMicrosoftGraphRiskyServicePrincipalHistoryItem>: riskyServicePrincipalHistoryItem
+BODYPARAMETER `<IMicrosoftGraphRiskyServicePrincipalHistoryItem>`: riskyServicePrincipalHistoryItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccountEnabled <Boolean?>]: true if the service principal account is enabled; otherwise, false.
   [AppId <String>]: The globally unique identifier for the associated application (its appId property), if any.
@@ -947,7 +947,7 @@ The possible values are: investigationsThreatIntelligence, generic, adminConfirm
   [InitiatedBy <String>]: The identifier of the actor of the operation.
   [ServicePrincipalId <String>]: The identifier of the service principal.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -1039,3 +1039,25 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskyserviceprincipalhistory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
