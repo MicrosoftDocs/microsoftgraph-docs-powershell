@@ -680,8 +680,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection)
-- [](https://learn.microsoft.com/graph/api/riskdetection-list?view=graph-rest-beta)
+- [Get-MgBetaRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskdetection-list?view=graph-rest-beta)
 
 
 

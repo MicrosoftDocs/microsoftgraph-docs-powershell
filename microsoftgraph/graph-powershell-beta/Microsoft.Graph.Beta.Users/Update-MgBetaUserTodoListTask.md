@@ -1408,7 +1408,7 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttask)
+- [Update-MgBetaUserTodoListTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttask)
 
 
 

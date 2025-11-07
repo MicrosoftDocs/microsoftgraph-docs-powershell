@@ -417,8 +417,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/lock-mgdevicemanagementmanageddeviceremote)
-- [](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-remotelock?view=graph-rest-1.0)
+- [Lock-MgDeviceManagementManagedDeviceRemote](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/lock-mgdevicemanagementmanageddeviceremote)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-remotelock?view=graph-rest-1.0)
 
 
 

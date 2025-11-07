@@ -945,7 +945,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritydatasecurityandgovernancesensitivitylabelsublabel)
+- [New-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritydatasecurityandgovernancesensitivitylabelsublabel)
 
 
 

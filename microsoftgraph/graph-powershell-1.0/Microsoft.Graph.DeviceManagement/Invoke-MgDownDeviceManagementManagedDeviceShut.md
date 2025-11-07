@@ -417,8 +417,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgdowndevicemanagementmanageddeviceshut)
-- [](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-shutdown?view=graph-rest-1.0)
+- [Invoke-MgDownDeviceManagementManagedDeviceShut](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgdowndevicemanagementmanageddeviceshut)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-shutdown?view=graph-rest-1.0)
 
 
 

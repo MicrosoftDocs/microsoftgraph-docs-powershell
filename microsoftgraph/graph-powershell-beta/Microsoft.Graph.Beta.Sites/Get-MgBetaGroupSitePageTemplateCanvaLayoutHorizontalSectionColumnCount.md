@@ -459,7 +459,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepagetemplatecanvalayouthorizontalsectioncolumncount)
+- [Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumnCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepagetemplatecanvalayouthorizontalsectioncolumncount)
 
 
 

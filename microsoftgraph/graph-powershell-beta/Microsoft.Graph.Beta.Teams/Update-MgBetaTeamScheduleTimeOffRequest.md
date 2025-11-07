@@ -833,7 +833,7 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimeoffrequest)
+- [Update-MgBetaTeamScheduleTimeOffRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimeoffrequest)
 
 
 

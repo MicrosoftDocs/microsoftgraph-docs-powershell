@@ -751,8 +751,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimeoffreason)
-- [](https://learn.microsoft.com/graph/api/timeoffreason-put?view=graph-rest-beta)
+- [Update-MgBetaTeamScheduleTimeOffReason](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimeoffreason)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timeoffreason-put?view=graph-rest-beta)
 
 
 

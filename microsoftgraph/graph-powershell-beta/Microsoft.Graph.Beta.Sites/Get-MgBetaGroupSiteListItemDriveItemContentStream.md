@@ -458,7 +458,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitemdriveitemcontentstream)
+- [Get-MgBetaGroupSiteListItemDriveItemContentStream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitemdriveitemcontentstream)
 
 
 

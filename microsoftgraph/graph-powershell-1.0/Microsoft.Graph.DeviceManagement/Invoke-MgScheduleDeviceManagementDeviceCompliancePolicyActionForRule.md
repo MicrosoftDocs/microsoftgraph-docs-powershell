@@ -588,8 +588,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgscheduledevicemanagementdevicecompliancepolicyactionforrule)
-- [](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicy-scheduleactionsforrules?view=graph-rest-1.0)
+- [Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgscheduledevicemanagementdevicecompliancepolicyactionforrule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicy-scheduleactionsforrules?view=graph-rest-1.0)
 
 
 

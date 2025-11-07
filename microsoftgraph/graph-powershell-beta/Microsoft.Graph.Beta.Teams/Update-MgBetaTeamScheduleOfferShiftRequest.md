@@ -835,7 +835,7 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleoffershiftrequest)
+- [Update-MgBetaTeamScheduleOfferShiftRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleoffershiftrequest)
 
 
 

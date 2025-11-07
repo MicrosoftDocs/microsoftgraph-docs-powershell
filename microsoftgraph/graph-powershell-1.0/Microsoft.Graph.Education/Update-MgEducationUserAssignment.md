@@ -1372,7 +1372,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuserassignment)
+- [Update-MgEducationUserAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuserassignment)
 
 
 

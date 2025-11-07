@@ -795,8 +795,8 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgreplyusermessage)
-- [](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-1.0)
+- [Invoke-MgReplyUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgreplyusermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-1.0)
 
 
 

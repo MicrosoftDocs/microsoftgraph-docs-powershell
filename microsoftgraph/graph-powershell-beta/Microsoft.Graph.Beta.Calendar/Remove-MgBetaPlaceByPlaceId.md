@@ -396,8 +396,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplacebyplaceid)
-- [](https://learn.microsoft.com/graph/api/place-delete?view=graph-rest-beta)
+- [Remove-MgBetaPlaceByPlaceId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplacebyplaceid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/place-delete?view=graph-rest-beta)
 
 
 

@@ -1110,7 +1110,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstoregroupsettermchild)
+- [Update-MgBetaGroupSiteTermStoreGroupSetTermChild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstoregroupsettermchild)
 
 
 

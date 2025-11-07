@@ -946,8 +946,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadministrativeunit)
-- [](https://learn.microsoft.com/graph/api/administrativeunit-update?view=graph-rest-beta)
+- [Update-MgBetaAdministrativeUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadministrativeunit)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/administrativeunit-update?view=graph-rest-beta)
 
 
 

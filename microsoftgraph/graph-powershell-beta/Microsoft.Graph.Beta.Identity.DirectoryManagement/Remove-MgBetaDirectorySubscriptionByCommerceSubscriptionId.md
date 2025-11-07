@@ -438,7 +438,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorysubscriptionbycommercesubscriptionid)
+- [Remove-MgBetaDirectorySubscriptionByCommerceSubscriptionId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorysubscriptionbycommercesubscriptionid)
 
 
 

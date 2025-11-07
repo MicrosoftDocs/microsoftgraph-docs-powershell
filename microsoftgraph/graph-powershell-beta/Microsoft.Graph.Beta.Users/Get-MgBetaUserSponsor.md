@@ -595,8 +595,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsor)
-- [](https://learn.microsoft.com/graph/api/user-list-sponsors?view=graph-rest-beta)
+- [Get-MgBetaUserSponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsor)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-list-sponsors?view=graph-rest-beta)
 
 
 

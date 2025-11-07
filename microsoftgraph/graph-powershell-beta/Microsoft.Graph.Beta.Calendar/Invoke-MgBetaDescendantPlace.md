@@ -488,7 +488,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadescendantplace)
+- [Invoke-MgBetaDescendantPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadescendantplace)
 
 
 

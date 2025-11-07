@@ -17752,7 +17752,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaselegalholdunifiedgroupsource)
+- [Update-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaselegalholdunifiedgroupsource)
 
 
 

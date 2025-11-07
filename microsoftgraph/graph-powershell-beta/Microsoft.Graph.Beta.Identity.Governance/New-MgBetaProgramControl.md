@@ -1258,8 +1258,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogramcontrol)
-- [](https://learn.microsoft.com/graph/api/programcontrol-create?view=graph-rest-beta)
+- [New-MgBetaProgramControl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogramcontrol)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/programcontrol-create?view=graph-rest-beta)
 
 
 

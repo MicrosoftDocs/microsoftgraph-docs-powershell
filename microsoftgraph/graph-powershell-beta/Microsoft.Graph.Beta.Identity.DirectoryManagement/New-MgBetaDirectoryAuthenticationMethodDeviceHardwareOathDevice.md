@@ -26233,8 +26233,8 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryauthenticationmethoddevicehardwareoathdevice)
-- [](https://learn.microsoft.com/graph/api/authenticationmethoddevice-update?view=graph-rest-beta)
+- [New-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryauthenticationmethoddevicehardwareoathdevice)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethoddevice-update?view=graph-rest-beta)
 
 
 

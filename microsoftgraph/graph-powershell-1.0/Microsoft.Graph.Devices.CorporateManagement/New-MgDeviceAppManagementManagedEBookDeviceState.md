@@ -763,8 +763,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebookdevicestate)
-- [](https://learn.microsoft.com/graph/api/intune-books-deviceinstallstate-create?view=graph-rest-1.0)
+- [New-MgDeviceAppManagementManagedEBookDeviceState](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebookdevicestate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-books-deviceinstallstate-create?view=graph-rest-1.0)
 
 
 

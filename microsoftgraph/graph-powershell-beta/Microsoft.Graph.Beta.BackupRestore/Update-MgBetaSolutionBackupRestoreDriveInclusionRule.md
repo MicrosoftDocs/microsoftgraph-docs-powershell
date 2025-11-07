@@ -789,7 +789,7 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoredriveinclusionrule)
+- [Update-MgBetaSolutionBackupRestoreDriveInclusionRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoredriveinclusionrule)
 
 
 

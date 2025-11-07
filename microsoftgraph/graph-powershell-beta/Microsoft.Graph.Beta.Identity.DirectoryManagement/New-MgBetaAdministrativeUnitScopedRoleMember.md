@@ -647,8 +647,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitscopedrolemember)
-- [](https://learn.microsoft.com/graph/api/administrativeunit-post-scopedrolemembers?view=graph-rest-beta)
+- [New-MgBetaAdministrativeUnitScopedRoleMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitscopedrolemember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/administrativeunit-post-scopedrolemembers?view=graph-rest-beta)
 
 
 

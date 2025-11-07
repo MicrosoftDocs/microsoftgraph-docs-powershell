@@ -636,8 +636,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkuserchatunreadforuser)
-- [](https://learn.microsoft.com/graph/api/chat-markchatunreadforuser?view=graph-rest-beta)
+- [Invoke-MgBetaMarkUserChatUnreadForUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkuserchatunreadforuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-markchatunreadforuser?view=graph-rest-beta)
 
 
 

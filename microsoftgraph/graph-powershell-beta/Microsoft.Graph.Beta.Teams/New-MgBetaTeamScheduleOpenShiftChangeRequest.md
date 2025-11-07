@@ -758,8 +758,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshiftchangerequest)
-- [](https://learn.microsoft.com/graph/api/openshiftchangerequest-post?view=graph-rest-beta)
+- [New-MgBetaTeamScheduleOpenShiftChangeRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshiftchangerequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/openshiftchangerequest-post?view=graph-rest-beta)
 
 
 

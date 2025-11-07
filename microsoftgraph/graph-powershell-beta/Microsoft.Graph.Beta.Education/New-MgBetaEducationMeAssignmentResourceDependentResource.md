@@ -653,7 +653,7 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentresourcedependentresource)
+- [New-MgBetaEducationMeAssignmentResourceDependentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentresourcedependentresource)
 
 
 

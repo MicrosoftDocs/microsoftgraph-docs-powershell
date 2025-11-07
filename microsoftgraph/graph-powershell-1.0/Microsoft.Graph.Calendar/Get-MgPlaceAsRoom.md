@@ -557,8 +557,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroom)
-- [](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-1.0)
+- [Get-MgPlaceAsRoom](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroom)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-1.0)
 
 
 

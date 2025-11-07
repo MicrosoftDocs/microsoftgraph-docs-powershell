@@ -10642,7 +10642,7 @@ Start with 1.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamwork)
+- [Update-MgTeamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamwork)
 
 
 

@@ -1719,7 +1719,7 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessage)
+- [New-MgUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessage)
 
 
 

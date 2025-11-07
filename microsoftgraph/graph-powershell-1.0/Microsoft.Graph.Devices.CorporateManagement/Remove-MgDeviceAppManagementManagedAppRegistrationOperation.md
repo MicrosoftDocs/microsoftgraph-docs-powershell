@@ -464,8 +464,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedappregistrationoperation)
-- [](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-delete?view=graph-rest-1.0)
+- [Remove-MgDeviceAppManagementManagedAppRegistrationOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedappregistrationoperation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-delete?view=graph-rest-1.0)
 
 
 

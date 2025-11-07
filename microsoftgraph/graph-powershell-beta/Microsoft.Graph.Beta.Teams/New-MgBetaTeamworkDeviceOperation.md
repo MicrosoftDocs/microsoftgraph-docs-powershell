@@ -810,7 +810,7 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeviceoperation)
+- [New-MgBetaTeamworkDeviceOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeviceoperation)
 
 
 

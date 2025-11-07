@@ -700,9 +700,9 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcategory)
-- [](https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-list?view=graph-rest-1.0)
+- [Get-MgDeviceAppManagementMobileAppCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcategory)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-list?view=graph-rest-1.0)
 
 
 

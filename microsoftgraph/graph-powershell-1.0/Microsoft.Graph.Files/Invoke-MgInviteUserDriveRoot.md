@@ -726,8 +726,8 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginviteuserdriveroot)
-- [](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0)
+- [Invoke-MgInviteUserDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginviteuserdriveroot)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0)
 
 
 

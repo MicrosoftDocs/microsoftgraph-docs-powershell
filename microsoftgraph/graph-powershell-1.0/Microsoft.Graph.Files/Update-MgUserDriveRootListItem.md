@@ -26328,7 +26328,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriverootlistitem)
+- [Update-MgUserDriveRootListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriverootlistitem)
 
 
 

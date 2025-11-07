@@ -1057,7 +1057,7 @@ SOURCES <IMicrosoftGraphProfileSourceAnnotation[]>: Where the values within an e
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilelanguage)
+- [Update-MgBetaUserProfileLanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilelanguage)
 
 
 

@@ -11131,8 +11131,8 @@ Defaults to setting on client device.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevice)
-- [](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-create?view=graph-rest-1.0)
+- [New-MgDeviceManagementManagedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevice)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-create?view=graph-rest-1.0)
 
 
 

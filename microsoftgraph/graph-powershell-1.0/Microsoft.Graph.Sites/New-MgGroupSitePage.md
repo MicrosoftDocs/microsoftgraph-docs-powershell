@@ -16100,7 +16100,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitepage)
+- [New-MgGroupSitePage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitepage)
 
 
 

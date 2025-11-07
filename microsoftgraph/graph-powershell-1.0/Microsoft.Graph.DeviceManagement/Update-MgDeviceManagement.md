@@ -25720,8 +25720,8 @@ Valid values -2147483648 to 2147483647
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement)
-- [](https://learn.microsoft.com/graph/api/intune-tem-devicemanagement-update?view=graph-rest-1.0)
+- [Update-MgDeviceManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-tem-devicemanagement-update?view=graph-rest-1.0)
 
 
 

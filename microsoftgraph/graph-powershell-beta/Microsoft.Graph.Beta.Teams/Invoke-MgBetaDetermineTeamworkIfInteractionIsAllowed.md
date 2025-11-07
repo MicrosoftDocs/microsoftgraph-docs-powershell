@@ -513,8 +513,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetadetermineteamworkifinteractionisallowed)
-- [](https://learn.microsoft.com/graph/api/teamwork-determineifinteractionisallowed?view=graph-rest-beta)
+- [Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetadetermineteamworkifinteractionisallowed)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamwork-determineifinteractionisallowed?view=graph-rest-beta)
 
 
 

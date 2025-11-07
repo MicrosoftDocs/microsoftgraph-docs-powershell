@@ -1210,8 +1210,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration)
-- [](https://learn.microsoft.com/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-1.0)
+- [New-MgVirtualEventWebinarRegistration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-1.0)
 
 
 

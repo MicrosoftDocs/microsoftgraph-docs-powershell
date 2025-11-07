@@ -609,7 +609,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrengthauthenticationmethodmode)
+- [Update-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrengthauthenticationmethodmode)
 
 
 

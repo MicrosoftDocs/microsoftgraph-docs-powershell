@@ -634,8 +634,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphuserchat)
-- [](https://learn.microsoft.com/graph/api/chat-unhideforuser?view=graph-rest-beta)
+- [Invoke-MgBetaGraphUserChat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphuserchat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-unhideforuser?view=graph-rest-beta)
 
 
 

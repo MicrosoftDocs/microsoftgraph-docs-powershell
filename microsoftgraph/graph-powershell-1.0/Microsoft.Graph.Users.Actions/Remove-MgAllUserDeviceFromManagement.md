@@ -364,8 +364,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/remove-mgalluserdevicefrommanagement)
-- [](https://learn.microsoft.com/graph/api/intune-devices-user-removealldevicesfrommanagement?view=graph-rest-1.0)
+- [Remove-MgAllUserDeviceFromManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/remove-mgalluserdevicefrommanagement)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-user-removealldevicesfrommanagement?view=graph-rest-1.0)
 
 
 

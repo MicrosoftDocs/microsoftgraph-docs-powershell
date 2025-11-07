@@ -374,7 +374,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolistcount)
+- [Get-MgBetaUserTodoListCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolistcount)
 
 
 

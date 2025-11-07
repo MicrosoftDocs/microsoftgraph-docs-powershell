@@ -45772,8 +45772,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuser)
-- [](https://learn.microsoft.com/graph/api/relatedcontact-update?view=graph-rest-beta)
+- [Update-MgBetaEducationUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/relatedcontact-update?view=graph-rest-beta)
 
 
 

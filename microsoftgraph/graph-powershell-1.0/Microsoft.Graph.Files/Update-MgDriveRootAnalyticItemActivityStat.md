@@ -10907,7 +10907,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootanalyticitemactivitystat)
+- [Update-MgDriveRootAnalyticItemActivityStat](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootanalyticitemactivitystat)
 
 
 

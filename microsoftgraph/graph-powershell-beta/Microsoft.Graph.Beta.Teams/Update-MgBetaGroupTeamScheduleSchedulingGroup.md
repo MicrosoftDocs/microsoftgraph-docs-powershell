@@ -721,7 +721,7 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleschedulinggroup)
+- [Update-MgBetaGroupTeamScheduleSchedulingGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleschedulinggroup)
 
 
 

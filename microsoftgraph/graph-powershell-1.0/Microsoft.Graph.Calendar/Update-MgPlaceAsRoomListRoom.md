@@ -1026,7 +1026,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasroomlistroom)
+- [Update-MgPlaceAsRoomListRoom](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasroomlistroom)
 
 
 

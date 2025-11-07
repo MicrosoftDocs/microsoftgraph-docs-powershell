@@ -999,8 +999,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
-- [](https://learn.microsoft.com/graph/api/browsersitelist-post-sharedcookies?view=graph-rest-beta)
+- [New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/browsersitelist-post-sharedcookies?view=graph-rest-beta)
 
 
 

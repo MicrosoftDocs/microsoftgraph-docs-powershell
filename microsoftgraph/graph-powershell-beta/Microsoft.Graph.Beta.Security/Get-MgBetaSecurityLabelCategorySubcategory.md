@@ -662,9 +662,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategory)
-- [](https://learn.microsoft.com/graph/api/security-subcategorytemplate-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/security-categorytemplate-list-subcategories?view=graph-rest-beta)
+- [Get-MgBetaSecurityLabelCategorySubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategory)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-subcategorytemplate-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-categorytemplate-list-subcategories?view=graph-rest-beta)
 
 
 

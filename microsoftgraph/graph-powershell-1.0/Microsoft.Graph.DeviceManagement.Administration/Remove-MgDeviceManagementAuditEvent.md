@@ -432,8 +432,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementauditevent)
-- [](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-delete?view=graph-rest-1.0)
+- [Remove-MgDeviceManagementAuditEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementauditevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-delete?view=graph-rest-1.0)
 
 
 

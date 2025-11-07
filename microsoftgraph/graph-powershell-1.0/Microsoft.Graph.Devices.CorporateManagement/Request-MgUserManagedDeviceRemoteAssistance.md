@@ -420,8 +420,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/request-mgusermanageddeviceremoteassistance)
-- [](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0)
+- [Request-MgUserManagedDeviceRemoteAssistance](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/request-mgusermanageddeviceremoteassistance)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0)
 
 
 

@@ -375,7 +375,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentresourcecount)
+- [Get-MgEducationUserAssignmentResourceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentresourcecount)
 
 
 

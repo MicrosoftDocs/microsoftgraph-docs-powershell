@@ -481,7 +481,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprivilegedroleassignmentroleinfosetting)
+- [Remove-MgBetaPrivilegedRoleAssignmentRoleInfoSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprivilegedroleassignmentroleinfosetting)
 
 
 

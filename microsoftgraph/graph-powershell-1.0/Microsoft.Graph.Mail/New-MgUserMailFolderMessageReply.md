@@ -766,8 +766,8 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessagereply)
-- [](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-1.0)
+- [New-MgUserMailFolderMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-1.0)
 
 
 

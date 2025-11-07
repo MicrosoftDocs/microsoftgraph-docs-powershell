@@ -751,7 +751,7 @@ SETTINGINSTANCETEMPLATE `<IMicrosoftGraphDeviceManagementConfigurationSettingIns
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicytemplatesettingtemplate)
+- [Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicytemplatesettingtemplate)
 
 
 

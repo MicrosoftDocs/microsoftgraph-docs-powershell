@@ -680,7 +680,7 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentresourcedependentresource)
+- [Update-MgBetaEducationMeAssignmentResourceDependentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentresourcedependentresource)
 
 
 

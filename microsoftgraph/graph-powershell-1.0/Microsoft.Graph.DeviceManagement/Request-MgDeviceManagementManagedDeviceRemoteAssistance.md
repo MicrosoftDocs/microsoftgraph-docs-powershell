@@ -417,8 +417,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/request-mgdevicemanagementmanageddeviceremoteassistance)
-- [](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0)
+- [Request-MgDeviceManagementManagedDeviceRemoteAssistance](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/request-mgdevicemanagementmanageddeviceremoteassistance)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0)
 
 
 

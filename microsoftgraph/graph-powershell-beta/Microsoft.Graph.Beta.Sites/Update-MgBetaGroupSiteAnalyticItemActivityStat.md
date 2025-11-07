@@ -17938,7 +17938,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteanalyticitemactivitystat)
+- [Update-MgBetaGroupSiteAnalyticItemActivityStat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteanalyticitemactivitystat)
 
 
 

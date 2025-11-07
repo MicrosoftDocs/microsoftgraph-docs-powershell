@@ -547,8 +547,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgcleandevicemanagementmanageddevicewindowsdevice)
-- [](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-cleanwindowsdevice?view=graph-rest-1.0)
+- [Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgcleandevicemanagementmanageddevicewindowsdevice)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-cleanwindowsdevice?view=graph-rest-1.0)
 
 
 

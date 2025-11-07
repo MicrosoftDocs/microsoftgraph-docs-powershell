@@ -713,7 +713,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementresourcenamespace)
+- [Update-MgBetaRoleManagementEntitlementManagementResourceNamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementresourcenamespace)
 
 
 

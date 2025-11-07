@@ -590,8 +590,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebookassignment)
-- [](https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-create?view=graph-rest-1.0)
+- [New-MgDeviceAppManagementManagedEBookAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebookassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-create?view=graph-rest-1.0)
 
 
 

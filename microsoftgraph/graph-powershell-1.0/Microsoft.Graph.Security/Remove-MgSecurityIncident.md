@@ -452,7 +452,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityincident)
+- [Remove-MgSecurityIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityincident)
 
 
 

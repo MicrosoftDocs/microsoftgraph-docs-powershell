@@ -440,7 +440,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroledefinitioninheritpermissionfromcount)
+- [Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFromCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroledefinitioninheritpermissionfromcount)
 
 
 

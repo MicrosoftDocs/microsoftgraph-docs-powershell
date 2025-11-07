@@ -605,8 +605,8 @@ BODYPARAMETER `<IPaths1Mia7W1DevicemanagementReportsMicrosoftGraphGethistoricalr
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreporthistoricalreport)
-- [](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-gethistoricalreport?view=graph-rest-1.0)
+- [Get-MgDeviceManagementReportHistoricalReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreporthistoricalreport)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-gethistoricalreport?view=graph-rest-1.0)
 
 
 

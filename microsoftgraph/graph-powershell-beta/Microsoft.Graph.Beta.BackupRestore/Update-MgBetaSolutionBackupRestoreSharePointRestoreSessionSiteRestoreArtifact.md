@@ -829,7 +829,7 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointrestoresessionsiterestoreartifact)
+- [Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointrestoresessionsiterestoreartifact)
 
 
 

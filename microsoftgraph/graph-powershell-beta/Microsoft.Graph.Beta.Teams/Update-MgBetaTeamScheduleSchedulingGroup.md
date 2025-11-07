@@ -723,8 +723,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleschedulinggroup)
-- [](https://learn.microsoft.com/graph/api/schedulinggroup-put?view=graph-rest-beta)
+- [Update-MgBetaTeamScheduleSchedulingGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleschedulinggroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schedulinggroup-put?view=graph-rest-beta)
 
 
 

@@ -823,7 +823,7 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionmanagementscheduledpermissionapprovalstep)
+- [Update-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStep](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionmanagementscheduledpermissionapprovalstep)
 
 
 

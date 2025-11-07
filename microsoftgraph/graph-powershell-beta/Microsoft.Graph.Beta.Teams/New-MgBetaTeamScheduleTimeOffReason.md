@@ -750,8 +750,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffreason)
-- [](https://learn.microsoft.com/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta)
+- [New-MgBetaTeamScheduleTimeOffReason](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffreason)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta)
 
 
 

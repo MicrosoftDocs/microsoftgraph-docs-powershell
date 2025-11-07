@@ -417,8 +417,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/restart-mgdevicemanagementmanageddevicenow)
-- [](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-rebootnow?view=graph-rest-1.0)
+- [Restart-MgDeviceManagementManagedDeviceNow](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/restart-mgdevicemanagementmanageddevicenow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-rebootnow?view=graph-rest-1.0)
 
 
 

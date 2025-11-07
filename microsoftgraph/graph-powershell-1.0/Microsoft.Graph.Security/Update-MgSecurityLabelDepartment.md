@@ -623,7 +623,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabeldepartment)
+- [Update-MgSecurityLabelDepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabeldepartment)
 
 
 

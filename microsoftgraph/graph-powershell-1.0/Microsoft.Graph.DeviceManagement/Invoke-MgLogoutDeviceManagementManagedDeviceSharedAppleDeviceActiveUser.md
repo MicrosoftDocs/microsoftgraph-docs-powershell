@@ -418,8 +418,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mglogoutdevicemanagementmanageddevicesharedappledeviceactiveuser)
-- [](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser?view=graph-rest-1.0)
+- [Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mglogoutdevicemanagementmanageddevicesharedappledeviceactiveuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser?view=graph-rest-1.0)
 
 
 

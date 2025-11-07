@@ -821,7 +821,7 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresiteprotectionunitbulkadditionjob)
+- [Update-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresiteprotectionunitbulkadditionjob)
 
 
 

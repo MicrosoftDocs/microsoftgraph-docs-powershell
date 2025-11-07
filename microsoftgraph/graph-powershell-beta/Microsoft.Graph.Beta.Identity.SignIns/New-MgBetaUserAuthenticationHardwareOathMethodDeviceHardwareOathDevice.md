@@ -26476,7 +26476,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationhardwareoathmethoddevicehardwareoathdevice)
+- [New-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationhardwareoathmethoddevicehardwareoathdevice)
 
 
 

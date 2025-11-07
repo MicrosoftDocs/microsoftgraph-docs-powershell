@@ -675,8 +675,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedappregistrationoperation)
-- [](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-update?view=graph-rest-1.0)
+- [Update-MgDeviceAppManagementManagedAppRegistrationOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedappregistrationoperation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-update?view=graph-rest-1.0)
 
 
 

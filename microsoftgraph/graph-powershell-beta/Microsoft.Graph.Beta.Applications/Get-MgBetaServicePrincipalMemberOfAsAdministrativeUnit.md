@@ -610,7 +610,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalmemberofasadministrativeunit)
+- [Get-MgBetaServicePrincipalMemberOfAsAdministrativeUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalmemberofasadministrativeunit)
 
 
 

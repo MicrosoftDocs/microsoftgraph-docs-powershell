@@ -420,8 +420,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/disable-mgusermanageddevicelostmode)
-- [](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-disablelostmode?view=graph-rest-1.0)
+- [Disable-MgUserManagedDeviceLostMode](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/disable-mgusermanageddevicelostmode)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-disablelostmode?view=graph-rest-1.0)
 
 
 

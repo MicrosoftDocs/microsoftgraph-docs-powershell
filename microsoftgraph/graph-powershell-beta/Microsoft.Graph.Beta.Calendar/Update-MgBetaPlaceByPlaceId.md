@@ -819,8 +819,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplacebyplaceid)
-- [](https://learn.microsoft.com/graph/api/place-update?view=graph-rest-beta)
+- [Update-MgBetaPlaceByPlaceId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplacebyplaceid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/place-update?view=graph-rest-beta)
 
 
 

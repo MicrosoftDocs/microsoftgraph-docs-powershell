@@ -654,8 +654,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementvpptoken)
-- [](https://learn.microsoft.com/graph/api/intune-onboarding-vpptoken-create?view=graph-rest-1.0)
+- [New-MgDeviceAppManagementVppToken](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementvpptoken)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-onboarding-vpptoken-create?view=graph-rest-1.0)
 
 
 

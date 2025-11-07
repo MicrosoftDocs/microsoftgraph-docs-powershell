@@ -842,7 +842,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoregroupsetparentgroup)
+- [Update-MgBetaSiteTermStoreGroupSetParentGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoregroupsetparentgroup)
 
 
 

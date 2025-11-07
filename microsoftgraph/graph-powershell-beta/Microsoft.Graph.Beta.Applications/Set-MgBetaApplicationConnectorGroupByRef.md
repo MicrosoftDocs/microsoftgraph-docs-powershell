@@ -568,8 +568,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationconnectorgroupbyref)
-- [](https://learn.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)
+- [Set-MgBetaApplicationConnectorGroupByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationconnectorgroupbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)
 
 
 

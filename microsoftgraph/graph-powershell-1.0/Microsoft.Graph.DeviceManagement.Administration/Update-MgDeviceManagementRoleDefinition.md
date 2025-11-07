@@ -751,8 +751,8 @@ These must match the actionName that is defined as part of the rolePermission.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition)
-- [](https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-update?view=graph-rest-1.0)
+- [Update-MgDeviceManagementRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-update?view=graph-rest-1.0)
 
 
 

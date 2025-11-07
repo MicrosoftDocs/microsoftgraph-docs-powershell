@@ -464,8 +464,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookassignment)
-- [](https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-delete?view=graph-rest-1.0)
+- [Remove-MgDeviceAppManagementManagedEBookAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-delete?view=graph-rest-1.0)
 
 
 

@@ -712,7 +712,7 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsubmissionsubmittedresource)
+- [Update-MgBetaEducationClassAssignmentSubmissionSubmittedResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsubmissionsubmittedresource)
 
 
 

@@ -1016,7 +1016,7 @@ Not supported for custom roles.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroledefinitioninheritpermissionfrom)
+- [Update-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroledefinitioninheritpermissionfrom)
 
 
 

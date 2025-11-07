@@ -822,7 +822,7 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroupassignmentapprovalstep)
+- [Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroupassignmentapprovalstep)
 
 
 

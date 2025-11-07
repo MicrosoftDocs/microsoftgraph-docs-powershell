@@ -420,8 +420,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/restart-mgusermanageddevicenow)
-- [](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-rebootnow?view=graph-rest-1.0)
+- [Restart-MgUserManagedDeviceNow](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/restart-mgusermanageddevicenow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-rebootnow?view=graph-rest-1.0)
 
 
 

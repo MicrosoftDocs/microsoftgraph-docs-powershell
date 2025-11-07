@@ -657,7 +657,7 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentsubmissionsubmittedresource)
+- [New-MgBetaEducationMeAssignmentSubmissionSubmittedResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentsubmissionsubmittedresource)
 
 
 

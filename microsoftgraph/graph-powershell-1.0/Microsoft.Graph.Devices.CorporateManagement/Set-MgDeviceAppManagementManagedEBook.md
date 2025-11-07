@@ -574,8 +574,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmanagedebook)
-- [](https://learn.microsoft.com/graph/api/intune-books-managedebook-assign?view=graph-rest-1.0)
+- [Set-MgDeviceAppManagementManagedEBook](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmanagedebook)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-books-managedebook-assign?view=graph-rest-1.0)
 
 
 

@@ -877,7 +877,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteaminstalledapp)
+- [New-MgBetaGroupTeamInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteaminstalledapp)
 
 
 

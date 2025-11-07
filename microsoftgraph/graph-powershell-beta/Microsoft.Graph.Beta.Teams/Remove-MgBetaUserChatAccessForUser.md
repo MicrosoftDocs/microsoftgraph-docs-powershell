@@ -575,8 +575,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchataccessforuser)
-- [](https://learn.microsoft.com/graph/api/chat-removeallaccessforuser?view=graph-rest-beta)
+- [Remove-MgBetaUserChatAccessForUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchataccessforuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-removeallaccessforuser?view=graph-rest-beta)
 
 
 

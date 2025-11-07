@@ -600,8 +600,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrole)
-- [](https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-beta)
+- [New-MgBetaDirectoryRole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrole)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-beta)
 
 
 

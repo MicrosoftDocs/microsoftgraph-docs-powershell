@@ -353,7 +353,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendar)
+- [Get-MgGroupCalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendar)
 
 
 

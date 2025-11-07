@@ -599,8 +599,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/hide-mgbetachatforuser)
-- [](https://learn.microsoft.com/graph/api/chat-hideforuser?view=graph-rest-beta)
+- [Hide-MgBetaChatForUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/hide-mgbetachatforuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-hideforuser?view=graph-rest-beta)
 
 
 

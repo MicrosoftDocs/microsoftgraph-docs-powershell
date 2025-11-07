@@ -419,8 +419,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/send-mgdevicemanagementnotificationmessagetemplatetestmessage)
-- [](https://learn.microsoft.com/graph/api/intune-notification-notificationmessagetemplate-sendtestmessage?view=graph-rest-1.0)
+- [Send-MgDeviceManagementNotificationMessageTemplateTestMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/send-mgdevicemanagementnotificationmessagetemplatetestmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-notification-notificationmessagetemplate-sendtestmessage?view=graph-rest-1.0)
 
 
 

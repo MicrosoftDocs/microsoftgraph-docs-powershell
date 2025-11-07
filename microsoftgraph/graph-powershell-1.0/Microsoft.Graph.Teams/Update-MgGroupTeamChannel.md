@@ -16299,7 +16299,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannel)
+- [Update-MgGroupTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannel)
 
 
 

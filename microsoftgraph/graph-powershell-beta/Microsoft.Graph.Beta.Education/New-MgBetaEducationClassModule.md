@@ -816,8 +816,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmodule)
-- [](https://learn.microsoft.com/graph/api/educationclass-post-module?view=graph-rest-beta)
+- [New-MgBetaEducationClassModule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmodule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-post-module?view=graph-rest-beta)
 
 
 

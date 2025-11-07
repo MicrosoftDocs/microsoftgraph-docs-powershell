@@ -912,8 +912,8 @@ RESOURCES <IMicrosoftGraphAuditResource[]>: Resources being modified.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent)
-- [](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-update?view=graph-rest-1.0)
+- [Update-MgDeviceManagementAuditEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-update?view=graph-rest-1.0)
 
 
 

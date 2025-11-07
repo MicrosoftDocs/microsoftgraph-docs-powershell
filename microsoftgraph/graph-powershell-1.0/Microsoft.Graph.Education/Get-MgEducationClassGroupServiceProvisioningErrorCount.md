@@ -354,7 +354,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassgroupserviceprovisioningerrorcount)
+- [Get-MgEducationClassGroupServiceProvisioningErrorCount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassgroupserviceprovisioningerrorcount)
 
 
 

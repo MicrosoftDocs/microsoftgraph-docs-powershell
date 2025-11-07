@@ -724,8 +724,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleschedulinggroup)
-- [](https://learn.microsoft.com/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta)
+- [New-MgBetaTeamScheduleSchedulingGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleschedulinggroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta)
 
 
 

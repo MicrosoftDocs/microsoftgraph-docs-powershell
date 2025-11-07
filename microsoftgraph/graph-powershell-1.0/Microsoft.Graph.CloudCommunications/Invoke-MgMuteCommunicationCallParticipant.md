@@ -533,8 +533,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgmutecommunicationcallparticipant)
-- [](https://learn.microsoft.com/graph/api/participant-mute?view=graph-rest-1.0)
+- [Invoke-MgMuteCommunicationCallParticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgmutecommunicationcallparticipant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/participant-mute?view=graph-rest-1.0)
 
 
 

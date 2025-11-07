@@ -946,7 +946,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchattab)
+- [Update-MgBetaUserChatTab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchattab)
 
 
 

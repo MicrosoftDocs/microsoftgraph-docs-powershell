@@ -708,8 +708,8 @@ These must match the actionName that is defined as part of the rolePermission.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinitionroleassignment)
-- [](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-create?view=graph-rest-1.0)
+- [New-MgDeviceManagementRoleDefinitionRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinitionroleassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-create?view=graph-rest-1.0)
 
 
 

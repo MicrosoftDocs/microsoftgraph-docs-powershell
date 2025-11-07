@@ -1054,7 +1054,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoresettermchild)
+- [New-MgBetaGroupSiteTermStoreSetTermChild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoresettermchild)
 
 
 

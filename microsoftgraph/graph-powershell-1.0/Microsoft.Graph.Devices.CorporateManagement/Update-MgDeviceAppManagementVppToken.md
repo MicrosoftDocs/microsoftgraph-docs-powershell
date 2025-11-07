@@ -859,8 +859,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementvpptoken)
-- [](https://learn.microsoft.com/graph/api/intune-onboarding-vpptoken-update?view=graph-rest-1.0)
+- [Update-MgDeviceAppManagementVppToken](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementvpptoken)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-onboarding-vpptoken-update?view=graph-rest-1.0)
 
 
 

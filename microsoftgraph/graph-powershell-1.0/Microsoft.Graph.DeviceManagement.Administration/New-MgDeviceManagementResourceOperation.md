@@ -465,8 +465,8 @@ The description is used in mouse-over text for the operation when shown in the A
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementresourceoperation)
-- [](https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-create?view=graph-rest-1.0)
+- [New-MgDeviceManagementResourceOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementresourceoperation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-create?view=graph-rest-1.0)
 
 
 

@@ -762,8 +762,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthread)
-- [](https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-1.0)
+- [Invoke-MgReplyGroupThread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthread)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-1.0)
 
 
 

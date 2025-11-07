@@ -26355,7 +26355,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemlistitem)
+- [Update-MgUserDriveItemListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemlistitem)
 
 
 

@@ -717,8 +717,8 @@ This property is read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsubmissionoutcome)
-- [](https://learn.microsoft.com/graph/api/educationoutcome-update?view=graph-rest-beta)
+- [Update-MgBetaEducationClassAssignmentSubmissionOutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsubmissionoutcome)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationoutcome-update?view=graph-rest-beta)
 
 
 

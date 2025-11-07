@@ -399,7 +399,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentsetting)
+- [Remove-MgEducationClassAssignmentSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentsetting)
 
 
 

@@ -598,7 +598,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetabuffergroupsiteinformationprotectionencrypt)
+- [Invoke-MgBetaBufferGroupSiteInformationProtectionEncrypt](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetabuffergroupsiteinformationprotectionencrypt)
 
 
 

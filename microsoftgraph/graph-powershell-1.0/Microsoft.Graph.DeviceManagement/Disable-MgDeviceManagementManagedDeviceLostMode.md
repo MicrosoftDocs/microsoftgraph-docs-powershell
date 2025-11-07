@@ -417,8 +417,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/disable-mgdevicemanagementmanageddevicelostmode)
-- [](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-disablelostmode?view=graph-rest-1.0)
+- [Disable-MgDeviceManagementManagedDeviceLostMode](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/disable-mgdevicemanagementmanageddevicelostmode)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-disablelostmode?view=graph-rest-1.0)
 
 
 
