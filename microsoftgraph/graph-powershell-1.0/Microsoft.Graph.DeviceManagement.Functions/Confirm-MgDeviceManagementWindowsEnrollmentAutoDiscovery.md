@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/confirm-mgdevicemanagementwindowsenrollmentautodiscovery
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-ms.date: 10/24/2025
+ms.date: 10/31/2025
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery
 ---

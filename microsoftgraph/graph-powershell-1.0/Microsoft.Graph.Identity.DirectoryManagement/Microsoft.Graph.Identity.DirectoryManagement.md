@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 14b8b1f5-2f83-4fd4-9cef-bd988b439134
+Module Guid: 5e6c32e6-8fd4-428a-99e3-9a7f2cc43121
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US

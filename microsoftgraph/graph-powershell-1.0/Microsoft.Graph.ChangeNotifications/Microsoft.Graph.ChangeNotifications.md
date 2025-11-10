@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.ChangeNotifications
-Module Guid: 41f1fc9c-c756-4158-985f-caa82be7d570
+Module Guid: 3b0fa7e2-aa2b-47e5-8f75-10bb3de5d5b1
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
