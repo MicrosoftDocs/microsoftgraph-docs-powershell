@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationphonemethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserAuthenticationPhoneMethod
 ---
@@ -87,7 +87,7 @@ Additionally, if a user is enabled by policy to use SMS sign-in and a mobile num
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthenticationMethod.ReadWrite.All,  |
 

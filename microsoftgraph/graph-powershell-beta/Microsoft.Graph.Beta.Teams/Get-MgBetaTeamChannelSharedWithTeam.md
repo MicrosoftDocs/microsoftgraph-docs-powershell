@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelsharedwithteam
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTeamChannelSharedWithTeam
 ---
@@ -87,7 +87,7 @@ This operation is allowed only for channels with a membershipType value of share
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ChannelMember.Read.All, ChannelMember.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelMember.Read.All, ChannelMember.ReadWrite.All,  |
+| Application | ChannelMember.Read.Group, ChannelMember.ReadWrite.Group, ChannelMember.ReadWrite.All, ChannelMember.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

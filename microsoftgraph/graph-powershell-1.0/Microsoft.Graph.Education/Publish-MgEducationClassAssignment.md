@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationclassassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Publish-MgEducationClassAssignment
 ---
@@ -69,7 +69,7 @@ To update the properties of a published assignment, see update an assignment.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

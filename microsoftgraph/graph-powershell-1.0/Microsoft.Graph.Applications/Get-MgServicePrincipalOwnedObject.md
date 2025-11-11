@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownedobject
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgServicePrincipalOwnedObject
 ---
@@ -66,13 +66,17 @@ Nullable.
 Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## EXAMPLES
-### Example 1: Using the Get-MgServicePrincipalOwnedObject Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
+
 Get-MgServicePrincipalOwnedObject -ServicePrincipalId $servicePrincipalId
+
 ```
 This example shows how to use the Get-MgServicePrincipalOwnedObject Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

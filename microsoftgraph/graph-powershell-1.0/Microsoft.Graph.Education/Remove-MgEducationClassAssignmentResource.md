@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgEducationClassAssignmentResource
 ---
@@ -60,7 +60,7 @@ However, teachers can't remove resources marked as 'distributeToStudents', after
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalSynchronizationTemplate
 ---
@@ -68,6 +68,19 @@ Pre-configured synchronization settings for a particular application.
 | Delegated (work or school account) | Synchronization.Read.All, Synchronization.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
+
+## EXAMPLES
+### Example
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Applications
+
+Get-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgBetaServicePrincipalSynchronizationTemplate Cmdlet.
+
 
 ## PARAMETERS
 
@@ -598,8 +611,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Get-MgBetaServicePrincipalSynchronizationTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplate)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-templates?view=graph-rest-beta)
-
-
 
 
 

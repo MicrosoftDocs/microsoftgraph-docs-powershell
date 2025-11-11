@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityauditlogquery
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSecurityAuditLogQuery
 ---

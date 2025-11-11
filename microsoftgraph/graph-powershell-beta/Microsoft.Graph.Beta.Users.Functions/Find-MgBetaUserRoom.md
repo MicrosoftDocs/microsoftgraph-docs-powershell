@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroom
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Functions
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Find-MgBetaUserRoom
 ---

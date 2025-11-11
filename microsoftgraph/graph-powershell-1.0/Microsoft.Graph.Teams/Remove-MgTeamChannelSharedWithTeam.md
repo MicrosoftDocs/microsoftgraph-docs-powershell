@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelsharedwithteam
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgTeamChannelSharedWithTeam
 ---
@@ -58,7 +58,7 @@ This operation is allowed only for channels with a membershipType value of share
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ChannelMember.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelMember.ReadWrite.All,  |
+| Application | ChannelMember.ReadWrite.Group, ChannelMember.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaServicePrincipal
 ---
@@ -90,7 +90,7 @@ Create a new servicePrincipal object.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All, AgentIdentity.Create, AgentApplication.Create,  |
+| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Create a new service principal object

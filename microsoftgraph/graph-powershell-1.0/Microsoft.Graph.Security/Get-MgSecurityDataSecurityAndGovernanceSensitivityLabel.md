@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritydatasecurityandgovernancesensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel
 ---
@@ -69,12 +69,17 @@ Get a sensitivity label available for the entire tenant.
 | Application | SensitivityLabel.Read, SensitivityLabels.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel -Filter "applicableTo has 'file' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')"
+Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel -Filter "applicableTo has 'file' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')" 
+
+```
+This example shows how to use the Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel Cmdlet.
+
 
 ## PARAMETERS
 

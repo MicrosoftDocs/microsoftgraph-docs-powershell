@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelsharedwithteamcount
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgTeamChannelSharedWithTeamCount
 ---
@@ -53,7 +53,7 @@ Get the number of the resource
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ChannelMember.Read.All, ChannelMember.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelMember.Read.All, ChannelMember.ReadWrite.All,  |
+| Application | ChannelMember.Read.Group, ChannelMember.ReadWrite.Group, ChannelMember.ReadWrite.All, ChannelMember.Read.All,  |
 
 ## PARAMETERS
 

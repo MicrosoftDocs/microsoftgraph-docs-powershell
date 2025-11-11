@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplace
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgPlace
 ---
@@ -48,14 +48,6 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete entity from places
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Place.ReadWrite.All,  |
 
 ## PARAMETERS
 

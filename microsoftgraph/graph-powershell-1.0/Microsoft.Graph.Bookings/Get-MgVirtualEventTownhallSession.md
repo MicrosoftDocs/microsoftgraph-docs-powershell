@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallsession
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgVirtualEventTownhallSession
 ---
@@ -58,6 +58,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The sessions for the virtual event.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | VirtualEvent.Read, VirtualEvent.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | VirtualEvent.Read.All,  |
 
 ## PARAMETERS
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEducationClassAssignmentResource
 ---
@@ -84,7 +84,7 @@ You can create the following types of assignment resources: Every resource has a
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Create an educationLinkResource

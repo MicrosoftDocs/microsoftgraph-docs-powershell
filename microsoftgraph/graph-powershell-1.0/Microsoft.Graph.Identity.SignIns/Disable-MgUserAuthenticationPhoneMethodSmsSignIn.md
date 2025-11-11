@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/disable-mguserauthenticationphonemethodsmssignin
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Disable-MgUserAuthenticationPhoneMethodSmsSignIn
 ---
@@ -52,7 +52,7 @@ The number will no longer be available for SMS sign-in, which can prevent your u
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthenticationMethod.ReadWrite.All,  |
 

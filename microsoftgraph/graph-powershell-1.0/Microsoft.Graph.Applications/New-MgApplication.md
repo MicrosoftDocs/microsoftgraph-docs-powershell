@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplication
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgApplication
 ---
@@ -81,7 +81,7 @@ Create a new application object.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
-| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, AgentApplication.Create,  |
+| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Create a new application

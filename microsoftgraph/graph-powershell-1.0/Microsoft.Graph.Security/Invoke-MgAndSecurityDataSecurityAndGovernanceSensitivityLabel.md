@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgandsecuritydatasecurityandgovernancesensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel
 ---
@@ -55,9 +55,9 @@ Computes the rights and inheritance for sensitivity labels based on the input co
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SensitivityLabel.Evaluate.All, SensitivityLabel.Evaluate,  |
+| Delegated (work or school account) | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | SensitivityLabel.Evaluate.All, SensitivityLabel.Evaluate,  |
+| Application | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
 
 ## PARAMETERS
 

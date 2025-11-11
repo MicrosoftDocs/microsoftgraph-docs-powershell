@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmember
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgChatMember
 ---
@@ -62,9 +62,9 @@ Retrieve a conversationMember from a chat.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ReadBasic, ChatMember.ReadWrite, Chat.ReadWrite, ChatMember.Read, ChannelMember.Read.All, ChannelMember.ReadWrite, Chat.Read,  |
+| Delegated (work or school account) | Chat.ReadBasic, ChatMember.ReadWrite, ChatMember.Read, Chat.ReadWrite, Chat.Read,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMember.Read.All, Chat.Manage.Chat, TeamMember.Read.Group, ChatMember.Read.Chat, Chat.ReadWrite.All, ChatMember.ReadWrite.All, Chat.Read.All, ChannelMember.ReadWrite.All, Chat.ReadBasic.All, ChannelMember.Read.All,  |
+| Application | ChatMember.Read.All, TeamMember.Read.Group, ChatMember.ReadWrite.All, ChatMember.Read.Chat, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

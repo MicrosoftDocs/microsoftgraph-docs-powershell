@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserlicense
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Actions
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Set-MgUserLicense
 ---

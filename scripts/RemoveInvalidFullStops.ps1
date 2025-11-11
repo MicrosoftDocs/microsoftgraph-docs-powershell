@@ -77,7 +77,7 @@ function Update-Files {
     $files | ForEach-Object {
         $FilePath = $_.FullName
         # Read the file and remove any full stops at the beginning of a line
-        (Get-Content $FilePath) -replace '^\.', '' | Set-Content $FilePath
+        (Get-Content $FilePath) -replace '^\.', '' -notmatch '### -Proof' | Set-Content $FilePath
     }
 }
 

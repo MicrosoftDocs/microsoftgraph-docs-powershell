@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationendusernotification
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityAttackSimulationEndUserNotification
 ---
@@ -67,7 +67,7 @@ Represents an end user's notification for an attack simulation training.
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityAttackSimulationEndUserNotification -Filter "source eq 'global'" 
+Get-MgSecurityAttackSimulationEndUserNotification
 
 ```
 This example shows how to use the Get-MgSecurityAttackSimulationEndUserNotification Cmdlet.

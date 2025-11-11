@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactphotocontent
 Locale: en-US
 Module Name: Microsoft.Graph.PersonalContacts
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserContactPhotoContent
 ---

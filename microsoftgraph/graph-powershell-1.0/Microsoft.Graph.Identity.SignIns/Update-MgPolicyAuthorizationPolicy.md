@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyAuthorizationPolicy
 ---
@@ -110,7 +110,7 @@ Update-MgPolicyAuthorizationPolicy -BodyParameter $params
 ```
 This example will disable default user role's permission to create applications
 
-### Example 4: Enable default user role to use Self-Serve Password Reset feature
+### Example 4: Enable administrators to use Self-Serve Password Reset feature
 
 ```powershell
 
@@ -123,7 +123,7 @@ $params = @{
 Update-MgPolicyAuthorizationPolicy -BodyParameter $params
 
 ```
-This example will enable default user role to use self-serve password reset feature
+This example enables administrators to use Self-Serve Password Reset feature. To disable this feature, set `allowedToUseSSPR` to `$false`.
 
 ### Example 5: Disable user consent to apps for default user role
 

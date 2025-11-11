@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationqrcodepinmethodstandardqrcode
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode
 ---
@@ -50,9 +50,9 @@ Read the properties and relationships of a qrCode object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All,  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.Read,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All,  |
+| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgServicePrincipalSynchronizationTemplate
 ---
@@ -68,19 +68,6 @@ Preconfigured synchronization settings for a particular application.
 | Delegated (work or school account) | Synchronization.Read.All, Synchronization.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
-
-## EXAMPLES
-### Example
-
-```powershell
-
-Import-Module Microsoft.Graph.Applications
-
-Get-MgServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId
-
-```
-This example shows how to use the Get-MgServicePrincipalSynchronizationTemplate Cmdlet.
-
 
 ## PARAMETERS
 
@@ -600,6 +587,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Get-MgServicePrincipalSynchronizationTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationtemplate)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-templates?view=graph-rest-1.0)
+
+
 
 
 

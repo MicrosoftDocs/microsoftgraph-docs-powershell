@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplace
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlace
 ---
@@ -72,14 +72,6 @@ This cmdlet has the following aliases,
 
 Update the properties of place object, which can be a room or roomList.
 You can identify the room or roomList by specifying the id or emailAddress property.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Place.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

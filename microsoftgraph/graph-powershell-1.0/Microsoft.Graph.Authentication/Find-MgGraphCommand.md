@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Authentication-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/find-mggraphcommand
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Find-MgGraphCommand
 ---

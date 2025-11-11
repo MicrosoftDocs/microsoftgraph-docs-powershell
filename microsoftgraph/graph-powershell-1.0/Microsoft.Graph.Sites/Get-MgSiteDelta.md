@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedelta
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteDelta
 ---
@@ -52,9 +52,9 @@ Any resources marked as deleted should be removed from your local state.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All,  |
+| Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Read.All, Sites.ReadWrite.All,  |
+| Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
 ### Example 1: Initial request

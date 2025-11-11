@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaVirtualEventWebinarRegistration
 ---
@@ -84,6 +84,14 @@ This cmdlet has the following aliases,
 
 Create a registration record for a registrant of a webinar.
 This method registers the person for the webinar.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | VirtualEvent.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | VirtualEventRegistration-Anon.ReadWrite.Chat, VirtualEventRegistration-Anon.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Creating registration record with delegated permission

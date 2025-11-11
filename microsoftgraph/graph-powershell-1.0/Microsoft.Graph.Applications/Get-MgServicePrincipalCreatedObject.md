@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalcreatedobject
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgServicePrincipalCreatedObject
 ---
@@ -65,13 +65,17 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgServicePrincipalCreatedObject Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
+
 Get-MgServicePrincipalCreatedObject -ServicePrincipalId $servicePrincipalId
+
 ```
 This example shows how to use the Get-MgServicePrincipalCreatedObject Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

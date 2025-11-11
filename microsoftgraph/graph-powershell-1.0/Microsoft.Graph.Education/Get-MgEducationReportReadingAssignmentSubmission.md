@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreadingassignmentsubmission
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationReportReadingAssignmentSubmission
 ---
@@ -61,18 +61,28 @@ This cmdlet has the following aliases,
 Details of submitted reading assignments.
 
 ## EXAMPLES
+### Example 1: Get a list of the reading assignment submissions from the last 24 hours
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationReportReadingAssignmentSubmission
 
-### EXAMPLE 2
+```
+This example will get a list of the reading assignment submissions from the last 24 hours
+
+### Example 2: Get a list of the reading assignment submissions for a specific date using $filter
+
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationReportReadingAssignmentSubmission -Filter "submissionDateTime gt 2025-06-10T00:00:00.000Z and submissionDateTime lt 2025-06-11T00:00:00Z"
+Get-MgEducationReportReadingAssignmentSubmission -Filter "submissionDateTime gt 2025-06-10T00:00:00.000Z and submissionDateTime lt 2025-06-11T00:00:00Z" 
+
+```
+This example will get a list of the reading assignment submissions for a specific date using $filter
+
 
 ## PARAMETERS
 

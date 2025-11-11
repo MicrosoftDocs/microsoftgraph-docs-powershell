@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmembercount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTeamChannelMemberCount
 ---
@@ -51,7 +51,7 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.Read.All, ChannelMember.ReadWrite.All, ChannelMember.Read.All,  |
+| Delegated (work or school account) | ChannelMember.Read.All, Group.Read.All, ChannelMember.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChannelMember.Read.Group, ChannelMember.ReadWrite.Group, ChannelMember.ReadWrite.All, ChannelMember.Read.All,  |
 

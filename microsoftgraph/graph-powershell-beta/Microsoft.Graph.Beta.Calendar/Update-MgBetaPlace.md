@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 10/31/2025
+ms.date: 11/10/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlace
 ---
@@ -76,14 +76,6 @@ This cmdlet has the following aliases,
 
 Update the properties of place object that can be a building, floor, section, desk, room, workspace, or roomList.
 You can identify the place by specifying the id property.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Place.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
