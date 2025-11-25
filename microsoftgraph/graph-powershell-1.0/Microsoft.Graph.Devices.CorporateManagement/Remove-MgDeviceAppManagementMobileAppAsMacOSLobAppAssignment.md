@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappasmacoslobappassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 11/10/2025
+ms.date: 11/21/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment
 ---

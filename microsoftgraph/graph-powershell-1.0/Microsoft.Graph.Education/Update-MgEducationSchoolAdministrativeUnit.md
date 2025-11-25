@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschooladministrativeunit
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 11/10/2025
+ms.date: 11/21/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgEducationSchoolAdministrativeUnit
 ---

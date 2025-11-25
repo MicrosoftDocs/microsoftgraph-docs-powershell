@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetagchildtag
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 11/10/2025
+ms.date: 11/21/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaComplianceEdiscoveryCaseTagChildTag
 ---

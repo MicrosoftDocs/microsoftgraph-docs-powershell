@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: 19ae7c97-dd9f-4688-a9b4-f62b3fe5b98b
+Module Guid: 72b8b768-2c14-44c9-81b8-a1f2f508e338
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US

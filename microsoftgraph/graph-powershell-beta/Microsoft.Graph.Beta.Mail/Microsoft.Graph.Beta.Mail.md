@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Mail
-Module Guid: ee96191c-df2a-40b5-a005-c52f22fb7382
+Module Guid: a6a27a35-2ac5-457d-8b5f-6743c14e7847
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.mail/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

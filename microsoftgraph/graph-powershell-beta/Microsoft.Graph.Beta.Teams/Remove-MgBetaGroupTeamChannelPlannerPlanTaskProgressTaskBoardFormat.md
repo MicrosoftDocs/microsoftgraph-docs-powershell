@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamchannelplannerplantaskprogresstaskboardformat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 11/10/2025
+ms.date: 11/21/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaGroupTeamChannelPlannerPlanTaskProgressTaskBoardFormat
 ---
