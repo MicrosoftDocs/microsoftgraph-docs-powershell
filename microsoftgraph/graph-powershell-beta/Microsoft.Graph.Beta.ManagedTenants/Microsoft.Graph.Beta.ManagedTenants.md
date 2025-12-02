@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-Module Guid: cfb500c9-877f-49a4-9b22-6d4afabbf9da
+Module Guid: 240e83c4-2eb1-421a-a355-5f28b8e24670
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.managedtenants/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

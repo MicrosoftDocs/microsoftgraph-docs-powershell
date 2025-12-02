@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupassignmentschedulerequest
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 11/21/2025
+ms.date: 11/28/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
 ---

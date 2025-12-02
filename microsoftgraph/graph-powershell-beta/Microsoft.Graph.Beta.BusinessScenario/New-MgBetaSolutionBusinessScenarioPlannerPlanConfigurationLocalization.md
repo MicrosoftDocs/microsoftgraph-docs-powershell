@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 11/21/2025
+ms.date: 11/28/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization
 ---

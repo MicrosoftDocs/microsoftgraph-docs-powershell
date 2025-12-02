@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CrossDeviceExperiences-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitem
 Locale: en-US
 Module Name: Microsoft.Graph.CrossDeviceExperiences
-ms.date: 11/21/2025
+ms.date: 11/28/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserActivityHistoryItem
 ---
