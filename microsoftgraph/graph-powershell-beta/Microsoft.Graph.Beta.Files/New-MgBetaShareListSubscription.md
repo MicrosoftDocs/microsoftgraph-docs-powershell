@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistsubscription
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 11/28/2025
+ms.date: 12/05/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaShareListSubscription
 ---

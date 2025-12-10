@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedapppolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Functions
-ms.date: 11/28/2025
+ms.date: 12/05/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserManagedAppPolicy
 ---
