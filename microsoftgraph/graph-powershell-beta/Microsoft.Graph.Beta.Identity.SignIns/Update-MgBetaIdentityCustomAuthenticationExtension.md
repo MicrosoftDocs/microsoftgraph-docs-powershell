@@ -15,6 +15,9 @@ title: Update-MgBetaIdentityCustomAuthenticationExtension
 
 Update the navigation property customAuthenticationExtensions in identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityCustomAuthenticationExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

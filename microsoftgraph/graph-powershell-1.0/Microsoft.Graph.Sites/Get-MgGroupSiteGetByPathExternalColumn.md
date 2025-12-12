@@ -15,6 +15,9 @@ title: Get-MgGroupSiteGetByPathExternalColumn
 
 Get externalColumns from groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathExternalColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

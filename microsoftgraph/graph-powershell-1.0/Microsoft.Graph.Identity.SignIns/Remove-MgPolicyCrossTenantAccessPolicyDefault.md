@@ -15,6 +15,9 @@ title: Remove-MgPolicyCrossTenantAccessPolicyDefault
 
 Delete navigation property default for policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

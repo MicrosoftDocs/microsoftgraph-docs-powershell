@@ -15,6 +15,9 @@ title: Remove-MgBetaDriveItemThumbnail
 
 Delete navigation property thumbnails for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveItemThumbnail](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemThumbnail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

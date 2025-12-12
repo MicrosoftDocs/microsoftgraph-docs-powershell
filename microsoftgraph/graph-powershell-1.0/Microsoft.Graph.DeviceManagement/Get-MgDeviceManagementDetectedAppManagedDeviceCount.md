@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementDetectedAppManagedDeviceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDetectedAppManagedDeviceCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDetectedAppManagedDeviceCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

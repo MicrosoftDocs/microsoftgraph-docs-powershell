@@ -15,6 +15,9 @@ title: New-MgDirectoryRoleScopedMember
 
 Create new navigation property to scopedMembers for directoryRoles
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleScopedMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
