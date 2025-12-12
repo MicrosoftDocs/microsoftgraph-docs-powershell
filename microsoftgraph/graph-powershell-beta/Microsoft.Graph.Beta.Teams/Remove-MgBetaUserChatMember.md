@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatmember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserChatMember
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaUserChatMember
 ## SYNOPSIS
 
 Delete navigation property members for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -91,6 +88,16 @@ This cmdlet has the following aliases,
 
 Delete navigation property members for users
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -122,7 +129,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -516,7 +523,7 @@ HelpMessage: ''
 
 ### -Values
 
-
+.
 To construct, see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
@@ -602,7 +609,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsWr2QdoUsersUserIdChatsChatIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsWr2QdoUsersUserIdChatsChatIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Values <IMicrosoftGraphConversationMember[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -616,7 +623,7 @@ An Out-of-tenant external member is assigned the owner role.
     [VisibleHistoryStartDateTime <DateTime?>]: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -678,28 +685,5 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserChatMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatmember)
+- [](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/start-mgbetadevicemanagementmanageddeviceconfigurationmanageraction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: Start-MgBetaDeviceManagementManagedDeviceConfigurationManagerAction
 ---
@@ -74,13 +74,15 @@ This cmdlet has the following aliases,
 
 Trigger action on ConfigurationManager client
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -113,7 +115,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -490,17 +492,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsIgvhbiDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsIgvhbiDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConfigurationManagerAction <IMicrosoftGraphConfigurationManagerAction>]: Parameter for action triggerConfigurationManagerAction
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Action <ConfigurationManagerActionType?>]: Action type on Configuration Manager client
 
-CONFIGURATIONMANAGERACTION `<IMicrosoftGraphConfigurationManagerAction>`: Parameter for action triggerConfigurationManagerAction
+CONFIGURATIONMANAGERACTION <IMicrosoftGraphConfigurationManagerAction>: Parameter for action triggerConfigurationManagerAction
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Action <ConfigurationManagerActionType?>]: Action type on Configuration Manager client
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -612,27 +614,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Start-MgBetaDeviceManagementManagedDeviceConfigurationManagerAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/start-mgbetadevicemanagementmanageddeviceconfigurationmanageraction)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/start-mgbetadevicemanagementmanageddeviceconfigurationmanageraction)

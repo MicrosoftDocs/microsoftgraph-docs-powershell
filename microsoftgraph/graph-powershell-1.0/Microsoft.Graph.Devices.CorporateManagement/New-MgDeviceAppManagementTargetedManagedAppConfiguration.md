@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementtargetedmanagedappconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceAppManagementTargetedManagedAppConfiguration
 ---
@@ -13,10 +13,7 @@ title: New-MgDeviceAppManagementTargetedManagedAppConfiguration
 
 ## SYNOPSIS
 
-Create a new targetedManagedAppConfiguration object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
+Create new navigation property to targetedManagedAppConfigurations for deviceAppManagement
 
 ## SYNTAX
 
@@ -51,20 +48,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new targetedManagedAppConfiguration object.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
+Create new navigation property to targetedManagedAppConfigurations for deviceAppManagement
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -85,10 +73,6 @@ $params = @{
 }
 
 New-MgDeviceAppManagementTargetedManagedAppConfiguration -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceAppManagementTargetedManagedAppConfiguration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -648,7 +632,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphTargetedManagedAppConfiguration>`: Configuration used to deliver a set of custom settings as-is to all users in the targeted security group
+BODYPARAMETER <IMicrosoftGraphTargetedManagedAppConfiguration>: Configuration used to deliver a set of custom settings as-is to all users in the targeted security group
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomSettings <IMicrosoftGraphKeyValuePair[]>]: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service
     [Name <String>]: Name for this key-value pair
@@ -676,12 +660,12 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [ConfigurationDeployedUserCount <Int32?>]: Not yet documented
-    [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: Not yet documented
+    [ConfigurationDeployedUserCount <Int32?>]: 
+    [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: 
       [ConfigurationAppliedUserCount <Int32?>]: Number of users the policy is applied.
       [MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]: The identifier for a mobile app.
-    [DisplayName <String>]: Not yet documented
-    [LastRefreshTime <DateTime?>]: Not yet documented
+    [DisplayName <String>]: 
+    [LastRefreshTime <DateTime?>]: 
     [Version <String>]: Version of the entity.
   [IsAssigned <Boolean?>]: Indicates if the policy is deployed to any inclusion groups or not.
 
@@ -689,43 +673,20 @@ CUSTOMSETTINGS <IMicrosoftGraphKeyValuePair[]>: A set of string key and string v
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-DEPLOYMENTSUMMARY `<IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+DEPLOYMENTSUMMARY <IMicrosoftGraphManagedAppPolicyDeploymentSummary>: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [ConfigurationDeployedUserCount <Int32?>]: Not yet documented
-  [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: Not yet documented
+  [ConfigurationDeployedUserCount <Int32?>]: 
+  [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: 
     [ConfigurationAppliedUserCount <Int32?>]: Number of users the policy is applied.
     [MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]: The identifier for a mobile app.
       [(Any) <Object>]: This indicates any property can be added to this object.
-  [DisplayName <String>]: Not yet documented
-  [LastRefreshTime <DateTime?>]: Not yet documented
+  [DisplayName <String>]: 
+  [LastRefreshTime <DateTime?>]: 
   [Version <String>]: Version of the entity.
 
 
 ## RELATED LINKS
 
-- [New-MgDeviceAppManagementTargetedManagedAppConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementtargetedmanagedappconfiguration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-create?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementtargetedmanagedappconfiguration)

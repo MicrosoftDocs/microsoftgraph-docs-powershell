@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchadditionalsource
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource
 ---
@@ -14,9 +14,6 @@ title: Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource
 ## SYNOPSIS
 
 Adds an additional source to the eDiscovery search.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,17 +59,12 @@ This cmdlet has the following aliases,
 Adds an additional source to the eDiscovery search.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
-
-```
-This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource Cmdlet.
-
 
 ## PARAMETERS
 
@@ -588,7 +580,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -621,6 +613,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [HostPortId <String>]: The unique identifier of hostPort
   [HostSslCertificateId <String>]: The unique identifier of hostSslCertificate
   [HostTrackerId <String>]: The unique identifier of hostTracker
+  [IdentityAccountsId <String>]: The unique identifier of identityAccounts
   [IncidentId <String>]: The unique identifier of incident
   [IntelligenceProfileId <String>]: The unique identifier of intelligenceProfile
   [IntelligenceProfileIndicatorId <String>]: The unique identifier of intelligenceProfileIndicator
@@ -638,6 +631,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [SecureScoreId <String>]: The unique identifier of secureScore
   [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
   [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [SensorCandidateId <String>]: The unique identifier of sensorCandidate
   [SensorId <String>]: The unique identifier of sensor
   [SimulationAutomationId <String>]: The unique identifier of simulationAutomation
   [SimulationAutomationRunId <String>]: The unique identifier of simulationAutomationRun
@@ -661,27 +655,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchadditionalsource)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverysearch-list-additionalsources?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchadditionalsource)
+- [](https://learn.microsoft.com/graph/api/security-ediscoverysearch-list-additionalsources?view=graph-rest-1.0)

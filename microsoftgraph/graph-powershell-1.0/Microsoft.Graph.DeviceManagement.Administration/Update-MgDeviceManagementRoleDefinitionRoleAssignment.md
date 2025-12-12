@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinitionroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementRoleDefinitionRoleAssignment
 ---
@@ -13,10 +13,7 @@ title: Update-MgDeviceManagementRoleDefinitionRoleAssignment
 
 ## SYNOPSIS
 
-Update the properties of a roleAssignment object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-beta)
+Update the navigation property roleAssignments in deviceManagement
 
 ## SYNTAX
 
@@ -73,20 +70,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a roleAssignment object.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+Update the navigation property roleAssignments in deviceManagement
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -100,10 +88,6 @@ $params = @{
 }
 
 Update-MgDeviceManagementRoleDefinitionRoleAssignment -RoleDefinitionId $roleDefinitionId -RoleAssignmentId $roleAssignmentId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceManagementRoleDefinitionRoleAssignment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -210,7 +194,8 @@ HelpMessage: ''
 
 ### -Description
 
-Description of the Role Assignment.
+Indicates the description of the role assignment.
+For example: 'All administrators, employees and scope tags associated with the Houston office.' Max length is 1024 characters.
 
 ```yaml
 Type: System.String
@@ -237,7 +222,9 @@ HelpMessage: ''
 
 ### -DisplayName
 
-The display or friendly name of the role Assignment.
+Indicates the display name of the role assignment.
+For example: 'Houston administrators and users'.
+Max length is 128 characters.
 
 ```yaml
 Type: System.String
@@ -446,8 +433,8 @@ HelpMessage: ''
 
 ### -ResourceScopes
 
-List of ids of role scope member security groups.
-These are IDs from Azure Active Directory.
+Indicates the list of resource scope security group Entra IDs.
+For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
 
 ```yaml
 Type: System.String[]
@@ -638,17 +625,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRoleAssignment>`: The Role Assignment resource.
+BODYPARAMETER <IMicrosoftGraphRoleAssignment>: The Role Assignment resource.
 Role assignments tie together a role definition with members and scopes.
 There can be one or more role assignments per role.
 This applies to custom and built-in roles.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Description <String>]: Description of the Role Assignment.
-  [DisplayName <String>]: The display or friendly name of the role Assignment.
-  [ResourceScopes <String[]>]: List of ids of role scope member security groups.
- These are IDs from Azure Active Directory.
+  [Description <String>]: Indicates the description of the role assignment.
+For example: 'All administrators, employees and scope tags associated with the Houston office.' Max length is 1024 characters.
+  [DisplayName <String>]: Indicates the display name of the role assignment.
+For example: 'Houston administrators and users'.
+Max length is 128 characters.
+  [ResourceScopes <String[]>]: Indicates the list of resource scope security group Entra IDs.
+For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
   [RoleDefinition <IMicrosoftGraphRoleDefinition>]: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
@@ -670,7 +660,7 @@ These must match the actionName that is defined as part of the rolePermission.
         [AllowedResourceActions <String[]>]: Allowed Actions
         [NotAllowedResourceActions <String[]>]: Not Allowed Actions.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -692,14 +682,13 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [ResourceOperationId <String>]: The unique identifier of resourceOperation
   [RoleAssignmentId <String>]: The unique identifier of roleAssignment
   [RoleDefinitionId <String>]: The unique identifier of roleDefinition
-  [TelecomExpenseManagementPartnerId <String>]: The unique identifier of telecomExpenseManagementPartner
   [TermsAndConditionsAcceptanceStatusId <String>]: The unique identifier of termsAndConditionsAcceptanceStatus
   [TermsAndConditionsAssignmentId <String>]: The unique identifier of termsAndConditionsAssignment
   [TermsAndConditionsId <String>]: The unique identifier of termsAndConditions
   [UserId <String>]: The unique identifier of user
   [UserPrincipalName <String>]: Alternate key of user
 
-ROLEDEFINITION `<IMicrosoftGraphRoleDefinition>`: The Role Definition resource.
+ROLEDEFINITION <IMicrosoftGraphRoleDefinition>: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
 There are two types of roles, built-in and custom.
@@ -716,10 +705,13 @@ Set to True if it is built-in, or set to False if it is a custom role definition
   [RoleAssignments <IMicrosoftGraphRoleAssignment[]>]: List of Role assignments for this role definition.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [Description <String>]: Description of the Role Assignment.
-    [DisplayName <String>]: The display or friendly name of the role Assignment.
-    [ResourceScopes <String[]>]: List of ids of role scope member security groups.
- These are IDs from Azure Active Directory.
+    [Description <String>]: Indicates the description of the role assignment.
+For example: 'All administrators, employees and scope tags associated with the Houston office.' Max length is 1024 characters.
+    [DisplayName <String>]: Indicates the display name of the role assignment.
+For example: 'Houston administrators and users'.
+Max length is 128 characters.
+    [ResourceScopes <String[]>]: Indicates the list of resource scope security group Entra IDs.
+For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
     [RoleDefinition <IMicrosoftGraphRoleDefinition>]: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
@@ -736,27 +728,4 @@ These must match the actionName that is defined as part of the rolePermission.
 
 ## RELATED LINKS
 
-- [Update-MgDeviceManagementRoleDefinitionRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinitionroleassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinitionroleassignment)

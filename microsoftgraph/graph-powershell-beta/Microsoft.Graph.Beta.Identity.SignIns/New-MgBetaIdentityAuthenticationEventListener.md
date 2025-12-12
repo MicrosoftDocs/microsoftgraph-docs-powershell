@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityAuthenticationEventListener
 ---
@@ -16,9 +16,6 @@ title: New-MgBetaIdentityAuthenticationEventListener
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityAuthenticationEventListener?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -26,8 +23,8 @@ You can create one of the following subtypes that are derived from authenticatio
 ```
 New-MgBetaIdentityAuthenticationEventListener [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-AuthenticationEventsFlowId <string>]
- [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Id <string>] [-Priority <int>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-DisplayName <string>] [-Id <string>]
+ [-Priority <int>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -52,18 +49,9 @@ This cmdlet has the following aliases,
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EventListener.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EventListener.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create an onTokenIssuanceStartListener object
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -90,12 +78,7 @@ $params = @{
 
 New-MgBetaIdentityAuthenticationEventListener -BodyParameter $params
 
-```
-This example will create an ontokenissuancestartlistener object
-
-### Example 2: Create an onAttributeCollectionStartListener object
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -122,12 +105,7 @@ $params = @{
 
 New-MgBetaIdentityAuthenticationEventListener -BodyParameter $params
 
-```
-This example will create an onattributecollectionstartlistener object
-
-### Example 3: Create an onAttributeCollectionSubmitListener object
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -153,10 +131,6 @@ $params = @{
 }
 
 New-MgBetaIdentityAuthenticationEventListener -BodyParameter $params
-
-```
-This example will create an onattributecollectionsubmitlistener object
-
 
 ## PARAMETERS
 
@@ -279,6 +253,27 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DisplayName
+
+The display name of the listener.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -533,7 +528,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationEventListener>`: authenticationEventListener
+BODYPARAMETER <IMicrosoftGraphAuthenticationEventListener>: authenticationEventListener
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -546,10 +541,11 @@ Read-only.
 This property must be set to false for listener of type onTokenIssuanceStartListener.
       [IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication[]>]: 
         [AppId <String>]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
+  [DisplayName <String>]: The display name of the listener.
   [Priority <Int32?>]: The priority of this handler.
 Between 0 (lower priority) and 1000 (higher priority).
 
-CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
+CONDITIONS <IMicrosoftGraphAuthenticationConditions>: authenticationConditions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Applications <IMicrosoftGraphAuthenticationConditionsApplications>]: authenticationConditionsApplications
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -561,27 +557,5 @@ This property must be set to false for listener of type onTokenIssuanceStartList
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityAuthenticationEventListener](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener)
+- [](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-beta)

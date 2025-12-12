@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryadministrativeunit
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryAdministrativeUnit
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDirectoryAdministrativeUnit
 ## SYNOPSIS
 
 Create new navigation property to administrativeUnits for directory
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnit?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,18 +51,10 @@ This cmdlet has the following aliases,
 
 Create new navigation property to administrativeUnits for directory
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AdministrativeUnit.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AdministrativeUnit.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
@@ -75,11 +64,6 @@ $params = @{
 }
 
 New-MgBetaDirectoryAdministrativeUnit -BodyParameter $params
-```
-This example shows how to use the New-MgBetaDirectoryAdministrativeUnit Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -193,7 +177,7 @@ HelpMessage: ''
 
 ### -DeletedMembers
 
-
+.
 To construct, see NOTES section for DELETEDMEMBERS properties and create a hash table.
 
 ```yaml
@@ -215,7 +199,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -236,7 +220,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -365,7 +349,7 @@ HelpMessage: ''
 
 ### -IsMemberManagementRestricted
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -409,7 +393,7 @@ HelpMessage: ''
 
 ### -MembershipRule
 
-
+.
 
 ```yaml
 Type: System.String
@@ -430,7 +414,7 @@ HelpMessage: ''
 
 ### -MembershipRuleProcessingState
 
-
+.
 
 ```yaml
 Type: System.String
@@ -451,7 +435,7 @@ HelpMessage: ''
 
 ### -MembershipType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -579,7 +563,7 @@ HelpMessage: ''
 
 ### -Visibility
 
-
+.
 
 ```yaml
 Type: System.String
@@ -650,7 +634,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAdministrativeUnit>`: administrativeUnit
+BODYPARAMETER <IMicrosoftGraphAdministrativeUnit>: administrativeUnit
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -681,9 +665,10 @@ Read-only.
     [RoleMemberInfo <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Visibility <String>]: 
 
 DELETEDMEMBERS <IMicrosoftGraphDirectoryObject[]>: .
@@ -712,33 +697,12 @@ Read-only.
   [RoleMemberInfo <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
 
 ## RELATED LINKS
 
-- [New-MgBetaDirectoryAdministrativeUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryadministrativeunit)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryadministrativeunit)

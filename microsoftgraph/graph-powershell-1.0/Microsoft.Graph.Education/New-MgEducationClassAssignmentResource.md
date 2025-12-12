@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgEducationClassAssignmentResource
 ---
@@ -17,16 +17,14 @@ Create an assignment resource.
 Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentResource?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 
 ```
 New-MgEducationClassAssignmentResource -EducationAssignmentId <string> -EducationClassId <string>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DistributeForStudentWork]
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-DependentResources <IMicrosoftGraphEducationAssignmentResource[]>] [-DistributeForStudentWork]
  [-Id <string>] [-Resource <IMicrosoftGraphEducationResource>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -47,7 +45,8 @@ New-MgEducationClassAssignmentResource -EducationAssignmentId <string> -Educatio
 
 ```
 New-MgEducationClassAssignmentResource -InputObject <IEducationIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DistributeForStudentWork]
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-DependentResources <IMicrosoftGraphEducationAssignmentResource[]>] [-DistributeForStudentWork]
  [-Id <string>] [-Resource <IMicrosoftGraphEducationResource>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -75,18 +74,9 @@ Create an assignment resource.
 Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create an educationLinkResource
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
@@ -102,12 +92,7 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-```
-This example will create an educationlinkresource
-
-### Example 2: Create an educationWordResource
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Education
 
@@ -122,12 +107,7 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-```
-This example will create an educationwordresource
-
-### Example 3: Create an educationFileResource
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Education
 
@@ -141,12 +121,7 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-```
-This example will create an educationfileresource
-
-### Example 4: Create an educationExcelResource
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Education
 
@@ -161,12 +136,7 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-```
-This example will create an educationexcelresource
-
-### Example 5: Create an educationPowerPointResource
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Education
 
@@ -181,12 +151,7 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-```
-This example will create an educationpowerpointresource
-
-### Example 6: Create an educationMediaResource
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Education
 
@@ -201,12 +166,7 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-```
-This example will create an educationmediaresource
-
-### Example 7: Create an educationTeamsAppResource
-
-```powershell
+### EXAMPLE 7
 
 Import-Module Microsoft.Graph.Education
 
@@ -223,10 +183,6 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-
-```
-This example will create an educationteamsappresource
-
 
 ## PARAMETERS
 
@@ -318,6 +274,34 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DependentResources
+
+A collection of assignment resources that depend on the parent educationAssignmentResource.
+To construct, see NOTES section for DEPENDENTRESOURCES properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentResource[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -698,10 +682,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationAssignmentResource>`: educationAssignmentResource
+BODYPARAMETER <IMicrosoftGraphEducationAssignmentResource>: educationAssignmentResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [DependentResources <IMicrosoftGraphEducationAssignmentResource[]>]: A collection of assignment resources that depend on the parent educationAssignmentResource.
   [DistributeForStudentWork <Boolean?>]: Indicates whether this resource should be copied to each student submission for modification and submission.
 Required
   [Resource <IMicrosoftGraphEducationResource>]: educationResource
@@ -719,12 +704,35 @@ For example, in the access reviews decisions API, this property might record the
     [DisplayName <String>]: Display name of resource.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+DEPENDENTRESOURCES <IMicrosoftGraphEducationAssignmentResource[]>: A collection of assignment resources that depend on the parent educationAssignmentResource.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DependentResources <IMicrosoftGraphEducationAssignmentResource[]>]: A collection of assignment resources that depend on the parent educationAssignmentResource.
+  [DistributeForStudentWork <Boolean?>]: Indicates whether this resource should be copied to each student submission for modification and submission.
+Required
+  [Resource <IMicrosoftGraphEducationResource>]: educationResource
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Application <IMicrosoftGraphIdentity>]: identity
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+      [Device <IMicrosoftGraphIdentity>]: identity
+      [User <IMicrosoftGraphIdentity>]: identity
+    [DisplayName <String>]: Display name of resource.
+    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
+  [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
   [EducationCategoryId <String>]: The unique identifier of educationCategory
   [EducationClassId <String>]: The unique identifier of educationClass
   [EducationGradingCategoryId <String>]: The unique identifier of educationGradingCategory
+  [EducationGradingSchemeId <String>]: The unique identifier of educationGradingScheme
   [EducationModuleId <String>]: The unique identifier of educationModule
   [EducationModuleResourceId <String>]: The unique identifier of educationModuleResource
   [EducationOutcomeId <String>]: The unique identifier of educationOutcome
@@ -732,11 +740,14 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   [EducationSchoolId <String>]: The unique identifier of educationSchool
   [EducationSubmissionId <String>]: The unique identifier of educationSubmission
   [EducationSubmissionResourceId <String>]: The unique identifier of educationSubmissionResource
+  [EducationSubmissionResourceId1 <String>]: The unique identifier of educationSubmissionResource
   [EducationUserId <String>]: The unique identifier of educationUser
   [ReadingAssignmentSubmissionId <String>]: The unique identifier of readingAssignmentSubmission
+  [ReadingCoachPassageId <String>]: The unique identifier of readingCoachPassage
   [ReflectCheckInResponseId <String>]: The unique identifier of reflectCheckInResponse
+  [SpeakerAssignmentSubmissionId <String>]: The unique identifier of speakerAssignmentSubmission
 
-RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
+RESOURCE <IMicrosoftGraphEducationResource>: educationResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -754,27 +765,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgEducationClassAssignmentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentresource)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-post-resources?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentresource)
+- [](https://learn.microsoft.com/graph/api/educationassignment-post-resources?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: Set-MgTeamSchedule
 ---
@@ -14,13 +14,10 @@ title: Set-MgTeamSchedule
 ## SYNOPSIS
 
 Create or replace a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).When clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\r\nWhen clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamSchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -94,23 +91,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create or replace a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).When clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\r\nWhen clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Schedule.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
@@ -120,10 +108,6 @@ $params = @{
 }
 
 Set-MgTeamSchedule -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the Set-MgTeamSchedule Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1147,7 +1131,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSchedule>`: schedule
+BODYPARAMETER <IMicrosoftGraphSchedule>: schedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1393,7 +1377,7 @@ Read-only.
     [ContentType <String>]: bodyType
   [SharedDayNote <IMicrosoftGraphItemBody>]: itemBody
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1650,7 +1634,7 @@ Read-only.
   [State <String>]: timeCardState
   [UserId <String>]: User ID to which the timeCard belongs.
 
-TIMECLOCKSETTINGS `<IMicrosoftGraphTimeClockSettings>`: timeClockSettings
+TIMECLOCKSETTINGS <IMicrosoftGraphTimeClockSettings>: timeClockSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApprovedLocation <IMicrosoftGraphGeoCoordinates>]: geoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1739,27 +1723,5 @@ Required.
 
 ## RELATED LINKS
 
-- [Set-MgTeamSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule)
+- [](https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityIdentity
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSecurityIdentity
 ## SYNOPSIS
 
 Update the navigation property identities in security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityIdentity](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIdentity?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property identities in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -248,7 +255,7 @@ HelpMessage: ''
 
 ### -IdentityAccounts
 
-
+.
 To construct, see NOTES section for IDENTITYACCOUNTS properties and create a hash table.
 
 ```yaml
@@ -427,7 +434,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIdentityContainer>`: identityContainer
+BODYPARAMETER <IMicrosoftGraphSecurityIdentityContainer>: identityContainer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -584,27 +591,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityIdentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentity)

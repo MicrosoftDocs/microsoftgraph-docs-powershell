@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriveitemsensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaGroupDriveItemSensitivityLabel
 ---
@@ -14,9 +14,6 @@ title: Set-MgBetaGroupDriveItemSensitivityLabel
 ## SYNOPSIS
 
 Invoke action assignSensitivityLabel
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Set-MgGroupDriveItemSensitivityLabel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action assignSensitivityLabel
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -133,7 +140,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -376,7 +383,7 @@ HelpMessage: ''
 
 ### -JustificationText
 
-
+.
 
 ```yaml
 Type: System.String
@@ -509,7 +516,7 @@ HelpMessage: ''
 
 ### -SensitivityLabelId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -590,13 +597,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1EhooezGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1EhooezGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
   [JustificationText <String>]: 
   [SensitivityLabelId <String>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -626,27 +633,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaGroupDriveItemSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriveitemsensitivitylabel)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriveitemsensitivitylabel)

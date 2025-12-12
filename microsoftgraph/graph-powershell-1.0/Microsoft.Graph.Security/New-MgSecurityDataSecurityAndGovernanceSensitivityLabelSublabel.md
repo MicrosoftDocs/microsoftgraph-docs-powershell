@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritydatasecurityandgovernancesensitivitylabelsublabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel
 ## SYNOPSIS
 
 Create new navigation property to sublabels for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelSublabel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,6 +74,16 @@ This cmdlet has the following aliases,
 
 Create new navigation property to sublabels for security
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -ActionSource
@@ -135,7 +142,7 @@ HelpMessage: ''
 
 ### -AutoTooltip
 
-
+.
 
 ```yaml
 Type: System.String
@@ -233,7 +240,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -260,7 +267,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -406,7 +413,7 @@ HelpMessage: ''
 
 ### -IsDefault
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -433,7 +440,7 @@ HelpMessage: ''
 
 ### -IsEndpointProtectionEnabled
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -460,7 +467,7 @@ HelpMessage: ''
 
 ### -IsScopedToUser
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -487,7 +494,7 @@ HelpMessage: ''
 
 ### -Locale
 
-
+.
 
 ```yaml
 Type: System.String
@@ -514,7 +521,7 @@ HelpMessage: ''
 
 ### -Name
 
-
+.
 
 ```yaml
 Type: System.String
@@ -541,7 +548,7 @@ HelpMessage: ''
 
 ### -Priority
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -708,7 +715,7 @@ HelpMessage: ''
 
 ### -Sublabels
 
-
+.
 To construct, see NOTES section for SUBLABELS properties and create a hash table.
 
 ```yaml
@@ -736,7 +743,7 @@ HelpMessage: ''
 
 ### -ToolTip
 
-
+.
 
 ```yaml
 Type: System.String
@@ -817,7 +824,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSensitivityLabel>`: sensitivityLabel
+BODYPARAMETER <IMicrosoftGraphSensitivityLabel>: sensitivityLabel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -841,7 +848,7 @@ Read-only.
   [Sublabels <IMicrosoftGraphSensitivityLabel[]>]: 
   [ToolTip <String>]: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -874,6 +881,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [HostPortId <String>]: The unique identifier of hostPort
   [HostSslCertificateId <String>]: The unique identifier of hostSslCertificate
   [HostTrackerId <String>]: The unique identifier of hostTracker
+  [IdentityAccountsId <String>]: The unique identifier of identityAccounts
   [IncidentId <String>]: The unique identifier of incident
   [IntelligenceProfileId <String>]: The unique identifier of intelligenceProfile
   [IntelligenceProfileIndicatorId <String>]: The unique identifier of intelligenceProfileIndicator
@@ -891,6 +899,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [SecureScoreId <String>]: The unique identifier of secureScore
   [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
   [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [SensorCandidateId <String>]: The unique identifier of sensorCandidate
   [SensorId <String>]: The unique identifier of sensor
   [SimulationAutomationId <String>]: The unique identifier of simulationAutomation
   [SimulationAutomationRunId <String>]: The unique identifier of simulationAutomationRun
@@ -911,7 +920,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-RIGHTS `<IMicrosoftGraphUsageRightsIncluded>`: usageRightsIncluded
+RIGHTS <IMicrosoftGraphUsageRightsIncluded>: usageRightsIncluded
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -945,27 +954,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritydatasecurityandgovernancesensitivitylabelsublabel)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritydatasecurityandgovernancesensitivitylabelsublabel)

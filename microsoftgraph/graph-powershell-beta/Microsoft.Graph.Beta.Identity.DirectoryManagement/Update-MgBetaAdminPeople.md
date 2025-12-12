@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminPeople
 ---
@@ -50,6 +50,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property people in admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -515,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPeopleAdminSettings>`: peopleAdminSettings
+BODYPARAMETER <IMicrosoftGraphPeopleAdminSettings>: peopleAdminSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -579,7 +589,7 @@ Read-only.
     [IsEnabledInOrganization <Boolean?>]: true to enable pronouns in the organization; otherwise, false.
 The default value is false, and pronouns are disabled.
 
-ITEMINSIGHTS `<IMicrosoftGraphInsightsSettings>`: insightsSettings
+ITEMINSIGHTS <IMicrosoftGraphInsightsSettings>: insightsSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -590,14 +600,14 @@ Optional.
 The default value is true.
 Optional.
 
-NAMEPRONUNCIATION `<IMicrosoftGraphNamePronunciationSettings>`: namePronunciationSettings
+NAMEPRONUNCIATION <IMicrosoftGraphNamePronunciationSettings>: namePronunciationSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [IsEnabledInOrganization <Boolean?>]: true to enable name pronunciation in the organization; otherwise, false.
 The default value is false.
 
-PHOTOUPDATESETTINGS `<IMicrosoftGraphPhotoUpdateSettings>`: photoUpdateSettings
+PHOTOUPDATESETTINGS <IMicrosoftGraphPhotoUpdateSettings>: photoUpdateSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -638,7 +648,7 @@ Read-only.
   [SourceId <String>]: Profile source identifier used as an alternate key.
   [WebUrl <String>]: Web URL of the profile source that directs users to the page view of profile data.
 
-PRONOUNS `<IMicrosoftGraphPronounsSettings>`: pronounsSettings
+PRONOUNS <IMicrosoftGraphPronounsSettings>: pronounsSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -648,27 +658,4 @@ The default value is false, and pronouns are disabled.
 
 ## RELATED LINKS
 
-- [Update-MgBetaAdminPeople](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople)

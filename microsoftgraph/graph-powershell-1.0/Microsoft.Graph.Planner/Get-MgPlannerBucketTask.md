@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbuckettask
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlannerBucketTask
 ---
@@ -14,9 +14,6 @@ title: Get-MgPlannerBucketTask
 ## SYNOPSIS
 
 Retrieve a list of plannerTask objects associated to a plannerBucket object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlannerBucketTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucketTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,26 +37,13 @@ This cmdlet has the following aliases,
 
 Retrieve a list of plannerTask objects associated to a plannerBucket object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.ReadWrite.All, Group.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Planner
 
 Get-MgPlannerBucketTask -PlannerBucketId $plannerBucketId
-
-```
-This example shows how to use the Get-MgPlannerBucketTask Cmdlet.
-
 
 ## PARAMETERS
 
@@ -492,27 +476,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgPlannerBucketTask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbuckettask)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerbucket-list-tasks?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbuckettask)
+- [](https://learn.microsoft.com/graph/api/plannerbucket-list-tasks?view=graph-rest-1.0)

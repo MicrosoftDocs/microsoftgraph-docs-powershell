@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistworkspace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 12/05/2025
+ms.date: 12/12/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlaceAsRoomListWorkspace
 ---
@@ -23,8 +23,9 @@ Update the navigation property workspaces in places
 Update-MgBetaPlaceAsRoomListWorkspace -PlaceId <string> -WorkspaceId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <string>] [-Capacity <int>]
- [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-DisplayDeviceName <string>] [-DisplayName <string>]
- [-EmailAddress <string>] [-FloorLabel <string>] [-FloorNumber <int>]
+ [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-Children <IMicrosoftGraphPlace[]>]
+ [-DisplayDeviceName <string>] [-DisplayName <string>] [-EmailAddress <string>]
+ [-FloorLabel <string>] [-FloorNumber <int>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
  [-Label <string>] [-Mode <hashtable>] [-Nickname <string>] [-ParentId <string>] [-Phone <string>]
  [-PlaceId1 <string>] [-Tags <string[]>] [-Break] [-Headers <IDictionary>]
@@ -39,8 +40,9 @@ Update-MgBetaPlaceAsRoomListWorkspace -PlaceId <string> -WorkspaceId <string>
 Update-MgBetaPlaceAsRoomListWorkspace -InputObject <ICalendarIdentity> [-PlaceId <string>]
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <string>] [-Capacity <int>]
- [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-DisplayDeviceName <string>] [-DisplayName <string>]
- [-EmailAddress <string>] [-FloorLabel <string>] [-FloorNumber <int>]
+ [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-Children <IMicrosoftGraphPlace[]>]
+ [-DisplayDeviceName <string>] [-DisplayName <string>] [-EmailAddress <string>]
+ [-FloorLabel <string>] [-FloorNumber <int>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
  [-Label <string>] [-Mode <hashtable>] [-Nickname <string>] [-ParentId <string>] [-Phone <string>]
  [-Tags <string[]>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
@@ -76,6 +78,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property workspaces in places
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -244,6 +256,34 @@ To construct, see NOTES section for CHECKINS properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCheckInClaim[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Children
+
+.
+To construct, see NOTES section for CHILDREN properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlace[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -768,7 +808,7 @@ HelpMessage: ''
 
 ### -PlaceId1
 
-An alternate immutable unique identifier of the place.
+An alternate immutable unique identifier of the workspace.
 Read-only.
 
 ```yaml
@@ -983,7 +1023,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -994,7 +1034,7 @@ It's a free-format string value, for example, 'United States'.
   [Street <String>]: The street.
   [Type <String>]: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphWorkspace>`: workspace
+BODYPARAMETER <IMicrosoftGraphWorkspace>: workspace
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1013,21 +1053,32 @@ For more information, see the iCalUId property in event.
     [CreatedDateTime <DateTime?>]: The date and time when the checkInClaim object was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [Children <IMicrosoftGraphPlace[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
+    [CheckIns <IMicrosoftGraphCheckInClaim[]>]: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
+    [Children <IMicrosoftGraphPlace[]>]: 
+    [DisplayName <String>]: The name that is associated with the place.
+    [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Accuracy <Double?>]: The accuracy of the latitude and longitude.
+As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
+      [Altitude <Double?>]: The altitude of the location.
+      [AltitudeAccuracy <Double?>]: The accuracy of the altitude.
+      [Latitude <Double?>]: The latitude of the location.
+      [Longitude <Double?>]: The longitude of the location.
+    [IsWheelChairAccessible <Boolean?>]: Indicates whether the place is wheelchair accessible.
+    [Label <String>]: User-defined description of the place.
+    [ParentId <String>]: The ID of a parent place.
+    [Phone <String>]: The phone number of the place.
+    [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
   [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Accuracy <Double?>]: The accuracy of the latitude and longitude.
-As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-    [Altitude <Double?>]: The altitude of the location.
-    [AltitudeAccuracy <Double?>]: The accuracy of the altitude.
-    [Latitude <Double?>]: The latitude of the location.
-    [Longitude <Double?>]: The longitude of the location.
   [IsWheelChairAccessible <Boolean?>]: Indicates whether the place is wheelchair accessible.
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
-  [PlaceId <String>]: An alternate immutable unique identifier of the place.
-Read-only.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1042,6 +1093,8 @@ For example, 1 for first floor, 2 for second floor, and so on.
   [Mode <IMicrosoftGraphPlaceMode>]: placeMode
     [(Any) <Object>]: This indicates any property can be added to this object.
   [Nickname <String>]: A short, friendly name for the workspace, often used for easier identification or display in the UI.
+  [PlaceId <String>]: An alternate immutable unique identifier of the workspace.
+Read-only.
 
 CHECKINS <IMicrosoftGraphCheckInClaim[]>: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
   [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
@@ -1051,7 +1104,43 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+CHILDREN <IMicrosoftGraphPlace[]>: .
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [City <String>]: The city.
+    [CountryOrRegion <String>]: The country or region.
+It's a free-format string value, for example, 'United States'.
+    [PostOfficeBox <String>]: The post office box number.
+    [PostalCode <String>]: The postal code.
+    [State <String>]: The state.
+    [Street <String>]: The street.
+    [Type <String>]: physicalAddressType
+  [CheckIns <IMicrosoftGraphCheckInClaim[]>]: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
+    [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
+For more information, see the iCalUId property in event.
+    [CheckInMethod <String>]: checkInMethod
+    [CreatedDateTime <DateTime?>]: The date and time when the checkInClaim object was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [Children <IMicrosoftGraphPlace[]>]: 
+  [DisplayName <String>]: The name that is associated with the place.
+  [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Accuracy <Double?>]: The accuracy of the latitude and longitude.
+As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
+    [Altitude <Double?>]: The altitude of the location.
+    [AltitudeAccuracy <Double?>]: The accuracy of the altitude.
+    [Latitude <Double?>]: The latitude of the location.
+    [Longitude <Double?>]: The longitude of the location.
+  [IsWheelChairAccessible <Boolean?>]: Indicates whether the place is wheelchair accessible.
+  [Label <String>]: User-defined description of the place.
+  [ParentId <String>]: The ID of a parent place.
+  [Phone <String>]: The phone number of the place.
+  [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
+
+GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Accuracy <Double?>]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
@@ -1060,7 +1149,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Latitude <Double?>]: The latitude of the location.
   [Longitude <Double?>]: The longitude of the location.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -1068,9 +1157,16 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   [CheckInClaimCalendarEventId <String>]: The unique identifier of checkInClaim
   [EventId <String>]: The unique identifier of event
   [ExtensionId <String>]: The unique identifier of extension
+  [FixtureMapId <String>]: The unique identifier of fixtureMap
+  [FootprintMapId <String>]: The unique identifier of footprintMap
   [GroupId <String>]: The unique identifier of group
+  [Id <String>]: Usage: id='{id}'
+  [LevelMapId <String>]: The unique identifier of levelMap
   [PlaceId <String>]: The unique identifier of place
+  [PlaceId1 <String>]: The unique identifier of place
   [RoomId <String>]: The unique identifier of room
+  [SectionMapId <String>]: The unique identifier of sectionMap
+  [UnitMapId <String>]: The unique identifier of unitMap
   [User <String>]: Usage: User='{User}'
   [UserId <String>]: The unique identifier of user
   [WorkspaceId <String>]: The unique identifier of workspace
@@ -1078,27 +1174,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaPlaceAsRoomListWorkspace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistworkspace)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistworkspace)
