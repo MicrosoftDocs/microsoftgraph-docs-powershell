@@ -67,12 +67,17 @@ Get the properties and relationships of an alert object.
 | Application | SecurityAlert.Read.All, SecurityAlert.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityAlertV2
+
+```
+This example shows how to use the Get-MgBetaSecurityAlertV2 Cmdlet.
+
 
 ## PARAMETERS
 

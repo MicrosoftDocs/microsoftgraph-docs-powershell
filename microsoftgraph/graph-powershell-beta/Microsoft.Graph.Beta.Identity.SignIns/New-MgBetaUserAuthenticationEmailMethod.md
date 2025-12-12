@@ -87,8 +87,9 @@ Self-service operations aren't supported.
 | Application | UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -97,6 +98,10 @@ $params = @{
 }
 
 New-MgBetaUserAuthenticationEmailMethod -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserAuthenticationEmailMethod Cmdlet.
+
 
 ## PARAMETERS
 

@@ -61,18 +61,17 @@ Retrieve the properties of an applicationTemplate object.
 Details about optional risk properties such as riskScore and riskFactors are available with either the Microsoft Entra Suite or Microsoft Entra Internet Access license.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Applications
-
-Get-MgBetaApplicationTemplate -ApplicationTemplateId $applicationTemplateId
-
-### EXAMPLE 2
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
-Get-MgBetaApplicationTemplate -ApplicationTemplateId $applicationTemplateId -Property "id,displayName,riskScore,riskFactors"
+Get-MgBetaApplicationTemplate
+
+```
+This example shows how to use the Get-MgBetaApplicationTemplate Cmdlet.
+
 
 ## PARAMETERS
 
