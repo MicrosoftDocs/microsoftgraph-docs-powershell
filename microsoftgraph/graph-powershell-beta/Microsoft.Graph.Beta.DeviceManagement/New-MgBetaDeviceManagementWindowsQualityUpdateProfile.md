@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsqualityupdateprofile
@@ -570,7 +570,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphWindowsQualityUpdateProfile>: Windows Quality Update Profile
+BODYPARAMETER `<IMicrosoftGraphWindowsQualityUpdateProfile>`: Windows Quality Update Profile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -593,7 +593,7 @@ Read-only.
   [ReleaseDateDisplayName <String>]: Friendly release date to display for a Quality Update release
   [RoleScopeTagIds <String[]>]: List of Scope Tags for this Quality Update entity.
 
-EXPEDITEDUPDATESETTINGS <IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>: A complex type to store the expedited quality update settings such as release date and days until forced reboot.
+EXPEDITEDUPDATESETTINGS `<IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>`: A complex type to store the expedited quality update settings such as release date and days until forced reboot.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DaysUntilForcedReboot <Int32?>]: The number of days after installation that forced reboot will happen.
   [QualityUpdateRelease <String>]: The release date to identify a quality update.
@@ -602,3 +602,25 @@ EXPEDITEDUPDATESETTINGS <IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>: 
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsqualityupdateprofile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
