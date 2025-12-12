@@ -200,6 +200,14 @@ This cmdlet has the following aliases,
 
 Update the properties of a user object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, Directory.ReadWrite.All, User-Mail.ReadWrite.All, User-PasswordProfile.ReadWrite.All, User-Phone.ReadWrite.All, User.EnableDisableAccount.All, User.ManageIdentities.All, User.ReadWrite,  |
+| Delegated (personal Microsoft account) | User.ReadWrite,  |
+| Application | User.ReadWrite.All, User.ReadWrite.CrossCloud, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, Directory.ReadWrite.All, User-Mail.ReadWrite.All, User-PasswordProfile.ReadWrite.All, User-Phone.ReadWrite.All, User.EnableDisableAccount.All, User.ManageIdentities.All, DeviceManagementApps.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a federatedIdentityCredential object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
+| Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

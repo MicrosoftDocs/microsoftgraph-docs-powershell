@@ -53,6 +53,14 @@ Get a set of messages that have been added, deleted, or updated in a specified f
 A delta function call for messages in a folder is similar to a GET request, except that by appropriately\rapplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in\rthat folder](/graph/delta-query-messages).
 This allows you to maintain and synchronize a local store of a user's messages without\rhaving to fetch the entire set of messages from the server every time.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
+| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
+| Application | Mail.ReadBasic.All, Mail.ReadWrite, Mail.Read,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

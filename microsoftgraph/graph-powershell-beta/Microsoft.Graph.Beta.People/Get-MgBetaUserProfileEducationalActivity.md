@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read, User.ReadWrite.All, User.ReadWrite, User.ReadBasic.All, User.Read.All,  |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
+| Application | User.Read.All, User.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
