@@ -91,16 +91,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property whoisRecords in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Abuse
@@ -2346,6 +2336,7 @@ No format is guaranteed.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencewhoisrecord)
+
 
 
 

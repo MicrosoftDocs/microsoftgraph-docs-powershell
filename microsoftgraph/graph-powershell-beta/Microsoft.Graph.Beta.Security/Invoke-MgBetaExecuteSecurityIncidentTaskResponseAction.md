@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 Execute a remediation action on a Microsoft Defender XDR incident task.
 Only the following actionType values are supported for automated execution: collectInvestigationPackage, isolateDevice, unRestrictAppExecution, unIsolateDevice, restrictAppExecution, runAntiVirusScan, stopAndQuarantineFile, submitIocRule.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -471,6 +461,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaexecutesecurityincidenttaskresponseaction)
 - [](https://learn.microsoft.com/graph/api/security-incidenttask-executeresponseaction?view=graph-rest-beta)
+
 
 
 
