@@ -627,9 +627,9 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareporthealthmonitoringalert)
-- [](https://learn.microsoft.com/graph/api/healthmonitoring-alert-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/healthmonitoring-healthmonitoringroot-list-alerts?view=graph-rest-beta)
+- [Get-MgBetaReportHealthMonitoringAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareporthealthmonitoringalert)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/healthmonitoring-alert-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/healthmonitoring-healthmonitoringroot-list-alerts?view=graph-rest-beta)
 
 
 

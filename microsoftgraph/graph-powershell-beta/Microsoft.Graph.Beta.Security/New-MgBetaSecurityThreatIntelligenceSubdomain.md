@@ -965,7 +965,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencesubdomain)
+- [New-MgBetaSecurityThreatIntelligenceSubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencesubdomain)
 
 
 

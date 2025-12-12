@@ -596,7 +596,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofasdirectoryrole)
+- [Get-MgUserMemberOfAsDirectoryRole](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofasdirectoryrole)
 
 
 

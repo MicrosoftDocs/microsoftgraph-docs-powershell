@@ -485,7 +485,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/invoke-mgtimeuseroutlook)
+- [Invoke-MgTimeUserOutlook](https://learn.microsoft.com/powershell/module/microsoft.graph.users/invoke-mgtimeuseroutlook)
 
 
 

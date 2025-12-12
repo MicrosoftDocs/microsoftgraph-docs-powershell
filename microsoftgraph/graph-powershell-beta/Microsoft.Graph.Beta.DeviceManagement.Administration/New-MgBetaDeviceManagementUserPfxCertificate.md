@@ -641,7 +641,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementuserpfxcertificate)
+- [New-MgBetaDeviceManagementUserPfxCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementuserpfxcertificate)
 
 
 

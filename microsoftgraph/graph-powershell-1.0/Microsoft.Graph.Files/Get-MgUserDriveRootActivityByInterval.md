@@ -622,8 +622,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootactivitybyinterval)
-- [](https://learn.microsoft.com/graph/api/itemactivitystat-getactivitybyinterval?view=graph-rest-1.0)
+- [Get-MgUserDriveRootActivityByInterval](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootactivitybyinterval)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/itemactivitystat-getactivitybyinterval?view=graph-rest-1.0)
 
 
 

@@ -18226,7 +18226,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemanalyticitemactivitystat)
+- [Update-MgBetaDriveItemAnalyticItemActivityStat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemanalyticitemactivitystat)
 
 
 

@@ -359,7 +359,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowpostattributecollectionbyref)
+- [Get-MgIdentityB2XUserFlowPostAttributeCollectionByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowpostattributecollectionbyref)
 
 
 

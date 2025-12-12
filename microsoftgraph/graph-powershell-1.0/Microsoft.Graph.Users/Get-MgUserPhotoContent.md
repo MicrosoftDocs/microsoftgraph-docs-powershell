@@ -434,7 +434,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphotocontent)
+- [Get-MgUserPhotoContent](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphotocontent)
 
 
 

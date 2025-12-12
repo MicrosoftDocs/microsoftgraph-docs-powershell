@@ -553,7 +553,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationoperation)
+- [New-MgSecurityAttackSimulationOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationoperation)
 
 
 

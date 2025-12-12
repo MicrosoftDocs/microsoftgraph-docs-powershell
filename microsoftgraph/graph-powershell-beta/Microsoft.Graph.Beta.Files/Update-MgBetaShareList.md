@@ -53874,7 +53874,7 @@ See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelist)
+- [Update-MgBetaShareList](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelist)
 
 
 
