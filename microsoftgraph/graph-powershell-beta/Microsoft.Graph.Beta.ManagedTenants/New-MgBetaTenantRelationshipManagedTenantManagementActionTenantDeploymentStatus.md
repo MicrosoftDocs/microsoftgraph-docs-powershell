@@ -499,7 +499,7 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementactiontenantdeploymentstatus)
+- [New-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementactiontenantdeploymentstatus)
 
 
 

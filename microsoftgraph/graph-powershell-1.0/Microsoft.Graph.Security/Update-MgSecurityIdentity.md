@@ -658,7 +658,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity)
+- [Update-MgSecurityIdentity](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity)
 
 
 

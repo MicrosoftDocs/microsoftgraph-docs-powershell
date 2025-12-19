@@ -584,8 +584,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharejob)
-- [](https://learn.microsoft.com/graph/api/printershare-list-jobs?view=graph-rest-1.0)
+- [Get-MgPrintShareJob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharejob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printershare-list-jobs?view=graph-rest-1.0)
 
 
 

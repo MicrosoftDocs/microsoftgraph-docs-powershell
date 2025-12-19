@@ -419,7 +419,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamphotocontent)
+- [Remove-MgGroupTeamPhotoContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamphotocontent)
 
 
 

@@ -957,7 +957,7 @@ Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroleassignmentscheduleinstance)
+- [New-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroleassignmentscheduleinstance)
 
 
 

@@ -1859,7 +1859,7 @@ WEBSITES <IMicrosoftGraphWebsite[]>: Web sites associated with the contact.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfoldercontact)
+- [Update-MgBetaUserContactFolderContact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfoldercontact)
 
 
 

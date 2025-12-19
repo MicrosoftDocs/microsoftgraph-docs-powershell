@@ -409,7 +409,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowasexternaluserselfservicesignupeventflowcondition)
+- [Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowCondition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowasexternaluserselfservicesignupeventflowcondition)
 
 
 

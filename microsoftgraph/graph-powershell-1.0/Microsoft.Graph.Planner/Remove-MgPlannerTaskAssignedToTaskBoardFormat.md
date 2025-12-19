@@ -389,7 +389,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannertaskassignedtotaskboardformat)
+- [Remove-MgPlannerTaskAssignedToTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannertaskassignedtotaskboardformat)
 
 
 

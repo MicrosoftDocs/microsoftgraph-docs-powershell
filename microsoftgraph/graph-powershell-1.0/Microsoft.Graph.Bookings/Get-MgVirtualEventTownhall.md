@@ -565,8 +565,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhall)
-- [](https://learn.microsoft.com/graph/api/virtualeventtownhall-get?view=graph-rest-1.0)
+- [Get-MgVirtualEventTownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhall)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventtownhall-get?view=graph-rest-1.0)
 
 
 
