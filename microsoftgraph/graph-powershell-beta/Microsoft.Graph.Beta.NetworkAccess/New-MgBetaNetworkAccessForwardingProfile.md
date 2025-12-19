@@ -267,7 +267,7 @@ HelpMessage: ''
 
 ### -IsCustomProfile
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

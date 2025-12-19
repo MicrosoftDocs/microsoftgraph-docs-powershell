@@ -370,7 +370,7 @@ HelpMessage: ''
 
 ### -Version
 
-.
+
 
 ```yaml
 Type: System.String
