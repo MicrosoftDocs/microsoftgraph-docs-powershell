@@ -15,6 +15,9 @@ title: Get-MgPolicyAuthenticationStrengthPolicyCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAuthenticationStrengthPolicyCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthenticationStrengthPolicyCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

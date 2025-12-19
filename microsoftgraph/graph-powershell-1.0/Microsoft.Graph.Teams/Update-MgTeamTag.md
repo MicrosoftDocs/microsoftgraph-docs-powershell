@@ -15,6 +15,9 @@ title: Update-MgTeamTag
 
 Update the properties of a tag object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamChannelMessageReplyHostedContent
 
 Delete navigation property hostedContents for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamChannelMessageReplyHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgUserChatCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

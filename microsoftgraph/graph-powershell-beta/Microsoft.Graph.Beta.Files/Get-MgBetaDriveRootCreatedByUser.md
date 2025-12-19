@@ -15,6 +15,9 @@ title: Get-MgBetaDriveRootCreatedByUser
 
 Get createdByUser from drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveRootCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootCreatedByUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

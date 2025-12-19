@@ -15,6 +15,9 @@ title: Set-MgDriveRootContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDriveRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveRootContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
