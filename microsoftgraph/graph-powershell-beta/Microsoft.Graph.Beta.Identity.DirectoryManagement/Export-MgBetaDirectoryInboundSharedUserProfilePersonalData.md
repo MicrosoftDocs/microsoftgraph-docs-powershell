@@ -80,8 +80,9 @@ Create a request to export the personal data for an inboundSharedUserProfile.
 | Application | CrossTenantUserProfileSharing.Read.All, CrossTenantUserProfileSharing.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 Export-MgBetaDirectoryInboundSharedUserProfilePersonalData -InboundSharedUserProfileUserId $inboundSharedUserProfileUserId -BodyParameter $params
+
+```
+This example shows how to use the Export-MgBetaDirectoryInboundSharedUserProfilePersonalData Cmdlet.
+
 
 ## PARAMETERS
 

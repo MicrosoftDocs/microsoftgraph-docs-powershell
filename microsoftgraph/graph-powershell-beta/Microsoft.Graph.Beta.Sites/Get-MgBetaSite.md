@@ -67,12 +67,17 @@ Retrieve properties and relationships for a site resource.\rA site resource repr
 | Application | Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaSite -Search '"{query}"'
+Get-MgBetaSite -Search '"{query}"' 
+
+```
+This example shows how to use the Get-MgBetaSite Cmdlet.
+
 
 ## PARAMETERS
 

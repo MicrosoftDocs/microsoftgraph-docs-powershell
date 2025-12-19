@@ -94,8 +94,9 @@ To learn more about configuring naming policies, see Configure naming policy.
 | Application | Group.Read.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Groups
 
@@ -106,6 +107,10 @@ $params = @{
 }
 
 Test-MgGroupProperty -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the Test-MgGroupProperty Cmdlet.
+
 
 ## PARAMETERS
 

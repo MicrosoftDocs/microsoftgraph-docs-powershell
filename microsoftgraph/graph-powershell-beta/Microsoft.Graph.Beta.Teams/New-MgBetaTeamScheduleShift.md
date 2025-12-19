@@ -90,8 +90,9 @@ The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 | Application | Schedule.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -134,6 +135,10 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleShift -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTeamScheduleShift Cmdlet.
+
 
 ## PARAMETERS
 

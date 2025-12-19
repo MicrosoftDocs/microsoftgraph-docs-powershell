@@ -62,8 +62,9 @@ Update the navigation property applePushNotificationCertificate in deviceManagem
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -79,6 +80,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementApplePushNotificationCertificate -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementApplePushNotificationCertificate Cmdlet.
+
 
 ## PARAMETERS
 

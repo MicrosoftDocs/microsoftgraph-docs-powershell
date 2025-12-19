@@ -61,8 +61,9 @@ When the property result is completed, the report finishes downloading to the lo
 | Application | CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create an export job to download the TotalAggregatedRemoteConnectionReports report
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
@@ -79,7 +80,12 @@ $params = @{
 
 New-MgBetaDeviceManagementVirtualEndpointReportExportJob -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create an export job to download the totalaggregatedremoteconnectionreports report
+
+### Example 2: Create an export job to download the RemoteConnectionQualityReports report.
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
@@ -102,6 +108,10 @@ filter = "EventDateTime gt datetime'2023-06-14T07:40:41.694Z'"
 }
 
 New-MgBetaDeviceManagementVirtualEndpointReportExportJob -BodyParameter $params
+
+```
+This example will create an export job to download the remoteconnectionqualityreports report.
+
 
 ## PARAMETERS
 
