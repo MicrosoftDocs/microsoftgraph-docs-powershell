@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 
 A collection of assignment resources that depend on the parent educationAssignmentResource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -637,6 +627,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentresourcedependentresource)
 - [](https://learn.microsoft.com/graph/api/educationassignmentresource-list-dependentresources?view=graph-rest-beta)
+
 
 
 
