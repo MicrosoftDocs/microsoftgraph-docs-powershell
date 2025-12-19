@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementcloudpcroledefinition
@@ -16,7 +16,7 @@ title: Remove-MgBetaRoleManagementCloudPcRoleDefinition
 Delete a unifiedRoleDefinition object for an RBAC provider.
 You cannot delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- Defender (Microsoft Defender XDR Unified RBAC)\n- directory (Microsoft Entra ID)
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- Defender (Microsoft Defender XDR Unified RBAC)- directory (Microsoft Entra ID)
 
 ## SYNTAX
 
@@ -50,7 +50,7 @@ This cmdlet has the following aliases,
 Delete a unifiedRoleDefinition object for an RBAC provider.
 You cannot delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- Defender (Microsoft Defender XDR Unified RBAC)\n- directory (Microsoft Entra ID)
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- Defender (Microsoft Defender XDR Unified RBAC)- directory (Microsoft Entra ID)
 
 ## EXAMPLES
 
@@ -390,7 +390,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -424,3 +424,25 @@ INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementcloudpcroledefinition)
 - [](https://learn.microsoft.com/graph/api/unifiedroledefinition-delete?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

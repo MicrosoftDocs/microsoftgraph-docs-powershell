@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/initialize-mgsolutionbackuprestoreserviceapp
@@ -466,11 +466,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths19Vx3BnSolutionsBackuprestoreServiceappsServiceappIdMicrosoftGraphActivatePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths19Vx3BnSolutionsBackuprestoreServiceappsServiceappIdMicrosoftGraphActivatePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EffectiveDateTime <DateTime?>]: 
 
-INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
+INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -504,3 +504,25 @@ INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/initialize-mgsolutionbackuprestoreserviceapp)
 - [](https://learn.microsoft.com/graph/api/serviceapp-activate?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

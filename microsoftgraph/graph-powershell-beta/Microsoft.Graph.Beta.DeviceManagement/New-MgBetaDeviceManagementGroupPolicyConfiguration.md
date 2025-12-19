@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementgrouppolicyconfiguration
@@ -550,7 +550,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphGroupPolicyConfiguration>: The group policy configuration entity contains the configured values for one or more group policy definitions.
+BODYPARAMETER `<IMicrosoftGraphGroupPolicyConfiguration>`: The group policy configuration entity contains the configured values for one or more group policy definitions.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -718,3 +718,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementgrouppolicyconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
