@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 12/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
 ---
@@ -49,13 +49,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to certificateBasedApplicationConfigurations for directory
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -453,7 +455,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCertificateBasedApplicationConfiguration>`: certificateBasedApplicationConfiguration
+BODYPARAMETER <IMicrosoftGraphCertificateBasedApplicationConfiguration>: certificateBasedApplicationConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity[]>]: Collection of trusted certificate authorities.
     [Id <String>]: The unique identifier for an entity.
@@ -482,27 +484,4 @@ In a certificateBasedApplicationConfiguration object, at least one object in the
 
 ## RELATED LINKS
 
-- [New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)

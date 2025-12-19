@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 12/05/2025
+ms.date: 12/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaExternal
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaExternal
 ## SYNOPSIS
 
 Update external
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgExternal](/powershell/module/Microsoft.Graph.Search/Update-MgExternal?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update external
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -163,7 +170,7 @@ HelpMessage: ''
 
 ### -Connections
 
-
+.
 To construct, see NOTES section for CONNECTIONS properties and create a hash table.
 
 ```yaml
@@ -422,7 +429,7 @@ Read-only.
     [Entitlements <IMicrosoftGraphEntitlementsDataCollectionInfo>]: entitlementsDataCollectionInfo
       [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal>`: external
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternal>: external
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthorizationSystems <IMicrosoftGraphAuthorizationSystem[]>]: Represents an onboarded Amazon Web Services (AWS) account, Azure subscription, or Google Cloud Platform (GCP) project that Microsoft Entra Permissions Management collects and analyzes permissions and actions on.
     [Id <String>]: The unique identifier for an entity.
@@ -473,6 +480,7 @@ Required.
       [AuthorizedAppIds <String[]>]: A collection of application IDs for registered Microsoft Entra apps allowed to manage the externalConnection and index content in the externalConnection.
     [ConnectorId <String>]: The Teams App ID.
 Optional.
+    [ContentCategory <String>]: contentCategory
     [Description <String>]: Description of the connection displayed in the Microsoft 365 admin center.
 Optional.
     [EnabledContentExperiences <String>]: contentExperienceType
@@ -561,8 +569,12 @@ Maximum 32 characters.
 Only alphanumeric characters allowed.
 For example, each string might not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.
 Optional.
+        [Description <String>]: Specifies a human-readable description that explains the purpose, usage, or guidance related to the property.
+This property enhances semantic understanding by helping Copilot interpret queries and accurately map them to properties that results in more relevant and precise responses.
+Optional but we recommend that you use this property for queryable properties.
+The maximum supported length is 200 characters.
         [IsExactMatchRequired <Boolean?>]: Specifies if the property will be matched exactly for queries.
-Exact matching can only be set to true for non-searchable properties of type string or stringCollection.
+Exact matching can only be set to true for nonsearchable properties of type string or stringCollection.
 Optional.
         [IsQueryable <Boolean?>]: Specifies if the property is queryable.
 Queryable properties can be used in Keyword Query Language (KQL) queries.
@@ -576,13 +588,13 @@ Retrievable properties are also available to add to the display template used to
 Optional.
         [IsSearchable <Boolean?>]: Specifies if the property is searchable.
 Only properties of type string or stringCollection can be searchable.
-Non-searchable properties aren't added to the search index.
+Nonsearchable properties aren't added to the search index.
 Optional.
         [Labels <String[]>]: Specifies one or more well-known tags added against a property.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
-Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl.
-Use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl.
+Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl, assignedTo, dueDate, closedDate, closedBy, reportedBy, sprintName, severity, state, priority, secondaryId, itemParentId, parentUrl, tags, itemType, itemPath, numReactions.
+Use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl, assignedTo, dueDate, closedDate, closedBy, reportedBy, sprintName, severity, state, priority, secondaryId, itemParentId, parentUrl, tags, itemType, itemPath, numReactions.
         [Name <String>]: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
@@ -746,6 +758,7 @@ Required.
     [AuthorizedAppIds <String[]>]: A collection of application IDs for registered Microsoft Entra apps allowed to manage the externalConnection and index content in the externalConnection.
   [ConnectorId <String>]: The Teams App ID.
 Optional.
+  [ContentCategory <String>]: contentCategory
   [Description <String>]: Description of the connection displayed in the Microsoft 365 admin center.
 Optional.
   [EnabledContentExperiences <String>]: contentExperienceType
@@ -834,8 +847,12 @@ Maximum 32 characters.
 Only alphanumeric characters allowed.
 For example, each string might not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.
 Optional.
+      [Description <String>]: Specifies a human-readable description that explains the purpose, usage, or guidance related to the property.
+This property enhances semantic understanding by helping Copilot interpret queries and accurately map them to properties that results in more relevant and precise responses.
+Optional but we recommend that you use this property for queryable properties.
+The maximum supported length is 200 characters.
       [IsExactMatchRequired <Boolean?>]: Specifies if the property will be matched exactly for queries.
-Exact matching can only be set to true for non-searchable properties of type string or stringCollection.
+Exact matching can only be set to true for nonsearchable properties of type string or stringCollection.
 Optional.
       [IsQueryable <Boolean?>]: Specifies if the property is queryable.
 Queryable properties can be used in Keyword Query Language (KQL) queries.
@@ -849,13 +866,13 @@ Retrievable properties are also available to add to the display template used to
 Optional.
       [IsSearchable <Boolean?>]: Specifies if the property is searchable.
 Only properties of type string or stringCollection can be searchable.
-Non-searchable properties aren't added to the search index.
+Nonsearchable properties aren't added to the search index.
 Optional.
       [Labels <String[]>]: Specifies one or more well-known tags added against a property.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
-Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl.
-Use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl.
+Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl, assignedTo, dueDate, closedDate, closedBy, reportedBy, sprintName, severity, state, priority, secondaryId, itemParentId, parentUrl, tags, itemType, itemPath, numReactions.
+Use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl, assignedTo, dueDate, closedDate, closedBy, reportedBy, sprintName, severity, state, priority, secondaryId, itemParentId, parentUrl, tags, itemType, itemPath, numReactions.
       [Name <String>]: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
@@ -871,7 +888,7 @@ For example, the property name may not contain control characters, whitespace, o
 Maximum of 2 search result templates per connection.
   [State <String>]: connectionState
 
-INDUSTRYDATA `<IMicrosoftGraphIndustryDataRoot>`: industryDataRoot
+INDUSTRYDATA <IMicrosoftGraphIndustryDataRoot>: industryDataRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1004,27 +1021,4 @@ Maximum supported length is 100 characters.
 
 ## RELATED LINKS
 
-- [Update-MgBetaExternal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal)

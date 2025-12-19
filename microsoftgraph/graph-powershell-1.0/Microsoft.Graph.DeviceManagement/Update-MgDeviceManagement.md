@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 12/19/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagement
 ---
@@ -13,7 +13,7 @@ title: Update-MgDeviceManagement
 
 ## SYNOPSIS
 
-Update the properties of a deviceManagement object.
+Update deviceManagement
 
 ## SYNTAX
 
@@ -52,7 +52,6 @@ Update-MgDeviceManagement [-ResponseHeadersVariable <string>] [-AdditionalProper
  [-Settings <IMicrosoftGraphDeviceManagementSettings>]
  [-SoftwareUpdateStatusSummary <IMicrosoftGraphSoftwareUpdateStatusSummary>]
  [-SubscriptionState <DeviceManagementSubscriptionState>]
- [-TelecomExpenseManagementPartners <IMicrosoftGraphTelecomExpenseManagementPartner[]>]
  [-TermsAndConditions <IMicrosoftGraphTermsAndConditions[]>]
  [-TroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent[]>]
  [-UserExperienceAnalyticsAppHealthApplicationPerformance <IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance[]>]
@@ -107,20 +106,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a deviceManagement object.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+Update deviceManagement
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -129,10 +119,6 @@ $params = @{
 }
 
 Update-MgDeviceManagement -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceManagement Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1094,28 +1080,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -TelecomExpenseManagementPartners
-
-The telecom expense management partners.
-To construct, see NOTES section for TELECOMEXPENSEMANAGEMENTPARTNERS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTelecomExpenseManagementPartner[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -TermsAndConditions
 
 The terms and conditions associated with device management of the company.
@@ -1872,12 +1836,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLEPUSHNOTIFICATIONCERTIFICATE `<IMicrosoftGraphApplePushNotificationCertificate>`: Apple push notification certificate.
+APPLEPUSHNOTIFICATIONCERTIFICATE <IMicrosoftGraphApplePushNotificationCertificate>: Apple push notification certificate.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [AppleIdentifier <String>]: Apple Id of the account used to create the MDM push certificate.
-  [Certificate <String>]: Not yet documented
+  [Certificate <String>]: 
   [CertificateUploadFailureReason <String>]: The reason the certificate upload failed.
   [CertificateUploadStatus <String>]: The certificate upload status.
   [ExpirationDateTime <DateTime?>]: The expiration date and time for Apple push notification certificate.
@@ -1915,7 +1879,7 @@ Read-only.
       [OldValue <String>]: Old value.
     [ResourceId <String>]: Audit resource's Id.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: deviceManagement
+BODYPARAMETER <IMicrosoftGraphDeviceManagement>: deviceManagement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1924,7 +1888,7 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [AppleIdentifier <String>]: Apple Id of the account used to create the MDM push certificate.
-    [Certificate <String>]: Not yet documented
+    [Certificate <String>]: 
     [CertificateUploadFailureReason <String>]: The reason the certificate upload failed.
     [CertificateUploadStatus <String>]: The certificate upload status.
     [ExpirationDateTime <DateTime?>]: The expiration date and time for Apple push notification certificate.
@@ -2024,8 +1988,8 @@ Read-only.
           [Setting <String>]: The setting that is being reported
           [SettingName <String>]: Localized/user friendly setting name that is being reported
           [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-            [DisplayName <String>]: Not yet documented
-            [Id <String>]: Not yet documented
+            [DisplayName <String>]: 
+            [Id <String>]: 
             [SourceType <String>]: settingSourceType
           [State <String>]: complianceStatus
           [UserEmail <String>]: UserEmail
@@ -2090,7 +2054,17 @@ Read-only.
         [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
         [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
         [TpmVersion <String>]: The security version number of the Boot Application
-        [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+        [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
         [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
       [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
       [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -2111,6 +2085,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
       [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
       [ManagementAgent <ManagementAgentType?>]: managementAgentType
+      [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
       [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -2932,7 +2907,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -3069,6 +3044,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
               [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
               [FormatName <String>]: For a list of possible values see formatName values.
+        [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+          [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+          [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+          [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+          [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+          [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+          [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+          [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+          [ProvisioningType <String>]: cloudPcProvisioningType
+          [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+          [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+          [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
         [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -4444,6 +4467,14 @@ Read-only.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
+          [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [DisplayName <String>]: The name of the role.
+            [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
           [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
             [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -5227,6 +5258,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+            [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [IsCloudManaged <Boolean?>]: 
             [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -5927,7 +5963,8 @@ Nullable.
             [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
           [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -6965,8 +7002,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -7129,7 +7166,7 @@ Read-only.
 Read-only.
     [CompliantDeviceCount <Int32?>]: Number of compliant devices
     [ConflictDeviceCount <Int32?>]: Number of conflict devices
-    [DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState[]>]: Not yet documented
+    [DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [ComplianceGracePeriodExpirationDateTime <DateTime?>]: The DateTime when device compliance grace period expires
@@ -7366,22 +7403,29 @@ Read-only.
   [MobileThreatDefenseConnectors <IMicrosoftGraphMobileThreatDefenseConnector[]>]: The list of Mobile threat Defense connectors configured by the tenant.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [AllowPartnerToCollectIosApplicationMetadata <Boolean?>]: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about installed applications from Intune for IOS devices.
-When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about installed applications from Intune for IOS devices.
+    [AllowPartnerToCollectIosApplicationMetadata <Boolean?>]: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about installed applications from Intune for iOS devices.
+When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about installed applications from Intune for iOS devices.
 Default value is FALSE.
-    [AllowPartnerToCollectIosPersonalApplicationMetadata <Boolean?>]: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about personally installed applications from Intune for IOS devices.
-When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about personally installed applications from Intune for IOS devices.
+    [AllowPartnerToCollectIosPersonalApplicationMetadata <Boolean?>]: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about personally installed applications from Intune for iOS devices.
+When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about personally installed applications from Intune for iOS devices.
 Default value is FALSE.
-    [AndroidDeviceBlockedOnMissingPartnerData <Boolean?>]: For Android, set whether Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant
-    [AndroidEnabled <Boolean?>]: For Android, set whether data from the Mobile Threat Defense partner should be used during compliance evaluations
+    [AndroidDeviceBlockedOnMissingPartnerData <Boolean?>]: When TRUE, indicates that Intune must receive data from the Mobile Threat Defense partner prior to marking an Android device compliant.
+When FALSE, indicates that Intune may mark an Android device compliant before receiving data from the Mobile Threat Defense partner.
+    [AndroidEnabled <Boolean?>]: When TRUE, indicates that data from the Mobile Threat Defense partner will be used during compliance evaluations for Android devices.
+When FALSE, indicates that data from the Mobile Threat Defense partner will not be used during compliance evaluations for Android devices.
+Default value is FALSE.
     [AndroidMobileApplicationManagementEnabled <Boolean?>]: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during Mobile Application Management (MAM) evaluations for Android devices.
 When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during Mobile Application Management (MAM) evaluations for Android devices.
 Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation.
 Default value is FALSE.
-    [IosDeviceBlockedOnMissingPartnerData <Boolean?>]: For IOS, set whether Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant
-    [IosEnabled <Boolean?>]: For IOS, get or set whether data from the Mobile Threat Defense partner should be used during compliance evaluations
-    [IosMobileApplicationManagementEnabled <Boolean?>]: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during Mobile Application Management (MAM) evaluations for IOS devices.
-When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during Mobile Application Management (MAM) evaluations for IOS devices.
+    [IosDeviceBlockedOnMissingPartnerData <Boolean?>]: When TRUE, indicates that Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant.
+When FALSE, indicates that Intune may not recieve data from Mobile Threat Defense partner prior to making device compliant.
+Default value is FALSE.
+    [IosEnabled <Boolean?>]: When TRUE, indicates that data from the Mobile Threat Defense partner will be used during compliance evaluations for iOS devices.
+When FALSE, indicates that data from the Mobile Threat Defense partner will not be used during compliance evaluations for iOS devices.
+Default value is FALSE.
+    [IosMobileApplicationManagementEnabled <Boolean?>]: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during Mobile Application Management (MAM) evaluations for iOS devices.
+When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during Mobile Application Management (MAM) evaluations for iOS devices.
 Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation.
 Default value is FALSE.
     [LastHeartbeatDateTime <DateTime?>]: DateTime of last Heartbeat recieved from the Mobile Threat Defense partner
@@ -7389,13 +7433,16 @@ Default value is FALSE.
 When FALSE, inidicates that configuration profile management via Microsoft Defender for Endpoint is disabled.
 Default value is FALSE.
     [PartnerState <MobileThreatPartnerTenantState?>]: Partner state of this tenant.
-    [PartnerUnresponsivenessThresholdInDays <Int32?>]: Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
-    [PartnerUnsupportedOSVersionBlocked <Boolean?>]: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Mobile Threat Defense partner
-    [WindowsDeviceBlockedOnMissingPartnerData <Boolean?>]: When TRUE, inidicates that Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant for Windows.
-When FALSE, inidicates that Intune may make a device compliant without receiving data from the Mobile Threat Defense partner for Windows.
+    [PartnerUnresponsivenessThresholdInDays <Int32?>]: Indicates the number of days without receiving a heartbeat from a Mobile Threat Defense partner before the partner is marked as unresponsive.
+Intune will the ignore the data from this Mobile Threat Defense Partner for next compliance calculation.
+    [PartnerUnsupportedOSVersionBlocked <Boolean?>]: When TRUE, indicates that Intune will mark devices noncompliant on enabled platforms that do not meet the minimum version requirements of the Mobile Threat Defense partner.
+When FALSE, indicates that Intune will not mark devices noncompliant on enabled platforms that do not meet the minimum version requirements of the Mobile Threat Defense partner.
 Default value is FALSE.
-    [WindowsEnabled <Boolean?>]: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during compliance evaluations for Windows.
-When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during compliance evaluations for Windows.
+    [WindowsDeviceBlockedOnMissingPartnerData <Boolean?>]: When TRUE, indicates that Intune must receive data from the data sync partner prior to marking a device compliant for Windows.
+When FALSE, indicates that Intune may mark a device compliant without receiving data from the data sync partner for Windows.
+Default value is FALSE.
+    [WindowsEnabled <Boolean?>]: When TRUE, indicates that data from the Mobile Threat Defense partner will be used during compliance evaluations for Windows.
+When FALSE, indicates that data from the Mobile Threat Defense partner will not be used during compliance evaluations for Windows.
 Default value is FALSE.
   [NotificationMessageTemplates <IMicrosoftGraphNotificationMessageTemplate[]>]: The Notification Message Templates.
     [Id <String>]: The unique identifier for an entity.
@@ -7427,22 +7474,27 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]: Entity representing a job to export a report
+    [ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]: Entity representing a job to export a report.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [ExpirationDateTime <DateTime?>]: Time that the exported report expires
-      [Filter <String>]: Filters applied on the report
+      [ExpirationDateTime <DateTime?>]: Time that the exported report expires.
+      [Filter <String>]: Filters applied on the report.
+The maximum length allowed for this property is 2000 characters.
       [Format <DeviceManagementReportFileFormat?>]: Possible values for the file format of a report to be exported.
       [LocalizationType <DeviceManagementExportJobLocalizationType?>]: Configures how the requested export job is localized.
-      [ReportName <String>]: Name of the report
-      [RequestDateTime <DateTime?>]: Time that the exported report was requested
-      [Select <String[]>]: Columns selected from the report
+      [ReportName <String>]: Name of the report.
+The maximum length allowed for this property is 2000 characters.
+      [RequestDateTime <DateTime?>]: Time that the exported report was requested.
+      [Select <String[]>]: Columns selected from the report.
+The maximum number of allowed columns names is 256.
+The maximum length allowed for each column name in this property is 1000 characters.
       [SnapshotId <String>]: A snapshot is an identifiable subset of the dataset represented by the ReportName.
 A sessionId or CachedReportConfiguration id can be used here.
 If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId.
 Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
+The maximum length allowed for this property is 128 characters.
       [Status <DeviceManagementReportStatus?>]: Possible statuses associated with a generated report.
-      [Url <String>]: Temporary location of the exported report
+      [Url <String>]: Temporary location of the exported report.
   [ResourceOperations <IMicrosoftGraphResourceOperation[]>]: The Resource Operations.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -7452,10 +7504,13 @@ The actionName should be concise and limited to as few words as possible.
 The description is used in mouse-over text for the operation when shown in the Azure Portal.
     [ResourceName <String>]: Name of the Resource this operation is performed on.
   [RoleAssignments <IMicrosoftGraphDeviceAndAppManagementRoleAssignment[]>]: The Role Assignments.
-    [Description <String>]: Description of the Role Assignment.
-    [DisplayName <String>]: The display or friendly name of the role Assignment.
-    [ResourceScopes <String[]>]: List of ids of role scope member security groups.
- These are IDs from Azure Active Directory.
+    [Description <String>]: Indicates the description of the role assignment.
+For example: 'All administrators, employees and scope tags associated with the Houston office.' Max length is 1024 characters.
+    [DisplayName <String>]: Indicates the display name of the role assignment.
+For example: 'Houston administrators and users'.
+Max length is 128 characters.
+    [ResourceScopes <String[]>]: Indicates the list of resource scope security group Entra IDs.
+For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
     [RoleDefinition <IMicrosoftGraphRoleDefinition>]: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
@@ -7473,10 +7528,13 @@ Set to True if it is built-in, or set to False if it is a custom role definition
       [RoleAssignments <IMicrosoftGraphRoleAssignment[]>]: List of Role assignments for this role definition.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [Description <String>]: Description of the Role Assignment.
-        [DisplayName <String>]: The display or friendly name of the role Assignment.
-        [ResourceScopes <String[]>]: List of ids of role scope member security groups.
- These are IDs from Azure Active Directory.
+        [Description <String>]: Indicates the description of the role assignment.
+For example: 'All administrators, employees and scope tags associated with the Houston office.' Max length is 1024 characters.
+        [DisplayName <String>]: Indicates the display name of the role assignment.
+For example: 'Houston administrators and users'.
+Max length is 128 characters.
+        [ResourceScopes <String[]>]: Indicates the list of resource scope security group Entra IDs.
+For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
         [RoleDefinition <IMicrosoftGraphRoleDefinition>]: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
@@ -7491,8 +7549,8 @@ These must match the actionName that is defined as part of the rolePermission.
           [NotAllowedResourceActions <String[]>]: Not Allowed Actions.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [Members <String[]>]: The list of ids of role member security groups.
-These are IDs from Azure Active Directory.
+    [Members <String[]>]: Indicates the list of role member security group Entra IDs.
+For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
   [RoleDefinitions <IMicrosoftGraphRoleDefinition[]>]: The Role Definitions.
   [Settings <IMicrosoftGraphDeviceManagementSettings>]: deviceManagementSettings
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -7519,14 +7577,6 @@ Read-only.
     [UnknownDeviceCount <Int32?>]: Number of unknown devices.
     [UnknownUserCount <Int32?>]: Number of unknown users.
   [SubscriptionState <DeviceManagementSubscriptionState?>]: Tenant mobile device management subscription state.
-  [TelecomExpenseManagementPartners <IMicrosoftGraphTelecomExpenseManagementPartner[]>]: The telecom expense management partners.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [AppAuthorized <Boolean?>]: Whether the partner's AAD app has been authorized to access Intune.
-    [DisplayName <String>]: Display name of the TEM partner.
-    [Enabled <Boolean?>]: Whether Intune's connection to the TEM service is currently enabled or disabled.
-    [LastConnectionDateTime <DateTime?>]: Timestamp of the last request sent to Intune by the TEM partner.
-    [Url <String>]: URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.
   [TermsAndConditions <IMicrosoftGraphTermsAndConditions[]>]: The terms and conditions associated with device management of the company.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -8374,51 +8424,6 @@ Read-only.
           [OldValue <String>]: The old value for this property.
         [ResourceId <String>]: The unique identifier of the modified resource entity.
     [CloudPCs <IMicrosoftGraphCloudPc[]>]: A collection of cloud-managed virtual desktops.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
-Generated on a VM joined to Microsoft Entra ID.
-Read-only.
-      [DisplayName <String>]: The display name for the Cloud PC.
-Maximum length is 64 characters.
-Read-only.
-You can use the cloudPC: rename API to modify the Cloud PC name.
-      [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
-Required only if the status is inGracePeriod.
-The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
-Maximum length is 50 characters.
-Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
-The property value can't begin or end with an underscore.
-Read-only.
-      [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
-The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
-Read-only.
-      [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
-The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
-Read-only.
-      [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
-Read-only.
-      [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
-A policy defines the type of Cloud PC the user wants to create.
-Read-only.
-      [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
-Maximum length is 120 characters.
-Read-only.
-      [ProvisioningType <String>]: cloudPcProvisioningType
-      [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
-For more information about service plans, see Product names and service plan identifiers for licensing.
-Read-only.
-      [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
-Read-only.
-      [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
-Maximum length is 113 characters.
-For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
-Read-only.
     [DeviceImages <IMicrosoftGraphCloudPcDeviceImage[]>]: A collection of device image resources on Cloud PC.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -8751,7 +8756,7 @@ Read-only.
   [MacOSOnboarded <Boolean?>]: Partner onboarded for Mac devices.
   [PartnerState <DeviceManagementPartnerTenantState?>]: Partner state of this tenant.
 
-CONDITIONALACCESSSETTINGS `<IMicrosoftGraphOnPremisesConditionalAccessSettings>`: Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
+CONDITIONALACCESSSETTINGS <IMicrosoftGraphOnPremisesConditionalAccessSettings>: Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -8802,8 +8807,8 @@ Read-only.
         [Setting <String>]: The setting that is being reported
         [SettingName <String>]: Localized/user friendly setting name that is being reported
         [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-          [DisplayName <String>]: Not yet documented
-          [Id <String>]: Not yet documented
+          [DisplayName <String>]: 
+          [Id <String>]: 
           [SourceType <String>]: settingSourceType
         [State <String>]: complianceStatus
         [UserEmail <String>]: UserEmail
@@ -8868,7 +8873,17 @@ Read-only.
       [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
       [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
       [TpmVersion <String>]: The security version number of the Boot Application
-      [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+      [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
       [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
     [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
     [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -8889,6 +8904,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
     [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
     [ManagementAgent <ManagementAgentType?>]: managementAgentType
+    [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
     [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -9710,7 +9726,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -9847,6 +9863,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
             [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
             [FormatName <String>]: For a list of possible values see formatName values.
+      [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+        [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+        [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+        [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+        [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+        [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+        [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+        [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+        [ProvisioningType <String>]: cloudPcProvisioningType
+        [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+        [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+        [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
       [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -11222,6 +11286,14 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
+        [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [DisplayName <String>]: The name of the role.
+          [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
         [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -12005,6 +12077,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+          [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [IsCloudManaged <Boolean?>]: 
           [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -12705,7 +12782,8 @@ Nullable.
           [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
         [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -13743,8 +13821,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -13897,7 +13975,7 @@ Read-only.
     [UserPrincipalName <String>]: UserPrincipalName.
   [Version <Int32?>]: Version of the device configuration.
 
-DEVICECOMPLIANCEPOLICYDEVICESTATESUMMARY `<IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary>`: deviceCompliancePolicyDeviceStateSummary
+DEVICECOMPLIANCEPOLICYDEVICESTATESUMMARY <IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary>: deviceCompliancePolicyDeviceStateSummary
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -13916,7 +13994,7 @@ DEVICECOMPLIANCEPOLICYSETTINGSTATESUMMARIES <IMicrosoftGraphDeviceCompliancePoli
 Read-only.
   [CompliantDeviceCount <Int32?>]: Number of compliant devices
   [ConflictDeviceCount <Int32?>]: Number of conflict devices
-  [DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState[]>]: Not yet documented
+  [DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState[]>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [ComplianceGracePeriodExpirationDateTime <DateTime?>]: The DateTime when device compliance grace period expires
@@ -13939,7 +14017,7 @@ Read-only.
   [SettingName <String>]: Name of the setting.
   [UnknownDeviceCount <Int32?>]: Number of unknown devices
 
-DEVICECONFIGURATIONDEVICESTATESUMMARIES `<IMicrosoftGraphDeviceConfigurationDeviceStateSummary>`: deviceConfigurationDeviceStateSummary
+DEVICECONFIGURATIONDEVICESTATESUMMARIES <IMicrosoftGraphDeviceConfigurationDeviceStateSummary>: deviceConfigurationDeviceStateSummary
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -14048,7 +14126,7 @@ Read-only.
   [WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime?>]: DateTime in UTC when PartnerDevices will be marked as NonCompliant
   [WhenPartnerDevicesWillBeRemovedDateTime <DateTime?>]: DateTime in UTC when PartnerDevices will be removed
 
-DEVICEPROTECTIONOVERVIEW `<IMicrosoftGraphDeviceProtectionOverview>`: Hardware information of a given device.
+DEVICEPROTECTIONOVERVIEW <IMicrosoftGraphDeviceProtectionOverview>: Hardware information of a given device.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CleanDeviceCount <Int32?>]: Indicates number of devices reporting as clean
   [CriticalFailuresDeviceCount <Int32?>]: Indicates number of devices with critical failures
@@ -14092,7 +14170,7 @@ Read-only.
     [DeviceImportStatus <ImportedWindowsAutopilotDeviceIdentityImportStatus?>]: importedWindowsAutopilotDeviceIdentityImportStatus
     [DeviceRegistrationId <String>]: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
 
-INTUNEBRAND `<IMicrosoftGraphIntuneBrand>`: intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.
+INTUNEBRAND <IMicrosoftGraphIntuneBrand>: intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContactItEmailAddress <String>]: Email address of the person/organization responsible for IT support.
   [ContactItName <String>]: Name of the person/organization responsible for IT support.
@@ -14131,7 +14209,7 @@ Read-only.
   [UserName <String>]: The User Name that is being reported
   [UserPrincipalName <String>]: UserPrincipalName.
 
-MANAGEDDEVICEOVERVIEW `<IMicrosoftGraphManagedDeviceOverview>`: Summary data for managed devices
+MANAGEDDEVICEOVERVIEW <IMicrosoftGraphManagedDeviceOverview>: Summary data for managed devices
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -14197,8 +14275,8 @@ Read-only.
       [Setting <String>]: The setting that is being reported
       [SettingName <String>]: Localized/user friendly setting name that is being reported
       [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-        [DisplayName <String>]: Not yet documented
-        [Id <String>]: Not yet documented
+        [DisplayName <String>]: 
+        [Id <String>]: 
         [SourceType <String>]: settingSourceType
       [State <String>]: complianceStatus
       [UserEmail <String>]: UserEmail
@@ -14263,7 +14341,17 @@ Read-only.
     [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
     [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
     [TpmVersion <String>]: The security version number of the Boot Application
-    [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+    [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
     [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
   [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
   [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -14284,6 +14372,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
   [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
   [ManagementAgent <ManagementAgentType?>]: managementAgentType
+  [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
   [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -15105,7 +15194,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -15242,6 +15331,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
           [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
           [FormatName <String>]: For a list of possible values see formatName values.
+    [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+      [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+      [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+      [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+      [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+      [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+      [ProvisioningType <String>]: cloudPcProvisioningType
+      [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+      [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+      [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
     [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -16617,6 +16754,14 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [DisplayName <String>]: The name of the role.
+        [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
       [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -17400,6 +17545,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+        [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [IsCloudManaged <Boolean?>]: 
         [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -18100,7 +18250,8 @@ Nullable.
         [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
       [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -19138,8 +19289,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -19209,22 +19360,29 @@ Read-only.
 MOBILETHREATDEFENSECONNECTORS <IMicrosoftGraphMobileThreatDefenseConnector[]>: The list of Mobile threat Defense connectors configured by the tenant.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [AllowPartnerToCollectIosApplicationMetadata <Boolean?>]: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about installed applications from Intune for IOS devices.
-When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about installed applications from Intune for IOS devices.
+  [AllowPartnerToCollectIosApplicationMetadata <Boolean?>]: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about installed applications from Intune for iOS devices.
+When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about installed applications from Intune for iOS devices.
 Default value is FALSE.
-  [AllowPartnerToCollectIosPersonalApplicationMetadata <Boolean?>]: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about personally installed applications from Intune for IOS devices.
-When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about personally installed applications from Intune for IOS devices.
+  [AllowPartnerToCollectIosPersonalApplicationMetadata <Boolean?>]: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about personally installed applications from Intune for iOS devices.
+When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about personally installed applications from Intune for iOS devices.
 Default value is FALSE.
-  [AndroidDeviceBlockedOnMissingPartnerData <Boolean?>]: For Android, set whether Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant
-  [AndroidEnabled <Boolean?>]: For Android, set whether data from the Mobile Threat Defense partner should be used during compliance evaluations
+  [AndroidDeviceBlockedOnMissingPartnerData <Boolean?>]: When TRUE, indicates that Intune must receive data from the Mobile Threat Defense partner prior to marking an Android device compliant.
+When FALSE, indicates that Intune may mark an Android device compliant before receiving data from the Mobile Threat Defense partner.
+  [AndroidEnabled <Boolean?>]: When TRUE, indicates that data from the Mobile Threat Defense partner will be used during compliance evaluations for Android devices.
+When FALSE, indicates that data from the Mobile Threat Defense partner will not be used during compliance evaluations for Android devices.
+Default value is FALSE.
   [AndroidMobileApplicationManagementEnabled <Boolean?>]: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during Mobile Application Management (MAM) evaluations for Android devices.
 When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during Mobile Application Management (MAM) evaluations for Android devices.
 Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation.
 Default value is FALSE.
-  [IosDeviceBlockedOnMissingPartnerData <Boolean?>]: For IOS, set whether Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant
-  [IosEnabled <Boolean?>]: For IOS, get or set whether data from the Mobile Threat Defense partner should be used during compliance evaluations
-  [IosMobileApplicationManagementEnabled <Boolean?>]: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during Mobile Application Management (MAM) evaluations for IOS devices.
-When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during Mobile Application Management (MAM) evaluations for IOS devices.
+  [IosDeviceBlockedOnMissingPartnerData <Boolean?>]: When TRUE, indicates that Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant.
+When FALSE, indicates that Intune may not recieve data from Mobile Threat Defense partner prior to making device compliant.
+Default value is FALSE.
+  [IosEnabled <Boolean?>]: When TRUE, indicates that data from the Mobile Threat Defense partner will be used during compliance evaluations for iOS devices.
+When FALSE, indicates that data from the Mobile Threat Defense partner will not be used during compliance evaluations for iOS devices.
+Default value is FALSE.
+  [IosMobileApplicationManagementEnabled <Boolean?>]: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during Mobile Application Management (MAM) evaluations for iOS devices.
+When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during Mobile Application Management (MAM) evaluations for iOS devices.
 Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation.
 Default value is FALSE.
   [LastHeartbeatDateTime <DateTime?>]: DateTime of last Heartbeat recieved from the Mobile Threat Defense partner
@@ -19232,13 +19390,16 @@ Default value is FALSE.
 When FALSE, inidicates that configuration profile management via Microsoft Defender for Endpoint is disabled.
 Default value is FALSE.
   [PartnerState <MobileThreatPartnerTenantState?>]: Partner state of this tenant.
-  [PartnerUnresponsivenessThresholdInDays <Int32?>]: Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
-  [PartnerUnsupportedOSVersionBlocked <Boolean?>]: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Mobile Threat Defense partner
-  [WindowsDeviceBlockedOnMissingPartnerData <Boolean?>]: When TRUE, inidicates that Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant for Windows.
-When FALSE, inidicates that Intune may make a device compliant without receiving data from the Mobile Threat Defense partner for Windows.
+  [PartnerUnresponsivenessThresholdInDays <Int32?>]: Indicates the number of days without receiving a heartbeat from a Mobile Threat Defense partner before the partner is marked as unresponsive.
+Intune will the ignore the data from this Mobile Threat Defense Partner for next compliance calculation.
+  [PartnerUnsupportedOSVersionBlocked <Boolean?>]: When TRUE, indicates that Intune will mark devices noncompliant on enabled platforms that do not meet the minimum version requirements of the Mobile Threat Defense partner.
+When FALSE, indicates that Intune will not mark devices noncompliant on enabled platforms that do not meet the minimum version requirements of the Mobile Threat Defense partner.
 Default value is FALSE.
-  [WindowsEnabled <Boolean?>]: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during compliance evaluations for Windows.
-When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during compliance evaluations for Windows.
+  [WindowsDeviceBlockedOnMissingPartnerData <Boolean?>]: When TRUE, indicates that Intune must receive data from the data sync partner prior to marking a device compliant for Windows.
+When FALSE, indicates that Intune may mark a device compliant without receiving data from the data sync partner for Windows.
+Default value is FALSE.
+  [WindowsEnabled <Boolean?>]: When TRUE, indicates that data from the Mobile Threat Defense partner will be used during compliance evaluations for Windows.
+When FALSE, indicates that data from the Mobile Threat Defense partner will not be used during compliance evaluations for Windows.
 Default value is FALSE.
 
 NOTIFICATIONMESSAGETEMPLATES <IMicrosoftGraphNotificationMessageTemplate[]>: The Notification Message Templates.
@@ -19269,26 +19430,31 @@ Read-only.
   [OnboardingStatus <RemoteAssistanceOnboardingStatus?>]: The current TeamViewer connector status
   [OnboardingUrl <String>]: URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
 
-REPORTS `<IMicrosoftGraphDeviceManagementReports>`: deviceManagementReports
+REPORTS <IMicrosoftGraphDeviceManagementReports>: deviceManagementReports
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]: Entity representing a job to export a report
+  [ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]: Entity representing a job to export a report.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [ExpirationDateTime <DateTime?>]: Time that the exported report expires
-    [Filter <String>]: Filters applied on the report
+    [ExpirationDateTime <DateTime?>]: Time that the exported report expires.
+    [Filter <String>]: Filters applied on the report.
+The maximum length allowed for this property is 2000 characters.
     [Format <DeviceManagementReportFileFormat?>]: Possible values for the file format of a report to be exported.
     [LocalizationType <DeviceManagementExportJobLocalizationType?>]: Configures how the requested export job is localized.
-    [ReportName <String>]: Name of the report
-    [RequestDateTime <DateTime?>]: Time that the exported report was requested
-    [Select <String[]>]: Columns selected from the report
+    [ReportName <String>]: Name of the report.
+The maximum length allowed for this property is 2000 characters.
+    [RequestDateTime <DateTime?>]: Time that the exported report was requested.
+    [Select <String[]>]: Columns selected from the report.
+The maximum number of allowed columns names is 256.
+The maximum length allowed for each column name in this property is 1000 characters.
     [SnapshotId <String>]: A snapshot is an identifiable subset of the dataset represented by the ReportName.
 A sessionId or CachedReportConfiguration id can be used here.
 If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId.
 Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
+The maximum length allowed for this property is 128 characters.
     [Status <DeviceManagementReportStatus?>]: Possible statuses associated with a generated report.
-    [Url <String>]: Temporary location of the exported report
+    [Url <String>]: Temporary location of the exported report.
 
 RESOURCEOPERATIONS <IMicrosoftGraphResourceOperation[]>: The Resource Operations.
   [Id <String>]: The unique identifier for an entity.
@@ -19300,10 +19466,13 @@ The description is used in mouse-over text for the operation when shown in the A
   [ResourceName <String>]: Name of the Resource this operation is performed on.
 
 ROLEASSIGNMENTS <IMicrosoftGraphDeviceAndAppManagementRoleAssignment[]>: The Role Assignments.
-  [Description <String>]: Description of the Role Assignment.
-  [DisplayName <String>]: The display or friendly name of the role Assignment.
-  [ResourceScopes <String[]>]: List of ids of role scope member security groups.
- These are IDs from Azure Active Directory.
+  [Description <String>]: Indicates the description of the role assignment.
+For example: 'All administrators, employees and scope tags associated with the Houston office.' Max length is 1024 characters.
+  [DisplayName <String>]: Indicates the display name of the role assignment.
+For example: 'Houston administrators and users'.
+Max length is 128 characters.
+  [ResourceScopes <String[]>]: Indicates the list of resource scope security group Entra IDs.
+For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
   [RoleDefinition <IMicrosoftGraphRoleDefinition>]: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
@@ -19321,10 +19490,13 @@ Set to True if it is built-in, or set to False if it is a custom role definition
     [RoleAssignments <IMicrosoftGraphRoleAssignment[]>]: List of Role assignments for this role definition.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [Description <String>]: Description of the Role Assignment.
-      [DisplayName <String>]: The display or friendly name of the role Assignment.
-      [ResourceScopes <String[]>]: List of ids of role scope member security groups.
- These are IDs from Azure Active Directory.
+      [Description <String>]: Indicates the description of the role assignment.
+For example: 'All administrators, employees and scope tags associated with the Houston office.' Max length is 1024 characters.
+      [DisplayName <String>]: Indicates the display name of the role assignment.
+For example: 'Houston administrators and users'.
+Max length is 128 characters.
+      [ResourceScopes <String[]>]: Indicates the list of resource scope security group Entra IDs.
+For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
       [RoleDefinition <IMicrosoftGraphRoleDefinition>]: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
@@ -19339,8 +19511,8 @@ These must match the actionName that is defined as part of the rolePermission.
         [NotAllowedResourceActions <String[]>]: Not Allowed Actions.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Members <String[]>]: The list of ids of role member security groups.
-These are IDs from Azure Active Directory.
+  [Members <String[]>]: Indicates the list of role member security group Entra IDs.
+For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
 
 ROLEDEFINITIONS <IMicrosoftGraphRoleDefinition[]>: The Role Definitions.
   [Id <String>]: The unique identifier for an entity.
@@ -19352,10 +19524,13 @@ Set to True if it is built-in, or set to False if it is a custom role definition
   [RoleAssignments <IMicrosoftGraphRoleAssignment[]>]: List of Role assignments for this role definition.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [Description <String>]: Description of the Role Assignment.
-    [DisplayName <String>]: The display or friendly name of the role Assignment.
-    [ResourceScopes <String[]>]: List of ids of role scope member security groups.
- These are IDs from Azure Active Directory.
+    [Description <String>]: Indicates the description of the role assignment.
+For example: 'All administrators, employees and scope tags associated with the Houston office.' Max length is 1024 characters.
+    [DisplayName <String>]: Indicates the display name of the role assignment.
+For example: 'Houston administrators and users'.
+Max length is 128 characters.
+    [ResourceScopes <String[]>]: Indicates the list of resource scope security group Entra IDs.
+For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
     [RoleDefinition <IMicrosoftGraphRoleDefinition>]: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
@@ -19369,13 +19544,13 @@ These must match the actionName that is defined as part of the rolePermission.
       [AllowedResourceActions <String[]>]: Allowed Actions
       [NotAllowedResourceActions <String[]>]: Not Allowed Actions.
 
-SETTINGS `<IMicrosoftGraphDeviceManagementSettings>`: deviceManagementSettings
+SETTINGS <IMicrosoftGraphDeviceManagementSettings>: deviceManagementSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeviceComplianceCheckinThresholdDays <Int32?>]: The number of days a device is allowed to go without checking in to remain compliant.
   [IsScheduledActionEnabled <Boolean?>]: Is feature enabled or not for scheduled action for rule.
   [SecureByDefault <Boolean?>]: Device should be noncompliant when there is no compliance policy targeted when this is true
 
-SOFTWAREUPDATESTATUSSUMMARY `<IMicrosoftGraphSoftwareUpdateStatusSummary>`: softwareUpdateStatusSummary
+SOFTWAREUPDATESTATUSSUMMARY <IMicrosoftGraphSoftwareUpdateStatusSummary>: softwareUpdateStatusSummary
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -19394,15 +19569,6 @@ Read-only.
   [RemediatedUserCount <Int32?>]: Number of remediated users.
   [UnknownDeviceCount <Int32?>]: Number of unknown devices.
   [UnknownUserCount <Int32?>]: Number of unknown users.
-
-TELECOMEXPENSEMANAGEMENTPARTNERS <IMicrosoftGraphTelecomExpenseManagementPartner[]>: The telecom expense management partners.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [AppAuthorized <Boolean?>]: Whether the partner's AAD app has been authorized to access Intune.
-  [DisplayName <String>]: Display name of the TEM partner.
-  [Enabled <Boolean?>]: Whether Intune's connection to the TEM service is currently enabled or disabled.
-  [LastConnectionDateTime <DateTime?>]: Timestamp of the last request sent to Intune by the TEM partner.
-  [Url <String>]: URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.
 
 TERMSANDCONDITIONS <IMicrosoftGraphTermsAndConditions[]>: The terms and conditions associated with device management of the company.
   [Id <String>]: The unique identifier for an entity.
@@ -19701,7 +19867,7 @@ Supports: $filter, $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
-USEREXPERIENCEANALYTICSAPPHEALTHOVERVIEW `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+USEREXPERIENCEANALYTICSAPPHEALTHOVERVIEW <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -20011,7 +20177,7 @@ A higher score indicates a healthier device.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
-USEREXPERIENCEANALYTICSOVERVIEW `<IMicrosoftGraphUserExperienceAnalyticsOverview>`: The user experience analytics overview entity contains the overall score and the scores and insights of every metric of all categories.
+USEREXPERIENCEANALYTICSOVERVIEW <IMicrosoftGraphUserExperienceAnalyticsOverview>: The user experience analytics overview entity contains the overall score and the scores and insights of every metric of all categories.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -20032,13 +20198,13 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 
-USEREXPERIENCEANALYTICSSETTINGS `<IMicrosoftGraphUserExperienceAnalyticsSettings>`: The user experience analytics insight is the recomendation to improve the user experience analytics score.
+USEREXPERIENCEANALYTICSSETTINGS <IMicrosoftGraphUserExperienceAnalyticsSettings>: The user experience analytics insight is the recomendation to improve the user experience analytics score.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConfigurationManagerDataConnectorConfigured <Boolean?>]: When TRUE, indicates Tenant attach is configured properly and System Center Configuration Manager (SCCM) tenant attached devices will show up in endpoint analytics reporting.
 When FALSE, indicates Tenant attach is not configured.
 FALSE by default.
 
-USEREXPERIENCEANALYTICSWORKFROMANYWHEREHARDWAREREADINESSMETRIC `<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric>`: The user experience analytics hardware readiness entity contains account level information about hardware blockers for windows upgrade.
+USEREXPERIENCEANALYTICSWORKFROMANYWHEREHARDWAREREADINESSMETRIC <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric>: The user experience analytics hardware readiness entity contains account level information about hardware blockers for windows upgrade.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -20280,7 +20446,7 @@ Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
-VIRTUALENDPOINT `<IMicrosoftGraphVirtualEndpoint>`: virtualEndpoint
+VIRTUALENDPOINT <IMicrosoftGraphVirtualEndpoint>: virtualEndpoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -21317,7 +21483,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -21454,6 +21620,9 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
               [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
               [FormatName <String>]: For a list of possible values see formatName values.
+        [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
         [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -22829,6 +22998,14 @@ Read-only.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
+          [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [DisplayName <String>]: The name of the role.
+            [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
           [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
             [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -23612,6 +23789,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+            [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [IsCloudManaged <Boolean?>]: 
             [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -24312,7 +24494,8 @@ Nullable.
             [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
           [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -24427,8 +24610,8 @@ Read-only.
               [Setting <String>]: The setting that is being reported
               [SettingName <String>]: Localized/user friendly setting name that is being reported
               [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-                [DisplayName <String>]: Not yet documented
-                [Id <String>]: Not yet documented
+                [DisplayName <String>]: 
+                [Id <String>]: 
                 [SourceType <String>]: settingSourceType
               [State <String>]: complianceStatus
               [UserEmail <String>]: UserEmail
@@ -24493,7 +24676,17 @@ Read-only.
             [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
             [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
             [TpmVersion <String>]: The security version number of the Boot Application
-            [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+            [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
             [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
           [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
           [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -24514,6 +24707,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
           [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
           [ManagementAgent <ManagementAgentType?>]: managementAgentType
+          [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
           [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -25523,8 +25717,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -25672,7 +25866,7 @@ Read-only.
   [LastDetectionDateTime <DateTime?>]: Indicates the last time the malware was detected in UTC
   [Severity <WindowsMalwareSeverity?>]: Malware severity
 
-WINDOWSMALWAREOVERVIEW `<IMicrosoftGraphWindowsMalwareOverview>`: Windows device malware overview.
+WINDOWSMALWAREOVERVIEW <IMicrosoftGraphWindowsMalwareOverview>: Windows device malware overview.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MalwareCategorySummary <IMicrosoftGraphWindowsMalwareCategoryCount[]>]: List of device counts per malware category
     [ActiveMalwareDetectionCount <Int32?>]: Count of active malware detections for this malware category.
@@ -25720,27 +25914,4 @@ Valid values -2147483648 to 2147483647
 
 ## RELATED LINKS
 
-- [Update-MgDeviceManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-tem-devicemanagement-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement)

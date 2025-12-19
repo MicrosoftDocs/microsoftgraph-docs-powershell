@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsite
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 12/05/2025
+ms.date: 12/19/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgSite
 ---
@@ -13,10 +13,7 @@ title: Get-MgSite
 
 ## SYNOPSIS
 
-Retrieve properties and relationships for a site resource.A site resource represents a team site in SharePoint.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSite?view=graph-powershell-beta)
+Retrieve properties and relationships for a site resource.\r\nA site resource represents a team site in SharePoint.
 
 ## SYNTAX
 
@@ -56,39 +53,21 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Retrieve properties and relationships for a site resource.A site resource represents a team site in SharePoint.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Read.All, Sites.ReadWrite.All,  |
+Retrieve properties and relationships for a site resource.\r\nA site resource represents a team site in SharePoint.
 
 ## EXAMPLES
-### Example 1: List sites using query parameters
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Sites
 
-Get-MgSite -Property "siteCollection,webUrl" -Filter "siteCollection/root ne null" 
+Get-MgSite -Property "siteCollection,webUrl" -Filter "siteCollection/root ne null"
 
-```
-This example will list sites using query parameters
-
-### Example 2: List all sites
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSite
-
-```
-This example will list all sites
-
 
 ## PARAMETERS
 
@@ -550,7 +529,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -598,28 +577,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsite)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/site-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/site-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsite)
+- [](https://learn.microsoft.com/graph/api/site-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/site-list?view=graph-rest-1.0)

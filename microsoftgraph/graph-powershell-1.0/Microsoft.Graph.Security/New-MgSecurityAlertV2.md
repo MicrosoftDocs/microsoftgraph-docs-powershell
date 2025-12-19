@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalertv2
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 12/19/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityAlertV2
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityAlertV2
 ## SYNOPSIS
 
 Create new navigation property to alerts_v2 for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,14 +27,15 @@ New-MgSecurityAlertV2 [-ResponseHeadersVariable <string>] [-ActorDisplayName <st
  [-CustomDetails <hashtable>] [-Description <string>] [-DetectionSource <string>]
  [-DetectorId <string>] [-Determination <string>]
  [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <datetime>]
- [-Id <string>] [-IncidentId <string>] [-IncidentWebUrl <string>] [-LastActivityDateTime <datetime>]
- [-LastUpdateDateTime <datetime>] [-MitreTechniques <string[]>] [-ProductName <string>]
- [-ProviderAlertId <string>] [-RecommendedActions <string>] [-ResolvedDateTime <datetime>]
- [-ServiceSource <string>] [-Severity <string>] [-Status <string>] [-SystemTags <string[]>]
- [-TenantId <string>] [-ThreatDisplayName <string>] [-ThreatFamilyName <string>] [-Title <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <string>] [-IncidentId <string>] [-IncidentWebUrl <string>] [-InvestigationState <string>]
+ [-LastActivityDateTime <datetime>] [-LastUpdateDateTime <datetime>] [-MitreTechniques <string[]>]
+ [-ProductName <string>] [-ProviderAlertId <string>] [-RecommendedActions <string>]
+ [-ResolvedDateTime <datetime>] [-ServiceSource <string>] [-Severity <string>] [-Status <string>]
+ [-SystemTags <string[]>] [-TenantId <string>] [-ThreatDisplayName <string>]
+ [-ThreatFamilyName <string>] [-Title <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -58,6 +56,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to alerts_v2 for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -613,6 +621,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -InvestigationState
+
+investigationState
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -LastActivityDateTime
 
 The oldest activity associated with the alert.
@@ -1065,7 +1094,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityAlert>`: alert
+BODYPARAMETER <IMicrosoftGraphSecurityAlert>: alert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1102,6 +1131,7 @@ Values are free-form.
   [FirstActivityDateTime <DateTime?>]: The earliest activity associated with the alert.
   [IncidentId <String>]: Unique identifier to represent the incident this alert resource is associated with.
   [IncidentWebUrl <String>]: URL for the incident page in the Microsoft 365 Defender portal.
+  [InvestigationState <String>]: investigationState
   [LastActivityDateTime <DateTime?>]: The oldest activity associated with the alert.
   [LastUpdateDateTime <DateTime?>]: Time when the alert was last updated at Microsoft 365 Defender.
   [MitreTechniques <String[]>]: The attack techniques, as aligned with the MITRE ATT&CK framework.
@@ -1138,27 +1168,4 @@ Values are free-form.
 
 ## RELATED LINKS
 
-- [New-MgSecurityAlertV2](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalertv2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalertv2)
