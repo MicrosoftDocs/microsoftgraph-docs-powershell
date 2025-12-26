@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 Get the properties and relationships of an application object.
 This API can be used to get agentIdentityBlueprint objects as well by their ID.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Application.Read.All, User.Read, Application.ReadWrite.All,  |
+| Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

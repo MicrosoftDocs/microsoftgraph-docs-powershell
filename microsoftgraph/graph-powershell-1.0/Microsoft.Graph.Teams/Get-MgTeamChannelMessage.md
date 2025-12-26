@@ -77,6 +77,14 @@ This cmdlet has the following aliases,
 
 Retrieve a single message or a message reply in a channel or a chat.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChannelMessage.Read.All, Group.ReadWrite.All, Group.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelMessage.Read.Group, Group.ReadWrite.All, Group.Read.All, ChannelMessage.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
