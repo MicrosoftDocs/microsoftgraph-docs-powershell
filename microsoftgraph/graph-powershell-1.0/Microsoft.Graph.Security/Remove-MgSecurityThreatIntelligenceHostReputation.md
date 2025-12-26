@@ -454,7 +454,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligencehostreputation)
+- [Remove-MgSecurityThreatIntelligenceHostReputation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligencehostreputation)
 
 
 

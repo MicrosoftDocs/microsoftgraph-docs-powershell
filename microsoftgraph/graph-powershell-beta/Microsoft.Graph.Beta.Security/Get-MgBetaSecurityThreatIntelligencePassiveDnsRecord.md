@@ -643,8 +643,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencepassivednsrecord)
-- [](https://learn.microsoft.com/graph/api/security-passivednsrecord-get?view=graph-rest-beta)
+- [Get-MgBetaSecurityThreatIntelligencePassiveDnsRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencepassivednsrecord)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-passivednsrecord-get?view=graph-rest-beta)
 
 
 

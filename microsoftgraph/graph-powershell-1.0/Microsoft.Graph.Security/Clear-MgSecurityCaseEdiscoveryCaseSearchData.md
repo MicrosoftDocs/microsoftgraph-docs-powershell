@@ -648,8 +648,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/clear-mgsecuritycaseediscoverycasesearchdata)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-1.0)
+- [Clear-MgSecurityCaseEdiscoveryCaseSearchData](https://learn.microsoft.com/powershell/module/microsoft.graph.security/clear-mgsecuritycaseediscoverycasesearchdata)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-1.0)
 
 
 

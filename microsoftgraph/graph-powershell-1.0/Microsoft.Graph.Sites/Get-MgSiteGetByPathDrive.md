@@ -599,7 +599,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathdrive)
+- [Get-MgSiteGetByPathDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathdrive)
 
 
 

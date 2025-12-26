@@ -412,7 +412,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleassignmentscheduleinstanceappscope)
+- [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceAppScope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleassignmentscheduleinstanceappscope)
 
 
 

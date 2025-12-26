@@ -947,7 +947,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritydatasecurityandgovernancesensitivitylabel)
+- [Update-MgSecurityDataSecurityAndGovernanceSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritydatasecurityandgovernancesensitivitylabel)
 
 
 

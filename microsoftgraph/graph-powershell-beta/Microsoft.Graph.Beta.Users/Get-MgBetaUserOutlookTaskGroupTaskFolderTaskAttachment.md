@@ -664,7 +664,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgrouptaskfoldertaskattachment)
+- [Get-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgrouptaskfoldertaskattachment)
 
 
 

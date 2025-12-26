@@ -390,7 +390,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddevicecountasapproleassignment)
+- [Get-MgBetaUserRegisteredDeviceCountAsAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddevicecountasapproleassignment)
 
 
 

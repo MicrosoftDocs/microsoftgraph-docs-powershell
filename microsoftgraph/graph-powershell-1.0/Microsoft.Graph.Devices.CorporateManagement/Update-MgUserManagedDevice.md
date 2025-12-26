@@ -11540,7 +11540,7 @@ Defaults to setting on client device.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevice)
+- [Update-MgUserManagedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevice)
 
 
 

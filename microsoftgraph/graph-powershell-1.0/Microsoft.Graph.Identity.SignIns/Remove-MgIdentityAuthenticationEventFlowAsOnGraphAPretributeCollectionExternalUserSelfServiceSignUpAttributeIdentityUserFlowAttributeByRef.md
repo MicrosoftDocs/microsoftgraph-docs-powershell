@@ -470,7 +470,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributeidentityuserflowattributebyref)
+- [Remove-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeIdentityUserFlowAttributeByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributeidentityuserflowattributebyref)
 
 
 

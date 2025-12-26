@@ -761,7 +761,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaselegalholdusersource)
+- [Update-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaselegalholdusersource)
 
 
 

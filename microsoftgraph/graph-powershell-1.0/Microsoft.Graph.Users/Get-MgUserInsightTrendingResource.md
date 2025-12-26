@@ -390,7 +390,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserinsighttrendingresource)
+- [Get-MgUserInsightTrendingResource](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserinsighttrendingresource)
 
 
 

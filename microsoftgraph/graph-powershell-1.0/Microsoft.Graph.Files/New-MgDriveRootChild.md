@@ -33329,7 +33329,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootchild)
+- [New-MgDriveRootChild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootchild)
 
 
 

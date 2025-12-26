@@ -1044,7 +1044,7 @@ PICTURE <IMicrosoftGraphPicture[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyitem)
+- [Update-MgBetaFinancialCompanyItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyitem)
 
 
 

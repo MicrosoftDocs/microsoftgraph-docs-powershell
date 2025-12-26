@@ -361,7 +361,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivityremotenetworkdevicelinkcount)
+- [Get-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLinkCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivityremotenetworkdevicelinkcount)
 
 
 

@@ -435,8 +435,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateamworkdeletedteamchannelmigration)
-- [](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-beta)
+- [Complete-MgBetaTeamworkDeletedTeamChannelMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateamworkdeletedteamchannelmigration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-beta)
 
 
 

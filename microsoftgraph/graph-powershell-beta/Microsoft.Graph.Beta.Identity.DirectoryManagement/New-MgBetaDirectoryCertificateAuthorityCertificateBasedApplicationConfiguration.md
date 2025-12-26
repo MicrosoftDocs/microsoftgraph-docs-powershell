@@ -482,7 +482,7 @@ In a certificateBasedApplicationConfiguration object, at least one object in the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
+- [New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
 
 
 

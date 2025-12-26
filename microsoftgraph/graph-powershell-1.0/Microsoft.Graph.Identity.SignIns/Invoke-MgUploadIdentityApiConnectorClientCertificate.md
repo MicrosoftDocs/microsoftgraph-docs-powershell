@@ -587,8 +587,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mguploadidentityapiconnectorclientcertificate)
-- [](https://learn.microsoft.com/graph/api/identityapiconnector-uploadclientcertificate?view=graph-rest-1.0)
+- [Invoke-MgUploadIdentityApiConnectorClientCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mguploadidentityapiconnectorclientcertificate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityapiconnector-uploadclientcertificate?view=graph-rest-1.0)
 
 
 

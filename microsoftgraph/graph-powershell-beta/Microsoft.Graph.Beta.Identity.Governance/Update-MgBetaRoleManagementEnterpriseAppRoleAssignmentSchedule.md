@@ -1453,7 +1453,7 @@ In PIM, when the  eligible or active assignment becomes active.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapproleassignmentschedule)
+- [Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapproleassignmentschedule)
 
 
 
