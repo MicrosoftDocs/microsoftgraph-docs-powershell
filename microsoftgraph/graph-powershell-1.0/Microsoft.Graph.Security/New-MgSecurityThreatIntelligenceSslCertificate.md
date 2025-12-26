@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencesslcertificate
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityThreatIntelligenceSslCertificate
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityThreatIntelligenceSslCertificate
 ## SYNOPSIS
 
 Create new navigation property to sslCertificates for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceSslCertificate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to sslCertificates for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -585,7 +592,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecuritySslCertificate>`: sslCertificate
+BODYPARAMETER <IMicrosoftGraphSecuritySslCertificate>: sslCertificate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -860,7 +867,7 @@ Read-only.
 Note: This is not the signature.
   [Subject <IMicrosoftGraphSecuritySslCertificateEntity>]: sslCertificateEntity
 
-ISSUER `<IMicrosoftGraphSecuritySslCertificateEntity>`: sslCertificateEntity
+ISSUER <IMicrosoftGraphSecuritySslCertificateEntity>: sslCertificateEntity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1154,7 +1161,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-SUBJECT `<IMicrosoftGraphSecuritySslCertificateEntity>`: sslCertificateEntity
+SUBJECT <IMicrosoftGraphSecuritySslCertificateEntity>: sslCertificateEntity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1176,27 +1183,4 @@ It's a free-format string value, for example, 'United States'.
 
 ## RELATED LINKS
 
-- [New-MgSecurityThreatIntelligenceSslCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencesslcertificate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencesslcertificate)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerbucket
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlannerBucket
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaPlannerBucket
 ## SYNOPSIS
 
 Create a new plannerBucket object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerBucket?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,18 +48,9 @@ This cmdlet has the following aliases,
 
 Create a new plannerBucket object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -73,10 +61,6 @@ $params = @{
 }
 
 New-MgBetaPlannerBucket -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPlannerBucket Cmdlet.
-
 
 ## PARAMETERS
 
@@ -543,7 +527,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ARCHIVALINFO `<IMicrosoftGraphPlannerArchivalInfo>`: plannerArchivalInfo
+ARCHIVALINFO <IMicrosoftGraphPlannerArchivalInfo>: plannerArchivalInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Justification <String>]: Read-only.
 Reason why the entity was archived or unarchived.
@@ -552,15 +536,16 @@ Reason why the entity was archived or unarchived.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [StatusChangedDateTime <DateTime?>]: Read-only.
 Date and time at which the entity's archive status changed.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerBucket>`: plannerBucket
+BODYPARAMETER <IMicrosoftGraphPlannerBucket>: plannerBucket
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -573,9 +558,10 @@ Reason why the entity was archived or unarchived.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [StatusChangedDateTime <DateTime?>]: Read-only.
@@ -689,6 +675,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
     [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    [HasChat <Boolean?>]: 
     [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
@@ -769,7 +756,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     [Title <String>]: Title of the task.
 
-CREATIONSOURCE `<IMicrosoftGraphPlannerBucketCreation>`: plannerBucketCreation
+CREATIONSOURCE <IMicrosoftGraphPlannerBucketCreation>: plannerBucketCreation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreationSourceKind <String>]: plannerCreationSourceKind
 
@@ -790,9 +777,10 @@ Reason why the entity was archived or unarchived.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [StatusChangedDateTime <DateTime?>]: Read-only.
@@ -887,6 +875,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
   [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  [HasChat <Boolean?>]: 
   [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
@@ -970,27 +959,5 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
 
-- [New-MgBetaPlannerBucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerbucket)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/planner-post-buckets?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerbucket)
+- [](https://learn.microsoft.com/graph/api/planner-post-buckets?view=graph-rest-beta)

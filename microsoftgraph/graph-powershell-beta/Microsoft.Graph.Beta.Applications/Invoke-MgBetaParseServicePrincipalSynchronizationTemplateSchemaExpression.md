@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationtemplateschemaexpression
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression
 
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -81,13 +78,19 @@ This cmdlet has the following aliases,
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Synchronization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+{{ Add output here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -120,7 +123,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -191,7 +194,7 @@ HelpMessage: ''
 
 ### -Expression
 
-
+.
 
 ```yaml
 Type: System.String
@@ -558,7 +561,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ia9XfcServiceprincipalsServiceprincipalIdSynchronizationTemplatesSynchronizationtemplateIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ia9XfcServiceprincipalsServiceprincipalIdSynchronizationTemplatesSynchronizationtemplateIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Expression <String>]: 
   [TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]: attributeDefinition
@@ -608,7 +611,7 @@ Not nullable.
     [Properties <IMicrosoftGraphStringKeyObjectValuePair[]>]: Property values of the test object.
       [Key <String>]: Key.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -635,6 +638,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob
@@ -645,7 +649,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [UniqueName <String>]: Alternate key of application
   [UserId <String>]: The unique identifier of user
 
-TARGETATTRIBUTEDEFINITION `<IMicrosoftGraphAttributeDefinition>`: attributeDefinition
+TARGETATTRIBUTEDEFINITION <IMicrosoftGraphAttributeDefinition>: attributeDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Anchor <Boolean?>]: true if the attribute should be used as the anchor for the object.
 Anchor attributes must have a unique value identifying an object, and must be immutable.
@@ -678,7 +682,7 @@ If during synchronization, the required attribute has no value, the default valu
 If default the value was not set, synchronization will record an error.
   [Type <String>]: attributeType
 
-TESTINPUTOBJECT `<IMicrosoftGraphExpressionInputObject>`: expressionInputObject
+TESTINPUTOBJECT <IMicrosoftGraphExpressionInputObject>: expressionInputObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Definition <IMicrosoftGraphObjectDefinition>]: objectDefinition
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -726,28 +730,5 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationtemplateschemaexpression)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationtemplateschemaexpression)
+- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-beta)

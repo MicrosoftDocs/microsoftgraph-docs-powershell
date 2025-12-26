@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionapplearningsummary
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 ---
@@ -13,10 +13,7 @@ title: New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 
 ## SYNOPSIS
 
-Create a new windowsInformationProtectionAppLearningSummary object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-beta)
+Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
 
 ## SYNTAX
 
@@ -49,20 +46,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new windowsInformationProtectionAppLearningSummary object.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
+Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -74,10 +62,6 @@ $params = @{
 }
 
 New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary Cmdlet.
-
 
 ## PARAMETERS
 
@@ -452,7 +436,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsInformationProtectionAppLearningSummary>`: Windows Information Protection AppLearning Summary entity.
+BODYPARAMETER <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary>: Windows Information Protection AppLearning Summary entity.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -463,27 +447,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionapplearningsummary)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionapplearningsummary-create?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionapplearningsummary)

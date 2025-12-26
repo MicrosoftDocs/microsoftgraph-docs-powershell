@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaarchivesite
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaArchiveSite
 ---
@@ -46,26 +46,13 @@ This cmdlet has the following aliases,
 
 Archive an active SharePoint site.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.Archive.All, Sites.FullControl.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Archive.All, Sites.FullControl.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Sites
 
 Invoke-MgBetaArchiveSite -SiteId $siteId
-
-```
-This example shows how to use the Invoke-MgBetaArchiveSite Cmdlet.
-
 
 ## PARAMETERS
 
@@ -376,7 +363,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -413,6 +400,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [OnenotePageId <String>]: The unique identifier of onenotePage
   [OnenoteResourceId <String>]: The unique identifier of onenoteResource
   [OnenoteSectionId <String>]: The unique identifier of onenoteSection
+  [OperationId <String>]: Usage: operationId='{operationId}'
   [PageTemplateId <String>]: The unique identifier of pageTemplate
   [Path <String>]: Usage: path='{path}'
   [PermissionId <String>]: The unique identifier of permission
@@ -440,27 +428,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaArchiveSite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaarchivesite)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/site-archive?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaarchivesite)
+- [](https://learn.microsoft.com/graph/api/site-archive?view=graph-rest-beta)

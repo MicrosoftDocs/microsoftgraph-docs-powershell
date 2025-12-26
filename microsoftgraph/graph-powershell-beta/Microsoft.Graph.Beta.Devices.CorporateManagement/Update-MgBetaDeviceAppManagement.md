@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagement
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaDeviceAppManagement
 ## SYNOPSIS
 
 Update deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagement](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -80,13 +77,15 @@ This cmdlet has the following aliases,
 
 Update deviceAppManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1202,7 +1201,9 @@ Read-only.
   [BlockAfterCompanyPortalUpdateDeferralInDays <Int32?>]: Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.
   [ConnectToVpnOnLaunch <Boolean?>]: Whether the app should connect to the configured VPN on launch.
   [CustomBrowserDisplayName <String>]: Friendly name of the preferred custom browser to open weblink on Android.
-  [CustomBrowserPackageId <String>]: Unique identifier of a custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+  [CustomBrowserPackageId <String>]: Unique identifier of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
   [CustomDialerAppDisplayName <String>]: Friendly name of a custom dialer app to click-to-open a phone number on Android.
   [CustomDialerAppPackageId <String>]: PackageId of a custom dialer app to click-to-open a phone number on Android.
   [DeployedAppCount <Int32?>]: Count of apps to which the current policy is deployed.
@@ -1243,7 +1244,7 @@ If enabled list of approved keyboards must be provided as well.
   [WarnAfterCompanyPortalUpdateDeferralInDays <Int32?>]: Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning
   [WipeAfterCompanyPortalUpdateDeferralInDays <Int32?>]: Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped
 
-BODYPARAMETER `<IMicrosoftGraphDeviceAppManagement>`: Singleton entity that acts as a container for all device app management functionality.
+BODYPARAMETER <IMicrosoftGraphDeviceAppManagement>: Singleton entity that acts as a container for all device app management functionality.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1347,7 +1348,9 @@ Read-only.
     [BlockAfterCompanyPortalUpdateDeferralInDays <Int32?>]: Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.
     [ConnectToVpnOnLaunch <Boolean?>]: Whether the app should connect to the configured VPN on launch.
     [CustomBrowserDisplayName <String>]: Friendly name of the preferred custom browser to open weblink on Android.
-    [CustomBrowserPackageId <String>]: Unique identifier of a custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+    [CustomBrowserPackageId <String>]: Unique identifier of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
     [CustomDialerAppDisplayName <String>]: Friendly name of a custom dialer app to click-to-open a phone number on Android.
     [CustomDialerAppPackageId <String>]: PackageId of a custom dialer app to click-to-open a phone number on Android.
     [DeployedAppCount <Int32?>]: Count of apps to which the current policy is deployed.
@@ -1584,7 +1587,7 @@ $Search is not supported.
   [IosLobAppProvisioningConfigurations <IMicrosoftGraphIosLobAppProvisioningConfiguration[]>]: The IOS Lob App Provisioning Configurations.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment[]>]: The associated group assignments for IosLobAppProvisioningConfiguration.
+    [Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment[]>]: The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
@@ -1603,6 +1606,9 @@ Read-only.
       [UserPrincipalName <String>]: UserPrincipalName.
     [DisplayName <String>]: Admin provided name of the device configuration.
     [ExpirationDateTime <DateTime?>]: Optional profile expiration date and time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
     [GroupAssignments <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment[]>]: The associated group assignments.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2072,11 +2078,14 @@ Read-only.
           [Platform <DeviceManagementConfigurationPlatforms?>]: Supported platform types.
           [Technologies <DeviceManagementConfigurationTechnologies?>]: Describes which technology this setting can be deployed with
         [BaseUri <String>]: Base CSP Path
-        [CategoryId <String>]: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
-        [Description <String>]: Description of the item
-        [DisplayName <String>]: Display name of the item
-        [HelpText <String>]: Help text of the item
-        [InfoUrls <String[]>]: List of links more info for the setting can be found at
+        [CategoryId <String>]: Specify category in which the setting is under.
+Support $filters.
+        [Description <String>]: Description of the setting.
+        [DisplayName <String>]: Name of the setting.
+For example: Allow Toast.
+        [HelpText <String>]: Help text of the setting.
+Give more details of the setting.
+        [InfoUrls <String[]>]: List of links more info for the setting can be found at.
         [Keywords <String[]>]: Tokens which to search settings on
         [Name <String>]: Name of the item
         [Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]: deviceManagementConfigurationSettingOccurrence
@@ -2089,7 +2098,7 @@ A MinDeviceOccurrence of 0 means setting is optional
           [SettingDefinitionId <String>]: Setting definition id that is being referred to a setting.
 Applicable for reusable setting.
         [RiskLevel <DeviceManagementConfigurationSettingRiskLevel?>]: Setting RiskLevel
-        [RootDefinitionId <String>]: Root setting definition if the setting is a child setting.
+        [RootDefinitionId <String>]: Root setting definition id if the setting is a child setting.
         [SettingUsage <DeviceManagementConfigurationSettingUsage?>]: Supported setting types
         [UxBehavior <DeviceManagementConfigurationControlType?>]: Setting control type representation in the UX
         [Version <String>]: Item Version
@@ -2563,7 +2572,7 @@ $Search is not supported.
 IOSLOBAPPPROVISIONINGCONFIGURATIONS <IMicrosoftGraphIosLobAppProvisioningConfiguration[]>: The IOS Lob App Provisioning Configurations.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment[]>]: The associated group assignments for IosLobAppProvisioningConfiguration.
+  [Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment[]>]: The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
@@ -2585,6 +2594,9 @@ Read-only.
     [UserPrincipalName <String>]: UserPrincipalName.
   [DisplayName <String>]: Admin provided name of the device configuration.
   [ExpirationDateTime <DateTime?>]: Optional profile expiration date and time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
   [GroupAssignments <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment[]>]: The associated group assignments.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3118,7 +3130,7 @@ Read-only.
   [RoleScopeTags <String[]>]: RoleScopeTags of the PolicySet
   [Status <PolicySetStatus?>]: The enum to specify the status of PolicySet.
 
-SYMANTECCODESIGNINGCERTIFICATE `<IMicrosoftGraphSymantecCodeSigningCertificate>`: symantecCodeSigningCertificate
+SYMANTECCODESIGNINGCERTIFICATE <IMicrosoftGraphSymantecCodeSigningCertificate>: symantecCodeSigningCertificate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3151,11 +3163,14 @@ Read-only.
         [Platform <DeviceManagementConfigurationPlatforms?>]: Supported platform types.
         [Technologies <DeviceManagementConfigurationTechnologies?>]: Describes which technology this setting can be deployed with
       [BaseUri <String>]: Base CSP Path
-      [CategoryId <String>]: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
-      [Description <String>]: Description of the item
-      [DisplayName <String>]: Display name of the item
-      [HelpText <String>]: Help text of the item
-      [InfoUrls <String[]>]: List of links more info for the setting can be found at
+      [CategoryId <String>]: Specify category in which the setting is under.
+Support $filters.
+      [Description <String>]: Description of the setting.
+      [DisplayName <String>]: Name of the setting.
+For example: Allow Toast.
+      [HelpText <String>]: Help text of the setting.
+Give more details of the setting.
+      [InfoUrls <String[]>]: List of links more info for the setting can be found at.
       [Keywords <String[]>]: Tokens which to search settings on
       [Name <String>]: Name of the item
       [Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]: deviceManagementConfigurationSettingOccurrence
@@ -3168,7 +3183,7 @@ A MinDeviceOccurrence of 0 means setting is optional
         [SettingDefinitionId <String>]: Setting definition id that is being referred to a setting.
 Applicable for reusable setting.
       [RiskLevel <DeviceManagementConfigurationSettingRiskLevel?>]: Setting RiskLevel
-      [RootDefinitionId <String>]: Root setting definition if the setting is a child setting.
+      [RootDefinitionId <String>]: Root setting definition id if the setting is a child setting.
       [SettingUsage <DeviceManagementConfigurationSettingUsage?>]: Supported setting types
       [UxBehavior <DeviceManagementConfigurationControlType?>]: Setting control type representation in the UX
       [Version <String>]: Item Version
@@ -3497,7 +3512,7 @@ A timespan value of PT0S indicates that managed data will never be wiped when th
 When FALSE, indicates that printing is allowed from managed apps.
 Default value is FALSE.
 
-WINDOWSMANAGEMENTAPP `<IMicrosoftGraphWindowsManagementApp>`: Windows management app entity.
+WINDOWSMANAGEMENTAPP <IMicrosoftGraphWindowsManagementApp>: Windows management app entity.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3516,27 +3531,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceAppManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagement)

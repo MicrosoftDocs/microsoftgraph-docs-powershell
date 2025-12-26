@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserSetting
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserSetting
 ## SYNOPSIS
 
 Update the navigation property settings in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -83,13 +80,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property settings in users
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -731,7 +730,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserSettings>`: userSettings
+BODYPARAMETER <IMicrosoftGraphUserSettings>: userSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -802,9 +801,10 @@ Read only.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -886,21 +886,21 @@ Refers to the user's Windows device that modified the object at the specified da
     [SettingType <String>]: windowsSettingType
     [WindowsDeviceId <String>]: A unique identifier for the device the setting might belong to if it is of the settingType backup.
 
-CONTACTMERGESUGGESTIONS `<IMicrosoftGraphContactMergeSuggestions>`: contactMergeSuggestions
+CONTACTMERGESUGGESTIONS <IMicrosoftGraphContactMergeSuggestions>: contactMergeSuggestions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [IsEnabled <Boolean?>]: true if the duplicate contact merge suggestions feature is enabled for the user; false if the feature is disabled.
 Default value is true.
 
-EXCHANGE `<IMicrosoftGraphExchangeSettings>`: exchangeSettings
+EXCHANGE <IMicrosoftGraphExchangeSettings>: exchangeSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [InPlaceArchiveMailboxId <String>]: 
   [PrimaryMailboxId <String>]: The unique identifier for the user's primary mailbox.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -930,7 +930,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [WindowsSettingId <String>]: The unique identifier of windowsSetting
   [WindowsSettingInstanceId <String>]: The unique identifier of windowsSettingInstance
 
-ITEMINSIGHTS `<IMicrosoftGraphUserInsightsSettings>`: userInsightsSettings
+ITEMINSIGHTS <IMicrosoftGraphUserInsightsSettings>: userInsightsSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -938,7 +938,7 @@ Read-only.
 The default value is true.
 Optional.
 
-REGIONALANDLANGUAGESETTINGS `<IMicrosoftGraphRegionalAndLanguageSettings>`: regionalAndLanguageSettings
+REGIONALANDLANGUAGESETTINGS <IMicrosoftGraphRegionalAndLanguageSettings>: regionalAndLanguageSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -975,16 +975,17 @@ For example, it would specify 'fr' for the neutral French culture, but not 'fr-F
 Returned by default.
 Read only.
 
-SHIFTPREFERENCES `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
+SHIFTPREFERENCES <IMicrosoftGraphShiftPreferences>: shiftPreferences
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1028,7 +1029,7 @@ Required.
       [StartTime <String>]: Start time for the time range.
     [TimeZone <String>]: Specifies the time zone for the indicated time.
 
-STORAGE `<IMicrosoftGraphUserStorage>`: userStorage
+STORAGE <IMicrosoftGraphUserStorage>: userStorage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1071,27 +1072,4 @@ Refers to the user's Windows device that modified the object at the specified da
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting)

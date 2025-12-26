@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerroster
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlannerRoster
 ---
@@ -47,18 +47,9 @@ This cmdlet has the following aliases,
 
 Create a new plannerRoster object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -67,10 +58,6 @@ $params = @{
 }
 
 New-MgBetaPlannerRoster -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPlannerRoster Cmdlet.
-
 
 ## PARAMETERS
 
@@ -448,13 +435,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNEDSENSITIVITYLABEL `<IMicrosoftGraphSensitivityLabelAssignment>`: sensitivityLabelAssignment
+ASSIGNEDSENSITIVITYLABEL <IMicrosoftGraphSensitivityLabelAssignment>: sensitivityLabelAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
   [SensitivityLabelId <String>]: The unique identifier for the sensitivity label assigned to the file.
   [TenantId <String>]: The unique identifier for the tenant that hosts the file when this label is applied.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerRoster>`: plannerRoster
+BODYPARAMETER <IMicrosoftGraphPlannerRoster>: plannerRoster
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -483,9 +470,10 @@ Reason why the entity was archived or unarchived.
         [Application <IMicrosoftGraphIdentity>]: identity
           [(Any) <Object>]: This indicates any property can be added to this object.
           [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-          [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         [Device <IMicrosoftGraphIdentity>]: identity
         [User <IMicrosoftGraphIdentity>]: identity
       [StatusChangedDateTime <DateTime?>]: Read-only.
@@ -605,6 +593,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
         [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+        [HasChat <Boolean?>]: 
         [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
@@ -691,6 +680,15 @@ Optional.
       [Type <String>]: plannerContainerType
       [Url <String>]: The full canonical URL of the container.
 Optional.
+    [ContentSensitivityLabelAssignment <IMicrosoftGraphContentSensitivityLabelAssignment>]: contentSensitivityLabelAssignment
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
+      [JustificationText <String>]: The justification text provided when you change the sensitivity label.
+Used during label downgrade to document the reason.
+Optional.
+      [SensitivityLabelId <String>]: The unique identifier of the sensitivity label applied to the content.
+This ID corresponds to a label defined in the Microsoft Information Protection policy.
+      [TenantId <String>]: The unique identifier of the tenant where the sensitivity label is defined and applied.
     [Contexts <IMicrosoftGraphPlannerPlanContextCollection>]: plannerPlanContextCollection
       [(Any) <Object>]: This indicates any property can be added to this object.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -777,9 +775,10 @@ Reason why the entity was archived or unarchived.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [StatusChangedDateTime <DateTime?>]: Read-only.
@@ -899,6 +898,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
       [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [HasChat <Boolean?>]: 
       [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
@@ -985,6 +985,15 @@ Optional.
     [Type <String>]: plannerContainerType
     [Url <String>]: The full canonical URL of the container.
 Optional.
+  [ContentSensitivityLabelAssignment <IMicrosoftGraphContentSensitivityLabelAssignment>]: contentSensitivityLabelAssignment
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
+    [JustificationText <String>]: The justification text provided when you change the sensitivity label.
+Used during label downgrade to document the reason.
+Optional.
+    [SensitivityLabelId <String>]: The unique identifier of the sensitivity label applied to the content.
+This ID corresponds to a label defined in the Microsoft Information Protection policy.
+    [TenantId <String>]: The unique identifier of the tenant where the sensitivity label is defined and applied.
   [Contexts <IMicrosoftGraphPlannerPlanContextCollection>]: plannerPlanContextCollection
     [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1053,27 +1062,5 @@ Title of the plan.
 
 ## RELATED LINKS
 
-- [New-MgBetaPlannerRoster](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerroster)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/planner-post-rosters?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerroster)
+- [](https://learn.microsoft.com/graph/api/planner-post-rosters?view=graph-rest-beta)

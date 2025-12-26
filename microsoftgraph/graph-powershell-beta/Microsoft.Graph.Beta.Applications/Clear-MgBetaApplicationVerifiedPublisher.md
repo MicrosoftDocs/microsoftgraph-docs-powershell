@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/clear-mgbetaapplicationverifiedpublisher
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Clear-MgBetaApplicationVerifiedPublisher
 ---
@@ -13,11 +13,8 @@ title: Clear-MgBetaApplicationVerifiedPublisher
 
 ## SYNOPSIS
 
-Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
+Unset the verifiedPublisher previously set on an agentIdentityBlueprint, removing all verified publisher properties.
 For more information, see Publisher verification.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Clear-MgApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Applications/Clear-MgApplicationVerifiedPublisher?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,21 +45,16 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
+Unset the verifiedPublisher previously set on an agentIdentityBlueprint, removing all verified publisher properties.
 For more information, see Publisher verification.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Clear-MgBetaApplicationVerifiedPublisher -ApplicationId $applicationId
-
-```
-This example shows how to use the Clear-MgBetaApplicationVerifiedPublisher Cmdlet.
-
 
 ## PARAMETERS
 
@@ -374,7 +366,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -401,6 +393,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob
@@ -414,27 +407,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Clear-MgBetaApplicationVerifiedPublisher](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/clear-mgbetaapplicationverifiedpublisher)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-unsetverifiedpublisher?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/clear-mgbetaapplicationverifiedpublisher)
+- [](https://learn.microsoft.com/graph/api/agentidentityblueprint-unsetverifiedpublisher?view=graph-rest-beta)

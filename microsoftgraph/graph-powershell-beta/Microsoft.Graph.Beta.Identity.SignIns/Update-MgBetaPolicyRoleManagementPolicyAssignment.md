@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyRoleManagementPolicyAssignment
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPolicyRoleManagementPolicyAssignment
 ## SYNOPSIS
 
 Update the navigation property roleManagementPolicyAssignments in policies
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyRoleManagementPolicyAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property roleManagementPolicyAssignments in policies
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -605,7 +612,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleManagementPolicyAssignment>`: unifiedRoleManagementPolicyAssignment
+BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementPolicyAssignment>: unifiedRoleManagementPolicyAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -643,9 +650,10 @@ Supports $filter (eq, ne).
     [LastModifiedBy <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [LastModifiedDateTime <DateTime?>]: The time when the role setting was last modified.
     [Rules <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>]: The collection of rules like approval rules and expiration rules.
 Supports $expand.
@@ -667,8 +675,9 @@ Required.
 One of Directory, DirectoryRole, Group.
 Required.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
+  [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
   [AuthenticationConditionApplicationAppId <String>]: The unique identifier of authenticationConditionApplication
@@ -681,6 +690,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [AuthenticationMethodModes <String[]>]: Usage: authenticationMethodModes={authenticationMethodModes}
   [AuthenticationStrengthPolicyId <String>]: The unique identifier of authenticationStrengthPolicy
   [AuthorizationPolicyId <String>]: The unique identifier of authorizationPolicy
+  [B2BManagementPolicyId <String>]: The unique identifier of b2bManagementPolicy
   [B2CIdentityUserFlowId <String>]: The unique identifier of b2cIdentityUserFlow
   [B2XIdentityUserFlowId <String>]: The unique identifier of b2xIdentityUserFlow
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -700,6 +710,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
+  [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
   [GroupId <String>]: The unique identifier of group
   [HardwareOathAuthenticationMethodId <String>]: The unique identifier of hardwareOathAuthenticationMethod
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
@@ -720,6 +731,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
   [NamedLocationId <String>]: The unique identifier of namedLocation
   [OAuth2PermissionGrantId <String>]: The unique identifier of oAuth2PermissionGrant
+  [OnPremAuthenticationPolicyId <String>]: The unique identifier of onPremAuthenticationPolicy
   [OrganizationId <String>]: The unique identifier of organization
   [PasswordAuthenticationMethodId <String>]: The unique identifier of passwordAuthenticationMethod
   [PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
@@ -729,6 +741,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
+  [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
   [RiskyServicePrincipalId <String>]: The unique identifier of riskyServicePrincipal
   [RiskyUserHistoryItemId <String>]: The unique identifier of riskyUserHistoryItem
@@ -738,6 +751,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ServicePrincipalCreationConditionSetId <String>]: The unique identifier of servicePrincipalCreationConditionSet
   [ServicePrincipalCreationPolicyId <String>]: The unique identifier of servicePrincipalCreationPolicy
   [ServicePrincipalRiskDetectionId <String>]: The unique identifier of servicePrincipalRiskDetection
+  [SignInIdentifierBaseName <String>]: The unique identifier of signInIdentifierBase
   [SoftwareOathAuthenticationMethodId <String>]: The unique identifier of softwareOathAuthenticationMethod
   [TemporaryAccessPassAuthenticationMethodId <String>]: The unique identifier of temporaryAccessPassAuthenticationMethod
   [ThreatAssessmentRequestId <String>]: The unique identifier of threatAssessmentRequest
@@ -753,9 +767,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
+  [VerifiedIdProfileId <String>]: The unique identifier of verifiedIdProfile
+  [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
+  [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-POLICY `<IMicrosoftGraphUnifiedRoleManagementPolicy>`: unifiedRoleManagementPolicy
+POLICY <IMicrosoftGraphUnifiedRoleManagementPolicy>: unifiedRoleManagementPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -789,9 +806,10 @@ Supports $filter (eq, ne).
   [LastModifiedBy <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [LastModifiedDateTime <DateTime?>]: The time when the role setting was last modified.
   [Rules <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>]: The collection of rules like approval rules and expiration rules.
 Supports $expand.
@@ -805,27 +823,4 @@ Required.
 
 ## RELATED LINKS
 
-- [Update-MgBetaPolicyRoleManagementPolicyAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyassignment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyassignment)

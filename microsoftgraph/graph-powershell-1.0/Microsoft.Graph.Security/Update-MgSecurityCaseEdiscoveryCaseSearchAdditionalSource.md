@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesearchadditionalsource
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource
 ---
@@ -14,9 +14,6 @@ title: Update-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource
 ## SYNOPSIS
 
 Update the navigation property additionalSources in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property additionalSources in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -624,7 +631,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityDataSource>`: dataSource
+BODYPARAMETER <IMicrosoftGraphSecurityDataSource>: dataSource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -642,7 +649,7 @@ For example, in the access reviews decisions API, this property might record the
   [DisplayName <String>]: The display name of the dataSource and is the name of the SharePoint site.
   [HoldStatus <String>]: dataSourceHoldStatus
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -653,7 +660,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -686,6 +693,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [HostPortId <String>]: The unique identifier of hostPort
   [HostSslCertificateId <String>]: The unique identifier of hostSslCertificate
   [HostTrackerId <String>]: The unique identifier of hostTracker
+  [IdentityAccountsId <String>]: The unique identifier of identityAccounts
   [IncidentId <String>]: The unique identifier of incident
   [IntelligenceProfileId <String>]: The unique identifier of intelligenceProfile
   [IntelligenceProfileIndicatorId <String>]: The unique identifier of intelligenceProfileIndicator
@@ -703,6 +711,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [SecureScoreId <String>]: The unique identifier of secureScore
   [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
   [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [SensorCandidateId <String>]: The unique identifier of sensorCandidate
   [SensorId <String>]: The unique identifier of sensor
   [SimulationAutomationId <String>]: The unique identifier of simulationAutomation
   [SimulationAutomationRunId <String>]: The unique identifier of simulationAutomationRun
@@ -726,27 +735,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesearchadditionalsource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesearchadditionalsource)

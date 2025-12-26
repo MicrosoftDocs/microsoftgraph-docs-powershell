@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupThread
 ---
@@ -14,11 +14,8 @@ title: New-MgGroupThread
 ## SYNOPSIS
 
 Start a new group conversation by first creating a thread.
-A new conversation, conversation thread, and post are created in the group.Use reply thread or reply post to further post to that thread.
+A new conversation, conversation thread, and post are created in the group.\r\nUse reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThread?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -76,21 +73,12 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Start a new group conversation by first creating a thread.
-A new conversation, conversation thread, and post are created in the group.Use reply thread or reply post to further post to that thread.
+A new conversation, conversation thread, and post are created in the group.\r\nUse reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
@@ -115,10 +103,6 @@ $params = @{
 }
 
 New-MgGroupThread -GroupId $groupId -BodyParameter $params
-
-```
-This example shows how to use the New-MgGroupThread Cmdlet.
-
 
 ## PARAMETERS
 
@@ -481,7 +465,7 @@ HelpMessage: ''
 
 ### -Posts
 
-
+.
 To construct, see NOTES section for POSTS properties and create a hash table.
 
 ```yaml
@@ -762,7 +746,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConversationThread>`: conversationThread
+BODYPARAMETER <IMicrosoftGraphConversationThread>: conversationThread
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -853,7 +837,7 @@ Returned only on $select.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -948,27 +932,5 @@ Returned only on $select.
 
 ## RELATED LINKS
 
-- [New-MgGroupThread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-threads?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread)
+- [](https://learn.microsoft.com/graph/api/group-post-threads?view=graph-rest-1.0)

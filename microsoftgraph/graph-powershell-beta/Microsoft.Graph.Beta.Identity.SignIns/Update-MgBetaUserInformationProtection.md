@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserInformationProtection
 ---
@@ -76,6 +76,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property informationProtection in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -207,7 +217,7 @@ HelpMessage: ''
 
 ### -DataLossPreventionPolicies
 
-
+.
 To construct, see NOTES section for DATALOSSPREVENTIONPOLICIES properties and create a hash table.
 
 ```yaml
@@ -467,7 +477,7 @@ HelpMessage: ''
 
 ### -SensitivityLabels
 
-
+.
 To construct, see NOTES section for SENSITIVITYLABELS properties and create a hash table.
 
 ```yaml
@@ -523,7 +533,7 @@ HelpMessage: ''
 
 ### -ThreatAssessmentRequests
 
-
+.
 To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
 
 ```yaml
@@ -632,7 +642,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BITLOCKER `<IMicrosoftGraphBitlocker>`: bitlocker
+BITLOCKER <IMicrosoftGraphBitlocker>: bitlocker
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -644,7 +654,7 @@ Read-only.
     [Key <String>]: The BitLocker recovery key.
     [VolumeType <String>]: volumeType
 
-BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
+BODYPARAMETER <IMicrosoftGraphInformationProtection>: informationProtection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -732,9 +742,10 @@ Read-only.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -757,8 +768,9 @@ DATALOSSPREVENTIONPOLICIES <IMicrosoftGraphDataLossPreventionPolicy[]>: .
 Read-only.
   [Name <String>]: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
+  [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
   [AuthenticationConditionApplicationAppId <String>]: The unique identifier of authenticationConditionApplication
@@ -771,6 +783,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [AuthenticationMethodModes <String[]>]: Usage: authenticationMethodModes={authenticationMethodModes}
   [AuthenticationStrengthPolicyId <String>]: The unique identifier of authenticationStrengthPolicy
   [AuthorizationPolicyId <String>]: The unique identifier of authorizationPolicy
+  [B2BManagementPolicyId <String>]: The unique identifier of b2bManagementPolicy
   [B2CIdentityUserFlowId <String>]: The unique identifier of b2cIdentityUserFlow
   [B2XIdentityUserFlowId <String>]: The unique identifier of b2xIdentityUserFlow
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -790,6 +803,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
+  [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
   [GroupId <String>]: The unique identifier of group
   [HardwareOathAuthenticationMethodId <String>]: The unique identifier of hardwareOathAuthenticationMethod
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
@@ -810,6 +824,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
   [NamedLocationId <String>]: The unique identifier of namedLocation
   [OAuth2PermissionGrantId <String>]: The unique identifier of oAuth2PermissionGrant
+  [OnPremAuthenticationPolicyId <String>]: The unique identifier of onPremAuthenticationPolicy
   [OrganizationId <String>]: The unique identifier of organization
   [PasswordAuthenticationMethodId <String>]: The unique identifier of passwordAuthenticationMethod
   [PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
@@ -819,6 +834,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
+  [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
   [RiskyServicePrincipalId <String>]: The unique identifier of riskyServicePrincipal
   [RiskyUserHistoryItemId <String>]: The unique identifier of riskyUserHistoryItem
@@ -828,6 +844,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ServicePrincipalCreationConditionSetId <String>]: The unique identifier of servicePrincipalCreationConditionSet
   [ServicePrincipalCreationPolicyId <String>]: The unique identifier of servicePrincipalCreationPolicy
   [ServicePrincipalRiskDetectionId <String>]: The unique identifier of servicePrincipalRiskDetection
+  [SignInIdentifierBaseName <String>]: The unique identifier of signInIdentifierBase
   [SoftwareOathAuthenticationMethodId <String>]: The unique identifier of softwareOathAuthenticationMethod
   [TemporaryAccessPassAuthenticationMethodId <String>]: The unique identifier of temporaryAccessPassAuthenticationMethod
   [ThreatAssessmentRequestId <String>]: The unique identifier of threatAssessmentRequest
@@ -843,9 +860,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
+  [VerifiedIdProfileId <String>]: The unique identifier of verifiedIdProfile
+  [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
+  [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-POLICY `<IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPolicy
+POLICY <IMicrosoftGraphInformationProtectionPolicy>: informationProtectionPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -898,7 +918,7 @@ Read-only.
   [Sublabels <IMicrosoftGraphSensitivityLabel[]>]: 
   [ToolTip <String>]: 
 
-SENSITIVITYPOLICYSETTINGS `<IMicrosoftGraphSensitivityPolicySettings>`: sensitivityPolicySettings
+SENSITIVITYPOLICYSETTINGS <IMicrosoftGraphSensitivityPolicySettings>: sensitivityPolicySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -917,9 +937,10 @@ Read-only.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -940,27 +961,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserInformationProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotection)

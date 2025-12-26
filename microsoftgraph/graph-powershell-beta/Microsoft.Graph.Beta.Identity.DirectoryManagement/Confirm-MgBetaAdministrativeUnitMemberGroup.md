@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetaadministrativeunitmembergroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgBetaAdministrativeUnitMemberGroup
 ---
@@ -14,7 +14,7 @@ title: Confirm-MgBetaAdministrativeUnitMemberGroup
 ## SYNOPSIS
 
 Check for membership in a specified list of group IDs, and return from that list the IDs of groups where a specified object is a member.
-The specified object can be of one of the following types:- user- group- service principal- organizational contact- device- directory object This function is transitive.
+The specified object can be of one of the following types:\r\n- user\r\n- group\r\n- service principal\r\n- organizational contact\r\n- device\r\n- directory object This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
@@ -71,10 +71,20 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Check for membership in a specified list of group IDs, and return from that list the IDs of groups where a specified object is a member.
-The specified object can be of one of the following types:- user- group- service principal- organizational contact- device- directory object This function is transitive.
+The specified object can be of one of the following types:\r\n- user\r\n- group\r\n- service principal\r\n- organizational contact\r\n- device\r\n- directory object This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -134,7 +144,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -205,7 +215,7 @@ HelpMessage: ''
 
 ### -GroupIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -462,11 +472,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1UpdmwwAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1UpdmwwAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GroupIds <String[]>]: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -504,6 +514,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [OrgContactId <String>]: The unique identifier of orgContact
   [OrganizationId <String>]: The unique identifier of organization
   [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
+  [OrganizationalBrandingThemeId <String>]: The unique identifier of organizationalBrandingTheme
+  [OrganizationalBrandingThemeLocalizationLocale <String>]: The unique identifier of organizationalBrandingThemeLocalization
   [OutboundSharedUserProfileUserId <String>]: The unique identifier of outboundSharedUserProfile
   [PendingExternalUserProfileId <String>]: The unique identifier of pendingExternalUserProfile
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
@@ -524,28 +536,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Confirm-MgBetaAdministrativeUnitMemberGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetaadministrativeunitmembergroup)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetaadministrativeunitmembergroup)
+- [](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta)

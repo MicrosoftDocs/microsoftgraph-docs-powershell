@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/set-mgenvironment
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Set-MgGraphOption
 ---
@@ -39,7 +39,8 @@ For example, toggle Web Account Manager (WAM) support.
 
 PS C:\> Set-MgGraphOption -EnableLoginByWAM $True
 
-Sets web account manager support
+Sets web account manager support  Note: Signin by Web Account Manager (WAM) is enabled by default on Windows and cannot be disabled.
+Setting this option will no longer have any effect.
 
 ## PARAMETERS
 
@@ -77,6 +78,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Object
 
+{{ Fill in the Description }}
 
 ## NOTES
 

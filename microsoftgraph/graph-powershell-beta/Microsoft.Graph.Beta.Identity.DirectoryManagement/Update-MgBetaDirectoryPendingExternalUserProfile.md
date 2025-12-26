@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorypendingexternaluserprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryPendingExternalUserProfile
 ---
@@ -74,18 +74,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a pendingExternalUserProfile object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PendingExternalUserProfile.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PendingExternalUserProfile.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -94,10 +85,6 @@ $params = @{
 }
 
 Update-MgBetaDirectoryPendingExternalUserProfile -PendingExternalUserProfileId $pendingExternalUserProfileId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaDirectoryPendingExternalUserProfile Cmdlet.
-
 
 ## PARAMETERS
 
@@ -820,7 +807,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalOfficeAddress>`: physicalOfficeAddress
+ADDRESS <IMicrosoftGraphPhysicalOfficeAddress>: physicalOfficeAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -830,7 +817,7 @@ It's a free-format string value, for example, 'United States'.
   [State <String>]: The state.
   [Street <String>]: The street.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -868,6 +855,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [OrgContactId <String>]: The unique identifier of orgContact
   [OrganizationId <String>]: The unique identifier of organization
   [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
+  [OrganizationalBrandingThemeId <String>]: The unique identifier of organizationalBrandingTheme
+  [OrganizationalBrandingThemeLocalizationLocale <String>]: The unique identifier of organizationalBrandingThemeLocalization
   [OutboundSharedUserProfileUserId <String>]: The unique identifier of outboundSharedUserProfile
   [PendingExternalUserProfileId <String>]: The unique identifier of pendingExternalUserProfile
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
@@ -888,27 +877,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaDirectoryPendingExternalUserProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorypendingexternaluserprofile)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/pendingexternaluserprofile-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorypendingexternaluserprofile)
+- [](https://learn.microsoft.com/graph/api/pendingexternaluserprofile-update?view=graph-rest-beta)

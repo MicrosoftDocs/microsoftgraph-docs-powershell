@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewdriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaPreviewDriveItem
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaPreviewDriveItem
 ## SYNOPSIS
 
 Invoke action preview
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewDriveItem](/powershell/module/Microsoft.Graph.Files/Invoke-MgPreviewDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -72,13 +69,15 @@ This cmdlet has the following aliases,
 
 Invoke action preview
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.Read, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -111,7 +110,7 @@ HelpMessage: ''
 
 ### -AllowEdit
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +137,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -187,7 +186,7 @@ HelpMessage: ''
 
 ### -Chromeless
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -381,7 +380,7 @@ HelpMessage: ''
 
 ### -Page
 
-
+.
 
 ```yaml
 Type: System.String
@@ -493,7 +492,7 @@ HelpMessage: ''
 
 ### -Viewer
 
-
+.
 
 ```yaml
 Type: System.String
@@ -542,7 +541,7 @@ HelpMessage: ''
 
 ### -Zoom
 
-
+.
 
 ```yaml
 Type: System.Double
@@ -601,7 +600,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowEdit <Boolean?>]: 
   [Chromeless <Boolean?>]: 
@@ -609,7 +608,7 @@ BODYPARAMETER `<IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPo
   [Viewer <String>]: 
   [Zoom <Double?>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -639,27 +638,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaPreviewDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewdriveitem)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewdriveitem)

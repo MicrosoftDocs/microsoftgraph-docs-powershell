@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgEducationMeAssignmentResource
 ---
@@ -15,9 +15,6 @@ title: Update-MgEducationMeAssignmentResource
 
 Update the navigation property resources in education
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeAssignmentResource?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -25,8 +22,9 @@ Update the navigation property resources in education
 ```
 Update-MgEducationMeAssignmentResource -EducationAssignmentId <string>
  -EducationAssignmentResourceId <string> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-DistributeForStudentWork] [-Id <string>]
- [-Resource <IMicrosoftGraphEducationResource>] [-Break] [-Headers <IDictionary>]
+ [-AdditionalProperties <hashtable>]
+ [-DependentResources <IMicrosoftGraphEducationAssignmentResource[]>] [-DistributeForStudentWork]
+ [-Id <string>] [-Resource <IMicrosoftGraphEducationResource>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -47,7 +45,8 @@ Update-MgEducationMeAssignmentResource -EducationAssignmentId <string>
 
 ```
 Update-MgEducationMeAssignmentResource -InputObject <IEducationIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DistributeForStudentWork]
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-DependentResources <IMicrosoftGraphEducationAssignmentResource[]>] [-DistributeForStudentWork]
  [-Id <string>] [-Resource <IMicrosoftGraphEducationResource>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -72,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property resources in education
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -163,6 +172,34 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DependentResources
+
+A collection of assignment resources that depend on the parent educationAssignmentResource.
+To construct, see NOTES section for DEPENDENTRESOURCES properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentResource[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -543,10 +580,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationAssignmentResource>`: educationAssignmentResource
+BODYPARAMETER <IMicrosoftGraphEducationAssignmentResource>: educationAssignmentResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [DependentResources <IMicrosoftGraphEducationAssignmentResource[]>]: A collection of assignment resources that depend on the parent educationAssignmentResource.
   [DistributeForStudentWork <Boolean?>]: Indicates whether this resource should be copied to each student submission for modification and submission.
 Required
   [Resource <IMicrosoftGraphEducationResource>]: educationResource
@@ -564,12 +602,35 @@ For example, in the access reviews decisions API, this property might record the
     [DisplayName <String>]: Display name of resource.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+DEPENDENTRESOURCES <IMicrosoftGraphEducationAssignmentResource[]>: A collection of assignment resources that depend on the parent educationAssignmentResource.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DependentResources <IMicrosoftGraphEducationAssignmentResource[]>]: A collection of assignment resources that depend on the parent educationAssignmentResource.
+  [DistributeForStudentWork <Boolean?>]: Indicates whether this resource should be copied to each student submission for modification and submission.
+Required
+  [Resource <IMicrosoftGraphEducationResource>]: educationResource
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Application <IMicrosoftGraphIdentity>]: identity
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+      [Device <IMicrosoftGraphIdentity>]: identity
+      [User <IMicrosoftGraphIdentity>]: identity
+    [DisplayName <String>]: Display name of resource.
+    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
+  [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
   [EducationCategoryId <String>]: The unique identifier of educationCategory
   [EducationClassId <String>]: The unique identifier of educationClass
   [EducationGradingCategoryId <String>]: The unique identifier of educationGradingCategory
+  [EducationGradingSchemeId <String>]: The unique identifier of educationGradingScheme
   [EducationModuleId <String>]: The unique identifier of educationModule
   [EducationModuleResourceId <String>]: The unique identifier of educationModuleResource
   [EducationOutcomeId <String>]: The unique identifier of educationOutcome
@@ -577,11 +638,14 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   [EducationSchoolId <String>]: The unique identifier of educationSchool
   [EducationSubmissionId <String>]: The unique identifier of educationSubmission
   [EducationSubmissionResourceId <String>]: The unique identifier of educationSubmissionResource
+  [EducationSubmissionResourceId1 <String>]: The unique identifier of educationSubmissionResource
   [EducationUserId <String>]: The unique identifier of educationUser
   [ReadingAssignmentSubmissionId <String>]: The unique identifier of readingAssignmentSubmission
+  [ReadingCoachPassageId <String>]: The unique identifier of readingCoachPassage
   [ReflectCheckInResponseId <String>]: The unique identifier of reflectCheckInResponse
+  [SpeakerAssignmentSubmissionId <String>]: The unique identifier of speakerAssignmentSubmission
 
-RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
+RESOURCE <IMicrosoftGraphEducationResource>: educationResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -599,27 +663,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgEducationMeAssignmentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentresource)

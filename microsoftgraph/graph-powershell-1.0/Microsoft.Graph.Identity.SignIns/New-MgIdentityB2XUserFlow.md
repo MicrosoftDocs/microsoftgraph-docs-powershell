@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflow
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityB2XUserFlow
 ---
@@ -14,9 +14,6 @@ title: New-MgIdentityB2XUserFlow
 ## SYNOPSIS
 
 Create a new b2xIdentityUserFlow object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlow?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,13 +51,15 @@ This cmdlet has the following aliases,
 
 Create a new b2xIdentityUserFlow object.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityUserFlow.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -412,7 +411,7 @@ HelpMessage: ''
 
 ### -UserFlowIdentityProviders
 
-
+.
 To construct, see NOTES section for USERFLOWIDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
@@ -455,7 +454,7 @@ HelpMessage: ''
 
 ### -UserFlowTypeVersion
 
-
+.
 
 ```yaml
 Type: System.Single
@@ -526,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APICONNECTORCONFIGURATION `<IMicrosoftGraphUserFlowApiConnectorConfiguration>`: userFlowApiConnectorConfiguration
+APICONNECTORCONFIGURATION <IMicrosoftGraphUserFlowApiConnectorConfiguration>: userFlowApiConnectorConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PostAttributeCollection <IMicrosoftGraphIdentityApiConnector>]: identityApiConnector
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -538,7 +537,7 @@ Read-only.
     [TargetUrl <String>]: The URL of the API endpoint to call.
   [PostFederationSignup <IMicrosoftGraphIdentityApiConnector>]: identityApiConnector
 
-BODYPARAMETER `<IMicrosoftGraphB2XIdentityUserFlow>`: b2xIdentityUserFlow
+BODYPARAMETER <IMicrosoftGraphB2XIdentityUserFlow>: b2xIdentityUserFlow
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UserFlowType <String>]: userFlowType
   [UserFlowTypeVersion <Single?>]: 
@@ -683,28 +682,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgIdentityB2XUserFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflow)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-b2xuserflows?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflow)
+- [](https://learn.microsoft.com/graph/api/identitycontainer-post-b2xuserflows?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejobdocument
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPrintShareJobDocument
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPrintShareJobDocument
 ## SYNOPSIS
 
 Update the navigation property documents in print
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPrintShareJobDocument](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShareJobDocument?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -75,6 +72,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property documents in print
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -262,7 +269,7 @@ HelpMessage: ''
 
 ### -DownloadedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -602,7 +609,7 @@ HelpMessage: ''
 
 ### -UploadedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -683,7 +690,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintDocument>`: printDocument
+BODYPARAMETER <IMicrosoftGraphPrintDocument>: printDocument
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -727,7 +734,7 @@ Read-only.
 Read-only.
   [UploadedDateTime <DateTime?>]: 
 
-CONFIGURATION `<IMicrosoftGraphPrinterDocumentConfiguration>`: printerDocumentConfiguration
+CONFIGURATION <IMicrosoftGraphPrinterDocumentConfiguration>: printerDocumentConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Collate <Boolean?>]: 
   [ColorMode <String>]: printColorMode
@@ -759,7 +766,7 @@ CONFIGURATION `<IMicrosoftGraphPrinterDocumentConfiguration>`: printerDocumentCo
   [Quality <String>]: printQuality
   [Scaling <String>]: printScaling
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -777,27 +784,4 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaPrintShareJobDocument](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejobdocument)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejobdocument)

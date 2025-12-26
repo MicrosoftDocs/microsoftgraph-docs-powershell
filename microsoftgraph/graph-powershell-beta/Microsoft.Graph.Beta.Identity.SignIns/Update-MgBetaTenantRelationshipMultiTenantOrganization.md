@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTenantRelationshipMultiTenantOrganization
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaTenantRelationshipMultiTenantOrganization
 ## SYNOPSIS
 
 Update the properties of a multi-tenant organization.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTenantRelationshipMultiTenantOrganization](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgTenantRelationshipMultiTenantOrganization?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,9 +50,8 @@ This cmdlet has the following aliases,
 Update the properties of a multi-tenant organization.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -65,10 +61,6 @@ $params = @{
 }
 
 Update-MgBetaTenantRelationshipMultiTenantOrganization -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaTenantRelationshipMultiTenantOrganization Cmdlet.
-
 
 ## PARAMETERS
 
@@ -509,7 +501,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMultiTenantOrganization>`: multiTenantOrganization
+BODYPARAMETER <IMicrosoftGraphMultiTenantOrganization>: multiTenantOrganization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -558,7 +550,7 @@ Key.
 Read-only.
       [Status <String>]: multiTenantOrganizationMemberProcessingStatus
 
-JOINREQUEST `<IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord>`: multiTenantOrganizationJoinRequestRecord
+JOINREQUEST <IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord>: multiTenantOrganizationJoinRequestRecord
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -602,27 +594,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaTenantRelationshipMultiTenantOrganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization)
+- [](https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-beta)

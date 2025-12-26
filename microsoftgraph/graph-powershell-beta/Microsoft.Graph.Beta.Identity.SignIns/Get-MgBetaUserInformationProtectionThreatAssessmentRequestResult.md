@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserinformationprotectionthreatassessmentrequestresult
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserInformationProtectionThreatAssessmentRequestResult
 ---
@@ -61,6 +61,16 @@ This cmdlet has the following aliases,
 A collection of threat assessment results.
 Read-only.
 By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -576,8 +586,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
+  [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
   [AuthenticationConditionApplicationAppId <String>]: The unique identifier of authenticationConditionApplication
@@ -590,6 +601,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [AuthenticationMethodModes <String[]>]: Usage: authenticationMethodModes={authenticationMethodModes}
   [AuthenticationStrengthPolicyId <String>]: The unique identifier of authenticationStrengthPolicy
   [AuthorizationPolicyId <String>]: The unique identifier of authorizationPolicy
+  [B2BManagementPolicyId <String>]: The unique identifier of b2bManagementPolicy
   [B2CIdentityUserFlowId <String>]: The unique identifier of b2cIdentityUserFlow
   [B2XIdentityUserFlowId <String>]: The unique identifier of b2xIdentityUserFlow
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -609,6 +621,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
+  [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
   [GroupId <String>]: The unique identifier of group
   [HardwareOathAuthenticationMethodId <String>]: The unique identifier of hardwareOathAuthenticationMethod
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
@@ -629,6 +642,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
   [NamedLocationId <String>]: The unique identifier of namedLocation
   [OAuth2PermissionGrantId <String>]: The unique identifier of oAuth2PermissionGrant
+  [OnPremAuthenticationPolicyId <String>]: The unique identifier of onPremAuthenticationPolicy
   [OrganizationId <String>]: The unique identifier of organization
   [PasswordAuthenticationMethodId <String>]: The unique identifier of passwordAuthenticationMethod
   [PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
@@ -638,6 +652,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
+  [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
   [RiskyServicePrincipalId <String>]: The unique identifier of riskyServicePrincipal
   [RiskyUserHistoryItemId <String>]: The unique identifier of riskyUserHistoryItem
@@ -647,6 +662,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ServicePrincipalCreationConditionSetId <String>]: The unique identifier of servicePrincipalCreationConditionSet
   [ServicePrincipalCreationPolicyId <String>]: The unique identifier of servicePrincipalCreationPolicy
   [ServicePrincipalRiskDetectionId <String>]: The unique identifier of servicePrincipalRiskDetection
+  [SignInIdentifierBaseName <String>]: The unique identifier of signInIdentifierBase
   [SoftwareOathAuthenticationMethodId <String>]: The unique identifier of softwareOathAuthenticationMethod
   [TemporaryAccessPassAuthenticationMethodId <String>]: The unique identifier of temporaryAccessPassAuthenticationMethod
   [ThreatAssessmentRequestId <String>]: The unique identifier of threatAssessmentRequest
@@ -662,33 +678,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
+  [VerifiedIdProfileId <String>]: The unique identifier of verifiedIdProfile
+  [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
+  [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserInformationProtectionThreatAssessmentRequestResult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserinformationprotectionthreatassessmentrequestresult)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserinformationprotectionthreatassessmentrequestresult)

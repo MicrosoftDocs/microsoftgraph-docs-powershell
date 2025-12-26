@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingevent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementMobileAppTroubleshootingEvent
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDeviceManagementMobileAppTroubleshootingEvent
 ## SYNOPSIS
 
 Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,13 +51,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -130,7 +129,7 @@ HelpMessage: ''
 
 ### -AppLogCollectionRequests
 
-The collection property of AppLogUploadRequest.
+Indicates collection of App Log Upload Request.
 To construct, see NOTES section for APPLOGCOLLECTIONREQUESTS properties and create a hash table.
 
 ```yaml
@@ -612,7 +611,7 @@ ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair[]>: A set of string key and s
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest[]>: The collection property of AppLogUploadRequest.
+APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest[]>: Indicates collection of App Log Upload Request.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [CompletedDateTime <DateTime?>]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -620,7 +619,7 @@ Read-only.
   [ErrorMessage <String>]: Indicates error message if any during the upload process.
   [Status <AppLogUploadState?>]: AppLogUploadStatus
 
-BODYPARAMETER `<IMicrosoftGraphMobileAppTroubleshootingEvent>`: Event representing a users device application install status.
+BODYPARAMETER <IMicrosoftGraphMobileAppTroubleshootingEvent>: Event representing a users device application install status.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]: A set of string key and string value pairs which provides additional information on the Troubleshooting event
     [Name <String>]: Name for this key-value pair
@@ -641,7 +640,7 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
       [Text <String>]: 
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: The collection property of AppLogUploadRequest.
+  [AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]: Indicates collection of App Log Upload Request.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [CompletedDateTime <DateTime?>]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -669,7 +668,7 @@ HISTORY <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>: Intune Mobile Ap
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
       [Text <String>]: 
 
-TROUBLESHOOTINGERRORDETAILS `<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>`: Object containing detailed information about the error and its remediation.
+TROUBLESHOOTINGERRORDETAILS <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>: Object containing detailed information about the error and its remediation.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Context <String>]: 
   [Failure <String>]: 
@@ -683,27 +682,4 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementMobileAppTroubleshootingEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingevent)

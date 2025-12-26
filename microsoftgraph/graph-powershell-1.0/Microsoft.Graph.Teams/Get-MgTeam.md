@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteam
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Get-MgTeam
 ---
@@ -14,9 +14,6 @@ title: Get-MgTeam
 ## SYNOPSIS
 
 Retrieve the properties and relationships of the specified team.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,48 +55,25 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of the specified team.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.ReadWrite.All, TeamSettings.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamSettings.Read.Group, TeamSettings.ReadWrite.Group, TeamSettings.ReadWrite.All, TeamSettings.Read.All, Team.ReadBasic.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get a list of teams
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeam
 
-```
-This example will get a list of teams
-
-### Example 2: Use $filter and $top to get two teams with a display name that starts with 'A'
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeam -Filter "startswith(displayName, 'A')" -Top 2 
+Get-MgTeam -Filter "startswith(displayName, 'A')" -Top 2
 
-```
-This example will use $filter and $top to get two teams with a display name that starts with 'a'
-
-### Example 3: Use $filter and $select to get id and description for team with displayName equals "A Contoso Team"
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeam -Filter "displayName eq 'A Contoso Team'" -Property "id,description" 
-
-```
-This example will use $filter and $select to get id and description for team with displayname equals "a contoso team"
-
+Get-MgTeam -Filter "displayName eq 'A Contoso Team'" -Property "id,description"
 
 ## PARAMETERS
 
@@ -561,7 +535,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -601,28 +575,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteam)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teams-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteam)
+- [](https://learn.microsoft.com/graph/api/team-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/teams-list?view=graph-rest-1.0)

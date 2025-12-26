@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/sync-mgdevicemanagementexchangeconnector
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Sync-MgDeviceManagementExchangeConnector
 ---
@@ -13,7 +13,7 @@ title: Sync-MgDeviceManagementExchangeConnector
 
 ## SYNOPSIS
 
-Not yet documented
+Invoke action sync
 
 ## SYNTAX
 
@@ -68,15 +68,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Not yet documented
+Invoke action sync
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -109,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -485,11 +487,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsD33NzdDevicemanagementExchangeconnectorsDevicemanagementexchangeconnectorIdMicrosoftGraphSyncPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsD33NzdDevicemanagementExchangeconnectorsDevicemanagementexchangeconnectorIdMicrosoftGraphSyncPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SyncType <DeviceManagementExchangeConnectorSyncType?>]: The type of Exchange Connector sync requested.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -511,7 +513,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [ResourceOperationId <String>]: The unique identifier of resourceOperation
   [RoleAssignmentId <String>]: The unique identifier of roleAssignment
   [RoleDefinitionId <String>]: The unique identifier of roleDefinition
-  [TelecomExpenseManagementPartnerId <String>]: The unique identifier of telecomExpenseManagementPartner
   [TermsAndConditionsAcceptanceStatusId <String>]: The unique identifier of termsAndConditionsAcceptanceStatus
   [TermsAndConditionsAssignmentId <String>]: The unique identifier of termsAndConditionsAssignment
   [TermsAndConditionsId <String>]: The unique identifier of termsAndConditions
@@ -521,28 +522,4 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Sync-MgDeviceManagementExchangeConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/sync-mgdevicemanagementexchangeconnector)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementexchangeconnector-sync?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/sync-mgdevicemanagementexchangeconnector)

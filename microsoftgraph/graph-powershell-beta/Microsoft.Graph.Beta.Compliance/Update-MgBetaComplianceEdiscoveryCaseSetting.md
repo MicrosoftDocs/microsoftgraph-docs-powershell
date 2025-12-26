@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaComplianceEdiscoveryCaseSetting
 ---
@@ -71,18 +71,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a an eDiscovery caseSettings object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
@@ -106,10 +97,6 @@ $params = @{
 }
 
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -582,7 +569,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoveryCaseSettings>`: caseSettings
+BODYPARAMETER <IMicrosoftGraphEdiscoveryCaseSettings>: caseSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -608,7 +595,7 @@ To learn more, see Document and email similarity threshold.
     [IsEnabled <Boolean?>]: Indicates whether themes are enabled for the case.
     [TopicCount <Int32?>]: To learn more, see Maximum number of themes.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [CaseId <String>]: The unique identifier of case
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -628,14 +615,14 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   [UserPrincipalName <String>]: Alternate key of user
   [UserSourceId <String>]: The unique identifier of userSource
 
-OCR `<IMicrosoftGraphEdiscoveryOcrSettings>`: ocrSettings
+OCR <IMicrosoftGraphEdiscoveryOcrSettings>: ocrSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Indicates whether or not OCR is enabled for the case.
   [MaxImageSize <Int32?>]: Maximum image size that will be processed in KB).
   [Timeout <TimeSpan?>]: The timeout duration for the OCR engine.
 A longer timeout may increase success of OCR, but may add to the total processing time.
 
-REDUNDANCYDETECTION `<IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>`: redundancyDetectionSettings
+REDUNDANCYDETECTION <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>: redundancyDetectionSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Indicates whether email threading and near duplicate detection are enabled.
   [MaxWords <Int32?>]: Specifies the maximum number of words used for email threading and near duplicate detection.
@@ -645,7 +632,7 @@ To learn more, see Minimum/maximum number of words.
   [SimilarityThreshold <Int32?>]: Specifies the similarity level for documents to be put in the same near duplicate set.
 To learn more, see Document and email similarity threshold.
 
-TOPICMODELING `<IMicrosoftGraphEdiscoveryTopicModelingSettings>`: topicModelingSettings
+TOPICMODELING <IMicrosoftGraphEdiscoveryTopicModelingSettings>: topicModelingSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DynamicallyAdjustTopicCount <Boolean?>]: To learn more, see Adjust maximum number of themes dynamically.
   [IgnoreNumbers <Boolean?>]: To learn more, see Include numbers in themes.
@@ -655,27 +642,5 @@ TOPICMODELING `<IMicrosoftGraphEdiscoveryTopicModelingSettings>`: topicModelingS
 
 ## RELATED LINKS
 
-- [Update-MgBetaComplianceEdiscoveryCaseSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-casesettings-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting)
+- [](https://learn.microsoft.com/graph/api/ediscovery-casesettings-update?view=graph-rest-beta)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdismissgroupeventreminder
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgDismissGroupEventReminder
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgDismissGroupEventReminder
 ## SYNOPSIS
 
 Dismiss a reminder that has been triggered for an event in a user calendar.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaDismissGroupEventReminder](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaDismissGroupEventReminder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Dismiss a reminder that has been triggered for an event in a user calendar.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -379,44 +386,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
   [CalendarPermissionId <String>]: The unique identifier of calendarPermission
+  [CheckInClaimCalendarEventId <String>]: The unique identifier of checkInClaim
   [EventId <String>]: The unique identifier of event
   [ExtensionId <String>]: The unique identifier of extension
+  [FixtureMapId <String>]: The unique identifier of fixtureMap
+  [FootprintMapId <String>]: The unique identifier of footprintMap
   [GroupId <String>]: The unique identifier of group
+  [LevelMapId <String>]: The unique identifier of levelMap
   [PlaceId <String>]: The unique identifier of place
   [RoomId <String>]: The unique identifier of room
+  [SectionMapId <String>]: The unique identifier of sectionMap
+  [UnitMapId <String>]: The unique identifier of unitMap
   [User <String>]: Usage: User='{User}'
   [UserId <String>]: The unique identifier of user
+  [WorkspaceId <String>]: The unique identifier of workspace
 
 
 ## RELATED LINKS
 
-- [Invoke-MgDismissGroupEventReminder](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdismissgroupeventreminder)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdismissgroupeventreminder)
+- [](https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-1.0)

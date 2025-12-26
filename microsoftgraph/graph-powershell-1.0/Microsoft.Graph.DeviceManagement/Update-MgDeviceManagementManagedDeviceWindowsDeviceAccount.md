@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicewindowsdeviceaccount
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount
 ---
@@ -13,10 +13,7 @@ title: Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount
 
 ## SYNOPSIS
 
-Not yet documented
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
+Invoke action updateWindowsDeviceAccount
 
 ## SYNTAX
 
@@ -73,20 +70,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Not yet documented
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
+Invoke action updateWindowsDeviceAccount
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -106,10 +94,6 @@ $params = @{
 }
 
 Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount -ManagedDeviceId $managedDeviceId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount Cmdlet.
-
 
 ## PARAMETERS
 
@@ -142,7 +126,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -519,20 +503,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UpdateWindowsDeviceAccountActionParameter <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>]: updateWindowsDeviceAccountActionParameter
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [CalendarSyncEnabled <Boolean?>]: Not yet documented
+    [CalendarSyncEnabled <Boolean?>]: 
     [DeviceAccount <IMicrosoftGraphWindowsDeviceAccount>]: windowsDeviceAccount
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [Password <String>]: Not yet documented
-    [DeviceAccountEmail <String>]: Not yet documented
-    [ExchangeServer <String>]: Not yet documented
-    [PasswordRotationEnabled <Boolean?>]: Not yet documented
-    [SessionInitiationProtocalAddress <String>]: Not yet documented
+      [Password <String>]: 
+    [DeviceAccountEmail <String>]: 
+    [ExchangeServer <String>]: 
+    [PasswordRotationEnabled <Boolean?>]: 
+    [SessionInitiationProtocalAddress <String>]: 
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -567,41 +551,18 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [WindowsInformationProtectionNetworkLearningSummaryId <String>]: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   [WindowsMalwareInformationId <String>]: The unique identifier of windowsMalwareInformation
 
-UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER `<IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>`: updateWindowsDeviceAccountActionParameter
+UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>: updateWindowsDeviceAccountActionParameter
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [CalendarSyncEnabled <Boolean?>]: Not yet documented
+  [CalendarSyncEnabled <Boolean?>]: 
   [DeviceAccount <IMicrosoftGraphWindowsDeviceAccount>]: windowsDeviceAccount
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [Password <String>]: Not yet documented
-  [DeviceAccountEmail <String>]: Not yet documented
-  [ExchangeServer <String>]: Not yet documented
-  [PasswordRotationEnabled <Boolean?>]: Not yet documented
-  [SessionInitiationProtocalAddress <String>]: Not yet documented
+    [Password <String>]: 
+  [DeviceAccountEmail <String>]: 
+  [ExchangeServer <String>]: 
+  [PasswordRotationEnabled <Boolean?>]: 
+  [SessionInitiationProtocalAddress <String>]:
 
 
 ## RELATED LINKS
 
-- [Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicewindowsdeviceaccount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-updatewindowsdeviceaccount?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicewindowsdeviceaccount)

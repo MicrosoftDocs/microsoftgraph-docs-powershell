@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserPlanner
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserPlanner
 ## SYNOPSIS
 
 Update the navigation property planner in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgUserPlanner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,18 +75,9 @@ This cmdlet has the following aliases,
 
 Update the navigation property planner in users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -112,12 +100,7 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Update-MgBetaUserPlanner -UserId $userId -BodyParameter $params -IfMatch W/'"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="' 
-
-
-```
-This example shows how to use the Update-MgBetaUserPlanner Cmdlet.
-
+Update-MgBetaUserPlanner -UserId $userId -BodyParameter $params -IfMatch W/'"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="'
 
 ## PARAMETERS
 
@@ -150,7 +133,7 @@ HelpMessage: ''
 
 ### -All
 
-
+.
 To construct, see NOTES section for ALL properties and create a hash table.
 
 ```yaml
@@ -476,7 +459,7 @@ HelpMessage: ''
 
 ### -Plans
 
-
+.
 To construct, see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
@@ -791,7 +774,7 @@ ALL <IMicrosoftGraphPlannerDelta[]>: .
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerUser>`: plannerUser
+BODYPARAMETER <IMicrosoftGraphPlannerUser>: plannerUser
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -814,9 +797,10 @@ Reason why the entity was archived or unarchived.
         [Application <IMicrosoftGraphIdentity>]: identity
           [(Any) <Object>]: This indicates any property can be added to this object.
           [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-          [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         [Device <IMicrosoftGraphIdentity>]: identity
         [User <IMicrosoftGraphIdentity>]: identity
       [StatusChangedDateTime <DateTime?>]: Read-only.
@@ -936,6 +920,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
         [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+        [HasChat <Boolean?>]: 
         [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
@@ -1022,6 +1007,15 @@ Optional.
       [Type <String>]: plannerContainerType
       [Url <String>]: The full canonical URL of the container.
 Optional.
+    [ContentSensitivityLabelAssignment <IMicrosoftGraphContentSensitivityLabelAssignment>]: contentSensitivityLabelAssignment
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
+      [JustificationText <String>]: The justification text provided when you change the sensitivity label.
+Used during label downgrade to document the reason.
+Optional.
+      [SensitivityLabelId <String>]: The unique identifier of the sensitivity label applied to the content.
+This ID corresponds to a label defined in the Microsoft Information Protection policy.
+      [TenantId <String>]: The unique identifier of the tenant where the sensitivity label is defined and applied.
     [Contexts <IMicrosoftGraphPlannerPlanContextCollection>]: plannerPlanContextCollection
       [(Any) <Object>]: This indicates any property can be added to this object.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1116,9 +1110,10 @@ Reason why the entity was archived or unarchived.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [StatusChangedDateTime <DateTime?>]: Read-only.
@@ -1238,6 +1233,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
       [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [HasChat <Boolean?>]: 
       [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
@@ -1324,6 +1320,15 @@ Optional.
     [Type <String>]: plannerContainerType
     [Url <String>]: The full canonical URL of the container.
 Optional.
+  [ContentSensitivityLabelAssignment <IMicrosoftGraphContentSensitivityLabelAssignment>]: contentSensitivityLabelAssignment
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
+    [JustificationText <String>]: The justification text provided when you change the sensitivity label.
+Used during label downgrade to document the reason.
+Optional.
+    [SensitivityLabelId <String>]: The unique identifier of the sensitivity label applied to the content.
+This ID corresponds to a label defined in the Microsoft Information Protection policy.
+    [TenantId <String>]: The unique identifier of the tenant where the sensitivity label is defined and applied.
   [Contexts <IMicrosoftGraphPlannerPlanContextCollection>]: plannerPlanContextCollection
     [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1389,7 +1394,7 @@ Nullable.
   [Title <String>]: Required.
 Title of the plan.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
@@ -1416,9 +1421,10 @@ Reason why the entity was archived or unarchived.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [StatusChangedDateTime <DateTime?>]: Read-only.
@@ -1513,6 +1519,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
   [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  [HasChat <Boolean?>]: 
   [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
@@ -1605,9 +1612,10 @@ Reason why the entity was archived or unarchived.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [StatusChangedDateTime <DateTime?>]: Read-only.
@@ -1727,6 +1735,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
       [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [HasChat <Boolean?>]: 
       [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
@@ -1813,6 +1822,15 @@ Optional.
     [Type <String>]: plannerContainerType
     [Url <String>]: The full canonical URL of the container.
 Optional.
+  [ContentSensitivityLabelAssignment <IMicrosoftGraphContentSensitivityLabelAssignment>]: contentSensitivityLabelAssignment
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
+    [JustificationText <String>]: The justification text provided when you change the sensitivity label.
+Used during label downgrade to document the reason.
+Optional.
+    [SensitivityLabelId <String>]: The unique identifier of the sensitivity label applied to the content.
+This ID corresponds to a label defined in the Microsoft Information Protection policy.
+    [TenantId <String>]: The unique identifier of the tenant where the sensitivity label is defined and applied.
   [Contexts <IMicrosoftGraphPlannerPlanContextCollection>]: plannerPlanContextCollection
     [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1892,9 +1910,10 @@ Reason why the entity was archived or unarchived.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [StatusChangedDateTime <DateTime?>]: Read-only.
@@ -2014,6 +2033,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
       [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [HasChat <Boolean?>]: 
       [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
@@ -2100,6 +2120,15 @@ Optional.
     [Type <String>]: plannerContainerType
     [Url <String>]: The full canonical URL of the container.
 Optional.
+  [ContentSensitivityLabelAssignment <IMicrosoftGraphContentSensitivityLabelAssignment>]: contentSensitivityLabelAssignment
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
+    [JustificationText <String>]: The justification text provided when you change the sensitivity label.
+Used during label downgrade to document the reason.
+Optional.
+    [SensitivityLabelId <String>]: The unique identifier of the sensitivity label applied to the content.
+This ID corresponds to a label defined in the Microsoft Information Protection policy.
+    [TenantId <String>]: The unique identifier of the tenant where the sensitivity label is defined and applied.
   [Contexts <IMicrosoftGraphPlannerPlanContextCollection>]: plannerPlanContextCollection
     [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -2179,9 +2208,10 @@ Reason why the entity was archived or unarchived.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [StatusChangedDateTime <DateTime?>]: Read-only.
@@ -2301,6 +2331,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
       [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [HasChat <Boolean?>]: 
       [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
@@ -2387,6 +2418,15 @@ Optional.
     [Type <String>]: plannerContainerType
     [Url <String>]: The full canonical URL of the container.
 Optional.
+  [ContentSensitivityLabelAssignment <IMicrosoftGraphContentSensitivityLabelAssignment>]: contentSensitivityLabelAssignment
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
+    [JustificationText <String>]: The justification text provided when you change the sensitivity label.
+Used during label downgrade to document the reason.
+Optional.
+    [SensitivityLabelId <String>]: The unique identifier of the sensitivity label applied to the content.
+This ID corresponds to a label defined in the Microsoft Information Protection policy.
+    [TenantId <String>]: The unique identifier of the tenant where the sensitivity label is defined and applied.
   [Contexts <IMicrosoftGraphPlannerPlanContextCollection>]: plannerPlanContextCollection
     [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -2469,9 +2509,10 @@ Reason why the entity was archived or unarchived.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [StatusChangedDateTime <DateTime?>]: Read-only.
@@ -2566,6 +2607,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
   [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  [HasChat <Boolean?>]: 
   [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
@@ -2649,26 +2691,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserPlanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner)

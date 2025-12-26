@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceAppManagementVppToken
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDeviceAppManagementVppToken
 ## SYNOPSIS
 
 Create new navigation property to vppTokens for deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementVppToken?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,13 +53,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to vppTokens for deviceAppManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -735,7 +734,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVppToken>`: You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education.
+BODYPARAMETER <IMicrosoftGraphVppToken>: You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education.
 This involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP Business or Education token to Intune.
 You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
 You can upload multiple Apple VPP Business or Education tokens.
@@ -773,27 +772,4 @@ TOKENACTIONRESULTS <IMicrosoftGraphVppTokenActionResult[]>: The collection of st
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceAppManagementVppToken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken)

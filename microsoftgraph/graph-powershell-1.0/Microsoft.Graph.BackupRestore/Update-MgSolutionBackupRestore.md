@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestore
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgSolutionBackupRestore
 ---
@@ -14,9 +14,6 @@ title: Update-MgSolutionBackupRestore
 ## SYNOPSIS
 
 Update the navigation property backupRestore in solutions
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestore](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestore?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,6 +64,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property backupRestore in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -202,7 +209,7 @@ HelpMessage: ''
 
 ### -DriveProtectionUnitsBulkAdditionJobs
 
-
+.
 To construct, see NOTES section for DRIVEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -397,7 +404,7 @@ HelpMessage: ''
 
 ### -MailboxProtectionUnitsBulkAdditionJobs
 
-
+.
 To construct, see NOTES section for MAILBOXPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -768,7 +775,7 @@ HelpMessage: ''
 
 ### -SiteProtectionUnitsBulkAdditionJobs
 
-
+.
 To construct, see NOTES section for SITEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -840,7 +847,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBackupRestoreRoot>`: backupRestoreRoot
+BODYPARAMETER <IMicrosoftGraphBackupRestoreRoot>: backupRestoreRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -871,7 +878,7 @@ For example, in the access reviews decisions API, this property might record the
         [Target <String>]: The target of the error.
       [Message <String>]: A non-localized message for the developer.
       [Target <String>]: The target of the error.
-    [IsAutoApplyEnabled <Boolean?>]: 
+    [IsAutoApplyEnabled <Boolean?>]: true indicates that the protection rule is dynamic; false that it's static.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification made to the rule.
     [Status <String>]: protectionRuleStatus
@@ -889,7 +896,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+    [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -922,7 +933,7 @@ Read-only.
       [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [CreatedDateTime <DateTime?>]: The time of creation of the rule.
       [Error <IMicrosoftGraphPublicError>]: publicError
-      [IsAutoApplyEnabled <Boolean?>]: 
+      [IsAutoApplyEnabled <Boolean?>]: true indicates that the protection rule is dynamic; false that it's static.
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification made to the rule.
       [Status <String>]: protectionRuleStatus
@@ -940,7 +951,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+      [ProtectionSources <String>]: protectionSource
       [Status <String>]: protectionUnitStatus
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -999,7 +1014,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+          [ProtectionSources <String>]: protectionSource
           [Status <String>]: protectionUnitStatus
         [Tags <String>]: restorePointTags
       [StartDateTime <DateTime?>]: The time when restoration of restore artifact is started.
@@ -1155,7 +1174,7 @@ Read-only.
       [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [CreatedDateTime <DateTime?>]: The time of creation of the rule.
       [Error <IMicrosoftGraphPublicError>]: publicError
-      [IsAutoApplyEnabled <Boolean?>]: 
+      [IsAutoApplyEnabled <Boolean?>]: true indicates that the protection rule is dynamic; false that it's static.
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification made to the rule.
       [Status <String>]: protectionRuleStatus
@@ -1173,7 +1192,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+      [ProtectionSources <String>]: protectionSource
       [Status <String>]: protectionUnitStatus
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1262,7 +1285,7 @@ For example, in the access reviews decisions API, this property might record the
       [Target <String>]: The target of the error.
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
-  [IsAutoApplyEnabled <Boolean?>]: 
+  [IsAutoApplyEnabled <Boolean?>]: true indicates that the protection rule is dynamic; false that it's static.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification made to the rule.
   [Status <String>]: protectionRuleStatus
@@ -1304,7 +1327,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+  [ProtectionSources <String>]: protectionSource
   [Status <String>]: protectionUnitStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1385,7 +1412,7 @@ Read-only.
         [Target <String>]: The target of the error.
       [Message <String>]: A non-localized message for the developer.
       [Target <String>]: The target of the error.
-    [IsAutoApplyEnabled <Boolean?>]: 
+    [IsAutoApplyEnabled <Boolean?>]: true indicates that the protection rule is dynamic; false that it's static.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification made to the rule.
     [Status <String>]: protectionRuleStatus
@@ -1403,7 +1430,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+    [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1486,7 +1517,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+        [ProtectionSources <String>]: protectionSource
         [Status <String>]: protectionUnitStatus
       [Tags <String>]: restorePointTags
     [StartDateTime <DateTime?>]: The time when restoration of restore artifact is started.
@@ -1557,7 +1592,7 @@ For example, in the access reviews decisions API, this property might record the
       [Target <String>]: The target of the error.
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
-  [IsAutoApplyEnabled <Boolean?>]: 
+  [IsAutoApplyEnabled <Boolean?>]: true indicates that the protection rule is dynamic; false that it's static.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification made to the rule.
   [Status <String>]: protectionRuleStatus
@@ -1599,7 +1634,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+  [ProtectionSources <String>]: protectionSource
   [Status <String>]: protectionUnitStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1680,7 +1719,7 @@ Read-only.
         [Target <String>]: The target of the error.
       [Message <String>]: A non-localized message for the developer.
       [Target <String>]: The target of the error.
-    [IsAutoApplyEnabled <Boolean?>]: 
+    [IsAutoApplyEnabled <Boolean?>]: true indicates that the protection rule is dynamic; false that it's static.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification made to the rule.
     [Status <String>]: protectionRuleStatus
@@ -1698,7 +1737,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+    [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1779,7 +1822,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+        [ProtectionSources <String>]: protectionSource
         [Status <String>]: protectionUnitStatus
       [Tags <String>]: restorePointTags
     [StartDateTime <DateTime?>]: The time when restoration of restore artifact is started.
@@ -1867,7 +1914,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+  [ProtectionSources <String>]: protectionSource
   [Status <String>]: protectionUnitStatus
 
 RESTOREPOINTS <IMicrosoftGraphRestorePoint[]>: List of restore points in the tenant.
@@ -1911,7 +1962,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+    [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus
   [Tags <String>]: restorePointTags
 
@@ -1975,7 +2030,7 @@ For example, in the access reviews decisions API, this property might record the
   [RegistrationDateTime <DateTime?>]: Timestamp of the creation of the service app entity.
   [Status <String>]: serviceAppStatus
 
-SERVICESTATUS `<IMicrosoftGraphServiceStatus>`: serviceStatus
+SERVICESTATUS <IMicrosoftGraphServiceStatus>: serviceStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BackupServiceConsumer <String>]: backupServiceConsumer
   [DisableReason <String>]: disableReason
@@ -2033,7 +2088,7 @@ Read-only.
         [Target <String>]: The target of the error.
       [Message <String>]: A non-localized message for the developer.
       [Target <String>]: The target of the error.
-    [IsAutoApplyEnabled <Boolean?>]: 
+    [IsAutoApplyEnabled <Boolean?>]: true indicates that the protection rule is dynamic; false that it's static.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification made to the rule.
     [Status <String>]: protectionRuleStatus
@@ -2051,7 +2106,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+    [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2132,7 +2191,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+        [ProtectionSources <String>]: protectionSource
         [Status <String>]: protectionUnitStatus
       [Tags <String>]: restorePointTags
     [StartDateTime <DateTime?>]: The time when restoration of restore artifact is started.
@@ -2190,7 +2253,7 @@ For example, in the access reviews decisions API, this property might record the
       [Target <String>]: The target of the error.
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
-  [IsAutoApplyEnabled <Boolean?>]: 
+  [IsAutoApplyEnabled <Boolean?>]: true indicates that the protection rule is dynamic; false that it's static.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification made to the rule.
   [Status <String>]: protectionRuleStatus
@@ -2232,7 +2295,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+  [ProtectionSources <String>]: protectionSource
   [Status <String>]: protectionUnitStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2277,27 +2344,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgSolutionBackupRestore](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestore)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestore)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabeldescriptor
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 12/26/2025
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityLabelRetentionLabelDescriptor
 ---
@@ -14,9 +14,6 @@ title: Update-MgSecurityLabelRetentionLabelDescriptor
 ## SYNOPSIS
 
 Update the navigation property descriptors in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabelRetentionLabelDescriptor](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelRetentionLabelDescriptor?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -80,6 +77,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property descriptors in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -742,7 +749,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityFilePlanDescriptor>`: filePlanDescriptor
+BODYPARAMETER <IMicrosoftGraphSecurityFilePlanDescriptor>: filePlanDescriptor
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -819,14 +826,14 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-CATEGORY `<IMicrosoftGraphSecurityFilePlanAppliedCategory>`: filePlanAppliedCategory
+CATEGORY <IMicrosoftGraphSecurityFilePlanAppliedCategory>: filePlanAppliedCategory
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
   [Subcategory <IMicrosoftGraphSecurityFilePlanSubcategory>]: filePlanSubcategory
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
 
-CATEGORYTEMPLATE `<IMicrosoftGraphSecurityCategoryTemplate>`: categoryTemplate
+CATEGORYTEMPLATE <IMicrosoftGraphSecurityCategoryTemplate>: categoryTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -849,13 +856,13 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-CITATION `<IMicrosoftGraphSecurityFilePlanCitation>`: filePlanCitation
+CITATION <IMicrosoftGraphSecurityFilePlanCitation>: filePlanCitation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
   [CitationJurisdiction <String>]: Represents the jurisdiction or agency that published the filePlanCitation.
   [CitationUrl <String>]: Represents the URL to the published filePlanCitation.
 
-CITATIONTEMPLATE `<IMicrosoftGraphSecurityCitationTemplate>`: citationTemplate
+CITATIONTEMPLATE <IMicrosoftGraphSecurityCitationTemplate>: citationTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -874,7 +881,7 @@ Read-only.
   [CitationJurisdiction <String>]: Represents the jurisdiction or agency that published the citation.
   [CitationUrl <String>]: Represents the URL to the published citation.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -907,6 +914,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [HostPortId <String>]: The unique identifier of hostPort
   [HostSslCertificateId <String>]: The unique identifier of hostSslCertificate
   [HostTrackerId <String>]: The unique identifier of hostTracker
+  [IdentityAccountsId <String>]: The unique identifier of identityAccounts
   [IncidentId <String>]: The unique identifier of incident
   [IntelligenceProfileId <String>]: The unique identifier of intelligenceProfile
   [IntelligenceProfileIndicatorId <String>]: The unique identifier of intelligenceProfileIndicator
@@ -924,6 +932,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [SecureScoreId <String>]: The unique identifier of secureScore
   [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
   [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [SensorCandidateId <String>]: The unique identifier of sensorCandidate
   [SensorId <String>]: The unique identifier of sensor
   [SimulationAutomationId <String>]: The unique identifier of simulationAutomation
   [SimulationAutomationRunId <String>]: The unique identifier of simulationAutomationRun
@@ -947,27 +956,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgSecurityLabelRetentionLabelDescriptor](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabeldescriptor)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabeldescriptor)
