@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcitation
@@ -479,7 +479,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSecurityCitationTemplate>: citationTemplate
+BODYPARAMETER `<IMicrosoftGraphSecurityCitationTemplate>`: citationTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -500,7 +500,7 @@ Read-only.
   [CitationJurisdiction <String>]: Represents the jurisdiction or agency that published the citation.
   [CitationUrl <String>]: Represents the URL to the published citation.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -517,3 +517,25 @@ For example, in the access reviews decisions API, this property might record the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcitation)
 - [](https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
