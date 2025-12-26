@@ -90,7 +90,7 @@ HelpMessage: ''
 
 ### -ApprovalDuration
 
-.
+
 
 ```yaml
 Type: System.TimeSpan
@@ -132,7 +132,7 @@ HelpMessage: ''
 
 ### -ApprovalType
 
-.
+
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ HelpMessage: ''
 
 ### -ApproverReason
 
-.
+
 
 ```yaml
 Type: System.String
@@ -239,7 +239,7 @@ HelpMessage: ''
 
 ### -EndDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -430,7 +430,7 @@ HelpMessage: ''
 
 ### -RequestorReason
 
-.
+
 
 ```yaml
 Type: System.String
@@ -473,7 +473,7 @@ HelpMessage: ''
 
 ### -RoleId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -516,7 +516,7 @@ HelpMessage: ''
 
 ### -StartDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -537,7 +537,7 @@ HelpMessage: ''
 
 ### -UserId
 
-.
+
 
 ```yaml
 Type: System.String
