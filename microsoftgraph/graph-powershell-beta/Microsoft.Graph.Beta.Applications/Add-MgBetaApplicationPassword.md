@@ -83,8 +83,9 @@ You can also add passwords while creating the application.
 | Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Add a password credential to an application with a six month expiry
 
-### EXAMPLE 1
+```powershell
 
 Connect-MgGraph -Scopes 'Application.ReadWrite.All'
 
@@ -107,8 +108,13 @@ SecretText           : Q_e8Q~ZDWJD.bkgajbREp-VFFUayCuEk8b1hDcr9
 StartDateTime        : 26/5/2022 1:03:31 pm
 AdditionalProperties : {[@odata.context,
                        https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
+```
 
-### EXAMPLE 2
+Add a password to an application that expires in six months from the current date.
+
+### Example 2: Add a password credential to an application with a start date
+
+```powershell
 
 Connect-MgGraph -Scopes 'Application.ReadWrite.All'
 
@@ -135,6 +141,11 @@ SecretText           : TiA8Q~Zs7ej1cGtlW0qnmuFi~JlxXTZew_tU1bGA
 StartDateTime        : 26/5/2022 2:00:00 pm
 AdditionalProperties : {[@odata.context,
                        https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
+```
+
+Add a password to an application that becomes valid at 12:00 am the next day and is valid for six months.
+
+Use `$secret.StartDateTime.ToLocalTime()` to convert the returned dates from UTC to the local timezone.
 
 ## PARAMETERS
 
