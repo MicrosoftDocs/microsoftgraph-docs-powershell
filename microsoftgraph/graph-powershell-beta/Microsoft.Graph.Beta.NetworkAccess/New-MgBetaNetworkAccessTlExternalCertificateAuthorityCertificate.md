@@ -60,16 +60,6 @@ This request generates the Certificate Signing Request (CSR) that you download t
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -585,6 +575,7 @@ VALIDITY `<IMicrosoftGraphNetworkaccessValidityDate>`: validityDate
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesstlexternalcertificateauthoritycertificate)
 - [](https://learn.microsoft.com/graph/api/networkaccess-tlstermination-post-externalcertificateauthoritycertificates?view=graph-rest-beta)
+
 
 
 

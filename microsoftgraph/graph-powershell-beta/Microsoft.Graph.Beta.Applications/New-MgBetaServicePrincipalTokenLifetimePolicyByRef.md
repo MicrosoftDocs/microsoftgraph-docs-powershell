@@ -83,16 +83,6 @@ You can have multiple tokenLifetimePolicy policies in a tenant but can assign on
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -549,6 +539,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipaltokenlifetimepolicybyref)
 - [](https://learn.microsoft.com/graph/api/serviceprincipal-post-tokenlifetimepolicies?view=graph-rest-beta)
+
 
 
 
