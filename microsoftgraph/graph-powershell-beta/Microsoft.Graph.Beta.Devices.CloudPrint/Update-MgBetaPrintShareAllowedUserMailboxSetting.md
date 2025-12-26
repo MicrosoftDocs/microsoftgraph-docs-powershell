@@ -15,6 +15,9 @@ title: Update-MgBetaPrintShareAllowedUserMailboxSetting
 
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPrintShareAllowedUserMailboxSetting](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShareAllowedUserMailboxSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

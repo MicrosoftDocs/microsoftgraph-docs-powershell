@@ -15,6 +15,9 @@ title: New-MgBetaSecuritySubjectRightsRequest
 
 Create new navigation property to subjectRightsRequests for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecuritySubjectRightsRequest](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySubjectRightsRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

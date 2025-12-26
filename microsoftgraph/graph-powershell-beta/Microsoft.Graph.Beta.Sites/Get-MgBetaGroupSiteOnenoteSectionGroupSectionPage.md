@@ -17,6 +17,9 @@ The collection of pages in the section.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenoteSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSectionGroupSectionPage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

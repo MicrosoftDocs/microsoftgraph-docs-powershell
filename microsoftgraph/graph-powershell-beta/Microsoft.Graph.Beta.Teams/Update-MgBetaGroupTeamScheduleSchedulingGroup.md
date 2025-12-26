@@ -15,6 +15,9 @@ title: Update-MgBetaGroupTeamScheduleSchedulingGroup
 
 Update the navigation property schedulingGroups in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

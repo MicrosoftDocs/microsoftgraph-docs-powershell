@@ -15,6 +15,9 @@ title: Remove-MgPlace
 
 Delete entity from places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlace?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

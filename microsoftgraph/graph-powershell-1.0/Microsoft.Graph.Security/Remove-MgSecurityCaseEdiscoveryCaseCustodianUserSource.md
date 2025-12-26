@@ -15,6 +15,9 @@ title: Remove-MgSecurityCaseEdiscoveryCaseCustodianUserSource
 
 Delete a userSource object associated with an ediscoveryCustodian.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

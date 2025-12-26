@@ -15,6 +15,9 @@ title: New-MgBetaUserDriveItem
 
 Create new navigation property to items for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

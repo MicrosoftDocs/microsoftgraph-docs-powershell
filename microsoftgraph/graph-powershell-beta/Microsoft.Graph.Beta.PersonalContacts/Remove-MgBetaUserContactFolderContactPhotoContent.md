@@ -16,6 +16,9 @@ title: Remove-MgBetaUserContactFolderContactPhotoContent
 Optional contact picture.
 You can get or set a photo for a contact.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserContactFolderContactPhotoContent](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContactFolderContactPhotoContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
