@@ -233,7 +233,7 @@ HelpMessage: ''
 
 ### -GranularSiteRestoreArtifacts
 
-.
+
 To construct, see NOTES section for GRANULARSITERESTOREARTIFACTS properties and create a hash table.
 
 ```yaml

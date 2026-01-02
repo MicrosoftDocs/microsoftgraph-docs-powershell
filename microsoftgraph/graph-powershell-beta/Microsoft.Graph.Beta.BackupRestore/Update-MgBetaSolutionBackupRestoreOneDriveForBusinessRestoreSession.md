@@ -359,7 +359,7 @@ HelpMessage: ''
 
 ### -GranularDriveRestoreArtifacts
 
-.
+
 To construct, see NOTES section for GRANULARDRIVERESTOREARTIFACTS properties and create a hash table.
 
 ```yaml

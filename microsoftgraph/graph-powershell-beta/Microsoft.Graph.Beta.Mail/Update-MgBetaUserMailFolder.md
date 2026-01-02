@@ -554,7 +554,7 @@ HelpMessage: ''
 
 ### -Operations
 
-.
+
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
@@ -778,7 +778,7 @@ HelpMessage: ''
 
 ### -UserConfigurations
 
-.
+
 To construct, see NOTES section for USERCONFIGURATIONS properties and create a hash table.
 
 ```yaml
