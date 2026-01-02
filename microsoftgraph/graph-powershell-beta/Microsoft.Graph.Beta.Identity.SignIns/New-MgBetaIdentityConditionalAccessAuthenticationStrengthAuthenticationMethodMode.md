@@ -409,7 +409,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthauthenticationmethodmode)
+- [New-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthauthenticationmethodmode)
 
 
 

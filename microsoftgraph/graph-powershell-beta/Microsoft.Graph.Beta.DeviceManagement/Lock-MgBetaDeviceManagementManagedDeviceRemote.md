@@ -478,7 +478,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/lock-mgbetadevicemanagementmanageddeviceremote)
+- [Lock-MgBetaDeviceManagementManagedDeviceRemote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/lock-mgbetadevicemanagementmanageddeviceremote)
 
 
 

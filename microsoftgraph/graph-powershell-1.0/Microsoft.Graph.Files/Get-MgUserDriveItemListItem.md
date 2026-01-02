@@ -411,7 +411,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitem)
+- [Get-MgUserDriveItemListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitem)
 
 
 

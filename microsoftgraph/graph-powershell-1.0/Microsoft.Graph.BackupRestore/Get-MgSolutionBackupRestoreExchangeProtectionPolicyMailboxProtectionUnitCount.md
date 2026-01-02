@@ -367,7 +367,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreexchangeprotectionpolicymailboxprotectionunitcount)
+- [Get-MgSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitCount](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreexchangeprotectionpolicymailboxprotectionunitcount)
 
 
 

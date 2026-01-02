@@ -879,7 +879,7 @@ TRADECRAFT `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligenceintelprofile)
+- [Update-MgSecurityThreatIntelligenceIntelProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligenceintelprofile)
 
 
 

@@ -405,8 +405,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingforwardingoption)
-- [](https://learn.microsoft.com/graph/api/networkaccess-forwardingoptions-update?view=graph-rest-beta)
+- [Update-MgBetaNetworkAccessSettingForwardingOption](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingforwardingoption)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-forwardingoptions-update?view=graph-rest-beta)
 
 
 

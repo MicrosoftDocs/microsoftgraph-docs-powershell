@@ -490,8 +490,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowuserattributeassignment)
-- [](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-delete?view=graph-rest-1.0)
+- [Remove-MgIdentityB2XUserFlowUserAttributeAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowuserattributeassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-delete?view=graph-rest-1.0)
 
 
 

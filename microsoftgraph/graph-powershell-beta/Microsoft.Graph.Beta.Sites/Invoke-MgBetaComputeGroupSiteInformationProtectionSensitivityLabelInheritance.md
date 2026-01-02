@@ -438,8 +438,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetacomputegroupsiteinformationprotectionsensitivitylabelinheritance)
-- [](https://learn.microsoft.com/graph/api/sensitivitylabel-computeinheritance?view=graph-rest-beta)
+- [Invoke-MgBetaComputeGroupSiteInformationProtectionSensitivityLabelInheritance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetacomputegroupsiteinformationprotectionsensitivitylabelinheritance)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computeinheritance?view=graph-rest-beta)
 
 
 

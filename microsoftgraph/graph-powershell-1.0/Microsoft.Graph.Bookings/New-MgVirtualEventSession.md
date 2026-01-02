@@ -1610,7 +1610,7 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventsession)
+- [New-MgVirtualEventSession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventsession)
 
 
 
