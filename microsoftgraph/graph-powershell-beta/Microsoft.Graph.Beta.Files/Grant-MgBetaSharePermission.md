@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 
 Grant users access to a link represented by a permission.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

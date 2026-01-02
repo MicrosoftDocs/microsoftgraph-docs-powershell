@@ -66,6 +66,14 @@ This cmdlet has the following aliases,
 
 Delete navigation property customers for bookingBusinesses
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Read.All, Bookings.Manage.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -86,6 +86,14 @@ This cmdlet has the following aliases,
 Retrieve the properties of a specific group setting object.
 The setting can be a tenant-level or group-specific setting.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | GroupSettings.Read.All, GroupSettings.ReadWrite.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | GroupSettings.Read.All, GroupSettings.ReadWrite.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

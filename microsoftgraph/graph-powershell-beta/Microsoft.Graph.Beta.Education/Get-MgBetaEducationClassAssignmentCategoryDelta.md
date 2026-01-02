@@ -72,6 +72,14 @@ This cmdlet has the following aliases,
 
 Get a list of newly created or updated educationCategory objects without performing a full read of the collection.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite, EduAssignments.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All, EduAssignments.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
